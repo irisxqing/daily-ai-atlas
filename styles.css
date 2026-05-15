@@ -199,6 +199,10 @@ input:focus {
   color: var(--muted);
 }
 
+.source-approach-method {
+  margin-top: 8px;
+}
+
 .source-method summary {
   color: var(--muted);
   cursor: pointer;
@@ -263,45 +267,26 @@ input:focus {
   text-decoration: underline;
 }
 
-.source-approach {
-  margin-top: 2px;
-  padding-top: 10px;
-  border-top: 1px solid rgba(15, 23, 42, 0.1);
-}
-
-.source-approach summary {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--ink);
-  cursor: pointer;
-  font-size: var(--text-label);
-  font-weight: 700;
-}
-
-.source-approach:not([open]) summary {
-  margin-bottom: 0;
-}
-
-.source-approach ol {
+.source-approach-list {
   display: grid;
   gap: 8px;
   margin: 0;
   padding-left: 18px;
 }
 
-.source-approach li {
+.source-approach-list li {
   color: var(--muted);
   font-size: var(--text-label);
   line-height: 1.45;
 }
 
-.source-approach li span {
+.source-approach-list li span {
   display: block;
   color: var(--ink);
   font-weight: 650;
 }
 
-.source-approach li p {
+.source-approach-list li p {
   margin: 2px 0 0;
 }
 

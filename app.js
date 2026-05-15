@@ -990,9 +990,12 @@ const contentGrid = document.querySelector("#contentGrid");
 const issueMeta = document.querySelector("#issueMeta");
 const termSpotlight = document.querySelector("#termSpotlight");
 const sourceMethod = document.querySelector("#sourceMethod");
+const sourceApproachMethod = document.querySelector("#sourceApproachMethod");
 const sourceMethodSummary = document.querySelector("#sourceMethodSummary");
 const sourceMethodText = document.querySelector("#sourceMethodText");
 const sourceMethodLinks = document.querySelector("#sourceMethodLinks");
+const sourceApproachSummary = document.querySelector("#sourceApproachSummary");
+const sourceApproachPanel = document.querySelector("#sourceApproachPanel");
 const heroHeadline = document.querySelector("#heroHeadline");
 const heroSummary = document.querySelector("#heroSummary");
 const copyLinkButton = document.querySelector("#copyLinkButton");
@@ -1780,8 +1783,10 @@ function renderHeader(issue) {
 
 function renderSourceMethod() {
   sourceMethodSummary.textContent = t("sourceMethodTitle");
+  sourceApproachSummary.textContent = currentLang === "en" ? "Approach" : "搜集方法论";
   sourceMethodText.textContent = t("sourceMethodText");
   sourceMethodLinks.innerHTML = "";
+  sourceApproachPanel.innerHTML = "";
   sourceGroups.forEach((group) => {
     const sourceGroup = document.createElement("div");
     sourceGroup.className = "source-link-group";
@@ -1804,14 +1809,8 @@ function renderSourceMethod() {
     sourceMethodLinks.appendChild(sourceGroup);
   });
 
-  const approach = document.createElement("details");
-  approach.className = "source-approach";
-
-  const approachTitle = document.createElement("summary");
-  approachTitle.textContent = currentLang === "en" ? "Approach" : "搜集方法论";
-  approach.appendChild(approachTitle);
-
   const approachList = document.createElement("ol");
+  approachList.className = "source-approach-list";
   sourceApproach[currentLang].forEach(([title, body]) => {
     const item = document.createElement("li");
     const itemTitle = document.createElement("span");
@@ -1821,8 +1820,7 @@ function renderSourceMethod() {
     item.append(itemTitle, itemBody);
     approachList.appendChild(item);
   });
-  approach.appendChild(approachList);
-  sourceMethodLinks.appendChild(approach);
+  sourceApproachPanel.appendChild(approachList);
 }
 
 function renderLanguageSwitch() {
@@ -1911,8 +1909,11 @@ copyLinkButton.addEventListener("click", async () => {
   }
 });
 
-sourceMethod.addEventListener("toggle", () => {
-  dateRail.classList.toggle("is-source-open", sourceMethod.open);
-});
+function updateRailScrollState() {
+  dateRail.classList.toggle("is-source-open", sourceMethod.open || sourceApproachMethod.open);
+}
+
+sourceMethod.addEventListener("toggle", updateRailScrollState);
+sourceApproachMethod.addEventListener("toggle", updateRailScrollState);
 
 render();
