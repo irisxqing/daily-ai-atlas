@@ -4,9 +4,7 @@
 
 ## Demo
 
-线上地址：[https://daily-ai-atlas.vercel.app](https://daily-ai-atlas.vercel.app)
-
-GitHub Pages 镜像：[https://irisxqing.github.io/daily-ai-atlas/](https://irisxqing.github.io/daily-ai-atlas/)
+线上地址：[https://irisxqing.github.io/daily-ai-atlas/](https://irisxqing.github.io/daily-ai-atlas/)
 
 ## Screenshot
 
@@ -23,14 +21,13 @@ GitHub Pages 镜像：[https://irisxqing.github.io/daily-ai-atlas/](https://iris
 - 双语阅读：默认简体中文，支持英文切换。
 - 图文/视频卡片：支持产品截图、GitHub preview、视频嵌入和图片加载失败兜底。
 - 职业雷达：聚合 AI strategy / AI transformation / AI product strategy 等非纯技术岗位方向，并总结能力缺口。
-- 静态部署：无需后端即可部署到 Vercel、GitHub Pages 或 Netlify。
+- 静态部署：无需后端即可部署到 GitHub Pages，也可以迁移到其他静态托管平台。
 
 ## Tech Stack
 
 - HTML / CSS / Vanilla JavaScript
 - Static data archive in `app.js`
-- Vercel for production hosting
-- GitHub Pages as mirror hosting
+- GitHub Pages for static hosting
 - Codex automation for daily content generation and publishing workflow
 - Python `http.server` for local preview
 
