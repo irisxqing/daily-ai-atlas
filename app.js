@@ -5,7 +5,7 @@ const archiveZh = [
     meta: "2026年5月15日 · 深圳/香港视角",
     headline: "从模型能力到真实落地",
     summary:
-      "今天的 AI 主线是落地：人形机器人开始跑完整班次，模型公司转向企业部署，AI 正从聊天框进入实时交互和操作系统层，中国开源模型继续压低使用成本，开源 Agent 和机构报告则提供了更适合长期跟踪的信号。",
+      "今天的 AI 主线是落地：人形机器人开始跑完整班次，模型公司转向企业部署，AI 正从聊天框进入实时交互和操作系统层，中国开源模型继续压低使用成本，开源 Agent、有趣产品和机构报告则提供了更适合长期跟踪的信号。",
     items: [
       {
         section: "今日重点",
@@ -166,6 +166,66 @@ const archiveZh = [
         ]
       },
       {
+        section: "AI产品推荐",
+        priority: "可试用",
+        title: "百度 DuMate / 秒哒 / 易境：从聊天机器人走向可执行 Agent",
+        dek:
+          "百度 Create 2026 把 DuMate、秒哒和易境放在同一个 Agent 产品组合里，比较适合作为中国大厂 AI 应用化的观察样本。",
+        details: [
+          "DuMate 是面向个人和团队的办公 Agent，百度智能云文档里提到它可以操作文件、读写 Excel、整理数据、生成 PPT、操作浏览器，并尝试端到端完成任务。",
+          "秒哒 Miaoda 更偏 no-code / vibe coding，支持用自然语言生成移动端 APP，并能做在线调试、Android 打包和后端数据库自动接入。",
+          "易境 Baidu Yijing 是数字人平台，发布稿强调它可以支持电商直播、数字人视频和内容创作，并推出国际版。",
+          "有意思的点不在于单个功能多酷，而是百度把办公、开发、数字人、搜索和云服务打包成一组 Agent 产品，开始用 Daily Active Agents 作为新指标。"
+        ],
+        why:
+          "对跨境电商来说，这组产品很值得观察：一个方向是商家运营和办公自动化，另一个方向是数字人直播和多语言内容生产。它也能帮你判断中国大厂的 AI 应用，不只是模型能力，而是能不能变成可执行的业务工具。",
+        links: [
+          ["百度发布稿", "https://www.prnewswire.com/news-releases/baidu-advances-agent-portfolio-to-embrace-the-agent-era-champions-daily-active-agents-as-key-metric-302771383.html"],
+          ["DuMate 快速开始", "https://cloud.baidu.com/doc/Dumate/s/xmmyddwfy"],
+          ["秒哒生成 APP 文档", "https://cloud.baidu.com/doc/MIAODA/s/Amoy50baf"],
+          ["Caixin 摘要", "https://www.caixinglobal.com/2026-05-14/baidu-ceo-says-ai-agents-will-be-the-measure-of-ai-success-102444034.html"]
+        ]
+      },
+      {
+        section: "AI产品推荐",
+        priority: "销售增长",
+        title: "Naoma AI Demo Agent：把“预约演示”变成“立刻看 AI 演示”",
+        dek:
+          "Naoma 是 Product Hunt 上近期热度较高的 AI 产品演示工具，主打让网站访客不用等销售排期，就能马上和一个视频 Agent 看产品 demo。",
+        details: [
+          "它面向 B2B SaaS：AI 视频 Agent 可以在浏览器里讲解产品、点击真实产品流程、回答问题、识别潜在客户意图，并把线索导向 CRM、销售日历或购买页面。",
+          "Product Hunt 页面显示 Naoma AI Demo Agent 在 2026 年 3 月 12 日拿到当日第 1、当周第 4，说明这类“AI 销售前置”的产品正在被市场关注。",
+          "这类产品的价值点是减少 demo 等待时间，尤其适合客单价高、功能复杂、需要解释价值的 SaaS 或 B2B 工具。",
+          "需要谨慎的地方是：AI demo 很容易在受控场景里很好看，但真实客户会问很多边界问题，所以更适合作为初筛和教育工具，而不是完全替代销售。"
+        ],
+        why:
+          "这对电商平台的商家工具也有启发：未来商家教育、广告产品讲解、SaaS 工具 onboarding，可能都不再只靠销售或录播视频，而是由一个可问可演示的 AI Agent 承接第一轮沟通。",
+        links: [
+          ["Product Hunt", "https://www.producthunt.com/products/naoma"],
+          ["Naoma 官网文章", "https://www.naoma.ai/articles/best-ai-sales-agents-2026"],
+          ["Launch Llama 评测", "https://tools.launchllama.co/blog/naoma-ai-demo-agent-review-2026"]
+        ]
+      },
+      {
+        section: "AI产品推荐",
+        priority: "内容运营",
+        title: "beehiiv MCP：让 newsletter 后台变成 AI 可以操作的工具",
+        dek:
+          "beehiiv 推出 MCP 集成后，创作者可以从支持 MCP 的 AI 工具里管理和优化 newsletter，而不是每件事都回到后台手动点。",
+        details: [
+          "Axios 报道称，beehiiv 允许用户通过自己选择的 AI 平台管理和优化账号，第一版能力包括订阅者分析和 SEO 优化等后台功能。",
+          "beehiiv 帮助文档显示，beehiiv MCP 可以连接 Claude、Claude Code、Cursor、Codex 等支持 MCP 的 AI 工具。",
+          "这代表一个很有意思的产品方向：AI 不只是帮你写内容，而是可以进入内容业务的运营后台，做分析、增长、发布和优化。",
+          "它对 Daily AI Atlas 这类内容产品也有启发：未来可以让 AI 直接处理选题、归档、订阅者反馈、SEO 标题和邮件实验。"
+        ],
+        why:
+          "这个产品值得放进推荐，不是因为它炫技，而是因为它展示了 MCP 的商业化方向：把原来封闭在 SaaS 后台里的动作开放给 AI 助手，让内容运营变成更自动化的工作流。",
+        links: [
+          ["Axios 报道", "https://www.axios.com/2026/03/24/beehiiv-creator-ai-chatbot-mcp"],
+          ["beehiiv MCP 文档", "https://beehiivhelp.zendesk.com/hc/en-us/articles/39255979546263-Getting-started-with-the-beehiiv-MCP"]
+        ]
+      },
+      {
         section: "机构报告",
         priority: "收藏",
         title: "机构报告速读：AI 已经从试点走向组织级部署",
@@ -303,7 +363,7 @@ const archiveZh = [
         priority: "样例",
         title: "历史日报会按日期保存在左侧",
         dek:
-          "点击不同日期可以回看当天 AI 新闻、开源项目、机构报告、每日词条和职业雷达。",
+          "点击不同日期可以回看当天 AI 新闻、开源项目、AI 产品推荐、机构报告、每日词条和职业雷达。",
         details: [
           "当前页面是纯本地静态网页，不依赖服务器。",
           "后续可以让定时任务每天追加一条 archive 记录。",
@@ -324,7 +384,7 @@ const archiveEn = [
     meta: "May 15, 2026 · Shenzhen / Hong Kong lens",
     headline: "From model capability to real-world deployment",
     summary:
-      "Today’s AI signal is deployment: humanoid robots are testing full shifts, model labs are moving into enterprise implementation, AI is moving from chat boxes into real-time interaction and operating-system layers, Chinese open models keep pushing costs down, and open-source agents plus institutional reports offer longer-term signals to track.",
+      "Today’s AI signal is deployment: humanoid robots are testing full shifts, model labs are moving into enterprise implementation, AI is moving from chat boxes into real-time interaction and operating-system layers, Chinese open models keep pushing costs down, and open-source agents, product picks, and institutional reports offer longer-term signals to track.",
     items: [
       {
         section: "Top Stories",
@@ -485,6 +545,66 @@ const archiveEn = [
         ]
       },
       {
+        section: "AI Product Picks",
+        priority: "Try",
+        title: "Baidu DuMate / Miaoda / Yijing: from chatbot to executable agent",
+        dek:
+          "Baidu Create 2026 grouped DuMate, Miaoda, and Yijing into a broader agent product portfolio, making it a useful sample of Chinese big-tech AI application strategy.",
+        details: [
+          "DuMate is an office agent for individuals and teams. Baidu Cloud docs say it can operate files, read and write Excel, organize data, generate PPTs, use browsers, and try to complete tasks end to end.",
+          "Miaoda is closer to no-code or vibe coding. It supports natural-language mobile-app generation, online debugging, Android packaging, and automatic backend database connection.",
+          "Baidu Yijing is a digital-human platform. The announcement says its international edition helps merchants and creators generate livestream and digital-human video content.",
+          "The interesting part is not one standalone feature, but Baidu bundling office work, app creation, digital humans, search, and cloud into an agent product stack while proposing Daily Active Agents as a new metric."
+        ],
+        why:
+          "For cross-border commerce, this is worth watching for two reasons: merchant operations automation, and digital-human livestream or multilingual content production. It also shows Chinese AI applications moving from model capability toward executable business tools.",
+        links: [
+          ["Baidu announcement", "https://www.prnewswire.com/news-releases/baidu-advances-agent-portfolio-to-embrace-the-agent-era-champions-daily-active-agents-as-key-metric-302771383.html"],
+          ["DuMate quick start", "https://cloud.baidu.com/doc/Dumate/s/xmmyddwfy"],
+          ["Miaoda app generation docs", "https://cloud.baidu.com/doc/MIAODA/s/Amoy50baf"],
+          ["Caixin brief", "https://www.caixinglobal.com/2026-05-14/baidu-ceo-says-ai-agents-will-be-the-measure-of-ai-success-102444034.html"]
+        ]
+      },
+      {
+        section: "AI Product Picks",
+        priority: "Sales growth",
+        title: "Naoma AI Demo Agent turns 'book a demo' into 'get an AI demo now'",
+        dek:
+          "Naoma is a recently visible Product Hunt AI tool that lets website visitors watch and interact with an AI product-demo agent without waiting for a sales call.",
+        details: [
+          "It targets B2B SaaS: the AI video agent can explain a product, click through real product flows, answer questions, qualify leads, and route prospects to CRM, calendar, or checkout.",
+          "Product Hunt lists Naoma AI Demo Agent as #1 product of the day and #4 of the week on March 12, 2026, showing market attention around AI-assisted selling.",
+          "The value is reducing demo wait time, especially for complex B2B tools where buyers need explanation before conversion.",
+          "Caution: AI demos can look great in controlled flows, while real prospects ask edge-case questions. It is better viewed as qualification and education, not a full sales replacement."
+        ],
+        why:
+          "This is relevant to merchant tools and platform education: future onboarding, ad-product education, and SaaS walkthroughs may be handled by askable demo agents rather than static videos or first-line sales calls.",
+        links: [
+          ["Product Hunt", "https://www.producthunt.com/products/naoma"],
+          ["Naoma article", "https://www.naoma.ai/articles/best-ai-sales-agents-2026"],
+          ["Launch Llama review", "https://tools.launchllama.co/blog/naoma-ai-demo-agent-review-2026"]
+        ]
+      },
+      {
+        section: "AI Product Picks",
+        priority: "Content ops",
+        title: "beehiiv MCP lets AI operate parts of a newsletter backend",
+        dek:
+          "With its MCP integration, beehiiv lets creators manage and optimize newsletter operations through AI tools instead of manually returning to the admin console for every task.",
+        details: [
+          "Axios reported that beehiiv users can manage and optimize accounts from the AI platform of their choice, with early capabilities including subscriber analysis and SEO optimization.",
+          "beehiiv’s help docs say its MCP can connect to AI tools including Claude, Claude Code, Cursor, and Codex.",
+          "The product direction is interesting because AI is not only writing content; it is starting to operate the backend of a content business.",
+          "For a project like Daily AI Atlas, this hints at future workflows for topic selection, archive management, subscriber feedback, SEO titles, and email experiments."
+        ],
+        why:
+          "This belongs in product picks because it shows a practical MCP business case: opening SaaS backend actions to AI assistants so content operations become more automated.",
+        links: [
+          ["Axios", "https://www.axios.com/2026/03/24/beehiiv-creator-ai-chatbot-mcp"],
+          ["beehiiv MCP docs", "https://beehiivhelp.zendesk.com/hc/en-us/articles/39255979546263-Getting-started-with-the-beehiiv-MCP"]
+        ]
+      },
+      {
         section: "Research Reports",
         priority: "Save",
         title: "Report brief: AI is moving from pilots to organization-level deployment",
@@ -621,7 +741,7 @@ const archiveEn = [
         priority: "Sample",
         title: "Historical issues are saved by date",
         dek:
-          "Click different dates to review that day’s AI news, open-source projects, research reports, AI term, and career radar.",
+          "Click different dates to review that day’s AI news, open-source projects, AI product picks, research reports, AI term, and career radar.",
         details: [
           "The current page is a local static website with no server dependency.",
           "The daily automation can append a new archive record each day.",
@@ -636,8 +756,8 @@ const archiveEn = [
 ];
 
 const sectionOrders = {
-  zh: ["全部", "今日重点", "投融资信息", "开源项目", "机构报告", "职业雷达"],
-  en: ["All", "Top Stories", "Funding Watch", "Open Source", "Research Reports", "Career Radar"]
+  zh: ["全部", "今日重点", "投融资信息", "开源项目", "AI产品推荐", "机构报告", "职业雷达"],
+  en: ["All", "Top Stories", "Funding Watch", "Open Source", "AI Product Picks", "Research Reports", "Career Radar"]
 };
 
 const uiText = {
