@@ -185,35 +185,6 @@ const archiveZh = [
         ]
       },
       {
-        section: "信息源地图",
-        priority: "方法论",
-        title: "Daily AI Atlas 的信息源：先用日报当雷达，再回到原始出处确认",
-        dek:
-          "现有 AI 日报很适合帮我们快速发现线索，但真正写进 Daily AI Atlas 时，会优先回到公司官网、论文、GitHub、招聘官网和原始报告做交叉确认。",
-        details: [
-          "雷达源：AI Valley、Ben's Bites、The Rundown AI、TLDR AI、The Batch、Import AI、Latent Space，以及中文侧的量子位、机器之心、新智元、钛媒体 AGI、36氪、晚点和甲子光年。它们负责帮我们发现当天值得追踪的新闻、产品、论文、GitHub 项目和创业公司。",
-          "事实源：公司官网和 blog、产品发布页、GitHub、Hugging Face、arXiv、Papers with Code、VC 新闻稿、招聘官网和主流科技媒体。它们负责确认金额、发布日期、功能细节、团队背景、论文结论和岗位要求。",
-          "深度源：Stanford AI Index、State of AI Report、McKinsey、BCG、a16z、Sequoia、Bain、Deloitte、IDC、Gartner 等机构报告。它们负责提供宏观趋势、企业采用率、资本流向、产业应用和职业能力变化。",
-          "中国和跨境电商视角：中文科技媒体、跨境平台招聘页和零售/电商公司技术博客会被单独跟踪，重点关注 TikTok Shop、Walmart、Amazon、Shopify、Temu、Shein、Lazada 相关 AI 管理岗位和业务落地场景。",
-          "写作原则：AI 日报是线索入口，不是最终答案；每条重要新闻尽量保留原始链接，遇到融资、招聘、研究结论和报告数据时优先交叉验证。"
-        ],
-        why:
-          "这样 Daily AI Atlas 就不是 AI Valley 或任何单一日报的翻译版，而是一个分层情报系统：先广泛捕捉信号，再筛选出与你的 AI 战略、跨境电商和职业判断最相关的内容。",
-        links: [
-          ["AI Valley", "https://www.theaivalley.com/c/about"],
-          ["Ben's Bites", "https://bensbites.co/"],
-          ["The Rundown AI", "https://agentsindex.ai/the-rundown-ai"],
-          ["TLDR AI", "https://tldr.tech/ai"],
-          ["The Batch", "https://www.deeplearning.ai/thebatch/"],
-          ["Import AI", "https://jack-clark.net/"],
-          ["量子位", "https://www.qbitai.com/"],
-          ["机器之心", "https://www.jiqizhixin.com/"],
-          ["Stanford AI Index", "https://hai.stanford.edu/ai-index/2026-ai-index-report"],
-          ["State of AI Report", "https://www.stateof.ai/?lang=en"],
-          ["McKinsey State of AI", "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"]
-        ]
-      },
-      {
         section: "每日词条",
         priority: "学习",
         title: "RAG",
@@ -493,35 +464,6 @@ const archiveEn = [
         ]
       },
       {
-        section: "Source Map",
-        priority: "Method",
-        title: "Daily AI Atlas source map: newsletters as radar, primary sources for confirmation",
-        dek:
-          "AI newsletters are useful signal radars, but Daily AI Atlas should verify important items against company posts, papers, GitHub repos, hiring pages, and original reports before turning them into analysis.",
-        details: [
-          "Radar sources: AI Valley, Ben's Bites, The Rundown AI, TLDR AI, The Batch, Import AI, Latent Space, plus Chinese sources such as QbitAI, Synced, Aiera, TMTPost AGI, 36Kr, LatePost, and Jazzyear. These help surface daily news, products, papers, GitHub projects, and startups.",
-          "Fact sources: company blogs, product pages, GitHub, Hugging Face, arXiv, Papers with Code, VC announcements, official hiring pages, and major tech media. These confirm funding amounts, launch dates, feature details, team background, research claims, and job requirements.",
-          "Deep sources: Stanford AI Index, State of AI Report, McKinsey, BCG, a16z, Sequoia, Bain, Deloitte, IDC, and Gartner. These provide macro context on adoption, investment, enterprise transformation, infrastructure, and skill shifts.",
-          "China and cross-border commerce lens: Chinese tech media, platform hiring pages, and retail/e-commerce tech blogs are tracked separately, with attention to AI leadership roles and use cases at TikTok Shop, Walmart, Amazon, Shopify, Temu, Shein, and Lazada.",
-          "Editorial rule: newsletters create the lead list, not the final answer. Important stories should keep original links, and funding, hiring, research, and report data should be cross-checked when possible."
-        ],
-        why:
-          "This turns Daily AI Atlas into a layered intelligence system rather than a translation of any single newsletter: broad signal capture first, then filtering for AI strategy, cross-border commerce, and career relevance.",
-        links: [
-          ["AI Valley", "https://www.theaivalley.com/c/about"],
-          ["Ben's Bites", "https://bensbites.co/"],
-          ["The Rundown AI", "https://agentsindex.ai/the-rundown-ai"],
-          ["TLDR AI", "https://tldr.tech/ai"],
-          ["The Batch", "https://www.deeplearning.ai/thebatch/"],
-          ["Import AI", "https://jack-clark.net/"],
-          ["QbitAI", "https://www.qbitai.com/"],
-          ["Synced", "https://www.jiqizhixin.com/"],
-          ["Stanford AI Index", "https://hai.stanford.edu/ai-index/2026-ai-index-report"],
-          ["State of AI Report", "https://www.stateof.ai/?lang=en"],
-          ["McKinsey State of AI", "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"]
-        ]
-      },
-      {
         section: "AI Term",
         priority: "Learn",
         title: "RAG",
@@ -614,8 +556,8 @@ const archiveEn = [
 ];
 
 const sectionOrders = {
-  zh: ["全部", "今日重点", "投融资信息", "开源项目", "机构报告", "信息源地图", "职业雷达"],
-  en: ["All", "Top Stories", "Funding Watch", "Open Source", "Research Reports", "Source Map", "Career Radar"]
+  zh: ["全部", "今日重点", "投融资信息", "开源项目", "机构报告", "职业雷达"],
+  en: ["All", "Top Stories", "Funding Watch", "Open Source", "Research Reports", "Career Radar"]
 };
 
 const uiText = {
@@ -630,8 +572,10 @@ const uiText = {
     refreshNote: "每天 9:30 刷新最新 AI 消息",
     termLabel: "今日 AI 词条",
     termExpand: "展开核心解释",
+    sourceMethodTitle: "信息来源",
+    sourceMethodText: "日报源只做雷达，重要内容会回到官网、论文、GitHub、招聘页和机构报告确认。",
     datePlaceholder: "搜索日期、公司、关键词",
-    contentPlaceholder: "例如 DeepSeek、机器人、信息源、香港岗位",
+    contentPlaceholder: "例如 DeepSeek、机器人、投融资、香港岗位",
     noDates: "没有匹配的日期。",
     noContent: "没有找到匹配内容。换个关键词试试。",
     copyDone: "已复制"
@@ -647,8 +591,10 @@ const uiText = {
     refreshNote: "Latest AI signals refresh daily at 9:30",
     termLabel: "AI Term of the Day",
     termExpand: "Read the quick explainer",
+    sourceMethodTitle: "Sources",
+    sourceMethodText: "Newsletters act as radar; key items are checked against company posts, papers, GitHub, hiring pages, and original reports.",
     datePlaceholder: "Search dates, companies, keywords",
-    contentPlaceholder: "e.g. DeepSeek, robotics, sources, Hong Kong roles",
+    contentPlaceholder: "e.g. DeepSeek, robotics, funding, Hong Kong roles",
     noDates: "No matching dates.",
     noContent: "No matching content. Try another keyword.",
     copyDone: "Copied"
@@ -677,6 +623,9 @@ const contentSearchLabel = document.querySelector("#contentSearchLabel");
 const contentGrid = document.querySelector("#contentGrid");
 const issueMeta = document.querySelector("#issueMeta");
 const termSpotlight = document.querySelector("#termSpotlight");
+const sourceMethodSummary = document.querySelector("#sourceMethodSummary");
+const sourceMethodText = document.querySelector("#sourceMethodText");
+const sourceMethodLinks = document.querySelector("#sourceMethodLinks");
 const heroHeadline = document.querySelector("#heroHeadline");
 const heroSummary = document.querySelector("#heroSummary");
 const copyLinkButton = document.querySelector("#copyLinkButton");
@@ -697,6 +646,15 @@ function t(key) {
 function allLabel() {
   return t("all");
 }
+
+const sourceLinks = [
+  ["AI Valley", "https://www.theaivalley.com/c/about"],
+  ["Ben's Bites", "https://bensbites.co/"],
+  ["TLDR AI", "https://tldr.tech/ai"],
+  ["The Batch", "https://www.deeplearning.ai/thebatch/"],
+  ["Import AI", "https://jack-clark.net/"],
+  ["Stanford AI Index", "https://hai.stanford.edu/ai-index/2026-ai-index-report"]
+];
 
 function isTermSection(section) {
   return section === "每日词条" || section === "AI Term";
@@ -915,7 +873,7 @@ function renderContent() {
 
   filtered.forEach((item) => {
     const node = storyTemplate.content.firstElementChild.cloneNode(true);
-    if (["投融资信息", "机构报告", "信息源地图", "职业雷达", "Funding Watch", "Research Reports", "Source Map", "Career Radar"].includes(item.section)) {
+    if (["投融资信息", "机构报告", "职业雷达", "Funding Watch", "Research Reports", "Career Radar"].includes(item.section)) {
       node.classList.add("is-wide");
     }
     node.querySelector(".section-label").textContent = item.section;
@@ -1029,6 +987,18 @@ function renderHeader(issue) {
   heroSummary.textContent = issue.summary;
 }
 
+function renderSourceMethod() {
+  sourceMethodSummary.textContent = t("sourceMethodTitle");
+  sourceMethodText.textContent = t("sourceMethodText");
+  sourceMethodLinks.innerHTML = "";
+  sourceLinks.forEach(([label, href]) => {
+    const link = document.createElement("a");
+    link.href = href;
+    link.textContent = label;
+    sourceMethodLinks.appendChild(link);
+  });
+}
+
 function renderLanguageSwitch() {
   languageSwitch.innerHTML = "";
   languageSwitch.dataset.lang = currentLang;
@@ -1065,6 +1035,7 @@ function renderChrome() {
   contentSearchLabel.textContent = t("contentSearch");
   dateSearch.placeholder = t("datePlaceholder");
   contentSearch.placeholder = t("contentPlaceholder");
+  renderSourceMethod();
   renderLanguageSwitch();
 }
 
