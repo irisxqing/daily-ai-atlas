@@ -1552,7 +1552,7 @@ function renderTrustSignals(node, item) {
     badge.textContent = signal;
     row.appendChild(badge);
   });
-  node.querySelector(".story-topline").after(row);
+  node.querySelector(".link-row").before(row);
 }
 
 function renderContent() {

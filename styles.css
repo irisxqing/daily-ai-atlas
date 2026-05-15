@@ -802,20 +802,20 @@ input:focus {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin: -4px 0 12px;
+  margin: -2px 0 12px;
 }
 
 .trust-row span {
   display: inline-flex;
   align-items: center;
-  min-height: 24px;
+  min-height: 22px;
   padding: 0 8px;
   border: 1px solid color-mix(in srgb, var(--section-accent) 14%, var(--line));
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.76);
-  color: var(--section-accent);
+  background: rgba(255, 255, 255, 0.52);
+  color: var(--muted);
   font-size: 11px;
-  font-weight: 900;
+  font-weight: 750;
 }
 
 .section-identity {
