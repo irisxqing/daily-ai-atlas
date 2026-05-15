@@ -571,6 +571,7 @@ const uiText = {
     contentSearch: "搜索当前日报",
     refreshNote: "每天 9:30 刷新最新 AI 消息",
     termLabel: "今日 AI 词条",
+    termExpand: "展开核心解释",
     datePlaceholder: "搜索日期、公司、关键词",
     contentPlaceholder: "例如 DeepSeek、机器人、投融资、香港岗位",
     noDates: "没有匹配的日期。",
@@ -587,6 +588,7 @@ const uiText = {
     contentSearch: "Search current issue",
     refreshNote: "Latest AI signals refresh daily at 9:30",
     termLabel: "AI Term of the Day",
+    termExpand: "Read the quick explainer",
     datePlaceholder: "Search dates, companies, keywords",
     contentPlaceholder: "e.g. DeepSeek, robotics, funding, Hong Kong roles",
     noDates: "No matching dates.",
@@ -924,10 +926,17 @@ function renderTermSpotlight(issue) {
   title.textContent = term.title;
   intro.append(kicker, title);
 
-  const body = document.createElement("div");
   const dek = document.createElement("p");
   dek.className = "term-dek";
   dek.textContent = term.dek;
+  intro.appendChild(dek);
+
+  const more = document.createElement("details");
+  more.className = "term-more";
+  const moreSummary = document.createElement("summary");
+  moreSummary.textContent = t("termExpand");
+  more.appendChild(moreSummary);
+
   const points = document.createElement("div");
   points.className = "term-points";
   (term.details || []).forEach((detail) => {
@@ -939,7 +948,7 @@ function renderTermSpotlight(issue) {
   const why = document.createElement("p");
   why.className = "term-why";
   why.textContent = term.why;
-  body.append(dek, points, why);
+  more.append(points, why);
 
   if (term.links && term.links.length) {
     const links = document.createElement("div");
@@ -950,10 +959,10 @@ function renderTermSpotlight(issue) {
       link.textContent = label;
       links.appendChild(link);
     });
-    body.appendChild(links);
+    more.appendChild(links);
   }
 
-  termSpotlight.append(intro, body);
+  termSpotlight.append(intro, more);
 }
 
 function renderHeader(issue) {

@@ -377,59 +377,67 @@ input:focus {
 }
 
 .term-spotlight {
-  display: grid;
-  grid-template-columns: minmax(170px, 0.28fr) minmax(0, 1fr);
-  gap: 18px;
-  margin-bottom: 22px;
-  padding: 18px;
-  border: 1px solid rgba(200, 121, 42, 0.28);
+  margin-bottom: 18px;
+  padding: 13px;
+  border: 1px solid rgba(200, 121, 42, 0.24);
   border-radius: var(--radius);
-  background: linear-gradient(135deg, rgba(255, 253, 248, 0.96), rgba(248, 237, 222, 0.72));
+  background: rgba(255, 253, 248, 0.58);
 }
 
 .term-kicker {
-  margin: 0 0 10px;
+  margin: 0 0 7px;
   color: var(--amber);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
 .term-title {
-  margin: 0;
+  margin: 0 0 8px;
   color: var(--ink);
-  font-size: 24px;
-  line-height: 1.16;
+  font-size: 16px;
+  line-height: 1.28;
 }
 
 .term-dek,
 .term-why {
   margin: 0;
   color: #3c424b;
-  font-size: 14px;
-  line-height: 1.68;
+  font-size: 12px;
+  line-height: 1.58;
+}
+
+.term-more {
+  margin-top: 10px;
+}
+
+.term-more summary {
+  color: var(--amber);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .term-points {
   display: grid;
-  gap: 8px;
-  margin: 12px 0;
+  gap: 7px;
+  margin: 10px 0;
 }
 
 .term-point {
   display: grid;
-  grid-template-columns: 8px minmax(0, 1fr);
-  gap: 10px;
+  grid-template-columns: 7px minmax(0, 1fr);
+  gap: 8px;
   color: var(--muted);
-  font-size: 14px;
-  line-height: 1.58;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .term-point::before {
   content: "";
-  width: 8px;
-  height: 8px;
-  margin-top: 7px;
+  width: 7px;
+  height: 7px;
+  margin-top: 6px;
   border-radius: 50%;
   background: var(--amber);
 }
@@ -437,20 +445,20 @@ input:focus {
 .term-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 14px;
+  gap: 6px;
+  margin-top: 10px;
 }
 
 .term-links a {
   display: inline-flex;
   align-items: center;
-  min-height: 32px;
-  padding: 0 10px;
+  min-height: 28px;
+  padding: 0 8px;
   border: 1px solid rgba(200, 121, 42, 0.32);
   border-radius: var(--radius);
   color: var(--amber);
   background: rgba(255, 253, 248, 0.72);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 800;
   text-decoration: none;
 }
@@ -732,10 +740,6 @@ input:focus {
   }
 
   .hero-band {
-    grid-template-columns: 1fr;
-  }
-
-  .term-spotlight {
     grid-template-columns: 1fr;
   }
 
