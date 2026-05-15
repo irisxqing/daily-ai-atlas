@@ -78,6 +78,14 @@ input {
   font-size: 22px;
 }
 
+.brand-subtitle {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
 .eyebrow {
   margin: 0 0 5px;
   color: var(--amber);
