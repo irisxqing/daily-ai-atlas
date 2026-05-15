@@ -1,40 +1,11 @@
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Daily AI Atlas logo</title>
-  <desc id="desc">A futuristic atlas logo with neural nodes, orbital paths, and an AI navigation mark.</desc>
-  <defs>
-    <linearGradient id="bg" x1="28" y1="28" x2="230" y2="226" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#111827"/>
-      <stop offset="0.52" stop-color="#1B2A4A"/>
-      <stop offset="1" stop-color="#20242A"/>
-    </linearGradient>
-    <linearGradient id="arc" x1="50" y1="42" x2="207" y2="210" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#79D8FF"/>
-      <stop offset="0.48" stop-color="#2855A5"/>
-      <stop offset="1" stop-color="#C8792A"/>
-    </linearGradient>
-    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  <rect width="256" height="256" rx="46" fill="url(#bg)"/>
-  <path d="M48 104C74 59 134 38 187 62" stroke="#79D8FF" stroke-width="6" stroke-linecap="round" opacity="0.72"/>
-  <path d="M45 153C72 200 140 221 198 188" stroke="#C8792A" stroke-width="6" stroke-linecap="round" opacity="0.78"/>
-  <ellipse cx="128" cy="128" rx="82" ry="36" stroke="url(#arc)" stroke-width="8" transform="rotate(-28 128 128)" filter="url(#glow)"/>
-  <ellipse cx="128" cy="128" rx="82" ry="36" stroke="#FFFDF8" stroke-width="3" opacity="0.62" transform="rotate(28 128 128)"/>
-  <path d="M75 73L181 183" stroke="#FFFDF8" stroke-width="4" stroke-linecap="round" opacity="0.38"/>
-  <path d="M184 63L72 191" stroke="#79D8FF" stroke-width="4" stroke-linecap="round" opacity="0.34"/>
-  <circle cx="75" cy="73" r="7" fill="#79D8FF" filter="url(#glow)"/>
-  <circle cx="184" cy="63" r="6" fill="#FFFDF8"/>
-  <circle cx="72" cy="191" r="7" fill="#FFFDF8"/>
-  <circle cx="181" cy="183" r="7" fill="#C8792A" filter="url(#glow)"/>
-  <path d="M128 52L151 123L224 128L159 160L144 226L111 165L46 151L116 120L128 52Z" fill="#FFFDF8"/>
-  <path d="M130 82L144 126L190 130L150 149L140 191L118 153L78 145L121 125L130 82Z" fill="#111827"/>
-  <path d="M118 154L103 192H88L119 70H137L169 192H153L137 154H118Z" fill="#79D8FF"/>
-  <path d="M127 102L136 141H121L127 102Z" fill="#111827"/>
-  <path d="M171 192V73H187V192H171Z" fill="#C8792A"/>
-  <circle cx="151" cy="123" r="9" fill="#C8792A" filter="url(#glow)"/>
+  <desc id="desc">A minimal warm atlas mark with a compass-like A and a single signal point.</desc>
+  <rect x="12" y="12" width="232" height="232" rx="52" fill="#FFFDF8"/>
+  <rect x="12" y="12" width="232" height="232" rx="52" stroke="#DDD7CC" stroke-width="6"/>
+  <path d="M71 188L128 58L185 188" stroke="#20242A" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M96 137H160" stroke="#20242A" stroke-width="14" stroke-linecap="round"/>
+  <path d="M84 86C111 68 145 68 172 86" stroke="#C8792A" stroke-width="10" stroke-linecap="round"/>
+  <path d="M78 205C107 219 149 219 178 205" stroke="#20242A" stroke-width="8" stroke-linecap="round" opacity="0.22"/>
+  <circle cx="174" cy="86" r="12" fill="#C8792A"/>
 </svg>
