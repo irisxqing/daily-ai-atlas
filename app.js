@@ -5,7 +5,7 @@ const archiveZh = [
     meta: "2026年5月15日 · 深圳/香港视角",
     headline: "从模型能力到真实落地",
     summary:
-      "今天的 AI 主线是落地：人形机器人开始跑完整班次，模型公司转向企业部署，中国开源模型继续压低使用成本，开源 Agent 和机构报告则提供了更适合长期跟踪的信号。",
+      "今天的 AI 主线是落地：人形机器人开始跑完整班次，模型公司转向企业部署，AI 正从聊天框进入实时交互和操作系统层，中国开源模型继续压低使用成本，开源 Agent 和机构报告则提供了更适合长期跟踪的信号。",
     items: [
       {
         section: "今日重点",
@@ -83,6 +83,46 @@ const archiveZh = [
         why:
           "这类 AI 不一定直接面对普通用户，但长期商业价值很大。它像一个优化机器，帮科学家和企业找到更快、更省、更稳定的方案。",
         links: [["Google DeepMind 官方", "https://deepmind.google/blog/alphaevolve-impact/"]]
+      },
+      {
+        section: "今日重点",
+        priority: "中高",
+        title: "Thinking Machines 预览 interaction models，让 AI 更像实时协作者",
+        dek:
+          "Mira Murati 创立的 Thinking Machines Lab 发布 interaction models 研究预览，目标是让 AI 在音频、视频、文本中原生处理互动，而不是等你说完再轮流回复。",
+        details: [
+          "雷达源 TLDR AI 把它列为近期值得读的模型方向；官方博客确认这是 research preview，不是成熟产品。",
+          "传统聊天模型更像回合制对话：你输入，模型回答。Thinking Machines 想让模型一边接收多路输入，一边生成回应，更接近真实通话或协作。",
+          "它强调 multi-stream design，可以同时处理音频、视频和文本，减少现在语音助手常见的停顿、打断困难和上下文丢失。",
+          "TechCrunch 的解读是：这类模型的目标不是更会写文章，而是更会在真实互动中听、看、说和调整。"
+        ],
+        why:
+          "如果这条路线成立，AI 产品会从“问答工具”走向“实时协作者”。对电商和运营场景来说，未来可能出现实时陪跑式客服、直播助手、商家培训教练和会议协同 agent。",
+        links: [
+          ["Thinking Machines 官方", "https://thinkingmachines.ai/blog/interaction-models/"],
+          ["TechCrunch", "https://techcrunch.com/2026/05/11/thinking-machines-wants-to-build-an-ai-that-actually-listens-while-it-talks/"],
+          ["Semafor", "https://www.semafor.com/article/05/13/2026/mira-muratis-thinking-machines-previews-interaction-models"]
+        ]
+      },
+      {
+        section: "今日重点",
+        priority: "中",
+        title: "Google 把 Gemini Intelligence 推向 Android 和 Googlebook",
+        dek:
+          "Google 在 Android Show: I/O Edition 预告 Gemini Intelligence 和 Googlebook，信号不是单个模型发布，而是把 AI 做进手机、浏览器和新一代笔记本的系统层。",
+        details: [
+          "TLDR 把 Googlebook 和 Android AI overhaul 列为近期平台级新闻；Google 官方博客确认 Googlebook 是面向 Gemini Intelligence 的新笔记本品类。",
+          "Gemini Intelligence 被描述为更主动的 Android AI 功能，方向是理解屏幕、跨应用给建议、把手机和笔记本联动起来。",
+          "Googlebook 的重点不是传统硬件参数，而是让 Gemini 深度进入桌面计算体验，Google 的说法是从 operating system 走向 intelligence system。",
+          "这也解释了为什么 Google 的 AI 竞争不只在模型榜单，而在 Android、Chrome、Workspace、搜索和硬件分发网络。"
+        ],
+        why:
+          "对普通用户来说，AI 真正变成基础设施，往往不是因为单个 app 更聪明，而是因为操作系统默认带着 AI。对跨境电商来说，这会影响移动端商家工具、客服、广告投放和内容生产的入口。",
+        links: [
+          ["Google 官方", "https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026"],
+          ["TechCrunch", "https://techcrunch.com/2026/05/12/everything-google-announced-at-its-android-show-from-googlebooks-to-vibe-coded-widgets/"],
+          ["Android Central", "https://www.androidcentral.com/chromebooks-laptops/google-announces-googlebook"]
+        ]
       },
       {
         section: "投融资信息",
@@ -284,7 +324,7 @@ const archiveEn = [
     meta: "May 15, 2026 · Shenzhen / Hong Kong lens",
     headline: "From model capability to real-world deployment",
     summary:
-      "Today’s AI signal is deployment: humanoid robots are testing full shifts, model labs are moving into enterprise implementation, Chinese open models keep pushing costs down, and open-source agents plus institutional reports offer longer-term signals to track.",
+      "Today’s AI signal is deployment: humanoid robots are testing full shifts, model labs are moving into enterprise implementation, AI is moving from chat boxes into real-time interaction and operating-system layers, Chinese open models keep pushing costs down, and open-source agents plus institutional reports offer longer-term signals to track.",
     items: [
       {
         section: "Top Stories",
@@ -362,6 +402,46 @@ const archiveEn = [
         why:
           "This kind of AI may not face consumers directly, but its long-term commercial value can be substantial. It acts like an optimization machine for scientists, engineers, and operators.",
         links: [["Google DeepMind", "https://deepmind.google/blog/alphaevolve-impact/"]]
+      },
+      {
+        section: "Top Stories",
+        priority: "Medium-high",
+        title: "Thinking Machines previews interaction models for real-time collaboration",
+        dek:
+          "Mira Murati’s Thinking Machines Lab released a research preview of interaction models, aiming to make AI handle audio, video, and text interaction natively instead of waiting for turn-based prompts.",
+        details: [
+          "TLDR AI flagged this as a notable model direction, and the official post confirms it is a research preview rather than a mature product.",
+          "Current chat models are mostly turn-based: you speak, then the model replies. Thinking Machines wants models that receive multi-stream input while generating responses, closer to a live call or shared workspace.",
+          "The system emphasizes a multi-stream design across audio, video, and text, reducing pauses, interruption problems, and context loss in voice assistants.",
+          "TechCrunch framed the goal as AI that can listen while it talks, not merely a model that writes better text."
+        ],
+        why:
+          "If this direction works, AI products may move from Q&A tools toward real-time collaborators. In commerce and operations, that could mean live support copilots, merchant training coaches, meeting agents, and livestream assistants.",
+        links: [
+          ["Thinking Machines", "https://thinkingmachines.ai/blog/interaction-models/"],
+          ["TechCrunch", "https://techcrunch.com/2026/05/11/thinking-machines-wants-to-build-an-ai-that-actually-listens-while-it-talks/"],
+          ["Semafor", "https://www.semafor.com/article/05/13/2026/mira-muratis-thinking-machines-previews-interaction-models"]
+        ]
+      },
+      {
+        section: "Top Stories",
+        priority: "Medium",
+        title: "Google pushes Gemini Intelligence into Android and Googlebook",
+        dek:
+          "Google’s Android Show: I/O Edition previewed Gemini Intelligence and Googlebook, signaling that AI is moving deeper into phones, browsers, and the operating-system layer.",
+        details: [
+          "TLDR highlighted Googlebook and Android’s AI overhaul as platform-level news; Google’s own blog confirms Googlebook as a new laptop category designed for Gemini Intelligence.",
+          "Gemini Intelligence points to more proactive Android AI features that understand screen context, make cross-app suggestions, and connect phones with laptops.",
+          "Googlebook is less about hardware specs and more about embedding Gemini into desktop computing; Google frames the shift as moving from an operating system to an intelligence system.",
+          "This shows Google’s AI advantage is not only model quality, but distribution through Android, Chrome, Workspace, Search, and hardware."
+        ],
+        why:
+          "For most users, AI becomes infrastructure when it is built into the default operating environment. For cross-border commerce, this can reshape merchant tools, customer support, ad workflows, and content creation on mobile.",
+        links: [
+          ["Google", "https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026"],
+          ["TechCrunch", "https://techcrunch.com/2026/05/12/everything-google-announced-at-its-android-show-from-googlebooks-to-vibe-coded-widgets/"],
+          ["Android Central", "https://www.androidcentral.com/chromebooks-laptops/google-announces-googlebook"]
+        ]
       },
       {
         section: "Funding Watch",
