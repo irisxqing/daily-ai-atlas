@@ -10,6 +10,10 @@
   --amber: #c8792a;
   --green: #2d7b64;
   --red: #a9473a;
+  --violet: #7562a8;
+  --teal: #247b8a;
+  --plum: #8a4f6f;
+  --graphite: #4f5866;
   --shadow: 0 18px 48px rgba(30, 32, 36, 0.1);
   --radius: 8px;
 }
@@ -576,21 +580,55 @@ input:focus {
 }
 
 .tab-button {
+  --tab-accent: var(--cobalt);
+  --tab-soft: #f8fbff;
   flex: 0 0 auto;
   min-height: 42px;
   padding: 0 13px;
-  border: 1px solid var(--line);
+  border: 1px solid color-mix(in srgb, var(--tab-accent) 24%, var(--line));
+  border-bottom: 3px solid var(--tab-accent);
   border-radius: var(--radius);
   background: var(--panel);
   color: var(--muted);
   cursor: pointer;
+  font-weight: 800;
+}
+
+.tab-button[data-section-key="top"] {
+  --tab-accent: var(--cobalt);
+  --tab-soft: #f2f6ff;
+}
+
+.tab-button[data-section-key="funding"] {
+  --tab-accent: var(--amber);
+  --tab-soft: #fff6ea;
+}
+
+.tab-button[data-section-key="open-source"] {
+  --tab-accent: var(--green);
+  --tab-soft: #eff8f3;
+}
+
+.tab-button[data-section-key="product"] {
+  --tab-accent: var(--teal);
+  --tab-soft: #edf8fa;
+}
+
+.tab-button[data-section-key="report"] {
+  --tab-accent: var(--violet);
+  --tab-soft: #f4f1fb;
+}
+
+.tab-button[data-section-key="career"] {
+  --tab-accent: var(--plum);
+  --tab-soft: #fbf0f6;
 }
 
 .tab-button:hover,
 .tab-button.is-active {
-  border-color: var(--cobalt);
-  color: var(--cobalt);
-  background: #f8fbff;
+  border-color: var(--tab-accent);
+  color: var(--tab-accent);
+  background: var(--tab-soft);
 }
 
 .content-grid {
@@ -600,11 +638,78 @@ input:focus {
 }
 
 .story-card {
+  --section-accent: var(--cobalt);
+  --section-soft: #f5f8ff;
+  --section-wash: rgba(40, 85, 165, 0.06);
+  position: relative;
   grid-column: 1;
   padding: 20px;
-  border: 1px solid var(--line);
+  border: 1px solid color-mix(in srgb, var(--section-accent) 20%, var(--line));
+  border-left: 6px solid var(--section-accent);
   border-radius: var(--radius);
-  background: var(--panel-strong);
+  background:
+    linear-gradient(90deg, var(--section-wash), rgba(255, 255, 255, 0) 42%),
+    var(--panel-strong);
+  box-shadow: 0 10px 28px rgba(30, 32, 36, 0.055);
+  overflow: hidden;
+}
+
+.story-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: var(--section-accent);
+}
+
+.story-card::after {
+  content: attr(data-section-code);
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  color: var(--section-accent);
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 1;
+  opacity: 0.055;
+  pointer-events: none;
+  user-select: none;
+}
+
+.story-card[data-section-key="top"] {
+  --section-accent: var(--cobalt);
+  --section-soft: #f2f6ff;
+  --section-wash: rgba(40, 85, 165, 0.07);
+}
+
+.story-card[data-section-key="funding"] {
+  --section-accent: var(--amber);
+  --section-soft: #fff6ea;
+  --section-wash: rgba(200, 121, 42, 0.09);
+}
+
+.story-card[data-section-key="open-source"] {
+  --section-accent: var(--green);
+  --section-soft: #eff8f3;
+  --section-wash: rgba(45, 123, 100, 0.08);
+}
+
+.story-card[data-section-key="product"] {
+  --section-accent: var(--teal);
+  --section-soft: #edf8fa;
+  --section-wash: rgba(36, 123, 138, 0.09);
+}
+
+.story-card[data-section-key="report"] {
+  --section-accent: var(--violet);
+  --section-soft: #f4f1fb;
+  --section-wash: rgba(117, 98, 168, 0.09);
+}
+
+.story-card[data-section-key="career"] {
+  --section-accent: var(--plum);
+  --section-soft: #fbf0f6;
+  --section-wash: rgba(138, 79, 111, 0.08);
 }
 
 .story-card.is-wide {
@@ -619,6 +724,27 @@ input:focus {
   margin-bottom: 12px;
 }
 
+.section-identity {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 8px;
+}
+
+.section-code {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: var(--section-accent);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+}
+
 .section-label,
 .priority {
   color: var(--muted);
@@ -627,13 +753,15 @@ input:focus {
 }
 
 .section-label {
-  color: var(--green);
+  color: var(--section-accent);
 }
 
 .priority {
   padding: 3px 8px;
-  border: 1px solid var(--line);
+  border: 1px solid color-mix(in srgb, var(--section-accent) 26%, var(--line));
   border-radius: 999px;
+  background: var(--section-soft);
+  color: var(--section-accent);
 }
 
 .story-card h3 {
@@ -646,6 +774,85 @@ input:focus {
   color: var(--ink);
   font-size: 15px;
   line-height: 1.65;
+}
+
+.story-media {
+  display: block;
+  position: relative;
+  margin: 0 0 16px;
+  border: 1px solid color-mix(in srgb, var(--section-accent) 20%, var(--line));
+  border-radius: var(--radius);
+  background: var(--section-soft);
+  color: inherit;
+  aspect-ratio: 16 / 7;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.story-card[data-section-key="product"] .story-media {
+  aspect-ratio: 16 / 8;
+}
+
+.story-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 180ms ease;
+}
+
+.story-media:hover img {
+  transform: scale(1.025);
+}
+
+.media-overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  gap: 4px;
+  padding: 28px 14px 13px;
+  background: linear-gradient(180deg, rgba(18, 22, 28, 0), rgba(18, 22, 28, 0.76));
+  color: #fff;
+}
+
+.media-title {
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.media-caption {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.media-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 30px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: var(--radius);
+  background: rgba(18, 22, 28, 0.72);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.story-media.is-video .media-badge::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid currentColor;
 }
 
 .details {
@@ -668,8 +875,8 @@ input:focus {
   width: 8px;
   height: 8px;
   margin-top: 7px;
-  border-radius: 50%;
-  background: var(--amber);
+  border-radius: 2px;
+  background: var(--section-accent);
 }
 
 .detail-disclosure {
@@ -702,13 +909,13 @@ input:focus {
   width: 8px;
   height: 8px;
   margin-top: 7px;
-  border-radius: 50%;
-  background: var(--amber);
+  border-radius: 2px;
+  background: var(--section-accent);
 }
 
 .detail-disclosure summary::after {
   content: "+";
-  color: var(--cobalt);
+  color: var(--section-accent);
   font-weight: 900;
 }
 
@@ -731,8 +938,8 @@ input:focus {
 .source-quote {
   margin: 0 13px 12px 31px;
   padding: 10px 12px;
-  border-left: 3px solid var(--cobalt);
-  background: #f2f6ff;
+  border-left: 3px solid var(--section-accent);
+  background: var(--section-soft);
   color: #39414d;
   font-size: 13px;
   font-weight: 700;
@@ -747,15 +954,15 @@ input:focus {
   padding: 0 10px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  color: var(--cobalt);
-  background: #f8fbff;
+  color: var(--section-accent);
+  background: var(--section-soft);
   font-size: 13px;
   font-weight: 800;
   text-decoration: none;
 }
 
 .chart-link:hover {
-  border-color: var(--cobalt);
+  border-color: var(--section-accent);
 }
 
 .why {
@@ -780,15 +987,15 @@ input:focus {
   padding: 0 10px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  color: var(--cobalt);
-  background: #f8fbff;
+  color: var(--section-accent);
+  background: var(--section-soft);
   font-size: 13px;
   font-weight: 700;
   text-decoration: none;
 }
 
 .link-row a:hover {
-  border-color: var(--cobalt);
+  border-color: var(--section-accent);
 }
 
 .empty-state {

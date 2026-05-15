@@ -13,6 +13,14 @@ const archiveZh = [
         title: "Figure 机器人完成 8 小时工厂班次",
         dek:
           "人形机器人公司 Figure 展示了一组机器人连续完成包裹分拣任务，试图证明机器人不只是演示视频里的角色，而是可以接近真实上班节奏。",
+        media: {
+          type: "image",
+          src: "https://images.ctfassets.net/qx5k8y1u9drj/5yM1thk8o5swuduSTOMRHf/6be7879c59f758783472f06b28a6610c/all_hands_table.jpg?fm=webp&q=70&w=3840",
+          alt: "Figure robot production rate chart",
+          title: "Robot operations signal",
+          caption: "Figure 官方生产节奏图：机器人从实验室样机进入规模化运营",
+          href: "https://www.figure.ai/news/ramping-figure-03-production"
+        },
         details: [
           "Figure 成立于 2022 年，主攻通用人形机器人，投资方包括 Microsoft、NVIDIA、OpenAI Startup Fund、Intel 和 Jeff Bezos。",
           "这次任务包含识别条形码、抓取包裹、调整方向、放到传送带上，AI Valley 提到节奏约为每 3 秒处理一个包裹。",
@@ -152,6 +160,14 @@ const archiveZh = [
         title: "OpenHuman：一个试图成为“数字分身”的开源 Agent",
         dek:
           "钛媒体提到 OpenHuman 最近登上 GitHub Trending，它的核心方向是让 AI 快速吃透你的工作和生活上下文。",
+        media: {
+          type: "image",
+          src: "https://opengraph.githubassets.com/daily-ai-atlas/tinyhumansai/openhuman",
+          alt: "OpenHuman GitHub repository preview",
+          title: "GitHub project preview",
+          caption: "GitHub 项目预览：个人上下文、记忆和工具连接是它的核心卖点",
+          href: "https://github.com/tinyhumansai/openhuman"
+        },
         details: [
           "项目由 Tiny Humans AI 团队开发，主打 Context in minutes, not weeks。",
           "它支持 Gmail、Notion、GitHub、Slack、Google Calendar、Jira、Linear、Stripe 等 100 多个第三方集成。",
@@ -171,6 +187,14 @@ const archiveZh = [
         title: "FocuSee 2.0：把普通录屏自动变成精致产品 demo",
         dek:
           "FocuSee 适合做产品演示、教程和汇报视频：你只要正常录屏，它会自动加缩放、鼠标高亮、背景和字幕，让粗糙录屏看起来像认真剪过。",
+        media: {
+          type: "image",
+          src: "https://store.setapp.com/cdn-cgi/image/width%3D1200%2Cquality%3D75%2Cformat%3Dauto/app/1771/screenshots/1762230093-69097f4d1dd30.png",
+          alt: "FocuSee product demo screenshot",
+          title: "Product demo visual",
+          caption: "录屏、缩放、鼠标高亮和字幕都在一个工作流里",
+          href: "https://setapp.com/apps/focusee"
+        },
         details: [
           "TrendHunt Daily 把 FocuSee 2.0 列为 5 月上旬 Product Hunt 热门发布之一，定位是 Pick Record screen to get polished demos & tutorials。",
           "Setapp 页面显示，FocuSee 可以同时录屏、摄像头和声音，并自动添加 zoom、cursor highlight、背景、overlay、字幕和降噪。",
@@ -190,6 +214,14 @@ const archiveZh = [
         title: "Magic Patterns Agent 2.0：一句话生成可交互产品原型",
         dek:
           "Magic Patterns 是给产品团队用的 AI 设计 agent：你描述一个功能、上传截图或引用已有设计系统，它可以快速生成可交互 mockup。",
+        media: {
+          type: "image",
+          src: "https://www.magicpatterns.com/marketing/YourComponents.png",
+          alt: "Magic Patterns prototype screenshot",
+          title: "Prototype preview",
+          caption: "从现有组件和设计系统生成可讨论的产品界面",
+          href: "https://www.magicpatterns.com/"
+        },
         details: [
           "Product Hunt 页面把 Agent 2.0 描述为从 idea 到 production 的 AI design agent，核心是用已有 style 和 design system 生成原型。",
           "官方介绍提到，PM、设计师和创始人可以用它快速做 interactive mockups，并把结果交给工程团队继续实现。",
@@ -210,6 +242,15 @@ const archiveZh = [
         title: "LTX Desktop：免费开源的本地 AI 视频生成与编辑器",
         dek:
           "LTX Desktop 把 AI 视频生成和剪辑界面放在一起，重点是本地运行、开源、没有按次生成费用，适合想探索 AI 视频但不想一直烧云端点数的人。",
+        media: {
+          type: "video",
+          src: "https://cdn.prod.website-files.com/68872d15af29880764eac4aa/69a9852c61140d7cfbc32175_b4129705569c6d9fa65b5f6730ceefe7_LTX-desktop-Hero_1_frame.avif",
+          alt: "LTX Desktop video editor screenshot",
+          title: "Video workflow preview",
+          caption: "本地视频生成、剪辑和模型工作流的产品界面",
+          href: "https://ltx.io/ltx-desktop",
+          cta: "打开产品演示"
+        },
         details: [
           "LTX 官方称 LTX Desktop 是 built entirely on the LTX engine 的本地视频生成和编辑应用，支持 macOS 和 Windows。",
           "它的卖点是 no cloud、no per-generation fees、数据留在本机；对企业和创作者来说，隐私和成本都更可控。",
@@ -391,6 +432,14 @@ const archiveEn = [
         title: "Figure robots completed an 8-hour factory-style shift",
         dek:
           "Humanoid robotics company Figure showed robots running a package-sorting workflow for a full shift, trying to prove that robots can move beyond demos and toward operational labor.",
+        media: {
+          type: "image",
+          src: "https://images.ctfassets.net/qx5k8y1u9drj/5yM1thk8o5swuduSTOMRHf/6be7879c59f758783472f06b28a6610c/all_hands_table.jpg?fm=webp&q=70&w=3840",
+          alt: "Figure robot production rate chart",
+          title: "Robot operations signal",
+          caption: "Figure's production-rate chart shows humanoids moving from prototype to scaled operations.",
+          href: "https://www.figure.ai/news/ramping-figure-03-production"
+        },
         details: [
           "Figure was founded in 2022 and focuses on general-purpose humanoid robots backed by investors such as Microsoft, NVIDIA, OpenAI Startup Fund, Intel, and Jeff Bezos.",
           "The task involved reading barcodes, picking packages, adjusting orientation, and placing them onto conveyors; AI Valley cited a pace of roughly one package every three seconds.",
@@ -530,6 +579,14 @@ const archiveEn = [
         title: "OpenHuman: an open-source agent trying to become a digital twin",
         dek:
           "TMTPost highlighted OpenHuman as a GitHub-trending project whose core idea is to help an AI quickly understand your work and life context.",
+        media: {
+          type: "image",
+          src: "https://opengraph.githubassets.com/daily-ai-atlas/tinyhumansai/openhuman",
+          alt: "OpenHuman GitHub repository preview",
+          title: "GitHub project preview",
+          caption: "A repository preview for a personal-context, memory, and integrations-focused agent.",
+          href: "https://github.com/tinyhumansai/openhuman"
+        },
         details: [
           "The project is developed by Tiny Humans AI and pitches itself as 'Context in minutes, not weeks.'",
           "It supports 100+ integrations including Gmail, Notion, GitHub, Slack, Google Calendar, Jira, Linear, and Stripe.",
@@ -549,6 +606,14 @@ const archiveEn = [
         title: "FocuSee 2.0 turns raw screen recordings into polished product demos",
         dek:
           "FocuSee is useful for product walkthroughs, tutorials, and strategy demos: record normally, then let the tool add zooms, cursor highlights, backgrounds, overlays, and captions.",
+        media: {
+          type: "image",
+          src: "https://store.setapp.com/cdn-cgi/image/width%3D1200%2Cquality%3D75%2Cformat%3Dauto/app/1771/screenshots/1762230093-69097f4d1dd30.png",
+          alt: "FocuSee product demo screenshot",
+          title: "Product demo visual",
+          caption: "Screen recording, zooms, cursor highlights, and captions in one workflow",
+          href: "https://setapp.com/apps/focusee"
+        },
         details: [
           "TrendHunt Daily listed FocuSee 2.0 among early-May Product Hunt launches, positioning it as a way to record screens and get polished demos and tutorials.",
           "Setapp’s page says FocuSee can capture screen, webcam, and voice, then add zooms, cursor highlights, backgrounds, overlays, captions, denoise, and trims.",
@@ -568,6 +633,14 @@ const archiveEn = [
         title: "Magic Patterns Agent 2.0 generates interactive product prototypes from prompts",
         dek:
           "Magic Patterns is an AI design agent for product teams: describe a feature, upload screenshots, or reference an existing design system, and it can generate interactive mockups.",
+        media: {
+          type: "image",
+          src: "https://www.magicpatterns.com/marketing/YourComponents.png",
+          alt: "Magic Patterns prototype screenshot",
+          title: "Prototype preview",
+          caption: "Generate product screens from existing components and design systems",
+          href: "https://www.magicpatterns.com/"
+        },
         details: [
           "Product Hunt describes Agent 2.0 as an AI design agent that goes from idea to production, using existing styles and design systems.",
           "Magic Patterns says PMs, designers, and founders use it to rapidly prototype and create interactive mockups for engineering handoff.",
@@ -588,6 +661,15 @@ const archiveEn = [
         title: "LTX Desktop is a free, open-source local AI video editor",
         dek:
           "LTX Desktop combines AI video generation and editing in a local desktop app, with no cloud dependency and no per-generation fees.",
+        media: {
+          type: "video",
+          src: "https://cdn.prod.website-files.com/68872d15af29880764eac4aa/69a9852c61140d7cfbc32175_b4129705569c6d9fa65b5f6730ceefe7_LTX-desktop-Hero_1_frame.avif",
+          alt: "LTX Desktop video editor screenshot",
+          title: "Video workflow preview",
+          caption: "A local interface for video generation, editing, and model workflows",
+          href: "https://ltx.io/ltx-desktop",
+          cta: "Open product demo"
+        },
         details: [
           "LTX says Desktop is built entirely on the LTX engine and offers a local video generation and editing workspace for macOS and Windows.",
           "Its key pitch is no cloud, no per-generation fees, and prompts, footage, and outputs staying on your machine.",
@@ -858,12 +940,89 @@ function isTermSection(section) {
   return section === "每日词条" || section === "AI Term";
 }
 
+const sectionThemeMap = {
+  "今日重点": "top",
+  "Top Stories": "top",
+  "投融资信息": "funding",
+  "Funding Watch": "funding",
+  "开源项目": "open-source",
+  "Open Source": "open-source",
+  "AI产品推荐": "product",
+  "AI Product Picks": "product",
+  "机构报告": "report",
+  "Research Reports": "report",
+  "职业雷达": "career",
+  "Career Radar": "career"
+};
+
+const sectionCodeMap = {
+  all: "ALL",
+  top: "NEWS",
+  funding: "FUND",
+  "open-source": "OSS",
+  product: "TOOL",
+  report: "REPORT",
+  career: "CAREER"
+};
+
+function getSectionKey(section) {
+  if (section === allLabel()) return "all";
+  return sectionThemeMap[section] || "default";
+}
+
+function getSectionCode(section) {
+  return sectionCodeMap[getSectionKey(section)] || "SIGNAL";
+}
+
+function renderStoryMedia(item) {
+  if (!item.media || !item.media.src) return null;
+  const media = item.media;
+  const shell = document.createElement(media.href ? "a" : "div");
+  shell.className = `story-media is-${media.type || "image"}`;
+  if (media.href) {
+    shell.href = media.href;
+    shell.target = "_self";
+    shell.rel = "noopener";
+    shell.setAttribute("aria-label", media.title || item.title);
+  }
+
+  const image = document.createElement("img");
+  image.src = media.src;
+  image.alt = media.alt || item.title;
+  image.loading = "lazy";
+  image.decoding = "async";
+  shell.appendChild(image);
+
+  const overlay = document.createElement("div");
+  overlay.className = "media-overlay";
+  const title = document.createElement("span");
+  title.className = "media-title";
+  title.textContent = media.title || getSectionCode(item.section);
+  const caption = document.createElement("span");
+  caption.className = "media-caption";
+  caption.textContent = media.caption || "";
+  overlay.append(title, caption);
+  shell.appendChild(overlay);
+
+  if (media.type === "video" || media.cta) {
+    const badge = document.createElement("span");
+    badge.className = "media-badge";
+    badge.textContent = media.cta || (currentLang === "en" ? "Open demo" : "打开演示");
+    shell.appendChild(badge);
+  }
+
+  return shell;
+}
+
 function itemMatches(item, query) {
   if (!query) return true;
   const detailText = (item.details || []).flatMap((detail) => {
     if (typeof detail === "string") return [detail];
     return [detail.summary, detail.expanded];
   });
+  const mediaText = item.media
+    ? [item.media.title, item.media.caption, item.media.alt, item.media.href, item.media.cta]
+    : [];
   const haystack = [
     item.section,
     item.priority,
@@ -871,6 +1030,7 @@ function itemMatches(item, query) {
     item.dek,
     item.why,
     ...detailText,
+    ...mediaText,
     ...(item.links || []).flat()
   ]
     .map(normalize)
@@ -1042,6 +1202,7 @@ function renderTabs(issue) {
       const button = document.createElement("button");
       button.type = "button";
       button.className = `tab-button${section === activeSection ? " is-active" : ""}`;
+      button.dataset.sectionKey = getSectionKey(section);
       button.textContent = section;
       button.addEventListener("click", () => {
         activeSection = section;
@@ -1071,14 +1232,19 @@ function renderContent() {
 
   filtered.forEach((item) => {
     const node = storyTemplate.content.firstElementChild.cloneNode(true);
+    node.dataset.sectionKey = getSectionKey(item.section);
+    node.dataset.sectionCode = getSectionCode(item.section);
     if (["投融资信息", "机构报告", "职业雷达", "Funding Watch", "Research Reports", "Career Radar"].includes(item.section)) {
       node.classList.add("is-wide");
     }
+    node.querySelector(".section-code").textContent = getSectionCode(item.section);
     node.querySelector(".section-label").textContent = item.section;
     node.querySelector(".priority").textContent = item.priority || "";
     node.querySelector("h3").textContent = item.title;
     node.querySelector(".dek").textContent = item.dek;
     const details = node.querySelector(".details");
+    const media = renderStoryMedia(item);
+    if (media) details.before(media);
     (item.details || []).forEach((detail) => {
       if (typeof detail === "string") {
         const line = document.createElement("div");
