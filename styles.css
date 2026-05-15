@@ -239,14 +239,24 @@ input:focus {
 .source-link-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  column-gap: 8px;
+  row-gap: 6px;
 }
 
 .source-method-links a {
+  display: inline-flex;
+  align-items: center;
+  padding-right: 8px;
+  border-right: 1px solid rgba(100, 116, 139, 0.34);
   color: var(--teal);
   font-size: var(--text-label);
   font-weight: 600;
   text-decoration: none;
+}
+
+.source-method-links a:last-child {
+  padding-right: 0;
+  border-right: 0;
 }
 
 .source-method-links a:hover {

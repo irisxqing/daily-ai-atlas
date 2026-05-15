@@ -1071,6 +1071,7 @@ const sourceGroups = [
       ["TLDR AI", "https://tldr.tech/ai"],
       ["The Batch", "https://www.deeplearning.ai/thebatch/"],
       ["Import AI", "https://jack-clark.net/"],
+      ["The Rundown AI", "https://www.therundown.ai/"],
       ["Latent Space", "https://www.latent.space/"],
       ["The Neuron", "https://www.theneurondaily.com/"],
       ["Superhuman AI", "https://www.superhuman.ai/"],
