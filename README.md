@@ -1,8 +1,8 @@
-# Daily AI Atlas
+# AI Daily Atlas
 
-Daily AI Atlas is a bilingual AI newsletter website for people who want to catch global AI signals early, without drowning in noisy feeds.
+AI Daily Atlas is a bilingual AI newsletter website for people who want to catch global AI signals early, without drowning in noisy feeds.
 
-Daily AI Atlas 是一个中英双语 AI newsletter 网站，帮助关注 AI 的战略、产品、运营和研究型读者，第一时间抓住全球 AI 信号，而不是被碎片信息淹没。
+AI Daily Atlas 是一个中英双语 AI newsletter 网站，帮助关注 AI 的战略、产品、运营和研究型读者，第一时间抓住全球 AI 信号，而不是被碎片信息淹没。
 
 ## Why I Built This / 为什么做这个
 
@@ -18,7 +18,7 @@ Website: [https://irisxqing.github.io/daily-ai-atlas/](https://irisxqing.github.
 
 ## Screenshot / 首页截图
 
-![Daily AI Atlas homepage](./assets/screenshot-home-20260515.png)
+![AI Daily Atlas homepage](./assets/screenshot-ai-daily-atlas-20260515.png)
 
 ## Features / 功能
 
@@ -79,6 +79,23 @@ http://localhost:8765/
 The site is fully static. Daily issues live inside `app.js`, while layout and interactions are handled by `index.html`, `styles.css`, and `app.js`.
 
 这是一个纯静态网站。日报内容主要存放在 `app.js`，页面结构和交互分别由 `index.html`、`styles.css` 和 `app.js` 处理。
+
+## Broadcast Generation / 每日口播稿生成
+
+Generate a Chinese broadcast script from the latest issue in `app.js`:
+
+```bash
+node tools/generate-broadcast.mjs
+```
+
+Generate a specific issue or English version:
+
+```bash
+node tools/generate-broadcast.mjs --date 2026-05-15 --out broadcasts/2026-05-15-zh.md
+node tools/generate-broadcast.mjs --lang en --date 2026-05-15 --stdout
+```
+
+生成结果会保存到 `broadcasts/YYYY-MM-DD-zh.md`，可以直接作为播客、短视频口播、微信群语音或 LinkedIn 摘要的底稿。
 
 ## Roadmap / 接下来想做
 

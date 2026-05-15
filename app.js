@@ -1,7 +1,7 @@
 const archiveZh = [
   {
     date: "2026-05-15",
-    title: "Daily AI Atlas",
+    title: "AI Daily Atlas",
     meta: "2026年5月15日",
     headline: "从模型能力到真实落地",
     summary:
@@ -239,7 +239,7 @@ const archiveZh = [
           "它支持网页、YouTube、播客、PDF、书籍、笔记等多种内容类型，适合把每天看到的 AI 新闻、报告、产品页和长文沉淀起来。",
           "比较有价值的是连接能力：Recall 会把新保存的内容和既有知识自动关联，并在浏览时重新浮现相关内容，减少“看过但想不起来”的损耗。",
           "它还支持和自己的知识库对话，并可以选择不同 AI 模型；这让它更像一个研究型第二大脑，而不是普通书签工具。",
-          "如果 Daily AI Atlas 以后要做个人版归档，Recall 这类产品很值得对标：每天看信息不是目的，把信息变成可复用判断才是目的。"
+          "如果 AI Daily Atlas 以后要做个人版归档，Recall 这类产品很值得对标：每天看信息不是目的，把信息变成可复用判断才是目的。"
         ],
         why:
           "它适合你的信息消费方式：既要快速追踪 AI 信号，又不希望日报看完就消失。Recall 的价值在于把新闻、报告、产品线索变成长期可查询的行业记忆。",
@@ -423,7 +423,7 @@ const archiveZh = [
   },
   {
     date: "2026-05-14",
-    title: "Daily AI Atlas",
+    title: "AI Daily Atlas",
     meta: "历史样例 · 可由每日任务追加",
     headline: "历史日报占位",
     summary:
@@ -451,7 +451,7 @@ const archiveZh = [
 const archiveEn = [
   {
     date: "2026-05-15",
-    title: "Daily AI Atlas",
+    title: "AI Daily Atlas",
     meta: "May 15, 2026",
     headline: "From model capability to real-world deployment",
     summary:
@@ -689,7 +689,7 @@ const archiveEn = [
           "It supports many content types including web pages, YouTube, podcasts, PDFs, books, and notes, making it relevant for daily AI news, reports, product pages, and long-form reading.",
           "Its interesting edge is connection: Recall links new saves to existing knowledge and can resurface related material as you browse.",
           "Users can chat with their knowledge base and choose across AI models, which makes it feel closer to a research second brain than a simple reading queue.",
-          "If Daily AI Atlas evolves into a personal archive, products like Recall are useful references: the goal is not just to consume signals, but to turn them into reusable judgment."
+          "If AI Daily Atlas evolves into a personal archive, products like Recall are useful references: the goal is not just to consume signals, but to turn them into reusable judgment."
         ],
         why:
           "Recall fits your information workflow: you want fast AI signal tracking, but the real value comes when today’s links become a searchable long-term memory for company, product, and market themes.",
@@ -872,7 +872,7 @@ const archiveEn = [
   },
   {
     date: "2026-05-14",
-    title: "Daily AI Atlas",
+    title: "AI Daily Atlas",
     meta: "Historical sample · can be appended by the daily automation",
     headline: "Historical issue placeholder",
     summary:
