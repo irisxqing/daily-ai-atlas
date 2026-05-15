@@ -2,7 +2,7 @@ const archiveZh = [
   {
     date: "2026-05-15",
     title: "Daily AI Atlas",
-    meta: "2026年5月15日 · 深圳/香港视角",
+    meta: "2026年5月15日",
     headline: "从模型能力到真实落地",
     summary:
       "今天的 AI 主线是落地：人形机器人开始跑完整班次，模型公司转向企业部署，AI 正从聊天框进入实时交互和操作系统层，中国开源模型继续压低使用成本，开源 Agent、有趣产品和机构报告则提供了更适合长期跟踪的信号。",
@@ -468,7 +468,7 @@ const archiveEn = [
   {
     date: "2026-05-15",
     title: "Daily AI Atlas",
-    meta: "May 15, 2026 · Shenzhen / Hong Kong lens",
+    meta: "May 15, 2026",
     headline: "From model capability to real-world deployment",
     summary:
       "Today’s AI signal is deployment: humanoid robots are testing full shifts, model labs are moving into enterprise implementation, AI is moving from chat boxes into real-time interaction and operating-system layers, Chinese open models keep pushing costs down, and open-source agents, product picks, and institutional reports offer longer-term signals to track.",
