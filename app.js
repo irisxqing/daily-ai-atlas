@@ -569,6 +569,7 @@ const uiText = {
     dateSearch: "搜索归档",
     archiveTags: "归档标签",
     contentSearch: "搜索当前日报",
+    refreshNote: "每天 9:30 刷新最新 AI 消息",
     datePlaceholder: "搜索日期、公司、关键词",
     contentPlaceholder: "例如 DeepSeek、机器人、RAG、香港岗位",
     noDates: "没有匹配的日期。",
@@ -583,6 +584,7 @@ const uiText = {
     dateSearch: "Search archive",
     archiveTags: "Archive tags",
     contentSearch: "Search current issue",
+    refreshNote: "Latest AI signals refresh daily at 9:30",
     datePlaceholder: "Search dates, companies, keywords",
     contentPlaceholder: "e.g. DeepSeek, robotics, RAG, Hong Kong roles",
     noDates: "No matching dates.",
@@ -606,6 +608,7 @@ const languageSwitch = document.querySelector("#languageSwitch");
 const languageLabel = document.querySelector("#languageLabel");
 const dateSearchLabel = document.querySelector("#dateSearchLabel");
 const archiveTagsLabel = document.querySelector("#archiveTagsLabel");
+const refreshNote = document.querySelector("#refreshNote");
 const sectionTabs = document.querySelector("#sectionTabs");
 const contentSearch = document.querySelector("#contentSearch");
 const contentSearchLabel = document.querySelector("#contentSearchLabel");
@@ -930,6 +933,7 @@ function renderLanguageSwitch() {
 function renderChrome() {
   document.documentElement.lang = currentLang === "en" ? "en" : "zh-CN";
   languageLabel.textContent = t("language");
+  refreshNote.textContent = t("refreshNote");
   dateSearchLabel.textContent = t("dateSearch");
   archiveTagsLabel.textContent = t("archiveTags");
   contentSearchLabel.textContent = t("contentSearch");
