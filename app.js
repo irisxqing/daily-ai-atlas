@@ -556,8 +556,8 @@ const archiveEn = [
 ];
 
 const sectionOrders = {
-  zh: ["全部", "今日重点", "投融资信息", "开源项目", "机构报告", "每日词条", "职业雷达"],
-  en: ["All", "Top Stories", "Funding Watch", "Open Source", "Research Reports", "AI Term", "Career Radar"]
+  zh: ["全部", "今日重点", "投融资信息", "开源项目", "机构报告", "职业雷达"],
+  en: ["All", "Top Stories", "Funding Watch", "Open Source", "Research Reports", "Career Radar"]
 };
 
 const uiText = {
@@ -570,8 +570,9 @@ const uiText = {
     archiveTags: "归档标签",
     contentSearch: "搜索当前日报",
     refreshNote: "每天 9:30 刷新最新 AI 消息",
+    termLabel: "今日 AI 词条",
     datePlaceholder: "搜索日期、公司、关键词",
-    contentPlaceholder: "例如 DeepSeek、机器人、RAG、香港岗位",
+    contentPlaceholder: "例如 DeepSeek、机器人、投融资、香港岗位",
     noDates: "没有匹配的日期。",
     noContent: "没有找到匹配内容。换个关键词试试。",
     copyDone: "已复制"
@@ -585,8 +586,9 @@ const uiText = {
     archiveTags: "Archive tags",
     contentSearch: "Search current issue",
     refreshNote: "Latest AI signals refresh daily at 9:30",
+    termLabel: "AI Term of the Day",
     datePlaceholder: "Search dates, companies, keywords",
-    contentPlaceholder: "e.g. DeepSeek, robotics, RAG, Hong Kong roles",
+    contentPlaceholder: "e.g. DeepSeek, robotics, funding, Hong Kong roles",
     noDates: "No matching dates.",
     noContent: "No matching content. Try another keyword.",
     copyDone: "Copied"
@@ -614,6 +616,7 @@ const contentSearch = document.querySelector("#contentSearch");
 const contentSearchLabel = document.querySelector("#contentSearchLabel");
 const contentGrid = document.querySelector("#contentGrid");
 const issueMeta = document.querySelector("#issueMeta");
+const termSpotlight = document.querySelector("#termSpotlight");
 const heroHeadline = document.querySelector("#heroHeadline");
 const heroSummary = document.querySelector("#heroSummary");
 const copyLinkButton = document.querySelector("#copyLinkButton");
@@ -633,6 +636,10 @@ function t(key) {
 
 function allLabel() {
   return t("all");
+}
+
+function isTermSection(section) {
+  return section === "每日词条" || section === "AI Term";
 }
 
 function itemMatches(item, query) {
@@ -663,7 +670,9 @@ function getIssue() {
 function getArchiveTags() {
   const tags = new Set([allLabel()]);
   getArchive().forEach((issue) => {
-    issue.items.forEach((item) => tags.add(item.section));
+    issue.items.forEach((item) => {
+      if (!isTermSection(item.section)) tags.add(item.section);
+    });
   });
   return [allLabel(), ...Array.from(tags).filter((tag) => tag !== allLabel()).sort()];
 }
@@ -807,7 +816,10 @@ function renderDates() {
 
 function renderTabs(issue) {
   sectionTabs.innerHTML = "";
-  const available = new Set(issue.items.map((item) => item.section));
+  const available = new Set(issue.items.filter((item) => !isTermSection(item.section)).map((item) => item.section));
+  if (activeSection !== allLabel() && !available.has(activeSection)) {
+    activeSection = allLabel();
+  }
   sectionOrders[currentLang]
     .filter((section) => section === allLabel() || available.has(section))
     .forEach((section) => {
@@ -828,6 +840,7 @@ function renderContent() {
   const issue = getIssue();
   contentGrid.innerHTML = "";
   const filtered = issue.items.filter((item) => {
+    if (isTermSection(item.section)) return false;
     const sectionMatch = activeSection === allLabel() || item.section === activeSection;
     return sectionMatch && itemMatches(item, contentQuery);
   });
@@ -842,7 +855,7 @@ function renderContent() {
 
   filtered.forEach((item) => {
     const node = storyTemplate.content.firstElementChild.cloneNode(true);
-    if (["投融资信息", "机构报告", "每日词条", "职业雷达", "Funding Watch", "Research Reports", "AI Term", "Career Radar"].includes(item.section)) {
+    if (["投融资信息", "机构报告", "职业雷达", "Funding Watch", "Research Reports", "Career Radar"].includes(item.section)) {
       node.classList.add("is-wide");
     }
     node.querySelector(".section-label").textContent = item.section;
@@ -896,6 +909,53 @@ function renderContent() {
   });
 }
 
+function renderTermSpotlight(issue) {
+  const term = issue.items.find((item) => isTermSection(item.section));
+  termSpotlight.innerHTML = "";
+  termSpotlight.hidden = !term;
+  if (!term) return;
+
+  const intro = document.createElement("div");
+  const kicker = document.createElement("p");
+  kicker.className = "term-kicker";
+  kicker.textContent = t("termLabel");
+  const title = document.createElement("h3");
+  title.className = "term-title";
+  title.textContent = term.title;
+  intro.append(kicker, title);
+
+  const body = document.createElement("div");
+  const dek = document.createElement("p");
+  dek.className = "term-dek";
+  dek.textContent = term.dek;
+  const points = document.createElement("div");
+  points.className = "term-points";
+  (term.details || []).forEach((detail) => {
+    const line = document.createElement("div");
+    line.className = "term-point";
+    line.textContent = typeof detail === "string" ? detail : detail.summary;
+    points.appendChild(line);
+  });
+  const why = document.createElement("p");
+  why.className = "term-why";
+  why.textContent = term.why;
+  body.append(dek, points, why);
+
+  if (term.links && term.links.length) {
+    const links = document.createElement("div");
+    links.className = "term-links";
+    term.links.forEach(([label, href]) => {
+      const link = document.createElement("a");
+      link.href = href;
+      link.textContent = label;
+      links.appendChild(link);
+    });
+    body.appendChild(links);
+  }
+
+  termSpotlight.append(intro, body);
+}
+
 function renderHeader(issue) {
   issueMeta.textContent = issue.meta;
   heroHeadline.textContent = issue.headline;
@@ -944,6 +1004,7 @@ function render() {
   const issue = getIssue();
   renderChrome();
   renderHeader(issue);
+  renderTermSpotlight(issue);
   renderArchiveTags();
   renderDates();
   renderTabs(issue);
@@ -960,6 +1021,7 @@ dateSearch.addEventListener("input", (event) => {
   renderArchiveTags();
   renderDates();
   renderHeader(getIssue());
+  renderTermSpotlight(getIssue());
   renderTabs(getIssue());
   renderContent();
 });
