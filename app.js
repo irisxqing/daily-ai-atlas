@@ -85,6 +85,28 @@ const archiveZh = [
         links: [["Google DeepMind 官方", "https://deepmind.google/blog/alphaevolve-impact/"]]
       },
       {
+        section: "投融资信息",
+        priority: "Mega round",
+        title: "Recursive Superintelligence 完成 6.5 亿美元融资",
+        dek:
+          "钛媒体早报提到 Recursive Superintelligence 获得 6.5 亿美元融资，这类“刚出场就巨额融资”的 AI 公司，值得单独放进投融资观察里看。",
+        details: [
+          "融资规模：多家媒体报道 Recursive Superintelligence 完成超过 6.5 亿美元融资，投后估值约 46.5 亿美元。",
+          "投资方：本轮由 GV 和 Greycroft 领投，NVIDIA、AMD Ventures 等产业方参与，说明资本和算力公司都在押注“AI 自动做 AI 研究”这个方向。",
+          "团队背景：公开报道提到创始团队来自 Google DeepMind、OpenAI、Meta AI、Salesforce AI 等机构，核心人物包括 Richard Socher 和田渊栋等 AI 研究者。",
+          "技术方向：recursive self-improvement 可以理解为“让 AI 自动发现自己的短板、设计实验、改进模型”，比普通聊天机器人更接近基础研究路线。",
+          "风险提示：钛媒体这篇内容标注为 AI 生成，适合作为线索；融资金额和投资方已被 SCMP、TechCrunch、MarketScreener 等来源交叉报道，但技术成果仍需要继续观察。"
+        ],
+        why:
+          "这条融资的意义不只是金额大，而是资本正在从“更大的通用模型”继续外溢到“自动化科研、自动改进模型、AI for AI”这类更底层的 AGI 路线。对产业侧来说，短期未必有产品可用，但它会影响人才、算力和资本向哪些方向集中。",
+        links: [
+          ["钛媒体 Edge AI Daily", "https://www.tmtpost.com/7989030.html"],
+          ["SCMP 报道", "https://www.scmp.com/tech/big-tech/article/3353576/ex-meta-chinese-star-researcher-joins-race-self-improving-ai-us46b-start"],
+          ["TechCrunch 访谈", "https://techcrunch.com/2026/05/14/what-happens-when-ai-starts-building-itself/"],
+          ["MarketScreener / S&P Capital IQ", "https://uk.marketscreener.com/news/recursive-superintelligence-ltd-announced-that-it-has-received-650-million-in-funding-from-gv-mana-ce7f5bdcd18df423"]
+        ]
+      },
+      {
         section: "开源项目",
         priority: "新",
         title: "OpenHuman：一个试图成为“数字分身”的开源 Agent",
@@ -342,6 +364,28 @@ const archiveEn = [
         links: [["Google DeepMind", "https://deepmind.google/blog/alphaevolve-impact/"]]
       },
       {
+        section: "Funding Watch",
+        priority: "Mega round",
+        title: "Recursive Superintelligence raised $650M",
+        dek:
+          "TMTPost’s Edge AI Daily flagged Recursive Superintelligence’s $650 million raise. This kind of massive launch-stage financing deserves a separate funding lens.",
+        details: [
+          "Funding size: multiple outlets reported that Recursive Superintelligence raised over $650 million at a post-money valuation of roughly $4.65 billion.",
+          "Investors: the round was led by GV and Greycroft, with participation from NVIDIA and AMD Ventures, showing interest from both venture capital and compute-infrastructure players.",
+          "Team background: public reports point to founders and researchers from Google DeepMind, OpenAI, Meta AI, Salesforce AI, and related AI labs, including Richard Socher and Yuandong Tian.",
+          "Technical direction: recursive self-improvement means AI systems that can identify their own weaknesses, run experiments, and improve themselves, closer to frontier research than consumer chatbot products.",
+          "Source caution: the TMTPost article is labeled AI-generated, so it should be treated as a signal source; the financing amount and investors are also reported by SCMP, TechCrunch, and MarketScreener, while concrete technical results still need watching."
+        ],
+        why:
+          "The signal is not just the size of the round. Capital is moving from bigger general models into automated scientific discovery, model self-improvement, and 'AI for AI' research paths. It may not create a usable product immediately, but it can shape where talent, compute, and capital concentrate next.",
+        links: [
+          ["TMTPost Edge AI Daily", "https://www.tmtpost.com/7989030.html"],
+          ["SCMP", "https://www.scmp.com/tech/big-tech/article/3353576/ex-meta-chinese-star-researcher-joins-race-self-improving-ai-us46b-start"],
+          ["TechCrunch", "https://techcrunch.com/2026/05/14/what-happens-when-ai-starts-building-itself/"],
+          ["MarketScreener / S&P Capital IQ", "https://uk.marketscreener.com/news/recursive-superintelligence-ltd-announced-that-it-has-received-650-million-in-funding-from-gv-mana-ce7f5bdcd18df423"]
+        ]
+      },
+      {
         section: "Open Source",
         priority: "New",
         title: "OpenHuman: an open-source agent trying to become a digital twin",
@@ -512,8 +556,8 @@ const archiveEn = [
 ];
 
 const sectionOrders = {
-  zh: ["全部", "今日重点", "开源项目", "机构报告", "每日词条", "职业雷达"],
-  en: ["All", "Top Stories", "Open Source", "Research Reports", "AI Term", "Career Radar"]
+  zh: ["全部", "今日重点", "投融资信息", "开源项目", "机构报告", "每日词条", "职业雷达"],
+  en: ["All", "Top Stories", "Funding Watch", "Open Source", "Research Reports", "AI Term", "Career Radar"]
 };
 
 const uiText = {
@@ -796,7 +840,7 @@ function renderContent() {
 
   filtered.forEach((item) => {
     const node = storyTemplate.content.firstElementChild.cloneNode(true);
-    if (["机构报告", "每日词条", "职业雷达", "Research Reports", "AI Term", "Career Radar"].includes(item.section)) {
+    if (["投融资信息", "机构报告", "每日词条", "职业雷达", "Funding Watch", "Research Reports", "AI Term", "Career Radar"].includes(item.section)) {
       node.classList.add("is-wide");
     }
     node.querySelector(".section-label").textContent = item.section;
