@@ -18,7 +18,7 @@ Website: [https://irisxqing.github.io/daily-ai-atlas/](https://irisxqing.github.
 
 ## Screenshot / 首页截图
 
-![Daily AI Atlas homepage](./assets/screenshot-home.png)
+![Daily AI Atlas homepage](./assets/screenshot-home-20260515.png)
 
 ## Features / 功能
 
