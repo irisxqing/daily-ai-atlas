@@ -1,7 +1,7 @@
 const archive = [
   {
     date: "2026-05-15",
-    title: "AI公司早报",
+    title: "Daily AI Atlas",
     meta: "2026年5月15日 · 深圳/香港视角",
     headline: "从模型能力到真实落地",
     summary:
@@ -230,7 +230,7 @@ const archive = [
   },
   {
     date: "2026-05-14",
-    title: "AI公司早报",
+    title: "Daily AI Atlas",
     meta: "历史样例 · 可由每日任务追加",
     headline: "历史日报占位",
     summary:

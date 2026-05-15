@@ -1,6 +1,6 @@
-# AI Daily Archive
+# Daily AI Atlas
 
-本项目是一个纯静态的 AI Daily 网页归档，可以托管到 GitHub Pages、Vercel、Netlify 或 Cloudflare Pages。
+本项目是一个纯静态的 Daily AI Atlas 网页归档，用来沉淀每日 AI 新闻、开源项目、机构报告、AI 词条和职业雷达，可以托管到 GitHub Pages、Vercel、Netlify 或 Cloudflare Pages。
 
 ## 本地预览
 
