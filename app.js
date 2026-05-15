@@ -14,12 +14,14 @@ const archiveZh = [
         dek:
           "人形机器人公司 Figure 展示了一组机器人连续完成包裹分拣任务，试图证明机器人不只是演示视频里的角色，而是可以接近真实上班节奏。",
         media: {
-          type: "image",
-          src: "https://images.ctfassets.net/qx5k8y1u9drj/5yM1thk8o5swuduSTOMRHf/6be7879c59f758783472f06b28a6610c/all_hands_table.jpg?fm=webp&q=70&w=3840",
-          alt: "Figure robot production rate chart",
-          title: "Robot operations signal",
-          caption: "Figure 官方生产节奏图：机器人从实验室样机进入规模化运营",
-          href: "https://www.figure.ai/news/ramping-figure-03-production"
+          type: "video",
+          embed: "https://www.youtube.com/embed/luU57hMhkak",
+          src: "https://i.ytimg.com/vi/luU57hMhkak/hqdefault.jpg",
+          alt: "Figure robot livestream thumbnail",
+          title: "Robot shift video",
+          caption: "Figure 机器人 8 小时包裹分拣直播/回放",
+          href: "https://www.youtube.com/watch?v=luU57hMhkak",
+          cta: "打开视频"
         },
         details: [
           "Figure 成立于 2022 年，主攻通用人形机器人，投资方包括 Microsoft、NVIDIA、OpenAI Startup Fund、Intel 和 Jeff Bezos。",
@@ -433,12 +435,14 @@ const archiveEn = [
         dek:
           "Humanoid robotics company Figure showed robots running a package-sorting workflow for a full shift, trying to prove that robots can move beyond demos and toward operational labor.",
         media: {
-          type: "image",
-          src: "https://images.ctfassets.net/qx5k8y1u9drj/5yM1thk8o5swuduSTOMRHf/6be7879c59f758783472f06b28a6610c/all_hands_table.jpg?fm=webp&q=70&w=3840",
-          alt: "Figure robot production rate chart",
-          title: "Robot operations signal",
-          caption: "Figure's production-rate chart shows humanoids moving from prototype to scaled operations.",
-          href: "https://www.figure.ai/news/ramping-figure-03-production"
+          type: "video",
+          embed: "https://www.youtube.com/embed/luU57hMhkak",
+          src: "https://i.ytimg.com/vi/luU57hMhkak/hqdefault.jpg",
+          alt: "Figure robot livestream thumbnail",
+          title: "Robot shift video",
+          caption: "Figure's 8-hour package-sorting robot livestream / replay",
+          href: "https://www.youtube.com/watch?v=luU57hMhkak",
+          cta: "Open video"
         },
         details: [
           "Figure was founded in 2022 and focuses on general-purpose humanoid robots backed by investors such as Microsoft, NVIDIA, OpenAI Startup Fund, Intel, and Jeff Bezos.",
@@ -977,37 +981,81 @@ function getSectionCode(section) {
 function renderStoryMedia(item) {
   if (!item.media || !item.media.src) return null;
   const media = item.media;
-  const shell = document.createElement(media.href ? "a" : "div");
+  const hasInlineVideo = media.type === "video" && media.embed;
+  const shell = document.createElement(hasInlineVideo || !media.href ? "div" : "a");
   shell.className = `story-media is-${media.type || "image"}`;
   if (media.href) {
-    shell.href = media.href;
-    shell.target = "_self";
-    shell.rel = "noopener";
-    shell.setAttribute("aria-label", media.title || item.title);
+    shell.dataset.href = media.href;
+    if (shell.tagName === "A") {
+      shell.href = media.href;
+      shell.target = "_self";
+      shell.rel = "noopener";
+      shell.setAttribute("aria-label", media.title || item.title);
+    }
   }
 
-  const image = document.createElement("img");
-  image.src = media.src;
-  image.alt = media.alt || item.title;
-  image.loading = "lazy";
-  image.decoding = "async";
-  shell.appendChild(image);
+  if (hasInlineVideo) {
+    const frame = document.createElement("iframe");
+    frame.src = media.embed;
+    frame.title = media.title || item.title;
+    frame.loading = "lazy";
+    frame.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    frame.allowFullscreen = true;
+    shell.appendChild(frame);
+  } else {
+    const image = document.createElement("img");
+    image.src = media.src;
+    image.alt = media.alt || item.title;
+    image.loading = "lazy";
+    image.decoding = "async";
+    image.addEventListener("error", () => {
+      shell.classList.add("is-broken");
+      image.remove();
+    });
+    shell.appendChild(image);
+  }
 
-  const overlay = document.createElement("div");
-  overlay.className = "media-overlay";
-  const title = document.createElement("span");
-  title.className = "media-title";
-  title.textContent = media.title || getSectionCode(item.section);
-  const caption = document.createElement("span");
-  caption.className = "media-caption";
-  caption.textContent = media.caption || "";
-  overlay.append(title, caption);
-  shell.appendChild(overlay);
+  const fallback = document.createElement("div");
+  fallback.className = "media-fallback";
+  const fallbackTitle = document.createElement("span");
+  fallbackTitle.className = "media-title";
+  fallbackTitle.textContent = media.title || getSectionCode(item.section);
+  const fallbackCaption = document.createElement("span");
+  fallbackCaption.className = "media-caption";
+  fallbackCaption.textContent = media.caption || "";
+  fallback.append(fallbackTitle, fallbackCaption);
+  shell.appendChild(fallback);
 
-  if (media.type === "video" || media.cta) {
+  if (!hasInlineVideo) {
+    const overlay = document.createElement("div");
+    overlay.className = "media-overlay";
+    const title = document.createElement("span");
+    title.className = "media-title";
+    title.textContent = media.title || getSectionCode(item.section);
+    const caption = document.createElement("span");
+    caption.className = "media-caption";
+    caption.textContent = media.caption || "";
+    overlay.append(title, caption);
+    shell.appendChild(overlay);
+  }
+
+  if (media.type === "video" || media.cta || (hasInlineVideo && media.href)) {
     const badge = document.createElement("span");
     badge.className = "media-badge";
     badge.textContent = media.cta || (currentLang === "en" ? "Open demo" : "打开演示");
+    if (hasInlineVideo && media.href) {
+      badge.setAttribute("role", "link");
+      badge.tabIndex = 0;
+      badge.addEventListener("click", () => {
+        window.location.href = media.href;
+      });
+      badge.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          window.location.href = media.href;
+        }
+      });
+    }
     shell.appendChild(badge);
   }
 
