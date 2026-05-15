@@ -1804,10 +1804,10 @@ function renderSourceMethod() {
     sourceMethodLinks.appendChild(sourceGroup);
   });
 
-  const approach = document.createElement("div");
+  const approach = document.createElement("details");
   approach.className = "source-approach";
 
-  const approachTitle = document.createElement("strong");
+  const approachTitle = document.createElement("summary");
   approachTitle.textContent = currentLang === "en" ? "Approach" : "搜集方法论";
   approach.appendChild(approachTitle);
 
