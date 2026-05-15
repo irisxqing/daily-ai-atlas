@@ -1,59 +1,71 @@
 # Daily AI Atlas
 
-本项目是一个纯静态的 Daily AI Atlas 网页归档，用来沉淀每日 AI 新闻、开源项目、机构报告、AI 词条和职业雷达，可以托管到 GitHub Pages、Vercel、Netlify 或 Cloudflare Pages。
+一句话说明：Daily AI Atlas 是一个面向 AI 从业者、战略/产品/运营同学和好奇读者的 AI newsletter 网站，帮助你每天快速看懂全球 AI 新闻、产品、开源项目、机构报告和职业机会。
 
-## 本地预览
+## Demo
+
+线上地址：[https://daily-ai-atlas.vercel.app](https://daily-ai-atlas.vercel.app)
+
+GitHub Pages 镜像：[https://irisxqing.github.io/daily-ai-atlas/](https://irisxqing.github.io/daily-ai-atlas/)
+
+## Screenshot
+
+![Daily AI Atlas homepage](./assets/screenshot-home.png)
+
+## Features
+
+- AI 生成/整理 newsletter：按今日重点、投融资、开源项目、AI 产品推荐、机构报告、职业雷达等板块组织。
+- 邮件版摘要：网页内生成可复制的 email brief，适合和每日自动任务或邮件发送工具衔接。
+- 文章归档：按日期保存历史日报，支持日历切换和历史回看。
+- 主题聚合：按机器人、AI 产品、投融资、开源/Agent、机构报告、职业机会等主题筛选内容。
+- 原始来源精选：每天自动挑出 3 个最值得打开的原文链接。
+- 来源可信度标记：为内容标注官方确认、多源交叉、社区热度、机构报告、需继续验证等信号。
+- 双语阅读：默认简体中文，支持英文切换。
+- 图文/视频卡片：支持产品截图、GitHub preview、视频嵌入和图片加载失败兜底。
+- 职业雷达：聚合 AI strategy / AI transformation / AI product strategy 等非纯技术岗位方向，并总结能力缺口。
+- 静态部署：无需后端即可部署到 Vercel、GitHub Pages 或 Netlify。
+
+## Tech Stack
+
+- HTML / CSS / Vanilla JavaScript
+- Static data archive in `app.js`
+- Vercel for production hosting
+- GitHub Pages as mirror hosting
+- Codex automation for daily content generation and publishing workflow
+- Python `http.server` for local preview
+
+## Why I Built This
+
+AI 新闻太多、太快，也太容易变成碎片化焦虑。我想要的不是又一个信息流，而是一张每天更新的 AI 地图：既能快速扫到今天发生了什么，也能沉淀长期趋势、产品灵感、机构观点和职业机会。Daily AI Atlas 就是为这个使用场景做的。
+
+## Getting Started
+
+Clone the repo and run a local static server:
 
 ```bash
+git clone git@github.com:irisxqing/daily-ai-atlas.git
+cd daily-ai-atlas
 python3 -m http.server 8765
 ```
 
-打开：
+Open:
 
 ```text
 http://localhost:8765/
 ```
 
-## 推荐部署方式
+The site is fully static. Daily issues live inside `app.js`, while layout and interaction logic are handled by `index.html`, `styles.css`, and `app.js`.
 
-### 方式一：GitHub Pages
+## Roadmap
 
-适合想要一个稳定免费 URL，并且每天通过 git push 更新网页内容。
+- Add a real email subscription flow, likely with Resend or another email provider.
+- Add RSS output for each daily issue.
+- Add a lightweight editor/admin panel for newsletter templates and archive entries.
+- Add saved/bookmarked articles and “read later” state.
+- Add richer historical analytics, such as topic trends over 7/30/90 days.
+- Improve mobile reading further, especially video cards and long reports.
+- Add structured source metadata for each story.
 
-1. 在 GitHub 创建一个新仓库。
-2. 把本目录 push 到该仓库。
-3. 在 GitHub 仓库设置里打开 `Pages`。
-4. Source 选择 `Deploy from a branch`，分支选择 `main`，目录选择 `/root`。
-5. GitHub 会生成一个类似 `https://<username>.github.io/<repo>/` 的网址。
+## Feedback
 
-如果未来定时任务要自动刷新云端网页，需要在任务生成日报后提交并 push 更新后的 `app.js`。
-
-### 方式二：Vercel
-
-适合想要简单绑定域名、自动部署。
-
-1. 把项目推到 GitHub。
-2. 在 Vercel 导入该仓库。
-3. Framework 选择 `Other` 或保留默认静态站。
-4. Build command 留空，Output directory 使用项目根目录。
-
-### 方式三：Netlify
-
-适合静态站，配置文件已包含 `netlify.toml`。
-
-1. 把项目推到 GitHub。
-2. 在 Netlify 导入该仓库。
-3. Publish directory 使用项目根目录。
-4. Build command 留空。
-
-## 自动更新云端的关键点
-
-当前日报定时任务会把新内容写入本地 `app.js`。如果网页托管到云端，还需要增加一个同步步骤：
-
-```bash
-git add app.js
-git commit -m "Update AI daily archive"
-git push
-```
-
-平台会在 push 后自动部署新版本。
+欢迎提交 issue、star 或 fork。也欢迎建议新的 AI 信息源、产品推荐标准、职业雷达方向或版式改进。
