@@ -564,8 +564,8 @@ const uiText = {
   zh: {
     all: "全部",
     language: "语言",
-    zh: "简体中文",
-    en: "English",
+    zh: "中",
+    en: "EN",
     dateSearch: "搜索归档",
     archiveTags: "归档标签",
     contentSearch: "搜索当前日报",
@@ -581,8 +581,8 @@ const uiText = {
   en: {
     all: "All",
     language: "Language",
-    zh: "简体中文",
-    en: "English",
+    zh: "中",
+    en: "EN",
     dateSearch: "Search archive",
     archiveTags: "Archive tags",
     contentSearch: "Search current issue",
@@ -973,6 +973,7 @@ function renderHeader(issue) {
 
 function renderLanguageSwitch() {
   languageSwitch.innerHTML = "";
+  languageSwitch.dataset.lang = currentLang;
   [
     ["zh", t("zh")],
     ["en", t("en")]
