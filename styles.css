@@ -55,15 +55,11 @@ input {
   margin-bottom: 32px;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
+.brand-logo {
   width: 48px;
   height: 48px;
   border-radius: var(--radius);
-  background: var(--ink);
-  color: #fffdf8;
-  font-weight: 800;
+  box-shadow: 0 10px 24px rgba(32, 36, 42, 0.16);
 }
 
 .brand h1,
@@ -80,7 +76,7 @@ input {
 
 .brand-subtitle {
   margin: 5px 0 0;
-  color: var(--muted);
+  color: var(--amber);
   font-size: 12px;
   font-weight: 700;
   line-height: 1.35;
