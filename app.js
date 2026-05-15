@@ -978,6 +978,7 @@ const archiveTags = document.querySelector("#archiveTags");
 const topicTags = document.querySelector("#topicTags");
 const languageSwitch = document.querySelector("#languageSwitch");
 const languageLabel = document.querySelector("#languageLabel");
+const dateRail = document.querySelector(".date-rail");
 const dateSearchLabel = document.querySelector("#dateSearchLabel");
 const archiveTagsLabel = document.querySelector("#archiveTagsLabel");
 const topicLabel = document.querySelector("#topicLabel");
@@ -988,6 +989,7 @@ const contentSearchLabel = document.querySelector("#contentSearchLabel");
 const contentGrid = document.querySelector("#contentGrid");
 const issueMeta = document.querySelector("#issueMeta");
 const termSpotlight = document.querySelector("#termSpotlight");
+const sourceMethod = document.querySelector("#sourceMethod");
 const sourceMethodSummary = document.querySelector("#sourceMethodSummary");
 const sourceMethodText = document.querySelector("#sourceMethodText");
 const sourceMethodLinks = document.querySelector("#sourceMethodLinks");
@@ -1763,6 +1765,10 @@ copyLinkButton.addEventListener("click", async () => {
   } catch {
     copyLinkButton.title = href;
   }
+});
+
+sourceMethod.addEventListener("toggle", () => {
+  dateRail.classList.toggle("is-source-open", sourceMethod.open);
 });
 
 render();

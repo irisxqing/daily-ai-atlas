@@ -56,12 +56,18 @@ input {
   position: sticky;
   top: 0;
   height: 100dvh;
-  overflow: visible;
+  overflow-x: hidden;
+  overflow-y: hidden;
   padding: 24px 20px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(239, 244, 250, 0.92));
   border-right: 1px solid var(--line);
   backdrop-filter: blur(12px);
+}
+
+.date-rail.is-source-open,
+.date-rail:has(.source-method[open]) {
+  overflow-y: auto;
 }
 
 .brand {
@@ -187,12 +193,10 @@ input:focus {
 }
 
 .source-method {
-  position: relative;
   margin-top: 10px;
   padding-top: 10px;
   border-top: 1px solid rgba(15, 23, 42, 0.1);
   color: var(--muted);
-  z-index: 20;
 }
 
 .source-method summary {
@@ -204,18 +208,7 @@ input:focus {
 
 .source-method-panel {
   display: none;
-  position: absolute;
-  left: 0;
-  bottom: calc(100% + 10px);
-  width: min(280px, calc(100vw - 40px));
-  max-height: min(360px, calc(100dvh - 96px));
-  overflow: auto;
-  padding: 12px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(12px);
+  margin-top: 8px;
 }
 
 .source-method[open] .source-method-panel {
@@ -1201,14 +1194,6 @@ input:focus {
   .language-section,
   .source-method {
     max-width: 720px;
-  }
-
-  .source-method-panel {
-    position: static;
-    width: 100%;
-    max-height: none;
-    margin-top: 8px;
-    overflow: visible;
   }
 
   .archive-tags,
