@@ -17,13 +17,6 @@ function shanghaiDate(date = new Date()) {
   }).format(date);
 }
 
-function shanghaiWeekday(date = new Date()) {
-  return new Intl.DateTimeFormat("en-US", {
-    timeZone: timezone,
-    weekday: "short"
-  }).format(date);
-}
-
 function chineseDate(dateString) {
   const [year, month, day] = dateString.split("-");
   return `${year}年${Number(month)}月${Number(day)}日`;
@@ -39,12 +32,8 @@ function englishDate(dateString) {
   }).format(date);
 }
 
-function lookbackDescription(date = new Date()) {
-  const weekday = shanghaiWeekday(date);
-  if (weekday === "Mon") {
-    return "周一运行：覆盖上周六、周日两天，以及今天北京时间 9:30 前新增的重要 AI 信号。";
-  }
-  return "工作日运行：覆盖过去 24 小时内的重要 AI 信号。";
+function lookbackDescription() {
+  return "每天北京时间 7:30 运行：覆盖过去 24 小时内的重要 AI 信号。";
 }
 
 function responseText(response) {
@@ -210,7 +199,7 @@ function replaceOrInsertIssue(source, arrayName, issue) {
 function buildPrompt(date) {
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
-${lookbackDescription(new Date(`${date}T09:30:00+08:00`))}
+${lookbackDescription()}
 
 请为 AI Daily Atlas 生成一个可直接写入 app.js 的双语日报 JSON。你可以使用 web search 搜集最新公开信息，并必须优先引用可打开的一手或可信来源。
 

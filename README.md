@@ -99,11 +99,11 @@ node tools/generate-broadcast.mjs --lang en --date 2026-05-15 --stdout
 
 ## Automation / 自动更新
 
-- **工作日自动更新**：GitHub Actions 在 UTC 01:30 运行，也就是北京时间周一到周五 9:30。
-  **Weekday automation**: GitHub Actions runs at 01:30 UTC, which is 9:30 Beijing time from Monday to Friday.
+- **每日自动更新**：GitHub Actions 在 UTC 23:30 运行，也就是北京时间每天 7:30。
+  **Daily automation**: GitHub Actions runs at 23:30 UTC, which is 7:30 Beijing time every day.
 
-- **周一补周末信息**：周二到周五覆盖过去 24 小时；周一会补充周六、周日两天的信息。
-  **Weekend catch-up on Monday**: Tuesday to Friday cover the past 24 hours; Monday also catches up on Saturday and Sunday signals.
+- **覆盖窗口**：每天覆盖过去 24 小时内的重要 AI 信号。
+  **Coverage window**: each issue covers important AI signals from the past 24 hours.
 
 - **发布方式**：脚本会更新 `app.js`，提交到 `main`，然后 GitHub Pages 自动刷新。
   **Publishing flow**: the script updates `app.js`, commits to `main`, and GitHub Pages refreshes automatically.
@@ -119,8 +119,8 @@ node tools/generate-broadcast.mjs --lang en --date 2026-05-15 --stdout
 - **结构化信息源与评分逻辑**：为每条新闻增加来源类型、可信度、地区、公司、主题和推荐理由，提升筛选质量。
   **Add structured source metadata and scoring**: capture source type, confidence, region, company, topic, and selection rationale for each story.
 
-- **邮件订阅与自动发送**：支持用户订阅，并把每日 9:30 生成的内容自动发送到邮箱。
-  **Add email subscription and delivery**: let readers subscribe and receive the daily 9:30 briefing by email.
+- **邮件订阅与自动发送**：支持用户订阅，并把每日 7:30 生成的内容自动发送到邮箱。
+  **Add email subscription and delivery**: let readers subscribe and receive the daily 7:30 briefing by email.
 
 - **RSS 输出**：为每日 issue 生成 RSS，让读者可以在自己的阅读器里订阅。
   **Publish RSS feeds**: generate RSS output for each daily issue so readers can subscribe in their own feed readers.

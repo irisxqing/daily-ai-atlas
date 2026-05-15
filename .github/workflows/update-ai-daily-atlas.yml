@@ -2,8 +2,8 @@ name: Update AI Daily Atlas
 
 on:
   schedule:
-    # 09:30 Beijing time, Monday to Friday. GitHub cron uses UTC.
-    - cron: "30 1 * * 1-5"
+    # 07:30 Beijing time every day. GitHub cron uses UTC.
+    - cron: "30 23 * * *"
   workflow_dispatch:
     inputs:
       issue_date:
