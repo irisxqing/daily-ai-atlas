@@ -59,7 +59,7 @@ const archiveZh = [
         ]
       },
       {
-        section: "模型与平台更新",
+        section: "今日重点",
         priority: "官方更新",
         title: "OpenAI 连发语音、默认模型和研究型模型更新",
         dek:
@@ -525,7 +525,7 @@ const archiveEn = [
         ]
       },
       {
-        section: "Models & Platforms",
+        section: "Top Stories",
         priority: "Official update",
         title: "OpenAI updated realtime voice, default ChatGPT, and research models",
         dek:
@@ -930,8 +930,8 @@ const archiveEn = [
 ];
 
 const sectionOrders = {
-  zh: ["全部", "今日重点", "模型与平台更新", "投融资信息", "开源项目", "AI产品推荐", "机构报告", "职业雷达"],
-  en: ["All", "Top Stories", "Models & Platforms", "Funding Watch", "Open Source", "AI Product Picks", "Research Reports", "Career Radar"]
+  zh: ["全部", "今日重点", "投融资信息", "开源项目", "AI产品推荐", "机构报告", "职业雷达"],
+  en: ["All", "Top Stories", "Funding Watch", "Open Source", "AI Product Picks", "Research Reports", "Career Radar"]
 };
 
 const uiText = {
@@ -1105,7 +1105,7 @@ const topicDefinitions = [
     id: "models-platforms",
     zh: "模型/API",
     en: "Models / APIs",
-    terms: ["模型与平台", "模型", "API", "OpenAI", "GPT-5.5", "Realtime", "语音", "Privacy Filter", "Rosalind", "ChatGPT", "Models & Platforms"]
+    terms: ["模型", "API", "OpenAI", "GPT-5.5", "Realtime", "语音", "Privacy Filter", "Rosalind", "ChatGPT", "Models", "Platforms"]
   },
   {
     id: "robotics",
@@ -1152,8 +1152,6 @@ function isTermSection(section) {
 const sectionThemeMap = {
   "今日重点": "top",
   "Top Stories": "top",
-  "模型与平台更新": "model",
-  "Models & Platforms": "model",
   "投融资信息": "funding",
   "Funding Watch": "funding",
   "开源项目": "open-source",
@@ -1169,7 +1167,6 @@ const sectionThemeMap = {
 const sectionCodeMap = {
   all: "ALL",
   top: "NEWS",
-  model: "MODEL",
   funding: "FUND",
   "open-source": "OSS",
   product: "TOOL",
