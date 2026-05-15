@@ -1162,6 +1162,23 @@ const sourceGroups = [
   }
 ];
 
+const sourceApproach = {
+  zh: [
+    ["先广后窄", "先用日报、媒体、社交平台和产品榜单做雷达，快速发现新公司、新产品、新融资和新开源项目。"],
+    ["回到一手来源", "有价值的线索必须回到公司官网、官方博客、论文、GitHub、机构报告或招聘页确认，避免只搬运二手摘要。"],
+    ["按读者价值筛选", "优先保留和战略、产品、商业化、跨境电商、AI 工作流相关的信息，不追求把所有新闻都塞进来。"],
+    ["补充背景和影响", "重要新闻会补公司背景、事件细节、为什么重要，以及它可能影响哪些行业、岗位或工作方式。"],
+    ["标记不确定性", "融资传闻、社交平台爆料和早期产品会谨慎处理，能确认的写确认，仍需观察的明确标注。"]
+  ],
+  en: [
+    ["Wide scan first", "Use newsletters, media, social platforms, and product directories as radar to spot new companies, launches, funding, and open-source projects."],
+    ["Return to primary sources", "Important signals are checked against company sites, official blogs, papers, GitHub repositories, reports, or hiring pages instead of relying only on second-hand summaries."],
+    ["Filter for reader value", "Prioritize items relevant to strategy, product, commercialization, cross-border commerce, and AI workflows rather than covering every AI headline."],
+    ["Add context and implications", "For important stories, add company background, event details, why it matters, and which industries, roles, or workflows may be affected."],
+    ["Label uncertainty", "Funding rumors, social posts, and early products are treated carefully: confirmed facts are separated from items that still need observation."]
+  ]
+};
+
 const topicDefinitions = [
   {
     id: "models-platforms",
@@ -1786,6 +1803,26 @@ function renderSourceMethod() {
     sourceGroup.appendChild(links);
     sourceMethodLinks.appendChild(sourceGroup);
   });
+
+  const approach = document.createElement("div");
+  approach.className = "source-approach";
+
+  const approachTitle = document.createElement("strong");
+  approachTitle.textContent = currentLang === "en" ? "Approach" : "搜集方法论";
+  approach.appendChild(approachTitle);
+
+  const approachList = document.createElement("ol");
+  sourceApproach[currentLang].forEach(([title, body]) => {
+    const item = document.createElement("li");
+    const itemTitle = document.createElement("span");
+    itemTitle.textContent = title;
+    const itemBody = document.createElement("p");
+    itemBody.textContent = body;
+    item.append(itemTitle, itemBody);
+    approachList.appendChild(item);
+  });
+  approach.appendChild(approachList);
+  sourceMethodLinks.appendChild(approach);
 }
 
 function renderLanguageSwitch() {
