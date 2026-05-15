@@ -167,62 +167,61 @@ const archiveZh = [
       },
       {
         section: "AI产品推荐",
-        priority: "可试用",
-        title: "百度 DuMate / 秒哒 / 易境：从聊天机器人走向可执行 Agent",
+        priority: "今日可玩",
+        title: "FocuSee 2.0：把普通录屏自动变成精致产品 demo",
         dek:
-          "百度 Create 2026 把 DuMate、秒哒和易境放在同一个 Agent 产品组合里，比较适合作为中国大厂 AI 应用化的观察样本。",
+          "FocuSee 适合做产品演示、教程和汇报视频：你只要正常录屏，它会自动加缩放、鼠标高亮、背景和字幕，让粗糙录屏看起来像认真剪过。",
         details: [
-          "DuMate 是面向个人和团队的办公 Agent，百度智能云文档里提到它可以操作文件、读写 Excel、整理数据、生成 PPT、操作浏览器，并尝试端到端完成任务。",
-          "秒哒 Miaoda 更偏 no-code / vibe coding，支持用自然语言生成移动端 APP，并能做在线调试、Android 打包和后端数据库自动接入。",
-          "易境 Baidu Yijing 是数字人平台，发布稿强调它可以支持电商直播、数字人视频和内容创作，并推出国际版。",
-          "有意思的点不在于单个功能多酷，而是百度把办公、开发、数字人、搜索和云服务打包成一组 Agent 产品，开始用 Daily Active Agents 作为新指标。"
+          "TrendHunt Daily 把 FocuSee 2.0 列为 5 月上旬 Product Hunt 热门发布之一，定位是 Pick Record screen to get polished demos & tutorials。",
+          "Setapp 页面显示，FocuSee 可以同时录屏、摄像头和声音，并自动添加 zoom、cursor highlight、背景、overlay、字幕和降噪。",
+          "它最适合非专业剪辑用户：产品经理、运营、创业者、讲方案的人，都可以用它快速做一个能看的产品 walk-through。",
+          "有趣点在于它不是生成一个虚构视频，而是把你真实操作产品的过程变得更清楚、更像正式 demo。"
         ],
         why:
-          "对跨境电商来说，这组产品很值得观察：一个方向是商家运营和办公自动化，另一个方向是数字人直播和多语言内容生产。它也能帮你判断中国大厂的 AI 应用，不只是模型能力，而是能不能变成可执行的业务工具。",
+          "对你很实用：以后做 AI 项目复盘、商家工具演示、跨团队汇报或个人作品集，都可以用这类工具降低“把想法讲清楚”的成本。它比纯文字工具更有产品感。",
         links: [
-          ["百度发布稿", "https://www.prnewswire.com/news-releases/baidu-advances-agent-portfolio-to-embrace-the-agent-era-champions-daily-active-agents-as-key-metric-302771383.html"],
-          ["DuMate 快速开始", "https://cloud.baidu.com/doc/Dumate/s/xmmyddwfy"],
-          ["秒哒生成 APP 文档", "https://cloud.baidu.com/doc/MIAODA/s/Amoy50baf"],
-          ["Caixin 摘要", "https://www.caixinglobal.com/2026-05-14/baidu-ceo-says-ai-agents-will-be-the-measure-of-ai-success-102444034.html"]
+          ["FocuSee / Setapp", "https://setapp.com/apps/focusee"],
+          ["TrendHunt Daily", "https://trendhuntdaily.com/"]
         ]
       },
       {
         section: "AI产品推荐",
-        priority: "销售增长",
-        title: "Naoma AI Demo Agent：把“预约演示”变成“立刻看 AI 演示”",
+        priority: "产品灵感",
+        title: "Magic Patterns Agent 2.0：一句话生成可交互产品原型",
         dek:
-          "Naoma 是 Product Hunt 上近期热度较高的 AI 产品演示工具，主打让网站访客不用等销售排期，就能马上和一个视频 Agent 看产品 demo。",
+          "Magic Patterns 是给产品团队用的 AI 设计 agent：你描述一个功能、上传截图或引用已有设计系统，它可以快速生成可交互 mockup。",
         details: [
-          "它面向 B2B SaaS：AI 视频 Agent 可以在浏览器里讲解产品、点击真实产品流程、回答问题、识别潜在客户意图，并把线索导向 CRM、销售日历或购买页面。",
-          "Product Hunt 页面显示 Naoma AI Demo Agent 在 2026 年 3 月 12 日拿到当日第 1、当周第 4，说明这类“AI 销售前置”的产品正在被市场关注。",
-          "这类产品的价值点是减少 demo 等待时间，尤其适合客单价高、功能复杂、需要解释价值的 SaaS 或 B2B 工具。",
-          "需要谨慎的地方是：AI demo 很容易在受控场景里很好看，但真实客户会问很多边界问题，所以更适合作为初筛和教育工具，而不是完全替代销售。"
+          "Product Hunt 页面把 Agent 2.0 描述为从 idea 到 production 的 AI design agent，核心是用已有 style 和 design system 生成原型。",
+          "官方介绍提到，PM、设计师和创始人可以用它快速做 interactive mockups，并把结果交给工程团队继续实现。",
+          "2.0 版本强调 Skills、Connectors 和 MCP：也就是可以给设计 agent 注入特定规则、连接上下文，并把结果交给 coding agents。",
+          "它比普通“生成漂亮界面”的工具更值得看，因为它试图进入真实产品流程：需求讨论、原型、设计系统、工程交付。"
         ],
         why:
-          "这对电商平台的商家工具也有启发：未来商家教育、广告产品讲解、SaaS 工具 onboarding，可能都不再只靠销售或录播视频，而是由一个可问可演示的 AI Agent 承接第一轮沟通。",
+          "这类工具很适合战略/产品背景的人：你不一定要会画高保真图，但可以把商家工具、广告投放后台、AI客服工作台这类想法快速变成可讨论的界面。",
         links: [
-          ["Product Hunt", "https://www.producthunt.com/products/naoma"],
-          ["Naoma 官网文章", "https://www.naoma.ai/articles/best-ai-sales-agents-2026"],
-          ["Launch Llama 评测", "https://tools.launchllama.co/blog/naoma-ai-demo-agent-review-2026"]
+          ["Product Hunt", "https://www.producthunt.com/products/magicpatterns/"],
+          ["Magic Patterns", "https://www.magicpatterns.com/"],
+          ["The Product Consortium 介绍", "https://www.theproductconsortium.com/articles/magic-patterns"]
         ]
       },
       {
         section: "AI产品推荐",
-        priority: "内容运营",
-        title: "beehiiv MCP：让 newsletter 后台变成 AI 可以操作的工具",
+        priority: "创意视频",
+        title: "LTX Desktop：免费开源的本地 AI 视频生成与编辑器",
         dek:
-          "beehiiv 推出 MCP 集成后，创作者可以从支持 MCP 的 AI 工具里管理和优化 newsletter，而不是每件事都回到后台手动点。",
+          "LTX Desktop 把 AI 视频生成和剪辑界面放在一起，重点是本地运行、开源、没有按次生成费用，适合想探索 AI 视频但不想一直烧云端点数的人。",
         details: [
-          "Axios 报道称，beehiiv 允许用户通过自己选择的 AI 平台管理和优化账号，第一版能力包括订阅者分析和 SEO 优化等后台功能。",
-          "beehiiv 帮助文档显示，beehiiv MCP 可以连接 Claude、Claude Code、Cursor、Codex 等支持 MCP 的 AI 工具。",
-          "这代表一个很有意思的产品方向：AI 不只是帮你写内容，而是可以进入内容业务的运营后台，做分析、增长、发布和优化。",
-          "它对 Daily AI Atlas 这类内容产品也有启发：未来可以让 AI 直接处理选题、归档、订阅者反馈、SEO 标题和邮件实验。"
+          "LTX 官方称 LTX Desktop 是 built entirely on the LTX engine 的本地视频生成和编辑应用，支持 macOS 和 Windows。",
+          "它的卖点是 no cloud、no per-generation fees、数据留在本机；对企业和创作者来说，隐私和成本都更可控。",
+          "LTX 2.3 同时发布，官方称模型可以在消费级 GPU 上生成高质量视频，桌面端则把模型能力包装成可操作界面。",
+          "Product Hunt 上也有 LTX Desktop 页面，定位是 local open-source video editor optimized for GPUs。"
         ],
         why:
-          "这个产品值得放进推荐，不是因为它炫技，而是因为它展示了 MCP 的商业化方向：把原来封闭在 SaaS 后台里的动作开放给 AI 助手，让内容运营变成更自动化的工作流。",
+          "这是更适合“玩一玩”的推荐：你可以用它理解 AI 视频从纯网页生成器走向本地创作工作台的趋势。对电商内容来说，未来商品视频、广告素材、达人脚本验证都会受这类工具影响。",
         links: [
-          ["Axios 报道", "https://www.axios.com/2026/03/24/beehiiv-creator-ai-chatbot-mcp"],
-          ["beehiiv MCP 文档", "https://beehiivhelp.zendesk.com/hc/en-us/articles/39255979546263-Getting-started-with-the-beehiiv-MCP"]
+          ["LTX Desktop", "https://ltx.io/ltx-desktop"],
+          ["LTX 2.3 发布", "https://ltx.io/model/model-blog/ltx-2-3-release"],
+          ["Product Hunt", "https://www.producthunt.com/products/ltx-desktop"]
         ]
       },
       {
@@ -546,62 +545,61 @@ const archiveEn = [
       },
       {
         section: "AI Product Picks",
-        priority: "Try",
-        title: "Baidu DuMate / Miaoda / Yijing: from chatbot to executable agent",
+        priority: "Play today",
+        title: "FocuSee 2.0 turns raw screen recordings into polished product demos",
         dek:
-          "Baidu Create 2026 grouped DuMate, Miaoda, and Yijing into a broader agent product portfolio, making it a useful sample of Chinese big-tech AI application strategy.",
+          "FocuSee is useful for product walkthroughs, tutorials, and strategy demos: record normally, then let the tool add zooms, cursor highlights, backgrounds, overlays, and captions.",
         details: [
-          "DuMate is an office agent for individuals and teams. Baidu Cloud docs say it can operate files, read and write Excel, organize data, generate PPTs, use browsers, and try to complete tasks end to end.",
-          "Miaoda is closer to no-code or vibe coding. It supports natural-language mobile-app generation, online debugging, Android packaging, and automatic backend database connection.",
-          "Baidu Yijing is a digital-human platform. The announcement says its international edition helps merchants and creators generate livestream and digital-human video content.",
-          "The interesting part is not one standalone feature, but Baidu bundling office work, app creation, digital humans, search, and cloud into an agent product stack while proposing Daily Active Agents as a new metric."
+          "TrendHunt Daily listed FocuSee 2.0 among early-May Product Hunt launches, positioning it as a way to record screens and get polished demos and tutorials.",
+          "Setapp’s page says FocuSee can capture screen, webcam, and voice, then add zooms, cursor highlights, backgrounds, overlays, captions, denoise, and trims.",
+          "It is most useful for non-editors: PMs, operators, founders, and anyone who needs to explain a product or workflow quickly.",
+          "The appeal is that it improves real product operation footage instead of generating a fictional video from scratch."
         ],
         why:
-          "For cross-border commerce, this is worth watching for two reasons: merchant operations automation, and digital-human livestream or multilingual content production. It also shows Chinese AI applications moving from model capability toward executable business tools.",
+          "This is directly practical for AI project recaps, merchant-tool demos, internal rollouts, and personal portfolio clips. It reduces the cost of making ideas understandable.",
         links: [
-          ["Baidu announcement", "https://www.prnewswire.com/news-releases/baidu-advances-agent-portfolio-to-embrace-the-agent-era-champions-daily-active-agents-as-key-metric-302771383.html"],
-          ["DuMate quick start", "https://cloud.baidu.com/doc/Dumate/s/xmmyddwfy"],
-          ["Miaoda app generation docs", "https://cloud.baidu.com/doc/MIAODA/s/Amoy50baf"],
-          ["Caixin brief", "https://www.caixinglobal.com/2026-05-14/baidu-ceo-says-ai-agents-will-be-the-measure-of-ai-success-102444034.html"]
+          ["FocuSee / Setapp", "https://setapp.com/apps/focusee"],
+          ["TrendHunt Daily", "https://trendhuntdaily.com/"]
         ]
       },
       {
         section: "AI Product Picks",
-        priority: "Sales growth",
-        title: "Naoma AI Demo Agent turns 'book a demo' into 'get an AI demo now'",
+        priority: "Product idea",
+        title: "Magic Patterns Agent 2.0 generates interactive product prototypes from prompts",
         dek:
-          "Naoma is a recently visible Product Hunt AI tool that lets website visitors watch and interact with an AI product-demo agent without waiting for a sales call.",
+          "Magic Patterns is an AI design agent for product teams: describe a feature, upload screenshots, or reference an existing design system, and it can generate interactive mockups.",
         details: [
-          "It targets B2B SaaS: the AI video agent can explain a product, click through real product flows, answer questions, qualify leads, and route prospects to CRM, calendar, or checkout.",
-          "Product Hunt lists Naoma AI Demo Agent as #1 product of the day and #4 of the week on March 12, 2026, showing market attention around AI-assisted selling.",
-          "The value is reducing demo wait time, especially for complex B2B tools where buyers need explanation before conversion.",
-          "Caution: AI demos can look great in controlled flows, while real prospects ask edge-case questions. It is better viewed as qualification and education, not a full sales replacement."
+          "Product Hunt describes Agent 2.0 as an AI design agent that goes from idea to production, using existing styles and design systems.",
+          "Magic Patterns says PMs, designers, and founders use it to rapidly prototype and create interactive mockups for engineering handoff.",
+          "Agent 2.0 adds Skills, Connectors, and MCP, meaning the design agent can receive specialized instructions, pull context, and hand work to coding agents.",
+          "It is more interesting than a generic pretty-screen generator because it tries to sit inside real product workflow: requirements, prototype, design system, and handoff."
         ],
         why:
-          "This is relevant to merchant tools and platform education: future onboarding, ad-product education, and SaaS walkthroughs may be handled by askable demo agents rather than static videos or first-line sales calls.",
+          "This is useful for strategy and product work: you can turn seller tools, ad dashboards, AI support consoles, or operations workflows into discussion-ready interfaces without starting in Figma.",
         links: [
-          ["Product Hunt", "https://www.producthunt.com/products/naoma"],
-          ["Naoma article", "https://www.naoma.ai/articles/best-ai-sales-agents-2026"],
-          ["Launch Llama review", "https://tools.launchllama.co/blog/naoma-ai-demo-agent-review-2026"]
+          ["Product Hunt", "https://www.producthunt.com/products/magicpatterns/"],
+          ["Magic Patterns", "https://www.magicpatterns.com/"],
+          ["The Product Consortium", "https://www.theproductconsortium.com/articles/magic-patterns"]
         ]
       },
       {
         section: "AI Product Picks",
-        priority: "Content ops",
-        title: "beehiiv MCP lets AI operate parts of a newsletter backend",
+        priority: "Creative video",
+        title: "LTX Desktop is a free, open-source local AI video editor",
         dek:
-          "With its MCP integration, beehiiv lets creators manage and optimize newsletter operations through AI tools instead of manually returning to the admin console for every task.",
+          "LTX Desktop combines AI video generation and editing in a local desktop app, with no cloud dependency and no per-generation fees.",
         details: [
-          "Axios reported that beehiiv users can manage and optimize accounts from the AI platform of their choice, with early capabilities including subscriber analysis and SEO optimization.",
-          "beehiiv’s help docs say its MCP can connect to AI tools including Claude, Claude Code, Cursor, and Codex.",
-          "The product direction is interesting because AI is not only writing content; it is starting to operate the backend of a content business.",
-          "For a project like Daily AI Atlas, this hints at future workflows for topic selection, archive management, subscriber feedback, SEO titles, and email experiments."
+          "LTX says Desktop is built entirely on the LTX engine and offers a local video generation and editing workspace for macOS and Windows.",
+          "Its key pitch is no cloud, no per-generation fees, and prompts, footage, and outputs staying on your machine.",
+          "LTX 2.3 launched alongside it, and the company says the model can generate high-quality video on consumer-grade GPUs.",
+          "Product Hunt positions LTX Desktop as a local open-source video editor optimized for GPUs."
         ],
         why:
-          "This belongs in product picks because it shows a practical MCP business case: opening SaaS backend actions to AI assistants so content operations become more automated.",
+          "This is a better 'try it' pick: it shows AI video moving from browser credits toward local creative workstations. For commerce, that points toward cheaper product videos, ad concepts, and creator-content experiments.",
         links: [
-          ["Axios", "https://www.axios.com/2026/03/24/beehiiv-creator-ai-chatbot-mcp"],
-          ["beehiiv MCP docs", "https://beehiivhelp.zendesk.com/hc/en-us/articles/39255979546263-Getting-started-with-the-beehiiv-MCP"]
+          ["LTX Desktop", "https://ltx.io/ltx-desktop"],
+          ["LTX 2.3 release", "https://ltx.io/model/model-blog/ltx-2-3-release"],
+          ["Product Hunt", "https://www.producthunt.com/products/ltx-desktop"]
         ]
       },
       {
