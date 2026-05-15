@@ -1,4 +1,4 @@
-const archive = [
+const archiveZh = [
   {
     date: "2026-05-15",
     title: "Daily AI Atlas",
@@ -255,26 +255,315 @@ const archive = [
   }
 ];
 
-const sectionOrder = [
-  "全部",
-  "今日重点",
-  "开源项目",
-  "机构报告",
-  "每日词条",
-  "职业雷达"
+const archiveEn = [
+  {
+    date: "2026-05-15",
+    title: "Daily AI Atlas",
+    meta: "May 15, 2026 · Shenzhen / Hong Kong lens",
+    headline: "From model capability to real-world deployment",
+    summary:
+      "Today’s AI signal is deployment: humanoid robots are testing full shifts, model labs are moving into enterprise implementation, Chinese open models keep pushing costs down, and open-source agents plus institutional reports offer longer-term signals to track.",
+    items: [
+      {
+        section: "Top Stories",
+        priority: "High",
+        title: "Figure robots completed an 8-hour factory-style shift",
+        dek:
+          "Humanoid robotics company Figure showed robots running a package-sorting workflow for a full shift, trying to prove that robots can move beyond demos and toward operational labor.",
+        details: [
+          "Figure was founded in 2022 and focuses on general-purpose humanoid robots backed by investors such as Microsoft, NVIDIA, OpenAI Startup Fund, Intel, and Jeff Bezos.",
+          "The task involved reading barcodes, picking packages, adjusting orientation, and placing them onto conveyors; AI Valley cited a pace of roughly one package every three seconds.",
+          "The robots run on Figure’s Helix-02 system, which integrates visual understanding, motion control, balance, and manipulation.",
+          "The real signal is not the pick itself, but continuous operation, robot handoffs, battery replacement requests, and maintenance workflows."
+        ],
+        why:
+          "Robotics commercialization is less about a single impressive action and more about uptime, maintenance cost, and output per hour. This moves the question from 'can the robot grab something?' to 'can it complete a real shift?'",
+        links: [
+          ["AI Valley", "https://www.theaivalley.com/p/figure-s-robots-worked-an-8-hour-factory-shift"],
+          ["Figure Helix-02", "https://www.figure.ai/news/helix-02"],
+          ["Figure production update", "https://www.figure.ai/news/ramping-figure-03-production"],
+          ["Funding background", "https://www.cnbc.com/2024/02/29/robot-startup-figure-valued-at-2point6-billion-by-bezos-amazon-nvidia.html"]
+        ]
+      },
+      {
+        section: "Top Stories",
+        priority: "High",
+        title: "OpenAI launched a Deployment Company",
+        dek:
+          "OpenAI is building an enterprise deployment arm that looks like a hybrid of AI engineering and consulting, aimed at getting AI into real enterprise workflows.",
+        details: [
+          "OpenAI uses the role Forward Deployed Engineers, roughly meaning AI engineers embedded close to customer operations.",
+          "These teams handle enterprise data, permissions, security, workflow design, and internal system integration.",
+          "Reuters previously reported that OpenAI- and Anthropic-related service ventures were exploring acquisitions of AI services firms.",
+          "The model-lab business is shifting from selling APIs toward selling industry solutions and business outcomes."
+        ],
+        why:
+          "Enterprise customers care less about leaderboard scores and more about whether AI reduces support costs, speeds legal review, or shortens research and finance workflows. AI companies are becoming a blend of model lab, software vendor, consulting firm, and systems integrator.",
+        links: [
+          ["OpenAI", "https://openai.com/index/openai-launches-the-deployment-company/"],
+          ["TechCrunch", "https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/"],
+          ["Reuters via Investing.com", "https://www.investing.com/news/stock-market-news/openai-anthropic-ventures-in-talks-to-buy-ai-services-firms-sources-say-4659837"]
+        ]
+      },
+      {
+        section: "Top Stories",
+        priority: "Medium-high",
+        title: "DeepSeek V4 reinforces the low-cost Chinese model route",
+        dek:
+          "DeepSeek V4 Preview continues to challenge the pricing logic of closed U.S. frontier models through lower cost, open ecosystems, and domestic chip adaptation.",
+        details: [
+          "DeepSeek is a Hangzhou-based AI company that became globally visible through its R1 reasoning model and its efficiency-first approach.",
+          "Reuters reported that DeepSeek V4 is adapted for Huawei chips, an important signal for China’s AI self-reliance stack.",
+          "Several reports mention a longer context window, meaning the model can process more information in one run.",
+          "The release raises pressure on Qwen, GLM, MiniMax, Kimi, and other Chinese model families."
+        ],
+        why:
+          "DeepSeek is not just another model release; it changes pricing expectations. If a cheaper model is good enough, enterprises will naturally move toward multi-model routing instead of relying on one premium provider.",
+        links: [
+          ["TechCrunch", "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/"],
+          ["Reuters via MarketScreener", "https://www.marketscreener.com/news/deepseek-v4-the-chinese-ai-model-adapted-for-huawei-chips-ce7f59dfdd8ef323"],
+          ["Fortune", "https://fortune.com/2026/04/24/deepseek-v4-ai-model-price-performance-china-open-source/"]
+        ]
+      },
+      {
+        section: "Top Stories",
+        priority: "Medium-high",
+        title: "Google DeepMind’s AlphaEvolve moves into scientific and industrial optimization",
+        dek:
+          "AlphaEvolve is being applied to genomics, power grids, chips, quantum circuits, and logistics routing, showing AI moving from content generation toward optimization.",
+        details: [
+          "AlphaEvolve is a Gemini-powered coding agent that can try solutions, write code, evaluate outcomes, and keep improving.",
+          "Google DeepMind says it reduced some genomic variant detection errors by 30%.",
+          "FM Logistic used it on a routing problem and reported a 10.4% route-efficiency improvement.",
+          "It has also been applied to TPU chip design, database write optimization, mathematical problems, and quantum circuits."
+        ],
+        why:
+          "This kind of AI may not face consumers directly, but its long-term commercial value can be substantial. It acts like an optimization machine for scientists, engineers, and operators.",
+        links: [["Google DeepMind", "https://deepmind.google/blog/alphaevolve-impact/"]]
+      },
+      {
+        section: "Open Source",
+        priority: "New",
+        title: "OpenHuman: an open-source agent trying to become a digital twin",
+        dek:
+          "TMTPost highlighted OpenHuman as a GitHub-trending project whose core idea is to help an AI quickly understand your work and life context.",
+        details: [
+          "The project is developed by Tiny Humans AI and pitches itself as 'Context in minutes, not weeks.'",
+          "It supports 100+ integrations including Gmail, Notion, GitHub, Slack, Google Calendar, Jira, Linear, and Stripe.",
+          "Core designs include a local SQLite memory tree, an Obsidian-compatible Markdown knowledge base, and a TokenJuice compression pipeline.",
+          "Risks remain: it is early-stage, GPL-3.0 can constrain commercial use, and connecting personal accounts creates privacy and security requirements."
+        ],
+        why:
+          "OpenHuman targets a central agent pain point: most assistants do not know you. Personal AI may compete not only on model quality, but on how quickly and safely it understands long-term context.",
+        links: [
+          ["TMTPost", "https://www.tmtpost.com/7987326.html"],
+          ["GitHub", "https://github.com/tinyhumansai/openhuman"]
+        ]
+      },
+      {
+        section: "Research Reports",
+        priority: "Save",
+        title: "Report brief: AI is moving from pilots to organization-level deployment",
+        dek:
+          "The macro signal from Stanford, BCG, McKinsey, and KPMG/HFS is clear: AI is shifting from tool trials to workflow redesign, technology services, and governance systems.",
+        details: [
+          {
+            summary:
+              "Stanford AI Index 2026: industry produced over 90% of notable frontier models in 2025, and organizational adoption reached 88%.",
+            expanded:
+              "Stanford’s core point is that AI innovation has moved strongly from academia to industry. Model capability, compute investment, and productization are now largely company-led. The 90%+ industry share of notable frontier models shows how much leading AI now depends on capital, data, engineering systems, and compute infrastructure. Adoption is also mainstream: 88% of organizations use AI, and generative AI has become a daily capability for students and employees.",
+            quote: "“Industry produced over 90% of notable frontier models in 2025.”",
+            chart: ["Key charts: AI Index report / PDF", "https://hai.stanford.edu/ai-index/2026-ai-index-report"]
+          },
+          {
+            summary:
+              "BCG AI Radar 2026: AI has moved from a CIO topic to a CEO transformation agenda.",
+            expanded:
+              "BCG focuses less on model technology and more on how enterprises turn AI into business outcomes. Trailblazer CEOs define AI ambition directly and link it to growth, cost, customer experience, and organizational productivity. The report pushes companies beyond use-case lists toward capability systems: data foundations, process redesign, talent, governance, and continuous measurement.",
+            quote: "“Three CEO archetypes emerge.”",
+            chart: ["Key charts: BCG AI Radar PDF", "https://web-assets.bcg.com/73/8e/cc44cbc14a3b81695f8a3de28ff1/ai-radar-2026-web-jan-2026-edit.pdf"]
+          },
+          {
+            summary:
+              "BCG Tech Services: agentic AI may compress traditional outsourcing while creating new AI service pools.",
+            expanded:
+              "The report argues that tech services will be reshaped by agentic AI. Some low-complexity outsourcing, testing, maintenance, and development work may shrink, but new demand will emerge around agent workflow design, system integration, data operations, monitoring, compliance, model evaluation, and business process redesign.",
+            quote: "“Unlocking up to $200 billion in net new value pools.”",
+            chart: ["Key charts: Tech services opportunity PDF", "https://web-assets.bcg.com/pdf-src/prod-live/the-%24200-billion-ai-opportunity-in-tech-services.pdf"]
+          },
+          {
+            summary:
+              "McKinsey: AI infrastructure costs may rise 2-3x by 2030, while agentic AI can automate infrastructure work.",
+            expanded:
+              "McKinsey looks at the enterprise technology base. As AI applications move into production, companies need more compute, data platforms, security, monitoring, and model-serving capabilities. Infrastructure costs could rise 2-3x by 2030. At the same time, agentic AI can automate routine infrastructure work such as cloud rightsizing, troubleshooting, migration, log analysis, and capacity planning.",
+            quote: "“IT infrastructure costs are projected to increase two to three times by 2030.”",
+            chart: ["Key charts: McKinsey exhibits", "https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/reimagining-tech-infrastructure-for-and-with-agentic-ai"]
+          },
+          {
+            summary:
+              "KPMG/HFS Agentic Services: service providers are building agentic services around major cloud and model ecosystems.",
+            expanded:
+              "This report reads like a service-provider market map. Consulting and IT services firms are building agentic services around AWS, Google Cloud, Microsoft, OpenAI, Anthropic, Salesforce, SAP, and LangChain. The core point is that enterprise agents require more than a model: they need process decomposition, tool calling, permissions, data access, evaluation, and organizational adoption.",
+            quote: "“AI-led agentic services augmenting human capabilities.”",
+            chart: ["Key charts: HFS Horizons download page", "https://www.hfsresearch.com/research/hfs-horizons-agentic-services-2026/"]
+          }
+        ],
+        why:
+          "These reports converge on one point: the scarce skill is not merely using AI tools, but connecting AI use cases, business value, data foundations, governance, and organizational change into one operating system.",
+        links: [
+          ["Stanford report", "https://hai.stanford.edu/ai-index/2026-ai-index-report"],
+          ["Stanford PDF", "https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf"],
+          ["BCG AI Radar PDF", "https://web-assets.bcg.com/73/8e/cc44cbc14a3b81695f8a3de28ff1/ai-radar-2026-web-jan-2026-edit.pdf"],
+          ["BCG Tech Services", "https://www.bcg.com/publications/2026/the-200-billion-dollar-ai-opportunity-in-tech-services"],
+          ["McKinsey Agentic AI", "https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/reimagining-tech-infrastructure-for-and-with-agentic-ai"],
+          ["KPMG/HFS PDF", "https://assets.kpmg.com/content/dam/kpmgsites/xx/pdf/2026/04/hfs-horizons-agentic-services-2026.pdf"]
+        ]
+      },
+      {
+        section: "AI Term",
+        priority: "Learn",
+        title: "RAG",
+        dek:
+          "RAG means the AI looks up a specified knowledge base before answering, instead of relying only on what the model already 'remembers.'",
+        details: [
+          "A typical system splits documents into chunks, turns them into vectors, stores them in a database, retrieves relevant chunks for a question, then gives those chunks to the model.",
+          "Today’s connection: OpenHuman, enterprise knowledge bases, and financial AI agents often rely on RAG-like retrieval.",
+          "Common misconception: RAG does not make the model itself smarter; it makes answers more grounded. Poor source material still leads to poor answers.",
+          "Work use case: connect SOPs, policies, merchant-service documents, and past cases to build internal operations or support assistants."
+        ],
+        why:
+          "For AI strategy work, RAG is a foundational term because many enterprise AI projects start by turning internal knowledge into searchable, quotable, traceable answers.",
+        links: [["OpenAI Retrieval Guide", "https://platform.openai.com/docs/guides/retrieval"]]
+      },
+      {
+        section: "Career Radar",
+        priority: "Match",
+        title: "Career radar: prioritize AI Strategy / Transformation / Product leadership roles",
+        dek:
+          "The best-fit direction is not pure technical architecture or algorithm management, but roles that connect business, product, technical teams, and senior decision-making.",
+        details: [
+          "Priority 1: AI Strategy, AI Product Strategy, GenAI Transformation, Seller/Ads/Operations AI Lead roles in cross-border e-commerce and retail platforms such as TikTok Shop, Walmart Global Tech, Amazon, Shopify, Temu, Shein, Lazada, and Southeast Asian e-commerce ecosystems.",
+          "Priority 2: Director, AI Product Strategy in insurance or financial services, where the keywords are enterprise GenAI initiative, roadmap, ROI, use-case portfolio, and business adoption.",
+          "Priority 3: Director, AI Product Strategy & Adoption roles focused on capability adoption, business priorities, use-case evaluation, productivity impact, and build-vs-buy decisions.",
+          "Priority 4: Technology & AI Transformation roles focused on digital transformation roadmaps, senior stakeholders, Agile delivery, and emerging technology adoption.",
+          "Lower priority: pure AI architecture, algorithm platform, and AI R&D management roles, which require deeper engineering leadership and platform ownership."
+        ],
+        why:
+          "The strongest positioning is: I can identify AI opportunities, design business use cases, track ROI, drive cross-functional delivery, and build adoption. Cross-border e-commerce is an advantage in seller growth, ads monetization, product governance, fulfillment, support automation, and merchant tools.",
+        links: [
+          ["TikTok Careers", "https://careers.tiktok.com/"],
+          ["Walmart Global Tech", "https://tech.walmart.com/content/walmart-global-tech/en_us/careers.html"],
+          ["Amazon Jobs", "https://www.amazon.jobs/"],
+          ["Insurance AI Product Strategy", "https://www.pinpointasia.com/pinpointasia-jobs/director%2C-ai-product-strategy---insurance-group---j12585"],
+          ["Bank AI Product Strategy", "https://www.jobleads.com/hk/job/director-ai-product-strategy-adoption--hongkong--ec10395eb27b43cc4b3821f00e11d4184"],
+          ["Technology & AI Transformation", "https://www.jobleads.com/hk/job/director-technology-ai-transformation-circa-70-80k--hong-kong--e0c3b36cab4ae92a085360e2042b42cff"]
+        ]
+      },
+      {
+        section: "Career Radar",
+        priority: "Skill gaps",
+        title: "Common requirements: 7 skill areas to strengthen",
+        dek:
+          "Across non-technical AI leadership roles, the repeated requirements are business value, productization, delivery, and governance, not coding.",
+        details: [
+          "AI use-case portfolio and ROI: identify high-value opportunities, estimate benefit/cost/complexity, define value-realization metrics, and stop low-value projects.",
+          "AI product strategy: turn GenAI and agent capabilities into roadmaps, MVPs, user journeys, priorities, and commercialization paths.",
+          "Cross-border e-commerce domain: explain AI opportunities in seller lifecycle, listings, ads, content commerce, fulfillment, support, risk, payments, merchant growth, and marketplace governance.",
+          "Cross-functional adoption: move business, product, engineering, legal, risk, and operations together instead of only writing strategy decks.",
+          "Technical translation: explain the business meaning of RAG, agents, model routing, evaluation, guardrails, data privacy, and MLOps without being an algorithm engineer.",
+          "Governance and risk: understand AI governance, model risk, data permissions, audit trails, human-in-the-loop, and compliance boundaries.",
+          "Leadership evidence: show budget ownership, cross-functional teams, and business KPI ownership, not just analysis and recommendations."
+        ],
+        why:
+          "Prepare 2-3 AI project stories using the structure: business problem, AI solution, cross-functional delivery, measurable outcome, and risk governance. That reads like AI transformation ownership, not just AI strategy advice.",
+        links: [
+          ["Insurance AI Product Strategy", "https://www.pinpointasia.com/pinpointasia-jobs/director%2C-ai-product-strategy---insurance-group---j12585"],
+          ["Bank AI Product Strategy", "https://www.jobleads.com/hk/job/director-ai-product-strategy-adoption--hongkong--ec10395eb27b43cc4b3821f00e11d4184"],
+          ["Technology & AI Transformation", "https://www.jobleads.com/hk/job/director-technology-ai-transformation-circa-70-80k--hong-kong--e0c3b36cab4ae92a085360e2042b42cff"]
+        ]
+      }
+    ]
+  },
+  {
+    date: "2026-05-14",
+    title: "Daily AI Atlas",
+    meta: "Historical sample · can be appended by the daily automation",
+    headline: "Historical issue placeholder",
+    summary:
+      "This is a sample historical archive entry. Future automation can append new daily issues to the archive data, and the left rail will show each date automatically.",
+    items: [
+      {
+        section: "Top Stories",
+        priority: "Sample",
+        title: "Historical issues are saved by date",
+        dek:
+          "Click different dates to review that day’s AI news, open-source projects, research reports, AI term, and career radar.",
+        details: [
+          "The current page is a local static website with no server dependency.",
+          "The daily automation can append a new archive record each day.",
+          "External news and report links remain clickable sources."
+        ],
+        why:
+          "This turns the daily digest into a local knowledge archive that helps track trends over time.",
+        links: []
+      }
+    ]
+  }
 ];
 
-let activeDate = archive[0].date;
-let activeSection = "全部";
-let activeArchiveTag = "全部";
+const sectionOrders = {
+  zh: ["全部", "今日重点", "开源项目", "机构报告", "每日词条", "职业雷达"],
+  en: ["All", "Top Stories", "Open Source", "Research Reports", "AI Term", "Career Radar"]
+};
+
+const uiText = {
+  zh: {
+    all: "全部",
+    language: "语言",
+    zh: "简体中文",
+    en: "English",
+    dateSearch: "搜索归档",
+    archiveTags: "归档标签",
+    contentSearch: "搜索当前日报",
+    datePlaceholder: "搜索日期、公司、关键词",
+    contentPlaceholder: "例如 DeepSeek、机器人、RAG、香港岗位",
+    noDates: "没有匹配的日期。",
+    noContent: "没有找到匹配内容。换个关键词试试。",
+    copyDone: "已复制"
+  },
+  en: {
+    all: "All",
+    language: "Language",
+    zh: "简体中文",
+    en: "English",
+    dateSearch: "Search archive",
+    archiveTags: "Archive tags",
+    contentSearch: "Search current issue",
+    datePlaceholder: "Search dates, companies, keywords",
+    contentPlaceholder: "e.g. DeepSeek, robotics, RAG, Hong Kong roles",
+    noDates: "No matching dates.",
+    noContent: "No matching content. Try another keyword.",
+    copyDone: "Copied"
+  }
+};
+
+let currentLang = localStorage.getItem("daily-ai-atlas-lang") || "zh";
+let activeDate = archiveZh[0].date;
+let activeSection = uiText[currentLang].all;
+let activeArchiveTag = uiText[currentLang].all;
 let contentQuery = "";
 let dateQuery = "";
 
 const dateList = document.querySelector("#dateList");
 const dateSearch = document.querySelector("#dateSearch");
 const archiveTags = document.querySelector("#archiveTags");
+const languageSwitch = document.querySelector("#languageSwitch");
+const languageLabel = document.querySelector("#languageLabel");
+const dateSearchLabel = document.querySelector("#dateSearchLabel");
+const archiveTagsLabel = document.querySelector("#archiveTagsLabel");
 const sectionTabs = document.querySelector("#sectionTabs");
 const contentSearch = document.querySelector("#contentSearch");
+const contentSearchLabel = document.querySelector("#contentSearchLabel");
 const contentGrid = document.querySelector("#contentGrid");
 const issueMeta = document.querySelector("#issueMeta");
 const issueTitle = document.querySelector("#issueTitle");
@@ -285,6 +574,18 @@ const storyTemplate = document.querySelector("#storyTemplate");
 
 function normalize(value) {
   return String(value || "").toLowerCase();
+}
+
+function getArchive() {
+  return currentLang === "en" ? archiveEn : archiveZh;
+}
+
+function t(key) {
+  return uiText[currentLang][key];
+}
+
+function allLabel() {
+  return t("all");
 }
 
 function itemMatches(item, query) {
@@ -308,19 +609,20 @@ function itemMatches(item, query) {
 }
 
 function getIssue() {
+  const archive = getArchive();
   return archive.find((issue) => issue.date === activeDate) || archive[0];
 }
 
 function getArchiveTags() {
-  const tags = new Set(["全部"]);
-  archive.forEach((issue) => {
+  const tags = new Set([allLabel()]);
+  getArchive().forEach((issue) => {
     issue.items.forEach((item) => tags.add(item.section));
   });
-  return ["全部", ...Array.from(tags).filter((tag) => tag !== "全部").sort()];
+  return [allLabel(), ...Array.from(tags).filter((tag) => tag !== allLabel()).sort()];
 }
 
 function issueMatchesArchiveTag(issue) {
-  if (activeArchiveTag === "全部") return true;
+  if (activeArchiveTag === allLabel()) return true;
   return issue.items.some((item) => item.section === activeArchiveTag);
 }
 
@@ -336,11 +638,11 @@ function renderArchiveTags() {
       const visibleIssues = getFilteredIssues();
       if (!visibleIssues.some((issue) => issue.date === activeDate) && visibleIssues[0]) {
         activeDate = visibleIssues[0].date;
-        activeSection = tag === "全部" ? "全部" : tag;
-      } else if (tag !== "全部") {
+        activeSection = tag === allLabel() ? allLabel() : tag;
+      } else if (tag !== allLabel()) {
         activeSection = tag;
       } else {
-        activeSection = "全部";
+        activeSection = allLabel();
       }
       contentQuery = "";
       contentSearch.value = "";
@@ -351,7 +653,7 @@ function renderArchiveTags() {
 }
 
 function getFilteredIssues() {
-  return archive.filter((issue) => {
+  return getArchive().filter((issue) => {
     const queryMatch = normalize([issue.date, issue.title, issue.meta, issue.headline, issue.summary].join(" ")).includes(
       normalize(dateQuery)
     );
@@ -370,7 +672,7 @@ function renderDates() {
     button.innerHTML = `<strong>${issue.date}</strong><span>${issue.headline}</span>`;
     button.addEventListener("click", () => {
       activeDate = issue.date;
-      activeSection = "全部";
+      activeSection = allLabel();
       contentQuery = "";
       contentSearch.value = "";
       render();
@@ -381,7 +683,7 @@ function renderDates() {
   if (!filtered.length) {
     const empty = document.createElement("div");
     empty.className = "empty-state";
-    empty.textContent = "没有匹配的日期。";
+    empty.textContent = t("noDates");
     dateList.appendChild(empty);
   }
 }
@@ -389,8 +691,8 @@ function renderDates() {
 function renderTabs(issue) {
   sectionTabs.innerHTML = "";
   const available = new Set(issue.items.map((item) => item.section));
-  sectionOrder
-    .filter((section) => section === "全部" || available.has(section))
+  sectionOrders[currentLang]
+    .filter((section) => section === allLabel() || available.has(section))
     .forEach((section) => {
       const button = document.createElement("button");
       button.type = "button";
@@ -409,21 +711,21 @@ function renderContent() {
   const issue = getIssue();
   contentGrid.innerHTML = "";
   const filtered = issue.items.filter((item) => {
-    const sectionMatch = activeSection === "全部" || item.section === activeSection;
+    const sectionMatch = activeSection === allLabel() || item.section === activeSection;
     return sectionMatch && itemMatches(item, contentQuery);
   });
 
   if (!filtered.length) {
     const empty = document.createElement("div");
     empty.className = "empty-state";
-    empty.textContent = "没有找到匹配内容。换个关键词试试。";
+    empty.textContent = t("noContent");
     contentGrid.appendChild(empty);
     return;
   }
 
   filtered.forEach((item) => {
     const node = storyTemplate.content.firstElementChild.cloneNode(true);
-    if (["机构报告", "每日词条", "职业雷达"].includes(item.section)) {
+    if (["机构报告", "每日词条", "职业雷达", "Research Reports", "AI Term", "Career Radar"].includes(item.section)) {
       node.classList.add("is-wide");
     }
     node.querySelector(".section-label").textContent = item.section;
@@ -484,8 +786,46 @@ function renderHeader(issue) {
   heroSummary.textContent = issue.summary;
 }
 
+function renderLanguageSwitch() {
+  languageSwitch.innerHTML = "";
+  [
+    ["zh", t("zh")],
+    ["en", t("en")]
+  ].forEach(([lang, label]) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `language-button${lang === currentLang ? " is-active" : ""}`;
+    button.textContent = label;
+    button.addEventListener("click", () => {
+      if (currentLang === lang) return;
+      currentLang = lang;
+      localStorage.setItem("daily-ai-atlas-lang", currentLang);
+      activeSection = allLabel();
+      activeArchiveTag = allLabel();
+      contentQuery = "";
+      dateQuery = "";
+      contentSearch.value = "";
+      dateSearch.value = "";
+      render();
+    });
+    languageSwitch.appendChild(button);
+  });
+}
+
+function renderChrome() {
+  document.documentElement.lang = currentLang === "en" ? "en" : "zh-CN";
+  languageLabel.textContent = t("language");
+  dateSearchLabel.textContent = t("dateSearch");
+  archiveTagsLabel.textContent = t("archiveTags");
+  contentSearchLabel.textContent = t("contentSearch");
+  dateSearch.placeholder = t("datePlaceholder");
+  contentSearch.placeholder = t("contentPlaceholder");
+  renderLanguageSwitch();
+}
+
 function render() {
   const issue = getIssue();
+  renderChrome();
   renderHeader(issue);
   renderArchiveTags();
   renderDates();
@@ -515,7 +855,7 @@ copyLinkButton.addEventListener("click", async () => {
   const href = window.location.href;
   try {
     await navigator.clipboard.writeText(href);
-    copyLinkButton.title = "已复制";
+    copyLinkButton.title = t("copyDone");
   } catch {
     copyLinkButton.title = href;
   }

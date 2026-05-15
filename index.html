@@ -18,12 +18,17 @@
         </div>
 
         <div class="rail-section">
-          <label for="dateSearch">搜索归档</label>
+          <label id="languageLabel">语言</label>
+          <div class="language-switch" id="languageSwitch" aria-label="语言切换"></div>
+        </div>
+
+        <div class="rail-section">
+          <label for="dateSearch" id="dateSearchLabel">搜索归档</label>
           <input id="dateSearch" type="search" placeholder="搜索日期、公司、关键词" />
         </div>
 
         <div class="rail-section">
-          <label>归档标签</label>
+          <label id="archiveTagsLabel">归档标签</label>
           <div class="archive-tags" id="archiveTags"></div>
         </div>
 
@@ -54,7 +59,7 @@
 
         <section class="controls" aria-label="筛选工具">
           <div class="search-wrap">
-            <label for="contentSearch">搜索当前日报</label>
+            <label for="contentSearch" id="contentSearchLabel">搜索当前日报</label>
             <input id="contentSearch" type="search" placeholder="例如 DeepSeek、机器人、RAG、香港岗位" />
           </div>
           <div class="tabs" id="sectionTabs" role="tablist" aria-label="内容分类"></div>
@@ -78,6 +83,6 @@
       </article>
     </template>
 
-    <script src="./app.js?v=20260515-daily-ai-atlas"></script>
+    <script src="./app.js?v=20260515-i18n"></script>
   </body>
 </html>
