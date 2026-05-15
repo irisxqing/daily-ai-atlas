@@ -22,6 +22,7 @@
   --text-small: 13px;
   --text-body: 14px;
   --text-lead: 16px;
+  --text-brand: 21px;
   --text-card-title: 21px;
   --text-hero: 36px;
 }
@@ -86,7 +87,7 @@ input {
 }
 
 .brand h1 {
-  font-size: 21px;
+  font-size: var(--text-brand);
 }
 
 .brand-subtitle {
@@ -241,7 +242,8 @@ input:focus {
 
 .calendar-header strong {
   text-align: center;
-  font-size: 15px;
+  font-size: var(--text-body);
+  font-weight: 800;
 }
 
 .calendar-nav {
@@ -429,12 +431,12 @@ input:focus {
 
 .date-button strong {
   margin-bottom: 6px;
-  font-size: 16px;
+  font-size: var(--text-lead);
 }
 
 .date-button span {
   color: var(--muted);
-  font-size: 13px;
+  font-size: var(--text-small);
   line-height: 1.4;
 }
 
@@ -540,7 +542,8 @@ input:focus {
 .term-title {
   margin: 0 0 6px;
   color: var(--ink);
-  font-size: var(--text-body);
+  font-size: var(--text-lead);
+  font-weight: 800;
   line-height: 1.28;
 }
 
@@ -548,8 +551,8 @@ input:focus {
 .term-why {
   margin: 0;
   color: #3c424b;
-  font-size: var(--text-label);
-  line-height: 1.48;
+  font-size: var(--text-body);
+  line-height: 1.54;
 }
 
 .term-more {
@@ -574,7 +577,7 @@ input:focus {
   grid-template-columns: 7px minmax(0, 1fr);
   gap: 8px;
   color: var(--muted);
-  font-size: var(--text-label);
+  font-size: var(--text-body);
   line-height: 1.5;
 }
 
@@ -867,7 +870,7 @@ input:focus {
 .dek {
   margin: 0 0 14px;
   color: var(--ink);
-  font-size: 15px;
+  font-size: var(--text-body);
   line-height: 1.65;
 }
 
@@ -949,13 +952,13 @@ input:focus {
 }
 
 .media-title {
-  font-size: 12px;
+  font-size: var(--text-label);
   font-weight: 900;
   text-transform: uppercase;
 }
 
 .media-caption {
-  font-size: 13px;
+  font-size: var(--text-small);
   font-weight: 700;
   line-height: 1.35;
 }
@@ -974,7 +977,7 @@ input:focus {
   border-radius: var(--radius);
   background: rgba(18, 22, 28, 0.72);
   color: #fff;
-  font-size: 12px;
+  font-size: var(--text-label);
   font-weight: 900;
 }
 
