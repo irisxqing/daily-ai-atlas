@@ -82,21 +82,26 @@ The site is fully static. Daily issues live inside `app.js`, while layout and in
 
 ## Roadmap / 接下来想做
 
-- Add a real email subscription and delivery flow.
-- Add RSS output for daily issues.
-- Add a lightweight editor/admin panel for newsletter templates and archive entries.
-- Add saved/bookmarked articles and read-later state.
-- Add topic trend views across 7/30/90 days.
-- Add more structured source metadata and scoring logic.
-- Improve mobile reading for long reports and media-heavy cards.
+- **搭建可维护的内容后台**：增加轻量编辑/admin 面板，用来维护日报模板、归档内容、产品推荐和报告条目。
+  **Build a maintainable content backend**: add a lightweight editor/admin panel for daily templates, archive entries, product picks, and report items.
 
-- 增加真正的邮件订阅和自动发送能力。
-- 为每日内容生成 RSS。
-- 增加轻量管理后台，用来维护日报模板和归档内容。
-- 增加收藏、稍后阅读和已读状态。
-- 增加 7/30/90 天主题趋势视图。
-- 增加更结构化的信息源元数据和筛选评分逻辑。
-- 继续优化移动端阅读，尤其是长报告和图文卡片。
+- **结构化信息源与评分逻辑**：为每条新闻增加来源类型、可信度、地区、公司、主题和推荐理由，提升筛选质量。
+  **Add structured source metadata and scoring**: capture source type, confidence, region, company, topic, and selection rationale for each story.
+
+- **邮件订阅与自动发送**：支持用户订阅，并把每日 9:30 生成的内容自动发送到邮箱。
+  **Add email subscription and delivery**: let readers subscribe and receive the daily 9:30 briefing by email.
+
+- **RSS 输出**：为每日 issue 生成 RSS，让读者可以在自己的阅读器里订阅。
+  **Publish RSS feeds**: generate RSS output for each daily issue so readers can subscribe in their own feed readers.
+
+- **收藏与稍后阅读**：支持保存重要文章、产品和报告，并标记已读/待读状态。
+  **Add bookmarks and read-later state**: let readers save important articles, products, and reports, with read/unread status.
+
+- **主题趋势分析**：增加 7/30/90 天趋势视图，看哪些公司、技术方向和产品类别正在升温。
+  **Add topic trend views**: show 7/30/90-day trends for companies, technologies, and product categories.
+
+- **移动端深度优化**：继续优化手机上的长报告阅读、媒体卡片、标签筛选和归档浏览。
+  **Improve mobile reading**: refine long-report reading, media cards, tag filters, and archive browsing on mobile.
 
 ## Feedback / 反馈
 
