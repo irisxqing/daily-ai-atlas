@@ -553,8 +553,7 @@ input:focus {
 .topbar-language {
   display: flex;
   align-items: center;
-  gap: 8px;
-  min-height: 34px;
+  min-height: 30px;
 }
 
 .topbar-language label {
@@ -563,9 +562,25 @@ input:focus {
 }
 
 .topbar-language .language-switch {
-  width: 92px;
-  min-height: 30px;
-  background: rgba(255, 255, 255, 0.86);
+  width: 76px;
+  min-height: 28px;
+  padding: 2px;
+  border-color: rgba(15, 23, 42, 0.08);
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.topbar-language .language-switch::before {
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  width: calc(50% - 2px);
+  box-shadow: 0 3px 9px rgba(15, 23, 42, 0.08);
+}
+
+.topbar-language .language-button {
+  min-height: 22px;
+  font-size: 11px;
+  font-weight: 600;
 }
 
 .icon-button {

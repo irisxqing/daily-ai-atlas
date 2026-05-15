@@ -977,7 +977,6 @@ const dateSearch = document.querySelector("#dateSearch");
 const archiveTags = document.querySelector("#archiveTags");
 const topicTags = document.querySelector("#topicTags");
 const languageSwitch = document.querySelector("#languageSwitch");
-const languageLabel = document.querySelector("#languageLabel");
 const dateRail = document.querySelector(".date-rail");
 const dateSearchLabel = document.querySelector("#dateSearchLabel");
 const archiveTagsLabel = document.querySelector("#archiveTagsLabel");
@@ -1852,7 +1851,7 @@ function renderLanguageSwitch() {
 
 function renderChrome() {
   document.documentElement.lang = currentLang === "en" ? "en" : "zh-CN";
-  languageLabel.textContent = t("language");
+  languageSwitch.setAttribute("aria-label", t("language"));
   refreshNote.textContent = t("refreshNote");
   dateSearchLabel.textContent = t("dateSearch");
   archiveTagsLabel.textContent = t("archiveTags");
