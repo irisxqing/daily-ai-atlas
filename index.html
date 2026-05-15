@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Daily AI Atlas</title>
     <link rel="icon" href="./assets/daily-ai-atlas-logo.svg?v=20260515-literal-ai-logo" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css?v=20260515-dashboard-upgrades" />
+    <link rel="stylesheet" href="./styles.css?v=20260515-clean-hierarchy" />
   </head>
   <body>
     <div class="app-shell">
@@ -20,14 +20,16 @@
 
         <section class="term-spotlight" id="termSpotlight" aria-label="今日 AI 词条"></section>
 
-        <div class="rail-section language-section">
-          <label id="languageLabel">语言</label>
-          <div class="language-switch" id="languageSwitch" aria-label="语言切换"></div>
-        </div>
-
         <div class="rail-section">
           <label for="dateSearch" id="dateSearchLabel">搜索归档</label>
           <input id="dateSearch" type="search" placeholder="搜索日期、公司、关键词" />
+        </div>
+
+        <nav class="date-list" id="dateList"></nav>
+
+        <div class="rail-section language-section">
+          <label id="languageLabel">语言</label>
+          <div class="language-switch" id="languageSwitch" aria-label="语言切换"></div>
         </div>
 
         <div class="rail-section">
@@ -39,8 +41,6 @@
           <label id="topicLabel">主题聚合</label>
           <div class="topic-tags" id="topicTags"></div>
         </div>
-
-        <nav class="date-list" id="dateList"></nav>
 
         <details class="source-method" id="sourceMethod">
           <summary id="sourceMethodSummary">信息来源</summary>
@@ -71,15 +71,6 @@
           </div>
         </section>
 
-        <section class="signal-dashboard" aria-label="日报工作台">
-          <div class="dashboard-card update-card" id="updateStatusCard"></div>
-          <div class="dashboard-card source-picks-card" id="sourcePicksCard"></div>
-          <div class="dashboard-card career-brief-card" id="careerBriefCard"></div>
-          <div class="dashboard-card email-brief-card" id="emailBriefCard"></div>
-        </section>
-
-        <section class="topic-digest" id="topicDigest" aria-label="主题聚合摘要"></section>
-
         <section class="controls" aria-label="筛选工具">
           <div class="search-wrap">
             <label for="contentSearch" id="contentSearchLabel">搜索当前日报</label>
@@ -109,6 +100,6 @@
       </article>
     </template>
 
-    <script src="./app.js?v=20260515-dashboard-upgrades"></script>
+    <script src="./app.js?v=20260515-clean-hierarchy"></script>
   </body>
 </html>
