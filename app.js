@@ -551,6 +551,7 @@ let currentLang = localStorage.getItem("daily-ai-atlas-lang") || "zh";
 let activeDate = archiveZh[0].date;
 let activeSection = uiText[currentLang].all;
 let activeArchiveTag = uiText[currentLang].all;
+let calendarMonth = activeDate.slice(0, 7);
 let contentQuery = "";
 let dateQuery = "";
 
@@ -638,6 +639,7 @@ function renderArchiveTags() {
       const visibleIssues = getFilteredIssues();
       if (!visibleIssues.some((issue) => issue.date === activeDate) && visibleIssues[0]) {
         activeDate = visibleIssues[0].date;
+        calendarMonth = activeDate.slice(0, 7);
         activeSection = tag === allLabel() ? allLabel() : tag;
       } else if (tag !== allLabel()) {
         activeSection = tag;
@@ -661,24 +663,93 @@ function getFilteredIssues() {
   });
 }
 
+function formatMonthLabel(monthKey) {
+  const [year, month] = monthKey.split("-").map(Number);
+  const date = new Date(year, month - 1, 1);
+  if (currentLang === "en") {
+    return new Intl.DateTimeFormat("en", { month: "long", year: "numeric" }).format(date);
+  }
+  return `${year}年${month}月`;
+}
+
+function shiftCalendarMonth(delta) {
+  const [year, month] = calendarMonth.split("-").map(Number);
+  const next = new Date(year, month - 1 + delta, 1);
+  calendarMonth = `${next.getFullYear()}-${String(next.getMonth() + 1).padStart(2, "0")}`;
+  renderDates();
+}
+
 function renderDates() {
   dateList.innerHTML = "";
   const filtered = getFilteredIssues();
+  const issueByDate = new Map(filtered.map((issue) => [issue.date, issue]));
+  const [year, month] = calendarMonth.split("-").map(Number);
+  const firstDay = new Date(year, month - 1, 1);
+  const daysInMonth = new Date(year, month, 0).getDate();
+  const leadingBlanks = firstDay.getDay();
+  const weekLabels = currentLang === "en"
+    ? ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    : ["日", "一", "二", "三", "四", "五", "六"];
 
-  filtered.forEach((issue) => {
+  const calendar = document.createElement("div");
+  calendar.className = "calendar";
+
+  const header = document.createElement("div");
+  header.className = "calendar-header";
+  const prev = document.createElement("button");
+  prev.type = "button";
+  prev.className = "calendar-nav";
+  prev.textContent = "‹";
+  prev.addEventListener("click", () => shiftCalendarMonth(-1));
+  const title = document.createElement("strong");
+  title.textContent = formatMonthLabel(calendarMonth);
+  const next = document.createElement("button");
+  next.type = "button";
+  next.className = "calendar-nav";
+  next.textContent = "›";
+  next.addEventListener("click", () => shiftCalendarMonth(1));
+  header.append(prev, title, next);
+  calendar.appendChild(header);
+
+  const weekdays = document.createElement("div");
+  weekdays.className = "calendar-weekdays";
+  weekLabels.forEach((label) => {
+    const cell = document.createElement("span");
+    cell.textContent = label;
+    weekdays.appendChild(cell);
+  });
+  calendar.appendChild(weekdays);
+
+  const grid = document.createElement("div");
+  grid.className = "calendar-grid";
+  for (let i = 0; i < leadingBlanks; i += 1) {
+    const blank = document.createElement("span");
+    blank.className = "calendar-empty";
+    grid.appendChild(blank);
+  }
+
+  for (let day = 1; day <= daysInMonth; day += 1) {
+    const date = `${calendarMonth}-${String(day).padStart(2, "0")}`;
+    const issue = issueByDate.get(date);
     const button = document.createElement("button");
     button.type = "button";
-    button.className = `date-button${issue.date === activeDate ? " is-active" : ""}`;
-    button.innerHTML = `<strong>${issue.date}</strong><span>${issue.headline}</span>`;
-    button.addEventListener("click", () => {
-      activeDate = issue.date;
-      activeSection = allLabel();
-      contentQuery = "";
-      contentSearch.value = "";
-      render();
-    });
-    dateList.appendChild(button);
-  });
+    button.className = `calendar-day${issue ? " has-issue" : ""}${date === activeDate ? " is-active" : ""}`;
+    button.textContent = String(day);
+    button.disabled = !issue;
+    if (issue) {
+      button.title = issue.headline;
+      button.addEventListener("click", () => {
+        activeDate = issue.date;
+        activeSection = allLabel();
+        contentQuery = "";
+        contentSearch.value = "";
+        render();
+      });
+    }
+    grid.appendChild(button);
+  }
+  calendar.appendChild(grid);
+  dateList.appendChild(calendar);
 
   if (!filtered.length) {
     const empty = document.createElement("div");
@@ -838,6 +909,7 @@ dateSearch.addEventListener("input", (event) => {
   const visibleIssues = getFilteredIssues();
   if (!visibleIssues.some((issue) => issue.date === activeDate) && visibleIssues[0]) {
     activeDate = visibleIssues[0].date;
+    calendarMonth = activeDate.slice(0, 7);
   }
   renderArchiveTags();
   renderDates();
