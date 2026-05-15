@@ -925,7 +925,7 @@ const uiText = {
     termLabel: "今日 AI 词条",
     termExpand: "展开核心解释",
     sourceMethodTitle: "信息来源",
-    sourceMethodText: "日报源只做雷达，重要内容会回到官网、论文、GitHub、招聘页和机构报告确认。",
+    sourceMethodText: "完整信息源按类型分层使用：日报和媒体负责发现信号，官方博客、论文、GitHub、机构报告、招聘页负责交叉确认。",
     datePlaceholder: "搜索日期、公司、关键词",
     contentPlaceholder: "例如 DeepSeek、机器人、投融资、香港岗位",
     noDates: "没有匹配的日期。",
@@ -954,7 +954,7 @@ const uiText = {
     termLabel: "AI Term of the Day",
     termExpand: "Read the quick explainer",
     sourceMethodTitle: "Sources",
-    sourceMethodText: "Newsletters act as radar; key items are checked against company posts, papers, GitHub, hiring pages, and original reports.",
+    sourceMethodText: "Sources are layered by purpose: newsletters and media surface signals, while official posts, papers, GitHub, reports, and hiring pages are used for verification.",
     datePlaceholder: "Search dates, companies, keywords",
     contentPlaceholder: "e.g. DeepSeek, robotics, funding, Hong Kong roles",
     noDates: "No matching dates.",
@@ -1061,13 +1061,104 @@ function issueMatchesTopic(issue) {
   return issue.items.some((item) => itemMatchesTopic(item));
 }
 
-const sourceLinks = [
-  ["AI Valley", "https://www.theaivalley.com/c/about"],
-  ["Ben's Bites", "https://bensbites.co/"],
-  ["TLDR AI", "https://tldr.tech/ai"],
-  ["The Batch", "https://www.deeplearning.ai/thebatch/"],
-  ["Import AI", "https://jack-clark.net/"],
-  ["Stanford AI Index", "https://hai.stanford.edu/ai-index/2026-ai-index-report"]
+const sourceGroups = [
+  {
+    zh: "AI 日报 / 媒体雷达",
+    en: "AI newsletters / media radar",
+    links: [
+      ["AI Valley", "https://www.theaivalley.com/c/about"],
+      ["Ben's Bites", "https://bensbites.co/"],
+      ["TLDR AI", "https://tldr.tech/ai"],
+      ["The Batch", "https://www.deeplearning.ai/thebatch/"],
+      ["Import AI", "https://jack-clark.net/"],
+      ["Latent Space", "https://www.latent.space/"],
+      ["The Neuron", "https://www.theneurondaily.com/"],
+      ["Superhuman AI", "https://www.superhuman.ai/"],
+      ["钛媒体 AI", "https://www.tmtpost.com/"],
+      ["机器之心", "https://www.jiqizhixin.com/"]
+    ]
+  },
+  {
+    zh: "公司官方 / 产品发布",
+    en: "Official company / product updates",
+    links: [
+      ["OpenAI News", "https://openai.com/news/"],
+      ["OpenAI Research", "https://openai.com/research/"],
+      ["Anthropic News", "https://www.anthropic.com/news"],
+      ["Google DeepMind", "https://deepmind.google/discover/blog/"],
+      ["Google AI Blog", "https://ai.googleblog.com/"],
+      ["xAI News", "https://x.ai/news"],
+      ["Meta AI Blog", "https://ai.meta.com/blog/"],
+      ["Microsoft AI Blog", "https://blogs.microsoft.com/ai/"],
+      ["NVIDIA Blog", "https://blogs.nvidia.com/"],
+      ["阿里云通义", "https://tongyi.aliyun.com/"],
+      ["智谱 AI", "https://www.zhipuai.cn/"],
+      ["MiniMax", "https://www.minimax.io/"]
+    ]
+  },
+  {
+    zh: "研究论文 / 机构报告",
+    en: "Research papers / institutional reports",
+    links: [
+      ["Stanford AI Index", "https://hai.stanford.edu/ai-index/2026-ai-index-report"],
+      ["State of AI Report", "https://www.stateof.ai/"],
+      ["arXiv cs.AI", "https://arxiv.org/list/cs.AI/recent"],
+      ["arXiv cs.CL", "https://arxiv.org/list/cs.CL/recent"],
+      ["Papers with Code", "https://paperswithcode.com/"],
+      ["McKinsey AI", "https://www.mckinsey.com/capabilities/quantumblack/our-insights"],
+      ["BCG AI", "https://www.bcg.com/capabilities/artificial-intelligence"],
+      ["KPMG AI", "https://kpmg.com/xx/en/what-we-do/services/advisory/ai.html"],
+      ["Deloitte AI Institute", "https://www.deloitte.com/global/en/our-thinking/insights/topics/analytics/artificial-intelligence.html"]
+    ]
+  },
+  {
+    zh: "开源社区 / 开发者信号",
+    en: "Open source / developer signals",
+    links: [
+      ["GitHub Trending", "https://github.com/trending"],
+      ["Hugging Face Papers", "https://huggingface.co/papers"],
+      ["Hugging Face Blog", "https://huggingface.co/blog"],
+      ["Hacker News", "https://news.ycombinator.com/"],
+      ["Replicate Blog", "https://replicate.com/blog"],
+      ["LangChain Blog", "https://blog.langchain.com/"],
+      ["LlamaIndex Blog", "https://www.llamaindex.ai/blog"]
+    ]
+  },
+  {
+    zh: "AI 产品发现",
+    en: "AI product discovery",
+    links: [
+      ["Product Hunt AI", "https://www.producthunt.com/categories/artificial-intelligence"],
+      ["Futurepedia", "https://www.futurepedia.io/"],
+      ["There's An AI For That", "https://theresanaiforthat.com/"],
+      ["AITopTools", "https://aitoptools.com/"],
+      ["Toolify", "https://www.toolify.ai/"],
+      ["Recall", "https://www.recall.it/"],
+      ["Liminary", "https://liminary.io/"]
+    ]
+  },
+  {
+    zh: "招聘 / 职业雷达",
+    en: "Hiring / career radar",
+    links: [
+      ["LinkedIn Jobs", "https://www.linkedin.com/jobs/"],
+      ["Wellfound", "https://wellfound.com/jobs"],
+      ["YC Work at a Startup", "https://www.ycombinator.com/jobs"],
+      ["a16z Jobs", "https://jobs.a16z.com/"],
+      ["Boss 直聘", "https://www.zhipin.com/"],
+      ["猎聘", "https://www.liepin.com/"],
+      ["拉勾", "https://www.lagou.com/"]
+    ]
+  },
+  {
+    zh: "社交平台 / 实时讨论",
+    en: "Social platforms / real-time discussion",
+    links: [
+      ["X / Twitter", "https://x.com/"],
+      ["Reddit Machine Learning", "https://www.reddit.com/r/MachineLearning/"],
+      ["Reddit LocalLLaMA", "https://www.reddit.com/r/LocalLLaMA/"]
+    ]
+  }
 ];
 
 const topicDefinitions = [
@@ -1673,11 +1764,26 @@ function renderSourceMethod() {
   sourceMethodSummary.textContent = t("sourceMethodTitle");
   sourceMethodText.textContent = t("sourceMethodText");
   sourceMethodLinks.innerHTML = "";
-  sourceLinks.forEach(([label, href]) => {
-    const link = document.createElement("a");
-    link.href = href;
-    link.textContent = label;
-    sourceMethodLinks.appendChild(link);
+  sourceGroups.forEach((group) => {
+    const sourceGroup = document.createElement("div");
+    sourceGroup.className = "source-link-group";
+
+    const heading = document.createElement("strong");
+    heading.textContent = currentLang === "en" ? group.en : group.zh;
+    sourceGroup.appendChild(heading);
+
+    const links = document.createElement("div");
+    links.className = "source-link-list";
+
+    group.links.forEach(([label, href]) => {
+      const link = document.createElement("a");
+      link.href = href;
+      link.textContent = label;
+      links.appendChild(link);
+    });
+
+    sourceGroup.appendChild(links);
+    sourceMethodLinks.appendChild(sourceGroup);
   });
 }
 
