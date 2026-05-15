@@ -54,9 +54,9 @@ input {
 .date-rail {
   position: sticky;
   top: 0;
-  height: 100vh;
-  overflow: auto;
-  padding: 28px 22px;
+  height: 100dvh;
+  overflow: hidden;
+  padding: 24px 20px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(239, 244, 250, 0.92));
   border-right: 1px solid var(--line);
@@ -65,14 +65,14 @@ input {
 
 .brand {
   display: flex;
-  gap: 14px;
+  gap: 12px;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .brand-logo {
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   border-radius: var(--radius);
   box-shadow: 0 10px 24px rgba(32, 36, 42, 0.16);
 }
@@ -86,7 +86,7 @@ input {
 }
 
 .brand h1 {
-  font-size: 22px;
+  font-size: 21px;
 }
 
 .brand-subtitle {
@@ -134,7 +134,7 @@ input {
 }
 
 .rail-section {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .language-section {
@@ -150,7 +150,7 @@ input {
 
 label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: var(--muted);
   font-size: var(--text-label);
   font-weight: 700;
@@ -158,7 +158,7 @@ label {
 
 input {
   width: 100%;
-  min-height: 40px;
+  min-height: 36px;
   padding: 0 13px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -181,13 +181,13 @@ input:focus {
 
 .date-list {
   display: grid;
-  gap: 10px;
-  margin-bottom: 18px;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 
 .source-method {
-  margin-top: 18px;
-  padding-top: 14px;
+  margin-top: 10px;
+  padding-top: 10px;
   border-top: 1px solid rgba(15, 23, 42, 0.1);
   color: var(--muted);
 }
@@ -224,7 +224,7 @@ input:focus {
 }
 
 .calendar {
-  padding: 12px;
+  padding: 9px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.72);
@@ -233,26 +233,26 @@ input:focus {
 
 .calendar-header {
   display: grid;
-  grid-template-columns: 34px 1fr 34px;
-  gap: 8px;
+  grid-template-columns: 30px 1fr 30px;
+  gap: 6px;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .calendar-header strong {
   text-align: center;
-  font-size: var(--text-lead);
+  font-size: 15px;
 }
 
 .calendar-nav {
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--panel);
   color: var(--ink);
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1;
 }
 
@@ -265,11 +265,11 @@ input:focus {
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 6px;
+  gap: 4px;
 }
 
 .calendar-weekdays {
-  margin-bottom: 7px;
+  margin-bottom: 4px;
 }
 
 .calendar-weekdays span {
@@ -291,7 +291,7 @@ input:focus {
   background: transparent;
   color: var(--muted);
   cursor: default;
-  font-size: var(--text-small);
+  font-size: var(--text-label);
   font-weight: 800;
 }
 
@@ -316,13 +316,13 @@ input:focus {
 .archive-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 
 .topic-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 
 .language-switch {
@@ -356,14 +356,14 @@ input:focus {
 
 .archive-tag-button,
 .topic-tag-button {
-  min-height: 34px;
-  padding: 0 10px;
+  min-height: 30px;
+  padding: 0 9px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.72);
   color: var(--muted);
   cursor: pointer;
-  font-size: var(--text-small);
+  font-size: var(--text-label);
   font-weight: 500;
 }
 
@@ -521,8 +521,8 @@ input:focus {
 }
 
 .term-spotlight {
-  margin-bottom: 18px;
-  padding: 13px;
+  margin-bottom: 12px;
+  padding: 11px;
   border: 1px solid rgba(14, 138, 166, 0.22);
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.7);
@@ -530,7 +530,7 @@ input:focus {
 }
 
 .term-kicker {
-  margin: 0 0 7px;
+  margin: 0 0 5px;
   color: var(--teal);
   font-size: var(--text-kicker);
   font-weight: 900;
@@ -538,9 +538,9 @@ input:focus {
 }
 
 .term-title {
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   color: var(--ink);
-  font-size: var(--text-lead);
+  font-size: var(--text-body);
   line-height: 1.28;
 }
 
@@ -549,11 +549,11 @@ input:focus {
   margin: 0;
   color: #3c424b;
   font-size: var(--text-label);
-  line-height: 1.58;
+  line-height: 1.48;
 }
 
 .term-more {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .term-more summary {
