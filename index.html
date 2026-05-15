@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Daily Archive</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="date-rail" aria-label="日报日期归档">
+        <div class="brand">
+          <span class="brand-mark">AI</span>
+          <div>
+            <p class="eyebrow">Local Archive</p>
+            <h1>AI Daily</h1>
+          </div>
+        </div>
+
+        <div class="rail-section">
+          <label for="dateSearch">搜索归档</label>
+          <input id="dateSearch" type="search" placeholder="搜索日期、公司、关键词" />
+        </div>
+
+        <div class="rail-section">
+          <label>归档标签</label>
+          <div class="archive-tags" id="archiveTags"></div>
+        </div>
+
+        <nav class="date-list" id="dateList"></nav>
+      </aside>
+
+      <main class="daily-view">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="issueMeta">Daily briefing</p>
+            <h2 id="issueTitle">AI公司早报</h2>
+          </div>
+          <div class="topbar-actions">
+            <button class="icon-button" id="copyLinkButton" type="button" title="复制本地页面路径">
+              <span aria-hidden="true">⌘</span>
+            </button>
+          </div>
+        </header>
+
+        <section class="hero-band" aria-label="今日摘要">
+          <img src="./assets/ai-daily-hero.png" alt="AI Daily newsletter visual" />
+          <div class="hero-copy">
+            <p class="eyebrow">Today in AI</p>
+            <h3 id="heroHeadline">从模型能力到真实落地</h3>
+            <p id="heroSummary"></p>
+          </div>
+        </section>
+
+        <section class="controls" aria-label="筛选工具">
+          <div class="search-wrap">
+            <label for="contentSearch">搜索当前日报</label>
+            <input id="contentSearch" type="search" placeholder="例如 DeepSeek、机器人、RAG、香港岗位" />
+          </div>
+          <div class="tabs" id="sectionTabs" role="tablist" aria-label="内容分类"></div>
+        </section>
+
+        <section class="content-grid" id="contentGrid" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <template id="storyTemplate">
+      <article class="story-card">
+        <div class="story-topline">
+          <span class="section-label"></span>
+          <span class="priority"></span>
+        </div>
+        <h3></h3>
+        <p class="dek"></p>
+        <div class="details"></div>
+        <p class="why"></p>
+        <div class="link-row"></div>
+      </article>
+    </template>
+
+    <script src="./app.js?v=20260515-anonymous"></script>
+  </body>
+</html>
