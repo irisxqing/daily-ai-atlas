@@ -87,11 +87,19 @@ input {
 }
 
 .refresh-note {
-  margin: 8px 0 0;
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  margin: 0;
+  padding: 0 10px;
+  border: 1px solid rgba(45, 123, 100, 0.28);
+  border-radius: var(--radius);
+  background: rgba(45, 123, 100, 0.08);
   color: var(--green);
   font-size: 12px;
   font-weight: 800;
   line-height: 1.35;
+  white-space: nowrap;
 }
 
 .eyebrow {
@@ -313,6 +321,7 @@ input:focus {
 
 .topbar-actions {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -638,6 +647,11 @@ input:focus {
 }
 
 @media (max-width: 760px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .hero-band {
     grid-template-columns: 1fr;
   }
