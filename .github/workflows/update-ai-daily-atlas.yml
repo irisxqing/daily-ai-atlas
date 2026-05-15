@@ -1,0 +1,63 @@
+name: Update AI Daily Atlas
+
+on:
+  schedule:
+    # 09:30 Beijing time, Monday to Friday. GitHub cron uses UTC.
+    - cron: "30 1 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      issue_date:
+        description: "Optional issue date in YYYY-MM-DD, interpreted as Beijing date"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ai-daily-atlas-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate daily issue
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          OPENAI_REASONING_EFFORT: ${{ vars.OPENAI_REASONING_EFFORT }}
+          ISSUE_DATE: ${{ inputs.issue_date }}
+        run: node tools/update-daily-atlas.mjs
+
+      - name: Validate generated JavaScript
+        run: |
+          node --check app.js
+          git diff --check
+
+      - name: Commit and push changes
+        run: |
+          if git diff --quiet app.js; then
+            echo "No app.js changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app.js
+          ISSUE_DATE="${{ inputs.issue_date }}"
+          if [ -z "$ISSUE_DATE" ]; then
+            ISSUE_DATE="$(TZ=Asia/Shanghai date +'%Y-%m-%d')"
+          fi
+          git commit -m "Update AI Daily Atlas for ${ISSUE_DATE}"
+          git push

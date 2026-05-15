@@ -97,6 +97,20 @@ node tools/generate-broadcast.mjs --lang en --date 2026-05-15 --stdout
 
 生成结果会保存到 `broadcasts/YYYY-MM-DD-zh.md`，可以直接作为播客、短视频口播、微信群语音或 LinkedIn 摘要的底稿。
 
+## Automation / 自动更新
+
+- **工作日自动更新**：GitHub Actions 在 UTC 01:30 运行，也就是北京时间周一到周五 9:30。
+  **Weekday automation**: GitHub Actions runs at 01:30 UTC, which is 9:30 Beijing time from Monday to Friday.
+
+- **周一补周末信息**：周二到周五覆盖过去 24 小时；周一会补充周六、周日两天的信息。
+  **Weekend catch-up on Monday**: Tuesday to Friday cover the past 24 hours; Monday also catches up on Saturday and Sunday signals.
+
+- **发布方式**：脚本会更新 `app.js`，提交到 `main`，然后 GitHub Pages 自动刷新。
+  **Publishing flow**: the script updates `app.js`, commits to `main`, and GitHub Pages refreshes automatically.
+
+- **必需 Secret**：在 GitHub repository secrets 中添加 `OPENAI_API_KEY`。可选 repository variables：`OPENAI_MODEL`、`OPENAI_REASONING_EFFORT`。
+  **Required secret**: add `OPENAI_API_KEY` to GitHub repository secrets. Optional repository variables: `OPENAI_MODEL`, `OPENAI_REASONING_EFFORT`.
+
 ## Roadmap / 接下来想做
 
 - **搭建可维护的内容后台**：增加轻量编辑/admin 面板，用来维护日报模板、归档内容、产品推荐和报告条目。
