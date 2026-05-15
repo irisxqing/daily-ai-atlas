@@ -57,17 +57,34 @@ input {
   top: 0;
   height: 100dvh;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
   padding: 24px 20px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(239, 244, 250, 0.92));
   border-right: 1px solid var(--line);
   backdrop-filter: blur(12px);
+  scrollbar-width: none;
+}
+
+.date-rail::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .date-rail.is-source-open,
 .date-rail:has(.source-method[open]) {
-  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.date-rail.is-source-open::-webkit-scrollbar,
+.date-rail:has(.source-method[open])::-webkit-scrollbar {
+  width: 8px;
+}
+
+.date-rail.is-source-open::-webkit-scrollbar-thumb,
+.date-rail:has(.source-method[open])::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(100, 116, 139, 0.32);
 }
 
 .brand {
@@ -531,6 +548,24 @@ input:focus {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.topbar-language {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+}
+
+.topbar-language label {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.topbar-language .language-switch {
+  width: 92px;
+  min-height: 30px;
+  background: rgba(255, 255, 255, 0.86);
 }
 
 .icon-button {
@@ -1242,7 +1277,6 @@ input:focus {
 
   .brand,
   .term-spotlight,
-  .language-section,
   .source-method {
     max-width: 720px;
   }
@@ -1293,12 +1327,22 @@ input:focus {
 
   .topbar-actions {
     width: 100%;
+    flex-wrap: wrap;
     align-items: stretch;
+  }
+
+  .topbar-language {
+    order: 2;
   }
 
   .refresh-note {
     flex: 1;
+    order: 1;
     white-space: normal;
+  }
+
+  .icon-button {
+    order: 3;
   }
 
   .hero-band {
