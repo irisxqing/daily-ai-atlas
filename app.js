@@ -59,6 +59,29 @@ const archiveZh = [
         ]
       },
       {
+        section: "模型与平台更新",
+        priority: "官方更新",
+        title: "OpenAI 连发语音、默认模型和研究型模型更新",
+        dek:
+          "OpenAI 最近的信号不是单点发布，而是一组平台能力升级：实时语音 API 进入更强的实时交互，GPT-5.5 Instant 成为更智能的默认 ChatGPT 体验，研究页还出现 Privacy Filter 和 GPT-Rosalind。",
+        details: [
+          "实时语音：OpenAI 发布 GPT-Realtime-2、GPT-Realtime-Translate 和 GPT-Realtime-Whisper，方向是让语音应用可以边说边理解、边翻译、边转写，而不是先录音再处理。",
+          "默认体验：GPT-5.5 Instant 正在替代 GPT-5.3 Instant，成为 ChatGPT 更聪明、更准确、更个性化的默认模型；OpenAI 称它在高风险问题上的幻觉声明比 GPT-5.3 Instant 少 52.5%。",
+          "隐私工具：OpenAI Privacy Filter 是一个开源权重的 PII 检测和脱敏模型，参数量为 1.5B、活跃参数约 50M，说明隐私和合规能力正在变成 AI 平台基础设施。",
+          "科学模型：GPT-Rosalind 面向生命科学研究，支持文献综合、假设生成、实验规划、蛋白和基因相关推理，并通过 trusted access 向合格客户开放。",
+          "这组更新放在一起看，OpenAI 正在同时推进三条线：普通用户默认体验、开发者实时 API、垂直行业研究模型。"
+        ],
+        why:
+          "这条比单个产品发布更重要：它说明模型公司正在把能力拆成不同层级交付。普通用户得到更好的默认模型，开发者得到实时语音 API，企业和科研客户得到专用模型和隐私组件。对 AI 产品和跨境业务来说，下一波机会可能来自实时客服、直播翻译、语音导购、合规数据处理和行业专属 agent。",
+        links: [
+          ["OpenAI 语音 API 更新", "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/"],
+          ["GPT-5.5 Instant", "https://openai.com/index/gpt-5-5-instant/"],
+          ["GPT-5.5", "https://openai.com/index/introducing-gpt-5-5/"],
+          ["OpenAI Privacy Filter", "https://openai.com/index/introducing-openai-privacy-filter/"],
+          ["GPT-Rosalind", "https://openai.com/index/introducing-gpt-rosalind/"]
+        ]
+      },
+      {
         section: "今日重点",
         priority: "中高",
         title: "DeepSeek V4 继续强化中国模型的低成本路线",
@@ -181,6 +204,28 @@ const archiveZh = [
         links: [
           ["钛媒体文章", "https://www.tmtpost.com/7987326.html"],
           ["GitHub 仓库", "https://github.com/tinyhumansai/openhuman"]
+        ]
+      },
+      {
+        section: "AI产品推荐",
+        priority: "趋势产品",
+        title: "Anuma：一个订阅里的多模型入口和跨模型记忆层",
+        dek:
+          "Anuma 把 ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama、Mistral 等模型放进一个界面，并主打用户自有、加密、可跨模型携带的记忆。",
+        details: [
+          "Anuma 官网把自己定位为 privacy focused all-in-one AI platform，核心卖点是 one memory, every model, always private。",
+          "它支持多模型访问：ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama、Mistral 等，用户不需要在不同 app 之间反复复制上下文。",
+          "记忆层是重点：Anuma 称记忆会跨模型工作，用户可以添加、编辑、删除，且对话和记忆加密并存储在设备侧或用户控制的加密体系里。",
+          "Council Mode 可以让同一个问题同时交给多个模型回答，用来比较风格、准确性和深度；这比单纯的模型聚合更接近“多模型决策台”。",
+          "需要继续观察的是：跨模型记忆会涉及隐私、供应商数据策略、模型调用成本和用户迁移成本，产品承诺需要靠真实使用体验验证。"
+        ],
+        why:
+          "Anuma 不是最炫的单点工具，但它代表一个很值得跟踪的方向：个人 AI 操作系统和跨模型上下文层。未来用户可能不在意自己用的是哪个模型，而在意“我的长期记忆、偏好、项目上下文能不能跟着我走”。",
+        links: [
+          ["Anuma 官网", "https://www.anuma.ai/"],
+          ["Anuma Memory", "https://www.anuma.ai/ai-memory"],
+          ["多模型访问", "https://www.anuma.ai/multiple-ai-models"],
+          ["Anuma Launch", "https://www.anuma.ai/blog/anuma-launch"]
         ]
       },
       {
@@ -480,6 +525,29 @@ const archiveEn = [
         ]
       },
       {
+        section: "Models & Platforms",
+        priority: "Official update",
+        title: "OpenAI updated realtime voice, default ChatGPT, and research models",
+        dek:
+          "OpenAI’s recent signal is not one isolated launch. It is a stack of platform upgrades: stronger realtime voice APIs, GPT-5.5 Instant as a smarter default ChatGPT experience, plus research releases such as Privacy Filter and GPT-Rosalind.",
+        details: [
+          "Voice: OpenAI introduced GPT-Realtime-2, GPT-Realtime-Translate, and GPT-Realtime-Whisper, pointing toward apps that can reason, translate, and transcribe while people speak.",
+          "Default ChatGPT: GPT-5.5 Instant is replacing GPT-5.3 Instant as a smarter, more accurate, more personalized default model; OpenAI says it produced 52.5% fewer hallucinated claims on high-stakes prompts than GPT-5.3 Instant.",
+          "Privacy infrastructure: OpenAI Privacy Filter is an open-weight model for detecting and redacting PII in text, with 1.5B total parameters and around 50M active parameters.",
+          "Scientific model: GPT-Rosalind is a life-sciences research model for evidence synthesis, hypothesis generation, experiment planning, and biological reasoning, available to qualified customers through trusted access.",
+          "Taken together, OpenAI is advancing three layers at once: default consumer experience, realtime developer APIs, and domain-specific enterprise/research models."
+        ],
+        why:
+          "This is more important than a single product release. It shows model labs packaging intelligence into different delivery layers: better defaults for users, realtime APIs for developers, and specialized models or privacy components for regulated organizations. For commerce, this points toward realtime support, live translation, voice shopping, compliance workflows, and vertical agents.",
+        links: [
+          ["OpenAI voice API update", "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/"],
+          ["GPT-5.5 Instant", "https://openai.com/index/gpt-5-5-instant/"],
+          ["GPT-5.5", "https://openai.com/index/introducing-gpt-5-5/"],
+          ["OpenAI Privacy Filter", "https://openai.com/index/introducing-openai-privacy-filter/"],
+          ["GPT-Rosalind", "https://openai.com/index/introducing-gpt-rosalind/"]
+        ]
+      },
+      {
         section: "Top Stories",
         priority: "Medium-high",
         title: "DeepSeek V4 reinforces the low-cost Chinese model route",
@@ -602,6 +670,28 @@ const archiveEn = [
         links: [
           ["TMTPost", "https://www.tmtpost.com/7987326.html"],
           ["GitHub", "https://github.com/tinyhumansai/openhuman"]
+        ]
+      },
+      {
+        section: "AI Product Picks",
+        priority: "Trend product",
+        title: "Anuma: one subscription, many models, and portable AI memory",
+        dek:
+          "Anuma puts ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, Llama, Mistral, and more into one interface, with a user-owned encrypted memory layer that travels across models.",
+        details: [
+          "Anuma positions itself as a privacy-focused all-in-one AI platform built around the idea of one memory, every model, always private.",
+          "It supports multi-model access across ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, Llama, Mistral, and more, reducing the need to copy context between apps.",
+          "The memory layer is the key product idea: Anuma says users can add, edit, or delete memory, and that memory works across both open- and closed-source models.",
+          "Council Mode lets the same prompt run through multiple models at once, so users can compare tone, accuracy, and depth in one view.",
+          "The open questions are privacy guarantees, provider-side retention policies, model cost, and whether portable memory feels genuinely useful in daily workflows."
+        ],
+        why:
+          "Anuma is not just another chatbot wrapper. It represents a direction worth tracking: personal AI operating systems and cross-model context layers. Users may eventually care less about which model is underneath and more about whether their preferences, work context, and memory can follow them.",
+        links: [
+          ["Anuma", "https://www.anuma.ai/"],
+          ["Anuma Memory", "https://www.anuma.ai/ai-memory"],
+          ["Multi-model access", "https://www.anuma.ai/multiple-ai-models"],
+          ["Anuma launch", "https://www.anuma.ai/blog/anuma-launch"]
         ]
       },
       {
@@ -840,8 +930,8 @@ const archiveEn = [
 ];
 
 const sectionOrders = {
-  zh: ["全部", "今日重点", "投融资信息", "开源项目", "AI产品推荐", "机构报告", "职业雷达"],
-  en: ["All", "Top Stories", "Funding Watch", "Open Source", "AI Product Picks", "Research Reports", "Career Radar"]
+  zh: ["全部", "今日重点", "模型与平台更新", "投融资信息", "开源项目", "AI产品推荐", "机构报告", "职业雷达"],
+  en: ["All", "Top Stories", "Models & Platforms", "Funding Watch", "Open Source", "AI Product Picks", "Research Reports", "Career Radar"]
 };
 
 const uiText = {
@@ -1012,6 +1102,12 @@ const sourceLinks = [
 
 const topicDefinitions = [
   {
+    id: "models-platforms",
+    zh: "模型/API",
+    en: "Models / APIs",
+    terms: ["模型与平台", "模型", "API", "OpenAI", "GPT-5.5", "Realtime", "语音", "Privacy Filter", "Rosalind", "ChatGPT", "Models & Platforms"]
+  },
+  {
     id: "robotics",
     zh: "机器人",
     en: "Robotics",
@@ -1021,7 +1117,7 @@ const topicDefinitions = [
     id: "products",
     zh: "AI产品",
     en: "AI products",
-    terms: ["AI产品", "product", "Product Hunt", "FocuSee", "Magic Patterns", "LTX", "tool", "demo", "视频", "原型"]
+    terms: ["AI产品", "product", "Product Hunt", "Anuma", "memory", "AI OS", "FocuSee", "Magic Patterns", "LTX", "tool", "demo", "视频", "原型"]
   },
   {
     id: "funding",
@@ -1056,6 +1152,8 @@ function isTermSection(section) {
 const sectionThemeMap = {
   "今日重点": "top",
   "Top Stories": "top",
+  "模型与平台更新": "model",
+  "Models & Platforms": "model",
   "投融资信息": "funding",
   "Funding Watch": "funding",
   "开源项目": "open-source",
@@ -1071,6 +1169,7 @@ const sectionThemeMap = {
 const sectionCodeMap = {
   all: "ALL",
   top: "NEWS",
+  model: "MODEL",
   funding: "FUND",
   "open-source": "OSS",
   product: "TOOL",

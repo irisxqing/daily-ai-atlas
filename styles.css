@@ -670,6 +670,11 @@ input:focus {
   --tab-soft: #f2f6ff;
 }
 
+.tab-button[data-section-key="model"] {
+  --tab-accent: #2563eb;
+  --tab-soft: #eff6ff;
+}
+
 .tab-button[data-section-key="funding"] {
   --tab-accent: var(--amber);
   --tab-soft: #fff7ed;
@@ -754,6 +759,12 @@ input:focus {
   --section-accent: var(--cobalt);
   --section-soft: #f2f6ff;
   --section-wash: rgba(47, 91, 234, 0.05);
+}
+
+.story-card[data-section-key="model"] {
+  --section-accent: #2563eb;
+  --section-soft: #eff6ff;
+  --section-wash: rgba(37, 99, 235, 0.052);
 }
 
 .story-card[data-section-key="funding"] {
