@@ -614,7 +614,6 @@ const contentSearch = document.querySelector("#contentSearch");
 const contentSearchLabel = document.querySelector("#contentSearchLabel");
 const contentGrid = document.querySelector("#contentGrid");
 const issueMeta = document.querySelector("#issueMeta");
-const issueTitle = document.querySelector("#issueTitle");
 const heroHeadline = document.querySelector("#heroHeadline");
 const heroSummary = document.querySelector("#heroSummary");
 const copyLinkButton = document.querySelector("#copyLinkButton");
@@ -899,7 +898,6 @@ function renderContent() {
 
 function renderHeader(issue) {
   issueMeta.textContent = issue.meta;
-  issueTitle.textContent = `${issue.title}｜${issue.date}`;
   heroHeadline.textContent = issue.headline;
   heroSummary.textContent = issue.summary;
 }
