@@ -849,7 +849,7 @@ const uiText = {
     all: "全部",
     language: "语言",
     zh: "中",
-    en: "EN",
+    en: "英",
     dateSearch: "搜索归档",
     archiveTags: "归档标签",
     contentSearch: "搜索当前日报",
@@ -867,7 +867,7 @@ const uiText = {
   en: {
     all: "All",
     language: "Language",
-    zh: "中",
+    zh: "CN",
     en: "EN",
     dateSearch: "Search archive",
     archiveTags: "Archive tags",
