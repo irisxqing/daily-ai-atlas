@@ -154,7 +154,7 @@ label {
   margin-bottom: 6px;
   color: var(--muted);
   font-size: var(--text-label);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 input {
@@ -197,7 +197,7 @@ input:focus {
   color: var(--muted);
   cursor: pointer;
   font-size: var(--text-label);
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .source-method p {
@@ -216,7 +216,7 @@ input:focus {
 .source-method-links a {
   color: var(--teal);
   font-size: var(--text-label);
-  font-weight: 800;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -277,7 +277,7 @@ input:focus {
 .calendar-weekdays span {
   color: var(--muted);
   font-size: var(--text-kicker);
-  font-weight: 800;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -294,7 +294,7 @@ input:focus {
   color: var(--muted);
   cursor: default;
   font-size: var(--text-label);
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .calendar-day.has-issue {
@@ -302,6 +302,7 @@ input:focus {
   background: var(--panel);
   color: var(--ink);
   cursor: pointer;
+  font-weight: 650;
 }
 
 .calendar-day.has-issue:hover,
@@ -366,7 +367,7 @@ input:focus {
   color: var(--muted);
   cursor: pointer;
   font-size: var(--text-label);
-  font-weight: 500;
+  font-weight: 450;
 }
 
 .language-button {
@@ -394,6 +395,7 @@ input:focus {
   border-color: var(--cobalt);
   background: var(--panel);
   color: var(--cobalt);
+  font-weight: 600;
 }
 
 .topic-tag-button {
@@ -563,7 +565,7 @@ input:focus {
   color: var(--teal);
   cursor: pointer;
   font-size: var(--text-label);
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .term-points {
@@ -607,7 +609,7 @@ input:focus {
   color: var(--teal);
   background: rgba(255, 255, 255, 0.72);
   font-size: var(--text-label);
-  font-weight: 800;
+  font-weight: 600;
   text-decoration: none;
 }
 
