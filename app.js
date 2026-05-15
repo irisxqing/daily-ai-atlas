@@ -230,29 +230,22 @@ const archiveZh = [
       },
       {
         section: "AI产品推荐",
-        priority: "今日可玩",
-        title: "FocuSee 2.0：把普通录屏自动变成精致产品 demo",
+        priority: "知识管理",
+        title: "Recall：把碎片阅读沉淀成可对话的个人知识库",
         dek:
-          "FocuSee 适合做产品演示、教程和汇报视频：你只要正常录屏，它会自动加缩放、鼠标高亮、背景和字幕，让粗糙录屏看起来像认真剪过。",
-        media: {
-          type: "image",
-          src: "https://store.setapp.com/cdn-cgi/image/width%3D1200%2Cquality%3D75%2Cformat%3Dauto/app/1771/screenshots/1762230093-69097f4d1dd30.png",
-          alt: "FocuSee product demo screenshot",
-          title: "Product demo visual",
-          caption: "录屏、缩放、鼠标高亮和字幕都在一个工作流里",
-          href: "https://setapp.com/apps/focusee"
-        },
+          "Recall 不是简单收藏夹，而是把网页、视频、PDF、文章和笔记保存、总结、自动打标签，并连接成一个可以追问的个人知识库。",
         details: [
-          "TrendHunt Daily 把 FocuSee 2.0 列为 5 月上旬 Product Hunt 热门发布之一，定位是 Pick Record screen to get polished demos & tutorials。",
-          "Setapp 页面显示，FocuSee 可以同时录屏、摄像头和声音，并自动添加 zoom、cursor highlight、背景、overlay、字幕和降噪。",
-          "它最适合非专业剪辑用户：产品经理、运营、创业者、讲方案的人，都可以用它快速做一个能看的产品 walk-through。",
-          "有趣点在于它不是生成一个虚构视频，而是把你真实操作产品的过程变得更清楚、更像正式 demo。"
+          "Recall 官网把自己定位为 AI knowledge base，核心动作是“一键保存重要内容”，然后自动完成总结、分类、连接和后续检索。",
+          "它支持网页、YouTube、播客、PDF、书籍、笔记等多种内容类型，适合把每天看到的 AI 新闻、报告、产品页和长文沉淀起来。",
+          "比较有价值的是连接能力：Recall 会把新保存的内容和既有知识自动关联，并在浏览时重新浮现相关内容，减少“看过但想不起来”的损耗。",
+          "它还支持和自己的知识库对话，并可以选择不同 AI 模型；这让它更像一个研究型第二大脑，而不是普通书签工具。",
+          "如果 Daily AI Atlas 以后要做个人版归档，Recall 这类产品很值得对标：每天看信息不是目的，把信息变成可复用判断才是目的。"
         ],
         why:
-          "对你很实用：以后做 AI 项目复盘、商家工具演示、跨团队汇报或个人作品集，都可以用这类工具降低“把想法讲清楚”的成本。它比纯文字工具更有产品感。",
+          "它适合你的信息消费方式：既要快速追踪 AI 信号，又不希望日报看完就消失。Recall 的价值在于把新闻、报告、产品线索变成长期可查询的行业记忆。",
         links: [
-          ["FocuSee / Setapp", "https://setapp.com/apps/focusee"],
-          ["TrendHunt Daily", "https://trendhuntdaily.com/"]
+          ["Recall 官网", "https://www.recall.it/"],
+          ["Recall Docs", "https://docs.recall.it/"]
         ]
       },
       {
@@ -285,31 +278,22 @@ const archiveZh = [
       },
       {
         section: "AI产品推荐",
-        priority: "创意视频",
-        title: "LTX Desktop：免费开源的本地 AI 视频生成与编辑器",
+        priority: "研究工作台",
+        title: "Liminary：面向咨询和战略团队的 AI 研究工作台",
         dek:
-          "LTX Desktop 把 AI 视频生成和剪辑界面放在一起，重点是本地运行、开源、没有按次生成费用，适合想探索 AI 视频但不想一直烧云端点数的人。",
-        media: {
-          type: "video",
-          src: "https://cdn.prod.website-files.com/68872d15af29880764eac4aa/69a9852c61140d7cfbc32175_b4129705569c6d9fa65b5f6730ceefe7_LTX-desktop-Hero_1_frame.avif",
-          alt: "LTX Desktop video editor screenshot",
-          title: "Video workflow preview",
-          caption: "本地视频生成、剪辑和模型工作流的产品界面",
-          href: "https://ltx.io/ltx-desktop",
-          cta: "打开产品演示"
-        },
+          "Liminary 的定位非常明确：给 consultants、strategists 和 researchers 用，让高风险建议能够基于真实研究、可追溯来源和可复用知识。",
         details: [
-          "LTX 官方称 LTX Desktop 是 built entirely on the LTX engine 的本地视频生成和编辑应用，支持 macOS 和 Windows。",
-          "它的卖点是 no cloud、no per-generation fees、数据留在本机；对企业和创作者来说，隐私和成本都更可控。",
-          "LTX 2.3 同时发布，官方称模型可以在消费级 GPU 上生成高质量视频，桌面端则把模型能力包装成可操作界面。",
-          "Product Hunt 上也有 LTX Desktop 页面，定位是 local open-source video editor optimized for GPUs。"
+          "官网首页直接写明 Liminary is AI for consultants and strategists making high-stakes recommendations grounded in real research，这一点比泛用聊天机器人更垂直。",
+          "它强调从研究到交付物不要丢信息：保存文章、报告、PDF、AI 对话和视频，边读边加注释，再让 agent 跟踪客户或项目的新信息。",
+          "对咨询和战略场景很关键的是可追溯性：Liminary 称每个 insight 都能回到来源，来源可以一键打开，数据不会用于训练 AI 模型。",
+          "它主打跨项目复用：当你做新项目时，系统会浮现过去相关研究、竞品分析或客户洞察，帮助把经验复利化。",
+          "这类产品的趋势信号是：AI 工具正在从“帮我总结”走向“帮我形成更可靠的判断和建议”，尤其适合专业服务、投资、战略和市场研究。"
         ],
         why:
-          "这是更适合“玩一玩”的推荐：你可以用它理解 AI 视频从纯网页生成器走向本地创作工作台的趋势。对电商内容来说，未来商品视频、广告素材、达人脚本验证都会受这类工具影响。",
+          "它和你的背景非常贴：咨询方法论、行业研究、跨境电商策略和 AI 信号跟踪，本质上都是把大量碎片证据变成可 defend 的判断。Liminary 是值得长期观察的战略工作台形态。",
         links: [
-          ["LTX Desktop", "https://ltx.io/ltx-desktop"],
-          ["LTX 2.3 发布", "https://ltx.io/model/model-blog/ltx-2-3-release"],
-          ["Product Hunt", "https://www.producthunt.com/products/ltx-desktop"]
+          ["Liminary 官网", "https://liminary.io/"],
+          ["Chrome Extension", "https://chromewebstore.google.com/detail/liminary/bbgbkegkcbgpbmnjomngmfadekddjlpp"]
         ]
       },
       {
@@ -696,29 +680,22 @@ const archiveEn = [
       },
       {
         section: "AI Product Picks",
-        priority: "Play today",
-        title: "FocuSee 2.0 turns raw screen recordings into polished product demos",
+        priority: "Knowledge management",
+        title: "Recall turns scattered reading into a conversational personal knowledge base",
         dek:
-          "FocuSee is useful for product walkthroughs, tutorials, and strategy demos: record normally, then let the tool add zooms, cursor highlights, backgrounds, overlays, and captions.",
-        media: {
-          type: "image",
-          src: "https://store.setapp.com/cdn-cgi/image/width%3D1200%2Cquality%3D75%2Cformat%3Dauto/app/1771/screenshots/1762230093-69097f4d1dd30.png",
-          alt: "FocuSee product demo screenshot",
-          title: "Product demo visual",
-          caption: "Screen recording, zooms, cursor highlights, and captions in one workflow",
-          href: "https://setapp.com/apps/focusee"
-        },
+          "Recall is more than a bookmark manager: it saves, summarizes, tags, connects, and lets you chat with articles, videos, PDFs, notes, and web pages.",
         details: [
-          "TrendHunt Daily listed FocuSee 2.0 among early-May Product Hunt launches, positioning it as a way to record screens and get polished demos and tutorials.",
-          "Setapp’s page says FocuSee can capture screen, webcam, and voice, then add zooms, cursor highlights, backgrounds, overlays, captions, denoise, and trims.",
-          "It is most useful for non-editors: PMs, operators, founders, and anyone who needs to explain a product or workflow quickly.",
-          "The appeal is that it improves real product operation footage instead of generating a fictional video from scratch."
+          "Recall positions itself as an AI knowledge base built around one-click saving, summarization, organization, and retrieval.",
+          "It supports many content types including web pages, YouTube, podcasts, PDFs, books, and notes, making it relevant for daily AI news, reports, product pages, and long-form reading.",
+          "Its interesting edge is connection: Recall links new saves to existing knowledge and can resurface related material as you browse.",
+          "Users can chat with their knowledge base and choose across AI models, which makes it feel closer to a research second brain than a simple reading queue.",
+          "If Daily AI Atlas evolves into a personal archive, products like Recall are useful references: the goal is not just to consume signals, but to turn them into reusable judgment."
         ],
         why:
-          "This is directly practical for AI project recaps, merchant-tool demos, internal rollouts, and personal portfolio clips. It reduces the cost of making ideas understandable.",
+          "Recall fits your information workflow: you want fast AI signal tracking, but the real value comes when today’s links become a searchable long-term memory for company, product, and market themes.",
         links: [
-          ["FocuSee / Setapp", "https://setapp.com/apps/focusee"],
-          ["TrendHunt Daily", "https://trendhuntdaily.com/"]
+          ["Recall", "https://www.recall.it/"],
+          ["Recall Docs", "https://docs.recall.it/"]
         ]
       },
       {
@@ -751,31 +728,22 @@ const archiveEn = [
       },
       {
         section: "AI Product Picks",
-        priority: "Creative video",
-        title: "LTX Desktop is a free, open-source local AI video editor",
+        priority: "Research workbench",
+        title: "Liminary is an AI research workbench for consultants and strategists",
         dek:
-          "LTX Desktop combines AI video generation and editing in a local desktop app, with no cloud dependency and no per-generation fees.",
-        media: {
-          type: "video",
-          src: "https://cdn.prod.website-files.com/68872d15af29880764eac4aa/69a9852c61140d7cfbc32175_b4129705569c6d9fa65b5f6730ceefe7_LTX-desktop-Hero_1_frame.avif",
-          alt: "LTX Desktop video editor screenshot",
-          title: "Video workflow preview",
-          caption: "A local interface for video generation, editing, and model workflows",
-          href: "https://ltx.io/ltx-desktop",
-          cta: "Open product demo"
-        },
+          "Liminary is explicitly built for consultants, strategists, and researchers who need high-stakes recommendations grounded in real research.",
         details: [
-          "LTX says Desktop is built entirely on the LTX engine and offers a local video generation and editing workspace for macOS and Windows.",
-          "Its key pitch is no cloud, no per-generation fees, and prompts, footage, and outputs staying on your machine.",
-          "LTX 2.3 launched alongside it, and the company says the model can generate high-quality video on consumer-grade GPUs.",
-          "Product Hunt positions LTX Desktop as a local open-source video editor optimized for GPUs."
+          "Liminary’s homepage describes it as AI for consultants and strategists making high-stakes recommendations grounded in real research, which is much more vertical than a generic chatbot.",
+          "It focuses on the research-to-deliverable workflow: save articles, reports, PDFs, AI chats, and videos, annotate while reading, and let an agent monitor new information for a client or project.",
+          "Source traceability is central: Liminary says every insight traces back to a source, every source is one click away, and user data is not used to train AI models.",
+          "The product also tries to compound past work by surfacing relevant research, competitive analyses, or project notes when users start something new.",
+          "The broader signal: AI products are moving from 'summarize this' toward 'help me form a defensible recommendation,' especially for consulting, investing, strategy, and market research."
         ],
         why:
-          "This is a better 'try it' pick: it shows AI video moving from browser credits toward local creative workstations. For commerce, that points toward cheaper product videos, ad concepts, and creator-content experiments.",
+          "This maps tightly to your background: consulting methods, industry research, cross-border commerce strategy, and AI signal tracking all depend on turning scattered evidence into defensible judgment.",
         links: [
-          ["LTX Desktop", "https://ltx.io/ltx-desktop"],
-          ["LTX 2.3 release", "https://ltx.io/model/model-blog/ltx-2-3-release"],
-          ["Product Hunt", "https://www.producthunt.com/products/ltx-desktop"]
+          ["Liminary", "https://liminary.io/"],
+          ["Chrome Extension", "https://chromewebstore.google.com/detail/liminary/bbgbkegkcbgpbmnjomngmfadekddjlpp"]
         ]
       },
       {
@@ -1117,7 +1085,7 @@ const topicDefinitions = [
     id: "products",
     zh: "AI产品",
     en: "AI products",
-    terms: ["AI产品", "product", "Product Hunt", "Anuma", "memory", "AI OS", "FocuSee", "Magic Patterns", "LTX", "tool", "demo", "视频", "原型"]
+    terms: ["AI产品", "product", "Product Hunt", "Anuma", "Recall", "Liminary", "memory", "AI OS", "knowledge base", "research", "Magic Patterns", "tool", "原型"]
   },
   {
     id: "funding",
