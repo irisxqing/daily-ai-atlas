@@ -852,8 +852,28 @@ const uiText = {
     en: "英",
     dateSearch: "搜索归档",
     archiveTags: "归档标签",
+    topicLabel: "主题聚合",
     contentSearch: "搜索当前日报",
     refreshNote: "每天 9:30 刷新最新 AI 消息",
+    statusReady: "今日已更新",
+    statusWaiting: "等待今日 9:30 刷新",
+    statusArchive: "历史归档",
+    statusReadyDetail: "当前页面已显示今天的日报。自动任务会在每天 9:30 后刷新内容。",
+    statusWaitingDetail: "现在还没到 9:30。到点后自动任务会生成今日新版日报。",
+    statusArchiveDetail: "当前查看的是历史日期。点击日历中的最新日期可以回到今日日报。",
+    topSourcesTitle: "今天最值得看原文的 3 个链接",
+    careerBriefTitle: "职业雷达快看",
+    careerBriefCta: "查看职业雷达",
+    emailBriefTitle: "邮件版摘要",
+    emailBriefCta: "复制邮件摘要",
+    emailBriefCopied: "邮件摘要已复制",
+    topicDigestTitle: "主题聚合",
+    topicAll: "全部主题",
+    sourceTrustOfficial: "官方确认",
+    sourceTrustMulti: "多源交叉",
+    sourceTrustCommunity: "社区热度",
+    sourceTrustInstitution: "机构报告",
+    sourceTrustCaution: "需继续验证",
     termLabel: "今日 AI 词条",
     termExpand: "展开核心解释",
     sourceMethodTitle: "信息来源",
@@ -871,8 +891,28 @@ const uiText = {
     en: "EN",
     dateSearch: "Search archive",
     archiveTags: "Archive tags",
+    topicLabel: "Topic clusters",
     contentSearch: "Search current issue",
     refreshNote: "Latest AI signals refresh daily at 9:30",
+    statusReady: "Updated today",
+    statusWaiting: "Waiting for the 9:30 refresh",
+    statusArchive: "Historical issue",
+    statusReadyDetail: "This page is showing today’s issue. The automation refreshes content after 9:30 each day.",
+    statusWaitingDetail: "It is not 9:30 yet. The automation will generate today’s new issue after the scheduled refresh.",
+    statusArchiveDetail: "You are viewing a historical issue. Use the calendar to return to the latest daily brief.",
+    topSourcesTitle: "3 original links worth opening today",
+    careerBriefTitle: "Career radar",
+    careerBriefCta: "Open career radar",
+    emailBriefTitle: "Email brief",
+    emailBriefCta: "Copy email brief",
+    emailBriefCopied: "Email brief copied",
+    topicDigestTitle: "Topic cluster",
+    topicAll: "All topics",
+    sourceTrustOfficial: "Official source",
+    sourceTrustMulti: "Cross-checked",
+    sourceTrustCommunity: "Community signal",
+    sourceTrustInstitution: "Institutional report",
+    sourceTrustCaution: "Needs verification",
     termLabel: "AI Term of the Day",
     termExpand: "Read the quick explainer",
     sourceMethodTitle: "Sources",
@@ -889,6 +929,7 @@ let currentLang = localStorage.getItem("daily-ai-atlas-lang") || "zh";
 let activeDate = archiveZh[0].date;
 let activeSection = uiText[currentLang].all;
 let activeArchiveTag = uiText[currentLang].all;
+let activeTopic = "all";
 let calendarMonth = activeDate.slice(0, 7);
 let contentQuery = "";
 let dateQuery = "";
@@ -896,15 +937,22 @@ let dateQuery = "";
 const dateList = document.querySelector("#dateList");
 const dateSearch = document.querySelector("#dateSearch");
 const archiveTags = document.querySelector("#archiveTags");
+const topicTags = document.querySelector("#topicTags");
 const languageSwitch = document.querySelector("#languageSwitch");
 const languageLabel = document.querySelector("#languageLabel");
 const dateSearchLabel = document.querySelector("#dateSearchLabel");
 const archiveTagsLabel = document.querySelector("#archiveTagsLabel");
+const topicLabel = document.querySelector("#topicLabel");
 const refreshNote = document.querySelector("#refreshNote");
 const sectionTabs = document.querySelector("#sectionTabs");
 const contentSearch = document.querySelector("#contentSearch");
 const contentSearchLabel = document.querySelector("#contentSearchLabel");
 const contentGrid = document.querySelector("#contentGrid");
+const updateStatusCard = document.querySelector("#updateStatusCard");
+const sourcePicksCard = document.querySelector("#sourcePicksCard");
+const careerBriefCard = document.querySelector("#careerBriefCard");
+const emailBriefCard = document.querySelector("#emailBriefCard");
+const topicDigest = document.querySelector("#topicDigest");
 const issueMeta = document.querySelector("#issueMeta");
 const termSpotlight = document.querySelector("#termSpotlight");
 const sourceMethodSummary = document.querySelector("#sourceMethodSummary");
@@ -931,6 +979,53 @@ function allLabel() {
   return t("all");
 }
 
+function getTopicLabel(topic) {
+  if (topic.id === "all") return t("topicAll");
+  return topic[currentLang];
+}
+
+function getTopicById(id) {
+  return topicDefinitions.find((topic) => topic.id === id);
+}
+
+function flattenDetails(details = []) {
+  return details.flatMap((detail) => {
+    if (typeof detail === "string") return [detail];
+    return [detail.summary, detail.expanded, detail.quote, detail.chart && detail.chart[0], detail.chart && detail.chart[1]];
+  });
+}
+
+function getItemText(item) {
+  const mediaText = item.media
+    ? [item.media.title, item.media.caption, item.media.alt, item.media.href, item.media.cta]
+    : [];
+  return [
+    item.section,
+    item.priority,
+    item.title,
+    item.dek,
+    item.why,
+    ...flattenDetails(item.details),
+    ...mediaText,
+    ...(item.links || []).flat()
+  ]
+    .map(normalize)
+    .join(" ");
+}
+
+function itemMatchesTopic(item, topicId = activeTopic) {
+  if (topicId === "all") return true;
+  const topic = getTopicById(topicId);
+  if (!topic) return true;
+  const haystack = getItemText(item);
+  return topic.terms.some((term) => haystack.includes(normalize(term)));
+}
+
+function issueMatchesTopic(issue) {
+  if (activeTopic === "all") return true;
+  return issue.items.some((item) => itemMatchesTopic(item));
+}
+
 const sourceLinks = [
   ["AI Valley", "https://www.theaivalley.com/c/about"],
   ["Ben's Bites", "https://bensbites.co/"],
@@ -938,6 +1033,45 @@ const sourceLinks = [
   ["The Batch", "https://www.deeplearning.ai/thebatch/"],
   ["Import AI", "https://jack-clark.net/"],
   ["Stanford AI Index", "https://hai.stanford.edu/ai-index/2026-ai-index-report"]
+];
+
+const topicDefinitions = [
+  {
+    id: "robotics",
+    zh: "机器人",
+    en: "Robotics",
+    terms: ["机器人", "Figure", "robot", "robotics", "humanoid", "warehouse", "factory", "物流", "制造"]
+  },
+  {
+    id: "products",
+    zh: "AI产品",
+    en: "AI products",
+    terms: ["AI产品", "product", "Product Hunt", "FocuSee", "Magic Patterns", "LTX", "tool", "demo", "视频", "原型"]
+  },
+  {
+    id: "funding",
+    zh: "投融资",
+    en: "Funding",
+    terms: ["投融资", "融资", "估值", "投资", "Funding", "raised", "valuation", "round", "capital"]
+  },
+  {
+    id: "open-source",
+    zh: "开源/Agent",
+    en: "Open source / agents",
+    terms: ["开源", "GitHub", "Agent", "agent", "Open Source", "RAG", "workflow", "MCP", "Hugging Face"]
+  },
+  {
+    id: "reports",
+    zh: "机构报告",
+    en: "Reports",
+    terms: ["机构报告", "报告", "Stanford", "BCG", "McKinsey", "KPMG", "Research Reports", "AI Index"]
+  },
+  {
+    id: "career",
+    zh: "职业机会",
+    en: "Career",
+    terms: ["职业雷达", "岗位", "career", "jobs", "AI Strategy", "Transformation", "Product Strategy", "skill"]
+  }
 ];
 
 function isTermSection(section) {
@@ -1064,26 +1198,7 @@ function renderStoryMedia(item) {
 
 function itemMatches(item, query) {
   if (!query) return true;
-  const detailText = (item.details || []).flatMap((detail) => {
-    if (typeof detail === "string") return [detail];
-    return [detail.summary, detail.expanded];
-  });
-  const mediaText = item.media
-    ? [item.media.title, item.media.caption, item.media.alt, item.media.href, item.media.cta]
-    : [];
-  const haystack = [
-    item.section,
-    item.priority,
-    item.title,
-    item.dek,
-    item.why,
-    ...detailText,
-    ...mediaText,
-    ...(item.links || []).flat()
-  ]
-    .map(normalize)
-    .join(" ");
-  return haystack.includes(normalize(query));
+  return getItemText(item).includes(normalize(query));
 }
 
 function getIssue() {
@@ -1133,12 +1248,35 @@ function renderArchiveTags() {
   });
 }
 
+function renderTopicTags() {
+  topicTags.innerHTML = "";
+  [{ id: "all" }, ...topicDefinitions].forEach((topic) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `topic-tag-button${topic.id === activeTopic ? " is-active" : ""}`;
+    button.textContent = getTopicLabel(topic);
+    button.addEventListener("click", () => {
+      activeTopic = topic.id;
+      const visibleIssues = getFilteredIssues();
+      if (!visibleIssues.some((issue) => issue.date === activeDate) && visibleIssues[0]) {
+        activeDate = visibleIssues[0].date;
+        calendarMonth = activeDate.slice(0, 7);
+      }
+      activeArchiveTag = allLabel();
+      activeSection = allLabel();
+      contentQuery = "";
+      contentSearch.value = "";
+      render();
+    });
+    topicTags.appendChild(button);
+  });
+}
+
 function getFilteredIssues() {
   return getArchive().filter((issue) => {
-    const queryMatch = normalize([issue.date, issue.title, issue.meta, issue.headline, issue.summary].join(" ")).includes(
-      normalize(dateQuery)
-    );
-    return queryMatch && issueMatchesArchiveTag(issue);
+    const issueText = [issue.date, issue.title, issue.meta, issue.headline, issue.summary, ...issue.items.map(getItemText)].join(" ");
+    const queryMatch = normalize(issueText).includes(normalize(dateQuery));
+    return queryMatch && issueMatchesArchiveTag(issue) && issueMatchesTopic(issue);
   });
 }
 
@@ -1261,13 +1399,255 @@ function renderTabs(issue) {
     });
 }
 
+function getTodayKey() {
+  const now = new Date();
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+}
+
+function getRefreshState(issue) {
+  const now = new Date();
+  const refreshTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 9, 30, 0);
+  const today = getTodayKey();
+  if (issue.date === today && now >= refreshTime) {
+    return { label: t("statusReady"), detail: t("statusReadyDetail"), tone: "ready" };
+  }
+  if (issue.date === today) {
+    return { label: t("statusWaiting"), detail: t("statusWaitingDetail"), tone: "waiting" };
+  }
+  return { label: t("statusArchive"), detail: t("statusArchiveDetail"), tone: "archive" };
+}
+
+function createPanelTitle(label, eyebrow) {
+  const header = document.createElement("div");
+  header.className = "panel-title";
+  const small = document.createElement("span");
+  small.textContent = eyebrow;
+  const title = document.createElement("strong");
+  title.textContent = label;
+  header.append(small, title);
+  return header;
+}
+
+function getPrimaryLinks(issue) {
+  const candidates = [];
+  issue.items.forEach((item) => {
+    if (isTermSection(item.section) || getSectionKey(item.section) === "career") return;
+    (item.links || []).forEach(([label, href], index) => {
+      const text = normalize(`${label} ${href}`);
+      let score = 0;
+      if (index === 0) score += 2;
+      if (/official|官方|openai|google|deepmind|figure|github|producthunt|stanford|bcg|mckinsey|kpmg|pdf/.test(text)) score += 4;
+      if (/ai valley|tldr|trendhunt|tmtpost|钛媒体/.test(text)) score += 1;
+      if (getSectionKey(item.section) === "report") score += 2;
+      if (getSectionKey(item.section) === "product") score += 1;
+      candidates.push({ label, href, item, score });
+    });
+  });
+  const seen = new Set();
+  return candidates
+    .sort((a, b) => b.score - a.score)
+    .filter((link) => {
+      if (seen.has(link.href)) return false;
+      seen.add(link.href);
+      return true;
+    })
+    .slice(0, 3);
+}
+
+function renderUpdateStatus(issue) {
+  updateStatusCard.innerHTML = "";
+  const state = getRefreshState(issue);
+  updateStatusCard.dataset.state = state.tone;
+  updateStatusCard.appendChild(createPanelTitle(state.label, currentLang === "en" ? "Refresh" : "更新状态"));
+  const detail = document.createElement("p");
+  detail.textContent = state.detail;
+  const meta = document.createElement("span");
+  meta.className = "status-meta";
+  meta.textContent = issue.date;
+  updateStatusCard.append(detail, meta);
+}
+
+function renderSourcePicks(issue) {
+  sourcePicksCard.innerHTML = "";
+  sourcePicksCard.appendChild(createPanelTitle(t("topSourcesTitle"), currentLang === "en" ? "Read next" : "精选原文"));
+  const list = document.createElement("div");
+  list.className = "source-pick-list";
+  getPrimaryLinks(issue).forEach((link) => {
+    const anchor = document.createElement("a");
+    anchor.href = link.href;
+    anchor.innerHTML = `<span>${link.label}</span><small>${link.item.title}</small>`;
+    list.appendChild(anchor);
+  });
+  sourcePicksCard.appendChild(list);
+}
+
+function getCareerItems(issue) {
+  return issue.items.filter((item) => getSectionKey(item.section) === "career");
+}
+
+function renderCareerBrief(issue) {
+  careerBriefCard.innerHTML = "";
+  const careerItems = getCareerItems(issue);
+  careerBriefCard.appendChild(createPanelTitle(t("careerBriefTitle"), currentLang === "en" ? "Role fit" : "岗位库"));
+  const summary = document.createElement("p");
+  summary.textContent = careerItems[0]
+    ? careerItems[0].dek
+    : currentLang === "en"
+      ? "No career radar entry in this issue."
+      : "本期暂未生成职业雷达。";
+  const chips = document.createElement("div");
+  chips.className = "skill-chip-row";
+  const skillSource = careerItems[1] || careerItems[0];
+  (skillSource ? (skillSource.details || []).slice(0, 4) : []).forEach((detail) => {
+    const chip = document.createElement("span");
+    chip.textContent = String(detail).split("：")[0].split(":")[0];
+    chips.appendChild(chip);
+  });
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "panel-action";
+  button.textContent = t("careerBriefCta");
+  button.addEventListener("click", () => {
+    activeSection = currentLang === "en" ? "Career Radar" : "职业雷达";
+    renderTabs(getIssue());
+    renderContent();
+  });
+  careerBriefCard.append(summary, chips, button);
+}
+
+function getEmailBriefLines(issue) {
+  const topItems = issue.items.filter((item) => !isTermSection(item.section) && getSectionKey(item.section) !== "career").slice(0, 3);
+  return [
+    `${issue.title} · ${issue.date}`,
+    issue.headline,
+    ...topItems.map((item) => `- ${item.title}: ${item.dek}`)
+  ];
+}
+
+function renderEmailBrief(issue) {
+  emailBriefCard.innerHTML = "";
+  emailBriefCard.appendChild(createPanelTitle(t("emailBriefTitle"), currentLang === "en" ? "Synced" : "同步邮件"));
+  const lines = getEmailBriefLines(issue);
+  const preview = document.createElement("p");
+  preview.textContent = lines.slice(1, 3).join(" / ");
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "panel-action";
+  button.textContent = t("emailBriefCta");
+  button.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(lines.join("\n"));
+      button.textContent = t("emailBriefCopied");
+    } catch {
+      button.textContent = lines.join(" · ");
+    }
+  });
+  emailBriefCard.append(preview, button);
+}
+
+function getTopicMatches(topicId = activeTopic) {
+  if (topicId === "all") return [];
+  const matches = [];
+  getArchive().forEach((issue) => {
+    issue.items.forEach((item) => {
+      if (!isTermSection(item.section) && itemMatchesTopic(item, topicId)) {
+        matches.push({ issue, item });
+      }
+    });
+  });
+  return matches.sort((a, b) => b.issue.date.localeCompare(a.issue.date));
+}
+
+function renderTopicDigest() {
+  topicDigest.innerHTML = "";
+  const heading = document.createElement("div");
+  heading.className = "topic-digest-heading";
+  const title = document.createElement("strong");
+  title.textContent = t("topicDigestTitle");
+  const subtitle = document.createElement("span");
+  subtitle.textContent = activeTopic === "all"
+    ? (currentLang === "en" ? "Pick a topic on the left to review historical signals." : "在左侧选择主题，可以按机器人、投融资、产品等线索回看历史。")
+    : getTopicLabel(getTopicById(activeTopic));
+  heading.append(title, subtitle);
+  topicDigest.appendChild(heading);
+
+  const body = document.createElement("div");
+  body.className = "topic-digest-body";
+  if (activeTopic === "all") {
+    topicDefinitions.forEach((topic) => {
+      const count = getArchive().reduce(
+        (sum, issue) => sum + issue.items.filter((item) => !isTermSection(item.section) && itemMatchesTopic(item, topic.id)).length,
+        0
+      );
+      const pill = document.createElement("button");
+      pill.type = "button";
+      pill.className = "topic-summary-pill";
+      pill.innerHTML = `<span>${getTopicLabel(topic)}</span><strong>${count}</strong>`;
+      pill.addEventListener("click", () => {
+        activeTopic = topic.id;
+        render();
+      });
+      body.appendChild(pill);
+    });
+  } else {
+    getTopicMatches(activeTopic).slice(0, 5).forEach(({ issue, item }) => {
+      const entry = document.createElement("button");
+      entry.type = "button";
+      entry.className = "topic-result";
+      entry.innerHTML = `<span>${issue.date}</span><strong>${item.title}</strong>`;
+      entry.addEventListener("click", () => {
+        activeDate = issue.date;
+        calendarMonth = issue.date.slice(0, 7);
+        activeSection = item.section;
+        render();
+      });
+      body.appendChild(entry);
+    });
+  }
+  topicDigest.appendChild(body);
+}
+
+function renderDashboard(issue) {
+  renderUpdateStatus(issue);
+  renderSourcePicks(issue);
+  renderCareerBrief(issue);
+  renderEmailBrief(issue);
+  renderTopicDigest(issue);
+}
+
+function getTrustSignals(item) {
+  const text = getItemText(item);
+  const signals = [];
+  if (getSectionKey(item.section) === "report") signals.push(t("sourceTrustInstitution"));
+  if (/官方|official|openai|google|deepmind|figure\.ai|github\.com|producthunt|ltx\.io|magicpatterns|stanford|bcg|mckinsey|kpmg/.test(text)) {
+    signals.push(t("sourceTrustOfficial"));
+  }
+  if ((item.links || []).length >= 3) signals.push(t("sourceTrustMulti"));
+  if (/github|product hunt|hacker news|hugging face|community|trending|开源/.test(text)) signals.push(t("sourceTrustCommunity"));
+  if (/未确认|传闻|ai 生成|ai-generated|needs watching|caution|风险提示/.test(text)) signals.push(t("sourceTrustCaution"));
+  return Array.from(new Set(signals)).slice(0, 3);
+}
+
+function renderTrustSignals(node, item) {
+  const signals = getTrustSignals(item);
+  if (!signals.length) return;
+  const row = document.createElement("div");
+  row.className = "trust-row";
+  signals.forEach((signal) => {
+    const badge = document.createElement("span");
+    badge.textContent = signal;
+    row.appendChild(badge);
+  });
+  node.querySelector(".story-topline").after(row);
+}
+
 function renderContent() {
   const issue = getIssue();
   contentGrid.innerHTML = "";
   const filtered = issue.items.filter((item) => {
     if (isTermSection(item.section)) return false;
     const sectionMatch = activeSection === allLabel() || item.section === activeSection;
-    return sectionMatch && itemMatches(item, contentQuery);
+    return sectionMatch && itemMatchesTopic(item) && itemMatches(item, contentQuery);
   });
 
   if (!filtered.length) {
@@ -1288,6 +1668,7 @@ function renderContent() {
     node.querySelector(".section-code").textContent = getSectionCode(item.section);
     node.querySelector(".section-label").textContent = item.section;
     node.querySelector(".priority").textContent = item.priority || "";
+    renderTrustSignals(node, item);
     node.querySelector("h3").textContent = item.title;
     node.querySelector(".dek").textContent = item.dek;
     const details = node.querySelector(".details");
@@ -1444,6 +1825,7 @@ function renderChrome() {
   refreshNote.textContent = t("refreshNote");
   dateSearchLabel.textContent = t("dateSearch");
   archiveTagsLabel.textContent = t("archiveTags");
+  topicLabel.textContent = t("topicLabel");
   contentSearchLabel.textContent = t("contentSearch");
   dateSearch.placeholder = t("datePlaceholder");
   contentSearch.placeholder = t("contentPlaceholder");
@@ -1457,7 +1839,9 @@ function render() {
   renderHeader(issue);
   renderTermSpotlight(issue);
   renderArchiveTags();
+  renderTopicTags();
   renderDates();
+  renderDashboard(issue);
   renderTabs(issue);
   renderContent();
 }
@@ -1470,9 +1854,11 @@ dateSearch.addEventListener("input", (event) => {
     calendarMonth = activeDate.slice(0, 7);
   }
   renderArchiveTags();
+  renderTopicTags();
   renderDates();
   renderHeader(getIssue());
   renderTermSpotlight(getIssue());
+  renderDashboard(getIssue());
   renderTabs(getIssue());
   renderContent();
 });

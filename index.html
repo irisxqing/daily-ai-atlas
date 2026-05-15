@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Daily AI Atlas</title>
     <link rel="icon" href="./assets/daily-ai-atlas-logo.svg?v=20260515-literal-ai-logo" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css?v=20260515-logo-refresh" />
+    <link rel="stylesheet" href="./styles.css?v=20260515-dashboard-upgrades" />
   </head>
   <body>
     <div class="app-shell">
@@ -33,6 +33,11 @@
         <div class="rail-section">
           <label id="archiveTagsLabel">归档标签</label>
           <div class="archive-tags" id="archiveTags"></div>
+        </div>
+
+        <div class="rail-section topic-section">
+          <label id="topicLabel">主题聚合</label>
+          <div class="topic-tags" id="topicTags"></div>
         </div>
 
         <nav class="date-list" id="dateList"></nav>
@@ -66,6 +71,15 @@
           </div>
         </section>
 
+        <section class="signal-dashboard" aria-label="日报工作台">
+          <div class="dashboard-card update-card" id="updateStatusCard"></div>
+          <div class="dashboard-card source-picks-card" id="sourcePicksCard"></div>
+          <div class="dashboard-card career-brief-card" id="careerBriefCard"></div>
+          <div class="dashboard-card email-brief-card" id="emailBriefCard"></div>
+        </section>
+
+        <section class="topic-digest" id="topicDigest" aria-label="主题聚合摘要"></section>
+
         <section class="controls" aria-label="筛选工具">
           <div class="search-wrap">
             <label for="contentSearch" id="contentSearchLabel">搜索当前日报</label>
@@ -95,6 +109,6 @@
       </article>
     </template>
 
-    <script src="./app.js?v=20260515-source-note"></script>
+    <script src="./app.js?v=20260515-dashboard-upgrades"></script>
   </body>
 </html>
