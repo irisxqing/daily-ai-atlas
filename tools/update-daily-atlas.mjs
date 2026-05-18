@@ -207,25 +207,25 @@ function isRecentEntry(entry, maxAgeDays) {
 }
 
 function isFundingEntry(entry) {
-  return /funding|raises?|raised|series [a-z]|ipo|acquisition|acquires|valuation|invest|round|融资|投资|估值|并购|上市|收购/i.test(entryText(entry));
+  return /\bfunding\b|\braises?\b|\braised\b|\bseries [a-z]\b|\bipo\b|\bacquisition\b|\bacquires?\b|\bvaluation\b|\binvest(?:s|ed|ment|or)?\b|\bround\b|融资|投资|估值|并购|上市|收购/i.test(entryText(entry));
 }
 
 function isOpenSourceEntry(entry) {
-  return /github|open[- ]source|hugging face|repo|repository|开源|模型库|代码库/i.test(entryText(entry));
+  return /\bgithub\b|\bopen[- ]source\b|\bhugging face\b|\brepo\b|\brepository\b|开源|模型库|代码库/i.test(entryText(entry));
 }
 
 function isProductEntry(entry) {
   const text = entryText(entry);
-  const hasProductSignal = /product hunt|tool|app|workspace|workflow|memory|assistant|agentmemory|recall|liminary|browser|extension|dashboard|canvas|notebook|automation|插件|应用|产品|工具|工作流|知识管理|浏览器|助手/i.test(text);
-  const isMostlyModelNews = /model|api|benchmark|inference|芯片|ipo|valuation|funding|融资|估值|模型|推理|基准|参数/.test(text)
-    && !/tool|app|product hunt|workflow|memory|assistant|extension|notebook|应用|产品|工具|工作流|知识管理|助手/.test(text);
+  const hasProductSignal = /\bproduct hunt\b|\btool\b|\bapp\b|\bworkspace\b|\bworkflow\b|\bmemory\b|\bassistant\b|\bagentmemory\b|\brecall\b|\bliminary\b|\bbrowser\b|\bextension\b|\bdashboard\b|\bcanvas\b|\bnotebook\b|\bautomation\b|插件|应用|产品|工具|工作流|知识管理|浏览器|助手/i.test(text);
+  const isMostlyModelNews = /\bmodel\b|\bapi\b|\bbenchmark\b|\binference\b|芯片|\bipo\b|\bvaluation\b|\bfunding\b|融资|估值|模型|推理|基准|参数/.test(text)
+    && !/\btool\b|\bapp\b|\bproduct hunt\b|\bworkflow\b|\bmemory\b|\bassistant\b|\bextension\b|\bnotebook\b|应用|产品|工具|工作流|知识管理|助手/.test(text);
   return hasProductSignal && !isMostlyModelNews;
 }
 
 function isReportEntry(entry) {
   const text = entryText(entry);
-  const hasReportSignal = /report|pdf|index|survey|study|whitepaper|research brief|state of|报告|指数|调研|白皮书|研究报告/.test(text);
-  const title = String(entry.title || "");
+  const title = String(entry.title || "").toLowerCase();
+  const hasReportSignal = /\breport\b|\bpdf\b|\bindex\b|\bsurvey\b|\bwhitepaper\b|\bresearch brief\b|\bstate of\b|报告|指数|调研|白皮书|研究报告/.test(title);
   const staleYear = /\b20(1\d|2[0-5])\b/.test(title) && !/\b2026\b/.test(title);
   return hasReportSignal && isRecentEntry(entry, 14) && !staleYear;
 }
@@ -424,15 +424,16 @@ function validateIssueFrame(issue, lang) {
 
 function validateItemContent(item, lang) {
   if (isTermSectionName(item.section)) return;
-  const richDetails = item.details.filter((detail) => detailDepth(detail) >= 45);
-  if (richDetails.length < 2) {
-    throw new Error(`${lang} item "${item.title}" is too shallow. Details must include at least two rich context points.`);
-  }
   if (isReportSection(item.section)) {
     const expandedReports = item.details.filter((detail) => detail && typeof detail === "object" && detail.expanded && detail.expanded.length >= 90);
     if (!expandedReports.length) {
       throw new Error(`${lang} report "${item.title}" needs expanded report analysis objects.`);
     }
+    return;
+  }
+  const richDetails = item.details.filter((detail) => detailDepth(detail) >= 45);
+  if (richDetails.length < 2) {
+    throw new Error(`${lang} item "${item.title}" is too shallow. Details must include at least two rich context points.`);
   }
 }
 
