@@ -108,8 +108,8 @@ node tools/generate-broadcast.mjs --lang en --date 2026-05-15 --stdout
 - **发布方式**：脚本会更新 `app.js`，提交到 `main`，然后 GitHub Pages 自动刷新。
   **Publishing flow**: the script updates `app.js`, commits to `main`, and GitHub Pages refreshes automatically.
 
-- **低成本生成**：默认优先使用 `DEEPSEEK_API_KEY` + `deepseek-v4-pro`；如果没有 DeepSeek key，会回退到 OpenAI。可选 repository variables：`AI_PROVIDER`、`DEEPSEEK_MODEL`、`OPENAI_MODEL`、`OPENAI_REASONING_EFFORT`。
-  **Low-cost generation**: the workflow prefers `DEEPSEEK_API_KEY` + `deepseek-v4-pro`; if no DeepSeek key is available, it falls back to OpenAI. Optional repository variables: `AI_PROVIDER`, `DEEPSEEK_MODEL`, `OPENAI_MODEL`, `OPENAI_REASONING_EFFORT`.
+- **低成本生成**：默认优先使用 `DEEPSEEK_API_KEY` + `deepseek-v4-flash`，并用多源采集、内容深度校验和一次自动重试保证质量；如果没有 DeepSeek key，会回退到 OpenAI。可选 repository variables：`AI_PROVIDER`、`DEEPSEEK_MODEL`、`OPENAI_MODEL`、`OPENAI_REASONING_EFFORT`。
+  **Low-cost generation**: the workflow prefers `DEEPSEEK_API_KEY` + `deepseek-v4-flash`, with multi-source collection, depth validation, and one automatic retry for quality; if no DeepSeek key is available, it falls back to OpenAI. Optional repository variables: `AI_PROVIDER`, `DEEPSEEK_MODEL`, `OPENAI_MODEL`, `OPENAI_REASONING_EFFORT`.
 
 ## Roadmap / 接下来想做
 
