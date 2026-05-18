@@ -2355,19 +2355,126 @@ function renderTermSpotlight(issue) {
   termSpotlight.append(intro, more);
 }
 
+function hashString(value) {
+  let hash = 2166136261;
+  const text = String(value || "");
+  for (let index = 0; index < text.length; index += 1) {
+    hash ^= text.charCodeAt(index);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+function pickHeroKeywords(issue) {
+  const candidates = [
+    ...(issue.tags || []),
+    ...issue.items.slice(0, 5).flatMap((item) => [item.title, item.section])
+  ];
+  const seen = new Set();
+  return candidates
+    .map((value) => String(value || "").replace(/[：:｜|].*$/, "").trim())
+    .filter((value) => value && value.length <= 24)
+    .filter((value) => {
+      const key = value.toLowerCase();
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .slice(0, 5);
+}
+
+function heroSvg(issue) {
+  const seed = hashString(`${issue.date}-${issue.headline}-${(issue.tags || []).join(",")}`);
+  const keywords = pickHeroKeywords(issue);
+  const accentSets = [
+    ["#ff8a3d", "#10a6b8", "#1f2937"],
+    ["#f59e0b", "#3b82f6", "#111827"],
+    ["#fb7185", "#14b8a6", "#202124"],
+    ["#f97316", "#6366f1", "#111827"]
+  ];
+  const [warm, cool, ink] = accentSets[seed % accentSets.length];
+  const nodes = Array.from({ length: 12 }, (_, index) => {
+    const nodeSeed = hashString(`${seed}-${index}`);
+    return {
+      x: 70 + (nodeSeed % 560),
+      y: 46 + ((nodeSeed >>> 8) % 248),
+      r: 3 + ((nodeSeed >>> 16) % 7)
+    };
+  });
+  const labels = keywords.map((keyword, index) => {
+    const y = 86 + index * 35;
+    return `
+      <g transform="translate(382 ${y})">
+        <rect width="${Math.max(92, Math.min(190, keyword.length * 12 + 32))}" height="24" rx="12" fill="rgba(255,255,255,.72)" stroke="rgba(17,24,39,.12)" />
+        <text x="16" y="16" font-size="11" fill="${ink}" font-family="Inter, Arial, sans-serif">${escapeSvg(keyword)}</text>
+      </g>`;
+  }).join("");
+  const nodeMarkup = nodes.map((node, index) => `
+    <circle cx="${node.x}" cy="${node.y}" r="${node.r}" fill="${index % 3 === 0 ? warm : cool}" opacity="${index % 2 ? ".68" : ".92"}" />
+  `).join("");
+  const lineMarkup = nodes.slice(1).map((node, index) => `
+    <line x1="${nodes[index].x}" y1="${nodes[index].y}" x2="${node.x}" y2="${node.y}" stroke="${index % 2 ? cool : warm}" stroke-opacity=".22" stroke-width="1.2" />
+  `).join("");
+  const code = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-label="AI Daily Atlas generated visual">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f8fafc"/>
+          <stop offset=".48" stop-color="#eef7f8"/>
+          <stop offset="1" stop-color="#fff5ed"/>
+        </linearGradient>
+        <radialGradient id="pulse" cx=".28" cy=".36" r=".64">
+          <stop offset="0" stop-color="${warm}" stop-opacity=".25"/>
+          <stop offset=".52" stop-color="${cool}" stop-opacity=".12"/>
+          <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+          <path d="M24 0H0V24" fill="none" stroke="#111827" stroke-opacity=".06" stroke-width="1"/>
+        </pattern>
+      </defs>
+      <rect width="720" height="360" fill="url(#bg)"/>
+      <rect width="720" height="360" fill="url(#grid)"/>
+      <rect width="720" height="360" fill="url(#pulse)"/>
+      <path d="M52 274 C142 178 206 250 296 154 S462 92 646 132" fill="none" stroke="${ink}" stroke-opacity=".18" stroke-width="22" stroke-linecap="round"/>
+      <path d="M52 274 C142 178 206 250 296 154 S462 92 646 132" fill="none" stroke="${warm}" stroke-opacity=".72" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M82 118 C160 56 238 78 304 132 S444 212 620 86" fill="none" stroke="${cool}" stroke-opacity=".58" stroke-width="2" stroke-dasharray="8 10"/>
+      ${lineMarkup}
+      ${nodeMarkup}
+      <g transform="translate(48 54)">
+        <text x="0" y="0" font-size="11" fill="${cool}" font-weight="700" letter-spacing="2" font-family="Inter, Arial, sans-serif">AI DAILY ATLAS</text>
+        <text x="0" y="42" font-size="34" fill="${ink}" font-weight="760" font-family="Inter, Arial, sans-serif">Signal Map</text>
+        <text x="0" y="72" font-size="13" fill="#64748b" font-family="Inter, Arial, sans-serif">${escapeSvg(issue.meta || issue.date)}</text>
+      </g>
+      ${labels}
+      <g transform="translate(50 300)">
+        <rect width="118" height="28" rx="14" fill="${ink}" opacity=".92"/>
+        <circle cx="20" cy="14" r="5" fill="${warm}"/>
+        <text x="34" y="18" font-size="11" fill="#fff" font-family="Inter, Arial, sans-serif">Live signals</text>
+      </g>
+    </svg>`;
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(code)}`;
+}
+
+function escapeSvg(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 function renderHeader(issue) {
   issueMeta.textContent = issue.meta;
   heroHeadline.textContent = issue.headline;
   heroSummary.textContent = issue.summary;
-  const heroMedia = issue.items.find((item) => item.media && item.media.src && !isTermSection(item.section))?.media;
-  if (heroMedia) {
-    heroImage.src = heroMedia.src;
-    heroImage.alt = heroMedia.alt || heroMedia.title || issue.headline;
+  try {
+    heroImage.src = heroSvg(issue);
+    heroImage.alt = `${issue.title} ${issue.meta} signal map`;
     heroImage.onerror = () => {
       heroImage.src = "./assets/ai-daily-hero.png";
       heroImage.alt = "AI Daily Atlas visual";
     };
-  } else {
+  } catch (error) {
     heroImage.src = "./assets/ai-daily-hero.png";
     heroImage.alt = "AI Daily Atlas visual";
   }
