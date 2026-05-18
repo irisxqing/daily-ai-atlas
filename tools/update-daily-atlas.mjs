@@ -234,6 +234,88 @@ function entryText(entry) {
   return `${entry.source || ""} ${entry.title || ""} ${entry.summary || ""}`.toLowerCase();
 }
 
+const priorityCompanyPattern = /openai|anthropic|deepmind|google|xai|meta|microsoft|amazon|aws|nvidia|tsmc|amd|broadcom|deepseek|qwen|zhipu|z\.ai|minimax|kimi|moonshot|doubao|bytedance|baidu|tencent|alibaba|字节|阿里|腾讯|百度|智谱|月之暗面|阶跃星辰|零一万物/i;
+const aiLeaderPattern = /sam altman|greg brockman|ilya|sutskever|karpathy|geoffrey hinton|yann lecun|andrew ng|dario amodei|demis hassabis|mustafa suleyman|liang wenfeng|梁文锋|李飞飞|周鸿祎|王小川|张鹏|ai leader|founder|co-founder|ceo|cto|chief scientist|负责人|创始人|离职|加入|创业|人事|高管/i;
+const modelLaunchPattern = /\bmodel\b|\bgpt\b|\bclaude\b|\bgemini\b|\bgrok\b|\bllama\b|\bqwen\b|\bdeepseek\b|\bglm\b|\bkimi\b|\bdoubao\b|\brelease\b|\blaunch\b|\bannounc|\bapi\b|\brealtime\b|\bvoice\b|模型|发布|上线|语音|多模态|推理/i;
+const industryChainPattern = /chip|gpu|inference|compute|datacenter|robot|robotics|humanoid|world model|video model|simulation|warehouse|factory|logistics|芯片|算力|推理|机器人|世界模型|视频模型|仿真|物流|制造|数据中心/i;
+const communityConcernPattern = /safety|privacy|security|copyright|lawsuit|regulat|alignment|misuse|jailbreak|leak|whistleblower|concern|controversy|poison|安全|隐私|版权|监管|诉讼|争议|泄露|对齐|投毒|黑产/i;
+const productivityProductPattern = /productivity|knowledge|research|workspace|workflow|memory|notes|browser|extension|assistant|agent|automation|calendar|email|docs|spreadsheet|meeting|design|prototype|知识|研究|效率|工作流|记忆|笔记|浏览器|助手|自动化|会议|原型|设计/i;
+const broadDiscussionPattern = /product hunt|hacker news|reddit|github trending|launch|reviews?|users?|rating|community|viral|讨论|热议|好评|用户|社区/i;
+const strategicReportPattern = /future|outlook|landscape|state of|index|benchmark report|survey|adoption|enterprise|industry|market|application|trend|未来|趋势|全景|产业|应用|采用|企业|市场|调研|指数/i;
+
+function patternScore(text, weightedPatterns) {
+  return weightedPatterns.reduce((score, [pattern, weight]) => score + (pattern.test(text) ? weight : 0), 0);
+}
+
+function freshnessScore(entry, maxAgeDays = 14) {
+  const timestamp = Date.parse(entry.date) || 0;
+  if (!timestamp) return 0;
+  const ageDays = Math.max(0, (Date.now() - timestamp) / (24 * 60 * 60 * 1000));
+  return Math.max(0, maxAgeDays - ageDays);
+}
+
+function editorialScore(entry, section) {
+  const text = entryText(entry);
+  let score = (entry.score || 0) + freshnessScore(entry, 14);
+
+  if (priorityCompanyPattern.test(text)) score += 18;
+  if (/中国|china|us|u\.s\.|united states|america|美国|深圳|香港/.test(text)) score += 6;
+
+  if (section === "今日重点") {
+    score += patternScore(text, [
+      [modelLaunchPattern, 22],
+      [aiLeaderPattern, 20],
+      [industryChainPattern, 16],
+      [communityConcernPattern, 14],
+      [/\bpartnership\b|\bdeploy\b|\bcustomer\b|\benterprise\b|合作|部署|客户|企业落地/i, 10],
+      [/\bworld model\b|世界模型/i, 18]
+    ]);
+    if (/openai|anthropic|deepmind|google|xai|nvidia|deepseek|qwen|zhipu|字节|阿里|腾讯/.test(text)) score += 8;
+  }
+
+  if (section === "AI产品推荐") {
+    score += patternScore(text, [
+      [productivityProductPattern, 24],
+      [broadDiscussionPattern, 16],
+      [/\bcurated ai products\b/i, 14],
+      [/\bproduct hunt\b/i, 16],
+      [/\brecall\b|\bliminary\b|\banuma\b|\bmagic patterns\b/i, 12]
+    ]);
+    if (/game|avatar|dating|wallpaper|meme|crypto|nft|游戏|头像|壁纸|币圈/.test(text)) score -= 18;
+  }
+
+  if (section === "深度阅读") {
+    score += patternScore(text, [
+      [aiLeaderPattern, 22],
+      [communityConcernPattern, 18],
+      [/\banalysis\b|\bessay\b|\binterview\b|\bopinion\b|\bdeep[- ]dive\b|\blong read\b|观察|分析|访谈|专访|长文|深度|concern/i, 20],
+      [/\bfuture\b|\bstrategy\b|\bfrontier\b|\bsociety\b|\bgovernance\b|未来|战略|前沿|治理|担忧/i, 14],
+      [/latent space|import ai|the batch|ai valley|a16z|sequoia|stratechery|钛媒体|机器之心/i, 10]
+    ]);
+  }
+
+  if (section === "机构报告") {
+    score += patternScore(text, [
+      [strategicReportPattern, 24],
+      [/stanford|ai index|state of ai|mckinsey|bcg|kpmg|deloitte|gartner|forrester|pwc|idc|cb insights/i, 18],
+      [/enterprise|adoption|industry|market|future|application|workforce|产业|企业|市场|应用|未来|就业/i, 14]
+    ]);
+    if (/arxiv|paper|technical|algorithm|benchmark|kernel|代码|算法|论文/.test(text)) score -= 28;
+  }
+
+  if (section === "投融资信息") {
+    score += patternScore(text, [
+      [/\bfunding\b|\braised\b|\bseries [a-z]\b|\bipo\b|\bacquisition\b|\bvaluation\b|\binvestment\b|融资|估值|上市|并购|投资/i, 24],
+      [priorityCompanyPattern, 18],
+      [aiLeaderPattern, 12],
+      [industryChainPattern, 12],
+      [/\binfrastructure\b|\bchips?\b|\bdatacenter\b|\bapplication\b|基础设施|芯片|数据中心|应用层/i, 10]
+    ]);
+  }
+
+  return score;
+}
+
 function isRecentEntry(entry, maxAgeDays) {
   const timestamp = Date.parse(entry.date) || 0;
   if (!timestamp) return false;
@@ -248,9 +330,17 @@ function isOpenSourceEntry(entry) {
   return /\bgithub\b|\bopen[- ]source\b|\bhugging face\b|\brepo\b|开源|模型库|代码库/i.test(entryText(entry));
 }
 
+function isLowQualityEntry(entry) {
+  const text = entryText(entry);
+  const title = String(entry.title || "").toLowerCase();
+  return /top\s?\d|top\d|best\s+\d|权威测评|服务商|排行榜|哪家好|bluechip navigator|x\.com|seo|search result optimization|搜索结果优化|蹲守|版本答案/i.test(text)
+    || title.length > 220;
+}
+
 function isProductEntry(entry) {
   const text = entryText(entry);
   const titleSource = `${entry.source || ""} ${entry.title || ""}`.toLowerCase();
+  if (isLowQualityEntry(entry)) return false;
   if (/\barxiv\b|\bpaper\b|\bresearch repository\b|\bbenchmark\b|论文|研究论文/.test(text)) return false;
   const hasProductSignal = /\bcurated ai products\b|\bproduct hunt\b|\btool\b|\bapp\b|\bworkspace\b|\bworkflow\b|\bmemory\b|\bagentmemory\b|\brecall\b|\bliminary\b|\banuma\b|\bmagic patterns\b|\bbrowser\b|\bextension\b|\bdashboard\b|\bcanvas\b|\bnotebook\b|\bautomation\b|插件|应用|产品|工具|工作流|知识管理|浏览器/i.test(titleSource);
   const isMostlyModelNews = /\bmodel\b|\bapi\b|\bbenchmark\b|\binference\b|芯片|\bipo\b|\bvaluation\b|\bfunding\b|融资|估值|模型|推理|基准|参数/.test(text)
@@ -272,11 +362,13 @@ function isAcademicPaperEntry(entry) {
 
 function isReportEntry(entry) {
   const text = entryText(entry);
+  const titleSummary = `${entry.title || ""} ${entry.summary || ""}`.toLowerCase();
   const title = String(entry.title || "").toLowerCase();
-  const hasReportSignal = /\breport\b|\bpdf\b|\bindex\b|\bsurvey\b|\bwhitepaper\b|\bresearch brief\b|\bstate of\b|报告|指数|调研|白皮书|研究报告/.test(title);
-  const hasAiSignal = /\bai\b|artificial intelligence|generative|llm|agent|人工智能|大模型|模型|智能体/i.test(text);
+  const hasReportSignal = /\breport\b|\bpdf\b|\bindex\b|\bsurvey\b|\bstudy\b|\bwhitepaper\b|\bresearch brief\b|\bstate of\b|报告|指数|调研|白皮书|研究报告/.test(title);
+  const hasAiSignal = /\bai\b|artificial intelligence|generative|llm|agent|人工智能|大模型|模型|智能体/i.test(titleSummary);
+  const hasStrategicSignal = strategicReportPattern.test(titleSummary) || /workplace|workforce|creator|marketing|enterprise|ceo|产业|应用|企业|未来|生产力|工作/i.test(titleSummary);
   const staleYear = /\b20(1\d|2[0-5])\b/.test(title) && !/\b2026\b/.test(title);
-  return hasReportSignal && hasAiSignal && isRecentEntry(entry, 14) && !staleYear;
+  return hasReportSignal && hasAiSignal && hasStrategicSignal && isRecentEntry(entry, 14) && !staleYear && !isLowQualityEntry(entry);
 }
 
 function isDeepReadEntry(entry) {
@@ -284,14 +376,16 @@ function isDeepReadEntry(entry) {
   const source = String(entry.source || "").toLowerCase();
   const title = String(entry.title || "").toLowerCase();
   const isDeepSource = /latent space|import ai|the batch|ai valley|tmtpost|钛媒体|机器之心|stratechery|semi|sequoia|a16z|interview|newsletter/i.test(source);
-  const hasDeepSignal = /\banalysis\b|\bdeep[- ]dive\b|\bessay\b|\binterview\b|\blong read\b|\bexplainer\b|\bguide\b|\bstrategy\b|\bopinion\b|\bcase study\b|\bwhat it means\b|深度|长文|访谈|专访|解读|复盘|观察|分析|案例|方法论/i.test(text);
+  const hasDeepSignal = /\banalysis\b|\bdeep[- ]dive\b|\bessay\b|\binterview\b|\blong read\b|\bexplainer\b|\bguide\b|\bopinion\b|\bcase study\b|\bwhat it means\b|深度|长文|访谈|专访|解读|复盘|观察|分析|案例|方法论/i.test(text);
   const hasAiSignal = /\bai\b|artificial intelligence|generative|llm|agent|openai|anthropic|deepmind|机器人|人工智能|大模型|模型|智能体/i.test(text);
+  const isPersonnelNews = aiLeaderPattern.test(text) && /\btakes charge\b|\bjoins?\b|\bleaves?\b|\bdepart|\bhire|\bappoint|\bfounds?\b|\bstarts?\b|接管|离职|加入|任命|创业|创办|负责/i.test(text);
   const isHardNews = isFundingEntry(entry) || isOpenSourceEntry(entry) || isProductEntry(entry) || isReportEntry(entry) || isAcademicPaperEntry(entry);
   const isTinyUpdate = /\brelease notes?\b|\bchangelog\b|\bpatch\b|更新日志|版本更新/.test(title);
-  return hasAiSignal && (isDeepSource || hasDeepSignal) && !isHardNews && !isTinyUpdate && isRecentEntry(entry, 14);
+  return hasAiSignal && (isDeepSource || hasDeepSignal) && !isPersonnelNews && !isHardNews && !isTinyUpdate && !isLowQualityEntry(entry) && isRecentEntry(entry, 14);
 }
 
 function isTopStoryEntry(entry) {
+  if (isLowQualityEntry(entry)) return false;
   return !isFundingEntry(entry)
     && !isOpenSourceEntry(entry)
     && !isProductEntry(entry)
@@ -301,10 +395,10 @@ function isTopStoryEntry(entry) {
     && !isAcademicPaperEntry(entry);
 }
 
-function categoryCandidates(sourcePack, predicate, limit, excludeIds = new Set()) {
+function categoryCandidates(sourcePack, predicate, limit, excludeIds = new Set(), scorer = (entry) => entry.score || 0) {
   return sourcePack.entries
     .filter((entry) => !excludeIds.has(entry.id) && predicate(entry))
-    .sort((a, b) => (b.score || 0) - (a.score || 0))
+    .sort((a, b) => scorer(b) - scorer(a) || (b.score || 0) - (a.score || 0))
     .slice(0, limit);
 }
 
@@ -618,21 +712,22 @@ function updateAppCacheBust(date) {
 
 function selectionSourcePack(sourcePack) {
   const used = new Set();
-  const funding = categoryCandidates(sourcePack, isFundingEntry, 8, used);
+  const funding = categoryCandidates(sourcePack, isFundingEntry, 8, used, (entry) => editorialScore(entry, "投融资信息"));
   funding.forEach((entry) => used.add(entry.id));
-  const openSource = categoryCandidates(sourcePack, isOpenSourceEntry, 8, used);
+  const openSource = categoryCandidates(sourcePack, isOpenSourceEntry, 8, used, (entry) => editorialScore(entry, "开源项目"));
   openSource.forEach((entry) => used.add(entry.id));
-  const products = categoryCandidates(sourcePack, isProductEntry, 12, used);
+  const products = categoryCandidates(sourcePack, isProductEntry, 12, used, (entry) => editorialScore(entry, "AI产品推荐"));
   products.forEach((entry) => used.add(entry.id));
-  const deepReads = categoryCandidates(sourcePack, isDeepReadEntry, 8, used);
+  const deepReads = categoryCandidates(sourcePack, isDeepReadEntry, 8, used, (entry) => editorialScore(entry, "深度阅读"));
   deepReads.forEach((entry) => used.add(entry.id));
-  const reports = categoryCandidates(sourcePack, isReportEntry, 8, used);
+  const reports = categoryCandidates(sourcePack, isReportEntry, 8, used, (entry) => editorialScore(entry, "机构报告"));
   reports.forEach((entry) => used.add(entry.id));
   const topStories = categoryCandidates(
     sourcePack,
     isTopStoryEntry,
     28,
-    new Set()
+    new Set(),
+    (entry) => editorialScore(entry, "今日重点")
   );
 
   const compactEntry = (entry) => ({
@@ -649,7 +744,7 @@ function selectionSourcePack(sourcePack) {
     date: sourcePack.date,
     timezone: sourcePack.timezone,
     coverage: sourcePack.coverage,
-    methodology: "The script first collects and scores all source leads, then builds section-specific candidate pools. The model must choose from the matching pool instead of moving model/platform news into product picks or stale reports into report picks.",
+    methodology: "The script scans all source leads, removes duplicates, applies section-specific editorial scores and quotas, then sends only the fixed shortlist to the model for writing. The model no longer decides the final topic list.",
     candidatePools: {
       topStories: topStories.map(compactEntry),
       funding: funding.map(compactEntry),
@@ -799,10 +894,56 @@ function validatePlanAgainstPools(plan, sourcePack) {
   return plan;
 }
 
-function fallbackPlan(date, sourcePack, reason = "") {
-  console.warn(`Using fallback editorial plan: ${reason}`);
+function planAngle(section, entry) {
+  const text = entryText(entry);
+  if (section === "今日重点") {
+    if (aiLeaderPattern.test(text)) return "关键 AI 人事/创业信号，可能影响大公司路线和人才流向。";
+    if (communityConcernPattern.test(text)) return "社区热议的 AI 风险或治理议题，影响用户信任和监管预期。";
+    if (industryChainPattern.test(text)) return "AI 产业链和关键技术进展，能帮助判断能力边界和落地节奏。";
+    return "中美 AI 大公司或关键模型动态，适合作为今日主线观察。";
+  }
+  if (section === "投融资信息") return "资本流向与今日热点相关，用来观察哪些 AI 方向正在获得长期押注。";
+  if (section === "开源项目") return "开发者社区信号，适合观察 agent、模型工具链或基础设施的新方向。";
+  if (section === "AI产品推荐") return "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。";
+  if (section === "深度阅读") return "来自行业观察者或深度来源，适合帮助读者理解一个更大的 AI 产业问题。";
+  if (section === "机构报告") return "偏产业全景、未来应用或企业采用的报告，不追求过度 technical。";
+  return "从公开来源中筛出的 AI 信号，适合作为进一步阅读入口。";
+}
+
+function priorityForSection(section) {
+  if (section === "今日重点") return "high";
+  if (section === "投融资信息") return "high";
+  if (section === "每日词条") return "learning";
+  return "medium";
+}
+
+function selectedPlanItem(section, entry) {
+  return {
+    section,
+    priority: priorityForSection(section),
+    titleZh: entry.title,
+    titleEn: entry.title,
+    angle: planAngle(section, entry),
+    sourceIds: [entry.id],
+    links: [[`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]]
+  };
+}
+
+function buildEditorialFrame(items) {
+  return {
+    headlineZh: "AI 竞争正在从模型能力转向真实产品和产业控制点",
+    headlineEn: "AI competition is shifting from model capability to products and industry control points",
+    summaryZh: "今天的主线是 AI 公司正在把技术能力变成更稳定的产品入口和产业控制点。值得关注的不只是模型强弱，而是谁能把能力沉淀为持续使用、商业化和行业影响力。",
+    summaryEn: "Today’s main theme is that AI competition is moving beyond isolated model releases into product entry points, key talent, infrastructure, and real-world adoption. The important question is no longer only which model is stronger, but who can turn capability into usage, revenue, and industry influence.",
+    tagsZh: ["模型平台", "AI产品", "投融资", "开源", "深度阅读", "机构报告"],
+    tagsEn: ["Models", "AI Products", "Funding", "Open Source", "Deep Read", "Reports"]
+  };
+}
+
+function deterministicPlan(date, sourcePack, reason = "") {
+  if (reason) console.warn(`Using deterministic editorial plan: ${reason}`);
   const used = new Set();
-  const fallbackReports = categoryCandidates(sourcePack, isReportEntry, 1, used);
+  const fallbackReports = categoryCandidates(sourcePack, isReportEntry, 1, used, (entry) => editorialScore(entry, "机构报告"));
   const specs = [
     ["今日重点", 4, isTopStoryEntry],
     ["投融资信息", 1, isFundingEntry],
@@ -813,30 +954,14 @@ function fallbackPlan(date, sourcePack, reason = "") {
   ];
   const items = [];
   specs.forEach(([section, count, predicate]) => {
-    categoryCandidates(sourcePack, predicate, count, used).forEach((entry) => {
-      items.push({
-        section,
-        priority: section === "今日重点" ? "high" : "medium",
-        titleZh: entry.title,
-        titleEn: entry.title,
-        angle: "从多源公开信息中筛出的高相关 AI 信号，需要关注其产品、资本或产业落地含义。",
-        sourceIds: [entry.id],
-        links: [[`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]]
-      });
+    categoryCandidates(sourcePack, predicate, count, used, (entry) => editorialScore(entry, section)).forEach((entry) => {
+      items.push(selectedPlanItem(section, entry));
       used.add(entry.id);
     });
   });
 
   if (!fallbackReports.length && !items.some((item) => item.section === "机构报告")) {
-    items.push({
-      section: "机构报告",
-      priority: "low",
-      titleZh: "暂无足够新的机构报告信号",
-      titleEn: "No sufficiently fresh institutional report signal",
-      angle: "今天的公开来源没有出现足够新的机构报告，避免用旧报告凑数。",
-      sourceIds: [],
-      links: []
-    });
+    console.warn("No sufficiently fresh strategic AI report found; skipping Research Reports for this issue.");
   }
 
   for (const entry of sourcePack.entries) {
@@ -844,16 +969,11 @@ function fallbackPlan(date, sourcePack, reason = "") {
     if (used.has(entry.id)) continue;
     if (!isTopStoryEntry(entry)) continue;
     used.add(entry.id);
-    items.push({
-      section: "今日重点",
-      priority: "medium",
-      titleZh: entry.title,
-      titleEn: entry.title,
-      angle: "作为今日 AI 信息流中的补充信号，适合观察行业注意力正在流向哪里。",
-      sourceIds: [entry.id],
-      links: [[`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]]
-    });
+    items.push(selectedPlanItem("今日重点", entry));
   }
+
+  const sectionOrder = ["今日重点", "投融资信息", "开源项目", "AI产品推荐", "深度阅读", "机构报告"];
+  items.sort((a, b) => sectionOrder.indexOf(a.section) - sectionOrder.indexOf(b.section));
 
   items.push({
     section: "每日词条",
@@ -866,14 +986,13 @@ function fallbackPlan(date, sourcePack, reason = "") {
   });
 
   return normalizePlan({
-    headlineZh: "AI 竞争正在从模型发布转向真实工作流",
-    headlineEn: "AI competition is moving from model launches to real workflows",
-    summaryZh: "今天的 AI 信号主线不是单点发布，而是模型、产品、资本和行业应用都在向可落地的工作流靠拢。对读者来说，值得关注的不只是哪个模型更强，而是谁能把 AI 嵌进真实业务、知识管理和自动化流程。",
-    summaryEn: "Today’s AI signals point less to isolated launches and more to the race to turn models into usable workflows. The important question is not only which model is stronger, but who can embed AI into real business, knowledge, and automation loops.",
-    tagsZh: ["模型平台", "AI产品", "投融资", "开源", "深度阅读", "机构报告"],
-    tagsEn: ["Models", "AI Products", "Funding", "Open Source", "Deep Read", "Reports"],
+    ...buildEditorialFrame(items),
     items: items.slice(0, 11)
   });
+}
+
+function fallbackPlan(date, sourcePack, reason = "") {
+  return deterministicPlan(date, sourcePack, reason);
 }
 
 function fallbackItem(planItem, scopedSourcePack, lang, reason = "") {
@@ -1153,13 +1272,7 @@ async function createIssueFromPlan(date, sourcePack, plan, lang, requestJson) {
 }
 
 async function createIssueWithDeepSeek(date, sourcePack, revisionNote = "") {
-  let plan;
-  try {
-    const planJson = await deepSeekJson(buildSelectionPrompt(date, sourcePack, revisionNote), 3000);
-    plan = validatePlanAgainstPools(normalizePlan(planJson.plan), sourcePack);
-  } catch (error) {
-    plan = fallbackPlan(date, sourcePack, String(error?.message || error));
-  }
+  const plan = validatePlanAgainstPools(deterministicPlan(date, sourcePack, revisionNote), sourcePack);
   return {
     zh: await createIssueFromPlan(date, sourcePack, plan, "zh", deepSeekJson),
     en: await createIssueFromPlan(date, sourcePack, plan, "en", deepSeekJson)
@@ -1167,13 +1280,7 @@ async function createIssueWithDeepSeek(date, sourcePack, revisionNote = "") {
 }
 
 async function createIssueWithOpenAI(date, sourcePack, revisionNote = "") {
-  let plan;
-  try {
-    const planJson = await openAIJson(buildSelectionPrompt(date, sourcePack, revisionNote), 3000);
-    plan = validatePlanAgainstPools(normalizePlan(planJson.plan), sourcePack);
-  } catch (error) {
-    plan = fallbackPlan(date, sourcePack, String(error?.message || error));
-  }
+  const plan = validatePlanAgainstPools(deterministicPlan(date, sourcePack, revisionNote), sourcePack);
   return {
     zh: await createIssueFromPlan(date, sourcePack, plan, "zh", openAIJson),
     en: await createIssueFromPlan(date, sourcePack, plan, "en", openAIJson)
@@ -1199,6 +1306,13 @@ async function main() {
   console.log(`Collected ${sourcePack.entries.length} source entries from ${sourcePack.sources.filter((source) => source.ok).length} sources.`);
   if (process.env.DRY_RUN_SOURCES === "1") {
     console.log(JSON.stringify(sourcePack, null, 2));
+    return;
+  }
+  if (process.env.DRY_RUN_PLAN === "1") {
+    console.log(JSON.stringify({
+      sourcePack: selectionSourcePack(sourcePack),
+      plan: deterministicPlan(date, sourcePack)
+    }, null, 2));
     return;
   }
 
