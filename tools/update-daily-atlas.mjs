@@ -929,6 +929,38 @@ function selectedPlanItem(section, entry) {
   };
 }
 
+function selectTopStoryEntries(sourcePack, count, used) {
+  const candidates = categoryCandidates(
+    sourcePack,
+    isTopStoryEntry,
+    30,
+    used,
+    (entry) => editorialScore(entry, "今日重点")
+  );
+  const selected = [];
+  const selectedIds = new Set();
+  const addBest = (predicate) => {
+    const entry = candidates.find((candidate) => !selectedIds.has(candidate.id) && predicate(entryText(candidate)));
+    if (!entry) return;
+    selected.push(entry);
+    selectedIds.add(entry.id);
+  };
+
+  addBest((text) => communityConcernPattern.test(text));
+  addBest((text) => aiLeaderPattern.test(text));
+  addBest((text) => modelLaunchPattern.test(text) && priorityCompanyPattern.test(text));
+  addBest((text) => industryChainPattern.test(text));
+
+  candidates.forEach((entry) => {
+    if (selected.length >= count) return;
+    if (selectedIds.has(entry.id)) return;
+    selected.push(entry);
+    selectedIds.add(entry.id);
+  });
+
+  return selected.slice(0, count);
+}
+
 function buildEditorialFrame(items) {
   return {
     headlineZh: "AI 竞争正在从模型能力转向真实产品和产业控制点",
@@ -954,7 +986,10 @@ function deterministicPlan(date, sourcePack, reason = "") {
   ];
   const items = [];
   specs.forEach(([section, count, predicate]) => {
-    categoryCandidates(sourcePack, predicate, count, used, (entry) => editorialScore(entry, section)).forEach((entry) => {
+    const candidates = section === "今日重点"
+      ? selectTopStoryEntries(sourcePack, count, used)
+      : categoryCandidates(sourcePack, predicate, count, used, (entry) => editorialScore(entry, section));
+    candidates.forEach((entry) => {
       items.push(selectedPlanItem(section, entry));
       used.add(entry.id);
     });
