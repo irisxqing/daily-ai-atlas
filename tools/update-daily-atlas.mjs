@@ -13,6 +13,7 @@ const openaiModel = process.env.OPENAI_MODEL || "gpt-5-mini";
 const deepseekBaseUrl = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com";
 const maxSourceEntries = Number(process.env.MAX_SOURCE_ENTRIES || 90);
 const maxEntriesPerSource = Number(process.env.MAX_ENTRIES_PER_SOURCE || 6);
+const jsonSystemPrompt = "You are the editor of AI Daily Atlas. Return valid JSON only. Base every factual claim on the provided SOURCE_PACK.";
 
 function googleNews(name, query, locale = { hl: "en-US", gl: "US", ceid: "US:en" }) {
   const params = new URLSearchParams({
@@ -278,7 +279,7 @@ async function collectSourcePack(date) {
       return true;
     })
     .slice(0, maxSourceEntries)
-    .map(({ timestamp, ...entry }) => entry);
+    .map(({ timestamp, ...entry }, index) => ({ id: `S${String(index + 1).padStart(3, "0")}`, ...entry }));
 
   if (uniqueEntries.length < 10) {
     throw new Error(`Too few source entries collected (${uniqueEntries.length}). Check feed availability.`);
@@ -479,13 +480,13 @@ function updateAppCacheBust(date) {
   fs.writeFileSync(indexPath, next);
 }
 
-function buildPrompt(date, sourcePack, revisionNote = "") {
+function buildSelectionPrompt(date, sourcePack, revisionNote = "") {
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
 ${lookbackDescription()}
 ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：增加新闻细节、写成解释性段落，机构报告必须有 expanded 深度解读对象。\n` : ""}
 
-请为 AI Daily Atlas 生成一个可直接写入 app.js 的双语日报 JSON。
+请为 AI Daily Atlas 先生成一份“选题计划”JSON。后续中英文正文必须基于这份选题计划生成，所以这一步最重要。
 你不能联网浏览；只能使用下面 SOURCE_PACK 中的公开来源条目作为事实基础。不要编造 SOURCE_PACK 之外的链接、融资金额、发布时间或媒体素材。SOURCE_PACK 里的 newsletter / media 只作为雷达线索；公司官网、官方博客、论文、GitHub、Hugging Face、Product Hunt、机构报告、主流媒体来源优先作为确认来源。
 
 重要：换模型不应改变日报目标。你不是在复述 SOURCE_PACK 排名前几条，而是在做“当日 AI 信号编辑”。请横向比较所有来源，按影响力、可信度、对产品/投资/战略/AI落地的启发排序。不要被 Product Hunt、Google News 或单一 feed 的更新时间挤占版面。若同一事件被多源报道，合并成一条并放多个 links。
@@ -497,48 +498,97 @@ ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请�
 - 来源方法：AI Valley、The Rundown AI、Ben's Bites、TLDR AI、The Batch、Import AI、Latent Space、中文 AI 媒体只作为雷达；重要事实需要回到公司官网、官方博客、论文、GitHub、Hugging Face、Product Hunt、机构报告、主流媒体或招聘官网确认。
 
 内容结构要求：
-- zh issue 使用中文 sections：今日重点、投融资信息、开源项目、AI产品推荐、机构报告、每日词条。
-- en issue 使用英文 sections：Top Stories、Funding Watch、Open Source、AI Product Picks、Research Reports、AI Term。
+- 计划里使用中文 section：今日重点、投融资信息、开源项目、AI产品推荐、机构报告、每日词条。
 - 今日重点 4-6 条；投融资 1-2 条；开源 1-2 条；AI 产品推荐 1-3 条；机构报告 1-2 条；每日 AI 词条 1 条。
-- 每条 item 必须有 section、priority、title、dek、details、why、links。
-- details 必须是 3-5 条“有信息量的小段落”，不能是短 bullet。每条 detail 至少包含背景/关键数字/主体动作/影响范围/不确定性中的两个维度。中文每条约 80-180 字，英文每条约 45-100 words。
-- details 不要写成“Apple 正在改造 Siri / 新功能强调隐私”这种目录式短句。要写成能让非技术读者理解来龙去脉的解释性段落。
-- why 必须是 1-2 句判断，解释这条新闻对产品、投资、公司战略、创业机会或职业判断有什么意义。
-- links 是 [label, url] 数组。重要新闻尽量给 2-4 个 links；至少 1 个链接必须来自 SOURCE_PACK。
-- 如果 SOURCE_PACK 条目里有 image，或原链接显然是视频/GitHub/Product Hunt/Hugging Face 页面，可以加 media；没有可靠素材就不要编造。AI 产品推荐和今日重点优先带 media。
-- 语言风格：中文轻量、好读、有判断，适合非技术背景读者；英文自然简洁，不要机械直译。
-- 不要包含用户个人收入、具体雇主经历或敏感个人信息。
-- 未确认消息必须标注不确定性，不要写成事实。
-- 每条内容的 links 必须至少包含 1 个 SOURCE_PACK 中出现过的 URL。
+- 每条 plan item 必须包含 section、priority、titleZh、titleEn、angle、sourceIds、links。
+- sourceIds 必须引用 SOURCE_PACK.entries 里的 id。每条至少 1 个，重要新闻尽量 2-4 个。
+- links 是 [label, url] 数组，URL 必须来自 SOURCE_PACK。
+- angle 要写明为什么选择它、应该补充哪些上下文、对非技术读者最重要的理解角度。
 
 机构报告 / Research Reports 的特殊要求：
-- 不允许只写一句话摘要。每份报告的 details 必须使用对象数组，每个对象包含 summary 和 expanded。
-- expanded 要相对详细，中文约 120-260 字，英文约 80-160 words；需要讲清核心观点、关键数据或结论、产业/投资/职业启发。
-- 如果 SOURCE_PACK 提供了报告页/PDF/研究文章链接，links 必须包含它。若有原文短句，可以加 quote；quote 必须很短，不能超过 25 个英文词或 35 个中文字。若有报告图表入口，可以加 chart: ["图表/报告入口", "url"]。
+- 计划里必须至少包含 1 条机构报告或深度研究文章。
+- 如果 SOURCE_PACK 提供了报告页/PDF/研究文章链接，links 必须包含它。
 - 如果当天没有真正的机构报告，可以选择深度研究文章/官方研究博客/年度报告，但必须明确它不是正式咨询报告，不要硬编 PDF。
 
 选题覆盖要求：
 - 今日重点不要只来自一个来源；优先混合官方/主流媒体/研究社区/中国媒体。
-- AI 产品推荐要选真正可试用、有产品启发的工具，不能只按 Product Hunt 最新时间排序。
+- AI 产品推荐要选真正可试用、有产品启发的工具，尤其关注个人知识管理、跨模型工作流、agent、创作工具、效率工具，不能只按 Product Hunt 最新时间排序。
 - 投融资只写有融资、IPO、并购、估值、投资方或资本市场信号的内容；没有可信信号时宁可写 1 条并标注来源限制。
 - 开源项目优先 GitHub/Hugging Face/开发者社区有明确项目页或技术博客的内容。
 - 每日词条要和当天新闻有关，解释清楚但不要幼稚化。
 
 返回 JSON，不能有 Markdown 包裹。格式：
 {
-  "archiveZhIssue": {
-    "headline": "...",
-    "summary": "...",
-    "tags": ["..."],
-    "items": []
-  },
-  "archiveEnIssue": {
+  "plan": {
+    "headlineZh": "...",
+    "headlineEn": "...",
+    "summaryZh": "...",
+    "summaryEn": "...",
+    "tagsZh": ["..."],
+    "tagsEn": ["..."],
+    "items": [
+      {
+        "section": "今日重点",
+        "priority": "high",
+        "titleZh": "...",
+        "titleEn": "...",
+        "angle": "...",
+        "sourceIds": ["S001"],
+        "links": [["source label", "https://..."]]
+      }
+    ]
+  }
+}
+
+SOURCE_PACK:
+${JSON.stringify(sourcePack, null, 2)}
+`;
+}
+
+function buildIssuePrompt(date, sourcePack, plan, lang, revisionNote = "") {
+  const isZh = lang === "zh";
+  return `
+今天日期：${date}，时区：北京时间 / Asia/Shanghai。
+${lookbackDescription()}
+${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：增加新闻细节、写成解释性段落，机构报告必须有 expanded 深度解读对象。\n` : ""}
+
+请基于 EDITORIAL_PLAN 生成 AI Daily Atlas ${isZh ? "中文版" : "英文版"}正文 JSON。
+你不能改变选题，只能基于 EDITORIAL_PLAN 和 SOURCE_PACK 写正文。不要编造 SOURCE_PACK 之外的链接、融资金额、发布时间或媒体素材。未确认消息必须标注不确定性，不要写成事实。
+
+${isZh ? `
+中文 sections 必须使用：今日重点、投融资信息、开源项目、AI产品推荐、机构报告、每日词条。
+语言风格：轻量、好读、有判断，适合非技术背景读者；不要幼稚化，也不要只堆技术名词。
+每条 detail 写成 3-5 条“有信息量的小段落”，每条约 80-180 字，至少包含背景/关键数字/主体动作/影响范围/不确定性中的两个维度。
+` : `
+English sections must use: Top Stories, Funding Watch, Open Source, AI Product Picks, Research Reports, AI Term.
+Tone: concise, readable, analytical, not a mechanical translation. Each detail should be 45-100 words and include at least two of: context, key numbers, actor action, impact, uncertainty.
+`}
+
+所有 item 必须有 section、priority、title、dek、details、why、links。
+- details 不能是短 bullet。要让非技术读者理解来龙去脉。
+- why 必须是 1-2 句判断，解释这条新闻对产品、投资、公司战略、创业机会或职业判断有什么意义。
+- links 是 [label, url] 数组。每条内容的 links 必须至少包含 1 个 SOURCE_PACK 中出现过的 URL。
+- 如果 SOURCE_PACK 条目里有 image，或原链接显然是视频/GitHub/Product Hunt/Hugging Face 页面，可以加 media；没有可靠素材就不要编造。AI 产品推荐和今日重点优先带 media。
+- 不要包含用户个人收入、具体雇主经历或敏感个人信息。
+
+机构报告 / Research Reports 的特殊要求：
+- 不允许只写一句话摘要。每份报告的 details 必须使用对象数组，每个对象包含 summary 和 expanded。
+- expanded 要相对详细，${isZh ? "中文约 120-260 字" : "English 80-160 words"}；需要讲清核心观点、关键数据或结论、产业/投资/职业启发。
+- 如果 SOURCE_PACK 提供了报告页/PDF/研究文章链接，links 必须包含它。若有原文短句，可以加 quote；quote 必须很短，不能超过 25 个英文词或 35 个中文字。若有报告图表入口，可以加 chart: ["图表/报告入口", "url"]。
+- 如果当天没有真正的机构报告，可以选择深度研究文章/官方研究博客/年度报告，但必须明确它不是正式咨询报告，不要硬编 PDF。
+
+返回 JSON，不能有 Markdown 包裹。格式：
+{
+  "issue": {
     "headline": "...",
     "summary": "...",
     "tags": ["..."],
     "items": []
   }
 }
+
+EDITORIAL_PLAN:
+${JSON.stringify(plan, null, 2)}
 
 SOURCE_PACK:
 ${JSON.stringify(sourcePack, null, 2)}
@@ -549,7 +599,45 @@ function chatCompletionText(body) {
   return body?.choices?.[0]?.message?.content || "";
 }
 
-async function createIssueWithDeepSeek(date, sourcePack, revisionNote = "") {
+function normalizePlan(plan) {
+  if (!plan || typeof plan !== "object") throw new Error("Missing editorial plan.");
+  const normalized = {
+    headlineZh: String(plan.headlineZh || ""),
+    headlineEn: String(plan.headlineEn || ""),
+    summaryZh: String(plan.summaryZh || ""),
+    summaryEn: String(plan.summaryEn || ""),
+    tagsZh: Array.isArray(plan.tagsZh) ? plan.tagsZh.map(String) : [],
+    tagsEn: Array.isArray(plan.tagsEn) ? plan.tagsEn.map(String) : [],
+    items: Array.isArray(plan.items) ? plan.items.map((item) => ({
+      section: String(item.section || ""),
+      priority: String(item.priority || ""),
+      titleZh: String(item.titleZh || ""),
+      titleEn: String(item.titleEn || ""),
+      angle: String(item.angle || ""),
+      sourceIds: Array.isArray(item.sourceIds) ? item.sourceIds.map(String) : [],
+      links: normalizeLinks(item.links || [])
+    })) : []
+  };
+
+  if (!normalized.headlineZh || !normalized.headlineEn || !normalized.summaryZh || !normalized.summaryEn) {
+    throw new Error("Editorial plan missing headline or summary.");
+  }
+  if (normalized.items.length < 8) {
+    throw new Error("Editorial plan has too few items.");
+  }
+  normalized.items.forEach((item) => {
+    for (const key of ["section", "titleZh", "titleEn", "angle"]) {
+      if (!item[key]) throw new Error(`Editorial plan item missing ${key}.`);
+    }
+    if (!item.sourceIds.length || !item.links.length) {
+      throw new Error(`Editorial plan item "${item.titleZh}" needs sourceIds and links.`);
+    }
+  });
+
+  return normalized;
+}
+
+async function deepSeekJson(prompt, maxTokens = 9000) {
   const apiKey = process.env.DEEPSEEK_API_KEY;
   if (!apiKey) {
     throw new Error("Missing DEEPSEEK_API_KEY. Add it as a GitHub Actions repository secret.");
@@ -566,16 +654,16 @@ async function createIssueWithDeepSeek(date, sourcePack, revisionNote = "") {
       messages: [
         {
           role: "system",
-          content: "You are the editor of AI Daily Atlas. Return valid JSON only. Base every factual claim on the provided SOURCE_PACK."
+          content: jsonSystemPrompt
         },
         {
           role: "user",
-          content: buildPrompt(date, sourcePack, revisionNote)
+          content: prompt
         }
       ],
       response_format: { type: "json_object" },
       temperature: 0.25,
-      max_tokens: 14000
+      max_tokens: maxTokens
     })
   });
 
@@ -584,14 +672,10 @@ async function createIssueWithDeepSeek(date, sourcePack, revisionNote = "") {
     throw new Error(`DeepSeek API error ${response.status}: ${JSON.stringify(body)}`);
   }
 
-  const parsed = extractJson(chatCompletionText(body));
-  return {
-    zh: normalizeIssue(parsed.archiveZhIssue, date, "zh"),
-    en: normalizeIssue(parsed.archiveEnIssue, date, "en")
-  };
+  return extractJson(chatCompletionText(body));
 }
 
-async function createIssueWithOpenAI(date, sourcePack, revisionNote = "") {
+async function openAIJson(prompt, maxOutputTokens = 9000) {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) {
     throw new Error("Missing OPENAI_API_KEY. Add it as a GitHub Actions repository secret.");
@@ -607,8 +691,8 @@ async function createIssueWithOpenAI(date, sourcePack, revisionNote = "") {
       model: openaiModel,
       reasoning: { effort: process.env.OPENAI_REASONING_EFFORT || "medium" },
       text: { format: { type: "json_object" } },
-      max_output_tokens: 14000,
-      input: buildPrompt(date, sourcePack, revisionNote)
+      max_output_tokens: maxOutputTokens,
+      input: `${jsonSystemPrompt}\n\n${prompt}`
     })
   });
 
@@ -617,10 +701,28 @@ async function createIssueWithOpenAI(date, sourcePack, revisionNote = "") {
     throw new Error(`OpenAI API error ${response.status}: ${JSON.stringify(body)}`);
   }
 
-  const parsed = extractJson(responseText(body));
+  return extractJson(responseText(body));
+}
+
+async function createIssueWithDeepSeek(date, sourcePack, revisionNote = "") {
+  const planJson = await deepSeekJson(buildSelectionPrompt(date, sourcePack, revisionNote), 5000);
+  const plan = normalizePlan(planJson.plan);
+  const zhJson = await deepSeekJson(buildIssuePrompt(date, sourcePack, plan, "zh", revisionNote), 9000);
+  const enJson = await deepSeekJson(buildIssuePrompt(date, sourcePack, plan, "en", revisionNote), 9000);
   return {
-    zh: normalizeIssue(parsed.archiveZhIssue, date, "zh"),
-    en: normalizeIssue(parsed.archiveEnIssue, date, "en")
+    zh: normalizeIssue(zhJson.issue, date, "zh"),
+    en: normalizeIssue(enJson.issue, date, "en")
+  };
+}
+
+async function createIssueWithOpenAI(date, sourcePack, revisionNote = "") {
+  const planJson = await openAIJson(buildSelectionPrompt(date, sourcePack, revisionNote), 5000);
+  const plan = normalizePlan(planJson.plan);
+  const zhJson = await openAIJson(buildIssuePrompt(date, sourcePack, plan, "zh", revisionNote), 9000);
+  const enJson = await openAIJson(buildIssuePrompt(date, sourcePack, plan, "en", revisionNote), 9000);
+  return {
+    zh: normalizeIssue(zhJson.issue, date, "zh"),
+    en: normalizeIssue(enJson.issue, date, "en")
   };
 }
 
@@ -631,7 +733,7 @@ async function createIssue(date, sourcePack) {
     return await create(date, sourcePack);
   } catch (error) {
     const message = String(error?.message || error);
-    if (!/too shallow|expanded report|needs expanded/i.test(message)) throw error;
+    if (!/too shallow|expanded report|needs expanded|unterminated string|parseable json|unexpected end/i.test(message)) throw error;
     console.warn(`Quality check failed, retrying once: ${message}`);
     return create(date, sourcePack, message);
   }
