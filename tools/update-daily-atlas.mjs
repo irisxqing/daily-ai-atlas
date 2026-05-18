@@ -211,23 +211,46 @@ function isFundingEntry(entry) {
 }
 
 function isOpenSourceEntry(entry) {
-  return /\bgithub\b|\bopen[- ]source\b|\bhugging face\b|\brepo\b|\brepository\b|开源|模型库|代码库/i.test(entryText(entry));
+  return /\bgithub\b|\bopen[- ]source\b|\bhugging face\b|\brepo\b|开源|模型库|代码库/i.test(entryText(entry));
 }
 
 function isProductEntry(entry) {
   const text = entryText(entry);
-  const hasProductSignal = /\bproduct hunt\b|\btool\b|\bapp\b|\bworkspace\b|\bworkflow\b|\bmemory\b|\bassistant\b|\bagentmemory\b|\brecall\b|\bliminary\b|\bbrowser\b|\bextension\b|\bdashboard\b|\bcanvas\b|\bnotebook\b|\bautomation\b|插件|应用|产品|工具|工作流|知识管理|浏览器|助手/i.test(text);
+  const titleSource = `${entry.source || ""} ${entry.title || ""}`.toLowerCase();
+  const hasProductSignal = /\bproduct hunt\b|\btool\b|\bapp\b|\bworkspace\b|\bworkflow\b|\bmemory\b|\bassistant\b|\bagentmemory\b|\brecall\b|\bliminary\b|\bbrowser\b|\bextension\b|\bdashboard\b|\bcanvas\b|\bnotebook\b|\bautomation\b|插件|应用|产品|工具|工作流|知识管理|浏览器|助手/i.test(titleSource);
   const isMostlyModelNews = /\bmodel\b|\bapi\b|\bbenchmark\b|\binference\b|芯片|\bipo\b|\bvaluation\b|\bfunding\b|融资|估值|模型|推理|基准|参数/.test(text)
     && !/\btool\b|\bapp\b|\bproduct hunt\b|\bworkflow\b|\bmemory\b|\bassistant\b|\bextension\b|\bnotebook\b|应用|产品|工具|工作流|知识管理|助手/.test(text);
   return hasProductSignal && !isMostlyModelNews;
+}
+
+function isStaleReportLikeEntry(entry) {
+  const title = String(entry.title || "").toLowerCase();
+  const reportLike = /\breport\b|\bpdf\b|\bindex\b|\bsurvey\b|\bwhitepaper\b|\bresearch brief\b|\bstate of\b|报告|指数|调研|白皮书|研究报告/.test(title);
+  const staleYear = /\b20(1\d|2[0-5])\b/.test(title) && !/\b2026\b/.test(title);
+  return reportLike && staleYear;
+}
+
+function isAcademicPaperEntry(entry) {
+  const text = entryText(entry);
+  return /arxiv|paper|论文|research repository|研究论文/.test(text);
 }
 
 function isReportEntry(entry) {
   const text = entryText(entry);
   const title = String(entry.title || "").toLowerCase();
   const hasReportSignal = /\breport\b|\bpdf\b|\bindex\b|\bsurvey\b|\bwhitepaper\b|\bresearch brief\b|\bstate of\b|报告|指数|调研|白皮书|研究报告/.test(title);
+  const hasAiSignal = /\bai\b|artificial intelligence|generative|llm|agent|人工智能|大模型|模型|智能体/i.test(text);
   const staleYear = /\b20(1\d|2[0-5])\b/.test(title) && !/\b2026\b/.test(title);
-  return hasReportSignal && isRecentEntry(entry, 14) && !staleYear;
+  return hasReportSignal && hasAiSignal && isRecentEntry(entry, 14) && !staleYear;
+}
+
+function isTopStoryEntry(entry) {
+  return !isFundingEntry(entry)
+    && !isOpenSourceEntry(entry)
+    && !isProductEntry(entry)
+    && !isReportEntry(entry)
+    && !isStaleReportLikeEntry(entry)
+    && !isAcademicPaperEntry(entry);
 }
 
 function categoryCandidates(sourcePack, predicate, limit, excludeIds = new Set()) {
@@ -554,7 +577,7 @@ function selectionSourcePack(sourcePack) {
   reports.forEach((entry) => used.add(entry.id));
   const topStories = categoryCandidates(
     sourcePack,
-    (entry) => !isFundingEntry(entry) && !isOpenSourceEntry(entry) && !isProductEntry(entry) && !isReportEntry(entry),
+    isTopStoryEntry,
     28,
     new Set()
   );
@@ -698,9 +721,7 @@ function sectionPredicate(section) {
   if (section === "开源项目") return isOpenSourceEntry;
   if (section === "AI产品推荐") return isProductEntry;
   if (section === "机构报告") return isReportEntry;
-  if (section === "今日重点") {
-    return (entry) => !isFundingEntry(entry) && !isOpenSourceEntry(entry) && !isProductEntry(entry) && !isReportEntry(entry);
-  }
+  if (section === "今日重点") return isTopStoryEntry;
   return () => true;
 }
 
@@ -725,7 +746,7 @@ function fallbackPlan(date, sourcePack, reason = "") {
   const used = new Set();
   const fallbackReports = categoryCandidates(sourcePack, isReportEntry, 1, used);
   const specs = [
-    ["今日重点", 4, (entry) => !isFundingEntry(entry) && !isOpenSourceEntry(entry) && !isProductEntry(entry) && !isReportEntry(entry)],
+    ["今日重点", 4, isTopStoryEntry],
     ["投融资信息", 1, isFundingEntry],
     ["开源项目", 1, isOpenSourceEntry],
     ["AI产品推荐", 2, isProductEntry],
@@ -762,7 +783,7 @@ function fallbackPlan(date, sourcePack, reason = "") {
   for (const entry of sourcePack.entries) {
     if (items.length >= 9) break;
     if (used.has(entry.id)) continue;
-    if (isFundingEntry(entry) || isOpenSourceEntry(entry) || isProductEntry(entry) || isReportEntry(entry)) continue;
+    if (!isTopStoryEntry(entry)) continue;
     used.add(entry.id);
     items.push({
       section: "今日重点",
