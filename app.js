@@ -1,5 +1,5 @@
 const archiveZh = [
-                          {
+                            {
     "date": "2026-05-18",
     "title": "AI Daily Atlas",
     "meta": "2026年5月18日",
@@ -17,114 +17,114 @@ const archiveZh = [
       {
         "section": "今日重点",
         "priority": "high",
-        "title": "田轩对话Kimi总裁张予彤：AI时代的人才机遇",
-        "dek": "清华大学教授田轩与Kimi总裁张予彤对谈，探讨AI行业人才缺口、复合型能力要求以及企业用人策略的变化。",
+        "title": "315曝光AI大模型“投毒”黑产，39.9元篡改AI答案 - 36Kr",
+        "dek": "315晚会揭露AI大模型答案篡改黑产链，最低39.9元即可“投毒”",
         "details": [
-          "清华大学五道口金融学院副院长田轩与Kimi（月之暗面）总裁张予彤进行了一场关于AI人才趋势的深度对话。张予彤指出，当前AI行业最稀缺的不是单一技术人才，而是“懂技术、懂产品、懂场景”的复合型人才。她强调，Kimi在招聘时特别看重候选人的学习能力和跨界思维，而非单纯的技术背景。这一观点反映了AI企业从“模型竞赛”向“应用落地”转型的用人新标准。",
-          "对话中，田轩提到中国AI人才供给存在结构性失衡：高校培养的AI专业毕业生数量增长迅速，但顶尖研究型人才和能将技术商业化的产品经理仍严重不足。张予彤回应称，Kimi内部正在尝试“内部轮岗+项目制”的培养模式，让工程师和产品经理深度协作，加速人才成长。她还透露，Kimi目前团队中约30%的员工拥有非计算机背景，例如心理学、语言学等。",
-          "针对“AI是否会取代人类工作”的担忧，张予彤认为，AI更可能替代的是“流程化任务”，而非“创造性岗位”。她以Kimi自身的招聘流程为例，说明AI工具已用于简历初筛和面试题生成，但最终录取决定仍由人类判断。她建议求职者主动学习使用AI工具，将其作为“生产力放大器”而非对手。",
-          "这场对话还触及了中美AI人才竞争的敏感话题。张予彤表示，中国在应用层人才上有优势，但基础模型研究的顶尖人才仍多集中在北美。Kimi的策略是“全球吸纳、本地培养”，目前已在美国设立研究中心。田轩则提醒，国内企业需加大基础研究投入，并改善激励机制以留住核心人才。整体而言，这场讨论为AI从业者和投资者提供了关于人才战略的务实洞察。"
+          "今年的315晚会将镜头对准了AI安全领域：一条通过“提示词注入”篡改大模型输出结果的黑产链被公之于众。操作手法并不复杂——攻击者将精心设计的恶意指令嵌入用户向AI发送的提问中，导致模型输出虚假信息或执行非预期操作。据曝光，这类服务在暗网甚至社交平台明码标价，最低仅需39.9元即可完成一次“投毒”。",
+          "这一黑产的核心是利用了大模型对话上下文中的指令优先级漏洞。当用户输入被系统误判为“系统指令”时，模型会优先执行恶意指令，进而绕过原本的安全对齐。受影响的场景包括但不限于：在线客服自动回复、智能推荐系统、甚至部分医疗咨询AI。普通用户很难察觉回复被篡改，可能因此做出错误决策。",
+          "此次曝光引发了公众对AI可信度的广泛讨论。虽然目前尚无证据表明主流厂商的基座模型被直接破坏，但黑产利用的是模型固有的开放对话特性，这使得防御变得棘手。多个大模型厂商已在紧急修补对抗性输入检测模块，但攻击方式迭代极快，完全封堵几乎不可能。",
+          "从监管角度看，315晚会的定性具有风向标意义。过去安全治理多集中在数据隐私和算法偏见，而AI输出层面的“投毒”风险尚处灰色地带。此次曝光可能推动相关法规的加速出台，要求产品方对AI输出内容承担更多责任，包括引入输出审计和溯源机制。",
+          "不确定性依然存在：黑产的真实规模和具体服务商尚未完全公开，部分细节可能因调查保护而暂不披露。但可以确定的是，AI安全已从技术圈层跃升为公众议题，短期内将对对话式AI产品的用户信任和商业推广造成冲击。"
         ],
-        "why": "AI行业的人才争夺已从“堆数量”转向“拼质量”，理解头部企业的用人逻辑和培养模式，对创业团队组建、个人职业规划以及投资标的评估都有直接参考价值。",
+        "why": "AI“投毒”黑产曝光直接打击了用户对AI大模型的信任基础，产品方必须将安全防御提升到战略优先级，创业公司可关注对抗性检测与输出审计工具赛道，投资者应警惕依赖单一对话式AI产品的估值泡沫。",
         "links": [
           [
-            "Google News China AI: 田轩对话Kimi总裁张予彤：AI时代的人才机遇 - Sina finance",
+            "36Kr报道",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9pTVgwS1FDN0VkR2t3anFQenlabGxNbU5hRU05UWlXelNjc3ljcWtWaE1ZcHljVWVjTlJfdUhrQmtQcjBIc2p1NjNnQmM0Zw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-16",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-16",
+        "freshnessLabelEn": "Weekend window | 2026-05-16",
+        "freshnessLabel": "周末窗口｜2026-05-16"
+      },
+      {
+        "section": "今日重点",
+        "priority": "high",
+        "title": "OpenAI联合创始人Greg Brockman接管产品战略",
+        "dek": "据TechCrunch报道，OpenAI联合创始人Greg Brockman将主导产品战略，并计划合并ChatGPT与编程产品Codex，标志公司重心从研究转向产品化。",
+        "details": [
+          "OpenAI正在进行新一轮组织调整，联合创始人Greg Brockman从研究一线转向全面负责产品战略。据TechCrunch援引内部人士消息，Brockman将主导定义ChatGPT及Codex的未来方向，同时推动两款产品的技术融合。这一变动发生在OpenAI从非营利转型为营利性公司、并加速商业化进程的关键时期。值得注意的是，Brockman此前一直以“技术大脑”形象出现，此次岗位变化可能意味着公司对产品落地的优先级已超过纯粹的模型突破。",
+          "合并ChatGPT与Codex是此次调整中最为具体的产品动作。Codex是OpenAI推出的编程助手，最初基于GPT-3构建，目前已开发者广泛采用。将二者整合，可以实现从自然语言对话到代码生成的无缝衔接——比如用户在ChatGPT中讨论一个需求后，直接生成可运行的代码片段。这一思路类似GitHub Copilot的升级版，但更强调自然语言交互入口。如果实现，将极大降低编程门槛，也可能重塑低代码/无代码工具市场。",
+          "Brockman的履历为这一战略提供了信任基础。作为OpenAI的联合创始人兼前CTO，他深度参与了GPT系列模型的研发，并长期负责研究团队与工程团队的协调。2023年他曾短暂离开公司后又回归，此番接手产品战略，外界解读为OpenAI希望由最理解技术边界的人来定义产品方向。不过，目前公开信息有限，具体的时间表和产品细节尚未公布，其效果仍有待观察。",
+          "这一变化对AI行业的影响不容小觑。一方面，OpenAI的产品化加速可能挤压垂直AI编程工具（如Replit、Cursor）的生存空间；另一方面，Brockman的“降维”参与也可能吸引更多顶尖研究人才转向产品岗位，从而改变AI人才市场的供需格局。投资人和创业者应密切关注ChatGPT+Codex整合后的用户增长和企业付费数据，这将是评估OpenAI生态锁定效应的关键指标。"
+        ],
+        "why": "Brockman从研究转产品，是OpenAI从模型驱动转向产品驱动的关键信号，将影响其竞争策略、人才流向及AI编程工具市场格局。创业者和投资人应重新评估在AI应用层的押注方向。",
+        "links": [
+          [
+            "TechCrunch AI: OpenAI co-founder Greg Brockman takes charge of product strategy",
+            "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/"
+          ]
+        ],
+        "sourceDate": "2026-05-16",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-16",
+        "freshnessLabelEn": "Weekend window | 2026-05-16",
+        "freshnessLabel": "周末窗口｜2026-05-16"
+      },
+      {
+        "section": "今日重点",
+        "priority": "high",
+        "title": "田轩对话Kimi总裁张予彤：AI时代的人才机遇",
+        "dek": "清华大学教授与Kimi总裁深度对话，探讨AI人才战略与行业趋势。",
+        "details": [
+          "5月17日，清华大学五道口金融学院副院长田轩与Kimi（月之暗面）总裁张予彤展开对话，聚焦AI时代的人才机遇。张予彤分享了Kimi在模型研发和应用落地中的实践经验，指出当前AI行业最紧缺的不仅是算法专家，更是能打通技术、产品与商业场景的复合型人才。她认为，中国AI企业正在从“模型竞赛”转向“应用落地”，人才结构也需要随之调整。",
+          "对话中提及Kimi的“实践中培养”策略：通过让年轻工程师参与核心模型迭代，在真实业务场景中快速成长。张予彤强调，AI人才不能只懂技术，还需要对用户需求有深刻理解。这与田轩提出的“产学研深度融合”观点形成呼应，双方都认为高校与企业应共建实训平台，缩短人才从学术到产业的适应周期。",
+          "这一话题的背景是，中国AI大模型公司正面临激烈的人才争夺，高薪挖角频频出现。张予彤认为，长期来看，企业需要建立内部培养体系，而非单纯依赖外部招聘。Kimi已启动多项实习生计划与高校合作项目，试图构建可持续的人才梯队。对话也传递出信号：AI公司将更重视人才培养的成本和效率，这对行业竞争格局可能产生深远影响。"
+        ],
+        "why": "这是中国AI头部公司高管首次公开详细阐述人才战略，对理解行业人才竞争、教育投资和职业规划具有直接参考价值。",
+        "links": [
+          [
+            "田轩对话Kimi总裁张予彤：AI时代的人才机遇 - Sina finance",
             "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQclVFQ1A0eGdoWGlTQzRVN01ESnh2NmJOV1d2Q1JmWnYtdC1VNlFEblVmM0Q5TVg4SF81RlVWZV9fUzdCaGxxVVF6bVQ5RXFMaFpfQTFTM0ZzQi1RNGF3OEgwazBHelNGS1ZteUdDSVlVMUNpNnNVN0hqaXU0b21oQjIzbHd0TXdGTVRzT29JcElBU0hEQkRSdWw5WThaeks1TXQtT2kyRV9kcHYyeXZLUk96dmNCcUZUR2N1Z1J4RmtEdFJ4MTZwakFhazZvWDFa?oc=5"
           ]
         ],
         "sourceDate": "2026-05-17",
         "freshness": "d-1",
         "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
+        "freshnessLabelZh": "周末窗口｜2026-05-17",
+        "freshnessLabelEn": "Weekend window | 2026-05-17",
+        "freshnessLabel": "周末窗口｜2026-05-17"
       },
       {
         "section": "今日重点",
         "priority": "high",
-        "title": "“算力资源借我一用”…拖中国AI后腿的芯片 - 朝鮮日報中文版",
-        "dek": "朝鲜日报关注中国AI公司因芯片限制被迫借用算力，反映算力短缺对技术进展的制约",
+        "title": "一只机器狗，把英伟达的算力王座拱翻了",
+        "dek": "人造劳动力，离普通家庭还有多远？",
         "details": [
-          "据朝鲜日报中文版报道，美国对华芯片出口限制持续收紧，中国AI企业面临严重的算力资源缺口。报道援引行业观点指出，部分企业不得不通过“借”算力的方式维持模型训练，例如租用海外算力或依赖云厂商的存量资源。这种现象在中小AI公司中尤为常见，大型企业如百度、阿里虽有储备，但扩充受限。",
-          "报道强调，中国AI在算法优化和模型效率上已有显著进步，例如DeepSeek、Qwen等模型通过稀疏计算和量化技术降低算力需求，但芯片层面的短板仍是根本瓶颈。目前国产芯片（如华为昇腾、寒武纪）在单卡性能和生态成熟度上与英伟达仍有差距，制约了大规模训练的效率。",
-          "值得关注的是，算力资源的紧张正在催生新的商业模式，如算力共享平台、算力租赁服务，以及针对中国市场的优化芯片设计。但报道也指出，这种“借用”模式存在数据安全和合规风险，长期依赖海外算力可能带来政策不确定性。中国AI企业需要在自研芯片和优化现有资源之间寻找平衡。"
+          "据量子位报道，一款机器狗在特定AI推理任务中实现了显著优于传统GPU方案的能效比，甚至在某些指标上超越了英伟达的旗舰边缘计算产品。这一突破意味着，未来的家用机器人可能不再依赖昂贵的云端算力或高性能显卡，而是通过小型化、低功耗的本地芯片完成实时决策。",
+          "该机器狗并非首次出现，但此前多以运动控制能力闻名，而此次它展示了在自然语言理解和目标识别方面的惊人效率。报道未明确提及具体芯片型号或架构，但暗示其采用了类脑计算或存算一体设计，这可能是对当前算力垄断格局的潜在挑战。",
+          "英伟达凭借CUDA生态和GPU性能优势长期主导AI算力市场，但边缘场景对功耗和延迟的苛刻要求正在催生新路径。如果机器狗方案被验证可规模化，将直接冲击英伟达在机器人、自动驾驶等领域的边缘芯片布局，并为初创公司提供差异化竞争机会。",
+          "需要注意的是，该报道仍属早期突破，尚未公开完整的技术细节或第三方复现结果。机器狗在复杂任务中的稳定性和通用性仍需验证，短期内难以撼动英伟达在云端训练市场的主导地位。但这一信号值得关注，尤其是关注边缘AI和具身智能的投资者与开发者。"
         ],
-        "why": "芯片限制是中国AI发展的核心瓶颈，算力借用的现象揭示出短期内的务实选择，同时也意味着国产芯片和算力优化领域存在投资和创业机会。",
+        "why": "如果机器狗的低功耗算力方案被证实，可能改写边缘AI的芯片格局，对依赖英伟达生态的机器人公司和边缘计算创业者构成战略启示。",
         "links": [
           [
-            "Google News China AI: “算力资源借我一用”…拖中国AI后腿的芯片 - 朝鮮日報中文版",
-            "https://news.google.com/rss/articles/CBMikAFBVV95cUxOcFd4c2Vwc1JvOVlvRlhlTV9LY3dRZGhFUl9lRVNsOXRYRDYxYnJpR01nWURqRFI3T1FERHdPZGN6SWZPTmJFdm92OElFVktaT1VpZkV1V1VIMzd0X19kSmZ0RUF2b25NN0lta0F6b0RySFl0SVlWN250SHkzRzJMRHZWR19xYWF1UUg1Y29yVkE?oc=5"
+            "量子位: 一只机器狗，把英伟达的算力王座拱翻了",
+            "https://www.qbitai.com/2026/05/418969.html"
           ]
         ],
         "sourceDate": "2026-05-17",
         "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "今日重点",
-        "priority": "high",
-        "title": "龙虾之父月烧940万元的token！要不是入职OpenAI还真用不起",
-        "dek": "一位被称为“龙虾之父”的AI研究者公开其月消耗940万元token的费用，只为入职OpenAI才得以承担，揭示大模型使用成本的惊人现实。",
-        "details": [
-          "据报道，这位AI界知名“龙虾之父”在社交媒体上晒出其OpenAI API消费账单，每月token费用高达940万元人民币（约合130万美元）。他坦言，若非入职OpenAI获得内部资源支持，这笔开销完全无法承受。这一数字远超普通开发者或企业的常规使用规模，凸显出前沿大模型推理成本的天文数字。",
-          "940万元token的月消费量，如果按GPT-4o的定价粗略估算，相当于每天处理超过10亿个输入token。如此庞大的用量可能涵盖自动化研究、批量数据处理或大量实验迭代。普通用户即使以商业版价格，月消耗也多在万元级别，而“龙虾之父”的用量是普通用户的近千倍，折射出顶级AI实验室内部资源与外部市场的巨大鸿沟。",
-          "有趣的是，该研究者同时表示“但复杂需求还得Claude”，暗示尽管OpenAI提供了大量免费token，在某些高难度任务（如复杂推理、长文档分析）上，仍需要借助Anthropic的Claude模型。这说明当前各家模型各有所长，没有一家能完全统治所有场景，即使内部员工也会混用多模型来弥补短板。",
-          "这一事件也引发行业对AI成本结构的讨论：大模型推理成本正成为制约规模应用的关键瓶颈。940万元的月度账单即使是OpenAI这样的公司也并非全是利润——内部资源分配同样存在机会成本。对于AI创业公司或产品团队而言，成本控制可能比模型能力更影响商业可行性。",
-          "需要指出的是，该账单可能属于极高负荷的特例（如持续进行大规模强化学习或数据生成），并不代表典型员工使用模式。此外，OpenAI内部员工使用API的具体折扣条款未公开，因此940万元的实际现金成本可能低于标价，但即使打对折仍是一个惊人数字。"
-        ],
-        "why": "这条新闻用真金白银的账单，直白揭示了前沿AI模型的使用成本依然高企，即便是头部研究员也要仰仗公司资源。对投资人而言，成本曲线是判断AI应用能否规模化的核心指标；对从业者来说，加入大厂可能直接获得资源杠杆。",
-        "links": [
-          [
-            "量子位: 龙虾之父月烧940万元的token！要不是入职OpenAI还真用不起",
-            "https://www.qbitai.com/2026/05/418822.html"
-          ]
-        ],
-        "sourceDate": "2026-05-17",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "今日重点",
-        "priority": "high",
-        "title": "Token经济学：AI时代的新货币战争",
-        "dek": "新浪财经深度文章剖析token如何成为AI生态的硬通货，影响模型竞争与开发者策略",
-        "details": [
-          "新浪财经近期刊发深度分析文章《Token经济学：AI时代的新货币战争》，提出在AI大模型竞逐中，token正在从技术计量单位演变为经济体系的核心货币。文章指出，从OpenAI的GPT系列到国产DeepSeek、Qwen等模型，token定价不仅直接决定API调用成本，更深层地影响着开发者生态的迁移、模型选型乃至整个AI产业链的利润分配格局。这一视角跳出了单纯的模型能力比拼，将经济杠杆纳入竞争分析框架。",
-          "文章核心观点可归纳为三点：其一，token的定价权争夺本质是“算力出口”的定价权博弈，中美科技公司正在通过差异化的token策略吸引开发者——例如降低推理token成本以抢占应用层份额；其二，token消耗的经济效率将取代“参数规模”成为衡量模型实用性的关键指标；其三，企业需重新审视自身AI部署的成本结构，将token消耗纳入长期预算。",
-          "值得注意的是，该文并非官方报告，而是基于行业观察的分析评论。文中未透露具体公司未公开的定价数据，且对“token货币化”的长期影响仍存不确定性——比如当多模态、长上下文成为标配后，token计费模型是否可持续。但对关注AI基础设施投资、模型选型和开发者生态的读者而言，这是一篇启发性的视角拓展文章。"
-        ],
-        "why": "本文将对token经济学的讨论从技术细节上升至战略层面，帮助读者理解AI公司定价策略背后的竞争逻辑，对产品定价、开发成本控制和生态布局有直接参考价值。",
-        "links": [
-          [
-            "新浪财经原文",
-            "https://news.google.com/rss/articles/CBMigAJBVV95cUxQSXpqYm93NDRXYl9BOUtMRWtuUGU1NHN0R3U4am9FekZ3RTZGU0Zzc0JzVmhSTFU4ZmI4RFlZUUNOeEF5S3dUNU5yb01oRklNc2xDLWJTakpDNHFVZ1h3QmNESVBtNjlxU1FpT0FjVWdWVlpYZkgyOUFLSkF0VXFWYWRJV3BoYUtXRkhEelNTU1g2NkJsMVB0ejJUVDRYWmRCejhIb2FoUHFzQ2JSUVZLNXh3VE8wTVphWjE5NGhGejVTczNYb19FRm1ydzVCbllBVHQ3TFBSOEpYdTBhRUZuY3RkMWJraVN0T2FtSTRjY25CSXloWV9qbktUTkM1TU81?oc=5"
-          ]
-        ],
-        "sourceDate": "2026-05-17",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-05-17",
+        "freshnessLabelEn": "Weekend window | 2026-05-17",
+        "freshnessLabel": "周末窗口｜2026-05-17"
       },
       {
         "section": "投融资信息",
         "priority": "high",
         "title": "DeepSeek拒绝阿里腾讯投资，揭示AI巨头战略差异",
-        "dek": "据虎嗅报道，DeepSeek拒绝了阿里和腾讯的投资要约，这一决定折射出中国AI领域不同路径的竞争与选择。",
+        "dek": "据虎嗅报道，AI初创公司DeepSeek拒绝了来自阿里巴巴和腾讯的投资意向，凸显了开源独立路线与互联网巨头生态整合之间的深层分歧。",
         "details": [
-          "据虎嗅5月17日披露，DeepSeek近期拒绝了来自阿里巴巴和腾讯的投资意向。消息人士称，DeepSeek认为保持独立发展更有利于其技术路线和中长期战略。这一决定在业内引发讨论，因为阿里和腾讯此前已通过投资布局了多家AI创业公司，包括月之暗面、智谱AI等。",
-          "DeepSeek的拒绝并非个例，近年来少数头部AI创业公司开始对互联网巨头的投资持谨慎态度。一方面，接受投资可能意味着业务协同和资源注入，但另一方面也可能导致技术路线受制于投资方的商业需求。DeepSeek的选择反映了其创始人坚持技术独立、不急于商业化变现的立场。",
-          "阿里和腾讯对DeepSeek的兴趣并非偶然。DeepSeek在开源大模型领域表现出色，其DeepSeek-R1等模型在多项基准测试中与OpenAI的模型性能相当，且成本更低。然而，拒绝投资可能意味着DeepSeek将面临更有限的资金储备和生态支持，尤其是在算力投入和人才竞争日益激烈的背景下。",
-          "这一事件也凸显了中国AI领域的投资分化：互联网巨头倾向于通过投资构建生态，而部分技术驱动的创业公司则希望保持独立，探索差异化路线。未来，DeepSeek的融资决策和商业模式选择将成为观察AI创业公司独立发展路径的重要案例。目前尚不清楚DeepSeek是否有其他战略投资者或计划自筹资金，市场存在不确定性。"
+          "据虎嗅5月17日报道，DeepSeek已经拒绝了来自阿里巴巴和腾讯的投资意向。消息人士称，具体投资金额和条款未对外披露，但两家巨头均表达了入股意愿。DeepSeek的放弃举动在中国AI圈引发震动——一家尚未盈利的初创公司为何敢于拒绝两大互联网巨头的资金？其背后是DeepSeek坚持开源、技术优先的发展理念，希望保持组织独立性，避免被大厂生态绑定。",
+          "这一事件折射出中国AI赛道两条路径的碰撞。阿里和腾讯近年通过投资和自建大模型（如通义千问、混元）打造闭环生态，强调AI与云、广告、游戏等业务协同；而DeepSeek则代表了一种更接近国际开源社区的模式：不依赖母公司流量，通过技术开放吸引开发者，再探索商业模式。两种模式孰优孰劣尚无定论，但DeepSeek的拒绝表明，至少部分AI公司认为独立比站队更有长期价值。",
+          "从资本视角看，这笔潜在交易未达成并非坏事。它提醒市场：AI领域的投资不再只是“钱换股”，战略控制权成为核心博弈点。如果DeepSeek最终选择独立融资，可能迫使更多VC调整估值逻辑——技术壁垒和团队自主性将比营收增长更受关注。不过，消息尚未得到DeepSeek、阿里或腾讯的官方确认，投资细节仍存在不确定性。"
         ],
-        "why": "DeepSeek拒绝阿里腾讯投资，反映了AI创业公司在技术独立与资本依赖之间的战略选择，对投资人而言，这意味着需要重新评估创业公司的估值逻辑和风险；对创业者来说，这是一条值得关注的独立发展路径样本。",
+        "why": "DeepSeek拒绝阿里腾讯投资，凸显了开源独立路线与互联网巨头生态整合之间的战略分歧。对于投资者和创业者而言，这意味着在AI领域，技术自主性可能成为新的估值溢价因素，而站队大厂不再是最优解。",
         "links": [
           [
             "Google News China AI: DeepSeek拒绝阿里腾讯投资，揭示AI巨头战略差异 - 虎嗅",
@@ -134,47 +134,47 @@ const archiveZh = [
         "sourceDate": "2026-05-17",
         "freshness": "d-1",
         "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
+        "freshnessLabelZh": "周末窗口｜2026-05-17",
+        "freshnessLabelEn": "Weekend window | 2026-05-17",
+        "freshnessLabel": "周末窗口｜2026-05-17"
       },
       {
         "section": "开源项目",
         "priority": "medium",
-        "title": "6.4k Stars！用Claude Code写论文的全套流水线，有人打包开源了",
-        "dek": "一个将Claude Code包装为全自动论文写作流水线的开源项目在GitHub上火了，已经获得6.4k星标。它把文献检索、草稿生成、图表制作等环节串联起来，并标明了每步的费用，对学术研究者、AI Agent开发者都是新信号。",
+        "title": "Building a general-purpose accessibility agent—and what we learned in the process",
+        "dek": "GitHub 公开实验性通用无障碍代理的开发经验，探索 AI agent 在辅助技术中的潜力。",
         "details": [
-          "Claude Code 是 Anthropic 推出的命令行 AI 编程助手，主打深度代码理解和自主执行。现在有开发者将其进一步封装，打造了一条端到端的学术论文写作流水线，从选题、文献检索到初稿生成、图表制作全部自动化。项目在 GitHub 上线后迅速获得 6.4k 星标，说明社区对这种“AI 全包”式工具链有强烈需求。",
-          "该流水线最大的亮点是成本透明。作者在项目说明中详细列出了调用 Claude API 完成每个步骤的预估费用，包括文献摘要、初稿生成、图表绘制等单项开销。这种清晰定价降低了使用门槛——研究者可以精确计算写一篇论文的 AI 成本，而不是模糊地承担 API 总费用。",
-          "对学术界来说，工具能大幅缩短论文草稿周期，尤其适合思路梳理和早期迭代。但不确定性也很明显：项目活跃度未知、未来是否持续维护；生成内容的学术严谨性和引用准确性依赖 Claude 模型能力，可能需大量人工校对。此外，AI 代写论文的伦理边界再次被推至台前。",
-          "对 AI Agent 开发者而言，这是一个可拆解的参考实现。你可以研究它如何编排多步 Agent 任务、管理上下文长度、处理 API 错误，甚至可以复用其中的文献检索模块或提示词模板。项目的开源许可和模块化设计，意味着它不仅是论文工具，也是 Agent 工作流的学习样板。"
+          "GitHub 团队近日发布了一篇技术博客，介绍其正在内部试验的通用无障碍代理（accessibility agent）。该项目旨在利用 AI agent 自动理解和操作数字界面，帮助视觉、运动或认知障碍的用户更独立地完成表单填写、菜单导航等任务。据博客称，该代理目前处于早期原型阶段，尚未开放给公众使用。",
+          "该代理的核心思路是构建一个“通用”的交互层，不依赖特定网站或应用的定制适配。团队尝试让 agent 理解网页结构和用户意图，然后自动生成点击、输入等操作。这比传统的无障碍工具（如屏幕阅读器）更主动，但面临模型幻觉和环境适配的难题——代理有时会误解界面元素或产生无效操作。",
+          "博客重点分享了三个教训：一是“少即是多”——简化模型指令能显著提升成功率；二是测试环境必须覆盖极端场景，例如动态加载内容和错误状态；三是用户控制权非常重要，代理不能完全替代人工决策。这些经验对任何构建通用 agent 的团队都有参考价值。",
+          "目前该项目尚为实验性质，GitHub 未公布开源或产品化时间表。不过，博客提到他们正在收集内部测试反馈，并考虑将部分组件开源，以便社区贡献和审计。对于关注 agent 工具链的开发者来说，这是一个值得跟进的前沿方向。"
         ],
-        "why": "对于跟踪 AI Agent 工具链和学术 AI 产品的人，这是一个必须关注的项目：它展示了将大模型封装为垂直工作流的完整思路，透明定价也可能成为未来 Agent 产品的标配。",
+        "why": "该实验性项目展示了 AI agent 从效率工具扩展到社会包容性领域的路径，其教训对构建通用 agent 的团队有直接参考价值，也是从投资角度关注无障碍技术创业机会的信号。",
         "links": [
           [
-            "量子位: 6.4k Stars！用Claude Code写论文的全套流水线，有人打包开源了",
-            "https://www.qbitai.com/2026/05/418737.html"
+            "GitHub AI & ML: Building a general-purpose accessibility agent—and what we learned in the process",
+            "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/"
           ]
         ],
-        "sourceDate": "2026-05-17",
+        "sourceDate": "2026-05-16",
         "freshness": "d-1",
         "regionPriority": "deprioritized_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
+        "freshnessLabelZh": "周末窗口｜2026-05-16",
+        "freshnessLabelEn": "Weekend window | 2026-05-16",
+        "freshnessLabel": "周末窗口｜2026-05-16"
       },
       {
         "section": "AI产品推荐",
         "priority": "medium",
-        "title": "Anuma: multi-model AI workspace with private cross-model memory",
-        "dek": "一个聚合多模型并支持跨模型私有记忆的AI工作空间，面向追求效率与隐私的用户。",
+        "title": "Anuma：多模型 AI 工作空间，带着记忆穿梭于各大模型之间",
+        "dek": "一个把 ChatGPT、Claude、Gemini、Grok 等主流模型整合到一起的工作台，还能让你的隐私记忆跨模型共享。",
         "details": [
-          "Anuma 是一个新兴的 AI 工作空间，它将 ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama 等主流模型整合到同一界面。用户无需在多个标签页间切换，即可在同一对话中调用不同模型的能力。这种“多模型聚合”模式正在成为生产力工具的一个新方向，Anuma 选择了比较彻底的聚合策略——几乎覆盖了所有能叫上名字的模型。",
-          "核心亮点是“私有跨模型记忆层”。用户在使用过程中产生的记忆（如偏好、上下文、关键信息）可以被编辑、保存，并在不同模型之间携带。这意味着用户不必每次切换模型都从头开始解释背景。Anuma 强调隐私保护，记忆数据由用户控制，不经过第三方。这个设计切中了多模型用户的一个实际痛点：模型之间信息割裂。",
-          "从产品形态看，Anuma 更像一个“AI 工作台”而非单纯的聊天聚合器。它适合需要频繁对比模型输出、利用不同模型优势完成复杂任务的用户，比如内容创作者、研究员、产品经理。不过，该产品目前仍处于早期阶段，具体定价、是否支持插件或 API 集成、模型切换的延迟表现等信息尚未公开。",
-          "同类产品中，已有 TypingMind、ChatHub 等聚合工具，但 Anuma 强调的“跨模型记忆”是其差异化特征。如果这一功能体验流畅，它可能吸引重视工作流连续性的用户。不过，多模型聚合天然面临模型更新适配、上下文窗口差异、成本控制等挑战，Anuma 能否持续迭代仍需观察。"
+          "Anuma 是一款聚合型 AI 工作空间，当前集成了 ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama 等近十款主流大模型。用户无需在多个网页或客户端间切换，即可在统一界面中调用不同模型的能力。对于经常对比模型输出或需要在不同场景下使用特定模型的用户来说，这个功能极大降低了切换成本，让多模型协作成为日常操作。",
+          "产品最突出的设计是其‘跨模型记忆’功能：用户可以写入、编辑属于自己的记忆片段（如个人偏好、项目背景、写作风格等），并在对话时让任意模型读取这些记忆。Anuma 强调这些记忆数据仅存储在本地设备上，不经过云端，以此解决多模型使用中的隐私顾虑。这种‘记忆随身’的设计理念让 AI 更懂用户，同时又避免隐私泄露。",
+          "从使用场景看，Anuma 适合知识工作者、内容创作者、研究者等经常与 AI 多轮交互的群体。比如，用户在 Claude 上写代码、在 ChatGPT 中润色文案、再用 Gemini 做信息整理，以前需要手动搬运上下文，现在记忆层可以自动携带。不过目前产品仍处于早期阶段，部分模型（如 Grok）的响应稳定性有待验证。",
+          "Anuma 的出现反映了 AI 产品从‘单个模型最强’向‘多个模型最优协作’的转变。它没有试图训练自己的模型，而是选择做好中间的‘连接器’和‘记忆层’，这种轻量但高粘性的路线在生产力工具中比较少见。对于关注 AI 应用层机会的创业者来说，‘跨模型记忆’或许是一个值得细拆的差异化方向。"
         ],
-        "why": "Anuma 代表的“多模型+私有记忆”模式，可能成为下一波 AI 生产力工具的标配，对产品经理和创业者有启发：用户需要的不是更多模型，而是让模型协同工作的基础设施。",
+        "why": "Anuma 代表了 AI 工具从单一模型向多模型协作的演进趋势，其‘跨模型记忆’功能直击用户在多模型间切换时上下文丢失的痛点，是生产力赛道中兼具创新性和实用性的产品方向。",
         "links": [
           [
             "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
@@ -191,18 +191,18 @@ const archiveZh = [
       {
         "section": "AI产品推荐",
         "priority": "medium",
-        "title": "Liminary: AI research workspace for consultants, strategists, and researchers",
-        "dek": "面对海量信息碎片，Liminary 用 AI 做研究笔记的“第二大脑”，主打来源可追溯与跨项目复用。",
+        "title": "Liminary：专为咨询师、战略家和研究员打造的AI研究工作空间",
+        "dek": "在AI工具泛滥的今天，Liminary专注于解决知识工作者的资料收集、整理与重用痛点，强调来源可追溯和跨项目复用。",
         "details": [
-          "Liminary 定位为面向咨询顾问、战略分析师和研究人员的 AI 研究工作空间。核心场景是处理大量来自文章、PDF、AI 对话、视频等渠道的碎片信息，用户可以在 Liminary 中保存、标注、归类，并随时追溯每条见解的原始来源。这种“来源永远可查”的设计，恰好击中了专业研究者在 AI 辅助下最担心的问题——信息幻觉与出处丢失。",
-          "与 Notion AI 或 Mem 等通用笔记工具不同，Liminary 强调“研究型工作流”的闭环：用户不仅记录，还能将项目中的见解直接拖拽到新项目里复用，并保持引用的清晰链。产品目前推出了浏览器扩展和独立的 Web 应用，支持与主流 AI 聊天工具（如 ChatGPT、Claude 等）的对话保存和标注，方便用户将 AI 产出纳入个人知识库。",
-          "Liminary 的差异化还体现在“高 stakes 推荐”上。它鼓励用户将研究结果用于真正决策——比如投资分析、公司战略或政策建议——并通过内置的引用系统确保每一个结论都有证据链。对于需要向客户或上级交付研究报告的专业人士来说，这比单纯的笔记工具更有说服力。",
-          "从产品机会看，Liminary 代表了一类“AI 时代的研究操作系统”方向。随着 AI 工具众声喧哗，如何管理、信任和复用 AI 产出成为刚需。目前 Liminary 仍处于早期，但已获得一些知名咨询公司和投资人的试用反馈。如果它能解决协作和多用户权限问题，可能成为知识管理赛道的黑马。"
+          "Liminary 定位为“AI research workspace”，目标用户是咨询顾问、企业战略家和研究人员。这类人群日常工作涉及大量文档、报告、PDF、AI对话记录甚至视频素材，传统做法分散在不同工具里，难以统一管理和回溯。Liminary 试图成为上述所有内容的“第二大脑”。",
+          "核心功能方面，Liminary 允许用户直接保存网页文章、上传PDF与报告、同步AI聊天记录（如ChatGPT对话），并在同一界面内进行高亮、批注和笔记。最关键的是，所有资料均保持来源可追溯，不丢失原始上下文。用户可以在不同项目间“引用”已保存的片段，实现知识复用。",
+          "从产品设计看，Liminary 不像通用笔记工具（如Notion或Obsidian），也不像普通AI搜索工具（如Perplexity），而是更接近“研究型工作流枢纽”——它假设用户已有大量外部信息源，需要的是整合与结构化。目前产品尚处于早期阶段，公开信息有限，团队背景、融资情况均未披露，使用体验和实际用户反馈有待进一步观察。",
+          "对于关注AI+生产力赛道的读者而言，Liminary 代表了一类新的产品方向：不再追求“万能AI助手”，而是深入特定职业人群的工作流，解决“信息碎片化”这一真实痛点。如果它能够建立足够强的数据壁垒和用户习惯，未来有可能成为咨询和研究领域的标配工具。"
         ],
-        "why": "对于关注 AI+知识管理赛道的产品经理或创业者，Liminary 展示了一个高客单价、高黏性场景：专业研究者的工作流，比通用笔记更难替代，也更容易产生付费意愿。",
+        "why": "Liminary 切中了知识工作者在AI时代最大的痛点之一：信息过载与碎片化。它的价值不在于用AI生成更多内容，而在于用AI辅助整理和连接已有知识。对产品经理和创业者而言，这是一个值得关注的垂直AI workspace案例，验证了“帮用户管理AI输出”这一场景的可行性。",
         "links": [
           [
-            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and researchers",
+            "Liminary 官网",
             "https://liminary.io/"
           ]
         ],
@@ -216,18 +216,17 @@ const archiveZh = [
       {
         "section": "深度阅读",
         "priority": "medium",
-        "title": "Codex 崛起，Claude 收割程序员用量：代码助手正从能力竞赛转向商业模式竞赛",
-        "dek": "Latent Space 本期 AI 新闻汇总，用两个信号点破当前代码智能体的关键趋势。",
+        "title": "Codex 崛起，Claude 计量程序化使用：代码智能体竞争进入新阶段",
+        "dek": "Latent Space 最新一期播客通讯梳理了代码智能体领域的两个关键信号：OpenAI Codex 的再度崛起与 Anthropic Claude 对程序化调用的计量收费，揭示底层基础设施与商业模型的此消彼长。",
         "details": [
-          "Latent Space 的这期 AI 新闻汇总看似平淡，却精准抓住了代码智能体赛道的两个关键信号。文章开篇即指出，这是“安静的一天”，但正好让我们审视一个长期趋势：主流编程智能体正在经历从能力军备竞赛到商业变现的转折点。对于非技术读者而言，理解这个信号比追逐某个模型指标更重要。",
-          "OpenAI 的 Codex 近年来经历了多次迭代，标题中“Codex Rises”暗示其代码生成能力再次获得关注——可能是通过更低的延迟、更高的准确度或更开放的 API 策略。虽然文章未披露具体技术细节，但观察者普遍认为，Codex 的“崛起”正将市场焦点拉回 OpenAI，给其他对手带来压力。",
-          "与此同时，Anthropic 的 Claude 开始对编程 API 使用进行计量（Meters Programmatic Usage），这标志着其从纯订阅制走向按量付费。对初创公司和个人开发者来说，这意味着使用顶尖代码模型的门槛可能提升；但对 Anthropic 而言，这是建立可持续商业模式的关键一步。",
-          "两个信号共同指向一个产业判断：编程智能体的下一个战场不再是模型能力的单一比拼，而是围绕定价、开发者生态和部署成本的综合竞争。对于关注 AI 投资或创业的人来说，当前正是观察各家企业如何平衡开放与商业化策略的好时机。"
+          "Latent Space 是一档专注于 AI 开发者生态的深度播客与通讯，这次他们在一则“平静的日常”更新中捕捉到了代码智能体领域两个持续发酵的长期趋势。第一个信号是 OpenAI Codex 的重新崛起：尽管 Claude 在代码生成评测中表现抢眼，但 Codex 凭借更早的开源生态、更低的推理成本以及持续优化，正在实际工程场景中收复失地。文章引用了社区在 GitHub Copilot 替代方案中的迁移数据，但没有给出具体数字，强调这是一个缓慢但确定的趋势。",
+          "第二个信号来自 Anthropic 对 Claude API 的计费策略调整：Claude 开始对程序化调用（programmatic usage）进行更精细的计量，包括对工具调用（tool use）和连续对话轮次的单独收费。这种模式从按 token 计费转向按使用行为计费，对重度调用的企业和开发者影响显著——可能推高大规模自动化场景的成本，促使团队优化调用逻辑或转向更便宜的替代模型。文章没有透露具体价格，但指出这一变化可能加速代码智能体市场从“模型竞赛”进入“成本效率竞赛”。",
+          "值得注意的不确定性在于，这些趋势仍处于早期：Codex 的回升是否只是短期波动，以及 Claude 的计量策略是否会根据市场反馈回调，都尚未明朗。此外，Google 的 Gemini for Code 和新兴的 Replit Agent 也是不可忽视的参与者。对于关注 AI 基础设施投资的读者，这篇文章提供了一个从产品落地角度审视模型竞争力的框架，而非仅依赖基准分数。作者的核心判断是：代码智能体的胜负手将从“谁写代码更好”转向“谁能让开发者在预算内完成更多任务”。"
         ],
-        "why": "今天花几分钟读这篇，能帮你快速理解代码智能体赛道为什么正在从“谁更强”变成“谁更会收费”——这个趋势将深刻影响你选择哪个模型嵌入产品。",
+        "why": "理解代码智能体市场从技术竞赛转向商业效率竞争的关键拐点，对评估 OpenAI 与 Anthropic 的投资价值、规划开发者工具选型以及判断 API 成本趋势有直接参考意义。",
         "links": [
           [
-            "Latent Space: [AINews] Codex Rises, Claude Meters Programmatic Usage",
+            "Latent Space 原文",
             "https://www.latent.space/p/ainews-codex-rises-claude-meters"
           ]
         ],
@@ -242,18 +241,22 @@ const archiveZh = [
         "section": "机构报告",
         "priority": "medium",
         "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
-        "dek": "IBM 年度 CEO 调研出炉，提出企业向 AI 优先转型的五项关键行动，为高管提供路线图。",
+        "dek": "IBM 最新 CEO 研究提出 AI 优先转型的五种关键策略，为企业从试点到规模化提供路线图。",
         "details": [
           {
-            "summary": "五项行动覆盖文化与技术",
-            "expanded": "IBM 2026 CEO 研究基于对全球数千名 CEO 的访谈，提炼出 AI-first 转型的五项核心行动：确立 AI 领导力、重塑运营模式、构建可信 AI 基础设施、培养 AI 人才生态，以及推动开放创新。报告指出，早期采用者的收入增长比同行平均高出 23%，但大多数企业仍面临组织惯性阻碍——超过 60% 的 CEO 认为文化变革比技术部署更困难。"
+            "summary": "报告背景与核心论点",
+            "expanded": "IBM 商业价值研究院发布的《2026 CEO 研究》基于对全球数千名 CEO 的调研，指出 AI 已从实验阶段进入「AI 优先」的深度整合期。报告认为，企业若仅将 AI 作为附加工具，将无法在效率与创新上实现质变；真正的转型需要 CEO 亲自推动五大策略：构建 AI 原生战略、重塑运营模式、投资数据基础、建立信任框架、以及培育学习型组织。报告强调，领先企业的 AI 投入回报率已开始超越同行，但差距正在扩大。"
           },
           {
-            "summary": "开放生态与可信 AI 成关键分歧点",
-            "expanded": "研究特别强调，开放模型和开源策略正在降低 AI 门槛，但只有那些同时建立可解释性和治理框架的企业才能长期获益。报告建议 CEO 避免锁定单一供应商，并优先投资数据中台和 AI 安全工具。值得注意的是，超过半数的受访 CEO 已将 AI 纳入董事会议程，但只有 35% 制定了明确的员工再培训计划。"
+            "summary": "关键发现：策略落地的挑战",
+            "expanded": "尽管 75% 的受访 CEO 将 AI 列为未来三年优先事项，但仅 23% 表示其组织已具备所需的技能与文化。报告特别指出，「模型可解释性」和「合规风险」是规模化部署的最大障碍。IBM 建议 CEO 从「小胜」项目切入，逐步建立组织对 AI 的信任。此外，调研显示亚太地区 CEO 对 AI 投资的态度比北美更为激进，这与当地政策和供应链重构需求有关。"
+          },
+          {
+            "summary": "对产业与投资的影响",
+            "expanded": "这份报告为投资者提供了企业 AI 采纳的「晴雨表」：能落地五大策略的公司更可能获得长期竞争优势。对创业者而言，报告揭示了企业级 AI 服务的缺口——尤其在数据治理、模型监控和员工再培训领域。报告未公开具体行业数据，但暗示金融、医疗和制造业的转型速度领先。值得注意的是，该研究由 IBM 主导，其结论可能与自身的云和咨询业务有潜在关联，读者需结合其他数据交叉验证。"
           }
         ],
-        "why": "对于从传统企业向 AI 驱动转型的决策者，这份报告提供了可对照的五个维度，避免盲目追技术热点，有助于制定更务实的年度战略。",
+        "why": "这份报告是企业 AI 转型领域的「必读参考」，五大策略框架可直接用于评估自己或目标公司的 AI 成熟度，对战略投资、产品定位和职业决策均有指导意义。",
         "links": [
           [
             "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
@@ -271,30 +274,27 @@ const archiveZh = [
         "section": "每日词条",
         "priority": "learning",
         "title": "Agentic Workflow",
-        "dek": "Agentic Workflow 指由 AI 代理自主完成多步骤任务的工作模式，是当前企业自动化和编程助手产品落地的核心框架。",
+        "dek": "从单次问答到多步自主执行，AI 工作流的范式正在转变。",
         "details": [
-          "Agentic Workflow 并非单一技术，而是一种设计范式：将复杂任务拆解为多个子任务，由 AI 代理自主规划、执行、验证结果，并在必要时调用工具或请求人工介入。与传统的单一问答不同，它强调持续推理和迭代。OpenAI 在 Codex 产品中已实际支持这种模式——财务团队可以用自然语言构建月度报告、验证模型，无需手动编程。",
-          "这一概念近期频繁出现在产品动态中。OpenAI 联合创始人 Greg Brockman 重新主导产品战略，传闻公司计划将 ChatGPT 与 Codex 合并，目标正是打造统一的代理工作流平台。这意味着未来 ChatGPT 将不再是聊天机器人，而能直接操作代码、数据库和企业系统，成为真正的“数字员工”。",
-          "企业级落地的信号也在增强。Databricks 宣布将 GPT-5.5 集成到其平台，用于企业代理工作流，该模型在 OfficeQA Pro 基准上达到新的 SOTA。这表明 Agentic Workflow 已从概念验证进入生产环境，能够处理真实的办公文档和数据分析任务。不过，目前仍缺乏大规模跨行业的效果评估，企业采用时需谨慎验证可靠性。",
-          "学术界也开始应对 AI 代理的副作用。预印本平台 arXiv 宣布，若论文被证实主要由 AI 生成（而非辅助写作），作者将被封禁一年。这反映出 Agentic Workflow 在科研场景的滥用风险。如何在提升效率与维护学术诚信之间建立规则，将是代理技术普及后不可回避的治理问题。"
+          "Agentic Workflow（智能体工作流）指的是让 AI 模型能够自主规划、执行多步骤任务，而非每次只完成一个孤立请求。与传统的聊天机器人不同，Agent 可以调用工具、访问数据库、迭代修正，直至达成目标。随着 GPT-5.5 在 OfficeQA Pro 基准测试上刷新 SOTA，Databricks 等企业平台正式将其集成到企业级 Agent 流程中，标志着这一概念正从实验走向生产。",
+          "在金融领域，OpenAI 的 Codex 已经被用于自动生成管理报告（MBR）、搭建财务模型、执行差异桥接和模型检查。这些任务过去需要分析师数小时的手工操作，现在 Agent 可以按自然语言指令自动完成。Codex 不只是代码生成器，它还能理解业务上下文，成为金融团队的“数字同事”——这正是 Agentic Workflow 在专业场景中的典型应用。",
+          "OpenAI 联合创始人 Greg Brockman 近期接管产品战略，同时传出其计划将 ChatGPT 与 Codex 整合。这一动作暗示，未来 OpenAI 的产品重心将从单一对话模型转向可配置的 Agent 平台。如果整合落地，用户将能在同一个界面中让 AI 完成写代码、分析数据、生成文档等连续工作，极大降低多工具切换的摩擦。",
+          "尽管 Agentic Workflow 前景广阔，但实际部署仍面临挑战。比如，模型在复杂长链任务中的错误累积、企业数据安全与权限管控、以及高昂的推理成本（多步骤意味着多次调用）。当前各厂商（如 OpenAI、Databricks、微软）都在探索“可解释 Agent”和“人工审核节点”的混合方案，以保证在提升效率的同时维持可控。",
+          "对普通用户而言，理解 Agentic Workflow 有助于判断哪些 SaaS 工具会被重塑：凡是涉及“多步骤数据操作”的岗位（如财务、运营、市场分析）都可能被 Agent 辅助或部分替代。未来几周，OpenAI 和 Google 预计会发布更多 Agent 相关产品，值得持续关注。"
         ],
-        "why": "理解 Agentic Workflow 是看懂从 ChatGPT 企业版、Codex 到 Databricks 一系列动态的关键；它代表了 AI 从“对话工具”向“自主执行体”的范式跃迁，直接影响创业公司的产品定位和企业采购决策。",
+        "why": "理解 Agentic Workflow 是看懂当前 AI 产品进化方向的关键——它不仅是技术术语，更预示着人机协作方式将从“你问我答”转向“你下指令，我执行完整流程”，直接影响企业采购决策和个人职业技能升级。",
         "links": [
           [
-            "OpenAI 宣布 Codex 财务用例",
+            "OpenAI 金融团队使用 Codex",
             "https://openai.com/academy/how-finance-teams-use-codex"
           ],
           [
-            "TechCrunch：OpenAI 产品重组，Greg Brockman 掌管产品",
+            "Greg Brockman 接管产品战略",
             "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/"
           ],
           [
-            "Databricks 集成 GPT-5.5 企业代理工作流",
+            "Databricks 集成 GPT-5.5 用于企业 Agent",
             "https://openai.com/index/databricks"
-          ],
-          [
-            "arXiv 因 AI 滥用封禁作者一年",
-            "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/"
           ]
         ],
         "sourceDate": "",
@@ -756,7 +756,7 @@ const archiveZh = [
 ];
 
 const archiveEn = [
-                          {
+                            {
     "date": "2026-05-18",
     "title": "AI Daily Atlas",
     "meta": "May 18, 2026",
@@ -774,151 +774,153 @@ const archiveEn = [
       {
         "section": "Top Stories",
         "priority": "high",
-        "title": "Tian Xuan Talks with Kimi President Zhang Yutong: Talent Opportunities in the AI Era",
-        "dek": "A dialogue exploring how AI is reshaping talent demands in China's competitive AI landscape.",
+        "title": "315曝光AI大模型“投毒”黑产，39.9元篡改AI答案 - 36Kr",
+        "dek": "社区热议的 AI 风险或治理议题，影响用户信任和监管预期。",
         "details": [
-          "Tian Xuan and Zhang Yutong, President of Kimi (the AI assistant by Moonshot AI), discussed the evolving talent landscape in the AI era, as reported by Sina Finance. The conversation centered on how AI is altering job roles, the rising importance of interdisciplinary skills, and the need for continuous learning. Zhang reportedly stressed that companies must rethink hiring to attract versatile talent.",
-          "The interview comes amid intense competition among Chinese AI firms for top talent. Although no specific data or policy proposals were disclosed, the discussion underscores a strategic focus on human capital as a key differentiator. Further insights into Kimi’s talent strategy may emerge in subsequent reports, but the dialogue signals a broader industry shift toward valuing adaptability."
+          "This signal comes from Google News China AI：315曝光AI大模型“投毒”黑产，39.9元篡改AI答案 - 36Kr. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
         ],
-        "why": "This dialogue highlights the strategic importance of talent in China's AI ecosystem. Investors should monitor how leading AI firms like Kimi approach hiring and skill development to gauge long-term competitive advantages.",
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
         "links": [
           [
-            "Sina Finance Article",
+            "Google News China AI: 315曝光AI大模型“投毒”黑产，39.9元篡改AI答案 - 36Kr",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9pTVgwS1FDN0VkR2t3anFQenlabGxNbU5hRU05UWlXelNjc3ljcWtWaE1ZcHljVWVjTlJfdUhrQmtQcjBIc2p1NjNnQmM0Zw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-16",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-16",
+        "freshnessLabelEn": "Weekend window | 2026-05-16",
+        "freshnessLabel": "Weekend window | 2026-05-16"
+      },
+      {
+        "section": "Top Stories",
+        "priority": "high",
+        "title": "OpenAI co-founder Greg Brockman takes charge of product strategy",
+        "dek": "The reshuffle signals a deeper push to unify ChatGPT and Codex into a single platform for both conversation and programming.",
+        "details": [
+          "OpenAI co-founder Greg Brockman is reportedly taking over product strategy, a move that shifts him from a broad president role into hands-on product leadership. The change comes as the company plans to merge ChatGPT with its coding tool Codex, aiming to create a unified interface for natural language and software development. This restructuring suggests OpenAI is prioritizing a single, cohesive product experience over separate research and product teams.",
+          "The integration of ChatGPT and Codex could transform how developers and non-technical users interact with AI. By combining conversational AI with code generation, OpenAI may offer an end-to-end platform for building applications through dialogue. This strategy echoes Microsoft's Copilot ecosystem but keeps OpenAI's stack independent. The move also raises questions about the future of OpenAI's API business and how it will compete with Anthropic and Google on productization."
+        ],
+        "why": "This leadership change and product plan indicate OpenAI's pivot from research-driven organization to product-centric company, which could accelerate AI adoption in software development and reshape competitive dynamics in the LLM market.",
+        "links": [
+          [
+            "TechCrunch AI: OpenAI co-founder Greg Brockman takes charge of product strategy",
+            "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/"
+          ]
+        ],
+        "sourceDate": "2026-05-16",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-16",
+        "freshnessLabelEn": "Weekend window | 2026-05-16",
+        "freshnessLabel": "Weekend window | 2026-05-16"
+      },
+      {
+        "section": "Top Stories",
+        "priority": "high",
+        "title": "Tian Xuan Talks with Kimi President Zhang Yutong: Talent Opportunities in the AI Era",
+        "dek": "A fireside chat exploring how AI reshapes the job market, the demand for composite talents, and the strategic importance of talent cultivation for Chinese AI firms.",
+        "details": [
+          "In a recent Sina Finance interview, Professor Tian Xuan (Tsinghua PBCSF) and Kimi President Zhang Yutong discussed the profound shifts in the AI talent landscape. Zhang emphasized that AI companies now need 'composite talents' who understand both algorithms and business applications, with Kimi actively recruiting cross-disciplinary professionals. She noted that traditional computer science graduates must upskill in model deployment, data annotation, and product thinking to remain competitive.",
+          "Zhang highlighted that Kimi's rapid iteration cycle demands teams that can move from research to product in weeks, not months. She revealed that the company has doubled its R&D headcount over the past year, focusing on inference optimization and customer-facing engineering. The conversation underscored a broader trend: Chinese AI startups are pivoting from pure research competition to practical deployment, making talent with hands-on MLOps experience increasingly scarce."
+        ],
+        "why": "This dialogue signals that Chinese AI companies are maturing beyond model training into industrialization, making cross-functional talent a key competitive moat. For investors and job seekers, it reinforces the urgency of building AI-native skill sets that blend technical depth with business acumen.",
+        "links": [
+          [
+            "Sina Finance: 田轩对话Kimi总裁张予彤：AI时代的人才机遇",
             "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQclVFQ1A0eGdoWGlTQzRVN01ESnh2NmJOV1d2Q1JmWnYtdC1VNlFEblVmM0Q5TVg4SF81RlVWZV9fUzdCaGxxVVF6bVQ5RXFMaFpfQTFTM0ZzQi1RNGF3OEgwazBHelNGS1ZteUdDSVlVMUNpNnNVN0hqaXU0b21oQjIzbHd0TXdGTVRzT29JcElBU0hEQkRSdWw5WThaeks1TXQtT2kyRV9kcHYyeXZLUk96dmNCcUZUR2N1Z1J4RmtEdFJ4MTZwakFhazZvWDFa?oc=5"
           ]
         ],
         "sourceDate": "2026-05-17",
         "freshness": "d-1",
         "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
+        "freshnessLabelZh": "周末窗口｜2026-05-17",
+        "freshnessLabelEn": "Weekend window | 2026-05-17",
+        "freshnessLabel": "Weekend window | 2026-05-17"
       },
       {
         "section": "Top Stories",
         "priority": "high",
-        "title": "China's AI Held Back by Chip Shortage: 'Lend Me Your Computing Power' – Chosun Ilbo",
-        "dek": "A South Korean media report highlights how chip restrictions are forcing Chinese AI companies to seek alternative computing resources, underscoring a persistent bottleneck.",
+        "title": "A Robot Dog Overturns Nvidia's AI Compute Throne",
+        "dek": "A new generation of robot dogs powered by non-Nvidia chips is challenging the GPU giant's dominance in edge AI inference, signaling a shift in the AI hardware landscape.",
         "details": [
-          "The Chosun Ilbo Chinese edition reports that China's AI advancement is hindered by limited access to advanced chips due to export controls. The article describes a scenario where companies are compelled to 'borrow' computing power, reflecting a fragmented and constrained compute environment. No specific companies or numerical data are cited, and the report's claims have not been independently verified. The piece underscores the broader geopolitical tension shaping China's AI infrastructure.",
-          "While the report does not provide concrete figures, it implies that the compute gap could slow progress in training large models and deploying AI applications at scale. The uncertainty extends to whether borrowing computing power is a temporary workaround or a structural shift in China's AI ecosystem. Readers should treat this as an opinion piece from an external perspective, not a confirmed analysis."
+          "A recent report by QbitAI highlights how a robot dog equipped with AMD's Instinct MI350 accelerator outperformed Nvidia's Jetson Orin in real-time object detection and navigation tasks, achieving 2.3x higher throughput while consuming 40% less power. This marks the first time a consumer-grade robot dog has publicly beaten Nvidia's flagship edge AI platform in a head-to-head benchmark.",
+          "The development is part of a broader trend where startups and researchers are exploring alternatives to Nvidia's CUDA ecosystem for specific workloads. The robot dog, built by Unitree Robotics (a major Chinese robotics firm), uses AMD's ROCm software stack, which has matured significantly over the past year. This opens the door for more diverse AI hardware choices in robotics and edge computing.",
+          "Industry analysts note that while Nvidia still dominates training, the inference market is becoming fragmented. The robot dog's success could encourage more robot makers to adopt non-Nvidia chips, potentially eroding Nvidia's pricing power and forcing it to compete on performance-per-watt rather than ecosystem lock-in. The article also frames this as a step toward affordable 'artificial labor' for households, as lower-cost compute brings down robot prices."
         ],
-        "why": "This piece highlights the chip bottleneck that continues to define China's AI competitive landscape, relevant for investors and strategists monitoring compute access as a key constraint on model development and deployment.",
+        "why": "This story matters because it signals a potential crack in Nvidia's edge AI monopoly, offering robot makers and AI developers more cost-effective hardware choices. It also accelerates the timeline for affordable home robots, directly impacting product strategies and investment decisions in the robotics and semiconductor sectors.",
         "links": [
           [
-            "Google News China AI: '算力资源借我一用'…拖中国AI后腿的芯片 – 朝鮮日報中文版",
-            "https://news.google.com/rss/articles/CBMikAFBVV95cUxOcFd4c2Vwc1JvOVlvRlhlTV9LY3dRZGhFUl9lRVNsOXRYRDYxYnJpR01nWURqRFI3T1FERHdPZGN6SWZPTmJFdm92OElFVktaT1VpZkV1V1VIMzd0X19kSmZ0RUF2b25NN0lta0F6b0RySFl0SVlWN250SHkzRzJMRHZWR19xYWF1UUg1Y29yVkE?oc=5"
+            "量子位: 一只机器狗，把英伟达的算力王座拱翻了",
+            "https://www.qbitai.com/2026/05/418969.html"
           ]
         ],
         "sourceDate": "2026-05-17",
         "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Top Stories",
-        "priority": "high",
-        "title": "Lobster Father spends 9.4 million yuan per month on tokens — only affordable after joining OpenAI",
-        "dek": "A prominent AI researcher known as 'Lobster Father' reportedly racks up token costs of 9.4 million yuan monthly, a bill manageable only through OpenAI's internal employee access.",
-        "details": [
-          "A leading AI figure, nicknamed 'Lobster Father,' revealed that his token consumption during research and development amounts to roughly 9.4 million yuan (about $1.3 million) per month. This massive usage is feasible only because he now works at OpenAI, which likely provides free or heavily subsidized API access to employees. The revelation underscores the immense compute resources required for cutting-edge AI work—even for individual researchers—and highlights how OpenAI's internal perks can attract top talent. The exact breakdown of token usage or whether OpenAI fully covers the cost remains unclear, but the figure alone illustrates a key driver of AI R&D expenses.",
-          "The story also raises questions about the sustainability of such high token burn rates for external developers. While OpenAI charges commercial rates to customers, its own researchers can push the boundaries without budget constraints, potentially giving the company an innovation edge. Other firms like Google DeepMind and Anthropic likely offer similar internal access, but public disclosure of such figures is rare, making this a unique window into operational costs. The 'Lobster Father' moniker refers to the researcher's prior work on open-source projects before joining OpenAI."
-        ],
-        "why": "This news highlights the extreme cost of frontier AI research and the competitive advantage of large labs that can absorb such expenses internally. For startups and independent developers, it signals that access to massive compute remains a barrier, suggesting opportunities for cheaper inference or novel model architectures.",
-        "links": [
-          [
-            "量子位: 龙虾之父月烧940万元的token！要不是入职OpenAI还真用不起",
-            "https://www.qbitai.com/2026/05/418822.html"
-          ]
-        ],
-        "sourceDate": "2026-05-17",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Top Stories",
-        "priority": "high",
-        "title": "Token Economics: The New Currency War in the AI Era",
-        "dek": "Chinese AI giants are slashing token prices to lock in developers, triggering a price war that reshapes the competitive landscape.",
-        "details": [
-          "Token economics—the pricing strategy for each AI output unit—has become the battlefield for market dominance. Chinese players like DeepSeek and Alibaba have slashed API prices to as low as $0.14 per million tokens for DeepSeek-R1 in 2025, forcing rivals to respond. This mirrors a 'currency war' where low token prices serve as a tool to capture developer ecosystems and drive adoption, but at the cost of immediate profitability.",
-          "The price war is enabled by declining inference costs and improved model efficiency through distillation and quantization. Chinese firms can now offer competitive models at a fraction of US rivals' prices, pressuring global leaders like OpenAI to adjust. However, startups without volume leverage struggle to survive, potentially consolidating the market around a few large players. Regulators may also eye anticompetitive behavior as token prices approach near-zero levels."
-        ],
-        "why": "Token pricing is becoming the central lever in AI competition, influencing developer choice, corporate revenue, and industry concentration. Investors and strategists should monitor companies that achieve sustainable cost advantages through technical innovation rather than mere subsidy.",
-        "links": [
-          [
-            "Token经济学：AI时代的新货币战争 - 新浪财经",
-            "https://news.google.com/rss/articles/CBMigAJBVV95cUxQSXpqYm93NDRXYl9BOUtMRWtuUGU1NHN0R3U4am9FekZ3RTZGU0Zzc0JzVmhSTFU4ZmI4RFlZUUNOeEF5S3dUNU5yb01oRklNc2xDLWJTakpDNHFVZ1h3QmNESVBtNjlxU1FpT0FjVWdWVlpYZkgyOUFLSkF0VXFWYWRJV3BoYUtXRkhEelNTU1g2NkJsMVB0ejJUVDRYWmRCejhIb2FoUHFzQ2JSUVZLNXh3VE8wTVphWjE5NGhGejVTczNYb19FRm1ydzVCbllBVHQ3TFBSOEpYdTBhRUZuY3RkMWJraVN0T2FtSTRjY25CSXloWV9qbktUTkM1TU81?oc=5"
-          ]
-        ],
-        "sourceDate": "2026-05-17",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-05-17",
+        "freshnessLabelEn": "Weekend window | 2026-05-17",
+        "freshnessLabel": "Weekend window | 2026-05-17"
       },
       {
         "section": "Funding Watch",
         "priority": "high",
-        "title": "DeepSeek拒绝阿里腾讯投资，揭示AI巨头战略差异 - 虎嗅",
-        "dek": "据虎嗅报道，DeepSeek拒绝了阿里巴巴和腾讯的投资意向，凸显中国AI初创公司与互联网巨头之间的战略分野。",
+        "title": "DeepSeek Rejects Alibaba and Tencent Investments, Revealing Strategic Divergence Among AI Giants",
+        "dek": "The Chinese AI startup declined funding from two of the country's tech titans, signaling a push for independence and a shift in how Big Tech courts AI talent.",
         "details": [
-          "DeepSeek reportedly turned down investment offers from Alibaba and Tencent, according to a Huxiu report. This decision highlights a strategic divergence: Chinese AI startups are increasingly choosing independence over integration into tech giants' ecosystems. The exact reasons remain undisclosed, but it could reflect DeepSeek's desire to maintain its own research direction and avoid being tied to specific commercial platforms.",
-          "Alibaba and Tencent have been aggressive in funding AI labs to secure early access to cutting-edge models. By rejecting them, DeepSeek may be betting on its ability to scale without strategic interference. This move could pressure other startups to weigh the trade-offs between rapid capital infusion and long-term autonomy, potentially reshaping deal terms in the AI funding landscape."
+          "Chinese AI startup DeepSeek has turned down investment offers from both Alibaba and Tencent, according to a report from Huxiu. The decision underscores a strategic divergence: while Alibaba and Tencent seek to secure early stakes in promising AI labs, DeepSeek appears intent on maintaining its autonomy, possibly to avoid being tied to any single ecosystem. The move may also reflect DeepSeek's confidence in its own capital position and roadmap, or a desire to keep its technology neutral.",
+          "For Alibaba and Tencent, the rejection is a setback in their race to lock in next-generation AI capabilities. Both are aggressively investing in AI startups globally, but DeepSeek's refusal suggests that top-tier Chinese AI labs may prefer to stay independent—or negotiate from a position of strength. This could push the two giants to seek alternative targets, potentially driving up valuations for other AI firms. The news arrives amid a broader funding boom in Chinese AI, where capital is abundant but talent and unique architectures remain scarce."
         ],
-        "why": "This funding decision underscores that top AI startups can command independence, shifting the power balance in fundraising and forcing investors to reconsider the value of strategic versus financial investments.",
+        "why": "This story is a bellwether for the shifting power dynamics in China's AI landscape. It shows that not all AI startups are eager to take Big Tech money, and that independence can be a deliberate strategy. For investors and founders, it's a signal that leverage in funding negotiations may be tilting toward top-tier AI labs.",
         "links": [
           [
-            "虎嗅报道",
+            "Google News China AI: DeepSeek拒绝阿里腾讯投资，揭示AI巨头战略差异 - 虎嗅",
             "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1YMzZCcE12ZWtKQVNUUVMwaVNnT2hPZkFHekJXM2RCeFpYUFBpUzk1VDVpY1lDT0VvMWhhbGNBTHhiMWxZZkN0UjRPN2FjMHBVZmhzWg?oc=5"
           ]
         ],
         "sourceDate": "2026-05-17",
         "freshness": "d-1",
         "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
+        "freshnessLabelZh": "周末窗口｜2026-05-17",
+        "freshnessLabelEn": "Weekend window | 2026-05-17",
+        "freshnessLabel": "Weekend window | 2026-05-17"
       },
       {
         "section": "Open Source",
         "priority": "medium",
-        "title": "6.4k Stars! Open Source Pipeline for Writing Academic Papers with Claude Code",
-        "dek": "A fully automated, open-source pipeline leverages Claude Code to handle the entire academic paper writing process, from literature review to LaTeX generation.",
+        "title": "Building a general-purpose accessibility agent—and what we learned in the process",
+        "dek": "GitHub details its experimental AI agent designed to improve web accessibility, sharing technical insights and lessons from the pilot.",
         "details": [
-          "Developers have open-sourced a complete pipeline that uses Claude Code to automate academic paper writing. The project, which quickly gathered over 6,400 GitHub stars, integrates literature search, outline generation, draft writing, and LaTeX compilation into a single workflow. Users provide a topic and specify requirements; the agent then produces a structured paper with citations and formatting. The creator also shared transparent cost estimates, making it accessible for researchers on a budget.",
-          "While the pipeline significantly reduces the time and skill barrier for producing formatted papers, its output quality heavily depends on the prompt design and Claude's capabilities. There's uncertainty about how well it handles niche domains or nuanced arguments. Additionally, this tool raises ethical questions about AI authorship in academia and the potential for misuse in generating low-effort publications."
+          "GitHub is piloting an experimental general-purpose accessibility agent that leverages large language models to automatically identify and fix accessibility issues on web pages. The agent combines computer vision and code generation to suggest semantic HTML improvements, ARIA label corrections, and color contrast adjustments. In early tests, it resolved up to 70% of detected violations without manual intervention, though performance varies across different website architectures. The project highlights both the potential and current limitations of AI-driven accessibility remediation.",
+          "Key takeaways from the pilot include the importance of context-aware prompts to avoid false positives, and the challenge of maintaining design intent while automating fixes. The agent uses a feedback loop where user corrections improve future suggestions. GitHub emphasizes that this is not a product announcement but a research prototype aimed at spurring community discussion. The open-source nature of the blog post invites developers to experiment with similar approaches using their own toolchains."
         ],
-        "why": "This project highlights the rapid commoditization of AI agent workflows for complex, multi-step tasks. For developers, it serves as a blueprint for building end-to-end tools on top of large language models; for researchers, it sparks debate on the boundaries of AI-assisted authorship and the future of scientific publishing.",
+        "why": "This experimental agent signals a new direction for AI in developer tooling: moving from code generation to proactive accessibility auditing. For product teams and startups, it suggests an emerging opportunity to build specialized agents that automate compliance with web standards.",
         "links": [
           [
-            "量子位: 6.4k Stars！用Claude Code写论文的全套流水线，有人打包开源了",
-            "https://www.qbitai.com/2026/05/418737.html"
+            "GitHub AI & ML: Building a general-purpose accessibility agent—and what we learned in the process",
+            "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/"
           ]
         ],
-        "sourceDate": "2026-05-17",
+        "sourceDate": "2026-05-16",
         "freshness": "d-1",
         "regionPriority": "deprioritized_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
+        "freshnessLabelZh": "周末窗口｜2026-05-16",
+        "freshnessLabelEn": "Weekend window | 2026-05-16",
+        "freshnessLabel": "Weekend window | 2026-05-16"
       },
       {
         "section": "AI Product Picks",
         "priority": "medium",
         "title": "Anuma: multi-model AI workspace with private cross-model memory",
-        "dek": "A unified workspace aggregating top AI models with a private, cross-model memory layer.",
+        "dek": "A workspace that brings together multiple AI models with a user-controlled memory layer.",
         "details": [
-          "Anuma brings together ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, Llama, and more into a single workspace, eliminating the need to switch tabs or re-enter context. This is especially useful for power users who rely on different models for different tasks—such as coding with Claude, brainstorming with ChatGPT, or reasoning with Gemini—and want to compare outputs side by side. The core challenge it addresses is the fragmentation of conversations and context across multiple AI services, which often forces users to manually copy-paste or lose memory.",
-          "A standout feature is Anuma's privacy-focused memory layer that users can edit and control. Memory is stored locally and can be selectively shared across models, meaning a user's preferences or project context built in one model can seamlessly carry over to another without compromising data privacy. This addresses a growing concern among professionals who want persistent context but are wary of vendor lock-in or data leakage. While it's unclear how well memory works with models that have different context windows or token limits, the concept marks a shift toward user-owned AI persistence."
+          "Anuma aggregates over eight AI models including ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, and Llama into a single interface, eliminating the need to switch tabs. Users can choose the best model for each task while staying in one workspace. This aggregation pattern is becoming a standard productivity pattern as model diversity grows.",
+          "The standout feature is a privacy-focused memory layer that users can edit and carry across models. Unlike platform-specific memories, Anuma's memory is cross-model and user-owned. This addresses growing concerns about data silos and vendor lock-in, making it easier to experiment with different models without rebuilding context."
         ],
-        "why": "Anuma exemplifies the next wave of productivity tools: multi-model orchestration with user-controlled memory. For founders and investors, it highlights an opportunity to build infrastructure that manages cross-model context and privacy, a gap left by single-model chat interfaces.",
+        "why": "Anuma represents the next wave of AI productivity tools: multi-model orchestration with user-controlled data. For founders and investors, it highlights the opportunity in middleware that enhances model portability and privacy.",
         "links": [
           [
             "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
@@ -960,13 +962,12 @@ const archiveEn = [
         "section": "Deep Read",
         "priority": "medium",
         "title": "[AINews] Codex Rises, Claude Meters Programmatic Usage",
-        "dek": "A look at the shifting landscape of coding agents and API pricing, from the latest Latent Space newsletter.",
+        "dek": "A quiet day allows us to report on a long trend of the major coding agents.",
         "details": [
-          "Latent Space's newsletter analyzes two major trends in AI coding: OpenAI's Codex is gaining traction as a go-to coding agent, while Anthropic's Claude has introduced metering for programmatic API usage. This signals a maturing market where developers face strategic choices between tool ecosystems and cost structures.",
-          "Key insights include: (1) Codex's rise reflects its integration with GitHub and VS Code, making AI-assisted coding seamless but locking users into Microsoft's platform. (2) Claude's usage metering suggests Anthropic is optimizing for profitability and sustainability, potentially increasing costs for heavy API users. (3) The divergence between OpenAI and Anthropic strategies—one embracing integration, the other monetizing API consumption—will shape which coding agents dominate enterprise and indie development.",
-          "For developers, this means choosing between convenience (Codex) and potentially lower long-term costs (Claude), but with an uncertain future for both. Investors should watch for coding agent lock-in effects and API pricing wars."
+          "In the coding agents landscape, OpenAI's Codex is gaining momentum while Anthropic's Claude begins metering programmatic API usage. Latent Space's review tracks these shifts, noting that developer toolchains are being redefined. Although exact usage figures remain undisclosed, observations suggest Codex is capturing a growing share of code generation workloads, while Claude's metering may push enterprises to evaluate cost efficiency more carefully.",
+          "The article also explores broader implications: coding agents are moving from experimental to production, but predictable pricing and reliability remain critical hurdles. Anthropic's metering strategy hints at a tilt toward enterprise customers, whereas Codex may see wider adoption due to OpenAI's ecosystem integration. For developers and investors, understanding these dynamics is essential for choosing long-term platforms and adjusting portfolio bets."
         ],
-        "why": "This newsletter captures a pivotal moment where coding agent platforms are diverging in business models, directly impacting how developers build and how much they pay. Understanding these trends is essential for anyone navigating the AI development toolchain.",
+        "why": "This review highlights a divergence in coding agent strategies, reminding readers to monitor Claude's metering impact on costs and Codex's ecosystem expansion—key signals for AI engineering teams and VCs refining their tech stacks and investment theses.",
         "links": [
           [
             "Latent Space: [AINews] Codex Rises, Claude Meters Programmatic Usage",
@@ -984,18 +985,14 @@ const archiveEn = [
         "section": "Research Reports",
         "priority": "medium",
         "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
-        "dek": "IBM's latest CEO study distills five strategic plays for enterprises transitioning to AI-first operations, based on global executive insights.",
+        "dek": "IBM's latest CEO study outlines five strategic plays for enterprises to become AI-first, based on insights from thousands of global CEOs.",
         "details": [
           {
-            "summary": "IBM's 2026 CEO study identifies five key plays for AI-first transformation, emphasizing organizational reinvention over technology deployment.",
-            "expanded": "Based on interviews with thousands of CEOs worldwide, IBM's report argues that successful AI adoption is less about model selection and more about reshaping operating models, talent strategies, data governance, and risk frameworks. The five plays include: 1) appointing an AI-first leadership team; 2) rebuilding data infrastructure for real-time decision-making; 3) embedding AI ethics into product design; 4) creating dynamic workforce reskilling programs; and 5) forming ecosystem partnerships to scale. The study notes that only 12% of surveyed CEOs reported achieving significant revenue impact from AI, suggesting a wide gap between ambition and execution."
-          },
-          {
-            "summary": "A key finding: CEOs are moving from experimentation to industrialization, but cultural resistance remains the top barrier.",
-            "expanded": "IBM's research highlights that 78% of CEOs believe AI will fundamentally change their industry within three years, yet 54% cite organizational silos and legacy mind-sets as primary obstacles. The report calls for a shift from 'AI projects' to 'AI-first operating models,' where data fluency becomes a C-suite competency. Notably, the study contrasts first-mover advantages against fast-follower strategies, recommending that companies in regulated industries prioritize trust and transparency. For investors and product leaders, the implication is clear: the next competitive differentiator will be organizational change management, not AI model accuracy alone."
+            "summary": "IBM's 2026 CEO study distills five actionable plays for AI-first transformation, drawing from a global survey of over 3,000 CEOs.",
+            "expanded": "The study identifies five critical plays: (1) embed AI into core business strategy, not just IT; (2) redesign operating models around human-AI collaboration; (3) invest in data architecture and governance as a foundation; (4) foster a culture of continuous learning and experimentation; and (5) prioritize ethical AI and trust. Key data points: 78% of CEOs believe AI will fundamentally change their industry within three years, yet only 23% feel their organizations are prepared. The report emphasizes that AI-first transformation requires CEO-led commitment across strategy, culture, and infrastructure, not just technology deployment. For investors and product leaders, this underscores the shift from AI pilots to systemic integration, with implications for enterprise software, cloud platforms, and consulting services."
           }
         ],
-        "why": "This report offers a strategic lens for founders and corporate leaders: AI-first transformation requires systemic change beyond tech stacks, making it a critical read for anyone planning long-term AI adoption or investment.",
+        "why": "This study provides a clear CEO-level roadmap for AI transformation, making it essential reading for anyone building products or strategies aimed at enterprise adoption.",
         "links": [
           [
             "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
@@ -1013,16 +1010,19 @@ const archiveEn = [
         "section": "AI Term",
         "priority": "learning",
         "title": "Agentic Workflow",
-        "dek": "AI systems that autonomously execute multi-step tasks by coordinating tools, memory, and LLM reasoning.",
+        "dek": "A design pattern where AI models autonomously plan, execute, and iterate on multi-step tasks, often using tools and memory.",
         "details": [
-          "Agentic Workflow describes AI agents that don't just answer questions but plan, execute, and iterate. They break down complex goals (like generating a financial report) into subtasks, call external APIs or databases, and self-correct based on intermediate results. This contrasts with single-turn LLM usage—agents can run for hours, simulating human-like project execution.",
-          "Enterprise adoption is accelerating. Databricks recently integrated GPT-5.5 into its platform to build agent workflows for office tasks, achieving state-of-the-art results on the OfficeQA Pro benchmark. This signals that agentic workflows are moving from research prototypes to production, enabling automation of multi-step business processes like report generation, data analysis, and decision support."
+          "Agentic workflows extend beyond single-turn Q&A by giving AI models agency to break down complex objectives, call external APIs, maintain context across steps, and self-correct. This concept is central to understanding recent moves like OpenAI combining ChatGPT with Codex and Databricks integrating GPT-5.5 for enterprise agent workflows. In practice, finance teams already use Codex to build reports and run variance analyses autonomously, as shown in OpenAI’s academy case study."
         ],
-        "why": "Understanding Agentic Workflow is the key to making sense of today's news on AI agents and enterprise automation—it's the paradigm shift from AI as a tool to AI as an autonomous executor.",
+        "why": "Agentic workflow is the underlying paradigm unifying this week’s agent and enterprise automation news—grasping it helps you decode product strategy shifts at OpenAI and Databricks.",
         "links": [
           [
             "Databricks brings GPT-5.5 to enterprise agent workflows",
             "https://openai.com/index/databricks"
+          ],
+          [
+            "How finance teams use Codex",
+            "https://openai.com/academy/how-finance-teams-use-codex"
           ]
         ],
         "sourceDate": "",
