@@ -742,7 +742,7 @@ async function deepSeekJson(prompt, maxTokens = 9000) {
         }
       ],
       response_format: { type: "json_object" },
-      temperature: 0.25,
+      temperature: 0.15,
       max_tokens: maxTokens
     })
   });
@@ -796,7 +796,7 @@ async function createItemWithRetry({ date, sourcePack, planItem, lang, requestJs
     return item;
   } catch (error) {
     const message = String(error?.message || error);
-    if (!/too shallow|expanded report|needs expanded|summary is list-like|unterminated string|parseable json|unexpected end/i.test(message)) throw error;
+    if (!/too shallow|expanded report|needs expanded|summary is list-like|json|expected|unexpected|unterminated string|parseable json|unexpected end/i.test(message)) throw error;
     console.warn(`Item generation retry for ${lang} "${planItem.titleZh || planItem.titleEn}": ${message}`);
     const parsed = await requestJson(buildItemPrompt(date, scopedSourcePack, planItem, lang, message), 4500);
     const item = normalizeItem(parsed.item);
@@ -852,7 +852,7 @@ async function createIssue(date, sourcePack) {
     return await create(date, sourcePack);
   } catch (error) {
     const message = String(error?.message || error);
-    if (!/too shallow|expanded report|needs expanded|summary is list-like|unterminated string|parseable json|unexpected end/i.test(message)) throw error;
+    if (!/too shallow|expanded report|needs expanded|summary is list-like|json|expected|unexpected|unterminated string|parseable json|unexpected end/i.test(message)) throw error;
     console.warn(`Quality check failed, retrying once: ${message}`);
     return create(date, sourcePack, message);
   }
