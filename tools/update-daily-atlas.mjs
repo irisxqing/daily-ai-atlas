@@ -269,7 +269,7 @@ function relevanceScore(entry) {
 }
 
 function entryText(entry) {
-  return `${entry.source || ""} ${entry.title || ""} ${entry.summary || ""}`.toLowerCase();
+  return `${entry.source || ""} ${entry.title || ""} ${entry.summary || ""} ${entry.link || ""}`.toLowerCase();
 }
 
 const priorityCompanyPattern = /openai|anthropic|deepmind|google|xai|meta|microsoft|amazon|aws|nvidia|databricks|tsmc|amd|broadcom|deepseek|qwen|zhipu|z\.ai|minimax|kimi|moonshot|doubao|bytedance|baidu|tencent|alibaba|字节|阿里|腾讯|百度|智谱|月之暗面|阶跃星辰|零一万物/i;
@@ -280,6 +280,7 @@ const communityConcernPattern = /safety|privacy|security|copyright|lawsuit|regul
 const productivityProductPattern = /productivity|knowledge|research|workspace|workflow|memory|notes|browser|extension|assistant|agent|automation|calendar|email|docs|spreadsheet|meeting|design|prototype|知识|研究|效率|工作流|记忆|笔记|浏览器|助手|自动化|会议|原型|设计/i;
 const broadDiscussionPattern = /product hunt|hacker news|reddit|github trending|launch|reviews?|users?|rating|community|viral|讨论|热议|好评|用户|社区/i;
 const strategicReportPattern = /future|outlook|landscape|state of|index|benchmark report|survey|adoption|enterprise|industry|market|application|trend|未来|趋势|全景|产业|应用|采用|企业|市场|调研|指数/i;
+const deepReadStylePattern = /\banalysis\b|\bdeep[- ]dive\b|\bessay\b|\binterview\b|\blong read\b|\bexplainer\b|\bguide\b|\bopinion\b|\bcase study\b|\bwhat it means\b|\bwho owns the future\b|\bpodcast\b|\bconversation\b|\bdialogue\b|深度|长文|访谈|专访|解读|复盘|观察|分析|案例|方法论|播客|对话|评论/i;
 const primaryMarketPattern = /中国|china|us|u\.s\.|united states|america|美国|深圳|香港/i;
 const deprioritizedMarketPattern = /korea|korean|south korea|ghana|malta|european union|eu\b|france|germany|uk\b|britain|japan|singapore|韩国|加纳|马耳他|欧盟|法国|德国|英国|日本|新加坡/i;
 const comparisonOnlyPattern = /outperforms?|beats?|lags?|stronger than|weaker than|surpass(?:es|ed)?|超过|强于|弱于|落后|跑分|榜单|排名/i;
@@ -461,7 +462,7 @@ function isDeepReadEntry(entry) {
   const source = String(entry.source || "").toLowerCase();
   const title = String(entry.title || "").toLowerCase();
   const isDeepSource = /latent space|import ai|the batch|ai valley|tmtpost|钛媒体|机器之心|stratechery|semi|sequoia|a16z|interview|newsletter/i.test(source);
-  const hasDeepSignal = /\banalysis\b|\bdeep[- ]dive\b|\bessay\b|\binterview\b|\blong read\b|\bexplainer\b|\bguide\b|\bopinion\b|\bcase study\b|\bwhat it means\b|深度|长文|访谈|专访|解读|复盘|观察|分析|案例|方法论/i.test(text);
+  const hasDeepSignal = deepReadStylePattern.test(text);
   const hasAiSignal = /\bai\b|artificial intelligence|generative|llm|agent|openai|anthropic|deepmind|机器人|人工智能|大模型|模型|智能体/i.test(text);
   const isPersonnelNews = aiLeaderPattern.test(text) && /\btakes charge\b|\bjoins?\b|\bleaves?\b|\bdepart|\bhire|\bappoint|\bfounds?\b|\bstarts?\b|接管|离职|加入|任命|创业|创办|负责/i.test(text);
   const isHardNews = isFundingEntry(entry) || isOpenSourceEntry(entry) || isProductEntry(entry) || isReportEntry(entry) || isAcademicPaperEntry(entry);
@@ -474,6 +475,8 @@ function isTopStoryEntry(entry) {
   const text = entryText(entry);
   if (entry.freshness !== "d-1") return false;
   if (comparisonOnlyPattern.test(text) && !directActionPattern.test(text)) return false;
+  const isCommentaryOrInterview = deepReadStylePattern.test(text) && !directActionPattern.test(text);
+  if (isCommentaryOrInterview) return false;
   if (regionPriority(entry) === "deprioritized_market") return false;
   const hasDirectPrioritySignal = priorityCompanyPattern.test(text) && (!comparisonOnlyPattern.test(text) || directActionPattern.test(text));
   const hasPrimaryMarketSignal = primaryMarketPattern.test(text)
