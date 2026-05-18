@@ -393,13 +393,14 @@ function replaceOrInsertIssue(source, arrayName, issue) {
 }
 
 function updateAppCacheBust(date) {
-  const cacheBust = date.replaceAll("-", "");
+  const runStamp = process.env.GITHUB_RUN_ID || String(Date.now());
+  const cacheBust = `${date.replaceAll("-", "")}-${runStamp}`;
   const source = fs.readFileSync(indexPath, "utf8");
   const appScriptPattern = /app\.js(?:\?v=[^"]+)?/g;
   if (!appScriptPattern.test(source)) {
     throw new Error("Could not update app.js cache bust parameter in index.html.");
   }
-  const next = source.replace(appScriptPattern, `app.js?v=${cacheBust}-daily`);
+  const next = source.replace(appScriptPattern, `app.js?v=${cacheBust}`);
   if (next === source) return;
   fs.writeFileSync(indexPath, next);
 }
