@@ -685,7 +685,7 @@ function normalizePlan(plan) {
     for (const key of ["section", "titleZh", "titleEn", "angle"]) {
       if (!item[key]) throw new Error(`Editorial plan item missing ${key}.`);
     }
-    if (!item.sourceIds.length || !item.links.length) {
+    if (!isTermSectionName(item.section) && (!item.sourceIds.length || !item.links.length)) {
       throw new Error(`Editorial plan item "${item.titleZh}" needs sourceIds and links.`);
     }
   });
