@@ -234,7 +234,7 @@ function entryText(entry) {
   return `${entry.source || ""} ${entry.title || ""} ${entry.summary || ""}`.toLowerCase();
 }
 
-const priorityCompanyPattern = /openai|anthropic|deepmind|google|xai|meta|microsoft|amazon|aws|nvidia|tsmc|amd|broadcom|deepseek|qwen|zhipu|z\.ai|minimax|kimi|moonshot|doubao|bytedance|baidu|tencent|alibaba|字节|阿里|腾讯|百度|智谱|月之暗面|阶跃星辰|零一万物/i;
+const priorityCompanyPattern = /openai|anthropic|deepmind|google|xai|meta|microsoft|amazon|aws|nvidia|databricks|tsmc|amd|broadcom|deepseek|qwen|zhipu|z\.ai|minimax|kimi|moonshot|doubao|bytedance|baidu|tencent|alibaba|字节|阿里|腾讯|百度|智谱|月之暗面|阶跃星辰|零一万物/i;
 const aiLeaderPattern = /sam altman|greg brockman|ilya|sutskever|karpathy|geoffrey hinton|yann lecun|andrew ng|dario amodei|demis hassabis|mustafa suleyman|liang wenfeng|梁文锋|李飞飞|周鸿祎|王小川|张鹏|ai leader|founder|co-founder|ceo|cto|chief scientist|负责人|创始人|离职|加入|创业|人事|高管/i;
 const modelLaunchPattern = /\bmodel\b|\bgpt\b|\bclaude\b|\bgemini\b|\bgrok\b|\bllama\b|\bqwen\b|\bdeepseek\b|\bglm\b|\bkimi\b|\bdoubao\b|\brelease\b|\blaunch\b|\bannounc|\bapi\b|\brealtime\b|\bvoice\b|模型|发布|上线|语音|多模态|推理/i;
 const industryChainPattern = /chip|gpu|inference|compute|datacenter|robot|robotics|humanoid|world model|video model|simulation|warehouse|factory|logistics|芯片|算力|推理|机器人|世界模型|视频模型|仿真|物流|制造|数据中心/i;
@@ -242,6 +242,9 @@ const communityConcernPattern = /safety|privacy|security|copyright|lawsuit|regul
 const productivityProductPattern = /productivity|knowledge|research|workspace|workflow|memory|notes|browser|extension|assistant|agent|automation|calendar|email|docs|spreadsheet|meeting|design|prototype|知识|研究|效率|工作流|记忆|笔记|浏览器|助手|自动化|会议|原型|设计/i;
 const broadDiscussionPattern = /product hunt|hacker news|reddit|github trending|launch|reviews?|users?|rating|community|viral|讨论|热议|好评|用户|社区/i;
 const strategicReportPattern = /future|outlook|landscape|state of|index|benchmark report|survey|adoption|enterprise|industry|market|application|trend|未来|趋势|全景|产业|应用|采用|企业|市场|调研|指数/i;
+const primaryMarketPattern = /中国|china|us|u\.s\.|united states|america|美国|深圳|香港/i;
+const comparisonOnlyPattern = /outperforms?|beats?|lags?|stronger than|weaker than|surpass(?:es|ed)?|超过|强于|弱于|落后|跑分|榜单|排名/i;
+const directActionPattern = /\blaunch(?:es|ed)?\b|\brelease(?:s|d)?\b|\bannounce(?:s|d)?\b|\bdeploy(?:s|ed)?\b|\broll(?:s|ed)? out\b|\btakes charge\b|\bjoins?\b|\bleaves?\b|\bfounds?\b|发布|上线|推出|部署|接管|离职|加入|任命|创业|创办/i;
 
 function patternScore(text, weightedPatterns) {
   return weightedPatterns.reduce((score, [pattern, weight]) => score + (pattern.test(text) ? weight : 0), 0);
@@ -259,7 +262,7 @@ function editorialScore(entry, section) {
   let score = (entry.score || 0) + freshnessScore(entry, 14);
 
   if (priorityCompanyPattern.test(text)) score += 18;
-  if (/中国|china|us|u\.s\.|united states|america|美国|深圳|香港/.test(text)) score += 6;
+  if (primaryMarketPattern.test(text)) score += 6;
 
   if (section === "今日重点") {
     score += patternScore(text, [
@@ -271,6 +274,7 @@ function editorialScore(entry, section) {
       [/\bworld model\b|世界模型/i, 18]
     ]);
     if (/openai|anthropic|deepmind|google|xai|nvidia|deepseek|qwen|zhipu|字节|阿里|腾讯/.test(text)) score += 8;
+    if (comparisonOnlyPattern.test(text) && !directActionPattern.test(text)) score -= 28;
   }
 
   if (section === "AI产品推荐") {
@@ -323,7 +327,8 @@ function isRecentEntry(entry, maxAgeDays) {
 }
 
 function isFundingEntry(entry) {
-  return /\bfunding\b|\braises?\b|\braised\b|\bseries [a-z]\b|\bipo\b|\bacquisition\b|\bacquires?\b|\bvaluation\b|\binvest(?:s|ed|ment|or)?\b|\bround\b|融资|投资|估值|并购|上市|收购/i.test(entryText(entry));
+  return !isLowQualityEntry(entry)
+    && /\bfunding\b|\braises?\b|\braised\b|\bseries [a-z]\b|\bipo\b|\bacquisition\b|\bacquires?\b|\bvaluation\b|\binvest(?:s|ed|ment|or)?\b|\bround\b|融资|投资|估值|并购|上市|收购/i.test(entryText(entry));
 }
 
 function isOpenSourceEntry(entry) {
@@ -368,7 +373,7 @@ function isReportEntry(entry) {
   const hasAiSignal = /\bai\b|artificial intelligence|generative|llm|agent|人工智能|大模型|模型|智能体/i.test(titleSummary);
   const hasStrategicSignal = strategicReportPattern.test(titleSummary) || /workplace|workforce|creator|marketing|enterprise|ceo|产业|应用|企业|未来|生产力|工作/i.test(titleSummary);
   const staleYear = /\b20(1\d|2[0-5])\b/.test(title) && !/\b2026\b/.test(title);
-  return hasReportSignal && hasAiSignal && hasStrategicSignal && isRecentEntry(entry, 14) && !staleYear && !isLowQualityEntry(entry);
+  return hasReportSignal && hasAiSignal && hasStrategicSignal && isRecentEntry(entry, 14) && !staleYear && !isAcademicPaperEntry(entry) && !isLowQualityEntry(entry);
 }
 
 function isDeepReadEntry(entry) {
@@ -386,6 +391,17 @@ function isDeepReadEntry(entry) {
 
 function isTopStoryEntry(entry) {
   if (isLowQualityEntry(entry)) return false;
+  const text = entryText(entry);
+  const hasDirectPrioritySignal = priorityCompanyPattern.test(text) && (!comparisonOnlyPattern.test(text) || directActionPattern.test(text));
+  const hasPrimaryMarketSignal = primaryMarketPattern.test(text)
+    && (modelLaunchPattern.test(text) || aiLeaderPattern.test(text) || communityConcernPattern.test(text) || industryChainPattern.test(text) || directActionPattern.test(text));
+  const hasStrategicAnchor = hasDirectPrioritySignal
+    || hasPrimaryMarketSignal
+    || aiLeaderPattern.test(text)
+    || communityConcernPattern.test(text)
+    || industryChainPattern.test(text)
+    || /\bworld model\b|世界模型/i.test(text);
+  if (!hasStrategicAnchor) return false;
   return !isFundingEntry(entry)
     && !isOpenSourceEntry(entry)
     && !isProductEntry(entry)
