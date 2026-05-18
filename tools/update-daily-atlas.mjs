@@ -500,6 +500,23 @@ function updateAppCacheBust(date) {
   fs.writeFileSync(indexPath, next);
 }
 
+function selectionSourcePack(sourcePack) {
+  return {
+    date: sourcePack.date,
+    timezone: sourcePack.timezone,
+    coverage: sourcePack.coverage,
+    entries: sourcePack.entries.map((entry) => ({
+      id: entry.id,
+      source: entry.source,
+      title: entry.title,
+      link: entry.link,
+      date: entry.date,
+      summary: String(entry.summary || "").slice(0, 220),
+      score: entry.score
+    }))
+  };
+}
+
 function buildSelectionPrompt(date, sourcePack, revisionNote = "") {
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
@@ -519,11 +536,11 @@ ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请�
 
 内容结构要求：
 - 计划里使用中文 section：今日重点、投融资信息、开源项目、AI产品推荐、机构报告、每日词条。
-- 控制在 10-12 条：今日重点 4-5 条；投融资 1-2 条；开源 1-2 条；AI 产品推荐 2 条；机构报告 1 条；每日 AI 词条 1 条。
-- 每条 plan item 必须包含 section、priority、titleZh、titleEn、angle、sourceIds、links。
+- 控制在 10 条：今日重点 4 条；投融资 1 条；开源 1 条；AI 产品推荐 2 条；机构报告 1 条；每日 AI 词条 1 条。
+- 每条 plan item 必须包含 section、priority、titleZh、titleEn、angle、sourceIds。
 - sourceIds 必须引用 SOURCE_PACK.entries 里的 id。每条至少 1 个，重要新闻尽量 2-4 个。
-- links 是 [label, url] 数组，URL 必须来自 SOURCE_PACK，每条最多 3 个。
-- angle 要写明为什么选择它、应该补充哪些上下文、对非技术读者最重要的理解角度，最多 120 个中文字。
+- 不要在 plan item 里返回 links，脚本会根据 sourceIds 自动补链接。
+- angle 要写明为什么选择它、应该补充哪些上下文、对非技术读者最重要的理解角度，最多 60 个中文字。
 
 篇首编辑要求：
 - headlineZh/headlineEn 和 summaryZh/summaryEn 不能是新闻标题罗列，也不能像目录一样覆盖“融资、产品、报告、开源……”。
@@ -560,15 +577,14 @@ ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请�
         "titleZh": "...",
         "titleEn": "...",
         "angle": "...",
-        "sourceIds": ["S001"],
-        "links": [["source label", "https://..."]]
+        "sourceIds": ["S001"]
       }
     ]
   }
 }
 
 SOURCE_PACK:
-${JSON.stringify(sourcePack, null, 2)}
+${JSON.stringify(selectionSourcePack(sourcePack), null, 2)}
 `;
 }
 
@@ -594,6 +610,14 @@ function sourcesForPlanItem(sourcePack, planItem) {
     coverage: sourcePack.coverage,
     entries: entries.length ? entries : sourcePack.entries.slice(0, 6)
   };
+}
+
+function linksForSourceIds(sourcePack, sourceIds = []) {
+  const sourceIdSet = new Set(sourceIds);
+  return sourcePack.entries
+    .filter((entry) => sourceIdSet.has(entry.id) && entry.link)
+    .slice(0, 3)
+    .map((entry) => [`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]);
 }
 
 function buildItemPrompt(date, sourcePack, planItem, lang, revisionNote = "") {
@@ -685,8 +709,8 @@ function normalizePlan(plan) {
     for (const key of ["section", "titleZh", "titleEn", "angle"]) {
       if (!item[key]) throw new Error(`Editorial plan item missing ${key}.`);
     }
-    if (!isTermSectionName(item.section) && (!item.sourceIds.length || !item.links.length)) {
-      throw new Error(`Editorial plan item "${item.titleZh}" needs sourceIds and links.`);
+    if (!isTermSectionName(item.section) && !item.sourceIds.length) {
+      throw new Error(`Editorial plan item "${item.titleZh}" needs sourceIds.`);
     }
   });
 
@@ -762,10 +786,12 @@ async function openAIJson(prompt, maxOutputTokens = 9000) {
 
 async function createItemWithRetry({ date, sourcePack, planItem, lang, requestJson }) {
   const scopedSourcePack = sourcesForPlanItem(sourcePack, planItem);
+  const sourceLinks = linksForSourceIds(sourcePack, planItem.sourceIds);
   try {
     const parsed = await requestJson(buildItemPrompt(date, scopedSourcePack, planItem, lang), 4500);
     const item = normalizeItem(parsed.item);
     item.section = sectionForLang(planItem.section, lang);
+    if (!item.links.length && sourceLinks.length) item.links = sourceLinks;
     validateItemContent(item, lang);
     return item;
   } catch (error) {
@@ -775,6 +801,7 @@ async function createItemWithRetry({ date, sourcePack, planItem, lang, requestJs
     const parsed = await requestJson(buildItemPrompt(date, scopedSourcePack, planItem, lang, message), 4500);
     const item = normalizeItem(parsed.item);
     item.section = sectionForLang(planItem.section, lang);
+    if (!item.links.length && sourceLinks.length) item.links = sourceLinks;
     validateItemContent(item, lang);
     return item;
   }
@@ -801,7 +828,7 @@ async function createIssueFromPlan(date, sourcePack, plan, lang, requestJson) {
 }
 
 async function createIssueWithDeepSeek(date, sourcePack, revisionNote = "") {
-  const planJson = await deepSeekJson(buildSelectionPrompt(date, sourcePack, revisionNote), 5000);
+  const planJson = await deepSeekJson(buildSelectionPrompt(date, sourcePack, revisionNote), 3000);
   const plan = normalizePlan(planJson.plan);
   return {
     zh: await createIssueFromPlan(date, sourcePack, plan, "zh", deepSeekJson),
@@ -810,7 +837,7 @@ async function createIssueWithDeepSeek(date, sourcePack, revisionNote = "") {
 }
 
 async function createIssueWithOpenAI(date, sourcePack, revisionNote = "") {
-  const planJson = await openAIJson(buildSelectionPrompt(date, sourcePack, revisionNote), 5000);
+  const planJson = await openAIJson(buildSelectionPrompt(date, sourcePack, revisionNote), 3000);
   const plan = normalizePlan(planJson.plan);
   return {
     zh: await createIssueFromPlan(date, sourcePack, plan, "zh", openAIJson),
