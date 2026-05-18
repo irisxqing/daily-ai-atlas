@@ -47,14 +47,14 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          if git diff --quiet app.js; then
-            echo "No app.js changes to commit."
+          if git diff --quiet app.js index.html; then
+            echo "No app.js or index.html changes to commit."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add app.js
+          git add app.js index.html
           ISSUE_DATE="${{ inputs.issue_date }}"
           if [ -z "$ISSUE_DATE" ]; then
             ISSUE_DATE="$(TZ=Asia/Shanghai date +'%Y-%m-%d')"

@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const rootDir = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
 const appPath = path.join(rootDir, "app.js");
+const indexPath = path.join(rootDir, "index.html");
 const timezone = "Asia/Shanghai";
 const model = process.env.OPENAI_MODEL || "gpt-5";
 
@@ -196,6 +197,16 @@ function replaceOrInsertIssue(source, arrayName, issue) {
   return `${source.slice(0, insertAt)}${serialized},\n${source.slice(insertAt)}`;
 }
 
+function updateAppCacheBust(date) {
+  const cacheBust = date.replaceAll("-", "");
+  const source = fs.readFileSync(indexPath, "utf8");
+  const next = source.replace(/app\.js\?v=[^"]+/g, `app.js?v=${cacheBust}-daily`);
+  if (next === source) {
+    throw new Error("Could not update app.js cache bust parameter in index.html.");
+  }
+  fs.writeFileSync(indexPath, next);
+}
+
 function buildPrompt(date) {
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
@@ -291,6 +302,7 @@ async function main() {
   source = replaceOrInsertIssue(source, "archiveZh", zh);
   source = replaceOrInsertIssue(source, "archiveEn", en);
   fs.writeFileSync(appPath, source);
+  updateAppCacheBust(date);
 
   console.log(`Updated AI Daily Atlas issue for ${date}`);
   console.log(`Chinese items: ${zh.items.length}; English items: ${en.items.length}`);
