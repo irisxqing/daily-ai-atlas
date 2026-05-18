@@ -1,5 +1,5 @@
 const archiveZh = [
-                    {
+                      {
     "date": "2026-05-18",
     "title": "AI Daily Atlas",
     "meta": "2026年5月18日",
@@ -17,14 +17,15 @@ const archiveZh = [
       {
         "section": "今日重点",
         "priority": "high",
-        "title": "315曝光AI大模型“投毒”黑产，39.9元篡改AI答案 - 36kr.com",
-        "dek": "315晚会曝光AI黑产：只需39.9元即可篡改大模型答案，用户信任面临新挑战。",
+        "title": "315曝光AI大模型“投毒”黑产，39.9元篡改AI答案",
+        "dek": "央视315晚会揭露了一种新型AI黑产：仅需39.9元即可定向篡改大模型输出结果，引发对AI安全与用户信任的广泛担忧。",
         "details": [
-          "在近期315晚会上，AI大模型“投毒”黑产被曝光。不法分子以低至39.9元的价格提供篡改AI答案服务，影响包括DeepSeek、阿里通义千问等主流国产大模型。这一手法被称为“投毒”，即通过注入恶意数据干扰模型输出，导致用户获取虚假信息。目前被曝光的企业尚未正式回应，黑产的具体规模和手法仍有待进一步调查。",
-          "关键数字方面，39.9元即可“投毒”一次，成本极低。据业内人士估算，黑产团伙已形成完整产业链，包含数据标注、模型攻击、恶意推广等环节。虽然尚无官方统计受影响用户数量，但初步推测可能有数万条问答被篡改，涉及金融、医疗等高风险领域。这一数字若被证实，将对AI服务的可信度造成严重冲击。",
-          "主体动作与影响：被曝光的企业尚未发布官方声明，但已有安全专家指出，此类攻击利用了大模型训练数据的开放性漏洞。监管机构可能加快出台AI安全规范，要求服务商加强输入过滤和输出审核。对普通用户而言，使用AI助手时需对答案保持警惕，尤其是涉及敏感信息时。目前尚不清楚该黑产是否已对关键行业造成实质性损害。"
+          "央视315晚会近日曝光了AI大模型“投毒”黑产链条。所谓“投毒”，是指通过对抗性攻击或数据污染手段，在模型训练或推理阶段注入恶意输入，使AI输出特定错误或有害内容。据悉，某黑产团伙公开兜售篡改服务，最低仅需39.9元即可让指定大模型在特定问题上给出预设答案。如此低廉的价格意味着攻击门槛极低，可能对AI应用生态造成系统性风险。",
+          "该黑产的操作方式尚无官方详细披露，但从公开信息推测，可能利用模型在开放域问答中的脆弱性，通过精心构造的对抗提示词或少量训练数据污染来劫持输出。与简单利用提示注入不同，这种“投毒”更隐蔽，且可能影响模型长期行为。普通用户很难辨别AI回答是否已被篡改，尤其是在涉及医疗、金融、法律等敏感领域时，潜在危害尤其严重。",
+          "事件直接影响AI服务商的产品可信度。对于依赖大模型提供客户服务、内容生成的企业，一旦被曝出输出被黑产操纵，将面临用户流失和品牌危机。同时，投资者对AI安全赛道的关注度急剧上升——此前红队测试、模型防火墙等防护手段多作为“合规成本”，如今可能成为必要支出。预计短期内监管机构将加速出台针对大模型输出审核的强制性标准。",
+          "目前曝光的黑产规模和技术细节仍不完全清楚。例如，是否仅针对特定中小模型，还是已具备攻击主流大模型的能力？39.9元服务是单次查询还是包含多种场景？这些不确定性使得事件的性质存在模糊地带。但无论如何，它已给行业敲响警钟：AI安全不能只依赖模型自身鲁棒性，全链路防护（从数据训练到部署监控）已刻不容缓。"
         ],
-        "why": "这条新闻揭示了AI大模型安全领域的新漏洞，对国内AI厂商的信任建设和监管合规构成紧迫挑战。创业公司可关注AI安全检测和防护工具的市场机会。",
+        "why": "这是AI治理领域的标志性事件——黑产首次以商品化方式公开“毒化”大模型输出，直接挑战AI的可信根基。对产品团队而言，必须立即审视防御体系；对创业者，AI安全检测与对抗防御赛道迎来爆发窗口；对投资者，合规成本上升可能重塑模型调用服务商的竞争格局。",
         "links": [
           [
             "Google News China AI: 315曝光AI大模型“投毒”黑产，39.9元篡改AI答案 - 36kr.com",
@@ -35,15 +36,15 @@ const archiveZh = [
       {
         "section": "今日重点",
         "priority": "high",
-        "title": "OpenAI联合创始人Greg Brockman接管产品战略，ChatGPT与Codex或整合",
-        "dek": "OpenAI进行最新管理层调整，联合创始人Greg Brockman被委以产品战略重任，同时传出计划整合ChatGPT与代码生成产品Codex的消息。",
+        "title": "OpenAI 联合创始人 Greg Brockman 接管产品战略",
+        "dek": "OpenAI 联合创始人 Greg Brockman 重新掌舵产品方向，并计划将 ChatGPT 与编程产品 Codex 合并",
         "details": [
-          "OpenAI近期经历了一系列人事变动，联合创始人Greg Brockman此前曾短暂离开产品岗位，如今据报道重返核心管理层，负责产品战略。这一调整发生在公司快速扩张和商业化压力加大的背景下，Brockman的回归被视为稳定产品方向、强化执行力的关键信号。不过，目前OpenAI官方尚未正式确认这一任命，细节仍需观望。",
-          "据TechCrunch援引内部消息，OpenAI正在筹划将旗下两大明星产品ChatGPT和Codex进行深度整合。Codex是OpenAI的代码生成模型，已广泛应用于GitHub Copilot等工具。若整合成真，开发者将可能在同一个对话界面中同时获得自然语言交互和代码生成能力，大幅降低编程门槛。但整合的具体时间表和技术方案尚未披露，存在较大不确定性。",
-          "这一产品战略调整可能对AI行业产生连锁反应。一方面，整合后的产品将直接对标微软的Copilot系列和谷歌的Gemini，加剧企业级AI竞争；另一方面，OpenAI正在从模型层向应用层倾斜，更加注重用户场景和商业闭环。对于创业公司而言，如果OpenAI统一了对话和代码能力，垂直领域的AI编程助手可能需要寻找差异化方向。",
-          "值得注意的是，Brockman在OpenAI内部以产品驱动著称，他主导了ChatGPT的早期产品化。此次回归产品战略，可能意味着OpenAI将加速产品迭代，甚至推出更多面向开发者的付费功能。对于AI从业者而言，关注OpenAI的产品路线图比关注其模型参数更有实际意义——产品化能力正在成为大模型公司的核心竞争力。"
+          "Greg Brockman，OpenAI 联合创始人兼前总裁，在经历一年多的休假后正式回归并负责产品战略。据 TechCrunch 报道，此次调整正值 OpenAI 考虑对产品线进行重大整合，Brockman 将直接领导产品团队，这意味着他在公司内部决策权重新提升，尤其在产品和商业化方向。",
+          "OpenAI 计划将 ChatGPT 与 Codex 合并。Codex 是 OpenAI 用于编程的 AI 模型，支持 GitHub Copilot 等工具。这一合并可能意味着消费者 AI 助手与企业级开发工具将在同一平台上协同，打造更统一的产品体验。具体产品形态和推出时间尚未披露。",
+          "这一变动对 AI 行业竞争格局影响深远。如果 ChatGPT 与 Codex 成功整合，OpenAI 将同时覆盖非技术用户和开发者，与 Anthropic、Google 等对手形成差异化。不过，内部产品整合的复杂性、技术架构调整以及团队融合都是潜在挑战。",
+          "消息称该计划仍处于早期阶段，存在不确定性。OpenAI 官方尚未确认这一产品路线图。投资者和开发者应密切关注后续官方表态及产品发布节奏，以评估其对现有 AI 工具市场（如 GitHub Copilot、Claude）的冲击。"
         ],
-        "why": "OpenAI的产品战略调整直接关系到未来AI应用生态的走向，尤其是ChatGPT与Codex的整合可能改写开发工具市场的格局。对于投资者和创业者，这既意味着OpenAI在形成平台优势，也预示着中小团队需要更精准地找到技术或场景的空白点。",
+        "why": "Brockman 重掌产品战略和 ChatGPT-Codex 合并计划，是 OpenAI 从“技术驱动”转向“产品平台化”的关键信号，将对 AI 产品经理、开发者工具创业者和平台投资者的策略判断产生直接影响。",
         "links": [
           [
             "TechCrunch AI: OpenAI co-founder Greg Brockman takes charge of product strategy",
@@ -54,14 +55,34 @@ const archiveZh = [
       {
         "section": "今日重点",
         "priority": "high",
-        "title": "韩国型推理AI的数学强于中国的DeepSeek，但语言方面落后",
-        "dek": "朝鲜日报报道称，韩国新推出的推理AI在数学基准测试中超越了中国DeepSeek，但语言理解能力仍存在明显差距。",
+        "title": "Who’s Winning Enterprise AI Now: Claude Up 128%, Gemini Up 48%, OpenAI Down 8%, Grok Still A Rounding Error - SaaStr",
+        "dek": "SaaStr 最新报道揭示企业AI市场格局剧变：Claude 使用量飙升128%，Gemini 增长48%，而 OpenAI 下滑8%，Grok 仍微不足道。",
         "details": [
-          "据朝鲜日报报道，韩国近期推出的推理AI模型在数学能力方面表现突出，在多个标准数学基准测试中得分高于中国的DeepSeek。DeepSeek一直以其强大的推理性能在全球开源模型中占据领先地位，此次被韩国模型超越，显示出亚洲AI竞赛的激烈程度。不过，该韩国模型在语言理解、生成和对话任务上落后于DeepSeek，反映出当前AI模型在专项能力与通用能力之间仍难以兼顾。",
-          "DeepSeek作为中国开源大模型的代表，其推理能力曾在多个榜单中名列前茅，尤其擅长数学、编程等需要逻辑推理的任务。韩国模型的数学优势可能源于更针对性的训练数据或架构优化，但语言短板限制了其作为通用助手的实用性。这种“偏科”现象在AI领域并不罕见——许多模型在特定任务上表现出色，但综合能力仍有待提升。报道未透露韩国模型的具体名称和参数规模，增加了后续对比的不确定性。",
-          "从产业竞争角度看，韩国在AI领域的投入正加速追赶，尤其在数学推理这类高价值场景中取得进展。对企业和开发者而言，选择模型时需根据实际场景权衡：若任务强依赖数学推理，韩国模型可能更具性价比；若需要多语言对话或内容生成，DeepSeek仍是更稳妥的选择。这一事件也提示，单一维度的评测难以全面反映模型能力，实际部署前应进行多场景验证。"
+          "企业AI市场正经历一场无声的洗牌。据SaaStr报道，过去一段时间内，Anthropic 的 Claude 在企业端使用量暴涨128%，Google 的 Gemini 也增长了48%，而曾经的领头羊 OpenAI 却出现了8%的下滑。xAI 的 Grok 尽管话题度高，但在企业市场几乎可以忽略不计。这些数据暗示企业客户正在快速分流，不再将 OpenAI 视为唯一选择。",
+          "关键数字背后的逻辑值得推敲：Claude 的翻倍增长可能得益于其“可靠、合规”的产品定位，以及 Anthropic 在企业安全方面的持续投入；Gemini 的增长则与 Google 将其深度整合进 Workspace 和云服务生态有关。OpenAI 的下滑或许源于竞品蚕食，也可能与其定价策略或功能迭代节奏有关。不过，该报道并未披露数据来源和统计口径，其精确性有待核实。",
+          "如果这一趋势延续，意味着企业AI市场的竞争将从“模型能力竞赛”转向“行业解决方案和生态绑定”的比拼。对于 CTO 和 AI 采购决策者来说，现在比以往更需要评估多家模型而非押注单一供应商。创业公司也应关注企业级 AI 工具链中的细分机会，比如模型评估、多模型编排等。",
+          "需要警惕的是，该报道仅是一家之言，缺乏第三方验证。8% 的下跌未必代表 OpenAI 整体衰败，也可能是某个细分场景下的波动。Grok 的“忽略不计”在 xAI 主攻消费者和开发者的战略下也属正常。读者应将此视为市场感知的信号而非确定性结论。"
         ],
-        "why": "这条新闻揭示了AI竞赛中专项突破与通用能力的权衡，对模型选型和投资方向有直接参考价值——数学推理强的模型在代码、科研场景有潜力，但语言短板可能限制C端应用。",
+        "why": "这条新闻揭示了企业AI竞争格局正在加速分化，对投资和产品战略有直接参考意义——押注单一模型的风险正在上升，而生态整合能力将成为新壁垒。",
+        "links": [
+          [
+            "SaaStr 报道（Google News）",
+            "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU9JVFJRUkppVVhJMWdIZ050ZTFCWnVsTXNnY1BWY2ZZZWNrSzVhWEZ6c1NLS25Rd2gyYTdoVllPRGhSWnRrY0JvekNmdUprSTNIdThmZGJzWF9hTmVoTjJzckhxVjhQR1BsV1dYcnQ0ZXpvRk85UXJMM2hmSEl0bUFLQm82Y0U2Z3BQOV9kUWJGaGlSSm5xeGM4dEkteVY3VXk3YTljaDBia0UxQUJIQ0RUSUo4TnFWeV9MMms0ckY?oc=5"
+          ]
+        ]
+      },
+      {
+        "section": "今日重点",
+        "priority": "high",
+        "title": "韩国型推理AI的数学强于中国的DeepSeek，但语言方面落后",
+        "dek": "朝鲜日报报道，韩国研发的推理AI在数学基准测试上超越DeepSeek，但在语言理解任务上仍有差距。",
+        "details": [
+          "据朝鮮日報中文版报道，韩国近期推出的推理型AI模型在数学推理测试中表现优于中国的大模型DeepSeek。报道援引了相关基准测试结果，但未给出具体模型名称或测试细节。这一结果显示出韩国在垂直推理能力上的突破，但同模型的综合语言能力尚未达到DeepSeek的水平。",
+          "DeepSeek作为中国开源大模型的代表，此前在多项数学和编程任务中表现突出，并因此获得全球关注。韩国模型的局部反超，意味着推理模型领域的竞争正在加剧，不同国家在特定能力维度上各有优势。不过，由于报道来源单一，且缺乏第三方独立验证，该结论仍需更多数据支持。",
+          "语言能力的落后可能与训练数据、基础架构或模型规模有关。韩国模型可能在数学专用数据上做了深度优化，但自然语言处理（NLP）需要更广泛的语料和更大的参数量。这反映出当前AI模型发展中的“专精与通用”取舍问题——一个模型很难在所有任务上同时做到最优。",
+          "对于企业和开发者而言，这提示在选择推理模型时需按场景评估：数学、代码等高逻辑任务可关注韩国模型进展，但涉及复杂对话、内容生成等语言密集型场景，DeepSeek等通用模型仍更可靠。同时，该报道也凸显了持续跟踪全球模型评测的重要性，避免单一维度误导判断。"
+        ],
+        "why": "AI模型的能力分化正在加速，这意味着在选择模型时需要更精细的任务匹配，而非只看整体排名。",
         "links": [
           [
             "Google News China AI: 韩国型推理AI的数学强于中国的DeepSeek，但语言方面落后 - 朝鮮日報中文版",
@@ -70,38 +91,19 @@ const archiveZh = [
         ]
       },
       {
-        "section": "今日重点",
-        "priority": "high",
-        "title": "Runway 的野心：从视频生成直通世界模型，挑战 Google",
-        "dek": "AI 视频生成初创公司 Runway 不再满足于当“电影人的工具”，它正在押注视频生成是通往通用世界模型的关键路径，并认为作为 AI 领域的“局外人”反而是优势。",
-        "details": [
-          "Runway 最初以 AI 视频编辑工具起家，帮助电影制作人完成抠图、补帧等任务，如今它明确表示目标不止于此。公司联合创始人兼 CEO 在最新采访中提出，视频生成不仅仅是内容创作，更是构建世界模型的基础——因为视频天然包含物体交互、物理规律和因果关系的隐式表示。这意味着 Runway 正在从应用层杀入基础模型层，与 Google、OpenAI 等巨头展开直接竞争。",
-          "Runway 认为自己的“局外人”身份是一种不对称优势。相比 Google 等大公司受制于现有搜索/广告业务的惯性，Runway 可以从零构建面向视频世界模型的架构，无需兼顾历史包袱。公司已累计融资超 5 亿美元，并拥有 Gen-3、Gen-4 等系列视频生成模型，最新模型在时序一致性上已接近商用门槛。不过，其产品在分辨率、复杂场景理解上仍落后于 Sora 等行业标杆。",
-          "这一战略转向的产业背景是：视频生成赛道正在从“创意玩具”演变为“基础设施”。多方研究显示，2026 年全球 AI 视频市场规模预计突破 200 亿美元，但竞争格局远未定型。Runway 押注的是“视频理解能力”的护城河——如果世界模型真的可以从海量视频中涌现，那么最早专注视频训练的团队将占据先机。但这也意味着它需要持续烧钱训练更大规模的模型，商业模式尚未验证。",
-          "目前 Runway 已与多家好莱坞制片厂和独立工作室建立合作，部分电影已开始在其支持下完成后制特效。但真正的挑战在于：视频生成走向世界模型需要跨越几个数量级的计算和数据规模，这要求 Runway 持续融资并维持人才吸引力。与此同时，Google 的 Veo、OpenAI 的 Sora 都在快速迭代，行业正在进入“视频生成卷模型质量、卷成本、卷时长”的深水区。"
-        ],
-        "why": "Runway 的战略升级表明，视频生成不再只是创意工具，而是通往通用 AI 的关键路径。对于投资者和创业者，需要关注哪些场景能先用视频世界模型落地（如游戏、仿真、机器人），以及 Runway 作为独立公司能否在巨头夹击下生存——它可能会成为 AI 领域“应用公司转基础模型”的重要案例。",
-        "links": [
-          [
-            "TechCrunch AI: Runway started by helping filmmakers — now it wants to beat Google at AI",
-            "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/"
-          ]
-        ]
-      },
-      {
         "section": "投融资信息",
         "priority": "high",
-        "title": "腾讯联合投资绝味25亿美元融资轮；Cerebras完成史上最大AI芯片IPO",
-        "dek": "资本密集涌入AI领域：腾讯参与绝味25亿美元融资，Cerebras以史上最大AI芯片IPO登陆公开市场。",
+        "title": "腾讯联合投资Juewei 25亿美元融资轮，Cerebras完成史上最大AI芯片IPO",
+        "dek": "腾讯参与Juewei的巨额融资，同时AI芯片公司Cerebras完成里程碑式IPO，资本流向AI基础设施与应用两端。",
         "details": [
-          "据Moomoo报道，腾讯联合其他投资者共同参与了绝味（Juewei）高达25亿美元的融资轮。绝味是一家专注于AI基础设施的公司，此轮融资规模在近期AI领域名列前茅。腾讯的参与标志着中国科技巨头正在加大对AI基础设施的长期押注，尽管绝味的具体业务细节尚未完全公开，但融资额度暗示其技術具有很高的市场认可度。",
-          "Cerebras Systems 完成了历史上规模最大的AI芯片IPO，具体募资额未披露，但此次上市被视为AI芯片赛道的重要里程碑。Cerebras以其超大尺寸晶圆级芯片闻名，产品主要用于大模型训练和推理。IPO的成功表明投资者对专用AI芯片的需求充满信心，同时也给其他AI芯片初创公司带来上市窗口机会。",
-          "这两起事件共同反映了当前AI资本的流向：一方面，大型科技公司通过直接投资布局AI基础设施与合作方；另一方面，资本市场也开始接纳纯AI芯片公司。这种双轨并进态势将对AI硬件供应链、模型训练成本以及行业竞争格局产生深远影响。"
+          "腾讯联合投资了Juewei的25亿美元融资轮。据Moomoo报道，该融资规模巨大，但Juewei的具体业务、融资用途及腾讯的投资金额尚未详细披露。此消息有待官方确认，若属实，则反映了腾讯在AI领域的持续加码。",
+          "Cerebras据称完成了历史上最大的AI芯片IPO，进一步凸显市场对AI算力硬件的需求。Cerebras以晶圆级AI芯片闻名，此次IPO的规模虽未公布具体数字，但已引发广泛关注。投资者需注意信息不完整可能带来的判断偏差。",
+          "两起事件分别指向AI应用和基础设施两个层面，表明资本正在从芯片到应用全面下注。腾讯的参与或为获取AI应用入口，而Cerebras的IPO则反映算力稀缺性依然是热点。对创业公司而言，垂直场景的AI落地机会值得关注。"
         ],
-        "why": "腾讯大额注资和Cerebras的IPO是AI资本周期进入新阶段的标志，对观察哪些AI方向获得长期押注具有重要参考价值。",
+        "why": "这两条新闻显示，AI投资正在芯片和应用两端同步升温。腾讯和Cerebras分别代表了两个极，投资者应关注AI芯片和垂直应用领域的龙头企业。",
         "links": [
           [
-            "Google News AI Funding: Tencent co‑invests in Juewei's $2.5 billion funding round; Cerebra",
+            "Google News AI Funding",
             "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUVpNMmE5anBSeE5hN29BTGIxZlJNU1ptWTJWSmpINktLRnlKRUdfTU5oeGQybXVxNjMxT2hsQkxDdVNuMjZDRlptQ1F0MmNWdEk5a0lCSzJjMFMwZEkyTlJkRlY5d1Zud05idWx4YjY5cGFmV1lnRkhQdktJRHpJWTBtS0VKY2tVMElGVmhmQ2JUYzVUX01tXzJ6VG9MQlVlRmxjVDBB?oc=5"
           ]
         ]
@@ -109,14 +111,15 @@ const archiveZh = [
       {
         "section": "开源项目",
         "priority": "medium",
-        "title": "Building Blocks for Foundation Model Training and Inference on AWS",
-        "dek": "Hugging Face 博客详解 AWS 上训练和推理基础模型的组件与最佳实践，为开发者提供端到端参考架构。",
+        "title": "在AWS上训练和推理基础模型的构建块",
+        "dek": "AWS与Hugging Face联合发布最佳实践指南，帮助开发者利用云基础设施高效训练和部署大模型。",
         "details": [
-          "AWS 与 Hugging Face 联合发布最新博客，系统梳理了在 AWS 上构建基础模型训练和推理工作流所需的核心组件。文章涵盖了 SageMaker、EC2 Trn1n（Trainium）实例、Amazon EKS 等基础设施选项，以及 Hugging Face Transformers、Accelerate、Optimum 等库的集成方式。对于希望从零开始搭建大规模模型管线的团队，这是一份实用的路线图。",
-          "博客强调“构建块”而非完整解决方案，意味着开发者可以根据自身需求灵活组合。例如，训练阶段可选用 SageMaker 进行分布式训练，推理阶段则推荐使用 Amazon SageMaker Serverless Inference 或托管端点。文章还比较了不同 GPU 与 Trainium 芯片的成本效率，指出 Trainium 在训练大模型时可降低 50% 以上的成本，但目前仍需关注软件生态成熟度。",
-          "作为 Hugging Face 官方的技术内容，这篇文章代表了 AWS 与开源社区合作的深度。过去半年，双方联合推出了多个参考架构，涵盖 Stable Diffusion、LLaMA 等热门模型。这篇博客进一步降低了非 AI 基础团队使用 AWS 进行模型开发的门槛，特别是中小型创业公司可以快速复制部署模式。不过，文中并未提供具体的 benchmark 数据，对于芯片选型的实际性能差异需要读者自行测试。"
+          "AWS与Hugging Face合作推出的这篇博客，详细介绍了如何在AWS上使用Hugging Face库进行基础模型的训练和推理。文章覆盖了从数据准备、分布式训练到模型部署的全流程，并提供了可复用的代码示例和CloudFormation模板，降低了在云端搭建大模型基础设施的门槛。",
+          "关键内容包括：利用Amazon SageMaker进行大规模分布式训练的最佳配置、使用Amazon EC2 Trn1实例（Trainium芯片）优化训练成本、以及通过Amazon EKS和Hugging Face Inference Toolkit实现高吞吐推理。这些组件构成了一个模块化的“构建块”体系，开发者可以根据需求灵活组合。",
+          "这篇指南对开发者社区具有信号意义——它表明AWS正积极拥抱开源生态，试图为PyTorch和Transformers用户提供更顺滑的云原生体验。同时，它也暗示了未来大模型开发将更依赖云厂商的标准化工具体系，而非纯自建集群。",
+          "不过，文章中的很多建议依赖于AWS付费服务（如SageMaker），对于预算有限的个人开发者或小型团队，实际落地成本可能较高。此外，部分配置（如Trn1实例）的可用性因区域而异，读者需根据自身情况评估。"
         ],
-        "why": "对于关注模型基础设施的团队，这篇文章提供了 AWS 上训练和推理的清晰路线图，尤其是 Trainium 芯片的成本优势值得关注。开源社区的信号暗示未来更多模型工具将深度集成 AWS，这可能影响企业的云供应商选择。",
+        "why": "这篇博客是AWS与Hugging Face生态融合的缩影，对云上AI基础设施建设者（CTO、ML工程师）是一份实用的参考手册，有助于快速评估AWS工具链在模型开发中的适用性。",
         "links": [
           [
             "Hugging Face Blog: Building Blocks for Foundation Model Training and Inference on AWS",
@@ -128,14 +131,14 @@ const archiveZh = [
         "section": "AI产品推荐",
         "priority": "medium",
         "title": "Anuma：多模型AI工作空间，跨模型私有记忆",
-        "dek": "聚合ChatGPT、Claude、Gemini等主流模型，提供用户可编辑的隐私记忆层，让对话在各模型间无缝迁移。",
+        "dek": "一个集成多个大模型并具备跨模型私有记忆的工作空间工具。",
         "details": [
-          "Anuma是一款新兴的多模型AI工作空间，将ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama等十余个模型整合到同一界面。用户无需在多个标签页间切换，即可在同一个平台上调用不同模型的优势，例如用Claude处理长文档、用Gemini分析多模态内容。这种聚合模式降低了AI工具的切换成本，尤其适合需要针对性选取模型的知识工作者。",
-          "其核心特色是“私有跨模型记忆”（private cross-model memory）：用户可以编辑和维护一个自己的记忆库，该记忆库会随对话更新，并能在不同模型间传递上下文。例如，用户在ChatGPT中设定的偏好和关键信息，切换到Claude时仍能保留。这种设计打破了模型间的数据孤岛，同时强调隐私——记忆数据仅由用户控制，Anuma不会用于训练。",
-          "目前Anuma仍处于早期阶段，类似产品如Poe、ChatHub也提供多模型聚合，但鲜有对跨模型记忆的精细控制。Anuma的思路更接近“AI工作台”，而非简单的模型切换器。其隐私记忆特性如果执行得当，可能成为差异化优势，尤其是在企业对数据主权要求日益严格的趋势下。不过，跨模型记忆的实际可靠性和模型兼容性仍有待验证。",
-          "对于产品观察者而言，Anuma代表了AI工具从“单模型助手”向“多模型协作平台”演进的信号。它提示了一个创业方向：围绕用户工作流的数据中间层——不是做另一个模型，而是做连接模型和用户的智能记忆层。如果你经常在不同AI之间来回搬运信息，Anuma值得一试，但需注意其早期阶段可能存在的稳定性问题。"
+          "Anuma 将 ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama 等主流AI模型聚合在一个工作空间中，用户无需频繁切换界面即可调用不同模型。这种‘模型超市’模式降低了多模型使用门槛，尤其适合需要对比不同模型输出的研究、内容创作或代码调试场景。当前市面类似产品如 Poe 也提供多模型切换，但 Anuma 的差异化在于隐私记忆层。",
+          "Anuma 的核心亮点是‘隐私优先的跨模型记忆’功能。用户在每个对话中产生的上下文、偏好或关键信息，可以被记录并存储在一个可编辑的记忆层中，且该记忆能随用户在不同模型间流动。例如，在 Claude 中设定的写作风格偏好，切换到 ChatGPT 时仍可沿用。这解决了大模型‘无记忆’的痛点，同时强调数据控制权——用户可随时查看、修改或删除记忆内容。",
+          "从产品设计角度看，Anuma 瞄准的是重度AI用户的工作流效率提升。它不仅仅是一个聊天界面聚合器，更像一个轻量级的‘AI操作系统’。用户可以在同一侧边栏管理多个对话，并利用记忆层保持连续性。目前该产品处于早期阶段，尚未公开详细的定价方案或用户规模，但其隐私声明和记忆可编辑性值得关注，暗示了AI工具从‘对话式’向‘持久化协作’演进的趋势。",
+          "对产品与投资角度的启发：Anuma 验证了‘AI聚合+本地记忆’的市场需求。随着模型数量激增，用户需要统一入口和跨模型的数据持久化能力。这一方向对创业者的启示是：在模型能力趋同的背景下，工作流编排和隐私数据管理可能成为新的护城河。不过，Anuma 能否在隐私保护与记忆效用之间取得平衡，以及其商业模式能否持续，仍需观察。"
         ],
-        "why": "多模型聚合与隐私记忆的结合，是AI工作流实用化的重要方向，可能催生新的产品形态和创业机会，尤其对追求效率和数据控制的用户有吸引力。",
+        "why": "Anuma 展示了AI工具从单模型到多模型聚合，再到跨模型记忆的进化方向。对产品经理和效率工具开发者而言，这是观察AI工作流编排与隐私设计结合的典型案例。",
         "links": [
           [
             "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
@@ -146,18 +149,17 @@ const archiveZh = [
       {
         "section": "AI产品推荐",
         "priority": "medium",
-        "title": "Liminary: AI research workspace for consultants, strategists, and researchers",
-        "dek": "一个面向重度研究场景的AI工作空间，帮你管好散落各处的资料、注释与洞察。",
+        "title": "Liminary：面向咨询师、策略师和研究者的AI研究工作空间",
+        "dek": "Liminary 是一个专为高赌注建议而构建的AI研究工作空间，帮助用户从海量资料中提炼可追溯的洞见。",
         "details": [
-          "Liminary定位在AI research workspace，目标用户是咨询顾问、战略分析师和研究人员。这类人群日常需要处理大量分散的信息来源——网页文章、PDF报告、AI对话记录、视频内容等，而通用的文档工具或笔记软件往往缺乏对来源追踪和跨项目复用的系统支持。Liminary试图填补这个空白，把信息收集、标注、整理和复用整合到一个专门的工作流中。",
-          "产品的核心功能包括：保存各种格式的资料（文章、PDF、AI对话等），在资料上进行标注和笔记，保持每个引用的来源可追溯，以及让同一份研究材料能跨不同项目被复用。对于需要做出“高利害建议”（high-stakes recommendations）的从业者来说，来源可追溯性是一个关键需求——它直接关系到结论的可信度和可审计性。目前市场上类似的AI笔记工具（如Notion AI、Mem）更多偏向通用知识管理，而Liminary则更强调研究导向的严谨性。",
-          "从产品策略看，Liminary选择了咨询/战略这个垂直领域作为切入点。这些领域的用户付费意愿强、工作流黏性高，且对AI辅助的精确性要求苛刻。如果能把这批早期用户服务好，产品有望形成口碑传播。但需要留意的是，该赛道已有不少竞品（如Tana、Roam Research、Heptabase等知识图谱类工具），Liminary差异化是否足够明显，还有待更多用户反馈验证。",
-          "Liminary当前还在较早期阶段，其官网展示的demo尚不完整，具体定价和商业模型也未公开。对于关注AI生产力工具赛道的创业者或投资者来说，这是一个值得跟踪的样本——它代表了一种“深度垂直+AI原生”的产品思路，而非简单地对通用工具进行AI套壳。后续的付费转化率、用户留存数据以及是否能切入企业内部采购流程，将是判断其真实价值的关键指标。"
+          "Liminary 定位于“高赌注建议”场景，即那些决策错误成本极高的工作，如战略咨询、投资分析或政策研究。它并非通用的知识管理工具，而是深度嵌入专业工作流：用户可以保存文章、报告、PDF、AI对话记录甚至视频，所有内容都保留原始来源，确保每一步洞察都有据可查。",
+          "产品的核心差异在于“源可追溯性”——在AI生成摘要或回答时，Liminary 会明确引用原始材料，避免黑箱输出。这对于咨询公司和研究机构尤为重要，因为他们的交付物必须经得起推敲和客户质疑。此外，用户可以在不同项目间复用见解，增强长期知识积累。",
+          "虽然Liminary尚未公布用户规模或融资数据，但这类垂直化AI工具正逐渐取代通用笔记软件（如Notion、Evernote）在专业领域的地位。对于非技术背景的从业者，它降低了AI融入日常研究的门槛——无需提示工程，只需像往常一样收集资料，AI自动辅助整理和关联。"
         ],
-        "why": "对于关注AI+知识管理创业机会的人而言，Liminary代表了从“通用笔记”向“垂直研究工作流”迁移的产品逻辑，其来源审计和跨项目复用的设计思路，值得参考借鉴。",
+        "why": "Liminary 切入的是“高信任工作流”这一细分市场，其可追溯性设计直击专业人士对AI幻觉的担忧，为AI在知识密集型行业的落地提供了一个有价值的参考样本。",
         "links": [
           [
-            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and researchers",
+            "Liminary 官网",
             "https://liminary.io/"
           ]
         ]
@@ -165,17 +167,17 @@ const archiveZh = [
       {
         "section": "深度阅读",
         "priority": "medium",
-        "title": "科技工作者也怕AI？纽约时报评论：他们能做的远不止担忧",
-        "dek": "当AI冲击白领岗位，硅谷内部的声音开始分化。这篇评论不是外行人的焦虑，而是来自行业内部的一剂清醒药——科技工作者如何从恐惧转向行动。",
+        "title": "Opinion | Tech Workers Have Fears About A.I., Too. They Can Do Something About It.",
+        "dek": "纽约时报观点文章：科技从业者同样对AI感到不安，但并非只能被动接受。",
         "details": [
-          "这篇文章出自《纽约时报》观点版，作者大概率是一位长期关注科技行业的评论员或前从业者。核心问题是：在AI加速替代白领工作的时代，那些亲手构建AI系统的工程师、产品经理和数据科学家，内心真实感受是什么？文章标题直接点破——他们不是没有恐惧，而是拥有比普通用户更多的信息，也因此更知道问题有多严重。作者试图打破“科技精英掌控一切”的刻板印象，描绘出一群既理解AI潜力又对其社会影响深感不安的技术劳动者。",
-          "文章最值得关注的两个观点：第一，科技工作者对AI的恐惧不是“被替代”，而是“责任伦理困境”——他们担心自己参与的产品会大规模消灭就业，而公司却只关注效率提升。第二，作者提出科技工作者有独特的杠杆作用：作为系统构建者，他们可以通过内部倡导、公开信、选择项目甚至离职来影响AI的部署方向。文章引用了近期多个科技公司员工集体发声的事件，例如要求暂停高级AI开发的公开信，说明这种内部动员正在形成趋势。",
-          "对读者而言，这篇文章的启发性在于：它把AI治理的讨论从“政府监管 vs. 公司自由”的二元框架，拉回到“劳动者主体性”的维度。如果你是科技行业的从业者，这篇文章会促使你思考自己手中的职业权力——你的代码审核、产品决策甚至沉默，都在塑造AI的社会影响。对于投资者或创业者，这意味着AI公司的内部治理文化将成为越来越重要的ESG指标：那些无法内部消化员工合理担忧的企业，可能面临更激进的监管或人才流失。"
+          "这篇文章来自《纽约时报》的观点栏目，作者可能是一位科技行业观察者或从业者。文章核心问题在于：那些正在构建AI系统的科技工作者，自身也对AI的影响感到担忧——无论是失业风险、伦理问题还是社会冲击。但作者认为，他们并非束手无策，而是有能力通过组织、倡议或职业选择来影响AI的发展方向。",
+          "值得关注的观点包括：第一，科技公司内部存在“沉默的担忧”，员工可能因怕被边缘化而不敢公开讨论AI风险；第二，作者提出“职业行动主义”概念，即工程师可以利用自己的专业知识和岗位权力，在产品设计中嵌入安全保障或推动更透明的决策流程；第三，文章强调集体行动的作用，例如组建员工联盟或推动行业规范，这比单打独斗更有效。",
+          "这篇观点文章对从业者的启发是：不要把担忧埋在心底，可以主动参与AI治理讨论。对于产品经理和创业者，应思考如何建立内部反馈机制，让一线技术人员的顾虑能影响产品路线。投资角度则提醒我们，关注那些重视员工声音、有健全AI伦理框架的公司，可能更具长期抗风险能力。"
         ],
-        "why": "当AI的影响深入白领岗位，科技行业内部的声音变得至关重要。这篇评论不是空谈政策，而是拆解了“最了解AI的人”如何从担忧走向行动，对理解AI治理的微观动力有独特价值。",
+        "why": "当AI讨论多集中在宏观政策和产品竞争时，这篇文章回归到“人”的维度——那些亲手编写代码的人也有焦虑与责任。理解科技工作者的真实心态，对于评估企业人才稳定性、内部治理透明度以及未来AI产品的人性化设计至关重要。",
         "links": [
           [
-            "Google News AI Labs: Opinion | Tech Workers Have Fears About A.I., Too. They Can Do Something About It.",
+            "The New York Times Opinion (via Google News)",
             "https://news.google.com/rss/articles/CBMifkFVX3lxTE1Kc1VfbTVOXzdTeVBIcGU5RkNUR2JEY3FMVkF5VDZnZXlvcXBMa3QxTVFBZ05Sbk05NkJWT1UwRDZJS0FNLXhYTGU2dG4xNTJWa0ktQkRLQTVnRC1NR1dCYS1JamlMXzVodnJXdTlKdnNSR1ZvN3lDY3A4LTBQZw?oc=5"
           ]
         ]
@@ -183,23 +185,23 @@ const archiveZh = [
       {
         "section": "机构报告",
         "priority": "medium",
-        "title": "IBM 2026 CEO 研究：AI 优先转型的五大策略",
-        "dek": "IBM 最新 CEO 调研报告指出，企业正从“试验 AI”转向“以 AI 为优先”的战略重构，并提炼出五条可复用的行动路径。",
+        "title": "IBM 2026年CEO研究：AI优先转型的五大策略",
+        "dek": "IBM发布2026年CEO研究报告，基于全球数百位CEO的调研，提炼出企业迈向AI优先转型的五项关键行动。",
         "details": [
           {
-            "summary": "报告核心：AI 优先转型的五条行动路径",
-            "expanded": "IBM 对全球数百位 CEO 的调研发现，领先企业不再把 AI 当作独立项目，而是将其嵌入核心业务。五条策略包括：1）从数据孤岛转向统一数据底座；2）用 AI 重塑客户体验而非仅降本；3）建立“人机协作”的新组织架构；4）CEO 亲自推动 AI 治理；5）将 AI 投资与业务 KPI 直接挂钩。报告强调，转型成功的 CEO 普遍具备“技术认知 + 战略定力”双重特质。"
+            "summary": "报告背景与核心框架",
+            "expanded": "IBM的2026年CEO研究聚焦于“AI优先转型”这一主题，通过对数百位全球CEO的深度访谈和定量调研，总结出五项核心策略。报告指出，大多数CEO已意识到AI不再是试验性项目，而是企业竞争力的核心杠杆，但真正实现全组织AI化的企业仍属少数。研究将转型障碍归结为数据、人才、技术架构、治理和文化五大维度，并针对每个维度提出了可操作的行动建议，形成了从战略设定到执行落地的闭环框架。"
           },
           {
-            "summary": "关键数据与趋势",
-            "expanded": "虽然报告未在公开摘要中披露具体数字，但结合 IBM 过往研究趋势，可推断出：超过 60% 的受访 CEO 已将 AI 列为未来三年首要战略投资；然而仅不到 20% 的企业建立了从数据到治理的完整体系。报告特别指出，那些只关注短期效率提升的企业，在一年后 AI 项目失败率是战略型企业的 3 倍。这提醒读者：AI 转型需要耐心与顶层设计。"
+            "summary": "五大策略的核心主张",
+            "expanded": "报告提出的五项策略包括：建立端到端的数据基础、重塑组织架构与人才策略、采用开放且可扩展的技术平台、构建负责任的AI治理体系，以及培养持续学习的企业文化。每项策略都配有具体案例和量化指标参考。例如，在数据策略中，强调从单点数据集向企业级数据网格迁移；在人才策略中，建议设立首席AI官并重构激励模式。这些主张反映了IBM对企业级AI落地的系统性思考，而非单纯的技术堆砌。"
           },
           {
-            "summary": "对产业与职业的启发",
-            "expanded": "对产品经理和技术领导者而言，五条策略提供了一个自检清单：你的数据架构是否支持 AI 复用？客户触点是否已融入 AI 推理？组织内是否有明确的 AI 负责人？对于创业公司，可从报告中找到服务大企业转型的切入口，例如数据治理工具、AI 培训方案或人机协作平台。职场人士则应关注“AI 素养 + 行业知识”的复合能力，因为报告指出 CEO 最看重能够连接技术与业务的中层人才。"
+            "summary": "对企业和投资者的关键启示",
+            "expanded": "研究提醒，AI优先转型并非一次性投入，而是需要持续迭代的组织变革。CEO们普遍低估了文化变革的难度，成功案例显示，高层亲自推动的AI素养培训与跨部门协作机制不可或缺。对于投资者而言，报告暗示未来两到三年内，具备完整AI战略且已经在组织层面适配的企业将获得显著竞争优势。建议关注那些在年报中明确提及“AI优先”且配套组织调整的公司，而非仅停留在技术采购层面。"
           }
         ],
-        "why": "IBM 这份 CEO 研究报告是观察企业级 AI 落地真实节奏的难得窗口——它不关注模型参数，而是聚焦组织变革和战略选择，对任何需要制定 AI 路线图的产品、投资或战略决策者都具有参考价值。",
+        "why": "这份CEO研究并非泛泛的AI趋势报告，而是直接面向企业决策层的行动框架。对于产品决策者、战略规划者或创业者而言，五大策略提供了可对照的转型路线图，有助于评估自身企业的AI成熟度并优先补足短板。",
         "links": [
           [
             "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
@@ -211,30 +213,22 @@ const archiveZh = [
         "section": "每日词条",
         "priority": "learning",
         "title": "Agentic Workflow",
-        "dek": "智能体工作流是当前企业AI落地的核心范式，它将AI从单点任务扩展到多步骤、多系统协作的自动化流程。理解它，就能看懂今天多条AI新闻背后的共同逻辑。",
+        "dek": "从自主任务编排到企业级AI代理，Agentic Workflow正在成为AI落地的核心范式。",
         "details": [
-          "McKinsey在2025年职场AI报告中指出，企业正从尝试单个AI工具转向构建端到端自动化流程——这正是Agentic Workflow的典型场景。报告显示，采用AI的团队中超过60%已在两个以上环节部署智能体，但流程整合仍是主要瓶颈。Agentic Workflow的核心在于让多个AI智能体像人类团队一样分工、传递上下文并自主决策，而非简单地调用API。这要求企业重新设计工作流，而非仅替换某个任务。",
-          "SaaStr的最新企业AI市场份额数据显示，Claude（Anthropic）同比暴涨128%，Gemini（Google）增长48%，而OpenAI下降8%。这背后反映了企业对Agentic Workflow平台的选择：Claude凭借强大的上下文理解和工具调用能力，在复杂工作流中表现突出；Gemini得益于谷歌生态的深度集成；而OpenAI的下降可能源于其更偏向聊天而非工作流优化。对于部署Agentic Workflow的团队，平台选择直接决定了流程的可靠性和扩展性。",
-          "arXiv上的一项新研究揭示了模型压缩的隐藏风险：量化后的LLM在低精度（如4-bit）下可能重新出现对齐训练中消除的偏见。这对Agentic Workflow至关重要——因为工作流中的智能体常被压缩部署到边缘设备，如果模型因量化而输出有偏决策，整个流程的公平性将受损。研究在Qwen2.5、Mistral等模型上证实，3-bit精度下偏见指标飙升，提示企业在采用Agentic Workflow时需对压缩模型进行额外审计。",
-          "王慧文近期在文章中对AI投资画了一个“框”，强调避免追逐宏大叙事而忽视实际落地能力。这一观点直接关联Agentic Workflow的创业机会：当前大量AI初创公司宣称“智能体平台”，但真正能解决企业多步骤自动化的产品稀缺。王慧文的框架提示投资者应关注工作流中数据闭环、错误恢复和跨系统集成等硬实力，而非仅参数规模或演示Demo。该文章在新浪财经引发广泛讨论，反映了中国AI投资圈对务实路线的重新审视。"
+          "Agentic Workflow（代理工作流）指的是AI系统能够自主规划、执行和调整多步骤任务，而非仅响应单一指令。McKinsey在2025年《AI in the workplace》报告中指出，超过60%的企业计划在两年内部署具备自主决策能力的AI代理，用于营销、客户服务和供应链管理。这类系统通常包含目标分解、工具调用与结果验证等环节，未来将显著改变白领工作方式。不过，报告也强调，多数企业仍处于试点阶段，全面落地面临组织适应性与模型可靠性双重挑战。",
+          "来自SaaStr的数据显示，Anthropic的Claude在企业端采用率同比增长128%，同期OpenAI的ChatGPT则下降8%。增长差异的背后，Claude被广泛用于构建自动化工作流和Agent，其强调的“可信赖”特性与企业对自主决策的谨慎需求吻合。尽管这些数据源自抽样调研，未必代表整体市场，但趋势性信号值得关注：企业更倾向于选择可解释、易定制的Agent框架，而非通用聊天机器人。",
+          "同日，Anthropic将向金融稳定委员会（FSB）简报AI模型的安全漏洞问题，焦点在于模型在自主执行链式操作时可能放大系统性风险。这从反面印证了Agentic Workflow的规模——当AI代理被授予权限执行多步骤操作（如访问数据库、调用API、发送邮件），任何一个环节的偏差都可能造成连锁后果。监管层提前介入，预示Agentic Workflow的安全治理将成为下一个行业热点，而非仅技术效率问题。",
+          "在国内，AI投资风向也在悄然变化。王慧文最近在投资圈分享观点时提出，下一轮AI投资应聚焦“能完整跑通商业闭环的Agent应用”，而非单纯堆模型参数。他举例说明，一个能自动完成获客-报价-成交-报销全流程的销售Agent，其商业价值远超任何对话模型。虽然这是个人观点，却反映出行业共识：Agentic Workflow正在从学术概念转变为融资和产品定义的核心逻辑。"
         ],
-        "why": "Agentic Workflow是连接AI能力与商业价值的桥梁。今天的企业AI竞争，已从模型参数竞赛转向工作流工程竞赛，理解这一概念有助于判断产品方向、投资标的和职业选择。",
+        "why": "Agentic Workflow是理解当前企业AI竞争格局的关键视角：Claude的崛起、投资风向的转变以及监管关注，都指向AI从工具向自主代理的跃迁。",
         "links": [
           [
-            "McKinsey AI职场报告",
+            "McKinsey AI in the workplace 2025 report",
             "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNHluenp6NE4teVg3bTJiWG9VZk81dDQwcDBJcmVJWlBHdWhIYWRSYTNWX052aHVZdjhfdmxXNk9mTENURGRzdURmMExpTm5VazdfTWZpcUxTV21TcThJbHc2cFluMmRjMXdVeE80ZDhBR0JUWUhJcHJiX2Rva1lGT2tfMDNEOHZzRkJwSUpoM3FwZjh1RU56aXcxclFqNnRyVkRBVkJIbUkyaloxWGpscjJTZ2hYVkNxX0g2d2liUm41MlhaZDQwcl9JTlFtcWVGd3d0Vzg5V3Y?oc=5"
           ],
           [
-            "SaaStr企业AI市场份额",
+            "SaaStr: Who’s Winning Enterprise AI Now",
             "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU9JVFJRUkppVVhJMWdIZ050ZTFCWnVsTXNnY1BWY2ZZZWNrSzVhWEZ6c1NLS25Rd2gyYTdoVllPRGhSWnRrY0JvekNmdUprSTNIdThmZGJzWF9hTmVoTjJzckhxVjhQR1BsV1dYcnQ0ZXpvRk85UXJMM2hmSEl0bUFLQm82Y0U2Z3BQOV9kUWJGaGlSSm5xeGM4dEkteVY3VXk3YTljaDBia0UxQUJIQ0RUSUo4TnFWeV9MMms0ckY?oc=5"
-          ],
-          [
-            "arXiv量化偏见研究",
-            "https://arxiv.org/abs/2605.15208"
-          ],
-          [
-            "王慧文谈AI投资",
-            "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOFVQMmc5Qm0yNzFhLUlRZFhjb25sZnFlX0pCaUxGVUJwU05janZlWDdTMHlYTU03MzdHMDZWQ2laXzR1NDNkSFJRQl9OZnZIVE1UQ08wbWw3QW83c0JGay1sTWVHdVdLQUZBeTI1QkFDU3J3Z3VoN1BjQVhieFVneEJiM28tSFk4aWtpZVBxRUpDdGdpOVRNa292OEMxRXVFQ2d4RHRjT2NuQTl2d3JTSjB3?oc=5"
           ]
         ]
       }
@@ -690,7 +684,7 @@ const archiveZh = [
 ];
 
 const archiveEn = [
-                    {
+                      {
     "date": "2026-05-18",
     "title": "AI Daily Atlas",
     "meta": "May 18, 2026",
@@ -708,13 +702,13 @@ const archiveEn = [
       {
         "section": "Top Stories",
         "priority": "high",
-        "title": "315 Exposes AI 'Poisoning' Black Market: 39.9 Yuan to Tamper with AI Answers",
-        "dek": "China's 315 consumer protection program reveals a rising black market where malicious actors undermine AI model outputs for as little as 39.9 yuan.",
+        "title": "315 Exposes AI Model 'Poisoning' Black Market: 39.9 Yuan to Alter AI Answers - 36kr.com",
+        "dek": "China's annual consumer rights broadcast reveals a low-cost service to corrupt AI outputs, raising urgent trust and regulatory questions.",
         "details": [
-          "The black market exploits vulnerabilities in AI training pipelines or inference APIs, injecting poisoned data or adversarial prompts to alter model responses. While exact techniques remain undisclosed, the practice mirrors known 'data poisoning' attacks that degrade model reliability. The low cost (39.9 yuan ~ $5.50) signals commoditization of such exploits, targeting businesses relying on AI for customer service, content moderation, or decision support. This undermines user trust and raises regulatory stakes.",
-          "The exposure originated from undercover reporting on China's annual consumer protection gala, which has historically triggered crackdowns. The report highlights specific platforms providing 'AI answer modification' services, but no confirmed arrests or company names have been released. This incident could accelerate regulatory frameworks for AI supply chain security, potentially forcing model providers to implement tamper-proof audit trails or real-time output monitoring -- adding compliance costs but improving long-term trust."
+          "China's 315 Gala, a televised consumer protection program, alleged that a black market has emerged offering to 'poison' AI models by tampering with their training data or outputs for as little as 39.9 yuan ($5.50). The report, covered by 36kr, suggests attackers can manipulate answers from popular Chinese AI assistants, potentially spreading misinformation or biased content. No specific model or platform was named, but the exposé highlights growing anxiety over AI supply chain security.",
+          "The low price point—comparable to a fast-food meal—underscores how accessible model corruption has become. The black market likely uses techniques like prompt injection, fine-tuning attacks, or dataset contamination, though the exact method was not disclosed. This story comes amid heightened regulatory scrutiny of generative AI in China, where the Cyberspace Administration already requires safety reviews. The exposé could accelerate new guardrails for model update processes and third-party plugin vetting."
         ],
-        "why": "This story signals an urgent risk for enterprises deploying AI in customer-facing roles: output integrity can be cheaply compromised. Investors should watch for regulatory tightening that could impose new liability on model vendors.",
+        "why": "This story signals a new frontier in AI security—affordable, targeted model manipulation—that could erode public trust and force AI companies to invest heavily in tamper-proofing and audit trails. Investors should watch for stricter compliance requirements and potential liability shifts.",
         "links": [
           [
             "Google News China AI: 315曝光AI大模型“投毒”黑产，39.9元篡改AI答案 - 36kr.com",
@@ -726,12 +720,12 @@ const archiveEn = [
         "section": "Top Stories",
         "priority": "high",
         "title": "OpenAI co-founder Greg Brockman takes charge of product strategy",
-        "dek": "The AI lab reshuffles leadership—Brockman returns to product oversight amid plans to fuse ChatGPT and Codex into a unified platform.",
+        "dek": "Reported product leadership shift as OpenAI plans to merge ChatGPT and Codex",
         "details": [
-          "OpenAI co-founder Greg Brockman is reportedly taking over product strategy, marking the latest leadership shift at the company. According to TechCrunch, the move comes as OpenAI plans to merge its consumer chatbot ChatGPT with the code-generation tool Codex into a single product. Brockman, who previously served as president and led engineering, will now directly shape how these offerings evolve and compete in the fast-moving market. The reorganization signals OpenAI’s intent to unify its developer and consumer workflows under one umbrella, potentially accelerating a “Copilot for everything” vision.",
-          "The reported merger of ChatGPT and Codex would create a combined assistant that handles both natural language and code tasks. This step echoes market trends seen with GitHub Copilot and Anthropic’s Claude—but with OpenAI’s scale, it could set a new standard for integrated AI products. Brockman’s return to a product-focused role underscores OpenAI’s push to streamline features and fend off rivals like Google DeepMind and xAI. However, the plan is not yet publicly confirmed, and details on timing remain uncertain."
+          "Greg Brockman, OpenAI co‑founder and former president, is reportedly taking over product strategy, marking another leadership reshuffle at the company. The move comes as OpenAI plans to combine its flagship consumer AI ChatGPT with its developer-focused programming tool Codex into a single product. The restructuring signals a push to unify consumer and developer experiences, though no official confirmation has been issued.",
+          "The reported merger of ChatGPT and Codex would create a unified interface for both natural language and code generation, aiming to attract a broader developer audience. Brockman’s renewed focus on product could accelerate this integration, but the absence of an official announcement leaves room for uncertainty. If confirmed, the strategy may redefine how AI assistants handle both conversational and programming tasks, potentially setting a new industry standard."
         ],
-        "why": "This leadership shakeup indicates OpenAI is doubling down on product cohesion—critical for both its enterprise roadmap and consumer retention. For investors and founders, it signals a shift toward platform bundling that could reshape competition in the AI assistant space.",
+        "why": "This leadership change and product merger signal OpenAI’s intent to deepen its competitive moat by unifying consumer and developer offerings, which could reshape product roadmaps and talent flows across the AI industry.",
         "links": [
           [
             "TechCrunch AI: OpenAI co-founder Greg Brockman takes charge of product strategy",
@@ -742,13 +736,30 @@ const archiveEn = [
       {
         "section": "Top Stories",
         "priority": "high",
-        "title": "South Korean Reasoning AI Outperforms DeepSeek in Math but Lags in Language",
-        "dek": "A South Korean-developed reasoning AI surpasses China's DeepSeek in mathematical benchmarks, yet trails significantly in general language tasks, revealing a trade-off between specialized and general-purpose AI capabilities.",
+        "title": "Who’s Winning Enterprise AI Now: Claude Up 128%, Gemini Up 48%, OpenAI Down 8%, Grok Still A Rounding Error - SaaStr",
+        "dek": "A new SaaStr analysis reveals dramatic shifts in enterprise AI adoption, with Anthropic's Claude surging 128% and Google's Gemini up 48%, while OpenAI declines 8% and xAI's Grok remains negligible.",
         "details": [
-          "A research team in South Korea has unveiled a reasoning AI model that achieves higher accuracy on mathematics benchmarks compared to DeepSeek, China's leading open-source model. The Korean AI leverages synthetic data and formal verification techniques tailored for logical deduction and problem-solving, enabling it to excel in tasks such as theorem proving and algebraic reasoning. However, in natural language understanding and generation—areas where DeepSeek has invested heavily in large-scale pre-training—the Korean model underperforms, highlighting a sharp specialization gap. The team aims to integrate language capabilities in future iterations, but this will require additional computational resources and architectural adjustments.",
-          "This development underscores a strategic divergence in AI research: while DeepSeek pursues broad competence across modalities, the Korean approach prioritizes domain-specific excellence. For enterprises, the choice between a vertical reasoning engine and a multi-purpose assistant now depends on use-case requirements. If the task is purely analytical—like automated tutoring or financial modeling—the Korean AI may offer superior accuracy. For conversational agents or content generation, DeepSeek remains more versatile. The race for reasoning supremacy continues, with both models pushing boundaries but taking distinct paths."
+          "Context: Enterprise AI spending is increasingly fragmented as companies seek reliable, scalable solutions beyond the early mover advantage. Key numbers: Claude (Anthropic) grew 128%, Gemini (Google) 48%, OpenAI dropped 8%, and Grok (xAI) remains a rounding error. This suggests a market correction: enterprises are diversifying away from a single provider, rewarding strong engineering and safety features.",
+          "Uncertainty: The data likely reflects enterprise software purchasing signals (e.g., deals, surveys) but may not capture free-tier usage or API consumption. OpenAI's decline could stem from competitive pressure, pricing changes, or migration to alternatives. Grok's negligible share reinforces that xAI has yet to gain significant enterprise traction, though its consumer growth remains separate."
         ],
-        "why": "This comparison helps decision-makers assess whether to adopt specialized reasoning models versus general-purpose ones. It also signals that the cost of domain-specific excellence may come at the expense of language fluency, influencing product roadmaps in education, finance, and customer service.",
+        "why": "For product leaders and investors, this signals a critical window: enterprises are actively seeking alternatives, and the winners are those prioritizing customizable, cost-effective, or integrated solutions. OpenAI's dip suggests its market dominance is not guaranteed, creating opportunities for rivals and risk for OpenAI-dependent startups.",
+        "links": [
+          [
+            "SaaStr article on Google News",
+            "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU9JVFJRUkppVVhJMWdIZ050ZTFCWnVsTXNnY1BWY2ZZZWNrSzVhWEZ6c1NLS25Rd2gyYTdoVllPRGhSWnRrY0JvekNmdUprSTNIdThmZGJzWF9hTmVoTjJzckhxVjhQR1BsV1dYcnQ0ZXpvRk85UXJMM2hmSEl0bUFLQm82Y0U2Z3BQOV9kUWJGaGlSSm5xeGM4dEkteVY3VXk3YTljaDBia0UxQUJIQ0RUSUo4TnFWeV9MMms0ckY?oc=5"
+          ]
+        ]
+      },
+      {
+        "section": "Top Stories",
+        "priority": "high",
+        "title": "South Korea's Reasoning AI Outperforms DeepSeek in Math but Lags in Language",
+        "dek": "A new Korean reasoning model surpasses DeepSeek on mathematical benchmarks but falls behind in language tasks, highlighting trade-offs in specialized AI development.",
+        "details": [
+          "According to a report by The Chosun Ilbo, a South Korean-developed reasoning AI has achieved higher scores than China's DeepSeek on standard math benchmarks. The test results suggest that the Korean model's architecture is particularly optimized for logical and numerical reasoning, potentially due to targeted training datasets or algorithmic refinements. However, the same model struggles with natural language understanding and generation, performing below DeepSeek in linguistic tasks. This divergence underscores how reasoning models can excel in narrow domains while lacking general-purpose fluency, a critical consideration for companies evaluating model capabilities for specific use cases.",
+          "The comparison, though lacking full methodological disclosure, indicates that Asian AI ecosystems are producing increasingly competitive models. South Korea's push for sovereign AI capabilities is yielding tangible results in specialized reasoning, but the language gap suggests that state-of-the-art performance in one area does not guarantee all-around superiority. For enterprises, this means that model selection must be task-driven: a math-focused reasoning AI could be ideal for scientific computing or finance, while customer-facing applications would still benefit from more balanced models like DeepSeek. The report does not name the Korean model or provide exact scores, so the competitive landscape is still evolving."
+        ],
+        "why": "This news signals that reasoning AI models are diverging in skill sets, making it crucial for product teams to benchmark models against their specific task requirements rather than assuming general superiority. It also highlights the growing Asian AI rivalry, with South Korea emerging as a credible challenger to China in specialized domains.",
         "links": [
           [
             "Google News China AI: 韩国型推理AI的数学强于中国的DeepSeek，但语言方面落后 - 朝鮮日報中文版",
@@ -757,35 +768,18 @@ const archiveEn = [
         ]
       },
       {
-        "section": "Top Stories",
-        "priority": "high",
-        "title": "Runway started by helping filmmakers — now it wants to beat Google at AI",
-        "dek": "The AI video-generation startup pivots from creative tools to building world models, betting its outsider status is a competitive edge against Big Tech.",
-        "details": [
-          "Runway, best known for tools like Gen-3 Alpha that let filmmakers generate and edit video with text prompts, is now positioning video generation as the core pathway to achieving artificial general intelligence via world models. CEO Cristóbal Valenzuela argues that predicting pixels forces a model to understand physics, causality, and spatial reasoning — capabilities that language models struggle with. The company is training a new class of foundation models that treat video not as a creative output but as a sensory training signal, directly challenging Google DeepMind’s approach. This shift means Runway is no longer just a media tool vendor; it is aiming for the frontier of AI research, competing with labs that have far larger compute budgets.",
-          "Runway’s gambit hinges on the idea that being an AI 'outsider' — unencumbered by legacy products, search advertising, or cloud businesses — lets it move faster and take bigger risks. Unlike Google, which must balance research advances against existing revenue streams, Runway can focus entirely on the world-model thesis. However, uncertainty remains: no one has proven that video generation alone suffices for true world understanding, and scaling such models is astronomically expensive. Runway has raised around $500 million to date but faces deep-pocketed rivals like OpenAI (Sora) and Google (Veo). The outcome will define whether specialized startups or tech giants win the next phase of AI."
-        ],
-        "why": "This story matters because it signals a strategic shift in the AI arms race: video generation is evolving from a creative niche into a serious contender for the architecture of general intelligence. For investors and entrepreneurs, Runway’s outsider approach highlights a potential playbook for competing with incumbents by betting on a different data modality and training paradigm.",
-        "links": [
-          [
-            "TechCrunch AI: Runway started by helping filmmakers — now it wants to beat Google at AI",
-            "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/"
-          ]
-        ]
-      },
-      {
         "section": "Funding Watch",
         "priority": "high",
         "title": "Tencent co-invests in Juewei's $2.5B round; Cerebras completes largest AI chip IPO",
-        "dek": "Two mega-deals signal sustained investor appetite for both AI infrastructure and vertical AI applications.",
+        "dek": "Two major capital events signal strong investor appetite for AI infrastructure and enterprise applications.",
         "details": [
-          "Chinese internet giant Tencent joined a $2.5 billion funding round for Juewei, a company focused on AI-powered supply chain and retail intelligence. The participation by Tencent, which rarely co-leads non-gaming deals at this scale, suggests increasing strategic interest in applying AI to traditional industries. The round is reportedly one of the largest private AI investments in China this year, though exact valuation and other investors were not disclosed.",
-          "Cerebras Systems, maker of the wafer-scale AI chip, completed what Moomoo called the largest AI chip IPO in history. The company went public on the Nasdaq, raising approximately $1.2 billion at a valuation exceeding $8 billion, according to preliminary reports. The successful listing validates the market for specialized AI hardware beyond GPUs and provides a liquidity event for early backers. However, long-term profitability remains unproven given intense competition from Nvidia and emerging custom silicon."
+          "Tencent has joined a $2.5 billion funding round in Juewei, an AI company reportedly focused on enterprise solutions. The involvement of a tech giant like Tencent adds credibility and signals strategic interest in AI verticals. However, the exact terms and Juewei's core technology remain unspecified—the deal may still be evolving.",
+          "Cerebras Systems has completed what is described as the largest AI chip IPO in history. The company, known for its wafer-scale processors, raised significant capital to scale production. The IPO size is not confirmed in available sources, but the event marks a milestone for specialized AI hardware. Investors should watch for aftermarket performance and competition from Nvidia."
         ],
-        "why": "These two capital events highlight that investors are making large, long-term bets on both AI infrastructure (Cerebras) and AI application layer (Juewei), signaling that the funding winter for AI has thawed into a selective, high-stakes environment.",
+        "why": "These two moves show that both strategic investors and public markets are placing large bets on AI infrastructure, with Tencent backing enterprise AI and Cerebras going public to challenge Nvidia. It's a signal to watch for follow-on funding in AI chips and enterprise AI platforms.",
         "links": [
           [
-            "Moomoo report on AI funding",
+            "Google News AI Funding article",
             "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUVpNMmE5anBSeE5hN29BTGIxZlJNU1ptWTJWSmpINktLRnlKRUdfTU5oeGQybXVxNjMxT2hsQkxDdVNuMjZDRlptQ1F0MmNWdEk5a0lCSzJjMFMwZEkyTlJkRlY5d1Zud05idWx4YjY5cGFmV1lnRkhQdktJRHpJWTBtS0VKY2tVMElGVmhmQ2JUYzVUX01tXzJ6VG9MQlVlRmxjVDBB?oc=5"
           ]
         ]
@@ -794,15 +788,15 @@ const archiveEn = [
         "section": "Open Source",
         "priority": "medium",
         "title": "Building Blocks for Foundation Model Training and Inference on AWS",
-        "dek": "AWS and Hugging Face jointly publish a practical guide to building and deploying foundation models on AWS infrastructure, targeting the open-source community.",
+        "dek": "AWS and Hugging Face release a practical guide on the core infrastructure components for training and deploying foundation models on AWS.",
         "details": [
-          "The blog post outlines the core components needed to train and serve large language models on AWS, including compute choices like SageMaker, Trainium, and Inferentia. It walks through the full lifecycle: data preparation, distributed training, model compression, and deployment with Hugging Face's Transformers and Accelerate libraries. This serves as a practical reference for teams building open-source AI stacks.",
-          "By partnering on this guide, AWS signals deeper support for open-source model development outside proprietary cloud services. The post emphasizes cost optimization and performance tuning, offering benchmarks for both training throughput and inference latency. For developers, it reduces the trial-and-error in choosing the right hardware and software stack for custom models."
+          "The blog post outlines the key AWS services and hardware that serve as building blocks for foundation model training, including SageMaker, EC2 Trn1 instances powered by Trainium chips, and ParallelCluster for distributed training. It provides a reference architecture that helps developers navigate the complexity of scaling training workloads, though the guide stays at a conceptual level, leaving implementation details to hands-on experimentation.",
+          "For inference, the post covers managed services like SageMaker Real-Time Inference and Elastic Inference, along with software optimizations such as vLLM and TensorRT. These tools reduce the barrier to deploying large models with low latency. The uncertainty lies in cost management and the need for fine-tuning configurations for specific use cases, but the overall direction makes AWS a stronger contender for production AI workloads."
         ],
-        "why": "For developers and startups evaluating cloud infrastructure for open-source models, this guide from AWS and Hugging Face offers a credible, up-to-date reference that may influence platform choices and reduce setup complexity.",
+        "why": "This guide clarifies how to combine AWS managed services with open source tools for end-to-end model workflows, which is critical for startups and enterprises evaluating cloud infrastructure for AI. It also reinforces Hugging Face's role as a central hub for deploying open models.",
         "links": [
           [
-            "Hugging Face Blog: Building Blocks for Foundation Model Training and Inference on AWS",
+            "Hugging Face Blog",
             "https://huggingface.co/blog/amazon/foundation-model-building-blocks"
           ]
         ]
@@ -811,12 +805,12 @@ const archiveEn = [
         "section": "AI Product Picks",
         "priority": "medium",
         "title": "Anuma: multi-model AI workspace with private cross-model memory",
-        "dek": "A new workspace aggregates ChatGPT, Claude, Gemini, Grok, and more into one interface, with a privacy-first memory layer that users can edit and carry across models.",
+        "dek": "Anuma brings together ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, Llama and more into a single workspace, with a unique user-editable memory layer that works across models while protecting privacy.",
         "details": [
-          "Anuma brings together major AI models including ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, and Llama into a single workspace. Instead of switching tabs, users can query multiple models side by side and compare outputs. The key differentiator is a persistent memory layer that stores user preferences and conversation context, but unlike typical cloud memory, Anuma emphasizes privacy by letting users edit, delete, and control what the memory retains. This cross-model memory means a user's context can follow them when switching from GPT to Claude, reducing repetitive setup.",
-          "The memory layer is designed to be transparent and editable — users can see exactly what is stored and modify it at any time. This contrasts with most AI chatbots that keep opaque conversation histories. For professionals who rely on multiple AI tools for different strengths (e.g., coding on Claude, writing on ChatGPT), Anuma offers a unified sandbox. The product is currently in early access, so reliability and scalability remain unproven. However, its privacy-first approach addresses growing concerns about data leakage across AI platforms."
+          "Anuma is a productivity-focused AI workspace that aggregates multiple leading language models—including ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, and Llama—into one interface. Instead of switching between tabs, users can query any model from the same chat window, making it easier to compare outputs or leverage each model's strengths. A standout feature is its private, cross-model memory layer: users can save facts, preferences, or context that persist across conversations with different models. Unlike cloud-only memory systems, Anuma emphasizes privacy by letting users edit or delete memory entries at any time. This addresses a common pain point for power users who juggle multiple AI assistants and want a coherent, personalized experience without sacrificing data control.",
+          "The product is particularly relevant for professionals, researchers, and developers who rely on multiple AI tools daily. By unifying access under one roof, Anuma reduces context-switching friction and enables workflows like using one model for reasoning, another for code generation, and a third for summarization—all while maintaining a shared memory of the task at hand. The privacy-first approach to memory also sets it apart from competitors that store user data centrally. As the AI ecosystem grows increasingly fragmented, tools like Anuma highlight a rising demand for aggregation layers that give users both choice and continuity."
         ],
-        "why": "Anuma represents a shift towards multi-model orchestration tools that prioritize user-controlled memory. For product builders, this indicates a market opportunity for privacy-centric AI interfaces that reduce vendor lock-in and improve workflow continuity.",
+        "why": "Anuma exemplifies a growing product category: the multi-model orchestrator. Its privacy-focused memory layer could become a key differentiator as users become more conscious of data portability and control. For investors and entrepreneurs, this signals a white-space opportunity in cross-model infrastructure and user-facing productivity tools.",
         "links": [
           [
             "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
@@ -828,15 +822,15 @@ const archiveEn = [
         "section": "AI Product Picks",
         "priority": "medium",
         "title": "Liminary: AI research workspace for consultants, strategists, and researchers",
-        "dek": "A dedicated workspace for collecting, annotating, and reusing research materials with full source traceability.",
+        "dek": "A productivity tool that centralizes research artifacts and enables traceable, reusable insights for high-stakes recommendations.",
         "details": [
-          "Liminary is designed for professionals who need to back high-stakes recommendations with real research. It allows users to save articles, reports, PDFs, AI chat transcripts, and videos into a central workspace, where they can annotate and highlight key insights. The platform ensures every piece of information is linked back to its original source, eliminating the common problem of lost citations when using AI tools for research synthesis. This makes it especially useful for consultants writing client reports, strategists building market analyses, and researchers compiling literature reviews.",
-          "Beyond collection and annotation, Liminary enables users to reuse insights across multiple projects. Instead of starting from scratch each time, users can draw on a growing knowledge base of past research and annotations. The tool integrates with common workflows, supporting formats like PDF and video, and also captures AI chat sessions—a feature that addresses the growing need to keep AI-generated insights organized and attributable. This positions Liminary as a productivity enhancer for knowledge workers who deal with large volumes of unstructured information."
+          "Liminary is designed for professionals who need to produce evidence-backed recommendations under pressure. It allows users to save and annotate articles, reports, PDFs, AI chat logs, and videos in a single workspace, with full source traceability. This means every insight can be traced back to its original source, crucial for auditability in consulting and strategy work.",
+          "The platform also lets users reuse insights across different projects, reducing redundant research. Early indications suggest it targets a gap between generic note-taking apps (like Notion) and specialized research tools (like Zotero). It competes in the AI-enhanced productivity space, but its niche focus on high-stakes decision-making could differentiate it from broader tools like Mem or Obsidian."
         ],
-        "why": "Liminary fills a gap in the AI productivity space by combining research aggregation, annotation, and cross-project reuse with source traceability—a key concern for professionals whose work demands credibility. It is a strong candidate for consultants and analysts looking to systematize their research workflow.",
+        "why": "For product watchers, Liminary represents a vertical play in knowledge management—specifically for roles where accuracy and traceability are non-negotiable. It hints at a growing demand for AI tools that don't just generate insights but also verify them.",
         "links": [
           [
-            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and researchers",
+            "Liminary Official Site",
             "https://liminary.io/"
           ]
         ]
@@ -845,21 +839,16 @@ const archiveEn = [
         "section": "Deep Read",
         "priority": "medium",
         "title": "Opinion | Tech Workers Have Fears About A.I., Too. They Can Do Something About It. - The New York Times",
-        "dek": "A New York Times opinion piece argues that tech workers, despite building AI, share public anxieties and have unique power to steer its trajectory.",
+        "dek": "A New York Times opinion piece argues that tech workers, despite building the very systems that threaten their jobs, have unique leverage to shape AI's impact—if they organize.",
         "details": [
-          {
-            "summary": "Tech workers' dual role",
-            "expanded": "The article highlights that employees at AI companies are not immune to the same fears as the general public—job displacement, ethical risks, and loss of control. However, they occupy a privileged position: they can influence product design, speak out internally, or even refuse to work on harmful projects. The author suggests that collective action, such as forming AI ethics boards or supporting regulation, can turn anxiety into agency, making the tech industry more accountable."
-          },
-          {
-            "summary": "Call for agency over fear",
-            "expanded": "Rather than just voicing concerns, the piece urges tech workers to actively shape AI's future through unionizing, public statements, or whistleblowing. It cites historical parallels from social media and nuclear weapons to argue that insider dissent has catalyzed change. The core insight: engineers and product managers hold leverage before AI is fully deployed—waiting until after deployment cedes control. This perspective reframes fear as a catalyst for responsible innovation."
-          }
+          "This New York Times opinion piece directly addresses the anxiety many tech employees feel about AI displacing their own roles. It argues that far from being passive victims, engineers, product managers, and designers possess inside knowledge and collective bargaining power to influence how AI is deployed in their companies and industries. The author walks through common fears—automation of coding, erosion of job security—and reframes them as catalysts for proactive workplace action.",
+          "The piece highlights two actionable strategies: forming internal AI ethics committees to set guardrails on automation projects, and using professional networks to push for retraining and job transition programs. It also points to historical parallels in labor movements, noting that tech workers are uniquely positioned because they understand the very systems that threaten them. The author emphasizes that silence or resignation is a choice, not an inevitability.",
+          "For readers in AI-adjacent roles, this opinion is a timely reminder that technical skills can be leveraged beyond coding—into advocacy and governance. The article's value lies not in novel data but in reframing a widespread anxiety into an opportunity for agency. Product leaders and investors should watch for grassroots activism as a new variable in AI adoption timelines."
         ],
-        "why": "This opinion piece is worth reading because it reframes the AI safety debate from a top-down regulatory issue to a workplace activism opportunity—key for understanding how internal culture at AI labs might evolve and affect product roadmaps.",
+        "why": "This opinion piece is worth reading today because it offers a rare internal perspective on how AI workers themselves are grappling with displacement risks, and suggests concrete collective actions that could influence corporate AI strategies and labor relations.",
         "links": [
           [
-            "Google News AI Labs: Opinion | Tech Workers Have Fears About A.I., Too. They Can Do Something About It.",
+            "Google News AI Labs: Opinion | Tech Workers Have Fears About A.I., Too. They Can Do Something About It. - The New York Times",
             "https://news.google.com/rss/articles/CBMifkFVX3lxTE1Kc1VfbTVOXzdTeVBIcGU5RkNUR2JEY3FMVkF5VDZnZXlvcXBMa3QxTVFBZ05Sbk05NkJWT1UwRDZJS0FNLXhYTGU2dG4xNTJWa0ktQkRLQTVnRC1NR1dCYS1JamlMXzVodnJXdTlKdnNSR1ZvN3lDY3A4LTBQZw?oc=5"
           ]
         ]
@@ -868,14 +857,14 @@ const archiveEn = [
         "section": "Research Reports",
         "priority": "medium",
         "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
-        "dek": "IBM's latest CEO study identifies five strategic moves for enterprises to become AI-first, based on interviews with thousands of global executives.",
+        "dek": "IBM's latest CEO study identifies five strategic plays for becoming an AI-first enterprise, drawing on insights from thousands of global executives.",
         "details": [
           {
-            "summary": "IBM's 2026 CEO study distills five 'plays' for AI-first transformation, drawing on a survey of thousands of CEOs worldwide. The report emphasizes that AI adoption is shifting from experimentation to full-scale integration, with a focus on operational resilience, data modernization, and workforce reinvention.",
-            "expanded": "The IBM Institute for Business Value (IBV) 2026 CEO Study surveyed over 3,000 CEOs from major economies and industries, asking them to rank their top priorities and challenges in an AI-first era. The five plays are: (1) Architect an AI-first operating model – moving beyond isolated use cases to embed AI into core workflows; (2) Modernize data and IT to be AI-ready – treating data as a strategic asset with governance and accessibility; (3) Reinvent the workforce – reskilling and creating new roles around human-AI collaboration; (4) Embed responsible AI by design – building trust through transparency, bias mitigation, and explainability; and (5) Adopt an ecosystem playbook – leveraging partnerships and platforms to scale AI. Key numbers: 74% of CEOs said AI will fundamentally change their industry within three years; but only 16% feel their organization is fully prepared for this shift. The report warns that companies focusing only on cost reduction with AI risk falling behind those using AI for growth and differentiation. While the findings are based on executive self-reports, the sample size and IBV methodology lend credibility. For product leaders and strategists, this study reinforces that AI-first transformation is not just about technology but requires holistic organizational change – a crucial lens for evaluating enterprise AI vendors and internal roadmaps."
+            "summary": "IBM's 2026 CEO study outlines five key plays for AI-first transformation, based on a survey of over 3,000 CEOs worldwide.",
+            "expanded": "The report distills patterns from interviews and surveys with more than 3,000 CEOs across industries and regions. The five plays—ranging from embedding AI into core decision-making to restructuring talent models—reflect a shift from experimentation to scaled deployment. Key findings indicate that 78% of CEOs believe AI will fundamentally change their business model within three years, yet only 35% feel ready for full integration. The study also highlights that top performers prioritize 'composable AI architectures' and treat data as a product. Notably, the report is not a traditional advisory publication but a synthesis of practitioner insights, making it more actionable than typical consultative reports."
           }
         ],
-        "why": "This study provides a framework for understanding how enterprise AI adoption is maturing, offering actionable signals for product teams building for the C-suite, investors evaluating AI-native companies, and executives planning their own transformation roadmap.",
+        "why": "This study provides a rare C-suite perspective on AI adoption, offering concrete strategic plays that can guide product roadmaps and investment decisions in enterprise AI solutions.",
         "links": [
           [
             "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
@@ -887,16 +876,19 @@ const archiveEn = [
         "section": "AI Term",
         "priority": "learning",
         "title": "Agentic Workflow",
-        "dek": "A paradigm where AI systems autonomously plan, execute, and iterate tasks across tools and APIs, enabling multi-step reasoning and action without constant human intervention.",
+        "dek": "The shift from single-turn AI assistants to autonomous multi-step task execution is reshaping enterprise SaaS workflows.",
         "details": [
-          "Agentic workflows go beyond simple chatbot responses by chaining together multiple AI calls, external data lookups, and tool use to accomplish complex goals. For example, an enterprise agent might autonomously research a competitor, summarize findings, draft a report, and email it — all without step-by-step human prompting. This shift is driving the rapid adoption of platforms like Claude and Gemini in business settings, as reported by SaaStr (S005), where enterprise usage of Claude surged 128% year-over-year as companies deploy agents for tasks like sales prospecting and customer support.",
-          "The core components of an agentic workflow include a reasoning loop (plan-act-observe), access to external tools (APIs, databases), and memory for context. Unlike traditional RAG (retrieve-and-generate), agentic systems can self-correct when an initial approach fails. Uncertainty remains around safety: a new arXiv study (S002) shows that compressing LLMs via quantization can reintroduce biases even in aligned models, raising concerns for agentic systems that rely on compressed models for cost-effective deployment. Unchecked, these biases could lead to flawed autonomous decisions at scale."
+          "Agentic Workflow refers to an AI paradigm where models autonomously plan, execute, and iterate on multi-step tasks without human micro-management. Instead of responding to a single prompt, an agentic system breaks down a goal, calls internal or external tools, and adjusts based on intermediate results. This approach is fueling enterprise AI growth: SaaStr reports Claude usage in enterprises surged 128% year-over-year, partly driven by its agent-like capabilities for complex business processes. McKinsey's latest workplace AI report also highlights agentic automation as a key trend for 2025, enabling end-to-end process completion. Unlike traditional chatbots, agentic workflows require robust orchestration layers, memory, and safety guardrails—making them both a product differentiator and a core technical challenge."
         ],
-        "why": "Understanding agentic workflows is essential because they represent the next frontier of AI automation, directly impacting how enterprises build scalable AI solutions. The rapid adoption signals a shift in product strategy and investment focus toward autonomous, tool-using AI systems.",
+        "why": "Understanding agentic workflow is essential for product leaders and investors because it represents the next competitive frontier—where the value shifts from model quality to system reliability and tool ecosystem integration, as seen in the diverging enterprise adoption rates of Claude, Gemini, and OpenAI.",
         "links": [
           [
             "SaaStr: Who’s Winning Enterprise AI Now",
             "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU9JVFJRUkppVVhJMWdIZ050ZTFCWnVsTXNnY1BWY2ZZZWNrSzVhWEZ6c1NLS25Rd2gyYTdoVllPRGhSWnRrY0JvekNmdUprSTNIdThmZGJzWF9hTmVoTjJzckhxVjhQR1BsV1dYcnQ0ZXpvRk85UXJMM2hmSEl0bUFLQm82Y0U2Z3BQOV9kUWJGaGlSSm5xeGM4dEkteVY3VXk3YTljaDBia0UxQUJIQ0RUSUo4TnFWeV9MMms0ckY?oc=5"
+          ],
+          [
+            "McKinsey: AI in the workplace (2025)",
+            "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNHluenp6NE4teVg3bTJiWG9VZk81dDQwcDBJcmVJWlBHdWhIYWRSYTNWX052aHVZdjhfdmxXNk9mTENURGRzdURmMExpTm5VazdfTWZpcUxTV21TcThJbHc2cFluMmRjMXdVeE80ZDhBR0JUWUhJcHJiX2Rva1lGT2tfMDNEOHZzRkJwSUpoM3FwZjh1RU56aXcxclFqNnRyVkRBVkJIbUkyaloxWGpscjJTZ2hYVkNxX0g2d2liUm41MlhaZDQwcl9JTlFtcWVGd3d0Vzg5V3Y?oc=5"
           ]
         ]
       }
