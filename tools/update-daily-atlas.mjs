@@ -196,6 +196,47 @@ function relevanceScore(entry) {
   return score;
 }
 
+function entryText(entry) {
+  return `${entry.source || ""} ${entry.title || ""} ${entry.summary || ""}`.toLowerCase();
+}
+
+function isRecentEntry(entry, maxAgeDays) {
+  const timestamp = Date.parse(entry.date) || 0;
+  if (!timestamp) return false;
+  return Date.now() - timestamp <= maxAgeDays * 24 * 60 * 60 * 1000;
+}
+
+function isFundingEntry(entry) {
+  return /funding|raises?|raised|series [a-z]|ipo|acquisition|acquires|valuation|invest|round|融资|投资|估值|并购|上市|收购/i.test(entryText(entry));
+}
+
+function isOpenSourceEntry(entry) {
+  return /github|open[- ]source|hugging face|repo|repository|开源|模型库|代码库/i.test(entryText(entry));
+}
+
+function isProductEntry(entry) {
+  const text = entryText(entry);
+  const hasProductSignal = /product hunt|tool|app|workspace|workflow|memory|assistant|agentmemory|recall|liminary|browser|extension|dashboard|canvas|notebook|automation|插件|应用|产品|工具|工作流|知识管理|浏览器|助手/i.test(text);
+  const isMostlyModelNews = /model|api|benchmark|inference|芯片|ipo|valuation|funding|融资|估值|模型|推理|基准|参数/.test(text)
+    && !/tool|app|product hunt|workflow|memory|assistant|extension|notebook|应用|产品|工具|工作流|知识管理|助手/.test(text);
+  return hasProductSignal && !isMostlyModelNews;
+}
+
+function isReportEntry(entry) {
+  const text = entryText(entry);
+  const hasReportSignal = /report|pdf|index|survey|study|whitepaper|research brief|state of|报告|指数|调研|白皮书|研究报告/.test(text);
+  const title = String(entry.title || "");
+  const staleYear = /\b20(1\d|2[0-5])\b/.test(title) && !/\b2026\b/.test(title);
+  return hasReportSignal && isRecentEntry(entry, 14) && !staleYear;
+}
+
+function categoryCandidates(sourcePack, predicate, limit, excludeIds = new Set()) {
+  return sourcePack.entries
+    .filter((entry) => !excludeIds.has(entry.id) && predicate(entry))
+    .sort((a, b) => (b.score || 0) - (a.score || 0))
+    .slice(0, limit);
+}
+
 function parseFeedEntries(xml, source) {
   const blocks = [
     ...xml.matchAll(/<item\b[\s\S]*?<\/item>/gi),
@@ -501,19 +542,44 @@ function updateAppCacheBust(date) {
 }
 
 function selectionSourcePack(sourcePack) {
+  const used = new Set();
+  const funding = categoryCandidates(sourcePack, isFundingEntry, 8, used);
+  funding.forEach((entry) => used.add(entry.id));
+  const openSource = categoryCandidates(sourcePack, isOpenSourceEntry, 8, used);
+  openSource.forEach((entry) => used.add(entry.id));
+  const products = categoryCandidates(sourcePack, isProductEntry, 12, used);
+  products.forEach((entry) => used.add(entry.id));
+  const reports = categoryCandidates(sourcePack, isReportEntry, 8, used);
+  reports.forEach((entry) => used.add(entry.id));
+  const topStories = categoryCandidates(
+    sourcePack,
+    (entry) => !isFundingEntry(entry) && !isOpenSourceEntry(entry) && !isProductEntry(entry) && !isReportEntry(entry),
+    28,
+    new Set()
+  );
+
+  const compactEntry = (entry) => ({
+    id: entry.id,
+    source: entry.source,
+    title: entry.title,
+    link: entry.link,
+    date: entry.date,
+    summary: String(entry.summary || "").slice(0, 220),
+    score: entry.score
+  });
+
   return {
     date: sourcePack.date,
     timezone: sourcePack.timezone,
     coverage: sourcePack.coverage,
-    entries: sourcePack.entries.map((entry) => ({
-      id: entry.id,
-      source: entry.source,
-      title: entry.title,
-      link: entry.link,
-      date: entry.date,
-      summary: String(entry.summary || "").slice(0, 220),
-      score: entry.score
-    }))
+    methodology: "The script first collects and scores all source leads, then builds section-specific candidate pools. The model must choose from the matching pool instead of moving model/platform news into product picks or stale reports into report picks.",
+    candidatePools: {
+      topStories: topStories.map(compactEntry),
+      funding: funding.map(compactEntry),
+      openSource: openSource.map(compactEntry),
+      products: products.map(compactEntry),
+      reports: reports.map(compactEntry)
+    }
   };
 }
 
@@ -527,6 +593,12 @@ ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请�
 你不能联网浏览；只能使用下面 SOURCE_PACK 中的公开来源条目作为事实基础。不要编造 SOURCE_PACK 之外的链接、融资金额、发布时间或媒体素材。SOURCE_PACK 里的 newsletter / media 只作为雷达线索；公司官网、官方博客、论文、GitHub、Hugging Face、Product Hunt、机构报告、主流媒体来源优先作为确认来源。
 
 重要：换模型不应改变日报目标。你不是在复述 SOURCE_PACK 排名前几条，而是在做“当日 AI 信号编辑”。请横向比较所有来源，按影响力、可信度、对产品/投资/战略/AI落地的启发排序。不要被 Product Hunt、Google News 或单一 feed 的更新时间挤占版面。若同一事件被多源报道，合并成一条并放多个 links。
+SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。你必须从对应 candidatePools 里选题：
+- 今日重点只能从 candidatePools.topStories 选。
+- 投融资信息只能从 candidatePools.funding 选。
+- 开源项目只能从 candidatePools.openSource 选。
+- AI产品推荐只能从 candidatePools.products 选，必须是真正可试用的软件/工具/应用/工作流产品；不要选择纯模型发布、API、芯片、融资或平台战略新闻。
+- 机构报告只能从 candidatePools.reports 选，必须是近期发布的报告/研究/白皮书/指数/深度研究。如果 reports 候选为空，可以把这一栏改成“暂无足够新的机构报告信号”，但不能选旧报告凑数。
 
 选题范围：
 - 中国和美国 AI 公司为主，其他国家为辅。
@@ -538,7 +610,7 @@ ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请�
 - 计划里使用中文 section：今日重点、投融资信息、开源项目、AI产品推荐、机构报告、每日词条。
 - 控制在 10 条：今日重点 4 条；投融资 1 条；开源 1 条；AI 产品推荐 2 条；机构报告 1 条；每日 AI 词条 1 条。
 - 每条 plan item 必须包含 section、priority、titleZh、titleEn、angle、sourceIds。
-- sourceIds 必须引用 SOURCE_PACK.entries 里的 id。每条至少 1 个，重要新闻尽量 2-4 个。
+- sourceIds 必须引用对应 candidatePools 里的 id。每条至少 1 个，重要新闻尽量 2-4 个。
 - 不要在 plan item 里返回 links，脚本会根据 sourceIds 自动补链接。
 - angle 要写明为什么选择它、应该补充哪些上下文、对非技术读者最重要的理解角度，最多 60 个中文字。
 
@@ -552,7 +624,7 @@ ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请�
 机构报告 / Research Reports 的特殊要求：
 - 计划里必须至少包含 1 条机构报告或深度研究文章。
 - 如果 SOURCE_PACK 提供了报告页/PDF/研究文章链接，links 必须包含它。
-- 如果当天没有真正的机构报告，可以选择深度研究文章/官方研究博客/年度报告，但必须明确它不是正式咨询报告，不要硬编 PDF。
+- 如果当天没有真正新的机构报告，可以选择 candidatePools.reports 中的近期研究文章/官方研究博客，但必须明确它不是正式咨询报告；不要选 2025 或更早的旧报告凑数。
 
 选题覆盖要求：
 - 今日重点不要只来自一个来源；优先混合官方/主流媒体/研究社区/中国媒体。
@@ -620,31 +692,47 @@ function linksForSourceIds(sourcePack, sourceIds = []) {
     .map((entry) => [`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]);
 }
 
-function pickEntries(sourcePack, pattern, count, used = new Set()) {
-  const picks = [];
-  for (const entry of sourcePack.entries) {
-    const text = `${entry.source} ${entry.title} ${entry.summary}`;
-    if (used.has(entry.id) || !pattern.test(text)) continue;
-    picks.push(entry);
-    used.add(entry.id);
-    if (picks.length >= count) break;
+function sectionPredicate(section) {
+  if (section === "投融资信息") return isFundingEntry;
+  if (section === "开源项目") return isOpenSourceEntry;
+  if (section === "AI产品推荐") return isProductEntry;
+  if (section === "机构报告") return isReportEntry;
+  if (section === "今日重点") {
+    return (entry) => !isFundingEntry(entry) && !isOpenSourceEntry(entry) && !isProductEntry(entry) && !isReportEntry(entry);
   }
-  return picks;
+  return () => true;
+}
+
+function validatePlanAgainstPools(plan, sourcePack) {
+  const entryById = new Map(sourcePack.entries.map((entry) => [entry.id, entry]));
+  plan.items.forEach((item) => {
+    if (isTermSectionName(item.section)) return;
+    const predicate = sectionPredicate(item.section);
+    const invalidIds = item.sourceIds.filter((id) => {
+      const entry = entryById.get(id);
+      return !entry || !predicate(entry);
+    });
+    if (invalidIds.length) {
+      throw new Error(`Editorial plan item "${item.titleZh}" uses sourceIds outside its section pool: ${invalidIds.join(", ")}`);
+    }
+  });
+  return plan;
 }
 
 function fallbackPlan(date, sourcePack, reason = "") {
   console.warn(`Using fallback editorial plan: ${reason}`);
   const used = new Set();
+  const fallbackReports = categoryCandidates(sourcePack, isReportEntry, 1, used);
   const specs = [
-    ["今日重点", 4, /openai|anthropic|google|deepmind|xai|meta|microsoft|nvidia|deepseek|qwen|minimax|zhipu|kimi|doubao|alibaba|tencent|model|agent|robot|模型|智能体|机器人|发布|上线/i],
-    ["投融资信息", 1, /funding|invest|valuation|round|ipo|acquisition|融资|投资|估值|并购|上市/i],
-    ["开源项目", 1, /github|open source|hugging face|repo|开源|模型库/i],
-    ["AI产品推荐", 2, /product hunt|tool|workflow|memory|agent|app|产品|工具|工作流|知识管理/i],
-    ["机构报告", 1, /report|research|paper|index|survey|study|pdf|报告|研究|论文|指数|白皮书/i]
+    ["今日重点", 4, (entry) => !isFundingEntry(entry) && !isOpenSourceEntry(entry) && !isProductEntry(entry) && !isReportEntry(entry)],
+    ["投融资信息", 1, isFundingEntry],
+    ["开源项目", 1, isOpenSourceEntry],
+    ["AI产品推荐", 2, isProductEntry],
+    ["机构报告", 1, isReportEntry]
   ];
   const items = [];
-  specs.forEach(([section, count, pattern]) => {
-    pickEntries(sourcePack, pattern, count, used).forEach((entry) => {
+  specs.forEach(([section, count, predicate]) => {
+    categoryCandidates(sourcePack, predicate, count, used).forEach((entry) => {
       items.push({
         section,
         priority: section === "今日重点" ? "high" : "medium",
@@ -654,12 +742,26 @@ function fallbackPlan(date, sourcePack, reason = "") {
         sourceIds: [entry.id],
         links: [[`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]]
       });
+      used.add(entry.id);
     });
   });
+
+  if (!fallbackReports.length && !items.some((item) => item.section === "机构报告")) {
+    items.push({
+      section: "机构报告",
+      priority: "low",
+      titleZh: "暂无足够新的机构报告信号",
+      titleEn: "No sufficiently fresh institutional report signal",
+      angle: "今天的公开来源没有出现足够新的机构报告，避免用旧报告凑数。",
+      sourceIds: [],
+      links: []
+    });
+  }
 
   for (const entry of sourcePack.entries) {
     if (items.length >= 9) break;
     if (used.has(entry.id)) continue;
+    if (isFundingEntry(entry) || isOpenSourceEntry(entry) || isProductEntry(entry) || isReportEntry(entry)) continue;
     used.add(entry.id);
     items.push({
       section: "今日重点",
@@ -968,7 +1070,7 @@ async function createIssueWithDeepSeek(date, sourcePack, revisionNote = "") {
   let plan;
   try {
     const planJson = await deepSeekJson(buildSelectionPrompt(date, sourcePack, revisionNote), 3000);
-    plan = normalizePlan(planJson.plan);
+    plan = validatePlanAgainstPools(normalizePlan(planJson.plan), sourcePack);
   } catch (error) {
     plan = fallbackPlan(date, sourcePack, String(error?.message || error));
   }
@@ -982,7 +1084,7 @@ async function createIssueWithOpenAI(date, sourcePack, revisionNote = "") {
   let plan;
   try {
     const planJson = await openAIJson(buildSelectionPrompt(date, sourcePack, revisionNote), 3000);
-    plan = normalizePlan(planJson.plan);
+    plan = validatePlanAgainstPools(normalizePlan(planJson.plan), sourcePack);
   } catch (error) {
     plan = fallbackPlan(date, sourcePack, String(error?.message || error));
   }
