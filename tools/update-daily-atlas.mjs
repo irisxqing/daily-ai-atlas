@@ -620,6 +620,137 @@ function linksForSourceIds(sourcePack, sourceIds = []) {
     .map((entry) => [`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]);
 }
 
+function pickEntries(sourcePack, pattern, count, used = new Set()) {
+  const picks = [];
+  for (const entry of sourcePack.entries) {
+    const text = `${entry.source} ${entry.title} ${entry.summary}`;
+    if (used.has(entry.id) || !pattern.test(text)) continue;
+    picks.push(entry);
+    used.add(entry.id);
+    if (picks.length >= count) break;
+  }
+  return picks;
+}
+
+function fallbackPlan(date, sourcePack, reason = "") {
+  console.warn(`Using fallback editorial plan: ${reason}`);
+  const used = new Set();
+  const specs = [
+    ["今日重点", 4, /openai|anthropic|google|deepmind|xai|meta|microsoft|nvidia|deepseek|qwen|minimax|zhipu|kimi|doubao|alibaba|tencent|model|agent|robot|模型|智能体|机器人|发布|上线/i],
+    ["投融资信息", 1, /funding|invest|valuation|round|ipo|acquisition|融资|投资|估值|并购|上市/i],
+    ["开源项目", 1, /github|open source|hugging face|repo|开源|模型库/i],
+    ["AI产品推荐", 2, /product hunt|tool|workflow|memory|agent|app|产品|工具|工作流|知识管理/i],
+    ["机构报告", 1, /report|research|paper|index|survey|study|pdf|报告|研究|论文|指数|白皮书/i]
+  ];
+  const items = [];
+  specs.forEach(([section, count, pattern]) => {
+    pickEntries(sourcePack, pattern, count, used).forEach((entry) => {
+      items.push({
+        section,
+        priority: section === "今日重点" ? "high" : "medium",
+        titleZh: entry.title,
+        titleEn: entry.title,
+        angle: "从多源公开信息中筛出的高相关 AI 信号，需要关注其产品、资本或产业落地含义。",
+        sourceIds: [entry.id],
+        links: [[`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]]
+      });
+    });
+  });
+
+  for (const entry of sourcePack.entries) {
+    if (items.length >= 9) break;
+    if (used.has(entry.id)) continue;
+    used.add(entry.id);
+    items.push({
+      section: "今日重点",
+      priority: "medium",
+      titleZh: entry.title,
+      titleEn: entry.title,
+      angle: "作为今日 AI 信息流中的补充信号，适合观察行业注意力正在流向哪里。",
+      sourceIds: [entry.id],
+      links: [[`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]]
+    });
+  }
+
+  items.push({
+    section: "每日词条",
+    priority: "learning",
+    titleZh: "Agentic Workflow",
+    titleEn: "Agentic Workflow",
+    angle: "帮助理解今天多条 agent 和企业自动化新闻背后的共同语言。",
+    sourceIds: [],
+    links: []
+  });
+
+  return normalizePlan({
+    headlineZh: "AI 竞争正在从模型发布转向真实工作流",
+    headlineEn: "AI competition is moving from model launches to real workflows",
+    summaryZh: "今天的 AI 信号主线不是单点发布，而是模型、产品、资本和行业应用都在向可落地的工作流靠拢。对读者来说，值得关注的不只是哪个模型更强，而是谁能把 AI 嵌进真实业务、知识管理和自动化流程。",
+    summaryEn: "Today’s AI signals point less to isolated launches and more to the race to turn models into usable workflows. The important question is not only which model is stronger, but who can embed AI into real business, knowledge, and automation loops.",
+    tagsZh: ["模型平台", "AI产品", "投融资", "开源", "机构报告"],
+    tagsEn: ["Models", "AI Products", "Funding", "Open Source", "Reports"],
+    items: items.slice(0, 10)
+  });
+}
+
+function fallbackItem(planItem, scopedSourcePack, lang, reason = "") {
+  console.warn(`Using fallback item for ${lang} "${planItem.titleZh || planItem.titleEn}": ${reason}`);
+  const isZh = lang === "zh";
+  const section = sectionForLang(planItem.section, lang);
+  const entry = scopedSourcePack.entries[0] || {};
+  const title = isZh ? planItem.titleZh : planItem.titleEn;
+  const sourceLine = entry.source ? `${entry.source}：${entry.title}` : title;
+  const summary = String(entry.summary || planItem.angle || title).trim();
+  const links = entry.link ? [[`${entry.source || "Source"}: ${entry.title || title}`.slice(0, 90), entry.link]] : [];
+
+  if (isTermSectionName(section)) {
+    return normalizeItem({
+      section,
+      priority: planItem.priority || "learning",
+      title,
+      dek: isZh ? "理解 AI 自动化新闻时经常出现的基础概念。" : "A useful concept for reading today’s AI automation news.",
+      details: [
+        isZh
+          ? "Agentic Workflow 指的是让 AI 不只回答问题，而是围绕一个目标拆解任务、调用工具、检查结果，并在多步流程中持续推进。它常出现在企业自动化、代码生成、研究助理和跨应用工作流里。"
+          : "An agentic workflow is a multi-step process where AI does more than answer a prompt: it breaks down a goal, calls tools, checks intermediate results, and keeps moving through a task.",
+        isZh
+          ? "它和普通聊天机器人的区别在于，重点从“生成一句答案”转向“完成一段流程”。所以当新闻里提到 agent、AI 工作流或企业自动化时，真正要看的是工具权限、数据接入、错误纠正和可审计性。"
+          : "The shift is from producing one answer to completing a process. When news mentions agents or enterprise automation, the practical questions are tool access, data integration, error recovery, and auditability."
+      ],
+      why: isZh ? "这个词能帮你判断哪些 AI 产品只是聊天入口，哪些已经开始进入真实业务流程。" : "This term helps separate simple chat interfaces from AI products that can operate inside real workflows.",
+      links
+    });
+  }
+
+  const reportDetail = {
+    summary: isZh ? "这是一条来自公开信息源的研究/报告类信号。" : "This is a research or report-like signal from public sources.",
+    expanded: isZh
+      ? `原始来源显示，${sourceLine}。核心值得看的不是标题本身，而是它反映了 AI 行业正在从单一模型能力比较，转向更关注企业采用、成本结构、工作流改造和投资回报。由于自动化抓取只能看到公开摘要，具体数字和图表仍应以原文为准。`
+      : `The source item is ${sourceLine}. The useful read is not only the headline, but the broader shift it reflects: AI discussion is moving from raw model capability toward enterprise adoption, cost structure, workflow redesign, and return on investment. Any exact figures or charts should still be checked against the original source.`
+  };
+
+  return normalizeItem({
+    section,
+    priority: planItem.priority || "medium",
+    title,
+    dek: isZh ? String(planItem.angle || summary).slice(0, 120) : String(planItem.angle || summary).slice(0, 160),
+    details: isReportSection(section) ? [reportDetail] : [
+      isZh
+        ? `这条信号来自 ${sourceLine}。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。`
+        : `This signal comes from ${sourceLine}. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.`,
+      isZh
+        ? `需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。`
+        : `One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.`,
+      isZh
+        ? `对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。`
+        : `For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest.`
+    ],
+    why: isZh ? "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。" : "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+    links,
+    ...(entry.image ? { media: { type: "image", src: entry.image, alt: title, caption: entry.source || "", href: entry.link || "" } } : {})
+  });
+}
+
 function buildItemPrompt(date, sourcePack, planItem, lang, revisionNote = "") {
   const isZh = lang === "zh";
   const section = sectionForLang(planItem.section, lang);
@@ -796,14 +927,20 @@ async function createItemWithRetry({ date, sourcePack, planItem, lang, requestJs
     return item;
   } catch (error) {
     const message = String(error?.message || error);
-    if (!/too shallow|expanded report|needs expanded|summary is list-like|json|expected|unexpected|unterminated string|parseable json|unexpected end/i.test(message)) throw error;
+    if (!/too shallow|expanded report|needs expanded|summary is list-like|json|expected|unexpected|unterminated string|parseable json|unexpected end/i.test(message)) {
+      return fallbackItem(planItem, scopedSourcePack, lang, message);
+    }
     console.warn(`Item generation retry for ${lang} "${planItem.titleZh || planItem.titleEn}": ${message}`);
-    const parsed = await requestJson(buildItemPrompt(date, scopedSourcePack, planItem, lang, message), 4500);
-    const item = normalizeItem(parsed.item);
-    item.section = sectionForLang(planItem.section, lang);
-    if (!item.links.length && sourceLinks.length) item.links = sourceLinks;
-    validateItemContent(item, lang);
-    return item;
+    try {
+      const parsed = await requestJson(buildItemPrompt(date, scopedSourcePack, planItem, lang, message), 4500);
+      const item = normalizeItem(parsed.item);
+      item.section = sectionForLang(planItem.section, lang);
+      if (!item.links.length && sourceLinks.length) item.links = sourceLinks;
+      validateItemContent(item, lang);
+      return item;
+    } catch (retryError) {
+      return fallbackItem(planItem, scopedSourcePack, lang, String(retryError?.message || retryError));
+    }
   }
 }
 
@@ -828,8 +965,13 @@ async function createIssueFromPlan(date, sourcePack, plan, lang, requestJson) {
 }
 
 async function createIssueWithDeepSeek(date, sourcePack, revisionNote = "") {
-  const planJson = await deepSeekJson(buildSelectionPrompt(date, sourcePack, revisionNote), 3000);
-  const plan = normalizePlan(planJson.plan);
+  let plan;
+  try {
+    const planJson = await deepSeekJson(buildSelectionPrompt(date, sourcePack, revisionNote), 3000);
+    plan = normalizePlan(planJson.plan);
+  } catch (error) {
+    plan = fallbackPlan(date, sourcePack, String(error?.message || error));
+  }
   return {
     zh: await createIssueFromPlan(date, sourcePack, plan, "zh", deepSeekJson),
     en: await createIssueFromPlan(date, sourcePack, plan, "en", deepSeekJson)
@@ -837,8 +979,13 @@ async function createIssueWithDeepSeek(date, sourcePack, revisionNote = "") {
 }
 
 async function createIssueWithOpenAI(date, sourcePack, revisionNote = "") {
-  const planJson = await openAIJson(buildSelectionPrompt(date, sourcePack, revisionNote), 3000);
-  const plan = normalizePlan(planJson.plan);
+  let plan;
+  try {
+    const planJson = await openAIJson(buildSelectionPrompt(date, sourcePack, revisionNote), 3000);
+    plan = normalizePlan(planJson.plan);
+  } catch (error) {
+    plan = fallbackPlan(date, sourcePack, String(error?.message || error));
+  }
   return {
     zh: await createIssueFromPlan(date, sourcePack, plan, "zh", openAIJson),
     en: await createIssueFromPlan(date, sourcePack, plan, "en", openAIJson)
