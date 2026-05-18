@@ -418,7 +418,7 @@ function isOpenSourceEntry(entry) {
 function isLowQualityEntry(entry) {
   const text = entryText(entry);
   const title = String(entry.title || "").toLowerCase();
-  return /top\s?\d|top\d|best\s+\d|权威测评|服务商|排行榜|哪家好|bluechip navigator|x\.com|seo|search result optimization|搜索结果优化|蹲守|版本答案|峰会亮点|来现场|报名参会|活动议程|财富号|股吧|股价|短期震荡|国资托底|股权重估|营销基本盘|涨停|概念股|a股|港股|美股|stock pick|price target/i.test(text)
+  return /top\s?\d|top\d|best\s+\d|权威测评|服务商|排行榜|哪家好|bluechip navigator|x\.com|seo|search result optimization|搜索结果优化|蹲守|版本答案|峰会亮点|来现场|报名参会|活动议程|财富号|股吧|股价|短期震荡|国资托底|股权重估|营销基本盘|涨停|概念股|a股|港股|美股|stock pick|price target|315曝光|315晚会|3[·.]15|消费者权益日/i.test(text)
     || title.length > 220;
 }
 
