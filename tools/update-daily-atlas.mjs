@@ -302,7 +302,8 @@ function normalizeLinks(links = []) {
 }
 
 function normalizeDetails(details = []) {
-  return details
+  const detailList = Array.isArray(details) ? details : [details];
+  return detailList
     .map((detail) => {
       if (typeof detail === "string") return detail;
       if (detail && typeof detail === "object") {
@@ -764,6 +765,7 @@ async function createIssueFromPlan(date, sourcePack, plan, lang, requestJson) {
   };
 
   for (const planItem of plan.items) {
+    console.log(`Generating ${lang} item: ${planItem.section} / ${planItem.titleZh || planItem.titleEn}`);
     const item = await createItemWithRetry({ date, sourcePack, planItem, lang, requestJson });
     item.section = sectionForLang(planItem.section, lang);
     item.priority = item.priority || planItem.priority || "medium";
