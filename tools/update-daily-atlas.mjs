@@ -266,7 +266,6 @@ async function createIssue(date) {
         }
       ],
       tool_choice: "auto",
-      text: { format: { type: "json_object" } },
       max_output_tokens: 14000,
       input: buildPrompt(date)
     })
