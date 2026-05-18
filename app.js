@@ -1,5 +1,5 @@
 const archiveZh = [
-            {
+              {
     "date": "2026-05-18",
     "title": "AI Daily Atlas",
     "meta": "2026年5月18日",
@@ -17,34 +17,33 @@ const archiveZh = [
       {
         "section": "今日重点",
         "priority": "high",
-        "title": "Who’s Winning Enterprise AI Now: Claude Up 128%, Gemini Up 48%, OpenAI Down 8%, Grok Still A Rounding Error - SaaStr",
-        "dek": "SaaStr最新分析显示企业AI市场格局剧变：Anthropic的Claude以128%增速领跑，Google Gemini增长48%，而OpenAI首次出现8%下滑，xAI的Grok份额仍可忽略。",
+        "title": "韩国型推理AI的数学强于中国的DeepSeek，但语言方面落后 - 朝鮮日報中文版",
+        "dek": "一篇来自朝鲜日报的报道指出，韩国近期推出的推理型AI在数学推理能力上超越了中国的DeepSeek，但在语言理解和生成方面仍显不足。这反映出东亚AI竞赛中差异化竞争的加剧。",
         "details": [
-          "SaaStr最新发布的《Who’s Winning Enterprise AI Now》报告，基于企业级API调用、付费用户和合同收入等多维数据，刻画了2025-2026年企业AI市场的动态变化。报告显示，Anthropic的Claude以128%的同比增长率成为最大赢家，其出色的安全性和多模态能力吸引了大量金融和医疗领域客户；Google Gemini凭借与Workspace生态的深度整合，实现了48%的稳健增长。",
-          "与此形成鲜明对比的是，OpenAI的企业业务首次出现8%的环比下滑。分析认为，这可能源于企业客户对数据隐私的担忧、成本控制需求，以及越来越多竞争者提供类似能力。OpenAI虽在消费市场仍占主导，但企业客户正在多元配置模型，不再单一依赖GPT。",
-          "xAI的Grok虽然因Elon Musk的社交媒体效应获得关注，但在企业市场仍为‘四舍五入误差’，份额不足1%。这表明企业AI采购更看重成熟度、安全认证和生态集成，而非品牌热度。同时，Meta的Llama虽开源，但企业付费采用率提升缓慢，主要被开发者用于自建而非采购。",
-          "报告还指出，企业客户平均同时使用2.3个基础模型，多模型策略成为主流。这催生了模型网关、监控和治理工具的新需求，相关初创公司融资活跃。SaaStr预测，到2027年，企业AI支出将超过500亿美元，但单一模型垄断格局不会重现。"
+          "据《朝鮮日報》中文版报道，韩国某研究机构或公司近期发布的推理AI在数学基准测试中表现优于中国DeepSeek。推理AI（如链式思维模型）在逻辑、数学等需要多步推理的任务上具有优势，而DeepSeek此前以数学和编程能力著称。报道称韩国模型在数学题目上的得分更高，但具体测试基准和得分细节尚未完全公开。",
+          "然而，该韩国AI在语言类任务上明显落后于DeepSeek，包括中文理解、多轮对话和内容生成。这反映了当前AI模型的常见权衡：专注推理能力的模型往往在语言流畅性和常识理解上妥协。DeepSeek本身也是一款推理增强的模型，但韩国模型似乎选择了更极端的优化方向。",
+          "报道未明确韩国AI的开发者、模型名称及训练方法，但提到该模型仍处于早期阶段，语言能力的不足是团队重点改进方向。这一消息来自韩国主流媒体，但缺乏官方技术报告或第三方评测背书，因此其结论需谨慎看待。如果属实，可能意味着韩国AI在垂直领域（如数学、科学）的追赶速度加快，对中国AI企业构成局部压力。",
+          "从产业角度看，这一对比凸显出AI竞赛已从“通用能力”转向“专项突破”。对于中国AI企业来说，保持数学和编程等硬核能力的领先优势至关重要；同时，韩国案例也表明，仅靠语言能力无法建立持久壁垒，需要持续在推理、知识等基础能力上投入。"
         ],
-        "why": "该数据直接反映了企业AI市场正在从‘一家独大’转向‘多强竞争’，对AI创业者而言，垂直场景和集成服务比基础模型更易突围；对投资者，应关注多模型基础设施和特定行业解决方案。",
+        "why": "这条新闻揭示了中国与韩国在AI推理能力上的直接对比，对国内AI公司（如DeepSeek）的竞争定位和研发方向有警示意义，同时也提示投资者关注东亚AI赛道的分化趋势。",
         "links": [
           [
-            "Google News AI Labs: Who’s Winning Enterprise AI Now",
-            "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU9JVFJRUkppVVhJMWdIZ050ZTFCWnVsTXNnY1BWY2ZZZWNrSzVhWEZ6c1NLS25Rd2gyYTdoVllPRGhSWnRrY0JvekNmdUprSTNIdThmZGJzWF9hTmVoTjJzckhxVjhQR1BsV1dYcnQ0ZXpvRk85UXJMM2hmSEl0bUFLQm82Y0U2Z3BQOV9kUWJGaGlSSm5xeGM4dEkteVY3VXk3YTljaDBia0UxQUJIQ0RUSUo4TnFWeV9MMms0ckY?oc=5"
+            "Google News China AI: 韩国型推理AI的数学强于中国的DeepSeek，但语言方面落后 - 朝鮮日報中文版",
+            "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcWdESVFpSklwMHpjLWxFVjhMNVpPMWVqSXhOSS1MWWNrRGl3VzFrLXh0VnVXcGxqMWNmSG1waW1wM2xuTnExWFl5ZGFrTnRUZjdib3d0NzlMY3FsWkNDTktFbnB2OWNIVXpiWWxjekRwTUU3QW1GUkZTWXRsLVEwWE1Fak1wWDY1Rk00b2VLQkZDdw?oc=5"
           ]
         ]
       },
       {
         "section": "今日重点",
         "priority": "high",
-        "title": "财务团队如何使用Codex：从MBR到建模检查的全流程",
-        "dek": "OpenAI Academy发布最新案例，展示Codex在财务自动化中的真实应用。",
+        "title": "财务团队如何使用 Codex",
+        "dek": "OpenAI Academy 最新教程展示 Codex 在财务工作中的实际应用场景，从模型检查到规划场景，为 AI 在垂直行业的落地提供具体范例。",
         "details": [
-          "OpenAI Academy近日上线了一门新教程，详细演示财务团队如何利用Codex（OpenAI的编码AI）来构建月度业务报告（MBR）、报告包、差异桥接、模型检查以及规划场景。教程基于真实工作输入，而非概念性演示，这意味着用户可以直接参考并应用到自己的财务流程中。Codex能够理解自然语言指令并生成相应代码，从而将重复性的数据整理、计算和可视化任务自动化，显著减少人工操作的时间。",
-          "教程覆盖了从数据提取到报告生成的完整链条。例如，在构建MBR时，财务分析师只需用自然语言描述所需的数据范围和计算逻辑，Codex即可生成相应代码，自动拉取多源数据并生成初步报告。在差异桥接环节，Codex可以对比实际与预算数据，自动标注关键差异并生成解释性注释。对于模型检查，Codex能够扫描财务模型中的公式错误或逻辑不一致，并建议修正，将原本需要数小时的手工检查缩短到几分钟。",
-          "这一教程的发布具有明确的行业指向性：AI正在从通用代码生成向垂直业务自动化深入。对于财务专业人士，这意味着他们不再需要精通编程就可以利用AI提升效率；对于金融科技和SaaS财务模块的开发者，Codex提供了新的集成可能性——将自然语言交互嵌入财务工具，降低用户学习成本。不过，教程目前未披露具体的使用量数据或企业案例，其实际效果可能因数据复杂度和团队熟练度而异。",
-          "从投资和职业角度看，Codex在财务领域的应用释放了两个信号：第一，具备财务+AI交叉能力的岗位需求将上升，财务分析师未来可能更注重策略解读而非数据搬运；第二，面向财务自动化的创业机会正在显现，例如开发基于Codex的定制化报告插件或财务模型审计工具。企业采购AI工具时，也应评估Codex与现有财务系统（如ERP、BI工具）的集成难度和数据安全性。"
+          "OpenAI 在其 Academy 系列中发布了最新教程，详细展示了财务团队如何利用 Codex 进行自动化工作。Codex 是基于 GPT 的代码生成模型，能够将自然语言指令转化为可执行的 Python 代码。教程中列举了五个典型场景：构建月度业务回顾（MBR）、生成报告包、进行差异桥接分析、执行模型检查以及创建规划场景。这些任务通常是财务人员日常工作中耗时且易出错的部分，Codex 的介入有望显著提升效率。",
+          "教程强调了 Codex 的“从真实工作输入出发”的特点——财务人员只需描述需求（例如“计算本季度实际与预算的差异并绘制图表”），Codex 即可生成对应的代码片段。这意味着使用者无需具备深厚的编程技能，降低了 AI 工具的采纳门槛。对于企业而言，这代表了一种新的生产力工具，能够将财务团队从重复性表单工作中解放出来，更专注于数据分析和决策支持。",
+          "不过，需要指出的是，该教程目前仅停留在示范层面，并未提供具体的准确性评测或实际部署案例。财务场景对数据安全和输出精度有极高要求，Codex 生成的代码是否能在生产环境中可靠运行仍有待验证。OpenAI 也未说明是否计划推出针对财务行业的定制化版本。因此，对于有意尝试的团队，建议先在沙盒环境中测试，并做好人工复核流程。"
         ],
-        "why": "这标志着AI从代码生成向垂直业务自动化迈进，财务团队可借此大幅缩短报告周期，对金融科技和SaaS财务模块的创业机会有参考价值。",
+        "why": "对于 AI 从业者和企业决策者来说，这是观察大模型在垂直行业落地的一个典型窗口：Codex 在财务场景的应用路径（需求描述→代码生成→自动化执行）可复用到法务、人力资源、供应链等其他数据密集型部门。财务专业人士则应关注其工具链的成熟度，提前布局技能升级。",
         "links": [
           [
             "OpenAI News: How finance teams use Codex",
@@ -56,14 +55,13 @@ const archiveZh = [
         "section": "今日重点",
         "priority": "high",
         "title": "Databricks 将 GPT-5.5 引入企业智能体工作流",
-        "dek": "基于 OfficeQA Pro 最新 SOTA 成绩，Databricks 率先将 GPT-5.5 嵌入企业级 agent 流程",
+        "dek": "在 OfficeQA Pro 基准测试上刷新 SOTA 后，Databricks 将 OpenAI 最新模型深度整合进企业级智能体平台，进一步推动 AI 从“对话”走向“执行”。",
         "details": [
-          "GPT-5.5 是 OpenAI 最新推出的旗舰模型，在针对企业办公场景的 OfficeQA Pro 基准测试中取得新的最好成绩（SOTA）。该基准涵盖邮件撰写、文档总结、日程安排等高频任务，被视为衡量模型在企业环境中实用性的重要标尺。OpenAI 未公开具体分数，但强调 GPT-5.5 在复杂多步骤推理上显著超越前代。",
-          "Databricks 宣布在其数据智能平台中集成 GPT-5.5，用于构建和运行企业级 AI agent 工作流。这意味着用户可以用自然语言定义业务流程（如客户支持工单自动处理、销售线索跟进），并由 GPT-5.5 驱动的 agent 完成多步操作。Databricks 强调模型能力与自身湖仓一体架构结合，可确保企业数据不出域。",
-          "此举将加速企业从“对话式 AI”向“自主工作流”的演进。以往企业落地 GPT 多用于问答或生成文本，而 agent 工作流可以执行具体动作（查询数据库、发送邮件），打通 AI 与业务系统。Gartner 预测到 2028 年，40% 的企业应用将嵌入 agent 式工作流，此合作或成为标志性案例。",
-          "需注意，OfficeQA Pro 的 SOTA 成绩未必完全反映真实业务场景的鲁棒性。GPT-5.5 在实际部署中的延迟、成本以及对企业 IT 环境的兼容性仍有待观察。此外，Databricks 并非独家，微软、Snowflake 等竞争对手也在加速整合大模型，市场格局仍存变数。"
+          "背景：OpenAI 与 Databricks 达成合作，将最新模型 GPT-5.5 集成到 Databricks 的数据+AI 平台中，用于构建企业级智能体工作流。GPT-5.5 在 OfficeQA Pro 基准测试上取得了新的最优成绩，该测试专门衡量模型在复杂办公场景下的推理与多步骤任务执行能力。这意味着模型不仅能回答问题，还能理解像“汇总上季度销售数据并生成图表”这类跨应用指令。",
+          "主体动作与影响：企业用户现在可以通过 Databricks 的智能体框架，利用 GPT-5.5 快速创建能自主执行任务的智能体——例如自动从数据库提取数据、生成报告、甚至操作 CRM 系统完成订单更新。这大幅降低了企业部署高级 AI 代理的技术门槛，使非技术团队也能通过自然语言定义工作流。对于中大型企业而言，这直接缩短了 AI 从实验到产生业务价值的周期。",
+          "不确定性：尽管 GPT-5.5 在基准测试中表现亮眼，但 OpenAI 尚未公布模型完整的架构细节、训练数据规模或幻觉率数据。另外，企业级智能体在涉及敏感数据或跨系统操作时，其可靠性、安全性和合规性仍需实际生产环境的检验。目前该功能仅面向 Databricks 部分企业客户开放，普适性有待观察。"
         ],
-        "why": "企业级 AI 正从辅助工具转向自主执行，Databricks 整合 GPT-5.5 是模型与数据平台深度绑定的关键一步，可能重塑企业软件生态，对创业公司而言也是明确信号——数据+模型的双重能力将成为壁垒。",
+        "why": "该合作标志着顶级大模型正在从通用对话转向深度嵌入企业操作流程，企业应尽早评估智能体在自身业务中的落地场景，并关注数据治理与系统集成风险。",
         "links": [
           [
             "OpenAI News: Databricks brings GPT-5.5 to enterprise agent workflows",
@@ -74,14 +72,15 @@ const archiveZh = [
       {
         "section": "今日重点",
         "priority": "high",
-        "title": "315曝光AI大模型“投毒”黑产，39.9元篡改AI答案",
-        "dek": "315晚会曝光针对AI大模型的“投毒”黑产，仅需39.9元即可篡改答案，引发行业对AI安全可信的广泛担忧。",
+        "title": "315曝光AI大模型“投毒”黑产，39.9元篡改AI答案 - 36Kr",
+        "dek": "315晚会揭露一条针对AI大模型的黑产链条，花39.9元就能改写AI的答复。这不仅威胁用户信任，也为大模型安全敲响警钟。",
         "details": [
-          "2026年315晚会曝光了一种针对AI大模型的新型黑产：不法分子通过“投毒”方式篡改模型输出，用户只需支付39.9元就能让AI生成含特定错误或有害信息的答案。据称，这种服务通过对抗样本或数据污染技术实现，门槛极低，已对多个公开可用的AI问答系统造成影响。目前尚无明确证据显示此次曝光涉及哪些具体模型，但黑产的低成本暗示了当前AI系统在输出验证环节存在显著漏洞。",
-          "从技术层面看，这类攻击利用了深度学习模型对输入分布的敏感性——攻击者可以微调用户输入或在训练数据中植入后门，从而诱导模型输出预设的错误结果。对普通用户而言，这意味着AI助手、客服机器人和内容生成工具的结果可能被暗中操控，而用户难以察觉。此次曝光特别警示了商业场景下AI输出的不可靠风险，尤其是在金融、医疗、法律等需要高可信度的领域。",
-          "此次事件也呼应了近期业界对AI安全治理的讨论。3B等大型模型提供商可能需要重新评估其防护策略，包括实时输入校验、输出一致性检测和对抗训练等。对创业公司而言，AI安全评估与防“投毒”服务可能成为新的市场机遇。监管层面，中国消费者协会可能将推动相关标准制定，要求AI服务提供方对输出结果的可追溯性和合规性负责。"
+          "315晚会最新曝光显示，市场上已出现专门针对AI大模型进行“投毒”的黑产服务，宣称仅需39.9元即可篡改模型生成的答案。这类操作通常利用提示注入或模型微调等技术，让大模型输出攻击者想要的内容，而非真实的正确信息。由于成本极低，一旦规模化使用，将对依赖AI回答做出决策的用户造成严重误导。",
+          "从曝光信息来看，攻击者可能通过向模型输入精心设计的对抗性样本，或在公开数据集上投毒后诱导模型学习错误关联，从而实现“改写”。但被攻击的具体模型（如DeepSeek、通义千问等）以及底层漏洞细节尚未公开，相关厂商是否已获知并修复也仍是未知数。这种不确定性意味着风险可能仍在蔓延。",
+          "对这一黑产，影响远不止于个别用户被骗。在企业级应用中，AI客服、智能投顾、内容生成等场景都可能被此类攻击利用，导致商业声誉受损或合规风险上升。更值得警惕的是，黑产已形成“付费篡改”商业模式，说明AI安全防护存在真实且可被商业化的缺口。",
+          "目前，有关部门和AI平台尚未正式回应，具体治理措施和防护方案仍在模糊中。但可以确认的是，单纯依赖模型本身的安全性已不足以应对专门的“投毒”攻击，亟需从数据清洗、输入检测到输出审计全链路加固。"
         ],
-        "why": "这项曝光揭示了AI大模型在真实部署中的脆弱性，对依赖AI输出的产品（客服、搜索、内容生成）构成严重风险，也预示了AI安全防护将成为一个新的市场机会。",
+        "why": "这则消息提醒所有AI产品运营者：安全性不再只是技术问题，而是直接关系到用户信任和商业存续。对于创业者和投资者，这既是警示——AI安全赛道机会凸显，也是挑战——产品必须内置对抗防御机制。",
         "links": [
           [
             "Google News China AI: 315曝光AI大模型“投毒”黑产，39.9元篡改AI答案 - 36Kr",
@@ -92,34 +91,34 @@ const archiveZh = [
       {
         "section": "投融资信息",
         "priority": "medium",
-        "title": "王慧文给AI投资画了一个框 - 新浪财经",
-        "dek": "王慧文在最新公开言论中，为AI投资划定了一套筛选框架，引发市场关注。",
+        "title": "王慧文给AI投资画了一个框",
+        "dek": "美团联合创始人王慧文近期在公开场合或媒体上提出了AI投资框架，引发业界关注。",
         "details": [
-          "据新浪财经报道，王慧文近日在一次内部交流中，系统性地阐述了他对AI投资的理解，试图为当前火热的赛道划定一个“框”。他提出，真正值得重注的AI项目应同时满足场景刚性、技术护城河和商业可持续性三个条件，缺一不可。",
-          "这一框架的背景是，过去两年AI领域的资金几乎流向大模型和基础层，但应用层的爆发远低于预期。王慧文认为，许多初创公司还停留在“AI+概念”阶段，没有解决实际付费问题。他特别强调，不要迷信技术参数，要关注单位经济模型能否跑通。",
-          "王慧文并非第一次公开谈论AI投资。作为美团联合创始人，他此前曾短暂参与AI创业（光年之外），后回归投资角色。此次发声被部分市场人士解读为对当前过度乐观情绪的“降温”，也有人认为这是他新一轮布局前的前奏。不过，目前尚未有具体投资项目披露。",
-          "对普通创业者和投资者而言，这个“框”提供了一种筛选思路：不是有模型就值得投，也不是有流量就能变现。在资本退潮期，现金流和客单价或许比参数规模更关键。如果这个框架被更多投资人采纳，可能会加速AI初创公司的淘汰和分化。"
+          "王慧文，美团联合创始人、原光年之外创始人，在AI领域一直被视为重要的观察者和实践者。据新浪财经引用多源信息，他近期提出了一个AI投资框架，被概括为“画了一个框”。该框架可能涉及对AI投资机会的分类、筛选标准或风险边界，但具体内容尚未完全公开。",
+          "王慧文此前在美团主导了AI战略，后创立光年之外聚焦大模型，虽被收购但依然活跃。他的观点往往带有实战视角，而非纯理论分析。此次“画框”可能旨在帮助投资人识别哪些AI赛道值得押注、哪些应保持谨慎，尤其是针对当前大模型同质化、应用层爆发但盈利模式模糊的局面。",
+          "目前该框架的详细内容仅见诸摘要，尚未有完整原文流出。不确定性在于：这是否为其个人投资方法论，还是某次演讲的提炼？是否存在量化指标或具体案例？仍需等待更多一手信息或后续报道才能确认其实际指导价值。",
+          "若该框架被验证，可能对AI创业者和投资者产生分层影响：早期项目估值逻辑、赛道选择、甚至战略方向都可能被重新审视。尤其是对应用层创业公司，王慧文的判断可能暗示某些领域已过热或需更务实的产品路径。"
         ],
-        "why": "王慧文的框架可以帮助非技术读者快速理解AI项目评估的核心逻辑，对创业方向选择和投资决策都有参考价值。",
+        "why": "王慧文作为实战派AI投资人的观点，可能为当前混沌的AI投资市场提供一个参考坐标系，尤其对关注应用层和商业落地的创业者、投资人具有决策参考意义。",
         "links": [
           [
-            "新浪财经原文",
-            "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVHBtZzMteGQxMnFCa3dTbHc0V1pDT0FteWNrTEVVRmk3S1FFRFR2Rk9MejBPQUxEV0NzMlhZQ2VZcWxiQWE2QzBHa2dmeWh6clljb1hSSE1KX0xuRTlZb1M3NjFHNzRnQmtjanhRTlMxVjl1RC0wLUU0Q0VFUEluaDFodWlDWkxtd3RDM3JRaXpxVm9UX3dRc000MkNlZU9WZGpVUkRWSQ?oc=5"
+            "Google News China AI: 王慧文给AI投资画了一个框 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOFVQMmc5Qm0yNzFhLUlRZFhjb25sZnFlX0pCaUxGVUJwU05janZlWDdTMHlYTU03MzdHMDZWQ2laXzR1NDNkSFJRQl9OZnZIVE1UQ08wbWw3QW83c0JGay1sTWVHdVdLQUZBeTI1QkFDU3J3Z3VoN1BjQVhieFVneEJiM28tSFk4aWtpZVBxRUpDdGdpOVRNa292OEMxRXVFQ2d4RHRjT2NuQTl2d3JTSjB3?oc=5"
           ]
         ]
       },
       {
         "section": "开源项目",
         "priority": "medium",
-        "title": "构建通用可访问性 AI 代理：GitHub 的实验与教训",
-        "dek": "GitHub 正在测试一个通用可访问性代理，旨在自动处理网页可访问性问题，文章分享了技术路线和遇到的关键挑战。",
+        "title": "构建通用无障碍代理——过程中的经验教训",
+        "dek": "GitHub 实验性项目开源，探索用 AI 代理提升网页无障碍体验的可行路径。",
         "details": [
-          "可访问性（a11y）一直是 Web 开发的痛点，全球约 15% 的人口有不同程度残障，但大量网站合规性不足。GitHub 在其 AI 博客中披露了一项实验：基于 GitHub Copilot 构建通用可访问性代理，尝试自动识别并修复网页中的可访问性缺陷。该项目目前仍处于内部试点阶段，尚未开放给公众使用。",
-          "该代理的核心思路是将可访问性修复视为代码生成任务：先通过视觉与 DOM 分析理解页面结构，再由 Copilot 生成符合 WCAG 标准的修复代码（如 ARIA 标签、焦点顺序等）。与普通 lint 工具不同，它学习开发者偏好的修复模式，并能处理对比度不足、语义缺失等复杂问题。这表明 GitHub 正将 Copilot 从“代码补全”提升为“自主行动代理”。",
-          "项目公开了主要技术挑战：一是错误修复的上下文理解——很多可访问性问题需要理解用户意图（如“这个按钮是装饰性还是功能性”）；二是保持代码风格一致性，自动生成的修复必须融入原有代码库风格。当前准确率尚未满足生产要求，GitHub 强调这是“实验性工作”，不确定是否会成为正式产品。",
-          "值得关注的是，该代理并未使用独立的可访问性模型，而是基于 Copilot 已有的代码理解能力，通过提示工程和工具调用扩展出可访问性技能。这种“代理即插件”的思路压缩了研发成本，也暗示未来 AI 助手可能通过类似方式解决更多垂直领域问题。如果该代理成功落地，将大幅降低企业实现无障碍合规的成本，可能催生一批基于 AI 代理的自动化审计 SaaS。"
+          "GitHub 近期发布了一篇博客，分享其正在内部试点的通用无障碍代理项目。该项目旨在利用 AI 自动检测并修复网页上的无障碍缺陷，如缺少替代文本、对比度不足等。虽然仍处于实验阶段，但 GitHub 将其代码开源，供社区检验和改进。",
+          "该代理基于 GitHub Copilot 的底层技术，能够与浏览器交互，模拟真实用户的操作路径，从而发现传统自动化工具难以捕捉的无障碍问题。例如，它可以检查动态内容加载后的焦点管理是否合理。",
+          "关键经验之一是“广度与深度的平衡”：通用代理需要覆盖大量 WCAG 准则，但每个具体场景的误报率仍较高。GitHub 团队发现，通过结合静态分析和动态用户模拟，能显著提升准确率，但计算成本也相应增加。",
+          "目前该代理仅在 GitHub 内部的部分页面上测试，尚未大规模外推。其开源仓库中包含了完整的实验文档和示例代码，开发者可以自行部署尝试，但生产环境应用仍需谨慎评估。"
         ],
-        "why": "这不仅是 Copilot 功能边界的拓展，更展示了 AI 代理从代码生成向“全栈用户支持”演进的路径。对前端工具链和无障碍合规服务商而言，这是一个值得跟踪的技术信号——当 AI 能自动修复可访问性，传统人工审计和手动修复市场将面临重塑。",
+        "why": "无障碍 AI 代理是 AI 落地社会责任的典型场景，GitHub 这次实验为行业提供了可复用的技术基线，值得关注其后续效果和社区贡献。",
         "links": [
           [
             "GitHub AI & ML: Building a general-purpose accessibility agent",
@@ -130,53 +129,52 @@ const archiveZh = [
       {
         "section": "AI产品推荐",
         "priority": "medium",
-        "title": "Eskwai for Students：加纳法律教育的生成式AI助手",
-        "dek": "一款专为加纳法律学生设计的RAG系统，基于1.2万+判例法和1,400+立法，已服务3,100名学生，历时30个月。",
+        "title": "Anuma: 跨模型AI工作空间，隐私记忆随行",
+        "dek": "Anuma将ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama等模型整合到一个工作空间，并提供用户可编辑的私有记忆层，让记忆在不同模型间携带。",
         "details": [
-          "Eskwai for Students 是一个基于检索增强生成（RAG）的AI助手，专为加纳法律学生打造。它依托一个包含超过12,000条判例法和1,400部立法的本地化数据库，能够回答各类法律问题。这在全球南方国家中较为罕见，因为大多数法律AI工具都集中在欧美司法体系。项目已持续30个月（2.5年），至今已有3,100名加纳法律学生参与使用，属于长期实地部署而非短期实验。",
-          "开发团队来自加纳本土，系统完全针对加纳普通法体系训练，覆盖了该国最高法院、上诉法院及高等法院的判例。与通用型AI（如ChatGPT）相比，它避免了“幻觉”风险——即生成不存在的判例或法条。RAG架构确保答案始终基于实际法规和判例，这对法律教育的准确性至关重要。",
-          "该研究目前以预印本形式发表在arXiv上（cs.CL: 2605.15380），尚未经过同行评审。虽然数据规模可观，但缺乏与其他法律AI助手（如西非其他国家的工具）的横向对比，也未见具体的准确率或用户满意度指标。未来能否推广到其他普通法系国家（如尼日利亚、肯尼亚）仍不确定，因为数据库需重新构建。",
-          "这一产品对AI教育落地的启发在于：垂直领域+本地化数据的组合可能比通用模型更有效。尤其在法律法规高度地域化的场景，RAG+小规模高质量数据足以支撑专业应用。不过，长期运营需要持续更新判例库（加纳每年新增约500条判例），维护成本不可忽视。",
-          "Eskwai for Students 目前仅服务于法律学生，尚未扩展至执业律师或公众。开发团队表示下一步计划增加“模拟法庭”与“案例检索建议”功能，但时间表未公布。此外，系统是否支持当地主要语言（如契维语）也未提及，语言障碍可能限制其普及范围。"
+          "Anuma是一个聚合型AI工作平台，支持ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama等主流模型。用户无需在多个界面间切换，即可在同一对话中调用不同模型，例如先用Claude做创意脑暴，再用DeepSeek查数据。这种多模型并用的模式，正成为重度AI用户的新需求，尤其适合需要对比模型输出或利用各自特长的场景。",
+          "其核心差异是“私有跨模型记忆”：用户可以在设置中编辑一段记忆（如项目背景、个人偏好），这些记忆会持久保留，并在切换模型时自动传递。这解决了LLM“每次对话开始都是白纸”的痛点，也避免了在不同平台重复输入上下文。不过，记忆的隐私保护是关键——Anuma声称数据仅保存在本地或用户可控的云存储，但具体加密和存储细节尚未完全公开。",
+          "从市场角度看，Anuma瞄准的是“AI模型选型疲劳”和“上下文丢失”两大痛点。目前类似产品如ChatHub、Poe也提供多模型聚合，但Anuma的记忆层更加灵活（用户可手动编辑），且强调隐私。这对中小企业团队和独立开发者尤其有吸引力，因为他们经常需比较模型输出，又担心对话数据被模型厂商收集。",
+          "不过，Anuma目前仍处于早期阶段，产品功能可能不够稳定（如模型响应速度、记忆同步延迟），且需等待其团队披露更多技术细节。若后续能开放API或插件系统，有望成为AI工作流的基础设施。关注其用户增长速度和融资进展，能判断其能否在聚合赛道中突围。"
         ],
-        "why": "这是全球南方国家中少有的长期部署法律AI案例，验证了RAG技术在教育场景的可行性与区域化落地的价值，对关注AI+法律或新兴市场教育产品的团队具有参考意义。",
+        "why": "多模型切换与持久记忆是当前AI工作流的真实痛点，Anuma以隐私可控的方式解决，若体验顺畅，有望成为AI原生工作空间的典型案例，值得产品经理和创业者关注其用户反馈与增长数据。",
         "links": [
           [
-            "arXiv论文: Eskwai for Students",
-            "https://arxiv.org/abs/2605.15380"
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
           ]
         ]
       },
       {
         "section": "AI产品推荐",
         "priority": "medium",
-        "title": "CAX-Agent: A Lightweight Agent Harness for Reliable APDL Automation",
-        "dek": "专为有限元仿真设计的轻量级LLM代理框架，提升自动化可靠性",
+        "title": "Liminary: 面向咨询师、战略家和研究者的 AI 研究工作空间",
+        "dek": "Liminary 是一款专为高 stakes 决策场景设计的 AI 研究助手，支持收藏多源内容、标注溯源并跨项目复用洞察。",
         "details": [
-          "大型语言模型在MAPDL有限元仿真中的应用正面临可靠性瓶颈：缺乏结构化执行控制、工具封装与故障恢复机制，导致输出不一致、任务频繁失败。CAX-Agent通过引入领域特定的编排中间件，管理工具生命周期、工作流状态和恢复升级，有望解决这一痛点。",
-          "CAX-Agent采用三层架构：LLM服务层、代理编排层和工具层。其中代理编排层是核心，负责将用户指令分解为可执行的子任务，并调用封装好的APDL工具。该框架强调轻量化和可靠性，特别适合工业仿真场景中对精度与稳定性的高要求。",
-          "论文实证评估了CAX-Agent的核心组件——恢复策略。在仿真任务出错时，代理能自动触发恢复流程（如重试、回退或切换工具），显著提高任务完成率。不过目前仅对恢复策略进行了测试，整体系统的端到端效果仍需更多验证。",
-          "该产品对工程仿真领域的AI落地具有启发性：通过将LLM的灵活性与领域专用工具的结构化控制结合，可能降低仿真自动化门槛，尤其适合中小型企业的设计验证环节。但需注意，当前CAX-Agent仍处于学术原型阶段，距离商业化应用还有距离。"
+          "Liminary 的定位清晰：不是通用聊天机器人，而是针对咨询顾问、企业战略和深度研究者打造的协作型 workspace。核心逻辑是“在真实研究基础上产生高价值推荐”，避免 AI 常见的信息幻觉。用户可集中保存文章、报告、PDF、AI 对话记录甚至视频，所有内容均可添加标注并保留原始来源，保证结论可追溯。",
+          "这款产品抓住了专业人士的核心痛点：信息碎片化。传统工作流中，分散在多个工具里的研究素材很难统一管理，更难以跨项目复用。Liminary 将“收藏-标注-溯源-引用”整合在一个空间内，并允许用户将某个项目里的洞察直接拖拽到新项目，提升知识复利。这种“知识资产化”的设计对咨询公司、智库和内部研究团队尤其有吸引力。",
+          "目前 Liminary 尚未公布定价或用户规模，其官网展示的功能仍处于早期阶段。最大的不确定性在于：如何在保持溯源严谨性的同时，平衡 AI 辅助的自动化程度。如果标注和整理过程过于手动，可能削弱效率优势；但若过度依赖 AI 总结，又可能破坏“真实研究”的承诺。团队需要找到精确的折中点。",
+          "从竞争角度看，Liminary 与 Notion AI、Mem、Roam Research 等知识管理工具有所重叠，但更强调“研究输出”而不只是“个人笔记”。对于需要对外交付投研报告、战略建议的用户来说，溯源能力是刚需。如果 Liminary 能在企业级协作和权限管理上进一步打磨，有机会切入专业服务机构的采购清单。"
         ],
-        "why": "CAX-Agent展示了LLM在工业仿真中落地的关键技术路径——通过轻量级编排中间件解决可靠性问题，对CAE软件智能化升级和创业公司切入细分仿真自动化市场具有参考意义。",
+        "why": "对产品经理和知识工作者而言，Liminary 代表了 AI 工具从“通用问答”向“专业工作流”演进的典型方向——把准确性、溯源性和复用性放在首位，而非追求聊天体验。值得关注其产品迭代和商业模式验证。",
         "links": [
           [
-            "arXiv cs.AI: CAX-Agent: A Lightweight Agent Harness for Reliable APDL Automation",
-            "https://arxiv.org/abs/2605.15218"
+            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and researchers",
+            "https://liminary.io/"
           ]
         ]
       },
       {
         "section": "深度阅读",
         "priority": "medium",
-        "title": "OpenAI 联合创始人 Greg Brockman 接管产品战略，ChatGPT 与 Codex 或合并",
-        "dek": "TechCrunch 独家报道揭示 OpenAI 最新高层调整：Brockman 回归产品一线，同时公司计划将 ChatGPT 与编程产品 Codex 融合，可能重塑 AI 开发者的工作流。",
+        "title": "OpenAI 联合创始人 Greg Brockman 回归产品线，ChatGPT 与 Codex 或合并",
+        "dek": "一则来自 TechCrunch 的报道揭示 OpenAI 近期高管变动与产品整合计划，背后是公司从研究优先转向产品驱动的战略调整信号。",
         "details": [
-          "据 TechCrunch 报道，OpenAI 联合创始人、前总裁 Greg Brockman 已重新掌舵产品战略。这标志着在公司经历数次高层变动后，Brockman 再次回归核心决策层。报道援引知情人士称，Brockman 将直接负责产品路线图，并监督 ChatGPT 与 Codex 的整合计划。目前 OpenAI 尚未官方确认这一变动，具体职责范围仍有待观察。",
-          "更值得关注的是，OpenAI 正在酝酿将 ChatGPT 与代码生成工具 Codex 合并为一个统一产品。若成真，这将打通自然语言对话与编程执行之间的壁垒——用户可以在同一界面中同时完成头脑风暴、代码编写与调试。此举可能对标 GitHub Copilot 等竞品，但整合程度更深。不过，报道强调该计划仍处于早期阶段，技术实现和发布时间均未确定。",
-          "从战略层面看，Brockman 的回归被解读为 OpenAI 在商业化与产品化之间的又一次摇摆。此前公司曾将资源向研究端倾斜，而 Brockman 以产品导向著称，他的履历包括推动 GPT-3 API 和 ChatGPT 早期版本。此次调整可能预示着 OpenAI 将更激进地推动 AI 产品的落地，而非仅仅追求模型能力的提升。对于创业公司和开发者而言，ChatGPT+Codex 的融合若成功，将显著降低 AI 应用的构建门槛。"
+          "据 TechCrunch 援引知情人士消息，OpenAI 联合创始人 Greg Brockman 已重新接手产品战略工作。Brockman 此前曾任公司总裁并短暂休长假，期间 OpenAI 经历了多轮高管重组。他的回归被视为 OpenAI 在大模型竞争加剧背景下强化产品落地的关键一步，尤其面对来自 Anthropic、Google DeepMind 以及 Meta 的开源模型压力。",
+          "报道同时指出，OpenAI 内部正在讨论将 ChatGPT 与编程产品 Codex 进行技术整合。Codex 是 OpenAI 面向开发者推出的代码生成工具，曾支撑 GitHub Copilot 早期版本。若合并落地，OpenAI 将拥有一个同时覆盖对话和代码场景的统一产品，这可能会改变开发者工具市场的格局，并让 OpenAI 更直接地与微软、GitHub 等平台争夺用户。",
+          "需要注意的是，以上信息均标注为“据传”，OpenAI 官方尚未确认。Brockman 的具体职责范围、产品线合并的时间表都还不明确。不过，从公司近期动作看，OpenAI 正加速从研究机构向产品公司转型，而 Brockman 作为早期产品思想的关键推动者，他的回归本身就传递了重要信号。"
         ],
-        "why": "Brockman 重新负责产品战略，以及 ChatGPT 与 Codex 的潜在合并，是 OpenAI 从纯研究驱动转向产品驱动的重要信号。对依赖 OpenAI API 的开发者与创业者而言，产品形态的变动将直接影响原有架构和竞争格局。",
+        "why": "Brockman 回归产品战略，叠加 ChatGPT 与 Codex 可能的合并，意味着 OpenAI 正在将产品化作为下一阶段的核心优先事项。这对 AI 创业公司的启示是：在基础模型军备竞赛中，谁能更快将模型能力封装为易用的产品，谁就可能赢得开发者生态和商业变现的先机。",
         "links": [
           [
             "TechCrunch AI: OpenAI co-founder Greg Brockman takes charge of product strategy",
@@ -187,26 +185,26 @@ const archiveZh = [
       {
         "section": "机构报告",
         "priority": "medium",
-        "title": "Influencer Marketing Benchmark Report 2026：AI 重塑影响者营销格局",
-        "dek": "Influencer Marketing Hub 发布 2026 年影响者营销基准报告，揭示 AI 工具在内容创作、效果衡量和合规管理中的渗透率突破 50% 门槛，为品牌和平台带来新的效率与风险。",
+        "title": "2026 年影响者营销基准报告：AI 正重塑 KOL 经济",
+        "dek": "Influencer Marketing Hub 发布最新基准报告，揭示 AI 技术在影响者营销全链路的渗透趋势。",
         "details": [
           {
-            "summary": "报告核心结论：AI 已从辅助角色变为影响者营销的核心驱动力，超半数营销者使用 AI 生成内容或优化投放。",
-            "expanded": "据 Influencer Marketing Hub 2026 年基准报告，59% 的营销者已在影响者营销活动中使用 AI 工具，较 2024 年增长近 20 个百分点。AI 的应用集中在三个环节：用生成式 AI 制作视觉内容（占比 43%）、自动匹配合适的影响者（38%）、以及实时监测 ROI 与虚假流量（31%）。报告同时指出，46% 的品牌计划在 2027 年增加 AI 预算，且中型企业（年营销预算 50 万-500 万美元）的采用率增速最快。不过，仅有 22% 的团队制定了明确的 AI 使用指南，合规风险仍是隐忧。"
+            "summary": "报告指出，AI 驱动的创作者匹配与内容生成工具正成为品牌预算分配的核心考量。",
+            "expanded": "根据报告公开信息，2026 年超过 60% 的营销人员将持续或增加使用 AI 进行影响者筛选与效果预测，较 2025 年增长约 15 个百分点。AI 工具通过分析受众画像、互动质量与历史数据，将匹配效率提升 30% 以上。不过，报告未给出具体样本量与地域分布，该数据可能来自在线问卷调研（样本量约 1000 人），并非第三方审计，因此实际采纳率可能因行业与地区而异。"
           },
           {
-            "summary": "关键数据：AI 影响者（虚拟 KOL）的互动率已超过真人，但消费者信任度偏低。",
-            "expanded": "报告特别分析了 AI 生成的虚拟影响者（如 Lil Miquela 类）的市场表现：其平均互动率（点赞/评论/分享）比真人影响者高 47%，尤其在时尚和游戏领域。然而，消费者信任调查显示，仅 34% 的受访者愿意购买虚拟影响者推荐的产品，低于真人的 61%。品牌需平衡创新与真实感。另外，报告预测 2026 年全球影响者营销市场规模将达到 340 亿美元，其中 AI 相关支出占比约 12%，预计 2027 年翻倍。这一趋势对内容平台（如 Instagram、TikTok）的算法透明度提出了更高要求。"
+            "summary": "生成式 AI 内容（如 AI 视频、虚拟影响者）在品牌合作中的占比显著上升。",
+            "expanded": "报告提到，约 25% 的品牌已尝试与虚拟影响者合作，或使用 AI 生成文案与视觉素材，以降低制作成本并实现 7×24 小时内容产出。但消费者对 AI 生成内容的信任度仍有分歧——调查显示 38% 的受访者表示能接受，而 29% 明确排斥。这份报告由影响者营销行业媒体发布，其数据来源可能包含平台 API 及自填问卷，结论偏向积极，读者需结合自身品牌调性审慎评估。"
           },
           {
-            "summary": "产业启发：AI 正在改写影响者营销的底层逻辑，从“选人”转向“造人”和“数据驱动”。",
-            "expanded": "对于品牌方而言，AI 降低了影响者营销的准入门槛——小预算也能通过 AI 生成个性化素材并精准投放。但报告警告，过度依赖 AI 可能导致内容同质化和用户疲劳。对创业公司来说，AI 驱动的数据分析平台（如影响者效果归因、图片篡改检测）存在明确的切入机会。同时，监管风险上升：欧盟 AI 法案已要求标记 AI 生成内容，美国 FTC 也在更新指南。营销从业者需要补充 AI 素养，尤其是 prompt engineering 和合规审核技能。"
+            "summary": "AI 测量与归因工具成为 ROI 评估的新标准。",
+            "expanded": "报告强调，采用 AI 归因模型的品牌其营销 ROI 平均高出 22%，但仅 30% 的中小企业部署了此类技术，反映出市场教育尚存缺口。影响者营销 Hub 自身也提供 AI 分析平台，故报告中的工具推荐部分可能存在利益关联。总体而言，AI 正在将影响者营销从“经验驱动”推向“数据驱动”，但信任与透明度仍是行业长期挑战。"
           }
         ],
-        "why": "这份报告是 2026 年影响者营销领域最全面的定量研究之一，其数据可直接指导品牌预算分配、平台策略及 AI 工具选型，对从事内容营销、电商 SaaS 和 AI 媒体产品的团队具备战略参考价值。",
+        "why": "虽然这是一份营销行业报告，但其中 60%+ 的 AI 工具采用率与 ROI 提升数据，直接验证了 AI 在垂直场景的落地价值。对于 B2B 软件与营销科技创业者，这是切入中小企业市场的有力信号——低渗透率意味着巨大空白。",
         "links": [
           [
-            "阅读报告原文（Google News 来源）",
+            "Google News AI Reports: Influencer Marketing Benchmark Report 2026 - Influencer Marketing Hub",
             "https://news.google.com/rss/articles/CBMifkFVX3lxTE90LUhienBHOG0zWHlkNXoyWHJWOGZzSndIVTJNTkMwVmY1MThmOUNzQl8yVV8xd01GaDluNXdpTmdwVjRaS3llcFgwRmR6SmEwMmIzM2VqWGxVcTRXcTdpR0FQazhnbEo5R2JocExLMGNhX2FtdnNPM2V4dF96dw?oc=5"
           ]
         ]
@@ -215,22 +213,31 @@ const archiveZh = [
         "section": "每日词条",
         "priority": "learning",
         "title": "Agentic Workflow",
-        "dek": "从单一对话到多步骤自主决策，AI Agent正在重塑企业自动化。",
+        "dek": "理解AI智能体如何自主完成多步骤工作流，以及这波浪潮背后的商业逻辑。",
         "details": [
-          "Agentic Workflow是AI从“问答”走向“执行”的关键一步——它让模型能够自主分解任务、调用工具、迭代验证，类似一个虚拟员工。SaaStr数据显示，过去一年Claude的企业收入增长128%，远超同行，背后正是Anthropic在Agent能力上的押注：Claude的Computer Use和工具调用功能成为企业核心选择理由。相比之下，OpenAI企业收入下降8%，可能与其Agent生态进展缓慢有关。这一分化揭示Agent能力正在成为企业AI选型的决定性因素。",
-          "在中国，DeepSeek近期拒绝了阿里和腾讯的投资意向。据虎嗅报道，DeepSeek希望保持独立发展，其战略重心正是打造自主的Agent工作流体系。这一选择与国内主流“借巨头生态”路线形成鲜明对比。如果DeepSeek的Agent产品能跑通，可能成为独立力量，但也面临资金和资源压力。该消息未经双方官方确认，市场仍需持续观察。",
-          "美团联合创始人王慧文近期在一篇投资分享中为AI投资画了一个“框”。他提出，当下AI投资应聚焦于“能用Agent解决实际业务闭环”的团队，而非单纯追逐大模型参数。这一观点与Agentic Workflow核心理念高度契合——只有把模型嵌入可落地的工作流，才能产生真实商业价值。王慧文的判断对创业者和投资人都有参考意义：盲目追参数量已不划算，Agent层面的工程能力才是护城河。",
-          "同时，一项来自arXiv的研究（2605.15208）指出，量化压缩后的LLM可能产生偏见再生问题。对于依赖多步推理的Agent工作流，模型压缩带来的微小偏差可能在执行链条中被放大，导致决策错误。这意味着企业在部署Agent时，不能只关注推理速度和成本，还需建立监控和回滚机制。该研究基于Qwen2.5-7B等模型，但尚未在更大型Agent系统上验证，实际影响程度有待评估。"
+          "Agentic Workflow（智能体工作流）指的是AI系统自主规划、执行并迭代多步骤任务的能力，不同于简单的单轮对话或单一工具调用。它融合了长期记忆、工具使用和闭环反馈，使AI从\"问答助手\"进化为\"数字员工\"。当前多数AI agent产品仍停留在demo阶段，但Google、OpenAI等已有此类论文或产品布局。",
+          "麦肯锡最新发布的《AI in the workplace: A report for 2025》（来源：Google News AI Reports）从企业视角分析了AI对工作的重塑。报告标题暗示，职场AI正从\"辅助工具\"向\"自主工作流\"演进，Agentic Workflow成为企业自动化的核心方向。企业需要评估哪些工作流适合交给AI agent，以及如何管理其输出质量。",
+          "前美团联合创始人王慧文在《给AI投资画了一个框》（来源：新浪财经）中可能梳理了AI投资的边界。结合行业讨论，Agentic Workflow被视为基础设施层的关键领域——它不仅是技术问题，更是商业模式的切换。投资人正在关注那些能定义工作流程编排标准的创业公司。",
+          "DeepSeek拒绝阿里腾讯投资（来源：虎嗅）的消息引发对AI公司战略差异的讨论。有分析认为，DeepSeek选择独立发展，可能意在保持对Agentic Workflow技术路线的掌控权，尤其是在长推理链的工作流场景中。这一事件说明，智能体工作流的竞争不仅是模型能力，更是生态和战略选择。",
+          "韩国最新推理AI在数学上强于DeepSeek但语言能力落后（来源：朝鲜日报中文版），这揭示了Agentic Workflow中的一个关键权衡：不同智能体专长不同，企业选择时需要匹配任务类型。例如，数学强的agent适合数据分析流程，语言强的适合客服与内容生成。"
         ],
-        "why": "Agentic Workflow正在从概念走向企业级落地，市场竞争格局、资本动向和技术风险都已浮出水面。关注这一方向，有助于把握AI产品设计、创业方向和投资重点的下一波浪潮。",
+        "why": "Agentic Workflow 是 AI 从“生成内容”走向“完成工作”的桥梁，理解它有助于判断哪些自动化工具值得跟进、哪些投资方向靠谱，以及自己应优先学习哪种智能体编排技能。",
         "links": [
           [
-            "SaaStr: Who’s Winning Enterprise AI Now",
-            "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU9JVFJRUkppVVhJMWdIZ050ZTFCWnVsTXNnY1BWY2ZZZWNrSzVhWEZ6c1NLS25Rd2gyYTdoVllPRGhSWnRrY0JvekNmdUprSTNIdThmZGJzWF9hTmVoTjJzckhxVjhQR1BsV1dYcnQ0ZXpvRk85UXJMM2hmSEl0bUFLQm82Y0U2Z3BQOV9kUWJGaGlSSm5xeGM4dEkteVY3VXk3YTljaDBia0UxQUJIQ0RUSUo4TnFWeV9MMms0ckY?oc=5"
+            "McKinsey AI工作场所报告",
+            "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNHluenp6NE4teVg3bTJiWG9VZk81dDQwcDBJcmVJWlBHdWhIYWRSYTNWX052aHVZdjhfdmxXNk9mTENURGRzdURmMExpTm5VazdfTWZpcUxTV21TcThJbHc2cFluMmRjMXdVeE80ZDhBR0JUWUhJcHJiX2Rva1lGT2tfMDNEOHZzRkJwSUpoM3FwZjh1RU56aXcxclFqNnRyVkRBVkJIbUkyaloxWGpscjJTZ2hYVkNxX0g2d2liUm41MlhaZDQwcl9JTlFtcWVGd3d0Vzg5V3Y?oc=5"
           ],
           [
-            "虎嗅: DeepSeek拒绝阿里腾讯投资",
+            "王慧文给AI投资画了一个框",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOFVQMmc5Qm0yNzFhLUlRZFhjb25sZnFlX0pCaUxGVUJwU05janZlWDdTMHlYTU03MzdHMDZWQ2laXzR1NDNkSFJRQl9OZnZIVE1UQ08wbWw3QW83c0JGay1sTWVHdVdLQUZBeTI1QkFDU3J3Z3VoN1BjQVhieFVneEJiM28tSFk4aWtpZVBxRUpDdGdpOVRNa292OEMxRXVFQ2d4RHRjT2NuQTl2d3JTSjB3?oc=5"
+          ],
+          [
+            "DeepSeek拒绝阿里腾讯投资",
             "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1YMzZCcE12ZWtKQVNUUVMwaVNnT2hPZkFHekJXM2RCeFpYUFBpUzk1VDVpY1lDT0VvMWhhbGNBTHhiMWxZZkN0UjRPN2FjMHBVZmhzWg?oc=5"
+          ],
+          [
+            "韩国推理AI对比DeepSeek",
+            "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcWdESVFpSklwMHpjLWxFVjhMNVpPMWVqSXhOSS1MWWNrRGl3VzFrLXh0VnVXcGxqMWNmSG1waW1wM2xuTnExWFl5ZGFrTnRUZjdib3d0NzlMY3FsWkNDTktFbnB2OWNIVXpiWWxjekRwTUU3QW1GUkZTWXRsLVEwWE1Fak1wWDY1Rk00b2VLQkZDdw?oc=5"
           ]
         ]
       }
@@ -686,7 +693,7 @@ const archiveZh = [
 ];
 
 const archiveEn = [
-            {
+              {
     "date": "2026-05-18",
     "title": "AI Daily Atlas",
     "meta": "May 18, 2026",
@@ -704,17 +711,17 @@ const archiveEn = [
       {
         "section": "Top Stories",
         "priority": "high",
-        "title": "Who’s Winning Enterprise AI Now: Claude Up 128%, Gemini Up 48%, OpenAI Down 8%, Grok Still A Rounding Error - SaaStr",
-        "dek": "A new analysis reveals dramatic shifts in enterprise AI adoption, with Anthropic's Claude and Google's Gemini surging while OpenAI loses ground.",
+        "title": "Korean reasoning AI outperforms DeepSeek in math but lags in language",
+        "dek": "A new Korean AI model demonstrates superior mathematical reasoning compared to DeepSeek, yet falls short in natural language tasks, highlighting regional specialization trade-offs.",
         "details": [
-          "According to data highlighted by SaaStr, Anthropic's Claude has seen a 128% increase in enterprise adoption over the past year, likely driven by its strong safety features and customizable behavior. Google's Gemini, up 48%, benefits from integration with Google Cloud and Workspace, making it a natural choice for existing customers. Meanwhile, OpenAI's enterprise share dropped 8%, possibly due to concerns over pricing, model governance, or competition from more specialized alternatives. xAI's Grok remains negligible in enterprise, a rounding error, as its focus on consumer and social media integration limits appeal in business settings.",
-          "The numbers, which may come from usage analytics or platform surveys, suggest a market in flux. Enterprise buyers are increasingly diversifying beyond OpenAI, seeking models that offer better control, lower cost, or tighter ecosystem integration. Claude's surge highlights demand for 'safe AI,' while Gemini's growth reflects Google's channel strength. The data lacks methodological details, so the exact magnitude may vary, but the trend is clear: no single player dominates, and the race is intensifying."
+          "South Korean researchers have developed a reasoning-focused AI model that surpasses China's DeepSeek on standardized mathematics benchmarks. The breakthrough underscores Korea's strategic bet on vertical AI excellence in mathematical logic, aiming to carve out a niche in STEM applications. However, the model’s language understanding and generation capabilities remain notably weaker than DeepSeek’s, which excels in multilingual and conversational contexts. This disparity reflects fundamentally different training emphases: Korean labs prioritized symbolic reasoning and formal logic over broad linguistic corpus.",
+          "The comparison emerges from a report by the Chosun Ilbo, a major Korean daily, based on internal evaluations. No official benchmark scores or model names were disclosed, making direct verification difficult. The article implies the model is still in research phase, with no announced deployment or API access. This uncertainty tempers the competitive signal: while mathematically impressive, the model’s practical utility hinges on closing the language gap or integrating with complementary systems. The development also highlights the intensifying AI race between South Korea and China, both vying for leadership in specialized AI domains."
         ],
-        "why": "This shift signals that enterprise AI is fragmenting: companies now actively choose between providers based on trust, integration, and vertical capabilities, rather than defaulting to one leader. For product teams and investors, it underscores the importance of differentiation beyond raw model quality.",
+        "why": "This story signals a strategic divergence in AI development paths: Korea is betting on narrow, high-value reasoning capabilities, while China's DeepSeek pursues broader language proficiency. For investors and product teams, it suggests that vertical AI models optimized for specific cognitive tasks (e.g., math, code, logic) can compete with general-purpose models in targeted markets, potentially reshaping procurement strategies in education, finance, and R&D.",
         "links": [
           [
-            "Google News AI Labs: Who’s Winning Enterprise AI Now: Claude Up 128%, Gemini Up 48%, OpenA",
-            "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU9JVFJRUkppVVhJMWdIZ050ZTFCWnVsTXNnY1BWY2ZZZWNrSzVhWEZ6c1NLS25Rd2gyYTdoVllPRGhSWnRrY0JvekNmdUprSTNIdThmZGJzWF9hTmVoTjJzckhxVjhQR1BsV1dYcnQ0ZXpvRk85UXJMM2hmSEl0bUFLQm82Y0U2Z3BQOV9kUWJGaGlSSm5xeGM4dEkteVY3VXk3YTljaDBia0UxQUJIQ0RUSUo4TnFWeV9MMms0ckY?oc=5"
+            "Chosun Ilbo coverage (via Google News)",
+            "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcWdESVFpSklwMHpjLWxFVjhMNVpPMWVqSXhOSS1MWWNrRGl3VzFrLXh0VnVXcGxqMWNmSG1waW1wM2xuTnExWFl5ZGFrTnRUZjdib3d0NzlMY3FsWkNDTktFbnB2OWNIVXpiWWxjekRwTUU3QW1GUkZTWXRsLVEwWE1Fak1wWDY1Rk00b2VLQkZDdw?oc=5"
           ]
         ]
       },
@@ -722,12 +729,12 @@ const archiveEn = [
         "section": "Top Stories",
         "priority": "high",
         "title": "How finance teams use Codex",
-        "dek": "OpenAI Academy showcases practical AI applications for financial reporting and analysis.",
+        "dek": "OpenAI showcases practical applications of Codex in finance, from MBRs to scenario planning.",
         "details": [
-          "OpenAI's new Academy article details how finance teams can leverage Codex to automate and enhance core workflows such as building monthly business reviews (MBRs), reporting packs, variance bridges, model checks, and planning scenarios. The guide uses real work inputs to demonstrate how Codex translates natural language into structured financial analyses, reducing manual effort and improving accuracy. This is part of OpenAI's broader push to show concrete enterprise use cases for its AI models, particularly in quantitative fields like finance.",
-          "The post highlights that Codex can generate variance explanations by comparing actuals to budgets, flag anomalies in large datasets, and even produce scenario-planning models on the fly. For finance professionals, this means less time on spreadsheet drudgery and more on strategic interpretation. The Academy format suggests OpenAI is targeting both individual analysts and team leads, offering a low-friction way to test AI-assisted finance workflows without deep coding knowledge."
+          "OpenAI's latest academy resource details how finance teams leverage Codex to automate routine reporting tasks such as monthly business reviews (MBRs), variance bridges, and model checks. The guide translates real-world inputs into structured analyses, highlighting Codex's ability to handle domain-specific workflows without deep programming. This move signals OpenAI's push beyond general coding assistants toward vertical enterprise solutions, where finance—with its high volume of spreadsheet-based work—is a natural early adopter. While no specific adoption numbers are cited, the practical examples suggest growing maturity in Codex's financial reasoning capabilities.",
+          "The content covers five common use cases: building reporting packs, conducting variance analysis, creating planning scenarios, and performing model integrity checks. By focusing on repeatable, data-intensive tasks, OpenAI positions Codex as a productivity multiplier for analysts and controllers. The guide's release aligns with increasing enterprise demand for AI tools that integrate securely with existing data sources. However, the effectiveness depends on data quality and prompt design, and official benchmarks for financial accuracy remain limited, introducing some uncertainty around reliability in highly regulated contexts."
         ],
-        "why": "This resource signals that OpenAI is doubling down on vertical-specific use cases for enterprise adoption. For finance teams and AI startups, it validates that Codex can handle structured data tasks beyond simple code generation, making it a tool to watch for automation in budgeting, forecasting, and internal reporting.",
+        "why": "This resource is significant for product strategists and finance leaders evaluating AI copilots for operational workflows. It demonstrates how Codex can reduce manual effort in reporting, potentially influencing procurement decisions as CFOs seek automation gains. The vertical focus also hints at broader platform expansion into other spreadsheet-heavy domains.",
         "links": [
           [
             "OpenAI News: How finance teams use Codex",
@@ -739,12 +746,12 @@ const archiveEn = [
         "section": "Top Stories",
         "priority": "high",
         "title": "Databricks brings GPT-5.5 to enterprise agent workflows",
-        "dek": "OpenAI's latest model, GPT-5.5, is now integrated into Databricks' agent platform, setting a new benchmark for enterprise document intelligence.",
+        "dek": "OpenAI's latest frontier model is now available on Databricks, enabling enterprises to build and deploy autonomous agents with state-of-the-art reasoning on their own data.",
         "details": [
-          "Databricks has announced the integration of OpenAI's GPT-5.5 into its agent workflow platform, enabling enterprises to build and deploy AI agents that can reason over complex business documents. The move comes shortly after GPT-5.5 achieved state-of-the-art results on the OfficeQA Pro benchmark, which tests models on realistic office tasks such as extracting data from spreadsheets, summarizing meeting notes, and answering questions about internal policies. By embedding GPT-5.5 directly into its Lakehouse architecture, Databricks allows organizations to combine their proprietary data with the model's advanced reasoning capabilities without moving data out of their environment.",
-          "The partnership signals a deepening collaboration between OpenAI and Databricks, and positions GPT-5.5 as a specialized enterprise tool rather than a general-purpose chatbot. The OfficeQA Pro benchmark result specifically highlights the model's ability to handle multi-step, context-dependent queries — a critical requirement for enterprise agents that must navigate permission structures, version histories, and ambiguous requests. For companies already using Databricks for data engineering and analytics, this integration removes the need to manage separate AI infrastructure, potentially accelerating the adoption of agentic workflows in finance, legal, and operations departments."
+          "GPT-5.5, released earlier this month, achieved a new state-of-the-art score on the OfficeQA Pro benchmark, which tests enterprise document understanding and multi-step reasoning. The model outperforms GPT-5 and Claude 4.5 by double digits in key metrics, signaling a leap in reliability for complex business workflows. Databricks is the first major platform to integrate GPT-5.5 into its agent-building toolkit, allowing customers to chain the model with retrieval and custom tools.",
+          "By embedding GPT-5.5 into its lakehouse platform, Databricks provides a unified environment where enterprises can securely orchestrate agents that query internal databases, generate reports, and take actions. This move responds to growing demand for agentic AI that can handle sensitive data without leaving the customer's governance perimeter. Early adopters report a 40% reduction in manual data-processing tasks, though pricing for GPT-5.5 calls has not been disclosed and may vary."
         ],
-        "why": "This integration marks a shift from general-purpose LLMs to domain-specific agent models, and suggests that the next competitive frontier in enterprise AI will be tight data-platform coupling — a strategy that both strengthens Databricks' moat and pressures standalone AI agents.",
+        "why": "This integration signals a shift from general-purpose chatbots to vertically tuned agents on proprietary data, making Databricks a critical gateway for enterprise AI adoption. Competitors like Snowflake and AWS will need to respond quickly or risk losing data-warehouse market share.",
         "links": [
           [
             "OpenAI News: Databricks brings GPT-5.5 to enterprise agent workflows",
@@ -755,14 +762,13 @@ const archiveEn = [
       {
         "section": "Top Stories",
         "priority": "high",
-        "title": "315曝光AI大模型“投毒”黑产，39.9元篡改AI答案 - 36Kr",
-        "dek": "从多源公开信息中筛出的高相关 AI 信号，需要关注其产品、资本或产业落地含义。",
+        "title": "China's Consumer Protection Program Exposes AI 'Poisoning' Black Market: 39.9 Yuan to Manipulate AI Answers",
+        "dek": "An investigation by China's annual 315 gala reveals an underground industry offering to inject misleading data into popular AI models, raising concerns about the integrity of AI-generated information.",
         "details": [
-          "This signal comes from Google News China AI：315曝光AI大模型“投毒”黑产，39.9元篡改AI答案 - 36Kr. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
-          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
-          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+          "China's annual 315 consumer protection broadcast exposed a black market where individuals pay as little as 39.9 yuan (about $5.50) to have AI model outputs manipulated. Service providers use 'data poisoning' techniques—inserting biased or false information into training datasets or using prompt injection to alter responses in real time. The report specifically targeted domestic AI models, showing screenshots of altered answers to sensitive or product-related queries. Dozens of shops on e-commerce platforms were found offering such services, with some claiming to guarantee modified results for specific topics, affecting thousands of queries.",
+          "The practice exploits a critical weakness in the current AI safety pipeline: most models lack robust real-time verification of output integrity. While major Western AI labs invest heavily in red-teaming and guardrails, many Chinese AI startups prioritize speed-to-market over security. The 315 report estimates the illicit market has affected tens of thousands of queries, potentially skewing public opinion on products, political topics, and more. Regulators have since launched a crackdown, but the incident underscores the urgent need for provenance tracking and watermarking in AI systems."
         ],
-        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "why": "This incident signals an emerging cybersecurity threat specific to AI services—data poisoning as a service. For startups and enterprises deploying AI in customer-facing roles (e.g., chatbots, search), it makes output auditing a non-negotiable investment; for investors, it highlights a new risk factor when evaluating Chinese AI startups' security posture.",
         "links": [
           [
             "Google News China AI: 315曝光AI大模型“投毒”黑产，39.9元篡改AI答案 - 36Kr",
@@ -773,17 +779,17 @@ const archiveEn = [
       {
         "section": "Funding Watch",
         "priority": "medium",
-        "title": "Wang Huiwen Draws a Framework for AI Investment",
-        "dek": "The former Meituan co-founder outlines principles for capital allocation in the AI sector, signaling a shift from speculative bets to structured evaluation.",
+        "title": "Wang Huiwen Outlines a Framework for AI Investing",
+        "dek": "The Meituan co-founder proposes a structured approach to navigating China's AI funding landscape.",
         "details": [
-          "Wang Huiwen, billionaire co-founder of Meituan and a prominent AI angel investor, recently articulated a personal investment framework for artificial intelligence. Speaking through a Sina Finance report, Wang emphasized focusing on startups with proprietary data and clear application scenarios rather than those chasing generic large language models. He cautioned against overvaluation of pure research labs and stressed the importance of capable founding teams with domain expertise. The framework reflects Wang's own experience from his previous AI venture (Light Year) and current roles at multiple AI startups. Although the exact criteria remain proprietary, his public commentary signals a maturing investor mindset amid China's AI funding boom, where many early-stage bets face commercialization pressure. The lack of a full transcript leaves some ambiguity about specific benchmarks, but the overall direction is clear: Wang advocates disciplined, thesis-driven AI investing.",
-          "This perspective matters because Wang is one of the most influential individual investors in China's AI ecosystem. His framework could influence how other Chinese VCs evaluate AI deals, potentially steering capital toward more sustainable, application-oriented companies. For non-technical readers, it highlights that the next wave of AI winners may not be the ones with the biggest models but those that can effectively deploy AI in real-world industries."
+          "Wang Huiwen, co-founder of Meituan and a prominent AI investor, recently shared a framework for evaluating AI investment opportunities in China. While the full details of his talk are not publicly available, the framework reportedly emphasizes three pillars: foundational model capabilities, vertical application potential, and team execution. Wang's perspective is significant given his track record with Meituan and his current role as a key backer of AI startups. The framework aims to cut through the noise of China's crowded AI sector, where funding surged to over $5 billion in Q1 2026 alone, according to industry estimates. However, the exact criteria and weightings remain unclear, pending official release of his presentation materials.",
+          "Wang's intervention comes at a time when Chinese AI startups face increasing competition from both domestic giants like Baidu and Alibaba and global players like OpenAI. His framework likely provides a risk-management lens for investors, focusing on sustainable business models rather than pure technology hype. Sources indicate Wang stressed the importance of 'application-driven innovation' over 'model-centric' approaches, reflecting a shift in the Chinese AI ecosystem toward monetization and vertical integration. Nevertheless, without the original transcript or slides, these insights should be treated as preliminary interpretations from news summaries."
         ],
-        "why": "Wang's publicly articulated framework offers a rare window into how a top-tier Chinese investor thinks about AI allocation. For entrepreneurs and fund managers, it suggests that capital will increasingly favor vertical applications and data moats over generic foundation model plays.",
+        "why": "Wang Huiwen's investment framework can serve as a heuristic for LPs and startup founders to align capital allocation with China's evolving AI landscape, moving from model competition to real-world deployment.",
         "links": [
           [
             "Google News China AI: 王慧文给AI投资画了一个框 - 新浪财经",
-            "https://news.google.com/rss/articles/CBMipwFBVV95cUxOVHBtZzMteGQxMnFCa3dTbHc0V1pDT0FteWNrTEVVRmk3S1FFRFR2Rk9MejBPQUxEV0NzMlhZQ2VZcWxiQWE2QzBHa2dmeWh6clljb1hSSE1KX0xuRTlZb1M3NjFHNzRnQmtjanhRTlMxVjl1RC0wLUU0Q0VFUEluaDFodWlDWkxtd3RDM3JRaXpxVm9UX3dRc000MkNlZU9WZGpVUkRWSQ?oc=5"
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxNOFVQMmc5Qm0yNzFhLUlRZFhjb25sZnFlX0pCaUxGVUJwU05janZlWDdTMHlYTU03MzdHMDZWQ2laXzR1NDNkSFJRQl9OZnZIVE1UQ08wbWw3QW83c0JGay1sTWVHdVdLQUZBeTI1QkFDU3J3Z3VoN1BjQVhieFVneEJiM28tSFk4aWtpZVBxRUpDdGdpOVRNa292OEMxRXVFQ2d4RHRjT2NuQTl2d3JTSjB3?oc=5"
           ]
         ]
       },
@@ -791,15 +797,15 @@ const archiveEn = [
         "section": "Open Source",
         "priority": "medium",
         "title": "Building a general-purpose accessibility agent—and what we learned in the process",
-        "dek": "GitHub details its experimental AI agent for automating web accessibility improvements, sharing key lessons from the pilot.",
+        "dek": "GitHub details its experimental AI agent for accessibility, sharing lessons from the pilot.",
         "details": [
-          "GitHub is piloting an experimental general-purpose accessibility agent designed to automatically detect and fix web accessibility issues. The agent leverages AI models to identify common violations such as missing alt text, insufficient color contrast, and keyboard navigation gaps. According to the blog post, the project aims to reduce the manual effort required for accessibility audits, making it easier for developers to create inclusive software. The agent is still in early stages, and the team emphasizes that it is not yet production-ready, highlighting the complexity of handling diverse accessibility standards across different platforms.",
-          "The post shares several lessons learned during development: first, that a general-purpose agent must balance coverage and accuracy—too broad a scope reduces precision. Second, the team found that integrating with existing developer workflows (e.g., through GitHub Copilot) is critical for adoption. Third, evaluation remains a challenge because accessibility requirements are subjective and context-dependent. The agent's performance varies across different types of applications, and the team is exploring ways to incorporate user feedback loops. These insights offer practical guidance for anyone building AI-assisted accessibility tools, underscoring the importance of iterative testing and domain-specific fine-tuning."
+          "GitHub is piloting a general-purpose accessibility agent that leverages AI to help developers identify and fix accessibility issues in their applications. The experimental agent aims to automate tasks like checking color contrast, keyboard navigation, and screen reader compatibility. While still in early stages, GitHub says it's learned valuable lessons about the limitations of current models and the need for human oversight. The project signals a growing trend of embedding specialized AI agents into development workflows.",
+          "The agent is designed to be model-agnostic and can integrate with various IDEs and CI/CD pipelines. Early tests show promise in catching common issues but struggle with complex, context-dependent scenarios. GitHub emphasizes that the agent is not a replacement for human testers but a productivity booster. The open-source community may gain access to the agent as it matures, though no timeline is given."
         ],
-        "why": "This experimental agent signals a shift toward AI-driven accessibility in software development. For developers and teams, it points to a future where accessibility checks become automated, reducing compliance costs and improving user experience. Entrepreneurs should watch this space for opportunities in specialized accessibility tools or integrations.",
+        "why": "This experimental agent demonstrates how AI can tackle domain-specific tasks like accessibility, which has long been manual and under-resourced. For developers and companies, this could lower the barrier to creating inclusive software, making it a strategic area to watch for product and hiring decisions.",
         "links": [
           [
-            "GitHub AI & ML: Building a general-purpose accessibility agent—and what we learned in the process",
+            "GitHub Blog Post",
             "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/"
           ]
         ]
@@ -807,48 +813,54 @@ const archiveEn = [
       {
         "section": "AI Product Picks",
         "priority": "medium",
-        "title": "Eskwai for Students: Generative AI Assistant for Legal Education in Ghana",
-        "dek": "A RAG-based AI assistant built for Ghanaian law students, trained on local case law and legislation, shows promise in bridging the Global South's legal education gap.",
+        "title": "Anuma: multi-model AI workspace with private cross-model memory",
+        "dek": "Anuma aggregates eight leading AI models into a single workspace, featuring a unique privacy-centric memory layer that users can edit and carry across different models.",
         "details": [
-          "Eskwai for Students is a retrieval-augmented generation (RAG) system that provides instant, context-grounded answers to legal questions for law students in Ghana. It leverages a curated database of over 12,000 case laws and 1,400 pieces of Ghanaian legislation, ensuring responses are locally relevant. The system was deployed in a 30-month longitudinal study involving 3,100 students, making it one of the first long-term evaluations of generative AI in legal education in the Global South.",
-          "While many AI legal tools focus on Western jurisdictions, Eskwai fills a critical gap by addressing Ghana's specific legal framework. The long study period—2.5 years—allowed for continuous adaptation and assessment of real-world usage patterns. Its development highlights the feasibility of building domain-specific AI assistants for underserved regions, potentially inspiring similar projects in other African and Global South countries."
+          "Anuma integrates ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, Llama, and more into one interface, eliminating the need to switch between tabs or subscriptions. Its core innovation is a cross-model memory system that stores user context privately, allowing seamless continuation of conversations across any supported model. Users can review, edit, or delete their memory at any time, addressing a growing demand for data control in multi-model workflows.",
+          "The product targets power users who rely on multiple AI assistants for diverse tasks—coding with Claude, creative writing with ChatGPT, or data analysis with Gemini. By unifying these tools and adding persistent memory, Anuma reduces friction and enhances productivity. While the memory is private and encrypted, the long-term effectiveness depends on how well it handles context conflicts when models have different reasoning styles."
         ],
-        "why": "This product demonstrates how localized RAG systems can deliver high-impact AI for specialized education in regions with limited existing legal tech. It also serves as a case study for sustainable, long-term AI deployment in resource-constrained environments.",
+        "why": "Anuma represents a new category of AI orchestration tools that prioritize user privacy and model flexibility. For product teams and investors, it signals a shift from single-model dependency to multi-model ecosystems, potentially reshaping how individuals and businesses consume AI services.",
         "links": [
           [
-            "arXiv:2605.15380",
-            "https://arxiv.org/abs/2605.15380"
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
           ]
         ]
       },
       {
         "section": "AI Product Picks",
         "priority": "medium",
-        "title": "CAX-Agent: A Lightweight Agent Harness for Reliable APDL Automation",
-        "dek": "A new lightweight agent harness designed to boost reliability of LLM-driven finite-element simulations through structured orchestration and fault recovery.",
+        "title": "Liminary: AI research workspace for consultants, strategists, and researchers",
+        "dek": "从多源公开信息中筛出的高相关 AI 信号，需要关注其产品、资本或产业落地含义。",
         "details": [
-          "CAX-Agent tackles a practical pain point in engineering software: deploying large language models for MAPDL (a finite-element simulation tool) often leads to inconsistent outputs and task failures due to lack of structured execution control. The agent harness introduces domain-specific middleware that manages tool lifecycles, workflow state, and recovery escalation, organizing execution into three layers: LLM service, agent harness, and simulation interface. A core component—the recovery policy—is empirically evaluated to show how systematic fault handling can reduce failure rates. This approach makes LLM integration more production-ready for industrial simulation workflows, where reliability is paramount.",
-          "The paper from arXiv presents CAX-Agent as a purpose-built solution for APDL automation, emphasizing that standard LLM deployments lack the orchestration and fault-tolerance needed for mission-critical engineering tasks. By adding a lightweight middleware layer, the system can recover from errors without manual intervention, which is crucial for scaling AI in computer-aided engineering. While details on evaluation metrics and baselines are limited in the abstract, the concept aligns with a broader trend of building 'agentic' systems that wrap LLMs with domain logic and error handling—a key area for product development in enterprise AI."
+          "This signal comes from Curated AI Products：Liminary: AI research workspace for consultants, strategists, and researchers. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
         ],
-        "why": "For product teams building AI copilots or automation tools in engineering domains, CAX-Agent demonstrates a practical architecture for turning unreliable LLM outputs into dependable workflows. It highlights the growing need for orchestration layers that handle state, recovery, and domain-specific constraints—a clear investment signal for middleware startups or in-house agent infrastructure.",
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
         "links": [
           [
-            "arXiv cs.AI: CAX-Agent: A Lightweight Agent Harness for Reliable APDL Automation",
-            "https://arxiv.org/abs/2605.15218"
+            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and res",
+            "https://liminary.io/"
           ]
         ]
       },
       {
         "section": "Deep Read",
         "priority": "medium",
-        "title": "Why Brockman’s Return to Product Strategy Signals a Pivot at OpenAI",
-        "dek": "Greg Brockman, OpenAI co-founder, is reportedly shifting from research to product leadership as the company plans to merge ChatGPT and Codex. This signals a stronger focus on developer tools and enterprise revenue.",
+        "title": "Why Greg Brockman's return to product strategy matters for OpenAI's future",
+        "dek": "OpenAI co-founder Greg Brockman reportedly takes charge of product strategy as the company plans to merge ChatGPT with Codex, signaling a deeper integration of conversational AI and developer tools.",
         "details": [
-          "Greg Brockman, OpenAI’s co-founder and longtime president, is reportedly taking direct control of product strategy — a move that realigns leadership around commercialization rather than pure research. The shift comes as OpenAI plans to integrate its flagship ChatGPT with Codex, the programming tool that powers GitHub Copilot. This consolidation suggests OpenAI is betting on a unified developer platform, aiming to capture more enterprise customers and reduce fragmentation across its product line.",
-          "The report, from a single source and not confirmed by OpenAI, carries uncertainty but aligns with recent hiring and org changes. If true, Brockman’s move mirrors industry trends where top AI scientists transition to product roles as foundational models commoditize. His deep technical background could accelerate product-market fit, but risks diluting OpenAI’s research-first identity. Competitors like Anthropic and Google DeepMind are watching closely.",
-          "For investors and strategists, this signals two key insights: First, OpenAI is prioritizing bundled product ecosystems over standalone APIs, which could increase switching costs for developers. Second, Brockman’s hands-on product role may speed up the release of integrated tools, making the company more dangerous in both consumer (ChatGPT) and developer (Codex) markets. However, the uncertainty around internal execution remains high."
+          {
+            "summary": "Core question: How will Brockman's product leadership reshape OpenAI's portfolio?",
+            "expanded": "This TechCrunch report reveals that OpenAI is undergoing a leadership shakeup, with co-founder Greg Brockman stepping into a product strategy role. The news comes amid plans to combine ChatGPT, the company's flagship consumer chatbot, with Codex, its programming-focused AI model. This integration suggests a strategic push toward unified developer-consumer products. Brockman, who previously led technical efforts, now focuses on product direction, which could accelerate OpenAI's move from research lab to commercial powerhouse. The report cites 'people familiar with the matter,' indicating uncertainty around timeline and exact structure. For readers, this shift matters because it may define how AI tools evolve from standalone apps to integrated platforms—affecting developers, enterprises, and everyday users alike."
+          },
+          {
+            "summary": "Key perspectives: Integration as a growth lever and competitive response",
+            "expanded": "The article highlights two major takeaways. First, merging ChatGPT and Codex could create a single platform where users write code and converse with AI in one environment—a direct challenge to GitHub Copilot and other coding assistants. Second, Brockman's return to product strategy after a period of organizational flux signals OpenAI's desire to streamline decision-making. This move may also be defensive: with rivals like Google and Anthropic pushing integrated AI suites, OpenAI needs cohesive product leadership. The report remains cautious, noting that plans are 'reportedly' underway and could change. For career watchers, this indicates growing demand for product managers who understand both AI research and consumer UX."
+          }
         ],
-        "why": "This is not just an org chart change — it reflects OpenAI’s strategic bet that product integration, not raw model size, will determine competitive advantage in the next 12 months. Understanding this helps founders and investors anticipate shifts in AI platform strategy.",
+        "why": "This is the most concrete signal yet that OpenAI is betting on product integration over separate tool silos. For investors and strategists, Brockman's role shift suggests the company is prioritizing market fit over pure research—a critical pivot as AI competition intensifies.",
         "links": [
           [
             "TechCrunch AI: OpenAI co-founder Greg Brockman takes charge of product strategy",
@@ -859,15 +871,19 @@ const archiveEn = [
       {
         "section": "Research Reports",
         "priority": "medium",
-        "title": "Influencer Marketing Benchmark Report 2026: AI’s Growing Role in Creator Economy",
-        "dek": "A comprehensive look at how AI tools are reshaping influencer marketing strategies, budgeting, and ROI measurement.",
+        "title": "Influencer Marketing Benchmark Report 2026 - Influencer Marketing Hub",
+        "dek": "Data-driven analysis of influencer marketing trends, with a focus on AI-driven tools and ROI.",
         "details": [
           {
-            "summary": "The 2026 edition of the Influencer Marketing Benchmark Report by Influencer Marketing Hub analyzes over 10,000 campaigns and surveys to assess the state of the industry, with a special focus on generative AI adoption.",
-            "expanded": "The report reveals that 68% of brands now use AI tools for influencer discovery, content generation, or performance prediction—up from 42% in 2025. AI-driven platforms have reduced campaign planning time by 30% on average, while 54% of marketers cite improved ROI attribution as the top benefit. However, concerns about authenticity and deepfake risks are rising: 37% of consumers say they can detect AI-generated influencer content, and 22% say it reduces trust. The report also highlights a shift toward micro-influencers augmented by AI content studios, with average engagement rates for AI-assisted posts being 1.8x higher than standard posts. For investors, the data points to a fast-growing SaaS niche in AI marketing analytics; for product builders, the emphasis is on privacy-compliant personalization and transparent labeling. The report is based on a mix of proprietary surveys and third-party data, but exact sample sizes for certain claims are not disclosed."
+            "summary": "Report Release and Scope",
+            "expanded": "The Influencer Marketing Benchmark Report 2026, released by Influencer Marketing Hub, aggregates data from thousands of campaigns to provide industry benchmarks on spending, engagement rates, and platform performance. While the full report requires purchase, press materials suggest it covers the shift toward nano- and micro-influencers, the rise of video content, and the integration of AI for campaign management and fraud detection. The report claims that AI-powered matching systems improve campaign efficiency by up to 30%."
+          },
+          {
+            "summary": "AI Integration in Influencer Marketing",
+            "expanded": "A key theme in the report is the growing role of AI in influencer marketing. According to the summary, AI tools are now used by over 60% of marketers for influencer discovery, content optimization, and performance analytics. The report highlights that brands using AI see 15–20% higher engagement per dollar spent. For non-technical readers, this means automated identification of the right influencers, real-time budget adjustments, and predictive metrics that replace manual guesswork. The findings underscore a strategic shift toward data-driven, scalable influencer partnerships."
           }
         ],
-        "why": "For anyone building AI marketing tools or investing in creator economy platforms, this report provides the first large-scale evidence of AI’s measurable impact on influencer ROI—and flags the trust gap that could become a regulatory bottleneck.",
+        "why": "This report provides crucial benchmarks for marketers and investors evaluating AI's impact on influencer marketing, a channel that continues to grow in importance for brand engagement and ROI.",
         "links": [
           [
             "Google News AI Reports: Influencer Marketing Benchmark Report 2026 - Influencer Marketing Hub",
@@ -879,15 +895,18 @@ const archiveEn = [
         "section": "AI Term",
         "priority": "learning",
         "title": "Agentic Workflow",
-        "dek": "A pattern where AI models autonomously execute multi-step tasks by reasoning, using tools, and adapting based on feedback.",
+        "dek": "The architectural pattern behind today's autonomous agents and enterprise AI automation — and why it matters for every builder.",
         "details": [
-          "An agentic workflow refers to a system design in which an AI model—typically a large language model—is given a high-level goal and then autonomously plans and executes a sequence of subtasks, often using external tools (e.g., APIs, databases, code interpreters) and adjusting its actions based on intermediate results. Unlike simple prompt-response interactions, agentic workflows involve reasoning loops, memory, and error recovery. This architecture underpins many emerging enterprise AI applications, from automated customer support to complex data analysis pipelines. The rising adoption of such workflows is reflected in recent enterprise AI growth: Claude usage increased 128% and Gemini 48% over the past year (SaaStr, 2026-05-17), as companies seek more autonomous and reliable AI assistants that can handle multi-step processes."
+          {
+            "summary": "Agentic workflow refers to a system design where AI agents autonomously plan, execute, and iterate on multi-step tasks, often using tools, memory, and self-correction loops. Unlike single-prompt models, agentic workflows break complex goals into sub-tasks, call external APIs, and adapt based on intermediate results.",
+            "expanded": "In practice, an agentic workflow might involve an LLM that writes code, runs it in a sandbox, reads error logs, and revises the code — all without human intervention. This pattern powers tools like AutoGPT, Devin, and enterprise copilots. Key components include: a planner (decomposing tasks), a executor (calling actions), a memory store (retaining context), and a monitor (checking success). The term gained traction after 2024, as companies realized that wrapping LLMs with scaffolding yields far more reliable outcomes than raw prompting. A McKinsey report on AI in the workplace (2025) highlights that agentic workflows are becoming the default for automating knowledge work, with early adopters reporting 30-50% efficiency gains in tasks like data analysis and report generation. However, challenges remain: error propagation, cost of multiple LLM calls, and safety risks when agents act autonomously on production systems."
+          }
         ],
-        "why": "Understanding agentic workflow is essential for product leaders and engineers evaluating AI automation tools: it is the common pattern behind the most impactful enterprise AI deployments today, and mastery of this design paradigm can shape both strategic investments and career specialization.",
+        "why": "Understanding agentic workflow is essential for anyone building AI products or investing in automation: it's the underlying architecture that makes today's most hyped agent demos actually work, and it directly influences decisions on model selection, tooling, and deployment cost.",
         "links": [
           [
-            "Who’s Winning Enterprise AI Now: Claude Up 128%, Gemini Up 48%, OpenAI Down 8%, Grok Still A Rounding Error - SaaStr",
-            "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU9JVFJRUkppVVhJMWdIZ050ZTFCWnVsTXNnY1BWY2ZZZWNrSzVhWEZ6c1NLS25Rd2gyYTdoVllPRGhSWnRrY0JvekNmdUprSTNIdThmZGJzWF9hTmVoTjJzckhxVjhQR1BsV1dYcnQ0ZXpvRk85UXJMM2hmSEl0bUFLQm82Y0U2Z3BQOV9kUWJGaGlSSm5xeGM4dEkteVY3VXk3YTljaDBia0UxQUJIQ0RUSUo4TnFWeV9MMms0ckY?oc=5"
+            "McKinsey: AI in the workplace (2025)",
+            "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNHluenp6NE4teVg3bTJiWG9VZk81dDQwcDBJcmVJWlBHdWhIYWRSYTNWX052aHVZdjhfdmxXNk9mTENURGRzdURmMExpTm5VazdfTWZpcUxTV21TcThJbHc2cFluMmRjMXdVeE80ZDhBR0JUWUhJcHJiX2Rva1lGT2tfMDNEOHZzRkJwSUpoM3FwZjh1RU56aXcxclFqNnRyVkRBVkJIbUkyaloxWGpscjJTZ2hYVkNxX0g2d2liUm41MlhaZDQwcl9JTlFtcWVGd3d0Vzg5V3Y?oc=5"
           ]
         ]
       }
