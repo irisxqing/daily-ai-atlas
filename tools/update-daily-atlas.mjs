@@ -392,6 +392,7 @@ function isDeepReadEntry(entry) {
 function isTopStoryEntry(entry) {
   if (isLowQualityEntry(entry)) return false;
   const text = entryText(entry);
+  if (comparisonOnlyPattern.test(text) && !directActionPattern.test(text)) return false;
   const hasDirectPrioritySignal = priorityCompanyPattern.test(text) && (!comparisonOnlyPattern.test(text) || directActionPattern.test(text));
   const hasPrimaryMarketSignal = primaryMarketPattern.test(text)
     && (modelLaunchPattern.test(text) || aiLeaderPattern.test(text) || communityConcernPattern.test(text) || industryChainPattern.test(text) || directActionPattern.test(text));
