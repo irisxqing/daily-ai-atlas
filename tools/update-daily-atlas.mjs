@@ -7,7 +7,37 @@ const rootDir = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
 const appPath = path.join(rootDir, "app.js");
 const indexPath = path.join(rootDir, "index.html");
 const timezone = "Asia/Shanghai";
-const model = process.env.OPENAI_MODEL || "gpt-5";
+const provider = process.env.AI_PROVIDER || (process.env.DEEPSEEK_API_KEY ? "deepseek" : "openai");
+const deepseekModel = process.env.DEEPSEEK_MODEL || "deepseek-v4-flash";
+const openaiModel = process.env.OPENAI_MODEL || "gpt-5-mini";
+const deepseekBaseUrl = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com";
+const maxSourceEntries = Number(process.env.MAX_SOURCE_ENTRIES || 90);
+const maxEntriesPerSource = Number(process.env.MAX_ENTRIES_PER_SOURCE || 6);
+
+const sourceFeeds = [
+  ["AI Valley", "https://www.theaivalley.com/feed"],
+  ["The Rundown AI", "https://www.therundown.ai/feed"],
+  ["Ben's Bites", "https://www.bensbites.co/feed"],
+  ["TLDR AI", "https://tldr.tech/ai/feed"],
+  ["The Batch", "https://www.deeplearning.ai/the-batch/feed/"],
+  ["Latent Space", "https://www.latent.space/feed"],
+  ["Import AI", "https://importai.substack.com/feed"],
+  ["OpenAI News", "https://openai.com/news/rss.xml"],
+  ["Anthropic News", "https://www.anthropic.com/news/rss.xml"],
+  ["Google AI Blog", "https://blog.google/technology/ai/rss/"],
+  ["Google DeepMind", "https://deepmind.google/discover/blog/rss.xml"],
+  ["NVIDIA AI Blog", "https://blogs.nvidia.com/blog/category/deep-learning/feed/"],
+  ["Hugging Face Blog", "https://huggingface.co/blog/feed.xml"],
+  ["GitHub AI & ML", "https://github.blog/ai-and-ml/feed/"],
+  ["TechCrunch AI", "https://techcrunch.com/category/artificial-intelligence/feed/"],
+  ["VentureBeat AI", "https://venturebeat.com/category/ai/feed/"],
+  ["Product Hunt", "https://www.producthunt.com/feed"],
+  ["arXiv cs.AI", "https://export.arxiv.org/rss/cs.AI"],
+  ["arXiv cs.CL", "https://export.arxiv.org/rss/cs.CL"],
+  ["arXiv cs.LG", "https://export.arxiv.org/rss/cs.LG"],
+  ["机器之心", "https://www.jiqizhixin.com/rss"],
+  ["量子位", "https://www.qbitai.com/feed"]
+];
 
 function shanghaiDate(date = new Date()) {
   return new Intl.DateTimeFormat("en-CA", {
@@ -51,7 +81,172 @@ function extractJson(text) {
   if (trimmed.startsWith("{")) return JSON.parse(trimmed);
   const match = trimmed.match(/```(?:json)?\s*([\s\S]*?)```/);
   if (match) return JSON.parse(match[1]);
+  const objectStart = trimmed.indexOf("{");
+  const objectEnd = trimmed.lastIndexOf("}");
+  if (objectStart !== -1 && objectEnd > objectStart) {
+    return JSON.parse(trimmed.slice(objectStart, objectEnd + 1));
+  }
   throw new Error("Model response did not contain parseable JSON.");
+}
+
+function decodeHtml(value = "") {
+  return String(value)
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, "\"")
+    .replace(/&#39;/g, "'")
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code)));
+}
+
+function stripTags(value = "") {
+  return decodeHtml(value)
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizeKey(value) {
+  return String(value || "").trim().toLowerCase();
+}
+
+function tagValue(block, tag) {
+  const escaped = tag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = block.match(new RegExp(`<${escaped}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${escaped}>`, "i"));
+  return match ? decodeHtml(match[1]).trim() : "";
+}
+
+function atomLink(block) {
+  const match = block.match(/<link[^>]+href=["']([^"']+)["'][^>]*>/i);
+  return match ? decodeHtml(match[1]).trim() : "";
+}
+
+function isImageUrl(url = "") {
+  return /\.(avif|gif|jpe?g|png|webp)(\?|#|$)/i.test(url)
+    || /substackcdn\.com\/image|wp-content\/uploads|resize=|youtube\/w_/i.test(url);
+}
+
+function itemImage(block) {
+  const mediaMatch = block.match(/<media:content[^>]+url=["']([^"']+)["'][^>]*>/i)
+    || block.match(/<media:thumbnail[^>]+url=["']([^"']+)["'][^>]*>/i)
+    || block.match(/<img[^>]+src=["']([^"']+)["'][^>]*>/i);
+  if (mediaMatch) {
+    const url = decodeHtml(mediaMatch[1]).trim();
+    return isImageUrl(url) ? url : "";
+  }
+  const enclosure = block.match(/<enclosure[^>]+url=["']([^"']+)["'][^>]*type=["']image\/[^"']+["'][^>]*>/i);
+  if (!enclosure) return "";
+  const url = decodeHtml(enclosure[1]).trim();
+  return isImageUrl(url) ? url : "";
+}
+
+function itemDate(block) {
+  const raw = tagValue(block, "pubDate") || tagValue(block, "updated") || tagValue(block, "published") || tagValue(block, "dc:date");
+  if (!raw) return "";
+  const date = new Date(raw);
+  return Number.isNaN(date.getTime()) ? raw : date.toISOString();
+}
+
+function parseFeedEntries(xml, source) {
+  const blocks = [
+    ...xml.matchAll(/<item\b[\s\S]*?<\/item>/gi),
+    ...xml.matchAll(/<entry\b[\s\S]*?<\/entry>/gi)
+  ].map((match) => match[0]);
+
+  return blocks.slice(0, 12).map((block) => {
+    const title = stripTags(tagValue(block, "title"));
+    const link = stripTags(tagValue(block, "link")) || atomLink(block) || stripTags(tagValue(block, "guid"));
+    const description = stripTags(
+      tagValue(block, "description")
+      || tagValue(block, "summary")
+      || tagValue(block, "content")
+      || tagValue(block, "content:encoded")
+    );
+    return {
+      source: source.name,
+      sourceUrl: source.url,
+      title,
+      link,
+      date: itemDate(block),
+      summary: description.slice(0, 720),
+      image: itemImage(block)
+    };
+  }).filter((entry) => entry.title && entry.link);
+}
+
+async function fetchWithTimeout(url, timeoutMs = 12000) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, text/html;q=0.8",
+        "User-Agent": "AI Daily Atlas/1.0 (+https://irisxqing.github.io/daily-ai-atlas/)"
+      }
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return await response.text();
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+async function collectSourcePack(date) {
+  const settled = await Promise.allSettled(sourceFeeds.map(async ([name, url]) => {
+    const xml = await fetchWithTimeout(url);
+    return { name, url, entries: parseFeedEntries(xml, { name, url }) };
+  }));
+
+  const sources = [];
+  const entries = [];
+  settled.forEach((result, index) => {
+    const [name, url] = sourceFeeds[index];
+    if (result.status === "fulfilled") {
+      sources.push({ name, url, count: result.value.entries.length, ok: true });
+      entries.push(...result.value.entries);
+    } else {
+      sources.push({ name, url, count: 0, ok: false, error: String(result.reason?.message || result.reason) });
+    }
+  });
+
+  const seen = new Set();
+  const sortedEntries = entries
+    .map((entry) => ({ ...entry, timestamp: Date.parse(entry.date) || 0 }))
+    .sort((a, b) => b.timestamp - a.timestamp);
+  const recentCutoff = Date.now() - 14 * 24 * 60 * 60 * 1000;
+  const candidateEntries = sortedEntries.filter((entry) => entry.timestamp >= recentCutoff);
+  const freshnessBalancedEntries = candidateEntries.length >= 35 ? candidateEntries : sortedEntries;
+  const sourceCounts = new Map();
+  const uniqueEntries = freshnessBalancedEntries
+    .filter((entry) => {
+      const key = normalizeKey(entry.link || entry.title);
+      if (!key || seen.has(key)) return false;
+      const sourceCount = sourceCounts.get(entry.source) || 0;
+      if (sourceCount >= maxEntriesPerSource) return false;
+      seen.add(key);
+      sourceCounts.set(entry.source, sourceCount + 1);
+      return true;
+    })
+    .slice(0, maxSourceEntries)
+    .map(({ timestamp, ...entry }) => entry);
+
+  if (uniqueEntries.length < 10) {
+    throw new Error(`Too few source entries collected (${uniqueEntries.length}). Check feed availability.`);
+  }
+
+  return {
+    date,
+    timezone,
+    generatedAt: new Date().toISOString(),
+    coverage: lookbackDescription(),
+    sources,
+    entries: uniqueEntries
+  };
 }
 
 function normalizeLinks(links = []) {
@@ -207,12 +402,13 @@ function updateAppCacheBust(date) {
   fs.writeFileSync(indexPath, next);
 }
 
-function buildPrompt(date) {
+function buildPrompt(date, sourcePack) {
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
 ${lookbackDescription()}
 
-请为 AI Daily Atlas 生成一个可直接写入 app.js 的双语日报 JSON。你可以使用 web search 搜集最新公开信息，并必须优先引用可打开的一手或可信来源。
+请为 AI Daily Atlas 生成一个可直接写入 app.js 的双语日报 JSON。
+你不能联网浏览；只能使用下面 SOURCE_PACK 中的公开来源条目作为事实基础。不要编造 SOURCE_PACK 之外的链接、融资金额、发布时间或媒体素材。SOURCE_PACK 里的 newsletter / media 只作为雷达线索；公司官网、官方博客、论文、GitHub、Hugging Face、Product Hunt、机构报告、主流媒体来源优先作为确认来源。
 
 选题范围：
 - 中国和美国 AI 公司为主，其他国家为辅。
@@ -226,10 +422,11 @@ ${lookbackDescription()}
 - 今日重点 4-6 条；投融资 1-2 条；开源 1-2 条；AI 产品推荐 1-3 条；机构报告 1-2 条；每日 AI 词条 1 条。
 - 每条 item 必须有 section、priority、title、dek、details、why、links。
 - details 是 2-5 条字符串；links 是 [label, url] 数组。
-- 如果有可靠公开图片/视频/GitHub preview，可以加 media；没有就不要编造。
+- 如果 SOURCE_PACK 条目里有 image，或原链接显然是视频/GitHub/Product Hunt/Hugging Face 页面，可以加 media；没有可靠素材就不要编造。AI 产品推荐和今日重点优先带 media。
 - 语言风格：中文轻量、好读、有判断，适合非技术背景读者；英文自然简洁，不要机械直译。
 - 不要包含用户个人收入、具体雇主经历或敏感个人信息。
 - 未确认消息必须标注不确定性，不要写成事实。
+- 每条内容的 links 必须至少包含 1 个 SOURCE_PACK 中出现过的 URL。
 
 返回 JSON，不能有 Markdown 包裹。格式：
 {
@@ -246,10 +443,59 @@ ${lookbackDescription()}
     "items": []
   }
 }
+
+SOURCE_PACK:
+${JSON.stringify(sourcePack, null, 2)}
 `;
 }
 
-async function createIssue(date) {
+function chatCompletionText(body) {
+  return body?.choices?.[0]?.message?.content || "";
+}
+
+async function createIssueWithDeepSeek(date, sourcePack) {
+  const apiKey = process.env.DEEPSEEK_API_KEY;
+  if (!apiKey) {
+    throw new Error("Missing DEEPSEEK_API_KEY. Add it as a GitHub Actions repository secret.");
+  }
+
+  const response = await fetch(`${deepseekBaseUrl.replace(/\/$/, "")}/chat/completions`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${apiKey}`
+    },
+    body: JSON.stringify({
+      model: deepseekModel,
+      messages: [
+        {
+          role: "system",
+          content: "You are the editor of AI Daily Atlas. Return valid JSON only. Base every factual claim on the provided SOURCE_PACK."
+        },
+        {
+          role: "user",
+          content: buildPrompt(date, sourcePack)
+        }
+      ],
+      response_format: { type: "json_object" },
+      temperature: 0.25,
+      max_tokens: 14000
+    })
+  });
+
+  const body = await response.json();
+  if (!response.ok) {
+    throw new Error(`DeepSeek API error ${response.status}: ${JSON.stringify(body)}`);
+  }
+
+  const parsed = extractJson(chatCompletionText(body));
+  return {
+    zh: normalizeIssue(parsed.archiveZhIssue, date, "zh"),
+    en: normalizeIssue(parsed.archiveEnIssue, date, "en")
+  };
+}
+
+async function createIssueWithOpenAI(date, sourcePack) {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) {
     throw new Error("Missing OPENAI_API_KEY. Add it as a GitHub Actions repository secret.");
@@ -262,23 +508,11 @@ async function createIssue(date) {
       Authorization: `Bearer ${apiKey}`
     },
     body: JSON.stringify({
-      model,
+      model: openaiModel,
       reasoning: { effort: process.env.OPENAI_REASONING_EFFORT || "medium" },
-      tools: [
-        {
-          type: "web_search",
-          user_location: {
-            type: "approximate",
-            country: "CN",
-            city: "Shanghai",
-            region: "Shanghai",
-            timezone
-          }
-        }
-      ],
-      tool_choice: "auto",
+      text: { format: { type: "json_object" } },
       max_output_tokens: 14000,
-      input: buildPrompt(date)
+      input: buildPrompt(date, sourcePack)
     })
   });
 
@@ -294,9 +528,23 @@ async function createIssue(date) {
   };
 }
 
+async function createIssue(date, sourcePack) {
+  if (provider === "deepseek") return createIssueWithDeepSeek(date, sourcePack);
+  if (provider === "openai") return createIssueWithOpenAI(date, sourcePack);
+  throw new Error(`Unsupported AI_PROVIDER: ${provider}`);
+}
+
 async function main() {
   const date = process.env.ISSUE_DATE || shanghaiDate();
-  const { zh, en } = await createIssue(date);
+  const sourcePack = await collectSourcePack(date);
+  console.log(`Collected ${sourcePack.entries.length} source entries from ${sourcePack.sources.filter((source) => source.ok).length} sources.`);
+  if (process.env.DRY_RUN_SOURCES === "1") {
+    console.log(JSON.stringify(sourcePack, null, 2));
+    return;
+  }
+
+  console.log(`Generating issue with provider=${provider}, model=${provider === "deepseek" ? deepseekModel : openaiModel}.`);
+  const { zh, en } = await createIssue(date, sourcePack);
 
   let source = fs.readFileSync(appPath, "utf8");
   source = replaceOrInsertIssue(source, "archiveZh", zh);

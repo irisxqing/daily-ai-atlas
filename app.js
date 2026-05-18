@@ -1531,6 +1531,7 @@ const sourceMethodText = document.querySelector("#sourceMethodText");
 const sourceMethodLinks = document.querySelector("#sourceMethodLinks");
 const sourceApproachSummary = document.querySelector("#sourceApproachSummary");
 const sourceApproachPanel = document.querySelector("#sourceApproachPanel");
+const heroImage = document.querySelector("#heroImage");
 const heroHeadline = document.querySelector("#heroHeadline");
 const heroSummary = document.querySelector("#heroSummary");
 const copyLinkButton = document.querySelector("#copyLinkButton");
@@ -2314,6 +2315,18 @@ function renderHeader(issue) {
   issueMeta.textContent = issue.meta;
   heroHeadline.textContent = issue.headline;
   heroSummary.textContent = issue.summary;
+  const heroMedia = issue.items.find((item) => item.media && item.media.src && !isTermSection(item.section))?.media;
+  if (heroMedia) {
+    heroImage.src = heroMedia.src;
+    heroImage.alt = heroMedia.alt || heroMedia.title || issue.headline;
+    heroImage.onerror = () => {
+      heroImage.src = "./assets/ai-daily-hero.png";
+      heroImage.alt = "AI Daily Atlas visual";
+    };
+  } else {
+    heroImage.src = "./assets/ai-daily-hero.png";
+    heroImage.alt = "AI Daily Atlas visual";
+  }
 }
 
 function renderSourceMethod() {

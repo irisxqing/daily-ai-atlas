@@ -108,8 +108,8 @@ node tools/generate-broadcast.mjs --lang en --date 2026-05-15 --stdout
 - **发布方式**：脚本会更新 `app.js`，提交到 `main`，然后 GitHub Pages 自动刷新。
   **Publishing flow**: the script updates `app.js`, commits to `main`, and GitHub Pages refreshes automatically.
 
-- **必需 Secret**：在 GitHub repository secrets 中添加 `OPENAI_API_KEY`。可选 repository variables：`OPENAI_MODEL`、`OPENAI_REASONING_EFFORT`。
-  **Required secret**: add `OPENAI_API_KEY` to GitHub repository secrets. Optional repository variables: `OPENAI_MODEL`, `OPENAI_REASONING_EFFORT`.
+- **低成本生成**：默认优先使用 `DEEPSEEK_API_KEY` + `deepseek-v4-flash`；如果没有 DeepSeek key，会回退到 OpenAI。可选 repository variables：`AI_PROVIDER`、`DEEPSEEK_MODEL`、`OPENAI_MODEL`、`OPENAI_REASONING_EFFORT`。
+  **Low-cost generation**: the workflow prefers `DEEPSEEK_API_KEY` + `deepseek-v4-flash`; if no DeepSeek key is available, it falls back to OpenAI. Optional repository variables: `AI_PROVIDER`, `DEEPSEEK_MODEL`, `OPENAI_MODEL`, `OPENAI_REASONING_EFFORT`.
 
 ## Roadmap / 接下来想做
 
