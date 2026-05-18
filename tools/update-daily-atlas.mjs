@@ -8,13 +8,32 @@ const appPath = path.join(rootDir, "app.js");
 const indexPath = path.join(rootDir, "index.html");
 const timezone = "Asia/Shanghai";
 const provider = process.env.AI_PROVIDER || (process.env.DEEPSEEK_API_KEY ? "deepseek" : "openai");
-const deepseekModel = process.env.DEEPSEEK_MODEL || "deepseek-v4-flash";
+const deepseekModel = process.env.DEEPSEEK_MODEL || "deepseek-v4-pro";
 const openaiModel = process.env.OPENAI_MODEL || "gpt-5-mini";
 const deepseekBaseUrl = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com";
 const maxSourceEntries = Number(process.env.MAX_SOURCE_ENTRIES || 90);
 const maxEntriesPerSource = Number(process.env.MAX_ENTRIES_PER_SOURCE || 6);
 
+function googleNews(name, query, locale = { hl: "en-US", gl: "US", ceid: "US:en" }) {
+  const params = new URLSearchParams({
+    q: query,
+    hl: locale.hl,
+    gl: locale.gl,
+    ceid: locale.ceid
+  });
+  return [name, `https://news.google.com/rss/search?${params.toString()}`];
+}
+
 const sourceFeeds = [
+  googleNews("Google News AI Labs", "(OpenAI OR Anthropic OR DeepMind OR xAI OR Meta AI OR Microsoft AI OR NVIDIA AI) when:2d"),
+  googleNews("Google News China AI", "(DeepSeek OR Qwen OR MiniMax OR Zhipu OR Kimi OR Doubao OR Alibaba AI OR Tencent AI) when:2d", {
+    hl: "zh-CN",
+    gl: "CN",
+    ceid: "CN:zh-Hans"
+  }),
+  googleNews("Google News AI Funding", "(AI startup funding OR AI acquisition OR AI IPO OR 人工智能 融资 OR AI 投融资) when:7d"),
+  googleNews("Google News AI Products", "(AI agent product launch OR AI tool Product Hunt OR AI workflow tool OR AI 产品 发布) when:7d"),
+  googleNews("Google News AI Reports", "(AI report PDF OR State of AI report OR Stanford AI Index OR McKinsey AI report OR BCG AI report OR AI 报告) when:14d"),
   ["AI Valley", "https://www.theaivalley.com/feed"],
   ["The Rundown AI", "https://www.therundown.ai/feed"],
   ["Ben's Bites", "https://www.bensbites.co/feed"],
@@ -151,6 +170,31 @@ function itemDate(block) {
   return Number.isNaN(date.getTime()) ? raw : date.toISOString();
 }
 
+function sourceWeight(source = "") {
+  if (/OpenAI|Anthropic|Google AI|Google DeepMind|NVIDIA|Hugging Face|GitHub/i.test(source)) return 18;
+  if (/Google News AI Labs|Google News China AI|Google News AI Funding|Google News AI Reports/i.test(source)) return 16;
+  if (/TechCrunch|VentureBeat|量子位|机器之心/i.test(source)) return 13;
+  if (/Latent Space|Import AI|AI Valley|Rundown|Ben's Bites|TLDR|Batch/i.test(source)) return 10;
+  if (/Product Hunt/i.test(source)) return 7;
+  return 8;
+}
+
+function relevanceScore(entry) {
+  const text = `${entry.source} ${entry.title} ${entry.summary}`.toLowerCase();
+  const timestamp = Date.parse(entry.date) || 0;
+  const ageHours = timestamp ? Math.max(0, (Date.now() - timestamp) / 36e5) : 168;
+  let score = sourceWeight(entry.source) + Math.max(0, 18 - ageHours / 6);
+  if (/openai|anthropic|deepmind|google|xai|meta|microsoft|nvidia|deepseek|qwen|minimax|zhipu|kimi|doubao|alibaba|tencent|bytedance|字节|阿里|腾讯|智谱|月之暗面/.test(text)) score += 12;
+  if (/launch|release|announc|partnership|deploy|model|api|agent|robot|inference|benchmark|发布|上线|合作|模型|机器人|推理|评测/.test(text)) score += 8;
+  if (/funding|ipo|acquisition|invest|valuation|round|融资|投融资|上市|并购|估值|投资/.test(text)) score += 8;
+  if (/report|pdf|research|paper|index|survey|study|报告|研究|论文|指数|白皮书/.test(text)) score += 7;
+  if (/github|open source|hugging face|repo|开源/.test(text)) score += 6;
+  if (/product hunt|tool|workflow|memory|canvas|agentmemory|产品|工具|工作流/.test(text)) score += 4;
+  if (/commencement speech|screen share|wordpress|spotify|developer tools, one menu/i.test(text)) score -= 8;
+  if (!/ai|openai|anthropic|deepmind|llm|model|agent|robot|人工智能|大模型|模型|智能/.test(text)) score -= 10;
+  return score;
+}
+
 function parseFeedEntries(xml, source) {
   const blocks = [
     ...xml.matchAll(/<item\b[\s\S]*?<\/item>/gi),
@@ -173,7 +217,8 @@ function parseFeedEntries(xml, source) {
       link,
       date: itemDate(block),
       summary: description.slice(0, 720),
-      image: itemImage(block)
+      image: itemImage(block),
+      score: 0
     };
   }).filter((entry) => entry.title && entry.link);
 }
@@ -216,8 +261,8 @@ async function collectSourcePack(date) {
 
   const seen = new Set();
   const sortedEntries = entries
-    .map((entry) => ({ ...entry, timestamp: Date.parse(entry.date) || 0 }))
-    .sort((a, b) => b.timestamp - a.timestamp);
+    .map((entry) => ({ ...entry, timestamp: Date.parse(entry.date) || 0, score: relevanceScore(entry) }))
+    .sort((a, b) => b.score - a.score || b.timestamp - a.timestamp);
   const recentCutoff = Date.now() - 14 * 24 * 60 * 60 * 1000;
   const candidateEntries = sortedEntries.filter((entry) => entry.timestamp >= recentCutoff);
   const freshnessBalancedEntries = candidateEntries.length >= 35 ? candidateEntries : sortedEntries;
@@ -299,6 +344,22 @@ function normalizeItem(item) {
   return normalized;
 }
 
+function detailDepth(detail) {
+  if (typeof detail === "string") return detail.trim().length;
+  if (detail && typeof detail === "object") {
+    return `${detail.summary || ""} ${detail.expanded || ""} ${detail.quote || ""}`.trim().length;
+  }
+  return 0;
+}
+
+function isReportSection(section) {
+  return ["机构报告", "Research Reports"].includes(section);
+}
+
+function isTermSectionName(section) {
+  return ["每日词条", "AI Term"].includes(section);
+}
+
 function normalizeIssue(issue, date, lang) {
   if (!issue || typeof issue !== "object") throw new Error(`Missing ${lang} issue.`);
   const normalized = {
@@ -317,6 +378,19 @@ function normalizeIssue(issue, date, lang) {
   if (normalized.items.length < 8) {
     throw new Error(`${lang} issue has too few items.`);
   }
+  normalized.items.forEach((item) => {
+    if (isTermSectionName(item.section)) return;
+    const richDetails = item.details.filter((detail) => detailDepth(detail) >= 45);
+    if (richDetails.length < 2) {
+      throw new Error(`${lang} item "${item.title}" is too shallow. Details must include at least two rich context points.`);
+    }
+    if (isReportSection(item.section)) {
+      const expandedReports = item.details.filter((detail) => detail && typeof detail === "object" && detail.expanded && detail.expanded.length >= 90);
+      if (!expandedReports.length) {
+        throw new Error(`${lang} report "${item.title}" needs expanded report analysis objects.`);
+      }
+    }
+  });
   return normalized;
 }
 
@@ -405,13 +479,16 @@ function updateAppCacheBust(date) {
   fs.writeFileSync(indexPath, next);
 }
 
-function buildPrompt(date, sourcePack) {
+function buildPrompt(date, sourcePack, revisionNote = "") {
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
 ${lookbackDescription()}
+${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：增加新闻细节、写成解释性段落，机构报告必须有 expanded 深度解读对象。\n` : ""}
 
 请为 AI Daily Atlas 生成一个可直接写入 app.js 的双语日报 JSON。
 你不能联网浏览；只能使用下面 SOURCE_PACK 中的公开来源条目作为事实基础。不要编造 SOURCE_PACK 之外的链接、融资金额、发布时间或媒体素材。SOURCE_PACK 里的 newsletter / media 只作为雷达线索；公司官网、官方博客、论文、GitHub、Hugging Face、Product Hunt、机构报告、主流媒体来源优先作为确认来源。
+
+重要：换模型不应改变日报目标。你不是在复述 SOURCE_PACK 排名前几条，而是在做“当日 AI 信号编辑”。请横向比较所有来源，按影响力、可信度、对产品/投资/战略/AI落地的启发排序。不要被 Product Hunt、Google News 或单一 feed 的更新时间挤占版面。若同一事件被多源报道，合并成一条并放多个 links。
 
 选题范围：
 - 中国和美国 AI 公司为主，其他国家为辅。
@@ -424,12 +501,28 @@ ${lookbackDescription()}
 - en issue 使用英文 sections：Top Stories、Funding Watch、Open Source、AI Product Picks、Research Reports、AI Term。
 - 今日重点 4-6 条；投融资 1-2 条；开源 1-2 条；AI 产品推荐 1-3 条；机构报告 1-2 条；每日 AI 词条 1 条。
 - 每条 item 必须有 section、priority、title、dek、details、why、links。
-- details 是 2-5 条字符串；links 是 [label, url] 数组。
+- details 必须是 3-5 条“有信息量的小段落”，不能是短 bullet。每条 detail 至少包含背景/关键数字/主体动作/影响范围/不确定性中的两个维度。中文每条约 80-180 字，英文每条约 45-100 words。
+- details 不要写成“Apple 正在改造 Siri / 新功能强调隐私”这种目录式短句。要写成能让非技术读者理解来龙去脉的解释性段落。
+- why 必须是 1-2 句判断，解释这条新闻对产品、投资、公司战略、创业机会或职业判断有什么意义。
+- links 是 [label, url] 数组。重要新闻尽量给 2-4 个 links；至少 1 个链接必须来自 SOURCE_PACK。
 - 如果 SOURCE_PACK 条目里有 image，或原链接显然是视频/GitHub/Product Hunt/Hugging Face 页面，可以加 media；没有可靠素材就不要编造。AI 产品推荐和今日重点优先带 media。
 - 语言风格：中文轻量、好读、有判断，适合非技术背景读者；英文自然简洁，不要机械直译。
 - 不要包含用户个人收入、具体雇主经历或敏感个人信息。
 - 未确认消息必须标注不确定性，不要写成事实。
 - 每条内容的 links 必须至少包含 1 个 SOURCE_PACK 中出现过的 URL。
+
+机构报告 / Research Reports 的特殊要求：
+- 不允许只写一句话摘要。每份报告的 details 必须使用对象数组，每个对象包含 summary 和 expanded。
+- expanded 要相对详细，中文约 120-260 字，英文约 80-160 words；需要讲清核心观点、关键数据或结论、产业/投资/职业启发。
+- 如果 SOURCE_PACK 提供了报告页/PDF/研究文章链接，links 必须包含它。若有原文短句，可以加 quote；quote 必须很短，不能超过 25 个英文词或 35 个中文字。若有报告图表入口，可以加 chart: ["图表/报告入口", "url"]。
+- 如果当天没有真正的机构报告，可以选择深度研究文章/官方研究博客/年度报告，但必须明确它不是正式咨询报告，不要硬编 PDF。
+
+选题覆盖要求：
+- 今日重点不要只来自一个来源；优先混合官方/主流媒体/研究社区/中国媒体。
+- AI 产品推荐要选真正可试用、有产品启发的工具，不能只按 Product Hunt 最新时间排序。
+- 投融资只写有融资、IPO、并购、估值、投资方或资本市场信号的内容；没有可信信号时宁可写 1 条并标注来源限制。
+- 开源项目优先 GitHub/Hugging Face/开发者社区有明确项目页或技术博客的内容。
+- 每日词条要和当天新闻有关，解释清楚但不要幼稚化。
 
 返回 JSON，不能有 Markdown 包裹。格式：
 {
@@ -456,7 +549,7 @@ function chatCompletionText(body) {
   return body?.choices?.[0]?.message?.content || "";
 }
 
-async function createIssueWithDeepSeek(date, sourcePack) {
+async function createIssueWithDeepSeek(date, sourcePack, revisionNote = "") {
   const apiKey = process.env.DEEPSEEK_API_KEY;
   if (!apiKey) {
     throw new Error("Missing DEEPSEEK_API_KEY. Add it as a GitHub Actions repository secret.");
@@ -477,7 +570,7 @@ async function createIssueWithDeepSeek(date, sourcePack) {
         },
         {
           role: "user",
-          content: buildPrompt(date, sourcePack)
+          content: buildPrompt(date, sourcePack, revisionNote)
         }
       ],
       response_format: { type: "json_object" },
@@ -498,7 +591,7 @@ async function createIssueWithDeepSeek(date, sourcePack) {
   };
 }
 
-async function createIssueWithOpenAI(date, sourcePack) {
+async function createIssueWithOpenAI(date, sourcePack, revisionNote = "") {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) {
     throw new Error("Missing OPENAI_API_KEY. Add it as a GitHub Actions repository secret.");
@@ -515,7 +608,7 @@ async function createIssueWithOpenAI(date, sourcePack) {
       reasoning: { effort: process.env.OPENAI_REASONING_EFFORT || "medium" },
       text: { format: { type: "json_object" } },
       max_output_tokens: 14000,
-      input: buildPrompt(date, sourcePack)
+      input: buildPrompt(date, sourcePack, revisionNote)
     })
   });
 
@@ -532,9 +625,16 @@ async function createIssueWithOpenAI(date, sourcePack) {
 }
 
 async function createIssue(date, sourcePack) {
-  if (provider === "deepseek") return createIssueWithDeepSeek(date, sourcePack);
-  if (provider === "openai") return createIssueWithOpenAI(date, sourcePack);
-  throw new Error(`Unsupported AI_PROVIDER: ${provider}`);
+  const create = provider === "deepseek" ? createIssueWithDeepSeek : provider === "openai" ? createIssueWithOpenAI : null;
+  if (!create) throw new Error(`Unsupported AI_PROVIDER: ${provider}`);
+  try {
+    return await create(date, sourcePack);
+  } catch (error) {
+    const message = String(error?.message || error);
+    if (!/too shallow|expanded report|needs expanded/i.test(message)) throw error;
+    console.warn(`Quality check failed, retrying once: ${message}`);
+    return create(date, sourcePack, message);
+  }
 }
 
 async function main() {
