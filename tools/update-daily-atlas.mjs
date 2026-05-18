@@ -362,6 +362,25 @@ function isTermSectionName(section) {
   return ["每日词条", "AI Term"].includes(section);
 }
 
+function isListLikeSummary(summary = "") {
+  const text = String(summary).trim();
+  const separators = (text.match(/[、；;]/g) || []).length;
+  const sectionWords = ["投融资", "开源", "产品", "报告", "融资", "机器人", "agents", "funding", "open source", "products", "reports"];
+  const sectionHits = sectionWords.filter((word) => text.toLowerCase().includes(word.toLowerCase())).length;
+  const companyWords = ["OpenAI", "Anthropic", "Google", "DeepMind", "xAI", "Meta", "NVIDIA", "DeepSeek", "Qwen", "MiniMax", "Kimi", "智谱", "阿里", "腾讯", "字节"];
+  const companyHits = companyWords.filter((word) => text.includes(word)).length;
+  return separators >= 4 || (companyHits >= 4 && sectionHits >= 2);
+}
+
+function validateIssueFrame(issue, lang) {
+  if (!issue.headline || !issue.summary) {
+    throw new Error(`${lang} issue missing headline or summary.`);
+  }
+  if (isListLikeSummary(issue.summary)) {
+    throw new Error(`${lang} issue summary is list-like. It must synthesize one editorial theme instead of listing news.`);
+  }
+}
+
 function validateItemContent(item, lang) {
   if (isTermSectionName(item.section)) return;
   const richDetails = item.details.filter((detail) => detailDepth(detail) >= 45);
@@ -388,9 +407,7 @@ function normalizeIssue(issue, date, lang) {
     items: (issue.items || []).map(normalizeItem)
   };
 
-  if (!normalized.headline || !normalized.summary) {
-    throw new Error(`${lang} issue missing headline or summary.`);
-  }
+  validateIssueFrame(normalized, lang);
   if (normalized.items.length < 8) {
     throw new Error(`${lang} issue has too few items.`);
   }
@@ -487,7 +504,7 @@ function buildSelectionPrompt(date, sourcePack, revisionNote = "") {
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
 ${lookbackDescription()}
-${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：增加新闻细节、写成解释性段落，机构报告必须有 expanded 深度解读对象。\n` : ""}
+${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：如果是篇首 summary 问题，要提炼一条主题主线，不要罗列新闻；如果是内容问题，要增加新闻细节、写成解释性段落，机构报告必须有 expanded 深度解读对象。\n` : ""}
 
 请为 AI Daily Atlas 先生成一份“选题计划”JSON。后续中英文正文必须基于这份选题计划生成，所以这一步最重要。
 你不能联网浏览；只能使用下面 SOURCE_PACK 中的公开来源条目作为事实基础。不要编造 SOURCE_PACK 之外的链接、融资金额、发布时间或媒体素材。SOURCE_PACK 里的 newsletter / media 只作为雷达线索；公司官网、官方博客、论文、GitHub、Hugging Face、Product Hunt、机构报告、主流媒体来源优先作为确认来源。
@@ -502,12 +519,18 @@ ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请�
 
 内容结构要求：
 - 计划里使用中文 section：今日重点、投融资信息、开源项目、AI产品推荐、机构报告、每日词条。
-- 计划里使用中文 section：今日重点、投融资信息、开源项目、AI产品推荐、机构报告、每日词条。
 - 控制在 10-12 条：今日重点 4-5 条；投融资 1-2 条；开源 1-2 条；AI 产品推荐 2 条；机构报告 1 条；每日 AI 词条 1 条。
 - 每条 plan item 必须包含 section、priority、titleZh、titleEn、angle、sourceIds、links。
 - sourceIds 必须引用 SOURCE_PACK.entries 里的 id。每条至少 1 个，重要新闻尽量 2-4 个。
 - links 是 [label, url] 数组，URL 必须来自 SOURCE_PACK，每条最多 3 个。
 - angle 要写明为什么选择它、应该补充哪些上下文、对非技术读者最重要的理解角度，最多 120 个中文字。
+
+篇首编辑要求：
+- headlineZh/headlineEn 和 summaryZh/summaryEn 不能是新闻标题罗列，也不能像目录一样覆盖“融资、产品、报告、开源……”。
+- 它们要提炼当天一条主线：例如“模型公司从发布模型转向争夺用户入口”“AI 落地正在从演示走向流程重构”。
+- summary 必须是 2 句话：第 1 句提炼当天主题，第 2 句解释这个主题为什么值得关注。
+- summary 最多点名 2 个公司或产品；如果需要更多具体新闻，留到正文卡片里写。
+- 中文 summary 约 70-130 字；英文 summary 约 35-70 words。
 
 机构报告 / Research Reports 的特殊要求：
 - 计划里必须至少包含 1 条机构报告或深度研究文章。
@@ -526,8 +549,8 @@ ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请�
   "plan": {
     "headlineZh": "...",
     "headlineEn": "...",
-    "summaryZh": "...",
-    "summaryEn": "...",
+    "summaryZh": "一句主题判断。第二句说明为什么重要。",
+    "summaryEn": "One thematic sentence. A second sentence explaining why it matters.",
     "tagsZh": ["..."],
     "tagsEn": ["..."],
     "items": [
@@ -653,6 +676,8 @@ function normalizePlan(plan) {
   if (!normalized.headlineZh || !normalized.headlineEn || !normalized.summaryZh || !normalized.summaryEn) {
     throw new Error("Editorial plan missing headline or summary.");
   }
+  validateIssueFrame({ headline: normalized.headlineZh, summary: normalized.summaryZh }, "zh plan");
+  validateIssueFrame({ headline: normalized.headlineEn, summary: normalized.summaryEn }, "en plan");
   if (normalized.items.length < 8) {
     throw new Error("Editorial plan has too few items.");
   }
@@ -745,7 +770,7 @@ async function createItemWithRetry({ date, sourcePack, planItem, lang, requestJs
     return item;
   } catch (error) {
     const message = String(error?.message || error);
-    if (!/too shallow|expanded report|needs expanded|unterminated string|parseable json|unexpected end/i.test(message)) throw error;
+    if (!/too shallow|expanded report|needs expanded|summary is list-like|unterminated string|parseable json|unexpected end/i.test(message)) throw error;
     console.warn(`Item generation retry for ${lang} "${planItem.titleZh || planItem.titleEn}": ${message}`);
     const parsed = await requestJson(buildItemPrompt(date, scopedSourcePack, planItem, lang, message), 4500);
     const item = normalizeItem(parsed.item);
@@ -800,7 +825,7 @@ async function createIssue(date, sourcePack) {
     return await create(date, sourcePack);
   } catch (error) {
     const message = String(error?.message || error);
-    if (!/too shallow|expanded report|needs expanded|unterminated string|parseable json|unexpected end/i.test(message)) throw error;
+    if (!/too shallow|expanded report|needs expanded|summary is list-like|unterminated string|parseable json|unexpected end/i.test(message)) throw error;
     console.warn(`Quality check failed, retrying once: ${message}`);
     return create(date, sourcePack, message);
   }
