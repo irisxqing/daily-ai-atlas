@@ -151,6 +151,42 @@ function dateWindowForIssue(issueDate) {
   };
 }
 
+function dateStringForMonthDay(year, month, day) {
+  const date = new Date(`${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}T12:00:00+08:00`);
+  if (Number.isNaN(date.getTime())) return "";
+  const dateString = shanghaiDate(date);
+  const [, actualMonth, actualDay] = dateString.split("-").map(Number);
+  if (actualMonth !== Number(month) || actualDay !== Number(day)) return "";
+  return dateString;
+}
+
+function explicitEventDates(entry, issueDate) {
+  const issueYear = Number(issueDate.slice(0, 4));
+  const text = `${entry.title || ""} ${entry.summary || ""}`;
+  const dates = new Set();
+  for (const match of text.matchAll(/\b(20\d{2})[-/.年](\d{1,2})[-/.月](\d{1,2})日?\b/g)) {
+    const date = dateStringForMonthDay(Number(match[1]), Number(match[2]), Number(match[3]));
+    if (date) dates.add(date);
+  }
+  for (const match of text.matchAll(/(?:^|[^\d])(\d{1,2})月(\d{1,2})日/g)) {
+    const date = dateStringForMonthDay(issueYear, Number(match[1]), Number(match[2]));
+    if (date) dates.add(date);
+  }
+  for (const match of text.matchAll(/(?:^|[^\d])(\d{1,2})[/.](\d{1,2})(?:$|[^\d])/g)) {
+    const date = dateStringForMonthDay(issueYear, Number(match[1]), Number(match[2]));
+    if (date) dates.add(date);
+  }
+  if (/315曝光|315晚会|3[·.]15|消费者权益日/i.test(text)) {
+    const date = dateStringForMonthDay(issueYear, 3, 15);
+    if (date) dates.add(date);
+  }
+  return [...dates];
+}
+
+function hasDateInWindow(dates, startDate, endDate) {
+  return dates.some((date) => date >= startDate && date <= endDate);
+}
+
 function lookbackDescription(issueDate = shanghaiDate()) {
   const { primaryStartDate, primaryEndDate, isWeekendWindow } = dateWindowForIssue(issueDate);
   if (isWeekendWindow) {
@@ -307,7 +343,9 @@ function classifyFreshness(entry, issueDate) {
   const sourceDate = sourceDateString(entry.date);
   if (!sourceDate) return null;
   const { primaryStartDate, primaryEndDate, fallbackStartDate, fallbackEndDate, isWeekendWindow } = dateWindowForIssue(issueDate);
+  const eventDates = explicitEventDates(entry, issueDate);
   if (sourceDate >= primaryStartDate && sourceDate <= primaryEndDate) {
+    if (eventDates.length && !hasDateInWindow(eventDates, primaryStartDate, primaryEndDate)) return null;
     return {
       sourceDate,
       freshness: "d-1",
@@ -316,6 +354,7 @@ function classifyFreshness(entry, issueDate) {
     };
   }
   if (sourceDate >= fallbackStartDate && sourceDate <= fallbackEndDate) {
+    if (eventDates.length && !hasDateInWindow(eventDates, fallbackStartDate, fallbackEndDate)) return null;
     const curated = entry.curatedFallback || entry.source === "Curated AI Products";
     return {
       sourceDate,
