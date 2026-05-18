@@ -1304,8 +1304,8 @@ const archiveEn = [
 ];
 
 const sectionOrders = {
-  zh: ["全部", "今日重点", "投融资信息", "开源项目", "AI产品推荐", "机构报告", "职业雷达"],
-  en: ["All", "Top Stories", "Funding Watch", "Open Source", "AI Product Picks", "Research Reports", "Career Radar"]
+  zh: ["全部", "今日重点", "投融资信息", "开源项目", "AI产品推荐", "深度阅读", "机构报告", "职业雷达"],
+  en: ["All", "Top Stories", "Funding Watch", "Open Source", "AI Product Picks", "Deep Read", "Research Reports", "Career Radar"]
 };
 
 const uiText = {
@@ -1626,6 +1626,12 @@ const topicDefinitions = [
     terms: ["机构报告", "报告", "Stanford", "BCG", "McKinsey", "KPMG", "Research Reports", "AI Index"]
   },
   {
+    id: "deep-read",
+    zh: "深度阅读",
+    en: "Deep Read",
+    terms: ["深度阅读", "Deep Read", "analysis", "deep dive", "essay", "interview", "long read", "explainer", "strategy", "case study", "深度", "长文", "访谈", "专访", "解读", "复盘", "分析"]
+  },
+  {
     id: "career",
     zh: "职业机会",
     en: "Career",
@@ -1646,6 +1652,8 @@ const sectionThemeMap = {
   "Open Source": "open-source",
   "AI产品推荐": "product",
   "AI Product Picks": "product",
+  "深度阅读": "deep-read",
+  "Deep Read": "deep-read",
   "机构报告": "report",
   "Research Reports": "report",
   "职业雷达": "career",
@@ -1658,6 +1666,7 @@ const sectionCodeMap = {
   funding: "FUND",
   "open-source": "OSS",
   product: "TOOL",
+  "deep-read": "READ",
   report: "REPORT",
   career: "CAREER"
 };
@@ -1974,7 +1983,7 @@ function getTodayKey() {
 
 function getRefreshState(issue) {
   const now = new Date();
-  const refreshTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 9, 30, 0);
+  const refreshTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 7, 30, 0);
   const today = getTodayKey();
   if (issue.date === today && now >= refreshTime) {
     return { label: t("statusReady"), tone: "ready" };
@@ -2065,7 +2074,7 @@ function renderContent() {
     const node = storyTemplate.content.firstElementChild.cloneNode(true);
     node.dataset.sectionKey = getSectionKey(item.section);
     node.dataset.sectionCode = getSectionCode(item.section);
-    if (["投融资信息", "机构报告", "职业雷达", "Funding Watch", "Research Reports", "Career Radar"].includes(item.section)) {
+    if (["投融资信息", "深度阅读", "机构报告", "职业雷达", "Funding Watch", "Deep Read", "Research Reports", "Career Radar"].includes(item.section)) {
       node.classList.add("is-wide");
     }
     node.querySelector(".section-code").textContent = getSectionCode(item.section);

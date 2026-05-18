@@ -807,6 +807,11 @@ input:focus {
   --tab-soft: #ecfeff;
 }
 
+.tab-button[data-section-key="deep-read"] {
+  --tab-accent: var(--red);
+  --tab-soft: #fff1f0;
+}
+
 .tab-button[data-section-key="report"] {
   --tab-accent: var(--violet);
   --tab-soft: #f5f3ff;
@@ -894,6 +899,12 @@ input:focus {
   --section-accent: var(--teal);
   --section-soft: #ecfeff;
   --section-wash: rgba(14, 138, 166, 0.052);
+}
+
+.story-card[data-section-key="deep-read"] {
+  --section-accent: var(--red);
+  --section-soft: #fff1f0;
+  --section-wash: rgba(180, 35, 24, 0.045);
 }
 
 .story-card[data-section-key="report"] {

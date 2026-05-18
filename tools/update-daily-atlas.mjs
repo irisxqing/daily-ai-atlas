@@ -244,10 +244,23 @@ function isReportEntry(entry) {
   return hasReportSignal && hasAiSignal && isRecentEntry(entry, 14) && !staleYear;
 }
 
+function isDeepReadEntry(entry) {
+  const text = entryText(entry);
+  const source = String(entry.source || "").toLowerCase();
+  const title = String(entry.title || "").toLowerCase();
+  const isDeepSource = /latent space|import ai|the batch|ai valley|tmtpost|钛媒体|机器之心|stratechery|semi|sequoia|a16z|interview|newsletter/i.test(source);
+  const hasDeepSignal = /\banalysis\b|\bdeep[- ]dive\b|\bessay\b|\binterview\b|\blong read\b|\bexplainer\b|\bguide\b|\bstrategy\b|\bopinion\b|\bcase study\b|\bwhat it means\b|深度|长文|访谈|专访|解读|复盘|观察|分析|案例|方法论/i.test(text);
+  const hasAiSignal = /\bai\b|artificial intelligence|generative|llm|agent|openai|anthropic|deepmind|机器人|人工智能|大模型|模型|智能体/i.test(text);
+  const isHardNews = isFundingEntry(entry) || isOpenSourceEntry(entry) || isProductEntry(entry) || isReportEntry(entry) || isAcademicPaperEntry(entry);
+  const isTinyUpdate = /\brelease notes?\b|\bchangelog\b|\bpatch\b|更新日志|版本更新/.test(title);
+  return hasAiSignal && (isDeepSource || hasDeepSignal) && !isHardNews && !isTinyUpdate && isRecentEntry(entry, 14);
+}
+
 function isTopStoryEntry(entry) {
   return !isFundingEntry(entry)
     && !isOpenSourceEntry(entry)
     && !isProductEntry(entry)
+    && !isDeepReadEntry(entry)
     && !isReportEntry(entry)
     && !isStaleReportLikeEntry(entry)
     && !isAcademicPaperEntry(entry);
@@ -573,6 +586,8 @@ function selectionSourcePack(sourcePack) {
   openSource.forEach((entry) => used.add(entry.id));
   const products = categoryCandidates(sourcePack, isProductEntry, 12, used);
   products.forEach((entry) => used.add(entry.id));
+  const deepReads = categoryCandidates(sourcePack, isDeepReadEntry, 8, used);
+  deepReads.forEach((entry) => used.add(entry.id));
   const reports = categoryCandidates(sourcePack, isReportEntry, 8, used);
   reports.forEach((entry) => used.add(entry.id));
   const topStories = categoryCandidates(
@@ -602,6 +617,7 @@ function selectionSourcePack(sourcePack) {
       funding: funding.map(compactEntry),
       openSource: openSource.map(compactEntry),
       products: products.map(compactEntry),
+      deepReads: deepReads.map(compactEntry),
       reports: reports.map(compactEntry)
     }
   };
@@ -622,6 +638,7 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
 - 投融资信息只能从 candidatePools.funding 选。
 - 开源项目只能从 candidatePools.openSource 选。
 - AI产品推荐只能从 candidatePools.products 选，必须是真正可试用的软件/工具/应用/工作流产品；不要选择纯模型发布、API、芯片、融资或平台战略新闻。
+- 深度阅读只能从 candidatePools.deepReads 选，必须是值得花时间读完的长文、访谈、深度分析、案例复盘或观点文章；不要选择普通新闻快讯、融资、GitHub 项目、工具推荐或旧报告。
 - 机构报告只能从 candidatePools.reports 选，必须是近期发布的报告/研究/白皮书/指数/深度研究。如果 reports 候选为空，可以把这一栏改成“暂无足够新的机构报告信号”，但不能选旧报告凑数。
 
 选题范围：
@@ -631,8 +648,8 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
 - 来源方法：AI Valley、The Rundown AI、Ben's Bites、TLDR AI、The Batch、Import AI、Latent Space、中文 AI 媒体只作为雷达；重要事实需要回到公司官网、官方博客、论文、GitHub、Hugging Face、Product Hunt、机构报告、主流媒体或招聘官网确认。
 
 内容结构要求：
-- 计划里使用中文 section：今日重点、投融资信息、开源项目、AI产品推荐、机构报告、每日词条。
-- 控制在 10 条：今日重点 4 条；投融资 1 条；开源 1 条；AI 产品推荐 2 条；机构报告 1 条；每日 AI 词条 1 条。
+- 计划里使用中文 section：今日重点、投融资信息、开源项目、AI产品推荐、深度阅读、机构报告、每日词条。
+- 控制在 11 条：今日重点 4 条；投融资 1 条；开源 1 条；AI 产品推荐 2 条；深度阅读 1 条；机构报告 1 条；每日 AI 词条 1 条。
 - 每条 plan item 必须包含 section、priority、titleZh、titleEn、angle、sourceIds。
 - sourceIds 必须引用对应 candidatePools 里的 id。每条至少 1 个，重要新闻尽量 2-4 个。
 - 不要在 plan item 里返回 links，脚本会根据 sourceIds 自动补链接。
@@ -653,6 +670,7 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
 选题覆盖要求：
 - 今日重点不要只来自一个来源；优先混合官方/主流媒体/研究社区/中国媒体。
 - AI 产品推荐要选真正可试用、有产品启发的工具，尤其关注个人知识管理、跨模型工作流、agent、创作工具、效率工具，不能只按 Product Hunt 最新时间排序。
+- 深度阅读每天只选 1 篇。它应该帮助读者理解一个更大的 AI 产业问题，例如模型竞争、AI agent 落地、机器人商业化、开源生态、AI 产品入口、企业采用或监管变化。angle 里要写清“为什么值得深读”。
 - 投融资只写有融资、IPO、并购、估值、投资方或资本市场信号的内容；没有可信信号时宁可写 1 条并标注来源限制。
 - 开源项目优先 GitHub/Hugging Face/开发者社区有明确项目页或技术博客的内容。
 - 每日词条要和当天新闻有关，解释清楚但不要幼稚化。
@@ -691,6 +709,7 @@ function sectionForLang(section, lang) {
     "投融资信息": "Funding Watch",
     "开源项目": "Open Source",
     "AI产品推荐": "AI Product Picks",
+    "深度阅读": "Deep Read",
     "机构报告": "Research Reports",
     "每日词条": "AI Term"
   }[section] || section;
@@ -720,6 +739,7 @@ function sectionPredicate(section) {
   if (section === "投融资信息") return isFundingEntry;
   if (section === "开源项目") return isOpenSourceEntry;
   if (section === "AI产品推荐") return isProductEntry;
+  if (section === "深度阅读") return isDeepReadEntry;
   if (section === "机构报告") return isReportEntry;
   if (section === "今日重点") return isTopStoryEntry;
   return () => true;
@@ -750,6 +770,7 @@ function fallbackPlan(date, sourcePack, reason = "") {
     ["投融资信息", 1, isFundingEntry],
     ["开源项目", 1, isOpenSourceEntry],
     ["AI产品推荐", 2, isProductEntry],
+    ["深度阅读", 1, isDeepReadEntry],
     ["机构报告", 1, isReportEntry]
   ];
   const items = [];
@@ -781,7 +802,7 @@ function fallbackPlan(date, sourcePack, reason = "") {
   }
 
   for (const entry of sourcePack.entries) {
-    if (items.length >= 9) break;
+    if (items.length >= 10) break;
     if (used.has(entry.id)) continue;
     if (!isTopStoryEntry(entry)) continue;
     used.add(entry.id);
@@ -811,9 +832,9 @@ function fallbackPlan(date, sourcePack, reason = "") {
     headlineEn: "AI competition is moving from model launches to real workflows",
     summaryZh: "今天的 AI 信号主线不是单点发布，而是模型、产品、资本和行业应用都在向可落地的工作流靠拢。对读者来说，值得关注的不只是哪个模型更强，而是谁能把 AI 嵌进真实业务、知识管理和自动化流程。",
     summaryEn: "Today’s AI signals point less to isolated launches and more to the race to turn models into usable workflows. The important question is not only which model is stronger, but who can embed AI into real business, knowledge, and automation loops.",
-    tagsZh: ["模型平台", "AI产品", "投融资", "开源", "机构报告"],
-    tagsEn: ["Models", "AI Products", "Funding", "Open Source", "Reports"],
-    items: items.slice(0, 10)
+    tagsZh: ["模型平台", "AI产品", "投融资", "开源", "深度阅读", "机构报告"],
+    tagsEn: ["Models", "AI Products", "Funding", "Open Source", "Deep Read", "Reports"],
+    items: items.slice(0, 11)
   });
 }
 
@@ -900,6 +921,11 @@ item 必须有 section、priority、title、dek、details、why、links。
 - links 是 [label, url] 数组。每条内容的 links 必须至少包含 1 个 SOURCE_PACK 中出现过的 URL。
 - 如果 SOURCE_PACK 条目里有 image，或原链接显然是视频/GitHub/Product Hunt/Hugging Face 页面，可以加 media；没有可靠素材就不要编造。AI 产品推荐和今日重点优先带 media。
 - 不要包含用户个人收入、具体雇主经历或敏感个人信息。
+
+深度阅读 / Deep Read 的特殊要求：
+- 这不是普通新闻卡，也不是报告卡。details 要解释：文章核心问题、作者/来源背景、最值得读的 2-3 个观点、对产品/投资/战略/职业判断的启发。
+- 标题和 why 要明确告诉读者“为什么今天值得花时间读这篇”，而不是只复述文章标题。
+- 如果原文是访谈、长文或观点文章，要保留其观点属性；不要把作者观点包装成已确认事实。
 
 机构报告 / Research Reports 的特殊要求：
 - 不允许只写一句话摘要。每份报告的 details 必须使用对象数组，每个对象包含 summary 和 expanded。
