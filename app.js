@@ -1,5 +1,271 @@
 const archiveZh = [
   {
+    date: "2026-05-18",
+    title: "AI Daily Atlas",
+    meta: "2026年5月18日",
+    headline: "算力的单位，正在从“几张卡”变成“几座电站”",
+    summary:
+      "早上好。今天最值得知道的 5 件事：NVIDIA 与 OpenAI 把合作口径直接拉到 10GW 级别（相当于把“训练模型”写成“建电站”）；AI 安全正在从模型对齐扩展到供应链与签名证书；Anthropic 与盖茨基金会把 Claude 推进公共部门和公共产品；中国侧继续在“更便宜、更可用、更工程化”的模型/API 路线卷细节；开源圈开始出现专门为 agent 设计的新语言与工具链。",
+    items: [
+      {
+        section: "今日重点",
+        priority: "高",
+        title: "NVIDIA 与 OpenAI 宣布 10GW 级“算力工厂”合作意向",
+        dek:
+          "这不是“又买了一批 GPU”，而是把合作写成“至少 10GW 的 AI 数据中心能力”——算力正在变成一种基础设施级资产。",
+        details: [
+          "NVIDIA 新闻稿称双方签署合作意向：为 OpenAI 下一代 AI 基础设施部署至少 10GW 的 NVIDIA 系统，规模相当于“数百万张 GPU”。",
+          "NVIDIA 表示将随着每 1GW 部署逐步投资 OpenAI，最高可达 1000 亿美元；第一阶段目标是在 2026 年下半年上线，平台为 NVIDIA Vera Rubin。",
+          "合作内容包括：OpenAI 把 NVIDIA 作为优先的计算与网络伙伴，共同优化 OpenAI 的模型/基础设施软件路线图与 NVIDIA 的软硬件路线图。",
+          "新闻稿还提到这与 OpenAI 现有的基础设施协作网络互补（包括 Microsoft、Oracle、SoftBank 等）。"
+        ],
+        why:
+          "对产品和职业判断而言，这条消息的核心是：领先模型公司的“护城河”越来越像能源与工程项目——电力、机房、网络、运维与资本结构，正在决定模型迭代速度与成本曲线。",
+        links: [
+          ["NVIDIA 新闻稿（PDF）", "https://nvidianews.nvidia.com/_gallery/download_pdf/68d173273d633288cb44040b/"]
+        ]
+      },
+      {
+        section: "今日重点",
+        priority: "高",
+        title: "OpenAI 披露第三方开发者工具事件：强调未发现用户数据泄露",
+        dek:
+          "这类安全事件的价值不在八卦，而在提醒：AI 时代的安全边界不仅是模型输出，更是开发链路、签名证书与供应链。",
+        details: [
+          "OpenAI 表示其调查未发现 OpenAI 用户数据被访问、生产系统或知识产权被攻破、软件被篡改。",
+          "应对动作包括：引入第三方取证与事件响应团队、轮换 macOS 代码签名证书、发布使用新证书的 macOS 产品新版本，并与 Apple 协作降低旧证书被继续滥用的风险。",
+          "对普通用户最直接的含义是：桌面端/企业端工具的“可信交付链”在变得更重要，更新与合规流程会越来越频繁。",
+          "对企业落地来说，这也强化了一个现实：安全团队会更关注开发链路与供应链，而不只看模型本身。"
+        ],
+        why:
+          "当 AI 进入关键业务流程，安全部门关注点会从“模型会不会胡说”扩展到“交付链能不能被信任”。这会影响企业采购节奏、上线审批、以及你做 AI 落地时必须准备的安全叙事。",
+        links: [["OpenAI 官方说明", "https://openai.com/index/axios-developer-tool-compromise/"]]
+      },
+      {
+        section: "今日重点",
+        priority: "中高",
+        title: "Anthropic × 盖茨基金会：4 年 2 亿美元推进公共部门 AI 工具与公共产品",
+        dek:
+          "一个值得跟踪的信号：顶级模型公司开始把“影响力/合规/公共部门落地”写进长期合作，而不只是卖 API。",
+        details: [
+          "Anthropic 宣布与盖茨基金会达成合作，4 年总计 2 亿美元的承诺，包含资助、Claude 使用额度与技术支持。",
+          "合作重点覆盖健康、教育、农业与经济流动等场景，并强调建设可复用的“公共产品/公共资源”。",
+          "盖茨基金会的口径强调 country-led（由各国主导）把 AI 融入现有系统，而不是单点试验。",
+          "对模型公司而言，这类合作也意味着更强的评估、治理、隐私与本地化交付要求。"
+        ],
+        why:
+          "公共部门与公益领域的 AI 采用，往往更在意可解释性、可审计、可持续运营和成本可控。未来很多“最难但最值钱”的 AI 项目，会发生在这类高约束环境里。",
+        links: [
+          ["Anthropic 公告", "https://www.anthropic.com/news/gates-foundation-partnership"],
+          ["盖茨基金会新闻稿", "https://www.gatesfoundation.org/ideas/media-center/press-releases/2026/05/ai-anthropic-partnership"]
+        ]
+      },
+      {
+        section: "今日重点",
+        priority: "中",
+        title: "DeepSeek API 进入“改名 + 退役窗口”：工程细节比发布会更影响落地",
+        dek:
+          "对企业来说，模型能力之外更真实的成本来自：API 变更、模型版本策略、迁移窗口和兼容性。",
+        details: [
+          "DeepSeek API 更新页显示：旧的模型名 `deepseek-chat` 与 `deepseek-reasoner` 将在三个月内停止使用（到 2026-07-24）。",
+          "这种“模型名/版本策略”是典型工程信号：它通常发生在产品团队开始追求更清晰的产品线、计费口径与能力分层。",
+          "对使用方而言，迁移窗口意味着要提前做兼容测试、回归评估与成本测算，而不是等到生产系统报警。",
+          "如果你在做多模型组合（OpenAI/Claude/DeepSeek/Qwen 等），这种变更会直接影响路由、缓存和评测体系。"
+        ],
+        why:
+          "“模型排行榜”很热闹，但真正决定交付成本的是工程稳定性和版本策略。能把这类变化提前纳入 roadmap 的团队，落地体验会明显更稳。",
+        links: [["DeepSeek API 更新", "https://api-docs.deepseek.com/updates/"]]
+      },
+      {
+        section: "投融资信息",
+        priority: "资本信号",
+        title: "为什么“千兆瓦级算力合作”本身就是融资新闻",
+        dek:
+          "这条不是传统意义的融资公告，但它会改变你理解 AI 资本市场的方式：算力合同、能源与机房建设，正在成为“隐形融资”。",
+        details: [
+          "NVIDIA 在合作意向中明确写出“拟逐步投资 OpenAI，最高可达 1000 亿美元”，且与每 1GW 部署进度绑定。",
+          "从结果看，这类结构让“算力供给 + 资本投入 + 路线图协同”被打包成一体：既是供货关系，也是战略投资与长期锁定。",
+          "风险点同样清晰：电力与合规、项目交付周期、单一供应链依赖、以及模型需求波动都会影响落地节奏。",
+          "对创业公司与中型企业来说，这也意味着“买得起算力”可能比“选哪个模型”更先成为战略问题。"
+        ],
+        why:
+          "如果你做 AI 战略或投资研究，建议把“算力与能源合同”当成与融资同等重要的信号：它能更早反映谁真的在押注下一代模型迭代速度。",
+        links: [
+          ["NVIDIA 新闻稿（PDF）", "https://nvidianews.nvidia.com/_gallery/download_pdf/68d173273d633288cb44040b/"]
+        ]
+      },
+      {
+        section: "开源项目",
+        priority: "新",
+        title: "Zero：把 agent 工具链做成一门“系统级语言”",
+        dek:
+          "Vercel Labs 的 Zero 把自己定位为“the programming language for agents”，强调可预测内存、显式 effects、结构化编译器输出——听起来像是为 agent 的可靠性与可调试性而生。",
+        media: {
+          type: "image",
+          src: "https://opengraph.githubassets.com/daily-ai-atlas/vercel-labs/zero",
+          alt: "Zero GitHub repository preview",
+          title: "GitHub project preview",
+          caption: "“The programming language for agents”——为 agent 的可控性与工具链而做的语言尝试",
+          href: "https://github.com/vercel-labs/zero"
+        },
+        details: [
+          "Zero 的 README 直接写明：它是面向 agent 的 systems language，目标是小而快的原生工具、显式 effects、可预测内存与结构化输出。",
+          "它仍处于实验阶段，语言/编译器/标准库都在快速变化；更像一个“方向押注”而不是稳定生产工具。",
+          "对使用者而言，值得看的不是语法，而是：它把 agent 工具（skills、routes、graph、size）当成一等公民来设计。",
+          "如果你的团队正在做 agent 工作流，长期痛点一定包括：可调试性、可复现性、权限与副作用管理。Zero 这种路线是对这些痛点的直接回应。"
+        ],
+        why:
+          "当 agent 从“会写代码”走向“能动手改系统”，工具链会重新变得重要。未来可能会出现一批专门面向 agent 的语言、运行时与安全沙箱。",
+        links: [
+          ["GitHub 仓库", "https://github.com/vercel-labs/zero"],
+          ["Zero 官网", "https://zerolang.ai/"]
+        ]
+      },
+      {
+        section: "AI产品推荐",
+        priority: "办公场景",
+        title: "Claude Design：把“做图/做稿/做原型”变成和 Claude 对话",
+        dek:
+          "Anthropic Labs 推出的 Claude Design 把 Claude 的能力延伸到更像“可交付物”的东西：一页纸、原型、幻灯片、视觉稿。",
+        details: [
+          "Anthropic 将 Claude Design 放在 Labs 产品线下，强调和 Claude 协作生成 polished visual work（设计、原型、slides、one-pagers）。",
+          "对文科背景更友好的一点是：它把提示词的输出目标从“文字”变成“可以拿去讨论/评审/交付的版面”。",
+          "对电商与运营团队，典型用法是：活动页草稿、商品故事页、一页策略梳理、内部汇报稿、以及快速 A/B 的视觉方向。",
+          "限制也很现实：品牌一致性、资产版权、以及与现有设计系统的协作深度，仍需要实际试用验证。"
+        ],
+        why:
+          "当你需要在 30 分钟内把一个想法变成“可以让团队对齐”的东西，Claude Design 这类工具的价值会比“更聪明的聊天机器人”更直接。",
+        links: [["Anthropic 公告", "https://www.anthropic.com/news/introducing-claude-design"]]
+      },
+      {
+        section: "AI产品推荐",
+        priority: "安全提醒",
+        title: "企业用 agent 前先补一课：把“权限”当成产品设计",
+        dek:
+          "今天的安全新闻提醒了一件事：你做的不是一个聊天机器人，而是一个能读写系统的“自动化员工”。",
+        details: [
+          "如果 agent 能访问 Gmail/ERP/订单系统/广告账户，那么“最小权限 + 审计追踪 + 可回滚”就必须成为默认配置。",
+          "把关键动作做成“明确确认”而不是“自动执行”，尤其是付款、改价、删库、发货、批量邮件等高风险动作。",
+          "优先把 agent 放进隔离环境（沙箱/只读镜像/测试账号），再逐步扩大权限范围。",
+          "把供应链与交付链纳入风险清单：依赖的 npm 包、桌面端签名证书、CI/CD 权限、密钥轮换流程都要有预案。"
+        ],
+        why:
+          "你越早把“权限设计”当成产品的一部分，越不容易在规模化落地时被安全与合规卡住。",
+        links: [["OpenAI 安全说明", "https://openai.com/index/axios-developer-tool-compromise/"]]
+      },
+      {
+        section: "机构报告",
+        priority: "收藏",
+        title: "AI Index 2026：产业主导创新、组织采用进入常态",
+        dek:
+          "想做一年以上的 AI 趋势判断，Stanford AI Index 依然是最省心的“宏观底稿”。",
+        details: [
+          {
+            summary:
+              "AI Index 2026：2025 年超过 90% 的 notable frontier models 来自行业；组织 AI 采用率达到 88%。",
+            expanded:
+              "报告的核心价值不在“某个模型赢了谁”，而在把宏观变化固定成可复用的锚点：创新主体从学术界转向产业界、模型迭代越来越依赖资本与基础设施、AI 采用在组织里进入常态化。对战略岗位来说，你可以把它当作每季度复盘的底层坐标系：哪些能力在商品化、哪些环节仍被算力/数据/人才卡住、监管与教育是否跟上。",
+            quote: "“Industry produced over 90% of notable frontier models in 2025.”",
+            chart: ["报告页 / PDF 入口", "https://hai.stanford.edu/ai-index/2026-ai-index-report"]
+          }
+        ],
+        why:
+          "当你需要把“为什么今年要投入 AI”讲给非技术高层听，这份报告提供的是可引用的宏观事实和结构化框架。",
+        links: [
+          ["报告页", "https://hai.stanford.edu/ai-index/2026-ai-index-report"],
+          ["PDF 下载", "https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf"]
+        ]
+      },
+      {
+        section: "机构报告",
+        priority: "对照",
+        title: "OECD.AI Index：把“国家 AI 能力”拆成可比较的指标",
+        dek:
+          "如果你关心中美之外的政策与产业差异，OECD 的 Index 很适合做横向对照。",
+        details: [
+          {
+            summary:
+              "OECD.AI Index 2026：从研究、产业、人才与政策等维度整理国家层面的 AI 指标体系。",
+            expanded:
+              "这份报告的好处是“可比”：它把讨论从口号拉回指标（研发投入、人才供给、产业结构、治理与政策工具等），适合在做海外市场或跨境业务时，快速判断某个国家/地区的 AI 生态成熟度与落地条件。",
+            quote: "“THE OECD.AI INDEX © OECD 2026.”",
+            chart: ["PDF 入口", "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/oecd-ai-observatory-index_8f5fa0f2/32c01014-en.pdf"]
+          }
+        ],
+        why:
+          "当 AI 变成产业政策的一部分，你需要一套“看得懂、比得动”的指标体系来做区域判断。",
+        links: [["OECD PDF", "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/oecd-ai-observatory-index_8f5fa0f2/32c01014-en.pdf"]]
+      },
+      {
+        section: "每日词条",
+        priority: "学习",
+        title: "AI Factory（AI 算力工厂）",
+        dek:
+          "一句话：AI Factory 指把算力、数据、网络、运维和软件栈打包成一套“持续生产智能”的工厂系统，而不只是买几台服务器。",
+        details: [
+          "稍微深入一点：AI Factory 的关键不是单点 GPU 性能，而是端到端吞吐——供电与散热、网络拓扑、存储、调度、训练/推理软件栈、故障恢复与成本管理。",
+          "和今天新闻的关系：当合作口径变成“10GW”，你就很难再用“买卡”去理解它——这更像一个能源与工程项目。",
+          "常见误解：AI Factory 不是只有大厂才需要。只要你做多模型路由、实时推理、或有严格延迟/成本约束，本质上都在做一个小型 AI 工厂。",
+          "工作里怎么用：做战略时，把问题从“选哪个模型”前置到“算力预算、延迟目标、数据合规、可观测性、灰度发布与故障预案”。"
+        ],
+        why:
+          "理解 AI Factory，有助于你在讨论预算与路线图时更像“做系统的人”，而不是“挑工具的人”。",
+        links: [["NVIDIA 新闻稿（PDF）", "https://nvidianews.nvidia.com/_gallery/download_pdf/68d173273d633288cb44040b/"]]
+      },
+      {
+        section: "今日学习",
+        priority: "收藏",
+        title: "读一遍 OpenAI 的安全响应：你会更懂“企业为什么总在催更新”",
+        dek:
+          "这不是安全八卦，而是一份很好的企业沟通素材：怎么在不夸大风险的前提下解释措施、边界和下一步。",
+        details: [
+          "重点看三件事：它怎么界定影响范围（哪些系统/哪些数据），它做了哪些可验证动作（取证、证书轮换、新版本发布），以及它如何与生态伙伴协作（Apple）。",
+          "把它当成“写给业务方看的安全说明”模板：清晰、克制、有行动点。",
+          "对做 AI 落地的人来说，这类文本可以直接复用到内部沟通：解释为什么需要审批、为什么需要轮换密钥、为什么需要分环境。",
+          "看完再回到你的项目：有没有类似的“交付链风险清单”？"
+        ],
+        why:
+          "你越能把安全与合规讲清楚，AI 项目越不容易被动停在 PoC。",
+        links: [["OpenAI 官方说明", "https://openai.com/index/axios-developer-tool-compromise/"]]
+      },
+      {
+        section: "继续追踪",
+        priority: "信号",
+        title: "10GW 叙事会如何落到合同与交付？",
+        dek:
+          "关注后续两类信息：一是具体数据中心/电力/选址的公开进展，二是 GPU 平台与软件栈协同能否形成可复用模板。",
+        details: [
+          "第一类：有没有公开披露的机房、能源协议、并网进度、或合作伙伴名单？",
+          "第二类：Vera Rubin 平台的交付节奏、网络方案与软件栈（训练/推理/调度）是否会同步公开。",
+          "第三类：这类“算力 + 投资”结构是否会成为行业新模板，复制到其他模型公司或云厂商。",
+          "如果你做职业规划：这类项目会催生更多“AI 基础设施 + 交付”岗位，角色会更像工程项目经理 + 平台产品经理的结合体。"
+        ],
+        why:
+          "领先实验室的迭代速度越来越依赖工程交付能力，而不是单纯研究灵感。",
+        links: [["NVIDIA 新闻稿（PDF）", "https://nvidianews.nvidia.com/_gallery/download_pdf/68d173273d633288cb44040b/"]]
+      },
+      {
+        section: "职业雷达",
+        priority: "匹配",
+        title: "AI Career Radar：偏战略落地的两条公开机会（深港/香港可关注）",
+        dek:
+          "目标画像：战略+AI背景，熟悉跨境电商平台或零售平台业务，偏业务落地与增长/运营/产品转型方向。",
+        details: [
+          "Zurich Insurance：Head of Data and AI（地点标注包含 Hong Kong 与深圳福田）。关键词：enterprise AI enablement、把 AI 嵌入分销/运营/理赔/核保等流程、治理与合规。",
+          "BTSE：AI Business Strategy Manager（香港/远程）。关键词：AI-first 组织转型、agentic workflows、MCP/工具链、ROI 与治理。",
+          "筛选建议：优先看“要结果、要 adoption、要跨部门推进”的岗位描述，而不是只写“负责 AI 战略研究”的岗位。",
+          "面试准备：建议准备 2-3 个“业务问题—AI 方案—交付节奏—指标—风险治理”的案例，强调你能把方案做成组织能力。"
+        ],
+        why:
+          "这类岗位的加分点通常不是写模型，而是能把 AI 从 PoC 推到生产：预算、KPI、治理、变更管理与跨团队协作。",
+        links: [
+          ["Zurich：Head of Data and AI（Indeed）", "https://hk.indeed.com/viewjob?jk=3e8ed0b4cee997bd"],
+          ["BTSE：AI Business Strategy Manager（Lever）", "https://jobs.lever.co/BTSE/2bab2e38-413b-4fea-96b7-101dd6adda23"]
+        ]
+      }
+    ]
+  },
+  {
     date: "2026-05-15",
     title: "AI Daily Atlas",
     meta: "2026年5月15日",
@@ -449,6 +715,276 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    date: "2026-05-18",
+    title: "AI Daily Atlas",
+    meta: "May 18, 2026",
+    headline: "Compute is shifting from 'GPUs' to 'gigawatts'",
+    summary:
+      "Good morning. The 5 things worth knowing today: NVIDIA and OpenAI are talking in 10GW units (this is 'build power plants' scale, not 'buy GPUs' scale); security attention is expanding from model alignment to supply chains and signing certificates; Anthropic and the Gates Foundation are pushing Claude into public-sector programs and shared public goods; China-side labs keep competing on cost, stability, and API/product engineering; and open source is starting to grow agent-first languages and toolchains.",
+    items: [
+      {
+        section: "Top Stories",
+        priority: "High",
+        title: "NVIDIA and OpenAI sign an LOI to deploy at least 10GW of NVIDIA systems",
+        dek:
+          "This reads less like 'they bought more GPUs' and more like 'they are building an AI power-and-data-center program' — compute is becoming infrastructure.",
+        details: [
+          "NVIDIA’s release says the two companies signed a letter of intent to deploy at least 10 gigawatts of NVIDIA systems for OpenAI’s next-generation AI infrastructure — described as millions of GPUs.",
+          "NVIDIA says it intends to invest up to $100B in OpenAI progressively as each gigawatt is deployed; the first phase targets the second half of 2026 on the NVIDIA Vera Rubin platform.",
+          "The partnership positions NVIDIA as a preferred strategic compute and networking partner, with co-optimization across OpenAI’s model/infrastructure software roadmap and NVIDIA’s hardware/software roadmap.",
+          "The release frames this as complementary to OpenAI’s broader infrastructure collaborator network (including Microsoft, Oracle, SoftBank, and others)."
+        ],
+        why:
+          "The strategic takeaway: frontier labs’ moats increasingly look like energy, facilities, networking, and delivery execution. For products and careers, the bottleneck is shifting toward infrastructure and systems engineering as much as model research.",
+        links: [
+          ["NVIDIA release (PDF)", "https://nvidianews.nvidia.com/_gallery/download_pdf/68d173273d633288cb44040b/"]
+        ]
+      },
+      {
+        section: "Top Stories",
+        priority: "High",
+        title: "OpenAI on a third-party developer tool compromise: no evidence of user-data access",
+        dek:
+          "The point here isn’t drama — it’s a reminder that modern AI risk is as much about the delivery chain as it is about model behavior.",
+        details: [
+          "OpenAI says it found no evidence that OpenAI user data was accessed, that production systems or IP were compromised, or that software was altered.",
+          "Response steps include third-party forensics/incident response, rotating a macOS code-signing certificate, shipping new macOS builds, and working with Apple to reduce risk from the prior certificate.",
+          "For end users, this translates into more frequent update and compliance cycles for desktop and enterprise software.",
+          "For enterprise deployments, security and IT teams increasingly focus on supply chain and signing integrity — not only model outputs."
+        ],
+        why:
+          "As AI becomes part of critical workflows, trust shifts from 'is the model smart?' to 'is the software supply chain trustworthy?'. This impacts procurement, approvals, and go-live timelines.",
+        links: [["OpenAI post", "https://openai.com/index/axios-developer-tool-compromise/"]]
+      },
+      {
+        section: "Top Stories",
+        priority: "High",
+        title: "Anthropic and the Gates Foundation commit $200M over four years",
+        dek:
+          "A signal to track: top labs are building long-horizon partnerships for public-sector adoption and shared public goods, not just selling APIs.",
+        details: [
+          "Anthropic announced a four-year, $200M commitment with the Gates Foundation, including grants, Claude usage credits, and technical support.",
+          "The partnership focuses on programs in global health, education, agriculture, and economic mobility, and highlights building reusable public goods.",
+          "The Gates Foundation framing emphasizes country-led integration into existing systems, rather than isolated pilots.",
+          "For model providers, this usually implies stronger requirements on evaluation, governance, privacy, and localization."
+        ],
+        why:
+          "Public-sector and philanthropic deployments are high-constraint environments (auditability, sustainability, cost control). They tend to set the bar for what 'serious' AI delivery looks like.",
+        links: [
+          ["Anthropic announcement", "https://www.anthropic.com/news/gates-foundation-partnership"],
+          ["Gates Foundation release", "https://www.gatesfoundation.org/ideas/media-center/press-releases/2026/05/ai-anthropic-partnership"]
+        ]
+      },
+      {
+        section: "Top Stories",
+        priority: "Medium",
+        title: "DeepSeek signals an API migration window (naming + deprecation schedule)",
+        dek:
+          "Operational changes like model naming, migration windows, and compatibility often matter more to real deployments than flashy launches.",
+        details: [
+          "DeepSeek’s API updates page states the legacy model names `deepseek-chat` and `deepseek-reasoner` will be discontinued in three months (by 2026-07-24).",
+          "This is a classic engineering signal: clearer product-line segmentation, billing semantics, and long-term version strategy.",
+          "For teams in production, it implies early compatibility testing, regression evals, and cost recalibration — not last-minute firefighting.",
+          "If you’re running multi-model routing, these changes directly affect routing rules, caching, and evaluation baselines."
+        ],
+        why:
+          "Leaderboards are loud; stability is expensive. The teams that operationalize versioning and migration discipline ship smoother AI systems.",
+        links: [["DeepSeek API updates", "https://api-docs.deepseek.com/updates/"]]
+      },
+      {
+        section: "Funding Watch",
+        priority: "Capital signal",
+        title: "Why a 10GW compute partnership is 'financing news' in disguise",
+        dek:
+          "This isn’t a traditional funding round announcement, but it changes how you should read the AI capital cycle: compute contracts and power/facilities are becoming hidden financing.",
+        details: [
+          "NVIDIA explicitly states an intent to invest up to $100B in OpenAI progressively as each gigawatt is deployed.",
+          "The structure bundles supply, capital, and roadmap alignment into one long lock-in mechanism.",
+          "The risk side is equally real: power and permitting, delivery timelines, single-supplier dependency, and demand volatility can all affect execution.",
+          "For startups and mid-size firms, 'affordable compute' may become a more strategic limiter than 'which model to pick'."
+        ],
+        why:
+          "If you track strategy or investing, treat power-and-compute contracts as first-class signals — they often front-run product and model cycles.",
+        links: [
+          ["NVIDIA release (PDF)", "https://nvidianews.nvidia.com/_gallery/download_pdf/68d173273d633288cb44040b/"]
+        ]
+      },
+      {
+        section: "Open Source",
+        priority: "New",
+        title: "Zero: an agent-first systems language from Vercel Labs",
+        dek:
+          "Zero brands itself as 'the programming language for agents' — explicit effects, predictable memory, and structured compiler output designed for reliability and debugging.",
+        media: {
+          type: "image",
+          src: "https://opengraph.githubassets.com/daily-ai-atlas/vercel-labs/zero",
+          alt: "Zero GitHub repository preview",
+          title: "GitHub project preview",
+          caption: "An experimental agent-first language with a toolchain mindset",
+          href: "https://github.com/vercel-labs/zero"
+        },
+        details: [
+          "The README describes Zero as a systems language for small native tools, explicit effects, predictable memory, and structured compiler output.",
+          "It is explicitly experimental and not stable yet — more direction than production default.",
+          "What’s interesting is the toolchain framing: agent tooling (skills/routes/graph/size) shows up as first-class concerns.",
+          "If your team builds agents, the long-term pain points are observability, reproducibility, and side-effect control — languages like this are a direct bet on that future."
+        ],
+        why:
+          "As agents move from 'write code' to 'change systems', reliable toolchains and safety boundaries start to matter again — expect more agent-native runtimes and sandboxes.",
+        links: [
+          ["GitHub", "https://github.com/vercel-labs/zero"],
+          ["Website", "https://zerolang.ai/"]
+        ]
+      },
+      {
+        section: "AI Product Picks",
+        priority: "Work deliverables",
+        title: "Claude Design turns 'make a deck/one-pager' into a Claude workflow",
+        dek:
+          "Anthropic Labs’ Claude Design is aimed at producing polished visual deliverables (designs, prototypes, slides, one-pagers) through collaboration with Claude.",
+        details: [
+          "Anthropic positions it as a Labs product for creating polished visual work with Claude.",
+          "For non-technical teams, the key shift is output format: from 'text answers' to 'reviewable deliverables' that teams can align on quickly.",
+          "Ecommerce and growth teams can use this for campaign-page drafts, product storytelling pages, one-page strategy briefs, and internal updates.",
+          "The practical limits to validate in real use: brand consistency, asset/IP handling, and how well it plays with existing design systems."
+        ],
+        why:
+          "When you need something discussion-ready in 30 minutes, 'deliverable-first' tools can be more valuable than a smarter chat box.",
+        links: [["Anthropic", "https://www.anthropic.com/news/introducing-claude-design"]]
+      },
+      {
+        section: "AI Product Picks",
+        priority: "Safety note",
+        title: "Before you ship an agent, design permissions like a product",
+        dek:
+          "If an agent can read/write real systems, it’s not a chatbot — it’s an automated employee. Your default architecture needs guardrails.",
+        details: [
+          "Start with least privilege plus audit logs, and keep high-risk actions (payments, pricing, bulk messaging, fulfillment) behind explicit confirmations.",
+          "Use sandboxes and test accounts before expanding access to production systems.",
+          "Treat supply chain risk (npm deps, CI/CD permissions, signing certificates, secret rotation) as part of the product risk model.",
+          "Operationally, this is where many AI deployments actually fail: not model quality, but governance and control."
+        ],
+        why:
+          "The earlier you bake permission design into the product, the less likely you get stuck in security/compliance purgatory at scale.",
+        links: [["OpenAI post", "https://openai.com/index/axios-developer-tool-compromise/"]]
+      },
+      {
+        section: "Research Reports",
+        priority: "Save",
+        title: "Stanford AI Index 2026: industry-led innovation, mainstream organizational adoption",
+        dek:
+          "If you want a reusable macro baseline for AI strategy, the AI Index remains one of the best 'annual anchors'.",
+        details: [
+          {
+            summary:
+              "AI Index 2026: industry produced over 90% of notable frontier models in 2025; organizational AI adoption reached 88%.",
+            expanded:
+              "The value is not picking winners — it’s freezing macro shifts into reusable reference points: innovation moving from academia to industry, iteration speed becoming capital-and-infrastructure driven, and AI adoption becoming normal in organizations. For strategy roles, it’s a quarterly compass: what’s commoditizing, what’s still bottlenecked by compute/data/talent, and whether regulation and education are keeping up.",
+            quote: "“Industry produced over 90% of notable frontier models in 2025.”",
+            chart: ["Report hub / PDF", "https://hai.stanford.edu/ai-index/2026-ai-index-report"]
+          }
+        ],
+        why:
+          "When you need to justify investment to non-technical leaders, this gives you credible macro facts and structure.",
+        links: [
+          ["Report hub", "https://hai.stanford.edu/ai-index/2026-ai-index-report"],
+          ["PDF", "https://hai.stanford.edu/assets/files/ai_index_report_2026.pdf"]
+        ]
+      },
+      {
+        section: "Research Reports",
+        priority: "Compare",
+        title: "OECD.AI Index 2026: country-level indicators you can actually compare",
+        dek:
+          "For cross-border work, a comparable indicator framework beats vibes. OECD’s index is useful for quick ecosystem reality checks.",
+        details: [
+          {
+            summary:
+              "OECD.AI Index 2026: organizes national AI indicators across research, industry, talent, and policy dimensions.",
+            expanded:
+              "This report is 'comparable by design' — it pushes conversations from slogans into measurable indicators. For market entry, partnerships, or global hiring, it helps you quickly gauge the maturity and constraints of an AI ecosystem.",
+            quote: "“THE OECD.AI INDEX © OECD 2026.”",
+            chart: ["PDF", "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/oecd-ai-observatory-index_8f5fa0f2/32c01014-en.pdf"]
+          }
+        ],
+        why:
+          "As AI becomes industrial policy, you want a consistent lens to compare regions beyond US/China.",
+        links: [["OECD PDF", "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/oecd-ai-observatory-index_8f5fa0f2/32c01014-en.pdf"]]
+      },
+      {
+        section: "AI Term",
+        priority: "Learn",
+        title: "AI Factory",
+        dek:
+          "One-liner: an AI Factory is an end-to-end system that continuously 'produces intelligence' by packaging compute, data, networking, ops, and software — not just a pile of servers.",
+        details: [
+          "A bit deeper: the bottleneck is throughput and reliability across power/cooling, networking, storage, scheduling, train/infer stacks, failure recovery, and cost controls.",
+          "Why it matters today: when partnerships are framed in 10GW units, 'buying GPUs' becomes the wrong mental model — it’s an energy-and-delivery program.",
+          "Common misconception: only hyperscalers need this. Any team doing multi-model routing, realtime inference, or strict latency/cost control is building a smaller AI factory.",
+          "How to use at work: move earlier than 'which model' toward compute budget, latency targets, data compliance, observability, rollout plans, and incident playbooks."
+        ],
+        why:
+          "This helps you talk like a systems builder (budget + roadmap) rather than a tool picker.",
+        links: [
+          ["NVIDIA release (PDF)", "https://nvidianews.nvidia.com/_gallery/download_pdf/68d173273d633288cb44040b/"]
+        ]
+      },
+      {
+        section: "Learning",
+        priority: "Bookmark",
+        title: "Read OpenAI’s security response once — it’s a great internal-communication template",
+        dek:
+          "Not security gossip: this is a clean example of how to define scope, actions, and next steps without overselling risk.",
+        details: [
+          "Look for three things: how they define scope (what was and wasn’t impacted), what actions are verifiable (forensics, certificate rotation, new builds), and how ecosystem coordination works (Apple).",
+          "Treat it as a 'business-readable security note' template you can reuse in your own org.",
+          "For AI deployment leads, this is practical language for explaining approvals, key rotation, environment separation, and rollout discipline.",
+          "Then bring it back to your project: do you have a supply-chain risk checklist?"
+        ],
+        why:
+          "The better you can explain security and compliance, the less your AI project gets stuck at PoC.",
+        links: [["OpenAI post", "https://openai.com/index/axios-developer-tool-compromise/"]]
+      },
+      {
+        section: "Watchlist",
+        priority: "Signal",
+        title: "How does '10GW' translate into contracts and delivery milestones?",
+        dek:
+          "Watch for (1) public data-center/power-site progress, and (2) whether Rubin + software co-optimization becomes a replicable playbook.",
+        details: [
+          "Facilities side: do we see site announcements, power agreements, permitting timelines, or named partners?",
+          "Platform side: delivery schedule for Vera Rubin, networking stack choices, and any public software-stack details (training/inference/scheduling).",
+          "Market side: does the 'compute + investment' structure become a template replicated across other labs and cloud vendors?",
+          "Career side: this kind of program expands roles that blend infra delivery, platform product, and governance."
+        ],
+        why:
+          "Iteration speed is increasingly limited by delivery execution, not just research ideas.",
+        links: [
+          ["NVIDIA release (PDF)", "https://nvidianews.nvidia.com/_gallery/download_pdf/68d173273d633288cb44040b/"]
+        ]
+      },
+      {
+        section: "Career Radar",
+        priority: "Fit",
+        title: "Two public roles worth scanning (HK / Shenzhen-adjacent)",
+        dek:
+          "Target profile: strategy + AI, familiar with cross-border ecommerce or retail platforms, focused on execution and growth/ops/product transformation.",
+        details: [
+          "Zurich Insurance: Head of Data and AI (location listing includes Hong Kong and Shenzhen Futian). Keywords: enterprise AI enablement, embedding AI into distribution/operations/claims/underwriting, governance and compliance.",
+          "BTSE: AI Business Strategy Manager (Hong Kong / remote). Keywords: AI-first transformation, agentic workflows, MCP/tooling, ROI governance.",
+          "Filter tip: prioritize roles that explicitly own adoption, KPIs, and cross-functional delivery — not just 'AI research'.",
+          "Interview prep: bring 2–3 cases in the format 'business problem → AI approach → delivery → metrics → risk/governance'."
+        ],
+        why:
+          "These roles don’t reward 'knowing models'; they reward getting AI into production with budget, governance, and measurable outcomes.",
+        links: [
+          ["Zurich role (Indeed)", "https://hk.indeed.com/viewjob?jk=3e8ed0b4cee997bd"],
+          ["BTSE role (Lever)", "https://jobs.lever.co/BTSE/2bab2e38-413b-4fea-96b7-101dd6adda23"]
+        ]
+      }
+    ]
+  },
   {
     date: "2026-05-15",
     title: "AI Daily Atlas",
