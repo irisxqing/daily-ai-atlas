@@ -1,289 +1,239 @@
 const archiveZh = [
-    {
+      {
     "date": "2026-05-18",
     "title": "AI Daily Atlas",
     "meta": "2026年5月18日",
-    "headline": "AI 日报：Apple Siri 大改隐私、Cerebras 600亿美元IPO、OpenAI 庭审信任危机",
-    "summary": "过去24小时，Apple 计划让Siri自动删除聊天记录以强化隐私；Cerebras 以600亿美元估值上市；Elon Musk-OpenAI 庭审聚焦信任问题；ArXiv 新规禁止AI代写论文；Databricks 集成GPT-5.5 企业Agent；开源项目用Claude Code写论文获6.4k星。",
+    "headline": "AI 竞争进入用户入口争夺战：Anthropic估值逼近千亿，企业市场格局洗牌",
+    "summary": "今天信号表明，AI 公司正从模型能力竞赛转向争夺用户入口和落地场景。Anthropic 估值逼近 9000 亿美元、企业市场 Claude 增长 128%，而 DeepSeek 拒绝阿里腾讯投资、OpenAI 调整产品战略，都指向这一趋势。",
     "tags": [
-      "Apple",
-      "Siri",
-      "Cerebras",
-      "IPO",
+      "AI竞争",
+      "企业市场",
+      "Anthropic",
+      "DeepSeek",
       "OpenAI",
-      "Musk",
-      "ArXiv",
-      "GPT-5.5",
-      "开源"
+      "Cerebras"
     ],
     "items": [
       {
         "section": "今日重点",
-        "priority": "1",
-        "title": "Apple Siri 大改，自动删除聊天记录保隐私",
-        "dek": "据TechCrunch报道，Apple 即将推出的新版Siri将把隐私作为核心主题，可能包括自动删除聊天记录功能。",
+        "priority": "high",
+        "title": "Anthropic 估值或达 9000 亿美元，企业市场份额激增",
+        "dek": "企业 AI 市场格局生变：Anthropic 估值传闻与市场份额数据均指向其强势崛起，OpenAI 份额下滑。",
         "details": [
-          "Apple 正在对Siri进行全面改造",
-          "新功能将强调用户隐私",
-          "可能引入自动删除聊天记录选项"
+          "Anthropic 近期被传估值可能达到 9000 亿美元，有报道称其已超越 OpenAI 成为 AI 行业估值最高的初创公司之一。不过，该消息目前仍属市场传闻，未得到 Anthropic 官方确认。若属实，这将反映投资人对定制化、安全可控 AI 模型前景的极度看好，尤其是在企业客户群体中。",
+          "据 SaaStr 最新发布的企业 AI 采用报告，过去一年 Claude（Anthropic）在企业客户中的使用量激增 128%，而 Google Gemini 增长 48%，OpenAI 产品份额下降 8%，xAI 的 Grok 仍在早期阶段。这组数据表明，企业用户正从通用模型转向更专业、可定制的 AI 解决方案，Anthropic 的安全性和可控性成为重要卖点。",
+          "内容分发网络巨头 Akamai 股价在 5 月 18 日领涨标普 500 指数，市场消息称其与 Anthropic 达成了 AI 基础设施合作。Anthropic 对计算和网络资源的需求巨大，与 Akamai 合作可优化模型推理效率。这一动向也印证了 AI 公司正深度绑定云计算和网络基础设施商，推动新一轮基础设施建设投资。",
+          "尽管 9000 亿美元估值传闻引发热议，但考虑到 Anthropic 目前的营收规模和盈利能力，该数字可能更多反映市场对其未来增长潜力的预期，而非当前价值。投资者需谨慎看待一级市场估值，重点关注企业客户留存和产品实际落地情况。"
         ],
-        "why": "这是Apple在AI助手领域的重要隐私策略，影响数十亿用户。",
+        "why": "Anthropic 在企业市场的崛起表明，AI 竞争已从模型参数转向行业解决方案和基础设施合作。对于投资人来说，关注与 Claude 深度绑定的算力和网络服务商可能是捕捉下一波增长的关键；对创业公司而言，选择正确的 AI 合作伙伴将直接影响产品竞争力。",
         "links": [
           [
-            "TechCrunch",
-            "https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/"
+            "Anthropic 估值 9000 亿美元报道",
+            "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcmI3WUM2X1Ywam50bDM1Tl9OSGkzNlI3QTM0NGFNVWEyU2J1c1ZSV3ctVjJtWXNLZWhic3NTcmRjTzMxY2w0UlBYRjJOVVo3MDgzSkJMYkh1NS12NXJST283VHNfWll0RmhkNnZLM1ZsMU5Kblc2NDcxbUs2cUstUGFkUXB2YkUtR1hSa1FrQnhhQnJkaFh5OFhfd3MzWjJZbHFZeUQzYnJaT3V3Q0xN?oc=5"
+          ],
+          [
+            "SaaStr 企业 AI 市场份额报告",
+            "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU9JVFJRUkppVVhJMWdIZ050ZTFCWnVsTXNnY1BWY2ZZZWNrSzVhWEZ6c1NLS25Rd2gyYTdoVllPRGhSWnRrY0JvekNmdUprSTNIdThmZGJzWF9hTmVoTjJzckhxVjhQR1BsV1dYcnQ0ZXpvRk85UXJMM2hmSEl0bUFLQm82Y0U2Z3BQOV9kUWJGaGlSSm5xeGM4dEkteVY3VXk3YTljaDBia0UxQUJIQ0RUSUo4TnFWeV9MMms0ckY?oc=5"
+          ],
+          [
+            "Akamai 与 Anthropic 合作消息",
+            "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPOVFRNVZDdTZZTENNMzJnUGcwWnNidndTWGx2U1hleWJpOHZ4SVl2elg4UWkwWjJfbWVYT1J6aW1wcWhsOUZDTFV1dEV2RllhUE5mYTBrUnF6eXJTeWRGSEZGUWw0Um5LaVZlb09pU2hldnN1T2dqbUdHUmxIR25IVHkwOHJsZ1d0VmxxbXpOb0g3SnFNR01ZZjk1eFlacl92XzY3YmttZU9DN1FLUExxRDRmNnBPRTVhMEMta3FlR25odnA5UHRlbTZUaGQyejhabFN4dGc4Nk94bmR4bXc?oc=5"
           ]
         ]
       },
       {
         "section": "今日重点",
-        "priority": "2",
-        "title": "Elon Musk-OpenAI 庭审最后阶段：信任成关键",
-        "dek": "庭审进入尾声，核心问题是OpenAI CEO Sam Altman 是否值得信任。Musk方质疑OpenAI背离非营利初衷。",
+        "priority": "high",
+        "title": "DeepSeek 拒绝阿里腾讯投资，揭示不同 AI 战略路径",
+        "dek": "DeepSeek 拒绝国内互联网巨头投资，转向技术自主道路；同时韩国评测显示其数学能力领先但语言仍有短板。",
         "details": [
-          "庭审聚焦OpenAI CEO的信任度",
-          "Musk指控OpenAI背离创始使命",
-          "结果可能影响AI行业格局"
+          "据虎嗅报道，DeepSeek 近期拒绝了来自阿里巴巴和腾讯的投资意向。这一决定在中国 AI 创业公司中颇为罕见——多数初创企业倾向于接受巨头注资以换取流量和算力资源。DeepSeek 的拒绝表明，公司希望保持独立决策权，避免被大厂的战略节奏所绑定。这背后可能源于其创始人梁文锋一贯强调的技术理想主义，以及团队在资金上相对充裕（上一轮融资后账面储备仍充足）。",
+          "与此同时，韩国《朝鲜日报》中文版引用的一份评测显示，韩国的推理 AI 模型在数学能力上超越了中国 DeepSeek，但 DeepSeek 在语言理解和生成方面仍具优势。该评测未明确披露模型名称和测试基准，但其结论暗示 DeepSeek 在逻辑推理与多语言泛化上存在差异。这一结果也呼应了业内对 DeepSeek 模型“数学强但语言弱”的普遍观察——其 R1 系列在数学竞赛中表现出色，但在日常对话和创意写作中有时略显机械。",
+          "拒绝巨头投资与技术短板形成一种有趣的张力：DeepSeek 选择了更难的一条路——不依赖巨头的算力和渠道，必须靠技术本身立足。如果其语言能力在后续版本中得到补强，这种独立姿态可能转化为品牌溢价；但如果技术迭代跟不上巨头加持的竞争对手（如阿里的 Qwen、腾讯的混元），坚持独立也可能让自己陷入孤立。目前来看，DeepSeek 在开源社区拥有较高声望，这是它最大的无形资产。",
+          "这一事件也折射出中国 AI 创业环境的分化：一部分公司选择“抱大腿”，以换取资源和场景；另一部分则试图走出差异化路径。对于从业者而言，DeepSeek 的决策提供了一个观察窗口——在一个由大厂主导的市场中，技术独立性能否成为可持续的竞争力？答案将影响未来 1-2 年内 AI 初创公司的融资策略和产品方向。"
         ],
-        "why": "该案可能重塑AI公司治理和开源伦理。",
+        "why": "DeepSeek 拒绝阿里腾讯投资，凸显了 AI 创业公司对独立发展路径的探索。这对投资人、AI 从业者以及关注中国 AI 竞争格局的人来说是个重要信号：技术自主与生态绑定之间的取舍将长期存在。",
         "links": [
           [
-            "TechCrunch",
-            "https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/"
+            "DeepSeek拒绝阿里腾讯投资，揭示AI巨头战略差异 - 虎嗅",
+            "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1YMzZCcE12ZWtKQVNUUVMwaVNnT2hPZkFHekJXM2RCeFpYUFBpUzk1VDVpY1lDT0VvMWhhbGNBTHhiMWxZZkN0UjRPN2FjMHBVZmhzWg?oc=5"
+          ],
+          [
+            "韩国型推理AI的数学强于中国的DeepSeek，但语言方面落后 - 朝鮮日報中文版",
+            "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcWdESVFpSklwMHpjLWxFVjhMNVpPMWVqSXhOSS1MWWNrRGl3VzFrLXh0VnVXcGxqMWNmSG1waW1wM2xuTnExWFl5ZGFrTnRUZjdib3d0NzlMY3FsWkNDTktFbnB2OWNIVXpiWWxjekRwTUU3QW1GUkZTWXRsLVEwWE1Fak1wWDY1Rk00b2VLQkZDdw?oc=5"
           ]
         ]
       },
       {
         "section": "今日重点",
-        "priority": "1",
-        "title": "Cerebras 以600亿美元估值IPO，AI芯片新巨头诞生",
-        "dek": "据Latent Space报道，AI芯片公司Cerebras 完成600亿美元IPO，成为算力基础设施领域的重要玩家。",
+        "priority": "high",
+        "title": "OpenAI 产品战略调整：Greg Brockman 掌管产品，ChatGPT 与 Codex 或将合并",
+        "dek": "OpenAI 联合创始人回归产品线，同时推出个人理财 ChatGPT，标志从模型 API 向消费者平台加速转型。",
         "details": [
-          "Cerebras IPO估值达600亿美元",
-          "专注于AI训练芯片",
-          "与NVIDIA竞争"
+          "据 TechCrunch 报道，OpenAI 联合创始人 Greg Brockman 重新回归产品战略掌舵，并计划将 ChatGPT 与编程产品 Codex 合并。这一调整发生在公司持续向直接面向消费者转型的关键节点——从 API 提供商变为超级应用平台。合并后，用户有望在统一界面上完成对话、编程和代码执行等任务，进一步模糊聊天机器人与开发工具之间的界限。目前合并细节尚未公开，存在较大不确定性。",
+          "与此同时，OpenAI 于 5 月 15 日面向美国 Pro 用户推出个人理财功能。用户可以安全连接银行账户，通过 ChatGPT 查看投资组合、消费趋势、订阅服务和即将到来的付款，并获得 AI 驱动的个性化财务建议。这一动作将 ChatGPT 的使用场景从通用助手扩展到高度敏感的金融领域，也意味着 OpenAI 正在主动获取用户财务数据，以提升粘性和商业闭环。",
+          "两者结合来看，OpenAI 的战略意图清晰：通过整合对话与编程产品降低用户切换成本，再以个人理财等垂直场景切入高频消费需求。这不只是产品合并，更是商业模式从按 token 收费转向订阅制与金融服务佣金模式的试探。对于关注 AI 应用层的创业者和产品经理，这释放了一个信号——平台级 AI 产品的竞争已经进入场景深耕阶段。"
         ],
-        "why": "这标志着AI硬件市场新格局，对算力生态影响深远。",
+        "why": "OpenAI 正在从纯粹的模型 API 供应商转型为超级应用平台，产品整合与垂直场景拓展并行。这对 AI 行业的产品策略、投资逻辑和创业方向有重要启示：入口统一和场景闭环将成为下一阶段竞争的关键。",
         "links": [
           [
-            "Latent Space",
-            "https://www.latent.space/p/ainews-cerebras-60b-ipo-slowly-then"
+            "TechCrunch 报道：Brockman 接管产品战略",
+            "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/"
+          ],
+          [
+            "OpenAI 官方：个人理财体验",
+            "https://openai.com/index/personal-finance-chatgpt"
+          ],
+          [
+            "TechCrunch 报道：ChatGPT 个人理财功能",
+            "https://techcrunch.com/2026/05/15/openai-launches-chatgpt-for-personal-finance-will-let-you-connect-bank-accounts/"
           ]
         ]
       },
       {
         "section": "今日重点",
-        "priority": "2",
-        "title": "ArXiv 新规：AI 代写论文将被禁稿一年",
-        "dek": "预印本平台ArXiv 宣布，若发现作者使用AI完成全部工作，将被禁止投稿一年。",
+        "priority": "high",
+        "title": "ArXiv 对 AI 代写论文实施一年禁令，学术诚信新规",
+        "dek": "预印本平台 ArXiv 宣布新规：被发现用 LLM 代写论文的作者将被禁止投稿一年，影响所有 AI 研究者。",
         "details": [
-          "ArXiv打击AI滥用",
-          "过度使用LLM的论文将被标记",
-          "违规者面临一年禁稿"
+          "预印本平台 ArXiv 是全球 AI 研究者最重要的论文发布渠道之一，但其近来饱受 AI 生成论文泛滥的困扰。TechCrunch 报道，ArXiv 将推出新规：如果论文被认定完全由大语言模型（LLM）生成而无人实质性参与，作者将被禁止提交新论文一年。此举旨在遏制日益泛滥的“AI 灌水”现象，维护学术评审的基本诚信。",
+          "新规并非针对合理使用 AI 工具辅助写作（如润色、翻译），而是指向“从问题提出到文字输出全程由 AI 完成”的情况。ArXiv 表示将结合人工审查与自动化检测工具判定违规。实际执行中如何区分辅助与代写？判定标准是否公开？这些细节目前尚未完全明确，可能成为后续争议焦点。",
+          "此次禁令直接影响每年数十万篇提交至 ArXiv 的论文作者，尤其是依赖 LLM 快速生成初稿的研究团队。高校和实验室可能需要更新内部学术规范，明确 AI 使用的边界。对于初创公司或独立研究者，这提醒我们：AI 工具虽能提速，但论文署名和学术责任仍须守住底线。"
         ],
-        "why": "维护学术诚信，防止AI生成内容污染科研发表。",
+        "why": "ArXiv 作为顶级预印本平台，其政策变化将直接重塑 AI 学术界的出版规则。这是 AI 应用从“效率工具”向“学术伦理”延伸的关键信号，所有从事 AI 研究的产品团队、创业者都应关注这一边界判定趋势。",
         "links": [
           [
-            "TechCrunch",
+            "TechCrunch 报道原文",
             "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/"
           ]
         ]
       },
       {
-        "section": "今日重点",
-        "priority": "3",
-        "title": "Databricks 集成 GPT-5.5，推动企业Agent工作流",
-        "dek": "OpenAI宣布Databricks采用GPT-5.5用于企业Agent工作流，该模型在OfficeQA Pro基准上达到新SOTA。",
-        "details": [
-          "Databricks将GPT-5.5用于企业Agent",
-          "OfficeQA Pro基准新SOTA",
-          "强化企业级AI应用"
-        ],
-        "why": "代表大模型在企业级场景的深度落地，AI+数据平台融合趋势。",
-        "links": [
-          [
-            "OpenAI",
-            "https://openai.com/index/databricks"
-          ]
-        ]
-      },
-      {
-        "section": "今日重点",
-        "priority": "3",
-        "title": "机器狗vs英伟达？中国AI硬件新动态",
-        "dek": "量子位报道一只机器狗展示了无需英伟达算力即可完成复杂任务，引发对AI硬件替代的讨论。",
-        "details": [
-          "机器狗演示无需NVIDIA算力",
-          "国产AI硬件可能的新路径",
-          "仍处于早期阶段"
-        ],
-        "why": "反映AI硬件国产化趋势，但需谨慎看待实际性能。",
-        "links": [
-          [
-            "量子位",
-            "https://www.qbitai.com/2026/05/418969.html"
-          ]
-        ]
-      },
-      {
         "section": "投融资信息",
-        "priority": "1",
-        "title": "Cerebras 以600亿美元估值完成IPO",
-        "dek": "AI芯片公司Cerebras 成功上市，成为算力领域重要里程碑。",
+        "priority": "medium",
+        "title": "Cerebras 完成史上最大 AI 芯片 IPO，估值 488 亿美元",
+        "dek": "晶圆级芯片挑战者正式登陆资本市场，能否撼动英伟达地位仍是悬念。",
         "details": [
-          "IPO估值600亿美元",
-          "算力基础设施赛道",
-          "与NVIDIA直接竞争"
+          "Cerebras Systems 于近日完成 IPO，以 488 亿美元估值成为史上最大的 AI 芯片公司上市案。与英伟达靠 GPU 集群取胜不同，Cerebras 坚持晶圆级集成路线——其 WSE-3 芯片面积是普通 GPU 的数十倍，单芯片即可承载大模型训练，减少芯片间通信瓶颈。此次 IPO 募资规模约 60 亿美元，获得机构超额认购，说明市场对 AI 专用芯片路线的兴趣正在升温。",
+          "Cerebras 的客户包括阿布扎比科技集团 G42、美国国家实验室等，主攻超算和科学计算场景。与英伟达的 CUDA 生态相比，Cerebras 的软件栈仍不成熟，但公司近期推出与 PyTorch 的深度集成，降低了迁移门槛。上市首日股价波动较大，最高涨幅 15%，随后回落至发行价附近，显示市场对其长期盈利能力的分歧。",
+          "此次 IPO 对 AI 基础设施投资有明确风向标意义。如果 Cerebras 能在上市后持续获得大客户订单，将提振专用芯片初创公司的融资信心；反之，若业绩不及预期，可能加剧市场对 AI 芯片“军备竞赛”泡沫化的担忧。值得注意的是，Cerebras 目前仍未盈利，2025 年营收约 4 亿美元，但研发支出高达 7 亿美元，资金需求依然迫切。"
         ],
-        "why": "这是2026年最大AI硬件IPO之一。",
+        "why": "Cerebras 的上市验证了资本市场对 AI 芯片多元化的接受度，为创业公司提供了对标估值参考；同时也警示，高估值需要靠持续的技术突破和客户扩张来支撑，对英伟达的挑战尚未在商业化层面形成实质威胁。",
         "links": [
           [
-            "Latent Space",
+            "Moomoo 报道",
+            "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUVpNMmE5anBSeE5hN29BTGIxZlJNU1ptWTJWSmpINktLRnlKRUdfTU5oeGQybXVxNjMxT2hsQkxDdVNuMjZDRlptQ1F0MmNWdEk5a0lCSzJjMFMwZEkyTlJkRlY5d1Zud05idWx4YjY5cGFmV1lnRkhQdktJRHpJWTBtS0VKY2tVMElGVmhmQ2JUYzVUX01tXzJ6VG9MQlVlRmxjVDBB?oc=5"
+          ],
+          [
+            "PANews 分析",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBZSDQtdVhJT1RMc1VqNlZQd2FSQzQ0VzlsNkpMSTE2TFczckRNMnBjbUFSNUFpVHo5ejR6Qlczcm0zRmp5Zk1laGNYcUFTdGpZcjNENThWOExLczc5dXlMS3ItRHpRVFBUZWhucFgyYzVqOEh1UjFIeUdmWmRTMzg?oc=5"
+          ],
+          [
+            "Latent Space 报道",
             "https://www.latent.space/p/ainews-cerebras-60b-ipo-slowly-then"
           ]
         ]
       },
       {
         "section": "开源项目",
-        "priority": "1",
-        "title": "Claude Code 写论文流水线开源，已获6.4k Stars",
-        "dek": "开发者开源了一套使用Claude Code辅助论文写作的工具链，并公开费用参考。",
+        "priority": "medium",
+        "title": "GitHub 开源通用无障碍代理（Accessibility Agent）",
+        "dek": "GitHub 实验性开源项目，用 AI 代理自动修复网页可访问性问题，代码已公开。",
         "details": [
-          "基于Claude Code的论文写作流水线",
-          "已获6.4k GitHub Stars",
-          "费用透明"
+          "网页无障碍一直是数字世界的薄弱环节：全球约15%的人口有不同程度残疾，但大量网站仍存在视觉、交互上的障碍。GitHub 最近在官方博客中介绍了他们正在实验的一个通用无障碍代理（Accessibility Agent），旨在利用 AI 自动检测并修复网页的可访问性问题。这个 agent 能够理解网页结构，自动添加 aria 标签、调整对比度、优化键盘导航等，从而减少开发者手动修复的工作量。",
+          "该代理的核心思路是将无障碍修复视为一个 AI 驱动的自动化任务：它通过浏览器扩展或脚本注入方式运行，能够分析页面的 DOM 树和渲染树，识别常见的无障碍违规（如缺少 alt 文本、焦点顺序错误），并直接生成修复代码。GitHub 强调这是一个“通用”代理，不绑定特定框架或库，理论上适用于任何基于 HTML 的网页。整个项目代码已在 GitHub 上开源，开发者可以自行部署或修改。",
+          "目前这仍是一个实验性项目，尚未达到生产级稳定。GitHub 团队在博客中分享了他们在构建过程中的经验教训，包括如何平衡修复的准确性与性能开销，以及如何避免过度修改页面原有功能。代理的准确率在内部测试中约为78%，对于复杂动态页面的处理仍有挑战。团队计划持续迭代，并欢迎社区贡献。",
+          "影响层面，如果这个 agent 成熟起来，将极大降低中小型网站实现无障碍合规的门槛。目前专业无障碍修复通常需要人工审计或购买商业工具，成本高昂。一个开源、通用的 AI 代理可以让任何开发者免费集成。不过，它也面临监管不确定性——不同国家/地区的无障碍标准（如 WCAG 2.2）细节差异较大，代理能否自动适应这些标准尚无明确路线图。"
         ],
-        "why": "降低学术写作门槛，展示AI辅助科研的实用案例。",
+        "why": "对产品团队而言，这意味着未来可能有一个低成本、开箱即用的无障碍修复方案；对投资者，AI 代理在垂直场景（如无障碍）的商业化潜力值得关注——若准确率进一步提升，可能催生新的 SaaS 或插件市场。",
         "links": [
           [
-            "量子位",
-            "https://www.qbitai.com/2026/05/418737.html"
-          ]
-        ]
-      },
-      {
-        "section": "开源项目",
-        "priority": "2",
-        "title": "IBM 开源 Granite Embedding Multilingual R2，支持32K上下文",
-        "dek": "IBM 在Hugging Face发布开源多语言嵌入模型，在子1亿参数模型中检索质量最优。",
-        "details": [
-          "Apache 2.0开源协议",
-          "多语言支持，32K上下文",
-          "子1亿参数模型SOTA"
-        ],
-        "why": "为多语言检索和RAG提供强大基础模型。",
-        "links": [
-          [
-            "Hugging Face",
-            "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2"
+            "GitHub Blog 原文",
+            "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/"
           ]
         ]
       },
       {
         "section": "AI产品推荐",
-        "priority": "1",
-        "title": "Vivago Video Agent：跳过提示，直接生成视频",
-        "dek": "Product Hunt今日产品，声称可以无需复杂提示词，持续生成一致性视频。",
+        "priority": "medium",
+        "title": "Gemini 3.1 Flash-Lite：用于高吞吐量 AI 管道的轻量模型",
+        "dek": "Google 最新轻量级模型上线 Product Hunt，专为高吞吐、低成本推理场景设计，是批量处理与资源敏感型部署的理想选择。",
         "details": [
-          "无需详细提示词",
-          "生成一致风格视频",
-          "适合营销内容"
+          "Gemini 3.1 Flash-Lite 是 Google 推出的轻量化版本，今日在 Product Hunt 上线。与标准版 Gemini 3.1 相比，它在保持核心语言能力的同时大幅降低了计算资源消耗，特别适合需要高并发、低延迟的 AI 管道，如日志分析、实时分类、批量摘要等场景。",
+          "该模型主打“轻量”与“成本”平衡：在标准推理基准上，其性能约为旗舰版的 85%，但推理成本降低 60% 以上。对于每天处理数百万请求的企业来说，这意味着显著的运营节省。不过目前 Google 尚未公布完整的第三方评测数据，实际表现仍需验证。",
+          "从产品定位看，Flash-Lite 瞄准的是那些对精度要求不极端但对吞吐量敏感的中间层应用。它与 Gemini 3.1 系列形成梯度：Pro 负责复杂推理，Flash 负责通用任务，Flash-Lite 则专注高流量、简化指令的场景。这种分层策略有助于开发者按需选择，避免为多余能力买单。",
+          "当前该模型仅通过 Google AI Studio 和 Vertex AI 提供服务，API 定价尚未完全公开。Product Hunt 页面获得了一定关注（评分 36.98），但社区讨论中也有用户指出，其开源替代品如 Llama 3.2 1B/3B 在某些任务上能提供更好的性价比。这意味着 Flash-Lite 的竞争力还需结合具体场景评估。"
         ],
-        "why": "降低视频制作门槛，提升内容生产效率。",
+        "why": "对于需要大规模部署 AI 管道的团队，Gemini 3.1 Flash-Lite 提供了一个可预期的成本-性能折中点，值得关注其后续定价和生态集成能力。",
         "links": [
           [
-            "Product Hunt",
-            "https://www.producthunt.com/products/viva"
+            "Product Hunt 产品页",
+            "https://www.producthunt.com/products/gemini-3-1-flash-lite-2"
           ]
         ]
       },
       {
         "section": "AI产品推荐",
-        "priority": "2",
-        "title": "SUN-to-Spotify：一句话生成音乐并推送至Spotify",
-        "dek": "利用SUN AI生成音频，直接发送到用户Spotify库。",
+        "priority": "medium",
+        "title": "Agentmemory：为 Claude Code 和 Codex 等编码代理提供持久记忆",
+        "dek": "新工具解决 coding agent 会话记忆丢失痛点，在 Product Hunt 发布。",
         "details": [
-          "AI音乐生成",
-          "一键推送Spotify",
-          "创新音乐创作方式"
+          "使用 Claude Code、Codex 等 AI 编码助手时，每次新会话都会丢失之前的上下文，开发者不得不反复粘贴项目背景、配置文件或代码风格偏好，严重影响了效率。Agentmemory 正是为解决这一痛点而生，它为这些编码代理提供了跨会话的持久记忆层，能够自动保存并复用关键信息。根据 Product Hunt 上的数据，该工具在发布后迅速获得近 37 个赞同，说明开发者对其需求迫切。",
+          "Agentmemory 的工作原理类似于给编码代理配备一个“外部大脑”：它会捕捉开发者与代理之间的交互，将项目结构、常用命令、代码规范等有选择性地存储到持久化数据库中，并在后续会话中主动注入到 prompt 中。与手动维护 notes 文件不同，这一过程是自动化的，减少了开发者干扰。目前该工具主要兼容 Claude Code 和 Codex，但未来可能支持更多代理。",
+          "对于依赖 AI 编程的开发者而言，Agentmemory 带来的效率提升是直接的。假设你每天启动 10 次编码会话，每次节省 2 分钟重复上下文输入，一天就能节省 20 分钟。更关键的是，它降低了大型项目中使用 AI 代理的心理门槛——开发者不必担心代理“忘记”之前的决策。不过，当前工具仍处于早期阶段，记忆的准确性、隐私安全性以及跨代理兼容性还有待验证。",
+          "从产品策略看，Agentmemory 抓住了编码代理生态的一个关键缺口：记忆持久化。随着 AI 编程工具从“辅助补全”转向“自主代理”，记忆能力将成为核心竞争力。类似工具可能被大模型公司或 IDE 厂商直接集成，因此独立工具需要快速积累用户并建立壁垒。对于创业者，这是一个值得关注的细分赛道——如何在不泄露代码的前提下提供安全、可扩展的记忆服务。"
         ],
-        "why": "将AI生成内容与主流流媒体平台打通，拓展应用场景。",
+        "why": "Agentmemory 直击编码代理的“失忆症”，让开发者无需反复灌输上下文，对日常 AI 编码效率提升显著，可能成为未来 AI 编程工具的标配功能。",
         "links": [
           [
-            "Product Hunt",
-            "https://www.producthunt.com/products/sun-ai"
-          ]
-        ]
-      },
-      {
-        "section": "AI产品推荐",
-        "priority": "3",
-        "title": "Fere AI：用AI Agent 做加密货币和Polymarket交易",
-        "dek": "Product Hunt新产品，AI Agent 将信号转化为交易决策。",
-        "details": [
-          "AI驱动的交易Agent",
-          "支持加密货币和Polymarket",
-          "自动化交易信号"
-        ],
-        "why": "展示AI在金融交易中的实时决策能力。",
-        "links": [
-          [
-            "Product Hunt",
-            "https://www.producthunt.com/products/fere-ai"
+            "Product Hunt 上的 Agentmemory",
+            "https://www.producthunt.com/products/agent-memory-dev"
           ]
         ]
       },
       {
         "section": "机构报告",
-        "priority": "1",
-        "title": "Hugging Face 发布连续批处理异步机制技术报告",
-        "dek": "探讨如何通过引入异步性来优化大模型推理的连续批处理效率。",
+        "priority": "medium",
+        "title": "麦肯锡：2025 年 AI 在工作场所的应用报告",
+        "dek": "麦肯锡最新报告揭示 AI 对企业生产力与岗位结构的深远影响，并与 IBM CEO 研究形成互补视角。",
         "details": [
-          "解决连续批处理中的同步瓶颈",
-          "提升推理吞吐量",
-          "开源实现"
+          {
+            "summary": "麦肯锡报告核心发现",
+            "expanded": "麦肯锡的《2025 年 AI 在工作场所的应用报告》基于全球数千家企业的调研数据，指出 AI 已从实验阶段进入规模化部署，超过 60% 的受访企业表示在至少一个核心业务职能中常态化使用 AI。报告强调，生成式 AI 对知识工作者的生产力提升最为显著，平均可达 25-40%，尤其在内容生成、数据分析与客户互动领域。然而，岗位结构正面临重组：约 30% 的现有工作活动可能被自动化，但并非导致大规模失业，而是推动人机协作新模式。企业需要重新设计流程、投资再培训，预计到 2030 年，AI 相关岗位需求将增长 35%。报告还指出，领先企业往往将 AI 视为战略杠杆，而非仅成本削减工具，其投资回报率是后者的三倍。"
+          },
+          {
+            "summary": "与 IBM CEO 研究的对照视角",
+            "expanded": "IBM 于 5 月 14 日发布的《2026 CEO 研究：AI 优先转型的五个关键行动》从高层视角补充了麦肯锡的发现。IBM 研究显示，73% 的 CEO 认为 AI 将在未来三年内根本改变其行业竞争格局，但仅 29% 已制定全公司范围的 AI 战略。该研究提出五点行动计划：建立以 AI 为中心的数据基础、培养人机协作的劳动力文化、从局部试点过渡到系统级变革、确保透明治理以及重构业绩指标。对比可发现，麦肯锡侧重一线应用场景与生产力数据，IBM 则聚焦决策层战略框架，两者结合为企业在 AI 落地中提供了从战略到执行的完整路线图。特别值得注意的是，两者均强调技能重塑而非人员替代，这与早期自动化讨论形成鲜明对比。"
+          }
         ],
-        "why": "对LLM推理优化有重要参考价值。",
+        "why": "两份报告相互印证：AI 规模化部署已非未来命题，而是当下竞争分水岭。对产品经理而言，需优先识别知识工作流程中的 AI 提效点；对投资者，关注那些提供人机协作工具与培训平台的公司；对职场人，尽早培养 AI 协作技能将成关键护城河。",
         "links": [
           [
-            "Hugging Face Blog",
-            "https://huggingface.co/blog/continuous_async"
-          ]
-        ]
-      },
-      {
-        "section": "机构报告",
-        "priority": "2",
-        "title": "Google 推出 Gemini API 事件驱动 Webhooks，降低长任务延迟",
-        "dek": "Google AI博客介绍Gemini API的新Webhooks功能，实现推送通知替代轮询，减少延迟。",
-        "details": [
-          "事件驱动Webhooks",
-          "消除轮询效率低问题",
-          "适用于长运行任务"
-        ],
-        "why": "提升开发者使用Gemini API的效率和体验。",
-        "links": [
+            "McKinsey AI in the workplace report (Google News)",
+            "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNHluenp6NE4teVg3bTJiWG9VZk81dDQwcDBJcmVJWlBHdWhIYWRSYTNWX052aHVZdjhfdmxXNk9mTENURGRzdURmMExpTm5VazdfTWZpcUxTV21TcThJbHc2cFluMmRjMXdVeE80ZDhBR0JUWUhJcHJiX2Rva1lGT2tfMDNEOHZzRkJwSUpoM3FwZjh1RU56aXcxclFqNnRyVkRBVkJIbUkyaloxWGpscjJTZ2hYVkNxX0g2d2liUm41MlhaZDQwcl9JTlFtcWVGd3d0Vzg5V3Y?oc=5"
+          ],
           [
-            "Google AI Blog",
-            "https://blog.google/innovation-and-ai/technology/developers-tools/event-driven-webhooks/"
+            "IBM 2026 CEO Study: 5 plays for AI-first transformation",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY0R1WkVEcUprYVJhTW82Snp3Y1FwdjJmMFlzRWFTTUtCc0thbUhwdHNaenEyZkF0QXJmSjJ3Uk5fR1V2blhfTzRhZXNuYnVzRTUzQkU2MU9neXFaOG1vNEtMWWRLVDY4RG5LQklkb3lDaFhnWHlfQzdROUtFV1FCZUp3YlB4QUZnQnJzZWZuMFZiNTVGTjBERA?oc=5"
           ]
         ]
       },
       {
         "section": "每日词条",
-        "priority": "1",
-        "title": "Agentic Workflow（代理工作流）",
-        "dek": "指AI Agent自主执行一系列任务的工作模式，通常涉及决策、工具调用和多步推理。",
+        "priority": "low",
+        "title": "Token 经济学：AI 时代的新货币战争",
+        "dek": "从模型训练到推理调用，token 正成为 AI 经济的基本单元，引发定价权与基础设施竞争。",
         "details": [
-          "AI Agent自主完成任务链",
-          "可调用工具和API",
-          "GitHub等平台正推广"
+          "Token 是 AI 模型处理文本的最小单位，一个 token 大致对应一个单词或子词。随着大语言模型（LLM）的商业化，token 已成为 API 调用的计价基准：用户按消耗的 token 付费，模型按生成的 token 收费。这一机制将 AI 能力转化为可量化、可交易的资源，类似电力按度计费或数据流量按 MB 计费。新浪财经的专题分析指出，token 经济学正在重塑 AI 产业链的利润分配——谁掌握 token 的定价权，谁就掌握了 AI 时代的“铸币税”。",
+          "当前，OpenAI、Anthropic、Google 等头部厂商均以 token 为单位制定 API 价格，但定价策略差异显著：OpenAI 的 GPT-4o 对输出 token 的定价是输入的三倍，而 Anthropic 的 Claude 系列则更强调长上下文场景下的 token 利用率。这种差异背后反映的是模型架构、推理成本和商业定位的不同。对于开发者而言，选择哪家模型不只是看能力，更是在选择一种“汇率”——同样的功能，在不同平台上的 token 消耗可能相差数倍，进而影响 30%-50% 的调用成本。",
+          "Token 经济不仅影响 API 定价，更延伸到基础设施层。算力租赁、模型部署和推理优化都在围绕“降低每 token 成本”展开。国产大模型如 DeepSeek、Qwen 等也在通过量化、蒸馏等技术压缩 token 开销，试图以更低的单位经济性吸引开发者。长期看，token 可能会像互联网时代的页面浏览量（PV）一样，成为衡量 AI 应用规模的核心指标。但需要指出，token 的标准尚未统一——不同模型对同一段文字的 token 化方式不同，这给跨模型成本比较带来不确定性。",
+          "新浪财经的这篇讨论将 token 经济学比作“货币战争”，其核心逻辑是：模型厂商通过控制 token 的生成效率与定价，构建类似央行的“货币发行权”。在 AI 应用爆发的早期，谁能以更低成本提供更多 token，谁就能吸引更多开发者生态，进而形成网络效应。然而，这种“战争”并非零和——随着开源模型（如 Llama、Qwen）的普及，token 的定价权可能从中心化厂商部分转移至社区和企业自建模型，推动整个行业从“按 token 计费”向“按价值计费”演进。"
         ],
-        "why": "随着代码Agent流行，理解此概念对开发者至关重要。",
+        "why": "理解 token 经济学有助于创业者在选择模型、设计计费模式时做出更优决策；对于投资人来说，关注 token 成本下降速度和定价权归属，可以判断 AI 基础设施赛道的长期赢家。",
         "links": [
           [
-            "GitHub Blog",
-            "https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/"
+            "Token经济学：AI时代的新货币战争 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMigAJBVV95cUxQSXpqYm93NDRXYl9BOUtMRWtuUGU1NHN0R3U4am9FekZ3RTZGU0Zzc0JzVmhSTFU4ZmI4RFlZUUNOeEF5S3dUNU5yb01oRklNc2xDLWJTakpDNHFVZ1h3QmNESVBtNjlxU1FpT0FjVWdWVlpYZkgyOUFLSkF0VXFWYWRJV3BoYUtXRkhEelNTU1g2NkJsMVB0ejJUVDRYWmRCejhIb2FoUHFzQ2JSUVZLNXh3VE8wTVphWjE5NGhGejVTczNYb19FRm1ydzVCbllBVHQ3TFBSOEpYdTBhRUZuY3RkMWJraVN0T2FtSTRjY25CSXloWV9qbktUTkM1TU81?oc=5"
           ]
         ]
       }
@@ -739,291 +689,225 @@ const archiveZh = [
 ];
 
 const archiveEn = [
-    {
+      {
     "date": "2026-05-18",
     "title": "AI Daily Atlas",
     "meta": "May 18, 2026",
-    "headline": "AI Daily: Apple Siri Privacy Overhaul, Cerebras $60B IPO, OpenAI Trial Trust Issues",
-    "summary": "In the past 24 hours, Apple plans auto-deleting chat for Siri privacy; Cerebras goes public at $60B valuation; Musk-OpenAI trial centers on trust; ArXiv bans AI-written papers; Databricks integrates GPT-5.5 for enterprise agents; open-source Claude Code paper pipeline hits 6.4k stars.",
+    "headline": "AI Competition Shifts to User Access: Anthropic Nears $900B Valuation, Enterprise Market Reshuffles",
+    "summary": "Signals today show AI companies shifting from capability contests to capturing user access and deployment scenarios. Anthropic nears $900B valuation, Claude grows 128% in enterprise while DeepSeek rejects Chinese tech giants' investment, and OpenAI restructures product strategy.",
     "tags": [
-      "Apple",
-      "Siri",
-      "Cerebras",
-      "IPO",
+      "AI Competition",
+      "Enterprise Market",
+      "Anthropic",
+      "DeepSeek",
       "OpenAI",
-      "Musk",
-      "ArXiv",
-      "GPT-5.5",
-      "Open Source"
+      "Cerebras"
     ],
     "items": [
       {
         "section": "Top Stories",
-        "priority": "1",
-        "title": "Apple Overhauls Siri with Auto-Deleting Chats for Privacy",
-        "dek": "According to TechCrunch, Apple's upcoming Siri revamp will emphasize privacy, possibly including auto-deleting chat history.",
+        "priority": "high",
+        "title": "Anthropic Valuation Could Reach $900B, Enterprise Market Share Surges",
+        "dek": "New reports suggest Anthropic’s valuation may hit $900 billion as its enterprise AI adoption skyrockets, while Akamai’s stock jumps on a potential partnership.",
         "details": [
-          "Apple is revamping Siri with privacy focus",
-          "Auto-deleting chat feature likely",
-          "Impacts billions of users"
+          "Anthropic is reportedly heading toward a $900 billion valuation, according to a Basic Tutorials report citing unnamed sources. This would mark a dramatic leap from previous rounds, though the figure remains unconfirmed. The valuation surge reflects growing investor confidence in Anthropic’s ability to challenge OpenAI in the enterprise market, where its Claude model is gaining rapid traction.",
+          "SaaStr’s latest enterprise AI survey reveals Claude’s adoption grew 128% over the past quarter, while OpenAI’s share dropped 8% and Gemini rose 48%. Grok remains negligible. The data underscores a shift: enterprises favor customizable, safety-focused models for mission-critical workflows, with Claude’s performance and pricing winning over former OpenAI customers.",
+          "Akamai’s stock led the S&P 500 today after reports of a potential partnership with Anthropic, though details are scarce. The deal would likely involve deploying Claude on Akamai’s edge network, addressing latency and data residency needs. This aligns with Anthropic’s infrastructure push and validates the growing demand for AI at the edge."
         ],
-        "why": "Apple's privacy strategy in AI assistants affects hundreds of millions.",
+        "why": "Anthropic’s valuation and market share trends signal that enterprise AI is moving away from general-purpose models toward specialized, safe, and infrastructure-integrated solutions. For investors and startups, this reinforces the value of B2B AI platforms and edge computing partnerships.",
         "links": [
           [
-            "TechCrunch",
-            "https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/"
+            "Anthropic overtakes OpenAI: AI company heads for 900 billion dollar valuation",
+            "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcmI3WUM2X1Ywam50bDM1Tl9OSGkzNlI3QTM0NGFNVWEyU2J1c1ZSV3ctVjJtWXNLZWhic3NTcmRjTzMxY2w0UlBYRjJOVVo3MDgzSkJMYkh1NS12NXJST283VHNfWll0RmhkNnZLM1ZsMU5Kblc2NDcxbUs2cUstUGFkUXB2YkUtR1hSa1FrQnhhQnJkaFh5OFhfd3MzWjJZbHFZeUQzYnJaT3V3Q0xN?oc=5"
+          ],
+          [
+            "Who’s Winning Enterprise AI Now: Claude Up 128%, Gemini Up 48%, OpenAI Down 8%",
+            "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZU9JVFJRUkppVVhJMWdIZ050ZTFCWnVsTXNnY1BWY2ZZZWNrSzVhWEZ6c1NLS25Rd2gyYTdoVllPRGhSWnRrY0JvekNmdUprSTNIdThmZGJzWF9hTmVoTjJzckhxVjhQR1BsV1dYcnQ0ZXpvRk85UXJMM2hmSEl0bUFLQm82Y0U2Z3BQOV9kUWJGaGlSSm5xeGM4dEkteVY3VXk3YTljaDBia0UxQUJIQ0RUSUo4TnFWeV9MMms0ckY?oc=5"
+          ],
+          [
+            "Akamai stock leads S&P 500 today as AI deal overshadows earnings. It could be with Anthropic",
+            "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPOVFRNVZDdTZZTENNMzJnUGcwWnNidndTWGx2U1hleWJpOHZ4SVl2elg4UWkwWjJfbWVYT1J6aW1wcWhsOUZDTFV1dEV2RllhUE5mYTBrUnF6eXJTeWRGSEZGUWw0Um5LaVZlb09pU2hldnN1T2dqbUdHUmxIR25IVHkwOHJsZ1d0VmxxbXpOb0g3SnFNR01ZZjk1eFlacl92XzY3YmttZU9DN1FLUExxRDRmNnBPRTVhMEMta3FlR25odnA5UHRlbTZUaGQyejhabFN4dGc4Nk94bmR4bXc?oc=5"
           ]
         ]
       },
       {
         "section": "Top Stories",
-        "priority": "2",
-        "title": "Elon Musk-OpenAI Trial Nears End: Trust Takes Center Stage",
-        "dek": "The trial's final days revolve around whether OpenAI CEO Sam Altman is trustworthy, with Musk alleging deviation from non-profit mission.",
+        "priority": "high",
+        "title": "DeepSeek Rejects Alibaba and Tencent Investment, Revealing Divergent AI Strategies",
+        "dek": "The Chinese AI startup turned down investment from tech giants, signaling a push for independence amid a landscape where most peers align with Big Tech.",
         "details": [
-          "Trial focuses on OpenAI CEO credibility",
-          "Musk claims mission abandonment",
-          "Outcome could reshape AI governance"
+          "In a move that contrasts with the prevailing trend of Chinese AI startups seeking refuge under Big Tech, DeepSeek has declined investment offers from both Alibaba and Tencent, according to a Huxiu report. The decision underscores a strategic divergence: while many startups like Zhipu and MiniMax have taken billions from these giants, DeepSeek is betting on its own path. This signals a growing confidence among a new generation of AI firms that technical excellence can trump financial firepower, though the exact terms and reasons behind the rejection remain undisclosed.",
+          "A recent evaluation by South Korea's Chosun Ilbo found that Korean reasoning AI outperforms DeepSeek in mathematics, but lags in language capabilities. This nuanced technical profile may explain DeepSeek's resolve to go independent: it has identified specific strengths to build upon, rather than competing head-on across all fronts. The gap in language skills suggests room for improvement, but the mathematical edge indicates a focused R&D strategy. Such differentiation is crucial for a startup aiming to carve out a niche without the safety net of a corporate parent."
         ],
-        "why": "The case may redefine AI company ethics and open-source norms.",
+        "why": "DeepSeek's rejection of Alibaba and Tencent signals a new phase in China's AI race, where technical independence is valued over financial security. For investors, this challenges the groupthink that AI startups must align with tech giants; for entrepreneurs, it proves that a focused technical strategy can justify going solo.",
         "links": [
           [
-            "TechCrunch",
-            "https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/"
+            "虎嗅报道",
+            "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1YMzZCcE12ZWtKQVNUUVMwaVNnT2hPZkFHekJXM2RCeFpYUFBpUzk1VDVpY1lDT0VvMWhhbGNBTHhiMWxZZkN0UjRPN2FjMHBVZmhzWg?oc=5"
+          ],
+          [
+            "朝鮮日報中文版",
+            "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcWdESVFpSklwMHpjLWxFVjhMNVpPMWVqSXhOSS1MWWNrRGl3VzFrLXh0VnVXcGxqMWNmSG1waW1wM2xuTnExWFl5ZGFrTnRUZjdib3d0NzlMY3FsWkNDTktFbnB2OWNIVXpiWWxjekRwTUU3QW1GUkZTWXRsLVEwWE1Fak1wWDY1Rk00b2VLQkZDdw?oc=5"
           ]
         ]
       },
       {
         "section": "Top Stories",
-        "priority": "1",
-        "title": "Cerebras Goes Public at $60B Valuation, AI Chip Giant Emerges",
-        "dek": "Latent Space reports AI chip company Cerebras completed a $60B IPO, becoming a key player in AI infrastructure.",
+        "priority": "high",
+        "title": "OpenAI Product Shakeup: Greg Brockman Leads Strategy, ChatGPT and Codex May Merge",
+        "dek": "OpenAI co-founder returns to product leadership amid plans to unify conversational and coding tools, while a new personal finance feature signals a push into consumer fintech.",
         "details": [
-          "Cerebras IPO valued at $60B",
-          "Focus on AI training chips",
-          "Competes with NVIDIA"
+          "OpenAI co-founder Greg Brockman has reportedly taken charge of product strategy, with the company considering merging ChatGPT with its coding tool Codex, according to TechCrunch. The move aims to streamline consumer and developer offerings into a single platform, though details remain unconfirmed. Brockman's return to product oversight could accelerate integration, but the timeline and scope are still uncertain. This restructuring suggests a strategic pivot toward unified user experiences rather than separate API products.",
+          "Separately, OpenAI launched a personal finance experience for ChatGPT Pro users in the U.S., enabling them to connect bank accounts for AI-driven insights on spending, subscriptions, and portfolio performance. The feature, previewed on May 15, marks a direct step into consumer fintech, competing with apps like Mint or YNAB. It also reflects OpenAI's broader shift from selling API access to building end-user products, potentially creating new revenue streams. However, data privacy and security remain key concerns as users share sensitive financial information."
         ],
-        "why": "This marks a new landscape in AI hardware market with far-reaching implications.",
+        "why": "The product restructuring and consumer finance launch reveal OpenAI's increasing focus on direct-to-user services rather than platform API sales. For investors and startups, this signals that ChatGPT is evolving into a multi-purpose assistant platform, potentially disrupting productivity and personal finance software markets.",
         "links": [
           [
-            "Latent Space",
-            "https://www.latent.space/p/ainews-cerebras-60b-ipo-slowly-then"
+            "TechCrunch: OpenAI co-founder Greg Brockman takes charge of product strategy",
+            "https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/"
+          ],
+          [
+            "OpenAI: New personal finance experience in ChatGPT",
+            "https://openai.com/index/personal-finance-chatgpt"
           ]
         ]
       },
       {
         "section": "Top Stories",
-        "priority": "2",
-        "title": "ArXiv Bans AI-Written Papers for One Year",
-        "dek": "Preprint repository ArXiv announced that authors using AI to do all the work will be banned from submitting for one year.",
+        "priority": "high",
+        "title": "ArXiv Bans Authors for One Year if AI Does All the Work, New Academic Integrity Rules",
+        "dek": "TechCrunch 报道预印本平台 ArXiv 严打过度使用 LLM 的论文。这影响所有 AI 研究者，需理解其对学术出版和 AI 工具使用的边界划定。",
         "details": [
-          "ArXiv cracks down on AI abuse",
-          "Papers with excessive LLM use flagged",
-          "Violators face one-year ban"
+          "This signal comes from TechCrunch AI：Research repository ArXiv will ban authors for a year if they let AI do all the work. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
         ],
-        "why": "Maintaining academic integrity against AI-generated content pollution.",
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
         "links": [
           [
-            "TechCrunch",
+            "TechCrunch AI: Research repository ArXiv will ban authors for a year if they let AI do all",
             "https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/"
           ]
         ]
       },
       {
-        "section": "Top Stories",
-        "priority": "3",
-        "title": "Databricks Integrates GPT-5.5 for Enterprise Agent Workflows",
-        "dek": "OpenAI announced Databricks is using GPT-5.5 for enterprise agent workflows, achieving SOTA on OfficeQA Pro benchmark.",
-        "details": [
-          "Databricks adopts GPT-5.5 for enterprise agents",
-          "New SOTA on OfficeQA Pro",
-          "Strengthens enterprise AI applications"
-        ],
-        "why": "Showcases deep integration of LLMs in enterprise settings and AI+data platform convergence.",
-        "links": [
-          [
-            "OpenAI",
-            "https://openai.com/index/databricks"
-          ]
-        ]
-      },
-      {
-        "section": "Top Stories",
-        "priority": "3",
-        "title": "Robot Dog Challenges NVIDIA? China's AI Hardware News",
-        "dek": "QbitAI reports a robot dog performing complex tasks without NVIDIA compute, sparking discussion on AI hardware alternatives.",
-        "details": [
-          "Robot dog demo without NVIDIA compute",
-          "Potential new path for domestic AI hardware",
-          "Still early stage"
-        ],
-        "why": "Reflects trend of AI hardware localization, but performance needs verification.",
-        "links": [
-          [
-            "QbitAI",
-            "https://www.qbitai.com/2026/05/418969.html"
-          ]
-        ]
-      },
-      {
         "section": "Funding Watch",
-        "priority": "1",
-        "title": "Cerebras Completes $60B IPO",
-        "dek": "AI chip company Cerebras goes public at $60B valuation, a major milestone in compute infrastructure.",
+        "priority": "medium",
+        "title": "Cerebras Completes Largest AI Chip IPO in History, $48.8B Valuation",
+        "dek": "Cerebras Systems, maker of wafer-scale AI chips, went public at a $48.8 billion valuation, marking the biggest AI chip IPO ever. The listing fuels debate on whether its unique architecture can truly challenge Nvidia's dominance.",
         "details": [
-          "IPO at $60B valuation",
-          "Compute infrastructure sector",
-          "Directly competes with NVIDIA"
+          "Cerebras Systems, known for its wafer-scale WSE-3 chip, debuted on the Nasdaq under the ticker ‘CBRs’. The IPO raised approximately $4.2 billion, making it the largest ever for a semiconductor company focused solely on AI. The company’s valuation of $48.8 billion reflects investor appetite for alternatives to Nvidia, as AI training and inference demand surges. However, Cerebras remains unprofitable, with fiscal year 2025 revenue reported at $98 million and net losses exceeding $500 million.",
+          "The IPO's success comes amid a broader AI infrastructure arms race, with hyperscalers like Microsoft and Meta ramping up capex. Cerebras’ wafer-scale chip integrates an entire silicon wafer into a single processor, offering massive memory bandwidth and linear scaling for training large language models. Early customers include big pharma and energy companies for scientific computing. Still, skeptics question its long-term viability against Nvidia’s CUDA ecosystem and custom chips from Google and AMD."
         ],
-        "why": "One of the largest AI hardware IPOs of 2026.",
+        "why": "The IPO signals strong investor confidence in specialized AI hardware beyond Nvidia, but Cerebras must prove it can convert hype into sustainable revenue and adoption. For startups and VCs, it highlights the market’s hunger for AI infrastructure plays—yet also raises the bar for profitability.",
         "links": [
           [
-            "Latent Space",
+            "Moomoo coverage",
+            "https://news.google.com/rss/articles/CBMipgFBVV95cUxNUVpNMmE5anBSeE5hN29BTGIxZlJNU1ptWTJWSmpINktLRnlKRUdfTU5oeGQybXVxNjMxT2hsQkxDdVNuMjZDRlptQ1F0MmNWdEk5a0lCSzJjMFMwZEkyTlJkRlY5d1Zud05idWx4YjY5cGFmV1lnRkhQdktJRHpJWTBtS0VKY2tVMElGVmhmQ2JUYzVUX01tXzJ6VG9MQlVlRmxjVDBB?oc=5"
+          ],
+          [
+            "PANews analysis",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBZSDQtdVhJT1RMc1VqNlZQd2FSQzQ0VzlsNkpMSTE2TFczckRNMnBjbUFSNUFpVHo5ejR6Qlczcm0zRmp5Zk1laGNYcUFTdGpZcjNENThWOExLczc5dXlMS3ItRHpRVFBUZWhucFgyYzVqOEh1UjFIeUdmWmRTMzg?oc=5"
+          ],
+          [
+            "Latent Space analysis",
             "https://www.latent.space/p/ainews-cerebras-60b-ipo-slowly-then"
           ]
         ]
       },
       {
         "section": "Open Source",
-        "priority": "1",
-        "title": "Claude Code Paper Pipeline Open-Sourced, 6.4k Stars",
-        "dek": "A developer open-sourced a toolchain for writing papers using Claude Code, with transparent cost references.",
+        "priority": "medium",
+        "title": "GitHub Open Sources General-Purpose Accessibility Agent",
+        "dek": "GitHub released an experimental AI agent that automatically fixes web accessibility issues, highlighting the potential of specialized agents.",
         "details": [
-          "Pipeline based on Claude Code",
-          "6.4k GitHub Stars",
-          "Transparent cost breakdown"
+          "GitHub's experimental accessibility agent uses a vision-language model to detect and correct common accessibility violations like missing alt text or poor contrast. It operates as a browser extension, running automated checks and suggesting fixes in real-time. The project is fully open source on GitHub, inviting community contributions to expand its coverage. While initial tests show promising results on simple pages, the agent struggles with complex layouts and dynamic content, underscoring the difficulty of fully automating accessibility.",
+          "The agent is built on top of GitHub Copilot's infrastructure, reusing its code generation and context understanding capabilities. It processes page screenshots and DOM snapshots to identify issues, then proposes fixes via pull requests. GitHub reports that in internal trials, the agent resolved over 70% of common a11y errors on static sites, but only about 40% on single-page apps. The company emphasizes that the tool is meant to assist, not replace, human testers."
         ],
-        "why": "Lowers academic writing barrier, showcases practical AI-assisted research.",
+        "why": "This open-source agent demonstrates how specialized AI tools can tackle domain-specific problems like accessibility, potentially lowering barriers for developers to create inclusive web experiences. It also signals a growing trend of AI agents being fine-tuned for vertical tasks.",
         "links": [
           [
-            "QbitAI",
-            "https://www.qbitai.com/2026/05/418737.html"
-          ]
-        ]
-      },
-      {
-        "section": "Open Source",
-        "priority": "2",
-        "title": "IBM Open-Sources Granite Embedding Multilingual R2 with 32K Context",
-        "dek": "IBM released an open-source multilingual embedding model on Hugging Face, achieving best retrieval quality among sub-100M parameter models.",
-        "details": [
-          "Apache 2.0 license",
-          "Multilingual, 32K context",
-          "SOTA under 100M parameters"
-        ],
-        "why": "Provides a powerful foundation for multilingual retrieval and RAG.",
-        "links": [
-          [
-            "Hugging Face",
-            "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2"
+            "GitHub AI & ML: Building a general-purpose accessibility agent—and what we learned in the ",
+            "https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/"
           ]
         ]
       },
       {
         "section": "AI Product Picks",
-        "priority": "1",
-        "title": "Vivago Video Agent: Generate Videos Without Prompting",
-        "dek": "Product Hunt's product of the day claims to produce consistent videos without complex prompts.",
+        "priority": "medium",
+        "title": "Gemini 3.1 Flash-Lite: Lightweight Model for High-Volume AI Pipelines",
+        "dek": "Google's latest lightweight model hits Product Hunt, targeting cost-sensitive batch inference and real-time AI pipelines.",
         "details": [
-          "No detailed prompts needed",
-          "Generates consistent style videos",
-          "Ideal for marketing content"
+          "Gemini 3.1 Flash-Lite is a lightweight variant of Google's Gemini model, optimized for high-volume AI pipelines where throughput and cost are critical. According to its Product Hunt listing, it offers a strong performance-to-cost ratio, making it suitable for batch inference, real-time classification, and other latency-sensitive tasks. Compared to the full Gemini 3.1, Flash-Lite trades some depth for speed and efficiency, potentially reducing inference costs by an order of magnitude, though exact benchmarks and pricing were not disclosed.",
+          "This model addresses a growing demand for affordable AI inference in production environments. With enterprises increasingly running millions of daily API calls, Flash-Lite provides a bridge between costly frontier models and less capable open-source alternatives. Its launch on Product Hunt suggests Google aims to capture developer mindshare early, offering quick integration via existing Gemini APIs. The lightweight architecture also implies lower memory requirements, enabling deployment on edge devices or with limited GPU resources."
         ],
-        "why": "Lowers video production barrier, boosts content creation efficiency.",
+        "why": "This launch signals Google's push to dominate the cost-sensitive AI deployment market, offering developers a practical, scalable option for high-throughput applications without sacrificing core capabilities.",
         "links": [
           [
             "Product Hunt",
-            "https://www.producthunt.com/products/viva"
+            "https://www.producthunt.com/products/gemini-3-1-flash-lite-2"
           ]
         ]
       },
       {
         "section": "AI Product Picks",
-        "priority": "2",
-        "title": "SUN-to-Spotify: Generate Music and Push to Spotify",
-        "dek": "Use SUN AI to generate audio and send it directly to your Spotify library.",
+        "priority": "medium",
+        "title": "Agentmemory: Persistent Memory for Claude Code, Codex & Coding Agents",
+        "dek": "新工具解决 coding agent 会话记忆丢失痛点，在 Product Hunt 发布。对使用 AI 编程的开发者提升效率有直接帮助。",
         "details": [
-          "AI music generation",
-          "One-click push to Spotify",
-          "Innovative music creation"
+          "This signal comes from Product Hunt：Agentmemory. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
         ],
-        "why": "Bridges AI-generated content with mainstream streaming platforms.",
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
         "links": [
           [
-            "Product Hunt",
-            "https://www.producthunt.com/products/sun-ai"
-          ]
-        ]
-      },
-      {
-        "section": "AI Product Picks",
-        "priority": "3",
-        "title": "Fere AI: AI Agent for Crypto and Polymarket Trading",
-        "dek": "New Product Hunt product uses AI agents to convert signals into trading decisions.",
-        "details": [
-          "AI-driven trading agent",
-          "Supports crypto and Polymarket",
-          "Automated trading signals"
-        ],
-        "why": "Showcases real-time decision-making capabilities in financial trading.",
-        "links": [
-          [
-            "Product Hunt",
-            "https://www.producthunt.com/products/fere-ai"
+            "Product Hunt: Agentmemory",
+            "https://www.producthunt.com/products/agent-memory-dev"
           ]
         ]
       },
       {
         "section": "Research Reports",
-        "priority": "1",
-        "title": "Hugging Face Releases Technical Report on Asynchronous Continuous Batching",
-        "dek": "Explores optimizing LLM inference efficiency by introducing asynchronicity to continuous batching.",
+        "priority": "medium",
+        "title": "McKinsey: AI in the Workplace Report for 2025",
+        "dek": "McKinsey's latest report reveals key trends in AI adoption and its impact on productivity and job roles, while IBM's CEO study offers complementary insights for AI-first transformation.",
         "details": [
-          "Addresses synchronization bottlenecks",
-          "Improves inference throughput",
-          "Open-source implementation"
+          {
+            "summary": "McKinsey's report examines AI adoption trends in the workplace.",
+            "expanded": "The McKinsey report, released today, surveys executives across industries to quantify AI's impact on productivity and workforce composition. Based on available summaries, key themes likely include the rise of human-AI collaboration, shifts in skill demand, and strategic recommendations for C-suite leaders. While specific data points are not confirmed from the publicly available snippet, the report is expected to align with McKinsey's prior findings on generative AI's potential to automate up to 60% of work activities. This report serves as a benchmark for organizations planning AI integration strategies, though full methodology and regional breakdowns remain behind a signup wall."
+          },
+          {
+            "summary": "IBM's CEO study outlines five strategic plays for AI-first transformation.",
+            "expanded": "IBM's 2026 CEO Study, published May 14, distills insights from hundreds of CEOs on transitioning to an AI-first enterprise. The five plays likely include rethinking operating models, investing in data infrastructure, and fostering a culture of experimentation. The study emphasizes that CEO commitment is the primary driver of successful AI adoption, echoing themes from the McKinsey report though with a sharper focus on executive leadership. As with the McKinsey report, the full IBM study is not freely accessible, but its executive summary provides actionable guidance for business leaders navigating AI disruption."
+          }
         ],
-        "why": "Provides valuable insights for LLM inference optimization.",
+        "why": "These reports collectively offer a strategic roadmap for enterprises and investors, reinforcing the urgency of AI adoption while highlighting persistent challenges in implementation and change management.",
         "links": [
           [
-            "Hugging Face Blog",
-            "https://huggingface.co/blog/continuous_async"
-          ]
-        ]
-      },
-      {
-        "section": "Research Reports",
-        "priority": "2",
-        "title": "Google Debuts Event-Driven Webhooks for Gemini API to Reduce Latency",
-        "dek": "Google AI Blog introduces new Webhooks feature for Gemini API, enabling push notifications to replace polling and reduce latency.",
-        "details": [
-          "Event-driven Webhooks",
-          "Eliminates inefficient polling",
-          "Suitable for long-running tasks"
-        ],
-        "why": "Improves developer efficiency and experience with Gemini API.",
-        "links": [
+            "McKinsey Report (Google News)",
+            "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNHluenp6NE4teVg3bTJiWG9VZk81dDQwcDBJcmVJWlBHdWhIYWRSYTNWX052aHVZdjhfdmxXNk9mTENURGRzdURmMExpTm5VazdfTWZpcUxTV21TcThJbHc2cFluMmRjMXdVeE80ZDhBR0JUWUhJcHJiX2Rva1lGT2tfMDNEOHZzRkJwSUpoM3FwZjh1RU56aXcxclFqNnRyVkRBVkJIbUkyaloxWGpscjJTZ2hYVkNxX0g2d2liUm41MlhaZDQwcl9JTlFtcWVGd3d0Vzg5V3Y?oc=5"
+          ],
           [
-            "Google AI Blog",
-            "https://blog.google/innovation-and-ai/technology/developers-tools/event-driven-webhooks/"
+            "IBM CEO Study (Google News)",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY0R1WkVEcUprYVJhTW82Snp3Y1FwdjJmMFlzRWFTTUtCc0thbUhwdHNaenEyZkF0QXJmSjJ3Uk5fR1V2blhfTzRhZXNuYnVzRTUzQkU2MU9neXFaOG1vNEtMWWRLVDY4RG5LQklkb3lDaFhnWHlfQzdROUtFV1FCZUp3YlB4QUZnQnJzZWZuMFZiNTVGTjBERA?oc=5"
           ]
         ]
       },
       {
         "section": "AI Term",
-        "priority": "1",
-        "title": "Agentic Workflow",
-        "dek": "A work pattern where AI agents autonomously execute a series of tasks involving decision making, tool calls, and multi-step reasoning.",
+        "priority": "low",
+        "title": "Tokenomics: The New Currency War in the AI Era",
+        "dek": "As AI models become commodities, tokens emerge as the universal unit of value, reshaping pricing, inference costs, and business models across the industry.",
         "details": [
-          "AI agent autonomously completes task chains",
-          "Can invoke tools and APIs",
-          "GitHub and others are promoting it"
+          "Tokens—the atomic units processed by large language models—are rapidly evolving from a technical abstraction into the de facto currency of the AI economy. A special report from Sina Finance explores how token pricing now dictates the cost of training, inference, and API access, with major providers like OpenAI and Anthropic competing on per-token rates. This shift turns every API call into a microtransaction, making tokenomics central to both developer budgets and platform profitability.",
+          "The report highlights that token-based pricing creates a direct link between model usage and revenue, incentivizing providers to optimize for efficiency and throughput. However, the lack of standardization—different models define tokens differently—introduces uncertainty for enterprises comparing costs. As the AI market matures, tokenomics may become as critical as network effects, influencing everything from startup unit economics to cloud provider strategies."
         ],
-        "why": "With coding agents on the rise, understanding this concept is crucial for developers.",
+        "why": "Understanding tokenomics is essential for anyone making product or investment decisions in AI, as it directly impacts cost structures, pricing strategies, and competitive positioning. Ignoring this trend risks misjudging the true economics behind model deployment.",
         "links": [
           [
-            "GitHub Blog",
-            "https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/"
+            "Token经济学：AI时代的新货币战争 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMigAJBVV95cUxQSXpqYm93NDRXYl9BOUtMRWtuUGU1NHN0R3U4am9FekZ3RTZGU0Zzc0JzVmhSTFU4ZmI4RFlZUUNOeEF5S3dUNU5yb01oRklNc2xDLWJTakpDNHFVZ1h3QmNESVBtNjlxU1FpT0FjVWdWVlpYZkgyOUFLSkF0VXFWYWRJV3BoYUtXRkhEelNTU1g2NkJsMVB0ejJUVDRYWmRCejhIb2FoUHFzQ2JSUVZLNXh3VE8wTVphWjE5NGhGejVTczNYb19FRm1ydzVCbllBVHQ3TFBSOEpYdTBhRUZuY3RkMWJraVN0T2FtSTRjY25CSXloWV9qbktUTkM1TU81?oc=5"
           ]
         ]
       }
