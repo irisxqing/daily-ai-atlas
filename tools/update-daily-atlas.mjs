@@ -395,10 +395,12 @@ function replaceOrInsertIssue(source, arrayName, issue) {
 function updateAppCacheBust(date) {
   const cacheBust = date.replaceAll("-", "");
   const source = fs.readFileSync(indexPath, "utf8");
-  const next = source.replace(/app\.js\?v=[^"]+/g, `app.js?v=${cacheBust}-daily`);
-  if (next === source) {
+  const appScriptPattern = /app\.js(?:\?v=[^"]+)?/g;
+  if (!appScriptPattern.test(source)) {
     throw new Error("Could not update app.js cache bust parameter in index.html.");
   }
+  const next = source.replace(appScriptPattern, `app.js?v=${cacheBust}-daily`);
+  if (next === source) return;
   fs.writeFileSync(indexPath, next);
 }
 
