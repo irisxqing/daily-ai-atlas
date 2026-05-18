@@ -190,9 +190,9 @@ function hasDateInWindow(dates, startDate, endDate) {
 function lookbackDescription(issueDate = shanghaiDate()) {
   const { primaryStartDate, primaryEndDate, isWeekendWindow } = dateWindowForIssue(issueDate);
   if (isWeekendWindow) {
-    return `每天北京时间 7:30 生成，周一优先覆盖 ${primaryStartDate} 至 ${primaryEndDate} 的周末中美 AI 信号；少数产品、报告和深度阅读会标注近7天补位。`;
+    return `每天北京时间 7:30 生成，周一优先覆盖 ${primaryStartDate} 至 ${primaryEndDate} 的周末中美 AI 信号；少数产品、行业观点与报告会标注近7天补位。`;
   }
-  return `每天北京时间 7:30 生成，优先覆盖 ${primaryEndDate} 的中美 AI 信号；少数产品、报告和深度阅读会标注近7天补位。`;
+  return `每天北京时间 7:30 生成，优先覆盖 ${primaryEndDate} 的中美 AI 信号；少数产品、行业观点与报告会标注近7天补位。`;
 }
 
 function responseText(response) {
@@ -509,6 +509,10 @@ function isDeepReadEntry(entry) {
   return hasAiSignal && (isDeepSource || hasDeepSignal) && !isPersonnelNews && !isHardNews && !isTinyUpdate && !isLowQualityEntry(entry) && isRecentEntry(entry, 14);
 }
 
+function isIndustryViewOrReportEntry(entry) {
+  return isDeepReadEntry(entry) || isReportEntry(entry);
+}
+
 function isTopStoryEntry(entry) {
   if (isLowQualityEntry(entry)) return false;
   const text = entryText(entry);
@@ -544,7 +548,7 @@ function categoryCandidates(sourcePack, predicate, limit, excludeIds = new Set()
 }
 
 function isFallbackEligibleSection(section) {
-  return ["AI产品推荐", "深度阅读", "机构报告"].includes(section);
+  return ["AI产品推荐", "深度阅读", "机构报告", "行业观点与报告"].includes(section);
 }
 
 function isStrictD1Section(section) {
@@ -899,10 +903,12 @@ function selectionSourcePack(sourcePack) {
   openSource.forEach((entry) => used.add(entry.id));
   const products = sectionCandidates(sourcePack, "AI产品推荐", isProductEntry, 12, used);
   products.forEach((entry) => used.add(entry.id));
+  const baseUsed = new Set(used);
   const deepReads = sectionCandidates(sourcePack, "深度阅读", isDeepReadEntry, 8, used);
   deepReads.forEach((entry) => used.add(entry.id));
   const reports = sectionCandidates(sourcePack, "机构报告", isReportEntry, 8, used);
   reports.forEach((entry) => used.add(entry.id));
+  const industryViewsReports = sectionCandidates(sourcePack, "行业观点与报告", isIndustryViewOrReportEntry, 12, baseUsed);
   const topStories = sectionCandidates(
     sourcePack,
     "今日重点",
@@ -937,7 +943,8 @@ function selectionSourcePack(sourcePack) {
       openSource: openSource.map(compactEntry),
       products: products.map(compactEntry),
       deepReads: deepReads.map(compactEntry),
-      reports: reports.map(compactEntry)
+      reports: reports.map(compactEntry),
+      industryViewsReports: industryViewsReports.map(compactEntry)
     }
   };
 }
@@ -946,7 +953,7 @@ function buildSelectionPrompt(date, sourcePack, revisionNote = "") {
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
 ${lookbackDescription(date)}
-${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：如果是篇首 summary 问题，要提炼一条主题主线，不要罗列新闻；如果是内容问题，要增加新闻细节、写成解释性段落，机构报告必须有 expanded 深度解读对象。\n` : ""}
+${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：如果是篇首 summary 问题，要提炼一条主题主线，不要罗列新闻；如果是内容问题，要增加新闻细节、写成解释性段落；行业观点与报告要清楚区分观点文章、访谈和正式报告。\n` : ""}
 
 请为 AI Daily Atlas 先生成一份“选题计划”JSON。后续中英文正文必须基于这份选题计划生成，所以这一步最重要。
 你不能联网浏览；只能使用下面 SOURCE_PACK 中的公开来源条目作为事实基础。不要编造 SOURCE_PACK 之外的链接、融资金额、发布时间或媒体素材。SOURCE_PACK 里的 newsletter / media 只作为雷达线索；公司官网、官方博客、论文、GitHub、Hugging Face、Product Hunt、机构报告、主流媒体来源优先作为确认来源。
@@ -957,9 +964,8 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
 - 投融资信息只能从 candidatePools.funding 选。
 - 开源项目只能从 candidatePools.openSource 选。
 - AI产品推荐只能从 candidatePools.products 选，必须是真正可试用的软件/工具/应用/工作流产品；不要选择纯模型发布、API、芯片、融资或平台战略新闻。
-- 深度阅读只能从 candidatePools.deepReads 选，必须是值得花时间读完的长文、访谈、深度分析、案例复盘或观点文章；不要选择普通新闻快讯、融资、GitHub 项目、工具推荐或旧报告。
-- 机构报告只能从 candidatePools.reports 选，必须是近期发布的报告/研究/白皮书/指数/深度研究。如果 reports 候选为空，可以把这一栏改成“暂无足够新的机构报告信号”，但不能选旧报告凑数。
-- 今日重点、投融资信息、开源项目已经被脚本限制为北京时间 D-1；AI产品推荐、深度阅读、机构报告如使用 fallback，正文必须保留补位属性，不能伪装成当日新闻。
+- 行业观点与报告只能从 candidatePools.industryViewsReports 选，优先选择值得花时间读完的行业观点、访谈、深度分析、案例复盘；如果有近期机构报告/研究/白皮书/指数，也可以同栏呈现。不要选择普通新闻快讯、融资、GitHub 项目、工具推荐或旧报告。
+- 今日重点、投融资信息、开源项目已经被脚本限制为北京时间 D-1；AI产品推荐、行业观点与报告如使用 fallback，正文必须保留补位属性，不能伪装成当日新闻。
 
 选题范围：
 - 中国和美国 AI 公司为主，其他国家为辅。
@@ -969,8 +975,8 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
 - 来源方法：AI Valley、The Rundown AI、Ben's Bites、TLDR AI、The Batch、Import AI、Latent Space、中文 AI 媒体只作为雷达；重要事实需要回到公司官网、官方博客、论文、GitHub、Hugging Face、Product Hunt、机构报告、主流媒体或招聘官网确认。
 
 内容结构要求：
-- 计划里使用中文 section：今日重点、投融资信息、开源项目、AI产品推荐、深度阅读、机构报告、每日词条。
-- 控制在 11 条：今日重点 4 条；投融资 1 条；开源 1 条；AI 产品推荐 2 条；深度阅读 1 条；机构报告 1 条；每日 AI 词条 1 条。
+- 计划里使用中文 section：今日重点、投融资信息、开源项目、AI产品推荐、行业观点与报告、每日词条。
+- 控制在 11 条：今日重点 4 条；投融资 1 条；开源 1 条；AI 产品推荐 2 条；行业观点与报告 2 条；每日 AI 词条 1 条。
 - 每条 plan item 必须包含 section、priority、titleZh、titleEn、angle、sourceIds。
 - sourceIds 必须引用对应 candidatePools 里的 id。每条至少 1 个，重要新闻尽量 2-4 个。
 - 不要在 plan item 里返回 links，脚本会根据 sourceIds 自动补链接。
@@ -983,15 +989,15 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
 - summary 最多点名 2 个公司或产品；如果需要更多具体新闻，留到正文卡片里写。
 - 中文 summary 约 70-130 字；英文 summary 约 35-70 words。
 
-机构报告 / Research Reports 的特殊要求：
-- 计划里必须至少包含 1 条机构报告或深度研究文章。
-- 如果 SOURCE_PACK 提供了报告页/PDF/研究文章链接，links 必须包含它。
-- 如果当天没有真正新的机构报告，可以选择 candidatePools.reports 中的近期研究文章/官方研究博客，但必须明确它不是正式咨询报告；不要选 2025 或更早的旧报告凑数。
+行业观点与报告 / Industry Views & Reports 的特殊要求：
+- 计划里必须包含 2 条行业观点与报告。优先至少 1 条行业观点/访谈/深度文章；如果 candidatePools.industryViewsReports 里有合格机构报告，可以选 1 条报告。
+- 如果没有真正新的机构报告，不要硬凑报告；用高质量行业观点、访谈、官方研究博客或深度研究文章补位，并明确它不是正式咨询报告。
+- 如果 SOURCE_PACK 提供了报告页/PDF/研究文章链接，links 必须包含它。不要选 2025 或更早的旧报告凑数。
 
 选题覆盖要求：
 - 今日重点不要只来自一个来源；优先混合官方/主流媒体/研究社区/中国媒体。
 - AI 产品推荐要选真正可试用、有产品启发的工具，尤其关注个人知识管理、跨模型工作流、agent、创作工具、效率工具，不能只按 Product Hunt 最新时间排序。
-- 深度阅读每天只选 1 篇。它应该帮助读者理解一个更大的 AI 产业问题，例如模型竞争、AI agent 落地、机器人商业化、开源生态、AI 产品入口、企业采用或监管变化。angle 里要写清“为什么值得深读”。
+- 行业观点与报告应该帮助读者理解一个更大的 AI 产业问题，例如模型竞争、AI agent 落地、机器人商业化、开源生态、AI 产品入口、企业采用或监管变化。angle 里要写清“为什么值得深读/值得作为行业观点跟踪”。
 - 投融资只写有融资、IPO、并购、估值、投资方或资本市场信号的内容；没有可信信号时宁可写 1 条并标注来源限制。
 - 开源项目优先 GitHub/Hugging Face/开发者社区有明确项目页或技术博客的内容。
 - 每日词条要和当天新闻有关，解释清楚但不要幼稚化。
@@ -1032,6 +1038,7 @@ function sectionForLang(section, lang) {
     "AI产品推荐": "AI Product Picks",
     "深度阅读": "Deep Read",
     "机构报告": "Research Reports",
+    "行业观点与报告": "Industry Views & Reports",
     "每日词条": "AI Term"
   }[section] || section;
 }
@@ -1078,6 +1085,7 @@ function sectionPredicate(section) {
   if (section === "AI产品推荐") return isProductEntry;
   if (section === "深度阅读") return isDeepReadEntry;
   if (section === "机构报告") return isReportEntry;
+  if (section === "行业观点与报告") return isIndustryViewOrReportEntry;
   if (section === "今日重点") return isTopStoryEntry;
   return () => true;
 }
@@ -1111,6 +1119,11 @@ function planAngle(section, entry) {
   if (section === "AI产品推荐") return "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。";
   if (section === "深度阅读") return "来自行业观察者或深度来源，适合帮助读者理解一个更大的 AI 产业问题。";
   if (section === "机构报告") return "偏产业全景、未来应用或企业采用的报告，不追求过度 technical。";
+  if (section === "行业观点与报告") {
+    return isReportEntry(entry)
+      ? "近期行业报告或研究材料，适合补充产业全景、企业采用和未来应用判断。"
+      : "行业访谈、观点或深度文章，适合帮助读者理解一个更大的 AI 产业问题。";
+  }
   return "从公开来源中筛出的 AI 信号，适合作为进一步阅读入口。";
 }
 
@@ -1176,22 +1189,41 @@ function buildEditorialFrame(items) {
     headlineEn: "AI competition is shifting from model capability to products and industry control points",
     summaryZh: "今天的主线是 AI 公司正在把技术能力变成更稳定的产品入口和产业控制点。值得关注的不只是模型强弱，而是谁能把能力沉淀为持续使用、商业化和行业影响力。",
     summaryEn: "Today’s main theme is that AI competition is moving beyond isolated model releases into product entry points, key talent, infrastructure, and real-world adoption. The important question is no longer only which model is stronger, but who can turn capability into usage, revenue, and industry influence.",
-    tagsZh: ["模型平台", "AI产品", "投融资", "开源", "深度阅读", "机构报告"],
-    tagsEn: ["Models", "AI Products", "Funding", "Open Source", "Deep Read", "Reports"]
+    tagsZh: ["模型平台", "AI产品", "投融资", "开源", "行业观点"],
+    tagsEn: ["Models", "AI Products", "Funding", "Open Source", "Industry Views"]
   };
+}
+
+function selectIndustryViewReportEntries(sourcePack, count, used) {
+  const selected = [];
+  const selectedIds = new Set();
+  const addEntry = (entry) => {
+    if (!entry || selectedIds.has(entry.id)) return;
+    selected.push(entry);
+    selectedIds.add(entry.id);
+    used.add(entry.id);
+  };
+  const viewCandidates = sectionCandidates(sourcePack, "行业观点与报告", isDeepReadEntry, 8, used);
+  const reportCandidates = sectionCandidates(sourcePack, "行业观点与报告", isReportEntry, 4, used);
+  addEntry(viewCandidates[0]);
+  addEntry(reportCandidates[0]);
+  if (selected.length < count) {
+    sectionCandidates(sourcePack, "行业观点与报告", isIndustryViewOrReportEntry, 12, new Set([...used, ...selectedIds]))
+      .forEach((entry) => {
+        if (selected.length < count) addEntry(entry);
+      });
+  }
+  return selected.slice(0, count);
 }
 
 function deterministicPlan(date, sourcePack, reason = "") {
   if (reason) console.warn(`Using deterministic editorial plan: ${reason}`);
   const used = new Set();
-  const fallbackReports = sectionCandidates(sourcePack, "机构报告", isReportEntry, 1, used);
   const specs = [
     ["今日重点", 4, isTopStoryEntry],
     ["投融资信息", 1, isFundingEntry],
     ["开源项目", 1, isOpenSourceEntry],
-    ["AI产品推荐", 2, isProductEntry],
-    ["深度阅读", 1, isDeepReadEntry],
-    ["机构报告", 1, isReportEntry]
+    ["AI产品推荐", 2, isProductEntry]
   ];
   const items = [];
   specs.forEach(([section, count, predicate]) => {
@@ -1204,9 +1236,9 @@ function deterministicPlan(date, sourcePack, reason = "") {
     });
   });
 
-  if (!fallbackReports.length && !items.some((item) => item.section === "机构报告")) {
-    console.warn("No sufficiently fresh strategic AI report found; skipping Research Reports for this issue.");
-  }
+  selectIndustryViewReportEntries(sourcePack, 2, used).forEach((entry) => {
+    items.push(selectedPlanItem("行业观点与报告", entry));
+  });
 
   for (const entry of sourcePack.entries) {
     if (items.length >= 10) break;
@@ -1216,7 +1248,7 @@ function deterministicPlan(date, sourcePack, reason = "") {
     items.push(selectedPlanItem("今日重点", entry));
   }
 
-  const sectionOrder = ["今日重点", "投融资信息", "开源项目", "AI产品推荐", "深度阅读", "机构报告"];
+  const sectionOrder = ["今日重点", "投融资信息", "开源项目", "AI产品推荐", "行业观点与报告"];
   items.sort((a, b) => sectionOrder.indexOf(a.section) - sectionOrder.indexOf(b.section));
 
   items.push({
@@ -1303,7 +1335,7 @@ function buildItemPrompt(date, sourcePack, planItem, lang, revisionNote = "") {
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
 ${lookbackDescription(date)}
-${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：增加新闻细节、写成解释性段落，机构报告必须有 expanded 深度解读对象。\n` : ""}
+${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：增加新闻细节、写成解释性段落；行业观点与报告要清楚区分观点文章、访谈和正式报告。\n` : ""}
 
 请基于 ITEM_PLAN 生成 AI Daily Atlas ${isZh ? "中文版" : "英文版"}的一张信息卡 JSON。
 你不能改变选题，只能基于 ITEM_PLAN 和 SOURCE_PACK 写正文。不要编造 SOURCE_PACK 之外的链接、融资金额、发布时间或媒体素材。未确认消息必须标注不确定性，不要写成事实。
@@ -1323,16 +1355,11 @@ item 必须有 section、priority、title、dek、details、why、links。脚本
 - 如果 SOURCE_PACK 条目里有 image，或原链接显然是视频/GitHub/Product Hunt/Hugging Face 页面，可以加 media；没有可靠素材就不要编造。AI 产品推荐和今日重点优先带 media。
 - 不要包含用户个人收入、具体雇主经历或敏感个人信息。
 
-深度阅读 / Deep Read 的特殊要求：
-- 这不是普通新闻卡，也不是报告卡。details 要解释：文章核心问题、作者/来源背景、最值得读的 2-3 个观点、对产品/投资/战略/职业判断的启发。
-- 标题和 why 要明确告诉读者“为什么今天值得花时间读这篇”，而不是只复述文章标题。
-- 如果原文是访谈、长文或观点文章，要保留其观点属性；不要把作者观点包装成已确认事实。
-
-机构报告 / Research Reports 的特殊要求：
-- 不允许只写一句话摘要。每份报告的 details 必须使用对象数组，每个对象包含 summary 和 expanded。
-- expanded 要相对详细，${isZh ? "中文约 120-260 字" : "English 80-160 words"}；需要讲清核心观点、关键数据或结论、产业/投资/职业启发。
+行业观点与报告 / Industry Views & Reports 的特殊要求：
+- 如果原文是访谈、长文、播客或观点文章，details 要解释：核心问题、作者/来源背景、最值得读的 2-3 个观点、对产品/投资/战略/职业判断的启发。要保留观点属性，不要把作者观点包装成已确认事实。
+- 如果原文是机构报告、研究文章、白皮书或指数，不允许只写一句话摘要。details 可以使用对象数组，每个对象包含 summary 和 expanded；expanded 要讲清核心观点、关键数据或结论、产业/投资/职业启发。
 - 如果 SOURCE_PACK 提供了报告页/PDF/研究文章链接，links 必须包含它。若有原文短句，可以加 quote；quote 必须很短，不能超过 25 个英文词或 35 个中文字。若有报告图表入口，可以加 chart: ["图表/报告入口", "url"]。
-- 如果当天没有真正的机构报告，可以选择深度研究文章/官方研究博客/年度报告，但必须明确它不是正式咨询报告，不要硬编 PDF。
+- 如果它不是正式咨询报告，要在正文里明确写成“行业观点/深度文章/官方研究博客”，不要硬编 PDF 或报告属性。
 
 返回 JSON，不能有 Markdown 包裹。格式：
 {

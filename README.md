@@ -22,8 +22,8 @@ Website: [https://irisxqing.github.io/daily-ai-atlas/](https://irisxqing.github.
 
 ## Features / 功能
 
-- **每日 AI 信号简报**：把全球 AI 新闻整理成可快速阅读的日报，覆盖今日重点、投融资、开源项目、AI 产品推荐和机构报告。
-  **Daily AI signal briefing**: turns global AI updates into a readable daily briefing across top stories, funding, open source, product picks, and research reports.
+- **每日 AI 信号简报**：把全球 AI 新闻整理成可快速阅读的日报，覆盖今日重点、投融资、开源项目、AI 产品推荐、行业观点与报告。
+  **Daily AI signal briefing**: turns global AI updates into a readable daily briefing across top stories, funding, open source, product picks, and industry views/reports.
 
 - **面向非技术读者的解释方式**：不只罗列新闻，也解释公司背景、事件细节、为什么重要，以及可能影响哪些行业和工作流。
   **Non-technical friendly context**: goes beyond headlines by explaining company background, event details, why it matters, and which workflows may be affected.
@@ -31,8 +31,8 @@ Website: [https://irisxqing.github.io/daily-ai-atlas/](https://irisxqing.github.
 - **高价值 AI 产品发现**：优先推荐知识管理、研究工作台、跨模型记忆、Agent 工作流和产品原型等真正能进入工作场景的工具。
   **High-signal AI product discovery**: prioritizes tools that can enter real workflows, including knowledge bases, research workbenches, cross-model memory, agent workflows, and prototyping.
 
-- **机构报告深读**：报告条目支持展开，查看核心观点、关键数据、原始 quote、图表线索和下载/阅读链接。
-  **Research report deep dives**: report bullets expand into core takeaways, key data, original quotes, chart references, and source links.
+- **行业观点与报告**：把高质量访谈、行业观点、深度文章和机构报告放在同一栏目；没有新报告时，用观点文章补位，不硬凑旧报告。
+  **Industry views and reports**: combines interviews, expert viewpoints, deep reads, and research reports in one section; when no fresh report exists, high-quality viewpoints fill the slot instead of stale reports.
 
 - **原始来源可追溯**：每张信息卡片都会突出原文、官网、GitHub、报告或媒体链接，方便继续追踪一手信息。
   **Traceable original sources**: every card highlights source links such as articles, official pages, GitHub repositories, reports, or media.

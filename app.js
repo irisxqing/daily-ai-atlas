@@ -1473,8 +1473,8 @@ const archiveEn = [
 ];
 
 const sectionOrders = {
-  zh: ["全部", "今日重点", "投融资信息", "开源项目", "AI产品推荐", "深度阅读", "机构报告", "职业雷达"],
-  en: ["All", "Top Stories", "Funding Watch", "Open Source", "AI Product Picks", "Deep Read", "Research Reports", "Career Radar"]
+  zh: ["全部", "今日重点", "投融资信息", "开源项目", "AI产品推荐", "行业观点与报告", "深度阅读", "机构报告", "职业雷达"],
+  en: ["All", "Top Stories", "Funding Watch", "Open Source", "AI Product Picks", "Industry Views & Reports", "Deep Read", "Research Reports", "Career Radar"]
 };
 
 const uiText = {
@@ -1487,7 +1487,7 @@ const uiText = {
     archiveTags: "归档标签",
     topicLabel: "主题聚合",
     contentSearch: "搜索当前日报",
-    refreshNote: "每天 7:30 生成，优先覆盖前一自然日的中美 AI 信号；少数产品、报告和深度阅读会标注近7天补位",
+    refreshNote: "每天 7:30 生成，优先覆盖前一自然日的中美 AI 信号；少数产品、行业观点与报告会标注近7天补位",
     statusReady: "今日已更新",
     statusWaiting: "等待今日 7:30 刷新",
     statusArchive: "历史归档",
@@ -1495,12 +1495,12 @@ const uiText = {
     sourceTrustOfficial: "官方确认",
     sourceTrustMulti: "多源交叉",
     sourceTrustCommunity: "社区热度",
-    sourceTrustInstitution: "机构报告",
+    sourceTrustInstitution: "观点/报告",
     sourceTrustCaution: "需继续验证",
     termLabel: "今日 AI 词条",
     termExpand: "展开核心解释",
     sourceMethodTitle: "信息来源",
-    sourceMethodText: "完整信息源按类型分层使用：日报和媒体负责发现信号，官方博客、论文、GitHub、机构报告、招聘页负责交叉确认。",
+    sourceMethodText: "完整信息源按类型分层使用：日报和媒体负责发现信号，官方博客、论文、GitHub、行业观点/机构报告、招聘页负责交叉确认。",
     datePlaceholder: "搜索日期、公司、关键词",
     contentPlaceholder: "例如 DeepSeek、机器人、投融资、香港岗位",
     noDates: "没有匹配的日期。",
@@ -1516,7 +1516,7 @@ const uiText = {
     archiveTags: "Archive tags",
     topicLabel: "Topic clusters",
     contentSearch: "Search current issue",
-    refreshNote: "Refreshes daily at 7:30 Beijing time, prioritizing the previous Beijing day’s China-US AI signals; selected products, reports, and deep reads may be labeled as 7-day fallback picks",
+    refreshNote: "Refreshes daily at 7:30 Beijing time, prioritizing the previous Beijing day’s China-US AI signals; selected products and industry views/reports may be labeled as 7-day fallback picks",
     statusReady: "Updated today",
     statusWaiting: "Waiting for the 7:30 refresh",
     statusArchive: "Historical issue",
@@ -1524,12 +1524,12 @@ const uiText = {
     sourceTrustOfficial: "Official source",
     sourceTrustMulti: "Cross-checked",
     sourceTrustCommunity: "Community signal",
-    sourceTrustInstitution: "Institutional report",
+    sourceTrustInstitution: "Views / reports",
     sourceTrustCaution: "Needs verification",
     termLabel: "AI Term of the Day",
     termExpand: "Read the quick explainer",
     sourceMethodTitle: "Sources",
-    sourceMethodText: "Sources are layered by purpose: newsletters and media surface signals, while official posts, papers, GitHub, reports, and hiring pages are used for verification.",
+    sourceMethodText: "Sources are layered by purpose: newsletters and media surface signals, while official posts, papers, GitHub, industry views/reports, and hiring pages are used for verification.",
     datePlaceholder: "Search dates, companies, keywords",
     contentPlaceholder: "e.g. DeepSeek, robotics, funding, Hong Kong roles",
     noDates: "No matching dates.",
@@ -1797,16 +1797,10 @@ const topicDefinitions = [
     terms: ["开源", "GitHub", "Agent", "agent", "Open Source", "RAG", "workflow", "MCP", "Hugging Face"]
   },
   {
-    id: "reports",
-    zh: "机构报告",
-    en: "Reports",
-    terms: ["机构报告", "报告", "Stanford", "BCG", "McKinsey", "KPMG", "Research Reports", "AI Index"]
-  },
-  {
-    id: "deep-read",
-    zh: "深度阅读",
-    en: "Deep Read",
-    terms: ["深度阅读", "Deep Read", "analysis", "deep dive", "essay", "interview", "long read", "explainer", "strategy", "case study", "深度", "长文", "访谈", "专访", "解读", "复盘", "分析"]
+    id: "views-reports",
+    zh: "观点/报告",
+    en: "Views / reports",
+    terms: ["行业观点与报告", "Industry Views & Reports", "深度阅读", "机构报告", "Deep Read", "Research Reports", "analysis", "deep dive", "essay", "interview", "long read", "explainer", "strategy", "case study", "报告", "Stanford", "BCG", "McKinsey", "KPMG", "AI Index", "深度", "长文", "访谈", "专访", "解读", "复盘", "分析"]
   },
   {
     id: "career",
@@ -1829,6 +1823,8 @@ const sectionThemeMap = {
   "Open Source": "open-source",
   "AI产品推荐": "product",
   "AI Product Picks": "product",
+  "行业观点与报告": "views-report",
+  "Industry Views & Reports": "views-report",
   "深度阅读": "deep-read",
   "Deep Read": "deep-read",
   "机构报告": "report",
@@ -1843,6 +1839,7 @@ const sectionCodeMap = {
   funding: "FUND",
   "open-source": "OSS",
   product: "TOOL",
+  "views-report": "VIEW",
   "deep-read": "READ",
   report: "REPORT",
   career: "CAREER"
@@ -2251,7 +2248,7 @@ function renderContent() {
     const node = storyTemplate.content.firstElementChild.cloneNode(true);
     node.dataset.sectionKey = getSectionKey(item.section);
     node.dataset.sectionCode = getSectionCode(item.section);
-    if (["投融资信息", "深度阅读", "机构报告", "职业雷达", "Funding Watch", "Deep Read", "Research Reports", "Career Radar"].includes(item.section)) {
+    if (["投融资信息", "行业观点与报告", "深度阅读", "机构报告", "职业雷达", "Funding Watch", "Industry Views & Reports", "Deep Read", "Research Reports", "Career Radar"].includes(item.section)) {
       node.classList.add("is-wide");
     }
     node.querySelector(".section-code").textContent = getSectionCode(item.section);
