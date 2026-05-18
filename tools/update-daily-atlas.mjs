@@ -26,14 +26,14 @@ function googleNews(name, query, locale = { hl: "en-US", gl: "US", ceid: "US:en"
 }
 
 const sourceFeeds = [
-  googleNews("Google News AI Labs", "(OpenAI OR Anthropic OR DeepMind OR xAI OR Meta AI OR Microsoft AI OR NVIDIA AI) when:1d"),
-  googleNews("Google News China AI", "(DeepSeek OR Qwen OR MiniMax OR Zhipu OR Kimi OR Doubao OR Alibaba AI OR Tencent AI) when:1d", {
+  googleNews("Google News AI Labs", "(OpenAI OR Anthropic OR DeepMind OR xAI OR Meta AI OR Microsoft AI OR NVIDIA AI) when:2d"),
+  googleNews("Google News China AI", "(DeepSeek OR Qwen OR MiniMax OR Zhipu OR Kimi OR Doubao OR Alibaba AI OR Tencent AI) when:2d", {
     hl: "zh-CN",
     gl: "CN",
     ceid: "CN:zh-Hans"
   }),
-  googleNews("Google News AI Funding", "(AI startup funding OR AI acquisition OR AI IPO OR 人工智能 融资 OR AI 投融资) when:1d"),
-  googleNews("Google News AI Products", "(AI agent product launch OR AI tool Product Hunt OR AI workflow tool OR AI 产品 发布) when:1d"),
+  googleNews("Google News AI Funding", "(AI startup funding OR AI acquisition OR AI IPO OR 人工智能 融资 OR AI 投融资) when:2d"),
+  googleNews("Google News AI Products", "(AI agent product launch OR AI tool Product Hunt OR AI workflow tool OR AI 产品 发布) when:2d"),
   googleNews("Google News AI Reports", "(AI report PDF OR State of AI report OR Stanford AI Index OR McKinsey AI report OR BCG AI report OR AI 报告) when:14d"),
   ["AI Valley", "https://www.theaivalley.com/feed"],
   ["The Rundown AI", "https://www.therundown.ai/feed"],
@@ -127,6 +127,10 @@ function addShanghaiDays(dateString, delta) {
   return shanghaiDate(date);
 }
 
+function shanghaiWeekday(dateString) {
+  return new Date(`${dateString}T12:00:00+08:00`).getUTCDay();
+}
+
 function sourceDateString(value) {
   const date = value instanceof Date ? value : new Date(value);
   if (Number.isNaN(date.getTime())) return "";
@@ -134,17 +138,25 @@ function sourceDateString(value) {
 }
 
 function dateWindowForIssue(issueDate) {
-  const primaryDate = addShanghaiDays(issueDate, -1);
+  const isWeekendWindow = shanghaiWeekday(issueDate) === 1;
+  const primaryStartDate = addShanghaiDays(issueDate, isWeekendWindow ? -2 : -1);
+  const primaryEndDate = addShanghaiDays(issueDate, -1);
   return {
-    primaryDate,
+    primaryDate: primaryEndDate,
+    primaryStartDate,
+    primaryEndDate,
     fallbackStartDate: addShanghaiDays(issueDate, -7),
-    fallbackEndDate: addShanghaiDays(issueDate, -2)
+    fallbackEndDate: addShanghaiDays(issueDate, isWeekendWindow ? -3 : -2),
+    isWeekendWindow
   };
 }
 
 function lookbackDescription(issueDate = shanghaiDate()) {
-  const { primaryDate } = dateWindowForIssue(issueDate);
-  return `每天北京时间 7:30 生成，优先覆盖 ${primaryDate} 的中美 AI 信号；少数产品、报告和深度阅读会标注近7天补位。`;
+  const { primaryStartDate, primaryEndDate, isWeekendWindow } = dateWindowForIssue(issueDate);
+  if (isWeekendWindow) {
+    return `每天北京时间 7:30 生成，周一优先覆盖 ${primaryStartDate} 至 ${primaryEndDate} 的周末中美 AI 信号；少数产品、报告和深度阅读会标注近7天补位。`;
+  }
+  return `每天北京时间 7:30 生成，优先覆盖 ${primaryEndDate} 的中美 AI 信号；少数产品、报告和深度阅读会标注近7天补位。`;
 }
 
 function responseText(response) {
@@ -293,13 +305,13 @@ function regionPriority(entry) {
 function classifyFreshness(entry, issueDate) {
   const sourceDate = sourceDateString(entry.date);
   if (!sourceDate) return null;
-  const { primaryDate, fallbackStartDate, fallbackEndDate } = dateWindowForIssue(issueDate);
-  if (sourceDate === primaryDate) {
+  const { primaryStartDate, primaryEndDate, fallbackStartDate, fallbackEndDate, isWeekendWindow } = dateWindowForIssue(issueDate);
+  if (sourceDate >= primaryStartDate && sourceDate <= primaryEndDate) {
     return {
       sourceDate,
       freshness: "d-1",
-      freshnessLabelZh: "D-1",
-      freshnessLabelEn: "D-1"
+      freshnessLabelZh: isWeekendWindow ? `周末窗口｜${sourceDate}` : "D-1",
+      freshnessLabelEn: isWeekendWindow ? `Weekend window | ${sourceDate}` : "D-1"
     };
   }
   if (sourceDate >= fallbackStartDate && sourceDate <= fallbackEndDate) {
