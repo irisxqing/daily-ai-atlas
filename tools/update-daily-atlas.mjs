@@ -59,6 +59,40 @@ const sourceFeeds = [
   ["量子位", "https://www.qbitai.com/feed"]
 ];
 
+function curatedProductSignals(date) {
+  const publishedAt = `${date}T07:30:00+08:00`;
+  return [
+    {
+      source: "Curated AI Products",
+      title: "Recall: personal AI knowledge base for articles, videos, PDFs, and notes",
+      link: "https://www.recall.it/",
+      date: publishedAt,
+      summary: "Recall saves, summarizes, tags, connects, and lets users chat with web pages, YouTube videos, podcasts, PDFs, books, and notes. It is useful for turning daily AI reading into a reusable personal knowledge base instead of a disposable reading list."
+    },
+    {
+      source: "Curated AI Products",
+      title: "Liminary: AI research workspace for consultants, strategists, and researchers",
+      link: "https://liminary.io/",
+      date: publishedAt,
+      summary: "Liminary is built for high-stakes recommendations grounded in real research. It helps users save articles, reports, PDFs, AI chats, and videos, annotate them, keep source traceability, and reuse insights across projects."
+    },
+    {
+      source: "Curated AI Products",
+      title: "Anuma: multi-model AI workspace with private cross-model memory",
+      link: "https://www.anuma.ai/",
+      date: publishedAt,
+      summary: "Anuma aggregates ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, Llama, and other models into one workspace, with a privacy-focused memory layer that users can edit and carry across models."
+    },
+    {
+      source: "Curated AI Products",
+      title: "Magic Patterns: AI design agent for interactive product prototypes",
+      link: "https://www.magicpatterns.com/",
+      date: publishedAt,
+      summary: "Magic Patterns helps product teams generate interactive mockups from a prompt, screenshot, existing style, or design system. It is useful for PMs and founders who need to make product ideas discussable before engineering starts."
+    }
+  ];
+}
+
 function shanghaiDate(date = new Date()) {
   return new Intl.DateTimeFormat("en-CA", {
     timeZone: timezone,
@@ -217,9 +251,10 @@ function isOpenSourceEntry(entry) {
 function isProductEntry(entry) {
   const text = entryText(entry);
   const titleSource = `${entry.source || ""} ${entry.title || ""}`.toLowerCase();
-  const hasProductSignal = /\bproduct hunt\b|\btool\b|\bapp\b|\bworkspace\b|\bworkflow\b|\bmemory\b|\bassistant\b|\bagentmemory\b|\brecall\b|\bliminary\b|\bbrowser\b|\bextension\b|\bdashboard\b|\bcanvas\b|\bnotebook\b|\bautomation\b|插件|应用|产品|工具|工作流|知识管理|浏览器|助手/i.test(titleSource);
+  if (/\barxiv\b|\bpaper\b|\bresearch repository\b|\bbenchmark\b|论文|研究论文/.test(text)) return false;
+  const hasProductSignal = /\bcurated ai products\b|\bproduct hunt\b|\btool\b|\bapp\b|\bworkspace\b|\bworkflow\b|\bmemory\b|\bagentmemory\b|\brecall\b|\bliminary\b|\banuma\b|\bmagic patterns\b|\bbrowser\b|\bextension\b|\bdashboard\b|\bcanvas\b|\bnotebook\b|\bautomation\b|插件|应用|产品|工具|工作流|知识管理|浏览器/i.test(titleSource);
   const isMostlyModelNews = /\bmodel\b|\bapi\b|\bbenchmark\b|\binference\b|芯片|\bipo\b|\bvaluation\b|\bfunding\b|融资|估值|模型|推理|基准|参数/.test(text)
-    && !/\btool\b|\bapp\b|\bproduct hunt\b|\bworkflow\b|\bmemory\b|\bassistant\b|\bextension\b|\bnotebook\b|应用|产品|工具|工作流|知识管理|助手/.test(text);
+    && !/\btool\b|\bapp\b|\bproduct hunt\b|\bworkflow\b|\bmemory\b|\bextension\b|\bnotebook\b|应用|产品|工具|工作流|知识管理/.test(text);
   return hasProductSignal && !isMostlyModelNews;
 }
 
@@ -336,6 +371,9 @@ async function collectSourcePack(date) {
       sources.push({ name, url, count: 0, ok: false, error: String(result.reason?.message || result.reason) });
     }
   });
+  const curatedProducts = curatedProductSignals(date);
+  sources.push({ name: "Curated AI Products", url: "manual:curated-ai-products", count: curatedProducts.length, ok: true });
+  entries.push(...curatedProducts);
 
   const seen = new Set();
   const sortedEntries = entries

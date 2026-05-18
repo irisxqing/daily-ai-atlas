@@ -1581,8 +1581,10 @@ const sourceGroups = [
       ["There's An AI For That", "https://theresanaiforthat.com/"],
       ["AITopTools", "https://aitoptools.com/"],
       ["Toolify", "https://www.toolify.ai/"],
+      ["Anuma", "https://www.anuma.ai/"],
       ["Recall", "https://www.recall.it/"],
-      ["Liminary", "https://liminary.io/"]
+      ["Liminary", "https://liminary.io/"],
+      ["Magic Patterns", "https://www.magicpatterns.com/"]
     ]
   },
   {
