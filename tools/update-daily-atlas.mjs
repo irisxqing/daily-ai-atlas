@@ -361,6 +361,20 @@ function isTermSectionName(section) {
   return ["每日词条", "AI Term"].includes(section);
 }
 
+function validateItemContent(item, lang) {
+  if (isTermSectionName(item.section)) return;
+  const richDetails = item.details.filter((detail) => detailDepth(detail) >= 45);
+  if (richDetails.length < 2) {
+    throw new Error(`${lang} item "${item.title}" is too shallow. Details must include at least two rich context points.`);
+  }
+  if (isReportSection(item.section)) {
+    const expandedReports = item.details.filter((detail) => detail && typeof detail === "object" && detail.expanded && detail.expanded.length >= 90);
+    if (!expandedReports.length) {
+      throw new Error(`${lang} report "${item.title}" needs expanded report analysis objects.`);
+    }
+  }
+}
+
 function normalizeIssue(issue, date, lang) {
   if (!issue || typeof issue !== "object") throw new Error(`Missing ${lang} issue.`);
   const normalized = {
@@ -379,19 +393,7 @@ function normalizeIssue(issue, date, lang) {
   if (normalized.items.length < 8) {
     throw new Error(`${lang} issue has too few items.`);
   }
-  normalized.items.forEach((item) => {
-    if (isTermSectionName(item.section)) return;
-    const richDetails = item.details.filter((detail) => detailDepth(detail) >= 45);
-    if (richDetails.length < 2) {
-      throw new Error(`${lang} item "${item.title}" is too shallow. Details must include at least two rich context points.`);
-    }
-    if (isReportSection(item.section)) {
-      const expandedReports = item.details.filter((detail) => detail && typeof detail === "object" && detail.expanded && detail.expanded.length >= 90);
-      if (!expandedReports.length) {
-        throw new Error(`${lang} report "${item.title}" needs expanded report analysis objects.`);
-      }
-    }
-  });
+  normalized.items.forEach((item) => validateItemContent(item, lang));
   return normalized;
 }
 
@@ -499,11 +501,12 @@ ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请�
 
 内容结构要求：
 - 计划里使用中文 section：今日重点、投融资信息、开源项目、AI产品推荐、机构报告、每日词条。
-- 今日重点 4-6 条；投融资 1-2 条；开源 1-2 条；AI 产品推荐 1-3 条；机构报告 1-2 条；每日 AI 词条 1 条。
+- 计划里使用中文 section：今日重点、投融资信息、开源项目、AI产品推荐、机构报告、每日词条。
+- 控制在 10-12 条：今日重点 4-5 条；投融资 1-2 条；开源 1-2 条；AI 产品推荐 2 条；机构报告 1 条；每日 AI 词条 1 条。
 - 每条 plan item 必须包含 section、priority、titleZh、titleEn、angle、sourceIds、links。
 - sourceIds 必须引用 SOURCE_PACK.entries 里的 id。每条至少 1 个，重要新闻尽量 2-4 个。
-- links 是 [label, url] 数组，URL 必须来自 SOURCE_PACK。
-- angle 要写明为什么选择它、应该补充哪些上下文、对非技术读者最重要的理解角度。
+- links 是 [label, url] 数组，URL 必须来自 SOURCE_PACK，每条最多 3 个。
+- angle 要写明为什么选择它、应该补充哪些上下文、对非技术读者最重要的理解角度，最多 120 个中文字。
 
 机构报告 / Research Reports 的特殊要求：
 - 计划里必须至少包含 1 条机构报告或深度研究文章。
@@ -545,26 +548,50 @@ ${JSON.stringify(sourcePack, null, 2)}
 `;
 }
 
-function buildIssuePrompt(date, sourcePack, plan, lang, revisionNote = "") {
+function sectionForLang(section, lang) {
+  if (lang === "zh") return section;
+  return {
+    "今日重点": "Top Stories",
+    "投融资信息": "Funding Watch",
+    "开源项目": "Open Source",
+    "AI产品推荐": "AI Product Picks",
+    "机构报告": "Research Reports",
+    "每日词条": "AI Term"
+  }[section] || section;
+}
+
+function sourcesForPlanItem(sourcePack, planItem) {
+  const sourceIdSet = new Set(planItem.sourceIds || []);
+  const linkSet = new Set((planItem.links || []).map((link) => link[1]));
+  const entries = sourcePack.entries.filter((entry) => sourceIdSet.has(entry.id) || linkSet.has(entry.link));
+  return {
+    date: sourcePack.date,
+    timezone: sourcePack.timezone,
+    coverage: sourcePack.coverage,
+    entries: entries.length ? entries : sourcePack.entries.slice(0, 6)
+  };
+}
+
+function buildItemPrompt(date, sourcePack, planItem, lang, revisionNote = "") {
   const isZh = lang === "zh";
+  const section = sectionForLang(planItem.section, lang);
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
 ${lookbackDescription()}
 ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：增加新闻细节、写成解释性段落，机构报告必须有 expanded 深度解读对象。\n` : ""}
 
-请基于 EDITORIAL_PLAN 生成 AI Daily Atlas ${isZh ? "中文版" : "英文版"}正文 JSON。
-你不能改变选题，只能基于 EDITORIAL_PLAN 和 SOURCE_PACK 写正文。不要编造 SOURCE_PACK 之外的链接、融资金额、发布时间或媒体素材。未确认消息必须标注不确定性，不要写成事实。
+请基于 ITEM_PLAN 生成 AI Daily Atlas ${isZh ? "中文版" : "英文版"}的一张信息卡 JSON。
+你不能改变选题，只能基于 ITEM_PLAN 和 SOURCE_PACK 写正文。不要编造 SOURCE_PACK 之外的链接、融资金额、发布时间或媒体素材。未确认消息必须标注不确定性，不要写成事实。
+本条 section 必须是：${section}
 
 ${isZh ? `
-中文 sections 必须使用：今日重点、投融资信息、开源项目、AI产品推荐、机构报告、每日词条。
 语言风格：轻量、好读、有判断，适合非技术背景读者；不要幼稚化，也不要只堆技术名词。
 每条 detail 写成 3-5 条“有信息量的小段落”，每条约 80-180 字，至少包含背景/关键数字/主体动作/影响范围/不确定性中的两个维度。
 ` : `
-English sections must use: Top Stories, Funding Watch, Open Source, AI Product Picks, Research Reports, AI Term.
 Tone: concise, readable, analytical, not a mechanical translation. Each detail should be 45-100 words and include at least two of: context, key numbers, actor action, impact, uncertainty.
 `}
 
-所有 item 必须有 section、priority、title、dek、details、why、links。
+item 必须有 section、priority、title、dek、details、why、links。
 - details 不能是短 bullet。要让非技术读者理解来龙去脉。
 - why 必须是 1-2 句判断，解释这条新闻对产品、投资、公司战略、创业机会或职业判断有什么意义。
 - links 是 [label, url] 数组。每条内容的 links 必须至少包含 1 个 SOURCE_PACK 中出现过的 URL。
@@ -579,16 +606,19 @@ Tone: concise, readable, analytical, not a mechanical translation. Each detail s
 
 返回 JSON，不能有 Markdown 包裹。格式：
 {
-  "issue": {
-    "headline": "...",
-    "summary": "...",
-    "tags": ["..."],
-    "items": []
+  "item": {
+    "section": "${section}",
+    "priority": "${planItem.priority || "medium"}",
+    "title": "...",
+    "dek": "...",
+    "details": [],
+    "why": "...",
+    "links": []
   }
 }
 
-EDITORIAL_PLAN:
-${JSON.stringify(plan, null, 2)}
+ITEM_PLAN:
+${JSON.stringify({ ...planItem, section }, null, 2)}
 
 SOURCE_PACK:
 ${JSON.stringify(sourcePack, null, 2)}
@@ -704,25 +734,60 @@ async function openAIJson(prompt, maxOutputTokens = 9000) {
   return extractJson(responseText(body));
 }
 
+async function createItemWithRetry({ date, sourcePack, planItem, lang, requestJson }) {
+  const scopedSourcePack = sourcesForPlanItem(sourcePack, planItem);
+  try {
+    const parsed = await requestJson(buildItemPrompt(date, scopedSourcePack, planItem, lang), 4500);
+    const item = normalizeItem(parsed.item);
+    item.section = sectionForLang(planItem.section, lang);
+    validateItemContent(item, lang);
+    return item;
+  } catch (error) {
+    const message = String(error?.message || error);
+    if (!/too shallow|expanded report|needs expanded|unterminated string|parseable json|unexpected end/i.test(message)) throw error;
+    console.warn(`Item generation retry for ${lang} "${planItem.titleZh || planItem.titleEn}": ${message}`);
+    const parsed = await requestJson(buildItemPrompt(date, scopedSourcePack, planItem, lang, message), 4500);
+    const item = normalizeItem(parsed.item);
+    item.section = sectionForLang(planItem.section, lang);
+    validateItemContent(item, lang);
+    return item;
+  }
+}
+
+async function createIssueFromPlan(date, sourcePack, plan, lang, requestJson) {
+  const isZh = lang === "zh";
+  const issue = {
+    headline: isZh ? plan.headlineZh : plan.headlineEn,
+    summary: isZh ? plan.summaryZh : plan.summaryEn,
+    tags: isZh ? plan.tagsZh : plan.tagsEn,
+    items: []
+  };
+
+  for (const planItem of plan.items) {
+    const item = await createItemWithRetry({ date, sourcePack, planItem, lang, requestJson });
+    item.section = sectionForLang(planItem.section, lang);
+    item.priority = item.priority || planItem.priority || "medium";
+    issue.items.push(item);
+  }
+
+  return normalizeIssue(issue, date, lang);
+}
+
 async function createIssueWithDeepSeek(date, sourcePack, revisionNote = "") {
   const planJson = await deepSeekJson(buildSelectionPrompt(date, sourcePack, revisionNote), 5000);
   const plan = normalizePlan(planJson.plan);
-  const zhJson = await deepSeekJson(buildIssuePrompt(date, sourcePack, plan, "zh", revisionNote), 9000);
-  const enJson = await deepSeekJson(buildIssuePrompt(date, sourcePack, plan, "en", revisionNote), 9000);
   return {
-    zh: normalizeIssue(zhJson.issue, date, "zh"),
-    en: normalizeIssue(enJson.issue, date, "en")
+    zh: await createIssueFromPlan(date, sourcePack, plan, "zh", deepSeekJson),
+    en: await createIssueFromPlan(date, sourcePack, plan, "en", deepSeekJson)
   };
 }
 
 async function createIssueWithOpenAI(date, sourcePack, revisionNote = "") {
   const planJson = await openAIJson(buildSelectionPrompt(date, sourcePack, revisionNote), 5000);
   const plan = normalizePlan(planJson.plan);
-  const zhJson = await openAIJson(buildIssuePrompt(date, sourcePack, plan, "zh", revisionNote), 9000);
-  const enJson = await openAIJson(buildIssuePrompt(date, sourcePack, plan, "en", revisionNote), 9000);
   return {
-    zh: normalizeIssue(zhJson.issue, date, "zh"),
-    en: normalizeIssue(enJson.issue, date, "en")
+    zh: await createIssueFromPlan(date, sourcePack, plan, "zh", openAIJson),
+    en: await createIssueFromPlan(date, sourcePack, plan, "en", openAIJson)
   };
 }
 
