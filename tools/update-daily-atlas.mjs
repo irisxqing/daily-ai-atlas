@@ -26,14 +26,14 @@ function googleNews(name, query, locale = { hl: "en-US", gl: "US", ceid: "US:en"
 }
 
 const sourceFeeds = [
-  googleNews("Google News AI Labs", "(OpenAI OR Anthropic OR DeepMind OR xAI OR Meta AI OR Microsoft AI OR NVIDIA AI) when:2d"),
-  googleNews("Google News China AI", "(DeepSeek OR Qwen OR MiniMax OR Zhipu OR Kimi OR Doubao OR Alibaba AI OR Tencent AI) when:2d", {
+  googleNews("Google News AI Labs", "(OpenAI OR Anthropic OR DeepMind OR xAI OR Meta AI OR Microsoft AI OR NVIDIA AI) when:1d"),
+  googleNews("Google News China AI", "(DeepSeek OR Qwen OR MiniMax OR Zhipu OR Kimi OR Doubao OR Alibaba AI OR Tencent AI) when:1d", {
     hl: "zh-CN",
     gl: "CN",
     ceid: "CN:zh-Hans"
   }),
-  googleNews("Google News AI Funding", "(AI startup funding OR AI acquisition OR AI IPO OR 人工智能 融资 OR AI 投融资) when:7d"),
-  googleNews("Google News AI Products", "(AI agent product launch OR AI tool Product Hunt OR AI workflow tool OR AI 产品 发布) when:7d"),
+  googleNews("Google News AI Funding", "(AI startup funding OR AI acquisition OR AI IPO OR 人工智能 融资 OR AI 投融资) when:1d"),
+  googleNews("Google News AI Products", "(AI agent product launch OR AI tool Product Hunt OR AI workflow tool OR AI 产品 发布) when:1d"),
   googleNews("Google News AI Reports", "(AI report PDF OR State of AI report OR Stanford AI Index OR McKinsey AI report OR BCG AI report OR AI 报告) when:14d"),
   ["AI Valley", "https://www.theaivalley.com/feed"],
   ["The Rundown AI", "https://www.therundown.ai/feed"],
@@ -60,13 +60,14 @@ const sourceFeeds = [
 ];
 
 function curatedProductSignals(date) {
-  const publishedAt = `${date}T07:30:00+08:00`;
+  const publishedAt = `${addShanghaiDays(date, -3)}T09:00:00+08:00`;
   return [
     {
       source: "Curated AI Products",
       title: "Recall: personal AI knowledge base for articles, videos, PDFs, and notes",
       link: "https://www.recall.it/",
       date: publishedAt,
+      curatedFallback: true,
       summary: "Recall saves, summarizes, tags, connects, and lets users chat with web pages, YouTube videos, podcasts, PDFs, books, and notes. It is useful for turning daily AI reading into a reusable personal knowledge base instead of a disposable reading list."
     },
     {
@@ -74,6 +75,7 @@ function curatedProductSignals(date) {
       title: "Liminary: AI research workspace for consultants, strategists, and researchers",
       link: "https://liminary.io/",
       date: publishedAt,
+      curatedFallback: true,
       summary: "Liminary is built for high-stakes recommendations grounded in real research. It helps users save articles, reports, PDFs, AI chats, and videos, annotate them, keep source traceability, and reuse insights across projects."
     },
     {
@@ -81,6 +83,7 @@ function curatedProductSignals(date) {
       title: "Anuma: multi-model AI workspace with private cross-model memory",
       link: "https://www.anuma.ai/",
       date: publishedAt,
+      curatedFallback: true,
       summary: "Anuma aggregates ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, Llama, and other models into one workspace, with a privacy-focused memory layer that users can edit and carry across models."
     },
     {
@@ -88,6 +91,7 @@ function curatedProductSignals(date) {
       title: "Magic Patterns: AI design agent for interactive product prototypes",
       link: "https://www.magicpatterns.com/",
       date: publishedAt,
+      curatedFallback: true,
       summary: "Magic Patterns helps product teams generate interactive mockups from a prompt, screenshot, existing style, or design system. It is useful for PMs and founders who need to make product ideas discussable before engineering starts."
     }
   ];
@@ -117,8 +121,30 @@ function englishDate(dateString) {
   }).format(date);
 }
 
-function lookbackDescription() {
-  return "每天北京时间 7:30 运行：覆盖过去 24 小时内的重要 AI 信号。";
+function addShanghaiDays(dateString, delta) {
+  const date = new Date(`${dateString}T00:00:00+08:00`);
+  date.setUTCDate(date.getUTCDate() + delta);
+  return shanghaiDate(date);
+}
+
+function sourceDateString(value) {
+  const date = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(date.getTime())) return "";
+  return shanghaiDate(date);
+}
+
+function dateWindowForIssue(issueDate) {
+  const primaryDate = addShanghaiDays(issueDate, -1);
+  return {
+    primaryDate,
+    fallbackStartDate: addShanghaiDays(issueDate, -7),
+    fallbackEndDate: addShanghaiDays(issueDate, -2)
+  };
+}
+
+function lookbackDescription(issueDate = shanghaiDate()) {
+  const { primaryDate } = dateWindowForIssue(issueDate);
+  return `每天北京时间 7:30 生成，优先覆盖 ${primaryDate} 的中美 AI 信号；少数产品、报告和深度阅读会标注近7天补位。`;
 }
 
 function responseText(response) {
@@ -243,11 +269,49 @@ const productivityProductPattern = /productivity|knowledge|research|workspace|wo
 const broadDiscussionPattern = /product hunt|hacker news|reddit|github trending|launch|reviews?|users?|rating|community|viral|讨论|热议|好评|用户|社区/i;
 const strategicReportPattern = /future|outlook|landscape|state of|index|benchmark report|survey|adoption|enterprise|industry|market|application|trend|未来|趋势|全景|产业|应用|采用|企业|市场|调研|指数/i;
 const primaryMarketPattern = /中国|china|us|u\.s\.|united states|america|美国|深圳|香港/i;
+const deprioritizedMarketPattern = /korea|korean|south korea|ghana|malta|european union|eu\b|france|germany|uk\b|britain|japan|singapore|韩国|加纳|马耳他|欧盟|法国|德国|英国|日本|新加坡/i;
 const comparisonOnlyPattern = /outperforms?|beats?|lags?|stronger than|weaker than|surpass(?:es|ed)?|超过|强于|弱于|落后|跑分|榜单|排名/i;
 const directActionPattern = /\blaunch(?:es|ed)?\b|\brelease(?:s|d)?\b|\bannounce(?:s|d)?\b|\bdeploy(?:s|ed)?\b|\broll(?:s|ed)? out\b|\btakes charge\b|\bjoins?\b|\bleaves?\b|\bfounds?\b|发布|上线|推出|部署|接管|离职|加入|任命|创业|创办/i;
 
 function patternScore(text, weightedPatterns) {
   return weightedPatterns.reduce((score, [pattern, weight]) => score + (pattern.test(text) ? weight : 0), 0);
+}
+
+function regionPriority(entry) {
+  const text = entryText(entry);
+  const hasDeprioritized = deprioritizedMarketPattern.test(text);
+  const hasPrimaryMarket = primaryMarketPattern.test(text);
+  const hasPriorityCompany = priorityCompanyPattern.test(text);
+  const hasGlobalMajor = communityConcernPattern.test(text) || industryChainPattern.test(text) || aiLeaderPattern.test(text);
+  if (hasPrimaryMarket) return "primary_market";
+  if (hasDeprioritized && (hasPriorityCompany || hasGlobalMajor)) return "global_major";
+  if (hasDeprioritized) return "deprioritized_market";
+  if (hasPriorityCompany) return "primary_market";
+  return hasGlobalMajor ? "global_major" : "deprioritized_market";
+}
+
+function classifyFreshness(entry, issueDate) {
+  const sourceDate = sourceDateString(entry.date);
+  if (!sourceDate) return null;
+  const { primaryDate, fallbackStartDate, fallbackEndDate } = dateWindowForIssue(issueDate);
+  if (sourceDate === primaryDate) {
+    return {
+      sourceDate,
+      freshness: "d-1",
+      freshnessLabelZh: "D-1",
+      freshnessLabelEn: "D-1"
+    };
+  }
+  if (sourceDate >= fallbackStartDate && sourceDate <= fallbackEndDate) {
+    const curated = entry.curatedFallback || entry.source === "Curated AI Products";
+    return {
+      sourceDate,
+      freshness: "fallback",
+      freshnessLabelZh: curated ? "补位｜编辑推荐" : `补位｜发布于 ${sourceDate}`,
+      freshnessLabelEn: curated ? "Fallback | editor pick" : `Fallback | published ${sourceDate}`
+    };
+  }
+  return null;
 }
 
 function freshnessScore(entry, maxAgeDays = 14) {
@@ -274,6 +338,9 @@ function editorialScore(entry, section) {
       [/\bworld model\b|世界模型/i, 18]
     ]);
     if (/openai|anthropic|deepmind|google|xai|nvidia|deepseek|qwen|zhipu|字节|阿里|腾讯/.test(text)) score += 8;
+    if (regionPriority(entry) === "primary_market") score += 18;
+    if (regionPriority(entry) === "global_major") score += 4;
+    if (regionPriority(entry) === "deprioritized_market") score -= 24;
     if (comparisonOnlyPattern.test(text) && !directActionPattern.test(text)) score -= 28;
   }
 
@@ -338,7 +405,7 @@ function isOpenSourceEntry(entry) {
 function isLowQualityEntry(entry) {
   const text = entryText(entry);
   const title = String(entry.title || "").toLowerCase();
-  return /top\s?\d|top\d|best\s+\d|权威测评|服务商|排行榜|哪家好|bluechip navigator|x\.com|seo|search result optimization|搜索结果优化|蹲守|版本答案|财富号|股吧|股价|短期震荡|国资托底|股权重估|营销基本盘|涨停|概念股|a股|港股|美股|stock pick|price target/i.test(text)
+  return /top\s?\d|top\d|best\s+\d|权威测评|服务商|排行榜|哪家好|bluechip navigator|x\.com|seo|search result optimization|搜索结果优化|蹲守|版本答案|峰会亮点|来现场|报名参会|活动议程|财富号|股吧|股价|短期震荡|国资托底|股权重估|营销基本盘|涨停|概念股|a股|港股|美股|stock pick|price target/i.test(text)
     || title.length > 220;
 }
 
@@ -347,6 +414,7 @@ function isProductEntry(entry) {
   const titleSource = `${entry.source || ""} ${entry.title || ""}`.toLowerCase();
   if (isLowQualityEntry(entry)) return false;
   if (/\barxiv\b|\bpaper\b|\bresearch repository\b|\bbenchmark\b|论文|研究论文/.test(text)) return false;
+  if (/summit|conference|webinar|meetup|event|峰会|大会|活动|报名|现场|议程/.test(text)) return false;
   const hasProductSignal = /\bcurated ai products\b|\bproduct hunt\b|\btool\b|\bapp\b|\bworkspace\b|\bworkflow\b|\bmemory\b|\bagentmemory\b|\brecall\b|\bliminary\b|\banuma\b|\bmagic patterns\b|\bbrowser\b|\bextension\b|\bdashboard\b|\bcanvas\b|\bnotebook\b|\bautomation\b|插件|应用|产品|工具|工作流|知识管理|浏览器/i.test(titleSource);
   const isMostlyModelNews = /\bmodel\b|\bapi\b|\bbenchmark\b|\binference\b|芯片|\bipo\b|\bvaluation\b|\bfunding\b|融资|估值|模型|推理|基准|参数/.test(text)
     && !/\btool\b|\bapp\b|\bproduct hunt\b|\bworkflow\b|\bmemory\b|\bextension\b|\bnotebook\b|应用|产品|工具|工作流|知识管理/.test(text);
@@ -392,7 +460,9 @@ function isDeepReadEntry(entry) {
 function isTopStoryEntry(entry) {
   if (isLowQualityEntry(entry)) return false;
   const text = entryText(entry);
+  if (entry.freshness !== "d-1") return false;
   if (comparisonOnlyPattern.test(text) && !directActionPattern.test(text)) return false;
+  if (regionPriority(entry) === "deprioritized_market") return false;
   const hasDirectPrioritySignal = priorityCompanyPattern.test(text) && (!comparisonOnlyPattern.test(text) || directActionPattern.test(text));
   const hasPrimaryMarketSignal = primaryMarketPattern.test(text)
     && (modelLaunchPattern.test(text) || aiLeaderPattern.test(text) || communityConcernPattern.test(text) || industryChainPattern.test(text) || directActionPattern.test(text));
@@ -417,6 +487,32 @@ function categoryCandidates(sourcePack, predicate, limit, excludeIds = new Set()
     .filter((entry) => !excludeIds.has(entry.id) && predicate(entry))
     .sort((a, b) => scorer(b) - scorer(a) || (b.score || 0) - (a.score || 0))
     .slice(0, limit);
+}
+
+function isFallbackEligibleSection(section) {
+  return ["AI产品推荐", "深度阅读", "机构报告"].includes(section);
+}
+
+function isStrictD1Section(section) {
+  return ["今日重点", "投融资信息", "开源项目"].includes(section);
+}
+
+function entryAllowedForSection(entry, section) {
+  if (isStrictD1Section(section)) return entry.freshness === "d-1";
+  if (isFallbackEligibleSection(section)) return entry.freshness === "d-1" || entry.freshness === "fallback";
+  return true;
+}
+
+function sectionCandidates(sourcePack, section, predicate, limit, excludeIds = new Set()) {
+  const score = (entry) => editorialScore(entry, section);
+  const candidates = sourcePack.entries.filter((entry) => !excludeIds.has(entry.id) && predicate(entry) && entryAllowedForSection(entry, section));
+  const primary = candidates
+    .filter((entry) => entry.freshness === "d-1")
+    .sort((a, b) => score(b) - score(a) || (b.score || 0) - (a.score || 0));
+  const fallback = candidates
+    .filter((entry) => entry.freshness === "fallback")
+    .sort((a, b) => score(b) - score(a) || (b.score || 0) - (a.score || 0));
+  return [...primary, ...fallback].slice(0, limit);
 }
 
 function parseFeedEntries(xml, source) {
@@ -488,13 +584,20 @@ async function collectSourcePack(date) {
 
   const seen = new Set();
   const sortedEntries = entries
-    .map((entry) => ({ ...entry, timestamp: Date.parse(entry.date) || 0, score: relevanceScore(entry) }))
+    .map((entry) => {
+      const freshness = classifyFreshness(entry, date);
+      return freshness ? {
+        ...entry,
+        ...freshness,
+        regionPriority: regionPriority(entry),
+        timestamp: Date.parse(entry.date) || 0,
+        score: relevanceScore(entry)
+      } : null;
+    })
+    .filter(Boolean)
     .sort((a, b) => b.score - a.score || b.timestamp - a.timestamp);
-  const recentCutoff = Date.now() - 14 * 24 * 60 * 60 * 1000;
-  const candidateEntries = sortedEntries.filter((entry) => entry.timestamp >= recentCutoff);
-  const freshnessBalancedEntries = candidateEntries.length >= 35 ? candidateEntries : sortedEntries;
   const sourceCounts = new Map();
-  const uniqueEntries = freshnessBalancedEntries
+  const uniqueEntries = sortedEntries
     .filter((entry) => {
       const key = normalizeKey(entry.link || entry.title);
       if (!key || seen.has(key)) return false;
@@ -508,14 +611,15 @@ async function collectSourcePack(date) {
     .map(({ timestamp, ...entry }, index) => ({ id: `S${String(index + 1).padStart(3, "0")}`, ...entry }));
 
   if (uniqueEntries.length < 10) {
-    throw new Error(`Too few source entries collected (${uniqueEntries.length}). Check feed availability.`);
+    throw new Error(`Too few D-1/fallback source entries collected (${uniqueEntries.length}). Check feed availability or date filters.`);
   }
 
   return {
     date,
     timezone,
     generatedAt: new Date().toISOString(),
-    coverage: lookbackDescription(),
+    coverage: lookbackDescription(date),
+    dateWindow: dateWindowForIssue(date),
     sources,
     entries: uniqueEntries
   };
@@ -549,7 +653,13 @@ function normalizeItem(item) {
     dek: String(item.dek || ""),
     details: normalizeDetails(item.details || []),
     why: String(item.why || ""),
-    links: normalizeLinks(item.links || [])
+    links: normalizeLinks(item.links || []),
+    sourceDate: String(item.sourceDate || ""),
+    freshness: String(item.freshness || ""),
+    regionPriority: String(item.regionPriority || ""),
+    freshnessLabelZh: String(item.freshnessLabelZh || ""),
+    freshnessLabelEn: String(item.freshnessLabelEn || ""),
+    freshnessLabel: String(item.freshnessLabel || "")
   };
 
   if (item.media && typeof item.media === "object" && item.media.src && item.media.alt) {
@@ -635,7 +745,7 @@ function normalizeIssue(issue, date, lang) {
   };
 
   validateIssueFrame(normalized, lang);
-  if (normalized.items.length < 8) {
+  if (normalized.items.length < 6) {
     throw new Error(`${lang} issue has too few items.`);
   }
   normalized.items.forEach((item) => validateItemContent(item, lang));
@@ -729,22 +839,22 @@ function updateAppCacheBust(date) {
 
 function selectionSourcePack(sourcePack) {
   const used = new Set();
-  const funding = categoryCandidates(sourcePack, isFundingEntry, 8, used, (entry) => editorialScore(entry, "投融资信息"));
+  const funding = sectionCandidates(sourcePack, "投融资信息", isFundingEntry, 8, used);
   funding.forEach((entry) => used.add(entry.id));
-  const openSource = categoryCandidates(sourcePack, isOpenSourceEntry, 8, used, (entry) => editorialScore(entry, "开源项目"));
+  const openSource = sectionCandidates(sourcePack, "开源项目", isOpenSourceEntry, 8, used);
   openSource.forEach((entry) => used.add(entry.id));
-  const products = categoryCandidates(sourcePack, isProductEntry, 12, used, (entry) => editorialScore(entry, "AI产品推荐"));
+  const products = sectionCandidates(sourcePack, "AI产品推荐", isProductEntry, 12, used);
   products.forEach((entry) => used.add(entry.id));
-  const deepReads = categoryCandidates(sourcePack, isDeepReadEntry, 8, used, (entry) => editorialScore(entry, "深度阅读"));
+  const deepReads = sectionCandidates(sourcePack, "深度阅读", isDeepReadEntry, 8, used);
   deepReads.forEach((entry) => used.add(entry.id));
-  const reports = categoryCandidates(sourcePack, isReportEntry, 8, used, (entry) => editorialScore(entry, "机构报告"));
+  const reports = sectionCandidates(sourcePack, "机构报告", isReportEntry, 8, used);
   reports.forEach((entry) => used.add(entry.id));
-  const topStories = categoryCandidates(
+  const topStories = sectionCandidates(
     sourcePack,
+    "今日重点",
     isTopStoryEntry,
     28,
-    new Set(),
-    (entry) => editorialScore(entry, "今日重点")
+    new Set()
   );
 
   const compactEntry = (entry) => ({
@@ -753,6 +863,11 @@ function selectionSourcePack(sourcePack) {
     title: entry.title,
     link: entry.link,
     date: entry.date,
+    sourceDate: entry.sourceDate,
+    freshness: entry.freshness,
+    freshnessLabelZh: entry.freshnessLabelZh,
+    freshnessLabelEn: entry.freshnessLabelEn,
+    regionPriority: entry.regionPriority,
     summary: String(entry.summary || "").slice(0, 220),
     score: entry.score
   });
@@ -776,7 +891,7 @@ function selectionSourcePack(sourcePack) {
 function buildSelectionPrompt(date, sourcePack, revisionNote = "") {
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
-${lookbackDescription()}
+${lookbackDescription(date)}
 ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：如果是篇首 summary 问题，要提炼一条主题主线，不要罗列新闻；如果是内容问题，要增加新闻细节、写成解释性段落，机构报告必须有 expanded 深度解读对象。\n` : ""}
 
 请为 AI Daily Atlas 先生成一份“选题计划”JSON。后续中英文正文必须基于这份选题计划生成，所以这一步最重要。
@@ -790,9 +905,11 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
 - AI产品推荐只能从 candidatePools.products 选，必须是真正可试用的软件/工具/应用/工作流产品；不要选择纯模型发布、API、芯片、融资或平台战略新闻。
 - 深度阅读只能从 candidatePools.deepReads 选，必须是值得花时间读完的长文、访谈、深度分析、案例复盘或观点文章；不要选择普通新闻快讯、融资、GitHub 项目、工具推荐或旧报告。
 - 机构报告只能从 candidatePools.reports 选，必须是近期发布的报告/研究/白皮书/指数/深度研究。如果 reports 候选为空，可以把这一栏改成“暂无足够新的机构报告信号”，但不能选旧报告凑数。
+- 今日重点、投融资信息、开源项目已经被脚本限制为北京时间 D-1；AI产品推荐、深度阅读、机构报告如使用 fallback，正文必须保留补位属性，不能伪装成当日新闻。
 
 选题范围：
 - 中国和美国 AI 公司为主，其他国家为辅。
+- 今日重点优先中美两国；韩国、加纳、马耳他等非中美国家默认降权，除非直接涉及中美重点公司、全球 AI 安全治理、关键产业链或 AI 大佬重大动作。
 - 覆盖 OpenAI、Anthropic、Google/DeepMind、xAI、Meta、Microsoft、Amazon、NVIDIA、中国的智谱/Z.ai、MiniMax、阿里/Qwen、DeepSeek、月之暗面/Kimi、字节/Doubao、百度、腾讯，以及小而美创业公司。
 - 关注 AI agents、开源项目、AI 硬件、机器人、AI 基础设施、企业落地、AI+跨境电商/零售/物流/金融/医疗/制造。
 - 来源方法：AI Valley、The Rundown AI、Ben's Bites、TLDR AI、The Batch、Import AI、Latent Space、中文 AI 媒体只作为雷达；重要事实需要回到公司官网、官方博客、论文、GitHub、Hugging Face、Product Hunt、机构报告、主流媒体或招聘官网确认。
@@ -885,6 +1002,22 @@ function linksForSourceIds(sourcePack, sourceIds = []) {
     .map((entry) => [`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]);
 }
 
+function metadataForPlanItem(planItem, lang) {
+  return {
+    sourceDate: planItem.sourceDate || "",
+    freshness: planItem.freshness || "",
+    regionPriority: planItem.regionPriority || "",
+    freshnessLabelZh: planItem.freshnessLabelZh || "",
+    freshnessLabelEn: planItem.freshnessLabelEn || "",
+    freshnessLabel: lang === "en" ? planItem.freshnessLabelEn || planItem.freshnessLabelZh || "" : planItem.freshnessLabelZh || planItem.freshnessLabelEn || ""
+  };
+}
+
+function applyPlanMetadata(item, planItem, lang) {
+  Object.assign(item, metadataForPlanItem(planItem, lang));
+  return item;
+}
+
 function sectionPredicate(section) {
   if (section === "投融资信息") return isFundingEntry;
   if (section === "开源项目") return isOpenSourceEntry;
@@ -902,7 +1035,7 @@ function validatePlanAgainstPools(plan, sourcePack) {
     const predicate = sectionPredicate(item.section);
     const invalidIds = item.sourceIds.filter((id) => {
       const entry = entryById.get(id);
-      return !entry || !predicate(entry);
+      return !entry || !predicate(entry) || !entryAllowedForSection(entry, item.section);
     });
     if (invalidIds.length) {
       throw new Error(`Editorial plan item "${item.titleZh}" uses sourceIds outside its section pool: ${invalidIds.join(", ")}`);
@@ -942,17 +1075,22 @@ function selectedPlanItem(section, entry) {
     titleEn: entry.title,
     angle: planAngle(section, entry),
     sourceIds: [entry.id],
-    links: [[`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]]
+    links: [[`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]],
+    sourceDate: entry.sourceDate || "",
+    freshness: entry.freshness || "",
+    regionPriority: entry.regionPriority || "",
+    freshnessLabelZh: entry.freshnessLabelZh || "",
+    freshnessLabelEn: entry.freshnessLabelEn || ""
   };
 }
 
 function selectTopStoryEntries(sourcePack, count, used) {
-  const candidates = categoryCandidates(
+  const candidates = sectionCandidates(
     sourcePack,
+    "今日重点",
     isTopStoryEntry,
     30,
-    used,
-    (entry) => editorialScore(entry, "今日重点")
+    used
   );
   const selected = [];
   const selectedIds = new Set();
@@ -992,7 +1130,7 @@ function buildEditorialFrame(items) {
 function deterministicPlan(date, sourcePack, reason = "") {
   if (reason) console.warn(`Using deterministic editorial plan: ${reason}`);
   const used = new Set();
-  const fallbackReports = categoryCandidates(sourcePack, isReportEntry, 1, used, (entry) => editorialScore(entry, "机构报告"));
+  const fallbackReports = sectionCandidates(sourcePack, "机构报告", isReportEntry, 1, used);
   const specs = [
     ["今日重点", 4, isTopStoryEntry],
     ["投融资信息", 1, isFundingEntry],
@@ -1005,7 +1143,7 @@ function deterministicPlan(date, sourcePack, reason = "") {
   specs.forEach(([section, count, predicate]) => {
     const candidates = section === "今日重点"
       ? selectTopStoryEntries(sourcePack, count, used)
-      : categoryCandidates(sourcePack, predicate, count, used, (entry) => editorialScore(entry, section));
+      : sectionCandidates(sourcePack, section, predicate, count, used);
     candidates.forEach((entry) => {
       items.push(selectedPlanItem(section, entry));
       used.add(entry.id);
@@ -1058,7 +1196,7 @@ function fallbackItem(planItem, scopedSourcePack, lang, reason = "") {
   const links = entry.link ? [[`${entry.source || "Source"}: ${entry.title || title}`.slice(0, 90), entry.link]] : [];
 
   if (isTermSectionName(section)) {
-    return normalizeItem({
+    return applyPlanMetadata(normalizeItem({
       section,
       priority: planItem.priority || "learning",
       title,
@@ -1073,7 +1211,7 @@ function fallbackItem(planItem, scopedSourcePack, lang, reason = "") {
       ],
       why: isZh ? "这个词能帮你判断哪些 AI 产品只是聊天入口，哪些已经开始进入真实业务流程。" : "This term helps separate simple chat interfaces from AI products that can operate inside real workflows.",
       links
-    });
+    }), planItem, lang);
   }
 
   const reportDetail = {
@@ -1083,7 +1221,7 @@ function fallbackItem(planItem, scopedSourcePack, lang, reason = "") {
       : `The source item is ${sourceLine}. The useful read is not only the headline, but the broader shift it reflects: AI discussion is moving from raw model capability toward enterprise adoption, cost structure, workflow redesign, and return on investment. Any exact figures or charts should still be checked against the original source.`
   };
 
-  return normalizeItem({
+  return applyPlanMetadata(normalizeItem({
     section,
     priority: planItem.priority || "medium",
     title,
@@ -1102,7 +1240,7 @@ function fallbackItem(planItem, scopedSourcePack, lang, reason = "") {
     why: isZh ? "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。" : "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
     links,
     ...(entry.image ? { media: { type: "image", src: entry.image, alt: title, caption: entry.source || "", href: entry.link || "" } } : {})
-  });
+  }), planItem, lang);
 }
 
 function buildItemPrompt(date, sourcePack, planItem, lang, revisionNote = "") {
@@ -1110,7 +1248,7 @@ function buildItemPrompt(date, sourcePack, planItem, lang, revisionNote = "") {
   const section = sectionForLang(planItem.section, lang);
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
-${lookbackDescription()}
+${lookbackDescription(date)}
 ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：增加新闻细节、写成解释性段落，机构报告必须有 expanded 深度解读对象。\n` : ""}
 
 请基于 ITEM_PLAN 生成 AI Daily Atlas ${isZh ? "中文版" : "英文版"}的一张信息卡 JSON。
@@ -1124,7 +1262,7 @@ ${isZh ? `
 Tone: concise, readable, analytical, not a mechanical translation. Each detail should be 45-100 words and include at least two of: context, key numbers, actor action, impact, uncertainty.
 `}
 
-item 必须有 section、priority、title、dek、details、why、links。
+item 必须有 section、priority、title、dek、details、why、links。脚本会强制补入 sourceDate、freshness、regionPriority、freshnessLabel，不要改写这些元数据。
 - details 不能是短 bullet。要让非技术读者理解来龙去脉。
 - why 必须是 1-2 句判断，解释这条新闻对产品、投资、公司战略、创业机会或职业判断有什么意义。
 - links 是 [label, url] 数组。每条内容的 links 必须至少包含 1 个 SOURCE_PACK 中出现过的 URL。
@@ -1183,7 +1321,12 @@ function normalizePlan(plan) {
       titleEn: String(item.titleEn || ""),
       angle: String(item.angle || ""),
       sourceIds: Array.isArray(item.sourceIds) ? item.sourceIds.map(String) : [],
-      links: normalizeLinks(item.links || [])
+      links: normalizeLinks(item.links || []),
+      sourceDate: String(item.sourceDate || ""),
+      freshness: String(item.freshness || ""),
+      regionPriority: String(item.regionPriority || ""),
+      freshnessLabelZh: String(item.freshnessLabelZh || ""),
+      freshnessLabelEn: String(item.freshnessLabelEn || "")
     })) : []
   };
 
@@ -1192,7 +1335,7 @@ function normalizePlan(plan) {
   }
   validateIssueFrame({ headline: normalized.headlineZh, summary: normalized.summaryZh }, "zh plan");
   validateIssueFrame({ headline: normalized.headlineEn, summary: normalized.summaryEn }, "en plan");
-  if (normalized.items.length < 8) {
+  if (normalized.items.length < 6) {
     throw new Error("Editorial plan has too few items.");
   }
   normalized.items.forEach((item) => {
@@ -1282,6 +1425,7 @@ async function createItemWithRetry({ date, sourcePack, planItem, lang, requestJs
     const item = normalizeItem(parsed.item);
     item.section = sectionForLang(planItem.section, lang);
     if (!item.links.length && sourceLinks.length) item.links = sourceLinks;
+    applyPlanMetadata(item, planItem, lang);
     validateItemContent(item, lang);
     return item;
   } catch (error) {
@@ -1295,6 +1439,7 @@ async function createItemWithRetry({ date, sourcePack, planItem, lang, requestJs
       const item = normalizeItem(parsed.item);
       item.section = sectionForLang(planItem.section, lang);
       if (!item.links.length && sourceLinks.length) item.links = sourceLinks;
+      applyPlanMetadata(item, planItem, lang);
       validateItemContent(item, lang);
       return item;
     } catch (retryError) {

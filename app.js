@@ -1382,7 +1382,7 @@ const uiText = {
     archiveTags: "归档标签",
     topicLabel: "主题聚合",
     contentSearch: "搜索当前日报",
-    refreshNote: "每天 7:30 刷新最新 AI 消息",
+    refreshNote: "每天 7:30 生成，优先覆盖前一自然日的中美 AI 信号；少数产品、报告和深度阅读会标注近7天补位",
     statusReady: "今日已更新",
     statusWaiting: "等待今日 7:30 刷新",
     statusArchive: "历史归档",
@@ -1411,7 +1411,7 @@ const uiText = {
     archiveTags: "Archive tags",
     topicLabel: "Topic clusters",
     contentSearch: "Search current issue",
-    refreshNote: "Latest AI signals refresh daily at 7:30",
+    refreshNote: "Refreshes daily at 7:30 Beijing time, prioritizing the previous Beijing day’s China-US AI signals; selected products, reports, and deep reads may be labeled as 7-day fallback picks",
     statusReady: "Updated today",
     statusWaiting: "Waiting for the 7:30 refresh",
     statusArchive: "Historical issue",
@@ -1510,6 +1510,12 @@ function getItemText(item) {
   return [
     item.section,
     item.priority,
+    item.sourceDate,
+    item.freshness,
+    item.regionPriority,
+    item.freshnessLabel,
+    item.freshnessLabelZh,
+    item.freshnessLabelEn,
     item.title,
     item.dek,
     item.why,
@@ -2145,7 +2151,15 @@ function renderContent() {
     }
     node.querySelector(".section-code").textContent = getSectionCode(item.section);
     node.querySelector(".section-label").textContent = item.section;
-    node.querySelector(".priority").textContent = item.priority || "";
+    const priority = node.querySelector(".priority");
+    priority.textContent = item.priority || "";
+    const freshnessLabel = item.freshnessLabel || (currentLang === "en" ? item.freshnessLabelEn : item.freshnessLabelZh) || item.sourceDate || "";
+    if (freshnessLabel) {
+      const freshness = document.createElement("span");
+      freshness.className = `freshness-badge${item.freshness === "fallback" ? " is-fallback" : ""}`;
+      freshness.textContent = freshnessLabel;
+      priority.after(freshness);
+    }
     renderTrustSignals(node, item);
     node.querySelector("h3").textContent = item.title;
     node.querySelector(".dek").textContent = item.dek;

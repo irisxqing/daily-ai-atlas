@@ -928,6 +928,7 @@ input:focus {
   justify-content: space-between;
   gap: 12px;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 12px;
 }
 
@@ -990,6 +991,26 @@ input:focus {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.72);
   color: var(--section-accent);
+}
+
+.freshness-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  margin-left: auto;
+  padding: 3px 8px;
+  border: 1px solid color-mix(in srgb, var(--section-accent) 14%, var(--line));
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.56);
+  color: var(--muted);
+  font-size: var(--text-label);
+  font-weight: 700;
+}
+
+.freshness-badge.is-fallback {
+  border-color: color-mix(in srgb, var(--amber) 28%, var(--line));
+  background: color-mix(in srgb, var(--amber) 10%, #fff);
+  color: #8a5a0a;
 }
 
 .story-card h3 {
