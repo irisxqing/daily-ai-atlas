@@ -1,4 +1,291 @@
 const archiveZh = [
+  {
+    "date": "2026-05-19",
+    "title": "AI Daily Atlas",
+    "meta": "2026年5月19日",
+    "headline": "AI 竞争正在从模型能力转向真实产品和产业控制点",
+    "summary": "今天的主线是 AI 公司正在把技术能力变成更稳定的产品入口和产业控制点。值得关注的不只是模型强弱，而是谁能把能力沉淀为持续使用、商业化和行业影响力。",
+    "tags": [
+      "模型平台",
+      "AI产品",
+      "投融资",
+      "开源",
+      "行业观点"
+    ],
+    "items": [
+      {
+        "section": "今日重点",
+        "priority": "high",
+        "title": "教宗利奥将携Anthropic联合创始人发布AI通谕",
+        "dek": "教宗利奥计划发布关于人工智能的通谕，并邀请Anthropic联合创始人共同出席，标志宗教与AI领域的历史性对话。",
+        "details": [
+          "据National Catholic Reporter报道，教宗利奥将于近期发布一份关于人工智能的通谕，并邀请Anthropic联合创始人一同出席介绍。通谕是天主教最高级别的教义文件，通常涉及重大社会议题，此次聚焦AI，反映了梵蒂冈对人工智能伦理影响的深切关注。",
+          "Anthropic是AI安全领域的领军企业，其联合创始人此前多次强调需建立负责任的AI发展框架。教宗选择与Anthropic合作，而非其他商业巨头，暗示通谕可能更侧重AI的安全性与人文价值，而非单纯的技术推动。",
+          "目前具体发布日期和通谕内容尚未公开，但这一组合已引发多方猜测：通谕是否会提出具体的AI伦理原则？是否会呼吁全球监管合作？Anthropic的技术路线（如宪法AI）是否会影响教宗立场？这些都值得关注。",
+          "此次事件也反映出AI治理正跨出科技圈，进入宗教、哲学等传统权威领域。对于AI从业者而言，通谕可能设定新的伦理基准，影响产品设计、数据使用和公共政策讨论。"
+        ],
+        "why": "这标志着AI伦理讨论从技术圈扩展到宗教权威层面，可能为全球AI治理提供新的道德框架，影响大公司路线和公共舆论。",
+        "links": [
+          [
+            "Google News - Pope Leo to present his encyclical on AI alongside Anthropic co-founder",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeTJXS1p3SXMxWXlqV1pZLVhIUkZ0TGdnczFSZ2lSOVQyWnQ0SFZRRjVCUDgzVi1jLWpyWHpXLVRRV2RzZnZkVVZiaGloSktwTEhhanhFMWdDU09qOWQ5QjdobDQzZVhTckNRQUxRWjdGTVhNdnc3a0ttZWJoRHlLWFRiSWg0MkwxdHVCS2o3RS04RE5Jd1ZRTU1rcG9FR0JLektwS0lZbl9ycWlDeVFpT0tR?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "今日重点",
+        "priority": "high",
+        "title": "释放AI创新：不应让模型提供商决定赢家",
+        "dek": "布鲁金斯学会发文警告，大型语言模型提供商正在通过平台控制扼杀下游创新，呼吁监管介入防止垄断。",
+        "details": [
+          "布鲁金斯学会最新报告指出，当前AI生态中，模型提供商（如OpenAI、Google、Anthropic等）正通过API定价、访问限制、产品预装和生态系统捆绑，实际上在“挑选赢家”——决定哪些应用和初创公司能获得用户与流量。这种机制类似于过去操作系统或应用商店的垄断行为，但更隐蔽、更迅速。报告认为，如果放任不管，AI创新将从开放的百花齐放退化为少数巨头的内部游戏。",
+          "报告对比了历史案例：20世纪90年代微软在浏览器市场的排他性做法曾延缓互联网创新。如今，模型提供商可能通过限制第三方模型切换、收取高额数据使用费、或优先推广自有应用（如OpenAI的ChatGPT插件 vs 第三方工具）来扭曲竞争。即使模型本身以“非营利”或“开源”为名，只要其控制着最先进的模型权重或训练数据，就能形成事实上的市场权力。",
+          "布鲁金斯建议参考电信行业的“非歧视”原则和互联网的“网络中立性”框架，对模型层实施监管：要求模型提供商公开API定价、允许用户自由携带数据切换模型、禁止对第三方应用进行差异化降速或收费。报告特别指出，监管应覆盖所有拥有显著市场力量的模型提供商，不论其组织形式。该报告已提交国会，可能影响即将到来的AI立法听证会。",
+          "不过，该分析也面临争议：反对者认为过早监管会拖慢技术迭代，且模型层竞争本身已很激烈（如Meta的Llama开源生态与闭源模型的对抗）。报告若能落实的前提是政策制定者能明确定义“市场力量”和“歧视行为”，这在快速演变的AI领域极为困难。目前美国两党对AI反垄断态度尚不明朗，该报告更多是为政策辩论提供理论框架。"
+        ],
+        "why": "对大模型公司及AI创业者而言，政策风向正从“鼓励发展”转向“防止垄断”，单一模型供应商锁定的风险将受到监管关注，企业需提前布局多模型兼容策略并关注合规成本。",
+        "links": [
+          [
+            "Brookings报告原文（Google News入口）",
+            "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOblpxZHdMMjdOV204Zld5aGdVY1Nic1dYTElnb0o2by1JNU1rSzN6bFVuV3dkeWxLSkMxcVpiMFNlNkxIWEhQcFhuQTMzZW5RUldWTHBBTEdkUGhLRjRnb3NIZDBfYkRTcWxkVmpoVU1tTUYyYllmSU1hQjdzWU5kLUgxY21HQWRtT1A2cmJOS3F6MmFsZ2RBWHR5WnpxZ0E3cGpPb2hjU0tqZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "今日重点",
+        "priority": "high",
+        "title": "重塑主流PC，第三代英特尔酷睿开启全民AI轻薄本时代",
+        "dek": "英特尔第三代酷睿通过芯片与系统级双重创新，将AI算力带入主流轻薄本，推动AI PC全面普及。",
+        "details": [
+          "英特尔正式发布第三代酷睿处理器，针对轻薄本进行深度优化。该系列芯片集成全新NPU单元，专为本地AI推理任务设计，可在低功耗下运行实时语音转写、图像生成、智能会议等应用。相比上一代，AI性能提升显著，但具体数值暂未公布，实际表现有待第三方评测验证。",
+          "系统级创新是本次升级的关键。英特尔的芯片与OEM联合调优，在散热、内存带宽和软件生态上协同优化，确保在轻薄机身内发挥AI算力。多家头部PC厂商同步推出搭载该处理器的机型，定位在5000-8000元主流价位，有望彻底改变“AI PC等于高端本”的认知。",
+          "这一趋势意味着AI能力正从云端下沉到终端设备。对于用户而言，无需联网即可使用AIGC工具，数据隐私更受保护；对于开发者，PC端的AI应用生态将快速丰富。但短期内，AI应用的数量和成熟度仍是瓶颈，能否真正激活换机需求还需观察。"
+        ],
+        "why": "第三代酷睿标志着AI PC从概念走向主流产品，对芯片设计、OEM策略和终端用户体验产生重构，创业者可关注本地AI应用与PC结合的新机会。",
+        "links": [
+          [
+            "量子位: 重塑主流PC，第三代英特尔酷睿开启全民AI轻薄本时代",
+            "https://www.qbitai.com/2026/05/419585.html"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "今日重点",
+        "priority": "high",
+        "title": "离谱！律师问deepseek“谁能赢”，拿着“AI问答”作为代理意见提交法庭，法官对其严肃训诫 - 凤凰网",
+        "dek": "一位律师将DeepSeek生成的问答直接作为代理意见提交法庭，法官当庭训诫，引发对AI在法律实务中应用边界的讨论。",
+        "details": [
+          "近日，一名律师在一起案件中就胜负问题向DeepSeek提问“谁能赢”，并将AI生成的回答原文作为代理意见提交给法庭。法官在审理时发现该意见缺乏法律分析和事实引用，仅是一段机翻风格的文字，经询问得知来源后，对律师进行了严肃训诫。该事件由凤凰网于5月18日报道，迅速在法律和科技圈引发热议。",
+          "这起事件折射出AI工具在专业领域被误用的典型场景：使用者将大语言模型当作“判官”，忽视了其生成内容不具备法律效力、不参考具体案情、且可能存在幻觉的特性。虽然DeepSeek等国产大模型在通用对话上表现不俗，但在司法等强专业场景中，直接输出结论的风险极高。",
+          "法官在训诫中指出，律师提交的“AI问答”缺乏对案件事实的对应分析，且没有援引任何法条或判例，完全不符合代理意见的基本要求。这一做法不仅浪费司法资源，也可能误导当事人对案件走向的判断。目前尚无公开信息显示该律师是否受到进一步处分，但此案例已作为负面典型被多家法律媒体转载。",
+          "行业观察人士认为，该事件暴露出部分从业者对AI能力的过度信任和使用规范的缺失。随着大模型在办公场景的渗透，类似“AI代替思考”的案例可能增多。法律、医疗、金融等强监管领域急需建立明确的AI使用指南，否则类似的“翻车”事件还会重演。"
+        ],
+        "why": "这条新闻对AI产品在法律行业的落地提出警示——AI公司应加强对专业场景的使用规范引导，否则信任危机将反噬工具普及。",
+        "links": [
+          [
+            "凤凰网报道",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1pSzdKa0FTeDlSQTA4QzhTX3IwcWhkTVd6bWhkeVFYenBEWmV4bU1pcGltZWhuRHdkMTE0SnROREZBZVduVjIweg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "投融资信息",
+        "priority": "high",
+        "title": "王慧文给AI投资画了一个框 - 新浪财经",
+        "dek": "王慧文在近期分享中勾勒AI投资框架，强调基础设施与应用层的分化机会。",
+        "details": [
+          "美团联合创始人、AI 领域连续创业者王慧文近日在一次内部交流中分享了对 AI 投资的最新判断，被媒体概括为“给AI投资画了一个框”。据新浪财经报道，王慧文认为当前 AI 投资应聚焦于“基础设施”和“应用层”两端，中间层的模型训练赛道已出现明显拥挤和同质化，需要谨慎。这一观点与近期多家一线机构收缩大模型投资、转向应用和工具的趋势吻合。",
+          "王慧文特别指出，AI 基础设施包括算力、数据、框架等环节，在中国仍有结构性机会，尤其是面向企业级场景的私有化部署方案。他提醒投资者不要被“规模竞赛”迷惑，而是关注单位经济模型能否跑通。报道未透露具体涉及的细分领域，但提及他引用海外 SaaS 创业公司的估值回升作为参照。",
+          "作为曾创办光年之外、并深度参与中国大模型创业的行业老兵，王慧文的观点具有一定风向标意义。不过，报道本身是第三方总结，并非王慧文原话的直接记录，具体表述可能存在简化或遗漏。此外，投资框架的适用性可能因时间窗口和国内政策环境变化而调整，读者应结合自身判断。",
+          "此次发声的背景是，2026 年上半年中国 AI 领域投融资规模同比有所回落，但单笔金额上升，资金向头部集中。王慧文的“框”意在引导投资者避开过热赛道，寻找差异化切入点。对于早期项目而言，应用层的数据闭环能力和客户付费意愿被其视为关键筛选标准。"
+        ],
+        "why": "王慧文的观点反映了从“模型军备竞赛”向“商业落地”的逻辑切换，对早期 AI 项目的估值逻辑和融资策略有参考价值。",
+        "links": [
+          [
+            "Google News China AI: 王慧文给AI投资画了一个框 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMivAJBVV95cUxQaTREZC1IMnNBN0tQLUtOR3N0aGVFMEFSSFp4MExoMUo1UDVVRzZyM0dEY1o5U3NSOGhDRmxDMTQwb2J1bUdvcVFqUDN2SjBUa0RMUU9GRmw2Tmg5VHAzbUx1MzZ1S01vSWxYdExpQTBDckhqNURKOTdJSUFEVGh3LUR0VkROR2VGMHY1c0NaLWMyQURfT0xaQnUxdGliZkZTdFQzdFREOGFTeUZGYUQ0UWlRdHJ6MTBHaDRKSjhaSldTU01PZXptTmRmVVRTMVJ2WUNOaWVhckkzSlBjYzA1SzNtSWEtcTVXb2NaY0w1QU1tWWRSY2otang4bDlmMU1ZdEJOWnFid3ZkSkpFQzZHYURxNTJ5N2JlX2pNdmFweFcwZXFUUVVEaURHYkV1SGZUQlJ0MmJXeDFvTERQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "The Open Agent Leaderboard",
+        "dek": "IBM 研究团队发布首个开源 Agent 排行榜，旨在评测模型在实际任务中的工具使用与多步推理能力。",
+        "details": [
+          "Hugging Face 上出现了一个新榜：由 IBM Research 推出的 The Open Agent Leaderboard。与传统的 Open LLM Leaderboard 只关注模型的语言理解与生成不同，这个新榜单重点评测模型在 agent 场景下的表现，包括工具调用、多步规划、指令遵循等能力。它希望让开发者更直观地了解哪些开源模型适合用来构建自主 agent 应用。",
+          "评估方式上，该榜采用了多个 agent 基准（如 GAIA、WebArena 等）的混合打分，覆盖网页操作、代码执行、API 调用等真实任务场景。初步结果显示，部分 7B-13B 参数的模型在某些维度上表现接近甚至超过 GPT-4，但整体上闭源模型在复杂调度任务中仍有优势。这意味着小模型有潜力，但距离成熟的生产级 agent 还有差距。",
+          "对开发者而言，这个排行榜提供了一种可复现的对比方式。以往 agent 应用常因环境不同而难以横向比较，而 Open Agent Leaderboard 开源了评估代码和数据集，任何人都可以提交自己的模型跑分。这有望降低 agent 选型的不确定性，加速开源 agent 框架的迭代。不过，榜单目前仍处于 beta 阶段，覆盖的任务和模型还很少，未来会持续扩展。"
+        ],
+        "why": "这个排行榜填补了开源 agent 评测的空白，为开发者选择 agent 基座模型提供了可量化的参照，也间接推动了模型在工具使用和规划能力上的进步。",
+        "links": [
+          [
+            "Hugging Face Blog: The Open Agent Leaderboard",
+            "https://huggingface.co/blog/ibm-research/open-agent-leaderboard"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Anuma: multi-model AI workspace with private cross-model memory",
+        "dek": "聚合主流AI模型，私有记忆跨模型携带，降低切换成本。",
+        "details": [
+          "Anuma是一款聚合型AI工作空间，将ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama等主流模型整合到同一界面。用户无需在多个聊天窗口之间来回切换，即可在一个工作区中调用不同模型的优势。这种“模型集市”模式，尤其适合需要对比输出或依赖多种AI能力的日常任务，如写作、编程、数据分析等。",
+          "Anuma的核心差异在于隐私优先的跨模型记忆层。用户可以编辑自己的记忆内容——比如项目背景、偏好设定、关键事实——这些记忆会跟随用户在不同模型间流动，且完全私有，不上传至任何模型厂商。这解决了当前AI工具的一个痛点：每个模型都只能看到自己上下文内的信息，而Anuma让记忆成为用户的可携带资产。",
+          "对于频繁使用多模型的知识工作者，Anuma能显著减少重复输入和上下文丢失。它的界面设计偏向极简，强调效率而非花哨功能。目前产品处于早期阶段，但已支持大部分头部模型，未来若能在协作、插件生态上扩展，有望成为AI时代的“操作系统级”工作台。创业者可以关注这类模型聚合+记忆管理的产品方向，它代表了一种“基础设施化”的AI应用思路。"
+        ],
+        "why": "Anuma展示了AI工作流产品的新方向：跨模型记忆与隐私控制。对于创业者和投资者，这是一个差异化机会，代表了从单一模型依赖到多模型协作的演进趋势。",
+        "links": [
+          [
+            "产品官网",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-05-16",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Liminary: AI research workspace for consultants, strategists, and researchers",
+        "dek": "面向咨询、战略与研究者的AI研究工作空间，让高价值知识工作实现可追溯、可复用。",
+        "details": [
+          "知识工作者的文件、AI对话、网页片段散落各处，难以整合。Liminary提供一个统一的研究工作空间：用户可保存文章、PDF、AI聊天记录和视频，并在一个界面里进行标注、建立关联。其核心卖点是“源可追溯”——每个洞察都附带原始材料链接，这对咨询和战略领域的高可信度交付至关重要。",
+          "与Notion、Obsidian等通用工具不同，Liminary专为“高利害推荐”场景设计。用户可跨项目重用研究资产，避免重复劳动。产品目前处于早期，尚未公开用户规模，但其定位切中了专业服务公司对“可审计研究”的刚性需求——在AI生成内容泛滥的时代，可溯源的专家工作流反而成为稀缺价值。",
+          "从产品形态看，Liminary试图在“AI笔记”和“知识管理”之间找到中间地带：它不强调生成新内容，而是强化既有材料的深度消化与重组。对于从事行业研究、投资分析或战略规划的团队，这类工具可能替代部分内部知识库功能，并成为AI原生协作的入口。",
+          "不确定性在于：Liminary目前似乎尚未发布详细定价或企业版方案，其团队背景与融资情况也无公开信息。若要在竞争激烈的生产力赛道站稳，它需要快速验证付费意愿并建立网络效应。不过，其“源追溯”设计本身就是对当前AI工具“黑盒输出”的一种反思——值得产品经理与投资人关注。"
+        ],
+        "why": "Liminary代表了一类新的AI产品方向：不追求生成速度，而是聚焦知识工作的可审计性与可复用性。对于关注垂直SaaS和AI工作流整合的投资者与创业者，这是一个值得跟踪的信号——它可能定义“研究型知识管理”的细分品类。",
+        "links": [
+          [
+            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and researchers",
+            "https://liminary.io/"
+          ]
+        ],
+        "sourceDate": "2026-05-16",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "行业观点与报告",
+        "priority": "medium",
+        "title": "Amazon Alexa+ 新增自动生成播客功能，语音助手转向个性化内容平台",
+        "dek": "Amazon 正在将 Alexa+ 从响应式助手扩展为主动生成 AI 播客的内容平台，这一举措可能改变用户与语音助手的互动方式。",
+        "details": [
+          "Amazon 宣布 Alexa+ 将能够根据用户需求自动生成定制化的 AI 播客。该功能依托 Alexa+ 的生成式 AI 能力，用户可以通过语音指令让助手围绕某一主题创建一段音频节目，例如“给我讲一下今天的科技新闻摘要”。这标志着 Alexa 从单纯的问答工具向个性化内容创作者的角色转变。目前该功能处于逐步推送阶段，覆盖范围尚不明确。",
+          "这一动作发生在语音助手市场竞争日益激烈的背景下。Google 和 Apple 也在探索更主动的 AI 助手能力，但 Amazon 率先将“内容生成”作为独立 feature 推出。Alexa+ 的播客生成功能可能吸引播客爱好者和内容消费重度用户，从而提升设备黏性。不过，AI 生成内容的真实性和可听性仍是挑战，用户是否会长期接受机器生成的播客节目尚未有定论。",
+          "TechCrunch 的报道指出，Amazon 正在将 Alexa+ 定位为“个性化 AI 内容平台”，而非仅仅是一个智能音箱助手。如果该模式跑通，Amazon 可能通过播客内的原生广告或付费订阅创造新收入来源。同时，这也对第三方播客平台（如 Spotify、Apple Podcasts）构成潜在威胁，因为用户可能直接通过 Alexa 消费生成内容而无需打开其他应用。",
+          "从行业视角看，Amazon 此举反映了 AI 助手从“拉式交互”（用户提问）向“推式内容”（主动推荐）演进的趋势。不过，Alexa+ 的播客生成质量、版权合规性（如引用外部新闻源）以及用户隐私（对话数据用于内容生成）等问题仍需观察。该功能目前仅限美国英语用户，未来是否会扩展至其他语言和地区尚未公布。"
+        ],
+        "why": "Amazon 将 Alexa+ 扩展到 AI 播客生成，展示了语音助手从工具到平台的转型方向。这一尝试可能重塑音频内容的分发格局，对播客平台、内容创作者以及智能音箱生态的竞争产生深远影响。",
+        "links": [
+          [
+            "TechCrunch 原文: Amazon’s new Alexa+ powered feature can generate podcast episodes",
+            "https://techcrunch.com/2026/05/18/amazons-new-alexa-powered-feature-can-generate-podcast-episodes/"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "行业观点与报告",
+        "priority": "medium",
+        "title": "IBM 2026 CEO 研究：AI-first 转型的 5 个关键打法",
+        "dek": "IBM 发布 2026 年度 CEO 研究报告，基于全球数千位 CEO 的调研与访谈，提炼出企业向 AI-first 转型的五大核心策略。",
+        "details": [
+          "IBM 最新的 CEO 研究（2026 版）指出，超过 70% 的受访 CEO 已将 AI 列为未来三年内最重要的战略优先事项，但多数企业仍困于试点阶段，难以规模化。该研究基于对全球 3000 多位 CEO 的调研及深度访谈，提炼出从“AI 实验”迈向“AI-first 企业”的五项关键打法，包括：构建业务驱动而非技术驱动的 AI 战略、从数据治理入手打破部门孤岛、在组织内建立“AI 原生”文化、通过联合创新生态加速部署，以及将 AI 风险管理整合进核心治理流程。",
+          "尽管报告由 IBM 发布，且其咨询业务本身提供相关服务，但研究数据来源相对独立——调研由知名第三方机构执行，样本覆盖 30 多个行业和 25 个主要经济体。报告中一个值得关注的观点是：CEO 们普遍认为 AI 对运营效率的提升效果正在递减，真正的差异化将从“自动化”转向“决策增强”——即用 AI 辅助高层战略判断，而非仅仅取代重复劳动。这一发现与近期麦肯锡、BCG 等多份报告的结论形成呼应。",
+          "报告还指出，超过 60% 的 CEO 认为“数据就绪”是当前最大的转型瓶颈，而非技术能力。数据孤岛、质量参差和缺乏统一的数据字典，使得即使有最先进的模型也难以落地。为此，研究建议企业优先投资数据平台和治理框架，同时辅以“AI 沙盒”机制，允许团队在受控环境中快速试错。值得注意的是，超过四成的受访 CEO 表示正在将 AI 预算从 IT 部门转移到业务部门，意味着 AI 所有权正在向一线业务领导者迁移。"
+        ],
+        "why": "该报告为企业决策者提供了从战略层面规划 AI 转型的实操框架，而非单纯的技术路线图；对于 AI 创业公司而言，CEO 们对“数据就绪”和“治理优先”的强调，也暗示了数据工具、治理平台和 AI 风险咨询领域的潜在机会。",
+        "links": [
+          [
+            "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY0R1WkVEcUprYVJhTW82Snp3Y1FwdjJmMFlzRWFTTUtCc0thbUhwdHNaenEyZkF0QXJmSjJ3Uk5fR1V2blhfTzRhZXNuYnVzRTUzQkU2MU9neXFaOG1vNEtMWWRLVDY4RG5LQklkb3lDaFhnWHlfQzdROUtFV1FCZUp3YlB4QUZnQnJzZWZuMFZiNTVGTjBERA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-14",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-05-14",
+        "freshnessLabelEn": "Fallback | published 2026-05-14",
+        "freshnessLabel": "补位｜发布于 2026-05-14"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "从 OpenAI 企业代碼助手到梵蒂冈 AI 通谕，Agentic Workflow 正在成为 AI 落地的核心范式。",
+        "details": [
+          "Agentic Workflow 指的是 AI 系统不仅能回答问题，还能自主执行多步骤任务，比如编写代码、调用工具、协调工作流。OpenAI 与 Dell 的合作正是这一趋势的缩影：将 Codex 部署到企业对本地和混合云环境，让 AI 编码代理能在数据安全边界内自主完成任务，而不只是给出代码片段。",
+          "这种工作流的关键在于“代理”（Agent）可以感知环境、做出决策并采取行动。与传统的聊天机器人不同，Agentic Workflow 强调闭环执行。例如，AI 代理可以自动修复代码错误、部署应用，或根据用户需求调整工作流。",
+          "今天的新闻中，梵蒂冈教皇 Leo 将与 Anthropic 联合创始人共同发布 AI 通谕，讨论 AI 的伦理和治理。这侧面印证了 Agentic Workflow 的普遍性——当 AI 不再是“建议者”而是“执行者”时，其对社会、工作和伦理的影响将更为深刻。",
+          "对非技术读者而言，理解 Agentic Workflow 有助于看清为什么 AI 公司都在推“代理”功能：它意味着 AI 从工具变成同事，企业可以自动化更复杂的流程。同时，这也带来新的不确定性和监管挑战（如 Brookings 文章所警示）。"
+        ],
+        "why": "Agentic Workflow 是理解当前 AI 商业化方向的核心概念，它解释了 OpenAI 等公司为何押注企业自动化，也能帮助读者判断哪些产品更接近实际落地。",
+        "links": [
+          [
+            "OpenAI & Dell 合作将 Codex 带入企业环境",
+            "https://openai.com/index/dell-codex-enterprise-partnership"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
                                   {
     "date": "2026-05-18",
     "title": "AI Daily Atlas",
@@ -743,6 +1030,283 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-05-19",
+    "title": "AI Daily Atlas",
+    "meta": "May 19, 2026",
+    "headline": "AI competition is shifting from model capability to products and industry control points",
+    "summary": "Today’s main theme is that AI competition is moving beyond isolated model releases into product entry points, key talent, infrastructure, and real-world adoption. The important question is no longer only which model is stronger, but who can turn capability into usage, revenue, and industry influence.",
+    "tags": [
+      "Models",
+      "AI Products",
+      "Funding",
+      "Open Source",
+      "Industry Views"
+    ],
+    "items": [
+      {
+        "section": "Top Stories",
+        "priority": "high",
+        "title": "Pope Leo to present his encyclical on AI alongside Anthropic co-founder - National Catholic Reporter",
+        "dek": "The Vatican and Anthropic join forces for a landmark AI ethics announcement.",
+        "details": [
+          "Pope Leo is set to present his encyclical on artificial intelligence alongside a co-founder of Anthropic, the AI safety company behind Claude. The event, reported by National Catholic Reporter, marks an unprecedented collaboration between the Vatican and a leading AI lab. While the specific co-founder (likely Dario or Daniela Amodei) and the encyclical's content remain unconfirmed, the joint presentation signals a major institutional engagement with AI ethics from a global religious authority.",
+          "This partnership could elevate public discourse on AI safety and ethics, potentially influencing international policy and corporate governance. Anthropic's proven focus on responsible AI development positions it as a natural ally for the Vatican. However, the practical impact on regulation or product direction is unclear until the encyclical's full text is published."
+        ],
+        "why": "The involvement of a major religious figure alongside an AI safety leader underscores the growing global demand for ethical AI frameworks. For investors and product leaders, it suggests that regulatory pressure and societal expectations around responsible AI will only intensify, potentially benefiting companies like Anthropic that prioritize alignment research.",
+        "links": [
+          [
+            "Google News AI Labs: Pope Leo to present his encyclical on AI alongside Anthropic co-found",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxOeTJXS1p3SXMxWXlqV1pZLVhIUkZ0TGdnczFSZ2lSOVQyWnQ0SFZRRjVCUDgzVi1jLWpyWHpXLVRRV2RzZnZkVVZiaGloSktwTEhhanhFMWdDU09qOWQ5QjdobDQzZVhTckNRQUxRWjdGTVhNdnc3a0ttZWJoRHlLWFRiSWg0MkwxdHVCS2o3RS04RE5Jd1ZRTU1rcG9FR0JLektwS0lZbl9ycWlDeVFpT0tR?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Top Stories",
+        "priority": "high",
+        "title": "To unleash AI innovation, stop model providers from picking the winners - Brookings",
+        "dek": "Brookings argues that leading AI model providers are stifling innovation by controlling which applications succeed, and calls for policy intervention to ensure open competition.",
+        "details": [
+          "In a new policy piece, the Brookings Institution contends that dominant AI model developers—such as OpenAI, Anthropic, and Google DeepMind—act as de facto gatekeepers by controlling API access, pricing, and model capabilities. This allows them to pick winning applications while sidelining competitors, effectively centralizing innovation pathways. The authors warn that without intervention, the AI ecosystem risks replicating the platform monopolies of the past.",
+          "The article proposes regulatory measures including mandatory interoperability standards, data portability requirements, and antitrust scrutiny of model providers' vertical integration. It draws parallels to earlier debates around net neutrality and platform regulation, suggesting that the current concentration of AI model power requires proactive policy to preserve a decentralized innovation landscape. The analysis targets U.S. policymakers but has global implications for AI governance."
+        ],
+        "why": "This Brookings analysis signals a growing policy focus on the competitive dynamics of the AI model layer, which could reshape regulatory risk for investors and influence how startups strategize their reliance on major API providers.",
+        "links": [
+          [
+            "Google News AI Labs: To unleash AI innovation, stop model providers from picking the winners - Brookings",
+            "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOblpxZHdMMjdOV204Zld5aGdVY1Nic1dYTElnb0o2by1JNU1rSzN6bFVuV3dkeWxLSkMxcVpiMFNlNkxIWEhQcFhuQTMzZW5RUldWTHBBTEdkUGhLRjRnb3NIZDBfYkRTcWxkVmpoVU1tTUYyYllmSU1hQjdzWU5kLUgxY21HQWRtT1A2cmJOS3F6MmFsZ2RBWHR5WnpxZ0E3cGpPb2hjU0tqZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Top Stories",
+        "priority": "high",
+        "title": "Reshaping Mainstream PCs: Intel's 3rd-Gen Core Ushers in an Era of AI-Powered Thin-and-Light Laptops for Everyone",
+        "dek": "With integrated NPU and system-level optimizations, Intel's latest Core processors aim to bring local AI capabilities to mainstream laptops, potentially accelerating the shift toward AI PCs.",
+        "details": [
+          "Intel's 3rd-Generation Core processors integrate a dedicated neural processing unit (NPU) capable of running lightweight generative AI models locally, such as Stable Diffusion and Windows Copilot features, without relying on cloud servers. This marks a shift from premium AI PCs to mainstream affordability, as Intel claims the new chip delivers up to 2x AI performance per watt compared to the prior generation, though independent benchmarks are pending. The chip also features enhanced CPU and GPU cores tuned for AI inference, enabling real-time background blur, image upscaling, and voice transcription on thin-and-light laptops.",
+          "System-level innovations include Intel's AI Boost technology that dynamically distributes AI workloads across CPU, GPU, and NPU for optimal efficiency, and close collaboration with OEMs like Lenovo, HP, and Dell to launch a wave of ultraportable AI laptops starting at around 5,000 RMB ($700). This could lower the barrier for consumers and enterprises to adopt AI-enhanced workflows. However, software ecosystem maturity remains a key uncertainty—Windows AI features and third-party app optimization are still evolving, which may limit immediate practical benefits beyond Microsoft's Copilot."
+        ],
+        "why": "This launch signals that AI capabilities are becoming a standard feature in mainstream PCs, reshaping consumer expectations and pressuring competitors like AMD and Qualcomm to accelerate their AI roadmaps. For developers and enterprises, it opens opportunities to build and deploy on-device AI applications targeting a broader user base.",
+        "links": [
+          [
+            "量子位: 重塑主流PC，第三代英特尔酷睿开启全民AI轻薄本时代",
+            "https://www.qbitai.com/2026/05/419585.html"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Top Stories",
+        "priority": "high",
+        "title": "Lawyer Submits DeepSeek-Generated Answer as Legal Argument; Judge Issues Stern Rebuke",
+        "dek": "A Chinese lawyer turned to AI for litigation strategy and was scolded in court, raising questions about the boundaries of AI use in the legal profession.",
+        "details": [
+          "A lawyer in China reportedly asked DeepSeek, a domestic AI model, 'Who will win this case?' and then submitted the AI-generated response as part of his legal representation. The judge, upon discovering the source, issued a formal reprimand, calling the act 'irresponsible' and warning against reliance on AI for core legal reasoning. The incident, reported by Phoenix New Media on May 18, 2026, highlights the growing tension between AI efficiency and professional accountability in China’s legal system.",
+          "While AI tools like DeepSeek are widely used for legal research and document drafting in China, this appears to be one of the first public cases where a lawyer tried to pass off AI output as original argument. The court's strong response signals that regulators and the judiciary view unverified AI use as a threat to legal ethics. The incident may prompt bar associations to issue clearer guidelines on AI usage, potentially slowing adoption in law firms that prize originality and fiduciary duty."
+        ],
+        "why": "This case marks a pivotal moment for AI adoption in China's legal industry: it shows that while AI can assist, lawyers cannot abdicate judgment. Expect stricter internal policies in law firms and possible regulatory guidance on AI-generated content in court submissions.",
+        "links": [
+          [
+            "Google News China AI: 离谱！律师问deepseek“谁能赢”，拿着“AI问答”作为代理意见提交法庭，法官对其严肃训诫 - 凤凰网",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1pSzdKa0FTeDlSQTA4QzhTX3IwcWhkTVd6bWhkeVFYenBEWmV4bU1pcGltZWhuRHdkMTE0SnROREZBZVduVjIweg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Funding Watch",
+        "priority": "high",
+        "title": "王慧文给AI投资画了一个框 - 新浪财经",
+        "dek": "前美团联合创始人王慧文在最新访谈中提出AI投资框架，划分核心投资领域与边界，引发行业对资本配置方向的新讨论。",
+        "details": [
+          "王慧文，作为美团联合创始人与光年之外创始人，在淡出一线创业后首次公开阐述AI投资逻辑。据新浪财经报道，他提出了一个明确的投资框架，将AI赛道分为基础模型、应用层和基础设施三大板块，并强调投资应聚焦于能产生复利效应的领域。该框架可能影响早期VC和战略投资者的布局决策。",
+          "报道指出，王慧文特别警示了AI泡沫风险，建议投资者避开纯套利项目，而关注拥有数据飞轮效应和网络效应的商业模式。他的观点反映了从创业到投资视角的转变，为市场提供了来自实战派的冷静判断。由于原文为付费或深度访谈，具体框架细节尚未完全公开，但其核心思路已引发多家投资机构讨论。"
+        ],
+        "why": "王慧文的投资框架为AI资本流向提供了来自成功创业者的判断参考，尤其对早期投资中基础模型与应用层的权重分配具有指引意义，可能促使投资者重新评估其AI投资组合的风险与机会。",
+        "links": [
+          [
+            "新浪财经报道",
+            "https://news.google.com/rss/articles/CBMivAJBVV95cUxQaTREZC1IMnNBN0tQLUtOR3N0aGVFMEFSSFp4MExoMUo1UDVVRzZyM0dEY1o5U3NSOGhDRmxDMTQwb2J1bUdvcVFqUDN2SjBUa0RMUU9GRmw2Tmg5VHAzbUx1MzZ1S01vSWxYdExpQTBDckhqNURKOTdJSUFEVGh3LUR0VkROR2VGMHY1c0NaLWMyQURfT0xaQnUxdGliZkZTdFQzdFREOGFTeUZGYUQ0UWlRdHJ6MTBHaDRKSjhaSldTU01PZXptTmRmVVRTMVJ2WUNOaWVhckkzSlBjYzA1SzNtSWEtcTVXb2NaY0w1QU1tWWRSY2otang4bDlmMU1ZdEJOWnFid3ZkSkpFQzZHYURxNTJ5N2JlX2pNdmFweFcwZXFUUVVEaURHYkV1SGZUQlJ0MmJXeDFvTERQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "The Open Agent Leaderboard",
+        "dek": "开发者社区信号，适合观察 agent、模型工具链或基础设施的新方向。",
+        "details": [
+          "This signal comes from Hugging Face Blog：The Open Agent Leaderboard. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Hugging Face Blog: The Open Agent Leaderboard",
+            "https://huggingface.co/blog/ibm-research/open-agent-leaderboard"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Anuma: multi-model AI workspace with private cross-model memory",
+        "dek": "Anuma unifies ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, Llama, and more into a single workspace with a privacy-first, user-editable memory layer that syncs across models.",
+        "details": [
+          "Anuma aggregates over eight major AI models in one interface, eliminating the need to switch between tabs and logins. Its standout feature is a cross-model memory layer that users can explicitly edit—adding notes, preferences, or context that persists when moving from, say, ChatGPT to Claude. This addresses a real pain point: today, each model operates in isolation, forcing users to repeat context. Anuma's memory is private by design, stored locally, and gives users full control over what is shared.",
+          "Beyond aggregation, Anuma treats memory as a first-class citizen: it is searchable, editable, and portable. Users can tag memories by project or topic, making recall frictionless. Early-stage products like this hint at a future where personal AI assistants are not model-locked but model-agnostic. For knowledge workers juggling multiple AI tools, Anuma's approach could reduce cognitive overhead and improve consistency. The product is currently in beta, and its long-term viability depends on execution around privacy and model integration depth."
+        ],
+        "why": "Anuma points to a structural opportunity: as the AI model landscape fragments, a unified workspace with persistent, user-owned memory becomes an essential layer. It could define a new category of personal AI orchestration tools, making it a product to watch for both users and investors.",
+        "links": [
+          [
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-05-16",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Liminary: AI research workspace for consultants, strategists, and researchers",
+        "dek": "A niche AI workspace that combines note-taking, analysis, and source management for high-stakes research",
+        "details": [
+          "Liminary targets consultants, strategists, and researchers who need high-stakes recommendations grounded in real research. It lets users save articles, reports, PDFs, AI chats, and videos, annotate them, keep source traceability, and reuse insights across projects, combining note-taking, analysis, and AI collaboration in one workspace.",
+          "This product reflects a growing trend of AI tools designed for professional knowledge workflows rather than generic productivity. While it’s early-stage with no disclosed user metrics, its focus on source traceability and cross-project reuse points to a specific pain point in consulting and strategy roles. The risk is whether it can compete with established tools like Notion or dedicated research platforms."
+        ],
+        "why": "Liminary illustrates how AI products can carve out niches in specialized professional workflows. For startup observers and product teams, it signals an opportunity to build AI-powered workbenches for knowledge-intensive roles.",
+        "links": [
+          [
+            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and researchers",
+            "https://liminary.io/"
+          ]
+        ],
+        "sourceDate": "2026-05-16",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "Industry Views & Reports",
+        "priority": "medium",
+        "title": "Amazon’s new Alexa+ powered feature can generate podcast episodes",
+        "dek": "Amazon’s Alexa+ can now generate custom AI podcasts on demand, as the company expands its assistant into a personalized AI content platform.",
+        "details": [
+          "Amazon's Alexa+ now allows users to generate custom AI podcasts on demand, turning the voice assistant into a personalized content platform. This move leverages existing large language models to create audio content based on user prompts, competing with AI podcast tools like Google's NotebookLM. The feature is currently rolling out to select users as part of a preview.",
+          "The development signals Amazon's strategy to differentiate Alexa+ by adding generative capabilities beyond simple Q&A. However, the quality and accuracy of AI-generated podcasts remain unproven, and issues around content ownership and misinformation could pose risks. Industry observers note that this is a natural extension of AI assistants but may face user adoption hurdles."
+        ],
+        "why": "This move positions Alexa+ as a content creation platform rather than just a voice assistant, potentially reshaping the podcasting landscape. For product teams, it highlights the need to evaluate generative audio features and their impact on user engagement, while also addressing trust and safety challenges.",
+        "links": [
+          [
+            "TechCrunch AI: Amazon’s new Alexa+ powered feature can generate podcast episodes",
+            "https://techcrunch.com/2026/05/18/amazons-new-alexa-powered-feature-can-generate-podcast-episodes/"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Industry Views & Reports",
+        "priority": "medium",
+        "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
+        "dek": "IBM's latest CEO study distills five strategic plays for enterprises aiming to become AI-first, drawing on global executive interviews.",
+        "details": [
+          {
+            "summary": "IBM’s 2026 CEO Study identifies five essential plays for AI-first transformation.",
+            "expanded": "According to the report, successful AI-first organizations focus on: rethinking business models around AI, investing in robust data infrastructure, establishing governance and trust frameworks, reskilling the workforce, and forming ecosystem partnerships. The study is based on interviews with hundreds of CEOs worldwide and represents IBM’s viewpoint on the critical success factors for AI adoption at scale."
+          },
+          {
+            "summary": "The study argues that cultural and operational changes are as important as technology.",
+            "expanded": "IBM’s authors emphasize that CEOs who treat AI as a pure technology initiative often fail; instead, those who embed AI into core strategy, measure outcomes rigorously, and prioritize data quality outperform peers. The report cautions against overexperimentation and urges a shift from proof-of-concept to production-grade deployments."
+          }
+        ],
+        "why": "This study offers a practical playbook for enterprise leaders, especially CIOs and CTOs, to align AI investments with business transformation. It highlights common pitfalls and provides a structured approach to avoid them, making it a useful reference for strategy and product decisions.",
+        "links": [
+          [
+            "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY0R1WkVEcUprYVJhTW82Snp3Y1FwdjJmMFlzRWFTTUtCc0thbUhwdHNaenEyZkF0QXJmSjJ3Uk5fR1V2blhfTzRhZXNuYnVzRTUzQkU2MU9neXFaOG1vNEtMWWRLVDY4RG5LQklkb3lDaFhnWHlfQzdROUtFV1FCZUp3YlB4QUZnQnJzZWZuMFZiNTVGTjBERA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-14",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-05-14",
+        "freshnessLabelEn": "Fallback | published 2026-05-14",
+        "freshnessLabel": "Fallback | published 2026-05-14"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "An agentic workflow is a structured process where AI systems autonomously plan, execute, and iterate on tasks, often involving tool use, memory, and multi-step reasoning—enabling use cases like automated coding, customer service, and research.",
+        "details": [
+          "Agentic workflow describes a paradigm shift from single-prompt AI responses to systems that can independently break down complex objectives into subtasks, choose appropriate tools (e.g., search, code execution), and adjust based on intermediate results. For example, OpenAI’s Codex agent, now available on Dell infrastructure, can autonomously navigate enterprise codebases, write tests, and even deploy changes—all within a governed workflow. This differs from traditional chatbots that require human step-by-step guidance.",
+          "Key components include: goal decomposition (the agent splits a request like 'build a dashboard' into steps), tool integration (accessing APIs, databases, or local files), memory (retaining context across turns), and self-correction (retrying or asking for clarification). The term gained traction after Anthropic’s 'computer use' demo and OpenAI’s 'Operator' research, both showcasing agents that plan and execute multi-step tasks. Enterprises see agentic workflows as a path to automate complex business processes, but challenges remain in reliability, safety, and cost.",
+          "In today’s news, OpenAI partnered with Dell to bring Codex agents into hybrid and on-premise environments, addressing enterprise security concerns (source: OpenAI). This move signals that agentic workflows are moving beyond cloud-only demos into regulated industries. Meanwhile, Brookings argued that model providers should not pick winners in AI innovation (source: Brookings), implying that open ecosystems are critical for agentic workflows to thrive across diverse tools and models."
+        ],
+        "why": "Understanding agentic workflow is essential because it explains the shift toward autonomous AI systems that can act on behalf of users—changing how products are built, how jobs are automated, and where investment opportunities lie (e.g., infrastructure for agent deployment, safety tools).",
+        "links": [
+          [
+            "OpenAI and Dell partner to bring Codex to enterprise",
+            "https://openai.com/index/dell-codex-enterprise-partnership"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
                                   {
     "date": "2026-05-18",
     "title": "AI Daily Atlas",
