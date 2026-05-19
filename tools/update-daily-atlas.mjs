@@ -320,7 +320,12 @@ const deepReadStylePattern = /\banalysis\b|\bdeep[- ]dive\b|\bessay\b|\bintervie
 const primaryMarketPattern = /中国|china|us|u\.s\.|united states|america|美国|深圳|香港/i;
 const deprioritizedMarketPattern = /korea|korean|south korea|ghana|malta|european union|eu\b|france|germany|uk\b|britain|japan|singapore|韩国|加纳|马耳他|欧盟|法国|德国|英国|日本|新加坡/i;
 const comparisonOnlyPattern = /outperforms?|beats?|lags?|stronger than|weaker than|surpass(?:es|ed)?|超过|强于|弱于|落后|跑分|榜单|排名/i;
-const directActionPattern = /\blaunch(?:es|ed)?\b|\brelease(?:s|d)?\b|\bannounce(?:s|d)?\b|\bdeploy(?:s|ed)?\b|\broll(?:s|ed)? out\b|\btakes charge\b|\bjoins?\b|\bleaves?\b|\bfounds?\b|发布|上线|推出|部署|接管|离职|加入|任命|创业|创办/i;
+const directActionPattern = /\blaunch(?:es|ed)?\b|\brelease(?:s|d)?\b|\bannounce(?:s|d)?\b|\bdeploy(?:s|ed)?\b|\broll(?:s|ed)? out\b|\bpartner(?:s|ed|ship)?\b|\bcollaborat(?:es|ed|ion)\b|\bacquir(?:es|ed|e)\b|\brais(?:es|ed)\b|\btakes charge\b|\bjoins?\b|\bleaves?\b|\bfounds?\b|\bappoint(?:s|ed)?\b|\bresign(?:s|ed)?\b|发布|上线|推出|部署|宣布|合作|并购|收购|融资|接管|离职|加入|任命|创业|创办|辞任/i;
+const consumerDeviceNoisePattern = /轻薄本|笔记本|ai\s*pc|aipc|pc厂商|酷睿|英特尔酷睿|laptop|notebook|ultrabook|consumer pc|买本|换机|导购|评测|上手|跑分|整机|显卡|主板|手机|耳机|电视|平板/i;
+const socialAnecdoteNoisePattern = /律师|法庭|法官|法院|代理意见|判决|谁能赢|ai问答|用deepseek|拿着.*deepseek|社会新闻|奇葩|离谱|当庭|训诫|民事|刑事|司法案例|court|judge|lawyer|legal brief|hearing/i;
+const topStoryHardActionPattern = /\blaunch(?:es|ed)?\b|\brelease(?:s|d)?\b|\bannounce(?:s|d)?\b|\bdeploy(?:s|ed)?\b|\bpartnership\b|\bcollaboration\b|\bacquir(?:es|ed|e)\b|\brais(?:es|ed)\b|\bseries [a-z]\b|\bipo\b|\bfunding\b|\bvaluation\b|\btakes charge\b|\bjoins?\b|\bleaves?\b|\bfounds?\b|\bappoint(?:s|ed)?\b|\bresign(?:s|ed)?\b|发布|上线|推出|部署|合作|并购|收购|融资|上市|估值|接管|离职|加入|任命|创业|创办|辞任|负责人|正式发布|宣布/i;
+const governanceOrSafetyPolicyPattern = /regulat|policy|governance|antitrust|competition|copyright|privacy|security|safety|alignment|lawsuit|whistleblower|model provider|监管|治理|反垄断|竞争|版权|隐私|安全|对齐|诉讼|政策|立法|听证|平台垄断|模型层/i;
+const coreIndustryPattern = /nvidia|amd|tsmc|broadcom|datacenter|data center|server|gpu|chip|accelerator|inference|compute|robot|robotics|humanoid|world model|warehouse|factory|logistics|英伟达|台积电|博通|数据中心|服务器|芯片|算力|加速器|推理|机器人|世界模型|仓储|工厂|物流/i;
 
 function patternScore(text, weightedPatterns) {
   return weightedPatterns.reduce((score, [pattern, weight]) => score + (pattern.test(text) ? weight : 0), 0);
@@ -381,6 +386,8 @@ function editorialScore(entry, section) {
   if (primaryMarketPattern.test(text)) score += 6;
 
   if (section === "今日重点") {
+    if (consumerDeviceNoisePattern.test(text)) score -= 70;
+    if (socialAnecdoteNoisePattern.test(text)) score -= 70;
     score += patternScore(text, [
       [modelLaunchPattern, 22],
       [aiLeaderPattern, 20],
@@ -513,24 +520,33 @@ function isIndustryViewOrReportEntry(entry) {
   return isDeepReadEntry(entry) || isReportEntry(entry);
 }
 
+function isTopStoryNoise(entry) {
+  const text = entryText(entry);
+  if (consumerDeviceNoisePattern.test(text)) return true;
+  if (socialAnecdoteNoisePattern.test(text)) return true;
+  return false;
+}
+
 function isTopStoryEntry(entry) {
   if (isLowQualityEntry(entry)) return false;
   const text = entryText(entry);
   if (entry.freshness !== "d-1") return false;
+  if (isTopStoryNoise(entry)) return false;
   if (comparisonOnlyPattern.test(text) && !directActionPattern.test(text)) return false;
   const isCommentaryOrInterview = deepReadStylePattern.test(text) && !directActionPattern.test(text);
   if (isCommentaryOrInterview) return false;
   if (regionPriority(entry) === "deprioritized_market") return false;
-  const hasDirectPrioritySignal = priorityCompanyPattern.test(text) && (!comparisonOnlyPattern.test(text) || directActionPattern.test(text));
-  const hasPrimaryMarketSignal = primaryMarketPattern.test(text)
-    && (modelLaunchPattern.test(text) || aiLeaderPattern.test(text) || communityConcernPattern.test(text) || industryChainPattern.test(text) || directActionPattern.test(text));
-  const hasStrategicAnchor = hasDirectPrioritySignal
-    || hasPrimaryMarketSignal
-    || aiLeaderPattern.test(text)
-    || communityConcernPattern.test(text)
-    || industryChainPattern.test(text)
-    || /\bworld model\b|世界模型/i.test(text);
-  if (!hasStrategicAnchor) return false;
+  const hasHardAction = topStoryHardActionPattern.test(text);
+  const hasGovernancePolicy = governanceOrSafetyPolicyPattern.test(text)
+    && /(brookings|stanford|mit|ft\.com|financial times|reuters|bloomberg|techcrunch|venturebeat|official|policy|regulat|governance|antitrust|competition|监管|治理|反垄断|立法|听证|政策)/i.test(text);
+  const hasPriorityCompanySignal = priorityCompanyPattern.test(text) && (hasHardAction || hasGovernancePolicy || modelLaunchPattern.test(text));
+  const hasPrimaryMarketAction = primaryMarketPattern.test(text)
+    && hasHardAction
+    && (modelLaunchPattern.test(text) || aiLeaderPattern.test(text) || coreIndustryPattern.test(text) || /\bworld model\b|世界模型/i.test(text));
+  const hasLeaderSignal = aiLeaderPattern.test(text) && hasHardAction;
+  const hasCoreIndustrySignal = coreIndustryPattern.test(text) && hasHardAction;
+  const hasWorldModelSignal = /\bworld model\b|世界模型/i.test(text) && (hasHardAction || priorityCompanyPattern.test(text));
+  if (!(hasPriorityCompanySignal || hasPrimaryMarketAction || hasLeaderSignal || hasCoreIndustrySignal || hasWorldModelSignal || hasGovernancePolicy)) return false;
   return !isFundingEntry(entry)
     && !isOpenSourceEntry(entry)
     && !isProductEntry(entry)
@@ -1271,6 +1287,53 @@ function fallbackPlan(date, sourcePack, reason = "") {
   return deterministicPlan(date, sourcePack, reason);
 }
 
+function runEditorialGateTests() {
+  const issueDate = "2026-05-19";
+  const baseEntry = {
+    source: "Google News China AI",
+    link: "https://example.com/news",
+    date: "2026-05-18T09:00:00+08:00",
+    sourceDate: "2026-05-18",
+    freshness: "d-1",
+    summary: "AI industry update."
+  };
+  const topStory = (entry) => isTopStoryEntry({ ...baseEntry, ...entry });
+  const assert = (condition, message) => {
+    if (!condition) throw new Error(`Editorial gate test failed: ${message}`);
+  };
+
+  assert(!topStory({
+    title: "重塑主流PC，第三代英特尔酷睿开启全民AI轻薄本时代",
+    summary: "AI PC 轻薄本评测与消费换机趋势。"
+  }), "consumer AI laptop stories must not enter top stories");
+  assert(!topStory({
+    title: "律师问 DeepSeek 谁能赢，拿着 AI 问答作为代理意见提交法庭",
+    summary: "法院训诫代理人不要把聊天机器人答案当法律意见。"
+  }), "social/legal anecdotes about AI misuse must not enter top stories");
+  assert(!topStory({
+    title: "韩国模型跑分超过 GPT 和 DeepSeek",
+    summary: "A Korean model tops a benchmark leaderboard without a major deployment or company action."
+  }), "deprioritized market benchmark-only news must not enter top stories");
+  assert(topStory({
+    source: "TechCrunch",
+    title: "NVIDIA announces Korea datacenter partnership for AI inference",
+    summary: "The partnership expands GPU datacenter capacity for global AI inference infrastructure."
+  }), "global-major infrastructure action may enter top stories");
+  assert(!classifyFreshness({
+    title: "OpenAI 2026-03-16 old product update resurfaces",
+    summary: "This article republishes a March 16, 2026 product update.",
+    date: "2026-05-18T09:00:00+08:00"
+  }, issueDate), "explicit old event dates must fail freshness gate");
+  const fallbackFreshness = classifyFreshness({
+    title: "Recall knowledge management product update",
+    summary: "A productivity AI product for research workflows.",
+    date: "2026-05-16T09:00:00+08:00",
+    source: "Product Hunt"
+  }, issueDate);
+  assert(fallbackFreshness?.freshness === "fallback", "product/report/deep-read candidates may be marked fallback within seven days");
+  console.log("Editorial gate tests passed.");
+}
+
 function fallbackItem(planItem, scopedSourcePack, lang, reason = "") {
   console.warn(`Using fallback item for ${lang} "${planItem.titleZh || planItem.titleEn}": ${reason}`);
   const isZh = lang === "zh";
@@ -1579,6 +1642,10 @@ async function createIssue(date, sourcePack) {
 }
 
 async function main() {
+  if (process.env.RUN_EDITORIAL_TESTS === "1") {
+    runEditorialGateTests();
+    return;
+  }
   const date = process.env.ISSUE_DATE || shanghaiDate();
   const sourcePack = await collectSourcePack(date);
   console.log(`Collected ${sourcePack.entries.length} source entries from ${sourcePack.sources.filter((source) => source.ok).length} sources.`);
