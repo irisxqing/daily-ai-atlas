@@ -1326,6 +1326,27 @@ function selectedPlanItem(section, entry) {
   };
 }
 
+function selectedAggregatePlanItem(section, entries, titleZh, titleEn, angle) {
+  const firstEntry = entries[0] || {};
+  return {
+    section,
+    priority: priorityForSection(section),
+    titleZh,
+    titleEn,
+    angle,
+    sourceIds: entries.map((entry) => entry.id).filter(Boolean).slice(0, 4),
+    links: entries
+      .filter((entry) => entry.link)
+      .slice(0, 4)
+      .map((entry) => [`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]),
+    sourceDate: firstEntry.sourceDate || "",
+    freshness: firstEntry.freshness || "",
+    regionPriority: firstEntry.regionPriority || "",
+    freshnessLabelZh: firstEntry.freshnessLabelZh || "",
+    freshnessLabelEn: firstEntry.freshnessLabelEn || ""
+  };
+}
+
 function selectTopStoryEntries(sourcePack, count, used) {
   const candidates = sectionCandidates(
     sourcePack,
@@ -1431,6 +1452,23 @@ function deterministicPlan(date, sourcePack, reason = "") {
       used.add(entry.id);
     });
   });
+
+  if (!items.some((item) => item.section === "快讯")) {
+    const headlineEntries = items
+      .filter((item) => item.section === "头条")
+      .flatMap((item) => item.sourceIds || [])
+      .map((id) => sourcePack.entries.find((entry) => entry.id === id))
+      .filter(Boolean);
+    if (headlineEntries.length) {
+      items.push(selectedAggregatePlanItem(
+        "快讯",
+        headlineEntries,
+        "D-1 中美 AI 大公司快讯合集",
+        "D-1 China-US AI major company briefs",
+        "当天 D-1 大公司信号较少时，用一张快讯合集先快速扫清主体动作，再由头条展开关键事件。"
+      ));
+    }
+  }
 
   selectViewpointEntries(sourcePack, 2, used).forEach((entry) => {
     items.push(selectedPlanItem("观点", entry));
