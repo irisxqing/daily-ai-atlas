@@ -251,9 +251,9 @@ function hasDateInWindow(dates, startDate, endDate) {
 function lookbackDescription(issueDate = shanghaiDate()) {
   const { primaryStartDate, primaryEndDate, isWeekendWindow } = dateWindowForIssue(issueDate);
   if (isWeekendWindow) {
-    return `每天北京时间 7:30 生成，周一优先覆盖 ${primaryStartDate} 至 ${primaryEndDate} 的周末中美 AI 信号；少数产品、行业观点与报告会标注近7天补位。`;
+    return `每天北京时间 7:30 生成，周一优先覆盖 ${primaryStartDate} 至 ${primaryEndDate} 的周末中美 AI 信号；少数产品、深度和观点会标注近7天补位。`;
   }
-  return `每天北京时间 7:30 生成，优先覆盖 ${primaryEndDate} 的中美 AI 信号；少数产品、行业观点与报告会标注近7天补位。`;
+  return `每天北京时间 7:30 生成，优先覆盖 ${primaryEndDate} 的中美 AI 信号；少数产品、深度和观点会标注近7天补位。`;
 }
 
 function responseText(response) {
@@ -391,6 +391,11 @@ const socialAnecdoteNoisePattern = /律师|法庭|法官|法院|代理意见|判
 const topStoryHardActionPattern = /\blaunch(?:es|ed)?\b|\brelease(?:s|d)?\b|\bannounce(?:s|d)?\b|\bdeploy(?:s|ed)?\b|\bpartnership\b|\bcollaboration\b|\bacquir(?:es|ed|e)\b|\brais(?:es|ed)\b|\bseries [a-z]\b|\bipo\b|\bfunding\b|\bvaluation\b|\btakes charge\b|\bjoins?\b|\bleaves?\b|\bfounds?\b|\bappoint(?:s|ed)?\b|\bresign(?:s|ed)?\b|发布|上线|推出|部署|合作|并购|收购|融资|上市|估值|接管|离职|加入|任命|创业|创办|辞任|负责人|正式发布|宣布/i;
 const governanceOrSafetyPolicyPattern = /regulat|policy|governance|antitrust|competition|copyright|privacy|security|safety|alignment|lawsuit|whistleblower|model provider|监管|治理|反垄断|竞争|版权|隐私|安全|对齐|诉讼|政策|立法|听证|平台垄断|模型层/i;
 const coreIndustryPattern = /nvidia|amd|tsmc|broadcom|datacenter|data center|server|gpu|chip|accelerator|inference|compute|robot|robotics|humanoid|world model|warehouse|factory|logistics|英伟达|台积电|博通|数据中心|服务器|芯片|算力|加速器|推理|机器人|世界模型|仓储|工厂|物流/i;
+const megaCompanyPattern = /openai|anthropic|deepmind|google|xai|meta|microsoft|amazon|apple|nvidia|tesla|deepseek|qwen|zhipu|z\.ai|minimax|kimi|moonshot|doubao|bytedance|baidu|tencent|alibaba|字节|阿里|腾讯|百度|智谱|月之暗面|阶跃星辰|零一万物/i;
+const briefSignalPattern = /发布|上线|推出|宣布|部署|合作|组织|调整|重组|任命|离职|加入|接管|融资|投资|估值|上市|ipo|并购|收购|launch|release|announce|deploy|partner|appoint|join|leave|reorg|funding|investment|valuation|acquisition|merger/i;
+const depthTopicPattern = /agentic|agent\b|agents\b|multimodal|multi-modal|world model|robot|robotics|humanoid|medical ai|healthcare|ai for science|science|safety|governance|alignment|bio|drug discovery|智能体|多模态|世界模型|机器人|具身|医疗|医药|科学|安全|治理|对齐|生物|药物发现/i;
+const viewpointSourcePattern = /latent space|import ai|the batch|ai valley|a16z|sequoia|stratechery|semi|stanford|mit|mckinsey|bcg|kpmg|deloitte|gartner|forrester|pwc|idc|ibm|钛媒体|机器之心/i;
+const investorLeaderPattern = /sam altman|greg brockman|andrej karpathy|karpathy|andrew ng|fei-fei li|李飞飞|dario amodei|demis hassabis|ilya|sutskever|geoffrey hinton|yann lecun|mustafa suleyman|marc andreessen|a16z|sequoia|founder|ceo|cto|chief scientist|investor|vc|奥特曼|卡帕西|创始人|投资人|合伙人|科学家/i;
 
 function patternScore(text, weightedPatterns) {
   return weightedPatterns.reduce((score, [pattern, weight]) => score + (pattern.test(text) ? weight : 0), 0);
@@ -451,7 +456,7 @@ function editorialScore(entry, section) {
   if (priorityCompanyPattern.test(text)) score += 18;
   if (primaryMarketPattern.test(text)) score += 6;
 
-  if (section === "今日重点") {
+  if (section === "快讯" || section === "头条" || section === "今日重点") {
     if (consumerDeviceNoisePattern.test(text)) score -= 70;
     if (socialAnecdoteNoisePattern.test(text)) score -= 70;
     score += patternScore(text, [
@@ -462,7 +467,8 @@ function editorialScore(entry, section) {
       [/\bpartnership\b|\bdeploy\b|\bcustomer\b|\benterprise\b|合作|部署|客户|企业落地/i, 10],
       [/\bworld model\b|世界模型/i, 18]
     ]);
-    if (/openai|anthropic|deepmind|google|xai|nvidia|deepseek|qwen|zhipu|字节|阿里|腾讯/.test(text)) score += 8;
+    if (megaCompanyPattern.test(text)) score += section === "头条" ? 18 : 10;
+    if (briefSignalPattern.test(text)) score += section === "快讯" ? 20 : 8;
     if (regionPriority(entry) === "primary_market") score += 18;
     if (regionPriority(entry) === "global_major") score += 4;
     if (regionPriority(entry) === "deprioritized_market") score -= 24;
@@ -481,8 +487,9 @@ function editorialScore(entry, section) {
     if (/game|avatar|dating|wallpaper|meme|crypto|nft|游戏|头像|壁纸|币圈/.test(text)) score -= 18;
   }
 
-  if (section === "深度阅读") {
+  if (section === "深度" || section === "深度阅读") {
     score += patternScore(text, [
+      [depthTopicPattern, 26],
       [aiLeaderPattern, 22],
       [communityConcernPattern, 18],
       [/\banalysis\b|\bessay\b|\binterview\b|\bopinion\b|\bdeep[- ]dive\b|\blong read\b|观察|分析|访谈|专访|长文|深度|concern/i, 20],
@@ -491,8 +498,9 @@ function editorialScore(entry, section) {
     if (/latent space|import ai|the batch|ai valley|a16z|sequoia|stratechery|钛媒体|机器之心/i.test(source)) score += 10;
   }
 
-  if (section === "机构报告") {
+  if (section === "观点" || section === "机构报告") {
     score += patternScore(text, [
+      [investorLeaderPattern, 24],
       [strategicReportPattern, 24],
       [/stanford|ai index|state of ai|mckinsey|bcg|kpmg|deloitte|gartner|forrester|pwc|idc|cb insights/i, 18],
       [/enterprise|adoption|industry|market|future|application|workforce|产业|企业|市场|应用|未来|就业/i, 14]
@@ -527,8 +535,11 @@ function isFundingEntry(entry) {
 }
 
 function isOpenSourceEntry(entry) {
-  const text = `${entry.source || ""} ${entryContentText(entry)}`.toLowerCase();
-  return /\bgithub\b|\bopen[- ]source\b|\bhugging face\b|\brepo\b|开源|模型库|代码库/i.test(text);
+  const text = entryContentText(entry);
+  const source = String(entry.source || "").toLowerCase();
+  const hasDeveloperSource = /\bgithub\b|\bopen[- ]source\b|\bhugging face\b|\brepo\b|开源|模型库|代码库/i.test(`${source} ${text}`);
+  const hasAiSignal = /\bai\b|artificial intelligence|agent|llm|model|inference|rag|mcp|hugging face|人工智能|大模型|模型|智能体|推理|开源/i.test(text);
+  return hasDeveloperSource && hasAiSignal;
 }
 
 function isLowQualityEntry(entry) {
@@ -595,6 +606,54 @@ function isIndustryViewOrReportEntry(entry) {
   return isDeepReadEntry(entry) || isReportEntry(entry);
 }
 
+function isBriefEntry(entry) {
+  if (isLowQualityEntry(entry) || isEditorialNoiseEntry(entry)) return false;
+  const text = entryContentText(entry);
+  if (entry.freshness !== "d-1") return false;
+  if (regionPriority(entry) === "deprioritized_market") return false;
+  if (comparisonOnlyPattern.test(text) && !directActionPattern.test(text)) return false;
+  const hasCompany = megaCompanyPattern.test(text) || (primaryMarketPattern.test(text) && priorityCompanyPattern.test(text));
+  const hasSignal = briefSignalPattern.test(text) || isFundingEntry(entry) || isOpenSourceEntry(entry);
+  return hasCompany && hasSignal && !isAcademicPaperEntry(entry);
+}
+
+function isHeadlineEntry(entry) {
+  if (!isBriefEntry(entry)) return false;
+  const text = entryContentText(entry);
+  if (!megaCompanyPattern.test(text)) return false;
+  return modelLaunchPattern.test(text)
+    || aiLeaderPattern.test(text)
+    || coreIndustryPattern.test(text)
+    || governanceOrSafetyPolicyPattern.test(text)
+    || isFundingEntry(entry);
+}
+
+function isDepthEntry(entry) {
+  if (isEditorialNoiseEntry(entry) || isLowQualityEntry(entry)) return false;
+  const text = entryContentText(entry);
+  const hasTopic = depthTopicPattern.test(text);
+  const hasDeepRead = isDeepReadEntry(entry);
+  const hasAiSignal = /\bai\b|artificial intelligence|generative|llm|agent|openai|anthropic|deepmind|机器人|人工智能|大模型|模型|智能体/i.test(text);
+  return hasAiSignal && (hasTopic || hasDeepRead) && !isFundingEntry(entry) && !isProductEntry(entry) && !isOpenSourceEntry(entry);
+}
+
+function isViewpointEntry(entry) {
+  if (isEditorialNoiseEntry(entry) || isLowQualityEntry(entry)) return false;
+  const text = entryContentText(entry);
+  const source = String(entry.source || "").toLowerCase();
+  if (isReportEntry(entry)) return true;
+  if (/回应|澄清|否认|辟谣|疑虑|泄露|responds?|clarif(?:y|ies|ied|ication)|denies|denied/i.test(text) && !deepReadStylePattern.test(text)) return false;
+  const hasViewSource = viewpointSourcePattern.test(source);
+  const hasViewSignal = deepReadStylePattern.test(text) || investorLeaderPattern.test(text) || strategicReportPattern.test(text);
+  const hasAiSignal = /\bai\b|artificial intelligence|generative|llm|agent|人工智能|大模型|模型|智能体/i.test(text);
+  if (directActionPattern.test(text) && !deepReadStylePattern.test(text)) return false;
+  return hasAiSignal
+    && hasViewSignal
+    && (hasViewSource || investorLeaderPattern.test(text) || (deepReadStylePattern.test(text) && (strategicReportPattern.test(text) || depthTopicPattern.test(text))))
+    && !isFundingEntry(entry)
+    && !isProductEntry(entry);
+}
+
 function isEditorialNoiseEntry(entry) {
   const text = entryContentText(entry);
   if (consumerDeviceNoisePattern.test(text)) return true;
@@ -644,11 +703,11 @@ function categoryCandidates(sourcePack, predicate, limit, excludeIds = new Set()
 }
 
 function isFallbackEligibleSection(section) {
-  return ["AI产品推荐", "深度阅读", "机构报告", "行业观点与报告"].includes(section);
+  return ["AI产品推荐", "深度", "观点", "深度阅读", "机构报告"].includes(section);
 }
 
 function isStrictD1Section(section) {
-  return ["今日重点", "投融资信息", "开源项目"].includes(section);
+  return ["快讯", "头条", "开源项目"].includes(section);
 }
 
 function entryAllowedForSection(entry, section) {
@@ -764,8 +823,11 @@ async function collectSourcePack(date) {
     .slice(0, maxSourceEntries)
     .map(({ timestamp, ...entry }, index) => ({ id: `S${String(index + 1).padStart(3, "0")}`, ...entry }));
 
-  if (uniqueEntries.length < 10) {
+  if (uniqueEntries.length < 6) {
     throw new Error(`Too few D-1/fallback source entries collected (${uniqueEntries.length}). Check feed availability or date filters.`);
+  }
+  if (uniqueEntries.length < 12) {
+    console.warn(`Only ${uniqueEntries.length} D-1/fallback source entries collected; continuing with stricter shortlist rather than failing the daily run.`);
   }
 
   return {
@@ -993,25 +1055,14 @@ function updateAppCacheBust(date) {
 
 function selectionSourcePack(sourcePack) {
   const used = new Set();
-  const funding = sectionCandidates(sourcePack, "投融资信息", isFundingEntry, 8, used);
-  funding.forEach((entry) => used.add(entry.id));
+  const briefs = sectionCandidates(sourcePack, "快讯", isBriefEntry, 18, used);
+  const headlines = sectionCandidates(sourcePack, "头条", isHeadlineEntry, 12, used);
+  const depth = sectionCandidates(sourcePack, "深度", isDepthEntry, 12, used);
+  const viewpoints = sectionCandidates(sourcePack, "观点", isViewpointEntry, 12, used);
   const openSource = sectionCandidates(sourcePack, "开源项目", isOpenSourceEntry, 8, used);
   openSource.forEach((entry) => used.add(entry.id));
   const products = sectionCandidates(sourcePack, "AI产品推荐", isProductEntry, 12, used);
   products.forEach((entry) => used.add(entry.id));
-  const baseUsed = new Set(used);
-  const deepReads = sectionCandidates(sourcePack, "深度阅读", isDeepReadEntry, 8, used);
-  deepReads.forEach((entry) => used.add(entry.id));
-  const reports = sectionCandidates(sourcePack, "机构报告", isReportEntry, 8, used);
-  reports.forEach((entry) => used.add(entry.id));
-  const industryViewsReports = sectionCandidates(sourcePack, "行业观点与报告", isIndustryViewOrReportEntry, 12, baseUsed);
-  const topStories = sectionCandidates(
-    sourcePack,
-    "今日重点",
-    isTopStoryEntry,
-    28,
-    new Set()
-  );
 
   const compactEntry = (entry) => ({
     id: entry.id,
@@ -1034,13 +1085,12 @@ function selectionSourcePack(sourcePack) {
     coverage: sourcePack.coverage,
     methodology: "The script scans all source leads, removes duplicates, applies section-specific editorial scores and quotas, then sends only the fixed shortlist to the model for writing. The model no longer decides the final topic list.",
     candidatePools: {
-      topStories: topStories.map(compactEntry),
-      funding: funding.map(compactEntry),
+      briefs: briefs.map(compactEntry),
+      headlines: headlines.map(compactEntry),
+      depth: depth.map(compactEntry),
+      viewpoints: viewpoints.map(compactEntry),
       openSource: openSource.map(compactEntry),
-      products: products.map(compactEntry),
-      deepReads: deepReads.map(compactEntry),
-      reports: reports.map(compactEntry),
-      industryViewsReports: industryViewsReports.map(compactEntry)
+      products: products.map(compactEntry)
     }
   };
 }
@@ -1049,19 +1099,20 @@ function buildSelectionPrompt(date, sourcePack, revisionNote = "") {
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
 ${lookbackDescription(date)}
-${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：如果是篇首 summary 问题，要提炼一条主题主线，不要罗列新闻；如果是内容问题，要增加新闻细节、写成解释性段落；行业观点与报告要清楚区分观点文章、访谈和正式报告。\n` : ""}
+${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：如果是篇首 summary 问题，要提炼一条主题主线，不要罗列新闻；如果是内容问题，要增加新闻细节、写成解释性段落；观点栏目要清楚区分行业观点、访谈和正式报告。\n` : ""}
 
 请为 AI Daily Atlas 先生成一份“选题计划”JSON。后续中英文正文必须基于这份选题计划生成，所以这一步最重要。
 你不能联网浏览；只能使用下面 SOURCE_PACK 中的公开来源条目作为事实基础。不要编造 SOURCE_PACK 之外的链接、融资金额、发布时间或媒体素材。SOURCE_PACK 里的 newsletter / media 只作为雷达线索；公司官网、官方博客、论文、GitHub、Hugging Face、Product Hunt、机构报告、主流媒体来源优先作为确认来源。
 
 重要：换模型不应改变日报目标。你不是在复述 SOURCE_PACK 排名前几条，而是在做“当日 AI 信号编辑”。请横向比较所有来源，按影响力、可信度、对产品/投资/战略/AI落地的启发排序。不要被 Product Hunt、Google News 或单一 feed 的更新时间挤占版面。若同一事件被多源报道，合并成一条并放多个 links。
 SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。你必须从对应 candidatePools 里选题：
-- 今日重点只能从 candidatePools.topStories 选。
-- 投融资信息只能从 candidatePools.funding 选。
+- 快讯只能从 candidatePools.briefs 选，用头条式写法覆盖 D-1 中美 AI 大公司及产业链动作，包含产品发布、人事变动、组织调整、投融资、收并购等。
+- 头条只能从 candidatePools.headlines 选，聚焦 OpenAI、Anthropic、Google/DeepMind、xAI、Meta、Microsoft、Amazon、Apple、NVIDIA，以及中国 AI 大公司和明星创业公司的完整新闻。
+- 深度只能从 candidatePools.depth 选，解释 Agentic AI、多模态、世界模型/机器人、医疗 AI、AI for Science、AI 安全治理等热门主题。
+- 观点只能从 candidatePools.viewpoints 选，覆盖 AI 研究报告、领军人物、著名投资人和高质量行业观察。
 - 开源项目只能从 candidatePools.openSource 选。
 - AI产品推荐只能从 candidatePools.products 选，必须是真正可试用的软件/工具/应用/工作流产品；不要选择纯模型发布、API、芯片、融资或平台战略新闻。
-- 行业观点与报告只能从 candidatePools.industryViewsReports 选，优先选择值得花时间读完的行业观点、访谈、深度分析、案例复盘；如果有近期机构报告/研究/白皮书/指数，也可以同栏呈现。不要选择普通新闻快讯、融资、GitHub 项目、工具推荐或旧报告。
-- 今日重点、投融资信息、开源项目已经被脚本限制为北京时间 D-1；AI产品推荐、行业观点与报告如使用 fallback，正文必须保留补位属性，不能伪装成当日新闻。
+- 快讯、头条、开源项目已经被脚本限制为北京时间 D-1；AI产品推荐、深度、观点如使用 fallback，正文必须保留补位属性，不能伪装成当日新闻。
 
 选题范围：
 - 中国和美国 AI 公司为主，其他国家为辅。
@@ -1071,8 +1122,8 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
 - 来源方法：AI Valley、The Rundown AI、Ben's Bites、TLDR AI、The Batch、Import AI、Latent Space、中文 AI 媒体只作为雷达；重要事实需要回到公司官网、官方博客、论文、GitHub、Hugging Face、Product Hunt、机构报告、主流媒体或招聘官网确认。
 
 内容结构要求：
-- 计划里使用中文 section：今日重点、投融资信息、开源项目、AI产品推荐、行业观点与报告、每日词条。
-- 控制在 11 条：今日重点 4 条；投融资 1 条；开源 1 条；AI 产品推荐 2 条；行业观点与报告 2 条；每日 AI 词条 1 条。
+- 计划里使用中文 section：快讯、头条、深度、观点、开源项目、AI产品推荐、每日词条。
+- 控制在 15 条左右：快讯 5 条；头条 2 条；深度 2 条；观点 2 条；开源 1 条；AI 产品推荐 2 条；每日 AI 词条 1 条。
 - 每条 plan item 必须包含 section、priority、titleZh、titleEn、angle、sourceIds。
 - sourceIds 必须引用对应 candidatePools 里的 id。每条至少 1 个，重要新闻尽量 2-4 个。
 - 不要在 plan item 里返回 links，脚本会根据 sourceIds 自动补链接。
@@ -1085,16 +1136,17 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
 - summary 最多点名 2 个公司或产品；如果需要更多具体新闻，留到正文卡片里写。
 - 中文 summary 约 70-130 字；英文 summary 约 35-70 words。
 
-行业观点与报告 / Industry Views & Reports 的特殊要求：
-- 计划里必须包含 2 条行业观点与报告。优先至少 1 条行业观点/访谈/深度文章；如果 candidatePools.industryViewsReports 里有合格机构报告，可以选 1 条报告。
+观点 / Views 的特殊要求：
+- 计划里必须包含 2 条观点。优先至少 1 条行业观点/访谈/深度文章；如果 candidatePools.viewpoints 里有合格机构报告，可以选 1 条报告。
 - 如果没有真正新的机构报告，不要硬凑报告；用高质量行业观点、访谈、官方研究博客或深度研究文章补位，并明确它不是正式咨询报告。
 - 如果 SOURCE_PACK 提供了报告页/PDF/研究文章链接，links 必须包含它。不要选 2025 或更早的旧报告凑数。
 
 选题覆盖要求：
-- 今日重点不要只来自一个来源；优先混合官方/主流媒体/研究社区/中国媒体。
+- 快讯和头条不要只来自一个来源；优先混合官方/主流媒体/研究社区/中国媒体。
 - AI 产品推荐要选真正可试用、有产品启发的工具，尤其关注个人知识管理、跨模型工作流、agent、创作工具、效率工具，不能只按 Product Hunt 最新时间排序。
-- 行业观点与报告应该帮助读者理解一个更大的 AI 产业问题，例如模型竞争、AI agent 落地、机器人商业化、开源生态、AI 产品入口、企业采用或监管变化。angle 里要写清“为什么值得深读/值得作为行业观点跟踪”。
-- 投融资只写有融资、IPO、并购、估值、投资方或资本市场信号的内容；没有可信信号时宁可写 1 条并标注来源限制。
+- 深度应该帮助读者理解一个当下热门 AI 主题，例如 Agentic AI、多模态、世界模型/机器人、医疗 AI、AI for Science、AI 安全治理。
+- 观点应该帮助读者理解一个更大的 AI 产业问题，例如模型竞争、AI agent 落地、机器人商业化、开源生态、AI 产品入口、企业采用或监管变化。angle 里要写清“为什么值得深读/值得作为观点跟踪”。
+- 投融资、IPO、并购、估值、投资方或资本市场信号不再单独成栏；如果与中美重点公司或产业链相关，应进入快讯或头条。
 - 开源项目优先 GitHub/Hugging Face/开发者社区有明确项目页或技术博客的内容。
 - 每日词条要和当天新闻有关，解释清楚但不要幼稚化。
 
@@ -1109,7 +1161,7 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
     "tagsEn": ["..."],
     "items": [
       {
-        "section": "今日重点",
+        "section": "快讯",
         "priority": "high",
         "titleZh": "...",
         "titleEn": "...",
@@ -1128,6 +1180,10 @@ ${JSON.stringify(selectionSourcePack(sourcePack), null, 2)}
 function sectionForLang(section, lang) {
   if (lang === "zh") return section;
   return {
+    "快讯": "Briefs",
+    "头条": "Headlines",
+    "深度": "Deep Dive",
+    "观点": "Views",
     "今日重点": "Top Stories",
     "投融资信息": "Funding Watch",
     "开源项目": "Open Source",
@@ -1176,6 +1232,10 @@ function applyPlanMetadata(item, planItem, lang) {
 }
 
 function sectionPredicate(section) {
+  if (section === "快讯") return isBriefEntry;
+  if (section === "头条") return isHeadlineEntry;
+  if (section === "深度") return isDepthEntry;
+  if (section === "观点") return isViewpointEntry;
   if (section === "投融资信息") return isFundingEntry;
   if (section === "开源项目") return isOpenSourceEntry;
   if (section === "AI产品推荐") return isProductEntry;
@@ -1204,6 +1264,23 @@ function validatePlanAgainstPools(plan, sourcePack) {
 
 function planAngle(section, entry) {
   const text = entryText(entry);
+  if (section === "快讯") {
+    if (isFundingEntry(entry)) return "D-1 中美 AI 大公司或产业链资本信号，用头条式写法快速说明发生了什么。";
+    if (aiLeaderPattern.test(text)) return "D-1 中美 AI 大公司关键人事/组织信号，适合快速捕捉人才和路线变化。";
+    if (modelLaunchPattern.test(text)) return "D-1 中美 AI 大公司产品、模型或 API 动作，用快讯交代主体、动作和影响。";
+    return "D-1 中美 AI 大公司或产业链动作，适合用快讯方式快速扫描。";
+  }
+  if (section === "头条") {
+    if (aiLeaderPattern.test(text)) return "AI 超级公司或明星创业公司的关键人事/组织新闻，需要补足背景、影响和后续观察点。";
+    if (isFundingEntry(entry)) return "AI 超级公司、明星创业公司或关键产业链公司的资本动作，需要解释融资/并购背后的战略含义。";
+    return "AI 超级公司或明星创业公司的完整新闻，需要补足背景、影响和后续观察点。";
+  }
+  if (section === "深度") return "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。";
+  if (section === "观点") {
+    return isReportEntry(entry)
+      ? "近期行业报告或研究材料，适合补充产业全景、企业采用和未来应用判断。"
+      : "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。";
+  }
   if (section === "今日重点") {
     if (aiLeaderPattern.test(text)) return "关键 AI 人事/创业信号，可能影响大公司路线和人才流向。";
     if (communityConcernPattern.test(text)) return "社区热议的 AI 风险或治理议题，影响用户信任和监管预期。";
@@ -1224,6 +1301,8 @@ function planAngle(section, entry) {
 }
 
 function priorityForSection(section) {
+  if (section === "快讯") return "news";
+  if (section === "头条") return "high";
   if (section === "今日重点") return "high";
   if (section === "投融资信息") return "high";
   if (section === "每日词条") return "learning";
@@ -1281,13 +1360,35 @@ function selectTopStoryEntries(sourcePack, count, used) {
 
 function buildEditorialFrame(items) {
   return {
-    headlineZh: "AI 竞争正在从模型能力转向真实产品和产业控制点",
-    headlineEn: "AI competition is shifting from model capability to products and industry control points",
-    summaryZh: "今天的主线是 AI 公司正在把技术能力变成更稳定的产品入口和产业控制点。值得关注的不只是模型强弱，而是谁能把能力沉淀为持续使用、商业化和行业影响力。",
-    summaryEn: "Today’s main theme is that AI competition is moving beyond isolated model releases into product entry points, key talent, infrastructure, and real-world adoption. The important question is no longer only which model is stronger, but who can turn capability into usage, revenue, and industry influence.",
-    tagsZh: ["模型平台", "AI产品", "投融资", "开源", "行业观点"],
-    tagsEn: ["Models", "AI Products", "Funding", "Open Source", "Industry Views"]
+    headlineZh: "AI 竞争正在从发布能力转向占住真实工作流",
+    headlineEn: "AI competition is shifting from capability launches to real workflow control",
+    summaryZh: "今天值得看的主线是，AI 公司不再只证明模型更强，而是在争夺用户入口、企业流程和关键产业链位置。真正重要的是这些动作能否沉淀成持续使用，而不是只制造一天的热度。",
+    summaryEn: "Today’s useful thread is that AI companies are no longer only proving stronger models; they are fighting for user entry points, enterprise workflows, and key industry positions. The important test is whether these moves become durable usage instead of one-day attention.",
+    tagsZh: ["快讯", "头条", "深度", "观点", "AI产品"],
+    tagsEn: ["Briefs", "Headlines", "Deep Dive", "Views", "AI Products"]
   };
+}
+
+function selectViewpointEntries(sourcePack, count, used) {
+  const selected = [];
+  const selectedIds = new Set();
+  const addEntry = (entry) => {
+    if (!entry || selectedIds.has(entry.id)) return;
+    selected.push(entry);
+    selectedIds.add(entry.id);
+    used.add(entry.id);
+  };
+  const viewCandidates = sectionCandidates(sourcePack, "观点", (entry) => isViewpointEntry(entry) && !isReportEntry(entry), 10, used);
+  const reportCandidates = sectionCandidates(sourcePack, "观点", isReportEntry, 6, used);
+  addEntry(viewCandidates[0]);
+  addEntry(reportCandidates[0]);
+  if (selected.length < count) {
+    sectionCandidates(sourcePack, "观点", isViewpointEntry, 12, new Set([...used, ...selectedIds]))
+      .forEach((entry) => {
+        if (selected.length < count) addEntry(entry);
+      });
+  }
+  return selected.slice(0, count);
 }
 
 function selectIndustryViewReportEntries(sourcePack, count, used) {
@@ -1316,35 +1417,34 @@ function deterministicPlan(date, sourcePack, reason = "") {
   if (reason) console.warn(`Using deterministic editorial plan: ${reason}`);
   const used = new Set();
   const specs = [
-    ["今日重点", 4, isTopStoryEntry],
-    ["投融资信息", 1, isFundingEntry],
+    ["头条", 2, isHeadlineEntry],
+    ["快讯", 5, isBriefEntry],
+    ["深度", 2, isDepthEntry],
     ["开源项目", 1, isOpenSourceEntry],
     ["AI产品推荐", 2, isProductEntry]
   ];
   const items = [];
   specs.forEach(([section, count, predicate]) => {
-    const candidates = section === "今日重点"
-      ? selectTopStoryEntries(sourcePack, count, used)
-      : sectionCandidates(sourcePack, section, predicate, count, used);
+    const candidates = sectionCandidates(sourcePack, section, predicate, count, used);
     candidates.forEach((entry) => {
       items.push(selectedPlanItem(section, entry));
       used.add(entry.id);
     });
   });
 
-  selectIndustryViewReportEntries(sourcePack, 2, used).forEach((entry) => {
-    items.push(selectedPlanItem("行业观点与报告", entry));
+  selectViewpointEntries(sourcePack, 2, used).forEach((entry) => {
+    items.push(selectedPlanItem("观点", entry));
   });
 
   for (const entry of sourcePack.entries) {
-    if (items.length >= 10) break;
+    if (items.length >= 12) break;
     if (used.has(entry.id)) continue;
-    if (!isTopStoryEntry(entry)) continue;
+    if (!isBriefEntry(entry)) continue;
     used.add(entry.id);
-    items.push(selectedPlanItem("今日重点", entry));
+    items.push(selectedPlanItem("快讯", entry));
   }
 
-  const sectionOrder = ["今日重点", "投融资信息", "开源项目", "AI产品推荐", "行业观点与报告"];
+  const sectionOrder = ["快讯", "头条", "深度", "观点", "开源项目", "AI产品推荐"];
   items.sort((a, b) => sectionOrder.indexOf(a.section) - sectionOrder.indexOf(b.section));
 
   items.push({
@@ -1359,7 +1459,7 @@ function deterministicPlan(date, sourcePack, reason = "") {
 
   return normalizePlan({
     ...buildEditorialFrame(items),
-    items: items.slice(0, 11)
+    items
   });
 }
 
@@ -1492,7 +1592,7 @@ function buildItemPrompt(date, sourcePack, planItem, lang, revisionNote = "") {
   return `
 今天日期：${date}，时区：北京时间 / Asia/Shanghai。
 ${lookbackDescription(date)}
-${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：增加新闻细节、写成解释性段落；行业观点与报告要清楚区分观点文章、访谈和正式报告。\n` : ""}
+${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请修复：增加新闻细节、写成解释性段落；观点栏目要清楚区分观点文章、访谈和正式报告。\n` : ""}
 
 请基于 ITEM_PLAN 生成 AI Daily Atlas ${isZh ? "中文版" : "英文版"}的一张信息卡 JSON。
 你不能改变选题，只能基于 ITEM_PLAN 和 SOURCE_PACK 写正文。不要编造 SOURCE_PACK 之外的链接、融资金额、发布时间或媒体素材。未确认消息必须标注不确定性，不要写成事实。
@@ -1500,19 +1600,25 @@ ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请�
 
 ${isZh ? `
 语言风格：轻量、好读、有判断，适合非技术背景读者；不要幼稚化，也不要只堆技术名词。
-每条 detail 写成 3-5 条“有信息量的小段落”，每条约 80-180 字，至少包含背景/关键数字/主体动作/影响范围/不确定性中的两个维度。
+快讯写成 2-3 条头条式短段落，每条约 50-110 字，快速交代主体、动作、时间和影响；其他栏目写成 3-5 条“有信息量的小段落”，每条约 80-180 字，至少包含背景/关键数字/主体动作/影响范围/不确定性中的两个维度。
 ` : `
-Tone: concise, readable, analytical, not a mechanical translation. Each detail should be 45-100 words and include at least two of: context, key numbers, actor action, impact, uncertainty.
+Tone: concise, readable, analytical, not a mechanical translation. For Briefs, write 2-3 headline-style short paragraphs. For other sections, each detail should be 45-100 words and include at least two of: context, key numbers, actor action, impact, uncertainty.
 `}
 
 item 必须有 section、priority、title、dek、details、why、links。脚本会强制补入 sourceDate、freshness、regionPriority、freshnessLabel，不要改写这些元数据。
 - details 不能是短 bullet。要让非技术读者理解来龙去脉。
 - why 必须是 1-2 句判断，解释这条新闻对产品、投资、公司战略、创业机会或职业判断有什么意义。
 - links 是 [label, url] 数组。每条内容的 links 必须至少包含 1 个 SOURCE_PACK 中出现过的 URL。
-- 如果 SOURCE_PACK 条目里有 image，或原链接显然是视频/GitHub/Product Hunt/Hugging Face 页面，可以加 media；没有可靠素材就不要编造。AI 产品推荐和今日重点优先带 media。
+- 如果 SOURCE_PACK 条目里有 image，或原链接显然是视频/GitHub/Product Hunt/Hugging Face 页面，可以加 media；没有可靠素材就不要编造。AI 产品推荐和头条优先带 media。
 - 不要包含用户个人收入、具体雇主经历或敏感个人信息。
 
-行业观点与报告 / Industry Views & Reports 的特殊要求：
+栏目写法：
+- 快讯 / Briefs：头条式写法，像新闻快讯一样快速覆盖 D-1 中美大公司动作。不要写成长篇观点，也不要把社会奇闻、消费电子导购或单纯跑分新闻写进来。
+- 头条 / Headlines：复用现在较完整的 bullet/段落写法，补公司背景、事件细节、影响范围、后续观察点。
+- 深度 / Deep Dive：解释一个热门 AI 主题或产业问题，不只是复述一条新闻；要帮非技术读者理解“这件事为什么会成为趋势”。
+- 观点 / Views：覆盖研究报告、领军人物、投资人和高质量行业观察。
+
+观点 / Views 的特殊要求：
 - 如果原文是访谈、长文、播客或观点文章，details 要解释：核心问题、作者/来源背景、最值得读的 2-3 个观点、对产品/投资/战略/职业判断的启发。要保留观点属性，不要把作者观点包装成已确认事实。
 - 如果原文是机构报告、研究文章、白皮书或指数，不允许只写一句话摘要。details 可以使用对象数组，每个对象包含 summary 和 expanded；expanded 要讲清核心观点、关键数据或结论、产业/投资/职业启发。
 - 如果 SOURCE_PACK 提供了报告页/PDF/研究文章链接，links 必须包含它。若有原文短句，可以加 quote；quote 必须很短，不能超过 25 个英文词或 35 个中文字。若有报告图表入口，可以加 chart: ["图表/报告入口", "url"]。

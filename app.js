@@ -3106,8 +3106,8 @@ const archiveEn = [
 ];
 
 const sectionOrders = {
-  zh: ["全部", "今日重点", "投融资信息", "开源项目", "AI产品推荐", "机构报告", "今日学习", "继续追踪", "职业雷达"],
-  en: ["All", "Top Stories", "Funding Watch", "Open Source", "AI Product Picks", "Research Reports", "Learning Picks", "Watchlist", "Career Radar"]
+  zh: ["全部", "快讯", "头条", "深度", "观点", "开源项目", "AI产品推荐", "今日学习", "继续追踪", "职业雷达"],
+  en: ["All", "Briefs", "Headlines", "Deep Dive", "Views", "Open Source", "AI Product Picks", "Learning Picks", "Watchlist", "Career Radar"]
 };
 
 const uiText = {
@@ -3135,7 +3135,7 @@ const uiText = {
     sourceMethodTitle: "信息来源",
     sourceMethodText: "完整信息源按类型分层使用：日报和媒体负责发现信号，官方博客、论文、GitHub、行业观点/机构报告、招聘页负责交叉确认。",
     datePlaceholder: "搜索日期、公司、关键词",
-    contentPlaceholder: "例如 DeepSeek、机器人、投融资、香港岗位",
+    contentPlaceholder: "例如 DeepSeek、机器人、投融资、观点",
     noDates: "没有匹配的日期。",
     noContent: "没有找到匹配内容。换个关键词试试。",
     copyDone: "已复制"
@@ -3164,7 +3164,7 @@ const uiText = {
     sourceMethodTitle: "Sources",
     sourceMethodText: "Sources are layered by purpose: newsletters and media surface signals, while official posts, papers, GitHub, industry views/reports, and hiring pages are used for verification.",
     datePlaceholder: "Search dates, companies, keywords",
-    contentPlaceholder: "e.g. DeepSeek, robotics, funding, Hong Kong roles",
+    contentPlaceholder: "e.g. DeepSeek, robotics, funding, views",
     noDates: "No matching dates.",
     noContent: "No matching content. Try another keyword.",
     copyDone: "Copied"

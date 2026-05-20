@@ -792,6 +792,26 @@ input:focus {
   --tab-soft: #f2f6ff;
 }
 
+.tab-button[data-section-key="brief"] {
+  --tab-accent: var(--graphite);
+  --tab-soft: #f8fafc;
+}
+
+.tab-button[data-section-key="headline"] {
+  --tab-accent: var(--cobalt);
+  --tab-soft: #f2f6ff;
+}
+
+.tab-button[data-section-key="deep-dive"] {
+  --tab-accent: var(--red);
+  --tab-soft: #fff1f0;
+}
+
+.tab-button[data-section-key="view"] {
+  --tab-accent: var(--violet);
+  --tab-soft: #f5f3ff;
+}
+
 .tab-button[data-section-key="funding"] {
   --tab-accent: var(--amber);
   --tab-soft: #fff7ed;
@@ -886,6 +906,30 @@ input:focus {
   --section-accent: var(--cobalt);
   --section-soft: #f2f6ff;
   --section-wash: rgba(47, 91, 234, 0.05);
+}
+
+.story-card[data-section-key="brief"] {
+  --section-accent: var(--graphite);
+  --section-soft: #f8fafc;
+  --section-wash: rgba(71, 85, 105, 0.048);
+}
+
+.story-card[data-section-key="headline"] {
+  --section-accent: var(--cobalt);
+  --section-soft: #f2f6ff;
+  --section-wash: rgba(47, 91, 234, 0.05);
+}
+
+.story-card[data-section-key="deep-dive"] {
+  --section-accent: var(--red);
+  --section-soft: #fff1f0;
+  --section-wash: rgba(180, 35, 24, 0.045);
+}
+
+.story-card[data-section-key="view"] {
+  --section-accent: var(--violet);
+  --section-soft: #f5f3ff;
+  --section-wash: rgba(109, 91, 208, 0.052);
 }
 
 .story-card[data-section-key="funding"] {
