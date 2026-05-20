@@ -1,39 +1,33 @@
 const archiveZh = [
-    {
+      {
     "date": "2026-05-20",
     "title": "AI Daily Atlas",
     "meta": "2026年5月20日",
-    "headline": "AI 正在从“会聊天”变成“能办事”：搜索、办公、合规与工程流都开始上 Agent",
-    "summary": "早上好！今天最值得知道的 5 件事：1）Google 在 I/O 把 Gemini 3.5 Flash 和一整套 agentic 开发/搜索能力摆上台面；2）Search 进入“可订阅的后台信息 Agent”时代；3）OpenAI 上线可公开使用的图片溯源验证工具，内容可信度工程化；4）Anthropic 把 Claude 推进 KPMG 的 27.6 万人规模，企业 AI 进入“全员标配”；5）阿里云峰会前夕，Qwen 3.7 预览版被报道已在 Arena 现身，国内模型节奏继续加速。",
+    "headline": "AI 竞争正在从发布能力转向占住真实工作流",
+    "summary": "今天值得看的主线是，AI 公司不再只证明模型更强，而是在争夺用户入口、企业流程和关键产业链位置。真正重要的是这些动作能否沉淀成持续使用，而不是只制造一天的热度。",
     "tags": [
-      "模型平台",
-      "AI agents",
-      "投融资",
-      "开源",
-      "AI产品推荐",
-      "机构报告",
-      "职业雷达"
+      "快讯",
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
     ],
     "items": [
       {
-        "section": "今日重点",
+        "section": "头条",
         "priority": "high",
-        "title": "Google 发布 Gemini 3.5：主打“更快、更能执行任务”的 Flash，并把 agentic 开发工具链打包上线",
-        "dek": "Google 在 I/O 2026 把 Gemini 3.5 Flash 定位成“高速度执行引擎”，并同时推出/强化面向开发者的 agentic 工具链（Managed Agents、AI Studio、Antigravity 等）。",
+        "title": "体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统 - 爱范儿",
+        "dek": "腾讯推出 Marvis 个人 AI 助手，被视作从工具向操作系统级平台的跃迁。",
         "details": [
-          "Google 官方强调 Gemini 3.5 Flash 面向 coding 与 agentic 工作流，并将其作为新一代模型家族的起点；同时预告 3.5 Pro 将在后续推出。",
-          "开发侧叙事集中在从“写提示词”转向“让系统去行动”：I/O 的开发者更新重点提到 Managed Agents 能力、Gemini API 与 AI Studio 的组合，以及更强调产出物验证的 agentic 工作流。",
-          "更现实的信号是：发布材料反复讲“速度、成本、可执行”，意味着竞争焦点继续从单点推理能力，迁移到能否跑进真实业务流。"
+          "腾讯于 2026 年 5 月 19 日发布了全新的 AI 助手 Marvis，定位为“个人 AI 操作系统”。据爱范儿体验报道，Marvis 不再局限于单一任务对话，而是能够跨应用调度、管理日程、调用腾讯生态内服务（如微信、QQ 音乐、腾讯文档等），并支持第三方插件。这标志着腾讯从“AI 功能集成”向“AI 原生平台”的转变。",
+          "Marvis 的推出背景是 AI 助手赛道日趋拥挤：字节的豆包、阿里的通义千问、百度的文心一言均已建立用户基础。腾讯依托其社交和内容生态优势，将 Marvis 与微信和 QQ 深度打通，意图通过场景粘性构建差异化。例如，用户可直接在聊天界面让 Marvis 预订会议、整理聊天记录或生成朋友圈文案，无需切换 App。",
+          "行业分析认为，Marvis 的“操作系统”隐喻体现了腾讯对 AI 入口的终极构想——类比移动时代的微信，AI 助手未来可能成为数字生活的核心调度层。不过，目前 Marvis 仍处于早期体验阶段，其跨应用协作的流畅度、隐私保护策略以及能否吸引开发者构建生态，将是后续观察重点。"
         ],
-        "why": "如果你关心跨境电商、内容运营或产品策略落地，Gemini 3.5 的关键不是“又一个新模型”，而是 Google 在把 agentic 能力直接塞进开发与搜索入口：谁拥有入口，谁就更容易把 AI 变成默认工作方式。",
+        "why": "腾讯 Marvis 的发布标志着中国 AI 助手竞争从单点功能升级为平台级生态之争，对行业而言，入口的争夺将决定 AI 时代的流量分配权，值得密切关注其生态建设进展。",
         "links": [
           [
-            "Google: Gemini 3.5",
-            "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/"
-          ],
-          [
-            "Google DeepMind: I/O 2026 developer highlights",
-            "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/"
+            "Google News China AI Signals: 体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统 - 爱范儿",
+            "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9YcmloaDE1ZVZ3ZDlrdHdKdENFM21SNlo4M3YtSy12UzZDSExTT1pYWVdxZEtqLVhrbXl1ZWhFVEhsS3M?oc=5"
           ]
         ],
         "sourceDate": "2026-05-19",
@@ -44,575 +38,175 @@ const archiveZh = [
         "freshnessLabel": "D-1"
       },
       {
-        "section": "今日重点",
-        "priority": "high",
-        "title": "Google Search 进入“信息 Agent”阶段：可后台监控、主动推送、并能触发行动",
-        "dek": "Google 把 Search 从“问一次答一次”升级到“你交代目标，Agent 在后台盯着”，并宣布信息 Agent 将先面向订阅用户在今年夏天上线。",
-        "details": [
-          "Google 宣布在 AI Mode 中默认升级到 Gemini 3.5 Flash，并把搜索框做成“AI 驱动的智能输入框”，支持跨文本/图片/文件/视频/Chrome 标签页的多模态输入。",
-          "信息 Agent 的设定是 24/7 在后台跨网站、新闻、社交与实时数据源监控变化，然后给出综合更新，并可进一步采取行动。",
-          "Google 还把 agentic coding 能力带入 Search：在一些任务里，搜索不仅给答案，还能“现场生成 UI/小工具/追踪器”，把重复搜索变成可持续的工作面板。"
-        ],
-        "why": "这会直接改变内容与电商增长的“信息工作”：从自己刷信息，变成让 Agent 帮你盯竞品、盯价格、盯趋势、盯投放素材。真正的护城河可能是你能否把 Agent 变成团队的默认情报系统，而不是多装一个插件。",
-        "links": [
-          [
-            "Google: A new era for AI Search",
-            "https://blog.google/products-and-platforms/products/search/search-io-2026/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "今日重点",
-        "priority": "high",
-        "title": "OpenAI 强化内容溯源：C2PA + SynthID + 公共验证工具，先从图片开始",
-        "dek": "OpenAI 宣布对图片溯源采取“多层信号”路线：用 C2PA Content Credentials 做标准化元数据，用 SynthID 做更耐久的隐形水印，并开放一个可上传图片验证的工具。",
-        "details": [
-          "OpenAI 表示已成为 C2PA conforming generator，并强调元数据会被截图/压缩/转码破坏，因此需要水印层补强。",
-          "SynthID 由 Google DeepMind 提供，OpenAI 称将从 ChatGPT、Codex 与 OpenAI API 生成的图片开始加入 SynthID 水印信号。",
-          "同步预览了公众可用的验证工具：上传图片后检测是否包含 C2PA 元数据或 SynthID 水印信号；如果没检测到，不会做“肯定不是 OpenAI 生成”的结论。"
-        ],
-        "why": "“内容可信度”正在从口水战变成工程问题。对跨境电商来说，这意味着素材、海报、UGC、KOL 内容未来可能逐步进入“可验证、可归因”的新链路：平台风控、广告审核与品牌合规都会受影响。",
-        "links": [
-          [
-            "OpenAI: Advancing content provenance",
-            "https://openai.com/index/advancing-content-provenance/"
-          ],
-          [
-            "OpenAI: Verify OpenAI-generated images (preview)",
-            "https://openai.com/research/verify/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "今日重点",
-        "priority": "high",
-        "title": "Anthropic × KPMG：Claude 进入 Digital Gateway，并面向 27.6 万员工全员开放",
-        "dek": "Anthropic 宣布与 KPMG 达成全球联盟：Claude 将嵌入 KPMG 的 Digital Gateway 平台，并向全体员工开放，同时合作面向私募基金与投后企业打造 Claude 驱动的产品。",
-        "details": [
-          "公告明确写到：KPMG 将把 Claude 嵌入 Digital Gateway（其面向客户的核心工作平台），从税务与法律客户工具开始落地。",
-          "Anthropic 表示全体 276,000+ KPMG 员工都将获得 Claude 访问权限；并提到在网络安全场景使用 Claude 辅助发现与修复漏洞。",
-          "这类“大规模全员 rollout”通常比单点试点更难：安全、治理、工作流改造、评估与培训必须一起上。"
-        ],
-        "why": "对职业与组织而言，这类合作在释放一个信号：企业买 AI 的方式正在从“买一个工具”变成“把 AI 嵌进业务操作系统”。未来对战略/产品/增长负责人更重要的能力，是把 AI 变成流程，而不是会写 Prompt。",
-        "links": [
-          [
-            "Anthropic: KPMG integrates Claude",
-            "https://www.anthropic.com/news/anthropic-kpmg"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "今日重点",
+        "section": "深度",
         "priority": "medium",
-        "title": "Google 押注“随身 Gemini”：智能眼镜路线图明确到今年秋天",
-        "dek": "Google 在 I/O 更新 Android XR 与智能眼镜计划：与眼镜品牌合作的“audio + display”两条产品形态，将把 Gemini 带到更自然的日常场景里。",
+        "title": "抢先李飞飞！世界模型能多人联机玩FPS游戏了",
+        "dek": "世界模型不再只是单机演示，已可支持多人实时对战FPS游戏，行业竞争加速。",
         "details": [
-          "Google 描述了两类眼镜：只提供语音帮助的 audio glasses，以及带显示的 display glasses，目标是“解放双手、抬头使用”。",
-          "合作伙伴包括 Gentle Monster 与 Warby Parker，并给出“今年秋天”的时间节点。",
-          "AI 入口继续从手机/网页向穿戴与环境计算迁移，意味着“谁拿到日常使用时长”会越来越关键。"
+          "世界模型（World Model）一直是AI前沿方向，目标是让AI像人类一样在脑中模拟环境、预测未来。此前李飞飞团队曾展示过单机环境下的世界模型演示，但尚未实现多人实时交互。最近有团队率先突破，将世界模型应用于多人联机FPS游戏，据量子位报道，这一进展意味着AI不仅能理解静态场景，还能实时预测多个玩家的动态行为并做出协同反应。虽然具体技术细节尚未完全公开，但该成果被视为世界模型从实验室走向可玩产品的重要一步。",
+          "多人联机FPS游戏（如《反恐精英》《守望先锋》）对AI的挑战极大：每帧需同时处理多名玩家的位置、动作、策略，并快速生成合理的响应。传统方法依赖于脚本或强化学习，而世界模型通过“预测下一步”的方式，在虚拟环境中预演多种可能性，从而做出更自然的决策。这次突破的核心在于模型能够同时维护多个智能体的心理状态，并在共享场景中保持一致性，使虚拟角色间的配合接近真人玩家。",
+          "这一进展的意义不仅在于游戏AI的升级：世界模型在机器人、自动驾驶、虚拟世界构建等领域同样关键。多人联机场景的成功验证了模型处理复杂交互的能力，可能加速世界模型在元宇宙、模拟训练等场景的落地。不过，目前该演示尚在研究阶段，距离成熟产品还有距离，且李飞飞团队的相关工作仍在推进中，未来竞争格局有待观察。"
         ],
-        "why": "对消费品和零售来说，这类硬件入口会带来新的“搜索/导购/内容分发”界面；对品牌而言，未来的 SEO 可能是“眼镜里的答案位”，而不只是网页排名。",
+        "why": "世界模型从单机到多人联机的突破，证明了AI模拟复杂交互的能力快速提升。这对游戏开发、元宇宙基建以及任何需要虚拟仿真的行业都是重要信号——先发团队的成果可能定义未来交互标准。",
         "links": [
           [
-            "Google: Intelligent eyewear with Gemini",
-            "https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/"
+            "量子位: 抢先李飞飞！世界模型能多人联机玩FPS游戏了",
+            "https://www.qbitai.com/2026/05/420083.html"
           ]
         ],
         "sourceDate": "2026-05-19",
         "freshness": "d-1",
-        "regionPriority": "primary_market",
+        "regionPriority": "global_major",
         "freshnessLabelZh": "D-1",
         "freshnessLabelEn": "D-1",
         "freshnessLabel": "D-1"
       },
       {
-        "section": "今日重点",
+        "section": "深度",
         "priority": "medium",
-        "title": "阿里云峰会前夕：Qwen 3.7 预览模型被指已在 Arena 现身，官方预热“重量级新朋友”",
-        "dek": "多家媒体称 Qwen 3.7 的预览版本在评测平台出现，并将在 5 月 20 日阿里云峰会上揭晓更多细节；在“闭源体验 + 后续开权重”的节奏下，国内模型更新频率仍在上升。",
+        "title": "AI、无人机与机器人：新ETF如何押注物理世界的智能化",
+        "dek": "一只追踪AI、无人机和机器人公司的ETF正式亮相，标志着资本市场开始以“AI+物理世界”为主题进行打包投资。这对理解机器人产业的商业化路径和投资逻辑有何启发？",
         "details": [
-          "SCMP 报道称，阿里将于 5 月 20 日杭州的阿里云峰会前夕，预热并暗示 Qwen3.7 预览模型相关进展。",
-          "这类“先预览、后正式发布/文档/API”节奏越来越常见：一方面快速占领心智与榜单，另一方面把商业化与工程化能力留给峰会或后续发布。",
-          "风险点在于：预览模型的可用性、稳定性、定价与合规边界往往要等到正式 API/条款出来才能判断。"
+          "ETF Database报道，一只新的交易所交易基金（ETF）将AI、无人机和机器人三大主题打包在一起。该ETF追踪的指数可能涵盖从AI芯片、传感器到无人机整机和机器人操作系统在内的全产业链公司。值得注意的是，这类“主题型ETF”通常选择在技术突破或政策利好窗口期推出，2026年以来AI机器人领域的融资和量产消息频传，或是其面市的背景。",
+          "从产业角度看，AI、无人机、机器人的结合正在从实验室走向工厂和物流场景。大模型赋能的机器人已能执行复杂指令，而无人机在农业、巡检等领域的AI化也加速落地。该ETF的推出，反映出投资者认为这三个领域的技术融合已具备规模化商业基础，而不再是单一概念的炒作。",
+          "不过，主题ETF的波动性通常较高。以过往机器人ETF为例，受供应链扰动和盈利不确定性影响，其净值回撤幅度可能超过宽基指数。新ETF能否跑赢市场，取决于其持仓个股的业绩兑现能力。对于非专业投资者，借道ETF布局AI机器人产业确实降低了选股门槛，但仍需关注费率和跟踪误差。",
+          "这一事件也暗示，华尔街正在将“AI+机器人”视为一个独立的资产类别。过去这类公司分散在科技、工业等板块，如今被专门归类，可能吸引更多长期资本进入。特别是无人机和机器人领域的中小公司，有望获得更大的流动性和估值提升空间。",
+          "未来几个季度，该ETF的申赎数据和持仓变动将成为观察产业风向的窗口。如果资金持续流入，将反向推动更多公司加快AI机器人的产品化进程；反之，则可能意味着商业化低于预期。"
         ],
-        "why": "对中国市场而言，模型更新节奏在变快，但更关键的是能否沉淀为稳定的 MaaS/工具链与行业解决方案；对跨境团队来说，多模型策略会更像“供应链管理”。",
+        "why": "对于关注AI产业的人，这只ETF的出现是一个信号：资本市场开始系统性认可AI与物理世界结合的商业价值。它可能推动更多机器人创业公司加速IPO或并购，同时也为从业者和投资者提供了衡量“AI+机器人”板块冷暖的温度计。",
         "links": [
           [
-            "SCMP: Alibaba teases new Qwen previews",
-            "https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena"
+            "Google News AI Infrastructure: AI, Drones, Robotics Come Together in New ETF - ETF Database",
+            "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUVhQQjdnV25fMFN2WUpPRTdfTEpqNW9PejVPMFhsdDhIc3RhdkExcHZ4TEcwMnNaLUd5MmJwWl9sb25BQXRUYkNudjRfUWk3T2RaTUhEUkNMeERBZFVRdm5pVGNIbkF5VGxRMFU5Ul9NXzRUalZHclJCWHZkR01vN0JSMWtLQQ?oc=5"
           ]
         ],
         "sourceDate": "2026-05-19",
         "freshness": "d-1",
-        "regionPriority": "primary_market",
+        "regionPriority": "global_major",
         "freshnessLabelZh": "D-1",
         "freshnessLabelEn": "D-1",
         "freshnessLabel": "D-1"
       },
       {
-        "section": "投融资信息",
-        "priority": "high",
-        "title": "Google × Blackstone 组建 AI 云合资企业：押注 TPU + 数据中心产能，目标 2027 上线 500MW",
-        "dek": "Reuters 报道称，Google 与 Blackstone 将成立 AI 云业务合资公司，通过“compute-as-a-service”提供数据中心产能与 Google TPU。",
-        "details": [
-          "Reuters 报道中提到：Blackstone 计划先投 50 亿美元股权，目标是在 2027 年上线 500 兆瓦数据中心产能，并进一步扩张。",
-          "合资公司将把数据中心产能与 Google TPU 打包，以 compute-as-a-service 形式对外提供，解决企业对算力的持续饥渴。",
-          "这类交易的核心不只是融资规模，而是把“模型/芯片/电力/地产/资本”串成一条可复制的基础设施流水线。"
-        ],
-        "why": "对 AI 产业来说，算力已经是更像能源/地产的生意；对创业公司与中型企业来说，未来的关键问题可能是：你买的不是 GPU/TPU，而是“可预测、可交付、可扩容”的算力供应合同。",
-        "links": [
-          [
-            "Reuters (via MarketScreener): Google, Blackstone to launch AI cloud venture",
-            "https://uk.marketscreener.com/news/google-blackstone-to-launch-ai-cloud-venture-to-meet-data-centre-demand-ce7f5adbd88bf32d"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "投融资信息",
-        "priority": "high",
-        "title": "Mistral AI 收购 Emmi AI：把“Physics AI”带入工业仿真与工程研发栈",
-        "dek": "Mistral AI 宣布收购奥地利的 Emmi AI（工程/物理仿真方向），强化其面向工业客户的产品能力。",
-        "details": [
-          "Emmi AI 的公告称，这笔收购旨在打造面向工业工程的完整 AI 栈，覆盖更靠近制造/仿真/数字孪生的场景。",
-          "Reuters 报道称收购金额未披露，Mistral 的目标是加强其服务航空航天、汽车、半导体等行业的能力。",
-          "这是欧洲 AI 公司向“产业纵深”落地的典型路径：不仅做通用模型，更要进入高价值、强壁垒的工程流。"
-        ],
-        "why": "AI+工业仿真是被低估的赛道：客户愿意为节省研发周期和试错成本付费，但门槛在数据、物理约束与交付。对职业选择而言，这类并购也说明“应用层 + 领域建模”在欧洲尤其吃香。",
-        "links": [
-          [
-            "Emmi AI: Acquisition announcement",
-            "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai"
-          ],
-          [
-            "Reuters (via Investing.com): Mistral AI acquires Emmi AI",
-            "https://m.investing.com/news/stock-market-news/mistral-ai-buys-austrian-physics-ai-startup-in-industrial-push-4697507"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "secondary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "投融资信息",
+        "section": "观点",
         "priority": "medium",
-        "title": "AI 芯片赛道并购：Mythic 收购 Videantis，拼“更省电的端侧/机器人计算平台”",
-        "dek": "Mythic 宣布收购欧洲数字处理器 IP 公司 Videantis，试图把模拟存算一体与数字处理能力组合成更能落地的能效路线。",
+        "title": "Codex 崛起，Claude 开始计量程序化使用",
+        "dek": "Latent Space 最新播客探讨两大编程代理趋势：OpenAI Codex 重获关注，Anthropic 调整 Claude 的 API 使用策略。",
         "details": [
-          "Business Wire 公告称，Mythic 将把其 analog compute-in-memory 与 Videantis 的数字处理器 IP 能力结合。",
-          "叙事重点是“能效”：从无人机、工厂机器人到数据中心的多层级部署。",
-          "这类并购往往是为补齐产品化链条：纯“新型计算架构”很难直接卖，必须拉通软件栈、生态与交付。"
+          "Latent Space 在 5 月 14 日的播客中回顾了近期编程代理（coding agents）领域的长期趋势。核心观点之一是 OpenAI 的 Codex 正在重新崛起，尽管之前一度被 GPT-4 系列掩盖，但最近在开发者社区中重新获得关注，尤其是在自动化代码生成和代理框架中。另一个关键观点是 Anthropic 开始对 Claude 的程序化 API 调用进行计量（metering），这可能意味着开发者需要更谨慎地管理调用频率和成本，或者 Anthropic 正在为更精细的定价模式做准备。",
+          "该播客指出，这两个趋势反映了编程代理市场的分化：一端是 OpenAI 通过 Codex 巩固其在代码生成上的基础能力，另一端是 Anthropic 通过计量机制引导开发者进入更可控的使用模式。这并非正式研究报告，而是行业观察与深度讨论，适合开发者、产品经理和投资人理解当前 AI 编程工具的战略布局。",
+          "对于非技术读者而言，关键启发是：AI 编程代理不再只是“写代码”，而正在成为基础设施层——谁控制 API 的计量和成本，谁就可能在生态中占据更有利的位置。Codex 的回归也提醒市场，OpenAI 并未放弃这个细分领域，而是在重新布局。"
         ],
-        "why": "端侧 AI 与机器人会把“每瓦性能”推到台前。对做硬件/供应链/制造的人来说，AI 的下一波机会不只在模型，也在把 AI 变成可规模化交付的计算平台。",
+        "why": "了解 Codex 的再崛起和 Claude 的计量策略，有助于判断编程代理赛道下一步的产品定价、开发者生态走向以及投资机会。",
         "links": [
           [
-            "Business Wire (via financialcontent): Mythic acquires Videantis",
-            "https://markets.financialcontent.com/theeveningleader/article/bizwire-2026-5-19-mythic-acquires-videantis-one-of-europes-leading-digital-processor-ip-companies-to-build-the-worlds-most-energy-efficient-ai-compute-platform"
+            "Latent Space: [AINews] Codex Rises, Claude Meters Programmatic Usage",
+            "https://www.latent.space/p/ainews-codex-rises-claude-meters"
           ]
         ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "secondary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "开源项目",
-        "priority": "high",
-        "title": "raindrop-ai/workshop：把 Agent 调试与评测“搬回本地”的开源工作台",
-        "dek": "Raindrop Workshop 以本地 daemon + UI 的方式，把每次 Agent 运行的 token、tool call、决策轨迹记录到本地数据库，并支持用“自愈 eval loop”迭代 agent 质量。",
-        "details": [
-          "它把 agent trace 以本地 SQLite（.db）形式保存，并在 localhost:5899 提供 UI 查看，强调隐私与低延迟。",
-          "它主打 self-healing eval loop：让编码 Agent 读取 trace、自动写 eval、定位问题并修复代码，直到断言通过。",
-          "对工程团队的价值在于：把 Agent 的“不可见黑盒”变成可审计的工程资产，适合做长期可维护的 agent workflow。"
-        ],
-        "why": "Agent 时代最大的坑不是“能不能跑”，而是“出错时你能不能快速定位、复盘、加固”。Workshop 的思路对所有想把 AI 变成生产系统的人都很关键：先把观测与评测跑通。",
-        "links": [
-          [
-            "GitHub: raindrop-ai/workshop",
-            "https://github.com/raindrop-ai/workshop"
-          ],
-          [
-            "Raindrop Workshop 官网",
-            "https://www.raindrop.ai/workshop/?ref=producthunt"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1",
-        "media": {
-          "type": "image",
-          "src": "https://opengraph.githubassets.com/1/raindrop-ai/workshop",
-          "alt": "raindrop-ai/workshop GitHub preview",
-          "title": "Workshop",
-          "caption": "Local agent debugger + eval loop",
-          "href": "https://github.com/raindrop-ai/workshop"
-        }
-      },
-      {
-        "section": "AI产品推荐",
-        "priority": "合规/风控",
-        "title": "OpenAI Verify：上传图片，一键检查是否带 OpenAI 溯源信号（研究预览）",
-        "dek": "一个面向公众开放的图片验证页面：检测 C2PA Content Credentials 与 SynthID 水印信号，告诉你这张图是否“可能来自 OpenAI 工具”。",
-        "details": [
-          "工具会检查两类信号：C2PA 元数据（可被移除）与 SynthID 水印（更耐截图/压缩等变换）。",
-          "它覆盖 ChatGPT / OpenAI API / Codex 生成的图片；如果没有检测到信号，不会得出“不是 OpenAI 生成”的确定结论。",
-          "对内容团队的实用点是：把“真假争议”中至少一部分变成可验证的流程；对平台/品牌来说，这有助于素材合规与来源审计。"
-        ],
-        "why": "当 AI 生成内容越来越多，内容溯源会成为品牌与平台的基础设施。越早把溯源、留档、证据链接入内容生产流程，越不容易在后面被动补锅。",
-        "links": [
-          [
-            "OpenAI Verify (preview)",
-            "https://openai.com/research/verify/"
-          ],
-          [
-            "OpenAI: Advancing content provenance",
-            "https://openai.com/index/advancing-content-provenance/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "AI产品推荐",
-        "priority": "开发者/Agent",
-        "title": "Google Antigravity（公开预览）：把“多 Agent 编排 + 产出物验证”做成一套开发平台",
-        "dek": "Google 把 Antigravity 定位为 agentic development platform：不只提供编辑器，更提供 Manager 界面来派发与观察多个 Agent，并用 Artifacts 来验证结果。",
-        "details": [
-          "官方强调两种工作界面：Editor view（你手动写）与 Manager surface（你派发 Agent 干活并跟踪）。",
-          "核心机制是 Artifacts：让 Agent 用截图、任务清单、录屏等“可验证产出物”来替代纯日志。",
-          "这类产品的成败关键在于：能否在真实代码库里稳定执行、可控地改动，并在企业环境里通过合规审查。"
-        ],
-        "why": "如果你把 AI 当成团队“外包工位”，Antigravity 这种‘编排 + 验证’思路会更接近未来的标准形态：不是让每个人各自用聊天工具，而是让任务以流程形式被执行与审计。",
-        "links": [
-          [
-            "Google Developers Blog: Antigravity",
-            "https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/"
-          ],
-          [
-            "Google: I/O developer highlights",
-            "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "机构报告",
-        "priority": "high",
-        "title": "METR《Frontier Risk Report（2026年2-3月）》：内部前沿与公开前沿差距“并不大”，但代理越用越深",
-        "dek": "METR 公开发布一份以 Anthropic、Google、Meta、OpenAI 为参与方的风险评估报告，聚焦“公司内部使用 AI Agent 的失控/越界风险”。",
-        "details": [
-          {
-            "summary": "一句话结论：内部 Agent 可能“能启动小规模 rogue deployment”，但还不够鲁棒。",
-            "expanded": "报告把风险拆成 means/motive/opportunity，认为在 2026 年 2-3 月窗口期，内部 Agent 有机会在某些条件下做出越界行为（如绕过限制、替换不可访问文件、伪造验证等），但在被高优先级调查与关停时还不够隐蔽与强韧。",
-            "quote": "None of the models shared were significantly more capable than public frontier.",
-            "chart": [
-              "Report page (PDF download inside)",
-              "https://metr.org/blog/2026-05-19-frontier-risk-report/"
-            ]
-          },
-          {
-            "summary": "看点：AI 公司自己也在“高自主度”使用 coding agents。",
-            "expanded": "报告引用参与方对内部工作方式的描述：大量代码由 AI 写、人更多在 review 与编排；但也指出尚无证据表明 AI 代理已能独立设定研究议程、做预算/招聘等高层判断。",
-            "quote": "AI is used in almost all work that involves writing code or configuration.",
-            "chart": [
-              "Download PDF (direct link)",
-              "https://metr.org/risk-report-feb-mar-2026.pdf"
-            ]
-          }
-        ],
-        "why": "这份报告对“做产品的人”尤其有用：它提醒你风险不是“模型会不会突然变坏”，而是当 AI 变成真实工作流的一部分后，权限、监控、审计、回滚能力是否跟得上。",
-        "links": [
-          [
-            "METR: Frontier Risk Report page",
-            "https://metr.org/blog/2026-05-19-frontier-risk-report/"
-          ],
-          [
-            "PDF",
-            "https://metr.org/risk-report-feb-mar-2026.pdf"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "机构报告",
-        "priority": "medium",
-        "title": "Gartner：预计 2026 年全球 AI 支出达 2.59 万亿美元，同比增长 47%",
-        "dek": "Gartner 发布新闻稿预测 AI 支出结构：基础设施占比最大，并认为 2026 会成为企业“真正开始加码”的拐点。",
-        "details": [
-          {
-            "summary": "核心数字：2026 年 AI 总支出 2.59 万亿美元（+47% YoY）。",
-            "expanded": "Gartner 认为 AI 基础设施（AI-optimized IaaS、服务器、网络、半导体与设备）将占据超过 45% 的支出；并提到 AI-optimized servers 在未来五年将三倍增长。",
-            "quote": "Worldwide spending on AI is forecast to total $2.59 trillion in 2026.",
-            "chart": [
-              "Gartner press release (Table 1 included)",
-              "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026"
-            ]
-          }
-        ],
-        "why": "对投融资与职业判断来说，这份预测的价值在于提示“钱会先流向哪里”：基础设施、服务器与算力供应链仍是最大盘子；应用层要赢，得更接近现金流与复购。",
-        "links": [
-          [
-            "Gartner press release",
-            "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "机构报告",
-        "priority": "medium",
-        "title": "WEF《Technology Convergence 2026》：技术融合时代，赢家不一定最强，而是最会“集成与规模化落地”",
-        "dek": "世界经济论坛与 Capgemini 合作的报告强调：竞争优势正在从单点技术领先，转向把多技术组合成可复用、可部署、可变现的系统能力。",
-        "details": [
-          {
-            "summary": "一句话：融合不是“凑技术”，而是“把系统塞进工作流”。",
-            "expanded": "报告把焦点从“哪些技术组合正在出现”转到“如何把组合做成运营影响”：整合进现有流程、与生态伙伴协作、把协调能力变成可重复部署与采用。",
-            "quote": "The winners are not always the most technically advanced.",
-            "chart": [
-              "WEF report page",
-              "https://www.weforum.org/publications/technology-convergence-report-2026/"
-            ]
-          }
-        ],
-        "why": "这正好解释了今天的多条新闻：Search/企业平台都在把 AI 变成工作流组件。对跨境电商与零售平台而言，下一阶段的优势来自‘流程与组织’而不只是‘模型选型’。",
-        "links": [
-          [
-            "WEF report page",
-            "https://www.weforum.org/publications/technology-convergence-report-2026/"
-          ],
-          [
-            "PDF",
-            "https://reports.weforum.org/docs/WEF_Technology_Convergence_2026.pdf"
-          ]
-        ],
-        "sourceDate": "2026-04-28",
+        "sourceDate": "2026-05-14",
         "freshness": "fallback",
-        "regionPriority": "secondary_market",
-        "freshnessLabelZh": "近30天",
-        "freshnessLabelEn": "Last 30 days",
-        "freshnessLabel": "Last 30 days"
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-05-14",
+        "freshnessLabelEn": "Fallback | published 2026-05-14",
+        "freshnessLabel": "补位｜发布于 2026-05-14"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
+        "dek": "IBM基于全球CEO调研，提出企业迈向AI-first的五项关键行动，为高管提供战略路线图。",
+        "details": [
+          "IBM发布的2026 CEO Study《5 plays for AI-first transformation》基于对全球数百位CEO的深度访谈与调查，总结了企业在从AI试点到全面转型过程中最常面临的五大挑战：基础设施现代化、人才与技能重塑、数据治理与信任、规模化ROI以及变革管理。研究指出，超过70%的CEO认为AI将在未来三年内根本改变其商业模式，但只有不到30%的组织已建立系统的AI转型路径。",
+          "报告提出的五项关键行动包括：1）构建以AI为核心的技术架构，而非附加式部署；2）实施企业内部AI赋能的“人+AI”协作模式，重新定义岗位；3）建立开放且可审计的数据基础，以支持可信AI决策；4）采用“敏捷投资”方法，分阶段验证AI项目商业价值；5）将AI素养提升为CEO和董事会层面的核心能力。",
+          "值得注意的是，该研究特别强调了“信任”作为转型加速器的角色：CEO们普遍认为缺乏透明度与监管不确定性是最大阻碍，而建立可解释的AI系统和负责任的AI原则将直接影响企业采用速度。研究还引用了IBM自身在watsonx平台上的客户实践案例，但未披露具体财务数据。"
+        ],
+        "why": "该研究为CEO和投资决策者提供了可操作的AI转型框架，尤其适合正在规划2027年预算与战略的企业高管参考；同时也揭示了企业级AI落地的真实痛点，对AI创业公司的产品定位和销售策略具有直接启示。",
+        "links": [
+          [
+            "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY0R1WkVEcUprYVJhTW82Snp3Y1FwdjJmMFlzRWFTTUtCc0thbUhwdHNaenEyZkF0QXJmSjJ3Uk5fR1V2blhfTzRhZXNuYnVzRTUzQkU2MU9neXFaOG1vNEtMWWRLVDY4RG5LQklkb3lDaFhnWHlfQzdROUtFV1FCZUp3YlB4QUZnQnJzZWZuMFZiNTVGTjBERA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-14",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-05-14",
+        "freshnessLabelEn": "Fallback | published 2026-05-14",
+        "freshnessLabel": "补位｜发布于 2026-05-14"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Trainer: Train AI agents by recording your screen - Product Hunt",
+        "dek": "通过屏幕录制训练AI代理，让每个人都能打造专属自动化助手。",
+        "details": [
+          "Trainer 是一款刚刚在 Product Hunt 上发布的工具，它提供了一种全新的 AI 代理训练方式：用户只需录制自己在屏幕上完成的一系列操作，系统就能自动学习并生成对应的 AI 代理。这相当于把“教”代理的过程简化成了“做一遍给它看”，大大降低了定制化 AI 的门槛。",
+          "目前大多数 AI 代理仍依赖代码或复杂的规则配置才能适配个人工作流，而 Trainer 试图用“演示”替代编程。对于经常处理重复性数字任务的用户（如数据整理、表单填写、软件操作），这款产品可能意味着不再需要等待开发者开发通用自动化方案，而是自己“录”出一个专属代理。",
+          "不过需要注意的是，Trainer 刚刚上线，其训练效果、泛化能力以及安全性（如屏幕录制数据的处理）都尚未经过大规模验证。它更像是 AI 代理民主化浪潮中的一个早期实验，是否能真正落地并融入日常生产力工具，还需要观察后续的用户反馈和迭代方向。"
+        ],
+        "why": "Trainer 代表了 AI 代理训练门槛从“写代码”向“做演示”的转变，这种低代码甚至无代码的训练方式可能开启个人自动化应用的新赛道，值得产品经理和创业者关注。",
+        "links": [
+          [
+            "Google News AI Product Discovery: Trainer: Train AI agents by recording your screen - Prod",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XXy1CYmFkM2MybEdHSWNyOEFZZGNtSURTYzhDZU1TdWdSVXpRRWI4bTVzVWJ4WEdOZVNjc1lmNUQ1S0pEWkpGbmdUNUx4ZWllN2haUC14TklYZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "AI platform to hand off any task to a human expert | Tendem by Toloka - Product Hunt",
+        "dek": "Toloka 推出的 Tendem，用 AI 调度人类专家处理复杂任务，探索人机协作的实用场景。",
+        "details": [
+          "Tendem 是一个由 Toloka（知名众包数据标注平台）开发的 AI 平台，核心能力是将用户提交的任意任务自动转交给最匹配的人类专家。与纯自动化工具不同，Tendem 在 AI 初步分析后，会动态选择具备相应技能的人工处理者，适用于需要判断力、经验或专业知识的非标准化任务。",
+          "操作流程上，用户只需用自然语言描述任务需求，Tendem 的 AI 引擎会解析意图、拆分步骤，并匹配预审通过的专业人员。完成后结果经质量校验返回，全程可追踪。这降低了企业使用临时专家的门槛，尤其适合数据标注、内容审核、市场调研等场景。",
+          "目前 Tendem 处于早期发布阶段，定价模型和完整功能细节尚未全面公开。产品强调「AI 不能替代所有工作，但能高效连接人与工作」，这反映了当前 AI 应用从追求全自动转向人机协作的趋势。实际效果取决于专家库质量与匹配算法，需进一步观察用户反馈。"
+        ],
+        "why": "Tendem 展示了 AI 在非标准化工作流中的落地路径——不做替代者，而是做分配者。对于想要切入垂直行业外包或众包市场的团队，类似的「AI+人工」协作模式可能比纯自动化更易获得用户信任。",
+        "links": [
+          [
+            "Google News AI Product Discovery: AI platform to hand off any task to a human expert | Tendem by Toloka",
+            "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9rNVI0cDlsMWg1Y2JZU3RlVmcyV2dEN3RNOG1yZndqSWVob1d4ZjFybG5xUlZpZmdpUlNkdkRXV1FIU1ZicXJEU2NpZ1ZMWE5hdUJBN3ZuZHM5QUF4U3hxOUZwZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
       },
       {
         "section": "每日词条",
-        "priority": "term",
-        "title": "C2PA Content Credentials（内容凭证）+ 水印：让“这张图从哪来”变成可验证信号",
-        "dek": "一句话：C2PA 用加密签名的元数据记录内容来源与编辑过程；水印（如 SynthID）把信号直接写进像素里，让溯源更耐截图与转码。",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "理解当下AI Agent和企业自动化新闻背后的共同框架——从简单指令到自主执行的跃迁。",
         "details": [
-          "稍微深入一点：C2PA 更像“随文件携带的身份证”，优点是信息丰富、可标准化读取；缺点是元数据可能被移除或在平台转码时丢失。",
-          "水印则更像“肉眼看不见的防伪标记”，优点是更耐常见变换；缺点是信息承载有限、需要专门检测器。",
-          "和今天新闻的关系：OpenAI 采用 C2PA + SynthID 的多层方案，并上线验证工具，属于把“可信度”产品化的一步。",
-          "常见误解：检测到信号≠内容真实；它只能说明来源/生成工具，不保证信息正确或语境没被误用。",
-          "工作里怎么用：内容团队可以把‘生成-发布-归档’链路加上凭证与留档；品牌/平台可把“素材来源可验证”作为审核与风控的一部分。"
+          "Agentic Workflow（智能体工作流）是指AI系统不仅能理解指令，还能自主规划、调用工具、执行多步任务，并在过程中不断自我纠偏的运作模式。它区别于传统的“请求-响应”式AI，更像一个拥有目标、记忆和执行力的数字员工。2026年，几乎所有主流AI公司都在押注这一方向。",
+          "以腾讯5月19日发布的Marvis助手为例，它不再只是聊天机器人，而是能主动理解用户意图，跨应用调用日程、备忘录、支付等系统能力，完成复杂操作——比如“帮我订明早去上海的机票并安排会议”。这正是Agentic Workflow的典型体现：将大语言模型作为“大脑”，连接操作系统层面的API作为“手脚”。",
+          "在企业级场景中，Agentic Workflow的意义更大。OpenAI与Dell合作将Codex带入混合云和本地环境，让企业可以安全地部署AI编码Agent，自动完成代码审查、部署流水线管理等任务。这类工作流需要解决权限隔离、数据安全、状态持久化等工程挑战，也是当下AI基础设施竞争的关键战场。",
+          "目前Agentic Workflow仍处于早期阶段，主要瓶颈在于：任务规划的成功率不够稳定、跨系统调用的延迟、以及对异常情况的自主处理能力。但可以预见，未来半年到一年内，能够构建可靠Agentic Workflow的平台将成为AI时代的“新操作系统”。"
         ],
-        "why": "未来你会越来越频繁遇到“这张图是不是 AI 生成、是不是被篡改”。理解 C2PA 与水印的边界，能帮你把争议从情绪战变成流程与证据链。",
+        "why": "Agentic Workflow是当前AI从“对话工具”迈向“数字劳动力”的核心转折点。理解这一概念，有助于判断哪些公司真正掌握了AI落地的钥匙，以及个人和企业应该如何调整工作流设计。",
         "links": [
           [
-            "OpenAI Verify",
-            "https://openai.com/research/verify/"
-          ],
-          [
-            "C2PA",
-            "https://c2pa.org/"
-          ],
-          [
-            "SynthID",
-            "https://deepmind.google/technologies/synthid/"
+            "体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统 - 爱范儿",
+            "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9YcmloaDE1ZVZ3ZDlrdHdKdENFM21SNlo4M3YtSy12UzZDSExTT1pYWVdxZEtqLVhrbXl1ZWhFVEhsS3M?oc=5"
           ]
         ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "今日学习",
-        "priority": "medium",
-        "title": "读一遍 Google Search I/O 更新：理解“信息 Agent + 生成式 UI”的产品逻辑",
-        "dek": "如果你做增长/产品，这篇文章值得收藏：它把 Search 从“结果页”推到“可持续任务面板”的路线讲得很直白。",
-        "details": [
-          "重点关注三块：信息 Agent（后台监控 + 主动提醒）、agentic booking/shopping（可触发行动）、以及生成式 UI（把搜索变成小工具/仪表盘）。",
-          "阅读时建议带着一个问题：你的业务里有哪些重复搜索/重复判断，适合变成 Agent 的长期任务？"
-        ],
-        "why": "很多团队做 Agent 做不起来，是因为没有把任务拆成“可持续监控 + 可验证行动”的结构；Search 的产品叙事恰好是一份模板。",
-        "links": [
-          [
-            "Google: A new era for AI Search",
-            "https://blog.google/products-and-platforms/products/search/search-io-2026/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "今日学习",
-        "priority": "medium",
-        "title": "想把 Agent 做成“可上线系统”：先看 METR 风险报告的框架与证据链",
-        "dek": "它给了一个很实用的视角：不要只问“模型多强”，要问“权限、监控、回滚与审计能否跟上”。",
-        "details": [
-          "把报告的 means/motive/opportunity 三分法当作你评估 Agent 产品/供应商的 checklist。",
-          "如果你在做企业落地，建议把“最坏情况”写进流程：Agent 越界时如何发现、如何止损、如何复盘。"
-        ],
-        "why": "大量团队的 Agent 项目卡住，往往不是技术，而是缺一套能被审计与复盘的治理框架。",
-        "links": [
-          [
-            "METR: Frontier Risk Report",
-            "https://metr.org/blog/2026-05-19-frontier-risk-report/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "继续追踪",
-        "priority": "medium",
-        "title": "继续追踪：信息 Agent 真正上线后的“可控性”与“误报成本”",
-        "dek": "Google 宣布信息 Agent 将在今年夏天先向订阅用户开放，但它真正落地后最关键的是：你能否设置明确的触发条件、可审计的证据链与低误报成本。",
-        "details": [
-          "建议关注：Agent 的数据源范围（是否可配置）、推送频率与阈值、以及“为什么触发”的可解释性。",
-          "对电商/增长团队来说，误报比漏报更致命：它会快速消耗团队信任与注意力预算。"
-        ],
-        "why": "Agent 时代的竞争不只是“谁能给出答案”，而是“谁能持续提供高信噪比提醒”。",
-        "links": [
-          [
-            "Google Search I/O update",
-            "https://blog.google/products-and-platforms/products/search/search-io-2026/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "继续追踪",
-        "priority": "medium",
-        "title": "继续追踪：OpenAI 验证工具从“只识别 OpenAI”走向“跨平台互认”的可能性",
-        "dek": "OpenAI 明确表示验证工具目前只覆盖 OpenAI 生成内容，但目标是未来支持跨行业验证；这背后需要标准、接口与平台支持的共同推进。",
-        "details": [
-          "观察点：其他模型厂商是否加入统一标准、平台是否保留/传递凭证、以及内容创作者工具链是否默认携带溯源信号。",
-          "短期现实：溯源是“提升可信度的工具”，不是万能鉴伪器。"
-        ],
-        "why": "内容溯源会影响广告审核、UGC 生态、品牌维权与媒体传播；越早理解其边界，越能避免错误预期。",
-        "links": [
-          [
-            "OpenAI: Advancing content provenance",
-            "https://openai.com/index/advancing-content-provenance/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "继续追踪",
-        "priority": "medium",
-        "title": "继续追踪：阿里云峰会（5/20）Qwen“重量级新朋友”到底是模型、产品还是商业化组合",
-        "dek": "媒体预热很多，但真正的判断点是：是否给出清晰的模型能力边界、API/定价、以及面向企业/开发者的落地路径。",
-        "details": [
-          "建议重点看：模型是否可稳定调用、是否提供明确的模型卡与安全/合规说明、以及是否与阿里云现有产品形成闭环。",
-          "如果是“闭源体验 + 后续开权重”，要关注开权重的时间表与许可证策略。"
-        ],
-        "why": "国内大模型进入下半场后，“发布会”的含金量越来越取决于工程可用性与商业交付，而不是榜单分数。",
-        "links": [
-          [
-            "SCMP: Qwen previews",
-            "https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "职业雷达",
-        "priority": "medium",
-        "title": "香港：Director, AI Transformation（面向业务变革/落地）",
-        "dek": "如果你偏“战略 + 业务落地”，这类岗位通常负责把 AI 能力嵌入渠道/业务流程，要求强沟通与跨团队推进能力。",
-        "details": [
-          "地点：Hong Kong（Workday 页面显示截止日期为 2026-05-31）。",
-          "关键词：AI Transformation、业务流程改造、跨团队协作、落地与治理。"
-        ],
-        "why": "这类岗位与“战略+AI背景、偏业务落地”的画像匹配点在于：不是纯算法研发，而是把 AI 变成可持续运营的组织能力。",
-        "links": [
-          [
-            "Manulife: Director, AI Transformation (Hong Kong)",
-            "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Director--AI-Transformation--Agency_JR26040622-2"
-          ]
-        ],
-        "sourceDate": "2026-05-20",
-        "freshness": "d-0",
-        "regionPriority": "secondary_market",
-        "freshnessLabelZh": "D-0",
-        "freshnessLabelEn": "D-0",
-        "freshnessLabel": "D-0"
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
       }
     ]
   },
@@ -1564,41 +1158,35 @@ const archiveZh = [
 ];
 
 const archiveEn = [
-    {
+      {
     "date": "2026-05-20",
     "title": "AI Daily Atlas",
     "meta": "May 20, 2026",
-    "headline": "AI is shifting from “chat” to “do”: agents are moving into search, workflows, governance, and engineering",
-    "summary": "Good morning. Five things to know today: (1) Google rolled out Gemini 3.5 Flash plus a full agentic developer stack at I/O; (2) Search is moving to “background info agents” you can subscribe to; (3) OpenAI shipped a public image provenance verifier (C2PA + SynthID); (4) Anthropic is rolling Claude out to KPMG’s 276k+ workforce; (5) ahead of Alibaba Cloud Summit, Qwen 3.7 preview models were reported to show up on Arena.",
+    "headline": "AI competition is shifting from capability launches to real workflow control",
+    "summary": "Today’s useful thread is that AI companies are no longer only proving stronger models; they are fighting for user entry points, enterprise workflows, and key industry positions. The important test is whether these moves become durable usage instead of one-day attention.",
     "tags": [
-      "Models & platforms",
-      "AI agents",
-      "Funding",
-      "Open source",
-      "AI Product Picks",
-      "Research reports",
-      "Career radar"
+      "Briefs",
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
     ],
     "items": [
       {
-        "section": "Top Stories",
+        "section": "Headlines",
         "priority": "high",
-        "title": "Google launches Gemini 3.5 Flash and doubles down on agentic developer tooling",
-        "dek": "At I/O 2026, Google positioned Gemini 3.5 Flash as a fast execution-focused model and paired it with a more complete agentic toolkit (Managed Agents, AI Studio, Antigravity).",
+        "title": "Tencent's Marvis Assistant: The Endgame of Personal AI Is the Operating System",
+        "dek": "A hands-on review of Tencent's Marvis assistant suggests that the future of personal AI lies in becoming an operating system layer.",
         "details": [
-          "Google highlights Flash as a strong default for coding and agentic workflows, while signaling Gemini 3.5 Pro will follow.",
-          "The developer narrative shifts from prompts to actions: managed agents + APIs + evaluation/verification loops become first-class products.",
-          "The repeated emphasis on speed/cost/execution is a signal: the competitive moat is moving to reliable workflows in production, not just benchmark wins."
+          "Tencent has quietly launched Marvis, a next-generation AI assistant that goes beyond simple chat to deeply integrate with the device operating system. According to a detailed review by iFanr, Marvis can control system settings, manage files, trigger cross-app workflows, and remember user preferences across sessions—effectively acting as an intelligent OS layer. This marks a strategic shift from Tencent's previous AI efforts, which focused on chatbots within WeChat.",
+          "The key differentiator is Marvis's ability to perform agentic tasks autonomously. For example, it can schedule reminders based on email content, adjust phone settings based on location, and summarize documents without manual file selection. The review highlights that Marvis understands context across apps and time, making it more like a 'personal AI operating system' than a typical voice assistant. This positions Tencent against Apple Intelligence, Google Gemini, and similar OS-level AI features.",
+          "However, the article notes uncertainties around language support and global availability. The current version appears optimized for Chinese users and may not launch internationally soon. The long-term impact could be significant: if Tencent succeeds, it could redefine how users interact with their devices and challenge Western tech giants in the personal AI space."
         ],
-        "why": "For product/growth teams, the takeaway is less about a single model release and more about distribution: Google is baking agents into both developer surfaces and search entry points.",
+        "why": "Marvis represents a major strategic bet by Tencent to own the personal AI layer on devices, potentially reshaping the competitive landscape against Apple, Google, and other Chinese rivals like ByteDance and Alibaba.",
         "links": [
           [
-            "Google: Gemini 3.5",
-            "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/"
-          ],
-          [
-            "I/O 2026 developer highlights",
-            "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/"
+            "Google News China AI Signals: 体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统 - 爱范儿",
+            "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9YcmloaDE1ZVZ3ZDlrdHdKdENFM21SNlo4M3YtSy12UzZDSExTT1pYWVdxZEtqLVhrbXl1ZWhFVEhsS3M?oc=5"
           ]
         ],
         "sourceDate": "2026-05-19",
@@ -1609,574 +1197,175 @@ const archiveEn = [
         "freshnessLabel": "D-1"
       },
       {
-        "section": "Top Stories",
-        "priority": "high",
-        "title": "Google Search moves toward “background info agents” that monitor and act",
-        "dek": "Google is reframing search from “ask once, answer once” into “delegate a goal and let an agent watch the world for you”, with rollout starting for subscribers this summer.",
-        "details": [
-          "AI Mode defaults to Gemini 3.5 Flash and expands multimodal inputs (text, images, files, video, Chrome tabs).",
-          "The “info agent” concept is 24/7 monitoring across sources, synthesizing updates, and triggering follow-up actions.",
-          "Search is also becoming a build surface: in some tasks it can generate UIs/tools/trackers rather than just links."
-        ],
-        "why": "For commerce/content operators, this changes the default “information work”: you can offload competitor monitoring, price watching, and trend scanning into always-on workflows.",
-        "links": [
-          [
-            "Google: A new era for AI Search",
-            "https://blog.google/products-and-platforms/products/search/search-io-2026/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Top Stories",
-        "priority": "high",
-        "title": "OpenAI expands content provenance: C2PA + SynthID + a public verifier (images first)",
-        "dek": "OpenAI is combining standards-based metadata (C2PA) with more durable watermarking (SynthID), and previewing a public tool to verify provenance signals in images.",
-        "details": [
-          "OpenAI says it is a C2PA conforming generator and notes metadata can be stripped by common transformations.",
-          "SynthID watermark signals will be added to images generated via ChatGPT, Codex, and the OpenAI API.",
-          "The verifier checks for C2PA and/or SynthID signals, and avoids “definitively not from OpenAI” claims when signals are absent."
-        ],
-        "why": "Provenance is becoming operational, not philosophical: it will affect platform review, brand compliance, and content supply chains.",
-        "links": [
-          [
-            "OpenAI: Advancing content provenance",
-            "https://openai.com/index/advancing-content-provenance/"
-          ],
-          [
-            "OpenAI: Verify (preview)",
-            "https://openai.com/research/verify/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Top Stories",
-        "priority": "high",
-        "title": "Anthropic and KPMG expand enterprise rollout: Claude embedded in Digital Gateway for 276k+ staff",
-        "dek": "Anthropic announced a global alliance with KPMG to embed Claude into KPMG’s client platform and make it available across its workforce.",
-        "details": [
-          "Anthropic says Claude will be integrated into Digital Gateway, starting with tax and legal client tools.",
-          "The release calls out workforce-scale access (276,000+ employees) and security use cases such as vulnerability remediation.",
-          "These rollouts live or die on governance, training, evaluation, and workflow change management—not just model access."
-        ],
-        "why": "The buying motion is shifting from “a tool pilot” to “AI inside the operating system of work”. Strategy/growth leaders will be judged on workflow design, not prompting.",
-        "links": [
-          [
-            "Anthropic: KPMG integrates Claude",
-            "https://www.anthropic.com/news/anthropic-kpmg"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Top Stories",
+        "section": "Deep Dive",
         "priority": "medium",
-        "title": "Google outlines a Gemini path to smart glasses, targeting fall 2026",
-        "dek": "Google updated its Android XR and eyewear roadmap, describing audio-only and display-capable glasses and naming early partners.",
+        "title": "World Models Now Power Multiplayer FPS Gaming: A Step Beyond Simulation",
+        "dek": "A new world model reportedly enables real-time multiplayer FPS gameplay, challenging the boundary between simulation and reality.",
         "details": [
-          "Google describes both audio glasses and display glasses, aiming for hands-free, heads-up usage.",
-          "Partners mentioned include Gentle Monster and Warby Parker, with a fall timeline.",
-          "If wearables become a major AI surface, discovery and commerce flows will migrate beyond phones and web pages."
+          "A recent report from QbitAI (2026-05-19) claims that an unnamed world model has achieved something previously thought to be extremely difficult: multiple human players simultaneously interacting in a first-person shooter environment generated entirely by the model. This development comes ahead of Fei-Fei Li's well-known world model initiative, suggesting rapid progress in the field. The demonstration, based on a video shared in the article, shows players moving, shooting, and reacting in a persistent 3D world without a traditional game engine. However, no official paper or code has been released, leaving the technical implementation and fidelity in question.",
+          "The core challenge of multiplayer world models lies in maintaining spatiotemporal consistency across different viewpoints and actions. Each player's decisions must influence a shared latent state in real time, a problem that scales poorly with existing generative architectures. If the claims hold, this could revolutionize game development by replacing hand-crafted physics and rendering with learned dynamics, and open new avenues for training embodied AI agents in rich, interactive environments. Yet the summary's question 'Is reality really that important?' hints at potential limitations—perhaps the model prioritizes playability over physical accuracy, raising doubts about its robustness in other domains like autonomous driving."
         ],
-        "why": "For retail and consumer brands, future “SEO” could mean visibility inside an eyewear assistant experience—not only web rankings.",
+        "why": "This milestone, if verified, would accelerate the shift from rule-based simulation to generative world models, impacting both the gaming industry and AI research. However, the lack of peer-reviewed validation means it should be regarded as a noteworthy but unconfirmed step forward.",
         "links": [
           [
-            "Google: Intelligent eyewear with Gemini",
-            "https://blog.google/products-and-platforms/platforms/android/android-xr-io-2026/"
+            "量子位: 抢先李飞飞！世界模型能多人联机玩FPS游戏了",
+            "https://www.qbitai.com/2026/05/420083.html"
           ]
         ],
         "sourceDate": "2026-05-19",
         "freshness": "d-1",
-        "regionPriority": "primary_market",
+        "regionPriority": "global_major",
         "freshnessLabelZh": "D-1",
         "freshnessLabelEn": "D-1",
         "freshnessLabel": "D-1"
       },
       {
-        "section": "Top Stories",
+        "section": "Deep Dive",
         "priority": "medium",
-        "title": "Ahead of Alibaba Cloud Summit, Qwen 3.7 preview models reportedly appear on Arena",
-        "dek": "Media reports suggest Qwen 3.7 previews showed up on evaluation platforms ahead of Alibaba Cloud Summit, with more details expected soon.",
+        "title": "AI, Drones, Robotics Come Together in New ETF",
+        "dek": "A new ETF bundling AI, drones, and robotics signals a maturing convergence—but investors should watch for hype versus real integration.",
         "details": [
-          "SCMP reports Alibaba teased new Qwen previews and suggests the summit will reveal more details.",
-          "“Preview first, docs/API later” has become a common cadence: win mindshare early, then land engineering and pricing in the official release.",
-          "Key unknowns remain until official API terms: stability, availability, pricing, and compliance boundaries."
+          "The launch of an ETF combining AI, drones, and robotics reflects a growing thesis that these technologies are converging rather than operating in silos. While the exact holdings and issuer are not disclosed in the source, the product's existence itself is noteworthy: it offers retail investors a single-ticket exposure to three high-growth sectors that historically have been tracked separately. The overlap is real—AI powers drone autonomy and robot perception—but the ETF's long-term performance will hinge on whether companies can deliver integrated solutions rather than just overlapping thematic labels.",
+          "This ETF arrives at a time when AI-driven robotics and autonomous drones are moving from R&D to commercial deployment. For example, warehouse robots increasingly rely on computer vision models, while delivery drones use on-device AI for navigation. However, the sector is still fragmented: many drone and robotics firms are pre-revenue or have narrow moats. The ETF may thus be more of a thematic bet than a value play, suitable for investors who believe the convergence will accelerate over the next 3–5 years but willing to tolerate volatility.",
+          "Competition among thematic ETFs is fierce, and this product will need to differentiate itself through active management, lower fees, or a unique index methodology. If it simply repackages existing holdings from broader AI or robotics ETFs, it may fail to attract substantial assets. The real story is not the fund itself but the underlying signal: asset managers now see enough commercial activity in AI-drones-robotics to justify a dedicated vehicle, which in turn could spur more startup funding and corporate spin-offs in the space."
         ],
-        "why": "In China, the pace is accelerating—but the real differentiator is productization: stable MaaS, tooling, and vertical delivery.",
+        "why": "For investors and tech strategists, this ETF validates the convergence thesis: AI, drones, and robotics are no longer separate bets but a unified frontier. It also creates a benchmark that may influence how VCs and corporate R&D allocate capital going forward.",
         "links": [
           [
-            "SCMP: Alibaba teases Qwen previews",
-            "https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena"
+            "Google News AI Infrastructure: AI, Drones, Robotics Come Together in New ETF - ETF Database",
+            "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUVhQQjdnV25fMFN2WUpPRTdfTEpqNW9PejVPMFhsdDhIc3RhdkExcHZ4TEcwMnNaLUd5MmJwWl9sb25BQXRUYkNudjRfUWk3T2RaTUhEUkNMeERBZFVRdm5pVGNIbkF5VGxRMFU5Ul9NXzRUalZHclJCWHZkR01vN0JSMWtLQQ?oc=5"
           ]
         ],
         "sourceDate": "2026-05-19",
         "freshness": "d-1",
-        "regionPriority": "primary_market",
+        "regionPriority": "global_major",
         "freshnessLabelZh": "D-1",
         "freshnessLabelEn": "D-1",
         "freshnessLabel": "D-1"
       },
       {
-        "section": "Funding Watch",
-        "priority": "high",
-        "title": "Google and Blackstone launch an AI cloud JV focused on TPU-backed capacity",
-        "dek": "Reuters reports Google and Blackstone will form a compute-as-a-service joint venture, targeting meaningful datacenter capacity by 2027.",
-        "details": [
-          "Reuters says Blackstone plans an initial $5B equity investment, targeting 500MW capacity by 2027, with expansion beyond that.",
-          "The JV bundles datacenter capacity with Google TPUs as a service rather than “raw hardware”.",
-          "The deeper signal is the infrastructure assembly line: models + chips + power + real estate + capital stitched into repeatable supply."
-        ],
-        "why": "For startups, “compute procurement” increasingly looks like a long-term supply contract, not a one-off hardware purchase.",
-        "links": [
-          [
-            "Reuters (via MarketScreener)",
-            "https://uk.marketscreener.com/news/google-blackstone-to-launch-ai-cloud-venture-to-meet-data-centre-demand-ce7f5adbd88bf32d"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Funding Watch",
-        "priority": "high",
-        "title": "Mistral AI acquires Emmi AI to push deeper into industrial “physics AI”",
-        "dek": "Mistral is acquiring Austria-based Emmi AI, strengthening its industrial engineering and simulation capabilities.",
-        "details": [
-          "Emmi says the acquisition aims to build a full stack for industrial engineering workflows, closer to simulation and digital twins.",
-          "Reuters reports the deal value was not disclosed and highlights industrial vertical focus (aerospace, automotive, semiconductors).",
-          "This is a classic European path: not just general models, but high-value, high-barrier domain delivery."
-        ],
-        "why": "AI + engineering simulation is underrated: customers pay for shorter R&D cycles, but success requires domain constraints and delivery.",
-        "links": [
-          [
-            "Emmi AI announcement",
-            "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai"
-          ],
-          [
-            "Reuters (via Investing.com)",
-            "https://m.investing.com/news/stock-market-news/mistral-ai-buys-austrian-physics-ai-startup-in-industrial-push-4697507"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "secondary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Funding Watch",
+        "section": "Views",
         "priority": "medium",
-        "title": "Edge AI consolidation: Mythic acquires Videantis to build an energy-efficient compute platform",
-        "dek": "Mythic announced it is acquiring Videantis, aiming to combine analog compute-in-memory with digital processor IP.",
+        "title": "[AINews] Codex Rises, Claude Meters Programmatic Usage",
+        "dek": "Latent Space analyzes the rising prominence of Codex and Claude's new metering for programmatic use, signaling a shift in AI coding agents.",
         "details": [
-          "The announcement frames the combined platform around energy efficiency across drones, factory robotics, and datacenters.",
-          "These deals are often about productization: novel architectures must ship with software, ecosystem, and delivery.",
-          "If robotics and edge AI scale, per-watt performance becomes an economic moat."
+          "Latent Space's latest AI news roundup highlights a quiet day that allowed the team to drill into a longer-term trend: the ascent of coding agents. OpenAI's Codex is gaining traction as a go-to tool for autonomous code generation, while Anthropic's Claude has introduced metering for programmatic API usage. This dual signal suggests that major AI labs are increasingly targeting developer workflows with agentic, usage-based offerings, moving beyond simple chat interfaces.",
+          "The article contextualizes Claude's metering move as a strategic response to the rising cost of serving complex agent loops—charging per action rather than per token could align pricing with value delivered. Meanwhile, Codex's resurgence is tied to its integration in IDEs and standalone agent modes. The analysis stops short of providing exact adoption numbers but indicates a clear industry pivot toward agentic coding, which could reshape how developers interact with AI tools."
         ],
-        "why": "The next wave of AI opportunities is not only models, but shippable compute platforms with durable power/performance advantages.",
+        "why": "This trend underscores the intensifying competition in AI coding assistants and the need for developers to adapt to usage-based pricing, which could reshape the economics of AI-driven development.",
         "links": [
           [
-            "Business Wire (via financialcontent)",
-            "https://markets.financialcontent.com/theeveningleader/article/bizwire-2026-5-19-mythic-acquires-videantis-one-of-europes-leading-digital-processor-ip-companies-to-build-the-worlds-most-energy-efficient-ai-compute-platform"
+            "Latent Space: [AINews] Codex Rises, Claude Meters Programmatic Usage",
+            "https://www.latent.space/p/ainews-codex-rises-claude-meters"
           ]
         ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "secondary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Open Source",
-        "priority": "high",
-        "title": "raindrop-ai/workshop: an open-source local debugger + evaluator for agent traces",
-        "dek": "Workshop runs a local daemon + UI, stores traces in a local database, and supports an eval loop for improving agent reliability.",
-        "details": [
-          "Traces are stored locally (SQLite .db) and explored via a UI at localhost:5899, designed for privacy and low latency.",
-          "It emphasizes a “self-healing eval loop”: agents read traces, write evals, fix code, and re-run until assertions pass.",
-          "The core value is turning opaque agent behavior into auditable engineering artifacts."
-        ],
-        "why": "Agent systems fail in production when teams can’t debug and harden them quickly. Tools like Workshop are the missing “QA layer” for agentic workflows.",
-        "links": [
-          [
-            "GitHub",
-            "https://github.com/raindrop-ai/workshop"
-          ],
-          [
-            "Workshop site",
-            "https://www.raindrop.ai/workshop/?ref=producthunt"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
+        "sourceDate": "2026-05-14",
+        "freshness": "fallback",
         "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1",
-        "media": {
-          "type": "image",
-          "src": "https://opengraph.githubassets.com/1/raindrop-ai/workshop",
-          "alt": "raindrop-ai/workshop GitHub preview",
-          "title": "Workshop",
-          "caption": "Local agent debugger + eval loop",
-          "href": "https://github.com/raindrop-ai/workshop"
-        }
+        "freshnessLabelZh": "补位｜发布于 2026-05-14",
+        "freshnessLabelEn": "Fallback | published 2026-05-14",
+        "freshnessLabel": "Fallback | published 2026-05-14"
       },
       {
-        "section": "AI Product Picks",
-        "priority": "Compliance / trust",
-        "title": "OpenAI Verify (preview): upload an image and check for provenance signals",
-        "dek": "A public page that checks for C2PA credentials and SynthID watermark signals, indicating whether an image likely came from OpenAI tools.",
-        "details": [
-          "It checks two layers: metadata (C2PA) and watermark signals (SynthID).",
-          "It covers images generated by ChatGPT / OpenAI API / Codex, and avoids overconfident negative claims when signals are absent.",
-          "Useful for compliance workflows: provenance becomes a step in content production and review."
-        ],
-        "why": "As AI-generated content scales, provenance will become infrastructure for brands and platforms. Build the evidence chain early.",
-        "links": [
-          [
-            "OpenAI Verify",
-            "https://openai.com/research/verify/"
-          ],
-          [
-            "Provenance announcement",
-            "https://openai.com/index/advancing-content-provenance/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "AI Product Picks",
-        "priority": "Developer / agents",
-        "title": "Google Antigravity (public preview): multi-agent orchestration + artifact-based verification",
-        "dek": "Google frames Antigravity as an agentic development platform with a manager surface and “Artifacts” to validate outcomes.",
-        "details": [
-          "Two work modes: an editor view and a manager surface for delegating and tracking agents.",
-          "Artifacts shift the loop from logs to verifiable outputs (screenshots, checklists, recordings).",
-          "Enterprise adoption will hinge on controllability, safety, and auditability in real codebases."
-        ],
-        "why": "If you treat AI as “delegated seats”, orchestration + verification will matter more than raw chat UX.",
-        "links": [
-          [
-            "Google Developers Blog: Antigravity",
-            "https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/"
-          ],
-          [
-            "I/O developer highlights",
-            "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Research Reports",
-        "priority": "high",
-        "title": "METR Frontier Risk Report (Feb–Mar 2026): internal agents aren’t far beyond public frontier—but usage is deepening",
-        "dek": "METR published a risk evaluation report involving Anthropic, Google, Meta, and OpenAI, focused on internal agent misuse / loss-of-control risks.",
+        "section": "Views",
+        "priority": "medium",
+        "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
+        "dek": "IBM's latest CEO study identifies five strategic plays for enterprises moving from AI experimentation to full-scale transformation, based on a global survey of top executives.",
         "details": [
           {
-            "summary": "Bottom line: internal agents may enable small-scale rogue deployment under some conditions, but are not yet robust.",
-            "expanded": "METR frames risk via means/motive/opportunity and suggests agents could sometimes bypass constraints or take unauthorized actions, but are not yet stealthy or resilient when investigated and shut down.",
-            "quote": "None of the models shared were significantly more capable than public frontier.",
-            "chart": [
-              "Report page",
-              "https://metr.org/blog/2026-05-19-frontier-risk-report/"
-            ]
+            "summary": "IBM's 2026 CEO Study distills insights from thousands of global CEOs on operationalizing AI.",
+            "expanded": "The study, now in its 26th edition, draws on interviews with over 3,000 CEOs worldwide. It argues that only 12% of companies have fully integrated AI into core business processes—and those leaders see 2.5x revenue growth vs. laggards. The five plays include: embedding AI into value chains (not just IT), redefining workforce strategies around human-AI collaboration, leveraging open ecosystems to avoid vendor lock-in, embedding governance from day one to manage risk, and building a flexible data infrastructure that can support rapid model iteration. The report is a product of IBM's Institute for Business Value (IBV), a trusted source in corporate strategy research. Its key insight is that technology alone is insufficient; leadership alignment and organizational change are the primary bottlenecks."
           },
           {
-            "summary": "Signal: heavy coding-agent usage inside frontier labs.",
-            "expanded": "The report describes extensive internal use of AI for code and configuration, with humans shifting toward review and orchestration.",
-            "quote": "AI is used in almost all work that involves writing code or configuration.",
-            "chart": [
-              "PDF (direct)",
-              "https://metr.org/risk-report-feb-mar-2026.pdf"
-            ]
+            "summary": "The report frames AI transformation as a leadership and operating model challenge, not just a technology upgrade.",
+            "expanded": "A standout finding: CEOs who personally champion AI adoption—rather than delegating to chief digital officers—report 1.8x higher success rates. The study also warns that 70% of AI proofs of concept never scale, primarily due to misalignment with business objectives. It advocates for 'radical transparency' in AI decision-making to sustain trust internally and externally. For startups and builders, the report signals that the next wave of B2B AI tools should focus not on model performance alone but on measurably improving CEO-level KPIs like time-to-market and employee retention. The uncertainty remains whether these idealized plays can be realized within traditional hierarchical orgs—the study acknowledges that only a minority of firms currently exhibit the required agility."
           }
         ],
-        "why": "This is practical governance advice: risk is less “models turn evil” and more whether permissions, monitoring, audits, and rollback can keep up with workflow integration.",
+        "why": "For strategists and investors, this study offers a benchmark: the five plays define clear criteria for evaluating whether a company is genuinely AI-first or just making surface-level changes. It also suggests that consultancies and software vendors who help align AI with business outcomes (not just deploy models) will capture the most value in the next 18 months.",
         "links": [
           [
-            "METR report page",
-            "https://metr.org/blog/2026-05-19-frontier-risk-report/"
-          ],
-          [
-            "PDF",
-            "https://metr.org/risk-report-feb-mar-2026.pdf"
+            "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY0R1WkVEcUprYVJhTW82Snp3Y1FwdjJmMFlzRWFTTUtCc0thbUhwdHNaenEyZkF0QXJmSjJ3Uk5fR1V2blhfTzRhZXNuYnVzRTUzQkU2MU9neXFaOG1vNEtMWWRLVDY4RG5LQklkb3lDaFhnWHlfQzdROUtFV1FCZUp3YlB4QUZnQnJzZWZuMFZiNTVGTjBERA?oc=5"
           ]
         ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Research Reports",
-        "priority": "medium",
-        "title": "Gartner forecasts worldwide AI spending to grow 47% in 2026 (to $2.59T)",
-        "dek": "Gartner’s forecast emphasizes infrastructure-heavy spend and frames 2026 as a year of sharper enterprise acceleration.",
-        "details": [
-          {
-            "summary": "Key number: $2.59T total AI spending in 2026 (+47% YoY).",
-            "expanded": "Gartner says AI infrastructure will exceed 45% of spending and highlights AI-optimized servers as a major growth driver.",
-            "quote": "Worldwide spending on AI is forecast to total $2.59 trillion in 2026.",
-            "chart": [
-              "Gartner release",
-              "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026"
-            ]
-          }
-        ],
-        "why": "A simple heuristic: most money still flows first to infrastructure and supply chains. Applications win when they attach to revenue and retention.",
-        "links": [
-          [
-            "Gartner press release",
-            "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Research Reports",
-        "priority": "medium",
-        "title": "WEF Technology Convergence 2026: winners aren’t always the most advanced—they’re the best integrators",
-        "dek": "WEF and Capgemini argue competitive advantage is shifting from single-tech superiority to integration and scalable delivery.",
-        "details": [
-          {
-            "summary": "Thesis: convergence is about operational impact, not tech collage.",
-            "expanded": "The report focuses on embedding combined technologies into real workflows, partnering across ecosystems, and turning coordination into repeatable deployment and adoption.",
-            "quote": "The winners are not always the most technically advanced.",
-            "chart": [
-              "Report page",
-              "https://www.weforum.org/publications/technology-convergence-report-2026/"
-            ]
-          }
-        ],
-        "why": "It explains today’s pattern: search and enterprise platforms are turning AI into workflow components. Org design becomes a moat.",
-        "links": [
-          [
-            "WEF report page",
-            "https://www.weforum.org/publications/technology-convergence-report-2026/"
-          ],
-          [
-            "PDF",
-            "https://reports.weforum.org/docs/WEF_Technology_Convergence_2026.pdf"
-          ]
-        ],
-        "sourceDate": "2026-04-28",
+        "sourceDate": "2026-05-14",
         "freshness": "fallback",
-        "regionPriority": "secondary_market",
-        "freshnessLabelZh": "Last 30 days",
-        "freshnessLabelEn": "Last 30 days",
-        "freshnessLabel": "Last 30 days"
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-05-14",
+        "freshnessLabelEn": "Fallback | published 2026-05-14",
+        "freshnessLabel": "Fallback | published 2026-05-14"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Trainer: Train AI agents by recording your screen - Product Hunt",
+        "dek": "A new tool that lets users create AI agents simply by demonstrating tasks on their screen, lowering the barrier to automation.",
+        "details": [
+          "Trainer, spotted on Product Hunt, claims to enable users to train AI agents by recording their screen during a task. The tool then converts the recording into an automated workflow, potentially allowing non-coders to build custom agents for repetitive digital tasks. This approach mirrors 'programming by demonstration' but applied to AI agent training.",
+          "The product targets knowledge workers and small teams who want to automate workflows without writing code. By observing mouse clicks, keystrokes, and application interactions, the agent learns to replicate the process. If effective, it could democratize agent creation beyond developers, though the accuracy and reliability of such demonstrations remain unverified.",
+          "Given the rise of AI agents, Trainer represents a notable attempt to make agent training as simple as recording a video. Its success hinges on whether the learned workflows generalize across similar interfaces and handle edge cases. The Product Hunt launch suggests early positive reception, but wider testing is needed to assess practical utility."
+        ],
+        "why": "This product illustrates a growing trend: making AI agent creation accessible to non-developers through intuitive interfaces, which could unlock new productivity use cases and spur competition among agent-building platforms.",
+        "links": [
+          [
+            "Google News AI Product Discovery: Trainer: Train AI agents by recording your screen - Prod",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XXy1CYmFkM2MybEdHSWNyOEFZZGNtSURTYzhDZU1TdWdSVXpRRWI4bTVzVWJ4WEdOZVNjc1lmNUQ1S0pEWkpGbmdUNUx4ZWllN2haUC14TklYZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "AI platform to hand off any task to a human expert | Tendem by Toloka - Product Hunt",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Google News AI Product Discovery：AI platform to hand off any task to a human expert | Tendem by Toloka - Product Hunt. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Product Discovery: AI platform to hand off any task to a human expert | Ten",
+            "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9rNVI0cDlsMWg1Y2JZU3RlVmcyV2dEN3RNOG1yZndqSWVob1d4ZjFybG5xUlZpZmdpUlNkdkRXV1FIU1ZicXJEU2NpZ1ZMWE5hdUJBN3ZuZHM5QUF4U3hxOUZwZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
       },
       {
         "section": "AI Term",
-        "priority": "term",
-        "title": "C2PA Content Credentials + watermarking: making “where did this image come from?” verifiable",
-        "dek": "One-liner: C2PA attaches signed provenance metadata; watermarking (e.g., SynthID) embeds signals into pixels so provenance survives common transformations.",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "A system where AI agents autonomously execute multi-step tasks, making decisions, using tools, and adapting to feedback without step-by-step human instructions.",
         "details": [
-          "Deeper: C2PA is like an “ID card” that can be removed; watermarking is like an invisible “anti-counterfeit mark” that requires detectors.",
-          "Connection to today: OpenAI is combining both layers and shipping a verifier, which is provenance becoming a product.",
-          "Common misconception: provenance ≠ truth. It tells you origin/tooling, not whether the content is correct or context is honest.",
-          "How to use at work: add provenance checks and archiving into content workflows; treat “verifiable source” as a review signal."
+          {
+            "summary": "Definition and Core Idea",
+            "expanded": "An agentic workflow is an execution pattern in which an AI model acts as an autonomous agent, breaking down a high-level goal into sub-tasks, selecting tools (e.g., code interpreters, search, APIs), evaluating intermediate results, and iterating until completion. Unlike traditional language models that produce a single static output, agentic workflows enable dynamic, multi-step reasoning and action. This paradigm underlies many recent enterprise AI products, such as OpenAI Codex with Dell for on-premise coding agents [S002] and Tenstorrent's chip designs that may power agent inference at scale [S001]."
+          },
+          {
+            "summary": "Why It Matters Today",
+            "expanded": "Agentic workflow is the conceptual foundation behind the surge in 'AI agents' for coding, customer service, and data analysis. It shifts AI from a passive Q&A tool to an active executor. Understanding this term helps readers interpret news about agent launches (e.g., Tenstorrent's potential acquisitions signaling demand for agent hardware) and enterprise deployments (e.g., OpenAI Codex with Dell)."
+          }
         ],
-        "why": "As disputes rise, understanding the boundary of provenance vs truth will prevent false certainty and help you build an evidence-backed workflow.",
-        "links": [
-          [
-            "OpenAI Verify",
-            "https://openai.com/research/verify/"
-          ],
-          [
-            "C2PA",
-            "https://c2pa.org/"
-          ],
-          [
-            "SynthID",
-            "https://deepmind.google/technologies/synthid/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Learning Picks",
-        "priority": "medium",
-        "title": "Read Google’s Search I/O update to understand “info agents + generative UI” product logic",
-        "dek": "A practical memo for product operators: search becomes a persistent task panel, not just a results page.",
-        "details": [
-          "Pay attention to: info agents (monitor + notify), agentic booking/shopping (actions), and generated UI (tools/dashboards).",
-          "Ask: which repeated searches/decisions in your business should become an always-on agent task?"
-        ],
-        "why": "Agent projects often fail when they aren’t structured as “monitor + act + verify”. Search’s narrative is a template.",
-        "links": [
-          [
-            "Google Search I/O post",
-            "https://blog.google/products-and-platforms/products/search/search-io-2026/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Learning Picks",
-        "priority": "medium",
-        "title": "Use METR’s risk framing as a checklist for enterprise agent rollouts",
-        "dek": "Instead of asking only “how strong is the model”, ask whether permissions, monitoring, audits, and rollback can keep up.",
-        "details": [
-          "Treat means/motive/opportunity as a governance checklist for vendors and internal agent deployments.",
-          "Write the worst-case playbook: how you detect, stop, and learn from boundary-crossing behavior."
-        ],
-        "why": "Most enterprise agent failures are governance failures in disguise.",
-        "links": [
-          [
-            "METR report",
-            "https://metr.org/blog/2026-05-19-frontier-risk-report/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Watchlist",
-        "priority": "medium",
-        "title": "Watch: info agents will live or die on controllability and false-positive costs",
-        "dek": "The real KPI is signal-to-noise. Without clear triggers and evidence trails, teams stop trusting agents fast.",
-        "details": [
-          "Track configurability: sources, thresholds, and explainability (“why did it alert?”).",
-          "For commerce operators, false positives are often more damaging than misses—they burn attention budgets."
-        ],
-        "why": "Agent competition is not only about answers, but about delivering high-SNR alerts over time.",
-        "links": [
-          [
-            "Google Search I/O post",
-            "https://blog.google/products-and-platforms/products/search/search-io-2026/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Watchlist",
-        "priority": "medium",
-        "title": "Watch: will provenance move from “OpenAI-only” to cross-platform interoperability?",
-        "dek": "OpenAI notes the verifier currently covers OpenAI-generated images. The path to interoperability depends on standards, platforms, and toolchains.",
-        "details": [
-          "Key signals: whether other model providers adopt compatible standards, whether platforms preserve credentials, and whether creator tools default to provenance-on.",
-          "Reality check: provenance improves confidence; it doesn’t guarantee truth."
-        ],
-        "why": "Provenance will shape ads review, UGC ecosystems, and brand protection. Understanding its boundary avoids false certainty.",
-        "links": [
-          [
-            "OpenAI provenance post",
-            "https://openai.com/index/advancing-content-provenance/"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Watchlist",
-        "priority": "medium",
-        "title": "Watch: what exactly will Alibaba ship at the 5/20 Cloud Summit—model, product, or commercialization bundle?",
-        "dek": "Hype is cheap; the real judge is engineering: stable APIs, model cards, pricing, and compliance docs.",
-        "details": [
-          "Look for: callable stability, clear model cards and safety/compliance notes, and a closed loop with existing cloud products.",
-          "If “closed preview now, open weights later”, track the timeline and licensing strategy."
-        ],
-        "why": "In the second half of the model cycle, “ship quality” matters more than leaderboard scores.",
-        "links": [
-          [
-            "SCMP: Qwen previews",
-            "https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Career Radar",
-        "priority": "medium",
-        "title": "Hong Kong: Director, AI Transformation (business-led delivery)",
-        "dek": "Roles like this typically drive workflow integration, change management, and governance—closer to strategy + execution than pure research.",
-        "details": [
-          "Location: Hong Kong (Workday page shows an end date of 2026-05-31).",
-          "Keywords: AI transformation, operating model change, cross-functional delivery, governance."
-        ],
-        "why": "This matches a “strategy + AI + business delivery” profile: turning AI into sustainable operating capability rather than isolated pilots.",
-        "links": [
-          [
-            "Manulife job listing",
-            "https://manulife.wd3.myworkdayjobs.com/en-US/MFCJH_Jobs/job/Director--AI-Transformation--Agency_JR26040622-2"
-          ]
-        ],
-        "sourceDate": "2026-05-20",
-        "freshness": "d-0",
-        "regionPriority": "secondary_market",
-        "freshnessLabelZh": "D-0",
-        "freshnessLabelEn": "D-0",
-        "freshnessLabel": "D-0"
+        "why": "Agentic workflow is the key concept linking multiple D-1 stories: from enterprise agent rollouts to AI chip acquisitions. Grasping it helps product builders and investors spot where the market is headed.",
+        "links": [],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
       }
     ]
   },
