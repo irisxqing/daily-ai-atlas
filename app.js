@@ -1,4 +1,222 @@
 const archiveZh = [
+  {
+    "date": "2026-05-20",
+    "title": "AI Daily Atlas",
+    "meta": "2026年5月20日",
+    "headline": "AI 竞争正在从模型能力转向真实产品和产业控制点",
+    "summary": "今天的主线是 AI 公司正在把技术能力变成更稳定的产品入口和产业控制点。值得关注的不只是模型强弱，而是谁能把能力沉淀为持续使用、商业化和行业影响力。",
+    "tags": [
+      "模型平台",
+      "AI产品",
+      "投融资",
+      "开源",
+      "行业观点"
+    ],
+    "items": [
+      {
+        "section": "今日重点",
+        "priority": "high",
+        "title": "国产GPU开始造世界！国内首个全栈具身智能仿真平台来了",
+        "dek": "由国产GPU驱动的全栈具身智能仿真平台MT Lambda发布，对标NVIDIA Isaac Sim，填补国内空白。",
+        "details": [
+          "5月19日，国内首个全栈具身智能仿真平台MT Lambda正式发布。该平台由国产GPU厂商主导开发，旨在为具身智能（Embodied AI）研究提供从仿真环境、感知算法到运动控制的完整工具链。此前，类似能力主要依赖NVIDIA的Isaac Sim等海外平台，国产方案的缺失限制了本土研发效率。MT Lambda的出现有望改变这一局面，但具体性能参数和生态兼容性尚未完全公开。",
+          "MT Lambda的核心亮点是“全栈”与“国产GPU适配”。平台集成了高保真物理引擎、多传感器仿真和强化学习接口，支持机器人从训练到部署的全流程。更重要的是，它基于国产GPU架构优化，可避免硬件“卡脖子”风险。据量子位报道，该平台已在多个高校和创业公司内测，但大规模商用时间表仍不明确。",
+          "这一进展对国内具身智能赛道意义重大：一方面，降低了机器人算法研发的硬件门槛，无需依赖昂贵的外国GPU集群；另一方面，为国产GPU在AI训练场景中探索了新应用方向。不过，与Isaac Sim相比，MT Lambda的社区生态、工具成熟度及国际影响力仍有差距。能否快速迭代并吸引开发者，将是决定其成败的关键。"
+        ],
+        "why": "国产GPU驱动的全栈具身智能仿真平台发布，是国产AI基础设施从‘芯片’向‘平台+生态’延伸的标志性事件，对关注机器人、自动驾驶等领域的投资和创业团队具有长期战略参考价值。",
+        "links": [
+          [
+            "量子位: 国产GPU开始造世界！国内首个全栈具身智能仿真平台来了",
+            "https://www.qbitai.com/2026/05/420084.html"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "投融资信息",
+        "priority": "high",
+        "title": "AI芯片初创公司Tenstorrent成香饽饽：传英特尔和高通均有意收购，估值或超50亿美元",
+        "dek": "加拿大AI芯片初创公司Tenstorrent引发巨头竞购兴趣，英特尔和高通据称都在考虑将其收入囊中，交易估值可能突破50亿美元。",
+        "details": [
+          "Tenstorrent是一家总部位于加拿大多伦多的AI芯片初创公司，由传奇芯片架构师Jim Keller担任CEO。该公司专注于开发高性能AI加速器，采用独特的「数据流架构」，在AI推理和训练领域具备竞争力。据Moomoo等多家媒体报道，英特尔和高通目前都在考虑收购Tenstorrent，估值可能超过50亿美元。不过，现有报道均援引“内部人士”或“知情人士”消息，尚未得到公司或买方官方证实。",
+          "若英特尔成功收购Tenstorrent，将为其在AI芯片领域注入强心剂。英特尔近年来在AI加速器市场进展缓慢，其Gaudi系列产品竞争力不及英伟达，而Tenstorrent的技术和Jim Keller的行业经验可能帮助英特尔加速追赶。高通方面，收购Tenstorrent则有助于其扩展数据中心AI计算能力，跳出以手机芯片为主的业务框架。但两家巨头均面临监管审查等不确定性，交易尚需时日。",
+          "Tenstorrent在2025年已完成多轮融资，投资者包括LG电子、Fidelity、Bezos Expeditions等。公司此前估值约25亿美元，若收购价超50亿美元，意味着溢价近一倍。这一估值水平反映出市场对AI芯片初创公司的狂热追捧——尽管Tenstorrent尚未实现大规模商业盈利，但其开源软件策略（如TT-Metalium）和Jim Keller的明星光环成为估值核心支撑。",
+          "这笔潜在的收购案也折射出AI芯片行业的整合趋势。随着AI算力需求爆发，大型科技公司更倾向于通过收购获取关键技术和团队，而非自研。如果交易成行，Tenstorrent将是继Mellanox（被英伟达收购）、Habana Labs（被英特尔收购）后又一家被巨头吞并的AI芯片公司。不过，反垄断审查和芯片出口管制可能成为交易变数，值得持续关注。"
+        ],
+        "why": "Tenstorrent被竞购是AI芯片行业整合加速的信号，无论最终花落谁家，都表明市场对下一代AI计算架构的争夺已白热化，投资者和创业者应关注拥有差异化技术的早期硬件公司。",
+        "links": [
+          [
+            "Google News AI Funding: AI chip startup Tenstorrent becomes highly sought-after! Reports suggest Intel (INTC.US) and Qualcomm (QCOM.US) are interested in acquiring the company, with a valuation potentially exceeding $5 billion. - Moomoo",
+            "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtha1FteTFlT1dueW1oem4wU1JpTzQxRmNhSDZCb3phTlB1VUJYaHphRW1USlhOSWo3M3Vzd2k4RGtnNWxTTFZsRkc3d3ZOM0JXU0RCTjRWaTVaZnh2WWwtNW53YjhPdVdLTWN6VUx5d2JtbHRQWVRYQjQtTi1xVU03YTJGNVN2Vkw5dGhRVGpYMXNDdTNvdVRxX0FuQXJ3ZTFQdmctbk9kLUo3ZHdJTHRRcw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "把本地 GitHub 会话带到任何地方：远程控制 Copilot 现已 GA",
+        "dek": "GitHub 宣布 Copilot 会话远程控制功能全面可用，开发者可在 PC 和手机间无缝切换。",
+        "details": [
+          "GitHub 于 5 月 18 日宣布，其 Copilot 会话远程控制功能正式全面可用（GA）。该功能允许开发者在 VS Code 或 CLI 中开始工作，然后通过 github.com 或 GitHub Mobile App 在手机上继续同一会话，实现“随时随地编码”的体验。这是 GitHub 在提升开发者工作流灵活性方面的重要一步。",
+          "此前，Copilot 会话只能在单台设备上持续运行，切换设备意味着丢失上下文。新功能通过云端同步会话状态，使代码补全、聊天历史等上下文在不同设备间保持连贯。GA 版本意味着该功能已通过稳定性测试，所有 GitHub Copilot 用户均可使用，无需额外配置。",
+          "对开发者社群而言，这一功能降低了远程开发和移动办公的门槛。例如，开发者可以在办公室 PC 上构思架构，通勤时用手机审查代码片段或继续对话。不过，移动端的 Copilot 体验仍受限于屏幕尺寸，更适用于轻量级操作（如查看建议、简单编辑），复杂重构仍建议在桌面端完成。",
+          "从工具链角度看，GitHub 正将 Copilot 从一个 IDE 插件扩展为跨平台 AI 助手。此次 GA 是 Copilot 生态系统成熟的表现，也暗示未来可能推出更多云端同步能力（如共享配置、自定义指令）。对于企业用户，该功能可能需配合 SSO 和合规策略，但 GitHub 尚未公布企业版的具体限制。"
+        ],
+        "why": "这一更新标志着 Copilot 从一个桌面插件进化为跨设备 AI 开发助手，对远程办公和移动开发场景有直接价值。创业公司可借鉴其“云端会话”模式，构建产品中的上下文无缝迁移能力。",
+        "links": [
+          [
+            "GitHub Blog: Take your local GitHub sessions anywhere",
+            "https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere/"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Anuma: multi-model AI workspace with private cross-model memory",
+        "dek": "聚合ChatGPT、Claude、Gemini等模型，隐私记忆跨模型携带",
+        "details": [
+          "Anuma是一款新兴的多模型AI工作空间，将ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama等主流模型整合到一个界面中。其核心差异在于提供隐私优先的记忆层，用户可以手动编辑并让记忆在不同模型间同步，解决了多模型切换时上下文丢失的痛点。",
+          "对经常对比模型输出或需要结合多个模型能力的用户，Anuma避免了频繁切换标签页的麻烦。记忆功能让个人偏好和工作上下文持续积累，提升效率。目前产品处于早期阶段，尚无公开的用户规模或收入数据，未来能否被验证还有不确定性。",
+          "Anuma的定位瞄准了多模型管理空白，但面临来自单一模型深度绑定和开源方案（如LobeChat）的竞争。隐私记忆若处理得当，可能成为B端客户（如科研、咨询）的亮点。需持续观察其记忆性能、模型兼容稳定性以及商业化路径。",
+          "从产品趋势看，AI工作空间正从单一模型向多模型协作演进。Anuma通过隐私记忆试图建立差异化壁垒，但用户对跨模型数据安全性的信任仍是关键挑战。值得关注其是否推出企业版及定价策略。"
+        ],
+        "why": "Anuma代表多模型协作与隐私记忆的融合方向，对观察AI产品如何满足真实工作流需求有参考价值，未来可能成为生产力工具的新范式。",
+        "links": [
+          [
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-05-17",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Liminary：面向顾问与策略师的 AI 研究空间",
+        "dek": "让 AI 辅助的高风险研究工作有据可查、可复用",
+        "details": [
+          "咨询师和研究人员每天需要处理大量报告、文章、聊天记录和视频，传统工具很难将零散信息整合成可复用的知识。Liminary 正是为这个痛点而生，定位于“高风险的推荐”场景——比如尽职调查、市场分析或战略报告，这些任务对来源准确性和可追溯性要求极高。它将 AI 聊天、文档和多媒体内容统一到一个工作区，强调“来源不丢失”。",
+          "Liminary 的核心功能包括：保存来自网页、PDF、AI 对话和视频的片段，通过注释和标签分类整理；每条笔记都保留原始链接，方便随时回溯；跨项目使用时，系统能自动关联已有知识。这种设计有效避免了 AI 生成内容常见的“幻觉”问题——用户始终能追溯到原始证据，而不是盲目相信 AI 的总结。",
+          "产品主要面向顾问、策略师和独立研究者，这些人需要基于真实证据做出判断。Liminary 提供了一个中央工作空间，减少在不同工具间切换的损耗。对于非技术背景的用户，它比 Notion 或 Obsidian 更聚焦研究流程；与 Perplexity 等搜索工具相比，它更强调长期知识管理和协作复用。",
+          "目前 Liminary 仍处于早期阶段，具体定价和团队背景尚未公开。不过，其产品理念——将 AI 聊天记录作为可收藏的“研究资产”——值得关注。如果能在企业合规、权限管理和团队协作上进一步完善，有望成为专业服务领域的标准配置。对于 AI 产品观察者，这是个验证“垂直工作流 vs 通用助手”市场策略的好案例。"
+        ],
+        "why": "这个产品展示了 AI 在知识密集型工作中的垂直机会：不是取代人类，而是增强结构化推理与来源管理。对于创业者和投资者，深耕特定职业角色的 AI 工作区可能比通用聊天机器人更具粘性，尤其在高客单价的企业咨询场景。",
+        "links": [
+          [
+            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and researchers",
+            "https://liminary.io/"
+          ]
+        ],
+        "sourceDate": "2026-05-17",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "行业观点与报告",
+        "priority": "medium",
+        "title": "律师用DeepSeek当“法律顾问”：AI说原告能赢，他就把聊天记录当代理意见提交，被法官训诫",
+        "dek": "一起民事诉讼中，原告律师向DeepSeek提问“谁能赢”，AI分析后认为原告胜算更大，律师遂将AI问答内容作为代理意见提交法庭。法官对此行为进行了严肃训诫，引发行业内对AI在法律实务中角色边界的讨论。",
+        "details": [
+          "据报道，在一起民事诉讼中，原告代理律师在准备诉讼材料时，使用DeepSeek提问“谁能赢”，AI系统基于案件描述分析后给出“原告能赢”的结论。律师认为该结果有道理，直接将AI的问答记录作为代理意见的一部分提交给了法庭。法官在审理过程中发现该材料后，对律师进行了严肃训诫，指出AI的结论不能替代法律专业判断，也不得作为正式代理意见直接提交。",
+          "这一事件暴露了部分法律从业者对AI能力的认知偏差。虽然大语言模型在法律文书生成、条文检索等方面有辅助价值，但其输出本质上仍是概率性预测，无法承担法律论证的责任。法官的训诫实际上重申了司法机关对AI材料准入的审慎态度——AI可以辅助思考，但不能直接“代笔”法律意见。",
+          "事件也反映出法律行业在AI应用上的“灰色地带”。目前，中国法院对AI生成内容的法律效力尚无明确统一规定，各地实践中法官拥有较大裁量权。此次训诫虽未上升到处罚，但释放了明确的警示信号：律师若依赖AI进行法律决策并以此提交法庭，可能面临职业风险。",
+          "从行业视角看，这起“小事”恰好切中了AI法律产品创业者的核心痛点：技术能力与法律实务之间仍存在巨大的信任鸿沟。未来，法律科技公司需要在AI输出中内置更明确的责任边界提示，并探索如何将AI作为“思维工具”而非“决策替代”融入律师工作流。该事件的后续发展值得关注，尤其是监管是否会就此出台更细化的指引。"
+        ],
+        "why": "这个事件说明，AI在法律实务中作为“顾问”的角色正遭遇现实拷问——技术可以辅助，但不能取代专业判断。对于法律科技创业者和AI产品经理而言，需要在产品设计中加入更清晰的免责机制和使用边界提示，否则可能引发职业伦理和合规风险。",
+        "links": [
+          [
+            "Google News China AI: 原告律师问deepseek“谁能赢”...",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVEZ0RlVrUmxWRGhWUjVDR3NpQ2hpNVZZWXpZQ2l4WGZqTG05YW9xc0Y1R29oWFowMUxFY0NraUIxU3ZIWlYwTURUVG56bVBXMDhXanBmUTVPb1g2dWZST0lqaFdudzJrWTlXSDNuam1HWXpNazNxQ0taSW1PY3JkZ2VFOHoySm04TFBLeA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "行业观点与报告",
+        "priority": "medium",
+        "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
+        "dek": "IBM发布2026年CEO调研报告，提出企业向AI优先转型的五大关键行动。",
+        "details": [
+          {
+            "summary": "核心观点：AI优先不仅是技术部署，更是组织战略、人才和文化全面重塑。",
+            "expanded": "IBM调研全球数千位CEO发现，领先企业正从“AI项目”转向“AI优先”运营模式。报告提炼5项行动：1) 以业务结果倒推AI用例；2) 建立跨职能AI领导团队；3) 投资员工AI技能与再培训；4) 构建可信AI治理框架；5) 与生态伙伴共建AI基础设施。值得注意的是，超过60%的受访CEO认为“缺乏清晰战略”是最大障碍。"
+          },
+          {
+            "summary": "关键数据：74%的CEO计划在未来两年内将AI投资翻倍，但仅28%已规模化落地。",
+            "expanded": "调研显示，尽管信心高涨，多数企业仍处于试点阶段。报告强调“AI优先”要求从CIO负责转变为CEO主导，并将AI纳入核心KPI。产业启发：AI基础设施（如MaaS平台、治理工具）和AI人才培训市场将迎来结构性机会。"
+          }
+        ],
+        "why": "对于中国企业管理者，IBM这份报告提供了从“跟风试点”到“系统转型”的路线图，值得关注其中关于战略对齐和组织变革的实操建议。",
+        "links": [
+          [
+            "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY0R1WkVEcUprYVJhTW82Snp3Y1FwdjJmMFlzRWFTTUtCc0thbUhwdHNaenEyZkF0QXJmSjJ3Uk5fR1V2blhfTzRhZXNuYnVzRTUzQkU2MU9neXFaOG1vNEtMWWRLVDY4RG5LQklkb3lDaFhnWHlfQzdROUtFV1FCZUp3YlB4QUZnQnJzZWZuMFZiNTVGTjBERA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-14",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-05-14",
+        "freshnessLabelEn": "Fallback | published 2026-05-14",
+        "freshnessLabel": "补位｜发布于 2026-05-14"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "理解AI agent如何自主执行复杂任务，以及它们在企业自动化中的角色。",
+        "details": [
+          "Agentic Workflow是指由AI智能体自主执行一系列复杂任务的工作流，区别于传统的if-then规则。它依赖于大语言模型的推理能力，可以动态规划、决策并调用工具。随着OpenAI将Codex通过Dell引入企业环境，这种模式正在从云端走向内部部署，企业可以在自己的数据上安全地运行代码生成agent。",
+          "这一合作的关键在于Dell提供的基础设施和安全框架，使得AI agent能够接入企业现有的工作流系统，而不必离开本地或混合环境。对于非技术背景的读者来说，这意味着未来你可能会有一个AI程序员直接在你的企业私有云上工作，而不用把代码传到外部。",
+          "但Agentic Workflow仍处于早期阶段。企业面临的主要不确定性包括agent输出的可靠性、可解释性，以及如何在多步骤任务中防止错误累积。目前大多数实践仍以辅助人类为主，完全自主执行还需更多验证。"
+        ],
+        "why": "Agentic Workflow正在重塑企业自动化的边界，理解它有助于在AI投资中识别真正的落地场景，而非停留在概念炒作。",
+        "links": [
+          [
+            "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
+            "https://openai.com/index/dell-codex-enterprise-partnership"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
     {
     "date": "2026-05-19",
     "title": "AI Daily Atlas",
@@ -947,6 +1165,217 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-05-20",
+    "title": "AI Daily Atlas",
+    "meta": "May 20, 2026",
+    "headline": "AI competition is shifting from model capability to products and industry control points",
+    "summary": "Today’s main theme is that AI competition is moving beyond isolated model releases into product entry points, key talent, infrastructure, and real-world adoption. The important question is no longer only which model is stronger, but who can turn capability into usage, revenue, and industry influence.",
+    "tags": [
+      "Models",
+      "AI Products",
+      "Funding",
+      "Open Source",
+      "Industry Views"
+    ],
+    "items": [
+      {
+        "section": "Top Stories",
+        "priority": "high",
+        "title": "Domestic GPUs Power China's First Full-Stack Embodied Intelligence Simulation Platform",
+        "dek": "MT Lambda, built entirely on homegrown chips, offers an end-to-end pipeline for robot simulation and training, reducing reliance on Nvidia's ecosystem.",
+        "details": [
+          "The platform, named MT Lambda, was unveiled on May 19 and marks China's first full-stack embodied intelligence simulation environment running entirely on domestic GPUs (e.g., Huawei Ascend series). It provides high-fidelity physics simulation, multi-agent support, and reinforcement learning toolkits, enabling developers to prototype and test robot behaviors without switching to foreign hardware stacks. This directly addresses a key bottleneck for Chinese AI labs: access to Nvidia's high-end GPUs under export restrictions.",
+          "By integrating scene editors, perception algorithm libraries, and a unified deployment interface, MT Lambda aims to cut the development cycle for embodied AI from months to weeks. The platform's architecture mirrors Nvidia's Isaac Sim but is optimized for domestic chips, potentially lowering the barrier for small and medium-sized robotics firms. However, benchmark data comparing its simulation fidelity to Isaac Sim was not disclosed, leaving uncertainty about real-world performance equivalence."
+        ],
+        "why": "This platform demonstrates that domestic GPU ecosystems are now capable of supporting complex embodied AI workloads, which could reshape the competitive dynamics in China's robotics industry and reduce supply chain risks for AI companies.",
+        "links": [
+          [
+            "量子位报道",
+            "https://www.qbitai.com/2026/05/420084.html"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Funding Watch",
+        "priority": "high",
+        "title": "AI chip startup Tenstorrent draws acquisition interest from Intel and Qualcomm, valuation may exceed $5B",
+        "dek": "Reports suggest Intel and Qualcomm are exploring a deal for Tenstorrent, an AI chip startup, with a potential valuation north of $5 billion, signaling the escalating battle for custom AI silicon.",
+        "details": [
+          "According to a Moomoo report citing unnamed sources, both Intel and Qualcomm have expressed preliminary interest in acquiring Tenstorrent, a Canadian AI chip startup. The potential valuation could exceed $5 billion, though discussions are at an early stage and may not result in a transaction. The startup is known for its open RISC-V-based AI accelerators, which offer a flexible alternative to proprietary architectures.",
+          "If completed, the acquisition would mark one of the largest AI chip deals this year, underscoring how incumbent semiconductor giants are scrambling to secure next-generation AI inference technology. Tenstorrent's open-standard approach appeals to hyperscalers seeking to reduce dependency on Nvidia's CUDA ecosystem. For Intel, it could bolster its foundry and AI chip offerings; for Qualcomm, it would expand its data center AI footprint beyond mobile."
+        ],
+        "why": "This M&A signal highlights the strategic premium placed on innovative AI chip architectures and talent. Entrepreneurs in AI silicon should note that open-standard designs are becoming attractive acquisition targets, while investors can expect further consolidation in the segment.",
+        "links": [
+          [
+            "Moomoo report via Google News",
+            "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtha1FteTFlT1dueW1oem4wU1JpTzQxRmNhSDZCb3phTlB1VUJYaHphRW1USlhOSWo3M3Vzd2k4RGtnNWxTTFZsRkc3d3ZOM0JXU0RCTjRWaTVaZnh2WWwtNW53YjhPdVdLTWN6VUx5d2JtbHRQWVRYQjQtTi1xVU03YTJGNVN2Vkw5dGhRVGpYMXNDdTNvdVRxX0FuQXJ3ZTFQdmctbk9kLUo3ZHdJTHRRcw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Take your local GitHub sessions anywhere",
+        "dek": "Remote control for GitHub Copilot sessions is now generally available, letting developers start work in VS Code or CLI and finish from their phone.",
+        "details": [
+          "GitHub has made remote control for Copilot sessions generally available on github.com and GitHub Mobile. Developers can initiate a coding session in VS Code or the command line, then seamlessly pick it up from a mobile browser or the GitHub Mobile app. This eliminates the need to keep a laptop open for AI-assisted coding tasks, enabling true on-the-go development.",
+          "The feature leverages GitHub Codespaces under the hood, syncing the entire environment—including Copilot context, open files, and terminal state—across devices. Early beta users reported a 20% reduction in context-switching overhead. GitHub plans to extend remote session control to third-party IDEs later this year, further blurring the line between local and cloud development."
+        ],
+        "why": "This signals a shift toward persistent, device-agnostic AI coding environments, which could reshape how developers invest in tools and infrastructure—favoring cloud-synced workspaces over traditional local setups.",
+        "links": [
+          [
+            "GitHub AI & ML: Take your local GitHub sessions anywhere",
+            "https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere/"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Anuma: multi-model AI workspace with private cross-model memory",
+        "dek": "Anuma brings together ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, Llama and more in a single workspace, with a cross-model memory layer that users control and edit.",
+        "details": [
+          "Anuma addresses the fragmentation of AI assistants by aggregating over a dozen models into one interface. Users can switch between models mid-conversation or run parallel chats, comparing outputs without leaving the workspace. The standout feature is a persistent, privacy-first memory layer: users can store facts, preferences, or instructions that carry across models, and they retain full edit and delete control. This reduces repetitive prompting and enables a more coherent workflow when using multiple AI tools for different tasks.",
+          "The product targets knowledge workers and power users who rely on multiple AI models for different strengths—e.g., Claude for long-form reasoning, ChatGPT for creative tasks, and Gemini for Google ecosystem integration. By centralizing access and adding sharable memory, Anuma aims to become the go-to workspace for multi-model workflows. While many 'AI hub' tools exist, Anuma's explicit emphasis on user-controlled cross-model memory differentiates it from simpler aggregators. However, the company has not disclosed pricing or user numbers, and the memory system's performance across very different model architectures remains a potential unknown."
+        ],
+        "why": "For product builders, Anuma highlights a growing demand for integration and memory layers that let users fluidly combine AI strengths, suggesting opportunities in cross-model middleware and privacy-focused data stores.",
+        "links": [
+          [
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-05-17",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Liminary: AI research workspace for consultants, strategists, and researchers",
+        "dek": "A research workspace that centralizes sources with AI-powered annotation and traceability.",
+        "details": [
+          "Liminary serves as a centralized hub for saving and annotating articles, reports, PDFs, AI chats, and videos. It prioritizes source traceability, allowing consultants and researchers to track every insight back to its origin. This addresses a common pain point where scattered notes and lost references undermine the credibility of recommendations.",
+          "Designed for high-stakes decision-making, Liminary distinguishes itself by not just capturing information but enabling cross-project reuse of insights. Users can build a personal knowledge base that grows over time, making it particularly valuable for strategy consultants and analysts who juggle multiple clients and domains."
+        ],
+        "why": "Liminary represents a growing category of AI-augmented research tools that prioritize traceability and reuse, which could become essential for knowledge-intensive professions. Its success may signal demand for specialized productivity tools beyond general-purpose AI assistants.",
+        "links": [
+          [
+            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and res",
+            "https://liminary.io/"
+          ]
+        ],
+        "sourceDate": "2026-05-17",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "Industry Views & Reports",
+        "priority": "medium",
+        "title": "Lawyer Submits AI Chatbot Response as Legal Argument, Judge Issues Stern Rebuke",
+        "dek": "A plaintiff's lawyer asked DeepSeek who would win a case, took the AI's prediction as sound legal reasoning, and filed it in court — only to be reprimanded by the judge.",
+        "details": [
+          {
+            "summary": "Event overview",
+            "expanded": "In a case reported by Sohu News, a lawyer representing the plaintiff consulted DeepSeek with the question 'who will win this case?' The AI replied that the plaintiff was likely to prevail. Convinced by the reasoning, the lawyer submitted the AI-generated response as part of the formal legal brief. The presiding judge issued a serious verbal warning, emphasizing that AI outputs are not a substitute for legal analysis and that reliance on such tools without validation undermines judicial procedure."
+          },
+          {
+            "summary": "Key implications",
+            "expanded": "The incident highlights growing tension between AI convenience and professional accountability. Lawyers are increasingly experimenting with generative AI for case strategy, but courts are drawing clear boundaries. The judge's reprimand signals that unverified AI advice carries real procedural risk, especially when presented as authoritative legal argument. This case mirrors similar cautionary tales in the U.S. and UK, where attorneys have faced sanctions for citing AI-generated fake precedents."
+          }
+        ],
+        "why": "This story is a vivid reminder that while AI can assist legal research, blindly trusting its output — especially in adversarial settings — invites judicial backlash. For legaltech startups, it underscores the need for explainability and disclaimers; for practitioners, it reinforces that AI is a tool, not a decision-maker.",
+        "links": [
+          [
+            "Google News China AI: 原告律师问deepseek“谁能赢”...",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVEZ0RlVrUmxWRGhWUjVDR3NpQ2hpNVZZWXpZQ2l4WGZqTG05YW9xc0Y1R29oWFowMUxFY0NraUIxU3ZIWlYwTURUVG56bVBXMDhXanBmUTVPb1g2dWZST0lqaFdudzJrWTlXSDNuam1HWXpNazNxQ0taSW1PY3JkZ2VFOHoySm04TFBLeA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Industry Views & Reports",
+        "priority": "medium",
+        "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
+        "dek": "IBM's latest CEO study distills five strategic plays for enterprises aiming to become AI-first, based on global executive insights.",
+        "details": [
+          {
+            "summary": "Report methodology and scope",
+            "expanded": "The 2026 IBM CEO Study draws on interviews with thousands of CEOs worldwide, capturing their perspectives on AI adoption, organizational change, and competitive pressure. It identifies five actionable plays that differentiate leaders from laggards in the AI transformation journey."
+          },
+          {
+            "summary": "The five plays for AI-first transformation",
+            "expanded": "The study outlines five plays: 1) Embed AI into core business processes rather than bolt-on projects; 2) Rethink data architecture for real-time, governed AI; 3) Build an 'AI-native' workforce with continuous reskilling; 4) Adopt an open ecosystem approach to AI platforms and models; 5) Establish ethical guardrails and transparency from day one. These plays are backed by correlation with financial outperformance."
+          }
+        ],
+        "why": "This IBM CEO study provides a strategic framework for enterprises and investors evaluating AI maturity, offering a benchmark for where to prioritize investment—whether in data infrastructure, talent, or governance.",
+        "links": [
+          [
+            "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY0R1WkVEcUprYVJhTW82Snp3Y1FwdjJmMFlzRWFTTUtCc0thbUhwdHNaenEyZkF0QXJmSjJ3Uk5fR1V2blhfTzRhZXNuYnVzRTUzQkU2MU9neXFaOG1vNEtMWWRLVDY4RG5LQklkb3lDaFhnWHlfQzdROUtFV1FCZUp3YlB4QUZnQnJzZWZuMFZiNTVGTjBERA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-14",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-05-14",
+        "freshnessLabelEn": "Fallback | published 2026-05-14",
+        "freshnessLabel": "Fallback | published 2026-05-14"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "The concept behind AI agents that autonomously plan and execute multi-step tasks, powering today’s enterprise automation news.",
+        "details": [
+          "Agentic Workflow refers to AI systems that autonomously plan, execute, and adapt sequences of actions to achieve goals, often integrating multiple tools and data sources. Unlike simple chatbots, agentic workflows involve multi-step reasoning, memory, and feedback loops. For instance, OpenAI's Codex, now deployed via Dell for enterprise, can autonomously manage coding tasks across hybrid environments, illustrating how agents go beyond single prompts. This shift enables businesses to automate complex processes but raises challenges in reliability and oversight."
+        ],
+        "why": "Understanding agentic workflow is crucial as it underpins the next wave of enterprise automation, enabling companies to delegate end-to-end tasks rather than isolated functions. It signals a strategic pivot from 'copilot' to 'autopilot' in AI product roadmaps.",
+        "links": [
+          [
+            "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
+            "https://openai.com/index/dell-codex-enterprise-partnership"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
     {
     "date": "2026-05-19",
     "title": "AI Daily Atlas",
