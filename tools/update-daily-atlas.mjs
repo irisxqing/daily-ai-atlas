@@ -11,8 +11,8 @@ const provider = process.env.AI_PROVIDER || (process.env.DEEPSEEK_API_KEY ? "dee
 const deepseekModel = process.env.DEEPSEEK_MODEL || "deepseek-v4-flash";
 const openaiModel = process.env.OPENAI_MODEL || "gpt-5-mini";
 const deepseekBaseUrl = process.env.DEEPSEEK_BASE_URL || "https://api.deepseek.com";
-const maxSourceEntries = Number(process.env.MAX_SOURCE_ENTRIES || 90);
-const maxEntriesPerSource = Number(process.env.MAX_ENTRIES_PER_SOURCE || 6);
+const maxSourceEntries = Number(process.env.MAX_SOURCE_ENTRIES || 140);
+const maxEntriesPerSource = Number(process.env.MAX_ENTRIES_PER_SOURCE || 8);
 const jsonSystemPrompt = "You are the editor of AI Daily Atlas. Return valid JSON only. Base every factual claim on the provided SOURCE_PACK.";
 
 function googleNews(name, query, locale = { hl: "en-US", gl: "US", ceid: "US:en" }) {
@@ -25,16 +25,31 @@ function googleNews(name, query, locale = { hl: "en-US", gl: "US", ceid: "US:en"
   return [name, `https://news.google.com/rss/search?${params.toString()}`];
 }
 
+function dayOfYear(dateString) {
+  const date = new Date(`${dateString}T12:00:00+08:00`);
+  const start = new Date(`${dateString.slice(0, 4)}-01-01T12:00:00+08:00`);
+  return Math.floor((date - start) / (24 * 60 * 60 * 1000)) + 1;
+}
+
 const sourceFeeds = [
   googleNews("Google News AI Labs", "(OpenAI OR Anthropic OR DeepMind OR xAI OR Meta AI OR Microsoft AI OR NVIDIA AI) when:2d"),
+  googleNews("Google News AI Models", "(OpenAI OR Anthropic OR Google DeepMind OR xAI OR Meta AI OR DeepSeek OR Qwen OR Kimi) (model OR API OR agent OR launch OR release OR partnership) when:3d"),
+  googleNews("Google News AI Infrastructure", "(NVIDIA OR AMD OR TSMC OR Broadcom OR AI chip OR GPU OR datacenter OR data center OR humanoid robot OR robotics) (AI OR inference OR compute) when:3d"),
   googleNews("Google News China AI", "(DeepSeek OR Qwen OR MiniMax OR Zhipu OR Kimi OR Doubao OR Alibaba AI OR Tencent AI) when:2d", {
+    hl: "zh-CN",
+    gl: "CN",
+    ceid: "CN:zh-Hans"
+  }),
+  googleNews("Google News China AI Signals", "(DeepSeek OR Qwen OR MiniMax OR Zhipu OR Kimi OR Moonshot OR Doubao OR 阿里 OR 腾讯 OR 字节 OR 智谱 OR 月之暗面) (发布 OR 上线 OR 融资 OR 合作 OR 模型 OR 人事 OR 创业 OR 投资) when:3d", {
     hl: "zh-CN",
     gl: "CN",
     ceid: "CN:zh-Hans"
   }),
   googleNews("Google News AI Funding", "(AI startup funding OR AI acquisition OR AI IPO OR 人工智能 融资 OR AI 投融资) when:2d"),
   googleNews("Google News AI Products", "(AI agent product launch OR AI tool Product Hunt OR AI workflow tool OR AI 产品 发布) when:2d"),
+  googleNews("Google News AI Product Discovery", "(site:producthunt.com/products AI agent OR AI productivity tool OR AI research workflow OR AI knowledge management) when:7d"),
   googleNews("Google News AI Reports", "(AI report PDF OR State of AI report OR Stanford AI Index OR McKinsey AI report OR BCG AI report OR AI 报告) when:14d"),
+  googleNews("Google News AI Views", "(AI industry analysis OR AI founder interview OR AI strategy OR AI governance OR AI adoption OR AI 行业 访谈 OR AI 产业 观点) when:7d"),
   ["AI Valley", "https://www.theaivalley.com/feed"],
   ["The Rundown AI", "https://www.therundown.ai/feed"],
   ["Ben's Bites", "https://www.bensbites.co/feed"],
@@ -61,7 +76,7 @@ const sourceFeeds = [
 
 function curatedProductSignals(date) {
   const publishedAt = `${addShanghaiDays(date, -3)}T09:00:00+08:00`;
-  return [
+  const products = [
     {
       source: "Curated AI Products",
       title: "Recall: personal AI knowledge base for articles, videos, PDFs, and notes",
@@ -93,8 +108,54 @@ function curatedProductSignals(date) {
       date: publishedAt,
       curatedFallback: true,
       summary: "Magic Patterns helps product teams generate interactive mockups from a prompt, screenshot, existing style, or design system. It is useful for PMs and founders who need to make product ideas discussable before engineering starts."
+    },
+    {
+      source: "Curated AI Products",
+      title: "Granola: AI meeting notes built for real work conversations",
+      link: "https://www.granola.ai/",
+      date: publishedAt,
+      curatedFallback: true,
+      summary: "Granola turns meetings into structured notes without behaving like a heavy meeting bot. It is useful for operators, product teams, investors, and consultants who need searchable meeting memory and cleaner follow-ups."
+    },
+    {
+      source: "Curated AI Products",
+      title: "NotebookLM: source-grounded AI notebook for research and learning",
+      link: "https://notebooklm.google/",
+      date: publishedAt,
+      curatedFallback: true,
+      summary: "NotebookLM lets users upload sources and ask questions against them, with citations and audio-style summaries. It is useful for turning reports, papers, and long documents into a grounded research workspace."
+    },
+    {
+      source: "Curated AI Products",
+      title: "Gamma: AI-native deck and document creation workspace",
+      link: "https://gamma.app/",
+      date: publishedAt,
+      curatedFallback: true,
+      summary: "Gamma helps users create presentations, webpages, and documents from prompts or outlines. It is useful for strategy, marketing, and internal communication workflows where speed and iteration matter."
+    },
+    {
+      source: "Curated AI Products",
+      title: "Flowith: canvas-based AI workspace for multi-step thinking",
+      link: "https://flowith.io/",
+      date: publishedAt,
+      curatedFallback: true,
+      summary: "Flowith uses a visual canvas to organize AI conversations, research threads, and multi-step workflows. It is useful for people who think spatially and need to connect prompts, sources, and outputs across a project."
+    },
+    {
+      source: "Curated AI Products",
+      title: "Fellou: agentic browser for research and workflow automation",
+      link: "https://fellou.ai/",
+      date: publishedAt,
+      curatedFallback: true,
+      summary: "Fellou positions itself as an agentic browser that can search, navigate, collect information, and help automate web workflows. It is useful to track as browser-based agents become a real productivity category."
     }
   ];
+  const offset = dayOfYear(date) % products.length;
+  return products
+    .map((product, index) => ({
+      ...product,
+      curatedPriority: products.length - ((index - offset + products.length) % products.length)
+    }));
 }
 
 function shanghaiDate(date = new Date()) {
@@ -305,7 +366,11 @@ function relevanceScore(entry) {
 }
 
 function entryText(entry) {
-  return `${entry.source || ""} ${entry.title || ""} ${entry.summary || ""} ${entry.link || ""}`.toLowerCase();
+  return `${entry.source || ""} ${entry.title || ""} ${entry.summary || ""}`.toLowerCase();
+}
+
+function entryContentText(entry) {
+  return `${entry.title || ""} ${entry.summary || ""}`.toLowerCase();
 }
 
 const priorityCompanyPattern = /openai|anthropic|deepmind|google|xai|meta|microsoft|amazon|aws|nvidia|databricks|tsmc|amd|broadcom|deepseek|qwen|zhipu|z\.ai|minimax|kimi|moonshot|doubao|bytedance|baidu|tencent|alibaba|字节|阿里|腾讯|百度|智谱|月之暗面|阶跃星辰|零一万物/i;
@@ -316,8 +381,8 @@ const communityConcernPattern = /safety|privacy|security|copyright|lawsuit|regul
 const productivityProductPattern = /productivity|knowledge|research|workspace|workflow|memory|notes|browser|extension|assistant|agent|automation|calendar|email|docs|spreadsheet|meeting|design|prototype|知识|研究|效率|工作流|记忆|笔记|浏览器|助手|自动化|会议|原型|设计/i;
 const broadDiscussionPattern = /product hunt|hacker news|reddit|github trending|launch|reviews?|users?|rating|community|viral|讨论|热议|好评|用户|社区/i;
 const strategicReportPattern = /future|outlook|landscape|state of|index|benchmark report|survey|adoption|enterprise|industry|market|application|trend|未来|趋势|全景|产业|应用|采用|企业|市场|调研|指数/i;
-const deepReadStylePattern = /\banalysis\b|\bdeep[- ]dive\b|\bessay\b|\binterview\b|\blong read\b|\bexplainer\b|\bguide\b|\bopinion\b|\bcase study\b|\bwhat it means\b|\bwho owns the future\b|\bpodcast\b|\bconversation\b|\bdialogue\b|深度|长文|访谈|专访|解读|复盘|观察|分析|案例|方法论|播客|对话|评论/i;
-const primaryMarketPattern = /中国|china|us|u\.s\.|united states|america|美国|深圳|香港/i;
+const deepReadStylePattern = /\banalysis\b|\bdeep[- ]dive\b|\bessay\b|\binterview\b|\blong read\b|\bexplainer\b|\bguide\b|\bopinion\b|\bop-ed\b|\bcommentary\b|\bcase study\b|\bwhat it means\b|\bwho owns the future\b|\bpodcast\b|\bconversation\b|\bdialogue\b|深度|长文|访谈|专访|解读|复盘|观察|分析|案例|方法论|播客|对话|评论|社论/i;
+const primaryMarketPattern = /中国|\bchina\b|\bchinese\b|\bu\.s\.(?:\b|$)|\bus\b|\busa\b|\bunited states\b|\bamerica\b|\bamerican\b|美国|深圳|香港|国内|国产/i;
 const deprioritizedMarketPattern = /korea|korean|south korea|ghana|malta|european union|eu\b|france|germany|uk\b|britain|japan|singapore|韩国|加纳|马耳他|欧盟|法国|德国|英国|日本|新加坡/i;
 const comparisonOnlyPattern = /outperforms?|beats?|lags?|stronger than|weaker than|surpass(?:es|ed)?|超过|强于|弱于|落后|跑分|榜单|排名/i;
 const directActionPattern = /\blaunch(?:es|ed)?\b|\brelease(?:s|d)?\b|\bannounce(?:s|d)?\b|\bdeploy(?:s|ed)?\b|\broll(?:s|ed)? out\b|\bpartner(?:s|ed|ship)?\b|\bcollaborat(?:es|ed|ion)\b|\bacquir(?:es|ed|e)\b|\brais(?:es|ed)\b|\btakes charge\b|\bjoins?\b|\bleaves?\b|\bfounds?\b|\bappoint(?:s|ed)?\b|\bresign(?:s|ed)?\b|发布|上线|推出|部署|宣布|合作|并购|收购|融资|接管|离职|加入|任命|创业|创办|辞任/i;
@@ -332,7 +397,7 @@ function patternScore(text, weightedPatterns) {
 }
 
 function regionPriority(entry) {
-  const text = entryText(entry);
+  const text = entryContentText(entry);
   const hasDeprioritized = deprioritizedMarketPattern.test(text);
   const hasPrimaryMarket = primaryMarketPattern.test(text);
   const hasPriorityCompany = priorityCompanyPattern.test(text);
@@ -379,7 +444,8 @@ function freshnessScore(entry, maxAgeDays = 14) {
 }
 
 function editorialScore(entry, section) {
-  const text = entryText(entry);
+  const text = entryContentText(entry);
+  const source = String(entry.source || "").toLowerCase();
   let score = (entry.score || 0) + freshnessScore(entry, 14);
 
   if (priorityCompanyPattern.test(text)) score += 18;
@@ -404,6 +470,7 @@ function editorialScore(entry, section) {
   }
 
   if (section === "AI产品推荐") {
+    if (entry.curatedFallback) score += Number(entry.curatedPriority || 0) * 4;
     score += patternScore(text, [
       [productivityProductPattern, 24],
       [broadDiscussionPattern, 16],
@@ -420,8 +487,8 @@ function editorialScore(entry, section) {
       [communityConcernPattern, 18],
       [/\banalysis\b|\bessay\b|\binterview\b|\bopinion\b|\bdeep[- ]dive\b|\blong read\b|观察|分析|访谈|专访|长文|深度|concern/i, 20],
       [/\bfuture\b|\bstrategy\b|\bfrontier\b|\bsociety\b|\bgovernance\b|未来|战略|前沿|治理|担忧/i, 14],
-      [/latent space|import ai|the batch|ai valley|a16z|sequoia|stratechery|钛媒体|机器之心/i, 10]
     ]);
+    if (/latent space|import ai|the batch|ai valley|a16z|sequoia|stratechery|钛媒体|机器之心/i.test(source)) score += 10;
   }
 
   if (section === "机构报告") {
@@ -453,12 +520,15 @@ function isRecentEntry(entry, maxAgeDays) {
 }
 
 function isFundingEntry(entry) {
+  const text = entryContentText(entry);
   return !isLowQualityEntry(entry)
-    && /\bfunding\b|\braises?\b|\braised\b|\bseries [a-z]\b|\bipo\b|\bacquisition\b|\bacquires?\b|\bvaluation\b|\binvest(?:s|ed|ment|or)?\b|\bround\b|融资|投资|估值|并购|上市|收购/i.test(entryText(entry));
+    && !isAcademicPaperEntry(entry)
+    && /\bfunding\b|\braises?\b|\braised\b|\bseries [a-z]\b|\bipo\b|\bacquisition\b|\bacquires?\b|\bvaluation\b|\binvest(?:s|ed|ment|or)?\b|\bround\b|融资|投资|估值|并购|上市|收购/i.test(text);
 }
 
 function isOpenSourceEntry(entry) {
-  return /\bgithub\b|\bopen[- ]source\b|\bhugging face\b|\brepo\b|开源|模型库|代码库/i.test(entryText(entry));
+  const text = `${entry.source || ""} ${entryContentText(entry)}`.toLowerCase();
+  return /\bgithub\b|\bopen[- ]source\b|\bhugging face\b|\brepo\b|开源|模型库|代码库/i.test(text);
 }
 
 function isLowQualityEntry(entry) {
@@ -469,12 +539,14 @@ function isLowQualityEntry(entry) {
 }
 
 function isProductEntry(entry) {
-  const text = entryText(entry);
-  const titleSource = `${entry.source || ""} ${entry.title || ""}`.toLowerCase();
+  const text = entryContentText(entry);
+  const source = String(entry.source || "").toLowerCase();
+  const titleSource = `${entry.title || ""}`.toLowerCase();
   if (isLowQualityEntry(entry)) return false;
   if (/\barxiv\b|\bpaper\b|\bresearch repository\b|\bbenchmark\b|论文|研究论文/.test(text)) return false;
   if (/summit|conference|webinar|meetup|event|峰会|大会|活动|报名|现场|议程/.test(text)) return false;
-  const hasProductSignal = /\bcurated ai products\b|\bproduct hunt\b|\btool\b|\bapp\b|\bworkspace\b|\bworkflow\b|\bmemory\b|\bagentmemory\b|\brecall\b|\bliminary\b|\banuma\b|\bmagic patterns\b|\bbrowser\b|\bextension\b|\bdashboard\b|\bcanvas\b|\bnotebook\b|\bautomation\b|插件|应用|产品|工具|工作流|知识管理|浏览器/i.test(titleSource);
+  const hasProductSignal = /\bcurated ai products\b|\bproduct hunt\b/i.test(source)
+    || /\bproduct hunt\b|\btool\b|\bapp\b|\bworkspace\b|\bworkflow\b|\bmemory\b|\bagentmemory\b|\brecall\b|\bliminary\b|\banuma\b|\bmagic patterns\b|\bgranola\b|\bnotebooklm\b|\bgamma\b|\bflowith\b|\bfellou\b|\bbrowser\b|\bextension\b|\bdashboard\b|\bcanvas\b|\bnotebook\b|\bautomation\b|插件|AI应用|应用生成|应用平台|产品|工具|工作流|知识管理|浏览器/i.test(titleSource);
   const isMostlyModelNews = /\bmodel\b|\bapi\b|\bbenchmark\b|\binference\b|芯片|\bipo\b|\bvaluation\b|\bfunding\b|融资|估值|模型|推理|基准|参数/.test(text)
     && !/\btool\b|\bapp\b|\bproduct hunt\b|\bworkflow\b|\bmemory\b|\bextension\b|\bnotebook\b|应用|产品|工具|工作流|知识管理/.test(text);
   return hasProductSignal && !isMostlyModelNews;
@@ -493,7 +565,8 @@ function isAcademicPaperEntry(entry) {
 }
 
 function isReportEntry(entry) {
-  const text = entryText(entry);
+  if (isEditorialNoiseEntry(entry)) return false;
+  const text = entryContentText(entry);
   const titleSummary = `${entry.title || ""} ${entry.summary || ""}`.toLowerCase();
   const title = String(entry.title || "").toLowerCase();
   const hasReportSignal = /\breport\b|\bpdf\b|\bindex\b|\bsurvey\b|\bstudy\b|\bwhitepaper\b|\bresearch brief\b|\bstate of\b|报告|指数|调研|白皮书|研究报告/.test(title);
@@ -504,7 +577,8 @@ function isReportEntry(entry) {
 }
 
 function isDeepReadEntry(entry) {
-  const text = entryText(entry);
+  if (isEditorialNoiseEntry(entry)) return false;
+  const text = entryContentText(entry);
   const source = String(entry.source || "").toLowerCase();
   const title = String(entry.title || "").toLowerCase();
   const isDeepSource = /latent space|import ai|the batch|ai valley|tmtpost|钛媒体|机器之心|stratechery|semi|sequoia|a16z|interview|newsletter/i.test(source);
@@ -517,19 +591,25 @@ function isDeepReadEntry(entry) {
 }
 
 function isIndustryViewOrReportEntry(entry) {
+  if (isEditorialNoiseEntry(entry)) return false;
   return isDeepReadEntry(entry) || isReportEntry(entry);
 }
 
-function isTopStoryNoise(entry) {
-  const text = entryText(entry);
+function isEditorialNoiseEntry(entry) {
+  const text = entryContentText(entry);
   if (consumerDeviceNoisePattern.test(text)) return true;
   if (socialAnecdoteNoisePattern.test(text)) return true;
   return false;
 }
 
+function isTopStoryNoise(entry) {
+  return isEditorialNoiseEntry(entry);
+}
+
 function isTopStoryEntry(entry) {
   if (isLowQualityEntry(entry)) return false;
-  const text = entryText(entry);
+  const text = entryContentText(entry);
+  const source = String(entry.source || "");
   if (entry.freshness !== "d-1") return false;
   if (isTopStoryNoise(entry)) return false;
   if (comparisonOnlyPattern.test(text) && !directActionPattern.test(text)) return false;
@@ -538,8 +618,8 @@ function isTopStoryEntry(entry) {
   if (regionPriority(entry) === "deprioritized_market") return false;
   const hasHardAction = topStoryHardActionPattern.test(text);
   const hasGovernancePolicy = governanceOrSafetyPolicyPattern.test(text)
-    && /(brookings|stanford|mit|ft\.com|financial times|reuters|bloomberg|techcrunch|venturebeat|official|policy|regulat|governance|antitrust|competition|监管|治理|反垄断|立法|听证|政策)/i.test(text);
-  const hasPriorityCompanySignal = priorityCompanyPattern.test(text) && (hasHardAction || hasGovernancePolicy || modelLaunchPattern.test(text));
+    && /(brookings|stanford|mit|ft\.com|financial times|reuters|bloomberg|techcrunch|venturebeat|official|policy|regulat|governance|antitrust|competition|监管|治理|反垄断|立法|听证|政策)/i.test(`${source} ${text}`);
+  const hasPriorityCompanySignal = priorityCompanyPattern.test(text) && (hasHardAction || hasGovernancePolicy);
   const hasPrimaryMarketAction = primaryMarketPattern.test(text)
     && hasHardAction
     && (modelLaunchPattern.test(text) || aiLeaderPattern.test(text) || coreIndustryPattern.test(text) || /\bworld model\b|世界模型/i.test(text));
@@ -1178,7 +1258,7 @@ function selectTopStoryEntries(sourcePack, count, used) {
   const selected = [];
   const selectedIds = new Set();
   const addBest = (predicate) => {
-    const entry = candidates.find((candidate) => !selectedIds.has(candidate.id) && predicate(entryText(candidate)));
+    const entry = candidates.find((candidate) => !selectedIds.has(candidate.id) && predicate(entryContentText(candidate)));
     if (!entry) return;
     selected.push(entry);
     selectedIds.add(entry.id);
@@ -1310,6 +1390,18 @@ function runEditorialGateTests() {
     title: "律师问 DeepSeek 谁能赢，拿着 AI 问答作为代理意见提交法庭",
     summary: "法院训诫代理人不要把聊天机器人答案当法律意见。"
   }), "social/legal anecdotes about AI misuse must not enter top stories");
+  assert(!isIndustryViewOrReportEntry({
+    ...baseEntry,
+    source: "Google News China AI",
+    title: "律师问 DeepSeek 谁能赢，拿着 AI 问答作为代理意见提交法庭",
+    summary: "法院训诫代理人不要把聊天机器人答案当法律意见。"
+  }), "social/legal anecdotes about AI misuse must not enter industry views or reports");
+  assert(!isProductEntry({
+    ...baseEntry,
+    source: "Google News China AI Signals",
+    title: "DeepSeek回应用户“对话泄露”疑虑：特殊字符引发模型幻觉",
+    summary: "特殊字符引发模型幻觉，不是产品发布。"
+  }), "Chinese text crossing 回应用户 must not be misread as 应用/product");
   assert(!topStory({
     title: "韩国模型跑分超过 GPT 和 DeepSeek",
     summary: "A Korean model tops a benchmark leaderboard without a major deployment or company action."
@@ -1331,6 +1423,8 @@ function runEditorialGateTests() {
     source: "Product Hunt"
   }, issueDate);
   assert(fallbackFreshness?.freshness === "fallback", "product/report/deep-read candidates may be marked fallback within seven days");
+  const productTitles = curatedProductSignals(issueDate).map((entry) => entry.title).join(" | ");
+  assert(/Recall/.test(productTitles) && /Granola/.test(productTitles) && /Fellou/.test(productTitles), "curated products should use a broader rotation pool");
   console.log("Editorial gate tests passed.");
 }
 
