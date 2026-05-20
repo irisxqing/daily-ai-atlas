@@ -1,5 +1,5 @@
 const archiveZh = [
-      {
+        {
     "date": "2026-05-20",
     "title": "AI Daily Atlas",
     "meta": "2026年5月20日",
@@ -14,40 +14,16 @@ const archiveZh = [
     ],
     "items": [
       {
-        "section": "头条",
-        "priority": "high",
-        "title": "体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统 - 爱范儿",
-        "dek": "腾讯推出 Marvis 个人 AI 助手，被视作从工具向操作系统级平台的跃迁。",
-        "details": [
-          "腾讯于 2026 年 5 月 19 日发布了全新的 AI 助手 Marvis，定位为“个人 AI 操作系统”。据爱范儿体验报道，Marvis 不再局限于单一任务对话，而是能够跨应用调度、管理日程、调用腾讯生态内服务（如微信、QQ 音乐、腾讯文档等），并支持第三方插件。这标志着腾讯从“AI 功能集成”向“AI 原生平台”的转变。",
-          "Marvis 的推出背景是 AI 助手赛道日趋拥挤：字节的豆包、阿里的通义千问、百度的文心一言均已建立用户基础。腾讯依托其社交和内容生态优势，将 Marvis 与微信和 QQ 深度打通，意图通过场景粘性构建差异化。例如，用户可直接在聊天界面让 Marvis 预订会议、整理聊天记录或生成朋友圈文案，无需切换 App。",
-          "行业分析认为，Marvis 的“操作系统”隐喻体现了腾讯对 AI 入口的终极构想——类比移动时代的微信，AI 助手未来可能成为数字生活的核心调度层。不过，目前 Marvis 仍处于早期体验阶段，其跨应用协作的流畅度、隐私保护策略以及能否吸引开发者构建生态，将是后续观察重点。"
-        ],
-        "why": "腾讯 Marvis 的发布标志着中国 AI 助手竞争从单点功能升级为平台级生态之争，对行业而言，入口的争夺将决定 AI 时代的流量分配权，值得密切关注其生态建设进展。",
-        "links": [
-          [
-            "Google News China AI Signals: 体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统 - 爱范儿",
-            "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9YcmloaDE1ZVZ3ZDlrdHdKdENFM21SNlo4M3YtSy12UzZDSExTT1pYWVdxZEtqLVhrbXl1ZWhFVEhsS3M?oc=5"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
         "section": "深度",
         "priority": "medium",
         "title": "抢先李飞飞！世界模型能多人联机玩FPS游戏了",
-        "dek": "世界模型不再只是单机演示，已可支持多人实时对战FPS游戏，行业竞争加速。",
+        "dek": "世界模型从单机演示走向多人实时交互，AI模拟复杂环境的能力迎来关键突破。",
         "details": [
-          "世界模型（World Model）一直是AI前沿方向，目标是让AI像人类一样在脑中模拟环境、预测未来。此前李飞飞团队曾展示过单机环境下的世界模型演示，但尚未实现多人实时交互。最近有团队率先突破，将世界模型应用于多人联机FPS游戏，据量子位报道，这一进展意味着AI不仅能理解静态场景，还能实时预测多个玩家的动态行为并做出协同反应。虽然具体技术细节尚未完全公开，但该成果被视为世界模型从实验室走向可玩产品的重要一步。",
-          "多人联机FPS游戏（如《反恐精英》《守望先锋》）对AI的挑战极大：每帧需同时处理多名玩家的位置、动作、策略，并快速生成合理的响应。传统方法依赖于脚本或强化学习，而世界模型通过“预测下一步”的方式，在虚拟环境中预演多种可能性，从而做出更自然的决策。这次突破的核心在于模型能够同时维护多个智能体的心理状态，并在共享场景中保持一致性，使虚拟角色间的配合接近真人玩家。",
-          "这一进展的意义不仅在于游戏AI的升级：世界模型在机器人、自动驾驶、虚拟世界构建等领域同样关键。多人联机场景的成功验证了模型处理复杂交互的能力，可能加速世界模型在元宇宙、模拟训练等场景的落地。不过，目前该演示尚在研究阶段，距离成熟产品还有距离，且李飞飞团队的相关工作仍在推进中，未来竞争格局有待观察。"
+          "近日，据量子位报道，一支研究团队在AI世界模型领域取得重要进展，首次实现了支持多名玩家实时联机的第一人称射击（FPS）游戏世界模型。与李飞飞团队等此前展示的静态或单人世界模型不同，该模型能够动态模拟场景、其他玩家的行动以及物理碰撞反馈，使得多人协作与对抗成为可能。",
+          "系统通过大规模预训练与强化学习，在无需完整物理引擎的情况下，基于对像素和用户操作的预测，生成流畅的游戏帧序列。玩家可在模型生成的动态环境中自由移动、射击、交互，系统实时响应并更新世界状态。尽管目前画面清晰度有限、偶尔出现逻辑错误，但模型在保持多人联机一致性方面已展现出惊人潜力。",
+          "这一成果标志着世界模型从“单机演示”迈入“多人在线”阶段，验证了其在复杂交互场景中的模拟能力。李飞飞团队此前提出的世界模型主要聚焦于单智能体或静态场景，而新工作首次将人类实时多玩家行为纳入其中，相当于让AI学会了“多线程想象”。"
         ],
-        "why": "世界模型从单机到多人联机的突破，证明了AI模拟复杂交互的能力快速提升。这对游戏开发、元宇宙基建以及任何需要虚拟仿真的行业都是重要信号——先发团队的成果可能定义未来交互标准。",
+        "why": "世界模型的多玩家突破，将加速AI在游戏、元宇宙和仿真训练中的应用，对AI内容生成与交互产品的投资方向具有重要参考价值。",
         "links": [
           [
             "量子位: 抢先李飞飞！世界模型能多人联机玩FPS游戏了",
@@ -64,19 +40,18 @@ const archiveZh = [
       {
         "section": "深度",
         "priority": "medium",
-        "title": "AI、无人机与机器人：新ETF如何押注物理世界的智能化",
-        "dek": "一只追踪AI、无人机和机器人公司的ETF正式亮相，标志着资本市场开始以“AI+物理世界”为主题进行打包投资。这对理解机器人产业的商业化路径和投资逻辑有何启发？",
+        "title": "AI、无人机与机器人合体：新ETF背后的投资逻辑",
+        "dek": "一只将AI、无人机和机器人打包在一起的新ETF引发关注。这不仅是产品创新，更折射出技术融合与产业落地的加速趋势。",
         "details": [
-          "ETF Database报道，一只新的交易所交易基金（ETF）将AI、无人机和机器人三大主题打包在一起。该ETF追踪的指数可能涵盖从AI芯片、传感器到无人机整机和机器人操作系统在内的全产业链公司。值得注意的是，这类“主题型ETF”通常选择在技术突破或政策利好窗口期推出，2026年以来AI机器人领域的融资和量产消息频传，或是其面市的背景。",
-          "从产业角度看，AI、无人机、机器人的结合正在从实验室走向工厂和物流场景。大模型赋能的机器人已能执行复杂指令，而无人机在农业、巡检等领域的AI化也加速落地。该ETF的推出，反映出投资者认为这三个领域的技术融合已具备规模化商业基础，而不再是单一概念的炒作。",
-          "不过，主题ETF的波动性通常较高。以过往机器人ETF为例，受供应链扰动和盈利不确定性影响，其净值回撤幅度可能超过宽基指数。新ETF能否跑赢市场，取决于其持仓个股的业绩兑现能力。对于非专业投资者，借道ETF布局AI机器人产业确实降低了选股门槛，但仍需关注费率和跟踪误差。",
-          "这一事件也暗示，华尔街正在将“AI+机器人”视为一个独立的资产类别。过去这类公司分散在科技、工业等板块，如今被专门归类，可能吸引更多长期资本进入。特别是无人机和机器人领域的中小公司，有望获得更大的流动性和估值提升空间。",
-          "未来几个季度，该ETF的申赎数据和持仓变动将成为观察产业风向的窗口。如果资金持续流入，将反向推动更多公司加快AI机器人的产品化进程；反之，则可能意味着商业化低于预期。"
+          "ETF Database报道称，一只新的交易所交易基金（ETF）将人工智能、无人机和机器人技术整合在一个投资组合中。该ETF旨在捕捉这些交叉领域的增长潜力，覆盖从自动化硬件到AI软件的全链条。截至2026年5月19日，该ETF已开始交易，但具体持仓和费率尚未完全披露。",
+          "这一产品的出现背景是：AI大模型从云端走向边缘，无人机与机器人成为AI落地的关键载体。例如，物流无人机依赖实时视觉识别，人形机器人需要大模型决策，而训练这些系统又需大量算力。ETF的推出降低了散户参与门槛，让普通投资者也能押注这些硬科技赛道。",
+          "值得注意的是，该ETF覆盖的公司可能包括英伟达、大疆、特斯拉等，但具体构成未知。过去几年，纯AI或纯机器人的ETF已有不少，但三者融合的ETF较为罕见，说明市场开始认可“AI+硬件”的闭环价值。不过，此类指数化投资也面临估值波动大、技术路线不确定等风险。",
+          "从产业角度看，ETF的诞生往往伴随着技术成熟度的提升。类似2010年代云计算ETF的兴起，如今AI+机器人ETF的出现，可能预示着这些技术已从实验室走向商业化规模部署。对于创业者而言，这意味着供应链和人才竞争会更加激烈；对于投资者，则需关注各公司真正的技术壁垒而非概念炒作。"
         ],
-        "why": "对于关注AI产业的人，这只ETF的出现是一个信号：资本市场开始系统性认可AI与物理世界结合的商业价值。它可能推动更多机器人创业公司加速IPO或并购，同时也为从业者和投资者提供了衡量“AI+机器人”板块冷暖的温度计。",
+        "why": "这只ETF是技术融合趋势的金融产品化信号。了解其背后逻辑，有助于判断AI在硬件领域的商业化进展，以及哪些环节可能率先爆发。",
         "links": [
           [
-            "Google News AI Infrastructure: AI, Drones, Robotics Come Together in New ETF - ETF Database",
+            "ETF Database: AI, Drones, Robotics Come Together in New ETF",
             "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUVhQQjdnV25fMFN2WUpPRTdfTEpqNW9PejVPMFhsdDhIc3RhdkExcHZ4TEcwMnNaLUd5MmJwWl9sb25BQXRUYkNudjRfUWk3T2RaTUhEUkNMeERBZFVRdm5pVGNIbkF5VGxRMFU5Ul9NXzRUalZHclJCWHZkR01vN0JSMWtLQQ?oc=5"
           ]
         ],
@@ -90,14 +65,15 @@ const archiveZh = [
       {
         "section": "观点",
         "priority": "medium",
-        "title": "Codex 崛起，Claude 开始计量程序化使用",
-        "dek": "Latent Space 最新播客探讨两大编程代理趋势：OpenAI Codex 重获关注，Anthropic 调整 Claude 的 API 使用策略。",
+        "title": "[AINews] Codex Rises, Claude Meters Programmatic Usage",
+        "dek": "Latent Space 盘点了编程Agent领域两大巨头的动向：OpenAI 的 Codex 持续进化，而 Anthropic 开始对 Claude 的程序化调用进行计量计费，这些变化对开发者生态和AI应用成本有深远影响。",
         "details": [
-          "Latent Space 在 5 月 14 日的播客中回顾了近期编程代理（coding agents）领域的长期趋势。核心观点之一是 OpenAI 的 Codex 正在重新崛起，尽管之前一度被 GPT-4 系列掩盖，但最近在开发者社区中重新获得关注，尤其是在自动化代码生成和代理框架中。另一个关键观点是 Anthropic 开始对 Claude 的程序化 API 调用进行计量（metering），这可能意味着开发者需要更谨慎地管理调用频率和成本，或者 Anthropic 正在为更精细的定价模式做准备。",
-          "该播客指出，这两个趋势反映了编程代理市场的分化：一端是 OpenAI 通过 Codex 巩固其在代码生成上的基础能力，另一端是 Anthropic 通过计量机制引导开发者进入更可控的使用模式。这并非正式研究报告，而是行业观察与深度讨论，适合开发者、产品经理和投资人理解当前 AI 编程工具的战略布局。",
-          "对于非技术读者而言，关键启发是：AI 编程代理不再只是“写代码”，而正在成为基础设施层——谁控制 API 的计量和成本，谁就可能在生态中占据更有利的位置。Codex 的回归也提醒市场，OpenAI 并未放弃这个细分领域，而是在重新布局。"
+          "Latent Space 在5月14日的通讯中，以“平淡的一天”为引，梳理了编程Agent领域的一条长期趋势：代码生成模型正在从辅助工具进化为自主编程Agent，而两大代表性产品——OpenAI Codex 和 Anthropic Claude——正分别从能力和商业化两个方向推进。",
+          "**核心观点1：Codex 的崛起**。文章指出，OpenAI 的 Codex 模型在最新迭代中展现出更强的代码理解和生成能力，能够处理更复杂的多文件项目，并开始集成调试和测试功能。这标志着编程Agent从“补全”转向“执行”。",
+          "**核心观点2：Claude 的程序化计费**。Anthropic 开始对 Claude API 的程序化使用（programmatic usage）进行计量和收费，暗示其正在为企业级自动化场景设计更精细的定价模型。这对于依赖 Claude 进行代码生成的创业公司来说，意味着成本结构需要重新评估。",
+          "**启发**：编程Agent正在快速商品化，但差异化集中在“自主性”和“成本控制”上。开发者工具领域的机会可能从纯模型服务转向提供监控、优化和混合路由的平台。"
         ],
-        "why": "了解 Codex 的再崛起和 Claude 的计量策略，有助于判断编程代理赛道下一步的产品定价、开发者生态走向以及投资机会。",
+        "why": "这篇文章帮助读者理解编程Agent领域的市场分化：一边是能力的军备竞赛，另一边是商业化的精细化，这直接影响了AI开发工具的选型和投资判断。",
         "links": [
           [
             "Latent Space: [AINews] Codex Rises, Claude Meters Programmatic Usage",
@@ -115,13 +91,13 @@ const archiveZh = [
         "section": "观点",
         "priority": "medium",
         "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
-        "dek": "IBM基于全球CEO调研，提出企业迈向AI-first的五项关键行动，为高管提供战略路线图。",
+        "dek": "近期行业报告或研究材料，适合补充产业全景、企业采用和未来应用判断。",
         "details": [
-          "IBM发布的2026 CEO Study《5 plays for AI-first transformation》基于对全球数百位CEO的深度访谈与调查，总结了企业在从AI试点到全面转型过程中最常面临的五大挑战：基础设施现代化、人才与技能重塑、数据治理与信任、规模化ROI以及变革管理。研究指出，超过70%的CEO认为AI将在未来三年内根本改变其商业模式，但只有不到30%的组织已建立系统的AI转型路径。",
-          "报告提出的五项关键行动包括：1）构建以AI为核心的技术架构，而非附加式部署；2）实施企业内部AI赋能的“人+AI”协作模式，重新定义岗位；3）建立开放且可审计的数据基础，以支持可信AI决策；4）采用“敏捷投资”方法，分阶段验证AI项目商业价值；5）将AI素养提升为CEO和董事会层面的核心能力。",
-          "值得注意的是，该研究特别强调了“信任”作为转型加速器的角色：CEO们普遍认为缺乏透明度与监管不确定性是最大阻碍，而建立可解释的AI系统和负责任的AI原则将直接影响企业采用速度。研究还引用了IBM自身在watsonx平台上的客户实践案例，但未披露具体财务数据。"
+          "这条信号来自 Google News AI Reports：2026 CEO Study: 5 plays for AI-first transformation - IBM。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
         ],
-        "why": "该研究为CEO和投资决策者提供了可操作的AI转型框架，尤其适合正在规划2027年预算与战略的企业高管参考；同时也揭示了企业级AI落地的真实痛点，对AI创业公司的产品定位和销售策略具有直接启示。",
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
         "links": [
           [
             "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
@@ -138,17 +114,17 @@ const archiveZh = [
       {
         "section": "AI产品推荐",
         "priority": "medium",
-        "title": "Trainer: Train AI agents by recording your screen - Product Hunt",
-        "dek": "通过屏幕录制训练AI代理，让每个人都能打造专属自动化助手。",
+        "title": "Trainer: 通过录制屏幕训练AI代理",
+        "dek": "无需编写代码，只需录制屏幕操作即可训练专属AI代理。",
         "details": [
-          "Trainer 是一款刚刚在 Product Hunt 上发布的工具，它提供了一种全新的 AI 代理训练方式：用户只需录制自己在屏幕上完成的一系列操作，系统就能自动学习并生成对应的 AI 代理。这相当于把“教”代理的过程简化成了“做一遍给它看”，大大降低了定制化 AI 的门槛。",
-          "目前大多数 AI 代理仍依赖代码或复杂的规则配置才能适配个人工作流，而 Trainer 试图用“演示”替代编程。对于经常处理重复性数字任务的用户（如数据整理、表单填写、软件操作），这款产品可能意味着不再需要等待开发者开发通用自动化方案，而是自己“录”出一个专属代理。",
-          "不过需要注意的是，Trainer 刚刚上线，其训练效果、泛化能力以及安全性（如屏幕录制数据的处理）都尚未经过大规模验证。它更像是 AI 代理民主化浪潮中的一个早期实验，是否能真正落地并融入日常生产力工具，还需要观察后续的用户反馈和迭代方向。"
+          "Trainer是一款面向非技术用户的产品，允许用户通过录制屏幕操作来训练AI代理。用户只需演示一次工作流程，Trainer就能自动学习并生成可重复执行的AI代理。这种“示教式”训练方式大幅降低了AI应用的门槛，让普通用户也能定制自己的自动化助手。",
+          "该产品目前已上线Product Hunt，并获得了社区的初步关注。对于中小企业或个体从业者，Trainer提供了一种快速自动化重复性工作的途径，例如数据处理、表单填写、软件操作等。它的核心价值在于让AI代理真正理解用户的工作流，而不仅仅是执行预设命令。",
+          "尽管Trainer的理念很有吸引力，但实际效果可能取决于屏幕录制的质量和任务的复杂性。目前市场上类似的工具（如Anthropic的Computer Use）也探索了类似方向，Trainer需要在易用性和准确性之间找到平衡。对于关注AI生产力工具创业的读者，这是一个值得观察的细分方向。"
         ],
-        "why": "Trainer 代表了 AI 代理训练门槛从“写代码”向“做演示”的转变，这种低代码甚至无代码的训练方式可能开启个人自动化应用的新赛道，值得产品经理和创业者关注。",
+        "why": "Trainer代表了AI产品从“对话式”向“示教式”的演进趋势，大幅降低了AI代理的定制门槛，是观察AI民主化与自动化工具落地的重要样本。",
         "links": [
           [
-            "Google News AI Product Discovery: Trainer: Train AI agents by recording your screen - Prod",
+            "Google News AI Product Discovery: Trainer: Train AI agents by recording your screen - Product Hunt",
             "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XXy1CYmFkM2MybEdHSWNyOEFZZGNtSURTYzhDZU1TdWdSVXpRRWI4bTVzVWJ4WEdOZVNjc1lmNUQ1S0pEWkpGbmdUNUx4ZWllN2haUC14TklYZw?oc=5"
           ]
         ],
@@ -163,13 +139,14 @@ const archiveZh = [
         "section": "AI产品推荐",
         "priority": "medium",
         "title": "AI platform to hand off any task to a human expert | Tendem by Toloka - Product Hunt",
-        "dek": "Toloka 推出的 Tendem，用 AI 调度人类专家处理复杂任务，探索人机协作的实用场景。",
+        "dek": "Toloka 推出 Tendem，一个 AI 与人类专家协作的平台，自动将复杂任务转接给真人处理。",
         "details": [
-          "Tendem 是一个由 Toloka（知名众包数据标注平台）开发的 AI 平台，核心能力是将用户提交的任意任务自动转交给最匹配的人类专家。与纯自动化工具不同，Tendem 在 AI 初步分析后，会动态选择具备相应技能的人工处理者，适用于需要判断力、经验或专业知识的非标准化任务。",
-          "操作流程上，用户只需用自然语言描述任务需求，Tendem 的 AI 引擎会解析意图、拆分步骤，并匹配预审通过的专业人员。完成后结果经质量校验返回，全程可追踪。这降低了企业使用临时专家的门槛，尤其适合数据标注、内容审核、市场调研等场景。",
-          "目前 Tendem 处于早期发布阶段，定价模型和完整功能细节尚未全面公开。产品强调「AI 不能替代所有工作，但能高效连接人与工作」，这反映了当前 AI 应用从追求全自动转向人机协作的趋势。实际效果取决于专家库质量与匹配算法，需进一步观察用户反馈。"
+          "Toloka 在 Product Hunt 上发布了新平台 Tendem，专为需要人工介入的 AI 工作流设计。当 AI 无法高效完成某类任务（如敏感决策、创意判断、专业咨询）时，Tendem 会自动将任务转给匹配的人类专家，实现无缝交接。",
+          "Tendem 不是简单的众包平台，而是通过 AI 预处理任务——识别意图、提取关键信息、格式化需求，再分发给经过验证的专家库。这降低了人工介入的门槛，同时保持响应速度。",
+          "Toloka 本身是专注数据标注和众包的公司（曾被 Yandex 孵化），Tendem 将其业务从“数据标注”扩展到“任务交付”，瞄准企业级 AI 工作流中“最后一步”的真人兜底需求。",
+          "目前 Tendem 仍处于早期上线阶段，具体定价和专家网络规模未公开。但它代表的“AI+人工”混合模式正成为 AI 落地中的关键趋势——尤其在合规、医疗、法律等高价值领域。"
         ],
-        "why": "Tendem 展示了 AI 在非标准化工作流中的落地路径——不做替代者，而是做分配者。对于想要切入垂直行业外包或众包市场的团队，类似的「AI+人工」协作模式可能比纯自动化更易获得用户信任。",
+        "why": "对于产品经理和创业者，Tendem 展示了一个新方向：AI 产品不必追求完全自动化，而是设计优雅的“转人工”机制。这种混合架构可能在垂直场景（如客服、辅导、审核）中快速落地。",
         "links": [
           [
             "Google News AI Product Discovery: AI platform to hand off any task to a human expert | Tendem by Toloka",
@@ -187,18 +164,18 @@ const archiveZh = [
         "section": "每日词条",
         "priority": "learning",
         "title": "Agentic Workflow",
-        "dek": "理解当下AI Agent和企业自动化新闻背后的共同框架——从简单指令到自主执行的跃迁。",
+        "dek": "理解 AI 代理如何自主决策、执行任务并协同工作的新范式。",
         "details": [
-          "Agentic Workflow（智能体工作流）是指AI系统不仅能理解指令，还能自主规划、调用工具、执行多步任务，并在过程中不断自我纠偏的运作模式。它区别于传统的“请求-响应”式AI，更像一个拥有目标、记忆和执行力的数字员工。2026年，几乎所有主流AI公司都在押注这一方向。",
-          "以腾讯5月19日发布的Marvis助手为例，它不再只是聊天机器人，而是能主动理解用户意图，跨应用调用日程、备忘录、支付等系统能力，完成复杂操作——比如“帮我订明早去上海的机票并安排会议”。这正是Agentic Workflow的典型体现：将大语言模型作为“大脑”，连接操作系统层面的API作为“手脚”。",
-          "在企业级场景中，Agentic Workflow的意义更大。OpenAI与Dell合作将Codex带入混合云和本地环境，让企业可以安全地部署AI编码Agent，自动完成代码审查、部署流水线管理等任务。这类工作流需要解决权限隔离、数据安全、状态持久化等工程挑战，也是当下AI基础设施竞争的关键战场。",
-          "目前Agentic Workflow仍处于早期阶段，主要瓶颈在于：任务规划的成功率不够稳定、跨系统调用的延迟、以及对异常情况的自主处理能力。但可以预见，未来半年到一年内，能够构建可靠Agentic Workflow的平台将成为AI时代的“新操作系统”。"
+          "Agentic Workflow 是指 AI 系统以代理（agent）的形式，自主规划、执行多步骤任务，并与外部工具、API 或真实世界环境交互的工作模式。与传统的被动响应对话不同，代理能拆解目标、调用工具、处理异常，甚至自主修正路径。这一概念正在从研究走向企业级应用。",
+          "5月18日，OpenAI 与 Dell 合作，将 AI 编程代理 Codex 引入企业混合云和本地环境。Codex 作为 agent，能安全地跨企业数据和工作流自主编写、调试代码，帮助开发团队自动化重复性任务。这是 agentic workflow 在软件开发中的落地案例，意味着企业不需要修改现有基础设施即可部署 AI 代理，降低了采用门槛。",
+          "与此同时，AI 芯片初创公司 Tenstorrent 被传出可能被 Intel 或 Qualcomm 收购，估值或超 50 亿美元。Tenstorrent 的芯片架构专门针对 AI 推理和代理工作负载进行了优化，强调低延迟和灵活性。这反映出 agentic workflow 对底层硬件提出了新要求——代理需要更快的决策响应和更高效的并发处理能力。",
+          "Here Technologies 则在5月19日推出了 Location Reasoning 产品，帮助 AI 代理理解并利用真实世界的空间数据。例如，物流代理可以结合地图、交通和天气信息自主规划配送路线。这标志着 agentic workflow 正在从虚拟任务扩展到物理世界，驱动自动驾驶、机器人等领域的智能化升级。"
         ],
-        "why": "Agentic Workflow是当前AI从“对话工具”迈向“数字劳动力”的核心转折点。理解这一概念，有助于判断哪些公司真正掌握了AI落地的钥匙，以及个人和企业应该如何调整工作流设计。",
+        "why": "Agentic Workflow 正在成为企业 AI 落地的核心架构，了解它有助于把握从模型能力到工程落地的投资方向，尤其是在芯片、软件集成和空间智能领域的创业机会。",
         "links": [
           [
-            "体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统 - 爱范儿",
-            "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9YcmloaDE1ZVZ3ZDlrdHdKdENFM21SNlo4M3YtSy12UzZDSExTT1pYWVdxZEtqLVhrbXl1ZWhFVEhsS3M?oc=5"
+            "OpenAI Codex Enterprise Partnership",
+            "https://openai.com/index/dell-codex-enterprise-partnership"
           ]
         ],
         "sourceDate": "",
@@ -1158,7 +1135,7 @@ const archiveZh = [
 ];
 
 const archiveEn = [
-      {
+        {
     "date": "2026-05-20",
     "title": "AI Daily Atlas",
     "meta": "May 20, 2026",
@@ -1173,39 +1150,16 @@ const archiveEn = [
     ],
     "items": [
       {
-        "section": "Headlines",
-        "priority": "high",
-        "title": "Tencent's Marvis Assistant: The Endgame of Personal AI Is the Operating System",
-        "dek": "A hands-on review of Tencent's Marvis assistant suggests that the future of personal AI lies in becoming an operating system layer.",
-        "details": [
-          "Tencent has quietly launched Marvis, a next-generation AI assistant that goes beyond simple chat to deeply integrate with the device operating system. According to a detailed review by iFanr, Marvis can control system settings, manage files, trigger cross-app workflows, and remember user preferences across sessions—effectively acting as an intelligent OS layer. This marks a strategic shift from Tencent's previous AI efforts, which focused on chatbots within WeChat.",
-          "The key differentiator is Marvis's ability to perform agentic tasks autonomously. For example, it can schedule reminders based on email content, adjust phone settings based on location, and summarize documents without manual file selection. The review highlights that Marvis understands context across apps and time, making it more like a 'personal AI operating system' than a typical voice assistant. This positions Tencent against Apple Intelligence, Google Gemini, and similar OS-level AI features.",
-          "However, the article notes uncertainties around language support and global availability. The current version appears optimized for Chinese users and may not launch internationally soon. The long-term impact could be significant: if Tencent succeeds, it could redefine how users interact with their devices and challenge Western tech giants in the personal AI space."
-        ],
-        "why": "Marvis represents a major strategic bet by Tencent to own the personal AI layer on devices, potentially reshaping the competitive landscape against Apple, Google, and other Chinese rivals like ByteDance and Alibaba.",
-        "links": [
-          [
-            "Google News China AI Signals: 体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统 - 爱范儿",
-            "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9YcmloaDE1ZVZ3ZDlrdHdKdENFM21SNlo4M3YtSy12UzZDSExTT1pYWVdxZEtqLVhrbXl1ZWhFVEhsS3M?oc=5"
-          ]
-        ],
-        "sourceDate": "2026-05-19",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
         "section": "Deep Dive",
         "priority": "medium",
-        "title": "World Models Now Power Multiplayer FPS Gaming: A Step Beyond Simulation",
-        "dek": "A new world model reportedly enables real-time multiplayer FPS gameplay, challenging the boundary between simulation and reality.",
+        "title": "World Model Now Lets Multiple Players Battle in a FPS Game",
+        "dek": "A new world model supports real-time multiplayer FPS gameplay, leapfrogging efforts by Li Fei-Fei’s lab and raising the bar for AI-generated interactive worlds.",
         "details": [
-          "A recent report from QbitAI (2026-05-19) claims that an unnamed world model has achieved something previously thought to be extremely difficult: multiple human players simultaneously interacting in a first-person shooter environment generated entirely by the model. This development comes ahead of Fei-Fei Li's well-known world model initiative, suggesting rapid progress in the field. The demonstration, based on a video shared in the article, shows players moving, shooting, and reacting in a persistent 3D world without a traditional game engine. However, no official paper or code has been released, leaving the technical implementation and fidelity in question.",
-          "The core challenge of multiplayer world models lies in maintaining spatiotemporal consistency across different viewpoints and actions. Each player's decisions must influence a shared latent state in real time, a problem that scales poorly with existing generative architectures. If the claims hold, this could revolutionize game development by replacing hand-crafted physics and rendering with learned dynamics, and open new avenues for training embodied AI agents in rich, interactive environments. Yet the summary's question 'Is reality really that important?' hints at potential limitations—perhaps the model prioritizes playability over physical accuracy, raising doubts about its robustness in other domains like autonomous driving."
+          "World models—AI systems that simulate environments from input data—have mostly focused on single-agent or static scenes. A recent breakthrough from an undisclosed research team demonstrates a world model capable of rendering a first-person shooter game where multiple human players can join and fight in real time. This goes beyond earlier work by Fei-Fei Li’s group, which showed single-player world models but hadn’t yet scaled to multiplayer interactivity. The model generates frames, physics, and game logic on the fly, effectively acting as a game engine powered entirely by neural networks. The result blurs the line between simulation and reality: players report that the experience feels authentic, even though every pixel is AI-generated.",
+          "The significance lies in both technology and application. Multiplayer world models could revolutionize game development by drastically reducing the need for hand-coded physics and rendering, enabling rapid prototyping of complex environments. They also hint at future “infinite” games where no two playthroughs are the same. However, key uncertainties remain: the model’s latency, visual fidelity at scale, and ability to handle arbitrary player actions are not yet fully disclosed. Moreover, the source article (from QbitAI) does not specify the team behind this work, which makes independent verification difficult. If the claims hold, this could accelerate research into general-purpose simulators for robotics, autonomous driving, and virtual worlds.",
+          "Competition is heating up: Li Fei-Fei’s World Labs recently released a single-player world model, while other labs like Google DeepMind and OpenAI are exploring similar directions. This multiplayer demo suggests that the race toward interactive world models is moving faster than many expected. The immediate impact is on the AI gaming community, but the longer-term implications touch any field that requires realistic, interactive simulation. As the line between generative AI and game engines blurs, we may soon see AI not just creating static art or text, but entire playable universes."
         ],
-        "why": "This milestone, if verified, would accelerate the shift from rule-based simulation to generative world models, impacting both the gaming industry and AI research. However, the lack of peer-reviewed validation means it should be regarded as a noteworthy but unconfirmed step forward.",
+        "why": "This development signals that world models are approaching a tipping point where they can replace traditional game engines for certain use cases, opening up new opportunities for AI-native game design, simulation-based training, and metaverse content creation.",
         "links": [
           [
             "量子位: 抢先李飞飞！世界模型能多人联机玩FPS游戏了",
@@ -1222,17 +1176,16 @@ const archiveEn = [
       {
         "section": "Deep Dive",
         "priority": "medium",
-        "title": "AI, Drones, Robotics Come Together in New ETF",
-        "dek": "A new ETF bundling AI, drones, and robotics signals a maturing convergence—but investors should watch for hype versus real integration.",
+        "title": "AI, Drones, Robotics Come Together in New ETF - ETF Database",
+        "dek": "A new ETF bundles AI, drone, and robotics companies, offering investors a single bet on the convergence of autonomous systems.",
         "details": [
-          "The launch of an ETF combining AI, drones, and robotics reflects a growing thesis that these technologies are converging rather than operating in silos. While the exact holdings and issuer are not disclosed in the source, the product's existence itself is noteworthy: it offers retail investors a single-ticket exposure to three high-growth sectors that historically have been tracked separately. The overlap is real—AI powers drone autonomy and robot perception—but the ETF's long-term performance will hinge on whether companies can deliver integrated solutions rather than just overlapping thematic labels.",
-          "This ETF arrives at a time when AI-driven robotics and autonomous drones are moving from R&D to commercial deployment. For example, warehouse robots increasingly rely on computer vision models, while delivery drones use on-device AI for navigation. However, the sector is still fragmented: many drone and robotics firms are pre-revenue or have narrow moats. The ETF may thus be more of a thematic bet than a value play, suitable for investors who believe the convergence will accelerate over the next 3–5 years but willing to tolerate volatility.",
-          "Competition among thematic ETFs is fierce, and this product will need to differentiate itself through active management, lower fees, or a unique index methodology. If it simply repackages existing holdings from broader AI or robotics ETFs, it may fail to attract substantial assets. The real story is not the fund itself but the underlying signal: asset managers now see enough commercial activity in AI-drones-robotics to justify a dedicated vehicle, which in turn could spur more startup funding and corporate spin-offs in the space."
+          "The ETF, as reported by ETF Database, brings together companies operating at the intersection of artificial intelligence, unmanned aerial vehicles (drones), and robotics. This reflects a growing market recognition that these three domains are increasingly intertwined: AI powers drone navigation and robotic decision-making, while drones and robots serve as the physical actuators for AI systems. The fund provides diversified exposure to firms developing everything from AI chips and drone hardware to full-stack robotic platforms, making it accessible for investors who want to participate in the automation megatrend without stock-picking individual names.",
+          "The launch comes at a time when AI model improvements are rapidly enabling real-time control of drones and robots in complex environments. For non-technical readers, this ETF matters because it signals that Wall Street sees the fusion of AI with hardware as a distinct investment theme, separate from pure software AI plays. The fund's structure likely includes both large-cap robotics players and smaller, innovative drone startups, though the exact holdings are not disclosed in the source. Investors should note that such thematic ETFs can carry higher volatility due to concentrated sector bets."
         ],
-        "why": "For investors and tech strategists, this ETF validates the convergence thesis: AI, drones, and robotics are no longer separate bets but a unified frontier. It also creates a benchmark that may influence how VCs and corporate R&D allocate capital going forward.",
+        "why": "This ETF entry is a barometer for how the financial industry is codifying the convergence of AI, drones, and robotics into a distinct asset class. For product builders and strategists, it validates the thesis that AI's next wave will be physical, not just digital.",
         "links": [
           [
-            "Google News AI Infrastructure: AI, Drones, Robotics Come Together in New ETF - ETF Database",
+            "Google News AI Infrastructure: AI, Drones, Robotics Come Together in New ETF - ETF Databas",
             "https://news.google.com/rss/articles/CBMihgFBVV95cUxPUVhQQjdnV25fMFN2WUpPRTdfTEpqNW9PejVPMFhsdDhIc3RhdkExcHZ4TEcwMnNaLUd5MmJwWl9sb25BQXRUYkNudjRfUWk3T2RaTUhEUkNMeERBZFVRdm5pVGNIbkF5VGxRMFU5Ul9NXzRUalZHclJCWHZkR01vN0JSMWtLQQ?oc=5"
           ]
         ],
@@ -1247,12 +1200,22 @@ const archiveEn = [
         "section": "Views",
         "priority": "medium",
         "title": "[AINews] Codex Rises, Claude Meters Programmatic Usage",
-        "dek": "Latent Space analyzes the rising prominence of Codex and Claude's new metering for programmatic use, signaling a shift in AI coding agents.",
+        "dek": "Latent Space podcast examines the rise of Codex as an autonomous coding agent and Anthropic's introduction of programmatic usage metering for Claude.",
         "details": [
-          "Latent Space's latest AI news roundup highlights a quiet day that allowed the team to drill into a longer-term trend: the ascent of coding agents. OpenAI's Codex is gaining traction as a go-to tool for autonomous code generation, while Anthropic's Claude has introduced metering for programmatic API usage. This dual signal suggests that major AI labs are increasingly targeting developer workflows with agentic, usage-based offerings, moving beyond simple chat interfaces.",
-          "The article contextualizes Claude's metering move as a strategic response to the rising cost of serving complex agent loops—charging per action rather than per token could align pricing with value delivered. Meanwhile, Codex's resurgence is tied to its integration in IDEs and standalone agent modes. The analysis stops short of providing exact adoption numbers but indicates a clear industry pivot toward agentic coding, which could reshape how developers interact with AI tools."
+          {
+            "summary": "Codex emerges as a leading coding agent.",
+            "expanded": "The podcast highlights how OpenAI's Codex has evolved from a code completion tool into an autonomous agent capable of planning and executing complex multi-step coding tasks. This shift signals a competitive pressure on other coding assistants, pushing the industry toward agentic workflows where minimal human oversight is required. Developers and enterprises should note that the value proposition is moving from suggestion quality to autonomous task execution."
+          },
+          {
+            "summary": "Anthropic introduces metering for programmatic Claude usage.",
+            "expanded": "Anthropic is implementing usage metering for Claude's API, particularly targeting programmatic and agent-driven workloads. This allows enterprises to track and manage API costs per task rather than per token, potentially enabling new pricing models. However, uncertainty remains about whether metering will increase developer costs or encourage more efficient agent design. It reflects a broader trend of AI companies refining monetization for agentic use cases."
+          },
+          {
+            "summary": "Long-term trend: AI coding agents are becoming the new normal.",
+            "expanded": "The episode contextualizes these moves within a year-long trend where major players are transitioning from 'assistants' to 'agents' that operate autonomously. For product managers and investors, the competitive moat is shifting from raw model capability to agent reliability, tool integration, and cost governance. The podcast serves as a useful roundup for anyone tracking the agentic AI shift and its implications for developer tooling and API economics."
+          }
         ],
-        "why": "This trend underscores the intensifying competition in AI coding assistants and the need for developers to adapt to usage-based pricing, which could reshape the economics of AI-driven development.",
+        "why": "This podcast offers a concise snapshot of two key trends—Codex's rise as an agent and Claude's metering—that directly impact developer tool choices, API pricing strategies, and startup positioning in the agentic coding market.",
         "links": [
           [
             "Latent Space: [AINews] Codex Rises, Claude Meters Programmatic Usage",
@@ -1270,18 +1233,18 @@ const archiveEn = [
         "section": "Views",
         "priority": "medium",
         "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
-        "dek": "IBM's latest CEO study identifies five strategic plays for enterprises moving from AI experimentation to full-scale transformation, based on a global survey of top executives.",
+        "dek": "IBM's latest CEO study provides a strategic framework for enterprise AI adoption, outlining five key plays for becoming AI-first.",
         "details": [
           {
-            "summary": "IBM's 2026 CEO Study distills insights from thousands of global CEOs on operationalizing AI.",
-            "expanded": "The study, now in its 26th edition, draws on interviews with over 3,000 CEOs worldwide. It argues that only 12% of companies have fully integrated AI into core business processes—and those leaders see 2.5x revenue growth vs. laggards. The five plays include: embedding AI into value chains (not just IT), redefining workforce strategies around human-AI collaboration, leveraging open ecosystems to avoid vendor lock-in, embedding governance from day one to manage risk, and building a flexible data infrastructure that can support rapid model iteration. The report is a product of IBM's Institute for Business Value (IBV), a trusted source in corporate strategy research. Its key insight is that technology alone is insufficient; leadership alignment and organizational change are the primary bottlenecks."
+            "summary": "Report overview",
+            "expanded": "The IBM 2026 CEO Study, released in May 2026, offers a framework of five strategic plays for organizations to achieve AI-first transformation. It synthesizes insights from global CEOs on embedding AI into core business processes, moving beyond pilot projects to enterprise-scale adoption. The report reflects IBM's consulting expertise and its aim to help clients navigate the complexities of AI integration, covering areas such as leadership, data readiness, and cultural change."
           },
           {
-            "summary": "The report frames AI transformation as a leadership and operating model challenge, not just a technology upgrade.",
-            "expanded": "A standout finding: CEOs who personally champion AI adoption—rather than delegating to chief digital officers—report 1.8x higher success rates. The study also warns that 70% of AI proofs of concept never scale, primarily due to misalignment with business objectives. It advocates for 'radical transparency' in AI decision-making to sustain trust internally and externally. For startups and builders, the report signals that the next wave of B2B AI tools should focus not on model performance alone but on measurably improving CEO-level KPIs like time-to-market and employee retention. The uncertainty remains whether these idealized plays can be realized within traditional hierarchical orgs—the study acknowledges that only a minority of firms currently exhibit the required agility."
+            "summary": "Implications for decision-makers",
+            "expanded": "For executives and strategists, the study provides a structured approach to avoid common pitfalls in AI scaling, such as siloed data and lack of alignment. It underscores the need for a clear AI vision, robust data governance, and continuous upskilling. As a thought leadership piece, it serves as a benchmark for companies assessing their AI maturity and signals IBM's continued investment in enterprise AI consulting. The full report with specific data and play details is accessible via the linked source."
           }
         ],
-        "why": "For strategists and investors, this study offers a benchmark: the five plays define clear criteria for evaluating whether a company is genuinely AI-first or just making surface-level changes. It also suggests that consultancies and software vendors who help align AI with business outcomes (not just deploy models) will capture the most value in the next 18 months.",
+        "why": "This IBM study offers a practical framework for leaders to transition from AI experimentation to enterprise-wide transformation, making it a valuable reference for strategy and investment decisions in AI-first initiatives.",
         "links": [
           [
             "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
@@ -1299,16 +1262,15 @@ const archiveEn = [
         "section": "AI Product Picks",
         "priority": "medium",
         "title": "Trainer: Train AI agents by recording your screen - Product Hunt",
-        "dek": "A new tool that lets users create AI agents simply by demonstrating tasks on their screen, lowering the barrier to automation.",
+        "dek": "A new AI productivity tool lets users train custom agents by simply recording their screen, lowering the barrier to AI automation.",
         "details": [
-          "Trainer, spotted on Product Hunt, claims to enable users to train AI agents by recording their screen during a task. The tool then converts the recording into an automated workflow, potentially allowing non-coders to build custom agents for repetitive digital tasks. This approach mirrors 'programming by demonstration' but applied to AI agent training.",
-          "The product targets knowledge workers and small teams who want to automate workflows without writing code. By observing mouse clicks, keystrokes, and application interactions, the agent learns to replicate the process. If effective, it could democratize agent creation beyond developers, though the accuracy and reliability of such demonstrations remain unverified.",
-          "Given the rise of AI agents, Trainer represents a notable attempt to make agent training as simple as recording a video. Its success hinges on whether the learned workflows generalize across similar interfaces and handle edge cases. The Product Hunt launch suggests early positive reception, but wider testing is needed to assess practical utility."
+          "Trainer, spotted on Product Hunt, enables users to train AI agents by recording their screen as they perform tasks. The tool converts screen captures into training data, allowing non-programmers to create agents that replicate workflows. This approach could democratize AI agent creation for small businesses and individuals, though the quality and reliability of agents trained this way remain uncertain. No user reviews or funding details are available yet.",
+          "The product taps into the growing trend of no-code AI, making agent training as simple as recording a video. If effective, it could compete with more complex agent-building platforms. However, the lack of public demos or documentation means the true capability—such as handling multi-step or decision-based tasks—is unverified. The launch highlights a potential shift toward observational learning in AI product design."
         ],
-        "why": "This product illustrates a growing trend: making AI agent creation accessible to non-developers through intuitive interfaces, which could unlock new productivity use cases and spur competition among agent-building platforms.",
+        "why": "Trainer represents a low-friction approach to AI agent creation that could unlock productivity gains for non-technical users, signaling a product opportunity in the no-code AI space.",
         "links": [
           [
-            "Google News AI Product Discovery: Trainer: Train AI agents by recording your screen - Prod",
+            "Google News AI Product Discovery: Trainer",
             "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XXy1CYmFkM2MybEdHSWNyOEFZZGNtSURTYzhDZU1TdWdSVXpRRWI4bTVzVWJ4WEdOZVNjc1lmNUQ1S0pEWkpGbmdUNUx4ZWllN2haUC14TklYZw?oc=5"
           ]
         ],
@@ -1323,16 +1285,15 @@ const archiveEn = [
         "section": "AI Product Picks",
         "priority": "medium",
         "title": "AI platform to hand off any task to a human expert | Tendem by Toloka - Product Hunt",
-        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "dek": "Tendem, built by crowdsourcing platform Toloka, enables AI agents to escalate complex tasks to human experts, blending automation with human judgment.",
         "details": [
-          "This signal comes from Google News AI Product Discovery：AI platform to hand off any task to a human expert | Tendem by Toloka - Product Hunt. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
-          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
-          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+          "Tendem acts as a middle layer between AI workflows and human expertise, allowing users to route tasks that AI cannot confidently handle to vetted specialists. Toloka’s existing infrastructure for scalable human intelligence gives Tendem a ready labor pool, potentially reducing task completion time for domains like data labeling, content moderation, and research validation. The product targets teams that need high accuracy but cannot afford delays from fully manual processes. Uncertainty remains around pricing, accuracy guarantees, and how Tendem differentiates from similar human-in-the-loop platforms like Scale AI.",
+          "By launching on Product Hunt, Tendem seeks early feedback from a tech-savvy audience. The integration with common agent frameworks (likely via API) could appeal to developers building compound AI systems. If adopted, it may signal a shift toward hybrid AI products that explicitly design for human handoffs rather than treating errors as edge cases. However, without detailed benchmarks or case studies, its reliability in production workflows is unproven."
         ],
-        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "why": "Tendem represents a pragmatic evolution of AI product design: instead of forcing agents to handle every edge case, it embraces human augmentation as a feature. For product builders, it highlights growing demand for seamless agent-to-human escalation, a pattern that may become standard in enterprise AI stacks.",
         "links": [
           [
-            "Google News AI Product Discovery: AI platform to hand off any task to a human expert | Ten",
+            "Google News AI Product Discovery: AI platform to hand off any task to a human expert | Tendem by Toloka",
             "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9rNVI0cDlsMWg1Y2JZU3RlVmcyV2dEN3RNOG1yZndqSWVob1d4ZjFybG5xUlZpZmdpUlNkdkRXV1FIU1ZicXJEU2NpZ1ZMWE5hdUJBN3ZuZHM5QUF4U3hxOUZwZw?oc=5"
           ]
         ],
@@ -1347,19 +1308,17 @@ const archiveEn = [
         "section": "AI Term",
         "priority": "learning",
         "title": "Agentic Workflow",
-        "dek": "A system where AI agents autonomously execute multi-step tasks, making decisions, using tools, and adapting to feedback without step-by-step human instructions.",
+        "dek": "Understanding the shared language behind today's agent and enterprise automation news.",
         "details": [
-          {
-            "summary": "Definition and Core Idea",
-            "expanded": "An agentic workflow is an execution pattern in which an AI model acts as an autonomous agent, breaking down a high-level goal into sub-tasks, selecting tools (e.g., code interpreters, search, APIs), evaluating intermediate results, and iterating until completion. Unlike traditional language models that produce a single static output, agentic workflows enable dynamic, multi-step reasoning and action. This paradigm underlies many recent enterprise AI products, such as OpenAI Codex with Dell for on-premise coding agents [S002] and Tenstorrent's chip designs that may power agent inference at scale [S001]."
-          },
-          {
-            "summary": "Why It Matters Today",
-            "expanded": "Agentic workflow is the conceptual foundation behind the surge in 'AI agents' for coding, customer service, and data analysis. It shifts AI from a passive Q&A tool to an active executor. Understanding this term helps readers interpret news about agent launches (e.g., Tenstorrent's potential acquisitions signaling demand for agent hardware) and enterprise deployments (e.g., OpenAI Codex with Dell)."
-          }
+          "Agentic Workflow describes a multi-step AI process where models autonomously plan, execute, and adapt tasks rather than just responding to prompts. Unlike traditional chatbots, agentic workflows can break down complex objectives—like writing a codebase or managing a supply chain—into sub-tasks, use tools (APIs, databases), and self-correct based on feedback. A recent example is OpenAI’s Codex, now available via Dell for on-premise deployment, enabling enterprises to deploy secure AI coding agents that autonomously interact with internal data and workflows. This marks a shift from AI as a question-answer tool to AI as an autonomous executor."
         ],
-        "why": "Agentic workflow is the key concept linking multiple D-1 stories: from enterprise agent rollouts to AI chip acquisitions. Grasping it helps product builders and investors spot where the market is headed.",
-        "links": [],
+        "why": "Understanding agentic workflow is critical: it's the architectural principle behind the wave of 'agent' products and enterprise automation announcements. Investors, product builders, and engineers should recognize that the competitive moat is shifting from model intelligence to workflow orchestration and tool-use reliability.",
+        "links": [
+          [
+            "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
+            "https://openai.com/index/dell-codex-enterprise-partnership"
+          ]
+        ],
         "sourceDate": "",
         "freshness": "",
         "regionPriority": "",
