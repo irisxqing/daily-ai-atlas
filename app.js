@@ -1,5 +1,5 @@
 const archiveZh = [
-  {
+    {
     "date": "2026-05-20",
     "title": "AI Daily Atlas",
     "meta": "2026年5月20日",
@@ -16,18 +16,66 @@ const archiveZh = [
       {
         "section": "今日重点",
         "priority": "high",
-        "title": "国产GPU开始造世界！国内首个全栈具身智能仿真平台来了",
-        "dek": "由国产GPU驱动的全栈具身智能仿真平台MT Lambda发布，对标NVIDIA Isaac Sim，填补国内空白。",
+        "title": "体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统 - 爱范儿",
+        "dek": "腾讯悄悄内测的新一代AI助手Marvis，试图从工具进化为个人操作系统，背后是腾讯对AI入口的重新定义。",
         "details": [
-          "5月19日，国内首个全栈具身智能仿真平台MT Lambda正式发布。该平台由国产GPU厂商主导开发，旨在为具身智能（Embodied AI）研究提供从仿真环境、感知算法到运动控制的完整工具链。此前，类似能力主要依赖NVIDIA的Isaac Sim等海外平台，国产方案的缺失限制了本土研发效率。MT Lambda的出现有望改变这一局面，但具体性能参数和生态兼容性尚未完全公开。",
-          "MT Lambda的核心亮点是“全栈”与“国产GPU适配”。平台集成了高保真物理引擎、多传感器仿真和强化学习接口，支持机器人从训练到部署的全流程。更重要的是，它基于国产GPU架构优化，可避免硬件“卡脖子”风险。据量子位报道，该平台已在多个高校和创业公司内测，但大规模商用时间表仍不明确。",
-          "这一进展对国内具身智能赛道意义重大：一方面，降低了机器人算法研发的硬件门槛，无需依赖昂贵的外国GPU集群；另一方面，为国产GPU在AI训练场景中探索了新应用方向。不过，与Isaac Sim相比，MT Lambda的社区生态、工具成熟度及国际影响力仍有差距。能否快速迭代并吸引开发者，将是决定其成败的关键。"
+          "腾讯于近日低调内测了一款名为Marvis的AI助手，不同于常见的聊天机器人，Marvis被定位为“个人AI操作系统”。据爱范儿体验文章透露，Marvis能够深度调用手机系统权限，实现跨应用任务执行，比如直接发送微信消息、管理日历、设置闹钟，甚至操作手机设置。这种系统级集成使其区别于Copilot或ChatGPT等对话式助手。腾讯在AI助手上的布局此前较为保守，Marvis的推出意味着其开始寻求将AI能力嵌入用户日常操作的核心层。",
+          "Marvis的亮点之一是“主动感知”能力。它能够根据用户的使用习惯和场景，提前推送建议。例如，当用户到达公司附近时自动打开钉钉打卡，或根据行程提醒出发时间。这种从被动应答到主动服务的转变，对用户黏性要求极高。如果Marvis能准确理解上下文，它可能成为比Siri或小爱同学更智能的入口。不过，目前Marvis仍处于内测阶段，体验者反映其响应速度有待提升，且部分复杂指令理解不够准确。腾讯尚未公布正式上线时间。",
+          "Marvis的推出对行业有双重意义。一方面，它证实了“AI+操作系统”的路线正在被头部厂商实践——苹果、华为、谷歌都在探索类似方向，腾讯的加入使竞争更加激烈。另一方面，Marvis依赖腾讯生态（微信、QQ、腾讯文档等），这既是优势（数据打通）也是局限（非腾讯系应用支持有限）。对创业公司而言，独立AI助手面临生存压力：若无法拿到系统级权限，功能天花板明显。Marvis能否成为下一个超级应用，取决于腾讯对其开放的决心和用户是否愿意交出更多隐私控制权。"
         ],
-        "why": "国产GPU驱动的全栈具身智能仿真平台发布，是国产AI基础设施从‘芯片’向‘平台+生态’延伸的标志性事件，对关注机器人、自动驾驶等领域的投资和创业团队具有长期战略参考价值。",
+        "why": "腾讯Marvis标志着国内科技巨头从AI对话转向AI操作系统的新阶段，对个人AI产品的形态、竞争格局和隐私边界都将产生深远影响。",
+        "links": [
+          [
+            "Google News China AI Signals: 体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统 - 爱范儿",
+            "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9YcmloaDE1ZVZ3ZDlrdHdKdENFM21SNlo4M3YtSy12UzZDSExTT1pYWVdxZEtqLVhrbXl1ZWhFVEhsS3M?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "今日重点",
+        "priority": "high",
+        "title": "国产GPU开始造世界！国内首个全栈具身智能仿真平台来了",
+        "dek": "MT Lambda 平台发布，国产 GPU 驱动仿真训练，具身智能研发有望加速",
+        "details": [
+          "具身智能（Embodied AI）的发展高度依赖仿真环境进行大规模训练和测试。此前，国内研发团队多使用英伟达 Isaac Sim 等海外平台，存在数据安全、成本高和定制受限等问题。国产全栈仿真平台的诞生，意味着从底层芯片到上层软件栈的自主可控成为可能。",
+          "据量子位报道，国内首个全栈具身智能仿真平台 MT Lambda 正式发布。该平台基于国产 GPU 打造，支持从场景构建、物理模拟到数据生成的全链路流程。这意味着机器人公司可以在统一技术栈上完成从算法开发到部署的闭环，无需再依赖海外仿真框架。",
+          "不过，该平台目前尚未公开具体的 GPU 型号、性能对比以及支持的机器人种类。其是否能在复杂任务场景中匹敌主流商业仿真平台，仍需实际测试和社区反馈验证。若效果达到预期，将显著降低国内具身智能企业的仿真成本，加速产品迭代。"
+        ],
+        "why": "国产GPU驱动的全栈仿真平台若验证有效，将打破具身智能研发对海外工具链的依赖，对国内机器人创业公司和AI算法团队而言，意味着更低的训练门槛和更大的技术自主权。",
         "links": [
           [
             "量子位: 国产GPU开始造世界！国内首个全栈具身智能仿真平台来了",
             "https://www.qbitai.com/2026/05/420084.html"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "今日重点",
+        "priority": "high",
+        "title": "ITRI Launches AI Robotics Innovation & Development Center to Strengthen Global Supply Chain - Plataforma Media",
+        "dek": "台湾工研院成立AI机器人创新与发展中心，聚焦关键技术与全球供应链合作，加码机器人赛道。",
+        "details": [
+          "台湾工业技术研究院（ITRI）于近日宣布成立AI机器人创新与发展中心。作为台湾最具影响力的科技研发机构之一，ITRI在半导体、电子制造等领域积累了深厚的技术储备。此次新中心的设立，旨在整合其在AI、机械、传感等方向的能力，推动机器人技术从实验室走向产业应用，并帮助台湾在全球机器人供应链中占据更关键的位置。",
+          "据Plataforma Media报道，该中心将重点突破自主导航、人机协作、智能抓取等AI机器人核心技术，计划与全球头部供应链企业建立合作，加速技术落地。ITRI此前已在智能制造、5G通信等领域有多个成功商业化案例，此次动作延续了其“技术+产业”双轮驱动的策略。不过，目前尚未公布具体投资金额、合作企业名单及预期时间表。",
+          "这一布局对全球机器人产业影响深远。台湾拥有完整的电子制造和半导体产业链，AI机器人中心有望带动上游芯片、传感器、电机等零组件的协同创新，降低对外部技术的依赖。对于关注机器人供应链的企业和投资者而言，这是一个值得持续跟踪的信号——尤其是在全球制造业追求自动化和弹性的大背景下，台湾的技术整合能力可能成为下一波机器人竞争的关键变量。"
+        ],
+        "why": "工研院新设AI机器人中心，反映台湾正加速抢占AI机器人上游技术，对于关注机器人供应链、芯片和传感器领域的企业和投资者，这是一个值得跟踪的信号。",
+        "links": [
+          [
+            "Google News AI Infrastructure: ITRI Launches AI Robotics Innovation & Development Center to Strengthen Global Supply Chain",
+            "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUGtiVU1oX1FiaGVfS3h5SU5ESHVtNU1TRlJJUFhDRXI4UUZxWHdnb0V5NDZ1eWQ5VWo4SXZVLU4wN054X1pPeWFGRGVlNGVpV0oyLWhQNG9Vc3RtYkFjclZ0ZThiNnRITDItNkZyNEVfNkIyekRYNXBNY0pNTzNJaklURkU3eDkwUWw3N3NmYkk3QzFhMXFHSWh6MXhpb3RBWGdUbXo4N3JieGt1QURJV0REQTJfUkhaUTRhOG9ZcW1vU1loa3dPSGk4V1BnV1pJYUE?oc=5"
           ]
         ],
         "sourceDate": "2026-05-19",
@@ -40,24 +88,24 @@ const archiveZh = [
       {
         "section": "投融资信息",
         "priority": "high",
-        "title": "AI芯片初创公司Tenstorrent成香饽饽：传英特尔和高通均有意收购，估值或超50亿美元",
-        "dek": "加拿大AI芯片初创公司Tenstorrent引发巨头竞购兴趣，英特尔和高通据称都在考虑将其收入囊中，交易估值可能突破50亿美元。",
+        "title": "月之暗面（Yuezhianmian）传赴港IPO前重组公司架构",
+        "dek": "据报道，AI创业公司月之暗面正调整公司框架，为香港上市做准备。",
         "details": [
-          "Tenstorrent是一家总部位于加拿大多伦多的AI芯片初创公司，由传奇芯片架构师Jim Keller担任CEO。该公司专注于开发高性能AI加速器，采用独特的「数据流架构」，在AI推理和训练领域具备竞争力。据Moomoo等多家媒体报道，英特尔和高通目前都在考虑收购Tenstorrent，估值可能超过50亿美元。不过，现有报道均援引“内部人士”或“知情人士”消息，尚未得到公司或买方官方证实。",
-          "若英特尔成功收购Tenstorrent，将为其在AI芯片领域注入强心剂。英特尔近年来在AI加速器市场进展缓慢，其Gaudi系列产品竞争力不及英伟达，而Tenstorrent的技术和Jim Keller的行业经验可能帮助英特尔加速追赶。高通方面，收购Tenstorrent则有助于其扩展数据中心AI计算能力，跳出以手机芯片为主的业务框架。但两家巨头均面临监管审查等不确定性，交易尚需时日。",
-          "Tenstorrent在2025年已完成多轮融资，投资者包括LG电子、Fidelity、Bezos Expeditions等。公司此前估值约25亿美元，若收购价超50亿美元，意味着溢价近一倍。这一估值水平反映出市场对AI芯片初创公司的狂热追捧——尽管Tenstorrent尚未实现大规模商业盈利，但其开源软件策略（如TT-Metalium）和Jim Keller的明星光环成为估值核心支撑。",
-          "这笔潜在的收购案也折射出AI芯片行业的整合趋势。随着AI算力需求爆发，大型科技公司更倾向于通过收购获取关键技术和团队，而非自研。如果交易成行，Tenstorrent将是继Mellanox（被英伟达收购）、Habana Labs（被英特尔收购）后又一家被巨头吞并的AI芯片公司。不过，反垄断审查和芯片出口管制可能成为交易变数，值得持续关注。"
+          "据Moomoo等媒体报道，AI公司月之暗面（Yuezhianmian）正在重组其企业架构，为在香港交易所上市铺路。消息称，公司已启动内部结构优化，包括调整股权架构和董事会组成，以满足港交所的上市要求。目前具体时间表和募资规模尚未披露，但这一动作被视为中国AI公司加速资本化的重要信号。",
+          "月之暗面是国内大模型领域的明星企业，此前已完成多轮融资，投资方包括红杉中国、阿里等。若IPO成行，将成为继商汤、第四范式之后又一家登陆港交所的AI公司。不过，当前港股市场对新股估值较为审慎，且AI公司普遍面临商业化挑战，月之暗面的IPO估值和定价仍有不确定性。",
+          "重组架构通常意味着公司正在清理历史股权、规范治理结构，并可能引入上市前的基石投资者。这一过程少则数月，多则一年，因此IPO落地时间尚不明确。但信号本身表明，月之暗面对资本市场的信心增强，同时也是中国AI创业公司寻求退出通道的典型路径。",
+          "从更宏观视角看，月之暗面的IPO尝试可能带动更多AI公司启动上市流程，尤其是在中美关系紧张、美股中概股承压的背景下，港交所成为内地AI企业的首选。投资者需关注其招股书中关于营收、亏损及大模型业务可持续性的披露，这些将决定市场认可度。"
         ],
-        "why": "Tenstorrent被竞购是AI芯片行业整合加速的信号，无论最终花落谁家，都表明市场对下一代AI计算架构的争夺已白热化，投资者和创业者应关注拥有差异化技术的早期硬件公司。",
+        "why": "月之暗面若成功IPO，将为中国大模型创业公司提供重要的退出案例与估值锚点，同时影响AI赛道在港股的融资环境。",
         "links": [
           [
-            "Google News AI Funding: AI chip startup Tenstorrent becomes highly sought-after! Reports suggest Intel (INTC.US) and Qualcomm (QCOM.US) are interested in acquiring the company, with a valuation potentially exceeding $5 billion. - Moomoo",
-            "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtha1FteTFlT1dueW1oem4wU1JpTzQxRmNhSDZCb3phTlB1VUJYaHphRW1USlhOSWo3M3Vzd2k4RGtnNWxTTFZsRkc3d3ZOM0JXU0RCTjRWaTVaZnh2WWwtNW53YjhPdVdLTWN6VUx5d2JtbHRQWVRYQjQtTi1xVU03YTJGNVN2Vkw5dGhRVGpYMXNDdTNvdVRxX0FuQXJ3ZTFQdmctbk9kLUo3ZHdJTHRRcw?oc=5"
+            "Google News AI Funding: IPO News | Yuezhianmian to Restructure Corporate Framework Ahead of Hong Kong IPO - Moomoo",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYXZiY2tsb291cndJVHlwTmZxS2J6ODR6ODZrdXA2TC10R0R0S3J5T3F3MUxZMW5pS2kySlR3SnhPeDZiLWEzbVZmSWVMV3k4VG9RUWVHdEdHeGg1d3ZrNW5oelE4UEFUM0FhV3R1X0RodldBMXdMU014cXVUVzdUTkdjT0dLa2YtVkNaZHNYWHlYM2FkMldfcEZEUF93bllLV044Ym1JQ1RNX1NQTzYwaHFR?oc=5"
           ]
         ],
         "sourceDate": "2026-05-19",
         "freshness": "d-1",
-        "regionPriority": "primary_market",
+        "regionPriority": "deprioritized_market",
         "freshnessLabelZh": "D-1",
         "freshnessLabelEn": "D-1",
         "freshnessLabel": "D-1"
@@ -65,18 +113,17 @@ const archiveZh = [
       {
         "section": "开源项目",
         "priority": "medium",
-        "title": "把本地 GitHub 会话带到任何地方：远程控制 Copilot 现已 GA",
-        "dek": "GitHub 宣布 Copilot 会话远程控制功能全面可用，开发者可在 PC 和手机间无缝切换。",
+        "title": "将你的本地 GitHub 会话带到任何地方",
+        "dek": "GitHub 宣布 Copilot 会话远程控制功能正式上线，支持从桌面端切换到移动端继续编码。",
         "details": [
-          "GitHub 于 5 月 18 日宣布，其 Copilot 会话远程控制功能正式全面可用（GA）。该功能允许开发者在 VS Code 或 CLI 中开始工作，然后通过 github.com 或 GitHub Mobile App 在手机上继续同一会话，实现“随时随地编码”的体验。这是 GitHub 在提升开发者工作流灵活性方面的重要一步。",
-          "此前，Copilot 会话只能在单台设备上持续运行，切换设备意味着丢失上下文。新功能通过云端同步会话状态，使代码补全、聊天历史等上下文在不同设备间保持连贯。GA 版本意味着该功能已通过稳定性测试，所有 GitHub Copilot 用户均可使用，无需额外配置。",
-          "对开发者社群而言，这一功能降低了远程开发和移动办公的门槛。例如，开发者可以在办公室 PC 上构思架构，通勤时用手机审查代码片段或继续对话。不过，移动端的 Copilot 体验仍受限于屏幕尺寸，更适用于轻量级操作（如查看建议、简单编辑），复杂重构仍建议在桌面端完成。",
-          "从工具链角度看，GitHub 正将 Copilot 从一个 IDE 插件扩展为跨平台 AI 助手。此次 GA 是 Copilot 生态系统成熟的表现，也暗示未来可能推出更多云端同步能力（如共享配置、自定义指令）。对于企业用户，该功能可能需配合 SSO 和合规策略，但 GitHub 尚未公布企业版的具体限制。"
+          "GitHub 于 5 月 18 日宣布，GitHub Copilot 的远程控制功能现已全面可用。开发者可以在 VS Code 或命令行中启动一个 Copilot 会话，然后通过 github.com 或 GitHub Mobile 应用在手机上继续同一会话，无需反复重建上下文。这一功能本质上是将 AI 编程助手的“状态”跨设备持久化，让开发工作不再被物理位置绑定。",
+          "从技术角度看，该功能依赖 GitHub 的云端会话管理，使 Copilot 的上下文（包括当前文件、对话历史和代码建议）能在不同客户端之间同步。对于使用 Copilot 的团队或个人开发者而言，这意味着在通勤或会议间隙也可以快速查看或修改代码片段，而不必等到回到工位。GitHub 强调该功能已经过充分测试，并对企业级安全合规做了适配。",
+          "值得注意的是，这一更新并未改变 Copilot 的基本工作模式，而是优化了使用流程。它反映出 AI 编码工具正从“单一 IDE 插件”向“全平台开发助手”演进。类似的方向也出现在其他 AI 开发工具中，如 Cursor 的跨设备同步和 Replit 的移动端编码，但 GitHub 凭借庞大的用户基数可能加速这种工作流的普及。"
         ],
-        "why": "这一更新标志着 Copilot 从一个桌面插件进化为跨设备 AI 开发助手，对远程办公和移动开发场景有直接价值。创业公司可借鉴其“云端会话”模式，构建产品中的上下文无缝迁移能力。",
+        "why": "对开发者社区而言，跨设备会话能力降低了 AI 编码工具的使用门槛，尤其利好需要频繁切换办公环境的群体；对产品设计而言，这暗示着 AI 助手的“状态管理”将成为基础竞争力，类似项目（如开源编码 agent）也需考虑多端协作用户体验。",
         "links": [
           [
-            "GitHub Blog: Take your local GitHub sessions anywhere",
+            "GitHub 博客原文",
             "https://github.blog/news-insights/product-news/take-your-local-github-sessions-anywhere/"
           ]
         ],
@@ -90,74 +137,49 @@ const archiveZh = [
       {
         "section": "AI产品推荐",
         "priority": "medium",
-        "title": "Anuma: multi-model AI workspace with private cross-model memory",
-        "dek": "聚合ChatGPT、Claude、Gemini等模型，隐私记忆跨模型携带",
+        "title": "Trainer: 通过录屏训练你的AI代理 - Product Hunt",
+        "dek": "一款让用户通过屏幕录制来训练AI代理的产品，降低自定义AI的门槛。",
         "details": [
-          "Anuma是一款新兴的多模型AI工作空间，将ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama等主流模型整合到一个界面中。其核心差异在于提供隐私优先的记忆层，用户可以手动编辑并让记忆在不同模型间同步，解决了多模型切换时上下文丢失的痛点。",
-          "对经常对比模型输出或需要结合多个模型能力的用户，Anuma避免了频繁切换标签页的麻烦。记忆功能让个人偏好和工作上下文持续积累，提升效率。目前产品处于早期阶段，尚无公开的用户规模或收入数据，未来能否被验证还有不确定性。",
-          "Anuma的定位瞄准了多模型管理空白，但面临来自单一模型深度绑定和开源方案（如LobeChat）的竞争。隐私记忆若处理得当，可能成为B端客户（如科研、咨询）的亮点。需持续观察其记忆性能、模型兼容稳定性以及商业化路径。",
-          "从产品趋势看，AI工作空间正从单一模型向多模型协作演进。Anuma通过隐私记忆试图建立差异化壁垒，但用户对跨模型数据安全性的信任仍是关键挑战。值得关注其是否推出企业版及定价策略。"
+          "Trainer 是一款新上架 Product Hunt 的工具，核心卖点是「录屏即训练」：用户只需录制自己在电脑上完成某项任务的屏幕操作，Trainer 就能从中学习并生成一个可重复执行类似任务的 AI 代理。这种方式类似于让 AI 通过观察行为进行模仿学习，而非传统的写代码或拖拽节点。",
+          "产品瞄准的是「工作流自动化」中最大的痛点——很多用户不会写脚本或配置复杂的自动化工具，但每个人都熟悉「做一遍」的过程。Trainer 将录制屏幕变成训练数据，理论上可覆盖表格处理、邮件回复、数据录入等重复性桌面操作。其易用性可能吸引大量非技术用户尝试。",
+          "目前 Trainer 在 Product Hunt 上的介绍并未详细说明其底层模型（是否基于大语言模型或 CV 模型）以及代理执行时的准确性。录屏训练的法律边界（如涉及公司敏感信息）也未提及，这可能是未来用户采纳的潜在障碍。",
+          "与 OpenAI 的 Operator 或 Anthropic 的 Computer Use 相比，Trainer 的差异化在于「用户自行提供训练数据」，而非使用通用预训练能力。这更适合需高度定制化且不愿使用云端代理的企业场景，但同时也意味着冷启动和数据隐私成本。",
+          "该产品尚未公布定价、是否本地部署或团队协作功能。如果它能在数据安全和执行可靠性上给出明确方案，有望在 RPA 替代和零代码 AI 代理市场中占据一席之地。适合关注「人机协作新范式」的产品经理和创业者观察其用户反馈。"
         ],
-        "why": "Anuma代表多模型协作与隐私记忆的融合方向，对观察AI产品如何满足真实工作流需求有参考价值，未来可能成为生产力工具的新范式。",
+        "why": "Trainer 代表了 AI 代理训练从「写指令」向「演示学习」的转变，对低代码/无代码自动化领域的创业方向和用户教育有参考价值。",
         "links": [
           [
-            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
-            "https://www.anuma.ai/"
-          ]
-        ],
-        "sourceDate": "2026-05-17",
-        "freshness": "fallback",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "补位｜编辑推荐",
-        "freshnessLabelEn": "Fallback | editor pick",
-        "freshnessLabel": "补位｜编辑推荐"
-      },
-      {
-        "section": "AI产品推荐",
-        "priority": "medium",
-        "title": "Liminary：面向顾问与策略师的 AI 研究空间",
-        "dek": "让 AI 辅助的高风险研究工作有据可查、可复用",
-        "details": [
-          "咨询师和研究人员每天需要处理大量报告、文章、聊天记录和视频，传统工具很难将零散信息整合成可复用的知识。Liminary 正是为这个痛点而生，定位于“高风险的推荐”场景——比如尽职调查、市场分析或战略报告，这些任务对来源准确性和可追溯性要求极高。它将 AI 聊天、文档和多媒体内容统一到一个工作区，强调“来源不丢失”。",
-          "Liminary 的核心功能包括：保存来自网页、PDF、AI 对话和视频的片段，通过注释和标签分类整理；每条笔记都保留原始链接，方便随时回溯；跨项目使用时，系统能自动关联已有知识。这种设计有效避免了 AI 生成内容常见的“幻觉”问题——用户始终能追溯到原始证据，而不是盲目相信 AI 的总结。",
-          "产品主要面向顾问、策略师和独立研究者，这些人需要基于真实证据做出判断。Liminary 提供了一个中央工作空间，减少在不同工具间切换的损耗。对于非技术背景的用户，它比 Notion 或 Obsidian 更聚焦研究流程；与 Perplexity 等搜索工具相比，它更强调长期知识管理和协作复用。",
-          "目前 Liminary 仍处于早期阶段，具体定价和团队背景尚未公开。不过，其产品理念——将 AI 聊天记录作为可收藏的“研究资产”——值得关注。如果能在企业合规、权限管理和团队协作上进一步完善，有望成为专业服务领域的标准配置。对于 AI 产品观察者，这是个验证“垂直工作流 vs 通用助手”市场策略的好案例。"
-        ],
-        "why": "这个产品展示了 AI 在知识密集型工作中的垂直机会：不是取代人类，而是增强结构化推理与来源管理。对于创业者和投资者，深耕特定职业角色的 AI 工作区可能比通用聊天机器人更具粘性，尤其在高客单价的企业咨询场景。",
-        "links": [
-          [
-            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and researchers",
-            "https://liminary.io/"
-          ]
-        ],
-        "sourceDate": "2026-05-17",
-        "freshness": "fallback",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "补位｜编辑推荐",
-        "freshnessLabelEn": "Fallback | editor pick",
-        "freshnessLabel": "补位｜编辑推荐"
-      },
-      {
-        "section": "行业观点与报告",
-        "priority": "medium",
-        "title": "律师用DeepSeek当“法律顾问”：AI说原告能赢，他就把聊天记录当代理意见提交，被法官训诫",
-        "dek": "一起民事诉讼中，原告律师向DeepSeek提问“谁能赢”，AI分析后认为原告胜算更大，律师遂将AI问答内容作为代理意见提交法庭。法官对此行为进行了严肃训诫，引发行业内对AI在法律实务中角色边界的讨论。",
-        "details": [
-          "据报道，在一起民事诉讼中，原告代理律师在准备诉讼材料时，使用DeepSeek提问“谁能赢”，AI系统基于案件描述分析后给出“原告能赢”的结论。律师认为该结果有道理，直接将AI的问答记录作为代理意见的一部分提交给了法庭。法官在审理过程中发现该材料后，对律师进行了严肃训诫，指出AI的结论不能替代法律专业判断，也不得作为正式代理意见直接提交。",
-          "这一事件暴露了部分法律从业者对AI能力的认知偏差。虽然大语言模型在法律文书生成、条文检索等方面有辅助价值，但其输出本质上仍是概率性预测，无法承担法律论证的责任。法官的训诫实际上重申了司法机关对AI材料准入的审慎态度——AI可以辅助思考，但不能直接“代笔”法律意见。",
-          "事件也反映出法律行业在AI应用上的“灰色地带”。目前，中国法院对AI生成内容的法律效力尚无明确统一规定，各地实践中法官拥有较大裁量权。此次训诫虽未上升到处罚，但释放了明确的警示信号：律师若依赖AI进行法律决策并以此提交法庭，可能面临职业风险。",
-          "从行业视角看，这起“小事”恰好切中了AI法律产品创业者的核心痛点：技术能力与法律实务之间仍存在巨大的信任鸿沟。未来，法律科技公司需要在AI输出中内置更明确的责任边界提示，并探索如何将AI作为“思维工具”而非“决策替代”融入律师工作流。该事件的后续发展值得关注，尤其是监管是否会就此出台更细化的指引。"
-        ],
-        "why": "这个事件说明，AI在法律实务中作为“顾问”的角色正遭遇现实拷问——技术可以辅助，但不能取代专业判断。对于法律科技创业者和AI产品经理而言，需要在产品设计中加入更清晰的免责机制和使用边界提示，否则可能引发职业伦理和合规风险。",
-        "links": [
-          [
-            "Google News China AI: 原告律师问deepseek“谁能赢”...",
-            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVEZ0RlVrUmxWRGhWUjVDR3NpQ2hpNVZZWXpZQ2l4WGZqTG05YW9xc0Y1R29oWFowMUxFY0NraUIxU3ZIWlYwTURUVG56bVBXMDhXanBmUTVPb1g2dWZST0lqaFdudzJrWTlXSDNuam1HWXpNazNxQ0taSW1PY3JkZ2VFOHoySm04TFBLeA?oc=5"
+            "Google News AI Product Discovery: Trainer: Train AI agents by recording your screen - Prod",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XXy1CYmFkM2MybEdHSWNyOEFZZGNtSURTYzhDZU1TdWdSVXpRRWI4bTVzVWJ4WEdOZVNjc1lmNUQ1S0pEWkpGbmdUNUx4ZWllN2haUC14TklYZw?oc=5"
           ]
         ],
         "sourceDate": "2026-05-19",
         "freshness": "d-1",
-        "regionPriority": "primary_market",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "A video agent for tasteful motion design - Product Hunt",
+        "dek": "一款专注于动态设计的AI视频代理工具，近期在Product Hunt上发布，旨在降低运动图形创作的门槛。",
+        "details": [
+          "这款名为“A video agent for tasteful motion design”的产品于5月19日出现在Product Hunt上，定位为AI视频代理，主要面向需要优雅动态设计的用户。运动设计（motion design）通常需要专业软件和审美功底，而该产品试图通过AI自动化生成流畅、有品位的动画，从而让非设计师也能快速产出高质量动态内容。其核心卖点在于“tasteful”（有品位），暗示算法经过调校，避免生成廉价或俗气的效果。",
+          "从Product Hunt的展示逻辑看，这类工具属于“AI productivity”类别，直接切入创意工作流中的痛点：制作动态图形既耗时又依赖专业人才。如果该产品能实现“输入需求直接输出动画”，将为营销视频、社交媒体短片、产品演示等场景提供极大便利。不过，实际效果依赖于AI对“品位”的理解——这是一个主观且难以量化的维度，因此产品是否真正能达到宣传效果尚需用户实测验证。",
+          "目前该产品仅上线一天，用户评价和详细功能文档尚未大规模流出。从公开信息推测，它可能基于文本提示或简单模板生成动画，而非完全从零创作。对于创业者或产品经理而言，这代表了AI在垂直创作工具领域的又一尝试：将“审美”作为差异化功能点。如果成功，可能会催生更多聚焦于设计风格而非单纯效率的AI产品。需要注意的是，Product Hunt上早期产品迭代迅速，当前版本的功能和稳定性仍不确定。"
+        ],
+        "why": "这类垂直AI设计工具反映了从通用生成向品味定制的趋势，适合观察用户对“AI审美”的真实付费意愿，对创意工具创业和投资有参考价值。",
+        "links": [
+          [
+            "Google News AI Product Discovery: A video agent for tasteful motion design - Product Hunt",
+            "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DMjluNjVQUFdNUk1YVkNUWS1VQ0JXNE9vU3YwbzFCcVRTbzBkUDhVQUJMcDNrZElhYTBrVXR3WUdaYTBnZnRwRWlDVllkQVlpdTQtbVlEWGY?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
         "freshnessLabelZh": "D-1",
         "freshnessLabelEn": "D-1",
         "freshnessLabel": "D-1"
@@ -165,23 +187,19 @@ const archiveZh = [
       {
         "section": "行业观点与报告",
         "priority": "medium",
-        "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
-        "dek": "IBM发布2026年CEO调研报告，提出企业向AI优先转型的五大关键行动。",
+        "title": "[AINews] Codex Rises, Claude Meters Programmatic Usage",
+        "dek": "本期 Latent Space 播客深入分析了代码代理的长期趋势，聚焦 OpenAI Codex 的重新崛起与 Anthropic Claude 对程序化使用的新计量策略，为开发者选型提供参考。",
         "details": [
-          {
-            "summary": "核心观点：AI优先不仅是技术部署，更是组织战略、人才和文化全面重塑。",
-            "expanded": "IBM调研全球数千位CEO发现，领先企业正从“AI项目”转向“AI优先”运营模式。报告提炼5项行动：1) 以业务结果倒推AI用例；2) 建立跨职能AI领导团队；3) 投资员工AI技能与再培训；4) 构建可信AI治理框架；5) 与生态伙伴共建AI基础设施。值得注意的是，超过60%的受访CEO认为“缺乏清晰战略”是最大障碍。"
-          },
-          {
-            "summary": "关键数据：74%的CEO计划在未来两年内将AI投资翻倍，但仅28%已规模化落地。",
-            "expanded": "调研显示，尽管信心高涨，多数企业仍处于试点阶段。报告强调“AI优先”要求从CIO负责转变为CEO主导，并将AI纳入核心KPI。产业启发：AI基础设施（如MaaS平台、治理工具）和AI人才培训市场将迎来结构性机会。"
-          }
+          "Latent Space 是一档聚焦 AI 工程与开发者生态的播客，本期 AINews 综述以 'quiet day' 为契机，梳理了近期代码代理领域的重要信号。主持人指出，OpenAI 的 Codex 在沉寂一段时间后重新出现在讨论中心，而 Anthropic 的 Claude 则开始对程序化 API 调用引入更精细的计量机制。这并非突发新闻，而是对长达数月趋势的总结。",
+          "关于 Codex 的 '崛起'，播客提到其在新版本中提升了代码生成质量，尤其是对复杂工作流的理解能力。但具体性能提升幅度未给出量化数据，更多是基于社区反馈和内部测试的观察。开发者需要注意的是，Codex 的复兴可能意味着 OpenAI 正在重新加码代码助手赛道，与 GitHub Copilot 形成更直接的竞争。",
+          "Claude 计量程序化使用：Anthropic 近期调整了 API 策略，对高频程序化调用设置更细化的层级和费用。这背后的逻辑是防止滥用并优化成本，但也可能影响依赖 Claude 进行自动化批处理的开发者。播客评论认为，这一动作表明 Anthropic 在用户规模增长后开始关注商业化变现和资源分配。",
+          "从行业视角看，两个事件共同指向一个趋势：代码代理（coding agent）正在从实验性工具走向生产级应用，而头部公司正在争夺开发者心智与平台粘性。Latent Space 的观点是，未来 6-12 个月代码代理的定价模型和功能差异化将成为关键竞争点，创业者应关注垂直场景的定制化机会。"
         ],
-        "why": "对于中国企业管理者，IBM这份报告提供了从“跟风试点”到“系统转型”的路线图，值得关注其中关于战略对齐和组织变革的实操建议。",
+        "why": "对于开发者和技术决策者，及时了解 Codex 和 Claude 的最新动态有助于优化编码工具链选型；对投资者而言，代码代理赛道的定价权和生态位争夺正在加剧，头部公司的策略调整是重要的观察窗口。",
         "links": [
           [
-            "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
-            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY0R1WkVEcUprYVJhTW82Snp3Y1FwdjJmMFlzRWFTTUtCc0thbUhwdHNaenEyZkF0QXJmSjJ3Uk5fR1V2blhfTzRhZXNuYnVzRTUzQkU2MU9neXFaOG1vNEtMWWRLVDY4RG5LQklkb3lDaFhnWHlfQzdROUtFV1FCZUp3YlB4QUZnQnJzZWZuMFZiNTVGTjBERA?oc=5"
+            "Latent Space: [AINews] Codex Rises, Claude Meters Programmatic Usage",
+            "https://www.latent.space/p/ainews-codex-rises-claude-meters"
           ]
         ],
         "sourceDate": "2026-05-14",
@@ -192,20 +210,48 @@ const archiveZh = [
         "freshnessLabel": "补位｜发布于 2026-05-14"
       },
       {
+        "section": "行业观点与报告",
+        "priority": "medium",
+        "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
+        "dek": "IBM发布2026年CEO研究报告，聚焦AI优先转型的五项关键策略",
+        "details": [
+          "IBM于2026年5月14日发布了最新的CEO研究报告，主题为“AI-first transformation”的5个关键策略。该研究基于对全球数百位CEO的调研，旨在揭示企业如何将AI从工具升级为战略核心。虽然报告中具体策略尚未完整披露，但根据标题推测，可能涵盖组织变革、技术投资、人才策略等方面。",
+          "报告指出，AI-first转型不仅是技术升级，更是企业文化和运营模式的根本变革。IBM作为科技巨头，其研究往往反映行业风向，对全球企业决策者具有参考价值。目前公开信息有限，具体的5个策略细节有待查阅报告原文。",
+          "对于正在规划AI战略的企业，这份报告提供了高层视角。但需要注意的是，SOURCE_PACK仅包含标题，未提供详细数据，因此本报道无法确认报告中是否包含具体案例或量化指标。建议读者直接访问IBM官网或新闻链接获取完整内容。"
+        ],
+        "why": "该报告为CEO和企业高管提供了AI转型的路线图，有助于理解行业领导者对AI优先战略的共识，对投资和战略决策具有参考价值。",
+        "links": [
+          [
+            "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY0R1WkVEcUprYVJhTW82Snp3Y1FwdjJmMFlzRWFTTUtCc0thbUhwdHNaenEyZkF0QXJmSjJ3Uk5fR1V2blhfTzRhZXNuYnVzRTUzQkU2MU9neXFaOG1vNEtMWWRLVDY4RG5LQklkb3lDaFhnWHlfQzdROUtFV1FCZUp3YlB4QUZnQnJzZWZuMFZiNTVGTjBERA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-14",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-05-14",
+        "freshnessLabelEn": "Fallback | published 2026-05-14",
+        "freshnessLabel": "补位｜发布于 2026-05-14"
+      },
+      {
         "section": "每日词条",
         "priority": "learning",
         "title": "Agentic Workflow",
-        "dek": "理解AI agent如何自主执行复杂任务，以及它们在企业自动化中的角色。",
+        "dek": "从单一对话到多步自主执行，AI Agent 工作流正成为企业自动化的新范式。",
         "details": [
-          "Agentic Workflow是指由AI智能体自主执行一系列复杂任务的工作流，区别于传统的if-then规则。它依赖于大语言模型的推理能力，可以动态规划、决策并调用工具。随着OpenAI将Codex通过Dell引入企业环境，这种模式正在从云端走向内部部署，企业可以在自己的数据上安全地运行代码生成agent。",
-          "这一合作的关键在于Dell提供的基础设施和安全框架，使得AI agent能够接入企业现有的工作流系统，而不必离开本地或混合环境。对于非技术背景的读者来说，这意味着未来你可能会有一个AI程序员直接在你的企业私有云上工作，而不用把代码传到外部。",
-          "但Agentic Workflow仍处于早期阶段。企业面临的主要不确定性包括agent输出的可靠性、可解释性，以及如何在多步骤任务中防止错误累积。目前大多数实践仍以辅助人类为主，完全自主执行还需更多验证。"
+          "Agentic Workflow 指的是 AI 模型能够自主规划并执行多步骤任务的工作模式，而非仅响应用户的单一提问。它让 AI 像“员工”一样调用工具、记忆上下文、循环迭代直至达成目标。OpenAI 宣布与 Dell 合作，将代码生成代理 Codex 部署到混合云和本地环境中（S002）。这意味着企业可以在不把所有数据交到云端的前提下，让 AI 代理安全地接触内部代码库和数据库，从而在研发、运维等场景中执行复杂的连续任务。",
+          "Agentic Workflow 的可靠性依然面临挑战。DeepSeek 近期被用户反映“对话泄露”，官方回应是特殊字符触发了模型幻觉（S001）。这个问题恰恰是 Agentic Workflow 必须直面的核心风险：当代理长期持有上下文并自主决定调用哪些记忆时，异常的输入可能让模型输出错误信息甚至暴露隐私。对于任何计划部署 AI 代理的公司而言，理解这种“幻觉传导”机制、建立输入校验与权限隔离，是上线前不可跳过的一步。",
+          "空间数据正在成为 Agentic Workflow 的“传感器”。HERE Technologies 推出 Location Reasoning 服务（S004），旨在让 AI 对真实世界的地理环境有因果认知。例如，物流调度代理接到“避开当前拥堵路段”的指令时，不应只使用静态地图，而应理解拥堵是由事故还是限行引起，并结合实时路况做决策。Location Reasoning 的发布说明，Agentic Workflow 要走出数字世界，必须与高精度、可推理的空间数据层结合。"
         ],
-        "why": "Agentic Workflow正在重塑企业自动化的边界，理解它有助于在AI投资中识别真正的落地场景，而非停留在概念炒作。",
+        "why": "理解 Agentic Workflow 是看懂当前 AI 产品从“问答工具”向“数字劳动力”跃迁的关键。它直接关系到企业级 AI 的部署形态、安全架构和数据策略，是产品经理与投资人判断下一波 AI 落地机会的必备视角。",
         "links": [
           [
-            "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
+            "OpenAI 与 Dell 合作将 Codex 带入企业环境",
             "https://openai.com/index/dell-codex-enterprise-partnership"
+          ],
+          [
+            "DeepSeek 回应对话泄露疑虑",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1yUkg5STNHV1FOMHNNdUtZMk9MU2l4QmlHZVREeW92WXczS0VpMVVuNGpxamVwQUNpWFBFNGxsOE1rRm1sd1hISTFhNmNWVlAxWVYwNWVZOFpnX3o4UkNxZg?oc=5"
           ]
         ],
         "sourceDate": "",
@@ -1165,7 +1211,7 @@ const archiveZh = [
 ];
 
 const archiveEn = [
-  {
+    {
     "date": "2026-05-20",
     "title": "AI Daily Atlas",
     "meta": "May 20, 2026",
@@ -1182,17 +1228,63 @@ const archiveEn = [
       {
         "section": "Top Stories",
         "priority": "high",
-        "title": "Domestic GPUs Power China's First Full-Stack Embodied Intelligence Simulation Platform",
-        "dek": "MT Lambda, built entirely on homegrown chips, offers an end-to-end pipeline for robot simulation and training, reducing reliance on Nvidia's ecosystem.",
+        "title": "体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统 - 爱范儿",
+        "dek": "Tencent unveils Marvis, an AI assistant that aims to redefine personal AI as an operating system layer, blending system-level integration with conversational intelligence.",
         "details": [
-          "The platform, named MT Lambda, was unveiled on May 19 and marks China's first full-stack embodied intelligence simulation environment running entirely on domestic GPUs (e.g., Huawei Ascend series). It provides high-fidelity physics simulation, multi-agent support, and reinforcement learning toolkits, enabling developers to prototype and test robot behaviors without switching to foreign hardware stacks. This directly addresses a key bottleneck for Chinese AI labs: access to Nvidia's high-end GPUs under export restrictions.",
-          "By integrating scene editors, perception algorithm libraries, and a unified deployment interface, MT Lambda aims to cut the development cycle for embodied AI from months to weeks. The platform's architecture mirrors Nvidia's Isaac Sim but is optimized for domestic chips, potentially lowering the barrier for small and medium-sized robotics firms. However, benchmark data comparing its simulation fidelity to Isaac Sim was not disclosed, leaving uncertainty about real-world performance equivalence."
+          "Tencent has launched Marvis, an AI assistant positioned not as a standalone app but as a core operating system component. The interface overlays the device's OS, enabling users to summon it system-wide, execute cross-app tasks, and access contextual AI without switching contexts. This approach signals Tencent's bet that the ultimate personal AI isn't a chatbot but an embedded intelligence layer that orchestrates the entire user experience. The move draws comparisons to Apple's planned Siri overhaul and Microsoft's Copilot strategy, but with deeper integration into Tencent's own ecosystem of WeChat, QQ, and enterprise tools.",
+          "The strategic shift from app-based assistants to OS-level AI reflects a broader industry trend: control over the AI interface means control over user behavior and data. Marvis could give Tencent a decisive edge in China's consumer AI race, where competitors like Baidu and Alibaba still rely on separate apps or widgets. However, Marvis's success depends on execution—especially privacy handling and developer adoption. If Tencent opens Marvis to third-party services, it could become a platform akin to an AI 'app store.' The uncertainty lies in whether users will embrace always-on, system-level AI or resist perceived intrusiveness."
         ],
-        "why": "This platform demonstrates that domestic GPU ecosystems are now capable of supporting complex embodied AI workloads, which could reshape the competitive dynamics in China's robotics industry and reduce supply chain risks for AI companies.",
+        "why": "This launch underscores that the next frontier in consumer AI is not better chat models but deeper OS integration, a paradigm shift that reshapes competitive dynamics for Big Tech and determines how AI captures value in the mobile-first world.",
         "links": [
           [
-            "量子位报道",
+            "Google News China AI Signals: 体验完腾讯发布的 Marvis 助手，我发现个人 AI 的尽头是操作系统 - 爱范儿",
+            "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9YcmloaDE1ZVZ3ZDlrdHdKdENFM21SNlo4M3YtSy12UzZDSExTT1pYWVdxZEtqLVhrbXl1ZWhFVEhsS3M?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Top Stories",
+        "priority": "high",
+        "title": "China’s First Full-Stack Embodied AI Simulation Platform Built on Domestic GPUs Launches",
+        "dek": "The MT Lambda platform aims to accelerate robot training and AI research without relying on foreign hardware.",
+        "details": [
+          "A Chinese team unveiled MT Lambda, the country's first full-stack embodied AI simulation platform built entirely on domestic GPUs. The platform supports high-fidelity physics simulation, sensor simulation, and large-scale parallel training for robots, addressing a critical gap in the domestic AI infrastructure. While the exact team and launch timeline remain unspecified, this move signals a push toward self-reliance in embodied AI simulation, an area previously dominated by Nvidia’s Isaac Sim.",
+          "By leveraging domestic GPUs, MT Lambda reduces dependency on imported hardware and helps contain costs for Chinese robotics startups. The platform enables researchers to train manipulation, navigation, and locomotion policies in simulation before deploying to real robots. If widely adopted, it could reshape the competitive landscape of China's robotics supply chain, though its real-world performance compared to established international platforms remains to be seen."
+        ],
+        "why": "This development underscores the rapid maturation of China's domestic GPU ecosystem and its application in emerging AI fields like embodied intelligence. For startups and researchers, it lowers the barrier to entry for robot simulation, potentially accelerating innovation cycles and reducing reliance on foreign platforms.",
+        "links": [
+          [
+            "量子位: 国产GPU开始造世界！国内首个全栈具身智能仿真平台来了",
             "https://www.qbitai.com/2026/05/420084.html"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Top Stories",
+        "priority": "high",
+        "title": "ITRI Launches AI Robotics Innovation & Development Center to Strengthen Global Supply Chain",
+        "dek": "Taiwan’s leading research institute opens a new hub focused on AI-driven robotics, aiming to bolster semiconductor and electronics supply chains.",
+        "details": [
+          "Taiwan’s Industrial Technology Research Institute (ITRI) has launched an AI Robotics Innovation & Development Center. The move signals a strategic push to integrate AI with robotics, targeting enhanced efficiency and resilience in global supply chains, particularly for semiconductor and electronics manufacturing. ITRI’s track record in transferring research to industry suggests potential ripple effects for automation vendors and chipmakers.",
+          "While the center’s exact funding, partnerships, and timeline remain undisclosed, its establishment aligns with growing demand for intelligent automation in factories. ITRI’s focus on AI robotics could accelerate deployment of humanoid or collaborative robots in high-precision tasks, impacting companies like NVIDIA and TSMC that provide compute or fabrication. The center may also serve as a testing ground for new AI chip architectures."
+        ],
+        "why": "For investors and strategists tracking AI infrastructure and manufacturing automation, ITRI’s center is a concrete signal that Taiwan is doubling down on AI robotics as a supply-chain hedge. Startups and enterprises in robot software, edge AI, or sensor components should watch for potential collaboration or technology transfer opportunities.",
+        "links": [
+          [
+            "Google News AI Infrastructure: ITRI Launches AI Robotics Innovation & Development Center t",
+            "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUGtiVU1oX1FiaGVfS3h5SU5ESHVtNU1TRlJJUFhDRXI4UUZxWHdnb0V5NDZ1eWQ5VWo4SXZVLU4wN054X1pPeWFGRGVlNGVpV0oyLWhQNG9Vc3RtYkFjclZ0ZThiNnRITDItNkZyNEVfNkIyekRYNXBNY0pNTzNJaklURkU3eDkwUWw3N3NmYkk3QzFhMXFHSWh6MXhpb3RBWGdUbXo4N3JieGt1QURJV0REQTJfUkhaUTRhOG9ZcW1vU1loa3dPSGk4V1BnV1pJYUE?oc=5"
           ]
         ],
         "sourceDate": "2026-05-19",
@@ -1205,22 +1297,23 @@ const archiveEn = [
       {
         "section": "Funding Watch",
         "priority": "high",
-        "title": "AI chip startup Tenstorrent draws acquisition interest from Intel and Qualcomm, valuation may exceed $5B",
-        "dek": "Reports suggest Intel and Qualcomm are exploring a deal for Tenstorrent, an AI chip startup, with a potential valuation north of $5 billion, signaling the escalating battle for custom AI silicon.",
+        "title": "IPO News | Yuezhianmian to Restructure Corporate Framework Ahead of Hong Kong IPO - Moomoo",
+        "dek": "资本流向与今日热点相关，用来观察哪些 AI 方向正在获得长期押注。",
         "details": [
-          "According to a Moomoo report citing unnamed sources, both Intel and Qualcomm have expressed preliminary interest in acquiring Tenstorrent, a Canadian AI chip startup. The potential valuation could exceed $5 billion, though discussions are at an early stage and may not result in a transaction. The startup is known for its open RISC-V-based AI accelerators, which offer a flexible alternative to proprietary architectures.",
-          "If completed, the acquisition would mark one of the largest AI chip deals this year, underscoring how incumbent semiconductor giants are scrambling to secure next-generation AI inference technology. Tenstorrent's open-standard approach appeals to hyperscalers seeking to reduce dependency on Nvidia's CUDA ecosystem. For Intel, it could bolster its foundry and AI chip offerings; for Qualcomm, it would expand its data center AI footprint beyond mobile."
+          "This signal comes from Google News AI Funding：IPO News | Yuezhianmian to Restructure Corporate Framework Ahead of Hong Kong IPO - Moomoo. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
         ],
-        "why": "This M&A signal highlights the strategic premium placed on innovative AI chip architectures and talent. Entrepreneurs in AI silicon should note that open-standard designs are becoming attractive acquisition targets, while investors can expect further consolidation in the segment.",
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
         "links": [
           [
-            "Moomoo report via Google News",
-            "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGtha1FteTFlT1dueW1oem4wU1JpTzQxRmNhSDZCb3phTlB1VUJYaHphRW1USlhOSWo3M3Vzd2k4RGtnNWxTTFZsRkc3d3ZOM0JXU0RCTjRWaTVaZnh2WWwtNW53YjhPdVdLTWN6VUx5d2JtbHRQWVRYQjQtTi1xVU03YTJGNVN2Vkw5dGhRVGpYMXNDdTNvdVRxX0FuQXJ3ZTFQdmctbk9kLUo3ZHdJTHRRcw?oc=5"
+            "Google News AI Funding: IPO News | Yuezhianmian to Restructure Corporate Framework Ahead o",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxOYXZiY2tsb291cndJVHlwTmZxS2J6ODR6ODZrdXA2TC10R0R0S3J5T3F3MUxZMW5pS2kySlR3SnhPeDZiLWEzbVZmSWVMV3k4VG9RUWVHdEdHeGg1d3ZrNW5oelE4UEFUM0FhV3R1X0RodldBMXdMU014cXVUVzdUTkdjT0dLa2YtVkNaZHNYWHlYM2FkMldfcEZEUF93bllLV044Ym1JQ1RNX1NQTzYwaHFR?oc=5"
           ]
         ],
         "sourceDate": "2026-05-19",
         "freshness": "d-1",
-        "regionPriority": "primary_market",
+        "regionPriority": "deprioritized_market",
         "freshnessLabelZh": "D-1",
         "freshnessLabelEn": "D-1",
         "freshnessLabel": "D-1"
@@ -1229,12 +1322,13 @@ const archiveEn = [
         "section": "Open Source",
         "priority": "medium",
         "title": "Take your local GitHub sessions anywhere",
-        "dek": "Remote control for GitHub Copilot sessions is now generally available, letting developers start work in VS Code or CLI and finish from their phone.",
+        "dek": "开发者社区信号，适合观察 agent、模型工具链或基础设施的新方向。",
         "details": [
-          "GitHub has made remote control for Copilot sessions generally available on github.com and GitHub Mobile. Developers can initiate a coding session in VS Code or the command line, then seamlessly pick it up from a mobile browser or the GitHub Mobile app. This eliminates the need to keep a laptop open for AI-assisted coding tasks, enabling true on-the-go development.",
-          "The feature leverages GitHub Codespaces under the hood, syncing the entire environment—including Copilot context, open files, and terminal state—across devices. Early beta users reported a 20% reduction in context-switching overhead. GitHub plans to extend remote session control to third-party IDEs later this year, further blurring the line between local and cloud development."
+          "This signal comes from GitHub AI & ML：Take your local GitHub sessions anywhere. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
         ],
-        "why": "This signals a shift toward persistent, device-agnostic AI coding environments, which could reshape how developers invest in tools and infrastructure—favoring cloud-synced workspaces over traditional local setups.",
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
         "links": [
           [
             "GitHub AI & ML: Take your local GitHub sessions anywhere",
@@ -1251,74 +1345,45 @@ const archiveEn = [
       {
         "section": "AI Product Picks",
         "priority": "medium",
-        "title": "Anuma: multi-model AI workspace with private cross-model memory",
-        "dek": "Anuma brings together ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, Llama and more in a single workspace, with a cross-model memory layer that users control and edit.",
+        "title": "Trainer: Train AI agents by recording your screen - Product Hunt",
+        "dek": "A new Product Hunt launch lets users train AI agents by recording their screen, making AI automation accessible to non-coders.",
         "details": [
-          "Anuma addresses the fragmentation of AI assistants by aggregating over a dozen models into one interface. Users can switch between models mid-conversation or run parallel chats, comparing outputs without leaving the workspace. The standout feature is a persistent, privacy-first memory layer: users can store facts, preferences, or instructions that carry across models, and they retain full edit and delete control. This reduces repetitive prompting and enables a more coherent workflow when using multiple AI tools for different tasks.",
-          "The product targets knowledge workers and power users who rely on multiple AI models for different strengths—e.g., Claude for long-form reasoning, ChatGPT for creative tasks, and Gemini for Google ecosystem integration. By centralizing access and adding sharable memory, Anuma aims to become the go-to workspace for multi-model workflows. While many 'AI hub' tools exist, Anuma's explicit emphasis on user-controlled cross-model memory differentiates it from simpler aggregators. However, the company has not disclosed pricing or user numbers, and the memory system's performance across very different model architectures remains a potential unknown."
+          "Trainer is a recently launched product on Product Hunt that enables users to train AI agents simply by recording their computer screen. As you perform a workflow—such as data entry, email sorting, or file organization—the AI observes and replicates the actions. This zero-code approach lowers the barrier for non-technical professionals to create custom AI automations for repetitive tasks. The product taps into the growing demand for 'demonstration-based' AI training, where users teach by showing rather than programming.",
+          "The launch reflects a broader trend toward democratizing AI agent creation. Instead of requiring programming skills to define agent behavior, Trainer leverages screen recordings as training data. This could appeal to small business owners, operations managers, and knowledge workers looking to automate routine digital workflows without engineering support. While the product is still in early stages, its positioning on Product Hunt suggests it is targeting early adopters eager to experiment with no-code agent training."
         ],
-        "why": "For product builders, Anuma highlights a growing demand for integration and memory layers that let users fluidly combine AI strengths, suggesting opportunities in cross-model middleware and privacy-focused data stores.",
+        "why": "This product represents a practical step toward making AI agent creation accessible to non-developers. For product builders, it signals an opportunity to integrate screen-recording-based training into enterprise workflow tools, potentially disrupting the traditional RPA market.",
         "links": [
           [
-            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
-            "https://www.anuma.ai/"
-          ]
-        ],
-        "sourceDate": "2026-05-17",
-        "freshness": "fallback",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "补位｜编辑推荐",
-        "freshnessLabelEn": "Fallback | editor pick",
-        "freshnessLabel": "Fallback | editor pick"
-      },
-      {
-        "section": "AI Product Picks",
-        "priority": "medium",
-        "title": "Liminary: AI research workspace for consultants, strategists, and researchers",
-        "dek": "A research workspace that centralizes sources with AI-powered annotation and traceability.",
-        "details": [
-          "Liminary serves as a centralized hub for saving and annotating articles, reports, PDFs, AI chats, and videos. It prioritizes source traceability, allowing consultants and researchers to track every insight back to its origin. This addresses a common pain point where scattered notes and lost references undermine the credibility of recommendations.",
-          "Designed for high-stakes decision-making, Liminary distinguishes itself by not just capturing information but enabling cross-project reuse of insights. Users can build a personal knowledge base that grows over time, making it particularly valuable for strategy consultants and analysts who juggle multiple clients and domains."
-        ],
-        "why": "Liminary represents a growing category of AI-augmented research tools that prioritize traceability and reuse, which could become essential for knowledge-intensive professions. Its success may signal demand for specialized productivity tools beyond general-purpose AI assistants.",
-        "links": [
-          [
-            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and res",
-            "https://liminary.io/"
-          ]
-        ],
-        "sourceDate": "2026-05-17",
-        "freshness": "fallback",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "补位｜编辑推荐",
-        "freshnessLabelEn": "Fallback | editor pick",
-        "freshnessLabel": "Fallback | editor pick"
-      },
-      {
-        "section": "Industry Views & Reports",
-        "priority": "medium",
-        "title": "Lawyer Submits AI Chatbot Response as Legal Argument, Judge Issues Stern Rebuke",
-        "dek": "A plaintiff's lawyer asked DeepSeek who would win a case, took the AI's prediction as sound legal reasoning, and filed it in court — only to be reprimanded by the judge.",
-        "details": [
-          {
-            "summary": "Event overview",
-            "expanded": "In a case reported by Sohu News, a lawyer representing the plaintiff consulted DeepSeek with the question 'who will win this case?' The AI replied that the plaintiff was likely to prevail. Convinced by the reasoning, the lawyer submitted the AI-generated response as part of the formal legal brief. The presiding judge issued a serious verbal warning, emphasizing that AI outputs are not a substitute for legal analysis and that reliance on such tools without validation undermines judicial procedure."
-          },
-          {
-            "summary": "Key implications",
-            "expanded": "The incident highlights growing tension between AI convenience and professional accountability. Lawyers are increasingly experimenting with generative AI for case strategy, but courts are drawing clear boundaries. The judge's reprimand signals that unverified AI advice carries real procedural risk, especially when presented as authoritative legal argument. This case mirrors similar cautionary tales in the U.S. and UK, where attorneys have faced sanctions for citing AI-generated fake precedents."
-          }
-        ],
-        "why": "This story is a vivid reminder that while AI can assist legal research, blindly trusting its output — especially in adversarial settings — invites judicial backlash. For legaltech startups, it underscores the need for explainability and disclaimers; for practitioners, it reinforces that AI is a tool, not a decision-maker.",
-        "links": [
-          [
-            "Google News China AI: 原告律师问deepseek“谁能赢”...",
-            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVEZ0RlVrUmxWRGhWUjVDR3NpQ2hpNVZZWXpZQ2l4WGZqTG05YW9xc0Y1R29oWFowMUxFY0NraUIxU3ZIWlYwTURUVG56bVBXMDhXanBmUTVPb1g2dWZST0lqaFdudzJrWTlXSDNuam1HWXpNazNxQ0taSW1PY3JkZ2VFOHoySm04TFBLeA?oc=5"
+            "Product Hunt listing (via Google News)",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5XXy1CYmFkM2MybEdHSWNyOEFZZGNtSURTYzhDZU1TdWdSVXpRRWI4bTVzVWJ4WEdOZVNjc1lmNUQ1S0pEWkpGbmdUNUx4ZWllN2haUC14TklYZw?oc=5"
           ]
         ],
         "sourceDate": "2026-05-19",
         "freshness": "d-1",
-        "regionPriority": "primary_market",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "A video agent for tasteful motion design - Product Hunt",
+        "dek": "A new AI-powered product on Product Hunt aims to streamline motion design by automating animation tasks while maintaining aesthetic quality.",
+        "details": [
+          "The product, featured on Product Hunt, pitches itself as an AI agent that handles motion design — from keyframe interpolation to style-consistent animations — without requiring deep expertise in tools like After Effects. It targets solo creators, small studios, and marketers who need polished motion graphics but lack time or specialized skills. The agent likely uses a combination of generative models and rule-based templates, though exact capabilities remain unspecified.",
+          "Motion design is traditionally labor-intensive, involving manual tweaking of timing, easing, and visual harmony. By offering an AI agent for this workflow, the product addresses a clear pain point: producing tasteful, brand-aligned animations at scale. While competitors like Runway and Pika focus on video generation from scratch, this agent seems to augment existing design processes. Its success may hinge on how well it balances automation with creative control."
+        ],
+        "why": "This entry signals a growing niche for AI agents that enhance rather than replace creative work, particularly in productivity-focused design tools. For investors and product builders, it highlights an opportunity to target workflows with high manual repetition and clear aesthetic standards.",
+        "links": [
+          [
+            "Google News AI Product Discovery: A video agent for tasteful motion design - Product Hunt",
+            "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5DMjluNjVQUFdNUk1YVkNUWS1VQ0JXNE9vU3YwbzFCcVRTbzBkUDhVQUJMcDNrZElhYTBrVXR3WUdaYTBnZnRwRWlDVllkQVlpdTQtbVlEWGY?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-19",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
         "freshnessLabelZh": "D-1",
         "freshnessLabelEn": "D-1",
         "freshnessLabel": "D-1"
@@ -1326,23 +1391,23 @@ const archiveEn = [
       {
         "section": "Industry Views & Reports",
         "priority": "medium",
-        "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
-        "dek": "IBM's latest CEO study distills five strategic plays for enterprises aiming to become AI-first, based on global executive insights.",
+        "title": "[AINews] Codex Rises, Claude Meters Programmatic Usage",
+        "dek": "Latent Space’s newsletter highlights two converging trends: OpenAI’s Codex gaining ground in coding agents, and Anthropic introducing metered programmatic access for Claude.",
         "details": [
           {
-            "summary": "Report methodology and scope",
-            "expanded": "The 2026 IBM CEO Study draws on interviews with thousands of CEOs worldwide, capturing their perspectives on AI adoption, organizational change, and competitive pressure. It identifies five actionable plays that differentiate leaders from laggards in the AI transformation journey."
+            "summary": "Codex is rising as the dominant coding agent model.",
+            "expanded": "Latent Space reports that over the past weeks, OpenAI’s Codex has seen increased adoption among developers for automated code generation and debugging, challenging earlier leader Claude. Key drivers include improved contextual understanding and lower latency, making it preferred for real-time pair programming."
           },
           {
-            "summary": "The five plays for AI-first transformation",
-            "expanded": "The study outlines five plays: 1) Embed AI into core business processes rather than bolt-on projects; 2) Rethink data architecture for real-time, governed AI; 3) Build an 'AI-native' workforce with continuous reskilling; 4) Adopt an open ecosystem approach to AI platforms and models; 5) Establish ethical guardrails and transparency from day one. These plays are backed by correlation with financial outperformance."
+            "summary": "Anthropic introduces programmatic usage metering for Claude.",
+            "expanded": "To manage cost and scale, Anthropic now meters API calls for Claude’s programmatic use, similar to tiered pricing. This move signals intent to monetize high-volume developer workflows while discouraging abusive scraping. Developers using Claude for autonomous coding may need to optimize token usage."
           }
         ],
-        "why": "This IBM CEO study provides a strategic framework for enterprises and investors evaluating AI maturity, offering a benchmark for where to prioritize investment—whether in data infrastructure, talent, or governance.",
+        "why": "These shifts indicate that the coding agent market is maturing, with OpenAI and Anthropic competing on both capability and cost structure—important for startups building developer tools that depend on these APIs.",
         "links": [
           [
-            "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
-            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY0R1WkVEcUprYVJhTW82Snp3Y1FwdjJmMFlzRWFTTUtCc0thbUhwdHNaenEyZkF0QXJmSjJ3Uk5fR1V2blhfTzRhZXNuYnVzRTUzQkU2MU9neXFaOG1vNEtMWWRLVDY4RG5LQklkb3lDaFhnWHlfQzdROUtFV1FCZUp3YlB4QUZnQnJzZWZuMFZiNTVGTjBERA?oc=5"
+            "Latent Space: [AINews] Codex Rises, Claude Meters Programmatic Usage",
+            "https://www.latent.space/p/ainews-codex-rises-claude-meters"
           ]
         ],
         "sourceDate": "2026-05-14",
@@ -1353,14 +1418,37 @@ const archiveEn = [
         "freshnessLabel": "Fallback | published 2026-05-14"
       },
       {
+        "section": "Industry Views & Reports",
+        "priority": "medium",
+        "title": "2026 CEO Study: 5 plays for AI-first transformation - IBM",
+        "dek": "IBM's latest CEO study unveils five strategic plays for enterprises pursuing an AI-first transformation, based on insights from hundreds of global leaders.",
+        "details": [
+          "Released on May 14, 2026, IBM's CEO study identifies five plays that differentiate successful AI-first organizations: a product-centric AI strategy, a modular tech stack, talent-led change management, embedded governance, and ecosystem partnerships. The report draws from surveys and interviews with over 600 CEOs worldwide, emphasizing that the shift is less about technology and more about operating model redesign.",
+          "A key finding is that 74% of CEOs expect generative AI to fundamentally reshape their business models within three years, yet only 17% feel their organizations are prepared. The study positions the five plays as a roadmap to close that gap, urging leaders to move from experimentation to scaled deployment. For startups and VCs, the report signals where enterprise budgets will flow—particularly in governance tools and integration layers."
+        ],
+        "why": "This study provides a concrete framework for C-suite decision-making and product strategy, highlighting that AI-first transformation is as much about culture and governance as it is about models. For investors and entrepreneurs, the five plays indicate where enterprise pain points and spending priorities lie.",
+        "links": [
+          [
+            "Google News AI Reports: 2026 CEO Study: 5 plays for AI-first transformation - IBM",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQY0R1WkVEcUprYVJhTW82Snp3Y1FwdjJmMFlzRWFTTUtCc0thbUhwdHNaenEyZkF0QXJmSjJ3Uk5fR1V2blhfTzRhZXNuYnVzRTUzQkU2MU9neXFaOG1vNEtMWWRLVDY4RG5LQklkb3lDaFhnWHlfQzdROUtFV1FCZUp3YlB4QUZnQnJzZWZuMFZiNTVGTjBERA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-14",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-05-14",
+        "freshnessLabelEn": "Fallback | published 2026-05-14",
+        "freshnessLabel": "Fallback | published 2026-05-14"
+      },
+      {
         "section": "AI Term",
         "priority": "learning",
         "title": "Agentic Workflow",
-        "dek": "The concept behind AI agents that autonomously plan and execute multi-step tasks, powering today’s enterprise automation news.",
+        "dek": "What it is and why it matters for enterprise AI.",
         "details": [
-          "Agentic Workflow refers to AI systems that autonomously plan, execute, and adapt sequences of actions to achieve goals, often integrating multiple tools and data sources. Unlike simple chatbots, agentic workflows involve multi-step reasoning, memory, and feedback loops. For instance, OpenAI's Codex, now deployed via Dell for enterprise, can autonomously manage coding tasks across hybrid environments, illustrating how agents go beyond single prompts. This shift enables businesses to automate complex processes but raises challenges in reliability and oversight."
+          "An agentic workflow is a task structure where large language models plan, execute, and iterate on goals with tool usage and feedback loops, unlike single-turn Q&A. Agents decompose problems, invoke APIs or code, and self-correct. The OpenAI-Dell Codex partnership (S002) exemplifies this: Codex acts as an AI coding agent operating within enterprise hybrid or on-premise environments, securely accessing codebases and CI/CD pipelines. Such workflows reduce human oversight but introduce new failure modes, as agent reasoning can still derail on adversarial inputs."
         ],
-        "why": "Understanding agentic workflow is crucial as it underpins the next wave of enterprise automation, enabling companies to delegate end-to-end tasks rather than isolated functions. It signals a strategic pivot from 'copilot' to 'autopilot' in AI product roadmaps.",
+        "why": "Understanding agentic workflow is crucial because it underpins the shift from AI assistants to autonomous enterprise agents. The OpenAI-Dell deal signals that agentic workflows are becoming productized for regulated industries, creating opportunities for toolchain providers (monitoring, guardrails) and challenges for legacy automation vendors.",
         "links": [
           [
             "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
