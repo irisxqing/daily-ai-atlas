@@ -22,8 +22,8 @@ Website: [https://irisxqing.github.io/daily-ai-atlas/](https://irisxqing.github.
 
 ## Features / 功能
 
-- **每日 AI 信号简报**：把全球 AI 新闻整理成可快速阅读的日报，主线栏目重构为快讯、头条、深度、观点，并保留开源项目、AI 产品推荐和每日词条。
-  **Daily AI signal briefing**: turns global AI updates into a readable daily briefing structured around briefs, headlines, deep dives, views, open source, product picks, and the daily AI term.
+- **每日 AI 信号简报**：把全球 AI 新闻整理成可快速阅读的日报，主线栏目重构为头条、深度、观点，并保留开源项目、AI 产品推荐和每日词条。
+  **Daily AI signal briefing**: turns global AI updates into a readable daily briefing structured around headlines, deep dives, views, open source, product picks, and the daily AI term.
 
 - **确定性编辑筛选**：先巡源、去重、日期门禁和栏目打分，再把固定 shortlist 交给模型写解读，减少换模型导致的选题漂移。
   **Deterministic editorial filtering**: scans sources, deduplicates, gates by date, scores by section, and only then asks the model to write from a fixed shortlist.

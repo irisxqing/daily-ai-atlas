@@ -468,7 +468,7 @@ function editorialScore(entry, section) {
       [/\bworld model\b|世界模型/i, 18]
     ]);
     if (megaCompanyPattern.test(text)) score += section === "头条" ? 18 : 10;
-    if (briefSignalPattern.test(text)) score += section === "快讯" ? 20 : 8;
+    if (briefSignalPattern.test(text)) score += section === "头条" ? 16 : 20;
     if (regionPriority(entry) === "primary_market") score += 18;
     if (regionPriority(entry) === "global_major") score += 4;
     if (regionPriority(entry) === "deprioritized_market") score -= 24;
@@ -628,6 +628,10 @@ function isHeadlineEntry(entry) {
     || isFundingEntry(entry);
 }
 
+function isHeadlineOrBriefEntry(entry) {
+  return isHeadlineEntry(entry) || isBriefEntry(entry);
+}
+
 function isDepthEntry(entry) {
   if (isEditorialNoiseEntry(entry) || isLowQualityEntry(entry)) return false;
   const text = entryContentText(entry);
@@ -707,7 +711,7 @@ function isFallbackEligibleSection(section) {
 }
 
 function isStrictD1Section(section) {
-  return ["快讯", "头条", "开源项目"].includes(section);
+  return ["头条", "开源项目"].includes(section);
 }
 
 function entryAllowedForSection(entry, section) {
@@ -835,11 +839,11 @@ function selectMajorEventClusters(sourcePack, limit = 1, excludeIds = new Set())
     .map(([signature, entries]) => ({
       signature,
       entries: entries
-        .sort((a, b) => editorialScore(b, "快讯") - editorialScore(a, "快讯") || (b.score || 0) - (a.score || 0))
+        .sort((a, b) => editorialScore(b, "头条") - editorialScore(a, "头条") || (b.score || 0) - (a.score || 0))
         .slice(0, 5)
     }))
     .filter((cluster) => cluster.entries.length >= 2)
-    .sort((a, b) => b.entries.length - a.entries.length || editorialScore(b.entries[0], "快讯") - editorialScore(a.entries[0], "快讯"))
+    .sort((a, b) => b.entries.length - a.entries.length || editorialScore(b.entries[0], "头条") - editorialScore(a.entries[0], "头条"))
     .slice(0, limit);
 }
 
@@ -1203,8 +1207,7 @@ function updateAppCacheBust(date) {
 
 function selectionSourcePack(sourcePack) {
   const used = new Set();
-  const briefs = sectionCandidates(sourcePack, "快讯", isBriefEntry, 18, used);
-  const headlines = sectionCandidates(sourcePack, "头条", isHeadlineEntry, 12, used);
+  const headlines = sectionCandidates(sourcePack, "头条", isHeadlineOrBriefEntry, 24, used);
   const depth = sectionCandidates(sourcePack, "深度", isDepthEntry, 12, used);
   const viewpoints = sectionCandidates(sourcePack, "观点", isViewpointEntry, 12, used);
   const openSource = sectionCandidates(sourcePack, "开源项目", isOpenSourceEntry, 8, used);
@@ -1233,7 +1236,6 @@ function selectionSourcePack(sourcePack) {
     coverage: sourcePack.coverage,
     methodology: "The script scans all source leads, removes duplicates, applies section-specific editorial scores and quotas, then sends only the fixed shortlist to the model for writing. The model no longer decides the final topic list.",
     candidatePools: {
-      briefs: briefs.map(compactEntry),
       headlines: headlines.map(compactEntry),
       depth: depth.map(compactEntry),
       viewpoints: viewpoints.map(compactEntry),
@@ -1254,13 +1256,12 @@ ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请�
 
 重要：换模型不应改变日报目标。你不是在复述 SOURCE_PACK 排名前几条，而是在做“当日 AI 信号编辑”。请横向比较所有来源，按影响力、可信度、对产品/投资/战略/AI落地的启发排序。不要被 Product Hunt、Google News 或单一 feed 的更新时间挤占版面。若同一事件被多源报道，合并成一条并放多个 links。
 SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。你必须从对应 candidatePools 里选题：
-- 快讯只能从 candidatePools.briefs 选，用头条式写法覆盖 D-1 中美 AI 大公司及产业链动作，包含产品发布、人事变动、组织调整、投融资、收并购等。
-- 头条只能从 candidatePools.headlines 选，聚焦 OpenAI、Anthropic、Google/DeepMind、xAI、Meta、Microsoft、Amazon、Apple、NVIDIA，以及中国 AI 大公司和明星创业公司的完整新闻。
+- 头条只能从 candidatePools.headlines 选，覆盖 D-1 中美 AI 大公司及产业链动作，包含产品发布、模型/API、人事变动、组织调整、投融资、收并购、战略合作和基础设施信号；短信号和重大完整新闻都合并在这一栏，不再拆“快讯”。
 - 深度只能从 candidatePools.depth 选，解释 Agentic AI、多模态、世界模型/机器人、医疗 AI、AI for Science、AI 安全治理等热门主题。
 - 观点只能从 candidatePools.viewpoints 选，覆盖 AI 研究报告、领军人物、著名投资人和高质量行业观察。
 - 开源项目只能从 candidatePools.openSource 选。
 - AI产品推荐只能从 candidatePools.products 选，必须是真正可试用的软件/工具/应用/工作流产品；不要选择纯模型发布、API、芯片、融资或平台战略新闻。
-- 快讯、头条、开源项目已经被脚本限制为北京时间 D-1；AI产品推荐、深度、观点如使用 fallback，正文必须保留补位属性，不能伪装成当日新闻。
+- 头条和开源项目已经被脚本限制为北京时间 D-1；AI产品推荐、深度、观点如使用 fallback，正文必须保留补位属性，不能伪装成当日新闻。
 
 选题范围：
 - 中国和美国 AI 公司为主，其他国家为辅。
@@ -1270,8 +1271,8 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
 - 来源方法：AI Valley、The Rundown AI、Ben's Bites、TLDR AI、The Batch、Import AI、Latent Space、中文 AI 媒体只作为雷达；重要事实需要回到公司官网、官方博客、论文、GitHub、Hugging Face、Product Hunt、机构报告、主流媒体或招聘官网确认。
 
 内容结构要求：
-- 计划里使用中文 section：快讯、头条、深度、观点、开源项目、AI产品推荐、每日词条。
-- 控制在 15 条左右：快讯 5 条；头条 2 条；深度 2 条；观点 2 条；开源 1 条；AI 产品推荐 2 条；每日 AI 词条 1 条。
+- 计划里使用中文 section：头条、深度、观点、开源项目、AI产品推荐、每日词条。
+- 控制在 13 条左右：头条 5-7 条；深度 2 条；观点 2 条；开源 1 条；AI 产品推荐 2 条；每日 AI 词条 1 条。
 - 每条 plan item 必须包含 section、priority、titleZh、titleEn、angle、sourceIds。
 - sourceIds 必须引用对应 candidatePools 里的 id。每条至少 1 个，重要新闻尽量 2-4 个。
 - 不要在 plan item 里返回 links，脚本会根据 sourceIds 自动补链接。
@@ -1290,11 +1291,11 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
 - 如果 SOURCE_PACK 提供了报告页/PDF/研究文章链接，links 必须包含它。不要选 2025 或更早的旧报告凑数。
 
 选题覆盖要求：
-- 快讯和头条不要只来自一个来源；优先混合官方/主流媒体/研究社区/中国媒体。
+- 头条不要只来自一个来源；优先混合官方/主流媒体/研究社区/中国媒体。
 - AI 产品推荐要选真正可试用、有产品启发的工具，尤其关注个人知识管理、跨模型工作流、agent、创作工具、效率工具，不能只按 Product Hunt 最新时间排序。
 - 深度应该帮助读者理解一个当下热门 AI 主题，例如 Agentic AI、多模态、世界模型/机器人、医疗 AI、AI for Science、AI 安全治理。
 - 观点应该帮助读者理解一个更大的 AI 产业问题，例如模型竞争、AI agent 落地、机器人商业化、开源生态、AI 产品入口、企业采用或监管变化。angle 里要写清“为什么值得深读/值得作为观点跟踪”。
-- 投融资、IPO、并购、估值、投资方或资本市场信号不再单独成栏；如果与中美重点公司或产业链相关，应进入快讯或头条。
+- 投融资、IPO、并购、估值、投资方或资本市场信号不再单独成栏；如果与中美重点公司或产业链相关，应进入头条。
 - 开源项目优先 GitHub/Hugging Face/开发者社区有明确项目页或技术博客的内容。
 - 每日词条要和当天新闻有关，解释清楚但不要幼稚化。
 
@@ -1309,7 +1310,7 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
     "tagsEn": ["..."],
     "items": [
       {
-        "section": "快讯",
+        "section": "头条",
         "priority": "high",
         "titleZh": "...",
         "titleEn": "...",
@@ -1394,7 +1395,7 @@ function applyPlanMetadata(item, planItem, lang) {
 
 function sectionPredicate(section) {
   if (section === "快讯") return isBriefEntry;
-  if (section === "头条") return isHeadlineEntry;
+  if (section === "头条") return isHeadlineOrBriefEntry;
   if (section === "深度") return isDepthEntry;
   if (section === "观点") return isViewpointEntry;
   if (section === "投融资信息") return isFundingEntry;
@@ -1437,9 +1438,10 @@ function planAngle(section, entry) {
     return "D-1 中美 AI 大公司或产业链动作，适合用快讯方式快速扫描。";
   }
   if (section === "头条") {
+    if (isFundingEntry(entry)) return "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。";
     if (aiLeaderPattern.test(text)) return "AI 超级公司或明星创业公司的关键人事/组织新闻，需要补足背景、影响和后续观察点。";
-    if (isFundingEntry(entry)) return "AI 超级公司、明星创业公司或关键产业链公司的资本动作，需要解释融资/并购背后的战略含义。";
-    return "AI 超级公司或明星创业公司的完整新闻，需要补足背景、影响和后续观察点。";
+    if (modelLaunchPattern.test(text)) return "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。";
+    return "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。";
   }
   if (section === "深度") return "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。";
   if (section === "观点") {
@@ -1551,8 +1553,8 @@ function buildEditorialFrame(items) {
     headlineEn: "AI competition is shifting from capability launches to real workflow control",
     summaryZh: "今天值得看的主线是，AI 公司不再只证明模型更强，而是在争夺用户入口、企业流程和关键产业链位置。真正重要的是这些动作能否沉淀成持续使用，而不是只制造一天的热度。",
     summaryEn: "Today’s useful thread is that AI companies are no longer only proving stronger models; they are fighting for user entry points, enterprise workflows, and key industry positions. The important test is whether these moves become durable usage instead of one-day attention.",
-    tagsZh: ["快讯", "头条", "深度", "观点", "AI产品"],
-    tagsEn: ["Briefs", "Headlines", "Deep Dive", "Views", "AI Products"]
+    tagsZh: ["头条", "深度", "观点", "AI产品"],
+    tagsEn: ["Headlines", "Deep Dive", "Views", "AI Products"]
   };
 }
 
@@ -1615,8 +1617,7 @@ function deterministicPlan(date, sourcePack, reason = "") {
     if (entries[0]) usedTopicSignatures.add(entryTopicSignature(entries[0]));
   };
   const specs = [
-    ["头条", 2, isHeadlineEntry],
-    ["快讯", 5, isBriefEntry],
+    ["头条", 6, isHeadlineOrBriefEntry],
     ["深度", 2, isDepthEntry],
     ["开源项目", 1, isOpenSourceEntry],
     ["AI产品推荐", 2, isProductEntry]
@@ -1626,37 +1627,22 @@ function deterministicPlan(date, sourcePack, reason = "") {
   selectMajorEventClusters(sourcePack, 1, used).forEach((cluster) => {
     const copy = eventAggregateCopy(cluster.signature);
     if (!copy) return;
-    addAggregateEntries(items, "快讯", cluster.entries, copy.titleZh, copy.titleEn, copy.angle);
+    addAggregateEntries(items, "头条", cluster.entries, copy.titleZh, copy.titleEn, copy.angle);
   });
 
   specs.forEach(([section, count, predicate]) => {
     const existingCount = items.filter((item) => item.section === section).length;
     const remainingCount = Math.max(0, count - existingCount);
     if (!remainingCount) return;
-    const candidates = sectionCandidates(sourcePack, section, predicate, remainingCount * 4, used)
-      .filter((entry) => !isDuplicateTopic(entry, usedTopicSignatures))
-      .slice(0, remainingCount);
-    candidates.forEach((entry) => {
+    let added = 0;
+    const candidates = sectionCandidates(sourcePack, section, predicate, remainingCount * 6, used);
+    for (const entry of candidates) {
+      if (added >= remainingCount) break;
+      if (isDuplicateTopic(entry, usedTopicSignatures)) continue;
       addSelectedEntry(items, section, entry);
-    });
-  });
-
-  if (!items.some((item) => item.section === "快讯")) {
-    const headlineEntries = items
-      .filter((item) => item.section === "头条")
-      .flatMap((item) => item.sourceIds || [])
-      .map((id) => sourcePack.entries.find((entry) => entry.id === id))
-      .filter(Boolean);
-    if (headlineEntries.length) {
-      items.push(selectedAggregatePlanItem(
-        "快讯",
-        headlineEntries,
-        "D-1 中美 AI 大公司快讯合集",
-        "D-1 China-US AI major company briefs",
-        "当天 D-1 大公司信号较少时，用一张快讯合集先快速扫清主体动作，再由头条展开关键事件。"
-      ));
+      added += 1;
     }
-  }
+  });
 
   selectViewpointEntries(sourcePack, 2, used).forEach((entry) => {
     if (isDuplicateTopic(entry, usedTopicSignatures)) return;
@@ -1667,11 +1653,11 @@ function deterministicPlan(date, sourcePack, reason = "") {
     if (items.length >= 12) break;
     if (used.has(entry.id)) continue;
     if (isDuplicateTopic(entry, usedTopicSignatures)) continue;
-    if (!isBriefEntry(entry)) continue;
-    addSelectedEntry(items, "快讯", entry);
+    if (!isHeadlineOrBriefEntry(entry)) continue;
+    addSelectedEntry(items, "头条", entry);
   }
 
-  const sectionOrder = ["快讯", "头条", "深度", "观点", "开源项目", "AI产品推荐"];
+  const sectionOrder = ["头条", "深度", "观点", "开源项目", "AI产品推荐"];
   items.sort((a, b) => sectionOrder.indexOf(a.section) - sectionOrder.indexOf(b.section));
 
   items.push({
@@ -1845,10 +1831,10 @@ ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请�
 
 ${isZh ? `
 语言风格：轻量、好读、有判断，适合非技术背景读者；不要幼稚化，也不要只堆技术名词。
-快讯写成 2-3 条头条式短段落，每条约 50-110 字，快速交代主体、动作、时间和影响；其他栏目写成 3-5 条“有信息量的小段落”，每条约 80-180 字，至少包含背景/关键数字/主体动作/影响范围/不确定性中的两个维度。
+头条写成 2-5 条有信息量的小段落：短头条每条约 50-110 字，重点头条每条约 80-180 字，至少包含主体动作、背景、关键数字、影响范围或不确定性中的两个维度；其他栏目写成 3-5 条“有信息量的小段落”。
 中文标题和 dek 必须中文化：公司名、产品名、模型名、会议名可以保留英文专名，但不能把英文原文标题整句复制到中文页面。例：写成“Viberia：像玩策略游戏一样指挥 AI Agent”，不要写成“Viberia: Command AI agents like you're playing Civilization”。
 ` : `
-Tone: concise, readable, analytical, not a mechanical translation. For Briefs, write 2-3 headline-style short paragraphs. For other sections, each detail should be 45-100 words and include at least two of: context, key numbers, actor action, impact, uncertainty.
+Tone: concise, readable, analytical, not a mechanical translation. For Headlines, write 2-5 substantial short paragraphs: shorter headline items can be 35-70 words, while major stories should be 60-110 words and include at least two of: context, key numbers, actor action, impact, uncertainty.
 `}
 
 item 必须有 section、priority、title、dek、details、why、links。脚本会强制补入 sourceDate、freshness、regionPriority、freshnessLabel，不要改写这些元数据。
@@ -1859,8 +1845,7 @@ item 必须有 section、priority、title、dek、details、why、links。脚本
 - 不要包含用户个人收入、具体雇主经历或敏感个人信息。
 
 栏目写法：
-- 快讯 / Briefs：头条式写法，像新闻快讯一样快速覆盖 D-1 中美大公司动作。不要写成长篇观点，也不要把社会奇闻、消费电子导购或单纯跑分新闻写进来。
-- 头条 / Headlines：复用现在较完整的 bullet/段落写法，补公司背景、事件细节、影响范围、后续观察点。
+- 头条 / Headlines：覆盖 D-1 中美大公司和产业链重点动作。短信号要快速交代主体、动作、时间和影响；重大事件要补公司背景、事件细节、影响范围、后续观察点。不要把社会奇闻、消费电子导购或单纯跑分新闻写进来。
 - 深度 / Deep Dive：解释一个热门 AI 主题或产业问题，不只是复述一条新闻；要帮非技术读者理解“这件事为什么会成为趋势”。
 - 观点 / Views：覆盖研究报告、领军人物、投资人和高质量行业观察。
 

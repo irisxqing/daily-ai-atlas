@@ -3004,8 +3004,8 @@ const archiveEn = [
 ];
 
 const sectionOrders = {
-  zh: ["全部", "快讯", "头条", "深度", "观点", "开源项目", "AI产品推荐", "今日学习", "继续追踪", "职业雷达"],
-  en: ["All", "Briefs", "Headlines", "Deep Dive", "Views", "Open Source", "AI Product Picks", "Learning Picks", "Watchlist", "Career Radar"]
+  zh: ["全部", "头条", "深度", "观点", "开源项目", "AI产品推荐", "今日学习", "继续追踪", "职业雷达"],
+  en: ["All", "Headlines", "Deep Dive", "Views", "Open Source", "AI Product Picks", "Learning Picks", "Watchlist", "Career Radar"]
 };
 
 const uiText = {
@@ -3319,7 +3319,7 @@ const topicDefinitions = [
     id: "funding",
     zh: "投融资",
     en: "Funding",
-    terms: ["快讯", "Briefs", "投融资", "融资", "估值", "投资", "Funding", "raised", "valuation", "round", "capital"]
+    terms: ["头条", "Headlines", "投融资", "融资", "估值", "投资", "Funding", "raised", "valuation", "round", "capital"]
   },
   {
     id: "open-source",
