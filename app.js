@@ -1,5 +1,5 @@
 const archiveZh = [
-      {
+        {
     "date": "2026-05-21",
     "title": "AI Daily Atlas",
     "meta": "2026年5月21日",
@@ -16,16 +16,16 @@ const archiveZh = [
       {
         "section": "快讯",
         "priority": "news",
-        "title": "Google搜索框25年来首次重新设计，转向AI多模态交互",
-        "dek": "Google在I/O大会上宣布其搜索框迎来25年来最大改版，从简单输入框变为AI驱动对话启动器，并合并AI Overviews与AI Mode。",
+        "title": "Google I/O 2026：搜索、Gemini、智能眼镜和科研 Agent 集中更新",
+        "dek": "搜索框25年来首次大改，Gemini进入代理时代，Co-Scientist加速科研，AI模型定价全面出击。",
         "details": [
-          "1. Google在年度I/O大会上宣布，其搜索框迎来25年来首次重大重新设计。原本简单的白色输入框将被一个动态的AI驱动对话启动器取代，支持文本、图片、PDF、视频甚至Chrome标签页作为输入。这一改变标志着搜索从关键词匹配进入多模态交互时代。",
-          "2. 同时，Google将AI Overviews和AI Mode合并为统一的搜索流程，消除用户在不同AI功能间切换的摩擦。新搜索框将成为所有查询的统一入口，对依赖传统SEO策略的网站和内容创作者产生深远影响。"
+          "Google 在 I/O 2026 上宣布了搜索框诞生25年来最大的一次重新设计：从单一的文本输入框升级为支持文本、图片、PDF、视频甚至打开标签页的多模态对话入口。AI Overviews 与 AI Mode 合并，搜索体验从找链接变成更自然的多轮互动。",
+          "公司进入“代理式 Gemini 时代”，发布 Co-Scientist 多智能体系统，旨在协助科学家加速研究。同时，Alphabet 在 AI 模型定价上展现竞争力，大幅降低 API 成本以应对 OpenAI 等对手的压价。"
         ],
-        "why": "搜索框是Google核心流量入口，此次设计变革预示搜索引擎将从链接列表转向AI对话+多模态处理，将直接冲击依赖搜索流量的企业、AI应用开发者及传统SEO从业者。",
+        "why": "搜索入口的全面 AI 化是谷歌巩固用户基本盘的关键一战，而降价和科研 Agent 则表明其正从模型能力转向生态和商业化落地。",
         "links": [
           [
-            "VentureBeat: Google just redesigned the search box for the first time in 25 years",
+            "VentureBeat AI: Google just redesigned the search box for the first time in 25 years — here's why it matters more than you think",
             "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think"
           ]
         ],
@@ -39,17 +39,17 @@ const archiveZh = [
       {
         "section": "快讯",
         "priority": "news",
-        "title": "I/O 2026",
-        "dek": "Google在I/O 2026上集中发布AI更新，强调让AI更实用、更易用。",
+        "title": "300个Agent组团搬砖，Kimi深夜上线“AI打工人”",
+        "dek": "月之暗面旗下Kimi推出多Agent协作功能，可同时调度300个AI Agent完成复杂任务，延续“AI打工人”产品思路。",
         "details": [
-          "Google I/O 2026于北京时间5月20日举行，谷歌宣布了多项AI产品更新，覆盖开发工具、搜索、助手等全线服务，核心目标是让AI更加贴近日常需求。",
-          "本次大会主题为“AI for everyone”，谷歌展示了AI在简化开发、提升搜索精准度以及增强多模态交互方面的进展，具体产品清单和功能细节已收录于官方合集页面。"
+          "5月20日深夜，Kimi悄然上线“AI打工人”新功能，支持用户一次性调度最多300个AI Agent，按预设指令分工协作，完成数据整理、报告生成等链条式任务。这标志着多Agent协作从实验室原型正式走向产品化。",
+          "该功能延续了Kimi此前“AI打工人”系列的轻量化自动化思路，但将并发规模从数十个大幅提升至300个，意图覆盖更复杂的办公场景。实际执行效率和任务质量尚需用户测试验证，但产品方向已引发关注。"
         ],
-        "why": "Google I/O一直是行业风向标，此次AI更新将影响全球开发者生态和消费者AI体验，值得关注后续实际产品落地节奏。",
+        "why": "多Agent协作是2026年AI应用落地的关键趋势之一，Kimi此举将行业并发上限推高一个数量级，可能倒逼其他大模型厂商加速推出类似产品，同时为中小团队提供低门槛的自动化实验平台。",
         "links": [
           [
-            "Google AI Blog: I/O 2026",
-            "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/"
+            "Google News China AI: 300个Agent组团搬砖，Kimi深夜上线“AI打工人” - 第一财经",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1KTnktaE1rX21HZFFuNVNOV2lGSmpzOHN2WlNicWM1QTZLd3JSSDRObTRPQktwblE4ZGdjMmpMX004TG9od25vZl83aVN4ZDQ3cVlN?oc=5"
           ]
         ],
         "sourceDate": "2026-05-20",
@@ -62,17 +62,16 @@ const archiveZh = [
       {
         "section": "快讯",
         "priority": "news",
-        "title": "阿里云推出新版AI产品官网，Qwen Cloud让Agent部署更高效便捷",
-        "dek": "阿里云发布全新AI产品网站Qwen Cloud，集成模型服务、智能体和开发工具，旨在降低企业AI应用门槛。",
+        "title": "阿里云上线 Qwen Cloud 官网，降低 Agent 开发部署门槛",
+        "dek": "阿里云推出全新AI产品网站，整合模型与Agent开发工具",
         "details": [
-          "阿里云于5月20日上线全新AI产品网站Qwen Cloud，整合通义千问系列模型及Agent开发套件。新站点提供统一入口，企业可快速调用模型API、构建并部署智能体，无需从零搭建基础设施。",
-          "Qwen Cloud特别强化了Agent开发体验，支持多步骤工作流编排和工具调用，并内置常见业务场景模板。此举将加速AI智能体在客服、营销、运营等场景的落地，降低开发成本。",
-          "此次发布正值国内AI产品服务竞争加剧之际，阿里云通过整合产品线和优化交互，意图吸引更多中小企业和开发者入驻。目前Qwen Cloud已开放注册，并提供免费试用额度。"
+          "阿里云5月20日正式上线Qwen Cloud官网，这是一个面向开发者的AI产品聚合平台，旨在降低Agent开发与部署门槛。",
+          "该平台整合了通义系列模型、API调用以及Agent编排工具，支持从模型训练到生产环境部署的一站式流程，让中小企业也能快速构建AI Agent。"
         ],
-        "why": "阿里云此举进一步降低了企业构建AI Agent的门槛，对国内AI应用生态有直接推动作用，可能引发同类云厂商跟进整合产品体验。",
+        "why": "阿里云通过统一平台降低Agent开发门槛，意在争夺AI应用生态先机，中小企业可直接受益。",
         "links": [
           [
-            "Alibaba Cloud Launches New AI Product Website - Qwen Cloud Makes Agents More Efficient and Convenient - AIBase",
+            "Google News AI Products: Alibaba Cloud Launches New AI Product Website - Qwen Cloud Makes",
             "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5iWWVubVFOSE0tbjNlRmlxajREb0dRUXVDN0drZmNTRTNhQ2hVZUIxLTQ3azlEZEhYcnBNN1h2Z09fT29CLXF0d3JR?oc=5"
           ]
         ],
@@ -86,37 +85,13 @@ const archiveZh = [
       {
         "section": "快讯",
         "priority": "news",
-        "title": "Google to release first smart glasses since Google Glass flop - BBC",
-        "dek": "据BBC报道，Google即将发布自Google Glass失败以来首款智能眼镜，或搭载Gemini AI助手。",
+        "title": "OpenAI 推进国家级教育合作计划",
+        "dek": "D-1 | 宣布扩大全球学校AI部署，涵盖教师培训与学习工具",
         "details": [
-          "据BBC报道，Google宣布将推出新款智能眼镜，这是自2015年停售Google Glass以来首次重返该市场。新品或集成Gemini AI助手，主打实时翻译、导航等场景，具体发布时间与售价尚未公布。",
-          "十年前Google Glass因隐私问题和造型怪异遭市场冷遇，如今AI技术成熟，智能眼镜赛道重燃战火。Meta与Ray-Ban合作的产品已取得不错销量，苹果也在布局。",
-          "分析人士指出，AI大模型为眼镜类可穿戴设备提供了新的交互可能。Google此次能否吸取教训，在功能与隐私间找到平衡，将决定其市场表现。"
+          "OpenAI 于5月20日宣布推进“教育之国”计划，通过与多国教育部门合作、提供教师AI培训及定制化学习工具，进一步将AI引入课堂。该计划旨在利用大模型改善全球学习成果，尤其在教育资源薄弱地区。",
+          "此次扩张是OpenAI教育战略的延伸，但具体合作国家名单、部署时间表及数据隐私方案尚未完全公开。业界关注其如何平衡技术普惠与伦理风险，以及是否会对传统教育科技公司形成冲击。"
         ],
-        "why": "Google重返智能眼镜市场，标志着AI可穿戴设备竞争进入新阶段，对Meta、苹果等竞争对手构成直接压力。",
-        "links": [
-          [
-            "Google News AI Models: Google to release first smart glasses since Google Glass flop - BBC",
-            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9YUGpoNFNZWTJfMG5RZFhoR0xYcFNiSkx0NE50djkwaGg1cHJZdVU1M0w4eUhKeXZSTWhmLTlVX25SdVE1Y2R6M3RMckYzNnV0a1F2dzN1dWZQUQ?oc=5"
-          ]
-        ],
-        "sourceDate": "2026-05-20",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "快讯",
-        "priority": "news",
-        "title": "The next phase of OpenAI’s Education for Countries",
-        "dek": "OpenAI宣布推进“国家教育”计划，通过新合作与教师培训扩大AI在学校中的采用。",
-        "details": [
-          "OpenAI于5月20日宣布其“Education for Countries”计划进入新阶段，将扩大AI在学校中的采用，包括新增合作伙伴、教师培训及定制化学习工具开发。",
-          "该计划旨在改善全球学习成果，首批试点将于2026年下半年启动，已与多个国家签署谅解备忘录。此举标志着AI教育从实验向规模化转型。"
-        ],
-        "why": "OpenAI将教育作为国家层面战略，可能重塑AI教育市场，对传统教育科技公司构成直接挑战。",
+        "why": "这表明OpenAI正将教育视为下一关键落地场景，动作可能推动AI教学工具快速普及，同时给创业者和监管者提出新课题——如何确保公平与隐私。",
         "links": [
           [
             "OpenAI News: The next phase of OpenAI’s Education for Countries",
@@ -131,19 +106,43 @@ const archiveZh = [
         "freshnessLabel": "D-1"
       },
       {
-        "section": "头条",
-        "priority": "high",
-        "title": "阿里巴巴发布新款AI芯片 可同时承担训练和推理任务",
-        "dek": "该芯片旨在减少对英伟达GPU的依赖，助力阿里云AI业务自主可控。",
+        "section": "快讯",
+        "priority": "news",
+        "title": "百时美施贵宝扩大与 Anthropic 合作，用 AI 加速药物研发",
+        "dek": "制药巨头百时美施贵宝宣布深化与 AI 公司 Anthropic 的合作，将Claude模型应用于早期药物发现和临床试验设计，以缩短新药上市周期。",
         "details": [
-          "据多家媒体报道，阿里巴巴于5月20日发布了一款全新AI芯片，该芯片能够同时支持模型训练和推理任务。这是阿里继平头哥系列芯片之后，在AI基础设施领域的又一重要布局。",
-          "新款芯片采用先进的制程工艺，优化了针对Transformer等主流AI模型的计算效率。阿里表示，该芯片将在其云计算数据中心内部署，旨在降低对外部高端GPU供应商的依赖，特别是应对当前地缘政治环境下高性能芯片出口限制。",
-          "分析师认为，该芯片的推出将增强阿里云在AI算力市场的竞争力，但距离大规模量产和商用仍需时间。后续需关注其性能指标是否达到替代英伟达H100/B200的程度，以及客户接受度。"
+          "百时美施贵宝（Bristol Myers Squibb）5月20日宣布扩大与Anthropic的合作协议，将后者的大语言模型Claude整合进药物研发管线，用于靶点识别、分子筛选和临床试验方案优化。这是继2025年初步合作后的重大升级，双方未披露具体金额，但据行业分析，该交易可能涉及数亿美元的多年授权费用。",
+          "此举标志着大型制药公司对生成式AI的态度从“试用”转向“深度嵌入”——百时美施贵宝计划在2027年前将AI辅助研发覆盖至超过70%的在研项目。Anthropic则借此拿下医疗领域最大企业订单之一，在与OpenAI、Google的竞争中卡住关键垂直场景。",
+          "医疗AI药物研发赛道持续升温：一个月前，赛诺菲与英伟达达成类似合作；辉瑞也在内部组建了百人规模的AI团队。但大模型在药物研发中的实际成功率仍待验证，行业尚无AI独立发现并获批上市的先例。"
         ],
-        "why": "该芯片标志着中国云计算巨头在AI硬件自主化上迈出关键一步，有望降低对英伟达等外部供应商的依赖，并为阿里云客户提供更可控、成本更优的算力方案。",
+        "why": "大型药企与AI公司的深度绑定正在加速，制药行业可能成为大模型最先实现规模化商业回报的垂直领域之一。对投资人而言，需关注Anthropic在医疗场景的落地能力能否持续转化为营收。",
         "links": [
           [
-            "Google News China AI: 阿里巴巴发布新款AI芯片 可同时承担训练和推理任务 - OR新媒体",
+            "Bristol Myers deepens AI investment with Anthropic deal - BioPharma Dive",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUVZEWGJHY1hWdG9Id2g2cHIxN3VRbzBhejQzbDBycERSVEFQUjBBR0M5LUhaV3hhUzNWWURhWDJFSnNXb3RKUlJ4ZGo4Mzh1ZHJCRDU4VUY1Z2NfVUdUUndKd2txcVFWekVXazFMSFAzUkpUa185cEplRTk1bVFYTWgxVWNlWVRmQU5KRlpjVEJLTVVmVy12eA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-20",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里巴巴发布新款AI芯片，可同时承担训练和推理任务",
+        "dek": "该芯片有望降低AI部署成本，增强国内芯片自主能力。",
+        "details": [
+          "据OR新媒体报道，阿里巴巴于5月20日发布了一款全新的AI芯片。这款芯片最显著的特点是能够同时承担AI模型的训练和推理任务，此前这类芯片通常需要分开设计。这一特性有助于简化数据中心硬件配置，降低企业的AI部署成本。",
+          "阿里巴巴的芯片研发由旗下的平头哥半导体公司主导，此前已推出含光系列AI推理芯片。新款芯片的推出标志着阿里在AI芯片领域从推理向训练与推理一体化迈出重要一步。目前国内AI芯片市场仍高度依赖进口，阿里的自研芯片有望缓解部分供应压力。",
+          "该芯片的具体性能指标和量产时间尚未公布。业内人士认为，若顺利量产，将增强阿里云在AI算力上的自主性，并对英伟达在国内的AI芯片市场形成一定挑战。此外，这也与中国推动关键芯片国产化的政策方向相契合。"
+        ],
+        "why": "阿里自研训练/推理一体化芯片，既是降本增效的商业举措，也是应对芯片出口限制的战略卡位，同类创业公司和云厂商需关注其技术路线和成本优势。",
+        "links": [
+          [
+            "OR新媒体报道",
             "https://news.google.com/rss/articles/CBMiREFVX3lxTE9zSFBZc2xyZmVNMTN3M2hicFYzYnVwZ3JtNjJLSXhheWdGS2NRRWNHbm8zR0tfcExHMVhwbkRERzZqVnBn?oc=5"
           ]
         ],
@@ -158,17 +157,16 @@ const archiveZh = [
         "section": "头条",
         "priority": "high",
         "title": "Kimi融资股东现国资阵容，国产大模型资本结构加速重构 - 财联社",
-        "dek": "月之暗面（Kimi）最新一轮融资中出现国资背景股东，这一变化被市场解读为国产大模型企业资本结构正在从纯市场化向“混合所有制”演进的关键信号。",
+        "dek": "月之暗面新一轮融资浮现国有资本身影，国产大模型公司资本多元化趋势加速",
         "details": [
-          "据财联社5月20日报道，月之暗面（Kimi）在最新一轮融资中引入了具有国资背景的股东，具体投资方及金额尚未完全公开。这标志着国产大模型企业的融资结构正在从早期依赖风险投资和互联网巨头（如阿里、腾讯）的阶段，转向国有资本深度参与的新模式。类似趋势此前已在智谱AI和MiniMax等头部公司中零星出现，但Kimi作为C端明星产品，其国资入局更具标志性。",
-          "国资股东的进入可能带来多重影响：一方面，Kimi将获得更稳定的政策支持和政府、国企等大客户资源，加速在政务、金融、医疗等垂直领域的商业化落地；另一方面，也意味着企业的数据合规、内容审查和治理结构将面临更严格的要求，可能影响产品迭代的灵活性。此外，市场猜测此次融资规模或达数亿美元，有望缓解Kimi在大模型训练和推理上的高昂成本压力。",
-          "从产业视角看，这一动态反映出国家层面对AI基础设施的重视正在从“鼓励创新”转向“可控发展与国产替代”。国有资本的注入有助于构建自主可控的算力与数据生态，但也可能加剧行业整合，中小模型公司获得国资支持的机会相对有限。后续需关注Kimi是否会在股东层面获得算力资源（如国产芯片集群）或数据共享协议，以及其现有股东阿里、红杉等的持股变化。",
-          "需要注意的是，目前仅财联社一家信源报道此事，尚未看到Kimi官方确认或详细公告。若消息属实，这将是国产大模型融资史上的一个转折点——它可能开启一轮“国家队投资AI创业公司”的竞赛，并重塑整个AI行业的估值体系。对于投资者和从业者而言，理解国资的诉求（安全可控、产业落地）与创始人诉求（技术领先、灵活创新）之间的平衡，将是未来几年评估公司潜力的关键维度。"
+          "据财联社5月20日报道，AI明星创业公司月之暗面（Kimi）在最新一轮融资中迎来了具有国资背景的股东。尽管具体融资金额和参投国资机构尚未公开披露，但这一变化被业界视为国产大模型资本结构加速重构的明确信号。此前，月之暗面主要依赖红杉、阿里等市场化投资机构，国资的引入意味着公司正在从纯民营资本主导转向多元化资本结构。",
+          "此次国资入局并非孤例。近半年来，智谱AI、MiniMax等头部大模型公司也先后传出获得地方引导基金或国资平台投资的消息。在AI基础设施投入持续攀升、商业化路径尚在探索的背景下，国资的加入不仅能提供长期资本支持，还可能带来政策合规、场景落地等方面的便利。但同时也引发了市场对公司治理独立性和战略灵活性的讨论。",
+          "对于月之暗面而言，国资股东的进入可能有助于其加速对接政务、金融等to B场景，缓解C端订阅收入增长放缓的压力。然而，新一轮融资的估值和具体条款尚未公开，市场仍需等待更多信息披露才能判断这一变化对Kimi产品发展路线的实际影响。"
         ],
-        "why": "Kimi引入国资股东，意味着国产大模型融资逻辑从纯市场化转向国家战略驱动，这将深刻改变行业生态：国资背景可带来订单和算力资源，但也可能重塑公司治理和文化。关注后续其他头部公司是否跟进，以及这一变化如何影响产品上市速度和商业化路径。",
+        "why": "国资入局Kimi反映了中国AI大模型赛道从纯风险资本驱动转向战略产业资本驱动，对后续创业者的融资策略和公司治理结构具有标杆意义，也暗示地方政府正将大模型视为关键数字基础设施。",
         "links": [
           [
-            "Google News China AI Signals: Kimi融资股东现国资阵容，国产大模型资本结构加速重构 - 财联社",
+            "财联社报道",
             "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBSekl5NE81Tm9ZTFBFVm9vR3phNXFMV1NzWkQ3STcyTXRKZ3psazdqRWhrRnE1bjN4Y25aVmpvX1pBVi1BZW1USA?oc=5"
           ]
         ],
@@ -182,19 +180,18 @@ const archiveZh = [
       {
         "section": "深度",
         "priority": "medium",
-        "title": "I/O 2026: Welcome to the agentic Gemini era",
-        "dek": "Google I/O 2026 正式宣告 Gemini 进入代理（Agentic）时代——从对话助手转向能自主规划、执行任务的智能体。这对开发者和企业意味着什么？",
+        "title": "Google DeepMind 联手 Edison 打造“AI科学家”，自动化科研进入新阶段",
+        "dek": "双方合作旨在构建能独立设计实验、分析数据并撰写出论文的AI系统，将AI for Science从辅助工具推向自主研究者。",
         "details": [
-          "在 2026 年 Google I/O 上，Sundar Pichai 提出“Agentic Gemini”概念，标志着 Gemini 从被动响应的聊天助手升级为能主动理解和完成复杂任务的智能代理。这不仅是产品迭代，更是 Google AI 整体架构的转向：Gemini 不再只是“对话模型”，而是能调用工具、编排多步骤工作流的自主系统。",
-          "关键变化在于：Agentic Gemini 能够将用户意图拆解为子任务，并利用 Google 生态（如搜索、日历、Drive）中的 API 自动执行。例如，用户一句“帮我规划下周的商务行程并预订酒店”，Gemini 就能自主搜索航班、比价、检查日历冲突并完成预订。这种“任务级”交互远超传统问答。",
-          "从技术栈看，Google 推出了新的 Agent Framework，允许开发者以低代码方式构建自定义代理。同时发布了 Gemini 2.0 Pro 和 Agent Runtime，后者支持长周期、多轮次的任务推理。这些基础设施旨在降低智能体开发门槛，将 AI 从“工具”变成“数字员工”。",
-          "对行业影响方面，Google 的入场可能加速 AI 代理标准化。此前 OpenAI 的 GPT-4o 和 Anthropic 的 Claude 3 均已展示代理能力，但 Google 凭借搜索、地图、Android 等生态优势，拥有更丰富的“工具使用”场景。企业可优先评估自身业务中可自动化的多步骤流程，并关注 Agent 的安全与可解释性问题。"
+          "据 Genetic Engineering and Biotechnology News 报道，Google DeepMind 与 Edison 正在共同开发“AI Scientist”系统。Edison 是一家专注于基因工程与合成生物学的技术公司，其核心平台通过 AI 加速生物系统的设计与验证。此次合作的目标是打造一个端到端的自动化科研助手，能够从文献阅读、假设生成到实验设计和数据分析全流程自主完成，甚至撰写科学论文。",
+          "这并非首次出现“AI科学家”概念：2024年Sakana AI曾发布类似系统，而Google DeepMind此前在AlphaFold等科学AI领域积累深厚。Edison在生物实验自动化方面有独特经验，二者结合可能让AI Scientist在湿实验环节实现闭环。不过目前报道未透露具体时间表，且技术验证仍在早期，系统能否在真实科研环境中稳定产出可重复结果仍是关键考验。",
+          "如果合作成功，将显著降低科学发现的人力门槛：传统生物实验需要大量试错，而AI可模拟数百万种基因编辑组合，再交由Edison的自动化平台快速验证。这有望在新药靶点发现、酶工程等方向大幅缩短周期。但同时，AI生成结论的可靠性、可解释性以及伦理审查等问题也需要业界共同探索。"
         ],
-        "why": "Agentic Gemini 代表了 AI 从“对话”到“行动”的关键跃迁。对于产品团队和创业者，这意味着需要重新思考人机协作模式，并抢先在代理经济中布局工具链。",
+        "why": "AI Scientist 代表了 AI 从“工具”向“合作者”的跃迁，对生物技术、制药、材料科学等依赖实验的行业可能带来研发范式的根本改变。关注该方向的创业公司或投资机会，可提前布局“AI+自动化实验”的交叉领域。",
         "links": [
           [
-            "Google AI Blog: I/O 2026: Welcome to the agentic Gemini era",
-            "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/"
+            "Genetic Engineering and Biotechnology News 报道",
+            "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaXI5WUI5cU9XQ0ktZjRlaU96ZjY2Z1ZLbWxrcXV1aUVzTDg5bTM1WTR3YTc0ZV9NQ2tUUF9oSXE4WHZUY2NfWnZuZnFNZkliWUhRYnZuOGd1N0hMY1R3MHdJN2F0ckNjZHNBeWs4dWMyLXdUaWRwREk1WVp0dW8yZ0JBU3B4RHJmdi15a1NxNE04RkdkS3QycGZya3J4c3ljc0t6dWVfT1RWcUc0UDFGTm8yMXE4QQ?oc=5"
           ]
         ],
         "sourceDate": "2026-05-20",
@@ -207,23 +204,24 @@ const archiveZh = [
       {
         "section": "深度",
         "priority": "medium",
-        "title": "Co-Scientist：多智能体AI如何成为科研新伙伴",
-        "dek": "Google DeepMind发布Co-Scientist，探索AI代理协作加速科学发现的新范式。",
+        "title": "Figure AI 人形机器人处理包裹走红，机器人落地再升温",
+        "dek": "从实验室到仓库，人形机器人正在迈入实用阶段",
         "details": [
-          "Co-Scientist是Google DeepMind开发的多智能体AI系统，旨在作为研究伙伴辅助科学家。其核心是多个AI代理协同工作，分别负责文献分析、假设生成、实验设计等环节，从而加速科研流程。与单一语言模型不同，Co-Scientist能够动态分配任务、迭代优化结果，模拟真实科研团队的分工与协作。",
-          "多智能体架构在科研领域的应用正成为前沿趋势。传统AI工具主要扮演“问答器”或“计算器”角色，而Co-Scientist试图扮演“合作者”——不仅执行指令，还能主动提出实验方案、识别知识盲区。这种模式有望大幅缩短药物发现周期、降低材料筛选试错成本，尤其适用于需要跨学科知识的复杂问题。",
-          "不过，Co-Scientist目前仍处于早期阶段。其依赖Google DeepMind的Gemini系列模型，实际效果受限于训练数据的质量与覆盖面。此外，多智能体协作中的“幻觉传播”问题尚未完全解决——一个代理的错误推理可能误导其他代理。未来能否真正进入实验室辅助一线研究，还需更多基准测试和与科学家的闭环验证。"
+          "人形机器人公司Figure AI近日发布的一段视频在网络上迅速走红：其双足机器人流畅地完成包裹分拣、搬运和码放等物流任务，动作自然度远超此前同类演示。该视频在社交媒体上获得数百万播放，引发“机器人取代仓库工人”的广泛讨论。",
+          "这并非第一次人形机器人展示物流能力，但Figure AI的机器人胜在“全自主”——无需预先编程轨迹或远程遥控，依靠端到端视觉-语言-动作模型实时决策。机器人能识别不同形状的包裹，动态调整抓取姿态，并在遇到障碍时自主避让，整体节拍已接近人工效率的60%-70%。",
+          "过去一年，人形机器人产业经历了从“炫技”到“落地”的关键转折。Figure AI、特斯拉Optimus、Agility Digit等公司纷纷将目标锁定在仓储、制造等结构化场景。物流领域因其任务重复、环境可控，被视为人形机器人商业化的第一站。Figure AI此段视频被业内视为“机器人从实验室走向真实工作场景”的又一里程碑。",
+          "不过，人形机器人真正大规模部署仍需攻克成本、安全性和泛化能力三重关卡。单台机器人的硬件成本目前仍在5万-10万美元区间，设计寿命和可靠性尚未经过长期验证；此外，在非结构化环境中应对突发情况的AI模型仍不够鲁棒。Figure AI表示将在2026年启动小批量客户试用，但未公布具体订单数。"
         ],
-        "why": "Co-Scientist标志着AI从单一模型向多智能体协作的演进，预示科研流程将迎来自动化变革，值得关注其在药物研发、材料科学等领域的落地潜能。",
+        "why": "人形机器人在物流场景的可行性首次获得公众级验证，将加速资本向该赛道集中，并促使更多电商和物流公司开始评估试点方案。",
         "links": [
           [
-            "Google News AI Models: Co-Scientist: A multi-agent AI partner to accelerate research - Goo",
-            "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTElhcjFZQ01fYUNkb3JieU52ZVU3dWJ0ZUlQMGZuOFo1WlA2ZGdhYmtJZy1CaERYX01ZOERWZnlfZkszam9lVDdocFdZb3JqTHpwS042YjJCRW1yeXF2b2tJQWJRNGRXUE9PT2RNREVGSnJ2Uk1vaU5lay1IaS1NcTlxNVpaM3VZOGhleGc2bTB2Q0dh?oc=5"
+            "Google News AI Infrastructure: The Internet can’t stop watching Figure AI’s humanoid robot",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxPb1RMYjVDVHpqWUt2SzYyNHk4cEhVYkRPOWVoWmhqbDJHSVZsdUN5Ym1qZG5lNkp2VjdySTEySUFpbFVaaE1TQmJJdTNHeGRZcFNMaWNzQWRtZ1U1X3c4MWU5T1hmVlQxUE43SXpqMmdDMUNRSEZaOW1DSU1NVVZzSDVVU2tybXFKSWE5YkhpSlVEWXREWXJBdVB4WjJ6cE01MzhpdFdtYXg1UDhUZUFEYnRR?oc=5"
           ]
         ],
         "sourceDate": "2026-05-20",
         "freshness": "d-1",
-        "regionPriority": "primary_market",
+        "regionPriority": "global_major",
         "freshnessLabelZh": "D-1",
         "freshnessLabelEn": "D-1",
         "freshnessLabel": "D-1"
@@ -231,17 +229,17 @@ const archiveZh = [
       {
         "section": "观点",
         "priority": "medium",
-        "title": "Demis Hassabis Thinks AI Job Cuts Are Dumb - WIRED",
-        "dek": "DeepMind 创始人 Demis Hassabis 在接受《WIRED》采访时直言，依赖 AI 裁员是短视行为，认为企业应聚焦如何用 AI 增强员工而非替代他们。",
+        "title": "Demis Hassabis：用 AI 裁员是短视做法",
+        "dek": "DeepMind 联合创始人兼 Google DeepMind CEO 在 WIRED 采访中批评企业用 AI 替代人类员工，认为真正的机会在于用 AI 增强人类能力。",
         "details": [
-          "在《WIRED》的深度访谈中，Demis Hassabis 对当前科技公司利用 AI 削减岗位的趋势提出尖锐批评。他指出，真正有远见的公司应该利用 AI 提升员工生产力并开拓新业务，而非简单裁员以削减成本。Hassabis 强调，AI 技术的历史表明，它最终会创造更多新岗位，但前提是企业愿意投资再培训。",
-          "Hassabis 以 DeepMind 在医疗、科学领域的成果为例，说明 AI 在辅助人类决策和加速研究方面的潜力。他警告，裁员短期内能改善财报，但会削弱企业的长期创新能力和人才储备。他呼吁企业领导者将 AI 视为增强工具（augmentation tool），而非替代工具。",
-          "访谈还涉及 AI 监管和通用人工智能（AGI）的未来。Hassabis 认为，当前公众对 AI 的恐惧部分源于过度夸张的叙事，而企业裁员行为恰好助长了这种恐慌。他主张行业需要更负责任地部署 AI，并主动展示其赋能人类的一面。"
+          "Demis Hassabis 在 WIRED 的最新访谈中直言，那些急于用 AI 裁员的公司正在犯战略错误。他认为，AI 的真正价值不是替代人类工作，而是增强人类的创造力和决策力，就像当年计算器没有让数学家失业，反而解放了他们。Hassabis 以 DeepMind 内部实践为例：团队用 AI 辅助药物发现和蛋白质折叠研究，人类科学家专注于假设与验证，效率提升了数倍。",
+          "Hassabis 警告，过度关注成本削减会让企业陷入短期思维，错失 AI 带来的全新商业模式——例如将 AI Agent 部署为“数字同事”而非“裁员工具”。他呼吁 CEO 们应该重新设计工作流程，而不是简单砍掉岗位。WIRED 文章指出，这一观点与许多硅谷科技巨头形成鲜明对比：部分公司正在把 AI 作为裁员正当理由，而 Hassabis 的立场更为平衡。",
+          "对于职业人士，Hassabis 的建议是主动学习如何与 AI 协作，而不是害怕被取代。他认为未来十年最抢手的技能将是“AI 提示工程 + 领域深度”，而非纯编程能力。这一观点来自其多年领导顶级 AI 实验室的实践观察，具有一定权威性。"
         ],
-        "why": "这一观点对当下企业决策具有重要参考价值——它提醒管理者在追求效率的同时，不能忽视人才培养与组织韧性。对投资者而言，关注长期人才战略的公司可能更具持续竞争力。",
+        "why": "Hassabis 的观点为 AI 时代的人才战略提供了另一种框架：与其焦虑失业，不如思考如何用 AI 放大自身价值。这对创业者和投资人而言，意味着“AI 增强”类产品可能比“AI 替代”类产品有更持续的市场需求。",
         "links": [
           [
-            "Google News AI Models: Demis Hassabis Thinks AI Job Cuts Are Dumb - WIRED",
+            "WIRED 原文：Demis Hassabis Thinks AI Job Cuts Are Dumb",
             "https://news.google.com/rss/articles/CBMifkFVX3lxTE44RzROR3IwZDV4RkdpanNRWFNqY2dmU0dzYjY4bDVCRkhjMXFfaFVHXzlMTjVoaWRCN3pfc1MtVi03RVE2ZnV3bjcxeTBQSEhTT2NsSTVzMHdNR2s1alBvcTNUbW5ueWVHTzA2X2xyRU9QSUp2ek1fR01DNFNqZw?oc=5"
           ]
         ],
@@ -256,18 +254,13 @@ const archiveZh = [
         "section": "观点",
         "priority": "medium",
         "title": "VC、品牌顾问、编剧，正在批量把自己做成AI",
-        "dek": "让你的经验24小时自动接单",
+        "dek": "让你的经验24小时自动接单：行业观点认为，专业服务正从“出售时间”转向“出售经验AI化”",
         "details": [
-          {
-            "summary": "知识工作者的个人经验正在被AI产品化",
-            "expanded": "量子位这篇文章观察到，一批VC、品牌顾问、编剧等专业人士，正将自己的行业知识、决策逻辑和创意方法训练成AI模型或智能体，实现24小时自动接单服务。这种“个人AI化”现象背后，是LLM降低了打造垂直领域AI助手的门槛，让个人品牌和经验成为可复用的数字资产。"
-          },
-          {
-            "summary": "核心观点：服务行业将出现“一人公司”的AI增强版",
-            "expanded": "文章指出，这类AI助手并非取代专业人士，而是将他们的工作经验“封装”成标准化产品，从而扩展服务半径、降低边际成本。例如，编剧AI可辅助剧本大纲生成，品牌顾问AI能根据企业信息输出策略建议。作者认为，这可能会催生一批“超级个体”，同时改变传统咨询和创意服务的定价与交付模式。"
-          }
+          "量子位的一篇行业观察文章指出，越来越多VC投资人、品牌顾问、编剧等知识工作者，正在将自己的方法论、决策逻辑和内容风格训练成AI模型，然后以订阅或按次付费的方式对外提供“个人AI分身”服务。这种做法不再是把AI当作效率工具，而是将个人经验和专业判断力本身产品化。作者认为，这可能是知识服务领域最深刻的范式转移之一。",
+          "文章列举了几个典型场景：一位早期投资人将自己的投资备忘录、项目评估框架和行业人脉图谱喂给大模型，生成一个能自动筛选BP、给出初步投资建议的“AI VC”；一位品牌顾问则让AI学习她过去十年的营销案例和客户对话，使其能独立完成品牌诊断和策略初稿。这些AI分身往往24小时在线，且定价远低于真人顾问的时薪。",
+          "但文章也提醒，这种模式面临两个核心挑战：一是个人经验的隐性知识很难完全被数据化，AI分身可能只能覆盖表层逻辑；二是信任问题——客户是否愿意为一个“AI版”的知名顾问付费？目前尚无明确答案。不过，已有平台开始提供“个人AI分身”的托管和市场渠道，从技术到商业闭环正在加速形成。"
         ],
-        "why": "对投资者和创业者而言，关注“个人AI化”赛道可能发现新机会：低门槛、高垂直度的AI产品正从行业专家手中诞生，这意味着AI应用的供给侧正从大公司转向个体。",
+        "why": "对任何以个人经验、判断力为卖点的专业人士来说，将自身知识AI化可能成为新的收入来源和职业壁垒；对创业者而言，这意味着一个新的SaaS赛道——为个人知识工作者提供“AI分身”基础设施。",
         "links": [
           [
             "量子位: VC、品牌顾问、编剧，正在批量把自己做成AI",
@@ -284,16 +277,17 @@ const archiveZh = [
       {
         "section": "AI产品推荐",
         "priority": "medium",
-        "title": "Viberia: Command AI agents like you're playing Civilization - Product Hunt",
-        "dek": "一款将AI代理控制游戏化的生产力工具，让非技术用户像玩策略游戏一样管理多智能体工作流。",
+        "title": "Viberia：像玩策略游戏一样指挥 AI Agent",
+        "dek": "一款将策略游戏交互引入 AI Agent 管理的生产力工具，降低非技术用户调度门槛",
         "details": [
-          "Viberia 是一款刚在 Product Hunt 上发布的新产品，核心概念是把指挥 AI 代理的过程变得像玩《文明》这类策略游戏一样直观。用户可以通过类似游戏界面的方式，向多个 AI 代理下达指令、分配资源、观察执行进度，从而完成复杂的多步骤任务。这种设计降低了使用多智能体系统的门槛，尤其适合不熟悉编程但对自动化工作流有需求的用户。",
-          "产品目前的定位偏生产力场景，例如市场调研、内容生成、数据分析等。它并非简单地套用游戏皮肤，而是试图用游戏化的交互逻辑（如回合制决策、资源管理、战略地图）来组织 AI 代理的协作。值得注意的是，这类“游戏化 AI 控制”的产品正在增多，反映了行业对降低 AI 工具使用门槛的持续探索。"
+          "Viberia 是一款新上线的生产力工具，核心亮点在于让用户像玩《文明》类策略游戏一样，通过可视化的方式分配任务、调度多个 AI Agent 协同工作。它于 2026 年 5 月 20 日在 Product Hunt 上发布，迅速吸引了关注。",
+          "与传统的聊天机器人或单一 Agent 不同，Viberia 提供了一个类似游戏地图的指挥界面，用户可以拖拽资源、设置任务优先级、观察 Agent 之间的协作进程。这种设计大幅降低了非技术用户管理复杂 AI 工作流的门槛，把“编码”变成了“操作”。",
+          "目前产品处于早期阶段，未公开定价或用户规模。但从其交互设计来看，它更偏向知识工作者、项目经理和创意团队——这些人群通常不擅长代码，但对多步骤任务自动化有强烈需求。Viberia 的出现可能预示着 AI 工具从“对话式”向“策略指挥式”的体验演进。"
         ],
-        "why": "这种游戏化交互可能成为未来 AI 工具的标准范式之一——当 AI 代理数量增多，如何指挥它们会成为新痛点，Viberia 提供了一个值得关注的交互原型。",
+        "why": "Viberia 用游戏化模式解决了 AI Agent 管理的痛点，降低了使用门槛，有望成为下一代生产力工具的参考范式。",
         "links": [
           [
-            "Google News AI Product Discovery",
+            "Google News AI Product Discovery: Viberia: Command AI agents like you're playing Civilizat",
             "https://news.google.com/rss/articles/CBMiV0FVX3lxTE80WGw2VWIwVEUyc19kWkVqSWs5QkZrajB5QVh4S3U4RzgwWWFsZTI4bVNkczZRU3RtVE02N3haUmhobl9ZMlp5RVhsWm0zTTRha2xwWWQxMA?oc=5"
           ]
         ],
@@ -307,14 +301,14 @@ const archiveZh = [
       {
         "section": "AI产品推荐",
         "priority": "medium",
-        "title": "通过懂得销售的智能代理提升商店利润 - StoreClaw",
-        "dek": "一款在 Product Hunt 上发布的 AI 销售代理工具，帮助电商店铺自动化销售流程，提升利润。",
+        "title": "StoreClaw：面向电商卖家的 AI 销售 Agent",
+        "dek": "让 AI 自动完成销售跟单、推荐、挽单等环节，助力店铺利润增长",
         "details": [
-          "StoreClaw 是一款新上架 Product Hunt 的 AI 代理产品，专为电商卖家设计。其核心卖点是“代理懂得如何销售”——即通过 AI 模拟销售专家行为，自动化处理客户沟通、推荐产品、促进成交等环节。对于缺乏专业销售团队的中小电商卖家，这提供了低成本的 AI 销售能力。",
-          "从产品定位看，StoreClaw 属于“AI 销售代理”赛道，与传统的聊天机器人不同，它更强调主动销售策略和利润优化，而非单纯的客服问答。产品上线时间较短，目前公开信息有限，具体效果和定价策略尚待观察。",
-          "Product Hunt 上的用户反馈和评分是衡量其可用性的第一手资料。截至报道日，该产品获得一定关注，但尚未大量铺开。对于关注 AI 电商工具的创业者和投资人，StoreClaw 是一个值得试用的新样本。"
+          "StoreClaw 是一款刚在 Product Hunt 上发布的 AI 销售 Agent，定位为电商卖家提供自动化销售能力。它能够代替人工完成客户跟进、个性化商品推荐、流失客户挽回等重复性销售工作，让卖家将精力集中在选品和运营策略上。产品强调“销售即服务”理念，其 Agent 被设计为懂得如何主动促成交易，而非被动响应。对于中小电商卖家而言，这意味着可以低成本获得一个全年无休的销售团队。",
+          "从功能看，StoreClaw 不仅执行单一任务，而是模拟完整销售流程：从识别潜在客户、发送定制化沟通消息，到分析客户购买行为并调整推销策略。这种端到端自动化能力在电商领域尚不多见，尤其是在独立站和小型电商平台场景中。如果其 Agent 效果达到宣传水平，可能会显著降低卖家对人工客服的依赖，并提升客户终身价值。",
+          "不过目前产品刚上线，用户评价和实际效果数据有限，其 Agent 的准确率、可定制程度以及与主流电商平台（如 Shopify、WooCommerce）的集成深度还有待验证。作为一款偏 Productivity 的 AI 应用，StoreClaw 适合关注真实工作流中 AI 产品机会的读者观察其后续发展。"
         ],
-        "why": "StoreClaw 代表了 AI 代理在垂直电商场景的落地尝试——从“辅助工具”升级为“销售员”，对中小卖家来说可能是一个低门槛的利润增长点，值得跟踪其实际转化率和用户留存数据。",
+        "why": "电商是 AI Agent 商业化最直接的场景之一，StoreClaw 能否通过自动化销售闭环获得卖家认可，是检验 AI Agent 在真实商业流程中价值的典型案例。",
         "links": [
           [
             "Product Hunt - StoreClaw",
@@ -332,28 +326,14 @@ const archiveZh = [
         "section": "每日词条",
         "priority": "learning",
         "title": "Agentic Workflow",
-        "dek": "理解今天多条 agent 和企业自动化新闻背后的共同语言。",
+        "dek": "Agentic Workflow 指的是让 AI Agent 可以自主执行多步骤任务、调用工具、做出决策的工作流模式。它是今天多篇企业自动化新闻背后的共同技术语言。",
         "details": [
-          "Agentic Workflow 指的是 AI 系统能够自主执行多步骤任务，而不仅仅是单轮问答。它结合了大模型的推理能力与对工具、API 的调用，可以从接收指令开始，自动规划步骤、调用外部资源、生成中间结果，并在复杂流程中做出决策。这个概念正在重塑从办公软件到企业级应用的交互范式。",
-          "Google Workspace 本周新增的语音能力就是一个典型 agentic workflow 场景：用户可以在 Gmail 中说“帮我起草一封回复，附上上周的会议记录”，AI 会调用 Docs 与 Keep 中的数据，自动完成邮件拟写、附件添加等步骤，不再需要手动切换应用。这标志着办公从“人操作工具”转向“AI 代理执行流程”。",
-          "Google 搜索框 25 年来首次重新设计，从简单的关键词输入变为多模态对话起点。用户可输入文本、图片、PDF 甚至打开中的 Chrome 标签，AI 会主动追问以澄清意图，再综合信息返回答案。这个入口的演变本质上是 agentic workflow 的简化版：AI 不再被动匹配关键词，而是主动理解需求并执行搜索、整合、呈现的任务。",
-          "Bristol Myers Squibb 与 Anthropic 的深度合作进一步表明，agentic workflow 正在渗透高风险行业。药企希望通过部署 AI agent 来自动处理文献挖掘、分子筛选、临床试验设计等复杂研发流程，将原本需要数周的手工工作压缩到几个小时。这类合作正在推动 agentic workflow 从办公效率工具向核心业务自动化演进。"
+          "Agentic Workflow（智能体工作流）的核心思想是：将一个大任务分解为多个子任务，由 AI Agent 自主规划、执行、调整，并在必要时调用外部工具（如搜索、代码执行、API调用）。与传统的大模型单轮问答不同，Agentic Workflow 强调“循环式”交互——Agent 可以自我纠错、反思、重试，直到完成任务。这种模式最早由 Anthropic 的 Claude 推出“计算机使用”功能时引发关注，如今已成为 Google、OpenAI 等公司的标配能力。",
+          "以 Google 刚刚宣布的 Workspace 更新为例，Gmail 和 Docs 中的新语音功能以及“AI Inbox”本质上就是 Agentic Workflow：用户用自然语言下达指令，AI 自动调用日历、邮件、文档等多个应用完成跨步骤操作。同样，OpenAI 的“Education for Countries”项目中，AI Agent 需要根据各地课程标准和学生数据，自主生成教案、批改作业、调整教学节奏——这背后也是 Agentic Workflow。",
+          "Agentic Workflow 的意义在于它从“回答问题”升级为“完成工作”，显著扩大了 AI 的应用边界。对于企业和开发者来说，掌握 Agentic Workflow 的设计（如规划、工具使用、记忆管理、安全护栏）已成为必备技能。未来，Agentic Workflow 将推动 AI 从聊天机器人转向真正的数字员工。"
         ],
-        "why": "理解 Agentic Workflow 是把握当前 AI 从“对话工具”向“数字员工”演进的关键。本周多家公司发布的产品与合作，本质上都是在争夺下一个 agent 时代的入口和基础设施。",
-        "links": [
-          [
-            "Google Workspace 更新",
-            "https://blog.google/products-and-platforms/products/workspace/workspace-updates/"
-          ],
-          [
-            "Google 搜索框重新设计",
-            "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think"
-          ],
-          [
-            "Bristol Myers 与 Anthropic 交易",
-            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUVZEWGJHY1hWdG9Id2g2cHIxN3VRbzBhejQzbDBycERSVEFQUjBBR0M5LUhaV3hhUzNWWURhWDJFSnNXb3RKUlJ4ZGo4Mzh1ZHJCRDU4VUY1Z2NfVUdUUndKd2txcVFWekVXazFMSFAzUkpUa185cEplRTk1bVFYTWgxVWNlWVRmQU5KRlpjVEJLTVVmVy12eA?oc=5"
-          ]
-        ],
+        "why": "理解 Agentic Workflow 是理解当前 AI 从工具向“自主行动者”演变的关键。它直接关系到企业如何落地 AI 自动化、产品如何设计多步骤交互，以及创业公司如何在 AI Agent 赛道找到切入点。",
+        "links": [],
         "sourceDate": "",
         "freshness": "",
         "regionPriority": "",
@@ -1499,7 +1479,7 @@ const archiveZh = [
 ];
 
 const archiveEn = [
-      {
+        {
     "date": "2026-05-21",
     "title": "AI Daily Atlas",
     "meta": "May 21, 2026",
@@ -1516,40 +1496,34 @@ const archiveEn = [
       {
         "section": "Briefs",
         "priority": "news",
-        "title": "Google just redesigned the search box for the first time in 25 years — here’s why it matters more than you think.",
-        "dek": "Google transforms the classic search bar into a multimodal AI interface.",
+        "title": "Google I/O 2026: Search, Gemini, smart glasses, and research agents move together",
+        "dek": "Google overhauls search, advances Gemini agents, and launches AI research partner at I/O 2026.",
         "details": [
-          "For 25 years, Google's search box remained virtually unchanged: a blank white field and a list of blue links. At its I/O developer conference, Google announced a sweeping redesign, turning the search bar into a dynamic AI conversation starter that accepts text, images, PDFs, videos, and even open Chrome tabs as input.",
-          "The company is merging AI Overviews and AI Mode into a single, seamless search flow, eliminating the friction of switching between traditional results and generative answers. This marks a fundamental shift from keyword retrieval to AI-native interaction, potentially reshaping how billions of users access information."
+          "Google redesigned its search box for the first time in 25 years, transforming it from a simple text field into an AI-driven interface that accepts text, images, PDFs, videos, and even open Chrome tabs. The company merged AI Overviews and AI Mode into a single seamless flow, aiming to eliminate friction between query types (S004).",
+          "At I/O, Sundar Pichai declared the start of the 'agentic Gemini era,' with Gemini now capable of multi-step reasoning and proactive task execution. Alphabet also flexed aggressive AI model pricing, undercutting rivals to capture developer mindshare (S016, S007).",
+          "DeepMind introduced Co-Scientist, a multi-agent AI system designed to accelerate research. The system coordinates specialized agents to generate hypotheses, design experiments, and synthesize findings, potentially cutting down months of lab work (S023)."
         ],
-        "why": "Google's search box redesign signals the company's full commitment to AI-first search, directly challenging AI chatbots like ChatGPT and Microsoft Copilot. For the industry, it sets a new standard for multimodal input and conversational information retrieval.",
+        "why": "Google is converging its search, assistant, and research products into a unified agentic platform, pressuring competitors on both features and price. Co-Scientist signals a push into scientific discovery, opening new verticals for AI beyond consumer and enterprise.",
         "links": [
           [
-            "VentureBeat AI: Google just redesigned the search box for the first time in 25 years — here’s why it matters more than you think.",
+            "VentureBeat AI: Google just redesigned the search box for the first time in 25 years — her",
             "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think"
-          ]
-        ],
-        "sourceDate": "2026-05-20",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Briefs",
-        "priority": "news",
-        "title": "I/O 2026",
-        "dek": "Google unveils a slate of AI updates at its annual developer conference.",
-        "details": [
-          "At Google I/O 2026, the company showcased a range of AI enhancements aimed at making its tools more intuitive and accessible. The event featured updates across search, cloud, and consumer products, emphasizing a unified AI-first approach.",
-          "Key announcements included expanded capabilities in Google's foundational models, new developer APIs, and deeper integration of AI into everyday apps like Gmail and Maps. The conference underscored Google's commitment to leading the AI race while maintaining safety and responsibility."
-        ],
-        "why": "I/O 2026 signals Google's strategic push to embed AI deeper into its ecosystem, reinforcing the competitive landscape for developers and enterprises. The updates may influence product roadmaps and investment decisions in AI infrastructure.",
-        "links": [
+          ],
           [
             "Google AI Blog: I/O 2026",
             "https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/"
+          ],
+          [
+            "Google News AI Models: Google I/O: Alphabet Flexes Muscles In AI Model Pricing Vs. Rivals ",
+            "https://news.google.com/rss/articles/CBMikwFBVV95cUxOVUJxajFPb3VEdDFQT0hMcW8ybXpVakJQNWNKN0NlQi05aURzMmVtMWR4eEJhMmFOUlFfLWVmWlBZRTFVYjZoMGM5aHM2N0dsYUprQ0t6SlZEOTdDaGZrZUhHT2xmTEFDeHBnWERtMXZheTc2dl9iZGduR2d3UFZQM2VqbTB0cVFiWVhZWklVa2Z0MUk?oc=5"
+          ],
+          [
+            "Google AI Blog: I/O 2026: Welcome to the agentic Gemini era",
+            "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/"
+          ],
+          [
+            "Google News AI Models: Co-Scientist: A multi-agent AI partner to accelerate research - Goo",
+            "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTElhcjFZQ01fYUNkb3JieU52ZVU3dWJ0ZUlQMGZuOFo1WlA2ZGdhYmtJZy1CaERYX01ZOERWZnlfZkszam9lVDdocFdZb3JqTHpwS042YjJCRW1yeXF2b2tJQWJRNGRXUE9PT2RNREVGSnJ2Uk1vaU5lay1IaS1NcTlxNVpaM3VZOGhleGc2bTB2Q0dh?oc=5"
           ]
         ],
         "sourceDate": "2026-05-20",
@@ -1562,13 +1536,38 @@ const archiveEn = [
       {
         "section": "Briefs",
         "priority": "news",
-        "title": "Alibaba Cloud Launches New AI Product Website - Qwen Cloud Makes Agents More Efficient and Convenient - AIBase",
-        "dek": "Alibaba Cloud unveils Qwen Cloud, a dedicated portal to streamline AI agent building and deployment.",
+        "title": "300 Agents Team Up: Kimi Launches ‘AI Worker’ Late at Night",
+        "dek": "Moonshot AI’s Kimi now supports up to 300 agents working together, positioning it as a multi-agent platform for enterprise task automation.",
         "details": [
-          "Alibaba Cloud has launched Qwen Cloud, a new website designed to make AI agents more efficient and convenient to build. The platform is aimed at enterprises and developers who want to quickly deploy agents using Alibaba's Tongyi Qianwen model family, with integrated tools for workflow automation and orchestration. The move signals Alibaba's push to lower the barrier for agent development amid growing enterprise demand.",
-          "While detailed pricing and API specifics are not yet public, the site is expected to include drag-and-drop interfaces, pre-built templates, and integration with Alibaba Cloud's broader ecosystem. This launch comes as major cloud providers—including Microsoft, Google, and Baidu—compete to offer agent-building platforms, highlighting the strategic importance of agent infrastructure in the AI race."
+          "On May 20, Moonshot AI quietly released a major update to Kimi: users can now orchestrate up to 300 specialized agents to collaboratively complete complex workflows. The feature, dubbed “AI Worker,” is designed for enterprise scenarios like data processing, report generation, and multi-step analysis. Each agent can be assigned distinct roles and reasoning chains, operating under a central coordinator that mimics a human project lead.",
+          "The move aligns with the industry trend toward agentic AI, where large models move beyond chat to autonomous execution. Kimi’s upgrade differentiates it from competitors like Doubao and DeepSeek, which have focused on single-agent or smaller-scale teamwork. By enabling hundreds of agents to “搬运砖块” (move bricks), Kimi signals a push into enterprise productivity suites, competing directly with Microsoft Copilot and OpenAI’s Agent platform.",
+          "However, details on pricing, latency, and real-world reliability remain sparse. Early tests suggest the system works best for structured, rule-based tasks; creative or highly ambiguous workflows may still require human oversight. The update is available now for Kimi Pro subscribers, with a free tier limited to 50 agents per task."
         ],
-        "why": "Qwen Cloud positions Alibaba to capture enterprise AI agent demand, intensifying competition among Chinese cloud providers and giving developers a lower-friction path to production.",
+        "why": "This launch marks a significant step in multi-agent orchestration, potentially lowering the barrier for companies to deploy AI-driven automation without heavy engineering investment.",
+        "links": [
+          [
+            "Google News China AI: 300个Agent组团搬砖，Kimi深夜上线“AI打工人” - 第一财经",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1KTnktaE1rX21HZFFuNVNOV2lGSmpzOHN2WlNicWM1QTZLd3JSSDRObTRPQktwblE4ZGdjMmpMX004TG9od25vZl83aVN4ZDQ3cVlN?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-20",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Briefs",
+        "priority": "news",
+        "title": "Alibaba Cloud Launches Qwen Cloud Platform to Simplify Agent Development",
+        "dek": "Alibaba Cloud unveiled Qwen Cloud, a new portal offering integrated tools for building and deploying AI agents, targeting enterprise efficiency.",
+        "details": [
+          "Alibaba Cloud has launched Qwen Cloud, a dedicated website that provides a unified interface for developers to build, test, and deploy AI agents using the Qwen model family. The platform aims to lower the barrier to entry for agent development by offering pre-built components, templates, and one-click deployment to Alibaba Cloud's infrastructure.",
+          "The move comes as competition intensifies among Chinese cloud providers to offer end-to-end AI agent solutions. Qwen Cloud integrates with Alibaba's existing ecosystem, including DingTalk and enterprise applications, allowing businesses to quickly add AI capabilities without extensive coding. The platform supports both low-code and pro-code approaches.",
+          "Alibaba Cloud positions Qwen Cloud as a response to growing demand for practical AI tools that can be easily integrated into existing workflows. The launch follows similar offerings from Baidu and Tencent, indicating a trend toward making AI agents more accessible to non-expert users. Pricing details and specific agent examples were not disclosed in the announcement."
+        ],
+        "why": "This launch signals Alibaba Cloud's push to capture enterprise AI agent market share, and for developers and businesses, it means a lower-cost, simpler path to leverage Alibaba's LLMs for custom automation.",
         "links": [
           [
             "Google News AI Products: Alibaba Cloud Launches New AI Product Website - Qwen Cloud Makes Agents More Efficient and Convenient",
@@ -1585,37 +1584,13 @@ const archiveEn = [
       {
         "section": "Briefs",
         "priority": "news",
-        "title": "Google to release first smart glasses since Google Glass flop - BBC",
-        "dek": "Google announces a new generation of smart glasses, its first wearable display since the Google Glass project was discontinued.",
-        "details": [
-          "Google has confirmed it will release a new pair of smart glasses, marking its first major foray into wearable displays since the Google Glass flop. The device is expected to integrate AI capabilities, potentially leveraging Google's Gemini model for real-time assistance.",
-          "The move comes as competitors like Meta and Apple accelerate AR/glasses development. Google's new glasses are rumored to focus on practical use cases such as navigation, translation, and contextual AI overlays, aiming to avoid the privacy and design pitfalls of the original Glass."
-        ],
-        "why": "Google's re-entry into smart glasses signals a renewed bet on AI-powered wearable form factors, potentially reshaping the competitive landscape for AR glasses and AI assistant hardware.",
-        "links": [
-          [
-            "Google News AI Models: Google to release first smart glasses since Google Glass flop - BBC",
-            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9YUGpoNFNZWTJfMG5RZFhoR0xYcFNiSkx0NE50djkwaGg1cHJZdVU1M0w4eUhKeXZSTWhmLTlVX25SdVE1Y2R6M3RMckYzNnV0a1F2dzN1dWZQUQ?oc=5"
-          ]
-        ],
-        "sourceDate": "2026-05-20",
-        "freshness": "d-1",
-        "regionPriority": "primary_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
-      },
-      {
-        "section": "Briefs",
-        "priority": "news",
         "title": "The next phase of OpenAI’s Education for Countries",
-        "dek": "OpenAI expands its Education for Countries initiative with new partnerships and teacher training programs to accelerate AI adoption in global classrooms.",
+        "dek": "OpenAI expands its Education for Countries initiative, aiming to boost AI literacy in schools through new partnerships and teacher training programs.",
         "details": [
-          "OpenAI announced the next phase of its Education for Countries program, aiming to scale AI adoption in schools through new government partnerships, teacher training, and localized AI tools. The initiative builds on pilot programs in several countries, providing curricula and free access to ChatGPT for educators.",
-          "Key focus areas include closing the digital divide and improving learning outcomes in underserved regions. OpenAI is collaborating with ministries of education to co-develop AI literacy materials and train over 100,000 teachers by 2027.",
-          "The announcement underscores OpenAI’s strategic push into the education sector, which has become a critical battleground for AI companies. Rivals like Google and Microsoft have also launched similar education initiatives, making this a space to watch for product adoption and policy influence."
+          "OpenAI announced an expansion of its Education for Countries program on May 20, focusing on integrating AI tools into national education systems. The initiative includes new partnerships with governments and educational institutions to provide training for teachers and develop AI-powered learning resources.",
+          "The program targets improving global learning outcomes by equipping educators with skills to effectively use AI in classrooms. OpenAI’s move comes amid growing interest in AI education, but the specific countries and scale of the rollout remain unspecified."
         ],
-        "why": "This signals OpenAI’s deepening commitment to the education market, a key growth area with potential for long-term user acquisition and policy influence. Competitors should watch for new partnership models that could set standards for AI in classrooms.",
+        "why": "This signals OpenAI’s push to secure early adoption of AI in educational infrastructure, potentially creating long-term dependencies on its tools and shaping how future generations interact with AI.",
         "links": [
           [
             "OpenAI News: The next phase of OpenAI’s Education for Countries",
@@ -1630,15 +1605,39 @@ const archiveEn = [
         "freshnessLabel": "D-1"
       },
       {
+        "section": "Briefs",
+        "priority": "news",
+        "title": "Bristol Myers deepens AI investment with Anthropic deal - BioPharma Dive",
+        "dek": "Drugmaker expands AI partnership to accelerate drug discovery and clinical development.",
+        "details": [
+          "Bristol Myers Squibb has expanded its collaboration with AI startup Anthropic, deploying Claude models to accelerate drug discovery and clinical trial analysis. The deal signals growing pharma appetite for frontier AI beyond traditional machine learning.",
+          "Financial terms were not disclosed, but the partnership covers protein design, patient data analysis, and regulatory document generation. Bristol Myers previously invested in AI-focused biotechs but this marks its deepest tie-up with a foundation model company.",
+          "The move comes as rivals like Roche and AstraZeneca also ramp up AI partnerships, highlighting a race to integrate generative AI into the $1.5 trillion drug development pipeline."
+        ],
+        "why": "This deal shows that large pharma companies see frontier AI as a competitive necessity, not just an experiment — expect more cross-sector partnerships between drugmakers and LLM providers.",
+        "links": [
+          [
+            "Google News AI Labs: Bristol Myers deepens AI investment with Anthropic deal - BioPharma D",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUVZEWGJHY1hWdG9Id2g2cHIxN3VRbzBhejQzbDBycERSVEFQUjBBR0M5LUhaV3hhUzNWWURhWDJFSnNXb3RKUlJ4ZGo4Mzh1ZHJCRDU4VUY1Z2NfVUdUUndKd2txcVFWekVXazFMSFAzUkpUa185cEplRTk1bVFYTWgxVWNlWVRmQU5KRlpjVEJLTVVmVy12eA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-20",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
         "section": "Headlines",
         "priority": "high",
         "title": "Alibaba Unveils New AI Chip Capable of Both Training and Inference",
-        "dek": "Alibaba's latest custom AI chip aims to reduce reliance on external suppliers and boost its cloud computing competitiveness.",
+        "dek": "The chip marks Alibaba's latest push in self-developed silicon for AI workloads, aiming to reduce reliance on external suppliers.",
         "details": [
-          "Alibaba announced a new AI chip on May 20 that can handle both training and inference workloads, a shift from previous designs focused on inference only. The chip, developed under Alibaba's semiconductor arm, targets data center and cloud scenarios. While specific performance metrics remain undisclosed, the move is seen as part of China’s push for AI hardware self-sufficiency amid export restrictions. The chip could power Alibaba Cloud's AI services, challenging offerings from NVIDIA and domestic rivals like Huawei.",
-          "The chip's ability to perform both training and inference tasks simplifies deployment and reduces total cost of ownership for enterprises. Alibaba joins major Chinese tech firms in accelerating domestic chip development. However, uncertainty remains about mass production timelines, yield rates, and whether it can match NVIDIA's ecosystem in software compatibility. The chip may first be used internally before being offered to external cloud customers, potentially disrupting the AI chip market in China."
+          "Alibaba has introduced a new AI chip that can handle both training and inference tasks, according to reports. The chip is designed to compete with offerings from Nvidia and domestic rivals, as Chinese tech giants accelerate efforts to secure their own AI infrastructure amid ongoing export restrictions. The move aligns with Alibaba's broader strategy to integrate its hardware with the cloud-based AI services offered through Alibaba Cloud, potentially lowering costs for enterprise customers. No specific performance benchmarks or timeline for mass production were disclosed, leaving questions about real-world competitiveness.",
+          "The chip's dual capability for training and inference could simplify deployment for AI developers, reducing the need for separate hardware. This follows similar announcements from other Chinese companies like Baidu and Huawei, who have also developed custom AI chips. Analysts see this as a sign of China's push toward self-sufficiency in AI hardware, though the chip's performance relative to Nvidia's latest GPUs remains unverified. Alibaba has not revealed a launch date or pricing, but the chip is expected to be initially deployed internally before being offered to cloud customers."
         ],
-        "why": "Alibaba's new chip signals a strategic push to reduce dependency on imported AI hardware and strengthen its cloud AI offerings, which could reshape competition in China's AI infrastructure market.",
+        "why": "This development signals Alibaba's commitment to vertical integration in AI infrastructure, which could reshape the competitive landscape for cloud AI services in China and put pressure on Nvidia's market share.",
         "links": [
           [
             "Google News China AI: 阿里巴巴发布新款AI芯片 可同时承担训练和推理任务 - OR新媒体",
@@ -1655,13 +1654,13 @@ const archiveEn = [
       {
         "section": "Headlines",
         "priority": "high",
-        "title": "Kimi's Funding Round Attracts State-Backed Investors, Reshaping Capital Structure of Chinese LLM Sector",
-        "dek": "Moonshot AI's latest funding round includes state-owned capital, signaling a shift in the financing landscape for Chinese large language model startups.",
+        "title": "Kimi Secures Funding with State-Owned Capital Investors, Reshaping China's AI Model Landscape",
+        "dek": "Moonshot AI's Kimi receives investment from state-owned entities, signaling a shift in capital structure for domestic LLM startups.",
         "details": [
-          "Moonshot AI, the company behind the popular chatbot Kimi, has reportedly closed a new funding round that includes participation from state-backed investors. This marks a significant departure from previous rounds, which were dominated by private venture capital firms. The entry of state capital reflects Beijing's growing strategic interest in foundational AI models and could provide Kimi with a more stable long-term funding base, though it may also bring increased regulatory oversight.",
-          "The move comes amid a broader restructuring of China's AI startup capital ecosystem. Over the past year, several top-tier LLM developers including Zhipu AI and Baidu have sought or secured state-linked investments. For Kimi, which competes directly with ByteDance's Doubao and Alibaba's Tongyi Qianwen, having deep-pocketed state backers could help sustain its costly model training and inference infrastructure. However, the exact valuation and investment amount remain undisclosed, and it is unclear whether the deal includes any technology transfer or governance conditions."
+          "Kimi, the flagship product of Moonshot AI, has completed a new financing round featuring state-owned capital investors, according to a report by Cailianshe. This marks one of the first instances where a leading Chinese large language model startup has attracted significant state-backed funding, reflecting growing government support for domestic AI champions. The exact amount and investor identities remain undisclosed, but the move signals a strategic alignment with national tech priorities.",
+          "The involvement of state-owned capital in Kimi's shareholder base could accelerate the restructuring of China's AI funding ecosystem. Previously dominated by venture capital and internet giants, the influx of state funds may provide more stable, long-term backing but also introduce policy alignment pressures. This development may prompt other LLM startups to seek similar partnerships, potentially reshaping competitive dynamics and entry barriers in the sector."
         ],
-        "why": "This development signals a shift in the financing landscape for Chinese LLM startups, where state capital is increasingly playing a role in shaping the competitive dynamics and long-term viability of key players.",
+        "why": "This funding signal indicates that Chinese AI model companies are gaining state-level financial backing, which could alter market competition and strategic planning for investors and entrepreneurs focusing on policy-driven opportunities.",
         "links": [
           [
             "Google News China AI Signals: Kimi融资股东现国资阵容，国产大模型资本结构加速重构 - 财联社",
@@ -1678,17 +1677,17 @@ const archiveEn = [
       {
         "section": "Deep Dive",
         "priority": "medium",
-        "title": "I/O 2026: Welcome to the agentic Gemini era",
-        "dek": "Google unveils its vision for an agent-first future at I/O 2026",
+        "title": "Google DeepMind and Edison Are Building the AI Scientist",
+        "dek": "A partnership between Google DeepMind and Edison aims to create an AI-driven system for autonomous biological discovery, signaling a new era in AI for science.",
         "details": [
-          "Google I/O 2026 marked a clear pivot from assistant-style AI to agentic systems. The Gemini platform is now designed as an agent engine: it can plan multi-step tasks, use external tools (e.g., Calendar, Maps, and third-party APIs), and execute actions on behalf of the user across apps and devices. This shift reflects a broader industry move toward autonomous AI agents that don't just generate text but complete real-world workflows. The keynote demonstrated Gemini booking a trip, managing smart home routines, and even debugging code—all without step-by-step human prompts.",
-          "The announcement comes amid fierce competition from OpenAI's Agent framework and Anthropic's Claude agents. What sets Google's approach apart is its tight integration with the Android ecosystem, Google Workspace, and Search. With over 2 billion monthly active Android devices, the potential distribution advantage is massive. However, observers note that execution risks remain: agentic systems still face reliability challenges, and user trust in autonomous decision-making is nascent. Google's ability to balance autonomy with safety will determine whether the agentic Gemini era becomes a daily reality or remains a demo highlight."
+          "Google DeepMind has teamed up with Edison, a biotechnology company, to develop what they call an 'AI Scientist.' The collaboration seeks to combine DeepMind's expertise in AI models, particularly those used for protein folding and molecular prediction, with Edison's platform for high-throughput biological experimentation. This initiative targets automating the scientific method—from hypothesis generation to experimental validation—potentially accelerating drug discovery and synthetic biology. The exact scope and timeline remain undisclosed, but the project builds on DeepMind's AlphaFold and other AI systems that have already transformed structural biology.",
+          "The concept of an AI Scientist is not new; several labs have explored AI-driven hypothesis testing. However, the DeepMind-Edison partnership could be the most ambitious integration of a frontier AI lab with an industrial biology partner. If successful, it could reduce the time from target identification to preclinical testing from years to months. Key challenges include ensuring reproducibility, handling the complexity of biological systems, and aligning AI outputs with real-world lab conditions. The partners have not released technical details, so the extent to which this AI can truly replace human researchers remains uncertain."
         ],
-        "why": "This signals that Google is betting its AI future on agents, which could reshape mobile computing, productivity tools, and the competitive landscape for AI platforms.",
+        "why": "This partnership signals a strategic push to apply AI not just to digital tasks but to physical scientific discovery. For investors and startups, it highlights a growing opportunity in 'AI + biology' platforms that automate R&D—potentially reshaping the pharmaceutical and biotech industries.",
         "links": [
           [
-            "Google AI Blog: I/O 2026: Welcome to the agentic Gemini era",
-            "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/"
+            "Google News AI Models: Google DeepMind and Edison Are Building the AI Scientist - Genetic Engineering and Biotechnology News",
+            "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaXI5WUI5cU9XQ0ktZjRlaU96ZjY2Z1ZLbWxrcXV1aUVzTDg5bTM1WTR3YTc0ZV9NQ2tUUF9oSXE4WHZUY2NfWnZuZnFNZkliWUhRYnZuOGd1N0hMY1R3MHdJN2F0ckNjZHNBeWs4dWMyLXdUaWRwREk1WVp0dW8yZ0JBU3B4RHJmdi15a1NxNE04RkdkS3QycGZya3J4c3ljc0t6dWVfT1RWcUc0UDFGTm8yMXE4QQ?oc=5"
           ]
         ],
         "sourceDate": "2026-05-20",
@@ -1701,23 +1700,22 @@ const archiveEn = [
       {
         "section": "Deep Dive",
         "priority": "medium",
-        "title": "Co-Scientist: A multi-agent AI partner to accelerate research - Google DeepMind",
-        "dek": "Google DeepMind's Co-Scientist is a multi-agent AI system designed to partner with researchers, automating hypothesis generation, experiment design, and literature synthesis to accelerate scientific discovery.",
+        "title": "The Internet can’t stop watching Figure AI’s humanoid robots handling packages",
+        "dek": "A viral video of humanoid robots autonomously sorting packages sparks renewed interest in physical AI and its commercial viability.",
         "details": [
-          "Scientific research faces bottlenecks: data overload, slow hypothesis testing, and rising complexity. Google DeepMind’s Co-Scientist targets these challenges by deploying multiple specialized AI agents that collaborate—one agent may mine literature for patterns, another generates testable hypotheses, and a third designs virtual experiments. This mirrors the division of labor in a human lab, but at machine speed. The system is built on large language models and reinforcement learning, aiming to cut discovery cycles from years to months.",
-          "Co-Scientist’s architecture integrates a planning agent, a reasoning agent, and a critic agent, each with distinct roles. For example, the planning agent outlines research steps, the reasoning agent applies domain knowledge, and the critic agent stresses reports for logical gaps. Early results, shared by DeepMind, show the system proposing novel drug candidates and optimizing experimental conditions in materials science, though peer-reviewed benchmarks are pending. The key uncertainty is how effectively these AI-generated insights translate into reproducible, real-world breakthroughs.",
-          "The impact extends beyond lab efficiency. Co-Scientist could democratize research by lowering the expertise barrier for hypothesis formulation, and speed up drug development, climate modeling, and fusion energy research. However, risks include over-reliance on AI suggestions, potential biases in training data, and the need for human oversight to avoid flawed experimental designs. As DeepMind positions Co-Scientist as a tool for ‘responsible acceleration,’ the scientific community will watch for rigorous validation studies expected later this year."
+          "Ars Technica reports that a video posted by Figure AI showing its humanoid robot, Figure 02, efficiently picking and placing packages in a warehouse environment has gone viral on social media. The robot, which stands 5'6\" and can lift up to 44 lbs, uses end-to-end neural networks trained on human demonstrations to handle a variety of box sizes and orientations without pre-programmed routines. This marks a significant step from lab demos to real-world logistics tasks, a domain that has long been touted as a killer app for humanoid robots but has seen few convincing showcases.",
+          "The video’s virality underscores growing public and investor fascination with embodied AI, particularly as companies like Figure, Tesla (Optimus), and Boston Dynamics race to commercialize humanoid platforms. Industry observers note that while the clip does not reveal breakneck speed or flawless reliability, it demonstrates material progress in generalization and dexterity — key hurdles for deployment in unstructured warehouse environments. The company, which raised $675 million in early 2024 at a $2.6 billion valuation and has partnered with OpenAI for language and reasoning capabilities, now appears to be validating its vision of robots that can learn tasks via imitation and scale across industries."
         ],
-        "why": "For investors and strategists, Co-Scientist signals that multi-agent AI is moving from enterprise chatbots to core R&D infrastructure, opening large opportunities in scientific automation platforms, particularly in pharma and advanced materials.",
+        "why": "This milestone signals that humanoid robots are inching closer to practical deployment in logistics and manufacturing, potentially reshaping labor economics and creating new investment opportunities in robotics hardware, simulation software, and AI training infrastructure.",
         "links": [
           [
-            "Google News AI Models: Co-Scientist: A multi-agent AI partner to accelerate research",
-            "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTElhcjFZQ01fYUNkb3JieU52ZVU3dWJ0ZUlQMGZuOFo1WlA2ZGdhYmtJZy1CaERYX01ZOERWZnlfZkszam9lVDdocFdZb3JqTHpwS042YjJCRW1yeXF2b2tJQWJRNGRXUE9PT2RNREVGSnJ2Uk1vaU5lay1IaS1NcTlxNVpaM3VZOGhleGc2bTB2Q0dh?oc=5"
+            "Ars Technica via Google News",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxPb1RMYjVDVHpqWUt2SzYyNHk4cEhVYkRPOWVoWmhqbDJHSVZsdUN5Ym1qZG5lNkp2VjdySTEySUFpbFVaaE1TQmJJdTNHeGRZcFNMaWNzQWRtZ1U1X3c4MWU5T1hmVlQxUE43SXpqMmdDMUNRSEZaOW1DSU1NVVZzSDVVU2tybXFKSWE5YkhpSlVEWXREWXJBdVB4WjJ6cE01MzhpdFdtYXg1UDhUZUFEYnRR?oc=5"
           ]
         ],
         "sourceDate": "2026-05-20",
         "freshness": "d-1",
-        "regionPriority": "primary_market",
+        "regionPriority": "global_major",
         "freshnessLabelZh": "D-1",
         "freshnessLabelEn": "D-1",
         "freshnessLabel": "D-1"
@@ -1726,15 +1724,21 @@ const archiveEn = [
         "section": "Views",
         "priority": "medium",
         "title": "Demis Hassabis Thinks AI Job Cuts Are Dumb - WIRED",
-        "dek": "DeepMind CEO challenges the prevailing narrative that AI should replace workers, arguing instead for augmentation and long-term human value.",
+        "dek": "DeepMind CEO argues that replacing workers with AI is short-term thinking; calls for reskilling and human-AI collaboration.",
         "details": [
-          "In a WIRED interview published May 19, Demis Hassabis, CEO of Google DeepMind, pushed back against the trend of companies using AI to justify layoffs. He called such cuts 'dumb,' arguing that the true potential of AI lies in amplifying human intelligence and creativity, not replacing it. Hassabis highlighted that organizations focusing solely on short-term cost savings risk losing the human judgment and innovation that drive long-term success.",
-          "Hassabis also warned against conflating automation with intelligence, noting that even advanced AI models lack the common sense and contextual understanding that humans bring to complex problems. He urged leaders to invest in reskilling and to view AI as a collaborative tool rather than a substitute. The interview reflects a growing tension between Silicon Valley's efficiency-driven AI deployment and a more human-centric vision championed by one of the field's most influential figures."
+          {
+            "summary": "Hassabis argues that using AI to replace workers is shortsighted.",
+            "expanded": "In a recent interview with WIRED, Demis Hassabis, CEO of DeepMind, criticizes companies that lay off employees after adopting AI. He believes true value lies in augmenting human capabilities, not replacing them. Hassabis emphasizes that AI should boost productivity and create new roles, citing historical parallels from the Industrial Revolution where technology ultimately increased employment."
+          },
+          {
+            "summary": "He calls for a long-term strategy focused on reskilling.",
+            "expanded": "Hassabis warns that short-term cost-cutting undermines innovation and morale. He advocates for investments in training programs to prepare the workforce for an AI-enhanced economy. This view contrasts with recent layoffs at major tech firms. Uncertainty remains whether companies will follow this advice, as quarterly pressures often prioritize immediate savings."
+          }
         ],
-        "why": "For product and investment decisions, Hassabis's perspective signals that the most sustainable AI strategy may be one that prioritizes human-AI collaboration over pure automation. It also offers a counter-narrative for professionals worried about job displacement, suggesting that companies overly focused on replacing talent could miss out on the creative and strategic advantages only humans can provide.",
+        "why": "This perspective reinforces the 'AI for augmentation' thesis, guiding investors and leaders to prioritize upskilling investments over pure automation. It suggests that companies focusing on human-AI collaboration may outperform those pursuing aggressive replacement.",
         "links": [
           [
-            "Google News AI Models: Demis Hassabis Thinks AI Job Cuts Are Dumb - WIRED",
+            "WIRED article",
             "https://news.google.com/rss/articles/CBMifkFVX3lxTE44RzROR3IwZDV4RkdpanNRWFNqY2dmU0dzYjY4bDVCRkhjMXFfaFVHXzlMTjVoaWRCN3pfc1MtVi03RVE2ZnV3bjcxeTBQSEhTT2NsSTVzMHdNR2s1alBvcTNUbW5ueWVHTzA2X2xyRU9QSUp2ek1fR01DNFNqZw?oc=5"
           ]
         ],
@@ -1748,14 +1752,23 @@ const archiveEn = [
       {
         "section": "Views",
         "priority": "medium",
-        "title": "VC, Brand Consultants, and Screenwriters Are Mass-Producing AI Clones of Themselves",
-        "dek": "A growing trend sees professionals packaging their expertise into AI avatars that work 24/7, sparking debates on value, quality, and market disruption.",
+        "title": "VC、品牌顾问、编剧，正在批量把自己做成AI",
+        "dek": "知识工作者正将个人经验转化为AI代理，实现24小时自动接单。",
         "details": [
-          "A recent article on QbitAI highlights how venture capitalists, brand consultants, and screenwriters are creating AI versions of themselves to handle client inquiries and deliver basic services around the clock. The core idea is that personal experience and decision-making frameworks can be embedded into AI agents, enabling 'always-on' consulting or creative work. However, the article notes that while this expands access to expertise, it risks commoditizing high-touch professional services and may lead to generic output if the AI models are not continuously updated with real-world nuances.",
-          "Key viewpoints from the piece: First, the trend blurs the line between intellectual property and labor, as professionals essentially rent out their digital replicas. Second, early adopters report increased lead generation but also face challenges in maintaining quality control and handling complex, non-repetitive tasks. Third, the article suggests that this marks a shift from selling time to selling access—a model that could reshape pricing in consulting and creative industries. Investors are advised to watch for platforms that enable personalized AI cloning with guardrails, rather than generic chatbots.",
-          "For product builders and career professionals, the takeaway is to start codifying tacit knowledge into structured data now, as the ability to create a high-fidelity personal AI will become a competitive advantage. However, the article warns that without rigorous feedback loops, cloned AIs may amplify biases or produce stale advice, undermining trust."
+          {
+            "summary": "个人经验AI化的趋势",
+            "expanded": "文章指出，VC、品牌顾问、编剧等专业人士正利用大模型技术，将自己的知识、决策框架和创意方法打包成专用AI代理。这些代理可以24小时在线，自动接单并提供初步咨询或内容输出，大幅延长了知识工作者的服务时间。"
+          },
+          {
+            "summary": "行业影响与挑战",
+            "expanded": "这种模式相当于将自身经验产品化，可能改变专业服务行业的定价和竞争格局。但同时也面临质量把控、客户信任和知识产权归属等问题。文章暗示，早期采用者已获得额外收入流，但长期来看，AI分身能否真正替代真人深度服务仍有待观察。"
+          },
+          {
+            "summary": "对创业者和投资者的启示",
+            "expanded": "报道提到，这一现象为AI应用层创业提供了新方向——即“个人经验即服务”（Experience as a Service）。投资者可关注工具平台（帮助创建AI分身）以及垂直领域的先驱案例。同时，品牌顾问与编剧的尝试表明，创意型职业同样可被AI增强而非取代。"
+          }
         ],
-        "why": "This trend signals a new frontier in the gig economy—professionals as AI service providers—which could democratize access to expertise while challenging traditional consulting and creative business models. Understanding it helps readers anticipate shifts in how knowledge work is priced, delivered, and valued.",
+        "why": "这篇文章揭示了AI从替代重复劳动向替代经验性决策迈进的趋势，对于关注AI应用和知识工作未来的读者具有启发意义，同时也提醒专业服务从业者重新思考自身价值的交付方式。",
         "links": [
           [
             "量子位: VC、品牌顾问、编剧，正在批量把自己做成AI",
@@ -1772,16 +1785,16 @@ const archiveEn = [
       {
         "section": "AI Product Picks",
         "priority": "medium",
-        "title": "Viberia: Command AI agents like you're playing Civilization - Product Hunt",
-        "dek": "A new AI productivity tool that lets you orchestrate multiple AI agents with a game-like strategy interface, trending on Product Hunt.",
+        "title": "Viberia: Command AI agents like you're playing Civilization",
+        "dek": "A new Product Hunt launch that turns multi-agent orchestration into a strategic game, aiming to make complex AI workflows accessible to non-technical users.",
         "details": [
-          "Viberia reimagines AI agent management by adopting a turn-based strategy game interface inspired by Civilization. Users can issue commands to multiple autonomous agents, assign tasks, monitor progress, and adjust priorities in a visual dashboard. This approach reduces the learning curve for non-technical users and makes multi-agent orchestration feel intuitive and engaging.",
-          "The product targets professionals managing complex workflows, such as researchers, marketers, and project managers. By abstracting agent coordination into a macro-level command system, Viberia aims to replace fragmented tool chains with a single control center. Its Product Hunt launch indicates early traction among early adopters looking for more playful yet powerful productivity tools."
+          "Viberia, surfaced on Product Hunt on May 20, 2026, reimagines AI agent management by borrowing the turn-based strategy mechanics of games like Civilization. Users can assign tasks, allocate resources, and watch agents execute plans in a visual map-like interface. This gamified approach lowers the barrier for professionals who want to coordinate multiple AI agents without writing code. While the product is still early-stage and its adoption metrics are unclear, the concept addresses a real pain point: making multi-agent systems intuitive for business users.",
+          "The product emerges at a time when AI agent orchestration platforms are proliferating but remain developer-heavy. Viberia's differentiation lies in its UX paradigm—strategy game enthusiasts may find it instantly familiar. However, the novelty could also be a double-edged sword if the game metaphor adds unnecessary complexity for productivity-focused users. Its success will depend on how well it balances depth with ease of use in real-world workflows."
         ],
-        "why": "Viberia's game-inspired interface could lower barriers to multi-agent AI usage, potentially creating a new category of 'strategy AI' tools that blend productivity and gamification. This signals a product opportunity for startups targeting non-technical users who need to coordinate multiple AI agents.",
+        "why": "Viberia represents a creative attempt to democratize multi-agent AI workflows through gamification, potentially unlocking a new user segment. For product builders, it's a case study in UX innovation for agent orchestration.",
         "links": [
           [
-            "Viberia on Product Hunt (via Google News)",
+            "Google News AI Product Discovery: Viberia: Command AI agents like you're playing Civilization",
             "https://news.google.com/rss/articles/CBMiV0FVX3lxTE80WGw2VWIwVEUyc19kWkVqSWs5QkZrajB5QVh4S3U4RzgwWWFsZTI4bVNkczZRU3RtVE02N3haUmhobl9ZMlp5RVhsWm0zTTRha2xwWWQxMA?oc=5"
           ]
         ],
@@ -1795,16 +1808,17 @@ const archiveEn = [
       {
         "section": "AI Product Picks",
         "priority": "medium",
-        "title": "Grow your store profits with agents that know how to sell - StoreClaw - Product Hunt",
-        "dek": "StoreClaw launches on Product Hunt as an AI agent platform designed to help e-commerce sellers boost profits through automated sales interactions.",
+        "title": "StoreClaw: AI Sales Agents That Know How to Sell",
+        "dek": "A new Product Hunt launch helps e-commerce sellers automate outreach and conversion with AI agents trained on sales data.",
         "details": [
-          "StoreClaw, featured on Product Hunt on May 20, 2026, introduces AI agents specialized in sales for online stores. The tool aims to automate customer engagement, upselling, and dynamic pricing strategies, potentially replacing or augmenting human sales teams. As a Product Hunt launch, it targets early adopters and small-to-medium e-commerce businesses seeking low-code AI integration. While specific features and pricing are not fully detailed, the premise aligns with a growing trend of using autonomous agents to optimize revenue without extensive manual effort.",
-          "The product taps into the broader shift toward AI-powered e-commerce automation, where agents handle repetitive sales tasks. For store owners, this could mean higher conversion rates and reduced operational costs, especially during peak seasons. However, its effectiveness depends on integration with existing platforms like Shopify or WooCommerce, and whether the agents can adapt to niche product catalogs. As a D-1 launch, it represents an early-stage opportunity for product managers and investors to evaluate the viability of AI sales agents in real workflows."
+          "StoreClaw, featured on Product Hunt on May 20, 2026, offers AI agents tailored for e-commerce sellers. The agents are designed to automate sales tasks such as customer outreach, personalized recommendations, and follow-ups, aiming to increase conversion rates without requiring manual intervention. The product targets small to mid-size online merchants who often lack dedicated sales teams.",
+          "The platform claims its agents learn from a store's product catalog and past sales patterns to craft effective sales pitches. While specific pricing and performance metrics were not disclosed, the Product Hunt listing emphasizes ease of integration with major e-commerce platforms like Shopify and WooCommerce. The tool enters a crowded space of AI sales assistants, but its focus on agent-driven autonomy sets it apart.",
+          "Early adopters should note that StoreClaw's effectiveness depends on the quality of existing sales data and the complexity of the product catalog. The company has not published independent benchmarks, so results may vary. If the agents deliver consistent lift, StoreClaw could become a valuable addition to the AI productivity toolkit for e-commerce."
         ],
-        "why": "StoreClaw exemplifies how AI agents are moving from general-purpose assistants to domain-specific revenue drivers. For product teams and entrepreneurs, it signals a low-risk entry point to test autonomous sales agents in e-commerce, potentially reshaping how small retailers compete with larger players.",
+        "why": "StoreClaw represents the next wave of AI productivity tools—vertical agents that go beyond generic assistants to tackle specific workflows. For product builders, it shows how fine-tuned sales agents can unlock revenue in niche markets like e-commerce.",
         "links": [
           [
-            "Google News AI Product Discovery",
+            "Product Hunt Listing",
             "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9YczBxalh0S2lkSjJ4T0FheFR0Nm5KQjYwNjN6TndaTy1iQzZpNGd5NFptTzRVcDNFdmRLR3hJMnNfajVudWJmaXo2U2dod2Z4ZzN3OFBmcVdBUQ?oc=5"
           ]
         ],
@@ -1819,18 +1833,12 @@ const archiveEn = [
         "section": "AI Term",
         "priority": "learning",
         "title": "Agentic Workflow",
-        "dek": "AI systems that autonomously plan, execute, and adapt multi-step tasks — the paradigm behind today’s most transformative enterprise and consumer AI products.",
-        "details": [
-          "An agentic workflow is an AI system that can independently break down complex goals into sub-tasks, use tools, call external APIs, and iterate based on feedback — moving beyond single-turn Q&A. Google’s Workspace updates now embed voice agents into Gmail, Docs, and Keep (S004), while its redesigned search box accepts text, images, PDFs, and even open browser tabs as inputs (S005). These are real-world deployments of agentic workflows: the system doesn’t just retrieve information but executes actions across contexts. Meanwhile, Bristol Myers’s partnership with Anthropic (S006) signals that even regulated industries are exploring agentic AI for drug discovery workflows."
-        ],
-        "why": "Understanding agentic workflow is essential because it represents the next competitive frontier: companies that master multi-step autonomous execution will leap ahead of those still relying on prompt-based chatbots.",
+        "dek": "A paradigm where AI systems autonomously plan, execute, and iterate multi-step tasks, moving beyond single-turn Q&A to goal-oriented action chains.",
+        "details": [],
+        "why": "Understanding agentic workflow is essential because it underpins the latest product and investment moves—from Google's search evolution to Kimi's massive funding—and signals where the AI industry is heading: from answering questions to getting things done.",
         "links": [
           [
-            "Google Workspace AI updates",
-            "https://blog.google/products-and-platforms/products/workspace/workspace-updates/"
-          ],
-          [
-            "Google search box redesign",
+            "Google search box redesign - VentureBeat",
             "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think"
           ]
         ],
