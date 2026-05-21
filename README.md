@@ -102,11 +102,11 @@ node tools/generate-broadcast.mjs --lang en --date 2026-05-15 --stdout
 
 ## Automation / 自动更新
 
-- **每日自动更新**：GitHub Actions 在 UTC 23:30 运行，也就是北京时间每天 7:30。
-  **Daily automation**: GitHub Actions runs at 23:30 UTC, which is 7:30 Beijing time every day.
+- **工作日自动更新**：GitHub Actions 在 UTC 周日到周四 23:30 运行，也就是北京时间周一到周五 7:30。
+  **Weekday automation**: GitHub Actions runs Sunday-Thursday at 23:30 UTC, which is Monday-Friday 7:30 Beijing time.
 
-- **覆盖窗口**：每天覆盖过去 24 小时内的重要 AI 信号。
-  **Coverage window**: each issue covers important AI signals from the past 24 hours.
+- **覆盖窗口**：周二到周五覆盖北京时间前一自然日；周一覆盖周六和周日。
+  **Coverage window**: Tuesday-Friday issues cover the previous Beijing calendar day; Monday issues cover Saturday and Sunday.
 
 - **发布方式**：脚本会更新 `app.js`，提交到 `main`，然后 GitHub Pages 自动刷新。
   **Publishing flow**: the script updates `app.js`, commits to `main`, and GitHub Pages refreshes automatically.
@@ -116,11 +116,20 @@ node tools/generate-broadcast.mjs --lang en --date 2026-05-15 --stdout
 
 ## Roadmap / 接下来想做
 
-- **搭建可维护的内容后台**：增加轻量编辑/admin 面板，用来维护日报模板、归档内容、产品推荐和报告条目。
-  **Build a maintainable content backend**: add a lightweight editor/admin panel for daily templates, archive entries, product picks, and report items.
-
 - **结构化信息源与评分逻辑**：为每条新闻增加来源类型、可信度、地区、公司、主题和推荐理由，提升筛选质量。
   **Add structured source metadata and scoring**: capture source type, confidence, region, company, topic, and selection rationale for each story.
+
+- **原文深度抓取**：接入 Jina Reader API、Firecrawl 或同等工具，为高分候选补充 clean text，减少只靠 RSS snippet 写作带来的信息不足。
+  **Fetch full source text**: add Jina Reader API, Firecrawl, or an equivalent reader layer so high-scoring leads get clean source text instead of relying only on RSS snippets.
+
+- **结构化输出升级**：将当前 JSON 输出约束升级为更严格的 JSON Schema / structured outputs，降低格式漂移和模块缺失。
+  **Upgrade structured outputs**: move from JSON-only prompting to stricter JSON Schema or provider-native structured outputs to reduce format drift and missing modules.
+
+- **前端数据分片与历史搜索索引**：把长期归档拆成月份数据文件，并生成轻量全站索引，改善 GitHub Pages 上的加载和搜索体验。
+  **Chunk archive data and add a search index**: split long-term archives into monthly data files and generate a lightweight global index for faster GitHub Pages loading and search.
+
+- **搭建可维护的内容后台**：增加轻量编辑/admin 面板，用来维护日报模板、归档内容、产品推荐和报告条目。
+  **Build a maintainable content backend**: add a lightweight editor/admin panel for daily templates, archive entries, product picks, and report items.
 
 - **邮件订阅与自动发送**：支持用户订阅，并把每日 7:30 生成的内容自动发送到邮箱。
   **Add email subscription and delivery**: let readers subscribe and receive the daily 7:30 briefing by email.
