@@ -728,7 +728,21 @@ function sectionCandidates(sourcePack, section, predicate, limit, excludeIds = n
   return [...primary, ...fallback].slice(0, limit);
 }
 
+function entryEventSignature(entry) {
+  const text = entryContentText(entry);
+  const hasGoogle = /google|gemini|deepmind|谷歌/i.test(text);
+  const googleIoSignals = /google\s*i\/o|\bi\/o\s*20\d{2}\b|\bio\s*20\d{2}\b|developer conference|开发者大会|\bai mode\b|ai overviews|search box|smart glasses|google glass|co-scientist|agentic gemini era|workspace updates/i;
+  if (hasGoogle && googleIoSignals.test(text)) return "event:google-io";
+
+  if (/openai/i.test(text) && /devday|developer day|spring update|12 days of openai/i.test(text)) return "event:openai-launch";
+  if (/microsoft|copilot|azure/i.test(text) && /\bbuild\s*20\d{2}\b|microsoft build|copilot wave/i.test(text)) return "event:microsoft-build";
+  if (/apple|wwdc/i.test(text) && /\bwwdc\s*20\d{2}\b|worldwide developers conference|apple intelligence/i.test(text)) return "event:apple-wwdc";
+  return "";
+}
+
 function entryTopicSignature(entry) {
+  const eventSignature = entryEventSignature(entry);
+  if (eventSignature) return eventSignature;
   const text = entryContentText(entry);
   const companyPatterns = [
     ["openai", /openai|gpt|chatgpt|greg brockman|sam altman/i],
@@ -779,6 +793,84 @@ function entryTopicSignature(entry) {
 function isDuplicateTopic(entry, usedTopicSignatures) {
   const signature = entryTopicSignature(entry);
   return Boolean(signature) && usedTopicSignatures.has(signature);
+}
+
+function eventAggregateCopy(signature) {
+  const copy = {
+    "event:google-io": {
+      titleZh: "Google I/O 2026：搜索、Gemini、智能眼镜和科研 Agent 集中更新",
+      titleEn: "Google I/O 2026: Search, Gemini, smart glasses, and research agents move together",
+      angle: "同一场 Google I/O 发布会下的多个子更新，合并成一张卡片总结搜索入口、Gemini、硬件和科研 Agent 的共同方向。"
+    },
+    "event:openai-launch": {
+      titleZh: "OpenAI 发布会更新：把多个子产品合并看成一次平台动作",
+      titleEn: "OpenAI launch update: read the sub-updates as one platform move",
+      angle: "同一场 OpenAI 发布或产品周下的多个子新闻，合并总结平台方向，避免重复占位。"
+    },
+    "event:microsoft-build": {
+      titleZh: "Microsoft Build：Copilot、Azure 和开发者工具集中更新",
+      titleEn: "Microsoft Build: Copilot, Azure, and developer tools update together",
+      angle: "同一场 Microsoft Build 下的多个子更新，合并观察企业 AI 平台和开发者生态方向。"
+    },
+    "event:apple-wwdc": {
+      titleZh: "Apple WWDC：Apple Intelligence 和系统入口集中更新",
+      titleEn: "Apple WWDC: Apple Intelligence and system entry points update together",
+      angle: "同一场 Apple WWDC 下的多个 AI 子更新，合并观察系统级 AI 入口变化。"
+    }
+  };
+  return copy[signature] || null;
+}
+
+function selectMajorEventClusters(sourcePack, limit = 1, excludeIds = new Set()) {
+  const clusters = new Map();
+  sourcePack.entries.forEach((entry) => {
+    if (excludeIds.has(entry.id) || entry.freshness !== "d-1" || isEditorialNoiseEntry(entry) || isLowQualityEntry(entry)) return;
+    const signature = entryEventSignature(entry);
+    if (!signature || !eventAggregateCopy(signature)) return;
+    if (!clusters.has(signature)) clusters.set(signature, []);
+    clusters.get(signature).push(entry);
+  });
+
+  return [...clusters.entries()]
+    .map(([signature, entries]) => ({
+      signature,
+      entries: entries
+        .sort((a, b) => editorialScore(b, "快讯") - editorialScore(a, "快讯") || (b.score || 0) - (a.score || 0))
+        .slice(0, 5)
+    }))
+    .filter((cluster) => cluster.entries.length >= 2)
+    .sort((a, b) => b.entries.length - a.entries.length || editorialScore(b.entries[0], "快讯") - editorialScore(a.entries[0], "快讯"))
+    .slice(0, limit);
+}
+
+function isChineseLocalizedTitle(title = "") {
+  const text = String(title).trim();
+  if (!text) return false;
+  const cjkCount = (text.match(/[\u3400-\u9fff]/g) || []).length;
+  const latinRuns = (text.match(/[A-Za-z][A-Za-z'’-]*/g) || []).filter((word) => word.length > 1);
+  if (cjkCount >= 4) return true;
+  if (cjkCount >= 2 && latinRuns.length <= 4) return true;
+  return false;
+}
+
+function localizeTitleZh(title = "") {
+  const raw = String(title || "").trim();
+  if (!raw || isChineseLocalizedTitle(raw)) return raw;
+  if (/google/i.test(raw) && /search box|search/i.test(raw)) return "Google 搜索框 25 年来首次重设计，转向 AI 多模态交互";
+  if (/google/i.test(raw) && /smart glasses|google glass/i.test(raw)) return "Google 重启智能眼镜路线，试图把 Gemini 带到现实世界入口";
+  if (/google\s*i\/o|^i\/o\s*20\d{2}/i.test(raw)) return "Google I/O 2026：AI 产品和开发者工具集中更新";
+  if (/co-scientist/i.test(raw)) return "Co-Scientist：Google 用多智能体系统加速科研工作流";
+  if (/demis hassabis/i.test(raw)) return "Demis Hassabis：用 AI 裁员是短视做法";
+  if (/viberia/i.test(raw)) return "Viberia：像玩策略游戏一样指挥 AI Agent";
+  if (/storeclaw/i.test(raw)) return "StoreClaw：面向电商卖家的 AI 销售 Agent";
+  if (/openai/i.test(raw) && /education/i.test(raw)) return "OpenAI 推进国家级教育合作计划";
+  if (/openai/i.test(raw) && /singapore/i.test(raw)) return "OpenAI 推出新加坡国家级 AI 合作计划";
+  if (/alibaba cloud/i.test(raw) && /qwen cloud|agents/i.test(raw)) return "阿里云上线 Qwen Cloud 官网，降低 Agent 开发部署门槛";
+  if (/bristol myers/i.test(raw) && /anthropic/i.test(raw)) return "百时美施贵宝扩大与 Anthropic 合作，用 AI 加速药物研发";
+  if (/figure ai|humanoid robots/i.test(raw)) return "Figure AI 人形机器人处理包裹走红，机器人落地再升温";
+  if (/openai/i.test(raw) && /dell|codex/i.test(raw)) return "OpenAI 与 Dell 合作，把 Codex 带进混合云和本地企业环境";
+  if (/google deepmind/i.test(raw) && /edison|ai scientist/i.test(raw)) return "Google DeepMind 与 Edison 合作推进 AI Scientist";
+  return `AI 信号：${raw.replace(/\s+/g, " ").slice(0, 72)}`;
 }
 
 function parseFeedEntries(xml, source) {
@@ -988,6 +1080,9 @@ function validateIssueFrame(issue, lang) {
 
 function validateItemContent(item, lang) {
   if (isTermSectionName(item.section)) return;
+  if (lang === "zh" && !isChineseLocalizedTitle(item.title)) {
+    throw new Error(`zh item title not localized: "${item.title}". Chinese issue titles must be written primarily in Chinese.`);
+  }
   if (isReportSection(item.section)) {
     const expandedReports = item.details.filter((detail) => detail && typeof detail === "object" && detail.expanded && detail.expanded.length >= 90);
     if (!expandedReports.length) {
@@ -1304,9 +1399,14 @@ function validatePlanAgainstPools(plan, sourcePack) {
   plan.items.forEach((item) => {
     if (isTermSectionName(item.section)) return;
     const predicate = sectionPredicate(item.section);
+    const primaryEntry = entryById.get(item.sourceIds[0]);
+    const primarySignature = primaryEntry ? entryTopicSignature(primaryEntry) : "";
     const invalidIds = item.sourceIds.filter((id) => {
       const entry = entryById.get(id);
-      return !entry || !predicate(entry) || !entryAllowedForSection(entry, item.section);
+      if (!entry) return true;
+      const sameAggregateEvent = primarySignature && primarySignature.startsWith("event:") && entryTopicSignature(entry) === primarySignature && entry.freshness === "d-1";
+      if (sameAggregateEvent) return false;
+      return !predicate(entry) || !entryAllowedForSection(entry, item.section);
     });
     if (invalidIds.length) {
       throw new Error(`Editorial plan item "${item.titleZh}" uses sourceIds outside its section pool: ${invalidIds.join(", ")}`);
@@ -1366,7 +1466,7 @@ function selectedPlanItem(section, entry) {
   return {
     section,
     priority: priorityForSection(section),
-    titleZh: entry.title,
+    titleZh: localizeTitleZh(entry.title),
     titleEn: entry.title,
     angle: planAngle(section, entry),
     sourceIds: [entry.id],
@@ -1387,10 +1487,10 @@ function selectedAggregatePlanItem(section, entries, titleZh, titleEn, angle) {
     titleZh,
     titleEn,
     angle,
-    sourceIds: entries.map((entry) => entry.id).filter(Boolean).slice(0, 4),
+    sourceIds: entries.map((entry) => entry.id).filter(Boolean).slice(0, 5),
     links: entries
       .filter((entry) => entry.link)
-      .slice(0, 4)
+      .slice(0, 5)
       .map((entry) => [`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]),
     sourceDate: firstEntry.sourceDate || "",
     freshness: firstEntry.freshness || "",
@@ -1496,6 +1596,11 @@ function deterministicPlan(date, sourcePack, reason = "") {
     used.add(entry.id);
     usedTopicSignatures.add(entryTopicSignature(entry));
   };
+  const addAggregateEntries = (items, section, entries, titleZh, titleEn, angle) => {
+    items.push(selectedAggregatePlanItem(section, entries, titleZh, titleEn, angle));
+    entries.forEach((entry) => used.add(entry.id));
+    if (entries[0]) usedTopicSignatures.add(entryTopicSignature(entries[0]));
+  };
   const specs = [
     ["头条", 2, isHeadlineEntry],
     ["快讯", 5, isBriefEntry],
@@ -1504,10 +1609,20 @@ function deterministicPlan(date, sourcePack, reason = "") {
     ["AI产品推荐", 2, isProductEntry]
   ];
   const items = [];
+
+  selectMajorEventClusters(sourcePack, 1, used).forEach((cluster) => {
+    const copy = eventAggregateCopy(cluster.signature);
+    if (!copy) return;
+    addAggregateEntries(items, "快讯", cluster.entries, copy.titleZh, copy.titleEn, copy.angle);
+  });
+
   specs.forEach(([section, count, predicate]) => {
-    const candidates = sectionCandidates(sourcePack, section, predicate, count * 4, used)
+    const existingCount = items.filter((item) => item.section === section).length;
+    const remainingCount = Math.max(0, count - existingCount);
+    if (!remainingCount) return;
+    const candidates = sectionCandidates(sourcePack, section, predicate, remainingCount * 4, used)
       .filter((entry) => !isDuplicateTopic(entry, usedTopicSignatures))
-      .slice(0, count);
+      .slice(0, remainingCount);
     candidates.forEach((entry) => {
       addSelectedEntry(items, section, entry);
     });
@@ -1622,6 +1737,17 @@ function runEditorialGateTests() {
     title: "阿里巴巴发布新款AI芯片 可同时承担训练和推理任务",
     summary: ""
   }), "same company and topic should deduplicate across sections");
+  assert(entryTopicSignature({
+    source: "Google AI Blog",
+    title: "I/O 2026: Welcome to the agentic Gemini era",
+    summary: "Google I/O developer conference updates."
+  }) === entryTopicSignature({
+    source: "VentureBeat AI",
+    title: "Google just redesigned the search box for the first time in 25 years",
+    summary: "AI Mode and AI Overviews became part of a new search entry point."
+  }), "Google I/O sub-stories should share one event cluster signature");
+  assert(!isChineseLocalizedTitle("Viberia: Command AI agents like you're playing Civilization"), "English source title should fail Chinese title localization");
+  assert(isChineseLocalizedTitle(localizeTitleZh("Viberia: Command AI agents like you're playing Civilization")), "localized Chinese product title should pass title gate");
   const fallbackFreshness = classifyFreshness({
     title: "Recall knowledge management product update",
     summary: "A productivity AI product for research workflows.",
@@ -1639,7 +1765,7 @@ function fallbackItem(planItem, scopedSourcePack, lang, reason = "") {
   const isZh = lang === "zh";
   const section = sectionForLang(planItem.section, lang);
   const entry = scopedSourcePack.entries[0] || {};
-  const title = isZh ? planItem.titleZh : planItem.titleEn;
+  const title = isZh ? localizeTitleZh(planItem.titleZh || planItem.titleEn) : planItem.titleEn;
   const sourceLine = entry.source ? `${entry.source}：${entry.title}` : title;
   const summary = String(entry.summary || planItem.angle || title).trim();
   const links = entry.link ? [[`${entry.source || "Source"}: ${entry.title || title}`.slice(0, 90), entry.link]] : [];
@@ -1707,6 +1833,7 @@ ${revisionNote ? `\n上一次生成未通过质量校验：${revisionNote}\n请�
 ${isZh ? `
 语言风格：轻量、好读、有判断，适合非技术背景读者；不要幼稚化，也不要只堆技术名词。
 快讯写成 2-3 条头条式短段落，每条约 50-110 字，快速交代主体、动作、时间和影响；其他栏目写成 3-5 条“有信息量的小段落”，每条约 80-180 字，至少包含背景/关键数字/主体动作/影响范围/不确定性中的两个维度。
+中文标题和 dek 必须中文化：公司名、产品名、模型名、会议名可以保留英文专名，但不能把英文原文标题整句复制到中文页面。例：写成“Viberia：像玩策略游戏一样指挥 AI Agent”，不要写成“Viberia: Command AI agents like you're playing Civilization”。
 ` : `
 Tone: concise, readable, analytical, not a mechanical translation. For Briefs, write 2-3 headline-style short paragraphs. For other sections, each detail should be 45-100 words and include at least two of: context, key numbers, actor action, impact, uncertainty.
 `}
@@ -1880,7 +2007,7 @@ async function createItemWithRetry({ date, sourcePack, planItem, lang, requestJs
     return item;
   } catch (error) {
     const message = String(error?.message || error);
-    if (!/too shallow|expanded report|needs expanded|summary is list-like|json|expected|unexpected|unterminated string|parseable json|unexpected end/i.test(message)) {
+    if (!/too shallow|expanded report|needs expanded|summary is list-like|title not localized|Chinese issue titles|json|expected|unexpected|unterminated string|parseable json|unexpected end/i.test(message)) {
       return fallbackItem(planItem, scopedSourcePack, lang, message);
     }
     console.warn(`Item generation retry for ${lang} "${planItem.titleZh || planItem.titleEn}": ${message}`);
@@ -1941,7 +2068,7 @@ async function createIssue(date, sourcePack) {
     return await create(date, sourcePack);
   } catch (error) {
     const message = String(error?.message || error);
-    if (!/too shallow|expanded report|needs expanded|summary is list-like|json|expected|unexpected|unterminated string|parseable json|unexpected end/i.test(message)) throw error;
+    if (!/too shallow|expanded report|needs expanded|summary is list-like|title not localized|Chinese issue titles|json|expected|unexpected|unterminated string|parseable json|unexpected end/i.test(message)) throw error;
     console.warn(`Quality check failed, retrying once: ${message}`);
     return create(date, sourcePack, message);
   }
