@@ -1931,7 +1931,7 @@ async function deepSeekJson(prompt, maxTokens = 9000) {
     throw new Error("Missing DEEPSEEK_API_KEY. Add it as a GitHub Actions repository secret.");
   }
 
-  const response = await fetch(`${deepseekBaseUrl.replace(/\/$/, "")}/chat/completions`, {
+  const body = await fetchModelJson(`${deepseekBaseUrl.replace(/\/$/, "")}/chat/completions`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -1953,14 +1953,35 @@ async function deepSeekJson(prompt, maxTokens = 9000) {
       temperature: 0.15,
       max_tokens: maxTokens
     })
-  });
-
-  const body = await response.json();
-  if (!response.ok) {
-    throw new Error(`DeepSeek API error ${response.status}: ${JSON.stringify(body)}`);
-  }
+  }, "DeepSeek API");
 
   return extractJson(chatCompletionText(body));
+}
+
+async function fetchModelJson(url, options, label) {
+  const timeoutMs = Number(process.env.AI_REQUEST_TIMEOUT_MS || 90000);
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), timeoutMs);
+  let response;
+  try {
+    response = await fetch(url, {
+      ...options,
+      signal: controller.signal
+    });
+  } catch (error) {
+    if (error?.name === "AbortError") {
+      throw new Error(`${label} timed out after ${Math.round(timeoutMs / 1000)}s.`);
+    }
+    throw error;
+  } finally {
+    clearTimeout(timeout);
+  }
+
+  const body = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    throw new Error(`${label} error ${response.status}: ${JSON.stringify(body)}`);
+  }
+  return body;
 }
 
 async function openAIJson(prompt, maxOutputTokens = 9000) {
@@ -1969,7 +1990,7 @@ async function openAIJson(prompt, maxOutputTokens = 9000) {
     throw new Error("Missing OPENAI_API_KEY. Add it as a GitHub Actions repository secret.");
   }
 
-  const response = await fetch("https://api.openai.com/v1/responses", {
+  const body = await fetchModelJson("https://api.openai.com/v1/responses", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -1982,12 +2003,7 @@ async function openAIJson(prompt, maxOutputTokens = 9000) {
       max_output_tokens: maxOutputTokens,
       input: `${jsonSystemPrompt}\n\n${prompt}`
     })
-  });
-
-  const body = await response.json();
-  if (!response.ok) {
-    throw new Error(`OpenAI API error ${response.status}: ${JSON.stringify(body)}`);
-  }
+  }, "OpenAI API");
 
   return extractJson(responseText(body));
 }
