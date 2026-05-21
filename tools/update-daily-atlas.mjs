@@ -728,6 +728,59 @@ function sectionCandidates(sourcePack, section, predicate, limit, excludeIds = n
   return [...primary, ...fallback].slice(0, limit);
 }
 
+function entryTopicSignature(entry) {
+  const text = entryContentText(entry);
+  const companyPatterns = [
+    ["openai", /openai|gpt|chatgpt|greg brockman|sam altman/i],
+    ["anthropic", /anthropic|claude|dario amodei/i],
+    ["google", /google|deepmind|gemini|demis hassabis/i],
+    ["xai", /\bxai\b|\bgrok\b/i],
+    ["meta", /\bmeta\b|llama/i],
+    ["microsoft", /microsoft|azure|copilot/i],
+    ["amazon", /amazon|\baws\b/i],
+    ["alibaba", /alibaba|aliyun|qwen|阿里巴巴|阿里云|通义|千问|平头哥/i],
+    ["kimi", /kimi|moonshot|月之暗面/i],
+    ["deepseek", /deepseek|深度求索/i],
+    ["bytedance", /bytedance|doubao|字节|豆包/i],
+    ["tencent", /tencent|腾讯|混元/i],
+    ["baidu", /baidu|百度|文心/i],
+    ["zhipu", /zhipu|z\.ai|智谱|glm/i],
+    ["minimax", /minimax/i],
+    ["nvidia", /nvidia|英伟达/i]
+  ];
+  const topicPatterns = [
+    ["chip", /chip|gpu|accelerator|compute|inference|晶片|芯片|算力|推理|训练/i],
+    ["agent", /agent|agentic|workflow|智能体|工作流|ai打工人/i],
+    ["model", /model|api|gpt|claude|gemini|grok|qwen|kimi|deepseek|模型|多模态|语音/i],
+    ["search", /search|browser|chrome|搜索|浏览器/i],
+    ["funding", /funding|financing|raises?|valuation|invest|融资|投资|估值|股东|国资/i],
+    ["personnel", /join|leave|appoint|takes charge|founder|ceo|cto|任命|离职|加入|接管|创始人|负责人/i],
+    ["robotics", /robot|robotics|humanoid|world model|机器人|具身|世界模型/i],
+    ["governance", /safety|privacy|security|copyright|regulat|lawsuit|安全|隐私|版权|监管|诉讼/i],
+    ["product", /product|launch|release|tool|app|workspace|产品|工具|上线|发布|推出/i],
+    ["views", /report|interview|essay|analysis|观点|报告|访谈|专访|分析/i]
+  ];
+  const company = companyPatterns.find(([, pattern]) => pattern.test(text))?.[0] || "";
+  const topic = topicPatterns.find(([, pattern]) => pattern.test(text))?.[0] || "";
+  if (company && topic) return `${company}:${topic}`;
+  const normalizedTitle = String(entry.title || "")
+    .toLowerCase()
+    .replace(/https?:\/\/\S+/g, "")
+    .replace(/[-–—|｜].*$/g, "")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim()
+    .split(/\s+/)
+    .filter((word) => word.length > 2)
+    .slice(0, 8)
+    .join(" ");
+  return normalizedTitle || String(entry.id || "");
+}
+
+function isDuplicateTopic(entry, usedTopicSignatures) {
+  const signature = entryTopicSignature(entry);
+  return Boolean(signature) && usedTopicSignatures.has(signature);
+}
+
 function parseFeedEntries(xml, source) {
   const blocks = [
     ...xml.matchAll(/<item\b[\s\S]*?<\/item>/gi),
@@ -1437,6 +1490,12 @@ function selectIndustryViewReportEntries(sourcePack, count, used) {
 function deterministicPlan(date, sourcePack, reason = "") {
   if (reason) console.warn(`Using deterministic editorial plan: ${reason}`);
   const used = new Set();
+  const usedTopicSignatures = new Set();
+  const addSelectedEntry = (items, section, entry) => {
+    items.push(selectedPlanItem(section, entry));
+    used.add(entry.id);
+    usedTopicSignatures.add(entryTopicSignature(entry));
+  };
   const specs = [
     ["头条", 2, isHeadlineEntry],
     ["快讯", 5, isBriefEntry],
@@ -1446,10 +1505,11 @@ function deterministicPlan(date, sourcePack, reason = "") {
   ];
   const items = [];
   specs.forEach(([section, count, predicate]) => {
-    const candidates = sectionCandidates(sourcePack, section, predicate, count, used);
+    const candidates = sectionCandidates(sourcePack, section, predicate, count * 4, used)
+      .filter((entry) => !isDuplicateTopic(entry, usedTopicSignatures))
+      .slice(0, count);
     candidates.forEach((entry) => {
-      items.push(selectedPlanItem(section, entry));
-      used.add(entry.id);
+      addSelectedEntry(items, section, entry);
     });
   });
 
@@ -1471,15 +1531,16 @@ function deterministicPlan(date, sourcePack, reason = "") {
   }
 
   selectViewpointEntries(sourcePack, 2, used).forEach((entry) => {
-    items.push(selectedPlanItem("观点", entry));
+    if (isDuplicateTopic(entry, usedTopicSignatures)) return;
+    addSelectedEntry(items, "观点", entry);
   });
 
   for (const entry of sourcePack.entries) {
     if (items.length >= 12) break;
     if (used.has(entry.id)) continue;
+    if (isDuplicateTopic(entry, usedTopicSignatures)) continue;
     if (!isBriefEntry(entry)) continue;
-    used.add(entry.id);
-    items.push(selectedPlanItem("快讯", entry));
+    addSelectedEntry(items, "快讯", entry);
   }
 
   const sectionOrder = ["快讯", "头条", "深度", "观点", "开源项目", "AI产品推荐"];
@@ -1554,6 +1615,13 @@ function runEditorialGateTests() {
     summary: "This article republishes a March 16, 2026 product update.",
     date: "2026-05-18T09:00:00+08:00"
   }, issueDate), "explicit old event dates must fail freshness gate");
+  assert(entryTopicSignature({
+    title: "阿里巴巴发布新款AI晶片 试图打造替代英伟达的本土产品",
+    summary: ""
+  }) === entryTopicSignature({
+    title: "阿里巴巴发布新款AI芯片 可同时承担训练和推理任务",
+    summary: ""
+  }), "same company and topic should deduplicate across sections");
   const fallbackFreshness = classifyFreshness({
     title: "Recall knowledge management product update",
     summary: "A productivity AI product for research workflows.",
