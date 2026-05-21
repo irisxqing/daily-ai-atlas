@@ -798,9 +798,9 @@ function isDuplicateTopic(entry, usedTopicSignatures) {
 function eventAggregateCopy(signature) {
   const copy = {
     "event:google-io": {
-      titleZh: "Google I/O 2026：搜索、Gemini、智能眼镜和科研 Agent 集中更新",
-      titleEn: "Google I/O 2026: Search, Gemini, smart glasses, and research agents move together",
-      angle: "同一场 Google I/O 发布会下的多个子更新，合并成一张卡片总结搜索入口、Gemini、硬件和科研 Agent 的共同方向。"
+      titleZh: "Google I/O 2026：搜索、Gemini 和科研 Agent 集中更新",
+      titleEn: "Google I/O 2026: Search, Gemini, and research agents move together",
+      angle: "同一场 Google I/O 发布会下的多个子更新，合并成一张卡片总结搜索入口、Gemini 和科研 Agent 的共同方向。"
     },
     "event:openai-launch": {
       titleZh: "OpenAI 发布会更新：把多个子产品合并看成一次平台动作",
@@ -1359,8 +1359,21 @@ function linksForSourceIds(sourcePack, sourceIds = []) {
   const sourceIdSet = new Set(sourceIds);
   return sourcePack.entries
     .filter((entry) => sourceIdSet.has(entry.id) && entry.link)
-    .slice(0, 3)
+    .slice(0, 5)
     .map((entry) => [`${entry.source}: ${entry.title}`.slice(0, 90), entry.link]);
+}
+
+function mergeLinks(existingLinks = [], requiredLinks = []) {
+  const seen = new Set();
+  return [...existingLinks, ...requiredLinks]
+    .filter((link) => Array.isArray(link) && link[0] && link[1])
+    .filter((link) => {
+      const href = String(link[1]);
+      if (seen.has(href)) return false;
+      seen.add(href);
+      return true;
+    })
+    .slice(0, 6);
 }
 
 function metadataForPlanItem(planItem, lang) {
@@ -2001,7 +2014,7 @@ async function createItemWithRetry({ date, sourcePack, planItem, lang, requestJs
     const parsed = await requestJson(buildItemPrompt(date, scopedSourcePack, planItem, lang), 4500);
     const item = normalizeItem(parsed.item);
     item.section = sectionForLang(planItem.section, lang);
-    if (!item.links.length && sourceLinks.length) item.links = sourceLinks;
+    item.links = mergeLinks(item.links, sourceLinks);
     applyPlanMetadata(item, planItem, lang);
     validateItemContent(item, lang);
     return item;
@@ -2015,7 +2028,7 @@ async function createItemWithRetry({ date, sourcePack, planItem, lang, requestJs
       const parsed = await requestJson(buildItemPrompt(date, scopedSourcePack, planItem, lang, message), 4500);
       const item = normalizeItem(parsed.item);
       item.section = sectionForLang(planItem.section, lang);
-      if (!item.links.length && sourceLinks.length) item.links = sourceLinks;
+      item.links = mergeLinks(item.links, sourceLinks);
       applyPlanMetadata(item, planItem, lang);
       validateItemContent(item, lang);
       return item;
