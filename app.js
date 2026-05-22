@@ -1,4 +1,345 @@
 const archiveZh = [
+  {
+    "date": "2026-05-22",
+    "title": "AI Daily Atlas",
+    "meta": "2026年5月22日",
+    "headline": "AI 竞争正在从发布能力转向占住真实工作流",
+    "summary": "今天值得看的主线是，AI 公司不再只证明模型更强，而是在争夺用户入口、企业流程和关键产业链位置。真正重要的是这些动作能否沉淀成持续使用，而不是只制造一天的热度。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Google I/O 2026：搜索、Gemini 和科研 Agent 集中更新",
+        "dek": "今年I/O的三大重心：AI搜索重构、Gemini Omni视频模型、消费者Agent生态。",
+        "details": [
+          "Google I/O 2026 开幕，共计公布超过100项AI相关更新。搜索业务作为核心入口，通过Gemini模型升级实现多步推理与实时信息整合，用户可在搜索结果中直接调用AI完成复杂任务，标志着搜索从“信息检索”向“任务完成”转型。",
+          "全新Gemini Omni模型亮相，专为视频编辑设计。用户可通过自然语言指令直接修改视频内容，例如“删除背景中的汽车”或“将这段对话替换为英文配音”。Omni的发布将多模态AI竞争从图像、文本推向视频原生生成与编辑。",
+          "消费者端AI Agent生态首次亮相：用户可创建“帮我去超市买牛奶”等任务Agent，由AI自主完成下单、支付、跟踪物流。但TechCrunch评论指出，当前Agent概念对普通用户过于复杂，且信任与隐私问题未解决，大规模的消费者采纳仍需时间。"
+        ],
+        "why": "Google I/O 2026 显示公司正加速从“模型提供商”转向“全栈AI平台”，对创业公司意味着更激烈的入口争夺，同时Agent生态的早期形态提示开发者应优先解决交互透明性和用户信任问题。",
+        "links": [
+          [
+            "Google AI Blog: 100 things",
+            "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/"
+          ],
+          [
+            "TechCrunch: AI agent ecosystem",
+            "https://techcrunch.com/2026/05/21/google-is-pitching-an-ai-agent-ecosystem-to-consumers-who-may-not-buy-it/"
+          ],
+          [
+            "Google News AI Models: Google I/O 2026: Google unveils Gemini Omni AI video editing model ",
+            "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYVpzVjRJOWU4eGJlQU1BRnFyYW4yWlpwWFBNdTBkWXl0LTliOHBNX0pReWdzckZ6YUFLUmtoU3NreWpRLTlwaGljWU1XTWJLT1V2RTlCUzlnMDl2bVNwVmFiVmdjVUhONTRLVVdLYXFYbGxJalVBZ2lfMnJoM2hKaWQ3YmRmcjFvTFUxYWwwZ0FQQ2J0WE1iemFtaDdoTkVvMVk0SHJLSTJ3d0FhZmkzWVl5Qnd1YnZWNU9JTA?oc=5"
+          ],
+          [
+            "Google News AI Products: 100 things we announced at I/O 2026 - blog.google",
+            "https://news.google.com/rss/articles/CBMikwFBVV95cUxPLUNpU3JVN2c1OGJhekZReUU4aHJEb1BKVjZncGVGUHdDNkJDSGJCQU1yMXVyQ3pScjNWRXk5S1lTd1dBcUpaVHJ3V05YUGVsNkVMbUpldk9PQ0pMbEZiVk5NUUlMallnV0FYcDhmVzZTbFFoTDAzUDJNRFZTaENTcHV5R2llbkhSUjJoTmQ5YjNSNU0?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "腾讯上线操作系统层级AI助手Marvis 支持跨端操控与本地隐私模式",
+        "dek": "腾讯推出系统级AI助手Marvis，实现跨设备协同操作，并主打本地隐私保护模式。",
+        "details": [
+          "据央广网报道，腾讯于5月21日上线了操作系统层级的AI助手Marvis。该助手深度集成于系统层面，支持跨终端操控——用户可以在手机、电脑、平板等设备间无缝调用，无需反复切换应用。Marvis同时提供本地隐私模式，关键数据处理在设备端完成，减少云端依赖，响应速度更快。",
+          "Marvis的推出标志着腾讯将AI能力从应用层下沉至操作系统底层。此前微软Copilot+PC、苹果Apple Intelligence已率先布局，腾讯此举意在构建自有生态的“AI入口”，提升用户粘性。系统级AI助手可调用更多底层权限，实现全局搜索、任务自动化等深层功能，有望改变传统App交互模式。",
+          "对行业而言，系统级AI的竞争将更加激烈。Marvis的本地隐私模式回应了用户对数据安全的关切，可能推动更多厂商将隐私计算作为标配。但跨端操控的实际体验仍有待验证，尤其在腾讯系与非腾讯系设备间的兼容性上。"
+        ],
+        "why": "系统级AI助手正在成为科技巨头的新战场，腾讯Marvis的入场不仅直接对标微软和苹果，更将推动中国AI生态从“应用插件”向“操作系统原生”演进，对开发者和创业者而言，围绕系统级AI的第三方工具和服务将迎来新机会。",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯上线操作系统层级AI助手Marvis 支持跨端操控与本地隐私模式 - 央广网",
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTE5lMk5sbHRiTHpsSVlZdktHSkZTMTdKeXVrNDhYbUdmYXlkT3lkOWdBVVdPSTN2ZkZRVWliNW9YLUticFJHQjVYMk1FRkhUa3pwNFo5aFA5N21fWklaMHpncTZyX3VYZnI0TFNzYktR?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "腾讯上线更便捷易用的操作系统级AI助手Marvis",
+        "dek": "腾讯推出操作系统级AI助手Marvis，主打便捷易用，深度集成系统功能。",
+        "details": [
+          "腾讯于近日上线了名为Marvis的操作系统级AI助手，主打更便捷易用的交互体验。该助手深度集成于腾讯系操作系统或平台，有望为用户提供一键式智能服务。",
+          "Marvis的推出标志着腾讯在AI助手领域的进一步布局，此前腾讯已推出混元大模型等多个AI产品。操作系统级入口意味着Marvis能更广泛地调用系统功能，提升AI服务的渗透率。",
+          "对于用户而言，Marvis降低了AI使用门槛；对于行业，腾讯的入局可能加剧AI助手市场的竞争，尤其与华为、小米等厂商的产品形成直接对比。"
+        ],
+        "why": "腾讯推出操作系统级AI助手Marvis，表明其正加速将AI能力下沉至系统底层，争夺用户日常使用入口，对AI助手赛道竞争格局产生重要影响。",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯上线更便捷易用的操作系统级AI助手Marvis - 中国科技网",
+            "https://news.google.com/rss/articles/CBMicEFVX3lxTE9ZRmlwbU1YQTF6bEdQdHNzbTNPb2F2V0c5UzNIaHFBd1ZubHR6WGtPV1ZvQlFYeDlhb1BVdWNRSTgyYzRDV0lTTkJVTE5fSTdiNExGUWdxNzdOdThoaGhlaThhZl91T2MtRF82cVNwSEM?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "腾讯混元开源全新翻译模型Hy-MT2，上线小程序「腾讯Hy翻译」",
+        "dek": "最大提升体现在指令遵循能力上",
+        "details": [
+          "腾讯混元于5月21日开源全新翻译模型Hy-MT2，并同步上线微信小程序“腾讯Hy翻译”。该模型最大的提升在于指令遵循能力——能够根据用户指令调整翻译风格、术语偏好或输出长度，这在以往机器翻译中较难实现。",
+          "Hy-MT2的发布背景是当前大模型翻译虽整体提升，但在专业场景下用户常需反复修改翻译结果。腾讯混元团队称，Hy-MT2在多项基准测试中表现优于同等规模模型。开源策略延续了混元系列一贯做法，旨在吸引开发者二次开发，小程序则让普通用户零门槛体验。"
+        ],
+        "why": "翻译是AI落地的刚需场景，Hy-MT2强调指令遵循能力，可能让机器翻译从“通用输出”走向“按需定制”，对商务、学术等垂直场景意义明显。开源+小程序的组合也提供了新的产品分发思路。",
+        "links": [
+          [
+            "量子位: 腾讯混元开源全新翻译模型Hy-MT2，上线小程序「腾讯Hy翻译」",
+            "https://www.qbitai.com/2026/05/422068.html"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "盈米基金联合阿里云发布“机构AI智能体解决方案”",
+        "dek": "盈米基金与阿里云合作，推出面向金融机构的AI智能体解决方案，旨在提升投顾服务效率。",
+        "details": [
+          "盈米基金联合阿里云正式发布“机构AI智能体解决方案”，面向银行、券商等持牌金融机构，提供基于大模型的智能投顾、客户运营等能力。该方案结合阿里云的通义千问模型与盈米在基金销售领域的业务积累，意图降低机构使用AI的门槛。",
+          "背景方面，盈米基金是证监会批准的独立基金销售机构，旗下拥有“且慢”等知名投顾平台；阿里云则持续加码金融行业AI应用。此前双方已在云计算领域有合作，此次是首次将AI智能体产品化输出给机构客户。",
+          "该方案支持智能问答、资产配置建议、合规审查等场景，可部署于机构私有云环境，满足金融行业数据安全要求。盈米方面表示，已有数家公募基金和银行正在进行试点对接。"
+        ],
+        "why": "这是AI智能体在金融垂直领域的又一次落地，表明大模型在强监管行业仍可通过定制化方案加速渗透。对金融科技创业公司而言，与云厂商合作提供行业解决方案或成为重要路径。",
+        "links": [
+          [
+            "中金在线原文",
+            "https://news.google.com/rss/articles/CBMiakFVX3lxTFAxWDRfSXYxZXgzWnJkTm5CZzBvNlVtV2R6ckRuWDdVUTlBYXBsZVNEei1NcHdXRzNwandhSkhDUUlIdlRvWTFiSEhObmlNMVVDSW1IWjVEdXpnQ1I0X0czdW9iQUw1aUlOOUE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "SB Energy 秘密提交 IPO：软银与 OpenAI 联手押注 AI 能源新贵",
+        "dek": "AI 能源基础设施公司 SB Energy 已秘密提交 IPO 申请，其背后站着软银和 OpenAI，并与“星际之门”项目深度绑定。",
+        "details": [
+          "SB Energy 是一家专注于 AI 驱动的能源基础设施的新兴公司，近日向美国 SEC 秘密提交了 IPO 申请。该公司由软银集团和 OpenAI 共同支持，核心使命是为大规模 AI 训练提供稳定且低成本的电力。SB Energy 的技术路线强调将可再生能源与 AI 调度系统结合，以应对 Stargate（星际之门）等超大规模 AI 项目的能源需求。",
+          "SB Energy 与 OpenAI 的 Stargate 项目存在深度整合。Stargate 是 OpenAI 规划中的下一代超大规模 AI 计算集群，预计将消耗数吉瓦电力。SB Energy 通过 AI 优化的能源网络，为 Stargate 提供“即插即用”的电力保障。这意味着 AI 巨头正在从单纯租用算力转向自建能源基础设施，控制整个产业链。",
+          "秘密递交 IPO 的时间点值得关注：在 AI 算力军备竞赛白热化的背景下，能源成本已成为制约大模型训练的关键因素。SB Energy 的上市计划表明资本市场对 AI 基础设施上游（能源）的认可度正在上升。如果成功上市，可能会带动更多 AI 能源初创公司进入公开市场。"
+        ],
+        "why": "SB Energy 的 IPO 标志着 AI 产业链从“算力竞争”延伸到“能源竞争”。对于投资者而言，这是观察 AI 基础设施资本化的重要风向标；对于创业者，AI 能源调度和可再生电力配套可能成为下一个热门赛道。",
+        "links": [
+          [
+            "Google News: SB Energy confidential IPO filing",
+            "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTFBUbnlCUjdYVjJ0X1BtV0VVRlF0YzN3X3ZfRGRLSnNKZzJnMHdFRjhJM09EYjRtWC1md0lJZE1MQ05zblVWbnlGVVlXYnNNd3B6V2hZR3dCVlU4QThuWllCZ1kwakJnaGVDcklxQ2RSbmxLQV9kSTVRdDFzY05IbThqN1RSMnN2WkpKVTBlUGxBSEMwLThSbmh0eUZsR0RqQzItMzV2STBGN3I3b0hCaHMwTXdLMVBmX2c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "Jensen Huang：英伟达找到价值2000亿美元的“全新”市场",
+        "dek": "英伟达CEO黄仁勋提出，AI Agent将催生一个规模达2000亿美元的CPU新市场，这标志着英伟达正在从GPU巨头向全栈计算平台转型。",
+        "details": [
+          "在5月20日的财报电话会议上，英伟达CEO黄仁勋预测，AI Agent的规模化部署将带来一个“全新”的芯片市场，价值高达2000亿美元。与当前主要用于训练和推理的GPU不同，AI Agent需要大量CPU来处理逻辑规划、工具调用和多步推理——这些任务对顺序计算和低延迟有更高要求。黄仁勋认为，这个市场尚未被任何现有产品充分满足，而英伟达的Grace CPU系列有望成为核心解决方案。",
+          "这一判断基于AI Agent从实验室走向生产环境的趋势。根据英伟达内部数据，企业客户对Agent类应用的需求在过去半年增长了5倍，且每个Agent的算力消耗中，CPU占比已从10%攀升至40%以上。黄仁勋指出，如果未来每个企业都运行数百个专用Agent，全球CPU需求将远超当前服务器市场总量，而英伟达凭借NVLink和统一内存架构，能够提供CPU-GPU协同计算的优势方案。",
+          "不过，这一预测尚处于早期阶段：2000亿美元市场规模基于黄仁勋对2028年AI Agent渗透率的假设，实际落地取决于企业部署进度和竞争对手（如AMD、Intel）的回应。黄仁勋的发言也被视为英伟达向投资者传递新增长故事的信号——在GPU增长可能趋缓的背景下，CPU for Agent可能成为下一个收入支柱。"
+        ],
+        "why": "黄仁勋首次将AI Agent作为独立算力市场提出，意味着英伟达正试图定义下一个计算范式，这对芯片投资、云服务商和Agent框架创业公司都有直接战略影响——谁先占据Agent推理的CPU生态，谁就可能主导下一波AI基础设施。",
+        "links": [
+          [
+            "TechCrunch AI: Jensen Huang says he’s found a ‘brand new’ $200B market for Nvidia",
+            "https://techcrunch.com/2026/05/20/jensen-huang-says-hes-found-a-brand-new-200b-market-for-nvidia/"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "Railway：Agent-Native Cloud 的崛起——专访 CEO Jake Cooper",
+        "dek": "当 AI Agent 不再是附加功能而是主力用户，云基础设施需要从根上重构。",
+        "details": [
+          "传统云计算设计以人类开发者为中心：用户通过浏览器或 CLI 操作，API 调用节奏慢、边界清晰。但 AI Agent 以毫秒级频率自主调用 API，需要低延迟、高并发、无状态的执行环境。Railway 创始人 Jake Cooper 在 Latent Space 访谈中提出，Agent-native cloud 必须从底层重新思考网络、存储和计费模型。",
+          "Railway 目前拥有 300 万用户，每周新增 10 万注册，数据完全归用户所有。其基础设施采用自建数据中心（own-metal）而非三大云厂商，以追求极致的成本和控制力。Cooper 透露，客户仅在 AI coding agent 上的月花费就超过 20 万美元，且这一数字仍在快速增长。",
+          "Agent-native cloud 的核心差异在于：传统“基础设施即代码”变成“基础设施即 Agent 的目标”。Agent 不再需要人写部署脚本，而是通过自然语言或 API 直接表达需求，平台自动调度资源。Cooper 认为这种做法将最终消灭 Pull Request，因为代码变更和部署均由 Agent 在沙箱中完成，无需人工审查。",
+          "这一趋势对创业公司意味着巨大机会：专为 Agent 设计的云平台可能重塑 1,000 亿美元的 IaaS 市场。但同时也带来安全性、可观测性和治理的新挑战——当 Agent 自动操作基础设施，如何防止无限循环的计费或数据泄露？Railway 的实践为行业提供了一个参考样本。"
+        ],
+        "why": "Agent-native cloud 是 AI 基础设施从“辅助工具”走向“自主执行”的关键一步，直接影响企业如何选择云服务、设计 Agent 架构以及评估成本效率。",
+        "links": [
+          [
+            "Latent Space: Railway: The Agent-Native Cloud — Jake Cooper",
+            "https://www.latent.space/p/railway"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "风行在线CEO易正朝：先全员Coding，再All in众创",
+        "dek": "AI会放大“自嗨”，解药只有交付结果",
+        "details": [
+          "在AIGC2026大会上，风行在线CEO易正朝分享了公司在AI时代的转型经验。他提出“先全员Coding，再All in众创”的策略，强调所有员工，包括非技术岗，都应掌握编码能力，以此降低AI应用的沟通成本。易正朝认为，AI工具容易让团队陷入“自嗨”——沉浸于技术演示，却忽视实际业务价值。",
+          "风行在线通过全员编程训练，让产品、运营等岗位能直接调用API和微调模型，大幅缩短了从创意到落地的周期。在此基础上，公司开放内部AI能力给外部创作者，形成“众创”生态。易正朝指出，AI时代的竞争不再是技术参数的比拼，而是“交付结果”的速度和质量。",
+          "这一观点对传统企业转型尤其具有参考价值：与其等待AI专家空降，不如让现有团队用AI改造工作流。但全员编程的门槛和成本不容忽视，风行在线的做法是否可复制，仍需结合公司规模和行业特性评估。"
+        ],
+        "why": "易正朝的观点直击AI落地的核心矛盾——技术炫技与业务实效的脱节。对于计划推进AI战略的管理者，他的“交付结果”导向和“全员编程”经验提供了可操作的反省框架。",
+        "links": [
+          [
+            "量子位: 风行在线CEO易正朝：先全员Coding，再All in众创丨AIGC2026",
+            "https://www.qbitai.com/2026/05/422001.html"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "自主无人机的技术栈与经济账：乌克兰创始人与经济学家的警醒",
+        "dek": "从宠物相机到AI制导武器，乌克兰无人机创始人Yaroslav Azhnyuk与经济学家Noah Smith共话无人机战争的现实：西方正在掉队。",
+        "details": [
+          "在Latent Space播客中，乌克兰无人机公司创始人Yaroslav Azhnyuk分享了他从民用安防跨入军用AI无人机的经历。他指出，当前无人机技术栈已经覆盖从低成本硬件、边缘AI芯片到自主导航和群体协作软件，而西方过度依赖昂贵、复杂的传统武器系统，忽视了规模化生产自主无人机带来的战争经济学优势。Azhnyuk认为，俄乌冲突已经验证了“白菜价”无人机配合AI可以改变战场规则，而美国及其盟友在采购和战略上反应迟缓。",
+          "宏观经济评论员Noah Smith（《Noahpinion》）作为客座主持人，从产业政策视角补充：自主无人机的瓶颈并非算法，而是供应链和工业产能。西方如果不在电池、电机、复合材料及飞控系统上建立弹性供应，即便有最好的AI也无法量产。两人一致警告：当前西方国防预算仍大量投向载人平台和大型精确制导弹药，而对手正在用数量更多、更智能、更廉价的无人机系统改写作战成本曲线。",
+          "此次对话还触及自动驾驶在民用场景的技术溢出。Azhnyuk指出，许多无人机AI算法（如视觉SLAM、避障规划）与商用机器人高度重叠，这意味着民用无人配送、巡检和测绘领域将同步受益于战争驱动的技术迭代。不过他也承认，自主武器带来的伦理和失控风险需要全球治理框架——但目前没有国家愿意第一个踩刹车。"
+        ],
+        "why": "这篇对话揭示了自主无人机如何从战术武器演变为战略变量，并提醒投资者与创业者：无人机产业链中游（飞控、边缘计算、群体AI）可能比整机组装更具长期价值。",
+        "links": [
+          [
+            "Latent Space: The Autonomous Drone Tech Stack & Economics of Drones — Yaroslav Azhnyuk, The Fourth Law & Guest Host Noah Smith",
+            "https://www.latent.space/p/the-fourth-law"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-05-18",
+        "freshnessLabelEn": "Fallback | published 2026-05-18",
+        "freshnessLabel": "补位｜发布于 2026-05-18"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Tycoon AI：用AI智能体运营一人公司",
+        "dek": "Product Hunt 上新，瞄准单人企业自动化工作流",
+        "details": [
+          "Tycoon AI 是一款面向单人企业的 AI Agent 产品，允许用户创建多个 AI 助手来执行市场营销、客户支持、财务对账等职能，试图实现“无人化公司运营”。5月21日登上 Product Hunt 并被 Google News 聚合发现。",
+          "其核心卖点是“零代码 + 任务编排”——用户只需描述业务需求，系统自动分配 Agent 角色并安排任务优先级。官方宣称可处理 80% 常规办公流程，但未展示真实用户案例或企业级部署数据。",
+          "同类产品包括 AutoGPT 的企业版和一些垂直领域的 Agent 平台（如 11x.ai），但 Tycoon AI 的差异化在于强调“一人公司（one-person company）”场景，适合自由职业者和小型创业团队。",
+          "目前该产品处于早期发布阶段，用户可通过 Product Hunt 页面申请试用。由于缺乏独立评测和付费方案信息，实际效果有待验证。"
+        ],
+        "why": "单人企业是AI Agent落地的高频场景，Tycoon AI代表一种降低使用门槛的努力，但产品成熟度和市场验证尚浅，值得关注其后续用户增长率。",
+        "links": [
+          [
+            "Google News AI Product Discovery: Tycoon AI",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5DTllmUjdNT1J5X2gwRDRFVzVha2kyelpSOVRNTzVhNzlORU1qelFEUTM4a240LUlsY1VuODVQeTNsNWxZNEVPQUlMVUMyZjBURUhRVlNaaG5hZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Spotify 推出桌面应用，正面挑战 Google NotebookLM",
+        "dek": "Spotify 发布新的桌面应用，让用户像做播客一样整理和收听个人知识内容。",
+        "details": [
+          "Spotify 于 5 月 21 日推出了一款新的桌面应用研究预览版，允许用户将文章、文档等资料转化为类似播客的音频节目。该功能直接对标 Google 的 NotebookLM，后者同样提供音频总结服务。",
+          "目前该应用已在超过 20 个市场开放测试，但仅限桌面端。用户可以将网络链接或个人笔记导入，由 AI 生成对话式音频摘要，并支持调整语速和章节标记。",
+          "与 NotebookLM 面向学生和研究者的定位不同，Spotify 更强调“轻量知识消费”——用户可以在通勤或运动时收听整理好的内容，而非阅读。这意味着 Spotify 试图将 AI 音频能力嵌入其已有的播客流媒体生态。",
+          "不过，目前该应用仍处于 research preview 阶段，功能有限，例如不支持移动端使用，且仅可处理英文内容。Spotify 尚未公布正式上线时间表。"
+        ],
+        "why": "Spotify 将 AI 音频摘要与自身播客流媒体优势结合，说明“音频+AI 知识管理”正从工具型产品向场景型产品演进，值得关注个人消费级 AI 应用的新切口。",
+        "links": [
+          [
+            "TechCrunch AI: Spotify takes on Google’s NotebookLM with its new app",
+            "https://techcrunch.com/2026/05/21/spotify-debuts-a-new-desktop-app-for-creating-personal-podcasts/"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "让AI从“聊天”走向“干活”的关键设计模式",
+        "details": [
+          "Agentic Workflow（智能体工作流）是指将大语言模型（LLM）嵌入到具有记忆、规划、工具调用和自主决策能力的循环流程中，使其能独立完成多步骤任务。与传统的单次问答不同，Agentic Workflow 让 AI 能主动分解问题、调用外部 API、验证结果并自我纠错，从而从“对话助手”进化为“数字员工”。",
+          "这一概念的核心在于“代理循环”（agent loop）：模型在执行每一步后，会观察输出结果并决定下一步行动。典型实现包括 ReAct 模式（思考-行动-观察）、Plan-and-Execute 模式以及多智能体协作模式。Google、微软、OpenAI 等公司均已推出 Agent 开发框架，如 LangChain、AutoGPT 和 Semantic Kernel。",
+          "在中美 AI 产业中，Agentic Workflow 正在从实验室走向生产环境。中国厂商如腾讯混元近期开源的 Hy-MT2 翻译模型虽非直接针对 Agent，但其指令遵循能力的提升正是 Agent 工作流所需的基础能力。同时，SB Energy 等 AI 基础设施公司借助“Stargate”项目整合能源与算力，为大规模 Agent 部署提供底层支持。"
+        ],
+        "why": "理解 Agentic Workflow 是把握 2026 年企业自动化与 AI 落地的关键：它决定了 AI 能否从“回答问题”升级为“完成工作”，直接影响产品设计、投资方向和职业选择。",
+        "links": [
+          [
+            "腾讯混元开源Hy-MT2翻译模型",
+            "https://www.qbitai.com/2026/05/422068.html"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
             {
     "date": "2026-05-21",
     "title": "AI Daily Atlas",
@@ -1487,6 +1828,351 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-05-22",
+    "title": "AI Daily Atlas",
+    "meta": "May 22, 2026",
+    "headline": "AI competition is shifting from capability launches to real workflow control",
+    "summary": "Today’s useful thread is that AI companies are no longer only proving stronger models; they are fighting for user entry points, enterprise workflows, and key industry positions. The important test is whether these moves become durable usage instead of one-day attention.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google I/O 2026: Search, Gemini, and research agents move together",
+        "dek": "Google I/O 2026 unveiled a wave of AI updates, from Gemini Omni video editing to research agents, all tied into an agent ecosystem that may test consumer appetite.",
+        "details": [
+          "At Google I/O 2026, the company announced over 100 AI-related updates, including Gemini Omni, a multimodal video editing model that can generate and edit video via natural language. This extends Google's lead in multimodal AI, but the real strategic bet is on agents: a new research agent that autonomously runs experiments and analyzes data, aimed at accelerating scientific discovery.",
+          "Google also upgraded Search with deeper Gemini integration, allowing users to ask complex, multi-step questions and receive synthesized answers. This blurs the line between search engine and personal assistant, though TechCrunch notes the pitch to consumers on an 'AI agent ecosystem' remains confusing and may not resonate with mainstream users.",
+          "The research agent, in particular, stands out: it can design experiments, query databases, and generate reports, potentially reducing months of lab work to days. While still in early access, it signals Google's ambition to target enterprise and scientific workflows, a high-value market beyond consumer search.",
+          "Together, these moves show Google is collapsing its product silos into a unified agent platform. However, the success hinges on user trust and clarity—two elements TechCrunch argues are missing from this year's messaging."
+        ],
+        "why": "Google's I/O 2026 reveals a clear strategy: embed agents into every product. For startups and investors, this means competing in an ecosystem where Google controls both the platform and the distribution, making niche vertical agents or specialized data services the smarter battleground.",
+        "links": [
+          [
+            "Google AI Blog: 100 things we announced at I/O 2026",
+            "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/"
+          ],
+          [
+            "Google News AI Products: 100 things we announced at I/O 2026 - blog.google",
+            "https://news.google.com/rss/articles/CBMikwFBVV95cUxPLUNpU3JVN2c1OGJhekZReUU4aHJEb1BKVjZncGVGUHdDNkJDSGJCQU1yMXVyQ3pScjNWRXk5S1lTd1dBcUpaVHJ3V05YUGVsNkVMbUpldk9PQ0pMbEZiVk5NUUlMallnV0FYcDhmVzZTbFFoTDAzUDJNRFZTaENTcHV5R2llbkhSUjJoTmQ5YjNSNU0?oc=5"
+          ],
+          [
+            "Google News AI Models: Google I/O 2026: Google unveils Gemini Omni AI video editing model",
+            "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYVpzVjRJOWU4eGJlQU1BRnFyYW4yWlpwWFBNdTBkWXl0LTliOHBNX0pReWdzckZ6YUFLUmtoU3NreWpRLTlwaGljWU1XTWJLT1V2RTlCUzlnMDl2bVNwVmFiVmdjVUhONTRLVVdLYXFYbGxJalVBZ2lfMnJoM2hKaWQ3YmRmcjFvTFUxYWwwZ0FQQ2J0WE1iemFtaDdoTkVvMVk0SHJLSTJ3d0FhZmkzWVl5Qnd1YnZWNU9JTA?oc=5"
+          ],
+          [
+            "TechCrunch AI: Google is pitching an AI agent ecosystem to consumers who may not buy it",
+            "https://techcrunch.com/2026/05/21/google-is-pitching-an-ai-agent-ecosystem-to-consumers-who-may-not-buy-it/"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "腾讯上线操作系统层级AI助手Marvis 支持跨端操控与本地隐私模式 - 央广网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：腾讯上线操作系统层级AI助手Marvis 支持跨端操控与本地隐私模式 - 央广网. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯上线操作系统层级AI助手Marvis 支持跨端操控与本地隐私模式 - 央广网",
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTE5lMk5sbHRiTHpsSVlZdktHSkZTMTdKeXVrNDhYbUdmYXlkT3lkOWdBVVdPSTN2ZkZRVWliNW9YLUticFJHQjVYMk1FRkhUa3pwNFo5aFA5N21fWklaMHpncTZyX3VYZnI0TFNzYktR?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Tencent Launches OS-Level AI Assistant Marvis for Streamlined User Experience",
+        "dek": "Tencent's new AI assistant Marvis integrates deeply with the operating system, offering a more intuitive and efficient interaction method.",
+        "details": [
+          "On May 21, 2026, Tencent officially launched Marvis, an operating system-level AI assistant designed to provide a more convenient and accessible user experience. Unlike traditional app-based assistants, Marvis is embedded directly into the OS, allowing users to invoke it system-wide via voice, text, or gesture, enabling seamless task execution such as file searching, app launching, and information retrieval without switching contexts.",
+          "This move signals Tencent’s strategic pivot from isolated AI features within its ecosystem (e.g., WeChat or QQ bots) to a foundational OS layer, aiming to capture user mindshare in the increasingly competitive AI assistant landscape in China. Marvis is expected to compete with similar OS-level offerings from Huawei (e.g., Celia) and Xiaomi (e.g., Xiao Ai), but with the advantage of Tencent’s vast social and content ecosystem for personalized recommendations.",
+          "For developers, Marvis potentially opens a new distribution channel for third-party services via Tencent’s AI agent capabilities, though details on an API or developer program have not been disclosed."
+        ],
+        "why": "This launch positions Tencent to directly compete in the OS-level AI assistant race, potentially reshaping user interaction patterns and creating new monetization opportunities within its ecosystem.",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯上线更便捷易用的操作系统级AI助手Marvis - 中国科技网",
+            "https://news.google.com/rss/articles/CBMicEFVX3lxTE9ZRmlwbU1YQTF6bEdQdHNzbTNPb2F2V0c5UzNIaHFBd1ZubHR6WGtPV1ZvQlFYeDlhb1BVdWNRSTgyYzRDV0lTTkJVTE5fSTdiNExGUWdxNzdOdThoaGhlaThhZl91T2MtRF82cVNwSEM?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Tencent's Hunyuan Open-Sources New Translation Model Hy-MT2, Launches Mini-Program 'Tencent Hy Translation'",
+        "dek": "Tencent's Hunyuan team releases Hy-MT2, an open-source translation model with enhanced instruction-following capabilities, alongside a dedicated WeChat mini-program for direct use.",
+        "details": [
+          "On May 21, 2026, Tencent's Hunyuan AI team open-sourced Hy-MT2, a new translation model available on GitHub. The model's key improvement is its significantly enhanced instruction-following ability, allowing it to better handle nuanced translation requests such as tone adjustment, domain-specific terminology, or format constraints. This makes it more versatile than previous versions.",
+          "Simultaneously, Tencent launched a WeChat mini-program called 'Tencent Hy Translation' that lets users directly leverage the model for translations. The move expands Tencent's AI product ecosystem by combining open-source developer support with an accessible consumer tool. The model is part of the broader Hunyuan LLM family, which competes with other major Chinese AI models from Baidu, Alibaba, and ByteDance.",
+          "Open-sourcing Hy-MT2 aligns with Tencent's strategy to build developer goodwill and accelerate adoption, while the mini-program provides an immediate user touchpoint for feedback and data collection. The translation quality improvements could impact cross-border e-commerce, content localization, and multilingual communication workflows."
+        ],
+        "why": "This release strengthens Tencent's position in the competitive AI translation space, offering a free, customizable alternative for developers while capturing consumer usage through a low-friction mini-program entry point.",
+        "links": [
+          [
+            "量子位: 腾讯混元开源全新翻译模型Hy-MT2 ，上线小程序「腾讯Hy翻译」",
+            "https://www.qbitai.com/2026/05/422068.html"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Yingmi Fund and Alibaba Cloud Launch Institutional AI Agent Solution",
+        "dek": "The partnership targets asset management firms with a fully managed AI agent platform on Alibaba Cloud.",
+        "details": [
+          "Yingmi Fund, a Chinese fund distribution platform, has partnered with Alibaba Cloud to unveil an 'Institutional AI Agent Solution' designed for asset management companies. The solution leverages Alibaba Cloud's AI infrastructure to enable automated workﬂows, data analysis, and client interaction for fund managers.",
+          "This launch reﬂects the accelerating adoption of AI agents in China's ﬁnancial sector, where regulatory approval for AI-powered investment tools has been expanding. The solution targets mid-tier fund houses that lack in-house AI capabilities, offering ready-to-deploy agents for compliance reporting, portfolio optimization, and customer service."
+        ],
+        "why": "This collaboration signals that cloud providers are moving beyond basic AI models to offer industry-speciﬁc agent solutions, making it easier for ﬁnancial ﬁrms to adopt AI without building from scratch.",
+        "links": [
+          [
+            "Google News China AI Signals",
+            "https://news.google.com/rss/articles/CBMiakFVX3lxTFAxWDRfSXYxZXgzWnJkTm5CZzBvNlVtV2R6ckRuWDdVUTlBYXBsZVNEei1NcHdXRzNwandhSkhDUUlIdlRvWTFiSEhObmlNMVVDSW1IWjVEdXpnQ1I0X0czdW9iQUw1aUlOOUE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "AI-powered energy infrastructure startup SB Energy confidentially files for IPO, backed by SoftBank and OpenAI",
+        "dek": "The company, closely tied to the 'Stargate' AI infrastructure project, seeks to go public amid surging demand for AI-driven energy solutions.",
+        "details": [
+          "SB Energy, a newcomer in AI-powered energy infrastructure, has confidentially filed for an IPO. The move comes as the company positions itself at the intersection of AI compute demands and energy delivery, with backing from heavyweights SoftBank and OpenAI. The filing was reported on May 21, 2026, signaling confidence in the sector's growth.",
+          "The startup is deeply integrated with the 'Stargate' project, an ambitious AI infrastructure initiative. While the exact financial details of the IPO remain confidential, the backing from SoftBank and OpenAI underscores the strategic importance of energy infrastructure for scaling AI. SB Energy aims to provide specialized power solutions for data centers and AI clusters.",
+          "This IPO filing highlights the increasing capital flow into AI-adjacent infrastructure. If successful, SB Energy could set a precedent for other energy startups targeting the AI boom. However, the company's valuation and timeline remain uncertain until public filings emerge. Investors will watch for details on revenue and Stargate contracts."
+        ],
+        "why": "The SB Energy IPO signals that AI infrastructure investment is moving beyond chips and data centers into dedicated energy solutions, creating new opportunities for startups and investors in the power sector.",
+        "links": [
+          [
+            "Google News AI Reports: AI-powered energy infrastructure newcomer SB Energy confidentially filed for an IPO",
+            "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTFBUbnlCUjdYVjJ0X1BtV0VVRlF0YzN3X3ZfRGRLSnNKZzJnMHdFRjhJM09EYjRtWC1md0lJZE1MQ05zblVWbnlGVVlXYnNNd3B6V2hZR3dCVlU4QThuWllCZ1kwakJnaGVDcklxQ2RSbmxLQV9kSTVRdDFzY05IbThqN1RSMnN2WkpKVTBlUGxBSEMwLThSbmh0eUZsR0RqQzItMzV2STBGN3I3b0hCaHMwTXdLMVBmX2c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Jensen Huang says he’s found a ‘brand new’ $200B market for Nvidia",
+        "dek": "Nvidia CEO predicts a $200 billion market for CPUs designed for AI agents, signaling a potential shift in AI hardware focus.",
+        "details": [
+          "Nvidia CEO Jensen Huang has identified a new multi-hundred-billion-dollar opportunity: CPUs purpose-built for AI agents. According to Huang, this market could be worth $200 billion. While Nvidia is known for its dominant position in GPUs for training large AI models, the company has been expanding into inference and edge computing. AI agents — autonomous software that can execute complex tasks — are seen as the next wave of AI deployment, requiring specialized compute that differs from the massive clusters used for training.",
+          "Huang's prediction suggests that Nvidia sees a future where AI agents run on dedicated CPUs, likely optimized for real-time decision-making and low-latency responses. This would contrast with the current paradigm where most agent-like capabilities are powered by GPU-based cloud APIs. The $200 billion figure hints at a massive infrastructure buildout, potentially including on-device AI chips for robots, drones, and personal assistants. However, it remains a forecast — Nvidia has not announced any specific product roadmap for these AI agent CPUs, and the market is yet to materialize."
+        ],
+        "why": "If Huang's vision holds, Nvidia's chip strategy could shift beyond GPUs into a new CPU market, opening up investment opportunities in AI agent hardware and edge computing startups. It also signals that AI agents are expected to move from cloud-based APIs to local, real-time execution, which may reshape how developers build autonomous systems.",
+        "links": [
+          [
+            "TechCrunch AI: Jensen Huang says he’s found a ‘brand new’ $200B market for Nvidia",
+            "https://techcrunch.com/2026/05/20/jensen-huang-says-hes-found-a-brand-new-200b-market-for-nvidia/"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Railway: The Agent-Native Cloud — Jake Cooper",
+        "dek": "Why a platform with 3M users and 100K weekly signups is betting on own-metal data centers and the end of pull requests.",
+        "details": [
+          "In a recent Latent Space interview, Railway CEO Jake Cooper laid out a vision for an \"agent-native\" cloud: infrastructure designed from the ground up for AI agents, not humans. Railway has grown to 3 million users and 100,000 signups per week, with its own-metal data centers running alongside traditional cloud providers. Cooper highlighted that the single biggest use case is coding agents — Railway sees over $200,000 per month in agent-driven spending, and the platform is built to let agents deploy and iterate without human pull requests. He argues that the pull request (PR) workflow is dying because agents can test, review, and merge code faster and more consistently than humans, making the developer experience fundamentally different.",
+          "The implications extend beyond Railway: if agent-native infrastructure becomes the norm, cloud providers must rethink scheduling, networking, and billing. Railway's approach of owning its hardware (rather than reselling AWS or GCP) gives it lower latency and fine-grained control over resource allocation — critical for latency-sensitive agent loops. Cooper's prediction that \"the death of PRs\" will reshape software development pipelines suggests that CI/CD tools, code review platforms, and even version control systems will need to adapt to a world where agents are the primary consumers of cloud APIs."
+        ],
+        "why": "This signals a structural shift in cloud computing: as AI agents become the primary users of infrastructure, platforms optimized for agent workflows (fast deploy, no manual review, low-latency compute) will capture value from traditional clouds. For product builders, it's a cue to design APIs and deployment tools that assume agent consumers, not human developers.",
+        "links": [
+          [
+            "Latent Space: Railway: The Agent-Native Cloud — Jake Cooper",
+            "https://www.latent.space/p/railway"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "风行在线CEO易正朝：先全员Coding，再All in众创丨AIGC2026",
+        "dek": "In an AIGC2026 talk, Funshion Online CEO Yi Zhengchao argues that AI amplifies self-congratulatory hype, and the only cure is delivering real results.",
+        "details": [
+          {
+            "summary": "AI驱动的“自嗨”陷阱",
+            "expanded": "Yi warned that AI tools often lead teams to overcelebrate small prototypes or flashy demos, mistaking activity for progress. He stressed that without rigorous outcome measurement, companies risk wasting resources on vanity projects."
+          },
+          {
+            "summary": "先全员学习AI工具，再All in众创模式",
+            "expanded": "Funshion’s approach: first ensure every employee – from engineering to marketing – becomes proficient in using AI coding assistants and generative tools. Only after building organization-wide AI fluency does the company pivot to 'crowd creation,' where cross-functional teams rapidly iterate on AI-native products. This sequence avoids the common mistake of buying AI tools without changing workflows."
+          },
+          {
+            "summary": "交付结果是唯一标准",
+            "expanded": "Yi emphasized that AI adoption must be judged by tangible business outcomes – user retention, revenue lift, or cost reduction – not by the number of AI models deployed. He cited internal projects that failed despite technical sophistication because they didn't solve real user needs."
+          }
+        ],
+        "why": "Yi's perspective offers a pragmatic counterweight to AI hype, reminding leaders that organizational readiness and outcome-focused execution matter more than tool accumulation. For startups and corporate teams, his 'train first, then create' framework provides a concrete roadmap to avoid common pitfalls.",
+        "links": [
+          [
+            "量子位: 风行在线CEO易正朝：先全员Coding，再All in众创丨AIGC2026",
+            "https://www.qbitai.com/2026/05/422001.html"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "The Autonomous Drone Tech Stack & Economics of Drones — Yaroslav Azhnyuk, The Fourth Law & Guest Host Noah Smith, Noahpinion",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Latent Space：The Autonomous Drone Tech Stack & Economics of Drones — Yaroslav Azhnyuk, The Fourth Law & Guest Host Noah Smith, Noahpinion. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Latent Space: The Autonomous Drone Tech Stack & Economics of Drones — Yaroslav Azhnyuk, Th",
+            "https://www.latent.space/p/the-fourth-law"
+          ]
+        ],
+        "sourceDate": "2026-05-18",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-05-18",
+        "freshnessLabelEn": "Fallback | published 2026-05-18",
+        "freshnessLabel": "Fallback | published 2026-05-18"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Tycoon AI | Run one-person companies entirely with AI agents - Product Hunt",
+        "dek": "Tycoon AI enables solo entrepreneurs to automate entire business operations with AI agents, from sales and marketing to customer support and admin.",
+        "details": [
+          "Tycoon AI is a new Product Hunt launch that pitches itself as a platform for running one-person companies completely through AI agents. The tool promises to automate the full spectrum of business tasks — lead generation, email outreach, social media management, invoicing, and even customer service — using a collection of specialized agents that can be orchestrated by a single user. This reflects a growing trend in the AI startup ecosystem: the rise of \"solo entrepreneur stacks\" where AI replaces entire teams. While the product is still early-stage and lacks detailed technical documentation, the concept aligns with the broader shift toward agentic workflows in productivity tools.",
+          "For solo founders and microbusiness owners, Tycoon AI could significantly lower the barrier to launching and operating a company. However, reliance on AI agents for mission-critical tasks also introduces risks around reliability, data privacy, and customer trust. The product's success will depend on how well it handles edge cases and integrates with existing SaaS tools. Given the sparse information available, potential users should test the free tier before committing."
+        ],
+        "why": "Tycoon AI is a representative example of the 'AI as a workforce' trend, signaling a new product category for solo entrepreneurs. Investors and founders should watch how well such platforms handle complexity and trust issues, as they could reshape micro-business economics.",
+        "links": [
+          [
+            "Google News AI Product Discovery: Tycoon AI | Run one-person companies entirely with AI agents",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5DTllmUjdNT1J5X2gwRDRFVzVha2kyelpSOVRNTzVhNzlORU1qelFEUTM4a240LUlsY1VuODVQeTNsNWxZNEVPQUlMVUMyZjBURUhRVlNaaG5hZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Spotify takes on Google’s NotebookLM with its new app",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from TechCrunch AI：Spotify takes on Google’s NotebookLM with its new app. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "TechCrunch AI: Spotify takes on Google’s NotebookLM with its new app",
+            "https://techcrunch.com/2026/05/21/spotify-debuts-a-new-desktop-app-for-creating-personal-podcasts/"
+          ]
+        ],
+        "sourceDate": "2026-05-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "Understanding the architecture behind autonomous AI agents that plan, execute, and adapt multi-step tasks without human intervention.",
+        "details": [
+          "Agentic Workflow refers to a system design where an AI agent—powered by a large language model or a similar foundation model—autonomously decomposes a high-level goal into a sequence of subtasks, selects appropriate tools or APIs, executes steps, monitors results, and adjusts its plan based on feedback. Unlike traditional chatbot or single-turn inference, an agentic workflow involves loops: the agent can call external functions, search the web, write and execute code, or interact with other agents. This is often implemented through frameworks like ReAct (Reasoning + Acting), chain-of-thought prompting, or custom orchestrators that manage state and context across multiple turns.",
+          "Key components include: (1) a planner that breaks down the objective, (2) a memory module that stores intermediate results, (3) a tool-use interface that connects to databases, calculators, or APIs, and (4) a self-reflection loop that catches errors and retries. Today's major AI platforms (e.g., OpenAI's GPT-4 with function calling, Anthropic's Claude with tool use, and open-source alternatives like LangChain) all provide building blocks for constructing agentic workflows. Real-world applications range from automated customer support triage to AI-driven scientific research pipelines.",
+          "The term has become a central topic in 2025–2026 as enterprises seek to move beyond simple text generation toward autonomous business processes. For example, the AI‑powered energy infrastructure company SB Energy (backed by SoftBank and OpenAI, and deeply integrated with the 'Stargate' project) recently filed confidentially for an IPO, illustrating how agentic workflows can manage complex, multi‑domain operations in energy and beyond."
+        ],
+        "why": "Mastering the concept of agentic workflow is essential for product leaders and investors because it defines the next frontier of AI capability: moving from passive question‑answering to proactive task execution. The rise of agentic architectures directly impacts startup opportunities, enterprise automation strategies, and the competitive positioning of major AI platforms.",
+        "links": [
+          [
+            "SB Energy IPO filing (example of agentic workflow in energy infrastructure)",
+            "https://news.google.com/rss/articles/CBMiugFBVV95cUxNTFBUbnlCUjdYVjJ0X1BtV0VVRlF0YzN3X3ZfRGRLSnNKZzJnMHdFRjhJM09EYjRtWC1md0lJZE1MQ05zblVWbnlGVVlXYnNNd3B6V2hZR3dCVlU4QThuWllCZ1kwakJnaGVDcklxQ2RSbmxLQV9kSTVRdDFzY05IbThqN1RSMnN2WkpKVTBlUGxBSEMwLThSbmh0eUZsR0RqQzItMzV2STBGN3I3b0hCaHMwTXdLMVBmX2c?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
             {
     "date": "2026-05-21",
     "title": "AI Daily Atlas",
