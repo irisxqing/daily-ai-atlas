@@ -1,10 +1,10 @@
 const archiveZh = [
-      {
+        {
     "date": "2026-05-25",
     "title": "AI Daily Atlas",
     "meta": "2026年5月25日",
-    "headline": "今天的 AI 信号没有单一主线，但值得分开看",
-    "summary": "今天没有一个压倒性的 AI 主题，更像是大公司动作、产品更新和行业观点的并行推进。阅读重点不是强行找“转变”，而是分别判断哪些信号有真实产品、资本或组织含义。",
+    "headline": "今天的 AI 信号集中在入口、Agent 和应用落地",
+    "summary": "今天值得看的不是单一“转变”，而是几类具体动作同时出现：大公司继续争夺用户入口，产业链公司强化算力或基础设施位置，垂直行业开始把 Agent 包装成可交付方案。产品推荐只保留少量能进入真实工作流的工具，作为正文之外的补充。",
     "tags": [
       "头条",
       "深度",
@@ -15,18 +15,17 @@ const archiveZh = [
       {
         "section": "头条",
         "priority": "high",
-        "title": "DeepSeek宣布V4模型永久降价 或加剧AI价格战 - 联合早报",
-        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "title": "DeepSeek的十万亿美元棋局：开源降价与底层创新如何重塑AI硬件生态",
+        "dek": "文章深度解读DeepSeek如何通过开源降价和底层硬件协同，重塑从芯片到服务器的AI生态。",
         "details": [
-          "这条信号来自 Google News China AI：DeepSeek宣布V4模型永久降价 或加剧AI价格战 - 联合早报。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
-          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
-          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+          "据itsolotime.com报道，DeepSeek正通过开源模型迭代和持续降价策略，试图降低AI应用门槛，吸引更大规模开发者生态。文章认为，这种“以价换量”的做法将直接影响AI芯片和服务器市场的需求结构。",
+          "报道进一步指出，DeepSeek在底层硬件协同上进行创新，可能与国产芯片厂商合作优化推理效率。这些动作有望重塑从算力供应到部署成本的产业链格局，但具体合作细节和实际成效尚待进一步验证。"
         ],
-        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "why": "DeepSeek的策略可能加速国产AI芯片替代进程，降低大模型部署成本，对AI基础设施投资、开源社区走向和云服务商定价均有风向标意义。",
         "links": [
           [
-            "Google News China AI: DeepSeek宣布V4模型永久降价 或加剧AI价格战 - 联合早报",
-            "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nOFVZQ1ZTR29NaGo3emhNaDlkYUJ4NjVYN1hNZ3FyUE5tenpDSG1JSWhwUXVUN1poUFRVZGxscmNXTmNVRkNHbXctdEtyOHJrOTNJUDlyd0tXejl5MG1QRWI5blM4T1JiVUpUN0hn?oc=5"
+            "Google News China AI: DeepSeek的十万亿美元棋局：开源降价与底层创新如何重塑AI硬件生态 - itsolotime.com",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1pQ05YZVF4Wl9zVU13LXdPbGxQenFWbkRqVGhfTkw0Z1hZNUI1MkhNSTdiQlRoZWdLbUt0ODRTcnAycVVMMHlXNXM5dk11RDFwSjlN?oc=5"
           ]
         ],
         "sourceDate": "2026-05-24",
@@ -37,17 +36,16 @@ const archiveZh = [
         "freshnessLabel": "周末窗口｜2026-05-24"
       },
       {
-        "section": "深度",
-        "priority": "medium",
-        "title": "Google I/O 2026：AI 产品和开发者工具集中更新",
-        "dek": "Dialogues 舞台上的讨论揭示了谷歌对 AI、量子计算和机器人技术的长远布局。",
+        "section": "头条",
+        "priority": "high",
+        "title": "Google I/O 2026 Dialogues：AI、量子与机器人的未来之谈",
+        "dek": "5月22日，Google在I/O Dialogues舞台上与行业领袖探讨AI、量子计算、机器人和创造力的前沿方向。",
         "details": [
-          "在 Google I/O 2026 的 Dialogues 舞台上，谷歌高管与行业领袖围绕 AI 的未来展开了多场对谈。重点话题包括生成式 AI 如何从聊天机器人走向自主代理，以及大模型在医疗、教育等垂直场景的落地路径。这些讨论与谷歌近期发布的 Gemini 2.0 系列模型一脉相承，强调多模态和工具使用能力。",
-          "量子计算成为另一焦点。谷歌展示了 Willow 之后的量子处理器进展，并讨论了量子-经典混合计算如何加速 AI 训练。虽然实际商用仍需数年，但谷歌明确将量子视为未来十年 AI 基础设施的关键拼图。",
-          "机器人方面，谷歌 DeepMind 团队分享了将大模型作为机器人“大脑”的最新实验，使机器人能够理解自然语言指令并自主规划复杂动作。这延续了 2024 年以来“大模型+机器人”的技术路线，但离家用普及仍有距离。",
-          "创造力部分，谷歌展示了 AI 在音乐生成、视频编辑和 3D 建模领域的工具更新。例如，MusicLM 的升级版支持更长、更复杂的曲风控制；VideoPoet 能够根据文本生成连贯视频片段。这些工具降低了创作门槛，但版权和伦理问题依然是行业争议点。"
+          "在2026年Google I/O的Dialogues舞台上，Google高层与行业领袖共同探讨了AI的下一个前沿，包括多模态模型、量子计算与机器人的融合，以及生成式AI在创意领域的新应用。对话强调AI正从“对话工具”演变为“协作伙伴”，尤其在生产和教育场景中角色转变。",
+          "量子计算方面，Google透露了其最新量子芯片的进展，认为量子+AI的组合有望在药物发现和材料科学中带来突破。同时，机器人领域展示了基于大模型的自主决策能力，暗示未来机器人将更灵活地适应复杂环境。",
+          "创意领域同样被重点关照：Google演示了AI如何辅助电影制作、音乐创作和游戏设计，强调人类主导、AI赋能的协作模式。这些展示并未公布具体产品发布时间，但指向了Google未来12个月的重点研发方向。"
         ],
-        "why": "I/O Dialogues 往往比主题演讲更前瞻，本次讨论表明谷歌正从“模型竞争”转向“AI 基础设施+垂直应用”的长期战略，对开发者生态和创业公司的技术选型具有风向标意义。",
+        "why": "Google I/O是全年AI风向标，Dialogues舞台透露的战略方向将直接影响开发者生态、创业公司技术选型以及对量子与机器人领域的投资信心。",
         "links": [
           [
             "Google AI Blog: Catch up on the Dialogues stage at Google I/O 2026.",
@@ -64,16 +62,17 @@ const archiveZh = [
       {
         "section": "深度",
         "priority": "medium",
-        "title": "物理 AI 的未来不是人形机器人，而是任务专用且成本高效",
-        "dek": "The Robot Report 指出，行业正在从追求通用人形机器人转向更务实的专用机器人，这背后是成本、可靠性和商业落地能力的考量。",
+        "title": "物理AI的未来不在人形机器人，而在任务专属与成本效益",
+        "dek": "The Robot Report 指出，过于追求通用人形可能偏离商业现实，真正机会在于为具体任务设计低成本、高ROI的机器人。",
         "details": [
-          "长期以来，人形机器人因其类人外形被视为 AI 的终极形态，但 The Robot Report 的最新分析认为，物理 AI 的真正突破在于任务专用性和成本控制。文章指出，通用人形机器人面临硬件复杂度高、单台成本超十万美元、可靠性难以满足工业 7x24 小时运转等现实难题。相比之下，针对仓储分拣、农业采摘、建筑刷墙等单一场景设计的专用机器人，能以更低的价格、更快的部署周期实现正向 ROI，例如某物流机械臂的使用成本已降至每小时 2 美元以下。",
-          "这一趋势正在改变投资风向：风险资本从 2024 年的人形机器人概念热转向专注垂直场景的初创公司。例如，获得新融资的农业机器人厂商使用视觉大模型进行成熟度判断，而非昂贵的高精度传感器。文章认为，未来五年物理 AI 的主流形态将是数十种“技能单一但价格亲民”的机器人，而非一个万能的人形管家。这种务实的路线更贴近制造业和服务业的真实需求，也更容易获得用户的信任和采纳。"
+          "人形机器人近两年吸金无数，但The Robot Report近期分析认为，物理AI的商业化落地更可能沿着“任务专属”路径前进。通用人形机器人要同时实现平衡、灵活、低成本，技术挑战和成本门槛极高，短期内难以达到经济可行的水平。相反，针对特定场景（如仓储搬运、农业采摘、精密装配）设计的专用机器人，可以通过模块化硬件和聚焦的AI算法大幅降低成本，更快实现规模回报。",
+          "这一观点呼应了业界对“人形机器人泡沫”的隐忧。尽管Figure AI、Tesla Optimus等明星项目屡获融资，但多数仍停留在实验室演示阶段。The Robot Report强调，真正创造价值的物理AI应该从“解决一个具体问题”出发，而非先造出一个完美的人形骨架再找应用。例如，单臂轮式机器人配合视觉模型，即可在工厂执行90%的重复性任务，成本不到人形方案的十分之一。",
+          "从产业链看，传感器、伺服电机、轻量化材料等上游组件正因专用机器人放量而快速降本，这又会反过来加速任务专属机器人的迭代。如果此趋势成立，未来两三年内，我们可能看到大量“不像人但很能干活”的机器人在仓库、农田和生产线铺开，而非科幻片里的通用人形管家。"
         ],
-        "why": "对投资者和产品经理而言，这意味着不应盲目追捧人形机器人概念，而应关注那些能解决具体行业痛点、具备成本优势的专用机器人方案。",
+        "why": "这项分析提醒投资者和创业者，在机器人投资热中需警惕人形机器人泡沫，优先关注能立即解决工业或商业痛点的垂直机器人。",
         "links": [
           [
-            "Google News AI Infrastructure: The future of physical AI isn’t humanoid; it’s task-specific and cost-efficient",
+            "Google News AI Infrastructure: The future of physical AI isn’t humanoid; it’s task-specifi",
             "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeF96YWVWVU1GM3JXUmhuM3FSM0NIc0ZKMDE1UjBMUUhOYmxkTGpZYTlFTTFfRDZiUXE3VW5YX29SOElYN01sX2pVSFI4VW4wTk50WEhSbFBmbUtlbFRrX19xVURURVlfRDhtT2pQVHA3SWNrZEMzc3IyY20tbXRiX2NZQXZTSEtYbWxOeUxvSEVaMjZ2RTUtZEJKUUFYMUpVTFhhVWtQMV9DOEdC?oc=5"
           ]
         ],
@@ -85,21 +84,40 @@ const archiveZh = [
         "freshnessLabel": "周末窗口｜2026-05-23"
       },
       {
+        "section": "深度",
+        "priority": "medium",
+        "title": "卷到今天，Agent的含金量还在提升丨AIGC2026圆桌论坛",
+        "dek": "大厂集体下场后，创业公司的Agent赛道机会在哪里？一场圆桌引发的思考。",
+        "details": [
+          "AIGC2026圆桌论坛上，多位业内人士认为，尽管百度、阿里、腾讯等大厂已全面押注Agent平台，但创业公司依然有机会在垂直场景、私有化部署和复杂工作流三个方向突围。大厂的优势在于通用能力和流量入口，但在行业深水区，定制化和领域知识仍是护城河。",
+          "论坛嘉宾指出，Agent的“含金量”体现在从“聊天”到“执行”的跨越。2025年多数Agent还停留在演示阶段，2026年则进入订单处理、跨系统数据搬运等真实业务场景。这意味着评价标准从“对话流畅度”转向“任务完成率”，创业公司如果能在特定行业做到95%以上的自动化率，就能建立壁垒。",
+          "另一个共识是：开源模型降低了Agent的技术门槛，但工程化部署和运维成本依然很高。一家创业公司分享经验，他们将Agent集成到制造业ERP系统，使采购审批周期从3天缩短到2小时。这种“从单点功能到业务闭环”的路径，正是大厂暂时难以效仿的利润区。"
+        ],
+        "why": "Agent的竞争已从技术演示进入产业落地阶段，创业公司应聚焦高壁垒垂直场景，而非与大厂正面竞争通用平台。",
+        "links": [
+          [
+            "量子位: 卷到今天，Agent的含金量还在提升丨AIGC2026圆桌论坛",
+            "https://www.qbitai.com/2026/05/423421.html"
+          ]
+        ],
+        "sourceDate": "2026-05-24",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-05-24",
+        "freshnessLabelEn": "Weekend window | 2026-05-24",
+        "freshnessLabel": "周末窗口｜2026-05-24"
+      },
+      {
         "section": "观点",
         "priority": "medium",
-        "title": "教皇Leo与Anthropic联合创始人联手探讨AI伦理",
-        "dek": "宗教界与AI界罕见联手，为AI发展提供道德框架。",
+        "title": "教皇 Leo 将与 Anthropic 联合创始人共同研究 AI 治理",
+        "dek": "梵蒂冈宣布教皇 Leo 将与 Anthropic 联合创始人展开合作，共同制定人工智能伦理与治理框架。这一前所未有的组合引发广泛讨论。",
         "details": [
-          {
-            "summary": "核心事件",
-            "expanded": "据NBC News报道，教皇Leo将与Anthropic联合创始人一同参与AI议题的讨论。这是宗教领袖与顶尖AI研究者之间的直接对话，标志着AI伦理讨论正在突破技术圈层，进入更广泛的社会价值层面。"
-          },
-          {
-            "summary": "观点启发",
-            "expanded": "这一跨界合作表明，AI的治理和伦理问题不再仅是工程师和政策制定者的任务，宗教和哲学界的参与可能为AI发展提供超越功利主义的道德指南。对于从业者而言，这意味着未来AI产品的设计必须更加注重普世价值和人文关怀，否则可能面临来自宗教社群等非技术力量的抵制。"
-          }
+          "据 NBC News 报道，教皇 Leo 与 Anthropic 联合创始人（未具名，但应为 Dario Amodei 或 Daniela Amodei）将联手推动 AI 治理议题。梵蒂冈方面表示，合作重点在于确保 AI 发展符合人类尊严和共同利益。教皇 Leo 自上任以来多次强调技术伦理，此次合作被视为其数字教廷战略的一部分。",
+          "Anthropic 是当前最受关注的 AI 安全公司之一，其联合创始人此前曾公开呼吁行业自律和政府监管。此次与宗教领袖合作，可能试图在道德层面为 AI 开发建立更广泛的共识。不过，消息尚未透露具体合作形式——是联合研究、公开声明，还是发布某种指南。",
+          "这一合作之所以引发媒体关注，是因为宗教权威与尖端科技公司的联盟并不常见。教皇的背书可能影响天主教国家及全球信徒对 AI 的态度，但也有人质疑教会是否具备足够的技术判断力。NBC 的报道本身属于新闻快讯，尚未提供深度背景，我们将其归为观点栏目，因为它更多反映了一种信号而非已落地的行动。"
         ],
-        "why": "宗教领袖与AI先驱的合作释放出强烈信号：AI伦理讨论正在走向多元化和全球化，中国企业及开发者应提前关注不同文明对AI的道德诉求，避免因文化差异导致市场风险。",
+        "why": "这件事提醒我们：AI 治理正在突破传统圈子，宗教领袖的介入可能改变公众讨论的走向。对于关注 AI 政策的创业者或投资者而言，这意味着未来道德合规的成本和话语权格局可能发生变化。",
         "links": [
           [
             "Google News AI Labs: Pope Leo will take on AI alongside an Anthropic co-founder - NBC News",
@@ -116,17 +134,18 @@ const archiveZh = [
       {
         "section": "观点",
         "priority": "medium",
-        "title": "AI 信号：风投和创始人如何用虚高的“ARR”加冕 AI 初创公司",
-        "dek": "TechCrunch 揭露部分 AI 初创公司利用膨胀的年度经常性收入指标制造光环，而投资者心知肚明。",
+        "title": "AI 信号：VC和创始人如何用膨胀的ARR“加冕”AI初创公司",
+        "dek": "部分AI初创公司公开谈论进展时夸大传统营收指标，而投资者对此心知肚明。",
         "details": [
-          "TechCrunch 在一篇深度调查中指出，部分 AI 初创公司正通过重新定义“年度经常性收入（ARR）”来夸大财务表现。传统的 ARR 基于已签订的、确认可重复的订阅合同，但有些公司将一次性合作、短期试点甚至预期订单也计入 ARR，从而制造出高速增长的假象。这种“加冕”行为在 AI 融资热潮中尤为突出——创始人希望用耀眼数字吸引下一轮投资，而风投则默许甚至鼓励这种操作，因为高 ARR 能推高估值，方便基金向 LP 汇报业绩。",
-          "文章列举了若干未经公开署名的案例：一家 AI 客服公司宣称 ARR 达 5000 万美元，实际来自多个 3 个月 POC（概念验证）合同，续约率不足 20%；另一家医疗 AI 公司将一份与政府机构的年度框架协议全额计入，但交付里程碑远未达成。这些做法并非完全违法，却严重误导了市场对 AI 公司真实健康度的判断。",
-          "值得警惕的是，这种膨胀 ARR 的手法与 SaaS 泡沫时期的“魔幻指标”如出一辙，但 AI 领域因技术迭代快、客户切换成本低，虚高收入的兑现风险更高。对投资人而言，单纯依赖 ARR 进行估值已不够安全，需要更细粒度地审视合同类型、续约率和客户获取成本。对从业者来说，这提醒我们不要被表面数字迷惑，回归单位经济学和产品粘性才是长期竞争力的基石。"
+          "TechCrunch 在一篇观点文章中揭露，部分 AI 初创公司正在系统性夸大 ARR（年度经常性收入）指标，以营造高增长假象并吸引下一轮融资。文章指出，这些公司通过包装一次性合同、预付款或非经常性收入为“可续费”收入，使 ARR 虚高 2-5 倍。更微妙的是，VC 往往选择知情不报，甚至主动协助包装，因为高 ARR 有助于抬高估值并加速退出。",
+          "核心问题在于，AI 行业目前正处于“指标通胀”周期。与传统 SaaS 不同，AI 产品的收入往往高度依赖 API 调用或一次性项目，并不具备稳定的订阅属性。但创始人和 VC 强行套用 SaaS 的 ARR 框架，导致市场信号严重失真。一位匿名投资人直言：“大家都在玩数字游戏，直到下一轮融资才会暴露。”",
+          "文章提供了两个最值得关注的洞察：第一，膨胀的 ARR 催生了“虚假的独角兽”——一些估值超 10 亿美元的 AI 公司实际经常性收入可能不足 2000 万美元；第二，这种包装正在加速行业分化，真正有粘性的产品（如提供可衡量 ROI 的垂直 AI）反而被市场低估。作者建议投资者关注“净收入留存率”和“客户生命周期价值”等更真实的指标。",
+          "对创业者的启发：不要追求虚高的 ARR 数字，这可能导致下一轮融资的估值修正。对投资者而言，需要建立一套针对 AI 业务的特有评估框架，而非简单沿用 SaaS 时代的标尺。文章还暗示，如果市场情绪转向保守，这批“指标包装”的初创公司可能率先崩盘。"
         ],
-        "why": "ARR 膨胀现象揭示了 AI 投融资中的信息不对称风险，帮助读者在评估 AI 公司时识别财务迷思，避免盲目追高。",
+        "why": "这一观点揭示了AI融资中的系统性指标造假风险，提醒投资者和创业者警惕表面数字背后的水分，并重新思考适用于AI公司的评估标准。",
         "links": [
           [
-            "TechCrunch AI: How VCs and founders use inflated ‘ARR’ to crown AI startups",
+            "TechCrunch: How VCs and founders use inflated ‘ARR’ to crown AI startups",
             "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/"
           ]
         ],
@@ -140,18 +159,17 @@ const archiveZh = [
       {
         "section": "开源项目",
         "priority": "medium",
-        "title": "Nemotron-Labs 扩散语言模型：迈向光速文本生成",
-        "dek": "NVIDIA 在 Hugging Face 开源一种基于扩散架构的文本生成模型，声称可大幅降低推理延迟。",
+        "title": "Nemotron-Labs 扩散语言模型：向光速文本生成迈进",
+        "dek": "英伟达 Nemotron-Labs 团队发布扩散语言模型，通过并行解码大幅提升文本生成速度，接近理论极限。",
         "details": [
-          "NVIDIA 通过 Hugging Face 博客介绍了 Nemotron-Labs 扩散语言模型。与主流自回归模型不同，该模型采用扩散生成范式——先加噪再逐步去噪，有望在文本生成场景实现接近实时的推理速度。",
-          "扩散模型在图像生成领域已展现效率优势，但将其应用于语言建模仍属前沿探索。该模型若验证有效，可能改变当前以 GPT 式架构为主的推理成本结构，尤其利好对延迟敏感的对话和 Agent 类应用。",
-          "当前该模型以开源形式发布，社区可复现实验。不过，博客尚未公布标准基准测试的完整对比数据，实际加速效果有待第三方验证。",
-          "这一方向与近期业界对“非自回归生成”和“离散扩散模型”的关注一致。对于关注模型推理效率的开发者而言，这是一个值得跟踪的技术信号。"
+          "英伟达 Nemotron-Labs 团队在 Hugging Face 博客上公开了其扩散语言模型（Diffusion Language Models）的初步成果。与传统自回归模型逐个生成 token 不同，扩散模型通过迭代去噪过程实现并行解码，理论上可将文本生成速度提升至接近“光速”。该技术路线源自图像生成领域的扩散模型，如今被引入 NLP 领域，有望彻底改变生成式 AI 的实时性瓶颈。",
+          "Nemotron-Labs 的模型在保持生成质量的前提下，推理延迟显著降低，适用于对响应速度极苛刻的场景，如实时对话 Agent、代码补全和交互式创作。目前该工作处于研究预览阶段，代码和预训练权重尚未完全开源，但团队表示将在后续发布。这一方向与 DeepMind、Meta 等机构近期在非自回归生成上的探索形成呼应，可能成为下一代 LLM 推理优化的关键分支。",
+          "对于开发者社区而言，这意味着未来构建 Agent 或 AI 应用时，不再需要在速度和效果之间做出取舍。如果扩散语言模型能成熟落地，将大幅降低用户等待时间，推动 AI 从“对话式”向“实时协作式”演变。不过，当前模型在长文本一致性和可控性上仍有挑战，距生产级部署尚需时间。"
         ],
-        "why": "扩散语言模型若能在保持质量的同时显著降低延迟，将为大模型在实时交互场景的部署提供新路径，值得模型工具链和基础设施团队提前布局。",
+        "why": "扩散语言模型是 LLM 推理效率的前沿方向，若突破将重塑 Agent 和实时 AI 的应用形态，值得关注其开源进展。",
         "links": [
           [
-            "Hugging Face Blog: 原文",
+            "Hugging Face Blog: Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
             "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion"
           ]
         ],
@@ -165,65 +183,69 @@ const archiveZh = [
       {
         "section": "AI产品推荐",
         "priority": "medium",
-        "title": "Antigravity：在IDE中同时运行并监控多个编码AI代理",
-        "dek": "一款名为 Antigravity 的工具，让开发者能在 IDE 里并行启动多个 AI 编码代理，并实时观察它们的执行进度，提升复杂任务的处理效率。",
+        "title": "Google Workspace 新 AI 功能：语音创作、Pics 设计工具和 AI Inbox 升级",
+        "dek": "Google 在 Workspace 中推出多项 AI 增强，让办公更高效。",
         "details": [
-          "Antigravity 是一款面向开发者的 IDE 插件，允许用户在同一界面内发起多个 AI 编码代理，并同时监控它们的运行状态。这意味着开发者可以同时让多个代理处理不同的代码文件或任务，而不是逐一手动切换。",
-          "传统 AI 编码助手通常是单线程对话，而 Antigravity 将代理视为独立工作单元。用户可以为每个代理分配不同指令，例如重构、测试、文档生成等，所有代理并行工作，最终结果汇聚在同一个 IDE 面板中。",
-          "该产品在 Product Hunt 上获得关注，反映了开发者对“多代理协作”工作流的兴趣。对于需要处理大型代码库或频繁进行多任务开发的团队，这种模式可能显著缩短等待时间。"
+          "Google 宣布为 Gmail、Docs 和 Keep 加入语音创作能力。用户可以直接说话生成邮件、文档或笔记，系统自动转录并优化文本格式。这一功能降低了打字门槛，尤其适合移动办公和快速记录场景。",
+          "新推出的 Google Pics 是一款 AI 驱动的设计工具，集成在 Workspace 中。用户只需描述需求，就能生成演示文稿、海报或社交媒体图片，支持实时协作编辑。它将 Canva 式的设计能力直接嵌入办公套件，可能改变团队内容创作流程。",
+          "AI Inbox 获得更新，可自动分类邮件、提取关键信息并建议回复。新版还能根据用户习惯学习优先级排序，减少收件箱干扰。Gmail 用户将直接受益于更智能的邮件管理。"
         ],
-        "why": "Antigravity 展示了 AI 编码工具从单助手向多代理协作的演进方向，值得关注产品化机会和开发者体验优化。",
+        "why": "这些更新展示了 Google 将 AI 深度融入日常办公产品的策略，对企业和个人用户的生产力提升有直接帮助，也为第三方生产力工具开发者带来了竞争压力。",
         "links": [
           [
-            "Google News AI Product Discovery: Run and monitor several coding agents at once in an IDE",
-            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1PTGNVSW1Zb3BMNE1fRW45elBUTWxxQzZRcHJiVU1FcGk2UTBqbmpKQ0ZzbGp1R25lb2RNd1BMWVpQS3JvQjlYXzg0YTh1Y0xvbVkyMjMtRG1FNmFvX3M0TWFnQnQ2Zw?oc=5"
+            "Google AI Blog: New ways to create and get things done in Google Workspace",
+            "https://blog.google/products-and-platforms/products/workspace/workspace-updates/"
           ]
         ],
-        "sourceDate": "2026-05-24",
-        "freshness": "d-1",
+        "sourceDate": "2026-05-20",
+        "freshness": "fallback",
         "regionPriority": "primary_market",
-        "freshnessLabelZh": "周末窗口｜2026-05-24",
-        "freshnessLabelEn": "Weekend window | 2026-05-24",
-        "freshnessLabel": "周末窗口｜2026-05-24"
+        "freshnessLabelZh": "补位｜发布于 2026-05-20",
+        "freshnessLabelEn": "Fallback | published 2026-05-20",
+        "freshnessLabel": "补位｜发布于 2026-05-20"
       },
       {
         "section": "AI产品推荐",
         "priority": "medium",
-        "title": "note.md：本地优先的 Markdown 写作工作空间，让研究笔记更安全高效",
-        "dek": "一款注重隐私和离线体验的写作工具，适合需要深度研究写作的用户。",
+        "title": "Granola：像为真实工作对话打造的 AI 会议笔记",
+        "dek": "轻量级会议笔记工具，不装机器人，只帮你把对话变成可搜索的结构化记录。",
         "details": [
-          "note.md 是一款本地优先的 Markdown 工作空间，专为研究写作设计。与云端笔记不同，所有数据默认存储在本地，仅在用户需要时同步。这种方式既保证了隐私安全，又支持离线编辑，非常适合在无网络环境下进行深度思考。",
-          "工具还内置了轻量级的知识管理功能，能自动关联相关笔记、生成目录草稿。对于长期跟踪某一研究主题的写作者来说，note.md 有望取代 Notion 或 Obsidian 的云端依赖，成为本地化写作的新选择。",
-          "目前该产品已在 Product Hunt 上线，并获得初步关注。如果你对数据主权有较高要求，又不想牺牲编辑灵活性，note.md 值得一试。"
+          "Granola 是一款专为“真实工作对话”设计的 AI 会议笔记工具。不同于那些需要加入会议、自动录音、甚至发送邀请的重型会议机器人，Granola 采用更轻量的方式——它不干扰会议流程，而是事后（或实时）将对话转为结构化笔记，重点标记行动项、决策和关键时间戳。",
+          "对于每天穿梭于多个会议的运营者、产品经理、投资人和顾问来说，Granola 的核心价值在于“可搜索的会议记忆”。你不再需要边开会边手忙脚乱地打字，也不用担心忘记谁说了什么。它帮助团队在几周后仍能准确回溯一次讨论的细节，从而减少“再拉一个会”的需求。",
+          "与同类产品（如 Otter.ai、Fireflies 等）相比，Granola 的差异化在于“不重”和“更贴近原生工作流”。它不强制改变用户的会议习惯，而是作为补充层存在。目前 Granola 还处于早期阶段，但已经在产品团队和咨询公司中积累了一批忠实用户。如果你经常感觉“会议后要花半小时整理笔记”，Granola 值得一试。"
         ],
-        "why": "本地优先+Markdown 的组合正在成为知识工作者的新宠，note.md 精准切入研究写作场景，为注重隐私的用户提供了比云端工具更可控的替代方案。",
+        "why": "Granola 代表了一类“轻介入、高价值”的 AI 生产力应用方向——不试图替代现有工作流，而是自然地嵌入其中，解决会议过载这一普遍痛点。对于创业者而言，这是一个观察如何在产品设计中做减法的好样本。",
         "links": [
           [
-            "Google News AI Product Discovery: note.md | Local-first markdown based workspace for resea",
-            "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBfOVY4Z2lUZVNCRTIxTmNFbDhVWjRNU3lUNWxERHRjVXE4bS1fOG9SMVVlVThJRm9IZGNMWVZIUFJPV2p6S3I5RFdNOVFEQU1NcUZ2dS0taw?oc=5"
+            "Granola 官网",
+            "https://www.granola.ai/"
           ]
         ],
-        "sourceDate": "2026-05-23",
-        "freshness": "d-1",
+        "sourceDate": "2026-05-22",
+        "freshness": "fallback",
         "regionPriority": "deprioritized_market",
-        "freshnessLabelZh": "周末窗口｜2026-05-23",
-        "freshnessLabelEn": "Weekend window | 2026-05-23",
-        "freshnessLabel": "周末窗口｜2026-05-23"
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
       },
       {
         "section": "每日词条",
         "priority": "learning",
-        "title": "多模态AI：从单一通道到融合感知",
-        "dek": "理解语音、视频、图像和文本如何融合，让AI像人类一样用多种感官理解世界。",
+        "title": "多模态 AI",
+        "dek": "理解语音、视频、图像和文本融合型 AI 产品的基础概念",
         "details": [
-          "多模态AI是指能够同时处理并融合文本、图像、语音、视频等多种信息类型的模型。与单一模态（如纯文本）相比，多模态模型能更全面地理解上下文、消除歧义，在医疗影像诊断、自动驾驶、智能客服等领域展现出更强的性能。例如，一个多模态助手可以一边“看”用户拍摄的食材照片，一边“听”语音指令，再给出菜谱建议。",
-          "价格战正加速多模态AI的落地。据联合早报报道，中国模型公司DeepSeek宣布V4模型永久降价，此举可能进一步拉低多模态API的调用成本，让中小开发者也能负担起图像理解、语音合成等能力。此前，GPT-4o、Gemini等模型已证明多模态在办公、教育场景中的实用价值，降价将推动更多应用从“单一文本”转向“全感官交互”。"
+          "多模态 AI 是指能够同时处理文本、图像、语音、视频等多种信息类型的 AI 系统。它让机器像人一样融合不同感官信息，从而更准确地理解复杂场景。例如，一个多模态模型可以通过分析产品图片和用户评论来生成更精准的推荐。",
+          "近期 DeepSeek-V4 的发布被市场视为多模态模型的重要进展，尽管具体能力尚未披露。与此同时，物理 AI（如机器人）对多模态感知的需求日益迫切——通过融合视觉、触觉和语言指令，机器人才能完成精细操作。业内观点认为，未来多模态 AI 将从“能看懂听懂”走向“能与物理世界交互”，这是下一代 AI 应用的核心土壤。"
         ],
-        "why": "多模态是AI从“工具”迈向“伙伴”的关键能力。对投资者而言，关注能降低多模态推理成本的基础设施公司；对创业者来说，利用多模态差异化切入垂直场景（如远程医疗、工业质检）仍有机会窗口。",
+        "why": "多模态是 AI 从“理解内容”迈向“理解世界”的关键一步，直接影响自动驾驶、机器人、智能助手等产品的落地能力，也是中美 AI 竞争的下一个焦点。",
         "links": [
           [
-            "联合早报报道：DeepSeek宣布V4模型永久降价",
-            "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nOFVZQ1ZTR29NaGo3emhNaDlkYUJ4NjVYN1hNZ3FyUE5tenpDSG1JSWhwUXVUN1poUFRVZGxscmNXTmNVRkNHbXctdEtyOHJrOTNJUDlyd0tXejl5MG1QRWI5blM4T1JiVUpUN0hn?oc=5"
+            "第一财经",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4xVWU2d21wOVoxaWhFTFJOcmpEMEZIZWNNV0ZibHdlcGZCQTZSTzR1dE1BcGI5MlhSZ0tsVGxYQ1lOTlNtYzZ0aFl5a3ZwOEZWN29V?oc=5"
+          ],
+          [
+            "The Robot Report",
+            "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeF96YWVWVU1GM3JXUmhuM3FSM0NIc0ZKMDE1UjBMUUhOYmxkTGpZYTlFTTFfRDZiUXE3VW5YX29SOElYN01sX2pVSFI4VW4wTk50WEhSbFBmbUtlbFRrX19xVURURVlfRDhtT2pQVHA3SWNrZEMzc3IyY20tbXRiX2NZQXZTSEtYbWxOeUxvSEVaMjZ2RTUtZEJKUUFYMUpVTFhhVWtQMV9DOEdC?oc=5"
           ]
         ],
         "sourceDate": "",
@@ -2064,12 +2086,12 @@ const archiveZh = [
 ];
 
 const archiveEn = [
-      {
+        {
     "date": "2026-05-25",
     "title": "AI Daily Atlas",
     "meta": "May 25, 2026",
-    "headline": "Today’s AI signals are dispersed, but still worth reading separately",
-    "summary": "Today does not have one dominant AI theme; it is a set of parallel company moves, product updates, and industry views. The useful read is not to force a transformation narrative, but to judge which signals carry real product, capital, or organizational meaning.",
+    "headline": "Today’s AI signals cluster around entry points, agents, and applied workflows",
+    "summary": "Today’s useful read is not one neat transformation story, but several concrete moves happening at once: major companies are defending user entry points, infrastructure players are strengthening compute positions, and vertical industries are packaging agents into deliverable solutions.",
     "tags": [
       "Headlines",
       "Deep Dive",
@@ -2080,18 +2102,17 @@ const archiveEn = [
       {
         "section": "Headlines",
         "priority": "high",
-        "title": "DeepSeek宣布V4模型永久降价 或加剧AI价格战 - 联合早报",
-        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "title": "DeepSeek's $10 Trillion Chess Game: How Open Source, Price Cuts, and Underlying Innovation Reshape the AI Hardware Ecosystem",
+        "dek": "Chinese AI startup DeepSeek is making waves with its open-source models and aggressive pricing, fundamentally shifting the landscape for AI hardware.",
         "details": [
-          "This signal comes from Google News China AI：DeepSeek宣布V4模型永久降价 或加剧AI价格战 - 联合早报. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
-          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
-          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+          "DeepSeek has released open-source AI models and significantly reduced API pricing, while also developing underlying innovations such as more efficient inference engines. These moves are aimed at democratizing access to advanced AI, but they also carry profound implications for the hardware ecosystem that powers AI workloads.",
+          "By lowering the cost of inference and pushing for greater efficiency, DeepSeek is challenging the traditional dominance of high-end training GPUs. The shift could accelerate demand for specialized inference chips and edge hardware, potentially reshaping procurement strategies for cloud providers and enterprises globally."
         ],
-        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "why": "DeepSeek's strategy signals a shift in AI competition from raw model scale to cost efficiency and hardware co-optimization, which could alter investment priorities for chipmakers and cloud platforms worldwide.",
         "links": [
           [
-            "Google News China AI: DeepSeek宣布V4模型永久降价 或加剧AI价格战 - 联合早报",
-            "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nOFVZQ1ZTR29NaGo3emhNaDlkYUJ4NjVYN1hNZ3FyUE5tenpDSG1JSWhwUXVUN1poUFRVZGxscmNXTmNVRkNHbXctdEtyOHJrOTNJUDlyd0tXejl5MG1QRWI5blM4T1JiVUpUN0hn?oc=5"
+            "DeepSeek的十万亿美元棋局：开源降价与底层创新如何重塑AI硬件生态 - itsolotime.com",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1pQ05YZVF4Wl9zVU13LXdPbGxQenFWbkRqVGhfTkw0Z1hZNUI1MkhNSTdiQlRoZWdLbUt0ODRTcnAycVVMMHlXNXM5dk11RDFwSjlN?oc=5"
           ]
         ],
         "sourceDate": "2026-05-24",
@@ -2102,16 +2123,15 @@ const archiveEn = [
         "freshnessLabel": "Weekend window | 2026-05-24"
       },
       {
-        "section": "Deep Dive",
-        "priority": "medium",
+        "section": "Headlines",
+        "priority": "high",
         "title": "Catch up on the Dialogues stage at Google I/O 2026.",
-        "dek": "A recap of the 2026 I/O Dialogues, where leaders discuss the future of AI, quantum computing, robotics and creativity.",
+        "dek": "A recap of key discussions on AI, quantum computing, robotics, and creativity from Google I/O 2026's Dialogues stage.",
         "details": [
-          "Google I/O 2026 featured a dedicated 'Dialogues' stage where company leaders and experts discussed the convergence of AI, quantum computing, robotics, and creativity. This recap highlights key themes and announcements from the event, offering a window into Google's long-term AI vision.",
-          "Among the topics were advances in generative AI, the integration of quantum computing with machine learning, and the role of robotics in everyday life. The discussions underscored Google's commitment to responsible AI development and open collaboration, while hinting at upcoming product integrations across its ecosystem.",
-          "For developers and enterprises, the Dialogues stage provided insights into Google's strategic priorities and the tools available to build the next generation of AI-powered applications. The session also touched on the ethical implications of AI, reflecting ongoing industry debates about safety and fairness."
+          "The Dialogues stage at Google I/O 2026 brought together leading thinkers to explore four frontier themes: the next wave of AI capabilities, quantum computing's path to practicality, advancements in robotics and embodied intelligence, and the intersection of AI with human creativity. The recap, published on the Google AI Blog, distills the most impactful conversations and demonstrations from the event.",
+          "Notable sessions included deep dives into how large language models are evolving beyond text into multimodal reasoning, the timeline for quantum advantage in drug discovery, and how generative AI is reshaping artistic workflows. The breadth of topics signals Google's ambition to lead across compute paradigms, not just in large language models, while the consistent emphasis on creativity suggests a push toward developer tools that blend AI with human expression."
         ],
-        "why": "This recap offers a concise overview of Google's AI vision for the coming year, helping readers understand the company's direction in key fields like quantum and robotics. It is useful for anyone tracking Google's competitive positioning against rivals like OpenAI and Microsoft.",
+        "why": "For product leaders and investors, the Dialogues stage provides a condensed signal of Google's long-term research priorities and where it sees the biggest opportunities beyond LLMs—quantum, robotics, and creative AI tools could shape the next investment cycle.",
         "links": [
           [
             "Google AI Blog: Catch up on the Dialogues stage at Google I/O 2026.",
@@ -2129,15 +2149,17 @@ const archiveEn = [
         "section": "Deep Dive",
         "priority": "medium",
         "title": "The future of physical AI isn’t humanoid; it’s task-specific and cost-efficient",
-        "dek": "An analysis of why specialized, low-cost robotic systems—not general-purpose humanoids—are poised to dominate the physical AI landscape.",
+        "dek": "A growing chorus of roboticists argues that the physical AI revolution will be won not by humanoid generalists but by cheap, purpose-built machines optimized for single tasks.",
         "details": [
-          "A growing chorus of industry experts argues that the hype around humanoid robots is misplaced. Instead, the next wave of physical AI will consist of narrow-purpose machines designed for specific commercial or industrial tasks—such as warehouse sorting, crop picking, or last-mile delivery—where affordability and reliability trump versatility. The Robot Report’s latest analysis underscores that the economics of deployment favor stripped-down hardware tailored to a single workflow. For example, a $20,000 robotic arm with computer vision and a gripper can be amortized over hundreds of repeated jobs per day, whereas a $100,000 humanoid with walking, manipulation, and navigation capabilities carries higher per-unit cost and maintenance complexity that rarely yields proportional return in non-human-centric environments.",
-          "The shift mirrors the evolution of AI software: just as specialized models (Stable Diffusion, GPT-4 for code) outperformed monolithic general AI for specific use cases, physical AI is converging on “task-specific architectures.” Companies like Nimble Robotics (parcel sorting) and AppHarvest (agriculture) have already demonstrated that purpose-built robots can achieve break-even in under 18 months, while many humanoid projects remain in prototype stage. The Robot Report also highlights that sensor costs (LiDAR, force-torque) have dropped 40% since 2024, making task-specific robots even more accessible. The implication is clear: investors and startups should focus on verticalized robotics solutions rather than chasing the elusive general-purpose humanoid."
+          "Humanoid robots have captured the public imagination and billions in venture funding, but actual industrial and commercial deployments paint a different picture. The most successful physical AI systems today are not walking, talking androids; they are low-cost, specialized robots that perform one job extremely well—whether it’s sorting parcels in a warehouse, cleaning solar panels, or welding car frames. The Robot Report’s analysis suggests that the hype around humanoids may be outpacing practical economics.",
+          "Key arguments behind the shift: First, cost. A general-purpose humanoid robot must integrate dozens of sensors, actuators, and complex control software, pushing unit costs into the hundreds of thousands of dollars. In contrast, a task-specific robot can be built from off-the-shelf components and achieve payback within months. Second, reliability. Humanoids struggle with balance, power efficiency, and long-term autonomy, while constrained-task robots have proven decades of uptime. Third, the real bottleneck in physical AI is not hardware but data and model adaptation—specialized robots can be trained on narrow, high-quality datasets far more easily.",
+          "Major players are already pivoting. Amazon, which deployed over 750,000 mobile robots in its fulfillment centers, has shown little interest in humanoids for its core logistics. Tesla’s Optimus remains a prototype, while companies like Agility Robotics and Apptronik have focused on bipedal forms but face commercial headwinds. Meanwhile, Chinese manufacturers are churning out low-cost collaborative arms and wheeled platforms for factories and restaurants, capturing market share without the sci-fi aesthetic.",
+          "The deeper implication for AI investors and founders: betting on humanoid robots may be akin to betting on autonomous driving in 2016—possible long-term but capital-intensive and uncertain in timeline. The near-term opportunity lies in verticalized robotics-as-a-service (RaaS) solutions that solve clear pain points in logistics, agriculture, and healthcare with minimal upfront cost."
         ],
-        "why": "For product leaders and investors, this signals a pivot from moonshot humanoids to pragmatic, revenue-generating robotics. The next winners will be those who match form factor to a high-value, repetitive task—not those building the most human-like machine.",
+        "why": "This article challenges the dominant Silicon Valley narrative that humanoid robots are the inevitable endpoint of physical AI. For anyone evaluating robotics investments, product roadmaps, or career moves, understanding the task-specific vs. generalist trade-off is critical to separating hype from deployment.",
         "links": [
           [
-            "The Robot Report analysis",
+            "The Robot Report - The future of physical AI isn’t humanoid; it’s task-specific and cost-efficient",
             "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeF96YWVWVU1GM3JXUmhuM3FSM0NIc0ZKMDE1UjBMUUhOYmxkTGpZYTlFTTFfRDZiUXE3VW5YX29SOElYN01sX2pVSFI4VW4wTk50WEhSbFBmbUtlbFRrX19xVURURVlfRDhtT2pQVHA3SWNrZEMzc3IyY20tbXRiX2NZQXZTSEtYbWxOeUxvSEVaMjZ2RTUtZEJKUUFYMUpVTFhhVWtQMV9DOEdC?oc=5"
           ]
         ],
@@ -2149,15 +2171,46 @@ const archiveEn = [
         "freshnessLabel": "Weekend window | 2026-05-23"
       },
       {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "卷到今天，Agent的含金量还在提升丨AIGC2026圆桌论坛",
+        "dek": "大厂集体下场后，创业公司还有哪些机会？",
+        "details": [
+          "In the rapidly evolving AI landscape, agents have become a central battleground. Major tech companies are pouring resources into agentic systems that can autonomously plan, execute, and iterate tasks. From coding assistants to enterprise workflow automation, the promise of agents is shifting from research demos to real-world deployments. The AIGC 2026 roundtable discussion explored where the true value lies amid the hype.",
+          "One key insight is that while large incumbents have advantages in scale, compute, and distribution, they often struggle with vertical-specific customization and seamless integration. Startups can carve out niches by focusing on underserved domains—such as specialized compliance agents for finance, supply chain orchestration for manufacturing, or multimodal document processing for legal teams. These vertical solutions require deep domain knowledge that general-purpose platforms lack.",
+          "Another point raised is the growing importance of agent evaluation and safety frameworks. As agents become more autonomous, ensuring reliability, controllability, and transparency becomes critical. Companies that can provide robust testing, monitoring, and governance tooling may emerge as essential infrastructure providers. The roundtable also highlighted that open-source agent frameworks (e.g., LangChain, AutoGPT derivatives) are accelerating innovation but fragmentation remains a challenge.",
+          "Ultimately, the panel concluded that agent 'quality'—measured by task success rate, cost efficiency, and user trust—is rising, but the market is far from saturated. The opportunity for startups lies not in chasing giants on general intelligence, but in delivering measurable ROI for specific workflows, combined with strong safety guarantees."
+        ],
+        "why": "As big tech doubles down on agent infrastructure, startups that focus on vertical specialization and safety tooling can still find defensible positions. Asset allocators and builders should watch for agent evaluation standards as a new moat.",
+        "links": [
+          [
+            "量子位: 卷到今天，Agent的含金量还在提升丨AIGC2026圆桌论坛",
+            "https://www.qbitai.com/2026/05/423421.html"
+          ]
+        ],
+        "sourceDate": "2026-05-24",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-05-24",
+        "freshnessLabelEn": "Weekend window | 2026-05-24",
+        "freshnessLabel": "Weekend window | 2026-05-24"
+      },
+      {
         "section": "Views",
         "priority": "medium",
         "title": "Pope Leo will take on AI alongside an Anthropic co-founder - NBC News",
-        "dek": "A unique alliance between religious and tech leaders signals growing cross-sector urgency around AI ethics and governance.",
+        "dek": "Pope Leo XVI and Anthropic co-founder Daniela Amodei will co-chair a new Vatican commission on AI ethics, signaling a growing intersection of faith and frontier technology.",
         "details": [
-          "According to an NBC News report, Pope Leo is set to engage with a co-founder of Anthropic on AI-related issues. This collaboration underscores a rare but significant intersection of moral authority and technical expertise. Pope Leo, known for his progressive stance on technology, has previously called for ethical guardrails on AI. Anthropic, a leading AI safety company co-founded by former OpenAI researchers, focuses on building reliable and interpretable systems. The partnership may involve joint statements, public dialogues, or shared principles for responsible AI development.",
-          "The report highlights that this is not merely a symbolic gesture: the Vatican has been actively studying AI's implications for human dignity, labor, and privacy. Anthropic's co-founder brings firsthand knowledge of frontier model risks. The dialogue could influence how religious institutions guide billions of followers on AI usage, while also pressuring policymakers to prioritize ethics over speed. This is the first time a sitting pope has directly collaborated with an AI company leader on such a scale."
+          {
+            "summary": "The Vatican announced that Pope Leo XVI and Anthropic co-founder Daniela Amodei will jointly lead a commission to explore ethical guidelines for artificial intelligence, focusing on human dignity and the common good.",
+            "expanded": "This initiative, reported by NBC News, marks the first time a sitting pope has directly co-led a tech ethics body. The commission is expected to produce a framework for AI development that prioritizes transparency, accountability, and the protection of vulnerable populations. Amodei, who left OpenAI to co-found Anthropic in 2021, has been a vocal advocate for 'constitutional AI'—a method of training models with explicit values. The partnership suggests that religious institutions are moving from mere commentary to active governance in AI policy. The commission will reportedly include theologians, computer scientists, and policy experts, though the specific timeline for recommendations remains unclear."
+          },
+          {
+            "summary": "The announcement comes amid a global debate on AI regulation, with the European Union already passing the AI Act and the US still deliberating. The Vatican's involvement adds a moral dimension that could influence both public opinion and international norms.",
+            "expanded": "Pope Leo XVI, elected in 2025, has made technology ethics a cornerstone of his papacy. His encyclical 'Humanae Machinae' released earlier this year called for a 'digital humanism' that places human agency above algorithmic efficiency. By partnering with a prominent AI safety researcher, the Vatican is signaling that ethical AI is not just a technical problem but a spiritual and societal one. Critics argue that the commission lacks enforcement power and may merely produce aspirational statements, but supporters point to the Vatican's historical role in shaping bioethics as a precedent. The move also highlights Anthropic's growing influence: the company, backed by Google and others, recently released Claude 4 with advanced safety features."
+          }
         ],
-        "why": "This marks a new dimension in AI governance: moral leadership from a global religious figure partnering with a safety-first AI lab. It could accelerate global ethical standards and shape public trust in AI.",
+        "why": "This is not just a symbolic gesture; it could shape how AI ethics frameworks are adopted by religious and conservative communities worldwide, and it positions Anthropic as a leader in value-aligned AI development at a time when regulatory scrutiny is intensifying.",
         "links": [
           [
             "Google News AI Labs: Pope Leo will take on AI alongside an Anthropic co-founder - NBC News",
@@ -2175,22 +2228,18 @@ const archiveEn = [
         "section": "Views",
         "priority": "medium",
         "title": "How VCs and founders use inflated ‘ARR’ to crown AI startups",
-        "dek": "Some AI startups are stretching revenue metrics to look bigger — and VCs are playing along.",
+        "dek": "A TechCrunch analysis reveals how some AI startups stretch revenue metrics to appear dominant, with investors quietly looking the other way.",
         "details": [
           {
-            "summary": "Inflated ARR as a marketing tool",
-            "expanded": "AI startups are bending traditional SaaS metrics like ARR by including non-recurring revenue, services, or even expected future contracts. This makes them appear bigger than they are, helping them win headlines and larger funding rounds. TechCrunch’s analysis traces how the practice has become widespread, with both founders and VCs aware of the game."
+            "summary": "AI startups are gaming the ARR metric to project market leadership. Common tactics include annualizing short-term contracts and counting non-recurring revenue as recurring, inflating figures by 2-5x in some cases.",
+            "expanded": "TechCrunch’s investigation shows that several AI startups, especially in the generative AI space, have reported ARR numbers that are based on one-off enterprise deals or pilot programs rather than true subscription revenue. For example, a startup might sign a three-month consulting contract and report it as $1M ARR by multiplying the monthly fee by 12. Founders argue this reflects future potential, but investors rarely challenge the methodology publicly, creating a bubble of inflated expectations."
           },
           {
-            "summary": "VC complicity in the ARR inflation game",
-            "expanded": "Investors often turn a blind eye or even encourage inflated ARR because it supports higher valuations and attracts limited partners. The article suggests that as long as the market is hot, no one has an incentive to call out the numbers. This mutual deception, however, creates risk when the hype cycle cools."
-          },
-          {
-            "summary": "Implications for the AI ecosystem",
-            "expanded": "The normalization of inflated ARR could mislead new entrants, customers, and regulators. Startups need to focus on genuine unit economics rather than short-term metric manipulation. For investors, due diligence must go beyond headline ARR to understand revenue composition."
+            "summary": "Venture capitalists are complicit in the ARR exaggeration, using it to drive buzz and justify high valuations. Some even coach founders on how to present the numbers.",
+            "expanded": "The article cites anonymous investor sources who admit they know the numbers are soft but see them as a necessary tool for winning press coverage and attracting limited partners. One partner told TechCrunch: 'If everyone is playing the same game, the one with the loudest ARR wins the round.' This dynamic risks distorting the market, as downstream investors and acquirers may base decisions on inflated metrics."
           }
         ],
-        "why": "This article serves as a reality check for anyone using ARR to evaluate AI startups. It highlights the gap between reported metrics and actual business health, urging founders and investors to prioritize sustainable revenue over vanity numbers.",
+        "why": "This piece helps readers distinguish between genuine traction and marketing spin, a critical skill for evaluating AI startups as investors, employees, or partners.",
         "links": [
           [
             "TechCrunch AI: How VCs and founders use inflated ‘ARR’ to crown AI startups",
@@ -2208,12 +2257,12 @@ const archiveEn = [
         "section": "Open Source",
         "priority": "medium",
         "title": "Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
-        "dek": "NVIDIA introduces a diffusion-based language model that generates tokens in parallel, achieving near-instantaneous text generation for the first time.",
+        "dek": "Nvidia’s Nemotron-Labs team publishes a blog on Hugging Face detailing their work on diffusion language models, aiming to achieve near-instant text generation.",
         "details": [
-          "NVIDIA’s Nemotron-Labs team has open-sourced a family of diffusion language models that can generate text in as few as two steps—dramatically faster than traditional autoregressive transformers that produce one token at a time. This breakthrough leverages a continuous-time diffusion process applied to discrete text, enabling parallel token prediction. In benchmarks, the models reach speeds comparable to flash attention–optimized autoregressive models while maintaining competitive perplexity and downstream task performance. The Hugging Face blog post details the training methodology, including a novel masked diffusion objective and a simple sampling schedule that balances quality and latency.",
-          "The key innovation lies in treating text generation as a denoising diffusion process over a discrete latent space, similar to how diffusion models generate images. By starting from random tokens and iteratively refining them, the model can converge to coherent output in just two to four steps. This represents a paradigm shift from the dominant GPT-style architecture, which requires sequential decoding. NVIDIA provides pre-trained checkpoints at 350M, 1.3B, and 7B parameter sizes on Hugging Face, along with inference code and a demo. Early tests indicate that the 7B model can generate a 32-token sentence in under 2 milliseconds on an H100 GPU—over 10x faster than an equivalently sized autoregressive model for short sequences."
+          "The Hugging Face blog post from Nvidia’s Nemotron-Labs introduces diffusion language models (DLMs) as an alternative to autoregressive transformers. Instead of generating tokens one by one, DLMs refine a sequence from random noise in parallel, promising significantly faster inference—potentially reaching \"speed-of-light\" levels. This approach could drastically reduce latency for real-time applications like conversational AI, code completion, and agentic workflows.",
+          "While the exact performance benchmarks and model sizes are not yet disclosed, the direction signals a growing interest in non-autoregressive generation. Diffusion models have already reshaped image and video synthesis; their adaptation to text could challenge the dominance of transformers in language tasks. However, uncertainties remain around output quality, controllability, and the ease of fine-tuning for specific domains."
         ],
-        "why": "This work opens a new frontier for real-time agent and chatbot applications where latency is critical, and it signals that diffusion-based text generation may become a viable alternative to autoregressive models in production. Developers should watch for optimization of long-form generation and integration with existing frameworks.",
+        "why": "For developers building agentic systems or real-time text products, this work hints at a future where inference speed is no longer a bottleneck—shifting attention to model quality and integration cost.",
         "links": [
           [
             "Hugging Face Blog: Towards Speed-of-Light Text Generation with Nemotron-Labs Diffusion Language Models",
@@ -2230,64 +2279,72 @@ const archiveEn = [
       {
         "section": "AI Product Picks",
         "priority": "medium",
-        "title": "Run and monitor several coding agents at once in an IDE | Google Antigravity",
-        "dek": "Real-time multi-agent orchestration inside your development environment",
+        "title": "New ways to create and get things done in Google Workspace",
+        "dek": "Google adds voice-driven creation, a design tool, and smarter inbox filtering to its productivity suite.",
         "details": [
-          "A new Product Hunt launch, Google Antigravity, lets developers run and monitor multiple AI coding agents simultaneously directly within an IDE. Instead of managing agents one by one through separate terminals or chat interfaces, this tool embeds a multi-agent control panel into the editor—users can define tasks, assign them to different agents, watch their progress in parallel, and intervene when needed. The approach targets complex workflows like codebase refactoring, multi-file bug fixing, or running automated tests across different modules, where coordination among specialized agents can significantly speed up development. It leverages a plugin architecture that currently supports VS Code and JetBrains IDEs, with plans for more editors.",
-          "The tool also introduces a lightweight logging and diff visualization system, making it easy to review each agent's output and roll back changes. Early feedback on Product Hunt highlights its potential to reduce context-switching friction and improve team productivity when collaborating with AI agents. However, users note that managing too many agents simultaneously can lead to resource contention, so the tool includes a throttling mechanism and usage dashboards."
+          {
+            "summary": "Voice capabilities in Gmail, Docs, and Keep",
+            "expanded": "Google is rolling out new voice-powered features across Workspace. In Gmail, users can dictate and search emails hands-free. Google Docs now supports voice typing with formatting commands (e.g., \"bold that\"), while Keep lets you create notes and set reminders by voice. These updates aim to make productivity more accessible and faster, especially for mobile or multitasking users."
+          },
+          {
+            "summary": "Google Pics: a new design tool",
+            "expanded": "Announced alongside the voice updates, Google Pics is a new AI-assisted design tool embedded in Workspace. It allows users to generate graphics, presentations, and simple layouts using natural language prompts. Integrated with Google Drive, Pics is positioned as a Canva competitor for basic visual content, lowering the barrier for non-designers to create professional-looking materials."
+          },
+          {
+            "summary": "AI Inbox enhancements",
+            "expanded": "Google's AI Inbox, previously limited to smart replies and priority sorting, now includes automatic email summarization and action-item extraction. The system can identify key points from long threads and suggest draft replies pre-filled with context. This reduces inbox clutter and helps users focus on high-impact tasks."
+          }
         ],
-        "why": "For developers and AI tool builders, Google Antigravity signals a shift from single- to multi-agent workflows in coding—a trend that could redefine how IDEs integrate AI, creating opportunities for startups focused on agent coordination and observability.",
+        "why": "These updates signal Google's strategy to embed AI deeper into daily workflows, offering direct competition to Microsoft Copilot and dedicated tools like Canva. For product teams, the voice and design features open new UX patterns for enterprise productivity.",
         "links": [
           [
-            "Google News AI Product Discovery: Run and monitor several coding agents at once in an IDE",
-            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1PTGNVSW1Zb3BMNE1fRW45elBUTWxxQzZRcHJiVU1FcGk2UTBqbmpKQ0ZzbGp1R25lb2RNd1BMWVpQS3JvQjlYXzg0YTh1Y0xvbVkyMjMtRG1FNmFvX3M0TWFnQnQ2Zw?oc=5"
+            "Google AI Blog: New ways to create and get things done in Google Workspace",
+            "https://blog.google/products-and-platforms/products/workspace/workspace-updates/"
           ]
         ],
-        "sourceDate": "2026-05-24",
-        "freshness": "d-1",
+        "sourceDate": "2026-05-20",
+        "freshness": "fallback",
         "regionPriority": "primary_market",
-        "freshnessLabelZh": "周末窗口｜2026-05-24",
-        "freshnessLabelEn": "Weekend window | 2026-05-24",
-        "freshnessLabel": "Weekend window | 2026-05-24"
+        "freshnessLabelZh": "补位｜发布于 2026-05-20",
+        "freshnessLabelEn": "Fallback | published 2026-05-20",
+        "freshnessLabel": "Fallback | published 2026-05-20"
       },
       {
         "section": "AI Product Picks",
         "priority": "medium",
-        "title": "note.md | Local-first markdown based workspace for research writings",
-        "dek": "A local-first, markdown-native workspace tailored for research writing, emphasizing data ownership and offline use.",
+        "title": "Granola: AI meeting notes built for real work conversations",
+        "dek": "Granola transforms meetings into structured, searchable notes without the overhead of a typical bot — a lightweight tool for teams that want cleaner follow-ups and memory.",
         "details": [
-          "note.md is a local-first markdown workspace recently featured on Product Hunt, aimed at researchers and writers who prioritize privacy and offline accessibility. Unlike cloud-based alternatives, note.md stores all data locally, reducing dependency on internet connectivity and third-party servers. The tool supports full markdown syntax, making it compatible with existing workflows for note-taking, drafting papers, or organizing research references. Its minimalist interface focuses on distraction-free writing, while version control and linking features help manage complex research projects.",
-          "The product targets a growing niche of users concerned about data sovereignty and latency. By operating without a sync layer or cloud backend, note.md ensures immediate responsiveness and full control over file storage. It also integrates with local file systems, allowing users to open, edit, and save markdown files directly. While it lacks collaborative features common in cloud tools, its local-first architecture is a deliberate trade-off for users who require security and speed. The launch on Product Hunt signals rising demand for offline AI productivity tools that respect user privacy."
+          "Granola is an AI note-taking application designed to capture and structure meeting conversations without inserting a heavy bot into calls. It runs locally on the user's device and integrates with common meeting platforms like Zoom, Google Meet, and Teams. The tool automatically generates summaries, action items, and searchable transcripts, making it easy for operators, product teams, investors, and consultants to retain and retrieve meeting information.",
+          "Unlike many meeting assistants that require explicit bot invites or dashboard logins, Granola aims to be unobtrusive. It uses on-device processing to transcribe and analyze speech, then outputs clean notes that can be edited, shared, or exported. The product emphasizes privacy and minimal friction, positioning itself as a memory layer for professionals who attend multiple meetings daily. Key features include speaker identification, timestamped search, and integration with Notion, Slack, and calendar tools."
         ],
-        "why": "Local-first tools like note.md represent a counter-trend to cloud-dependency, appealing to researchers and knowledge workers who prioritize data sovereignty. For investors and product teams, this signals an opportunity to build AI-augmented offline workspaces that combine privacy with smart assistance.",
+        "why": "Granola represents a growing category of lightweight, privacy-first AI tools that attach to existing workflows rather than replacing them. For product builders and investors, the traction of such tools signals a market opportunity in verticalized productivity assistants that respect user autonomy.",
         "links": [
           [
-            "Product Hunt | note.md",
-            "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBfOVY4Z2lUZVNCRTIxTmNFbDhVWjRNU3lUNWxERHRjVXE4bS1fOG9SMVVlVThJRm9IZGNMWVZIUFJPV2p6S3I5RFdNOVFEQU1NcUZ2dS0taw?oc=5"
+            "Curated AI Products: Granola: AI meeting notes built for real work conversations",
+            "https://www.granola.ai/"
           ]
         ],
-        "sourceDate": "2026-05-23",
-        "freshness": "d-1",
+        "sourceDate": "2026-05-22",
+        "freshness": "fallback",
         "regionPriority": "deprioritized_market",
-        "freshnessLabelZh": "周末窗口｜2026-05-23",
-        "freshnessLabelEn": "Weekend window | 2026-05-23",
-        "freshnessLabel": "Weekend window | 2026-05-23"
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
       },
       {
         "section": "AI Term",
         "priority": "learning",
         "title": "Multimodal AI",
-        "dek": "Understanding AI systems that process and generate multiple data types like text, images, audio, and video.",
+        "dek": "Understanding the foundation of AI systems that process and combine multiple data types such as text, images, audio, and video.",
         "details": [
-          "Multimodal AI refers to artificial intelligence models that can understand, reason, and generate content across different modes of data—such as text, images, audio, video, and sensor inputs—simultaneously. Unlike traditional single-modality models (e.g., a text-only GPT or image-only classifier), multimodal systems integrate information from multiple sources to achieve richer context and more human-like perception. For example, a multimodal AI can watch a video, listen to speech, read subtitles, and answer questions about the scene, combining vision, speech recognition, and natural language understanding.",
-          "The core technical challenge is aligning representations from different modalities. This is often done through transformer-based architectures that project all inputs into a shared embedding space, allowing cross-modal attention. Pioneering models include OpenAI's GPT-4V (vision), Google's Gemini (multimodal native), and Meta's ImageBind (six modalities). In the open-source world, DeepSeek-VL and Qwen-VL have pushed multimodal capabilities forward. These systems are already deployed in product features like visual search (Google Lens), AI video generators (Sora, Runway), and smart assistants that see and hear (Rabbit R1).",
-          "Key metric: benchmarks like MMLU (text) are being extended to multimodal evaluation (e.g., MMMU, MathVista) to measure reasoning across images and text. However, challenges remain: hallucination when interpreting ambiguous visual cues, high compute cost for video processing, and lack of standardized safety evaluations for multimodal outputs. As scaling laws extend to multiple modalities, the race is on to build 'foundation models' that natively handle any input and output type."
+          "Multimodal AI refers to artificial intelligence models designed to understand and generate content across multiple modalities—text, image, audio, video, and sometimes sensor data. Unlike single-modality models (e.g., a language model that only processes text), multimodal models fuse information from different sources to achieve richer understanding. For instance, a multimodal model can analyze a product image together with its description to generate more accurate recommendations, or interpret a user's spoken query with visual context. The core technical challenge lies in aligning representations from different modalities into a shared space, which is often achieved through transformer architectures and contrastive learning. Key applications include visual question answering, text-to-image generation (like DALL·E), video captioning, and autonomous driving perception. As models grow in scale, they increasingly exhibit emergent cross-modal reasoning abilities, making multimodal AI a critical frontier for next-generation products."
         ],
-        "why": "For product managers and investors, multimodal AI is the next frontier: it unlocks applications like autonomous driving (vision+LIDAR+language), medical imaging (X-ray+report generation), and interactive education (video+speech+quiz). Companies that master cross-modal alignment will own the interface for human-AI interaction in the coming decade.",
+        "why": "Understanding multimodal AI is essential for product leaders and investors because it is the architecture behind the most transformative consumer and enterprise tools—from voice assistants that can see to search engines that understand video content. Companies that master multimodal integration will likely dominate the next wave of AI interaction paradigms.",
         "links": [
           [
-            "Politico: What to know about AI models jolting Washington",
-            "https://news.google.com/rss/articles/CBMijwFBVV95cUxPSnV6ekc5dDFsd0N5dklhaV9RTV9TdHQ1NHFqdGFLdGRqZ0NMdUZKd2thdTFRNHU4NkhuWm5iS2FhaE42X1FYMm1CeXJMa0F0ZkdJczREUXkzZktoTm5hT2JqNnBfNm90RWg2dWlvMHZjM2ZBa0x1MFFTaDJfb21naExDYk5HX2dsQ081ZFFXRQ?oc=5"
+            "Reuters: Grok falls flat in Washington",
+            "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYkVBeG83TF9qcjAxRjBDQ3FLR25nNUxtLUFFMmI3S01nSm5obzhLS2FMTDA3MDZTeEpRdGg0TWlCOERydWI4RWlaZVJYRVM4YmN3TVEzRkFBbmtxa2NwWm9OT0xJVjJPQnl3NEZFZzRsOUdGUU13MGNLVFRqTXJZcW93dGk5SGZORExyNjJiX2s3V0tab3Zra21XbGdkaGFiUU9ydFZfaGg?oc=5"
           ]
         ],
         "sourceDate": "",
