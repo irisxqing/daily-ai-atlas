@@ -31,6 +31,170 @@ function dayOfYear(dateString) {
   return Math.floor((date - start) / (24 * 60 * 60 * 1000)) + 1;
 }
 
+function normalizeTermTitle(title = "") {
+  return String(title)
+    .toLowerCase()
+    .replace(/：.*$/, "")
+    .replace(/:.*/, "")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim();
+}
+
+const aiTermCatalog = [
+  {
+    key: "inference-cost",
+    titleZh: "推理成本",
+    titleEn: "Inference Cost",
+    keywords: /推理成本|推理|降价|价格战|token|inference|serving cost|price war|pricing|discount|deepseek|模型降价/i,
+    angle: "理解模型公司降价、价格战和企业 AI 成本结构时最关键的基础概念。",
+    zhDek: "判断模型降价和 AI 价格战时，经常要看的核心成本项。",
+    enDek: "A core cost concept behind model price cuts and AI price wars.",
+    zhDetails: [
+      "推理成本指模型在回答用户请求时消耗的算力、显存、电力和工程运维成本。训练成本是一次性把模型做出来，推理成本则会随着每一次调用持续发生，所以它更直接决定 API 定价、产品毛利和大规模落地速度。",
+      "当 DeepSeek 或其他模型厂商宣布降价时，真正值得看的不只是价格本身，而是背后的推理效率是否提升、是否能承受更高调用量，以及降价会不会迫使其他模型公司跟进。对企业用户来说，推理成本下降意味着更多内部流程可以被 AI 化。"
+    ],
+    enDetails: [
+      "Inference cost is the compute, memory, electricity, and operating cost incurred each time a model answers a request. Training is the upfront cost of building a model; inference is the recurring cost of serving it at scale.",
+      "When a model provider cuts prices, the useful question is whether efficiency truly improved and whether competitors must respond. Lower inference cost can make more enterprise workflows economically viable."
+    ],
+    zhWhy: "它能帮你判断一次模型降价到底是营销动作，还是会改变 AI 应用普及速度的产业信号。",
+    enWhy: "It helps distinguish a marketing discount from a structural signal that could expand real AI adoption."
+  },
+  {
+    key: "world-model",
+    titleZh: "世界模型",
+    titleEn: "World Model",
+    keywords: /世界模型|物理 AI|physical ai|world model|robot|robotics|humanoid|simulation|机器人|仿真|具身智能|空间智能/i,
+    angle: "帮助理解机器人、仿真、自动驾驶和物理世界 AI 新闻背后的共同概念。",
+    zhDek: "让 AI 学会理解和预测物理世界运行方式的一类模型。",
+    enDek: "A model family that helps AI understand and predict how the physical world behaves.",
+    zhDetails: [
+      "世界模型可以理解为 AI 在脑中建立的“世界运行模拟器”：它不仅识别图像或文字，还要预测物体会如何移动、碰撞、变化，以及一个动作会带来什么后果。这类能力对机器人、自动驾驶、游戏生成和工业仿真都很关键。",
+      "如果一条新闻讲的是物理 AI、机器人或仿真系统，真正要看的是模型是否能从视频、传感器和交互中学习规律，并把这种理解用于规划动作。它和单纯生成图片不同，重点是预测和控制。"
+    ],
+    enDetails: [
+      "A world model is like an internal simulator: it helps AI predict how objects move, collide, change, and respond to actions. That matters for robotics, autonomous driving, game generation, and industrial simulation.",
+      "For physical AI news, the key question is whether the model can learn from video, sensors, and interaction, then use that understanding to plan actions."
+    ],
+    zhWhy: "它是 AI 从屏幕走向真实世界的重要桥梁，也是机器人公司和大模型公司都在争夺的方向。",
+    enWhy: "It is one bridge from screen-based AI to real-world AI, making it a key theme for both model labs and robotics companies."
+  },
+  {
+    key: "agentic-workflow",
+    titleZh: "Agentic Workflow",
+    titleEn: "Agentic Workflow",
+    keywords: /agentic workflow|agent|智能体|工作流|workflow|automation|自动化|自主执行|多步任务/i,
+    angle: "帮助理解 agent 和企业自动化新闻背后的共同语言。",
+    zhDek: "让 AI 从回答问题走向拆解任务、调用工具并推进流程。",
+    enDek: "A workflow pattern where AI breaks down a goal, uses tools, and advances a task.",
+    zhDetails: [
+      "Agentic Workflow 指的是让 AI 不只回答问题，而是围绕一个目标拆解任务、调用工具、检查结果，并在多步流程中持续推进。它常出现在企业自动化、代码生成、研究助理和跨应用工作流里。",
+      "它和普通聊天机器人的区别在于，重点从“生成一句答案”转向“完成一段流程”。所以当新闻里提到 agent、AI 工作流或企业自动化时，真正要看的是工具权限、数据接入、错误纠正和可审计性。"
+    ],
+    enDetails: [
+      "An agentic workflow is a multi-step process where AI does more than answer a prompt: it breaks down a goal, calls tools, checks intermediate results, and keeps moving through a task.",
+      "The shift is from producing one answer to completing a process. Practical questions include tool access, data integration, error recovery, and auditability."
+    ],
+    zhWhy: "这个词能帮你判断哪些 AI 产品只是聊天入口，哪些已经开始进入真实业务流程。",
+    enWhy: "This term helps separate simple chat interfaces from AI products that can operate inside real workflows."
+  },
+  {
+    key: "ai-coding-agent",
+    titleZh: "AI 编码 Agent",
+    titleEn: "AI Coding Agent",
+    keywords: /coding agent|codex|copilot|代码|编程|developer|software engineering|ide|pull request|代码生成/i,
+    angle: "理解 Codex、Copilot 和开发者工具新闻时最常见的产品形态。",
+    zhDek: "能读代码、改代码、跑测试，并参与软件工程流程的 AI Agent。",
+    enDek: "An AI agent that can read code, modify code, run tests, and participate in software workflows.",
+    zhDetails: [
+      "AI 编码 Agent 不只是帮你补全一行代码，而是可以理解代码库上下文、拆解开发任务、修改多个文件、运行测试并根据报错继续修正。它更像一个能协作的初级工程师，而不是一个代码搜索框。",
+      "判断这类产品时，要看它能否接入真实代码仓库、是否有权限边界、能不能解释修改原因，以及企业是否愿意把它放进安全和审计要求更高的开发流程。"
+    ],
+    enDetails: [
+      "An AI coding agent goes beyond line completion. It can understand a codebase, break down tasks, edit multiple files, run tests, and iterate on failures.",
+      "The key adoption questions are repository access, permission boundaries, explainability, and whether enterprises trust it inside audited engineering workflows."
+    ],
+    zhWhy: "它是 AI 进入企业生产力最清晰的入口之一，也会影响软件团队的组织方式和成本结构。",
+    enWhy: "It is one of the clearest entry points for AI productivity and may reshape software team structure and cost."
+  },
+  {
+    key: "rag",
+    titleZh: "RAG",
+    titleEn: "RAG",
+    keywords: /rag|retrieval|检索增强|知识库|knowledge|notebooklm|recall|research workspace|source-grounded|引用|溯源/i,
+    angle: "帮助理解知识管理、研究工作流和企业私有知识问答产品。",
+    zhDek: "让模型先检索可信资料，再基于资料回答问题的方法。",
+    enDek: "A method where the model retrieves trusted sources before answering.",
+    zhDetails: [
+      "RAG 是 Retrieval-Augmented Generation 的缩写，中文常叫“检索增强生成”。它的思路是：模型回答前先去指定资料库、文档或网页里找证据，再基于这些材料生成答案。",
+      "它适合企业知识库、研究助手、报告阅读和客服场景，因为用户不仅需要答案，还需要知道答案来自哪里。判断 RAG 产品时，要看检索质量、引用是否可靠、资料更新是否及时。"
+    ],
+    enDetails: [
+      "RAG means Retrieval-Augmented Generation. Before answering, the model retrieves evidence from a source set such as documents, databases, or web pages.",
+      "It is useful for enterprise knowledge bases, research assistants, report reading, and support workflows because users need both answers and traceable sources."
+    ],
+    zhWhy: "RAG 是很多企业 AI 项目的起点，因为它把“会聊天的模型”变成“能引用资料的工作工具”。",
+    enWhy: "RAG is often the starting point for enterprise AI because it turns chat into source-grounded work."
+  },
+  {
+    key: "multimodal-ai",
+    titleZh: "多模态 AI",
+    titleEn: "Multimodal AI",
+    keywords: /multimodal|多模态|voice|语音|video|视频|image|图像|audio|realtime|实时/i,
+    angle: "理解语音、视频、图像和文本融合型 AI 产品的基础概念。",
+    zhDek: "能同时理解或生成文本、图像、语音、视频等多种信息形态的 AI。",
+    enDek: "AI that can understand or generate multiple information types such as text, images, voice, and video.",
+    zhDetails: [
+      "多模态 AI 指模型不只处理文字，还能理解图片、声音、视频、屏幕内容等信息。它让 AI 从“输入文本框”变成更自然的人机入口，例如实时语音助手、看图问答、视频理解和屏幕操作。",
+      "这类能力的商业价值在于降低使用门槛，并进入更多场景：客服、教育、设计、医疗、工业巡检都可能受影响。判断新闻价值时，要看它是否真正能跨模态完成任务，而不是只做演示。"
+    ],
+    enDetails: [
+      "Multimodal AI can process not only text but also images, audio, video, and screen context. It moves AI beyond the text box into more natural interfaces.",
+      "Its value is lower friction and broader use cases, from support and education to design, healthcare, and industrial inspection."
+    ],
+    zhWhy: "它解释了为什么大公司都在争夺语音、视频和浏览器入口，因为入口形态本身正在变化。",
+    enWhy: "It explains why major labs compete for voice, video, and browser entry points: the interface itself is changing."
+  },
+  {
+    key: "mcp",
+    titleZh: "MCP",
+    titleEn: "MCP",
+    keywords: /\bmcp\b|model context protocol|上下文协议|tool use|工具调用|connector|连接器|api 调用/i,
+    angle: "理解 AI Agent 如何连接外部工具、数据和企业系统。",
+    zhDek: "一种让 AI 模型更标准化地连接工具和数据源的协议思路。",
+    enDek: "A protocol idea for connecting AI models to tools and data sources in a standardized way.",
+    zhDetails: [
+      "MCP 是 Model Context Protocol 的缩写，可以把它理解成 AI Agent 连接外部工具和数据源的一种标准接口。没有这类协议时，每个产品都要单独适配日历、邮件、数据库、代码仓库等工具。",
+      "MCP 的价值在于让 Agent 更容易获得上下文并执行动作，但也带来权限、安全和审计问题。越多 Agent 进入真实工作流，这类连接协议就越重要。"
+    ],
+    enDetails: [
+      "MCP stands for Model Context Protocol. It is a way to standardize how AI agents connect to tools and data sources such as calendars, email, databases, and code repositories.",
+      "Its value is easier context access and action-taking, but it also raises permission, security, and auditability questions."
+    ],
+    zhWhy: "它是 Agent 从演示走向真实工作流的基础设施之一。",
+    enWhy: "It is one infrastructure layer that helps agents move from demos into real workflows."
+  },
+  {
+    key: "evals",
+    titleZh: "模型评测",
+    titleEn: "Model Evals",
+    keywords: /evals?|benchmark|leaderboard|跑分|评测|基准|排名|测评|能力榜/i,
+    angle: "帮助区分真正有用的模型能力信号和单纯跑分新闻。",
+    zhDek: "用任务、数据集或真实场景测试模型能力的方法。",
+    enDek: "Ways to test model capability through tasks, datasets, or real-world scenarios.",
+    zhDetails: [
+      "模型评测是用一组任务或数据集测试模型能力的方法，比如数学、代码、推理、多模态理解等。它能提供横向比较，但并不等于真实产品体验。",
+      "看评测新闻时，要注意数据集是否公开、是否容易被训练污染、指标是否贴近真实场景，以及模型是否已经正式发布和可被用户调用。单纯“跑分超过某某模型”通常不够重要。"
+    ],
+    enDetails: [
+      "Model evals test capability through tasks or datasets, such as math, coding, reasoning, or multimodal understanding. They help comparison but do not equal product experience.",
+      "Useful evals should be transparent, resistant to data leakage, connected to real tasks, and tied to a model users can actually access."
+    ],
+    zhWhy: "它能帮你避免被跑分标题带偏，回到真实可用性和产品影响。",
+    enWhy: "It helps avoid benchmark hype and refocus on usability and product impact."
+  }
+];
+
 const sourceFeeds = [
   googleNews("Google News AI Labs", "(OpenAI OR Anthropic OR DeepMind OR xAI OR Meta AI OR Microsoft AI OR NVIDIA AI) when:2d"),
   googleNews("Google News AI Models", "(OpenAI OR Anthropic OR Google DeepMind OR xAI OR Meta AI OR DeepSeek OR Qwen OR Kimi) (model OR API OR agent OR launch OR release OR partnership) when:3d"),
@@ -1677,6 +1841,55 @@ function buildEditorialFrame(items) {
   };
 }
 
+function usedRecentTermTitles(currentDate, limit = 7) {
+  try {
+    const source = fs.readFileSync(appPath, "utf8");
+    const match = source.match(/const archiveZh = ([\s\S]*?);\n\s*const archiveEn =/);
+    if (!match) return new Set();
+    const archive = Function(`return ${match[1]}`)();
+    const currentTime = Date.parse(`${currentDate}T12:00:00+08:00`);
+    const terms = [];
+    for (const issue of archive || []) {
+      const issueTime = Date.parse(`${issue.date}T12:00:00+08:00`);
+      if (!Number.isFinite(issueTime) || issue.date === currentDate || issueTime > currentTime) continue;
+      const ageDays = Math.floor((currentTime - issueTime) / (24 * 60 * 60 * 1000));
+      if (ageDays > limit) continue;
+      const term = (issue.items || []).find((item) => isTermSectionName(item.section));
+      if (term?.title) terms.push(normalizeTermTitle(term.title));
+    }
+    return new Set(terms);
+  } catch {
+    return new Set();
+  }
+}
+
+function selectDailyTerm(date, sourcePack, items = []) {
+  const content = [
+    ...sourcePack.entries.map((entry) => `${entry.title || ""} ${entry.summary || ""} ${entry.source || ""}`),
+    ...items.map((item) => `${item.titleZh || ""} ${item.titleEn || ""} ${item.angle || ""}`)
+  ].join(" ");
+  const recent = usedRecentTermTitles(date);
+  const scored = aiTermCatalog
+    .map((term, index) => {
+      const keywordHits = content.match(term.keywords)?.length || (term.keywords.test(content) ? 1 : 0);
+      const recentPenalty = recent.has(normalizeTermTitle(term.titleZh)) || recent.has(normalizeTermTitle(term.titleEn)) ? 100 : 0;
+      const rotationTieBreaker = ((dayOfYear(date) + index) % aiTermCatalog.length) / 100;
+      return { term, score: keywordHits * 10 - recentPenalty + rotationTieBreaker };
+    })
+    .sort((a, b) => b.score - a.score);
+  const positive = scored.find(({ score }) => score > 0);
+  return positive?.term || scored[0]?.term || aiTermCatalog[dayOfYear(date) % aiTermCatalog.length];
+}
+
+function termByPlanTitle(planItem) {
+  const normalizedZh = normalizeTermTitle(planItem.titleZh);
+  const normalizedEn = normalizeTermTitle(planItem.titleEn);
+  return aiTermCatalog.find((term) => {
+    return normalizeTermTitle(term.titleZh) === normalizedZh
+      || normalizeTermTitle(term.titleEn) === normalizedEn;
+  }) || aiTermCatalog.find((term) => term.key === "agentic-workflow");
+}
+
 function selectViewpointEntries(sourcePack, count, used) {
   const selected = [];
   const selectedIds = new Set();
@@ -1779,12 +1992,13 @@ function deterministicPlan(date, sourcePack, reason = "") {
   const sectionOrder = ["头条", "深度", "观点", "开源项目", "AI产品推荐"];
   items.sort((a, b) => sectionOrder.indexOf(a.section) - sectionOrder.indexOf(b.section));
 
+  const dailyTerm = selectDailyTerm(date, sourcePack, items);
   items.push({
     section: "每日词条",
     priority: "learning",
-    titleZh: "Agentic Workflow",
-    titleEn: "Agentic Workflow",
-    angle: "帮助理解今天多条 agent 和企业自动化新闻背后的共同语言。",
+    titleZh: dailyTerm.titleZh,
+    titleEn: dailyTerm.titleEn,
+    angle: dailyTerm.angle,
     sourceIds: [],
     links: []
   });
@@ -1956,6 +2170,21 @@ function runEditorialGateTests() {
     { section: "AI产品推荐", titleZh: "AI 信号：Run and monitor several coding agents at once in an IDE | Google Antigravity", titleEn: "Run and monitor several coding agents at once in an IDE" }
   ]);
   assert(!/AI 信号|Run and monitor|Google Antigravity/.test(editorialFrame.summaryZh), "editorial summary should not paste raw product titles");
+  const inferenceTerm = selectDailyTerm(issueDate, {
+    entries: [{ ...baseEntry, title: "DeepSeek宣布V4模型永久降价 或加剧AI价格战", summary: "模型 API 价格和推理成本继续下降。" }]
+  }, []);
+  assert(inferenceTerm.key !== "agentic-workflow", "daily term should not default to Agentic Workflow when other topics are stronger");
+  const termFallback = fallbackItem({
+    section: "每日词条",
+    priority: "learning",
+    titleZh: inferenceTerm.titleZh,
+    titleEn: inferenceTerm.titleEn,
+    angle: inferenceTerm.angle,
+    sourceIds: [],
+    links: []
+  }, { entries: [] }, "zh", "test");
+  assert(termFallback.title === inferenceTerm.titleZh, "term fallback should use the selected daily term title");
+  assert(!/Agentic Workflow 指的是/.test((termFallback.details || []).join(" ")), "term fallback should not always explain Agentic Workflow");
   console.log("Editorial gate tests passed.");
 }
 
@@ -1970,20 +2199,14 @@ function fallbackItem(planItem, scopedSourcePack, lang, reason = "") {
   const links = entry.link ? [[`${entry.source || "Source"}: ${entry.title || title}`.slice(0, 90), entry.link]] : [];
 
   if (isTermSectionName(section)) {
+    const term = termByPlanTitle(planItem);
     return applyPlanMetadata(normalizeItem({
       section,
       priority: planItem.priority || "learning",
-      title,
-      dek: isZh ? "理解 AI 自动化新闻时经常出现的基础概念。" : "A useful concept for reading today’s AI automation news.",
-      details: [
-        isZh
-          ? "Agentic Workflow 指的是让 AI 不只回答问题，而是围绕一个目标拆解任务、调用工具、检查结果，并在多步流程中持续推进。它常出现在企业自动化、代码生成、研究助理和跨应用工作流里。"
-          : "An agentic workflow is a multi-step process where AI does more than answer a prompt: it breaks down a goal, calls tools, checks intermediate results, and keeps moving through a task.",
-        isZh
-          ? "它和普通聊天机器人的区别在于，重点从“生成一句答案”转向“完成一段流程”。所以当新闻里提到 agent、AI 工作流或企业自动化时，真正要看的是工具权限、数据接入、错误纠正和可审计性。"
-          : "The shift is from producing one answer to completing a process. When news mentions agents or enterprise automation, the practical questions are tool access, data integration, error recovery, and auditability."
-      ],
-      why: isZh ? "这个词能帮你判断哪些 AI 产品只是聊天入口，哪些已经开始进入真实业务流程。" : "This term helps separate simple chat interfaces from AI products that can operate inside real workflows.",
+      title: isZh ? term.titleZh : term.titleEn,
+      dek: isZh ? term.zhDek : term.enDek,
+      details: isZh ? term.zhDetails : term.enDetails,
+      why: isZh ? term.zhWhy : term.enWhy,
       links
     }), planItem, lang);
   }
