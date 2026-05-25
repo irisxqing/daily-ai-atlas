@@ -608,6 +608,7 @@ function isIndustryViewOrReportEntry(entry) {
 
 function isBriefEntry(entry) {
   if (isLowQualityEntry(entry) || isEditorialNoiseEntry(entry)) return false;
+  if (isRoundupSourceEntry(entry)) return false;
   const text = entryContentText(entry);
   if (entry.freshness !== "d-1") return false;
   if (regionPriority(entry) === "deprioritized_market") return false;
@@ -744,28 +745,79 @@ function entryEventSignature(entry) {
   return "";
 }
 
+const companySignalPatterns = [
+  ["openai", /openai|gpt|chatgpt|greg brockman|sam altman/i],
+  ["anthropic", /anthropic|claude|dario amodei/i],
+  ["google", /google|deepmind|gemini|demis hassabis|谷歌/i],
+  ["xai", /\bxai\b|\bgrok\b|马斯克|elon musk/i],
+  ["meta", /\bmeta\b|llama|扎克伯格|zuckerberg/i],
+  ["microsoft", /microsoft|azure|copilot|微软/i],
+  ["amazon", /amazon|\baws\b|亚马逊/i],
+  ["alibaba", /alibaba|aliyun|qwen|阿里巴巴|阿里云|通义|千问|平头哥/i],
+  ["kimi", /kimi|moonshot|月之暗面|杨植麟/i],
+  ["deepseek", /deepseek|深度求索/i],
+  ["bytedance", /bytedance|doubao|字节|豆包/i],
+  ["tencent", /tencent|腾讯|混元|marvis|马维斯/i],
+  ["baidu", /baidu|百度|文心/i],
+  ["zhipu", /zhipu|z\.ai|智谱|glm/i],
+  ["minimax", /minimax/i],
+  ["nvidia", /nvidia|英伟达|jensen huang|黄仁勋/i]
+];
+
+const actionSignalPatterns = [
+  ["launch", /launch|release|introduc|unveil|rollout|上线|发布|推出|开源|亮相/i],
+  ["funding", /funding|financing|raises?|valuation|invest|融资|投资|估值|股东|国资/i],
+  ["acquisition", /acquir|acquisition|buy|收购|并购/i],
+  ["personnel", /layoff|cut jobs|join|leave|appoint|takes charge|founder|ceo|cto|裁员|任命|离职|加入|接管|创始人|负责人/i],
+  ["partnership", /partner|collaborat|alliance|合作|联合|签约/i],
+  ["infrastructure", /datacenter|data center|chip|gpu|energy|power|infrastructure|数据中心|芯片|算力|能源|电力|基础设施/i],
+  ["governance", /safety|privacy|security|copyright|regulat|lawsuit|安全|隐私|版权|监管|诉讼/i]
+];
+
+function signalCompanies(text = "") {
+  return new Set(companySignalPatterns.filter(([, pattern]) => pattern.test(text)).map(([company]) => company));
+}
+
+function signalActions(text = "") {
+  return new Set(actionSignalPatterns.filter(([, pattern]) => pattern.test(text)).map(([action]) => action));
+}
+
+function isRoundupSourceEntry(entry) {
+  if (entryEventSignature(entry)) return false;
+  const title = String(entry.title || "");
+  const text = entryContentText(entry);
+  const companies = [...signalCompanies(text)];
+  const actions = [...signalActions(text)];
+  const hasRoundupLabel = /周报|日报|早报|晚报|一周|本周|weekly|roundup|recap|digest|what happened/i.test(title);
+  const hasStrongSeparators = /[；;].+|[、,，].+[、,，]/.test(title);
+  if (companies.length >= 3 && (hasRoundupLabel || hasStrongSeparators)) return true;
+  if (companies.length >= 2 && actions.length >= 2 && (hasRoundupLabel || hasStrongSeparators)) return true;
+  return false;
+}
+
+function entrySignalSignature(entry) {
+  const eventSignature = entryEventSignature(entry);
+  if (eventSignature) return eventSignature;
+  const text = entryContentText(entry);
+  const company = [...signalCompanies(text)][0] || "";
+  const action = [...signalActions(text)][0] || "";
+  const normalizedSubject = String(entry.title || "")
+    .toLowerCase()
+    .replace(/https?:\/\/\S+/g, "")
+    .replace(/[-–—|｜].*$/g, "")
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim()
+    .split(/\s+/)
+    .filter((word) => word.length > 2)
+    .slice(0, 4)
+    .join(" ");
+  return [company, action, normalizedSubject].filter(Boolean).join(":") || String(entry.id || "");
+}
+
 function entryTopicSignature(entry) {
   const eventSignature = entryEventSignature(entry);
   if (eventSignature) return eventSignature;
   const text = entryContentText(entry);
-  const companyPatterns = [
-    ["openai", /openai|gpt|chatgpt|greg brockman|sam altman/i],
-    ["anthropic", /anthropic|claude|dario amodei/i],
-    ["google", /google|deepmind|gemini|demis hassabis/i],
-    ["xai", /\bxai\b|\bgrok\b/i],
-    ["meta", /\bmeta\b|llama/i],
-    ["microsoft", /microsoft|azure|copilot/i],
-    ["amazon", /amazon|\baws\b/i],
-    ["alibaba", /alibaba|aliyun|qwen|阿里巴巴|阿里云|通义|千问|平头哥/i],
-    ["kimi", /kimi|moonshot|月之暗面/i],
-    ["deepseek", /deepseek|深度求索/i],
-    ["bytedance", /bytedance|doubao|字节|豆包/i],
-    ["tencent", /tencent|腾讯|混元/i],
-    ["baidu", /baidu|百度|文心/i],
-    ["zhipu", /zhipu|z\.ai|智谱|glm/i],
-    ["minimax", /minimax/i],
-    ["nvidia", /nvidia|英伟达/i]
-  ];
   const topicPatterns = [
     ["chip", /chip|gpu|accelerator|compute|inference|晶片|芯片|算力|推理|训练/i],
     ["agent", /agent|agentic|workflow|智能体|工作流|ai打工人/i],
@@ -778,7 +830,7 @@ function entryTopicSignature(entry) {
     ["product", /product|launch|release|tool|app|workspace|产品|工具|上线|发布|推出/i],
     ["views", /report|interview|essay|analysis|观点|报告|访谈|专访|分析/i]
   ];
-  const company = companyPatterns.find(([, pattern]) => pattern.test(text))?.[0] || "";
+  const company = companySignalPatterns.find(([, pattern]) => pattern.test(text))?.[0] || "";
   const topic = topicPatterns.find(([, pattern]) => pattern.test(text))?.[0] || "";
   if (company && topic) return `${company}:${topic}`;
   const normalizedTitle = String(entry.title || "")
@@ -1073,6 +1125,28 @@ function isListLikeSummary(summary = "") {
   return separators >= 4 || (companyHits >= 4 && sectionHits >= 2);
 }
 
+function itemDetailsText(item) {
+  return (item.details || [])
+    .map((detail) => typeof detail === "string" ? detail : `${detail.summary || ""} ${detail.expanded || ""} ${detail.quote || ""}`)
+    .join(" ");
+}
+
+function detectMultiSubjectHeadline(item) {
+  if (!["头条", "Headlines"].includes(item.section)) return "";
+  const text = `${item.title} ${item.dek} ${itemDetailsText(item)} ${item.why}`;
+  const eventSignature = entryEventSignature({ title: item.title, summary: `${item.dek} ${itemDetailsText(item)}` });
+  if (eventSignature) return "";
+  const companies = [...signalCompanies(text)];
+  const actions = [...signalActions(text)];
+  const titleCompanies = [...signalCompanies(`${item.title} ${item.dek}`)];
+  const titleActions = [...signalActions(`${item.title} ${item.dek}`)];
+  const hasRoundupPunctuation = /[,，；;、].*[,，；;、]/.test(`${item.title} ${item.dek}`);
+  if (companies.length >= 3) return `headline mixes too many companies: ${companies.join(", ")}`;
+  if (titleCompanies.length >= 2 && titleActions.length >= 2) return `headline mixes multiple companies and actions: ${titleCompanies.join(", ")}`;
+  if (companies.length >= 2 && actions.length >= 2 && hasRoundupPunctuation) return `headline appears to be a multi-subject roundup: ${companies.join(", ")}`;
+  return "";
+}
+
 function validateIssueFrame(issue, lang) {
   if (!issue.headline || !issue.summary) {
     throw new Error(`${lang} issue missing headline or summary.`);
@@ -1086,6 +1160,10 @@ function validateItemContent(item, lang) {
   if (isTermSectionName(item.section)) return;
   if (lang === "zh" && !isChineseLocalizedTitle(item.title)) {
     throw new Error(`zh item title not localized: "${item.title}". Chinese issue titles must be written primarily in Chinese.`);
+  }
+  const multiSubjectHeadline = detectMultiSubjectHeadline(item);
+  if (multiSubjectHeadline) {
+    throw new Error(`${lang} item "${item.title}" is an invalid roundup headline: ${multiSubjectHeadline}`);
   }
   if (isReportSection(item.section)) {
     const expandedReports = item.details.filter((detail) => detail && typeof detail === "object" && detail.expanded && detail.expanded.length >= 90);
@@ -1277,10 +1355,11 @@ SOURCE_PACK 已经是脚本轮巡所有公开源之后的分栏目候选池。�
 - sourceIds 必须引用对应 candidatePools 里的 id。每条至少 1 个，重要新闻尽量 2-4 个。
 - 不要在 plan item 里返回 links，脚本会根据 sourceIds 自动补链接。
 - angle 要写明为什么选择它、应该补充哪些上下文、对非技术读者最重要的理解角度，最多 60 个中文字。
+- 普通头条只能包含一个 primary company / organization 和一个 primary action；不得把多个独立快讯拼成一张 roundup 头条。Google I/O、OpenAI DevDay、Microsoft Build、Apple WWDC、公司财报日等有明确母事件的官方发布会是例外，可以聚合母事件内多个子更新。
 
 篇首编辑要求：
 - headlineZh/headlineEn 和 summaryZh/summaryEn 不能是新闻标题罗列，也不能像目录一样覆盖“融资、产品、报告、开源……”。
-- 它们要提炼当天一条主线：例如“模型公司从发布模型转向争夺用户入口”“AI 落地正在从演示走向流程重构”。
+- 它们要提炼当天的真实结构，不要机械套“AI 从 A 转向 B”的句式；如果当天主题分散，可以明确写“今天没有单一压倒性主线”。
 - summary 必须是 2 句话：第 1 句提炼当天主题，第 2 句解释这个主题为什么值得关注。
 - summary 最多点名 2 个公司或产品；如果需要更多具体新闻，留到正文卡片里写。
 - 中文 summary 约 70-130 字；英文 summary 约 35-70 words。
@@ -1408,11 +1487,37 @@ function sectionPredicate(section) {
   return () => true;
 }
 
+function isEventAggregatePlanItem(entries) {
+  if (entries.length < 2) return false;
+  const signatures = entries.map(entryEventSignature).filter(Boolean);
+  return signatures.length === entries.length && new Set(signatures).size === 1;
+}
+
+function isValidHeadlineCluster(entries) {
+  if (entries.length <= 1) return true;
+  if (isEventAggregatePlanItem(entries)) return true;
+  const companyKeys = new Set(entries.flatMap((entry) => [...signalCompanies(entryContentText(entry))]));
+  if (companyKeys.size > 1) return false;
+  const signatures = new Set(entries.map(entrySignalSignature));
+  return signatures.size === 1;
+}
+
+function headlineClusterError(item, entries) {
+  if (item.section !== "头条") return "";
+  if (isValidHeadlineCluster(entries)) return "";
+  const companies = [...new Set(entries.flatMap((entry) => [...signalCompanies(entryContentText(entry))]))];
+  const titles = entries.map((entry) => entry.title).filter(Boolean).slice(0, 3).join(" | ");
+  return `Headline "${item.titleZh || item.titleEn}" mixes unrelated sources (${companies.join(", ") || "multiple subjects"}): ${titles}`;
+}
+
 function validatePlanAgainstPools(plan, sourcePack) {
   const entryById = new Map(sourcePack.entries.map((entry) => [entry.id, entry]));
   plan.items.forEach((item) => {
     if (isTermSectionName(item.section)) return;
     const predicate = sectionPredicate(item.section);
+    const itemEntries = item.sourceIds.map((id) => entryById.get(id)).filter(Boolean);
+    const clusterError = headlineClusterError(item, itemEntries);
+    if (clusterError) throw new Error(clusterError);
     const primaryEntry = entryById.get(item.sourceIds[0]);
     const primarySignature = primaryEntry ? entryTopicSignature(primaryEntry) : "";
     const invalidIds = item.sourceIds.filter((id) => {
@@ -1548,11 +1653,25 @@ function selectTopStoryEntries(sourcePack, count, used) {
 }
 
 function buildEditorialFrame(items) {
+  const headlineTitles = items.filter((item) => item.section === "头条").map((item) => `${item.titleZh || ""} ${item.titleEn || ""}`).join(" ");
+  const hasMajorEvent = /Google I\/O|OpenAI|Microsoft Build|WWDC/i.test(headlineTitles);
+  const hasInfrastructure = /芯片|算力|能源|数据中心|GPU|NVIDIA|infrastructure|energy|datacenter/i.test(headlineTitles);
+  const hasProductEntry = /Agent|助手|搜索|浏览器|工作流|workflow|assistant/i.test(headlineTitles);
+  if (!hasMajorEvent && !hasInfrastructure && !hasProductEntry) {
+    return {
+      headlineZh: "今天的 AI 信号没有单一主线，但值得分开看",
+      headlineEn: "Today’s AI signals are dispersed, but still worth reading separately",
+      summaryZh: "今天没有一个压倒性的 AI 主题，更像是大公司动作、产品更新和行业观点的并行推进。阅读重点不是强行找“转变”，而是分别判断哪些信号有真实产品、资本或组织含义。",
+      summaryEn: "Today does not have one dominant AI theme; it is a set of parallel company moves, product updates, and industry views. The useful read is not to force a transformation narrative, but to judge which signals carry real product, capital, or organizational meaning.",
+      tagsZh: ["头条", "深度", "观点", "AI产品"],
+      tagsEn: ["Headlines", "Deep Dive", "Views", "AI Products"]
+    };
+  }
   return {
-    headlineZh: "AI 竞争正在从发布能力转向占住真实工作流",
-    headlineEn: "AI competition is shifting from capability launches to real workflow control",
-    summaryZh: "今天值得看的主线是，AI 公司不再只证明模型更强，而是在争夺用户入口、企业流程和关键产业链位置。真正重要的是这些动作能否沉淀成持续使用，而不是只制造一天的热度。",
-    summaryEn: "Today’s useful thread is that AI companies are no longer only proving stronger models; they are fighting for user entry points, enterprise workflows, and key industry positions. The important test is whether these moves become durable usage instead of one-day attention.",
+    headlineZh: hasInfrastructure ? "AI 大公司的竞争继续落到入口、算力和行业场景" : "今天的 AI 信号集中在入口、Agent 和应用落地",
+    headlineEn: hasInfrastructure ? "AI competition is showing up in entry points, compute, and industry deployments" : "Today’s AI signals cluster around entry points, agents, and applied workflows",
+    summaryZh: "今天值得看的不是单一“转变”，而是几类具体动作同时出现：大公司继续争夺用户入口，产业链公司强化算力或基础设施位置，垂直行业开始把 Agent 包装成可交付方案。产品推荐只保留少量能进入真实工作流的工具，作为正文之外的补充。",
+    summaryEn: "Today’s useful read is not one neat transformation story, but several concrete moves happening at once: major companies are defending user entry points, infrastructure players are strengthening compute positions, and vertical industries are packaging agents into deliverable solutions.",
     tagsZh: ["头条", "深度", "观点", "AI产品"],
     tagsEn: ["Headlines", "Deep Dive", "Views", "AI Products"]
   };
@@ -1694,6 +1813,15 @@ function runEditorialGateTests() {
   const assert = (condition, message) => {
     if (!condition) throw new Error(`Editorial gate test failed: ${message}`);
   };
+  const assertThrows = (fn, message) => {
+    let threw = false;
+    try {
+      fn();
+    } catch {
+      threw = true;
+    }
+    if (!threw) throw new Error(`Editorial gate test failed: ${message}`);
+  };
 
   assert(!topStory({
     title: "重塑主流PC，第三代英特尔酷睿开启全民AI轻薄本时代",
@@ -1745,6 +1873,74 @@ function runEditorialGateTests() {
     title: "Google just redesigned the search box for the first time in 25 years",
     summary: "AI Mode and AI Overviews became part of a new search entry point."
   }), "Google I/O sub-stories should share one event cluster signature");
+  assert(isRoundupSourceEntry({
+    ...baseEntry,
+    title: "AI周报 | DeepSeek-V4发布，国产芯片加持；谷歌将投资Anthropic至多400亿美元",
+    summary: "DeepSeek 发布新模型，谷歌投资 Anthropic，国产芯片进入新阶段。"
+  }), "single-source weekly roundup articles should be blocked from headline candidates");
+  assert(!isBriefEntry({
+    ...baseEntry,
+    title: "AI周报 | DeepSeek-V4发布，国产芯片加持；谷歌将投资Anthropic至多400亿美元",
+    summary: "DeepSeek 发布新模型，谷歌投资 Anthropic，国产芯片进入新阶段。"
+  }), "roundup source entries must not enter brief/headline pool");
+  assert(!isRoundupSourceEntry({
+    ...baseEntry,
+    source: "Google AI Blog",
+    title: "Google I/O 2026：搜索、Gemini 和科研 Agent 集中更新",
+    summary: "Google I/O developer conference updates."
+  }), "official event aggregates should not be treated as bad roundup entries");
+  assert(detectMultiSubjectHeadline({
+    section: "头条",
+    title: "Google I/O 2026：搜索、Gemini 和科研 Agent 集中更新",
+    dek: "Google 在同一场 I/O 发布会中集中更新搜索、Gemini 和科研 Agent。",
+    details: ["Google I/O 是同一母事件，多个子更新都来自同一官方发布上下文。", "这类聚合应该允许。"],
+    why: "这是合法母事件聚合。"
+  }) === "", "Google I/O event aggregation should be allowed");
+  assert(detectMultiSubjectHeadline({
+    section: "头条",
+    title: "腾讯上线系统级AI助手马维斯，Meta裁员10%，马斯克或成万亿富翁",
+    dek: "多个互不相关的大公司快讯被拼在一个头条里。",
+    details: ["腾讯发布 Marvis，Meta 裁员，马斯克财富变化。", "这些不是同一母事件。"],
+    why: "这应该被拒绝。"
+  }), "multi-company roundup headline should be rejected");
+  assert(detectMultiSubjectHeadline({
+    section: "头条",
+    title: "DeepSeek-V4发布与谷歌对Anthropic的巨额投资",
+    dek: "DeepSeek 发布模型，Google 投资 Anthropic。",
+    details: ["DeepSeek、Google、Anthropic 是两个独立事件。", "不能强行拼成一张头条。"],
+    why: "这应该被拒绝。"
+  }), "DeepSeek plus Google/Anthropic mixed headline should be rejected");
+  const validClusterSourcePack = {
+    entries: [
+      { id: "S001", ...baseEntry, source: "Google AI Blog", title: "I/O 2026: Welcome to the agentic Gemini era", summary: "Google I/O developer conference updates." },
+      { id: "S002", ...baseEntry, source: "VentureBeat", title: "Google redesigns search at I/O 2026", summary: "AI Mode and AI Overviews were announced at Google I/O." }
+    ]
+  };
+  assert(validatePlanAgainstPools({
+    headlineZh: "x",
+    headlineEn: "x",
+    summaryZh: "x",
+    summaryEn: "x",
+    tagsZh: [],
+    tagsEn: [],
+    items: [{ section: "头条", titleZh: "Google I/O 2026 聚合", sourceIds: ["S001", "S002"] }]
+  }, validClusterSourcePack), "same-event headline cluster should validate");
+  const invalidClusterSourcePack = {
+    entries: [
+      { id: "S001", ...baseEntry, source: "Google News", title: "腾讯上线系统级AI助手Marvis", summary: "Tencent launches Marvis AI assistant." },
+      { id: "S002", ...baseEntry, source: "Google News", title: "Meta cuts 10% of AI staff", summary: "Meta layoffs affect AI organization." },
+      { id: "S003", ...baseEntry, source: "Google News", title: "Elon Musk may become a trillionaire", summary: "xAI and Tesla wealth story." }
+    ]
+  };
+  assertThrows(() => validatePlanAgainstPools({
+    headlineZh: "x",
+    headlineEn: "x",
+    summaryZh: "x",
+    summaryEn: "x",
+    tagsZh: [],
+    tagsEn: [],
+    items: [{ section: "头条", titleZh: "腾讯 Marvis、Meta 裁员和马斯克财富", sourceIds: ["S001", "S002", "S003"] }]
+  }, invalidClusterSourcePack), "mixed-subject headline cluster should fail validation");
   assert(!isChineseLocalizedTitle("Viberia: Command AI agents like you're playing Civilization"), "English source title should fail Chinese title localization");
   assert(isChineseLocalizedTitle(localizeTitleZh("Viberia: Command AI agents like you're playing Civilization")), "localized Chinese product title should pass title gate");
   const fallbackFreshness = classifyFreshness({
@@ -1756,6 +1952,10 @@ function runEditorialGateTests() {
   assert(fallbackFreshness?.freshness === "fallback", "product/report/deep-read candidates may be marked fallback within seven days");
   const productTitles = curatedProductSignals(issueDate).map((entry) => entry.title).join(" | ");
   assert(/Recall/.test(productTitles) && /Granola/.test(productTitles) && /Fellou/.test(productTitles), "curated products should use a broader rotation pool");
+  const editorialFrame = buildEditorialFrame([
+    { section: "AI产品推荐", titleZh: "AI 信号：Run and monitor several coding agents at once in an IDE | Google Antigravity", titleEn: "Run and monitor several coding agents at once in an IDE" }
+  ]);
+  assert(!/AI 信号|Run and monitor|Google Antigravity/.test(editorialFrame.summaryZh), "editorial summary should not paste raw product titles");
   console.log("Editorial gate tests passed.");
 }
 
@@ -1845,7 +2045,7 @@ item 必须有 section、priority、title、dek、details、why、links。脚本
 - 不要包含用户个人收入、具体雇主经历或敏感个人信息。
 
 栏目写法：
-- 头条 / Headlines：覆盖 D-1 中美大公司和产业链重点动作。短信号要快速交代主体、动作、时间和影响；重大事件要补公司背景、事件细节、影响范围、后续观察点。不要把社会奇闻、消费电子导购或单纯跑分新闻写进来。
+- 头条 / Headlines：覆盖 D-1 中美大公司和产业链重点动作。普通头条只能围绕一个主体动作：一个 primary company / organization + 一个 primary action + 一个核心影响。不要把多个快讯拼成“今日合集式头条”，例如不要把腾讯 Marvis、Meta 裁员、马斯克财富写进同一张卡，也不要把 DeepSeek 发布和 Google 投资 Anthropic 写成一张卡。Google I/O、OpenAI DevDay、Microsoft Build、Apple WWDC、公司财报日等有明确母事件的官方发布会可以聚合多个子更新，但正文必须只写该母事件内的内容。不要把社会奇闻、消费电子导购或单纯跑分新闻写进来。
 - 深度 / Deep Dive：解释一个热门 AI 主题或产业问题，不只是复述一条新闻；要帮非技术读者理解“这件事为什么会成为趋势”。
 - 观点 / Views：覆盖研究报告、领军人物、投资人和高质量行业观察。
 
