@@ -1421,7 +1421,6 @@ function detectMultiSubjectHeadline(item) {
   const hasRoundupPunctuation = /[,，；;、].*[,，；;、]/.test(headlineText);
   if (titleCompanies.length >= 3) return `headline mixes too many companies: ${titleCompanies.join(", ")}`;
   if (titleCompanies.length >= 2 && titleActions.length >= 2) return `headline mixes multiple companies and actions: ${titleCompanies.join(", ")}`;
-  if (titleCompanies.length >= 2 && titleActions.length >= 1 && hasRoundupPunctuation) return `headline appears to be a multi-subject roundup: ${titleCompanies.join(", ")}`;
   if (companies.length >= 4 && actions.length >= 3 && hasRoundupPunctuation) return `headline body appears to be a multi-subject roundup: ${companies.join(", ")}`;
   return "";
 }
