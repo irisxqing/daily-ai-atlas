@@ -40,6 +40,67 @@ function normalizeTermTitle(title = "") {
     .trim();
 }
 
+function productKeyFromText(text = "") {
+  const normalized = String(text)
+    .toLowerCase()
+    .replace(/^ai\s*信号[:：]\s*/, "")
+    .replace(/：.*$/, "")
+    .replace(/:.*/, "")
+    .replace(/\s+\|\s+.*$/, "")
+    .replace(/\s+-\s+product hunt.*$/, "")
+    .replace(/[^\p{L}\p{N}.]+/gu, " ")
+    .trim();
+  const known = [
+    "recall", "liminary", "anuma", "magic patterns", "granola", "notebooklm",
+    "gamma", "flowith", "fellou", "antigravity", "note.md", "bulkmark",
+    "tycoon ai", "viberia", "storeclaw", "trainer"
+  ];
+  return known.find((name) => normalized.includes(name)) || normalized.split(/\s+/).slice(0, 3).join(" ");
+}
+
+function productKeyFromLink(link = "") {
+  try {
+    const url = new URL(link);
+    return url.hostname.replace(/^www\./, "").toLowerCase();
+  } catch {
+    return "";
+  }
+}
+
+function productKeysForEntry(entry = {}) {
+  return new Set([
+    productKeyFromText(entry.title || ""),
+    productKeyFromLink(entry.link || "")
+  ].filter(Boolean));
+}
+
+function usedRecentProductKeys(currentDate, limit = 14) {
+  try {
+    const source = fs.readFileSync(appPath, "utf8");
+    const match = source.match(/const archiveZh = ([\s\S]*?);\n\s*const archiveEn =/);
+    if (!match) return new Set();
+    const archive = Function(`return ${match[1]}`)();
+    const currentTime = Date.parse(`${currentDate}T12:00:00+08:00`);
+    const keys = new Set();
+    for (const issue of archive || []) {
+      const issueTime = Date.parse(`${issue.date}T12:00:00+08:00`);
+      if (!Number.isFinite(issueTime) || issue.date === currentDate || issueTime > currentTime) continue;
+      const ageDays = Math.floor((currentTime - issueTime) / (24 * 60 * 60 * 1000));
+      if (ageDays > limit) continue;
+      for (const item of issue.items || []) {
+        if (!["AI产品推荐", "AI Product Picks"].includes(item.section)) continue;
+        productKeyFromText(item.title || "") && keys.add(productKeyFromText(item.title || ""));
+        for (const [, href] of item.links || []) {
+          productKeyFromLink(href) && keys.add(productKeyFromLink(href));
+        }
+      }
+    }
+    return keys;
+  } catch {
+    return new Set();
+  }
+}
+
 const aiTermCatalog = [
   {
     key: "inference-cost",
@@ -315,11 +376,20 @@ function curatedProductSignals(date) {
     }
   ];
   const offset = dayOfYear(date) % products.length;
-  return products
+  const recentKeys = usedRecentProductKeys(date, 14);
+  const decorated = products
     .map((product, index) => ({
       ...product,
       curatedPriority: products.length - ((index - offset + products.length) % products.length)
     }));
+  const fresh = decorated.filter((product) => {
+    const keys = productKeysForEntry(product);
+    return ![...keys].some((key) => recentKeys.has(key));
+  });
+  return fresh.length >= 2 ? fresh : decorated.map((product) => ({
+    ...product,
+    curatedPriority: Number(product.curatedPriority || 0) - 20
+  }));
 }
 
 function shanghaiDate(date = new Date()) {
@@ -552,6 +622,7 @@ const comparisonOnlyPattern = /outperforms?|beats?|lags?|stronger than|weaker th
 const directActionPattern = /\blaunch(?:es|ed)?\b|\brelease(?:s|d)?\b|\bannounce(?:s|d)?\b|\bdeploy(?:s|ed)?\b|\broll(?:s|ed)? out\b|\bpartner(?:s|ed|ship)?\b|\bcollaborat(?:es|ed|ion)\b|\bacquir(?:es|ed|e)\b|\brais(?:es|ed)\b|\btakes charge\b|\bjoins?\b|\bleaves?\b|\bfounds?\b|\bappoint(?:s|ed)?\b|\bresign(?:s|ed)?\b|发布|上线|推出|部署|宣布|合作|并购|收购|融资|接管|离职|加入|任命|创业|创办|辞任/i;
 const consumerDeviceNoisePattern = /轻薄本|笔记本|ai\s*pc|aipc|pc厂商|酷睿|英特尔酷睿|laptop|notebook|ultrabook|consumer pc|买本|换机|导购|评测|上手|跑分|整机|显卡|主板|手机|耳机|电视|平板/i;
 const socialAnecdoteNoisePattern = /律师|法庭|法官|法院|代理意见|判决|谁能赢|ai问答|用deepseek|拿着.*deepseek|社会新闻|奇葩|离谱|当庭|训诫|民事|刑事|司法案例|court|judge|lawyer|legal brief|hearing/i;
+const softHeadlineNoisePattern = /wearable|hands[- ]on|i tried|review|creeped out|podcast|can['’]t hear you|trillion ipo|given up on solar|disco[- ]ball|pixel home screen|you can no longer google|体验|试用|上手|播客|太阳能|图标|猎奇/i;
 const topStoryHardActionPattern = /\blaunch(?:es|ed)?\b|\brelease(?:s|d)?\b|\bannounce(?:s|d)?\b|\bdeploy(?:s|ed)?\b|\bpartnership\b|\bcollaboration\b|\bacquir(?:es|ed|e)\b|\brais(?:es|ed)\b|\bseries [a-z]\b|\bipo\b|\bfunding\b|\bvaluation\b|\btakes charge\b|\bjoins?\b|\bleaves?\b|\bfounds?\b|\bappoint(?:s|ed)?\b|\bresign(?:s|ed)?\b|发布|上线|推出|部署|合作|并购|收购|融资|上市|估值|接管|离职|加入|任命|创业|创办|辞任|负责人|正式发布|宣布/i;
 const governanceOrSafetyPolicyPattern = /regulat|policy|governance|antitrust|competition|copyright|privacy|security|safety|alignment|lawsuit|whistleblower|model provider|监管|治理|反垄断|竞争|版权|隐私|安全|对齐|诉讼|政策|立法|听证|平台垄断|模型层/i;
 const coreIndustryPattern = /nvidia|amd|tsmc|broadcom|datacenter|data center|server|gpu|chip|accelerator|inference|compute|robot|robotics|humanoid|world model|warehouse|factory|logistics|英伟达|台积电|博通|数据中心|服务器|芯片|算力|加速器|推理|机器人|世界模型|仓储|工厂|物流/i;
@@ -793,6 +864,35 @@ function isHeadlineEntry(entry) {
     || isFundingEntry(entry);
 }
 
+function isHeadlineBackfillEntry(entry) {
+  if (isLowQualityEntry(entry) || isEditorialNoiseEntry(entry) || isRoundupSourceEntry(entry)) return false;
+  if (entry.freshness !== "d-1") return false;
+  if (regionPriority(entry) === "deprioritized_market") return false;
+  const text = entryContentText(entry);
+  const source = String(entry.source || "");
+  const hasOfficialEvent = Boolean(entryEventSignature(entry));
+  const hasCompanySignal = megaCompanyPattern.test(text) || priorityCompanyPattern.test(text);
+  const hasLeaderMove = aiLeaderPattern.test(text) && topStoryHardActionPattern.test(text);
+  const hasMeaningfulAction = directActionPattern.test(text)
+    || topStoryHardActionPattern.test(text)
+    || hasLeaderMove
+    || coreIndustryPattern.test(text)
+    || governanceOrSafetyPolicyPattern.test(text)
+    || hasOfficialEvent;
+  const hasTrustedMajorSource = /openai|anthropic|google ai blog|deepmind|nvidia|github|techcrunch|venturebeat|量子位|机器之心/i.test(source);
+  if (!(hasCompanySignal || hasOfficialEvent || (primaryMarketPattern.test(text) && hasTrustedMajorSource))) return false;
+  if (!hasMeaningfulAction && !hasTrustedMajorSource) return false;
+  if (comparisonOnlyPattern.test(text) && !directActionPattern.test(text)) return false;
+  return !isProductEntry(entry)
+    && !isReportEntry(entry)
+    && !isAcademicPaperEntry(entry)
+    && !isStaleReportLikeEntry(entry);
+}
+
+function isHeadlineCandidateEntry(entry) {
+  return isHeadlineOrBriefEntry(entry) || isHeadlineBackfillEntry(entry);
+}
+
 function isHeadlineOrBriefEntry(entry) {
   return isHeadlineEntry(entry) || isBriefEntry(entry);
 }
@@ -827,6 +927,7 @@ function isEditorialNoiseEntry(entry) {
   const text = entryContentText(entry);
   if (consumerDeviceNoisePattern.test(text)) return true;
   if (socialAnecdoteNoisePattern.test(text)) return true;
+  if (softHeadlineNoisePattern.test(text)) return true;
   return false;
 }
 
@@ -887,7 +988,13 @@ function entryAllowedForSection(entry, section) {
 
 function sectionCandidates(sourcePack, section, predicate, limit, excludeIds = new Set()) {
   const score = (entry) => editorialScore(entry, section);
-  const candidates = sourcePack.entries.filter((entry) => !excludeIds.has(entry.id) && predicate(entry) && entryAllowedForSection(entry, section));
+  const recentProductKeys = section === "AI产品推荐" ? usedRecentProductKeys(sourcePack.date, 14) : new Set();
+  const candidates = sourcePack.entries.filter((entry) => {
+    if (excludeIds.has(entry.id) || !predicate(entry) || !entryAllowedForSection(entry, section)) return false;
+    if (section !== "AI产品推荐") return true;
+    const keys = productKeysForEntry(entry);
+    return ![...keys].some((key) => recentProductKeys.has(key));
+  });
   const primary = candidates
     .filter((entry) => entry.freshness === "d-1")
     .sort((a, b) => score(b) - score(a) || (b.score || 0) - (a.score || 0));
@@ -1456,7 +1563,7 @@ function updateAppCacheBust(date) {
 
 function selectionSourcePack(sourcePack) {
   const used = new Set();
-  const headlines = sectionCandidates(sourcePack, "头条", isHeadlineOrBriefEntry, 24, used);
+  const headlines = sectionCandidates(sourcePack, "头条", isHeadlineCandidateEntry, 24, used);
   const depth = sectionCandidates(sourcePack, "深度", isDepthEntry, 12, used);
   const viewpoints = sectionCandidates(sourcePack, "观点", isViewpointEntry, 12, used);
   const openSource = sectionCandidates(sourcePack, "开源项目", isOpenSourceEntry, 8, used);
@@ -1645,7 +1752,7 @@ function applyPlanMetadata(item, planItem, lang) {
 
 function sectionPredicate(section) {
   if (section === "快讯") return isBriefEntry;
-  if (section === "头条") return isHeadlineOrBriefEntry;
+  if (section === "头条") return isHeadlineCandidateEntry;
   if (section === "深度") return isDepthEntry;
   if (section === "观点") return isViewpointEntry;
   if (section === "投融资信息") return isFundingEntry;
@@ -1956,7 +2063,7 @@ function deterministicPlan(date, sourcePack, reason = "") {
     if (entries[0]) usedTopicSignatures.add(entryTopicSignature(entries[0]));
   };
   const specs = [
-    ["头条", 6, isHeadlineOrBriefEntry],
+    ["头条", 6, isHeadlineCandidateEntry],
     ["深度", 2, isDepthEntry],
     ["开源项目", 1, isOpenSourceEntry],
     ["AI产品推荐", 2, isProductEntry]
@@ -1992,7 +2099,7 @@ function deterministicPlan(date, sourcePack, reason = "") {
     if (items.length >= 12) break;
     if (used.has(entry.id)) continue;
     if (isDuplicateTopic(entry, usedTopicSignatures)) continue;
-    if (!isHeadlineOrBriefEntry(entry)) continue;
+    if (!isHeadlineCandidateEntry(entry)) continue;
     addSelectedEntry(items, "头条", entry);
   }
 
@@ -2179,7 +2286,8 @@ function runEditorialGateTests() {
   }, issueDate);
   assert(fallbackFreshness?.freshness === "fallback", "product/report/deep-read candidates may be marked fallback within seven days");
   const productTitles = curatedProductSignals(issueDate).map((entry) => entry.title).join(" | ");
-  assert(/Recall/.test(productTitles) && /Granola/.test(productTitles) && /Fellou/.test(productTitles), "curated products should use a broader rotation pool");
+  assert(!/Anuma|Liminary/.test(productTitles), "recently used curated products should rotate out of fallback picks");
+  assert(productTitles.split(" | ").filter(Boolean).length >= 2, "curated product fallback should still keep enough fresh options");
   const editorialFrame = buildEditorialFrame([
     { section: "AI产品推荐", titleZh: "AI 信号：Run and monitor several coding agents at once in an IDE | Google Antigravity", titleEn: "Run and monitor several coding agents at once in an IDE" }
   ]);
