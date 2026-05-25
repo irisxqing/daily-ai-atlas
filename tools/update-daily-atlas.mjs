@@ -1295,16 +1295,23 @@ function itemDetailsText(item) {
     .join(" ");
 }
 
+function stripAggregatorSourceNoise(text = "") {
+  return String(text)
+    .replace(/Google News [A-Za-z ]*/gi, "")
+    .replace(/谷歌新闻/g, "");
+}
+
 function detectMultiSubjectHeadline(item) {
   if (!["头条", "Headlines"].includes(item.section)) return "";
-  const text = `${item.title} ${item.dek} ${itemDetailsText(item)} ${item.why}`;
-  const eventSignature = entryEventSignature({ title: item.title, summary: `${item.dek} ${itemDetailsText(item)}` });
+  const headlineText = stripAggregatorSourceNoise(`${item.title} ${item.dek}`);
+  const bodyText = stripAggregatorSourceNoise(`${headlineText} ${itemDetailsText(item)} ${item.why}`);
+  const eventSignature = entryEventSignature({ title: item.title, summary: stripAggregatorSourceNoise(`${item.dek} ${itemDetailsText(item)}`) });
   if (eventSignature) return "";
-  const companies = [...signalCompanies(text)];
-  const actions = [...signalActions(text)];
-  const titleCompanies = [...signalCompanies(`${item.title} ${item.dek}`)];
-  const titleActions = [...signalActions(`${item.title} ${item.dek}`)];
-  const hasRoundupPunctuation = /[,，；;、].*[,，；;、]/.test(`${item.title} ${item.dek}`);
+  const companies = [...signalCompanies(bodyText)];
+  const actions = [...signalActions(bodyText)];
+  const titleCompanies = [...signalCompanies(headlineText)];
+  const titleActions = [...signalActions(headlineText)];
+  const hasRoundupPunctuation = /[,，；;、].*[,，；;、]/.test(headlineText);
   if (companies.length >= 3) return `headline mixes too many companies: ${companies.join(", ")}`;
   if (titleCompanies.length >= 2 && titleActions.length >= 2) return `headline mixes multiple companies and actions: ${titleCompanies.join(", ")}`;
   if (companies.length >= 2 && actions.length >= 2 && hasRoundupPunctuation) return `headline appears to be a multi-subject roundup: ${companies.join(", ")}`;
@@ -2124,6 +2131,13 @@ function runEditorialGateTests() {
     details: ["DeepSeek、Google、Anthropic 是两个独立事件。", "不能强行拼成一张头条。"],
     why: "这应该被拒绝。"
   }), "DeepSeek plus Google/Anthropic mixed headline should be rejected");
+  assert(!detectMultiSubjectHeadline({
+    section: "头条",
+    title: "DeepSeek宣布V4模型永久降价 或加剧AI价格战",
+    dek: "DeepSeek 针对 V4 模型下调价格。",
+    details: ["Google News China AI：DeepSeek宣布V4模型永久降价 或加剧AI价格战。", "这条来源名里的 Google News 只是聚合器，不是新闻主体。"],
+    why: "这是一条 DeepSeek 单主体新闻。"
+  }), "Google News source labels should not create a false multi-company headline");
   const validClusterSourcePack = {
     entries: [
       { id: "S001", ...baseEntry, source: "Google AI Blog", title: "I/O 2026: Welcome to the agentic Gemini era", summary: "Google I/O developer conference updates." },
