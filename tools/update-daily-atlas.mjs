@@ -84,7 +84,7 @@ function usedRecentProductKeys(currentDate, limit = 14) {
     const keys = new Set();
     for (const issue of archive || []) {
       const issueTime = Date.parse(`${issue.date}T12:00:00+08:00`);
-      if (!Number.isFinite(issueTime) || issue.date === currentDate || issueTime > currentTime) continue;
+      if (!Number.isFinite(issueTime) || issueTime > currentTime) continue;
       const ageDays = Math.floor((currentTime - issueTime) / (24 * 60 * 60 * 1000));
       if (ageDays > limit) continue;
       for (const item of issue.items || []) {
@@ -98,6 +98,47 @@ function usedRecentProductKeys(currentDate, limit = 14) {
     return keys;
   } catch {
     return new Set();
+  }
+}
+
+function currentIssueCarryoverEntries(currentDate) {
+  try {
+    const source = fs.readFileSync(appPath, "utf8");
+    const match = source.match(/const archiveZh = ([\s\S]*?);\n\s*const archiveEn =/);
+    if (!match) return [];
+    const archive = Function(`return ${match[1]}`)();
+    const issue = (archive || []).find((entry) => entry.date === currentDate);
+    if (!issue) return [];
+    return (issue.items || [])
+      .filter((item) => {
+        if (["AI产品推荐", "AI Product Picks", "每日词条", "AI Term"].includes(item.section)) return false;
+        const text = `${item.title || ""} ${item.dek || ""} ${item.why || ""} ${(item.links || []).map((link) => Array.isArray(link) ? link.join(" ") : "").join(" ")}`.toLowerCase();
+        const volatileGovernanceSignal = /pope leo|vatican|教皇|梵蒂冈/.test(text) && /anthropic|openai|deepmind|ai|人工智能/.test(text);
+        const volatileFundingSignal = /anthropic/.test(text) && /funding|investment|invests?|valuation|融资|投资|追加投资|估值/.test(text);
+        return volatileGovernanceSignal || volatileFundingSignal;
+      })
+      .flatMap((item, itemIndex) => {
+        const sourceDate = item.sourceDate || currentDate;
+        const itemText = [
+          item.dek,
+          ...(Array.isArray(item.details) ? item.details.map((detail) => typeof detail === "string" ? detail : `${detail.summary || ""} ${detail.expanded || ""}`) : []),
+          item.why
+        ].filter(Boolean).join(" ").slice(0, 720);
+        const links = (item.links || []).filter((link) => Array.isArray(link) && link[1]);
+        return links.map(([label, href], linkIndex) => ({
+          source: "Existing AI Daily Atlas",
+          sourceUrl: "manual:current-issue-carryover",
+          title: String(label || item.title || "").replace(/^[^:：]+[:：]\s*/, "") || item.title,
+          link: href,
+          date: `${sourceDate}T12:00:00+08:00`,
+          summary: itemText,
+          carryover: true,
+          score: 0,
+          carryoverIndex: itemIndex * 10 + linkIndex
+        }));
+      });
+  } catch {
+    return [];
   }
 }
 
@@ -271,6 +312,8 @@ const sourceFeeds = [
     ceid: "CN:zh-Hans"
   }),
   googleNews("Google News AI Funding", "(AI startup funding OR AI acquisition OR AI IPO OR 人工智能 融资 OR AI 投融资) when:2d"),
+  googleNews("Google News Anthropic Funding", "(Anthropic investment OR Anthropic funding OR Anthropic valuation OR Google invests Anthropic OR Amazon invests Anthropic OR Anthropic 追加投资) when:7d"),
+  googleNews("Google News AI Governance Partnerships", "(Anthropic OR OpenAI OR DeepMind) (Pope Leo OR Vatican OR governance OR safety commission OR AI ethics partnership) when:7d"),
   googleNews("Google News AI Products", "(AI agent product launch OR AI tool Product Hunt OR AI workflow tool OR AI 产品 发布) when:2d"),
   googleNews("Google News AI Product Discovery", "(site:producthunt.com/products AI agent OR AI productivity tool OR AI research workflow OR AI knowledge management) when:7d"),
   googleNews("Google News AI Reports", "(AI report PDF OR State of AI report OR Stanford AI Index OR McKinsey AI report OR BCG AI report OR AI 报告) when:14d"),
@@ -619,18 +662,19 @@ const deepReadStylePattern = /\banalysis\b|\bdeep[- ]dive\b|\bessay\b|\bintervie
 const primaryMarketPattern = /中国|\bchina\b|\bchinese\b|\bu\.s\.(?:\b|$)|\bus\b|\busa\b|\bunited states\b|\bamerica\b|\bamerican\b|美国|深圳|香港|国内|国产/i;
 const deprioritizedMarketPattern = /korea|korean|south korea|ghana|malta|european union|eu\b|france|germany|uk\b|britain|japan|singapore|韩国|加纳|马耳他|欧盟|法国|德国|英国|日本|新加坡/i;
 const comparisonOnlyPattern = /outperforms?|beats?|lags?|stronger than|weaker than|surpass(?:es|ed)?|超过|强于|弱于|落后|跑分|榜单|排名/i;
-const directActionPattern = /\blaunch(?:es|ed)?\b|\brelease(?:s|d)?\b|\bannounce(?:s|d)?\b|\bdeploy(?:s|ed)?\b|\broll(?:s|ed)? out\b|\bpartner(?:s|ed|ship)?\b|\bcollaborat(?:es|ed|ion)\b|\bacquir(?:es|ed|e)\b|\brais(?:es|ed)\b|\btakes charge\b|\bjoins?\b|\bleaves?\b|\bfounds?\b|\bappoint(?:s|ed)?\b|\bresign(?:s|ed)?\b|发布|上线|推出|部署|宣布|合作|并购|收购|融资|接管|离职|加入|任命|创业|创办|辞任/i;
+const directActionPattern = /\blaunch(?:es|ed)?\b|\brelease(?:s|d)?\b|\bannounce(?:s|d)?\b|\bdeploy(?:s|ed)?\b|\broll(?:s|ed)? out\b|\bpartner(?:s|ed|ship)?\b|\bcollaborat(?:es|ed|ion)\b|\bco-?chair(?:s|ed)?\b|\bjointly lead(?:s|ing)?\b|\btake(?:s)? on ai alongside\b|\bacquir(?:es|ed|e)\b|\brais(?:es|ed)\b|\btakes charge\b|\bjoins?\b|\bleaves?\b|\bfounds?\b|\bappoint(?:s|ed)?\b|\bresign(?:s|ed)?\b|发布|上线|推出|部署|宣布|合作|联合|共同|并购|收购|融资|接管|离职|加入|任命|创业|创办|辞任/i;
 const consumerDeviceNoisePattern = /轻薄本|笔记本|ai\s*pc|aipc|pc厂商|酷睿|英特尔酷睿|laptop|notebook|ultrabook|consumer pc|买本|换机|导购|评测|上手|跑分|整机|显卡|主板|手机|耳机|电视|平板/i;
 const socialAnecdoteNoisePattern = /律师|法庭|法官|法院|代理意见|判决|谁能赢|ai问答|用deepseek|拿着.*deepseek|社会新闻|奇葩|离谱|当庭|训诫|民事|刑事|司法案例|court|judge|lawyer|legal brief|hearing/i;
 const softHeadlineNoisePattern = /wearable|hands[- ]on|i tried|review|creeped out|podcast|can['’]t hear you|trillion ipo|given up on solar|disco[- ]ball|pixel home screen|you can no longer google|体验|试用|上手|播客|太阳能|图标|猎奇/i;
-const topStoryHardActionPattern = /\blaunch(?:es|ed)?\b|\brelease(?:s|d)?\b|\bannounce(?:s|d)?\b|\bdeploy(?:s|ed)?\b|\bpartnership\b|\bcollaboration\b|\bacquir(?:es|ed|e)\b|\brais(?:es|ed)\b|\bseries [a-z]\b|\bipo\b|\bfunding\b|\bvaluation\b|\btakes charge\b|\bjoins?\b|\bleaves?\b|\bfounds?\b|\bappoint(?:s|ed)?\b|\bresign(?:s|ed)?\b|发布|上线|推出|部署|合作|并购|收购|融资|上市|估值|接管|离职|加入|任命|创业|创办|辞任|负责人|正式发布|宣布/i;
+const topStoryHardActionPattern = /\blaunch(?:es|ed)?\b|\brelease(?:s|d)?\b|\bannounce(?:s|d)?\b|\bdeploy(?:s|ed)?\b|\bpartnership\b|\bcollaboration\b|\bco-?chair(?:s|ed)?\b|\bjointly lead(?:s|ing)?\b|\btake(?:s)? on ai alongside\b|\bacquir(?:es|ed|e)\b|\brais(?:es|ed)\b|\bseries [a-z]\b|\bipo\b|\bfunding\b|\bvaluation\b|\btakes charge\b|\bjoins?\b|\bleaves?\b|\bfounds?\b|\bappoint(?:s|ed)?\b|\bresign(?:s|ed)?\b|发布|上线|推出|部署|合作|联合|共同|并购|收购|融资|上市|估值|接管|离职|加入|任命|创业|创办|辞任|负责人|正式发布|宣布/i;
 const governanceOrSafetyPolicyPattern = /regulat|policy|governance|antitrust|competition|copyright|privacy|security|safety|alignment|lawsuit|whistleblower|model provider|监管|治理|反垄断|竞争|版权|隐私|安全|对齐|诉讼|政策|立法|听证|平台垄断|模型层/i;
 const coreIndustryPattern = /nvidia|amd|tsmc|broadcom|datacenter|data center|server|gpu|chip|accelerator|inference|compute|robot|robotics|humanoid|world model|warehouse|factory|logistics|英伟达|台积电|博通|数据中心|服务器|芯片|算力|加速器|推理|机器人|世界模型|仓储|工厂|物流/i;
 const megaCompanyPattern = /openai|anthropic|deepmind|google|xai|meta|microsoft|amazon|apple|nvidia|tesla|deepseek|qwen|zhipu|z\.ai|minimax|kimi|moonshot|doubao|bytedance|baidu|tencent|alibaba|字节|阿里|腾讯|百度|智谱|月之暗面|阶跃星辰|零一万物/i;
-const briefSignalPattern = /发布|上线|推出|宣布|部署|合作|组织|调整|重组|任命|离职|加入|接管|融资|投资|估值|上市|ipo|并购|收购|launch|release|announce|deploy|partner|appoint|join|leave|reorg|funding|investment|valuation|acquisition|merger/i;
+const briefSignalPattern = /发布|上线|推出|宣布|部署|合作|联合|共同|组织|调整|重组|任命|离职|加入|接管|融资|投资|估值|上市|ipo|并购|收购|launch|release|announce|deploy|partner|collaborat|co-?chair|jointly lead|take(?:s)? on ai alongside|appoint|join|leave|reorg|funding|investment|valuation|acquisition|merger/i;
 const depthTopicPattern = /agentic|agent\b|agents\b|multimodal|multi-modal|world model|robot|robotics|humanoid|medical ai|healthcare|ai for science|science|safety|governance|alignment|bio|drug discovery|智能体|多模态|世界模型|机器人|具身|医疗|医药|科学|安全|治理|对齐|生物|药物发现/i;
 const viewpointSourcePattern = /latent space|import ai|the batch|ai valley|a16z|sequoia|stratechery|semi|stanford|mit|mckinsey|bcg|kpmg|deloitte|gartner|forrester|pwc|idc|ibm|钛媒体|机器之心/i;
 const investorLeaderPattern = /sam altman|greg brockman|andrej karpathy|karpathy|andrew ng|fei-fei li|李飞飞|dario amodei|demis hassabis|ilya|sutskever|geoffrey hinton|yann lecun|mustafa suleyman|marc andreessen|a16z|sequoia|founder|ceo|cto|chief scientist|investor|vc|奥特曼|卡帕西|创始人|投资人|合伙人|科学家/i;
+const institutionalGovernanceActionPattern = /pope leo|vatican|梵蒂冈|教皇/i;
 
 function patternScore(text, weightedPatterns) {
   return weightedPatterns.reduce((score, [pattern, weight]) => score + (pattern.test(text) ? weight : 0), 0);
@@ -791,6 +835,10 @@ function isProductEntry(entry) {
   if (isLowQualityEntry(entry)) return false;
   if (/\barxiv\b|\bpaper\b|\bresearch repository\b|\bbenchmark\b|论文|研究论文/.test(text)) return false;
   if (/summit|conference|webinar|meetup|event|峰会|大会|活动|报名|现场|议程/.test(text)) return false;
+  const isMajorPlatformUpdate = /openai news|anthropic news|google ai blog|google deepmind|nvidia ai blog|microsoft|amazon|aws/i.test(source)
+    && /\bworkspace\b|\bapi\b|\bmodel\b|\bgemini\b|\bclaude\b|\bgpt\b|\bdeveloper\b|\bsearch\b|\bchrome\b|\bgmail\b|\bdocs\b|\bsheets\b|\bmeet\b|模型|平台|开发者|搜索|邮箱|文档/i.test(text)
+    && !/\bcurated ai products\b|\bproduct hunt\b/i.test(source);
+  if (isMajorPlatformUpdate) return false;
   const hasProductSignal = /\bcurated ai products\b|\bproduct hunt\b/i.test(source)
     || /\bproduct hunt\b|\btool\b|\bapp\b|\bworkspace\b|\bworkflow\b|\bmemory\b|\bagentmemory\b|\brecall\b|\bliminary\b|\banuma\b|\bmagic patterns\b|\bgranola\b|\bnotebooklm\b|\bgamma\b|\bflowith\b|\bfellou\b|\bbrowser\b|\bextension\b|\bdashboard\b|\bcanvas\b|\bnotebook\b|\bautomation\b|插件|AI应用|应用生成|应用平台|产品|工具|工作流|知识管理|浏览器/i.test(titleSource);
   const isMostlyModelNews = /\bmodel\b|\bapi\b|\bbenchmark\b|\binference\b|芯片|\bipo\b|\bvaluation\b|\bfunding\b|融资|估值|模型|推理|基准|参数/.test(text)
@@ -849,7 +897,10 @@ function isBriefEntry(entry) {
   if (regionPriority(entry) === "deprioritized_market") return false;
   if (comparisonOnlyPattern.test(text) && !directActionPattern.test(text)) return false;
   const hasCompany = megaCompanyPattern.test(text) || (primaryMarketPattern.test(text) && priorityCompanyPattern.test(text));
-  const hasSignal = briefSignalPattern.test(text) || isFundingEntry(entry) || isOpenSourceEntry(entry);
+  const hasInstitutionalGovernanceAction = institutionalGovernanceActionPattern.test(text)
+    && /anthropic|openai|google|deepmind|ai|人工智能/i.test(text)
+    && (briefSignalPattern.test(text) || governanceOrSafetyPolicyPattern.test(text));
+  const hasSignal = briefSignalPattern.test(text) || hasInstitutionalGovernanceAction || isFundingEntry(entry) || isOpenSourceEntry(entry);
   return hasCompany && hasSignal && !isAcademicPaperEntry(entry);
 }
 
@@ -911,6 +962,7 @@ function isViewpointEntry(entry) {
   const text = entryContentText(entry);
   const source = String(entry.source || "").toLowerCase();
   if (isReportEntry(entry)) return true;
+  if (isHeadlineCandidateEntry(entry)) return false;
   if (/回应|澄清|否认|辟谣|疑虑|泄露|responds?|clarif(?:y|ies|ied|ication)|denies|denied/i.test(text) && !deepReadStylePattern.test(text)) return false;
   const hasViewSource = viewpointSourcePattern.test(source);
   const hasViewSignal = deepReadStylePattern.test(text) || investorLeaderPattern.test(text) || strategicReportPattern.test(text);
@@ -1194,9 +1246,14 @@ function localizeTitleZh(title = "") {
   if (/openai/i.test(raw) && /singapore/i.test(raw)) return "OpenAI 推出新加坡国家级 AI 合作计划";
   if (/alibaba cloud/i.test(raw) && /qwen cloud|agents/i.test(raw)) return "阿里云上线 Qwen Cloud 官网，降低 Agent 开发部署门槛";
   if (/bristol myers/i.test(raw) && /anthropic/i.test(raw)) return "百时美施贵宝扩大与 Anthropic 合作，用 AI 加速药物研发";
+  if (/pope leo|vatican/i.test(raw) && /anthropic/i.test(raw)) return "教皇 Leo 与 Anthropic 联合创始人合作推进 AI 治理讨论";
   if (/figure ai|humanoid robots/i.test(raw)) return "Figure AI 人形机器人处理包裹走红，机器人落地再升温";
   if (/openai/i.test(raw) && /dell|codex/i.test(raw)) return "OpenAI 与 Dell 合作，把 Codex 带进混合云和本地企业环境";
   if (/google deepmind/i.test(raw) && /edison|ai scientist/i.test(raw)) return "Google DeepMind 与 Edison 合作推进 AI Scientist";
+  if (/granola/i.test(raw)) return "Granola：适合真实工作对话的 AI 会议笔记";
+  if (/gamma/i.test(raw)) return "Gamma：AI 原生的演示文稿与文档工作台";
+  if (/fellou/i.test(raw)) return "Fellou：面向研究与网页自动化的 Agent 浏览器";
+  if (/flowith/i.test(raw)) return "Flowith：用画布组织多步思考的 AI 工作台";
   return `AI 信号：${raw.replace(/\s+/g, " ").slice(0, 72)}`;
 }
 
@@ -1266,6 +1323,11 @@ async function collectSourcePack(date) {
   const curatedProducts = curatedProductSignals(date);
   sources.push({ name: "Curated AI Products", url: "manual:curated-ai-products", count: curatedProducts.length, ok: true });
   entries.push(...curatedProducts);
+  const carryoverEntries = currentIssueCarryoverEntries(date);
+  if (carryoverEntries.length) {
+    sources.push({ name: "Existing AI Daily Atlas", url: "manual:current-issue-carryover", count: carryoverEntries.length, ok: true });
+    entries.push(...carryoverEntries);
+  }
 
   const seen = new Set();
   const sortedEntries = entries
@@ -2252,6 +2314,25 @@ function runEditorialGateTests() {
     details: ["这条新闻里 NVIDIA 是供应链对象，不是另一条被拼接进来的独立新闻。"],
     why: "这是一条单主体供应链新闻。"
   }), "supplier or counterparty mentions should not be rejected as mixed-subject headlines");
+  const popeAnthropicEntry = {
+    ...baseEntry,
+    title: "Pope Leo will take on AI alongside an Anthropic co-founder - NBC News",
+    summary: "Pope Leo and an Anthropic co-founder will discuss AI governance and safety."
+  };
+  assert(isHeadlineCandidateEntry(popeAnthropicEntry), "institutional AI governance actions with Anthropic should enter headline candidates");
+  assert(!isViewpointEntry(popeAnthropicEntry), "institutional AI governance actions should not be demoted into viewpoints");
+  assert(!isProductEntry({
+    ...baseEntry,
+    source: "Google AI Blog",
+    title: "New ways to create and get things done in Google Workspace",
+    summary: "Google Workspace adds Gemini features across Gmail, Docs, Sheets, and Meet."
+  }), "major platform feature updates should not occupy product recommendation slots");
+  assert(enforcePlanItemQuotas([
+    { section: "AI产品推荐", titleZh: "A" },
+    { section: "AI产品推荐", titleZh: "B" },
+    { section: "AI产品推荐", titleZh: "C" },
+    { section: "头条", titleZh: "D" }
+  ]).filter((item) => item.section === "AI产品推荐").length === 2, "product recommendations should be hard-capped at two items");
   const validClusterSourcePack = {
     entries: [
       { id: "S001", ...baseEntry, source: "Google AI Blog", title: "I/O 2026: Welcome to the agentic Gemini era", summary: "Google I/O developer conference updates." },
@@ -2432,6 +2513,23 @@ function chatCompletionText(body) {
   return body?.choices?.[0]?.message?.content || "";
 }
 
+const planSectionLimits = {
+  "AI产品推荐": 2,
+  "每日词条": 1
+};
+
+function enforcePlanItemQuotas(items = []) {
+  const counts = new Map();
+  return items.filter((item) => {
+    const limit = planSectionLimits[item.section];
+    if (!limit) return true;
+    const count = counts.get(item.section) || 0;
+    if (count >= limit) return false;
+    counts.set(item.section, count + 1);
+    return true;
+  });
+}
+
 function normalizePlan(plan) {
   if (!plan || typeof plan !== "object") throw new Error("Missing editorial plan.");
   const normalized = {
@@ -2456,6 +2554,7 @@ function normalizePlan(plan) {
       freshnessLabelEn: String(item.freshnessLabelEn || "")
     })) : []
   };
+  normalized.items = enforcePlanItemQuotas(normalized.items);
 
   if (!normalized.headlineZh || !normalized.headlineEn || !normalized.summaryZh || !normalized.summaryEn) {
     throw new Error("Editorial plan missing headline or summary.");
