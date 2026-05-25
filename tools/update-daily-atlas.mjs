@@ -1419,9 +1419,10 @@ function detectMultiSubjectHeadline(item) {
   const titleCompanies = [...signalCompanies(headlineText)];
   const titleActions = [...signalActions(headlineText)];
   const hasRoundupPunctuation = /[,，；;、].*[,，；;、]/.test(headlineText);
-  if (companies.length >= 3) return `headline mixes too many companies: ${companies.join(", ")}`;
+  if (titleCompanies.length >= 3) return `headline mixes too many companies: ${titleCompanies.join(", ")}`;
   if (titleCompanies.length >= 2 && titleActions.length >= 2) return `headline mixes multiple companies and actions: ${titleCompanies.join(", ")}`;
-  if (companies.length >= 2 && actions.length >= 2 && hasRoundupPunctuation) return `headline appears to be a multi-subject roundup: ${companies.join(", ")}`;
+  if (titleCompanies.length >= 2 && titleActions.length >= 1 && hasRoundupPunctuation) return `headline appears to be a multi-subject roundup: ${titleCompanies.join(", ")}`;
+  if (companies.length >= 4 && actions.length >= 3 && hasRoundupPunctuation) return `headline body appears to be a multi-subject roundup: ${companies.join(", ")}`;
   return "";
 }
 
@@ -2245,6 +2246,13 @@ function runEditorialGateTests() {
     details: ["Google News China AI：DeepSeek宣布V4模型永久降价 或加剧AI价格战。", "这条来源名里的 Google News 只是聚合器，不是新闻主体。"],
     why: "这是一条 DeepSeek 单主体新闻。"
   }), "Google News source labels should not create a false multi-company headline");
+  assert(!detectMultiSubjectHeadline({
+    section: "头条",
+    title: "美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片",
+    dek: "报道聚焦 DeepSeek 获取英伟达芯片的供应链路径。",
+    details: ["这条新闻里 NVIDIA 是供应链对象，不是另一条被拼接进来的独立新闻。"],
+    why: "这是一条单主体供应链新闻。"
+  }), "supplier or counterparty mentions should not be rejected as mixed-subject headlines");
   const validClusterSourcePack = {
     entries: [
       { id: "S001", ...baseEntry, source: "Google AI Blog", title: "I/O 2026: Welcome to the agentic Gemini era", summary: "Google I/O developer conference updates." },
