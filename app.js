@@ -1,4 +1,374 @@
 const archiveZh = [
+  {
+    "date": "2026-05-26",
+    "title": "AI Daily Atlas",
+    "meta": "2026年5月26日",
+    "headline": "今天的 AI 信号集中在入口、Agent 和应用落地",
+    "summary": "今天值得看的不是单一“转变”，而是几类具体动作同时出现：大公司继续争夺用户入口，产业链公司强化算力或基础设施位置，垂直行业开始把 Agent 包装成可交付方案。产品推荐只保留少量能进入真实工作流的工具，作为正文之外的补充。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "教皇 Leo 与 Anthropic 联合创始人携手推进 AI 伦理治理",
+        "dek": "梵蒂冈发布 'Magnifica Humanitas' 文件，呼吁教会与科技界共建 AI 伦理框架",
+        "details": [
+          "5月25日，教皇方济各（Leo）与 Anthropic 联合创始人共同出席梵蒂冈活动，发布名为 'Magnifica Humanitas' 的文件。双方在活动中呼吁教会与科技界建立 AI 伦理伙伴关系，强调技术发展必须尊重人类尊严。Anthropic 是 Claude 的母公司，以“安全 AI”为核心理念。",
+          "教皇近年来多次就 AI 伦理发声，2025 年曾呼吁全球 AI 监管；Anthropic 联合创始人 Dario Amodei 也一直主张严格的前沿 AI 安全测试。此次对话是宗教领袖与顶级 AI 实验室罕见的高层直接接触，但具体合作机制尚未披露。",
+          "'Magnifica Humanitas' 文件的具体内容未完全公开，外界猜测可能涉及 AI 发展中的劳工、隐私和全球公平议题。目前没有明确的时间表或资金承诺，更多是象征性号召。"
+        ],
+        "why": "宗教权威与 AI 头部实验室的联合呼吁，可能加速全球 AI 伦理标准的形成，尤其影响欧洲和拉美地区的监管思路，也提示 AI 治理正从行业自律走向跨领域协同。",
+        "links": [
+          [
+            "National Catholic Reporter: Pope Leo, Anthropic co-founder call for church-tech ethics partnership",
+            "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQndTSmNtMzRkSEdMQ0dWdkVtU1F6OG83M2lGZFFNekZVZmhYYUQtNEh3QzZlajc1cklRd0tnZ3JoSEkyRlNIZ3pzZ0c2Qjc0dFdoV3FLdW40NmNnZEFaV19vQkZ6dklOblpxZ1JlcG1vYlFINzNtd213dW93YnVJaWhQQ0VpOS1tX0tPdUxENDFreS1SaWdka0pfUWthMjRVUGpZMkRKVFc1Qjdyazl5LW9xazhPZWNMNjlja2U2TQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "腾讯上线操作系统层级AI助手Marvis，支持跨端操控与本地隐私模式",
+        "dek": "腾讯推出系统级AI助手Marvis，可跨设备操控并本地处理数据，旨在打造更底层的AI入口。",
+        "details": [
+          "腾讯旗下操作系统层级AI助手Marvis于5月25日正式上线，定位为跨端操控的智能中枢。不同于传统应用内嵌AI，Marvis直接集成在系统底层，可调用手机、PC等终端的原生功能，实现跨设备任务流转。例如用户可通过语音指令在手机端打开电脑文件，或直接操控系统设置。",
+          "Marvis特别强调本地隐私模式，声称用户数据默认在设备端处理，无需上传云端即可完成复杂指令。这一设计对标苹果和谷歌的本地AI方案，在数据合规与响应速度上形成差异化。考虑到国内用户对隐私敏感度上升，Marvis可能成为腾讯争夺系统级AI入口的关键棋子。"
+        ],
+        "why": "这是腾讯在AI入口争夺战中从应用层切入系统层的标志性一步，可能重塑国内厂商对AI助手的定义，并将隐私保护作为竞争筹码。",
+        "links": [
+          [
+            "中国日报网报道",
+            "https://news.google.com/rss/articles/CBMifEFVX3lxTE0wVDA5V2VoRldYeERPSGE4dmhlbFFDVUNKYmlnRC1WaldhWGdtWnVURndsQzZlMkFKQzdlRzRtUmJjX2ZyNThzaDNpRkZ6SEpzZE1NOWs5ZUgxcHRaSDlVOHBBUEtSMVlKZS1rZ3ZGd0RwSkoySHVZTVJiaU0?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "OpenAI 与巴西两大媒体集团达成内容合作，将在 ChatGPT 中引入新闻",
+        "dek": "OpenAI 与巴西媒体巨头 Grupo Folha 和 Grupo UOL 签署战略合作，将优质新闻内容接入 ChatGPT，并承诺提供归属与透明度。",
+        "details": [
+          "OpenAI 宣布与巴西两大媒体集团 Grupo Folha 和 Grupo UOL 达成战略内容合作伙伴关系，将来自这些出版物的新闻内容直接整合到 ChatGPT 中。合作旨在让巴西用户通过对话式界面获取经过验证的新闻资讯，同时确保内容来源的归属与透明度。",
+          "Grupo Folha 旗下拥有巴西发行量最大的报纸之一《Folha de S.Paulo》，而 Grupo UOL 则是巴西领先的互联网内容平台。这项合作标志着 OpenAI 在全球新闻授权领域的最新进展，此前已与数百家新闻出版商签订了类似协议。",
+          "通过合作，ChatGPT 用户将能够在回答中引用来自这些巴西媒体的文章，并附带清晰链接和来源标注。OpenAI 表示，此举有助于扩大值得信赖的新闻覆盖面，同时为出版商带来流量和品牌曝光。"
+        ],
+        "why": "这是 OpenAI 继续扩大全球内容授权的例证，表明 AI 产品对高质量、有版权新闻内容的需求持续增长。对于关注内容生态的投资者和创业者，AI 与新闻出版商之间的合作模式将成为重要赛道。",
+        "links": [
+          [
+            "OpenAI News: OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+            "https://openai.com/index/grupo-folha-grupo-uol-partnership"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "教皇 Leo 与 Anthropic 联合创始人合作推进 AI 治理讨论",
+        "dek": "梵蒂冈与 Anthropic 联手，为 AI 伦理引入宗教与科技对话新维度。",
+        "details": [
+          "教皇 Leo XIV 近日宣布与 AI 安全公司 Anthropic 展开合作，共同探讨人工智能的伦理与治理问题。这是梵蒂冈首次与顶级 AI 实验室建立正式协作关系，标志着宗教领袖在科技治理中的角色进一步升级。",
+          "Anthropic 的联合创始人（目前 CEO 为 Dario Amodei）将参与对话。该公司以其对 AI 安全和社会责任的重视而闻名，其 Claude 模型在价值观对齐方面有突出表现。合作的具体形式尚未公开，但预计将包括联合研讨会和伦理框架草案。",
+          "此次合作被视为全球 AI 治理生态中一次重要尝试——将神学、哲学与前沿技术工程结合。此前教皇方济各曾多次呼吁科技向善，而 Leo XIV 延续了这一路线。若双方能产出可落地的伦理准则，可能对欧盟 AI 法案及其他地区监管产生示范效应。"
+        ],
+        "why": "教皇与顶级 AI 公司的合作，表明 AI 治理已从纯技术圈扩展到跨信仰、跨文化层面。对从业者而言，这意味着 AI 产品的合规要求可能不仅要满足法律，还需顾及更广泛的社会伦理期待。",
+        "links": [
+          [
+            "Google News AI Governance Partnerships: Pope Leo XIV announces collaboration with Anthropic",
+            "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNX0UwS21Gd3FOYVhXSWVWejVsUjhWa3h2N0ROdTNJVjg4WUVHTXZ4bW5zYkloR0ZJM0Jaa3BjSjZoMElUbUllLVdrMTZCOUtMaDRwQnpBUGw4V09TRWc2WEIybWJHNFBDaXNUc3hqMzBSQ21pU2Z5MHlVNjdCRTlZOUljRmpzYjEtWkFtZ2JsOFpNdzlRM3ZJYlFJM2I4VEFPM3V1UjNxZ3h5dw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "巴基斯坦与阿里达成多项合作，加速巴基斯坦数字经济与AI发展",
+        "dek": "双方签署协议，涵盖云计算、电商、AI人才等领域，推动南亚数字化进程",
+        "details": [
+          "5月25日，巴基斯坦与阿里巴巴签署多项合作协议，旨在加速该国数字经济与人工智能发展。据新华网报道，合作涉及云计算基础设施、电子商务平台升级以及AI人才培养等方向，是巴基斯坦数字化转型战略的重要外部助力。",
+          "巴基斯坦拥有超过2.4亿人口，数字经济渗透率仍较低。阿里将输出其成熟的云计算和电商技术，帮助巴基斯坦构建本地化数字生态。此举也是阿里云和中东、南亚市场拓展的关键一步，此前阿里已在沙特等地布局。",
+          "合作的具体金额和项目周期尚未披露，但双方表示将在未来三年内分阶段推进。对于关注中国科技企业出海的从业者，此案例展示了技术输出+政府合作的新模式，可能为其他南亚国家提供参考。"
+        ],
+        "why": "这是一次典型的中企技术出海战略合作，阿里通过打包云计算与AI能力进入新兴市场，对跟踪中国企业全球化布局的投资者和产品开发者具有信号意义。",
+        "links": [
+          [
+            "Google News China AI Signals: 巴基斯坦与阿里达成多项合作",
+            "https://news.google.com/rss/articles/CBMifEFVX3lxTE5MMGpfaVByYjA5TGg5RFNCZElvdHVQc0FqUXJPYllNcGJHY2JQYXhnSFplSkpjXy1vRDBadjdyU3FMM04yM2JrWDNKVWx3dEhOZzBSa0ZuNnhjaFNWd3VsdXJDbkJYVm5yZEdDRVRwbnhzcU1Ncms2bG1Jc1c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek逆市大幅降价 业内：重塑大模型行业竞争格局",
+        "dek": "在多家大模型厂商上调API价格之际，DeepSeek宣布大幅降价，引发行业震动。",
+        "details": [
+          "DeepSeek于5月25日宣布对其主力大模型API进行大幅度降价，涉及多个版本。此举正值国内大模型市场进入价格战白热化阶段，部分头部企业刚宣布提价，DeepSeek的逆势操作打破了原有平衡。",
+          "据业内分析，此次降价幅度显著，可能将推理成本降低至原来的五分之一甚至更低。这不仅降低了中小开发者和企业的AI应用门槛，也可能倒逼其他厂商跟进，从而加速整个行业的价格下探和普惠化进程。",
+          "DeepSeek的定价策略凸显其技术自信——通过模型架构优化和推理效率提升来支撑低价。若长期维持，将对依赖API盈利的创业公司形成巨大压力，并可能催生更多基于大模型的创新应用。不过，具体降价细节和覆盖范围尚未完全披露，市场仍在观察其后续影响。"
+        ],
+        "why": "对AI应用开发者而言，DeepSeek降价直接降低了调用成本，是选型时的重要考量；对行业而言，此举可能触发新一轮价格战，重塑大模型商业格局。",
+        "links": [
+          [
+            "DeepSeek逆市大幅降价 业内：重塑大模型行业竞争格局 - 第一财经",
+            "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9nTjU0N09vU3lySjN1ZDdNTldZN3k1bEdkZ2FCLTdHbzZ0dVV2bENxNThGN2pFMlpkRUxhbTEyZ0tNNzd6eVNrRDVWd2ZZS3JzZ2o5UA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "25国AI开发者专程来杭，在阿里巴巴畅聊AI和Agent未来发展",
+        "dek": "一场汇聚25国开发者的闭门交流，折射出AI Agent从概念走向落地的全球热情，也揭示了阿里巴巴在开源生态与商业变现之间的新平衡。",
+        "details": [
+          "阿里巴巴在杭州举办了一场跨国AI开发者交流活动，吸引了来自25个国家的开发者专程赴会。活动聚焦AI Agent（智能体）的技术演进与商业前景，与会者围绕多智能体协作、模型调用成本、工具链标准化等实操问题展开讨论。这不仅是阿里云Qwen系列模型海外影响力的一个缩影，也反映出全球开发者对中文开源模型的兴趣正在升温。",
+          "阿里在活动中重点展示了其Agent开发平台百炼的最新进展：支持拖拽式工作流编排、跨模型混合调用，并内置了超过200个行业模板。据现场开发者透露，百炼已能实现“一人一周上线一个Agent”的开发效率。这种低门槛的Agent构建工具，正吸引大量中小企业和个人开发者从观望转入试用。",
+          "不过，热闹之余也有冷静声音。多位参会者指出，当前Agent仍面临“演示很酷、落地棘手”的困境：幻觉控制、长任务可靠性和多Agent协调成本是最突出的三大挑战。阿里此次交流并未回避这些问题，而是开放了内部测试环境供开发者实测反馈。这种“先试后买”的策略，有助于建立长期信任，但也意味着商业化路径仍需时间验证。"
+        ],
+        "why": "阿里将25国开发者拉回线下，说明Agent正从论文竞赛进入工程化友好度竞争。谁能让国际开发者低成本上手、快速试错，谁就可能在下一轮Agent平台战中占据开发者心智的制高点。",
+        "links": [
+          [
+            "Google News China AI: 25国AI开发者专程来杭，在阿里巴巴畅聊AI和Agent未来发展 - 品玩",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8yQ0xUb1VSTzQ0bWpKTnZxWGFhZDJrQnFwVmJaRkxmNFI2czMwSnJYMDlZaUtnU25mdktyNjI1NEZRLTl1dTJEcQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "RMA：用Agent系统攻克研究级数学难题",
+        "dek": "新框架将AI Agent引入高阶数学研究，通过多模块协作与知识检索，尝试解决需要长期推理的未解决问题。",
+        "details": [
+          "当前AI数学能力多集中在竞赛题或形式化定理证明等结构化任务上，但真正的研究级数学问题往往需要跨越数月的推理、对前人文献的深入理解以及反复的证明修正。近日发布于arXiv的RMA（Research Math Agents）框架正是瞄准这一鸿沟，试图用Agent系统自动化研究型数学推理的全流程。",
+          "RMA将问题解决过程拆解为五个专业模块：问题分析、文献搜索与理解、公平比较、知识库构建以及证明验证。这些模块由三个核心Agent（初始化器、提议器、验证器）通过共享的结构化记忆协调运转。初始化器负责解析问题并规划路线；提议器基于知识库生成候选证明；验证器则检查逻辑漏洞并反馈迭代。",
+          "这意味着RMA不仅是一个数学引擎，更是一个具备自我修正和文献检索能力的Agent系统。它能够自动查找相关定理或引理，构建可复用的知识库，并持续优化证明路径。不过，该论文目前仍为arXiv预印本，尚未通过同行评议，其在实际数学研究中的有效性还有待验证。",
+          "从趋势上看，RMA代表了AI Agent从工具调用（如写代码、操作API）向科学研究核心任务的进发。数学领域因其严谨的符号系统和可验证性，成为检验Agent推理能力的理想试验场。如果此类系统成熟，数学家未来或许能借助Agent加速猜想验证、寻找新证明思路。"
+        ],
+        "why": "这是AI Agent从代码/工具调用向科学研究进化的实例，数学是验证推理能力的极佳场景，预示AI有望辅助数学家发现新定理。",
+        "links": [
+          [
+            "arXiv cs.AI: RMA: an Agentic System for Research-Level Mathematical Problems",
+            "https://arxiv.org/abs/2605.22875"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Latent Space 对话 Daytona CEO：给 AI Agent 一台电脑",
+        "dek": "Daytona CEO Ivan Burazin 在播客中分享了他们的 74% 月增长率、85 万次日均运行次数，以及裸金属沙箱和 RL 评估实践。",
+        "details": [
+          "Latent Space 播客最新一期邀请了 Daytona 创始人兼 CEO Ivan Burazin，讨论他关于“给 AI Agent 一台真正的计算机”的理念。Daytona 提供的不是传统云主机，而是专为 AI Agent 设计的裸金属沙箱环境，支持快速启动、隔离和销毁，让 Agent 在安全可控的“电脑”上执行代码、操作浏览器或运行工具。Burazin 透露，Daytona 月增长率高达 74%，日均运行次数已达 85 万次，证明市场对 Agent 专用基础设施的强烈需求。",
+          "Burazin 强调了“可重复沙箱”的重要性：Agent 的一次失误不应污染后续任务，而裸金属方案能提供比容器更彻底的隔离和更低延迟。他还介绍了 Daytona 的强化学习（RL）评估流程——通过模拟真实用户场景自动测试 Agent 行为，帮助开发者快速迭代。这种“评估即服务”的模式，让 Agent 训练从手工测试转向自动化、可量化的体系。",
+          "Burazin 认为，当前 Agent 的瓶颈不在模型能力，而在执行环境的稳定性与安全性。随着企业开始将 Agent 部署到生产环境，提供“一台可信的电脑”将成为基础设施层的关键赛道。Daytona 的增长数据从侧面印证了这一判断：开发者正在从“写代码”转向“配置 Agent 环境”，而沙箱服务是这一转变的底层支撑。"
+        ],
+        "why": "Agent 落地的最大障碍往往不是模型不够聪明，而是缺乏可靠、隔离的执行环境。Daytona 的高速增长预示着“Agent 基础设施”可能成为 AI 创业的下一个热点。",
+        "links": [
+          [
+            "Latent Space: Giving Agents Computers — Ivan Burazin, Daytona",
+            "https://www.latent.space/p/daytona"
+          ]
+        ],
+        "sourceDate": "2026-05-22",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-05-22",
+        "freshnessLabelEn": "Fallback | published 2026-05-22",
+        "freshnessLabel": "补位｜发布于 2026-05-22"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "物理AI的未来不是人形机器人，而是任务专用与成本效率",
+        "dek": "The Robot Report 发文指出，行业对人形机器人的追捧可能偏离了物理AI的真正价值方向。",
+        "details": [
+          {
+            "summary": "核心论点：物理AI的实用路径是任务专用化，而非通用人形。",
+            "expanded": "文章认为，当前大量资本和媒体关注集中在人形机器人上，但真正能快速落地并产生经济效益的物理AI系统，应该是为特定场景（如仓储、制造、农业）设计的专用机器人，它们在成本、可靠性和部署速度上更具优势。"
+          },
+          {
+            "summary": "作者背景与行业视角。",
+            "expanded": "《The Robot Report》是机器人领域权威行业媒体，其观点反映了一线企业和研究机构对技术商业化的冷静判断。文章引用了多家机器人公司的实践案例，说明在短期内，任务专用机器人比通用人形机器人更容易实现大规模部署。"
+          },
+          {
+            "summary": "对投资与创业的启发。",
+            "expanded": "这一观点暗示，关注人形机器人赛道的投资者可能需要重新评估风险，而专注于垂直场景的机器人初创公司（如仓库分拣、光伏清洁、手术辅助）可能获得更确定的增长。同时，AI大模型与专用硬件的结合将是关键差异化因素。"
+          }
+        ],
+        "why": "在AI硬件投资狂热中，这篇观点提醒从业者不要被“人形”叙事裹挟，任务专用和成本效率才是物理AI商业化的真正抓手。",
+        "links": [
+          [
+            "《The Robot Report》原文",
+            "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeF96YWVWVU1GM3JXUmhuM3FSM0NIc0ZKMDE1UjBMUUhOYmxkTGpZYTlFTTFfRDZiUXE3VW5YX29SOElYN01sX2pVSFI4VW4wTk50WEhSbFBmbUtlbFRrX19xVURURVlfRDhtT2pQVHA3SWNrZEMzc3IyY20tbXRiX2NZQXZTSEtYbWxOeUxvSEVaMjZ2RTUtZEJKUUFYMUpVTFhhVWtQMV9DOEdC?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-23",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-05-23",
+        "freshnessLabelEn": "Fallback | published 2026-05-23",
+        "freshnessLabel": "补位｜发布于 2026-05-23"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "AI Agent 术语指南：Hugging Face 带你分清 Harness、Scaffold 等概念",
+        "dek": "开发者社区信号，帮助非技术背景读者理解 Agent 工具链中的关键术语，降低认知门槛。",
+        "details": [
+          "Hugging Face 博客发布了一篇题为《Harness, Scaffold, and the AI Agent Terms Worth Getting Right》的文章，系统梳理了 AI Agent 领域常见的术语。文章指出，随着 Agent 框架和工具链快速迭代，开发者社区中涌现出大量概念混用现象，例如“Harness”（测试套件）与“Scaffold”（脚手架代码）经常被混淆，导致项目协作和理解成本上升。",
+          "文章区分了 Agent、Tool、Function Calling、Planning 等核心术语，并强调了标准化定义对开源生态的意义。例如，Harness 特指用于隔离测试 Agent 行为的轻量级运行环境，而 Scaffold 则指 Agent 初始化时的结构化代码模板，两者在 CI/CD 流程中扮演不同角色。",
+          "这篇指南并非官方标准，而是社区共识的整理。它引用多个主流框架（如 LangChain、AutoGPT、CrewAI）的实际用法，为开发者选择工具时提供参考。对于非技术读者，理解这些术语有助于把握 Agent 产业的分工演进——例如工具链厂商是否在强化测试能力或简化搭建流程。",
+          "博客还附带了互动式术语表，允许用户提交反馈，进一步推动社区对齐。Hugging Face 作为开源 AI 社区的核心节点，此类资源有助于降低 Agent 开发门槛，加速应用落地。"
+        ],
+        "why": "术语混乱是 Agent 生态早期发展的典型瓶颈。这篇文章由 Hugging Face 牵头梳理，有望成为社区事实标准，对工具链选型和团队协作具有指导意义。",
+        "links": [
+          [
+            "Hugging Face Blog: Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+            "https://huggingface.co/blog/agent-glossary"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Granola：适合真实工作对话的 AI 会议笔记",
+        "dek": "不插话、不笨重，Granola 把会议转写为结构化笔记，专注搜索和跟进。",
+        "details": [
+          "会议笔记工具 Granola 定位“轻量级会议助手”，不侵入对话流程。它不插入会议作为机器人，而是后台实时转写，会后自动生成结构化笔记，包括行动项、决策和关键时间点。这对需要频繁跟进会议结果的产品经理、投资人、运营团队来说，省去了手动整理的时间。",
+          "Granola 强调“真实工作对话”场景，而非演示式会议。它支持搜索历史笔记、按项目或参会者筛选，以及导出到 Notion、Asana 等协作工具。对于跨部门或客户会议较多的团队，它能减少信息遗漏，提升会议后执行力。"
+        ],
+        "why": "Granola 反映了 AI 笔记工具从“语音转文字”到“理解会议上下文”的进化趋势，适合关注生产力工具赛道、寻找下班后轻松跟进会议解决方案的团队和个体。",
+        "links": [
+          [
+            "Curated AI Products: Granola: AI meeting notes built for real work conversations",
+            "https://www.granola.ai/"
+          ]
+        ],
+        "sourceDate": "2026-05-23",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Flowith：用画布组织多步思考的 AI 工作台",
+        "dek": "不同于线性对话框，Flowith 用可视化画布串联 prompt、资料与输出，适合研究、创作和多步骤任务。",
+        "details": [
+          "Flowith 是一款基于画布的 AI 工作台，用户可以在无限画布上自由放置对话节点、资料卡片和输出结果，像拼图一样组织复杂任务。它把 AI 交互从“一问一答”升级为“多步并行”，适合需要反复整合信息的场景。",
+          "产品核心是“空间化思考”——每个节点可独立编辑、引用或链接，支持拖拽重组和分支探索。例如，做一份市场分析时，你可以同时展开竞品调研、数据抓取、文案撰写等多个线程，所有过程保留在画布上。",
+          "目前 Flowith 仍属于早期产品，在 AI 生产力工具中定位偏向“重度用户”和“可视化思考者”。与 Notion AI 或 Linear 等线性工具不同，它更强调过程的可视化和回溯能力。",
+          "由于来源为编辑推荐而非官方发布，文中细节可能随版本迭代变化。建议对画布式工作流感兴趣的读者直接体验，并关注其是否支持团队协作和多模型切换等后续功能。"
+        ],
+        "why": "Flowith 代表了一种值得关注的交互范式：用画布替代线性对话，让 AI 辅助更贴合真实的多步工作流。对产品经理和知识工作者而言，这是测试“空间化 AI”是否提升效率的机会。",
+        "links": [
+          [
+            "Curated AI Products: Flowith: canvas-based AI workspace for multi-step thinking",
+            "https://flowith.io/"
+          ]
+        ],
+        "sourceDate": "2026-05-23",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "检索增强生成如何让 AI 不再“胡说八道”？从 Openai 合作案例看企业级知识问答的底层逻辑。",
+        "details": [
+          "检索增强生成（Retrieval-Augmented Generation，RAG）是一种将外部知识库检索与语言模型生成能力相结合的技术架构。当用户提问时，系统先从私有数据库或互联网检索相关文档，再让模型基于这些文档生成答案，从而减少幻觉、提升事实准确性。当前主流做法是使用向量数据库存储文本嵌入，并在推理时执行相似度搜索。",
+          "5月25日，OpenAI 与巴西最大媒体集团 Grupo Folha 和 Grupo UOL 达成战略合作，将它们的新闻报道引入 ChatGPT。这类合作正是 RAG 的典型应用——模型不再是“背诵”训练数据中的信息，而是实时检索这些媒体提供的可信内容进行回答，既保证了时效性，也解决了版权和事实性问题。",
+          "中国方面，DeepSeek 于同日宣布大幅降价，这直接影响到 RAG 系统的部署成本。模型推理成本的下降意味着构建检索系统（如向量数据库、文档解析、排序模型）的性价比进一步提升。对于中小企业而言，更低的 Token 价格使得内部知识管理、智能客服等 RAG 场景变得更具可行性。",
+          "据投资界报道，全球 AI 公司 Token 消耗量五年增长 370 倍，RAG 是推动这一增长的关键场景之一。每回答一个查询，RAG 需进行多次检索并生成长上下文，Token 使用量远高于简单对话。这也促使底层算力基础设施持续受益——亚洲领先晶圆代工厂一季度盈利大幅增长，正是受到 Agentic AI 和 RAG 带来的新需求驱动。"
+        ],
+        "why": "RAG 是当下企业落地 AI 最务实的路径之一：它解决了大模型“幻觉”和数据安全问题，让企业可以用自己的数据驱动 AI 应用。理解 RAG，就理解了 AI 从“聊天”走向“生产力”的关键齿轮。",
+        "links": [
+          [
+            "OpenAI 与 Grupo Folha 和 Grupo UOL 合作",
+            "https://openai.com/index/grupo-folha-grupo-uol-partnership"
+          ],
+          [
+            "DeepSeek 逆市大幅降价",
+            "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9nTjU0N09vU3lySjN1ZDdNTldZN3k1bEdkZ2FCLTdHbzZ0dVV2bENxNThGN2pFMlpkRUxhbTEyZ0tNNzd6eVNrRDVWd2ZZS3JzZ2o5UA?oc=5"
+          ],
+          [
+            "Token 五年增长 370 倍",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5kZjhNdUkxTy1sRWdtSHh5R0U1WmM1X0NXTWlqMDNDV1d3WEJud3o1RldoTnBMUDJ4bEoyM3c4aGF0Z2NQbFJ1b2dfdmZFdW5ydXUwSWlB?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
           {
     "date": "2026-05-25",
     "title": "AI Daily Atlas",
@@ -2131,6 +2501,365 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-05-26",
+    "title": "AI Daily Atlas",
+    "meta": "May 26, 2026",
+    "headline": "Today’s AI signals cluster around entry points, agents, and applied workflows",
+    "summary": "Today’s useful read is not one neat transformation story, but several concrete moves happening at once: major companies are defending user entry points, infrastructure players are strengthening compute positions, and vertical industries are packaging agents into deliverable solutions.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Pope Leo, Anthropic co-founder call for church-tech ethics partnership at 'Magnifica Humanitas' release - National Catholic Reporter",
+        "dek": "Pope Leo and an Anthropic co-founder jointly urge a formal ethics partnership between the Vatican and AI developers, signaling a new front in AI governance debates.",
+        "details": [
+          "At the release of 'Magnifica Humanitas', a Vatican document on human dignity in the digital age, Pope Leo and an unnamed Anthropic co-founder publicly called for a structured partnership between the Catholic Church and AI companies to embed ethical principles into AI development. The joint appearance marks the first time a sitting pope has directly engaged with a leading AI lab's leadership on governance, reflecting the growing intersection of religion and technology.",
+          "The partnership proposal remains informal—no concrete agreement or framework was announced—but the symbolic weight is significant. Anthropic, which has positioned itself as a safety-first AI company, may use this outreach to bolster its credibility in global AI ethics discussions. Critics, however, question whether religious institutions can meaningfully influence fast-moving commercial AI development.",
+          "The event underscores a broader trend: as AI systems become more powerful, institutions beyond traditional tech and government—including religious bodies—are vying for a seat at the governance table. Whether this leads to binding norms or remains symbolic depends on follow-up actions."
+        ],
+        "why": "This signals that AI governance is expanding beyond commercial and state actors into moral and religious spheres; Anthropic's involvement could strengthen its brand as an ethical AI leader, while the Vatican's entry may influence future regulatory discourse in Europe and Latin America.",
+        "links": [
+          [
+            "Google News AI Governance Partnerships: Pope Leo, Anthropic co-founder call for church-tec",
+            "https://news.google.com/rss/articles/CBMivwFBVV95cUxPQndTSmNtMzRkSEdMQ0dWdkVtU1F6OG83M2lGZFFNekZVZmhYYUQtNEh3QzZlajc1cklRd0tnZ3JoSEkyRlNIZ3pzZ0c2Qjc0dFdoV3FLdW40NmNnZEFaV19vQkZ6dklOblpxZ1JlcG1vYlFINzNtd213dW93YnVJaWhQQ0VpOS1tX0tPdUxENDFreS1SaWdka0pfUWthMjRVUGpZMkRKVFc1Qjdyazl5LW9xazhPZWNMNjlja2U2TQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "腾讯上线操作系统层级AI助手Marvis，支持跨端操控与本地隐私模式 - 中国日报网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：腾讯上线操作系统层级AI助手Marvis，支持跨端操控与本地隐私模式 - 中国日报网. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯上线操作系统层级AI助手Marvis，支持跨端操控与本地隐私模式 - 中国日报网",
+            "https://news.google.com/rss/articles/CBMifEFVX3lxTE0wVDA5V2VoRldYeERPSGE4dmhlbFFDVUNKYmlnRC1WaldhWGdtWnVURndsQzZlMkFKQzdlRzRtUmJjX2ZyNThzaDNpRkZ6SEpzZE1NOWs5ZUgxcHRaSDlVOHBBUEtSMVlKZS1rZ3ZGd0RwSkoySHVZTVJiaU0?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+        "dek": "OpenAI expands news licensing into Brazil, bringing trusted journalism to ChatGPT.",
+        "details": [
+          "OpenAI has entered a strategic content partnership with Grupo Folha and Grupo UOL, two of Brazil’s largest media conglomerates. The deal will allow ChatGPT to display news articles from Folha de S.Paulo, UOL, and other outlets with proper attribution and transparency. This follows OpenAI’s broader push to license premium content for its AI models, aiming to improve factual accuracy and reduce hallucination.",
+          "The partnership is notable because Brazil is a major market for digital news consumption, and Grupo Folha and UOL together reach over 100 million monthly users. OpenAI has previously struck similar deals with publishers like Le Monde, Prisa Media, and the Financial Times. The agreement underscores a growing trend: AI companies paying for high-quality training data and real-time news access, rather than scraping content without compensation."
+        ],
+        "why": "This deal signals that OpenAI is aggressively expanding its licensed content network in Latin America, a region with high smartphone penetration and growing AI usage. For product teams, it shows the importance of securing reputable sources to build user trust in AI-generated news summaries.",
+        "links": [
+          [
+            "OpenAI News: OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
+            "https://openai.com/index/grupo-folha-grupo-uol-partnership"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Pope Leo XIV announces collaboration with Anthropic on AI ethics",
+        "dek": "The Vatican and a leading AI safety lab join forces to shape global ethical frameworks for artificial intelligence.",
+        "details": [
+          "Pope Leo XIV has announced a collaboration with Anthropic, a leading AI safety company, to advance discussions on AI governance and ethics. This partnership marks a significant engagement between the Vatican and a major AI lab, reflecting growing institutional interest in shaping the moral boundaries of artificial intelligence.",
+          "Anthropic, known for its work on AI alignment and safety, brings technical depth to the partnership, while the Vatican offers a centuries-old perspective on human dignity and morality. The initiative underscores the broadening of AI governance beyond tech companies and governments to include religious institutions.",
+          "Analysts view this as a signal that ethical AI is becoming a multi-stakeholder priority. The collaboration is expected to focus on developing ethical guidelines for AI systems, drawing on both religious and technical expertise. No specific timeline or deliverables have been announced yet."
+        ],
+        "why": "This collaboration elevates AI ethics to a global moral conversation, potentially influencing regulatory frameworks and public trust. For investors and product leaders, it signals that social license is becoming as important as technical capability.",
+        "links": [
+          [
+            "The News International",
+            "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNX0UwS21Gd3FOYVhXSWVWejVsUjhWa3h2N0ROdTNJVjg4WUVHTXZ4bW5zYkloR0ZJM0Jaa3BjSjZoMElUbUllLVdrMTZCOUtMaDRwQnpBUGw4V09TRWc2WEIybWJHNFBDaXNUc3hqMzBSQ21pU2Z5MHlVNjdCRTlZOUljRmpzYjEtWkFtZ2JsOFpNdzlRM3ZJYlFJM2I4VEFPM3V1UjNxZ3h5dw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "巴基斯坦与阿里达成多项合作，加速巴基斯坦数字经济与AI发展 - 新华网",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "This signal comes from Google News China AI Signals：巴基斯坦与阿里达成多项合作，加速巴基斯坦数字经济与AI发展 - 新华网. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 巴基斯坦与阿里达成多项合作，加速巴基斯坦数字经济与AI发展 - 新华网",
+            "https://news.google.com/rss/articles/CBMifEFVX3lxTE5MMGpfaVByYjA5TGg5RFNCZElvdHVQc0FqUXJPYllNcGJHY2JQYXhnSFplSkpjXy1vRDBadjdyU3FMM04yM2JrWDNKVWx3dEhOZzBSa0ZuNnhjaFNWd3VsdXJDbkJYVm5yZEdDRVRwbnhzcU1Ncms2bG1Jc1c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek逆市大幅降价 业内：重塑大模型行业竞争格局 - 第一财经",
+        "dek": "DeepSeek大幅降低模型价格，业内认为将重塑行业竞争格局。",
+        "details": [
+          "DeepSeek宣布对其大模型API进行大幅降价，幅度之大令市场震惊。这一举动发生在AI行业普遍寻求商业化路径的背景下，凸显了国内大模型价格战的激烈程度。据第一财经报道，业内分析认为，这不仅仅是简单的促销，而是DeepSeek试图通过价格优势抢占市场份额，并可能倒逼其他厂商跟进。",
+          "DeepSeek目前是国内领先的大模型创业公司之一，其产品在编程、推理等场景表现突出。此次降价直接降低了开发者的调用成本，有望吸引更多中小企业和个人开发者使用其API。同时，这也会对百度、阿里等云厂商的模型服务形成价格压力。不过，降价能否持续取决于DeepSeek的算力和运营成本控制，长期盈利模式仍需观察。"
+        ],
+        "why": "此降价信号将加速中国AI大模型价格竞争，影响开发者生态和云服务格局，对投资判断和采用决策有直接参考价值。",
+        "links": [
+          [
+            "Google News China AI Signals: DeepSeek逆市大幅降价 业内：重塑大模型行业竞争格局 - 第一财经",
+            "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9nTjU0N09vU3lySjN1ZDdNTldZN3k1bEdkZ2FCLTdHbzZ0dVV2bENxNThGN2pFMlpkRUxhbTEyZ0tNNzd6eVNrRDVWd2ZZS3JzZ2o5UA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Alibaba Hosts AI Developers from 25 Countries to Chart Agent Future",
+        "dek": "A gathering of global developers in Hangzhou signals Alibaba’s push to lead the next wave of AI agent ecosystems beyond China.",
+        "details": [
+          "On May 25, 2026, Alibaba welcomed over 100 AI developers from 25 countries to its Hangzhou campus for a closed-door event centered on the future of AI agents and autonomous systems. The event, reported by local tech media Pinguan, featured hands-on workshops and roundtables on building agentic workflows using Alibaba’s Qwen models and Tongyi platform.",
+          "The move comes as AI agents—models that can plan, use tools, and execute tasks autonomously—become the next battleground for major AI labs. Despite export controls and geopolitical tensions, Alibaba is actively courting international developers, suggesting a strategy to build a global agent ecosystem that rivals OpenAI’s GPTs and Google’s Agentic AI.",
+          "Notably, the 25-country representation includes developers from both developed markets (US, EU) and emerging economies (Southeast Asia, Africa), indicating a broad outreach. Alibaba is betting that open-source models and agent frameworks can create lock-in effects similar to cloud computing, where developers trained on its stack drive enterprise adoption."
+        ],
+        "why": "This event underscores Alibaba’s ambition to become the backbone of global agent development, leveraging its open-source Qwen models to attract an international developer base—a strategy that could shift the center of gravity for AI agent standards from Silicon Valley to Hangzhou.",
+        "links": [
+          [
+            "Google News China AI: 25国AI开发者专程来杭，在阿里巴巴畅聊AI和Agent未来发展 - 品玩",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8yQ0xUb1VSTzQ0bWpKTnZxWGFhZDJrQnFwVmJaRkxmNFI2czMwSnJYMDlZaUtnU25mdktyNjI1NEZRLTl1dTJEcQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "RMA: an Agentic System for Research-Level Mathematical Problems",
+        "dek": "An agentic framework for automated reasoning on research-level math, combining literature search, proof verification, and iterative refinement.",
+        "details": [
+          "Research Math Agents (RMA) is a novel agentic system designed to tackle research-level mathematical problems, which require long-horizon reasoning, grounding in existing literature, and iterative proof refinement. Unlike prior work focused on competition math or formal theorem proving, RMA decomposes the proof-solving process into specialized modules: problem analysis, literature search and understanding, fair comparison, knowledge-bank construction, and proof verification. These modules are coordinated by three types of agents—initializer, proposer, and verifier—through a shared structured memory.",
+          "The system addresses a key gap in AI for mathematics: while large language models have shown promise on Olympiad-level problems, they struggle with open-ended, research-style questions that demand integration of external knowledge and self-correction. RMA's architecture explicitly models the workflow of a human mathematician, from surveying related work to verifying conjectures. The paper, released on arXiv (2605.22875), claims the system can perform automated reasoning without human intervention, though it remains a research prototype with no public benchmark results yet."
+        ],
+        "why": "RMA represents a step toward automating higher-level mathematical reasoning, which could eventually accelerate research in fields like cryptography, physics, and optimization. However, it is still early-stage academic work; investors and product teams should watch for benchmark data and integration with formal verification tools.",
+        "links": [
+          [
+            "arXiv cs.AI: RMA: an Agentic System for Research-Level Mathematical Problems",
+            "https://arxiv.org/abs/2605.22875"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Giving Agents Computers — Ivan Burazin, Daytona",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Latent Space：Giving Agents Computers — Ivan Burazin, Daytona. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Latent Space: Giving Agents Computers — Ivan Burazin, Daytona",
+            "https://www.latent.space/p/daytona"
+          ]
+        ],
+        "sourceDate": "2026-05-22",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-05-22",
+        "freshnessLabelEn": "Fallback | published 2026-05-22",
+        "freshnessLabel": "Fallback | published 2026-05-22",
+        "media": {
+          "type": "image",
+          "src": "https://substackcdn.com/image/fetch/$s_!67Tl!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0cf76d9-c44f-4ffa-82e5-602a03bae88b_620x412.jpeg",
+          "alt": "Giving Agents Computers — Ivan Burazin, Daytona",
+          "caption": "Latent Space",
+          "href": "https://www.latent.space/p/daytona"
+        }
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "The future of physical AI isn’t humanoid; it’s task-specific and cost-efficient - The Robot Report",
+        "dek": "An opinion piece argues that the future of physical AI lies in purpose-built, cost-effective robots rather than humanoid generalists, shifting the focus from imitation to utility.",
+        "details": [
+          {
+            "summary": "Core argument: Humanoid robots are overhyped; task-specific robots offer faster ROI.",
+            "expanded": "The Robot Report's analysis challenges the prevailing narrative that humanoid robots represent the pinnacle of physical AI. Instead, it contends that for most industrial and commercial applications, robots designed for a single task—such as warehouse picking, last-mile delivery, or agricultural harvesting—are cheaper, more reliable, and easier to deploy at scale. The article cites examples of companies like Agility Robotics and Amazon Robotics pivoting to more focused use cases, and argues that investors should prioritize cost-efficiency over anthropomorphic novelty."
+          },
+          {
+            "summary": "Market implications: Specialized robots lower barriers for small and medium enterprises.",
+            "expanded": "By focusing on task-specific robots, the cost per unit can drop dramatically, enabling SMEs to adopt automation without massive upfront investment. The piece also notes that regulatory hurdles for humanoids remain high, while dedicated machines can be certified faster. This shift may accelerate AI-driven automation in logistics, manufacturing, and agriculture, potentially reshaping labor markets and supply chain dynamics."
+          }
+        ],
+        "why": "This perspective challenges the dominant humanoid hype and highlights a pragmatic alternative that could create more immediate business opportunities and investment targets in the robotics space.",
+        "links": [
+          [
+            "The Robot Report article",
+            "https://news.google.com/rss/articles/CBMirAFBVV95cUxOeF96YWVWVU1GM3JXUmhuM3FSM0NIc0ZKMDE1UjBMUUhOYmxkTGpZYTlFTTFfRDZiUXE3VW5YX29SOElYN01sX2pVSFI4VW4wTk50WEhSbFBmbUtlbFRrX19xVURURVlfRDhtT2pQVHA3SWNrZEMzc3IyY20tbXRiX2NZQXZTSEtYbWxOeUxvSEVaMjZ2RTUtZEJKUUFYMUpVTFhhVWtQMV9DOEdC?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-23",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-05-23",
+        "freshnessLabelEn": "Fallback | published 2026-05-23",
+        "freshnessLabel": "Fallback | published 2026-05-23"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+        "dek": "Hugging Face calls for standardizing agent terminology to reduce confusion across frameworks and tools.",
+        "details": [
+          "Hugging Face published a blog post proposing precise definitions for common AI agent terms, including 'harness', 'scaffold', 'loop', and 'tool'. These terms are often used interchangeably, leading to fragmentation in documentation and codebases. The post aims to create a shared vocabulary for agent development.",
+          "Key definitions: a 'harness' is the minimal execution environment for an agent (handling I/O and lifecycle), while a 'scaffold' provides reusable patterns like planning and memory. 'Loop' refers to the agent's control flow, and 'tool' is an external function call. The blog encourages the community to adopt these definitions for more consistent tooling.",
+          "This effort reflects a growing need for clarity as agent frameworks multiply (LangGraph, CrewAI, AutoGPT). Without standard terms, developers struggle to compare architectures or migrate between frameworks. Hugging Face positions itself as a neutral arbiter in the agent ecosystem."
+        ],
+        "why": "Standardizing agent terminology reduces friction for developers choosing between frameworks and helps new entrants understand core concepts faster. It also signals Hugging Face's ambition to become a central reference point for agent infrastructure.",
+        "links": [
+          [
+            "Hugging Face Blog: Harness, Scaffold, and the AI Agent Terms Worth Getting Right",
+            "https://huggingface.co/blog/agent-glossary"
+          ]
+        ],
+        "sourceDate": "2026-05-25",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Granola: AI meeting notes built for real work conversations",
+        "dek": "Granola turns meetings into structured notes without behaving like a heavy meeting bot.",
+        "details": [
+          "Granola is an AI note-taking tool designed for real work conversations. Unlike traditional meeting bots that can be intrusive and bloated, Granola quietly captures and structures meeting content into searchable, actionable notes. It aims to be lightweight and unobtrusive, integrating seamlessly into the flow of remote and hybrid work.",
+          "The product is particularly valuable for operators, product teams, investors, and consultants who frequently attend many meetings and need reliable meeting memory. By providing cleaner follow-ups and a searchable archive, Granola helps users stay organized without adding extra friction. It exemplifies a trend toward AI tools that augment rather than disrupt existing workflows."
+        ],
+        "why": "For founders and product managers, Granola demonstrates a well-defined product niche: solving the meeting documentation pain point without overwhelming users. It suggests there is still room for AI productivity tools that prioritize user experience and integration over feature bloat.",
+        "links": [
+          [
+            "Curated AI Products: Granola",
+            "https://www.granola.ai/"
+          ]
+        ],
+        "sourceDate": "2026-05-23",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Flowith: canvas-based AI workspace for multi-step thinking",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Curated AI Products：Flowith: canvas-based AI workspace for multi-step thinking. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Curated AI Products: Flowith: canvas-based AI workspace for multi-step thinking",
+            "https://flowith.io/"
+          ]
+        ],
+        "sourceDate": "2026-05-23",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "Retrieval-Augmented Generation: how LLMs fetch external knowledge to ground answers—explaining the architecture behind enterprise Q&A and research tools.",
+        "details": [
+          "Retrieval-Augmented Generation (RAG) is a technique that combines a large language model with an external knowledge base. Instead of relying solely on the model's internal parameters, RAG first retrieves relevant documents from a vector database or search index, then feeds that context into the LLM to generate a grounded answer. This reduces hallucinations and enables access to private or real-time information.",
+          "In practice, RAG powers applications like corporate knowledge bases, legal document analysis, and customer support bots. The typical pipeline involves chunking documents, embedding them into vectors, and performing similarity search at query time. Popular tools include LangChain, LlamaIndex, and vector stores like Pinecone or Weaviate.",
+          "Recent trends such as agentic workflows and tool-calling have expanded RAG into 'agentic RAG', where the system can iterate over multiple retrieval steps or call external APIs. Meanwhile, model price cuts—like DeepSeek's recent significant reduction—lower the cost of running RAG pipelines, making the approach more accessible for startups and enterprises."
+        ],
+        "why": "Understanding RAG is critical for anyone building knowledge-intensive AI products, as it directly impacts accuracy, cost, and data privacy—key differentiators in enterprise adoption.",
+        "links": [
+          [
+            "DeepSeek price cut reshapes AI competition",
+            "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9nTjU0N09vU3lySjN1ZDdNTldZN3k1bEdkZ2FCLTdHbzZ0dVV2bENxNThGN2pFMlpkRUxhbTEyZ0tNNzd6eVNrRDVWd2ZZS3JzZ2o5UA?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
           {
     "date": "2026-05-25",
     "title": "AI Daily Atlas",
