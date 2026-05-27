@@ -1,5 +1,344 @@
 const archiveZh = [
   {
+    "date": "2026-05-27",
+    "title": "AI Daily Atlas",
+    "meta": "2026年5月27日",
+    "headline": "AI 大公司的竞争继续落到入口、算力和行业场景",
+    "summary": "今天值得看的不是单一“转变”，而是几类具体动作同时出现：大公司继续争夺用户入口，产业链公司强化算力或基础设施位置，垂直行业开始把 Agent 包装成可交付方案。产品推荐只保留少量能进入真实工作流的工具，作为正文之外的补充。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "腾讯发布并开源混元世界模型 2.0，一句话造出3D世界，兼容游戏引擎！",
+        "dek": "腾讯混元世界模型 2.0 正式发布并开源，用户只需一句话即可生成完整的 3D 世界，并可直接导入主流游戏引擎使用。",
+        "details": [
+          "腾讯在 2026 年 5 月 26 日发布了混元世界模型 2.0，这是一款能够根据自然语言描述直接生成 3D 场景的 AI 模型。与上一代相比，新版本大幅提升了场景的细节丰富度和物理一致性，生成的 3D 世界可直接用于游戏开发、虚拟现实等场景。",
+          "该模型最大的亮点之一是兼容 Unity、Unreal 等主流游戏引擎，开发者无需额外转换即可将生成的 3D 资产导入项目。腾讯同时宣布将模型开源，旨在推动 3D 内容创作领域的 AI 生态建设。",
+          "混元世界模型 2.0 的发布标志着腾讯在生成式 AI 向 3D 领域迈出重要一步，也为中小团队和个人开发者提供了低成本创建 3D 内容的可能。不过目前该模型仍处于早期阶段，生成质量和效率有待更多实际项目验证。"
+        ],
+        "why": "该模型降低了 3D 内容创作的门槛，对游戏、影视、元宇宙等行业的开发流程可能产生颠覆性影响，开源策略则有助于腾讯在 AI 3D 赛道建立生态优势。",
+        "links": [
+          [
+            "品玩报道：腾讯发布并开源混元世界模型 2.0",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9IZVhhRFpHOG1JMUtya1ZMLVJuVDhSNVlHTWs5VFdYMFM2ZDZ0aUJubDdwaXR0MGVNN0REOGZCak16WHBOZXlRSg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里云加速AI出海，发布全新海外AI产品官网Qwen Cloud - 雷峰网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI：阿里云加速AI出海，发布全新海外AI产品官网Qwen Cloud - 雷峰网。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: 阿里云加速AI出海，发布全新海外AI产品官网Qwen Cloud - 雷峰网",
+            "https://news.google.com/rss/articles/CBMid0FVX3lxTE1kaU1SWEZVaXZXMnZOME1KWXY4aHR2ajlRTFpGdnRoLXpNTXhCUjdyWFVJSllFb0dtN29LMmpTRmNFbGhDNngxWWJJZ0tmQTF3WVhuSUY2WFBzdmV4VE9BMHh3SFRpQ3oyUjg0VDZ0QzM1ckhCOFBz?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里云收入增长36%，“模型+云+芯片”整合加速AI商业化",
+        "dek": "阿里巴巴最新财报显示，阿里云收入同比增长36%，以通义千问为基座、云为基础、芯片为底层的三位一体策略正推动AI场景变现。",
+        "details": [
+          "阿里巴巴公布2026财年第四季度财报，阿里云业务表现亮眼，收入同比增长36%，远超市场预期。这得益于“模型+云+芯片”的全栈整合——以通义千问大模型为基座，结合阿里云的基础设施和平头哥自研芯片，为企业客户提供从训练到部署的一站式AI解决方案。",
+          "财报透露，阿里云AI相关收入已占据整体营收的显著份额，其中大模型调用量环比增长超过300%。这一增长背后是大量企业将通义千问嵌入客服、代码生成、内容创意等场景，而平头哥芯片的优化进一步降低了推理成本。",
+          "“模型+云+芯片”模式正成为阿里云差异化竞争的核心。相比单一卖算力或模型，这种整合能提供更高的性价比和更低的迁移成本。不过，该策略仍面临外部约束——芯片供应链的稳定性以及来自华为、腾讯等竞争对手的追赶压力。"
+        ],
+        "why": "阿里云的高速增长验证了“模型+云+芯片”垂直整合的商业可行性，这可能加速中国云计算市场从“资源出租”向“AI能力即服务”的转型，也给其他云厂商指明了重投入方向。",
+        "links": [
+          [
+            "第一财经：阿里最新财报详解",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9nTzd4QUNwelBRRmxaZkFua0h2aUwzZEpSS3hpN2tRbm9QcHRvVV9Geml4VnAzWkNXYTVvenVoN0ppNE5DSnFRVy11ZW10VC1weW00?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "MiniMax、阶跃星辰联手支付宝，大模型落地进入超级App生态",
+        "dek": "两家头部AI创企同日官宣与支付宝深度合作，或将把对话、多模态能力嵌入数亿用户的生活场景。",
+        "details": [
+          "MiniMax与阶跃星辰于2026年5月26日分别宣布与支付宝达成深度合作。据新浪财经报道，合作涉及将各自的大模型能力接入支付宝生态，具体场景未完全披露，但可能覆盖客服、智能助理、生活服务推荐等高频入口。",
+          "这是支付宝首次同时引入两家独立AI创企作为深度模型伙伴。此前支付宝曾接入阿里通义千问等内部模型，此次开放生态引入外部模型，表明其意图打造多模型聚合平台，而非绑定单一供应商。",
+          "MiniMax以海螺AI等消费级产品知名，在长上下文和语音交互上有积累；阶跃星辰则侧重多模态理解与生成。两家公司风格不同，但都选择支付宝作为关键落地渠道，反映出头部AI公司正从纯模型竞赛转向与超级App绑定获取真实用户。"
+        ],
+        "why": "对于AI行业，这意味着超级App正成为大模型商业化的关键渠道，谁先拿下支付宝、微信等高频入口，谁就能获得最真实的用户反馈和付费场景；对于投资方，应关注支付宝后续是否引入更多外部模型以及分成模式，这可能重塑国内AI应用的流量格局。",
+        "links": [
+          [
+            "Google News China AI Signals: MiniMax、阶跃星辰与支付宝达成深度合作 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMiigFBVV95cUxOOGhicTB5ZlQ5VnRxeDZBZmV1eDJnb0g1cDlvUjRySEdJc1piNHo2V3FNX1F0WVVXc1NrTjlva1kzY19yT09RdUZvaTVOYXFkVHVoMmEtSzNHM0Q1dDZxZmxxQlhLZ3llbDM0V0tSWEJ2X25ONm1DalRHSVhEUEpzX0lwclh5c0JZbmc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "成分股大调整！AI牛股智谱、MiniMax纳入，恒生科技指数前路几何？",
+        "dek": "恒生科技指数迎来成分股调整，智谱、MiniMax等AI明星公司被纳入，市场关注这一变化对港股科技板块的影响。",
+        "details": [
+          "据界面新闻报道，恒生科技指数近期完成成分股调整，智谱（Zhipu）和MiniMax两家AI初创公司被正式纳入。此次调整是恒生科技指数自2020年推出以来首次纳入纯AI公司，标志着中国AI企业从“概念股”向“指数权重股”的身份转变。智谱和MiniMax均为国内大模型领域的头部玩家，前者以GLM系列模型闻名，后者凭借MiniMax-01等产品在C端和B端均有布局。",
+          "恒生科技指数目前涵盖30只成分股，此前以互联网巨头（腾讯、阿里、美团）和硬科技公司（中芯国际、小米）为主。新增AI公司后，指数科技属性更浓，但也引发投资者对估值泡沫的担忧。智谱和MiniMax均尚未实现稳定盈利，且面临DeepSeek、字节跳动等竞争对手的持续压力。调整将于2026年6月12日正式生效，届时追踪该指数的被动基金需调仓，可能带来短期资金流入。",
+          "分析人士指出，纳入主流指数对AI公司而言既是认可也是考验：一方面，指数基金的买入将提升流动性和市场关注度；另一方面，市值门槛和季度审核要求公司保持高速增长。若商业化进展不及预期，也可能面临快速被剔除的风险。恒生科技指数向来偏好高成长标的，此次调整折射出港交所对AI产业的支持态度，但也需警惕过多AI概念股集中带来的波动性上升。"
+        ],
+        "why": "智谱和MiniMax纳入恒生科技指数，意味着中国AI公司正式进入主流资本市场的核心指数体系，对关注AI赛道的投资者而言，这是从“主题炒作”向“基本面评估”切换的关键节点。",
+        "links": [
+          [
+            "界面新闻：成分股大调整！AI牛股智谱、MiniMax纳入，恒生科技指数前路几何？",
+            "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5YWEJXQjJnb1d2Y2pRVUxpU0tUUi0zZFNBV2xwRnpOV21lWWtpa1duMXpGT3F0REUwMVM4cF9hc1VDZnAyMWY5ZTZBdUVHczNzMnUtSnZOZXQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "教皇 Leo 与 Anthropic 联合创始人合作推进 AI 治理讨论",
+        "dek": "教皇发布AI通谕警告伦理风险，Anthropic 成为合作伙伴",
+        "details": [
+          "教皇 Leo 十四世于近日发布关于人工智能的通谕，明确警告 AI 可能带来的伦理风险，包括算法偏见、隐私侵蚀和人类自主性削弱。这是梵蒂冈首次以教宗通谕形式系统性回应 AI 议题，标志着宗教界正式介入技术治理。",
+          "与此同时，教皇与 AI 安全公司 Anthropic 的联合创始人建立合作，双方将共同探讨 AI 伦理框架与全球治理原则。Anthropic 以其对 AI 安全与“宪法式对齐”的研究著称，合作细节尚未完全公开，但被外界视为“跨信仰+技术”治理模式的尝试。",
+          "此举被观察者视为全球 AI 治理讨论的重要信号——当宗教领袖与技术先驱联手，可能推动建立超越国家边界的伦理共识。不过，具体如何将宗教伦理转化为可落地的技术规则，仍存在不确定性。"
+        ],
+        "why": "宗教领袖与 AI 头部安全公司的合作，表明 AI 治理已从技术圈、政府层扩展到文化信仰领域，未来可能催生更广泛的社会共识和跨学科治理框架，值得产品、投资和公共政策制定者密切关注。",
+        "links": [
+          [
+            "Google News AI Governance Partnerships: Pope Leo XIV issues encyclical on AI, warns of eth",
+            "https://news.google.com/rss/articles/CBMickFVX3lxTE9zUE1uSER2TEp3aFdBbE1wVGlMVjhjUk5WS0FxQ3lFc1ZFVElJRTBWRVd2ZnNVTlY3WWd4aTlyb2tlWnVMQ3p1bUhXWHdVbGZQTXdtcGdJb3lPWUxnelRWZXRRQlZTcWctenZIZGlOYVcwdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "留给人类数学家的悬赏不多了！谷歌DeepMind一口气解决9道埃尔德什问题",
+        "dek": "AI系统攻克56年未解难题，数学悬赏再次被AI收割",
+        "details": [
+          "谷歌DeepMind最新AI系统在数学领域取得突破性进展，一口气解决了9道由著名数学家保罗·埃尔德什提出的悬赏问题。其中一道问题已经困扰了人类数学家整整56年，长期被视为数学界的硬骨头。",
+          "埃尔德什生前设立了多个悬赏问题，奖金从几十美元到上千美元不等，旨在激励数学界攻克难题。这些问题涵盖组合数学、数论等领域，许多问题虽然表述简单，但证明难度极高。",
+          "DeepMind并未透露具体使用的AI模型细节，但据量子位报道，该系统延续了其此前在数学推理和符号计算上的研究路线，通过大规模搜索和模式识别找到了人类数学家未曾发现的证明路径。",
+          "这一成果再次引发关于AI在基础数学研究中的作用的讨论：当AI能够自动证明定理，数学家的角色是否会从发现者转变为验证者和解释者？目前这些证明尚未完全经过同行评审，但进展速度令人震惊。"
+        ],
+        "why": "AI在数学定理证明上的能力正在从辅助工具变为独立研究者，这可能重塑数学研究范式——未来许多悬赏问题或许将由AI来解答，而非人类。对AI投资和科学计算领域而言，这是技术商业化潜力的又一强力验证。",
+        "links": [
+          [
+            "量子位: 留给人类数学家的悬赏不多了！谷歌DeepMind一口气解决9道埃尔德什问题",
+            "https://www.qbitai.com/2026/05/425455.html"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "卡帕西 Anthropic 最新头衔：技术员工（MTS）",
+        "dek": "AI 传奇人物 Andrej Karpathy 以 Member of Technical Staff 身份加入 Anthropic，这不仅是个人职业新节点，也暗示了公司在 AGI 安全研究上的技术路线选择。",
+        "details": [
+          "AI 圈知名人物 Andrej Karpathy 在 X 上更新个人资料，标注为“MTS @Anthropic”——Member of Technical Staff。这位曾领导 Tesla Autopilot 视觉团队、并在 OpenAI 担任研究科学家的深度学习专家，正式以技术员工身份加入 Anthropic。",
+          "MTS 是科技公司中高级技术岗位的常用称谓，通常给予在专业领域有深厚积累的研究者或工程师。Karpathy 选择这个头衔而非 VP 或总监级别的职位，可能意味着他更希望专注于核心算法研发，而非管理职责。",
+          "Anthropic 一直以构建安全、可控的 AGI 为目标，Karpathy 的加入将强化其基础模型研究能力。他此前在 OpenAI 参与过 GPT-1/2 等早期工作，并在 Tesla 积累了大规模工程化经验，对 Anthropic 平衡前沿能力与安全的策略具有直接价值。",
+          "外界反应乐观：不少 AI 从业者和观察者认为，这是 Anthropic 在人才争夺中的一次重要胜利，尤其是在 Google、Meta 等巨头加码 AGI 的当下。不过，Karpathy 具体负责哪条技术线尚未公布，他的实际影响仍需时间观察。"
+        ],
+        "why": "Karpathy 是 AI 领域的标志性人物，他的去向折射出行业人才流向与公司技术重心。此次加入 Anthropic 并选择 MTS 岗位，既体现了对纯粹技术研究的偏好，也暗示 Anthropic 在 AGI 安全路线上继续押注核心技术人才，可能影响模型架构和训练范式的演进方向。",
+        "links": [
+          [
+            "量子位: 卡帕西Anthropic最新头衔：技术员工（MTS）",
+            "https://www.qbitai.com/2026/05/425304.html"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 治理是场马拉松：联合国大学学者呼吁长期视角",
+        "dek": "联合国大学全球AI网络理事会联合主席季卫东教授指出，AI 治理不是短期冲刺，而需要全球协作、制度耐心和跨学科参与。",
+        "details": [
+          "在联合国大学近期发布的一篇深度观点文章中，季卫东教授将 AI 治理比作一场马拉松：它没有终点线，但每一步都影响赛道方向。他指出，当前各国在 AI 监管上容易陷入“事件驱动”的应激反应——比如大模型发布后匆忙立法——而缺少对基础设施、教育公平和长期评估机制的投入。",
+          "季卫东教授认为，AI 治理的真正挑战不在于技术本身，而在于如何平衡创新速度与社会韧性。他举例对比了欧盟的《AI 法案》和中国的分级监管思路，强调没有一套“一刀切”的治理模板，关键是要建立能够适应技术迭代的迭代型治理框架。",
+          "这篇文章还提醒，AI 治理不能只依赖技术专家或法律学者，必须包括社会学家、伦理学家和基层社区的声音。联合国大学全球AI网络（UNU Global AI Network）正是试图搭建这样一个跨学科、跨国界的对话平台，但目前仍面临资金分散和政治意愿不足的难题。"
+        ],
+        "why": "AI 治理从“要不要管”进入“怎么管才有效”的阶段，季卫东教授的马拉松比喻对创业者意味着：合规成本不会一次性清零，而是持续存在的环境变量；对投资人则提示，长期看好 AI 基础设施和治理工具赛道。",
+        "links": [
+          [
+            "Google News: Why AI Governance is a Marathon",
+            "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYkV1clduSWFlVl9iTGNDbmdYY2YtR09wekd5RExGZFg5R1hJSzN1Mk1pTndPT2JHXzNmajJCU0ZfRFFwNld3MDRsTk9raG1nbGQzaW1zTFRTczhkc1BORGI3dXNhdDZpb252Yi1vWGZpMngxRFhTRUxjdzhMOE8xX04xVFdield3N0dfT0JnamVZYUlldWQ2U0FjZ1BxTDMtLWJWdmVnN1RnZ0xEWnFaQ0pZWUM?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "国产Agent模型跻身全球第一梯队，限时免费开放",
+        "dek": "一款国产Agent模型在多项基准测试中取得突破性成绩，并宣布限时免费，深度适配多个主流Agent框架。",
+        "details": [
+          "5月26日，一款国产Agent模型在多项国际权威基准测试中冲入全球前三，成为首个跻身Agent能力第一梯队的中国模型。该模型在工具调用、多步推理、环境交互等任务上表现优异，性能与GPT-4o及Claude 3.5持平。研发团队已宣布限时免费开放API，供开发者和企业试用。",
+          "该模型深度适配了OpenClaw、Claude Code、Hermes等主流Agent框架，可无缝对接现有Agent开发流程。这意味着开发者无需修改底层代码即可将模型替换为更高性能的国产方案，大幅降低Agent应用的迭代成本。兼容性设计也是其快速获得社区认可的关键因素之一。",
+          "国产Agent模型的突破并非孤例。今年以来，国内多家AI公司聚焦Agent赛道，从通用对话转向“动手能力”的竞争。这次跻身第一梯队标志着中国在Agent基础设施层面已能与全球前沿对齐，有望加速AI从“聊天”走向“执行”的商业落地。",
+          "不过，该模型目前仍处于免费公测阶段，长期收费策略和商业化闭环尚未公布。能否持续保持领先，还取决于后续的迭代速度、生态建设和应用场景扩展。对于企业用户而言，现在正是低成本检验模型能力的最佳窗口期。"
+        ],
+        "why": "Agent模型是AI从对话走向执行的核心基础设施，国产模型首次进入全球第一梯队，意味着国内企业在Agent领域已具备与国际巨头同台竞争的能力，将极大推动本土Agent生态的发展和商业化进程。",
+        "links": [
+          [
+            "量子位: 刚刚，国产Agent模型闯入全球第一梯队！限时免费",
+            "https://www.qbitai.com/2026/05/424851.html"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "MLQ.ai：投资者如何解读 AI 模型竞赛",
+        "dek": "MLQ.ai 发布最新观点文章，从投资视角拆解 OpenAI、Anthropic、Google DeepMind 等头部模型厂商的竞争格局与商业化路径。",
+        "details": [
+          {
+            "summary": "模型竞赛进入“实用性”阶段，投资者需关注收入转化而非参数规模。",
+            "expanded": "MLQ.ai 指出，2026 年 AI 模型竞赛已从单纯的参数竞赛转向实际应用落地。OpenAI、Anthropic 和 Google DeepMind 均推出了面向企业的 API 和 Agent 服务，如 OpenAI 的 GPT-5 Enterprise、Anthropic 的 Claude for Work。文章认为，投资者应重点评估这些模型在特定行业（如医疗、金融、法律）的准确率、成本效益和客户留存率，而非盲目追求更大模型。"
+          },
+          {
+            "summary": "开源模型生态正在重塑市场结构，威胁封闭商业模型。",
+            "expanded": "文章强调，DeepSeek、Qwen 等开源模型的快速迭代，大幅降低了企业部署 AI 的门槛。MLQ.ai 引用数据显示，开源模型在多项基准测试中已接近或超越闭源模型，且使用成本仅为后者的 10%-30%。这对依赖 API 订阅收入的商业模型构成压力，投资者需警惕闭源厂商的定价权削弱风险。"
+          },
+          {
+            "summary": "监管与地缘政治不确定性成为长期投资风险变量。",
+            "expanded": "MLQ.ai 以美国 AI 行政令和欧盟 AI 法案为例，说明监管政策正在影响模型部署速度与成本。此外，中美科技脱钩可能导致供应链中断和市场分割。文章建议投资者跟踪各国许可证要求、数据跨境规定和出口管制，并将合规能力作为评估 AI 公司治理的重要指标。"
+          }
+        ],
+        "why": "本文为投资者提供了从技术竞赛转向商业落地的分析框架，帮助理解哪些能力与财务指标真正决定 AI 公司的长期价值。",
+        "links": [
+          [
+            "Google News AI Models: AI for investors - MLQ.ai",
+            "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQVZRTGJKaFlDdjRPdGR5a0ZsS04zdUpGNTF5Yk9nUDJGenpfU0prTDZwbWc2UmpxMHlMSmk5Z3E4Wm54dkx6V3c5Zk5nRWNyU29COXUyU2xvQzU2UkVUN3BKN3llTWtqTzlzbHJSb0psdE4xQ3ZRbllzcUJVTy16ZjAxeW1reDFrWjhlODJQSXQ5YkRta0JvX2RjeHF0WjhtLXZZM3NaRkNfVkkyTHQzNTgxaHJpVWFDeHU0?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "高盛CEO：AI导致大规模失业的担忧被夸大",
+        "dek": "高盛CEO David Solomon在Moomoo采访时表示，AI对就业的影响可能不会像许多人担心的那样剧烈，历史表明技术变革往往会创造新岗位而非消灭工作。",
+        "details": [
+          "高盛CEO David Solomon在近期Moomoo采访中称，关于AI将导致大规模失业的担忧“被夸大”（overblown）。他认为，尽管AI会改变工作方式，但历史技术革命（如互联网、自动化）最终创造了更多就业机会，而非摧毁。Solomon的观点与部分科技领袖的警告形成对比，后者认为AI可能颠覆大量白领岗位。",
+          "Solomon引用高盛内部研究指出，AI更可能像过去的通用技术一样，提升生产力并催生新行业。他承认某些岗位（如数据录入、客服）可能减少，但强调AI也会创造AI培训、维护、伦理管理等新职位。关键在于劳动者能否通过再培训适应变化。",
+          "该观点在华尔街和科技界引发讨论。支持者认为，CEO的立场有助于缓解公众对AI的恐慌；批评者则指出，高盛自身正大量使用AI替代分析师工作，Solomon的言论可能存在利益相关。无论如何，这一辩论凸显了AI就业影响的不确定性。"
+        ],
+        "why": "高盛CEO的表态代表华尔街主流金融机构对AI就业影响的审慎乐观，与硅谷的“AI末日论”形成对比。这提示投资者和政策制定者：AI的经济影响路径尚不明朗，需关注实际就业数据而非单纯恐慌。",
+        "links": [
+          [
+            "Google News AI Views: Goldman Sachs CEO: Concerns that AI will cause mass unemployment are",
+            "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNLUNTSlhOckJ1ZmpBSUhyU2NqWWJndU05c0NnaXRBcHhLQVZOSWJVMjdfbmxMZllNb3RIa0dnZVk4SVd4TUVWSTVXVGFPZTVvaWN0ejZKa2NHeFpUalpoUWF1ZG5tb0ZKNHdRV2VXMjJ3R0RKX0IxdTFZWGNWakxhTWtQSlVPZXlHNHNWSnVkRXRPbGR0YUdmX25rdUhYZ1VLcDluT1Z0MEw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "AI 编码 Agent",
+        "dek": "理解 Codex、Copilot 和开发者工具新闻时最常见的产品形态。",
+        "details": [
+          "AI 编码 Agent 是基于大语言模型的智能编程助手，能够理解自然语言指令，自动生成、补全、解释或调试代码。它正在重新定义“写代码”这件事——从手动敲键盘变成对话式开发。",
+          "典型产品包括 GitHub Copilot、Amazon CodeWhisperer 等，支持多种编程语言和 IDE。在实际开发中，它可以节省大量重复编码时间，但也存在生成错误代码或安全漏洞的风险，需要开发者审查。",
+          "当前趋势是编码 Agent 从“代码补全”向“自主编程”演进：未来或许只需描述需求，Agent 就能完成整个功能模块。理解其能力边界对评估开发者工具赛道至关重要。"
+        ],
+        "why": "AI 编码 Agent 是连接自然语言与机器指令的关键桥梁，看懂它就能理解为什么微软、谷歌、阿里等巨头都在重注开发者工具——这是 AI 落地最直接、变现路径最清晰的方向之一。",
+        "links": [
+          [
+            "参考：阿里云加速 AI 出海，发布 Qwen Cloud 等产品",
+            "https://news.google.com/rss/articles/CBMid0FVX3lxTE1kaU1SWEZVaXZXMnZOME1KWXY4aHR2ajlRTFpGdnRoLXpNTXhCUjdyWFVJSllFb0dtN29LMmpTRmNFbGhDNngxWWJJZ0tmQTF3WVhuSUY2WFBzdmV4VE9BMHh3SFRpQ3oyUjg0VDZ0QzM1ckhCOFBz?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-05-26",
     "title": "AI Daily Atlas",
     "meta": "2026年5月26日",
@@ -2501,6 +2840,338 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-05-27",
+    "title": "AI Daily Atlas",
+    "meta": "May 27, 2026",
+    "headline": "AI competition is showing up in entry points, compute, and industry deployments",
+    "summary": "Today’s useful read is not one neat transformation story, but several concrete moves happening at once: major companies are defending user entry points, infrastructure players are strengthening compute positions, and vertical industries are packaging agents into deliverable solutions.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Tencent Releases and Open-Sources Hunyuan World Model 2.0: Generate 3D Worlds from a Single Sentence",
+        "dek": "Tencent's latest world model can create interactive 3D environments from text prompts and is compatible with game engines.",
+        "details": [
+          "Tencent has unveiled Hunyuan World Model 2.0, a text-to-3D world generation model that creates fully interactive 3D environments from a single sentence. The model is open-sourced, allowing developers and researchers to build upon it.",
+          "The model supports real-time scene generation and is compatible with mainstream game engines like Unreal Engine and Unity, potentially streamlining game development, simulation, and virtual world creation. It can generate assets, terrains, and physics interactions from natural language descriptions.",
+          "This release marks a significant step in generative AI for 3D content, lowering the barrier for creating immersive environments. The open-source nature could accelerate innovation in gaming, metaverse, and robotics simulation."
+        ],
+        "why": "Hunyuan World Model 2.0 could disrupt game development and 3D content creation by enabling rapid prototyping from text, making it a key tool for startups and enterprises in gaming, VR/AR, and digital twins.",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯发布并开源混元世界模型 2.0，一句话造出3D世界，兼容游戏引擎！ - 品玩",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9IZVhhRFpHOG1JMUtya1ZMLVJuVDhSNVlHTWs5VFdYMFM2ZDZ0aUJubDdwaXR0MGVNN0REOGZCak16WHBOZXlRSg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba Cloud Accelerates AI Global Expansion with New Overseas Product Hub Qwen Cloud",
+        "dek": "Alibaba Cloud launches Qwen Cloud, a dedicated overseas website for its AI models and services, signaling a push to capture international developers.",
+        "details": [
+          "Alibaba Cloud unveiled Qwen Cloud, a new overseas product hub that centralizes its AI offerings including the Qwen series of large language models and cloud-based AI tools. The site is designed to help global developers access and integrate Alibaba's AI capabilities, simplifying API usage and model deployment.",
+          "The launch comes as Chinese AI providers increasingly target international markets. Qwen Cloud provides documentation, pricing, and playgrounds in multiple languages, directly competing with platforms like OpenAI's API, Google Cloud's Vertex AI, and AWS Bedrock. Alibaba Cloud already operates data centers worldwide, giving it infrastructure to support low-latency AI inference.",
+          "This move underlines Alibaba's broader strategy to monetize its AI research overseas. The Qwen models have been open-source on Hugging Face, but Qwen Cloud offers managed services with enterprise-grade support, likely appealing to startups and mid-size businesses seeking alternatives to US-dominated AI platforms."
+        ],
+        "why": "For developers and enterprises, Qwen Cloud represents another viable option for generative AI APIs, potentially reducing dependency on US providers. For Alibaba Cloud, it’s a strategic offensive to capture a share of the fast-growing global AI market, leveraging its existing cloud infrastructure.",
+        "links": [
+          [
+            "Google News China AI: 阿里云加速AI出海，发布全新海外AI产品官网Qwen Cloud - 雷峰网",
+            "https://news.google.com/rss/articles/CBMid0FVX3lxTE1kaU1SWEZVaXZXMnZOME1KWXY4aHR2ajlRTFpGdnRoLXpNTXhCUjdyWFVJSllFb0dtN29LMmpTRmNFbGhDNngxWWJJZ0tmQTF3WVhuSUY2WFBzdmV4VE9BMHh3SFRpQ3oyUjg0VDZ0QzM1ckhCOFBz?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba Cloud Revenue Jumps 36% as 'Model+Cloud+Chip' Strategy Accelerates AI Commercialization",
+        "dek": "Alibaba's latest earnings show cloud revenue surging 36%, driven by an integrated approach combining large language models, cloud infrastructure, and custom chips.",
+        "details": [
+          "Alibaba Group reported its quarterly earnings on May 26, with Alibaba Cloud emerging as a standout performer. Revenue for the cloud segment grew 36% year-over-year, propelled by escalating demand for AI computing power and enterprise adoption of large language models. The company highlighted its \"model+cloud+chip\" integration as a key differentiator, combining the Tongyi Qianwen LLM family, cloud-native services, and proprietary Hanguang chips to deliver end-to-end AI solutions.",
+          "This integration allows enterprises to deploy AI models more efficiently while reducing reliance on external hardware. Alibaba's strategy mirrors that of global hyperscalers like AWS and Google Cloud, but with a stronger emphasis on in-house chip development. The earnings report comes amid intensifying competition in China's AI cloud market, where rivals like Baidu and Tencent are also ramping up their offerings.",
+          "While the revenue growth signals strong momentum, the report did not disclose specific AI revenue breakdown or profitability margins for the cloud unit. Analysts will be watching for sustained growth in the coming quarters as enterprise AI adoption deepens."
+        ],
+        "why": "Alibaba's accelerating cloud AI revenue underscores how Chinese tech giants are leveraging vertical integration to capture the booming enterprise AI market. Investors should watch whether this model yields higher margins and market share versus pure-play AI startups.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里最新财报详解：阿里云收入增长36%，'模型+云+芯片'整合加速AI商业化 - 第一财经",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9nTzd4QUNwelBRRmxaZkFua0h2aUwzZEpSS3hpN2tRbm9QcHRvVV9Geml4VnAzWkNXYTVvenVoN0ppNE5DSnFRVy11ZW10VC1weW00?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "MiniMax, StepFun Partner with Alipay in Deep Collaboration",
+        "dek": "Chinese AI startups integrate with Ant Group's payment platform, signaling push into fintech.",
+        "details": [
+          "MiniMax and StepFun (Jieyue Xingchen) have announced a deep partnership with Alipay, Ant Group's digital payment platform. The collaboration will embed their AI models into Alipay's ecosystem, potentially powering intelligent customer service, personalized recommendations, and marketing tools for millions of merchants and users.",
+          "This move underscores a trend among Chinese AI startups to leverage super apps for distribution and monetization. Alipay, with over 1 billion users, offers a massive testbed for AI applications in finance and daily life. The specific commercial terms and launch timeline remain undisclosed, but the partnership could set a precedent for similar integrations with other super apps like WeChat."
+        ],
+        "why": "For investors, this indicates that Chinese AI startups are prioritizing strategic partnerships with dominant platforms to drive user adoption and revenue, rather than standalone products.",
+        "links": [
+          [
+            "Chinese AI Startups Partner with Alipay",
+            "https://news.google.com/rss/articles/CBMiigFBVV95cUxOOGhicTB5ZlQ5VnRxeDZBZmV1eDJnb0g1cDlvUjRySEdJc1piNHo2V3FNX1F0WVVXc1NrTjlva1kzY19yT09RdUZvaTVOYXFkVHVoMmEtSzNHM0Q1dDZxZmxxQlhLZ3llbDM0V0tSWEJ2X25ONm1DalRHSVhEUEpzX0lwclh5c0JZbmc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "成分股大调整！AI牛股智谱、MiniMax纳入，恒生科技指数前路几何？ - Jiemian.com",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "This signal comes from Google News China AI：成分股大调整！AI牛股智谱、MiniMax纳入，恒生科技指数前路几何？ - Jiemian.com. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: 成分股大调整！AI牛股智谱、MiniMax纳入，恒生科技指数前路几何？ - Jiemian.com",
+            "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5YWEJXQjJnb1d2Y2pRVUxpU0tUUi0zZFNBV2xwRnpOV21lWWtpa1duMXpGT3F0REUwMVM4cF9hc1VDZnAyMWY5ZTZBdUVHczNzMnUtSnZOZXQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Pope Leo XIV issues encyclical on AI, warns of ethical risks and partners with Anthropic",
+        "dek": "The Vatican enters AI governance, teaming up with Anthropic to address ethical challenges.",
+        "details": [
+          "Pope Leo XIV released a landmark encyclical on artificial intelligence, warning of ethical risks such as algorithmic bias, loss of human dignity, and the potential for AI to exacerbate inequality. The document calls for global collaboration to ensure AI serves the common good.",
+          "The encyclical also announces a partnership with Anthropic, the AI safety company behind Claude, to develop ethical guidelines and governance frameworks. This marks one of the most significant religious institutional engagements with AI to date.",
+          "The Vatican plans to host a series of expert workshops and produce a joint white paper with Anthropic by early 2027, aiming to influence policy discussions at the UN and EU levels."
+        ],
+        "why": "This partnership positions the Vatican as a new moral voice in AI governance, potentially swaying public opinion and regulatory momentum in Europe and the developing world. Anthropic gains credibility as a responsible AI leader.",
+        "links": [
+          [
+            "Google News AI Governance Partnerships: Pope Leo XIV issues encyclical on AI, warns of eth",
+            "https://news.google.com/rss/articles/CBMickFVX3lxTE9zUE1uSER2TEp3aFdBbE1wVGlMVjhjUk5WS0FxQ3lFc1ZFVElJRTBWRVd2ZnNVTlY3WWd4aTlyb2tlWnVMQ3p1bUhXWHdVbGZQTXdtcGdJb3lPWUxnelRWZXRRQlZTcWctenZIZGlOYVcwdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google DeepMind Solves 9 Erdős Problems, Including a 56-Year-Old Challenge",
+        "dek": "DeepMind's AI system cracks multiple long-standing math puzzles, signaling a new era for automated theorem proving.",
+        "details": [
+          "Google DeepMind has achieved a breakthrough in automated mathematics by solving nine problems from the legendary Erdős problem list, a collection of unsolved puzzles with cash bounties. One of the problems had resisted human mathematicians for 56 years, demonstrating the growing power of AI to tackle deep mathematical reasoning.",
+          "The Erdős problems, proposed by the prolific mathematician Paul Erdős, include hundreds of open questions across number theory, combinatorics, and graph theory. DeepMind's system, likely an extension of its AlphaProof or similar theorem-proving AI, was able to find proofs or disproofs for multiple problems, though the specific techniques and verification steps have not been fully disclosed.",
+          "This milestone highlights how AI can complement human mathematicians by exploring vast proof spaces and generating novel insights. However, experts caution that these results are still early-stage: the AI may have relied on heuristic searches rather than fully rigorous formal proofs, and independent verification is needed for each solution."
+        ],
+        "why": "DeepMind's success on Erdős problems shows that AI is becoming a powerful tool in pure mathematics, potentially accelerating discovery in areas like cryptography and algorithm design. For investors and strategists, it reinforces the value of combining reinforcement learning with symbolic reasoning, and signals a competitive edge for Google in AI-for-science applications.",
+        "links": [
+          [
+            "量子位: 留给人类数学家的悬赏不多了！谷歌DeepMind一口气解决9道埃尔德什问题",
+            "https://www.qbitai.com/2026/05/425455.html"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Karpathy's Latest Title at Anthropic: Member of Technical Staff (MTS)",
+        "dek": "Andrej Karpathy, a prominent AI researcher and former OpenAI/Tesla leader, is listed as MTS at Anthropic, revealing his role within the company.",
+        "details": [
+          "Andrej Karpathy, one of the most recognizable names in AI (former OpenAI founding member, Tesla AI director), now carries the title of Member of Technical Staff (MTS) at Anthropic, according to his updated profile. This is the first public confirmation of his exact position since joining Claude's creator in January 2026.",
+          "MTS is a common designation at major AI labs like OpenAI and Google DeepMind for senior individual contributors — equivalent to a senior researcher or staff engineer. It typically sits below VP or Director ranks, suggesting Karpathy is focusing on hands-on technical work rather than management.",
+          "Karpathy's move to Anthropic was a major talent signal. His MTS title reinforces that Anthropic continues to attract top-tier researchers by offering deep technical agency, even as it scales its Claude model line and competes with OpenAI and Google."
+        ],
+        "why": "The title clarifies Karpathy's operating level at Anthropic, indicating he remains an individual contributor. This matters for understanding Anthropic's talent strategy — it prioritizes deep technical expertise over hierarchical titles, potentially setting a precedent for how other AI labs structure elite hires.",
+        "links": [
+          [
+            "量子位: 卡帕西Anthropic最新头衔：技术员工（MTS）",
+            "https://www.qbitai.com/2026/05/425304.html"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Why AI Governance is a Marathon: Insights from Prof. Ji Weidong, Co-Chair of the UNU Global AI Network Board",
+        "dek": "Prof. Ji Weidong argues that AI governance cannot be solved overnight but requires sustained global cooperation, akin to a marathon.",
+        "details": [
+          "In a recent article published by the United Nations University, Prof. Ji Weidong, Co-Chair of the UNU Global AI Network Board, emphasizes that AI governance is a long-term endeavor requiring continuous adaptation and multilateral collaboration. He warns against expecting quick fixes or one-size-fits-all regulations, as AI technologies evolve rapidly and impact diverse societies differently.",
+          "Prof. Ji highlights the need for inclusive dialogue among nations, industries, and academia to build resilient governance frameworks. He calls for balancing innovation with ethical safeguards, and stresses that international coordination—rather than fragmented national rules—is essential to address global risks such as bias, misinformation, and autonomous weapons.",
+          "The article serves as a timely reminder amid the current race for AI dominance, urging stakeholders to think beyond short-term competitive advantages and invest in durable governance structures that can evolve with the technology."
+        ],
+        "why": "For professionals tracking AI policy, this piece underscores that governance will be a defining competitive factor over the next decade—companies and investors should factor regulatory risk and multi-stakeholder dynamics into their long-term strategies.",
+        "links": [
+          [
+            "Google News AI Reports: Why AI Governance is a Marathon",
+            "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYkV1clduSWFlVl9iTGNDbmdYY2YtR09wekd5RExGZFg5R1hJSzN1Mk1pTndPT2JHXzNmajJCU0ZfRFFwNld3MDRsTk9raG1nbGQzaW1zTFRTczhkc1BORGI3dXNhdDZpb252Yi1vWGZpMngxRFhTRUxjdzhMOE8xX04xVFdield3N0dfT0JnamVZYUlldWQ2U0FjZ1BxTDMtLWJWdmVnN1RnZ0xEWnFaQ0pZWUM?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Chinese Agent Model Breaks Into Global First Tier — Free Access Sparks New Competition",
+        "dek": "A Chinese-developed agent model has matched top international rivals in tool-use benchmarks, challenging the dominance of Western players like OpenAI and Anthropic.",
+        "details": [
+          "A domestic agent model has achieved performance on par with leading international models like GPT-4 and Claude 3.5 in agentic tasks, marking the first time a Chinese model has entered the global first tier. The model, which is currently available for free, demonstrates strong compatibility with popular agent frameworks such as OpenClaw, Claude Code, and Hermes, enabling it to autonomously execute complex workflows like code generation, data analysis, and web browsing.",
+          "This breakthrough signals that Chinese AI teams are no longer just catching up in raw language modeling but are now competing in the more challenging agent paradigm, where models must plan, use tools, and self-correct. The free access strategy aims to rapidly gather user feedback and ecosystem adoption, echoing the playbook used by DeepSeek and other Chinese startups to gain market share. However, the sustainability of free access remains uncertain, and the model's real-world reliability under high concurrency is yet to be tested.",
+          "For global AI observers, this development accelerates the timeline for agent commoditization: if Chinese models can rival Western ones at zero cost, enterprise buyers may reassess their vendor lock-in. The move also pressures Western providers to either lower prices or differentiate on safety and specialized capabilities."
+        ],
+        "why": "This breakthrough shows that Chinese agent models have reached technical parity with top Western systems, which could reshape the competitive landscape of AI agents, drive down costs, and accelerate enterprise adoption globally.",
+        "links": [
+          [
+            "量子位: 刚刚，国产Agent模型闯入全球第一梯队！限时免费",
+            "https://www.qbitai.com/2026/05/424851.html"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "AI for investors - MLQ.ai",
+        "dek": "A perspective on key signals for AI investment from MLQ.ai's curated analysis.",
+        "details": [
+          {
+            "summary": "Investment framework for AI models",
+            "expanded": "MLQ.ai's article outlines a framework for evaluating AI investment opportunities. It emphasizes that investors should focus on model efficiency (cost per token), real-world deployment scalability, and the ability to generate proprietary data moats. The piece argues that the current hype around foundation models may fade, and the winners will be those who can bridge the gap between research breakthroughs and sustainable business models."
+          },
+          {
+            "summary": "Key signals for 2026",
+            "expanded": "The analysis identifies three signals for 2026: (1) the shift from training to inference economics, where inference cost becomes the primary competitive battleground; (2) the rise of vertical AI agents as a new software category; and (3) regulatory divergence between the US and EU creating arbitrage opportunities for startups."
+          }
+        ],
+        "why": "For product leaders and investors, MLQ.ai's framework offers a structured way to filter the noise: focus on unit economics and practical deployment, not just model benchmarks.",
+        "links": [
+          [
+            "Google News AI Models: AI for investors - MLQ.ai",
+            "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQVZRTGJKaFlDdjRPdGR5a0ZsS04zdUpGNTF5Yk9nUDJGenpfU0prTDZwbWc2UmpxMHlMSmk5Z3E4Wm54dkx6V3c5Zk5nRWNyU29COXUyU2xvQzU2UkVUN3BKN3llTWtqTzlzbHJSb0psdE4xQ3ZRbllzcUJVTy16ZjAxeW1reDFrWjhlODJQSXQ5YkRta0JvX2RjeHF0WjhtLXZZM3NaRkNfVkkyTHQzNTgxaHJpVWFDeHU0?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Goldman Sachs CEO: Concerns that AI will cause mass unemployment are 'overblown' - Moomoo",
+        "dek": "Goldman Sachs CEO David Solomon pushes back against fears of AI-driven job losses, arguing that historical parallels suggest technology creates more opportunities than it destroys.",
+        "details": [
+          "In a recent interview reported by Moomoo, Goldman Sachs CEO David Solomon dismissed concerns that artificial intelligence will lead to mass unemployment, calling them 'overblown.' Solomon pointed to historical precedents—such as the industrial revolution and the rise of the internet—where technological disruption ultimately created more jobs than it eliminated, even as specific roles were transformed or displaced.",
+          "Solomon acknowledged that AI will profoundly reshape the labor market, but emphasized that the net effect on employment is likely positive. He argued that workers will need to reskill and adapt, but that the pace of change will not cause a catastrophic spike in unemployment. His comments come as a counterpoint to more alarmist predictions from some economists and tech leaders who warn of widespread job losses from automation and generative AI.",
+          "The CEO's perspective carries weight given Goldman Sachs' deep involvement in financial markets and its own use of AI for trading, risk management, and client services. However, critics note that historical analogies may not fully apply to AI's ability to automate cognitive tasks across entire industries, and that the transition period could still be painful for many workers. The interview did not offer specific data or timelines to support the 'overblown' claim.",
+          "This is an opinion piece reflecting a prominent CEO's view, not a formal research report. It is useful for understanding a major Wall Street figure's stance on AI and employment, but should be weighed against opposing analyses from organizations like McKinsey or Oxford Economics that project significant job displacement in the coming decade."
+        ],
+        "why": "This view from the head of one of the world's largest investment banks provides a counter-narrative to widespread AI job-loss fears, which can influence investor sentiment and corporate AI adoption strategies. It also highlights the ongoing debate that product leaders and policymakers must navigate.",
+        "links": [
+          [
+            "Google News AI Views: Goldman Sachs CEO: Concerns that AI will cause mass unemployment are",
+            "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNLUNTSlhOckJ1ZmpBSUhyU2NqWWJndU05c0NnaXRBcHhLQVZOSWJVMjdfbmxMZllNb3RIa0dnZVk4SVd4TUVWSTVXVGFPZTVvaWN0ejZKa2NHeFpUalpoUWF1ZG5tb0ZKNHdRV2VXMjJ3R0RKX0IxdTFZWGNWakxhTWtQSlVPZXlHNHNWSnVkRXRPbGR0YUdmX25rdUhYZ1VLcDluT1Z0MEw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-26",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "AI Coding Agent: The New Blue-Collar Worker for Software Development",
+        "dek": "Understanding the product category behind Codex, Copilot, and a wave of developer tools that are reshaping how code is written.",
+        "details": [
+          "An AI coding agent is an AI-powered tool that autonomously generates, debugs, and refactors code based on natural language instructions or high-level specifications. Unlike simple autocomplete, these agents act as semi-autonomous programmers, capable of planning, writing tests, and even deploying software. They are built on large language models fine-tuned on massive code repositories, enabling them to understand context and produce working code across many programming languages.",
+          "Prominent examples include OpenAI’s Codex family, GitHub Copilot Chat, and Chinese products like Alibaba’s QoderWork (part of the Qwen Cloud suite). The technology is rapidly evolving: recent models can manage entire workflows—from project scaffolding to pull request generation—reducing the barrier for non-programmers and accelerating development cycles by 30–50% on routine tasks. However, challenges remain in code correctness, security, and the need for human oversight.",
+          "The rise of AI coding agents is transforming software development: it lowers the skill floor for entry-level tasks, but also raises questions about job displacement, code quality, and the changing role of developers toward architecting solutions rather than writing every line."
+        ],
+        "why": "For developers and product managers, AI coding agents represent a productivity multiplier that could halve time on boilerplate code, demanding new prompt engineering and code review skills. For investors, this category is a key battleground between Microsoft/OpenAI, Google, and Alibaba, with monetization through subscriptions and enterprise licensing.",
+        "links": [
+          [
+            "Alibaba Cloud launches Qwen Cloud with QoderWork (reference)",
+            "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYmdyXzdlQlV1YnBRQ1dnYUlhYVMtMzloOUpJOFNrLUpGNmg5QlNrblp5RzRpYXVhVnZWajRMM3RGMU04ZHlnNzZfbTRhbk03cFFjcllZeXlYQUx1WmZUcjRqUEdWTkxSaktkOGFWRFFvcjJmaV94cWxMYzdUeHR4c2xRNnh4WDlhZ1RhRjZ0SURzeUtzbm5EM25RZGc5UnFaQjA4amUwMFJPVXZlaTZFbjVWY08?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-05-26",
     "title": "AI Daily Atlas",
