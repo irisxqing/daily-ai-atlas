@@ -2028,6 +2028,231 @@ const archiveZh = [
     ]
   },
           {
+    "date": "2026-05-27",
+    "title": "AI Daily Atlas",
+    "meta": "2026年5月27日",
+    "headline": "AI 正在从“更强”走向“更可控、更可买单”",
+    "summary": "过去 24 小时里最清晰的信号有三条：一是巨头继续把 Agent 叙事往“能做事”推进；二是就业与组织结构的讨论从恐慌回到更现实的节奏；三是价格与合规开始成为同样重要的产品能力。今天的推荐更偏「能接进工作流」而不是「看起来很酷」。",
+    "tags": [
+      "头条",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "今天最值得知道的 4 件事",
+        "dek": "Agent、就业、合规、基础设施：四条线同时收紧。",
+        "details": [
+          "OpenAI 的 Sam Altman 公开表示，AI 目前并没有带来他曾担心的“白领岗位末日”，但社会与经济影响的路径依然复杂。",
+          "Google DeepMind 的 Demis Hassabis 把 2026 描述为 “AI agents 的一年”，重点从聊天转向在现实世界里完成任务。",
+          "内容溯源与合规正在变成平台标配：OpenAI 推出验证器（verifier）来识别 C2PA 签名内容，指向“可验证的真实”将成为新基建。",
+          "AI 的成本曲线继续下探：DeepSeek 被多家媒体转述确认把 V4‑Pro 的 75% 折扣做成“永久价”，价格战进入长期阶段。"
+        ],
+        "why": "把这四条线放在一起看，会发现 2026 年的竞争不只是谁模型更强，而是谁能把 Agent 做成可交付、把成本压到可规模化、把合规做成默认能力。",
+        "links": [
+          ["Reuters 转引：Altman 谈“jobs apocalypse”", "https://www.investing.com/news/economy-news/openais-altman-says-ai-unlikely-to-lead-to-jobs-apocalypse-4708791"],
+          ["Axios：Hassabis 谈 agents 与 AGI", "https://www.axios.com/2026/05/26/demis-hassabis-ai-agents-agi-2030-google"],
+          ["OpenAI：内容溯源与验证器", "https://openai.com/index/advancing-digital-content-transparency/"],
+          ["Computerworld：DeepSeek V4‑Pro 永久降价", "https://www.computerworld.com/article/4176713/deepseeks-steep-v4-pro-price-cut-escalates-ai-pricing-war-2.html"]
+        ]
+      },
+      {
+        "section": "今日重点",
+        "priority": "high",
+        "title": "Altman：AI 暂时没有带来“白领岗位末日”，但影响路径更复杂",
+        "dek": "从“恐慌式预测”回到“节奏、结构与再分配”。",
+        "details": [
+          "据 Reuters 转引报道，Altman 表示 AI 的快速发展和采用不太可能导致全球性的“jobs apocalypse”，并称现实中的白领岗位消失速度低于他先前担心的水平。",
+          "更值得注意的是他对“社会与经济影响”的措辞：不是否认冲击，而是把话题从“一次性崩塌”拉回到更长期的重构（岗位边界变化、组织再设计、生产率分配）。",
+          "如果你在做 AI 战略/转型，最实际的落点不是预测宏观失业率，而是把工作拆成任务：哪些任务会被自动化、哪些会被“人+AI”增强、哪些需要新角色（审核、数据治理、流程 owner）。"
+        ],
+        "why": "市场对“AI 会不会替代人”的争论正在变得更务实：真正决定你所在组织是否受益的，是有没有把 AI 接进流程、度量 ROI、并把风险（合规/隐私/幻觉）变成可管理的运营能力。",
+        "links": [
+          ["Reuters 转引原文（Investing.com）", "https://www.investing.com/news/economy-news/openais-altman-says-ai-unlikely-to-lead-to-jobs-apocalypse-4708791"],
+          ["Euronews 转述", "https://www.euronews.com/next/2026/05/26/no-ai-jobs-apocalypse-so-far-says-openais-sam-altman"],
+          ["El País（提到 IPO 背景）", "https://elpais.com/economia/2026-05-26/altman-open-ai-niega-ahora-un-apocalipsis-laboral-por-la-ia-me-alegra-haberme-equivocado.html"]
+        ]
+      },
+      {
+        "section": "今日重点",
+        "priority": "high",
+        "title": "Hassabis：2026 是 AI agents 的一年，重点从“会聊”转向“会做事”",
+        "dek": "Agent 叙事正在从 demo 走向任务交付与工具链。",
+        "details": [
+          "Axios 报道称，Hassabis 将 2026 描述为 AI agents 的关键年份，并把它和 AGI 时间表放在同一张叙事里，继续强化“能执行复杂任务”的路线。",
+          "对普通用户来说，Agent 的差别不是更会写，而是更会：理解上下文、拆解任务、调用工具、在多步骤里保持一致性并给出可审计的结果。",
+          "对企业来说，Agent 的关键约束往往不是模型能力，而是权限、数据访问、工具调用边界、失败回滚与评估体系。"
+        ],
+        "why": "当巨头把 Agent 定义为下一代交互入口，战略上你需要问两个问题：1）你所在业务的高频流程里，最先被 agent 化的步骤是哪几个？2）你能否把“工具调用 + 权限 + 评估”变成组织能力，而不是一次性项目？",
+        "links": [["Axios 原文", "https://www.axios.com/2026/05/26/demis-hassabis-ai-agents-agi-2030-google"]]
+      },
+      {
+        "section": "今日重点",
+        "priority": "官方更新",
+        "title": "OpenAI 推进内容溯源：推出验证器识别 C2PA 签名内容",
+        "dek": "从“打水印”走向“可验证的 provenance”。",
+        "details": [
+          "OpenAI 介绍了其在内容透明度上的进展：包括加入 C2PA 标准体系，并提供公开可用的 verifier 来识别带有 C2PA 内容凭证的素材。",
+          "这类能力的价值在于把“我说我是真的”变成“你可以独立验证我是真的”，对媒体、品牌、电商内容、客服知识库都更友好。",
+          "现实限制也要说清：签名覆盖率、平台支持、以及“被截屏/二次上传后凭证丢失”都会影响效果；但趋势很明确——合规与可验证性会从加分项变成门槛。"
+        ],
+        "why": "跨境电商和内容运营的一个隐性风险是：素材来源、授权与真实性。溯源工具一旦成为平台默认能力，你的内容链路（素材库、创作、发布、复用）会被迫更“可审计”。现在开始做资产管理和流程设计，成本最低。",
+        "links": [["OpenAI 官方", "https://openai.com/index/advancing-digital-content-transparency/"]]
+      },
+      {
+        "section": "投融资信息",
+        "priority": "capital signal",
+        "title": "AI 基建信号：IREN 从 Dell 购买 NVIDIA Blackwell GPU",
+        "dek": "算力供给链条继续重构：不仅拼芯片，也拼交付与采购能力。",
+        "details": [
+          "据 Reuters 转引报道，数据中心公司 IREN 将从 Dell 购买 NVIDIA Blackwell GPU，用于扩建其 AI 相关能力（交易细节以公司公告为准）。",
+          "把它当成“资本市场信号”更合理：Blackwell 的供应、交付周期和系统集成能力正在成为竞争壁垒；谁能更快拿到、更稳定跑起来，谁就能更快把算力卖出去。",
+          "对创业公司和企业买方来说，采购策略也会变化：从“找最强 GPU”转向“找最确定的交付 + 最可控的成本 + 最清晰的 SLA”。"
+        ],
+        "why": "模型价格在下降，但算力成本与交付约束仍在。未来一年 AI 项目的真实瓶颈，很可能不是“模型不够强”，而是“算力不够稳、成本算不清、上线周期太长”。",
+        "links": [["Reuters 转引原文（Investing.com）", "https://www.investing.com/news/stock-market-news/iren-to-buy-nvidia-blackwell-gpus-from-dell-in-396-million-deal-reuters-4709254"]]
+      },
+      {
+        "section": "开源项目",
+        "priority": "hot",
+        "title": "GitHub Trending：Understand‑Anything（把代码变成可探索的知识图谱）",
+        "dek": "用“可探索图谱 + 问答”把复杂代码库变成更可读的结构化地图。",
+        "media": {
+          "type": "image",
+          "src": "https://opengraph.githubassets.com/1/Lum1104/Understand-Anything",
+          "alt": "Understand-Anything GitHub preview",
+          "title": "GitHub preview",
+          "caption": "把任意代码转换成可搜索、可探索的知识图谱",
+          "href": "https://github.com/Lum1104/Understand-Anything"
+        },
+        "details": [
+          "它的核心价值不是“又一个总结器”，而是把代码库结构显式化：你可以从模块关系图出发，定位关键节点，再对具体文件/函数发问。",
+          "为什么突然火：Agent 编程时代，团队需要更快的 onboarding、更少的“知识只在老同事脑子里”，图谱化是更直观的组织方式。",
+          "适合谁：产品/战略/运营想快速读懂工程系统的人；以及需要做系统整合、平台治理的人。",
+          "短板/风险：图谱质量强依赖解析与索引；在超大仓库里，性能与噪声控制仍需验证。"
+        ],
+        "why": "你不必成为工程师才能做 AI 相关决策，但你需要更快理解系统边界与依赖。把“读代码”变成“读地图”，是更高 ROI 的学习路径。",
+        "links": [
+          ["GitHub Trending（Today）", "https://github.com/trending"],
+          ["Understand-Anything", "https://github.com/Lum1104/Understand-Anything"]
+        ]
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "工作流",
+        "title": "Vectorize：给 AI agent 的“跨会话记忆层”（model‑agnostic）",
+        "dek": "把记忆当成基础设施：跨工具、跨模型、可控地沉淀经验。",
+        "details": [
+          "Vectorize 的卖点是把 agent 的“经验”从聊天记录升级为可检索、可路由的结构化记忆，并且不绑定某个模型或客户端。",
+          "核心玩法可以理解为：把任务轨迹（tool calls、结果、决策）沉淀成长期记忆；下次遇到类似问题时按项目/实体/时间范围召回，减少上下文噪声。",
+          "适合谁：多 agent workflow、需要复用经验的增长/运营/研究团队；或同时用多家模型、想做统一记忆层的团队。",
+          "限制：记忆层本质上会变成你的“隐形数据库”，需要明确权限、数据来源与删除策略；否则会带来合规与信息污染风险。"
+        ],
+        "why": "2026 年一个被低估的趋势是：大家会越来越频繁“换模型”，但越来越不愿意“换记忆”。记忆层一旦绑定，你的迁移成本会比模型更高。",
+        "links": [["Vectorize 官网", "https://vectorize.io/"]]
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "电商/运营",
+        "title": "Doba Pilot：把选品、信号和执行串起来的 dropshipping 助手（升级）",
+        "dek": "更像“任务流”而不是“写文案”：从信号到动作的一体化尝试。",
+        "details": [
+          "Doba 在公告中介绍了对其 AI dropshipping 助手的升级，包括把外部市场信号（如 Amazon 数据、Google Trends）纳入更结构化的选品与机会评估流程。",
+          "对跨境业务的启发是：AI 工具如果只做“文案生成”，价值很快被平台内置功能吞没；更有护城河的是把数据、信号、任务拆解和执行闭环串起来。",
+          "适合谁：轻量化选品/上新节奏快、需要把机会发现与执行 SOP 化的小团队。",
+          "限制：公告属于公司 PR 口径，实际效果依赖数据覆盖、平台连接能力与运营场景匹配度。"
+        ],
+        "why": "如果你在做 AI 转型/增长，优先观察“能否把工作拆成可交付的 workflow”。在电商里，真正值钱的是节奏与执行，而不是一段更流畅的英文描述。",
+        "links": [["公告（GlobeNewswire）", "https://www.globenewswire.com/news-release/2026/05/22/3300113/0/en/Doba-Enhances-Doba-Pilot-an-AI-Dropshipping-Assistant-for-Product-Sourcing-and-Workflow-Automation.html"]]
+      },
+      {
+        "section": "机构报告",
+        "priority": "收藏",
+        "title": "机构报告速读：AI 支出加速，但“钱花在哪”比“花多少”更关键",
+        "dek": "一份支出预测 + 一份风险/治理视角，帮你把预算讨论落到可执行。 ",
+        "details": [
+          {
+            "summary": "Gartner（2026/05）：预计 2026 年全球 AI 支出将达到 2.59 万亿美元，同比增长 47%。",
+            "expanded": "这份 Gartner 新闻稿的价值不在于绝对数字（预测永远会被修订），而在于“支出结构”暗示的组织动作：预算更多会落在基础设施、平台化与规模化部署上，而不是孤立的 PoC。对战略与业务负责人来说，下一步不是再买一个 AI 工具，而是把数据、权限、流程、评估和人机协作方式变成可复用的操作系统。你可以用它来反推：你所在组织的预算正在流向哪里？是买 token、买算力、买咨询、还是在招一个能把用例跑通的人？",
+            "quote": "“Worldwide spending on AI is forecast to total $2.59 trillion in 2026, a 47% increase year-over-year.”",
+            "chart": ["Gartner 新闻稿页", "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026"]
+          },
+          {
+            "summary": "METR：整理多家前沿 AI 安全政策的共性组件（阈值、权重安全、部署缓解等）。",
+            "expanded": "METR 的材料更像一份“合规清单模板”：不同组织的 AI 安全政策看起来各写各的，但核心组件高度相似——能力阈值（什么水平算前沿）、模型权重安全（防泄露、防滥用）、上线前评估、上线后监控与缓解。对非技术背景读者，它的用法是：你不必写算法，但你可以用这类框架去推动组织把 AI 风险变成可管理的流程，尤其适用于客服、内容生成、金融合规等高风险场景。",
+            "quote": "“capability thresholds, model weight security, and deployment mitigations.”",
+            "chart": ["METR 主页（含 PDF 入口）", "https://metr.org/"]
+          }
+        ],
+        "why": "预算与治理正在一起变成“必答题”：能讲清楚钱花在哪、怎么度量收益、怎么把风险做成流程的人，会比“会写 prompt”更稀缺。",
+        "links": [
+          ["Gartner 新闻稿", "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026"],
+          ["METR", "https://metr.org/"]
+        ]
+      },
+      {
+        "section": "每日词条",
+        "priority": "学习",
+        "title": "Context Caching（上下文缓存）",
+        "dek": "把“重复的输入”缓存起来，下次命中就更便宜、更快。",
+        "details": [
+          "一句话解释：当你的请求前缀（系统提示词、长文档、工具说明等）重复时，服务端可以缓存这段上下文，下一次命中缓存就按更低成本计费或更快返回。",
+          "稍微深入一点：它不是“让模型更聪明”，而是降低每次调用都重新喂一遍长上下文的浪费；对 agent 工作流尤其重要，因为 agent 会反复调用同一套工具与规则。",
+          "和今天新闻的关系：价格战之所以能打很久，不只是降单价，也包括用缓存、路由、批处理等工程手段把真实成本压下去。",
+          "常见误解：缓存命中不等于结果一致；它只复用输入前缀，并不保证生成内容稳定。",
+          "工作里怎么用：把 SOP、品牌规则、合规条款做成稳定前缀，配合缓存与分层路由（贵模型只做关键步骤），能显著降低长期成本。"
+        ],
+        "why": "当 AI 进入“买单阶段”，你会发现工程细节决定 ROI。懂一点上下文缓存和路由策略，会让你在预算讨论里更有话语权。",
+        "links": []
+      },
+      {
+        "section": "今日学习",
+        "priority": "收藏",
+        "title": "Shopify：什么是 Agentic Commerce（以及为什么它会影响卖家）",
+        "dek": "一篇写得很直白的解释：当消费者在对话里购物，卖家需要如何准备。",
+        "details": [
+          "Shopify 解释了 agentic commerce 的核心：AI agent 可能替人完成发现、比较、问答、下单到售后的一串步骤。",
+          "文章也强调一个关键点：商家需要让品牌与商品信息“可被正确表示”，而不是依赖爬取到的过期信息。",
+          "对跨境团队的建议读法：把它当成“未来渠道变化”的提前预告，检查你的商品数据结构、素材授权、FAQ/政策与库存准确性。"
+        ],
+        "why": "Agent 正在把“入口”从搜索框变成对话。对卖家来说，最大的变化不是多了一个流量渠道，而是商品信息、政策与履约的标准化程度会直接影响转化。",
+        "links": [["Shopify 原文", "https://www.shopify.com/blog/how-agentic-commerce-works"]]
+      },
+      {
+        "section": "继续追踪",
+        "priority": "watch",
+        "title": "继续追踪：三条后续信号",
+        "dek": "今天的变化更像“趋势加速度”，后面要盯数据与落地节奏。",
+        "details": [
+          "Agent：大厂说“会做事”很容易，难的是上线后的失败率、回滚机制与评估指标，后面要看谁能把 agent 变成可运营系统。",
+          "合规：C2PA / verifier 这类能力能否被主流平台与媒体链路默认支持，决定它是不是“真正的新基础设施”。",
+          "价格：模型单价继续降，但真实成本可能向算力交付、延迟、SLA 与合规迁移。"
+        ],
+        "why": "如果你要做职业与能力建设，优先向“流程 owner + 评估 + 数据治理 + 合规”靠近，这些能力更抗模型迭代。",
+        "links": []
+      },
+      {
+        "section": "职业雷达",
+        "priority": "匹配",
+        "title": "AI Career Radar：更像“业务负责人”的 AI 角色正在增加",
+        "dek": "目标画像：战略+AI背景，熟悉跨境电商/零售平台业务，偏落地与增长/运营/产品转型。",
+        "details": [
+          "香港：Director, AI Product Strategy（保险集团/企业 GenAI 项目），强调商业路线图、ROI、用例组合与跨部门 adoption。",
+          "香港：AI Transformation Lead（偏落地/变革角色），适合把用例从 PoC 推到组织级部署的人。",
+          "零售/平台型企业：AI Business Partner（零售场景），通常需要能把业务问题拆成可交付用例，并与数据/工程团队共建。"
+        ],
+        "why": "这些岗位普遍在找一种“翻译能力”：把模型能力翻译成业务指标，把风险翻译成流程，把工具翻译成组织协作方式。",
+        "links": [
+          ["Director, AI Product Strategy（Hong Kong）", "https://www.pinpointasia.com/pinpointasia-jobs/director%2C-ai-product-strategy---insurance-group---j12585"],
+          ["AI Transformation Lead（Hong Kong）", "https://hk.indeed.com/viewjob?jk=4a94c78c56f10c1b"],
+          ["AI Business Partner - Global Retail（Hong Kong）", "https://www.robertwalters.com.hk/techtransformation/jobs/aidataanalytics/1883420-ai-business-partner---global-retail.html"]
+        ]
+      }
+    ]
+  },
+          {
     "date": "2026-05-25",
     "title": "AI Daily Atlas",
     "meta": "2026年5月25日",
@@ -6147,6 +6372,231 @@ const archiveEn = [
         "freshnessLabelZh": "",
         "freshnessLabelEn": "",
         "freshnessLabel": ""
+      }
+    ]
+  },
+          {
+    "date": "2026-05-27",
+    "title": "AI Daily Atlas",
+    "meta": "May 27, 2026",
+    "headline": "AI is moving from “stronger” to “controllable and worth paying for”",
+    "summary": "The clearest signals in the past 24 hours: big players keep pushing agents from chat demos toward real task delivery; the jobs conversation is cooling down into a more realistic timeline; and compliance + provenance are becoming product fundamentals. Today’s picks lean “workflow-ready” over “cool-looking.”",
+    "tags": [
+      "Headlines",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "4 things worth knowing today",
+        "dek": "Agents, jobs, provenance, and infrastructure constraints are tightening at once.",
+        "details": [
+          "OpenAI CEO Sam Altman said AI is unlikely to trigger a global “jobs apocalypse,” and noted white-collar displacement has been slower than he feared (via Reuters).",
+          "DeepMind CEO Demis Hassabis called 2026 “the year of AI agents,” shifting emphasis from chat to doing real-world work.",
+          "Provenance is turning into default infrastructure: OpenAI launched a public verifier for C2PA-signed content to support verifiable authenticity.",
+          "The price war is getting long-term: multiple outlets report DeepSeek is turning its 75% V4‑Pro discount into a new permanent price floor."
+        ],
+        "why": "Taken together, the 2026 competition is no longer only “who has the best model,” but “who can ship agents as deliverables, scale costs down sustainably, and make compliance a default feature.”",
+        "links": [
+          ["Reuters via Investing.com: Altman on “jobs apocalypse”", "https://www.investing.com/news/economy-news/openais-altman-says-ai-unlikely-to-lead-to-jobs-apocalypse-4708791"],
+          ["Axios: Hassabis on agents and AGI", "https://www.axios.com/2026/05/26/demis-hassabis-ai-agents-agi-2030-google"],
+          ["OpenAI: Digital content transparency + verifier", "https://openai.com/index/advancing-digital-content-transparency/"],
+          ["Computerworld: DeepSeek V4‑Pro permanent price cut", "https://www.computerworld.com/article/4176713/deepseeks-steep-v4-pro-price-cut-escalates-ai-pricing-war-2.html"]
+        ]
+      },
+      {
+        "section": "Top Stories",
+        "priority": "high",
+        "title": "Altman: no “white-collar jobs apocalypse” so far, but the pathway is messy",
+        "dek": "Less doom, more timeline + task decomposition + org redesign.",
+        "details": [
+          "Reuters (as syndicated) quoted Altman saying rapid AI adoption is unlikely to cause a global “jobs apocalypse,” and that white-collar job elimination has been slower than he previously feared.",
+          "The more useful framing is not “no impact,” but “different shape”: shifting task boundaries, new operating models, and new roles (review, governance, workflow ownership) as AI becomes embedded.",
+          "If you’re doing AI strategy, the practical move is to break work into tasks and track: automate, augment, or create-new-role—and measure ROI and risk in that language."
+        ],
+        "why": "The jobs debate is turning operational. Teams that can translate AI into workflow metrics (not vibes) will outperform teams that only buy tools.",
+        "links": [
+          ["Reuters via Investing.com", "https://www.investing.com/news/economy-news/openais-altman-says-ai-unlikely-to-lead-to-jobs-apocalypse-4708791"],
+          ["Euronews summary", "https://www.euronews.com/next/2026/05/26/no-ai-jobs-apocalypse-so-far-says-openais-sam-altman"],
+          ["El País (mentions IPO context)", "https://elpais.com/economia/2026-05-26/altman-open-ai-niega-ahora-un-apocalipsis-laboral-por-la-ia-me-alegra-haberme-equivocado.html"]
+        ]
+      },
+      {
+        "section": "Top Stories",
+        "priority": "high",
+        "title": "Hassabis: 2026 is the year of AI agents—chat → task delivery",
+        "dek": "The agent story is maturing into toolchains and operations.",
+        "details": [
+          "Axios reports Hassabis is positioning 2026 as a turning point for agents, closely tied to an AGI narrative.",
+          "For users, the gap is not “better writing,” but: context handling, task decomposition, tool calling, consistency across steps, and auditable outputs.",
+          "For enterprises, the hard parts are usually permissions, data access, tool boundaries, rollback, and evaluation—more than raw model IQ."
+        ],
+        "why": "When agents become the next interaction layer, the strategic edge is building org-level capability in tool calling + permissions + eval—not one-off demos.",
+        "links": [["Axios", "https://www.axios.com/2026/05/26/demis-hassabis-ai-agents-agi-2030-google"]]
+      },
+      {
+        "section": "Top Stories",
+        "priority": "Official update",
+        "title": "OpenAI: provenance moves forward with a public verifier for C2PA-signed content",
+        "dek": "From “watermarking” to verifiable authenticity signals.",
+        "details": [
+          "OpenAI describes its push on digital content transparency, including participation in the C2PA ecosystem and a verifier to detect C2PA Content Credentials.",
+          "The value proposition is simple: swap “trust me” for “verify it independently,” which matters for media, brands, and commerce content pipelines.",
+          "Limits still apply: coverage, platform support, and credential loss after re-uploads—but the direction is clear: provenance becomes table stakes."
+        ],
+        "why": "If your work touches content at scale (marketing, product pages, support knowledge), “auditable provenance” will reshape workflows and vendor requirements.",
+        "links": [["OpenAI", "https://openai.com/index/advancing-digital-content-transparency/"]]
+      },
+      {
+        "section": "Funding Watch",
+        "priority": "capital signal",
+        "title": "AI infrastructure signal: IREN to buy NVIDIA Blackwell GPUs from Dell (reported)",
+        "dek": "Supply, delivery, and integration are becoming moats—not just chips.",
+        "details": [
+          "Reuters (as syndicated) reports datacenter firm IREN will buy NVIDIA Blackwell GPUs from Dell; treat details as subject to the company’s filings/statement.",
+          "The bigger signal: Blackwell availability, delivery timelines, and systems integration capacity are now competitive bottlenecks.",
+          "Buyer behavior will keep shifting from “best GPU” to “most certain delivery + controllable cost + clear SLA.”"
+        ],
+        "why": "Model unit prices fall, but real constraints migrate to stable compute, latency, and operational reliability. That’s where many 2026 AI projects will get stuck—or win.",
+        "links": [["Reuters via Investing.com", "https://www.investing.com/news/stock-market-news/iren-to-buy-nvidia-blackwell-gpus-from-dell-in-396-million-deal-reuters-4709254"]]
+      },
+      {
+        "section": "Open Source",
+        "priority": "hot",
+        "title": "GitHub Trending: Understand‑Anything (turn codebases into explorable knowledge graphs)",
+        "dek": "A more visual way to onboard and reason about complex systems.",
+        "media": {
+          "type": "image",
+          "src": "https://opengraph.githubassets.com/1/Lum1104/Understand-Anything",
+          "alt": "Understand-Anything GitHub preview",
+          "title": "GitHub preview",
+          "caption": "Explore, search, and ask questions over a knowledge-graph view of code",
+          "href": "https://github.com/Lum1104/Understand-Anything"
+        },
+        "details": [
+          "It’s not just a summarizer: it makes structure explicit (modules → relationships → entry points), then lets you query from the graph down to files/functions.",
+          "Why it’s spiking: agentic coding makes onboarding speed and “shared system maps” more valuable than ever.",
+          "Who it’s for: anyone making product/strategy calls on top of large codebases, plus platform/integration owners.",
+          "Risk: graph quality depends on parsing/indexing; noise/performance in large repos still needs validation."
+        ],
+        "why": "You don’t need to become an engineer to lead AI work, but you do need to understand system boundaries. “Reading maps” beats “reading every file.”",
+        "links": [
+          ["GitHub Trending (Today)", "https://github.com/trending"],
+          ["Understand-Anything", "https://github.com/Lum1104/Understand-Anything"]
+        ]
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "workflow",
+        "title": "Vectorize: a model-agnostic memory layer for AI agents",
+        "dek": "Treat memory as infrastructure: cross-tool, cross-model, with control knobs.",
+        "details": [
+          "Vectorize positions itself as an agent memory layer with cross-session persistence, not tied to a single model or client.",
+          "The practical idea: turn agent traces (tool calls, outcomes, decisions) into structured long-term memory, then recall by project/entity/time scope to reduce context noise.",
+          "Best for: teams running multi-agent workflows across multiple model providers.",
+          "Constraint: memory becomes an invisible database—set permissions, provenance, and deletion rules early to avoid compliance and contamination issues."
+        ],
+        "why": "In 2026, teams will switch models more often, but switching memory is much harder. Memory layers create real lock-in—pick carefully.",
+        "links": [["Vectorize", "https://vectorize.io/"]]
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "commerce/ops",
+        "title": "Doba Pilot (upgrade): an AI dropshipping assistant that tries to close the loop",
+        "dek": "More “workflow” than “copywriting”: signal → decision → execution.",
+        "details": [
+          "Doba’s announcement describes upgrades to its AI assistant, including incorporating external market signals (e.g., Amazon data, Google Trends) into a more structured sourcing workflow.",
+          "The broader insight: tools that only generate text will be commoditized fast; tools that connect data + signals + task steps have a better moat.",
+          "Good fit: small teams with fast listing cadence that want SOP-like execution support.",
+          "Caveat: this is company PR; real value depends on integrations, data coverage, and workflow fit."
+        ],
+        "why": "For cross-border commerce, the value is cadence and execution. Evaluate AI tools by whether they reshape workflows—not whether they write prettier English.",
+        "links": [["Press release (GlobeNewswire)", "https://www.globenewswire.com/news-release/2026/05/22/3300113/0/en/Doba-Enhances-Doba-Pilot-an-AI-Dropshipping-Assistant-for-Product-Sourcing-and-Workflow-Automation.html"]]
+      },
+      {
+        "section": "Research Reports",
+        "priority": "Save",
+        "title": "Two reads for budget + governance: spend is rising, but “where it goes” matters more",
+        "dek": "A spending forecast plus a governance lens to turn debates into checklists.",
+        "details": [
+          {
+            "summary": "Gartner (May 2026): worldwide AI spending forecast to reach $2.59T in 2026 (+47% YoY).",
+            "expanded": "The value here isn’t the exact number (forecasts move), but what the spending mix implies: more budget will flow into infrastructure and scaled deployment, not isolated PoCs. Use it to reverse-engineer your org’s reality: are you spending on tokens, compute, services, or hiring a workflow owner who can actually ship? The most useful next step is building a reusable operating model: data access, permissions, evaluation, human-in-the-loop, and governance—then replicating across use cases.",
+            "quote": "“Worldwide spending on AI is forecast to total $2.59 trillion in 2026, a 47% increase year-over-year.”",
+            "chart": ["Gartner press release", "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026"]
+          },
+          {
+            "summary": "METR: shared components across frontier AI safety policies (thresholds, weight security, mitigations).",
+            "expanded": "Think of METR’s material as a policy-template checklist: different safety policies look unique, but they converge on a small set of recurring components—capability thresholds, model weight security, pre-deploy evals, post-deploy monitoring, and mitigation playbooks. Even without a technical background, you can use this to push for an operational risk process in high-stakes workflows (support, content, compliance).",
+            "quote": "“capability thresholds, model weight security, and deployment mitigations.”",
+            "chart": ["METR home (links to PDFs)", "https://metr.org/"]
+          }
+        ],
+        "why": "Budget and governance are becoming one combined exam. The rare talent is translating AI capability into ROI metrics and turning risk into operating processes.",
+        "links": [
+          ["Gartner", "https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026"],
+          ["METR", "https://metr.org/"]
+        ]
+      },
+      {
+        "section": "AI Term",
+        "priority": "Learn",
+        "title": "Context caching",
+        "dek": "Cache repeated input prefixes so future calls get cheaper and faster.",
+        "details": [
+          "One-liner: when the same prefix (system prompt, long docs, tool specs) repeats, providers can cache it and charge less (or respond faster) on cache hits.",
+          "A bit deeper: it doesn’t make the model smarter; it reduces wasted re-sending of long context—especially important for agent workflows.",
+          "Why it matters today: price wars aren’t just about list prices; they’re also about caching, routing, batching, and real infrastructure efficiency.",
+          "Common misconception: a cache hit doesn’t guarantee identical outputs; it only reuses input prefixes.",
+          "How to use at work: stabilize your SOP/policy/tooling prefix, then combine caching with routing (expensive models only for critical steps) to cut long-run costs."
+        ],
+        "why": "Once AI hits the “paying stage,” engineering details decide ROI. Knowing caching + routing makes you more effective in budget conversations.",
+        "links": []
+      },
+      {
+        "section": "Learning Picks",
+        "priority": "Save",
+        "title": "Shopify: What agentic commerce is (and what merchants should do now)",
+        "dek": "A plain-English explainer on conversational shopping and preparedness.",
+        "details": [
+          "Shopify defines agentic commerce as agents helping customers discover, compare, ask questions, purchase, and get support across a workflow.",
+          "A key point: merchants need product and policy information to be represented accurately—rather than relying on scraped, stale data.",
+          "Use it as a “future channel shift” checklist: product data structure, asset licensing, FAQ/policies, and inventory accuracy."
+        ],
+        "why": "As the entry point shifts from search boxes to conversations, standardization of product info and operations becomes directly tied to conversion.",
+        "links": [["Shopify", "https://www.shopify.com/blog/how-agentic-commerce-works"]]
+      },
+      {
+        "section": "Watchlist",
+        "priority": "watch",
+        "title": "What to watch next (3 signals)",
+        "dek": "This is acceleration, not a single turning point—watch the operating metrics.",
+        "details": [
+          "Agents: the real test is failure rate, rollback, evaluation metrics, and operations—not demos.",
+          "Provenance: does C2PA + verifier become default across platforms and media workflows?",
+          "Pricing: list prices drop, but real constraints migrate to delivery, latency, SLAs, and compliance."
+        ],
+        "why": "For career leverage, build toward workflow ownership + evaluation + data governance + compliance. These skills outlast model cycles.",
+        "links": []
+      },
+      {
+        "section": "Career Radar",
+        "priority": "fit",
+        "title": "Career Radar: more “business-owner” flavored AI roles are showing up",
+        "dek": "Target profile: strategy + AI, familiar with cross-border commerce/retail, focused on delivery and growth/ops/product transformation.",
+        "details": [
+          "Hong Kong: Director, AI Product Strategy (enterprise GenAI initiative) — commercial roadmap, ROI, use-case portfolio, adoption.",
+          "Hong Kong: AI Transformation Lead — push use cases from PoC to org-level deployment.",
+          "Retail/platforms: AI Business Partner — translate business problems into shippable use cases with data/engineering teams."
+        ],
+        "why": "These roles hire for translation: capability → metrics, risk → process, tools → operating model.",
+        "links": [
+          ["Director, AI Product Strategy (Hong Kong)", "https://www.pinpointasia.com/pinpointasia-jobs/director%2C-ai-product-strategy---insurance-group---j12585"],
+          ["AI Transformation Lead (Hong Kong)", "https://hk.indeed.com/viewjob?jk=4a94c78c56f10c1b"],
+          ["AI Business Partner - Global Retail (Hong Kong)", "https://www.robertwalters.com.hk/techtransformation/jobs/aidataanalytics/1883420-ai-business-partner---global-retail.html"]
+        ]
       }
     ]
   },
