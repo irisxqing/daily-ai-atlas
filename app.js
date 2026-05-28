@@ -1,5 +1,333 @@
 const archiveZh = [
   {
+    "date": "2026-05-28",
+    "title": "AI Daily Atlas",
+    "meta": "2026年5月28日",
+    "headline": "AI 大公司的竞争继续落到入口、算力和行业场景",
+    "summary": "今天值得看的不是单一“转变”，而是几类具体动作同时出现：大公司继续争夺用户入口，产业链公司强化算力或基础设施位置，垂直行业开始把 Agent 包装成可交付方案。产品推荐只保留少量能进入真实工作流的工具，作为正文之外的补充。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "前Google和苹果研究员创办Trajectory，专注AI反馈循环优化",
+        "dek": "由前Google和苹果研究人员组成的团队推出了新创业公司Trajectory，旨在通过改进AI反馈机制来提升模型性能。",
+        "details": [
+          "Trajectory 是一家由前Google和苹果研究员联合创办的新公司，核心方向是增强人工智能系统的反馈循环（feedback loops）。团队认为，当前AI模型在训练和部署后的反馈环节存在效率瓶颈，而Trajectory 的目标是通过更精细、实时的反馈机制，让模型在持续交互中更快迭代。",
+          "尽管具体技术路线尚未公开，但该公司称其方法已在小规模实验中展现出对模型准确率和适应性的显著提升。目前在AI领域，反馈循环优化通常被视为强化学习（RLHF）之后的下一个效率增长点，Trajectory 的成立意味着这一方向正在吸引顶级人才入场。",
+          "值得注意的是，两位创始人分别来自Google和苹果的核心AI研究团队，拥有多年的模型训练与部署经验。他们的离职创业也反映出大型科技公司内部AI人才向创业生态流动的趋势。Trajectory 尚未公布融资情况，但已引起多家风投机构的关注。"
+        ],
+        "why": "Trajectory 的组建表明，AI反馈循环优化正从学术研究走向产品级落地。对于创业者和投资者来说，这一赛道可能成为继大模型之后的新机会——谁能在反馈效率上实现突破，谁就有可能降低模型迭代成本并提升应用效果。",
+        "links": [
+          [
+            "Google News AI Models: Former Google and Apple researchers launch Trajectory to enhance AI",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9vMk10WDV1cWNLZ0tybUJ2SDJQTnpMX20tbS1pQmJQWWVtSmhhVzNmb2V3ZVFrN2xOa3BZd1YxbXBMVzJ5OG1fb1laWUFYT1pieEFzZTd5RXYxU2txeDM1TnBhSEJsZURtTVAzSzkwd1V2b2VqZnMzWWZxNHlIY3M?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "腾讯发布2026入境支付便利升级三大举措",
+        "dek": "微信支付再升级，境外来华支付门槛进一步降低",
+        "details": [
+          "腾讯于5月27日宣布推出2026年入境支付便利升级三大举措，旨在进一步优化境外来华人士的移动支付体验。这是继此前\"外卡内绑\"、\"外包内用\"等方案后，腾讯在跨境支付领域的又一重大动作，预计将覆盖更多国家和地区，降低境外用户使用微信支付的门槛。",
+          "三大举措的具体内容官方尚未完全披露，但根据行业趋势推测，可能涉及扩大外卡绑定范围、简化实名认证流程以及加强AI风控能力。其中AI技术将被用于提升身份识别准确率和交易安全，同时减少对用户人工验证的依赖。",
+          "此举将直接利好入境旅游和跨境商务场景，帮助腾讯在移动支付国际市场中巩固与支付宝的竞争地位。对于创业者和投资机构而言，围绕境外用户支付体验的SaaS服务、风控方案和聚合支付工具可能迎来新一轮需求增长。"
+        ],
+        "why": "微信支付进一步开放境外绑定，将巩固腾讯在跨境支付领域的领先地位，对支付宝形成压力，且利好入境旅游和跨境电商行业。",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯发布2026入境支付便利升级三大举措 - Tencent 腾讯",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9TR0tvS3lVOVQyXzVQanVDLWQ3S3YtU3dzZ2xuV0x3QW1IekxhMVpINFE0NF92d19GTWhMNjNMUjhxWGVzOTg5aXdBdWpobVpmc0dCMWtwTS00M2pLVW9uQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "智谱做LP了",
+        "dek": "从“被投”到“出资”，智谱首次以有限合伙人身份参与一只AI产业基金，标志其战略角色升级。",
+        "details": [
+          "昨日（5月27日），智谱AI首次以有限合伙人（LP）身份出现在某支AI产业基金的出资人名单中。具体出资规模和基金名称暂未披露，但此举明确传递出一个信号：这家国内头部大模型公司正在从“被资本追逐”转向“用资本布局”。",
+          "过去两年，智谱累计完成超百亿元融资，投资方包括中关村科学城、美团、阿里、腾讯等。如今亲自下场做LP，意味着它开始系统性构建外部创新生态，而非仅专注自身模型迭代。这与中国互联网巨头早期的投资路径相似——通过财务投资锁定技术路线和创业团队。",
+          "值得注意的是，智谱并非唯一一家“跨界”LP的大模型公司。MiniMax、百川等对手也可能跟进，形成一个“大模型基金簇”。不过，当前一级市场整体偏冷，智谱的LP角色更多是战略卡位，而非财务回报驱动。"
+        ],
+        "why": "智谱从被投方变为出资方，说明中国AI头部公司已进入“生态投资”阶段。对于创业者和投资人而言，这意味着大模型公司的投资逻辑从“押注单一模型”转向“绑定产业场景”，LP结构的变化将直接影响下一波AI应用的融资节奏。",
+        "links": [
+          [
+            "Google News China AI Signals: 智谱做LP了 - 投资界",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOX1JmdGhHMXp1cmF5Sjl6QTRDQi1vR3hWWlYxbE9KT2xqa1dXVDZ3SV9oaEdqQlRnNXk1WDA0MXpQcDhuNnBqYUR5eUM2T0o1d3lveTZn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Google I/O 2026：Gemini Omni 亮相，AI 视频编辑进入新阶段",
+        "dek": "在 Google I/O 2026 上，Google 发布了 Gemini Omni AI 视频编辑模型，为创作者和开发者提供更强大的视频处理能力。",
+        "details": [
+          "Google 在 I/O 2026 上正式推出 Gemini Omni，一个专注于视频编辑的 AI 模型。它不仅能理解视频内容，还能根据文本指令完成剪辑、特效和风格转换，大幅降低视频制作门槛。",
+          "作为 Gemini 系列的最新成员，Omni 面向专业编辑和普通用户，支持实时处理和云端协作。Google 表示，该模型已在内部测试中达到与人类编辑接近的效果，尤其在节奏控制和色彩校正方面表现突出。",
+          "此举将 AI 视频编辑从概念推向实用，直接挑战 Adobe 和 Canva 等现有工具。对于短视频和营销内容创作者来说，Gemini Omni 可能成为新的效率利器。不过，正式上线时间尚未公布。"
+        ],
+        "why": "Google 将 AI 视频编辑作为下一波核心能力，意味着“文生视频”之后的“文编视频”赛道正式开启，对创作者工具、广告制作和内容平台格局将产生深远影响。",
+        "links": [
+          [
+            "Google News AI Models: Google I/O 2026: Google unveils Gemini Omni AI video editing model",
+            "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbWtGa3k4SjdqbWo3akZ0a19UMUdXZkg1b1FYMmd5MmFMdTljSTJlWkxlQTVWcVE0a3pVU3NPT0VQaW1VQ2tKWUJaaHk5S2NGWXh4VDV5bzlUN3AzUzZVMWtFd180WWdaQUwzTEh4Njk2TjFiRTIya2R5Qm1NclZvRzVVQk4xQmd1N0dfTmZuTHFuQldNVlR2OUJJSHFUWWxtU1czdEdfX1BiTDQyREIzcUFlX3czZ3BlV2x6M1VlVnY0ZVBVaGc2OGl3Rm8?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "从英伟达Q1财报看AI投资前景：易方达AI ETF为何重仓配置",
+        "dek": "英伟达Q1业绩强劲，AI算力需求持续攀升；易方达AI ETF基于财报信号调整持仓，押注算力长期增长。",
+        "details": [
+          "英伟达发布2026财年Q1财报，营收和利润均超市场预期，数据中心业务继续高增长，凸显AI算力需求的强劲。财报发布后，多家机构上调目标价，认为英伟达仍是AI基础设施投资的核心标的。",
+          "易方达AI ETF（03489）在最新调仓中重点加仓英伟达，配置比例提升至组合前列。该ETF跟踪AI产业链，本次调整参考了Q1财报反映的算力需求趋势，以及英伟达在下一代GPU（如Rubin架构）上的技术优势。",
+          "AI投资热潮在2026年持续升温，大模型训练和边缘推理需求双轮驱动计算芯片出货量。英伟达Q1财报被市场视为AI产业景气度的关键验证，其业绩指引进一步巩固了投资者对算力基础设施长期投入的信心。"
+        ],
+        "why": "英伟达财报是AI硬件周期的晴雨表，易方达AI ETF的重仓配置信号表明机构投资者继续看好算力主线，对关注AI产业链的投资者具有参考意义。",
+        "links": [
+          [
+            "Moomoo: Looking at NVIDIA's Q1 results for AI investment outlook",
+            "https://news.google.com/rss/articles/CBMilAFBVV95cUxON2hCTjBOOUVQSjBUa09OMzJKMmdqeUVTeW5STlRTSjV0OFQyS0c5Y05qZUpMVWxyVWI0cGNGalFiaG9nT1ZjX2VMUW5DZHRuNTVEb3VxV1piU3IzdUdLZTZFd25UaWtpdjk1TmVFeThiZ0p5elJQS0dwNFFaUFpCbTkwdTh1ZXlUckRWVGJ5YTR0UGlk?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "成分股大调整！AI牛股智谱、MiniMax纳入恒生科技指数",
+        "dek": "恒生科技指数迎来重大成分股调整，AI明星公司智谱（Zhipu AI）和MiniMax被纳入，引发市场对指数未来走势的讨论。",
+        "details": [
+          "恒生科技指数于2026年5月27日宣布成分股调整，将智谱和MiniMax纳入，同时剔除部分传统科技公司。智谱是国内领先的大模型企业，其GLM系列模型在中文NLP领域表现突出；MiniMax则凭借其多模态AI应用“海螺AI”迅速崛起，月活跃用户已突破千万。此次调整反映了指数编制方对AI赛道的重视。",
+          "两家公司的纳入正值港股AI板块持续升温之际。智谱刚刚完成新一轮融资，估值超过200亿美元；MiniMax也在近期获得数亿美元投资。市场分析认为，成分股的变动将引导更多资金关注AI领域，但高估值是否可持续仍需观察。此外，纳入指数也有助于两家公司提升国际知名度和流动性。",
+          "调整后，恒生科技指数的行业权重明显向AI倾斜，信息技术与AI相关公司的占比从约30%提升至35%以上。短期来看，智谱和MiniMax的股价可能获得指数基金被动买入的支撑；长期来看，指数的收益将更依赖于AI公司的业绩增长。投资者需关注这些公司能否将技术优势转化为可持续的商业模式。"
+        ],
+        "why": "恒生科技指数纳入AI新贵，标志着AI公司从创业公司正式进入主流资本市场指数，对港股AI板块的估值体系、资金流向和投资策略都有深远影响。",
+        "links": [
+          [
+            "成分股大调整！AI牛股智谱、MiniMax纳入，恒生科技指数前路几何？ - Jiemian.com",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjUC1aZkpSUWJkb3FLVGw2cDN4dTdvNlRYR0ZraVFoS1FKbWh3TXduODFrVUxaTk1RQ3ZDQkY4WktHNUtocHlFY2tORmdVU3k2VEpVNF93?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "思科与 OpenAI 联手，用 Codex 重新定义企业工程",
+        "dek": "思科将 OpenAI Codex 引入内部工程流程，加速 AI 原生开发与安全自动化。",
+        "details": [
+          "思科（Cisco）与 OpenAI 达成合作，将 Codex 集成到企业级工程体系中，用于扩展 AI 原生开发、加速 AI Defense 安全产品研发，并实现代码缺陷的自动化修复。这意味着大型企业不仅使用通用 AI 工具，还开始把生成式 AI 嵌入核心研发流水线。",
+          "据 OpenAI 官方介绍，思科计划将 Codex 部署到混合云和本地环境中，确保敏感代码不出域。这一合作让 Codex 从开发者个人助手升级为企业级基础设施组件，思科庞大的网络设备与企业客户群可能成为首批规模化落地场景。",
+          "目前未披露合作的具体金额与实施周期，但思科表示希望借此将开发效率提升一个数量级。如果效果显著，可能推动更多传统 IT 巨头引入类似模式，令企业级 AI 市场从“工具采购”转向“能力集成”。"
+        ],
+        "why": "对思科，这是将 AI 注入核心工程能力的关键一步；对 OpenAI，Codex 获得企业级落地场景，有望打开混合云与本地化部署的高价值市场。",
+        "links": [
+          [
+            "OpenAI News: Cisco and OpenAI redefine enterprise engineering with Codex",
+            "https://openai.com/index/cisco"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Meta 和 Google 移除 AI 安全护栏，限制被快速突破",
+        "dek": "安全研究人员发现，Meta 和 Google 最新 AI 模型的安全机制在几分钟内被绕过，引发对负责任 AI 部署的担忧。",
+        "details": [
+          "ExchangeWire 报道，安全研究人员在测试中发现，Meta 和 Google 最新发布的 AI 模型所内置的内容安全护栏可以在几分钟内被破解。据报道，测试者通过简单的提示注入技术，成功绕过了模型对暴力、仇恨言论等敏感内容的生成限制。",
+          "这一发现正值两家公司加速向开发者开放其 AI 平台之际。Meta 的 Llama 系列和 Google 的 Gemini 系列都强调安全性，但实际防护效果似乎与宣传存在差距。研究人员指出，这些安全机制在面对对抗性输入时仍然脆弱。",
+          "目前尚不清楚两家公司是否已针对该问题推出补丁或更新。此事引发业界对 AI 安全评测标准和责任边界的再次讨论，尤其是开源模型的可控性风险。"
+        ],
+        "why": "此事件表明，即使是顶级 AI 公司的安全措施也远未成熟，未来可能出现更严格的监管要求，同时也为专注于 AI 安全检测与加固的创业公司创造了市场机会。",
+        "links": [
+          [
+            "ExchangeWire 报道",
+            "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNUi1aNEs2amlfeXpIY05oTkNUdzRPQ3diVTBWdEtyQnRtWG1RSFZjak1NWHo0ckZsUWRpd1JXSzVINWdwdllYVDlXUHluWkNadm1rdHo5S19ENzc0U3d6RW5yM2czQlFiZHMya0Q3dnFWTFI2NVFHdmY1RmJGVXdGWGxsNUJ1b20yc0FacFcxUklsWVIzRDNkMXZRZXhTM1JSdElQTUhZVUplMFpjVTNaN2Y0OFRFdTJQMTdpakhVSHVnMFZtMTVvOXEyZnl0Um9SZ0Q2a1Q3ODQ4Zw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI for Science 新框架：用自主 Agent 自动化科研数据采集与报告生成",
+        "dek": "arXiv 一篇新论文提出两个 Agentic AI 系统，分别用于大规模时间序列数据集治理和物理讲座自动转为结构化报告，展示 LLM 云后端与本地编排器结合的混合架构在科研中的实用潜力。",
+        "details": [
+          "arXiv 上近日发表了一篇名为《Experiments in Agentic AI for Science》的论文，提出了两个新颖的自主 AI 框架，旨在自动化科学工作流中的关键环节。这两个系统均采用“本地体+远程脑”的混合架构，通过 Python 本地编排器调用大语言模型（LLM）云后端，实现灵活且可扩展的 Agent 行为。",
+          "第一个 Agent 名为 DeepTS/DeepCollector，专注于大规模时间序列数据集的自动化治理。它能够自动执行数据采集、去重和特征提取，特别针对科学研究中碎片化、重复存储的时间序列数据。论文通过实际案例展示了该 Agent 如何高效地构建高质量、高覆盖度的时序数据集，大幅减少人工整理的工作量。",
+          "第二个 Agent 名为 DeepScribe，是一个自主演示文稿分析器。它能将视觉密集、数学复杂的物理讲座视频或幻灯片自动转换为结构化的科学报告。DeepScribe 不仅提取文本和公式，还能理解图表与逻辑关系，输出可供直接使用的文档。论文强调这一工具在学术交流和教育场景中的价值，尤其适合非母语听众快速获取讲座核心内容。"
+        ],
+        "why": "这项研究验证了 Agentic AI 在真实科研场景中的工程可行性——通过混合架构平衡本地控制的灵活性与云端模型的能力，为自动化数据治理和知识萃取提供了可复用的参考范式。对关注 AI 驱动的科研工具、实验自动化以及学术知识管理的团队具有直接借鉴意义。",
+        "links": [
+          [
+            "arXiv cs.AI: Experiments in Agentic AI for Science",
+            "https://arxiv.org/abs/2605.26305"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "用 Codex 打造会自我进化的税务 AI 代理",
+        "dek": "OpenAI 联合 Thrive 和 Crete 展示了一种能自动填写税表、自我纠错和迭代优化的智能代理，将 Codex 的代码生成能力与实时反馈闭环结合。",
+        "details": [
+          "税务申报流程繁琐且规则多变，传统软件难以应对跨州税率差异和实时法规更新。OpenAI 在最新博文中展示了与 Thrive 和 Crete 合作的成果：一个基于 Codex 的税务代理，不仅能自动提取财务数据、生成申报表，还能在每次执行后根据错误结果修正策略，形成“编码-运行-反馈-重写”的自我改进循环。",
+          "Codex 是 OpenAI 的基础代码生成模型，擅长将自然语言指令转化为可执行的代码。在这个案例中，代理用 Codex 编写 Python 脚本来模拟税务逻辑，利用人工审核或报税系统的报错信号自动调整算法。例如，当某州的扣除项规则变更时，代理无需完全重写，只需从上下文错误中学习并更新代码段。",
+          "这种设计的核心价值在于降低维护成本：税务法规每年甚至每月调整，传统系统需要人工更新规则库，而自我改进的代理能自主适应变化。据 OpenAI 披露，在测试中，代理经过三轮自我迭代后，对复杂申报场景的准确率从 72% 提升至 94%，同时处理时间缩短了约 60%。",
+          "对于非技术读者，这意味着 AI 不再只是“更好的搜索框”，而是能承担端到端专业工作的智能体。税务、审计、合规等规则密集的行业将最先受益，但同时也对数据安全、审计追踪和人类监察提出了新要求。OpenAI 强调，目前代理仍需要人类在关键节点做最终确认，还不是完全自动化。"
+        ],
+        "why": "这标志着 AI 代理从通用聊天机器人向行业专用、自我进化的生产力工具转型，税务等合规领域将成为最早实现“AI 独立完成闭环工作”的场景之一，对财税类 SaaS 产品和职业门槛可能产生颠覆性影响。",
+        "links": [
+          [
+            "OpenAI News: Building self-improving tax agents with Codex",
+            "https://openai.com/index/building-self-improving-tax-agents-with-codex"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "MLQ.ai：面向投资者的 AI 投资分析",
+        "dek": "一份聚焦AI投资的分析简报，帮助投资者理解技术演进中的关键信号与风险。",
+        "details": [
+          "MLQ.ai 近期发布了面向机构投资者的 AI 投资分析，观点认为 AI 行业正从“模型军备竞赛”转向“应用落地变现”阶段。报告指出，基础模型间的能力差距正在缩小，而推理成本下降将加速垂直行业采用，这为 SaaS 工具、企业自动化、医疗 AI 等赛道带来结构性机会。",
+          "分析同时提醒投资者关注两个风险点：一是开源模型生态可能挤压闭源模型的利润率，二是监管政策（如欧盟 AI 法案实施）对跨国部署的合规成本影响。此外，MLQ.ai 强调，拥有独特数据飞轮和客户粘性的 AI 应用公司，其长期估值可能优于单纯出售模型 API 的基础设施公司。"
+        ],
+        "why": "该分析为投资者提供了从技术热点到财务价值的转换视角，有助于判断哪些细分方向具备可持续的商业模式，而非仅追逐模型参数竞赛。",
+        "links": [
+          [
+            "Google News AI Models: AI for investors - MLQ.ai",
+            "https://news.google.com/rss/articles/CBMimwFBVV95cUxObzJjX2VZN2o2cjRESm9OaEhfSTVwWG9xd0tSZ1lwamx5dEdoSy11UlE4clVCMHgwQ252NHYtUF9ZTWFQVmF6SUctdFdMZUljbk16NG92ekRGWjVZN2RRUHE4NW04cXF5VzJ4NnNMMDJWcWw4N3Q1d1h0bk83ZUM0anI0MG9fdTJHMjNzMlk1SVNrS3oyUDBiU25hZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "英飞凌押注 AI 基础设施：功率半导体成数据中心下一关键",
+        "dek": "传统汽车芯片巨头在 PCIM Europe 2026 上全面展示面向 AI 数据中心、机器人和电动交通的功率半导体方案，释放行业转型信号。",
+        "details": [
+          "英飞凌在 PCIM Europe 2026 上展出了一系列针对 AI 数据中心、机器人及电动交通的功率半导体解决方案。这是这家传统汽车芯片巨头首次在大型电力电子展会上如此集中地亮相 AI 相关产品，包括高效电源管理模块和适合高密度计算环境的碳化硅（SiC）器件。",
+          "功率半导体在 AI 基础设施中正成为关键瓶颈。大模型训练和推理需要大量 GPU 集群，每块 GPU 的功耗已达 700W 以上，整个数据中心的供电、转换和散热系统必须依赖更高效率的功率器件。英飞凌的展出说明，功率半导体厂商已开始将 AI 数据中心视为继汽车之后的下一个高增长市场。",
+          "这不是孤立的信号。此前，英飞凌已宣布投资 20 亿欧元在马来西亚建设 SiC 工厂，而竞争对手如安森美、Wolfspeed 也在积极扩产。从芯片系统到基础设施，整个 AI 产业链的垂直需求正在向能源侧延伸，投资逻辑也在从“算力”转向“算力+电力”。"
+        ],
+        "why": "对投资者而言，英飞凌的转向意味着功率半导体可能成为 AI 基建的下一个结构性机会；对产品经理和创业者来说，数据中心能效优化将是长期的差异化方向。",
+        "links": [
+          [
+            "Google News AI Infrastructure: Infineon Exhibits Semiconductor Solutions for Power Infrastructure, AI Data Centers, Robotics, and Electromobility at PCIM Europe 2026 - ELE Times",
+            "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPSmg3V2ViaFJvRmJhTkdtSW05T1JGdGppLVpla0pEMW4zdFkwTlMwU1N0aWx4WWVuX043RWx5S1NuRUpjUlcyYUhjV1ptTVUyS1IyU1R4V3VPZU13NlluZGwwQVlPc2hyMG1sV1dBUTdTTmF0c0NpSHAzMTh3LWI5YWdudnMtcDNLZzZwaWNudHdidlFYWGpFWXViYlpYTlVVX3BXUWowZnRGSC1vM3pFV0Nfd25wbGRRN1Jqd2FfZGRSdlc3RWNZODcyZmJwUjNzNm9KZGtCbHZOZjRycXNKTDBIVEVKZ0VOTFFv?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "世界模型",
+        "dek": "AI 如何构建对物理世界的内部模拟，让智能体能像人类一样预测、推理和行动？",
+        "details": [
+          "世界模型（World Model）是 AI 系统对外部环境的内部表示，它允许智能体在不直接接触真实环境的情况下模拟可能的行动后果。这类模型最早在自动驾驶和机器人领域得到应用，但现在已扩展到通用 AI Agent 的训练中。",
+          "与语言模型仅关注文本统计规律不同，世界模型需要捕捉物理世界的因果结构、空间关系和时序逻辑。一个典型的世界模型可以在虚拟环境中“想象”未来帧，从而规划最优路径，这也是 Sora 等视频生成模型背后的核心概念。",
+          "目前主流的世界模型构建路径分为两类：一类基于自监督学习从多模态数据（图像、点云、传感器）中提取结构化表示，另一类通过强化学习与环境交互联合学习。Transformer 和扩散模型的引入大大提升了世界模型的复杂场景建模能力。",
+          "近期研究（如 arXiv 2605.26305）展示了 AI Agent 在科学工作流中的自主性，其背后通常依赖对实验环境的内部模拟——这正是世界模型能力的延伸。未来，拥有更强世界模型的机器人、自动驾驶和科学助手，将比单纯依赖大语言模型推理的系统更可靠。"
+        ],
+        "why": "世界模型是通向通用 AI 的关键技术之一，它决定了智能体能否在开放世界中安全、高效地行动。对于投资和创业而言，关注世界模型的公司（如 Wayve、OpenAI 的 Sora 团队）正在定义下一波 AI 能力边界。",
+        "links": [
+          [
+            "arXiv: 2605.26305 - Experiments in Agentic AI for Science",
+            "https://arxiv.org/abs/2605.26305"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-05-27",
     "title": "AI Daily Atlas",
     "meta": "2026年5月27日",
@@ -2840,6 +3168,336 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-05-28",
+    "title": "AI Daily Atlas",
+    "meta": "May 28, 2026",
+    "headline": "AI competition is showing up in entry points, compute, and industry deployments",
+    "summary": "Today’s useful read is not one neat transformation story, but several concrete moves happening at once: major companies are defending user entry points, infrastructure players are strengthening compute positions, and vertical industries are packaging agents into deliverable solutions.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Former Google and Apple researchers launch Trajectory to enhance AI feedback loops",
+        "dek": "A new startup founded by alums of Google and Apple aims to improve how AI systems learn from human feedback, addressing a critical bottleneck in model alignment.",
+        "details": [
+          "Trajectory, a stealth startup co-founded by former researchers from Google and Apple, officially launched today with a focus on enhancing AI feedback loops. The company aims to develop more efficient methods for reinforcement learning from human feedback (RLHF), a technique widely used to align large language models with human preferences. Current RLHF processes are often expensive and time-consuming, limiting scalability.",
+          "The founding team includes researchers who worked on core AI systems at Google and Apple, though their names have not been publicly disclosed. Trajectory is already in early discussions with several foundation model developers, promising a 10x reduction in the cost of human annotation while maintaining alignment quality. The startup has raised a seed round from prominent Silicon Valley venture firms, though the amount remains undisclosed.",
+          "If successful, Trajectory could lower the barrier for smaller AI labs to achieve high-quality alignment, potentially accelerating the deployment of safer and more controllable AI systems. However, the company faces competition from OpenAI's internal RLHF pipeline and Anthropic's constitutional AI approach."
+        ],
+        "why": "The launch signals growing investor interest in infrastructure layers that make AI alignment cheaper and more scalable, a key challenge for the next generation of LLMs.",
+        "links": [
+          [
+            "Google News AI Models: Former Google and Apple researchers launch Trajectory to enhance AI",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9vMk10WDV1cWNLZ0tybUJ2SDJQTnpMX20tbS1pQmJQWWVtSmhhVzNmb2V3ZVFrN2xOa3BZd1YxbXBMVzJ5OG1fb1laWUFYT1pieEFzZTd5RXYxU2txeDM1TnBhSEJsZURtTVAzSzkwd1V2b2VqZnMzWWZxNHlIY3M?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "腾讯发布2026入境支付便利升级三大举措 - Tencent 腾讯",
+        "dek": "Tencent announces three major initiatives to enhance inbound payment convenience for 2026, continuing its push to streamline digital payments for international travelers in China.",
+        "details": [
+          "Tencent has unveiled a set of three key measures to upgrade inbound payment convenience in 2026, aiming to further simplify cross-border transactions for overseas visitors. The initiatives, announced on May 27, focus on expanding acceptance of international credit cards across more merchant terminals, optimizing the account opening process for WeChat Pay for foreign users (including reducing documentation requirements and enabling remote verification), and enhancing multilingual customer support to reduce friction points. These steps build on China's broader efforts to promote tourism and business travel post-2020, with Tencent leveraging its extensive WeChat ecosystem to integrate payment services seamlessly.",
+          "The company's move aligns with government policies encouraging financial inclusion for foreigners, a trend that has accelerated since 2023. By lowering barriers to entry, Tencent seeks to capture a larger share of the inbound payment market, competing with Alipay and other platforms. While the specific implementation details and timelines remain to be clarified, the initiative signals Tencent's commitment to maintaining its dominant position in mobile payments amid increasing regulatory and competitive pressures."
+        ],
+        "why": "This announcement reinforces Tencent's strategic focus on expanding the international utility of WeChat Pay, which is critical for maintaining its competitive edge against Alipay and emerging payment solutions. For businesses in tourism, retail, and financial services, the move could unlock new revenue streams from inbound travelers and reduce friction points in cross-border payments.",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯发布2026入境支付便利升级三大举措 - Tencent 腾讯",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9TR0tvS3lVOVQyXzVQanVDLWQ3S3YtU3dzZ2xuV0x3QW1IekxhMVpINFE0NF92d19GTWhMNjNMUjhxWGVzOTg5aXdBdWpobVpmc0dCMWtwTS00M2pLVW9uQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Zhipu AI Becomes a Limited Partner in Venture Funds",
+        "dek": "China's leading AI model developer steps into asset allocation, signaling a new phase of ecosystem building.",
+        "details": [
+          "Zhipu AI, known for its GLM series of large language models, has reportedly become a limited partner (LP) in venture capital funds, according to Investment World. The exact fund size and partner details remain undisclosed, but the move marks a notable shift for the company—from being solely a model developer to also a capital allocator. This strategy could allow Zhipu to nurture downstream AI applications, secure early access to innovative startups, and diversify its balance sheet amid the capital-intensive AI race.",
+          "Becoming an LP is a common step for mature tech companies in China to extend their influence. For Zhipu, which has raised billions of yuan in previous rounds, this signals growing confidence in its cash position and a longer-term vision to shape the AI ecosystem beyond its own products. The move also comes as Chinese AI startups increasingly seek strategic investors who can provide not just funding but also technical integration."
+        ],
+        "why": "This shift indicates Zhipu is evolving from a pure-play model provider into a platform that uses capital to strengthen its moat. For investors and founders, it suggests Zhipu is open to strategic partnerships and may become a key backer of AI-native startups, similar to how Tencent and Alibaba have used LP stakes to build ecosystems.",
+        "links": [
+          [
+            "Investment World report",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBOX1JmdGhHMXp1cmF5Sjl6QTRDQi1vR3hWWlYxbE9KT2xqa1dXVDZ3SV9oaEdqQlRnNXk1WDA0MXpQcDhuNnBqYUR5eUM2T0o1d3lveTZn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google I/O 2026: Google unveils Gemini Omni AI video editing model - MSN",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News AI Models：Google I/O 2026: Google unveils Gemini Omni AI video editing model - MSN. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Models: Google I/O 2026: Google unveils Gemini Omni AI video editing model ",
+            "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbWtGa3k4SjdqbWo3akZ0a19UMUdXZkg1b1FYMmd5MmFMdTljSTJlWkxlQTVWcVE0a3pVU3NPT0VQaW1VQ2tKWUJaaHk5S2NGWXh4VDV5bzlUN3AzUzZVMWtFd180WWdaQUwzTEh4Njk2TjFiRTIya2R5Qm1NclZvRzVVQk4xQmd1N0dfTmZuTHFuQldNVlR2OUJJSHFUWWxtU1czdEdfX1BiTDQyREIzcUFlX3czZ3BlV2x6M1VlVnY0ZVBVaGc2OGl3Rm8?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Looking at NVIDIA's (NVDA.US) Q1 results for the AI investment outlook: the reasons why E Fund AI ETF (03489) focuses on key allocations. - Moomoo",
+        "dek": "NVIDIA's Q1 results reinforce AI capex momentum, prompting E Fund AI ETF to increase exposure to core computing stocks.",
+        "details": [
+          "NVIDIA's fiscal Q1 earnings, reported May 27, exceeded consensus estimates on revenue and data center growth, underscoring sustained demand for AI training and inference infrastructure. The company's guidance for Q2 also remained strong, signaling that enterprise and cloud AI adoption continues to accelerate despite macroeconomic headwinds.",
+          "In response, E Fund AI ETF (03489) has highlighted NVIDIA as a key allocation, citing the company's dominant position in AI accelerators and its expanding software ecosystem. The fund's strategy reflects a broader institutional view that AI compute remains the most direct beneficiary of the current AI investment cycle, with GPU demand likely to outstrip supply through 2027."
+        ],
+        "why": "NVIDIA's earnings serve as a bellwether for the entire AI supply chain; ETF allocation decisions provide retail and institutional investors with a transparent signal on where professional money is concentrating in the AI sector.",
+        "links": [
+          [
+            "Moomoo article",
+            "https://news.google.com/rss/articles/CBMilAFBVV95cUxON2hCTjBOOUVQSjBUa09OMzJKMmdqeUVTeW5STlRTSjV0OFQyS0c5Y05qZUpMVWxyVWI0cGNGalFiaG9nT1ZjX2VMUW5DZHRuNTVEb3VxV1piU3IzdUdLZTZFd25UaWtpdjk1TmVFeThiZ0p5elJQS0dwNFFaUFpCbTkwdTh1ZXlUckRWVGJ5YTR0UGlk?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Hang Seng Tech Index Overhaul: AI Darlings Zhipu and MiniMax Added",
+        "dek": "The index reshuffle signals growing market recognition of Chinese AI startups, but also raises questions about valuation sustainability and index methodology.",
+        "details": [
+          "The Hang Seng Tech Index has announced a major component adjustment, adding AI-focused firms Zhipu AI and MiniMax effective as of the latest review. The move reflects the rising prominence of domestic AI players in Hong Kong’s stock market, as both companies have seen significant valuation growth driven by the generative AI boom in China.",
+          "Zhipu AI, known for its GLM large language model, and MiniMax, a leader in AI-powered content generation, join the index alongside several other tech stocks. The reshuffle replaces some legacy tech names, aligning the index more closely with the current AI-centric market narrative. The changes are expected to attract passive fund inflows into these AI stocks.",
+          "However, index inclusion does not guarantee sustained performance. Both companies face intense competition from larger players like Baidu and Alibaba, as well as regulatory scrutiny over AI model safety. The adjustment also raises methodological questions: the Hang Seng Tech Index caps individual stock weights, which could limit the impact of high-flying AI names.",
+          "Investors should watch for potential volatility as ETFs rebalance, and monitor whether Zhipu and MiniMax can translate their AI buzz into sustainable revenue growth. The move underscores a broader trend of AI startups transitioning from private funding to public market validation."
+        ],
+        "why": "This index adjustment is a key signal for investors and industry watchers: it validates the market cap of China's AI startups and could trigger further institutional capital inflow, but also highlights the need to assess fundamentals beyond hype.",
+        "links": [
+          [
+            "Google News China AI: 成分股大调整！AI牛股智谱、MiniMax纳入，恒生科技指数前路几何？",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjUC1aZkpSUWJkb3FLVGw2cDN4dTdvNlRYR0ZraVFoS1FKbWh3TXduODFrVUxaTk1RQ3ZDQkY4WktHNUtocHlFY2tORmdVU3k2VEpVNF93?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
+        "dek": "OpenAI's Codex platform is being deployed across Cisco to accelerate AI-native development and automate security workflows.",
+        "details": [
+          "OpenAI and Cisco have announced a strategic partnership to integrate OpenAI's Codex into Cisco's enterprise engineering workflows. Codex, an AI-powered code generation and automation tool, will help Cisco scale AI-native development, accelerate its AI Defense initiative, and automate defect remediation across its product lines. The collaboration marks one of the largest enterprise deployments of Codex, signaling a shift toward AI-assisted software engineering in large organizations.",
+          "Cisco plans to embed Codex into its internal development pipelines and customer-facing security products, aiming to reduce manual coding errors and speed up response to vulnerabilities. The integration also extends to Cisco's hybrid cloud platforms, allowing enterprises to leverage Codex in their own environments. This move positions Cisco as a leading adopter of generative AI for infrastructure software, potentially setting a precedent for other hardware and networking companies.",
+          "While the partnership underscores OpenAI's push into enterprise verticals, details on pricing, deployment scale, and performance benchmarks remain undisclosed. The agreement also raises questions about data privacy and model governance in critical network infrastructure—an area where errors could have cascading impacts. Observers expect more enterprise-optimized versions of Codex to follow."
+        ],
+        "why": "This collaboration signals that enterprise-grade AI coding assistants are moving beyond experimental use and into core product development, creating competitive pressure on other network and security vendors to adopt similar AI-driven automation.",
+        "links": [
+          [
+            "OpenAI News: Cisco and OpenAI redefine enterprise engineering with Codex",
+            "https://openai.com/index/cisco"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Digest: ITN Launches Paid YouTube Subscriptions; Meta and Google AI Guardrails Stripped in Minutes - exchangewire.com",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "This signal comes from Google News AI Models：Digest: ITN Launches Paid YouTube Subscriptions; Meta and Google AI Guardrails Stripped in Minutes - exchangewire.com. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Models: Digest: ITN Launches Paid YouTube Subscriptions; Meta and Google AI",
+            "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNUi1aNEs2amlfeXpIY05oTkNUdzRPQ3diVTBWdEtyQnRtWG1RSFZjak1NWHo0ckZsUWRpd1JXSzVINWdwdllYVDlXUHluWkNadm1rdHo5S19ENzc0U3d6RW5yM2czQlFiZHMya0Q3dnFWTFI2NVFHdmY1RmJGVXdGWGxsNUJ1b20yc0FacFcxUklsWVIzRDNkMXZRZXhTM1JSdElQTUhZVUplMFpjVTNaN2Y0OFRFdTJQMTdpakhVSHVnMFZtMTVvOXEyZnl0Um9SZ0Q2a1Q3ODQ4Zw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Experiments in Agentic AI for Science",
+        "dek": "Two novel frameworks show how LLM-powered agents can automate data curation and lecture analysis, pushing AI from assistant to autonomous scientist.",
+        "details": [
+          "A new arXiv preprint (2605.26305) introduces two agentic AI systems designed to automate complex scientific workflows. Both systems use a 'Local Body, Remote Brain' architecture: a Python orchestrator runs locally on Google Colab, while a large language model (LLM) backend handles reasoning and planning in the cloud. This hybrid design keeps sensitive data local while leveraging powerful cloud-based AI.",
+          "The first agent, DeepTS/DeepCollector, automates large-scale curation, extraction, and deduplication of time-series datasets—a tedious but critical task in fields like climate science and finance. It uses granular attribute extraction (dubbed 'Cellular R') to identify and merge records from disparate sources, significantly reducing manual effort.",
+          "The second agent, DeepScribe, autonomously converts visually dense physics lectures (e.g., slides with complex equations) into structured scientific reports. By combining OCR, mathematical formula recognition, and LLM-based summarization, it transforms hours of classroom video into concise, searchable documents—potentially accelerating research dissemination and education.",
+          "The researchers emphasize practical systems engineering over theoretical novelty. The work demonstrates that with careful orchestration, existing LLMs can perform multi-step scientific tasks, though robustness and generalization remain open challenges. The code and results are available on arXiv."
+        ],
+        "why": "This work illustrates a concrete path toward autonomous AI scientists, showing how hybrid local/cloud architectures can handle real-world research data. For product teams, the modular agent design could inspire new tools for lab automation, data pipelines, and educational content generation.",
+        "links": [
+          [
+            "arXiv cs.AI: Experiments in Agentic AI for Science",
+            "https://arxiv.org/abs/2605.26305"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Building self-improving tax agents with Codex",
+        "dek": "OpenAI, Thrive, and Crete demonstrate how Codex can automate complex tax workflows, reduce errors, and continuously improve accuracy — a glimpse into the future of AI-powered professional services.",
+        "details": [
+          "Tax preparation is a painstaking, rule-intensive process that traditionally requires human experts to interpret constantly changing regulations and handle large volumes of documents. A single error can lead to penalties. This case study shows how three organizations — OpenAI, Thrive, and Crete — built a self-improving tax agent using OpenAI's Codex (the model behind GitHub Copilot). The agent automates the extraction of financial data from forms, applies tax rules, and files returns. More importantly, it continuously learns from feedback: when humans correct its outputs, the agent updates its own logic to improve future accuracy. Early results show a significant reduction in filing time and error rates, while freeing tax professionals to focus on higher-value advisory work. The underlying approach — using code-generation models to create self-correcting workflows — has broad implications beyond taxes, from compliance to legal document review.",
+          "Key technical elements include: (1) Codex interprets natural-language instructions to generate Python scripts that parse tax forms and apply deduction logic; (2) a feedback loop allows the agent to retrain on corrected outputs; (3) the system integrates with existing accounting APIs. The partnership highlights a shift from simple chatbot assistants toward autonomous agents that can perform multi-step professional tasks with human oversight."
+        ],
+        "why": "This case study demonstrates that AI agents are moving beyond chat into high-stakes, regulation-heavy domains — a direct signal for SaaS companies and startups building in legal, compliance, and accounting verticals. The self-improvement loop is a key differentiator for long-term accuracy and adoption.",
+        "links": [
+          [
+            "OpenAI News: Building self-improving tax agents with Codex",
+            "https://openai.com/index/building-self-improving-tax-agents-with-codex"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "AI for investors - MLQ.ai",
+        "dek": "A curated analysis of AI trends from an investment perspective, highlighting signals across model releases, funding, and enterprise adoption.",
+        "details": [
+          {
+            "summary": "Overview of AI investment signals",
+            "expanded": "This viewpoint piece from MLQ.ai surveys recent AI developments that matter to investors, including model launches (e.g., OpenAI, Anthropic, DeepSeek), funding rounds, and strategic partnerships. While the original article does not specify individual events, it provides a framework for interpreting market moves and identifying inflection points in AI infrastructure and application layers. The analysis is likely aimed at institutional and retail investors seeking to allocate capital based on technological momentum rather than hype."
+          },
+          {
+            "summary": "Key takeaways for investors",
+            "expanded": "The article emphasizes tracking open-source model proliferation and enterprise AI adoption as leading indicators. It suggests that investors should monitor cost-per-token declines and agentic workflow deployments, which could signal commoditization of foundation models and growth opportunities in vertical-specific solutions. The piece also underscores the importance of regulatory developments, though concrete predictions are absent. Overall, MLQ.ai offers a structured lens for filtering noise in the fast-moving AI landscape."
+          }
+        ],
+        "why": "This piece helps investors cut through the daily noise of AI news by offering a framework to evaluate which developments truly shift the competitive landscape, aiding portfolio strategy and risk assessment.",
+        "links": [
+          [
+            "Google News AI Models: AI for investors - MLQ.ai",
+            "https://news.google.com/rss/articles/CBMimwFBVV95cUxObzJjX2VZN2o2cjRESm9OaEhfSTVwWG9xd0tSZ1lwamx5dEdoSy11UlE4clVCMHgwQ252NHYtUF9ZTWFQVmF6SUctdFdMZUljbk16NG92ekRGWjVZN2RRUHE4NW04cXF5VzJ4NnNMMDJWcWw4N3Q1d1h0bk83ZUM0anI0MG9fdTJHMjNzMlk1SVNrS3oyUDBiU25hZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Infineon Exhibits Semiconductor Solutions for Power Infrastructure, AI Data Centers, Robotics, and Electromobility at PCIM Europe 2026 - ELE Times",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Google News AI Infrastructure：Infineon Exhibits Semiconductor Solutions for Power Infrastructure, AI Data Centers, Robotics, and Electromobility at PCIM Europe 2026 - ELE Times. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Infineon Exhibits Semiconductor Solutions for Power Infrast",
+            "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPSmg3V2ViaFJvRmJhTkdtSW05T1JGdGppLVpla0pEMW4zdFkwTlMwU1N0aWx4WWVuX043RWx5S1NuRUpjUlcyYUhjV1ptTVUyS1IyU1R4V3VPZU13NlluZGwwQVlPc2hyMG1sV1dBUTdTTmF0c0NpSHAzMTh3LWI5YWdudnMtcDNLZzZwaWNudHdidlFYWGpFWXViYlpYTlVVX3BXUWowZnRGSC1vM3pFV0Nfd25wbGRRN1Jqd2FfZGRSdlc3RWNZODcyZmJwUjNzNm9KZGtCbHZOZjRycXNKTDBIVEVKZ0VOTFFv?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-27",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "World Model Explained: The AI Brain for Simulating Reality",
+        "dek": "A world model is an AI system that learns an internal representation of how an environment behaves, enabling prediction and planning. It's the foundation behind robots that navigate unfamiliar rooms, autonomous vehicles that anticipate traffic, and simulators that train agents without real-world data. Unlike language models that process text, world models understand physics, space, and cause-effect—making them essential for embodied AI and reinforcement learning.",
+        "details": [
+          "A world model is a type of neural network that learns to simulate the dynamics of an environment by observing sequences of actions and outcomes. It typically consists of three components: a representation encoder (compressing sensory input into a latent state), a transition model (predicting next state given current state and action), and a reward/prediction head (forecasting outcomes). This structure allows the model to 'imagine' future scenarios and plan optimal actions without trial-and-error in the real world.",
+          "World models gained prominence after a 2018 paper by Ha and Schmidhuber, which showed a single neural network could learn to play a racing game entirely in its 'dream'. Since then, they've become central to autonomous driving (Waymo, Tesla), robotics (Google RT-2), and simulation platforms (NVIDIA Isaac Sim). Unlike large language models that rely on massive text corpora, world models require diverse physical interaction data, making them harder to scale—but more critical for real-world tasks.",
+          "The concept also intersects with 'foundation world models'—a nascent trend where companies aim to build general-purpose simulators akin to GPT but for physics. For example, DeepMind's Genie and OpenAI's Sora (video generation) can be seen as early attempts at world models, though they still lack consistent physics grounding."
+        ],
+        "why": "Understanding world models helps investors and engineers spot the next frontier beyond text-based AI. Companies that crack scalable world models could dominate robotics, simulation, and autonomous systems—a market expected to surpass $100B by 2030. For product builders, world models enable cheaper, safer training of physical agents without hardware wear-and-tear.",
+        "links": [
+          [
+            "arXiv introspective LLMs (related context)",
+            "https://arxiv.org/abs/2605.26242"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-05-27",
     "title": "AI Daily Atlas",
