@@ -1,5 +1,286 @@
 const archiveZh = [
   {
+    "date": "2026-05-29",
+    "title": "AI Daily Atlas",
+    "meta": "2026年5月29日",
+    "headline": "AI 大公司的竞争继续落到入口、算力和行业场景",
+    "summary": "今天值得看的不是单一“转变”，而是几类具体动作同时出现：大公司继续争夺用户入口，产业链公司强化算力或基础设施位置，垂直行业开始把 Agent 包装成可交付方案。产品推荐只保留少量能进入真实工作流的工具，作为正文之外的补充。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek V4芯模协同背后，国产算力生态开始飞轮加速",
+        "dek": "DeepSeek V4与国产芯片深度适配，推理效率显著提升，国产算力生态从单点突破迈入协同闭环。",
+        "details": [
+          "DeepSeek V4发布后，其与国产芯片的“芯模协同”成为焦点。模型在训练和推理阶段针对国产硬件进行了底层优化，据称推理效率提升明显，初步打破了“国产芯片跑不动大模型”的刻板印象。",
+          "这一进展并非孤立。随着昇腾、寒武纪等芯片生态陆续适配DeepSeek系列模型，国产算力开始形成“模型-芯片-云服务”的协同链条。云厂商也纷纷推出基于国产芯片的DeepSeek V4推理服务，降低了企业部署门槛。",
+          "业内观点认为，芯模联动意味着国产算力正从“可用”走向“好用”。当模型厂商主动为国产芯片做优化、芯片厂商反向改进算子库时，生态飞轮便悄然启动。下一个关键节点是能否在更大参数量场景下保持性价比优势。"
+        ],
+        "why": "DeepSeek V4的芯模协同是国产算力生态从碎片化走向系统化的重要信号。对从业者而言，国产芯片的软件栈成熟度与模型适配速度将直接影响未来AI基础设施的选型话语权。",
+        "links": [
+          [
+            "量子位: DeepSeek V4芯模协同背后，国产算力生态开始飞轮加速",
+            "https://www.qbitai.com/2026/05/426293.html"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Databricks 联合创始人 TC Disrupt 发声：企业 AI 交易死于安全焦虑",
+        "dek": "在 TechCrunch Disrupt 2026 上，Databricks 联合创始人直言，企业不再问 AI 是否令人兴奋，而是问它是否安全到可以大规模部署。",
+        "details": [
+          "在 TechCrunch Disrupt 2026 大会上，Databricks 联合创始人指出，企业 AI 交易失败的根源已从技术可行性转向安全信任。他表示，客户现在更关心数据治理、模型合规以及部署后的长期风险，而非模型本身的性能提升。",
+          "这一转变意味着 AI 厂商必须在销售过程中嵌入安全评估和审计能力，否则交易极易在中后期搁浅。Databricks 本身正通过其 Unity Catalog 和数据治理工具回应这一需求，但整个行业尚未形成统一的安全标准。",
+          "他还提到，早期采用者（如金融和医疗行业）已开始要求第三方安全认证，这给创业公司带来新的合规成本。未来一年，企业 AI 交易的成败可能更多取决于安全架构而非模型智能。"
+        ],
+        "why": "企业 AI 采购正从“技术驱动”转向“信任驱动”，安全治理能力将成为 AI 公司的核心竞争壁垒，也是创业公司突围的关键变量。",
+        "links": [
+          [
+            "TechCrunch: Databricks’ co-founder on what kills enterprise AI deals",
+            "https://techcrunch.com/2026/05/28/techcrunch-disrupt-2026-databricks-co-founder-on-what-kills-enterprise-ai-deals/"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Anthropic租用SpaceX算力：租期长短说法不一",
+        "dek": "马斯克称该交易短期可取消，但SpaceX文件显示付款至2029年5月。",
+        "details": [
+          "Elon Musk近日公开表示，xAI与Anthropic之间的大规模算力租赁协议是短期的且可取消。这一表态与SpaceX在S-1文件中披露的信息相矛盾——文件显示付款义务至少持续到2029年5月。",
+          "Anthropic作为AI实验室，依赖大量算力训练模型，租约期限的不确定性可能影响其长期研发规划。市场也在观察马斯克旗下xAI与Anthropic之间的竞争关系是否会因此升级。"
+        ],
+        "why": "租期争议可能影响Anthropic的算力稳定性预期，并提醒投资者关注AI公司间基础设施合作的潜在风险。",
+        "links": [
+          [
+            "TechCrunch AI: How long is Anthropic’s lease with SpaceX? Opinions vary",
+            "https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary/"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "OpenAI 发布前沿治理框架，锚定全球 AI 安全标准",
+        "dek": "框架详述安全实践，与欧盟 AI 法案和加州法规对齐，为行业提供治理范式",
+        "details": [
+          "OpenAI 于 5 月 28 日正式发布前沿治理框架（Frontier Governance Framework），旨在系统化其 AI 安全、安保和风险管理实践。该框架并非一次性政策文件，而是一套动态治理机制，涵盖模型开发、部署、监控和合规全流程，试图在快速迭代的前沿模型中嵌入可审计的安全标准。",
+          "框架核心围绕风险分级和响应流程设计，明确了对超大规模模型（如 GPT-6 级别）的特殊监管要求。OpenAI 表示，该框架参考了欧盟 AI 法案和高风险 AI 系统分类标准，并主动对齐加州即将生效的《前沿人工智能模型安全法案》的要求，体现了从“自愿承诺”转向“制度化合规”的趋势。",
+          "此举正值全球 AI 监管加速落地之际。欧盟 AI 法案已进入执行阶段，加州 SB 1047 法案也将于 2026 年生效。OpenAI 选择在此时发布自建框架，既是应对合规压力，也希望主导行业治理话语权。不过，该框架仍为内部治理文件，其实际执行效果和对第三方的约束力仍需观察。"
+        ],
+        "why": "OpenAI 通过自建治理框架试图影响全球 AI 监管走向，为竞争对手设立合规门槛，同时也为投资者提供衡量公司风险管理能力的新维度。",
+        "links": [
+          [
+            "OpenAI News: OpenAI’s Frontier Governance Framework",
+            "https://openai.com/index/openai-frontier-governance-framework"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "ICG：用多模态大模型和个性化偏好对齐提升封面图生成质量",
+        "dek": "封面图是内容平台提升用户点击率的关键。最新的ICG框架通过MLLM提示和个性化偏好优化，让AI生成更贴合用户喜好的封面。",
+        "details": [
+          "在短视频、电商和社交媒体平台上，封面图直接影响用户点击和停留。但传统的AI封面生成往往“一张通吃”，缺乏对个体品味的适配。ICG（Improving Cover Image Generation）框架瞄准这一痛点，提出将多模态大模型（MLLM）的语义理解能力与个性化偏好对齐相结合。",
+          "ICG的核心流程是：先从商品标题和参考图中用元标记提取视觉语义特征，再通过用户嵌入向量进行个性化微调，最后将融合后的上下文注入扩散模型（如Stable Diffusion）生成封面。这相当于给AI一个“用户画像”，让它明白用户更喜欢暗色调还是高饱和度，是极简风还是信息密集型。",
+          "研究团队在实验中证明，ICG生成的封面在美学评分和用户满意度上明显优于基线方法。更重要的是，框架无需为每个用户重新训练模型，仅靠少量偏好数据即可实现个性化推理，具备实际部署潜力。",
+          "目前该工作已发布于arXiv（2605.27374），但尚未开源或产品化。对于内容运营和AI应用开发者而言，ICG指出了AI图像生成从“通用输出”迈向“千人千面”的技术路径——封面图不再是随机抽奖，而可能成为精准吸引眼球的工具。"
+        ],
+        "why": "ICG代表了AI图像生成从通用到个性化的重要转变，对内容平台、电商和数字媒体运营有直接价值，可能推动下一波AIGC商业化落地。",
+        "links": [
+          [
+            "arXiv cs.CL: ICG: Improving Cover Image Generation via MLLM-based Prompting and Personalized Preference Alignment",
+            "https://arxiv.org/abs/2605.27374"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "CARE框架：如何用社区反应评估LLM的语言行为对齐",
+        "dek": "新研究提出人机协作评估系统，让语言模型更真实地反映在线社区的动态交流",
+        "details": [
+          "大型语言模型（LLM）正越来越多地被用于模拟人类社区的社会动态——比如预测某个群体对新闻议题的态度。但现有评估方法往往将社区身份简化为静态标签，忽略了真实群体如何随着事件演变而调整语气和立场。一篇新论文指出，这种“粗粒度”评估使得LLM的社会模拟缺乏可信度。",
+          "为此，研究者提出了CARE（Community-Aware Reaction Evaluation）框架。它的核心思路不是直接询问LLM“某个社区怎么看”，而是让模型模仿特定社区对真实新闻事件的反应，然后通过对比模型输出与社区真实回复来判断LLM的“对齐程度”。框架基于言语行为理论，将回复细分为多种语气（如支持、嘲讽、质疑等），从而捕捉更微妙的社交信号。",
+          "关键创新在于“人机协作”：人类标注者首先对部分社区回复进行语气分类，作为校准标准；然后由LLM大规模标注其余数据，再通过一致性检验确保质量。这种混合方式兼顾了精度和效率。初步实验显示，CARE能够更准确地检测出LLM在模拟边缘社群时的语气偏差，例如过度概括某个群体的负面情绪。",
+          "这项研究对AI社会学的实际应用有直接意义——当政策制定者或企业试图用LLM预测公众反应时，CARE提供了一个更严谨的校准工具。它同时也提醒我们：没有社区语境的语言对齐测试，可能只是“鹦鹉学舌”。"
+        ],
+        "why": "该框架为评估LLM的社会模拟能力提供了从静态标签迈向动态反应的方法论，可能成为未来AI对齐测试的标准模块，尤其影响社会科学研究与舆论分析工具的设计。",
+        "links": [
+          [
+            "arXiv论文：Modeling Community Attitude through Reaction Tone",
+            "https://arxiv.org/abs/2605.27388"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "ITBench-AA：前沿模型在企业IT智能体基准测试中集体不及格",
+        "dek": "由Artificial Analysis和IBM联合推出的首个企业IT任务智能体基准测试，前沿模型得分不足50%，揭示AI在真实企业场景中的重大短板。",
+        "details": [
+          "据Hugging Face上发布的博客文章，ITBench-AA是首个专门评估AI模型在企业IT场景中执行智能体任务的基准测试，涵盖IT运维、故障排查、自动化流程等典型企业级任务。测试对象包括GPT-4o、Claude 4、Gemini 2.5 Pro等主流前沿模型，结果显示所有模型准确率均低于50%，最高分仅为47%左右。",
+          "该基准由Artificial Analysis与IBM研究院联合设计，强调任务需要多步推理、工具调用和上下文记忆，远比传统问答或代码生成复杂。博客指出，模型在需要跨系统协调、权限判断和异常处理的任务上表现尤其糟糕，暴露出当前AI在结构化企业工作流中的泛化能力不足。"
+        ],
+        "why": "这一结果提醒我们：企业级AI产品不能仅依赖通用基准的亮眼数据，创业者和技术决策者需要建立更贴近实际业务流程的评估体系，否则AI落地可能面临严重的可靠性风险。",
+        "links": [
+          [
+            "Hugging Face Blog: ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks",
+            "https://huggingface.co/blog/ibm-research/itbench-aa"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Endava：用Codex构建Agent驱动型组织",
+        "dek": "OpenAI 官方案例：传统 IT 服务公司如何通过 Codex 将需求分析时间从周级压缩到小时级",
+        "details": [
+          "传统IT服务公司Endava正在利用OpenAI的Codex构建一个由智能代理（Agent）驱动的组织，核心目标是加速软件交付。Endava将Codex集成到其开发流程中，使得需求分析阶段从通常的数周缩短到数小时，大幅提升了开发效率。",
+          "在这篇OpenAI发布的客户案例中，Endava展示了如何通过Codex自动生成代码片段、解释遗留系统并辅助开发决策，从而让开发团队更聚焦于高价值任务。案例还强调了Codex在跨团队协作和知识传递中的作用，有助于构建更具适应性的工程文化。",
+          "尽管这是OpenAI的官方宣传材料，但它为观察企业级AI Agent的真实落地效果提供了具体参照。对于投资和战略而言，它暗示了软件开发自动化可能成为AI Agent最先产生实际商业价值的方向之一。"
+        ],
+        "why": "Endava的实践表明，Codex这类AI工具已从实验阶段进入规模应用，对传统IT服务公司的转型具有示范意义。投资者和创业者应关注AI Agent在软件开发流程中的渗透率提升机会。",
+        "links": [
+          [
+            "OpenAI News: How Endava builds an agentic organization with Codex",
+            "https://openai.com/index/endava"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "Agyn：为AI Agent打造的零信任开源平台",
+        "dek": "Agyn 是一个面向生产环境AI Agent的开源平台，围绕信号驱动无状态运行时、Terraform定义Agent、以及零信任安全三大原则设计。",
+        "details": [
+          "Agyn 是一个新开源的AI Agent平台，旨在解决组织在将Agent部署到生产环境时面临的规模化、隔离、治理和安全挑战。它的核心是一个基于Kubernetes的信号驱动、有状态的无服务器运行时，能够弹性处理非确定性工作流和长会话。",
+          "该平台引入“Agent Definition as a Code”概念，通过Terraform provider来定义Agent及其配套的“Harness”（执行环境），从而实现基础设施即代码的管理方式。安全模型则基于零信任和最小权限原则，确保Agent只能访问其任务所必需的资源。",
+          "Agyn 是Agent无关的（agent-agnostic），意味着它可以兼容不同的Agent框架和模型后端，为开发者提供了一个通用且安全的基础设施层。这一理念类似于Kubernetes对容器编排的抽象，但专门针对AI Agent的独特需求设计。"
+        ],
+        "why": "Agyn 代表了AI Agent基础设施从实验走向生产的关键一步：将Agent的部署、管理和安全标准化，可能成为未来Agent原生云平台的参考架构，对构建企业级Agent服务的团队有重要参考价值。",
+        "links": [
+          [
+            "arXiv cs.AI: Agyn: An Open-Source Platform for AI Agents with Scalable On-Demand Execution",
+            "https://arxiv.org/abs/2605.27575"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "沙钢签约钉钉，让悟空成为每一位“钢铁人”的生产力工具",
+        "dek": "中国最大民营钢铁企业沙钢集团与钉钉达成合作，将AI助手“悟空”全面引入生产与办公场景，推动AI从技术能力向实际价值转化。",
+        "details": [
+          "沙钢集团作为钢铁行业龙头，员工规模超4万人，此次签约后，钉钉AI助手“悟空”将覆盖沙钢的生产管理、设备巡检、安全监控等核心环节。",
+          "“悟空”是钉钉基于通义千问大模型打造的企业级AI助理，支持自然语言查询生产数据、自动生成报表、智能预警设备故障等功能。",
+          "钢铁行业环境复杂、数据孤岛多，沙钢希望通过“悟空”打破信息壁垒，让一线工人用语音或文字就能获取实时生产信息，减少人工翻查系统的耗时。",
+          "此次合作代表AI在重工业场景的又一落地案例——不是简单的聊天机器人，而是深入工单、排产、质量检测等真实工作流。"
+        ],
+        "why": "沙钢的案例展示了AI在传统制造业中的真实价值：将AI嵌入具体工作流而非孤立部署，是决定ROI的关键。对关注B端AI产品的团队来说，钢铁、化工等高壁垒行业可能是下一个蓝海。",
+        "links": [
+          [
+            "量子位: 沙钢签约钉钉，让悟空成为每一位“钢铁人”的生产力工具",
+            "https://www.qbitai.com/2026/05/426223.html"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "推理成本",
+        "dek": "模型每次生成回答所需算力与电力的总成本，是理解 AI 价格战和企业部署决策的核心指标。",
+        "details": [
+          "推理成本即模型在运行时（推理阶段）每生成一个 token 所消耗的 GPU 算力、带宽和电力总和。它不同于训练成本——训练是一次性投入，推理是每次调用的持续开销。对于 API 用户，推理成本直接体现为按 token 计费的价格；对于自建部署，则反映在服务器采购和电费上。",
+          "近一年行业掀起多轮降价潮，核心推力来自算法优化和规模化。混合专家模型（MoE）让每次推理只激活部分参数，量化技术把模型权重从 16 位压缩到 4 位，使推理速度提升数倍。这些进展叠加算力芯片量产，使头部厂商的 API 价格下降 90% 以上。",
+          "推理成本下降降低了企业引入 AI 的门槛，但也改变了商业模式：靠高价 API 盈利越来越难，公司转向更强的模型能力、生态锁定或自研推理芯片来构建壁垒。对创业团队而言，低推理成本降低了尝试成本，但竞争也更集中在数据和场景。",
+          "前沿技术仍在压低推理成本：边缘侧推理（如将轻量化模型部署在手机或 IoT 设备）可节省云端传输和计算开销；KV 缓存、投机解码等工程技巧也减少无效计算。理解这些技术的成熟度，有助于判断哪些应用能在成本约束下跑通。"
+        ],
+        "why": "推理成本是 AI 经济学的核心变量，它决定了模型厂商的定价策略、企业部署的 ROI，以及新一轮 AI 应用爆发的临界点。",
+        "links": [
+          [
+            "E^3-Agent: 边缘生成推理资源管理研究",
+            "https://arxiv.org/abs/2605.27428"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-05-28",
     "title": "AI Daily Atlas",
     "meta": "2026年5月28日",
@@ -3168,6 +3449,294 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-05-29",
+    "title": "AI Daily Atlas",
+    "meta": "May 29, 2026",
+    "headline": "AI competition is showing up in entry points, compute, and industry deployments",
+    "summary": "Today’s useful read is not one neat transformation story, but several concrete moves happening at once: major companies are defending user entry points, infrastructure players are strengthening compute positions, and vertical industries are packaging agents into deliverable solutions.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek V4 Chip-Model Synergy Accelerates Domestic AI Computing Ecosystem",
+        "dek": "Deep optimization for domestic AI chips creates a virtuous cycle for China's AI infrastructure.",
+        "details": [
+          {
+            "summary": "Chip-model synergy design",
+            "expanded": "According to a QbitAI report, DeepSeek V4 is built around a chip-model synergy strategy, deeply optimized for domestic AI accelerators. This allows the model to achieve significantly higher inference efficiency on homegrown hardware compared to generic deployments, reducing reliance on imported high-end chips like NVIDIA’s H100. The optimization covers kernel fusion, memory hierarchy, and communication patterns tailored to Chinese chip architectures."
+          },
+          {
+            "summary": "Flywheel effect on domestic ecosystem",
+            "expanded": "This technical alignment is triggering a positive feedback loop: as more developers deploy DeepSeek V4 on domestic chips, real-world usage data helps chipmakers refine their hardware and software stacks, which in turn makes subsequent model optimizations easier. The ecosystem is moving from 'usable' to 'efficient', lowering the barrier for AI adoption across China’s enterprise and government sectors."
+          }
+        ],
+        "why": "The DeepSeek V4 synergy marks a pivotal step in China's AI infrastructure self-sufficiency. Investors and strategists should monitor how this flywheel accelerates the domestic chip ecosystem, potentially reshaping the global AI hardware supply chain and creating new opportunities for Chinese chip startups and cloud providers.",
+        "links": [
+          [
+            "QbitAI: DeepSeek V4 Chip-Model Synergy Accelerates Domestic AI Ecosystem",
+            "https://www.qbitai.com/2026/05/426293.html"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "At TechCrunch Disrupt 2026: Databricks’ co-founder on what kills enterprise AI deals",
+        "dek": "Enterprise AI evaluation shifts from excitement to safety, as Databricks co-founder warns that deployment risks are derailing deals.",
+        "details": [
+          "Speaking at TechCrunch Disrupt 2026, Databricks co-founder and CEO Ali Ghodsi highlighted a critical shift in enterprise AI adoption: customers are no longer asking if AI is exciting, but whether it is safe to deploy broadly. This change marks the end of the 'proof-of-concept era' and the beginning of a production reality check for AI vendors.",
+          "According to Ghodsi, the biggest deal killers are data governance concerns, unpredictable costs at scale, and lack of transparent model behavior. He noted that enterprises now demand verifiable control over training data and inference pipelines, often requiring months of security audits before signing contracts.",
+          "The comments reflect a broader industry trend where AI spending growth remains strong, but procurement cycles are lengthening. Ghodsi predicted that only companies that invest in rigorous compliance and cost predictability will close large enterprise deals in the coming year."
+        ],
+        "why": "For AI startups and enterprise vendors, this signals that technical capability alone is not enough—building trust through safety, transparency, and cost control is now a prerequisite for winning large contracts.",
+        "links": [
+          [
+            "TechCrunch: At TechCrunch Disrupt 2026: Databricks’ co-founder on what kills enterprise AI deals",
+            "https://techcrunch.com/2026/05/28/techcrunch-disrupt-2026-databricks-co-founder-on-what-kills-enterprise-ai-deals/"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "How long is Anthropic’s lease with SpaceX? Opinions vary",
+        "dek": "Elon Musk publicly disputes the length of Anthropic's compute deal with SpaceX, contradicting the company's own SEC filings.",
+        "details": [
+          "A new controversy has emerged around Anthropic's massive compute deal with SpaceX. Elon Musk, founder of xAI, took to social media to reframe the agreement as short-term and cancellable, questioning its long-term commitment. However, SpaceX's own S-1 filing with the SEC describes payments running through May 2029, suggesting a multi-year lease.",
+          "The discrepancy highlights the opaque nature of major AI compute deals and the potential for strategic misdirection. Musk's comments may aim to downplay xAI's competitor's access to critical infrastructure, but the filing indicates a binding obligation. The exact terms remain unconfirmed.",
+          "For observers, the episode underscores how compute access is becoming a key battleground in AI. Anthropic's deal with SpaceX was seen as a major capacity win; any uncertainty could affect its model training timelines and competitive positioning against xAI and OpenAI."
+        ],
+        "why": "This story matters because compute access is a critical moat in AI. If the deal is indeed short-term, Anthropic's capacity advantage may be less durable than markets assume, potentially reshaping the competitive landscape.",
+        "links": [
+          [
+            "TechCrunch AI: How long is Anthropic’s lease with SpaceX? Opinions vary",
+            "https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary/"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "OpenAI’s Frontier Governance Framework",
+        "dek": "OpenAI publishes its Frontier Governance Framework, detailing how its AI safety, security, and risk practices align with emerging EU and California regulations.",
+        "details": [
+          "OpenAI released its Frontier Governance Framework on May 28, 2026, outlining the company's approach to AI safety, security, and risk management in the context of upcoming regulatory requirements from the European Union and California. The framework is designed to demonstrate proactive compliance with the EU AI Act and California's AI safety legislation, both of which are set to take effect in the coming years.",
+          "The document describes OpenAI's internal governance structure, including a Frontier Risk Board that oversees development of advanced AI systems. It also details technical safeguards such as red-teaming, capability evaluations, and deployment restrictions for models that pose 'critical' or 'high' risks. OpenAI claims the framework exceeds baseline regulatory expectations, potentially setting a precedent for the industry.",
+          "Observers note that the framework focuses heavily on frontier models (like GPT-5 and beyond), leaving uncertainty about how it will apply to smaller or non-frontier systems. The company also acknowledges that some safety measures are still in development, signaling that the framework is an evolving document rather than a final set of rules."
+        ],
+        "why": "OpenAI’s move to formalize governance before regulations take effect could pressure other labs to adopt similar frameworks, shaping the global standard for responsible AI development and influencing investment decisions.",
+        "links": [
+          [
+            "OpenAI News: OpenAI’s Frontier Governance Framework",
+            "https://openai.com/index/openai-frontier-governance-framework"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "ICG: Improving Cover Image Generation via MLLM-based Prompting and Personalized Preference Alignment",
+        "dek": "A new framework integrates multimodal LLMs with personalized preference alignment to generate cover images tailored to user tastes.",
+        "details": [
+          "Cover images are critical for user engagement on digital platforms like streaming services, e-commerce, and social media, yet AI-generated covers often fail to capture individual preferences. Existing methods typically rely on generic prompts or single image conditioning, missing the nuanced context of item titles and user-specific tastes. The ICG framework addresses this by leveraging multimodal large language models (MLLMs) to extract semantic features from both item titles and reference images, then refining these with learned user embeddings to produce personalized conditioning signals for diffusion models.",
+          "A key innovation is the use of meta tokens to bridge the gap between text/image semantics and user preference spaces, enabling the model to prioritize what matters most to each user (e.g., color palette, style, or object prominence). ICG also introduces a personalized preference alignment stage that fine-tunes the generation process based on implicit or explicit user feedback, moving beyond one-size-fits-all generation. While the paper focuses on cover images for music albums and video thumbnails, the underlying approach is generic and could be extended to any scenario where personalized visual content is needed."
+        ],
+        "why": "ICG demonstrates a practical way to inject user preference alignment into diffusion-based image generation, which could significantly reduce the cost of manual cover design for content platforms and boost user engagement through personalized visual experiences.",
+        "links": [
+          [
+            "arXiv: ICG Paper",
+            "https://arxiv.org/abs/2605.27374"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Modeling Community Attitude through Reaction Tone: A Human-AI Collaborative Framework for Evaluating LLM Alignment with Linguistic Behaviors in Online Communities",
+        "dek": "A new academic framework, CARE, proposes moving beyond static demographic labels to evaluate large language models by how well they replicate the event-triggered, tone-rich responses of real online communities.",
+        "details": [
+          "Most current benchmarks for LLM alignment simplify community identity into fixed categories such as age, gender, or political leaning. This approach misses how groups actually express themselves: through shifting stances, sarcasm, enthusiasm, disapproval, and other nuanced tones in reaction to specific news or events. The CARE framework (Community-Aware Reaction Evaluation) addresses this gap by modeling community attitude through a fine-grained spectrum of illocutionary tones, such as agreement, skepticism, humor, and outrage, rather than just positive/negative sentiment.",
+          "The core method involves three steps: (1) collecting authentic, event-contingent reactions from distinct online communities (e.g., subreddits with known behavioral norms) to a set of real-world news stories; (2) extracting tonal distributions from these human reactions; (3) prompting an LLM to produce simulated reactions under the same conditions and measuring the divergence between human and LLM tonal profiles. The researchers propose a Human-AI collaborative loop where human annotators help calibrate the tonal taxonomy and flag culturally specific expressions, improving the model's ability to capture thick descriptions of community behavior.",
+          "In preliminary experiments described in the paper (arXiv:2605.27388), the framework revealed that even advanced LLMs tend to flatten community-specific tonal patterns—for example, generating uniformly polite or neutral responses when the actual community reaction is laced with irony or targeted criticism. The findings suggest that current alignment techniques may produce socially plausible but culturally hollow outputs. CARE offers a diagnostic tool for developers to check whether their models truly resonate with the linguistic behaviors of the communities they aim to serve."
+        ],
+        "why": "This framework provides a more nuanced yardstick for evaluating LLM alignment in social contexts, which is critical for building AI agents that can participate authentically in online discourse—relevant for product teams working on content moderation, community management, and social simulation.",
+        "links": [
+          [
+            "arXiv cs.CL: Modeling Community Attitude through Reaction Tone: A Human-AI Collaborative Framework...",
+            "https://arxiv.org/abs/2605.27388"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+        "dek": "A new benchmark reveals that even the most advanced AI models struggle with complex enterprise IT automation tasks, scoring less than 50% accuracy.",
+        "details": [
+          {
+            "summary": "Benchmark overview and key findings",
+            "expanded": "ITBench-AA, introduced by IBM and Artificial Analysis, is the first standardized benchmark designed to evaluate AI agents on real-world enterprise IT operations, including incident response, system configuration, and network troubleshooting. The benchmark tests models' ability to autonomously execute multi-step, context-aware tasks. Results show that top frontier models (e.g., GPT-5, Gemini 2.5, Claude 4) all score below 50%, highlighting a significant gap between current capabilities and the reliability needed for production IT environments."
+          },
+          {
+            "summary": "Implications for AI adoption in enterprise",
+            "expanded": "The low scores underscore that agentic AI is not yet ready for unsupervised enterprise IT tasks. Enterprises relying on AI for automation should expect high error rates and require human-in-the-loop oversight. The benchmark also reveals that smaller specialized models fine-tuned for IT operations sometimes outperform general-purpose frontier models, suggesting a potential shift toward domain-specific agents. This finding is crucial for CIOs and AI product managers evaluating where to deploy autonomous agents."
+          }
+        ],
+        "why": "This benchmark provides the first hard evidence that frontier models are far from reliable in enterprise IT automation, setting realistic expectations for AI adoption and guiding investment toward domain-specific fine-tuning rather than relying solely on general-purpose models.",
+        "links": [
+          [
+            "Hugging Face Blog: ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks",
+            "https://huggingface.co/blog/ibm-research/itbench-aa"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "How Endava builds an agentic organization with Codex",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from OpenAI News：How Endava builds an agentic organization with Codex. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "OpenAI News: How Endava builds an agentic organization with Codex",
+            "https://openai.com/index/endava"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Agyn: An Open-Source Platform for AI Agents with Scalable On-Demand Execution, Agent Definition as a Code, and Zero-Trust Access",
+        "dek": "A new open-source platform that combines signal-driven serverless runtime with Terraform-managed agent definitions and zero-trust security for production AI agents.",
+        "details": [
+          "As organizations move AI agents from prototypes to production, they face challenges in scaling, isolation, governance, and security. Agyn, introduced in a recent arXiv preprint, addresses these with a platform built on three principles: a signal-driven, stateful serverless runtime on Kubernetes; a Terraform provider for defining agents and harnesses as code; and a zero-trust, least-privilege security model.",
+          "The platform is agent-agnostic, meaning it can orchestrate any LLM or tool-based agent while maintaining stateful sessions and enforcing access controls. By treating agent definitions as infrastructure code, Agyn enables DevOps teams to version, test, and deploy agents alongside other cloud resources, reducing operational friction.",
+          "The paper's publication on arXiv (May 28, 2026) indicates it is a preprint and has not yet undergone peer review. While the architecture is promising, its actual adoption and community traction remain to be seen."
+        ],
+        "why": "Agyn signals a maturing open-source ecosystem for agent infrastructure, offering a model that could lower the barrier for enterprises to deploy AI agents with production-grade security and reproducibility.",
+        "links": [
+          [
+            "arXiv cs.AI: Agyn: An Open-Source Platform for AI Agents with Scalable On-Demand Execution",
+            "https://arxiv.org/abs/2605.27575"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "沙钢签约钉钉，让悟空成为每一位“钢铁人”的生产力工具",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from 量子位：沙钢签约钉钉，让悟空成为每一位“钢铁人”的生产力工具. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "量子位: 沙钢签约钉钉，让悟空成为每一位“钢铁人”的生产力工具",
+            "https://www.qbitai.com/2026/05/426223.html"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Inference Cost",
+        "dek": "The total expense—monetary and operational—incurred when a deployed AI model processes input to produce output, encompassing compute, latency, energy, and management overhead.",
+        "details": [
+          "Inference cost goes beyond raw GPU pricing. As highlighted in recent edge inference research (arXiv:2605.27428), per-device per-model performance is often unknown at deployment and fluctuates due to user-driven events, background load, and device churn. These dynamics make inference cost a moving target: a model that is cheap to run in a controlled environment can become expensive when serving unpredictable user requests at scale.",
+          "The cost structure includes compute (token- or request-based fees from API providers), memory footprint for storing model weights, latency penalties for real-time applications, and operational overhead for managing distributed inference infrastructure. For enterprises, inference cost is the primary driver of total cost of ownership (TCO) when deploying AI agents or generative features.",
+          "Recent trends like open-weight models and inference optimization techniques (quantization, speculative decoding, model distillation) aim to lower cost per token. However, the trade-off is often complexity: cheaper per-query cost may require more engineering effort to maintain reliability and latency, especially in resource-constrained edge environments."
+        ],
+        "why": "Understanding inference cost is critical for evaluating model provider pricing strategies and making build-vs-buy decisions. As AI moves to production, teams that accurately model inference TCO gain a structural advantage in deploying sustainable agentic systems.",
+        "links": [
+          [
+            "Edge Inference Resource Management Paper",
+            "https://arxiv.org/abs/2605.27428"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-05-28",
     "title": "AI Daily Atlas",
