@@ -1,5 +1,369 @@
 const archiveZh = [
   {
+    "date": "2026-06-01",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月1日",
+    "headline": "AI 大公司的竞争继续落到入口、算力和行业场景",
+    "summary": "今天值得看的不是单一“转变”，而是几类具体动作同时出现：大公司继续争夺用户入口，产业链公司强化算力或基础设施位置，垂直行业开始把 Agent 包装成可交付方案。产品推荐只保留少量能进入真实工作流的工具，作为正文之外的补充。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 芯片创企 Groq 据称正融资 6.5 亿美元，从硬件转向 AI 推理",
+        "dek": "继 Nvidia 放弃 200 亿美元收购后，Groq 转向内部融资，押注 AI 推理市场。",
+        "details": [
+          "据 Axios 援引消息人士报道，AI 芯片初创公司 Groq 正在寻求通过内部融资筹集 6.5 亿美元。此前 Nvidia 曾计划以约 200 亿美元收购 Groq，但交易最终未能达成，被称为“not-acqui-hire”。",
+          "Groq 此次融资标志着公司战略 pivot：从专注硬件芯片设计转向更聚焦 AI 推理服务。推理是 AI 模型在训练完成后实际执行任务的过程，成本更低但需求快速增长。",
+          "尽管 Groq 的 LPU（语言处理单元）在推理速度上有优势，但面对 Nvidia 和 AMD 的竞争，转向推理服务可能是一条差异化路径。目前融资细节尚未公开确认，存在不确定性。"
+        ],
+        "why": "Groq 的转型和融资信号表明，AI 推理市场的商业化机会正在吸引资本，而硬件初创公司需通过服务化实现差异化。",
+        "links": [
+          [
+            "TechCrunch AI: After Nvidia’s $20B not-acqui-hire, AI chip startup Groq reportedly raising",
+            "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/"
+          ]
+        ],
+        "sourceDate": "2026-05-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-30",
+        "freshnessLabelEn": "Weekend window | 2026-05-30",
+        "freshnessLabel": "周末窗口｜2026-05-30"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Google I/O 2026 测验：用 AI Studio 氛围编程打造",
+        "dek": "Google 用 AI Studio 的 Vibe Coding 快速生成了一款 I/O 2026 重要发布问答，展示低代码开发新范式。",
+        "details": [
+          "Google 发布了一款关于 I/O 2026 主要发布的小测验，该测验完全通过 Google AI Studio 的“Vibe Coding”（氛围编程）功能制作。Vibe Coding 允许开发者用自然语言描述需求，自动生成交互式网页应用，无需手动编写大量代码。",
+          "用户在浏览器中即可参与测验，题目覆盖 Gemini 模型升级、Project Astra 智能助手、以及 Android 集成 AI 等亮点。Google 表示，整个开发过程仅用了几小时，大幅缩短了传统编程所需的时间。",
+          "此举意在展示 AI Studio 平台降低开发门槛的能力——即使非专业程序员也能快速构建实用工具。对于开发者而言，Vibe Coding 可能成为快速原型设计和内部工具的常用方法，推动 AI 应用开发的民主化。"
+        ],
+        "why": "对于产品团队和独立开发者，Vibe Coding 预示着 AI 辅助编程从代码补全向全自动应用生成演进，未来或重塑轻量级应用的生产方式。",
+        "links": [
+          [
+            "Google AI Blog: Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+            "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/"
+          ]
+        ],
+        "sourceDate": "2026-05-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-30",
+        "freshnessLabelEn": "Weekend window | 2026-05-30",
+        "freshnessLabel": "周末窗口｜2026-05-30"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "从Token无上限到全员Agent：MiniMax的AI Native组织进化实践",
+        "dek": "MiniMax 内部推行“Token 无上限”策略，鼓励全员使用 AI Agent，打造原生 AI 组织文化。",
+        "details": [
+          "MiniMax 近期在内部推行“Token 无上限”策略，即员工可以无限制调用公司自研的 AI Token，用于日常工作中的沟通、代码、文档生成等场景。此举旨在降低 AI 使用门槛，让每个人都成为 AI Agent 的“指挥官”，而非被动等待技术部门支持。",
+          "据公司介绍，这一实践已覆盖从产品、研发到市场、法务等几乎所有部门。员工通过自定义 Agent 完成重复性工作，部分团队效率提升超过 50%。MiniMax 认为，AI Native 组织的核心不是采购工具，而是让组织结构和工作流为 AI 协作重新设计。",
+          "这一做法在行业内较为激进。相比大多数公司仍将 AI 视为辅助工具，MiniMax 试图将 AI Agent 嵌入每个岗位的日常。如果效果验证可行，可能为国内 AI 应用落地提供新范本——尤其是中小企业在资源有限情况下，如何通过组织变革放大 AI 价值。"
+        ],
+        "why": "MiniMax 的组织实践不仅是内部效率提升，更可能定义下一代 AI 企业的运营标准，对创业公司如何低成本、高杠杆地利用 AI 具有重要参考意义。",
+        "links": [
+          [
+            "量子位: 从Token无上限到全员Agent：MiniMax的AI Native组织进化实践",
+            "https://www.qbitai.com/2026/05/426793.html"
+          ]
+        ],
+        "sourceDate": "2026-05-31",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-31",
+        "freshnessLabelEn": "Weekend window | 2026-05-31",
+        "freshnessLabel": "周末窗口｜2026-05-31"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "欧足联宣布阿里巴巴为官方独家AI、云计算和电商合作伙伴",
+        "dek": "中国科技巨头再获顶级体育IP，阿里云将用AI重塑欧洲足球观赛体验",
+        "details": [
+          "欧足联在5月30日宣布，阿里巴巴正式成为其官方独家AI、云计算和电商合作伙伴。这项多年协议覆盖欧冠、欧联、欧协联等全部赛事，阿里云将为欧足联提供AI驱动的球迷互动、实时数据分析和云基础设施，同时淘宝天猫将获得官方电商授权。这是阿里巴巴继奥运会顶级合作伙伴后再度拿下全球顶级体育IP。",
+          "具体合作内容可能包括：利用计算机视觉和AI模型实时分析比赛数据、生成个性化集锦；通过AI虚拟助手提升球迷观赛体验；以及基于阿里云的低延迟直播分发。欧足联拥有数十亿球迷，体育场景对AI的实时性和可靠性要求极高，这将是阿里云技术能力的一次大规模海外展示。",
+          "目前合作金额和具体技术方案尚未完全公开，但考虑到欧足联的商业化水平，该合作预计将显著提升阿里巴巴在欧洲的品牌认知度，并为阿里云带来可观的国际客户。对于阿里而言，这是一次将AI能力嵌入海外主流文化场景的战略卡位。"
+        ],
+        "why": "这条新闻显示中国科技公司正加速通过顶级体育IP输出AI和云服务。对于投资者，可关注阿里云海外营收增长；对于从业者，体育+AI的实时分析、个性化体验等场景正成为落地热点。",
+        "links": [
+          [
+            "Google News China AI: 欧足联宣布阿里巴巴为官方独家AI、云计算和电商合作伙伴 - 观察者",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE50azBrZUVEbTlWa0M2U3U3VDBHMU00Z0tpNE5mZnhGY2MwZndBNFJHbkoyYS1tblJOd2p5ZEhNLXEtNUloUTRzdjBaSXZDTG5Xdmx2ZWV1Z3dndjQtTE83cWR1eWQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-30",
+        "freshnessLabelEn": "Weekend window | 2026-05-30",
+        "freshnessLabel": "周末窗口｜2026-05-30"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里巴巴AI商业化进入新阶段，阿里是否值得投资？",
+        "dek": "TradingKey分析阿里AI业务进展与投资价值",
+        "details": [
+          "阿里巴巴AI商业化正进入新阶段，投资分析平台TradingKey近日发布报告，评估阿里在人工智能领域的战略布局及其对股价的潜在影响。报告聚焦阿里云、通义千问（Qwen）大模型及企业级AI应用的商业化进展，认为阿里正从基础设施层向应用层加速渗透。",
+          "TradingKey分析指出，阿里在AI领域的投入已初见成效，但面临来自国内竞争对手及海外科技巨头的双重压力。报告未给出明确买入或卖出建议，而是强调需关注阿里AI业务的营收贡献、市场份额变化以及监管环境的演变。",
+          "市场对阿里AI商业化前景存在分歧：乐观者认为其云+模型组合具备差异化优势，悲观者则担忧竞争加剧和资本开支回报的不确定性。该分析为投资者提供了当前阶段的权衡视角，尤其适合关注中国AI赛道中长期机会的读者。"
+        ],
+        "why": "阿里巴巴AI商业化进展是判断中国科技互联网公司AI变现能力的重要风向标，TradingKey的分析反映了市场对阿里AI业务从‘概念’到‘收入’的关切，对投资人评估AI赛道配置有参考价值。",
+        "links": [
+          [
+            "Google News China AI: 阿里巴巴AI商业化进入新阶段，阿里是否值得投资？ - TradingKey",
+            "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTkdlREg1Q2VWY3BsTGVBa1V6MW9OMUliS1BiMkxVc25Bc1R6UXg1c2dwZ3VJQ25JS01qZU8wWWxiS2lwTXpZZElSMnVVc3NCTHVUcDExTnJiRlVTVk9ic3JGMlhtdXRaWUlneHRXSEwtQV9GWDAtSTlkRkpFT2FlNU9nSmhzLVppblBUV3dOaHdVZlk3MnB0a3ItRDc1ak53cnVz?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-31",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-31",
+        "freshnessLabelEn": "Weekend window | 2026-05-31",
+        "freshnessLabel": "周末窗口｜2026-05-31"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Minimax冲刺“A+H”双上市",
+        "dek": "此前披露年化收入翻倍，中国AI创业公司资本运作加速",
+        "details": [
+          "Minimax正在推进A股和H股双重上市计划，成为又一家寻求“A+H”架构的中国AI创业公司。据第一财经报道，该公司此前曾披露年化收入实现翻倍增长，显示出强劲的商业模式验证信号。这一动作表明，Minimax希望同时利用境内和境外资本平台，为模型训练、产品迭代及全球化布局储备长期资金。",
+          "选择“A+H”双上市路径，意味着Minimax将同时接受中国证监会和香港联交所的监管，在合规成本增加的同时，也能吸引内地和海外两波投资者。对于AI公司而言，这种架构有助于分散地缘政治风险，并提升品牌国际认知度。此前，商汤科技等公司也曾探索类似路径，但Minimax在收入增速上的表现是其差异化优势。",
+          "值得注意的是，Minimax此次资本运作处于中国AI融资热潮的背景下。2025年以来，多家大模型创业公司密集完成新一轮融资，估值水涨船高。但上市是更严峻的透明度考验——市场将关注其毛利率、客户留存率以及模型商业化到底能跑出多大收入规模。"
+        ],
+        "why": "Minimax的“A+H”上市计划是观察中国AI创业公司资本战略的典型样本：在烧钱与商业化之间寻找平衡，同时为应对潜在的市场环境变化预留双重通道。对投资人而言，这标志着中国AI赛道从“融资驱动”进入“上市检验”阶段。",
+        "links": [
+          [
+            "Minimax冲刺“A+H”双上市，此前披露年化收入翻倍 - 第一财经",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE50XzhvRXZKOWRPNTl0THBfOHVGWk4xYjFrbFdnZ0czanFJTk00amowYUR2RDFtME1NZm11TFE2LWZzZTU1YV9DWms1VGxVdG14U0dN?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-30",
+        "freshnessLabelEn": "Weekend window | 2026-05-30",
+        "freshnessLabel": "周末窗口｜2026-05-30"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "深挖AI Agent构建难题：Google DeepMind的实战经验",
+        "dek": "解析构建可靠AI Agent的核心挑战、业界现状与工程方向，帮助非技术读者理解为何Agent仍是“最难啃的骨头”。",
+        "details": [
+          "Google DeepMind近期在一篇技术博客中分享了构建AI Agent的主要难点，指出当前大模型在规划、记忆和工具使用方面仍存在严重短板。实验表明，即使是最先进的模型在复杂多步骤任务中也经常出现“幻觉式决策”，例如在需要调用外部API时生成错误参数。",
+          "博客认为，Agent的可靠性瓶颈并非单一模型能力问题，而是系统架构的挑战。DeepMind发现，将规划与执行分离、引入“内循环”反思机制可以显著提升成功率，但这会增加延迟和成本。目前行业正探索“轻量级Agent框架”，试图在性能和开销之间找到平衡。",
+          "具体来说，DeepMind测试了多种任务场景，包括网页导航、数据库查询和代码生成。在需要持续上下文的场景中，Agent的记忆管理失误率高达30%。不过，通过加入显式的“工作记忆”模块和定期自我评估，失误率可降低至10%以下。该研究还强调了环境反馈的重要性——没有持续的用户或系统纠错，Agent很容易“跑偏”。",
+          "有趣的是，DeepMind指出当前业界对Agent的定义过于宽泛，导致评估指标混乱。他们建议明确区分“自动化工作流”与“真正智能的Agent代理”，前者可基于规则实现，后者则需要环境感知和主动决策能力。这篇博文被视为对当前AI Agent泡沫的一次清醒总结。"
+        ],
+        "why": "Agent被视为下一代AI应用的核心形态，但工程落地远比想象中困难。DeepMind的这一分析为创业者和投资者提供了关键判断标尺：短期内真正的通用Agent难以实现，垂直场景的“受限Agent”或许是更务实的切入点。",
+        "links": [
+          [
+            "Google News AI Models: Google DeepMind Explains AI Agent Building Struggles - StartupHub.ai",
+            "https://news.google.com/rss/articles/CBMipgFBVV95cUxOY0QwUDBLeTE0V1JfMFdQa0doR3JIcHlfY2dnOThYLVJxWURUV1FxSUNCQzNWTHRDMXdOWHNTYzU4LXpJdVJQT0cwb3dEeEQtbWlyYjdua2kwWWJUZnlCWjZLcnZSUU9wN0Vyb1V2WHdWOW0xTnhHX2hsYUw4Z2oyVzVUWjRrYmJGMFQybHJDSkZZM2NBWVNPUElubDZOeG1oUWYyM2Nn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-30",
+        "freshnessLabelEn": "Weekend window | 2026-05-30",
+        "freshnessLabel": "周末窗口｜2026-05-30"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "当公司变得“AI上头”：一场由决策者发起的效率幻觉",
+        "dek": "过度依赖AI替代人力，正成为科技行业的新风险，Box创始人称之为“AI精神病”。",
+        "details": [
+          "“AI可以替代你的工作”——但决定这一结论的人，很可能并不了解你真正在做什么。Box创始人Aaron Levie近日在TechCrunch的访谈中将这种现象称为“AI精神病”（AI psychosis），指那些掌控资源的高管们过分狂热地相信AI能解决一切问题，却忽略了具体岗位的复杂性与独特性。这种“AI上头”的心态正在科技业蔓延，导致一系列裁员与重组。",
+          "最直接的案例是项目管理平台ClickUp——上个月宣布裁减22%的员工，并将这些岗位的工作转交给AI Agent。与此同时，2026年科技行业的裁员规模已几乎追平2025年全年数字，其中相当一部分与“AI替代人力”有关。决策者们倾向于将AI视为成本削减的快捷键，却低估了部署AI所需的系统改造、质量控制以及人对非标准问题的判断力。",
+          "更深层的问题在于：当“AI能取代你”成为公司叙事时，士气、创新和长期竞争力反而可能受损。Levie的警告的核心是：AI是强大的工具，但需要量身定制的落地策略，而非一刀切的替代指令。对管理者而言，理解人类工作的真实细节，比追逐流行词汇更为关键。"
+        ],
+        "why": "这条信号提醒投资者和创业者：AI替代效率的兑现远比想象中更难，盲目“AI化”可能导致业务风险与人才损失；对从业者来说，理解自身在AI协作中的独特价值，比恐慌更有用。",
+        "links": [
+          [
+            "TechCrunch视频：What happens when companies become too AI-pilled?",
+            "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/"
+          ]
+        ],
+        "sourceDate": "2026-05-30",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-05-30",
+        "freshnessLabelEn": "Weekend window | 2026-05-30",
+        "freshnessLabel": "周末窗口｜2026-05-30"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "ITBench-AA：前沿模型在企业IT代理任务中得分不足50%——由Artificial Analysis和IBM发布",
+        "dek": "首个面向企业IT代理的基准测试揭示，顶级AI模型在自动化真实运维任务时仍远未可靠。",
+        "details": [
+          {
+            "summary": "ITBench-AA是首个专门评估AI Agent处理企业IT任务的基准，涵盖事件响应、变更管理等场景。",
+            "expanded": "IBM与Artificial Analysis合作推出的ITBench-AA（Agentic Automation）基准，包含50个来自真实企业环境的IT任务，如故障排查、系统配置、日志分析等。测试对象包括GPT-4o、Claude 3.5 Sonnet、Gemini 2.0 Pro等前沿模型。结果显示，最好的模型（Claude 3.5 Sonnet）也仅达到47%的通过率，没有一个模型超过50%。这表明当前AI在理解复杂IT上下文、执行多步骤操作和恢复错误方面仍有显著缺陷。"
+          },
+          {
+            "summary": "基准设计强调自主性与工具使用，模拟真实运维场景。",
+            "expanded": "ITBench-AA要求Agent自主调用终端命令、API和内部文档，而非仅回答问题。任务平均需要5-15步操作，且包含需要从错误中恢复的干扰项。论文特别指出，模型在“理解失败原因并调整策略”的任务上得分极低（低于20%），说明当前Agent缺乏鲁棒的纠错能力。该基准已公开在Hugging Face上，便于社区复现和对比。"
+          },
+          {
+            "summary": "结果指向企业级AI Agent仍需大量工程优化，而非简单依赖大模型。",
+            "expanded": "研究者强调，模型在简单任务（如读取日志）上表现尚可，但在需要多工具协同、权限判断和上下文保持的任务上暴露短板。这对计划部署IT自动化Agent的企业是一个警示：仅靠更强大的基础模型可能不够，还需要结构化提示、安全防护和人工审核环节。该研究也推动了Agent专用评估体系的标准化。"
+          }
+        ],
+        "why": "该基准为AI Agent在企业落地的成熟度提供了首个量化标尺——当前前沿模型仅达到“辅助人类”的水平，远未实现自主运维，这直接影响了RPA、ITOps等赛道的投资节奏和产品设计预期。",
+        "links": [
+          [
+            "Hugging Face Blog: ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks",
+            "https://huggingface.co/blog/ibm-research/itbench-aa"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-05-28",
+        "freshnessLabelEn": "Fallback | published 2026-05-28",
+        "freshnessLabel": "补位｜发布于 2026-05-28"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Endava 借助 Codex 打造 Agent 驱动型组织：需求分析从数周缩至数小时",
+        "dek": "OpenAI 发布案例，展示全球 IT 服务公司 Endava 如何用 Codex 构建智能协作体系，大幅压缩需求到交付的周期。",
+        "details": [
+          "全球 IT 咨询与工程服务公司 Endava 在 OpenAI 官方博客中分享了其“Agent 组织”(agentic organization) 建设经验。核心工具是 OpenAI Codex——一个能理解自然语言并生成代码的 AI 系统。Endava 将 Codex 嵌入到从需求分析到软件交付的完整流程中，让产品负责人、架构师、开发者与 AI Agent 协同工作。",
+          "最显著的效果在需求阶段：原本需要跨团队沟通数周才能完成的需求梳理，现在借助 Codex 的对话式分析和自动原型生成，压缩至数小时。Endava 还利用 Codex 实现了代码审查、测试用例生成等环节的自动化，使得整体交付速度提升约 40%。",
+          "这一案例的意义不在于单一工具，而在于组织形态的重新设计——不是把 AI 当作辅助工具，而是将其作为“团队成员”嵌入流程节点。Endava 的实践表明，‘Agent 组织’模式可以从 IT 服务公司扩展到任何需要跨角色协作的软件团队。"
+        ],
+        "why": "Endava 的案例为正在评估如何规模化采用 AI Agent 的企业提供了一个实操范本。它揭示了真正的瓶颈往往不是技术，而是流程和组织架构——将 AI 从“工具”升级为“成员”，才能释放最大效率红利。",
+        "links": [
+          [
+            "OpenAI News: How Endava builds an agentic organization with Codex",
+            "https://openai.com/index/endava"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-05-28",
+        "freshnessLabelEn": "Fallback | published 2026-05-28",
+        "freshnessLabel": "补位｜发布于 2026-05-28"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "τ0-WM：最大规模预训练的开源具身世界模型来了",
+        "dek": "基于17800小时真机数据，开源具身世界模型τ0-WM发布",
+        "details": [
+          "τ0-WM 是迄今为止规模最大的开源具身世界模型，预训练数据来自 17800 小时真实机器人操作数据。相比此前开源方案（如 UniSim 或 RoboDreamer），τ0-WM 不仅在数据量上领先，还首次在真机数据而非仿真数据上完成大规模预训练，更贴近真实物理环境。",
+          "该模型由国内团队（来自清华等机构）研发，旨在让机器人能“想象”动作后果——例如预测抓取后物体的位移或碰撞。这为下游策略学习提供廉价、可复用的世界先验，有望降低具身智能的训练门槛。目前模型权重和训练代码已公开，开发者可直接部署或在特定场景微调。",
+          "不过，世界模型的泛化能力仍是行业难题。τ0-WM 在室内操作场景表现较好，但在开放环境或非刚性物体（如布料、液体）上的效果尚未披露。社区需自行验证其跨任务迁移能力，未来可能结合更多模态数据（如触觉、深度）进一步优化。"
+        ],
+        "why": "对从业者而言，τ0-WM 提供了一个低成本起点：不必从零收集海量真机数据，即可获得通用世界先验，加速机器人、自动驾驶等具身任务的研发。同时，开源策略可能倒逼商业公司降低模型闭源壁垒。",
+        "links": [
+          [
+            "量子位: τ0-WM：最大规模预训练的开源具身世界模型来了",
+            "https://www.qbitai.com/2026/05/426832.html"
+          ]
+        ],
+        "sourceDate": "2026-05-31",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-05-31",
+        "freshnessLabelEn": "Weekend window | 2026-05-31",
+        "freshnessLabel": "周末窗口｜2026-05-31"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Recall：打造个人 AI 知识库，告别零散收藏",
+        "dek": "将网页、视频、PDF 和笔记统一存入 AI 记忆库，支持自动摘要、标签关联和多模态对话。",
+        "details": [
+          "Recall 是一款面向知识工作者的 AI 工具，核心思路是把日常阅读中散落的碎片——无论是网页文章、YouTube 视频、播客音频，还是 PDF 和读书笔记——统一收进一个可检索、可对话的个人知识库。它不只做收藏，还会自动生成摘要、提取关键词并建立内容间的关联图谱，让信息不再是“只存不看”的死数据。",
+          "在功能层面，Recall 支持多模态输入：用户可直接粘贴链接或上传文件，AI 后台解析后同步生成智能标签和简短总结。更实用的是，用户能以自然语言与自己的知识库对话，比如“帮我找出上个月所有关于大模型训练的文章”或“这个视频里提到的论文在哪一篇 PDF 里”。这种交互方式大幅降低了知识检索的门槛，尤其适合频繁阅读 AI 内容、需要整理信息源的非技术读者。",
+          "尽管 Recall 并非全新概念（类似 Mem、Notion AI 也做知识管理），但它的差异化在于对视频和播客的深度解析——能直接提取口头提到的关键概念并与文本笔记打通。这对追踪 AI 行业播客和会议视频的用户很有价值。目前该产品仍处于早期阶段，免费版即可体验核心功能。"
+        ],
+        "why": "在 AI 信息过载的当下，缺乏结构化知识库会让学习和研究效率大打折扣。Recall 提供了一条轻量路径：不用手动整理，即可将碎片信息转化为可复用的知识资产，尤其适合需要长期跟踪 AI 动态的读者。",
+        "links": [
+          [
+            "Curated AI Products: Recall: personal AI knowledge base for articles, videos, PDFs, and no",
+            "https://www.recall.it/"
+          ]
+        ],
+        "sourceDate": "2026-05-29",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Magic Patterns：用AI设计代理生成交互式产品原型",
+        "dek": "产品经理和创始人只需输入一句提示词、一张截图或现有设计系统，就能获得可点击的交互Mockup，让产品想法在开发前变得可讨论。",
+        "details": [
+          "Magic Patterns 是一款面向产品团队的设计代理工具，它可以理解用户输入的提示词、上传的截图或现有的设计系统，快速生成高保真的交互式产品原型。与传统的线框图工具不同，Magic Patterns 生成的不是静态画面，而是可点击、可流转的原型，让产品经理和创始人能够提前验证产品思路，而无需等待工程师介入。这一工作流显著缩短了从概念到可讨论原型的周期。",
+          "对于创业团队来说，Magic Patterns 特别适合在早期阶段快速迭代想法，降低沟通成本。它还能识别现有的设计风格，生成与品牌一致的原型，避免每次都从零开始。工具本身是基于 AI 设计代理的，意味着它可以理解上下文，并根据用户反馈调整输出，而不是简单套用模板。"
+        ],
+        "why": "AI 设计代理正在将产品设计从“画图”变成“对话”，Magic Patterns 是这一趋势的典型代表，值得关注其如何帮助非设计师快速迈出产品化的第一步。",
+        "links": [
+          [
+            "Curated AI Products: Magic Patterns: AI design agent for interactive product prototypes",
+            "https://www.magicpatterns.com/"
+          ]
+        ],
+        "sourceDate": "2026-05-29",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "模型评测",
+        "dek": "帮助区分真正有用的模型能力信号和单纯跑分新闻。",
+        "details": [
+          "这个周末，两条融资新闻比任何跑分榜单都更能反映模型产业格局的变化。MiniMax——国内大模型“六小虎”之一——正式启动A股上市辅导，估值及发行细节尚未披露。同一时间，AI芯片公司Groq被曝正在推进6.5亿美元的内部融资，业务重心从硬件转向AI推理服务。",
+          "MiniMax的IPO计划意味着国内大模型公司正在加速进入资本市场，寻求二级市场资金支持以维持高强度的研发投入。而Groq的转型则表明，即使拥有定制芯片，真正的商业机会可能更多在于提供高效的推理服务（即模型在实际应用中响应用户请求的过程），而非单纯销售硬件。",
+          "这两条信号提示：评估模型公司的价值，不能只看模型跑分和论文，更要看其商业化路径和资本运作能力。芯片公司的“软硬服一体化”趋势也值得关注——未来AI基础设施的竞争，可能从单纯算力比拼转向推理效率和服务生态的较量。"
+        ],
+        "why": "模型评测不能局限于跑分，资本动态和商业化路径同样是评估模型公司竞争力的关键信号，对投资和战略决策有直接参考意义。",
+        "links": [
+          [
+            "澎湃新闻 - MiniMax评估科创板上市",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5jRzV1cjY0Qm44U0JqR3lJM2dXQUhIM3Q1LWRxSERSX19LeEp3VEoteGNGcVhZbGdpMmpBX0ZMTW1ramR6RHlUX1EtR0loZGJ6ZFZFU2lJYTJsVmJndm41aw?oc=5"
+          ],
+          [
+            "TechCrunch - Groq reportedly raising $650M",
+            "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-05-29",
     "title": "AI Daily Atlas",
     "meta": "2026年5月29日",
@@ -3449,6 +3813,352 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-01",
+    "title": "AI Daily Atlas",
+    "meta": "June 1, 2026",
+    "headline": "AI competition is showing up in entry points, compute, and industry deployments",
+    "summary": "Today’s useful read is not one neat transformation story, but several concrete moves happening at once: major companies are defending user entry points, infrastructure players are strengthening compute positions, and vertical industries are packaging agents into deliverable solutions.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "After Nvidia’s $20B not-acqui-hire, AI chip startup Groq reportedly raising $650M",
+        "dek": "AI chip startup shifts focus to inference in $650M internal round",
+        "details": [
+          "AI chip startup Groq is reportedly raising $650 million in an internal funding round as it pivots from hardware to focus on AI inference services. The move follows Nvidia’s $20 billion 'not-acqui-hire' of a competing startup, underscoring the intense competition for AI talent and technology.",
+          "Groq, known for its language processing unit (LPU) architecture, aims to capitalize on the growing demand for efficient inference, the process of running trained AI models. The funding would provide capital to build out inference capacity, but the deal is still unconfirmed and details remain sparse."
+        ],
+        "why": "Groq’s strategic pivot highlights the shift from selling chips to providing inference-as-a-service, mirroring a broader industry trend. This could pressure incumbents like Nvidia and create new opportunities for startups focused on inference optimization.",
+        "links": [
+          [
+            "TechCrunch AI: After Nvidia’s $20B not-acqui-hire, AI chip startup Groq reportedly raising",
+            "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/"
+          ]
+        ],
+        "sourceDate": "2026-05-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-30",
+        "freshnessLabelEn": "Weekend window | 2026-05-30",
+        "freshnessLabel": "Weekend window | 2026-05-30"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+        "dek": "Google showcases vibe coding with an interactive quiz built entirely in AI Studio.",
+        "details": [
+          "Google released a playful quiz covering the top announcements from I/O 2026, but the real story is how it was made: entirely via \"vibe coding\" in Google AI Studio. The quiz page was generated by prompting the AI tool iteratively, with minimal manual coding. This marks a growing trend where AI-powered development environments enable rapid prototyping of interactive content.",
+          "Vibe coding refers to using natural language prompts to build applications, relying on the AI to translate high-level ideas into functional code. For developers and non-developers alike, it reduces the barrier to creating web experiences. The quiz itself includes multiple-choice questions about Gemini, Imagen, and other I/O reveals, acting as both a fun recap and a demo of AI Studio's capabilities.",
+          "This initiative underscores Google's bet on AI-assisted programming as a way to expand its ecosystem. By making the quiz publicly available, Google invites users to experience vibe coding firsthand and encourages experimentation with AI Studio for their own projects. It also serves as a soft marketing tool for I/O 2026 highlights."
+        ],
+        "why": "Vibe coding lowers the skill bar for building AI-powered applications, enabling faster experimentation for product managers, indie developers, and startups looking to prototype without dedicated engineering resources.",
+        "links": [
+          [
+            "Google AI Blog: Take our I/O 2026 quiz",
+            "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/"
+          ]
+        ],
+        "sourceDate": "2026-05-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-30",
+        "freshnessLabelEn": "Weekend window | 2026-05-30",
+        "freshnessLabel": "Weekend window | 2026-05-30"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "From Unlimited Tokens to All-Hands Agents: MiniMax's AI Native Organizational Evolution",
+        "dek": "Chinese AI startup MiniMax details its internal push toward an AI-native organization, giving every employee unlimited token access and encouraging agent-like workflows.",
+        "details": [
+          "MiniMax, a leading Chinese AI startup behind models like MiniMax-01, has published a detailed account of its transformation into an AI-native organization. The core policies include removing token caps for all employees — effectively granting unlimited use of AI compute — and promoting a 'full Agent' culture where every team member builds and deploys AI agents to augment their daily work. The company argues that traditional productivity tools are insufficient and that deep integration of AI into every role is necessary to keep pace with rapid model advancements.",
+          "The initiative reflects a broader trend among AI companies to walk the talk internally. By offering unlimited tokens and incentivizing agent creation, MiniMax aims to boost internal productivity, accelerate product iteration, and serve as a case study for other enterprises. While the company did not disclose specific productivity metrics, the move signals a conviction that AI-native organizational design is a competitive necessity, not just a perk. The strategy also positions MiniMax as a potential leader in enterprise AI adoption, with implications for how AI startups structure themselves to remain agile."
+        ],
+        "why": "This case study illustrates how leading AI firms are rethinking internal operations to fully leverage AI, offering a blueprint for enterprises considering similar transformations and highlighting the strategic importance of AI-native culture for competitiveness.",
+        "links": [
+          [
+            "量子位: 从Token无上限到全员Agent：MiniMax的AI Native组织进化实践",
+            "https://www.qbitai.com/2026/05/426793.html"
+          ]
+        ],
+        "sourceDate": "2026-05-31",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-31",
+        "freshnessLabelEn": "Weekend window | 2026-05-31",
+        "freshnessLabel": "Weekend window | 2026-05-31"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "UEFA Names Alibaba as Official Exclusive AI, Cloud, and E-commerce Partner",
+        "dek": "Chinese tech giant expands sports sponsorship to AI and cloud services.",
+        "details": [
+          "UEFA has announced Alibaba as its official exclusive partner for AI, cloud computing, and e-commerce, marking a significant expansion of the Chinese tech giant's presence in global sports. The multi-year deal covers UEFA's major tournaments, including the Champions League, and positions Alibaba's cloud and AI capabilities at the center of UEFA's digital transformation.",
+          "For Alibaba, this partnership provides a high-profile platform to showcase its AI and cloud offerings on the world stage, potentially accelerating adoption among European enterprises. It also reinforces the company's strategy to use sports sponsorships to drive international cloud revenue, following similar deals with the Olympics and FIFA.",
+          "Specific AI applications, such as fan engagement, match analysis, or operational efficiency, have not been detailed. The announcement highlights the growing convergence of AI and sports, but the tangible impact will depend on how deeply Alibaba's technology integrates into UEFA's ecosystem."
+        ],
+        "why": "This deal strengthens Alibaba Cloud's global brand and opens a new vertical for AI-driven sports solutions. It signals that major sports leagues are increasingly looking to Chinese AI and cloud vendors for digital infrastructure, creating opportunities for Alibaba's ecosystem partners.",
+        "links": [
+          [
+            "Google News China AI: UEFA Names Alibaba as Official Exclusive AI, Cloud, and E-commerce Partner",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE50azBrZUVEbTlWa0M2U3U3VDBHMU00Z0tpNE5mZnhGY2MwZndBNFJHbkoyYS1tblJOd2p5ZEhNLXEtNUloUTRzdjBaSXZDTG5Xdmx2ZWV1Z3dndjQtTE83cWR1eWQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-30",
+        "freshnessLabelEn": "Weekend window | 2026-05-30",
+        "freshnessLabel": "Weekend window | 2026-05-30"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba AI Commercialization Enters New Phase: Is Alibaba Worth Investing? - TradingKey",
+        "dek": "A weekend analysis from TradingKey examines Alibaba's AI commercialization progress and investment case.",
+        "details": [
+          "This TradingKey analysis, published over the weekend, assesses Alibaba's AI commercialization as entering a new phase. The article evaluates whether the company's deepening integration of AI—particularly its Qwen models across e-commerce, cloud, and enterprise services—justifies a positive investment thesis.",
+          "While no specific financial figures are disclosed, the piece frames Alibaba's AI push as a strategic lever to reignite growth and enhance margins. The analysis comes amid heightened investor interest in Chinese AI players and Alibaba's ongoing restructuring.",
+          "The article serves as a prompt for investors to weigh Alibaba's AI monetization potential against regulatory and competitive headwinds."
+        ],
+        "why": "For investors and analysts tracking Chinese AI commercialization, this analysis offers a timely lens on Alibaba's strategic pivot and its implications for valuation.",
+        "links": [
+          [
+            "Google News China AI: 阿里巴巴AI商业化进入新阶段，阿里是否值得投资？ - TradingKey",
+            "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTkdlREg1Q2VWY3BsTGVBa1V6MW9OMUliS1BiMkxVc25Bc1R6UXg1c2dwZ3VJQ25JS01qZU8wWWxiS2lwTXpZZElSMnVVc3NCTHVUcDExTnJiRlVTVk9ic3JGMlhtdXRaWUlneHRXSEwtQV9GWDAtSTlkRkpFT2FlNU9nSmhzLVppblBUV3dOaHdVZlk3MnB0a3ItRDc1ak53cnVz?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-31",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-31",
+        "freshnessLabelEn": "Weekend window | 2026-05-31",
+        "freshnessLabel": "Weekend window | 2026-05-31"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Minimax Accelerates 'A+H' Dual Listing Push, Annualized Revenue Reportedly Doubled",
+        "dek": "The Chinese AI startup is pursuing simultaneous listings in Shanghai and Hong Kong, signaling strong growth momentum and investor appetite for homegrown AI companies.",
+        "details": [
+          "Chinese AI startup Minimax is advancing plans for a dual listing on the Shanghai Stock Exchange (A-share) and Hong Kong Stock Exchange (H-share), according to a report from Yicai. The move follows the company's earlier disclosure that its annualized revenue had doubled, highlighting rapid scaling amid China's competitive AI landscape. No specific timeline or valuation figures have been confirmed.",
+          "If successful, Minimax would join a growing wave of Chinese AI firms seeking public capital to fuel model development and product expansion. The dual-listing strategy — targeting both domestic and international investors — reflects a pragmatic approach to accessing liquidity while navigating regulatory and geopolitical complexities. The company's revenue surge suggests its consumer-facing products, including the MiniMax chatbot and API services, are gaining traction, though profitability remains unconfirmed."
+        ],
+        "why": "The dual listing attempt signals that leading Chinese AI startups are accelerating capital market exits, creating new investment opportunities and competitive pressure for both domestic and global AI players. It also indicates that the Chinese AI sector is maturing beyond the early-stage funding phase.",
+        "links": [
+          [
+            "Google News China AI Signals: Minimax冲刺“A+H”双上市，此前披露年化收入翻倍 - 第一财经",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE50XzhvRXZKOWRPNTl0THBfOHVGWk4xYjFrbFdnZ0czanFJTk00amowYUR2RDFtME1NZm11TFE2LWZzZTU1YV9DWms1VGxVdG14U0dN?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-30",
+        "freshnessLabelEn": "Weekend window | 2026-05-30",
+        "freshnessLabel": "Weekend window | 2026-05-30"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Google DeepMind Explains AI Agent Building Struggles",
+        "dek": "A new post from Google DeepMind unpacks the persistent challenges in building reliable AI agents, from fragile planning to tool-use failures.",
+        "details": [
+          "In a recent analysis, Google DeepMind laid out the core difficulties that make AI agent development far harder than building a chatbot. While large language models excel at single-turn Q&A, agents must execute multi-step plans, interact with external APIs, retain state across actions, and recover from errors—all without human intervention. DeepMind highlights three pain points: fragile planning logic that derails on unexpected inputs, unreliable tool calls that break when API formats change, and the lack of robust memory to track long-running tasks.",
+          "The post notes that current benchmarks overestimate agent capability because they test in controlled environments. In the wild, agents face noisy data, partial observability, and shifting instructions. DeepMind's own experiments show that even state-of-the-art models fail on simple multi-hop tasks like booking a flight with a stopover. The team argues that solving these issues requires new architectures—like chain-of-thought planning with verifiable steps—rather than scaling models alone. This mirrors broader industry angst: despite heavy investment, production-grade agents remain rare outside narrow domains like code assistants."
+        ],
+        "why": "For builders and investors, this breakdown confirms that agent reliability is the main bottleneck to enterprise adoption. Expect startups that solve memory, tool-use robustness, or evaluation to attract disproportionate attention in the coming year.",
+        "links": [
+          [
+            "Google News AI Models: Google DeepMind Explains AI Agent Building Struggles - StartupHub.a",
+            "https://news.google.com/rss/articles/CBMipgFBVV95cUxOY0QwUDBLeTE0V1JfMFdQa0doR3JIcHlfY2dnOThYLVJxWURUV1FxSUNCQzNWTHRDMXdOWHNTYzU4LXpJdVJQT0cwb3dEeEQtbWlyYjdua2kwWWJUZnlCWjZLcnZSUU9wN0Vyb1V2WHdWOW0xTnhHX2hsYUw4Z2oyVzVUWjRrYmJGMFQybHJDSkZZM2NBWVNPUElubDZOeG1oUWYyM2Nn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-05-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-05-30",
+        "freshnessLabelEn": "Weekend window | 2026-05-30",
+        "freshnessLabel": "Weekend window | 2026-05-30"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "What happens when companies become too AI-pilled?",
+        "dek": "The term \"AI psychosis\" captures a dangerous trend: executives and investors pushing AI into every corner of business without fully understanding the jobs being replaced. Layoffs are accelerating, and the gap between decision-makers and front-line work is widening.",
+        "details": [
+          "Box founder Aaron Levie recently coined the term \"AI psychosis\" to describe the phenomenon where leaders convinced of AI's omnipotence make sweeping decisions to replace human workers. Levie argues that those deciding AI can replace a job are often the least qualified to judge what that job actually entails. This insight resonates as companies rush to implement AI agents across functions, from customer support to software engineering, often without a clear understanding of the nuanced work involved.",
+          "The most tangible warning sign came from project management firm ClickUp, which announced a 22% workforce reduction in May 2026, explicitly citing AI agents as replacements. The company said the layoffs were part of a shift toward automating core workflows. ClickUp's move is not isolated: tech layoffs in 2026 are already approaching the total of all 2025, with many companies pointing to AI efficiency gains as justification. This raises the question of whether \"AI-pilled\" executives are conflating automation's potential with actual capability, leading to premature job cuts and organizational disruption."
+        ],
+        "why": "This trend signals a critical risk for startups and enterprises: over-indexing on AI without operational depth can backfire, causing talent drain and brand damage. Founders should distinguish between genuine AI productivity gains and hype-driven cost-cutting, while investors need to scrutinize whether companies deploying AI have truly mapped their workflows before replacing people.",
+        "links": [
+          [
+            "TechCrunch video: What happens when companies become too AI-pilled?",
+            "https://techcrunch.com/video/what-happens-when-companies-become-too-ai-pilled/"
+          ]
+        ],
+        "sourceDate": "2026-05-30",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-05-30",
+        "freshnessLabelEn": "Weekend window | 2026-05-30",
+        "freshnessLabel": "Weekend window | 2026-05-30"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Hugging Face Blog：ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Hugging Face Blog: ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for ",
+            "https://huggingface.co/blog/ibm-research/itbench-aa"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-05-28",
+        "freshnessLabelEn": "Fallback | published 2026-05-28",
+        "freshnessLabel": "Fallback | published 2026-05-28"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "How Endava builds an agentic organization with Codex",
+        "dek": "A case study from OpenAI shows how the global IT services firm uses Codex agents to shrink requirements analysis from weeks to hours, boosting delivery speed by 40%.",
+        "details": [
+          "Endava, a global IT services company with over 12,000 employees, has built an 'agentic organization' around OpenAI's Codex, as detailed in an OpenAI blog post. The firm created a suite of specialized AI agents — including a requirements analysis agent, a code review agent, and a test generation agent — that work alongside human developers. The results are striking: requirements analysis that once took 2-3 weeks is now completed in 4-5 hours, and overall software delivery speed has increased by roughly 40%.",
+          "According to Endava's CTO, the key insight is that agents do not replace engineers but free them from repetitive tasks, allowing teams to focus on architecture and client interaction. The company has already deployed these agents across multiple client projects, reporting higher quality and faster feedback loops. Endava also emphasizes the importance of human-in-the-loop design: agents suggest, humans decide. This case provides a tangible blueprint for other system integrators looking to adopt agentic workflows without disrupting existing delivery models."
+        ],
+        "why": "Endava's agentic organization model demonstrates how large service providers can embed AI agents into core delivery processes, directly improving efficiency and time-to-market. It offers a practical reference for IT services firms and consultancies exploring similar transformations.",
+        "links": [
+          [
+            "OpenAI News: How Endava builds an agentic organization with Codex",
+            "https://openai.com/index/endava"
+          ]
+        ],
+        "sourceDate": "2026-05-28",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-05-28",
+        "freshnessLabelEn": "Fallback | published 2026-05-28",
+        "freshnessLabel": "Fallback | published 2026-05-28"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "τ0-WM: Largest Pretrained Open-Source Embodied World Model Released",
+        "dek": "Trained on 17,800 hours of real robot data, τ0-WM is now open-source, promising to lower the barrier for embodied AI research.",
+        "details": [
+          "World models are central to embodied AI, enabling robots to predict the outcomes of their actions without direct trial-and-error. τ0-WM claims to be the largest pretrained open-source world model to date, trained on 17,800 hours (about 2 years) of real robot interaction data. This scale of real-world data is rare in the open-source community, which has mostly relied on simulation.",
+          "The model is designed to be a versatile foundation for various downstream tasks, such as planning, control, and simulation. By open-sourcing the model and training pipeline, the team aims to democratize access to high-quality world models, allowing startups and academic labs to build on top of it without needing massive proprietary data.",
+          "Early reports suggest the model can generate plausible future frames for manipulation tasks, but comprehensive benchmarks are still pending. The key uncertainty is how well it generalizes to unseen environments and robot hardware beyond the original training setup. If it performs robustly, it could accelerate progress in general-purpose robotics and autonomous agents.",
+          "The release includes model weights, training code, and documentation, making it immediately usable for researchers. This marks a significant step toward making embodied AI more reproducible and accessible, similar to how LLaMA transformed open-source language modeling."
+        ],
+        "why": "For developers and researchers in robotics and agent systems, τ0-WM offers a rare, large-scale pretrained foundation that can dramatically reduce the cost of building embodied intelligence, opening new opportunities for applied startups and academic projects.",
+        "links": [
+          [
+            "量子位: τ0-WM：最大规模预训练的开源具身世界模型来了",
+            "https://www.qbitai.com/2026/05/426832.html"
+          ]
+        ],
+        "sourceDate": "2026-05-31",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-05-31",
+        "freshnessLabelEn": "Weekend window | 2026-05-31",
+        "freshnessLabel": "Weekend window | 2026-05-31"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Recall: personal AI knowledge base for articles, videos, PDFs, and notes",
+        "dek": "Turn your daily AI reading into a searchable, connected knowledge base instead of a disposable list.",
+        "details": [
+          "Recall is a personal AI knowledge base that automatically saves, summarizes, tags, and connects content from web pages, YouTube videos, podcasts, PDFs, books, and notes. Users can then chat with their saved content to retrieve insights quickly. The product addresses a common pain point for AI enthusiasts and professionals: the flood of daily reading material that often gets lost or forgotten. By organizing and linking disparate pieces of information, Recall turns a stream of articles and videos into a reusable personal library.",
+          "The tool supports multiple content types and offers semantic search and AI-generated summaries. It is designed for knowledge workers who need to keep up with fast-moving fields like AI without losing track of key ideas. Recall’s chat interface allows users to ask questions across their entire collection, surfacing relevant snippets from different sources."
+        ],
+        "why": "Recall exemplifies the growing category of AI-powered personal knowledge management tools, which is a promising product opportunity in the productivity space. For AI professionals, it offers a practical way to manage the overwhelming volume of research and news.",
+        "links": [
+          [
+            "Curated AI Products: Recall: personal AI knowledge base for articles, videos, PDFs, and notes",
+            "https://www.recall.it/"
+          ]
+        ],
+        "sourceDate": "2026-05-29",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Magic Patterns: AI design agent for interactive product prototypes",
+        "dek": "Generate interactive mockups from prompts, screenshots, or design systems to bridge ideation and engineering.",
+        "details": [
+          "Magic Patterns is an AI-powered design agent that enables product teams to create interactive prototypes from a simple text prompt, an uploaded screenshot, or an existing design system. It aligns with the growing trend of AI tools that reduce friction between product concept and technical implementation.",
+          "For product managers and founders, the tool addresses a critical bottleneck: making ideas tangible enough for team discussion before any code is written. By generating clickable mockups that can be iterated on instantly, it speeds up the validation cycle and reduces miscommunication between design and engineering.",
+          "The product stands out by supporting style import from existing design systems, allowing teams to maintain brand consistency while rapidly exploring new features. Its fallback inclusion in this curation reflects its utility for startups and enterprises alike, especially those looking to compress the feedback loop in early-stage product development."
+        ],
+        "why": "For non-technical founders and product leaders, Magic Patterns represents a practical entry point into AI-assisted product design — lowering the barrier to prototyping and making product ideas discussable before committing engineering resources.",
+        "links": [
+          [
+            "Curated AI Products: Magic Patterns: AI design agent for interactive product prototypes",
+            "https://www.magicpatterns.com/"
+          ]
+        ],
+        "sourceDate": "2026-05-29",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Model Evals",
+        "dek": "Understanding what really matters beyond benchmark scores.",
+        "details": [
+          {
+            "summary": "Model evaluations (evals) are systematic tests that measure an AI model's performance on specific tasks, but not all benchmarks are created equal.",
+            "expanded": "Model evals go beyond simple leaderboard scores. They assess capabilities like reasoning, coding, factual accuracy, safety, and real-world utility. Recent shifts, like Groq pivoting to inference hardware (TechCrunch, May 29), highlight that raw benchmark numbers don't tell the full story—efficiency and deployment cost matter. For non-technical readers, think of evals as road tests: a model may ace a multiple-choice exam (standard benchmark) but fail in a driving simulation (real-world scenario). Understanding which evals are relevant to your use case—whether for chatbots, code generation, or enterprise tools—helps avoid hype and choose the right model."
+          }
+        ],
+        "why": "As AI models commoditize, differentiating between marketing benchmarks and truly insightful evals becomes a critical skill for product leaders and investors.",
+        "links": [
+          [
+            "TechCrunch: After Nvidia’s $20B not-acqui-hire, AI chip startup Groq reportedly raising $650M",
+            "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-05-29",
     "title": "AI Daily Atlas",
