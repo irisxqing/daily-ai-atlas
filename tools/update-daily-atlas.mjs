@@ -1234,7 +1234,7 @@ function isChineseLocalizedTitle(title = "") {
 
 function localizeTitleZh(title = "") {
   const raw = String(title || "").trim();
-  if (!raw || isChineseLocalizedTitle(raw)) return raw;
+  if (!raw) return raw;
   if (/google/i.test(raw) && /search box|search/i.test(raw)) return "Google 搜索框 25 年来首次重设计，转向 AI 多模态交互";
   if (/google/i.test(raw) && /smart glasses|google glass/i.test(raw)) return "Google 重启智能眼镜路线，试图把 Gemini 带到现实世界入口";
   if (/google\s*i\/o|^i\/o\s*20\d{2}/i.test(raw)) return "Google I/O 2026：AI 产品和开发者工具集中更新";
@@ -1247,13 +1247,22 @@ function localizeTitleZh(title = "") {
   if (/alibaba cloud/i.test(raw) && /qwen cloud|agents/i.test(raw)) return "阿里云上线 Qwen Cloud 官网，降低 Agent 开发部署门槛";
   if (/bristol myers/i.test(raw) && /anthropic/i.test(raw)) return "百时美施贵宝扩大与 Anthropic 合作，用 AI 加速药物研发";
   if (/pope leo|vatican/i.test(raw) && /anthropic/i.test(raw)) return "教皇 Leo 与 Anthropic 联合创始人合作推进 AI 治理讨论";
+  if (/nvidia/i.test(raw) && /isaac\s*gr00t/i.test(raw)) return "NVIDIA 发布 Isaac GR00T 人形机器人研究参考平台";
+  if (/nvidia/i.test(raw) && /unitree/i.test(raw)) return "NVIDIA 选择宇树作为人形机器人平台合作方";
+  if (/nvidia/i.test(raw) && /cosmos\s*3/i.test(raw)) return "NVIDIA Cosmos 3 开源，瞄准物理 AI 推理与行动";
+  if (/minimax/i.test(raw) && /ipo|上市|科创板/i.test(raw)) return "MiniMax 拟赴科创板上市，国产大模型资本化提速";
+  if (/openai/i.test(raw) && /aws/i.test(raw)) return "OpenAI 前沿模型与 Codex 正式登陆 AWS";
+  if (/xai|grok imagine/i.test(raw) && /video agent|video/i.test(raw)) return "xAI Grok Imagine 团队谈视频 Agent 的下一步";
   if (/figure ai|humanoid robots/i.test(raw)) return "Figure AI 人形机器人处理包裹走红，机器人落地再升温";
   if (/openai/i.test(raw) && /dell|codex/i.test(raw)) return "OpenAI 与 Dell 合作，把 Codex 带进混合云和本地企业环境";
   if (/google deepmind/i.test(raw) && /edison|ai scientist/i.test(raw)) return "Google DeepMind 与 Edison 合作推进 AI Scientist";
+  if (/recall/i.test(raw)) return "Recall：把文章、视频和 PDF 变成可搜索的个人知识库";
+  if (/magic patterns/i.test(raw)) return "Magic Patterns：用 AI 生成可交互产品原型";
   if (/granola/i.test(raw)) return "Granola：适合真实工作对话的 AI 会议笔记";
   if (/gamma/i.test(raw)) return "Gamma：AI 原生的演示文稿与文档工作台";
   if (/fellou/i.test(raw)) return "Fellou：面向研究与网页自动化的 Agent 浏览器";
   if (/flowith/i.test(raw)) return "Flowith：用画布组织多步思考的 AI 工作台";
+  if (isChineseLocalizedTitle(raw)) return raw;
   return `AI 信号：${raw.replace(/\s+/g, " ").slice(0, 72)}`;
 }
 
@@ -1993,25 +2002,128 @@ function selectTopStoryEntries(sourcePack, count, used) {
 }
 
 function buildEditorialFrame(items) {
-  const headlineTitles = items.filter((item) => item.section === "头条").map((item) => `${item.titleZh || ""} ${item.titleEn || ""}`).join(" ");
-  const hasMajorEvent = /Google I\/O|OpenAI|Microsoft Build|WWDC/i.test(headlineTitles);
-  const hasInfrastructure = /芯片|算力|能源|数据中心|GPU|NVIDIA|infrastructure|energy|datacenter/i.test(headlineTitles);
-  const hasProductEntry = /Agent|助手|搜索|浏览器|工作流|workflow|assistant/i.test(headlineTitles);
-  if (!hasMajorEvent && !hasInfrastructure && !hasProductEntry) {
-    return {
-      headlineZh: "今天的 AI 信号没有单一主线，但值得分开看",
-      headlineEn: "Today’s AI signals are dispersed, but still worth reading separately",
-      summaryZh: "今天没有一个压倒性的 AI 主题，更像是大公司动作、产品更新和行业观点的并行推进。阅读重点不是强行找“转变”，而是分别判断哪些信号有真实产品、资本或组织含义。",
-      summaryEn: "Today does not have one dominant AI theme; it is a set of parallel company moves, product updates, and industry views. The useful read is not to force a transformation narrative, but to judge which signals carry real product, capital, or organizational meaning.",
-      tagsZh: ["头条", "深度", "观点", "AI产品"],
-      tagsEn: ["Headlines", "Deep Dive", "Views", "AI Products"]
-    };
-  }
+  const normalizedItems = items.map((item) => ({
+    ...item,
+    text: `${item.section || ""} ${item.titleZh || ""} ${item.titleEn || ""} ${item.angle || ""}`
+  }));
+  const headlineItems = normalizedItems.filter((item) => item.section === "头条");
+  const allText = normalizedItems.map((item) => item.text).join(" ");
+  const shortenAtBoundary = (value = "", max = 34) => {
+    const text = String(value || "").trim();
+    if (text.length <= max) return text;
+    const sliced = text.slice(0, max);
+    const boundary = Math.max(
+      sliced.lastIndexOf("，"),
+      sliced.lastIndexOf("："),
+      sliced.lastIndexOf("；"),
+      sliced.lastIndexOf("、"),
+      sliced.lastIndexOf(" ")
+    );
+    return `${(boundary > 12 ? sliced.slice(0, boundary) : sliced).trim()}…`;
+  };
+  const cleanZhTitle = (title = "") => shortenAtBoundary(String(title)
+    .replace(/^AI 信号[:：]\s*/, "")
+    .replace(/\s+-\s+[^-]{2,32}$/u, "")
+    .replace(/\s+/g, " ")
+    .trim(), 34);
+  const cleanEnTitle = (title = "") => shortenAtBoundary(String(title)
+    .replace(/\s+-\s+[^-]{2,32}$/u, "")
+    .replace(/\s+/g, " ")
+    .trim(), 72);
+  const joinEn = (values = []) => {
+    if (values.length <= 1) return values[0] || "";
+    if (values.length === 2) return `${values[0]} plus ${values[1]}`;
+    return `${values.slice(0, -1).join(", ")}, and ${values.at(-1)}`;
+  };
+  const themeRules = [
+    {
+      key: "governance",
+      zh: "治理与安全",
+      en: "governance and safety",
+      zhPhrase: "AI 治理、安全和社会共识正在进入更具体的合作与政策场景",
+      enPhrase: "AI governance and safety are moving into more concrete institutional and policy settings",
+      pattern: /治理|监管|安全|隐私|版权|合规|教皇|梵蒂冈|policy|governance|safety|privacy|copyright|vatican|pope/i
+    },
+    {
+      key: "pricing",
+      zh: "价格与成本",
+      en: "pricing and cost",
+      zhPhrase: "模型价格、推理成本和商业化压力开始直接影响竞争节奏",
+      enPhrase: "model pricing, inference cost, and commercialization pressure are shaping the competitive tempo",
+      pattern: /价格|降价|成本|计费|推理成本|pricing|price|cost|metering|inference/i
+    },
+    {
+      key: "infrastructure",
+      zh: "算力与产业链",
+      en: "compute and infrastructure",
+      zhPhrase: "算力、芯片、数据中心和供应链仍是大模型竞争的底层变量",
+      enPhrase: "compute, chips, data centers, and supply chains remain the base layer of AI competition",
+      pattern: /芯片|算力|GPU|英伟达|NVIDIA|数据中心|服务器|能源|datacenter|data center|chip|compute|infrastructure|energy/i
+    },
+    {
+      key: "agent",
+      zh: "Agent 与工作流",
+      en: "agents and workflows",
+      zhPhrase: "Agent 正从演示概念继续走向企业流程、开发者工具和真实任务执行",
+      enPhrase: "agents are moving from demos into enterprise workflows, developer tools, and real task execution",
+      pattern: /Agent|智能体|工作流|workflow|automation|coding agent|assistant|助手|浏览器/i
+    },
+    {
+      key: "model",
+      zh: "模型与平台",
+      en: "models and platforms",
+      zhPhrase: "模型、API 和平台入口仍在快速迭代，但重点越来越落到可用性",
+      enPhrase: "models, APIs, and platform entry points are still moving quickly, with usability becoming the key test",
+      pattern: /模型|API|GPT|Claude|Gemini|DeepSeek|Qwen|Kimi|发布|上线|model|launch|release|platform/i
+    },
+    {
+      key: "capital",
+      zh: "资本与并购",
+      en: "capital and M&A",
+      zhPhrase: "融资、投资和并购信号继续反映资本对 AI 方向的取舍",
+      enPhrase: "funding, investments, and M&A signals continue to show where capital is placing AI bets",
+      pattern: /融资|投资|估值|并购|收购|IPO|funding|investment|valuation|acquisition|merger/i
+    },
+    {
+      key: "robotics",
+      zh: "机器人与物理 AI",
+      en: "robotics and physical AI",
+      zhPhrase: "机器人和物理 AI 的讨论更关注可落地任务与成本效率",
+      enPhrase: "robotics and physical AI are being judged more by task fit and cost efficiency",
+      pattern: /机器人|具身|物流|仓储|工厂|robot|robotics|humanoid|warehouse|factory|physical ai/i
+    }
+  ];
+  const rankedThemes = themeRules
+    .map((theme) => ({
+      ...theme,
+      score: normalizedItems.reduce((score, item) => score + (theme.pattern.test(item.text) ? (item.section === "头条" ? 3 : 1) : 0), 0)
+    }))
+    .filter((theme) => theme.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 2);
+  const themes = rankedThemes.length ? rankedThemes : [{
+    zh: "多线并进",
+    en: "parallel signals",
+    zhPhrase: "今天的 AI 信号比较分散，需要分别看产品、组织和产业含义",
+    enPhrase: "today’s AI signals are dispersed, so the useful read is to separate product, organizational, and industry implications"
+  }];
+  const firstHeadline = headlineItems[0];
+  const secondHeadline = headlineItems[1];
+  const headlineZh = `${themes.map((theme) => theme.zh).join("、")} 是今天的 AI 主线`;
+  const headlineEn = `${joinEn(themes.map((theme) => theme.en))} shape today’s AI map`;
+  const leadZh = `今天最值得看的主线是：${themes.map((theme) => theme.zhPhrase).join("；")}。`;
+  const leadEn = `The main signal today: ${themes.map((theme) => theme.enPhrase).join("; ")}.`;
+  const focusZh = firstHeadline
+    ? `头条里，${cleanZhTitle(firstHeadline.titleZh || firstHeadline.titleEn)}是最直接的观察入口${secondHeadline ? `，${cleanZhTitle(secondHeadline.titleZh || secondHeadline.titleEn)}补上另一条关键线索` : ""}。`
+    : "今天没有一个压倒性的头条，适合分栏目快速扫描。";
+  const focusEn = firstHeadline
+    ? ` In the headlines, ${cleanEnTitle(firstHeadline.titleEn || firstHeadline.titleZh)} is the clearest entry point${secondHeadline ? `, while ${cleanEnTitle(secondHeadline.titleEn || secondHeadline.titleZh)} adds another important signal` : ""}.`
+    : "There is no single dominant headline today, so the issue is best read by section.";
   return {
-    headlineZh: hasInfrastructure ? "AI 大公司的竞争继续落到入口、算力和行业场景" : "今天的 AI 信号集中在入口、Agent 和应用落地",
-    headlineEn: hasInfrastructure ? "AI competition is showing up in entry points, compute, and industry deployments" : "Today’s AI signals cluster around entry points, agents, and applied workflows",
-    summaryZh: "今天值得看的不是单一“转变”，而是几类具体动作同时出现：大公司继续争夺用户入口，产业链公司强化算力或基础设施位置，垂直行业开始把 Agent 包装成可交付方案。产品推荐只保留少量能进入真实工作流的工具，作为正文之外的补充。",
-    summaryEn: "Today’s useful read is not one neat transformation story, but several concrete moves happening at once: major companies are defending user entry points, infrastructure players are strengthening compute positions, and vertical industries are packaging agents into deliverable solutions.",
+    headlineZh,
+    headlineEn,
+    summaryZh: `${leadZh}${focusZh}`,
+    summaryEn: `${leadEn}${focusEn}`,
     tagsZh: ["头条", "深度", "观点", "AI产品"],
     tagsEn: ["Headlines", "Deep Dive", "Views", "AI Products"]
   };
