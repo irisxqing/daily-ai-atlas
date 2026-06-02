@@ -2008,39 +2008,20 @@ function buildEditorialFrame(items) {
   }));
   const headlineItems = normalizedItems.filter((item) => item.section === "头条");
   const allText = normalizedItems.map((item) => item.text).join(" ");
-  const shortenAtBoundary = (value = "", max = 34) => {
-    const text = String(value || "").trim();
-    if (text.length <= max) return text;
-    const sliced = text.slice(0, max);
-    const boundary = Math.max(
-      sliced.lastIndexOf("，"),
-      sliced.lastIndexOf("："),
-      sliced.lastIndexOf("；"),
-      sliced.lastIndexOf("、"),
-      sliced.lastIndexOf(" ")
-    );
-    return `${(boundary > 12 ? sliced.slice(0, boundary) : sliced).trim()}…`;
-  };
-  const cleanZhTitle = (title = "") => shortenAtBoundary(String(title)
-    .replace(/^AI 信号[:：]\s*/, "")
-    .replace(/\s+-\s+[^-]{2,32}$/u, "")
-    .replace(/\s+/g, " ")
-    .trim(), 34);
-  const cleanEnTitle = (title = "") => shortenAtBoundary(String(title)
-    .replace(/\s+-\s+[^-]{2,32}$/u, "")
-    .replace(/\s+/g, " ")
-    .trim(), 72);
   const joinEn = (values = []) => {
     if (values.length <= 1) return values[0] || "";
     if (values.length === 2) return `${values[0]} plus ${values[1]}`;
     return `${values.slice(0, -1).join(", ")}, and ${values.at(-1)}`;
   };
+  const naturalizeZh = (value = "") => String(value)
+    .replace(/、/g, "和")
+    .replace(/[；;]/g, "，");
   const themeRules = [
     {
       key: "governance",
       zh: "治理与安全",
       en: "governance and safety",
-      zhPhrase: "AI 治理、安全和社会共识正在进入更具体的合作与政策场景",
+      zhPhrase: "AI 治理与安全共识正在进入更具体的合作和政策场景",
       enPhrase: "AI governance and safety are moving into more concrete institutional and policy settings",
       pattern: /治理|监管|安全|隐私|版权|合规|教皇|梵蒂冈|policy|governance|safety|privacy|copyright|vatican|pope/i
     },
@@ -2056,7 +2037,7 @@ function buildEditorialFrame(items) {
       key: "infrastructure",
       zh: "算力与产业链",
       en: "compute and infrastructure",
-      zhPhrase: "算力、芯片、数据中心和供应链仍是大模型竞争的底层变量",
+      zhPhrase: "算力基础设施和供应链仍是大模型竞争的底层变量",
       enPhrase: "compute, chips, data centers, and supply chains remain the base layer of AI competition",
       pattern: /芯片|算力|GPU|英伟达|NVIDIA|数据中心|服务器|能源|datacenter|data center|chip|compute|infrastructure|energy/i
     },
@@ -2072,7 +2053,7 @@ function buildEditorialFrame(items) {
       key: "model",
       zh: "模型与平台",
       en: "models and platforms",
-      zhPhrase: "模型、API 和平台入口仍在快速迭代，但重点越来越落到可用性",
+      zhPhrase: "模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性",
       enPhrase: "models, APIs, and platform entry points are still moving quickly, with usability becoming the key test",
       pattern: /模型|API|GPT|Claude|Gemini|DeepSeek|Qwen|Kimi|发布|上线|model|launch|release|platform/i
     },
@@ -2080,7 +2061,7 @@ function buildEditorialFrame(items) {
       key: "capital",
       zh: "资本与并购",
       en: "capital and M&A",
-      zhPhrase: "融资、投资和并购信号继续反映资本对 AI 方向的取舍",
+      zhPhrase: "融资投资和并购信号继续反映资本对 AI 方向的取舍",
       enPhrase: "funding, investments, and M&A signals continue to show where capital is placing AI bets",
       pattern: /融资|投资|估值|并购|收购|IPO|funding|investment|valuation|acquisition|merger/i
     },
@@ -2107,23 +2088,23 @@ function buildEditorialFrame(items) {
     zhPhrase: "今天的 AI 信号比较分散，需要分别看产品、组织和产业含义",
     enPhrase: "today’s AI signals are dispersed, so the useful read is to separate product, organizational, and industry implications"
   }];
-  const firstHeadline = headlineItems[0];
-  const secondHeadline = headlineItems[1];
   const headlineZh = `${themes.map((theme) => theme.zh).join("、")} 是今天的 AI 主线`;
   const headlineEn = `${joinEn(themes.map((theme) => theme.en))} shape today’s AI map`;
-  const leadZh = `今天最值得看的主线是：${themes.map((theme) => theme.zhPhrase).join("；")}。`;
-  const leadEn = `The main signal today: ${themes.map((theme) => theme.enPhrase).join("; ")}.`;
-  const focusZh = firstHeadline
-    ? `头条里，${cleanZhTitle(firstHeadline.titleZh || firstHeadline.titleEn)}是最直接的观察入口${secondHeadline ? `，${cleanZhTitle(secondHeadline.titleZh || secondHeadline.titleEn)}补上另一条关键线索` : ""}。`
+  const leadZh = themes.length > 1
+    ? `今天的 AI 信号主要围绕${themes[0].zh}和${themes[1].zh}展开。${naturalizeZh(themes[0].zhPhrase)}，同时${naturalizeZh(themes[1].zhPhrase)}。`
+    : `今天的 AI 信号主要围绕${themes[0].zh}展开。${naturalizeZh(themes[0].zhPhrase)}。`;
+  const leadEn = `The main signal today is ${joinEn(themes.map((theme) => theme.en))}. ${themes.map((theme) => theme.enPhrase).join(" At the same time, ")}.`;
+  const focusZh = headlineItems.length
+    ? "头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。"
     : "今天没有一个压倒性的头条，适合分栏目快速扫描。";
-  const focusEn = firstHeadline
-    ? ` In the headlines, ${cleanEnTitle(firstHeadline.titleEn || firstHeadline.titleZh)} is the clearest entry point${secondHeadline ? `, while ${cleanEnTitle(secondHeadline.titleEn || secondHeadline.titleZh)} adds another important signal` : ""}.`
+  const focusEn = headlineItems.length
+    ? "The headline section is best read for concrete company moves, while deep dives and perspectives add trend context."
     : "There is no single dominant headline today, so the issue is best read by section.";
   return {
     headlineZh,
     headlineEn,
     summaryZh: `${leadZh}${focusZh}`,
-    summaryEn: `${leadEn}${focusEn}`,
+    summaryEn: `${leadEn} ${focusEn}`,
     tagsZh: ["头条", "深度", "观点", "AI产品"],
     tagsEn: ["Headlines", "Deep Dive", "Views", "AI Products"]
   };
@@ -2491,7 +2472,7 @@ function runEditorialGateTests() {
   const editorialFrame = buildEditorialFrame([
     { section: "AI产品推荐", titleZh: "AI 信号：Run and monitor several coding agents at once in an IDE | Google Antigravity", titleEn: "Run and monitor several coding agents at once in an IDE" }
   ]);
-  assert(!/AI 信号|Run and monitor|Google Antigravity/.test(editorialFrame.summaryZh), "editorial summary should not paste raw product titles");
+  assert(!/Run and monitor|Google Antigravity/.test(editorialFrame.summaryZh), "editorial summary should not paste raw product titles");
   const inferenceTerm = selectDailyTerm(issueDate, {
     entries: [{ ...baseEntry, title: "DeepSeek宣布V4模型永久降价 或加剧AI价格战", summary: "模型 API 价格和推理成本继续下降。" }]
   }, []);
