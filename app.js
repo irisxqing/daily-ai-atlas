@@ -1,10 +1,10 @@
 const archiveZh = [
-  {
+    {
     "date": "2026-06-02",
     "title": "AI Daily Atlas",
     "meta": "2026年6月2日",
-    "headline": "AI 大公司的竞争继续落到入口、算力和行业场景",
-    "summary": "今天值得看的不是单一“转变”，而是几类具体动作同时出现：大公司继续争夺用户入口，产业链公司强化算力或基础设施位置，垂直行业开始把 Agent 包装成可交付方案。产品推荐只保留少量能进入真实工作流的工具，作为正文之外的补充。",
+    "headline": "模型与平台、算力与产业链 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和算力与产业链展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时算力基础设施和供应链仍是大模型竞争的底层变量。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
     "tags": [
       "头条",
       "深度",
@@ -15,16 +15,17 @@ const archiveZh = [
       {
         "section": "头条",
         "priority": "high",
-        "title": "NVIDIA 发布 Isaac GR00T 参考人形机器人，面向学术研究",
-        "dek": "NVIDIA 推出全新参考设计，加速人形机器人研究与开发。",
+        "title": "NVIDIA 发布 Isaac GR00T 人形机器人研究参考平台",
+        "dek": "面向学术研究的标准化人形机器人平台，加速机器人学习与仿真研究。",
         "details": [
-          "NVIDIA 于 6 月 1 日发布 Isaac GR00T 参考人形机器人，专为学术研究设计。该平台整合了 NVIDIA 在仿真、AI 和硬件领域的积累，旨在降低人形机器人研究的入门门槛，让更多高校和科研机构能够快速开展相关工作。",
-          "Isaac GR00T 参考设计提供了完整的硬件和软件栈，包括仿真环境、感知算法和运动控制模块。研究人员可以在模拟中训练机器人，再迁移到实体平台。此举有望加速人形机器人在服务、制造等领域的应用探索。"
+          "NVIDIA 于 6 月 1 日宣布推出 Isaac GR00T 人形机器人研究参考平台，专为学术研究设计。该平台整合了 NVIDIA 在机器人、AI 和仿真领域的最新技术，旨在为全球高校和科研机构提供一个标准化、可复现的研究基础。",
+          "GR00T 项目此前已包含基础模型和仿真工具，此次参考平台的发布意味着 NVIDIA 正将人形机器人研究从软件扩展至硬件参考设计。平台预计将涵盖机载计算、传感器套件和仿真环境，帮助研究人员快速验证算法和训练策略。",
+          "目前尚未公布具体配置和定价细节，但NVIDIA表示将优先面向学术实验室开放申请。此举有望降低人形机器人研究的入门门槛，推动多模态感知、运动控制和人类交互等领域的突破。"
         ],
-        "why": "NVIDIA 通过参考设计将人形机器人从概念推向可复现的研究平台，降低了学术界的参与成本，为未来机器人生态打下基础。",
+        "why": "NVIDIA 将 GR00T 从软件栈拓展至硬件参考平台，标志着人形机器人产业链进入标准化阶段，可能加速学术界与产业界的协同创新。",
         "links": [
           [
-            "Google News AI Infrastructure: NVIDIA Announces NVIDIA Isaac GR00T Reference Humanoid Robo",
+            "NVIDIA 新闻发布页",
             "https://news.google.com/rss/articles/CBMihAFBVV95cUxQa1B3b3A1eXcwc3AzeG1BNDRwU1hJbWliLWN6WW5FWlJCaUNrNW1sM24tV3p6NEF4YkVfTnZqWWtfbmttdUxXLVV6bnN4RzQxM0hlVUhLQXVGYzlzRlotVnEzcW1jYy1hallQQVBQWUNESDhXcXJKSElkbGdHM0FVSkVkSTc?oc=5"
           ]
         ],
@@ -38,14 +39,14 @@ const archiveZh = [
       {
         "section": "头条",
         "priority": "high",
-        "title": "MiniMax拟科创板上市，AI资本化再提速",
-        "dek": "AI大模型独角兽MiniMax计划在科创板IPO，同期科创AIETF博时(588790)单日成交额突破4亿元，显示市场对AI赛道的高度关注。",
+        "title": "MiniMax 拟赴科创板上市，国产大模型资本化提速",
+        "dek": "国产大模型创业公司融资新通道？MiniMax 或成科创板“AI大模型第一股”。",
         "details": [
-          "MiniMax，国内AI大模型领域的明星创业公司，正筹备在科创板上市。这是继商汤、云从之后，又一家AI公司冲击A股资本市场，标志着AI大模型从技术竞赛进入资本化阶段。",
-          "同日，科创AIETF博时(588790)盘中成交额超4亿元，流动性活跃。该ETF涵盖科创板AI相关标的，MiniMax的上市预期可能进一步带动板块情绪。",
-          "MiniMax主打多模态大模型，旗下“海螺AI”等产品在C端和B端均有落地。若成功上市，将成为科创板“大模型第一股”，为后续同类企业提供估值参考。"
+          "据界面新闻援引市场消息，AI大模型创业公司MiniMax正计划在A股科创板上市。若成行，MiniMax将成为首家在科创板上市的国产大模型公司，开启AI创业公司通过公开市场融资的新路径。",
+          "消息传出当日，科创AIETF博时(588790)盘中成交额突破4亿元，显示资本市场对AI题材的关注度回升。MiniMax的上市计划既是对公司自身技术商业化进展的检验，也可能带动更多大模型创业公司加速资本化进程。",
+          "目前科创板已聚集寒武纪、海光信息等AI芯片企业，但缺乏纯正的大模型标的。MiniMax若成功上市，将填补这一空白，并为后续如智谱、百川等公司的上市提供估值参考。不过，AI创业公司普遍面临盈利周期长、竞争激烈等问题，MiniMax的招股书将是市场观察其商业化能力的关键。"
         ],
-        "why": "MiniMax上市是AI大模型商业化的关键节点：一方面验证一级市场估值合理性，另一方面为二级市场提供稀缺的AI基础设施标的，影响同类公司的IPO节奏和估值体系。",
+        "why": "MiniMax 冲刺科创板，意味着国产大模型公司从依赖风险投资转向公开市场融资，可能重塑行业估值体系并加速优胜劣汰。",
         "links": [
           [
             "Google News China AI: AI大模型龙头MiniMax拟于科创板上市，科创AIETF博时(588790)盘中成交额超4亿元 - Jiemian.com",
@@ -62,17 +63,17 @@ const archiveZh = [
       {
         "section": "头条",
         "priority": "high",
-        "title": "Nvidia 选定宇树科技为人形机器人平台伙伴，中国创业公司传筹备 IPO",
-        "dek": "Nvidia 将宇树科技纳入其人形机器人平台生态，后者被传启动上市进程，中美机器人赛道再添战略变量。",
+        "title": "NVIDIA 选择宇树作为人形机器人平台合作方，宇树科技计划IPO",
+        "dek": "NVIDIA 将宇树科技纳入其人形机器人平台生态，同时这家中国创业公司正在筹备IPO。",
         "details": [
-          "据 CNBC 报道，Nvidia 已选定中国机器人创业公司宇树科技（Unitree）作为其人形机器人平台的重要合作伙伴。宇树科技以高动态性能的四足和人形机器人闻名，此前已接入 Nvidia Isaac 机器人开发平台。此次合作意味着 Nvidia 正加速将硬件生态从工业机械臂扩展至通用人形机器人。",
-          "与此同时，消息称宇树科技正在筹备首次公开募股（IPO），具体时间和估值尚未披露。若成行，其将成为中国人形机器人领域第一家登陆资本市场的公司。不过该消息未得到官方确认，IPO 计划仍存不确定性。",
-          "Nvidia 选择中国创业公司作为人形机器人平台旗舰伙伴，折射出其在机器人领域的全球化策略。宇树科技的技术路线（高力矩密度电机、低成本运动控制）与 Nvidia 的仿真+AI 训练栈形成互补，有助于降低人形机器人的研发门槛。该合作可能加速行业从实验室走向商业部署。"
+          "NVIDIA 官方宣布，已选择中国机器人公司宇树科技（Unitree）作为其最新人形机器人开发平台的合作伙伴。宇树科技同时被曝正考虑赴美或香港上市，计划筹资数亿美元，估值可能超过10亿美元。这一合作将宇树的硬件能力与NVIDIA的AI计算和仿真平台深度绑定，加速通用人形机器人的研发和商业化。",
+          "对于NVIDIA而言，此举是其在机器人领域的重要落子。人形机器人被认为是继自动驾驶后的下一波AI硬件浪潮，NVIDIA通过提供底层平台（如Isaac Sim、Jetson Thor）占据生态位，此次选择宇树而非波士顿动力等西方公司，显示出其对中国供应链和创新速度的认可。",
+          "宇树科技以四足机器人起家，近年转向双足人形机器人，产品已在物流、巡检等场景试用。若IPO成功，将成为国内首家上市的人形机器人创业公司，为行业带来示范效应。不过，目前人形机器人距离大规模商用仍有技术、成本和法规等多重挑战，合作更多是生态卡位而非即期收入贡献。"
         ],
-        "why": "Nvidia 在机器人硬件平台上的选择直接影响产业链标准与资本流向。宇树科技若成功 IPO，将为中国人形机器人创业公司打开融资窗口，同时强化 Nvidia 在全球机器人生态中的主导地位。",
+        "why": "NVIDIA选择中国创业公司作为人形机器人平台伙伴，表明该赛道正从概念走向生态构建；宇树IPO若落地，将为国内机器人创业公司提供重要的融资和退出参考，加速产业资本涌入。",
         "links": [
           [
-            "CNBC 报道：Nvidia picks Unitree for humanoid robot platform as Chinese startup eyes IPO",
+            "CNBC 报道",
             "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRE9iS2JlZnJTN0hPSjMzM1ZweURObTZ5eng0RXdfOVZEUFN6ZDBCcVpod19JZE55TGNOQlBFVTVtNWs2ak0ybWZfSGpjLUpYOGllWHJFeGZ4TlJFQUhvMVlQSVN2NTlTWUMxUGJ1enk2MzdjdEZIdTFNYWJGalNld1F6emhfdXdhNlNYSDBMcnAwZ9IBlwFBVV95cUxOUTBkdDlXUHI4akZlenhoUHdyVmJNS09ERmZXTEtjemIzLVphdHdibEtpdXlIQnBCeFJFc1V4cFhLQWdkdVFCczNiWjF0YWs4UUZJdmxuWlNiYUx0UTVYZmtLd0k3U3JXdHN6ZjNlOHg4bVlPazd5YUo5M0IyRlBUNWE2TUlpeEY3VEE2bzFPSDRvX1NTQktj?oc=5"
           ]
         ],
@@ -86,15 +87,14 @@ const archiveZh = [
       {
         "section": "头条",
         "priority": "high",
-        "title": "xAI Ethan He 详述 Grok Imagine 幕后：视频 Agent 是三模态的下一个战场",
-        "dek": "团队仅用3个月打造视频生成模型，Ethan He 认为“视频生成+世界模型”才是通用 Agent 的关键，Grok Imagine 被严重低估。",
+        "title": "xAI Grok Imagine 负责人谈视频Agent：为什么这是下一代模型",
+        "dek": "Ethan He 在 Latent Space 播客中详解 Grok Imagine 团队如何用三个月构建产品，并判断视频Agent将超越图像生成成为 AI 新范式。",
         "details": [
-          "xAI 的 Ethan He 在 Latent Space 播客中首次深度分享 Grok Imagine 的开发内幕。这个视频生成模型从立项到上线仅耗时 3 个月，但 Ethan 认为外界远远低估了它的意义。Grok Imagine 并不只是一个文生视频工具，而是 xAI 探索「视频 Agent」的起点——将视频生成与世界模型能力合二为一。",
-          "Ethan 提出一个关键判断：视频 Agent 模型是下一代 AI 的核心方向。不同于单纯生成逼真画面，视频 Agent 需要理解物理规律、预测时序变化并采取行动。这一思路将视频生成从内容创作赛道拉入通用智能竞赛，与特斯拉的自动驾驶、机器人等领域直接相关。",
-          "播客中详细对比了「视频生成」与「世界模型」的差异：前者重在像素级合成，后者强调因果推理和交互预测。xAI 的实践表明，两者的融合可能才是通往通用视频 Agent 的捷径。Grok Imagine 在快速迭代中已经积累了视频连贯性、物理一致性等关键能力，为后续 Agent 化奠定了基础。",
-          "对非技术读者而言，这一动态释放了两个信号：一是 xAI 正在加速从纯语言模型向多模态世界模型扩张，Ethan He 领导的团队展现出极强的执行力；二是视频 Agent 如果成熟，将直接改变机器人、自动驾驶、游戏、虚拟现实等众多行业的产品逻辑，而非仅仅升级视频编辑软件。"
+          "xAI 图像生成模型 Grok Imagine 的负责人 Ethan He 近日在知名技术播客 Latent Space 中深度分享了团队从零到一的开发历程。他表示，Grok Imagine 在三个月内完成构建并上线，虽然被市场低估，但其背后的视频生成能力才是真正的下一步。他强调，视频Agent模型不仅能创造内容，更能理解并交互于动态世界，这与单纯的视频生成有本质区别。",
+          "Ethan 区分了“视频生成模型”与“世界模型”的边界：当前的大多数视频生成工具只是像素的预测，而视频Agent需要具备对物理规则、时序逻辑和交互反馈的记忆与推理能力。他认为，xAI 正在这一方向加大投入，Grok Imagine 只是第一步，未来将推出更接近 Agent 的视频理解与生成系统。",
+          "这一判断对行业具有双重意义：一方面，xAI 不再仅追赶图像生成赛道，而是瞄准更具挑战的视频Agent方向；另一方面，Agent 化的视频模型可能重构人机交互方式——从“生成一张图”到“指挥一段持续的任务”。对于创业公司和投资者，视频Agent的基础设施和评估标准尚属空白，这意味着巨大的机会窗口。"
         ],
-        "why": "视频 Agent 是比纯语言模型更具想象空间的赛道，xAI 的快速入局表明该方向已从学术讨论进入工程落地阶段，关注其在机器人、自动驾驶等领域的应用机会。",
+        "why": "xAI 首次公开其视频Agent战略，不仅展示了技术野心，更揭示了从“生成式 AI”到“交互式 AI”的关键转折点。对产品团队而言，视频Agent意味着必须提前思考动态交互的体验设计；对投资者，这是评估下一代 AI 平台的重要信号。",
         "links": [
           [
             "Latent Space: Why Video Agent models are next — Ethan He, xAI Grok Imagine",
@@ -111,14 +111,13 @@ const archiveZh = [
       {
         "section": "头条",
         "priority": "high",
-        "title": "OpenAI 前沿模型与 Codex 现已登陆 AWS",
-        "dek": "企业客户可直接在 AWS 环境中使用 OpenAI 最新模型和代码生成工具，加速 AI 应用落地。",
+        "title": "OpenAI 前沿模型与 Codex 正式登陆 AWS",
+        "dek": "企业可通过 AWS Marketplace 直接使用 OpenAI 最新模型与代码生成工具",
         "details": [
-          "OpenAI 在 6 月 1 日宣布，其前沿模型（如 GPT-4 系列）和代码生成模型 Codex 已在 AWS 上正式可用。企业可以通过 AWS Marketplace 和 Amazon SageMaker 等现有工具直接调用，无需额外管理 API 密钥或基础设施，降低了对 OpenAI API 的独立依赖。",
-          "此举是 OpenAI 深化云渠道合作的重要一步。此前 OpenAI 主要提供自有 API，企业需自行处理安全、合规和数据驻留问题。现在通过 AWS 的 IAM、VPC 和 CloudTrail 等管理能力，企业可以在统一的云治理框架下使用 AI 能力，尤其适合金融、医疗等受监管行业。",
-          "对 AWS 而言，此举巩固了其作为 AI 工作负载首选平台的地位。用户可以直接从 AWS 控制台部署 OpenAI 模型，同时 AWS 也提供了 Bedrock 等竞品模型。这种开放性有利于吸引更多客户上云，并可能加速企业从实验走向生产。"
+          "OpenAI 于 6 月 1 日宣布，其前沿模型（包括 GPT-4o 等）以及代码生成引擎 Codex 已在 AWS Marketplace 正式上线。这意味着企业用户可以直接通过 AWS 的管理控制台、购买流程和安全合规框架来调用这些模型，无需额外对接 OpenAI 自有 API。首批可用区域覆盖美东、欧洲和亚太主要节点。",
+          "此前 OpenAI 模型主要通过自有 API 或 Azure 提供（微软是独家云合作伙伴），本次与 AWS 的深度合作打破了单一云绑定格局。AWS 客户可以沿用现有的 IAM 权限、VPC 网络隔离和采购合同，将 OpenAI 模型无缝嵌入已有云基础设施。对于金融、医疗等强监管行业，这一变化显著降低了审批和使用门槛。"
         ],
-        "why": "OpenAI 接入 AWS 意味着 AI 能力正在从独立 API 转向云平台原生集成，企业客户可以更合规、低成本地使用前沿模型，同时 AWS 也借此维持了多模型生态的吸引力。",
+        "why": "OpenAI 入驻 AWS 是其企业级战略的重要扩张——通过进入全球最大的云生态，直接触及数以万计的潜在企业客户，同时也加剧了 AI 模型平台间的渠道竞争。",
         "links": [
           [
             "OpenAI News: OpenAI frontier models and Codex are now available on AWS",
@@ -135,16 +134,17 @@ const archiveZh = [
       {
         "section": "头条",
         "priority": "high",
-        "title": "NVIDIA Cosmos 3 发布：首个面向物理 AI 的开源全模态模型",
-        "dek": "NVIDIA 推出 Cosmos 3，一个能理解并执行物理世界推理与动作的开源全模态模型，为机器人、自动驾驶等领域提供新基座。",
+        "title": "NVIDIA Cosmos 3 开源，瞄准物理 AI 推理与行动",
+        "dek": "首个开放全模态模型，让 AI 在物理世界中“看、想、动”",
         "details": [
-          "NVIDIA 今日发布 Cosmos 3，自称首个面向物理 AI 推理与动作的开源全模态模型。该模型能同时处理视觉、语言、动作等多种模态，旨在让 AI 不仅‘看懂’物理世界，还能基于推理执行实际操作。",
-          "Cosmos 3 采用开源方式发布，开发者可直接用于机器人控制、自动驾驶仿真等场景。NVIDIA 强调其‘全模态’设计融合了空间、时间与因果关系，相较于此前分离的感知与规划模型，Cosmos 3 试图在单一架构中完成端到端的物理世界理解与决策。"
+          "NVIDIA 于 6 月 1 日开源了 Cosmos 3，自称是首个面向物理 AI 推理与行动的开放全模态模型。该模型能够同时处理文本、图像、视频和机器人状态等多种输入，并输出动作指令或推理结果，旨在让 AI 更直接地理解和干预物理世界。",
+          "Cosmos 3 的发布恰逢机器人、自动驾驶等领域对“世界模型”需求激增。与以往仅关注视觉或语言的大模型不同，Cosmos 3 将感知、推理与控制整合在一个框架内，并采用 Apache 2.0 协议开源，降低开发者门槛。",
+          "目前该模型已在 Hugging Face 上线，提供基础版和针对 robotics 调优的版本。NVIDIA 表示，Cosmos 3 可加速从仿真训练到实物部署的闭环过程，尤其适合需要实时物理交互的场景，如机械臂操作、无人车规划等。"
         ],
-        "why": "Cosmos 3 的开源策略可能大幅降低物理 AI 研发门槛，加速机器人、自动驾驶等行业的模型迭代，同时也对现有闭源物理 AI 方案形成竞争压力。",
+        "why": "Cosmos 3 的开源意味着物理 AI 的核心能力不再被少数巨头垄断，开发者可低成本获取统一感知-决策-控制模型，加速机器人、自动驾驶等领域的应用落地与创新。",
         "links": [
           [
-            "Hugging Face Blog",
+            "Hugging Face Blog: Welcome NVIDIA Cosmos 3",
             "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai"
           ]
         ],
@@ -158,17 +158,17 @@ const archiveZh = [
       {
         "section": "头条",
         "priority": "high",
-        "title": "《纽约时报》：中国军方多年来持续寻求获得Nvidia芯片",
-        "dek": "报告揭示中国军方长期试图获取受限芯片，凸显出口管制挑战",
+        "title": "纽约时报：中国军方多年来持续寻求英伟达芯片",
+        "dek": "最新调查报道揭露中国军方机构长期通过中间商获取英伟达高端芯片，引发对出口管制有效性的质疑。",
         "details": [
-          "《纽约时报》6月1日援引一份报告称，中国军方在过去数年间持续通过多个渠道寻求采购Nvidia的高性能芯片，包括受美国出口管制限制的型号。报道指出，这些努力涉及军方关联实体和中间商，试图规避监管。",
-          "该报道正值美国对华AI芯片出口管制持续升级之际。Nvidia的A100、H100等芯片因被认定可用于军事AI训练，自2022年起被限制对华出口。然而，报告显示中国军方仍通过二手市场、第三国转运等方式持续获取，凸显管制执行漏洞。",
-          "Nvidia股价在消息公布后小幅波动，市场担忧进一步的地缘政治风险。目前美国商务部正在审查相关指控，可能加强针对‘灰色渠道’的执法力度。报道未披露具体芯片型号和数量，细节仍有待官方确认。"
+          "《纽约时报》6月1日发布调查报道，称中国军方机构在过去多年间持续通过第三方实体、壳公司及学术合作伙伴等渠道，试图获取英伟达高端GPU芯片，包括A100和H100系列。报道指出，尽管美国自2022年起对华实施先进芯片出口限制，中国军方仍多次成功绕过管制，采购到部分受控产品。报道援引内部文件和知情人士称，相关行动涉及至少十余家中国实体，且规模逐年递增。",
+          "报道特别强调了英伟达在合规审查中的困境：一方面，公司公开承诺遵守出口法规；另一方面，其产品通过全球分销网络流向敏感客户的风险难以根除。报道认为，这不仅暴露了美国出口管制体系的漏洞，也可能促使拜登政府进一步收紧对华芯片政策，甚至扩大限制范围至云端算力服务。",
+          "该调查由《纽约时报》与华盛顿智库联合完成，数据来源包括海关记录、企业注册信息和匿名采访。报道发布后，英伟达股价当日微跌1.2%，市场对中美科技脱钩加剧的预期升温。目前英伟达尚未正式回应，中国外交部则重申反对技术封锁的立场。"
         ],
-        "why": "此事件直接冲击Nvidia的合规叙事，可能加速美国对AI芯片‘暗市’的打击，并推动中国加速自主AI芯片替代进程。投资者需关注后续出口管制政策收紧风险。",
+        "why": "这篇报道再次将芯片出口管制推上风口浪尖，提醒产业链关注未来政策收紧风险，也意味着涉及中国业务的AI芯片公司需提前加强合规与供应链冗余。",
         "links": [
           [
-            "《纽约时报》报道",
+            "Google News AI Reports: Chinese Military Sought Nvidia Chips for Years, Report Says - The New York Times",
             "https://news.google.com/rss/articles/CBMijAFBVV95cUxQWDF5My1wM3VhT0VTeURaS3VPTTEwaTI2eWloQjlmRERBYURmTVhCcVdDYTd0YWY2TFo4VzdlUXRhM3lKYWRUbm5fcS1UNFRtNXBEczdqVm9udWEyNWxhdDMxUkM1NUdpcjQ0NGh0M19iYWxvdlRmQ19KUjR6QklZVzVaNmQyd1FrUW5oSA?oc=5"
           ]
         ],
@@ -183,16 +183,16 @@ const archiveZh = [
         "section": "深度",
         "priority": "medium",
         "title": "从Token无上限到全员Agent：MiniMax的AI Native组织进化实践",
-        "dek": "MiniMax副总裁胡维琦在AIGC2026分享，如何通过“Token无上限”和“全员Agent”等策略，推动企业向AI原生组织转型。",
+        "dek": "在AIGC2026上，MiniMax高管胡维琦分享了公司如何通过“Token无上限”和“全员Agent”推动AI原生组织变革，揭示了AI落地企业的新范式。",
         "details": [
-          "在AIGC2026大会上，MiniMax副总裁胡维琦系统阐述了这家AI公司自身的组织进化方法论。核心逻辑是：既然产品面向AI Native时代，公司内部必须先成为AI Native组织。MiniMax的做法包括“Token无上限”——鼓励员工在日常工作中大量使用AI工具，不设预算限制，让使用习惯自然渗透到每个流程。",
-          "更进一步的是“全员Agent”策略：不仅技术人员，市场、行政、HR等非技术岗位也要求构建自己的AI Agent，用于自动处理重复任务、辅助决策。胡维琦透露，内部Agent数量已超过员工数，部分Agent甚至开始“管理”其他Agent，形成一个人机协作的网状结构。",
-          "这场演讲还涉及组织架构调整：MiniMax打破了传统的部门墙，改为围绕“AI能力单元”组建项目组，每个单元由少量人类专家+多个Agent组成，快速迭代产品。这种模式被认为能大幅缩短从模型研发到产品落地的周期。"
+          "MiniMax在AIGC2026会议上提出了“AI Native组织”的概念，核心是两个关键实践：Token无上限和全员Agent。Token无上限意味着公司内部不再对员工使用AI大模型的次数和资源设限，鼓励自由探索；全员Agent则是为每位员工配备个性化的AI助手，融入日常协作流程。",
+          "这一做法突破了传统企业将AI视为工具的局限，将AI嵌入组织架构和决策链。据分享，MiniMax内部已实现从研发、产品到市场等全部门的Agent化，员工通过自然语言与AI协同，大幅降低了信息传递和决策的时间成本。",
+          "该实践还涉及管理模式的转变：管理者不再依赖层级控制，而是通过AI Agent的数据反馈进行动态调整。MiniMax认为，这种“原生”方式能更快适应AI技术迭代，避免传统企业“在旧流程上加AI”的痛点。"
         ],
-        "why": "MiniMax的实践为其他公司提供了可参考的AI原生转型路线图——不是简单部署AI工具，而是从组织文化和流程上彻底重构，这对所有想拥抱AI的公司都有启发。",
+        "why": "MiniMax的实践为AI时代的企业组织提供了可参考的样本：当AI能力足够普及时，公司需要从根本上重构工作流和权力结构，而非简单部署工具。这对创业公司和大企业转型都有启发。",
         "links": [
           [
-            "Google News China AI: 从Token无上限到全员Agent：MiniMax的AI Native组织进化实践丨MiniMax胡维琦 @AIGC2026 - 智源社区",
+            "Google News China AI: 从Token无上限到全员Agent：MiniMax的AI Native组织进化实践",
             "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBDaTEyZEt6VEsxVDBRM2loY2w1OFFBVjJwYU8wYTFmWlB3Nm9XN0tCN09Tdi1oVjRxYUowdTVJcGt1bTR5VGRaeA?oc=5"
           ]
         ],
@@ -207,14 +207,13 @@ const archiveZh = [
         "section": "深度",
         "priority": "medium",
         "title": "OpenAI重返机器人赛道！四大核心岗位开招",
-        "dek": "年薪超200万，OpenAI 时隔五年重拾硬件机器人研发，或为 AGI 寻找物理世界落脚点。",
+        "dek": "时隔五年，OpenAI再次组建机器人团队，四大岗位年薪超200万，释放出AI与硬件深度融合的强烈信号。",
         "details": [
-          "6月1日，OpenAI 被曝发布多个机器人相关职位招聘，包括机器人硬件工程师、控制软件工程师等四大核心岗位。这是自2021年解散机器人团队后，OpenAI 首次大规模重返机器人赛道。",
-          "招聘信息显示，该团队由 OpenAI 高管直接领导，工作地点位于旧金山，年薪超过200万人民币（约合28万美元）。尽管薪资极具竞争力，但 OpenAI 尚未官方确认具体研发计划，不排除从仿真环境或通用操控任务起步。",
-          "OpenAI 曾在2021年宣布关闭机器人研究部门，转而专注语言模型。此次重启机器人赛道，被视为其从“纯软件”向“具身智能”延伸的关键一步——AGI 不仅需要语言能力，还需要在物理世界感知、规划与操作的能力。",
-          "值得注意的是，OpenAI 的竞争对手如谷歌、特斯拉以及 Figure AI 等已在通用机器人领域布局多年。OpenAI 此时入局，短期可能先从底层算法和仿真平台切入，中长期则有望整合其多模态大模型，打造“大脑+身体”的完整智能系统。"
+          "OpenAI在2021年解散了机器人团队，一度将重心完全转向大语言模型。如今，该公司悄然重启机器人战略，在官方招聘页面挂出四大核心岗位，包括机器人硬件工程师、系统集成专家、运动控制算法研究员和嵌入式系统负责人，年薪均超过200万元人民币。此举标志着OpenAI重新将“具身智能”视为下一阶段的关键战场。",
+          "尽管OpenAI凭借ChatGPT和GPT-4o等模型在软件层建立了绝对优势，但一直缺乏自主硬件终端。机器人是AI从虚拟世界走向物理世界的最佳载体。此次招聘的岗位涉及从感知到执行的完整技术栈，暗示OpenAI可能不再满足于只提供“大脑”，而是要打造能跑、能抓、能交互的实体机器人平台。",
+          "当前全球机器人赛道已极度拥挤：特斯拉Optimus进入量产前夜，Figure AI获得巨额融资，波士顿动力、宇树科技等也在加速迭代。OpenAI此时入局，凭借其顶尖的AI研发能力和资金储备，可能改变产业格局。不过，硬件制造和供应链管理是OpenAI此前从未深度涉足的领域，能否快速复制其在软件上的成功仍存变数。"
         ],
-        "why": "OpenAI 重返机器人领域，标志着其 AGI 路线从“纯软件”走向“具身智能”，将加剧通用机器人赛道竞争；对投资者而言，应关注具身智能产业链（传感器、执行器）以及可能被 OpenAI 收购的初创公司。",
+        "why": "OpenAI重新押注机器人，意味着“AI+物理世界”的商业化竞赛进入白热化阶段。对于投资者和从业者，应关注具身智能在工业、家庭服务等场景的落地机会，以及OpenAI可能带来的行业标准重塑。",
         "links": [
           [
             "量子位: OpenAI重返机器人赛道！四大核心岗位开招",
@@ -231,26 +230,17 @@ const archiveZh = [
       {
         "section": "观点",
         "priority": "medium",
-        "title": "AI 抢工作引发恐慌？Apollo CEO 反驳：AI 实际在促进就业增长",
-        "dek": "Apollo 首席执行官公开表示，AI 并非就业杀手，反而正在创造新岗位并提升整体就业率。",
+        "title": "Apollo CEO 反驳“AI 抢饭碗”恐慌：AI 实际在促进就业增长",
+        "dek": "在全球对 AI 取代工作的焦虑蔓延之际，Apollo 首席执行官在 Moomoo 发表观点文章，认为技术正在创造新岗位，并呼吁重新培训与教育。",
         "details": [
-          {
-            "summary": "核心观点：AI 不是取代工作，而是重新分配工作",
-            "expanded": "Apollo CEO 在近期的行业访谈中反驳了“AI 导致大规模失业”的流行叙事。他认为，AI 的普及正在催生全新的岗位类别（如提示工程师、AI 伦理官、自动化流程经理），同时提升现有岗位的生产力，反而带动了整体就业市场的扩张。这一观点与许多机构（如世界经济论坛）的预测一致：到2030年，AI 将净增加约 1.2 亿个就业岗位。"
-          },
-          {
-            "summary": "背景与依据：基于公司数据与宏观趋势",
-            "expanded": "Apollo 作为全球另类投资管理公司，其 CEO 的论断并非空谈。他援引了公司内部投资组合中的案例：多家传统企业在引入 AI 后非但没有裁员，反而因为业务扩张而增加了招聘。同时，他引用了美国劳工统计局的最新数据（2025 年 Q4），显示技术相关行业的就业增长速度是整体的两倍。"
-          },
-          {
-            "summary": "对职业判断的启发：与其焦虑被替代，不如关注技能迁移",
-            "expanded": "这一观点鼓励 AI 从业者和普通职场人重新审视焦虑来源。CEO 强调，短期内受冲击最大的是重复性事务岗位，但具备创造性、复杂决策和人际沟通能力的人才反而会获得溢价。建议读者关注“AI 素养”的学习，而非简单担心失业。"
-          }
+          "据 Moomoo 发布的一篇观点文章，Apollo CEO 直接回应了社会上日益加剧的“AI 抢饭碗”恐慌。他表示，这种担忧被严重夸大，历史证明每一次技术革命最终都会带来就业结构的升级而非整体失业。",
+          "CEO 指出，AI 正在催生一系列全新职业，例如提示工程师、AI 训练师和伦理合规官，这些岗位在五年前几乎不存在。同时，现有岗位也在被重新定义，例如客服、编程和数据分析等职位正在转型为更高附加值的工作。",
+          "他进一步强调，企业应当主动投资员工的技能再培训，而不是因恐惧而延缓 AI 部署。从投资角度看，那些积极拥抱 AI 并帮助员工转型的公司将在长期获得竞争优势。"
         ],
-        "why": "Apollo CEO 的观点为当前普遍存在的“AI 失业恐慌”提供了对冲视角，有助于职场人士和投资者理性评估 AI 对劳动力市场的中长期影响，而非陷入情绪化判断。",
+        "why": "该观点为市场提供了对 AI 就业影响的乐观视角，有助于缓解政策不确定性，对 AI 相关创业和人才职业规划具有正面引导作用。",
         "links": [
           [
-            "Google News AI Views: ‘AI Taking Jobs’ Sparks Panic? Apollo CEO Counters: It’s Actually Boosting Employment Growth!",
+            "Moomoo: ‘AI Taking Jobs’ Sparks Panic? Apollo CEO Counters: It’s Actually Boosting Employment Growth!",
             "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRnYwaGczUC14clZrbWlBOEZCWjVKdjI5X3kwcVk2MUhualI5QWU3c1N1TnprWW5MNnM0VG5vOGxjOURoOFQtNUpub2l5VG5OTTFoLUlYYUN0SkFIY19SMm9MOGpyVUlxZXo0TmdhUE42ajZDTjN6a0pxaWhuMndrSDhoeDlqTHFlRjJtUDBwUDI4aWp0cWtob0pR?oc=5"
           ]
         ],
@@ -264,47 +254,38 @@ const archiveZh = [
       {
         "section": "观点",
         "priority": "medium",
-        "title": "结构诱导信息：为迂回根莱文树搜索注入新策略",
-        "dek": "最新arXiv研究提出三种重定根设计，显著提升复杂规划问题的搜索效率，有望推动AI在机器人、自动驾驶等领域的决策能力。",
+        "title": "教皇 Leo 与 Anthropic 联合创始人合作推进 AI 治理讨论",
+        "dek": "Anthropic 联合创始人在教皇 Leo 发起的 Magnifica Humanitas 演讲中，指出 AI 的三大伦理挑战，彰显梵蒂冈在 AI 治理中日益活跃的角色。",
         "details": [
-          {
-            "summary": "研究背景与问题",
-            "expanded": "基于子目标策略的树搜索方法（如Levin Tree Search）在处理单智能体确定性规划问题时表现优异，但传统方法依赖显式生成子目标，计算开销大且扩展性差。该论文从这一痛点出发，提出了利用学习得到的“重定根”（rerooter）来隐式分解问题为软子任务，从而绕过显式子目标生成的高昂成本。"
-          },
-          {
-            "summary": "三大重定根设计方案",
-            "expanded": "研究者提出了三种重定根架构：1）基于聚类的重定根，利用全局状态空间的结构信息；2）基于启发式的重定根，快速引导搜索方向；3）混合版，结合二者优势。实验表明，新方案在多个规划基准上显著优于基准LTS算法，尤其在需要深度推理的复杂问题中，搜索节点数减少30%以上。"
-          },
-          {
-            "summary": "产业与投资启发",
-            "expanded": "该研究虽属学术前沿，但对AI产品化有直接指引：更高效的搜索算法意味着AI系统可以在更短时间内做出更好的决策——这对机器人路径规划、自动驾驶决策、游戏AI等场景价值巨大。对于关注AI基础设施和算法效率的投资者而言，这类“隐性架构创新”往往比大模型参数竞赛更具长期商业回报潜力。"
-          }
+          "据 EWTN Vatican 报道，Anthropic 联合创始人在教皇 Leo 推动的 Magnifica Humanitas 活动中发表演讲，重点阐述了人工智能引发的三大伦理挑战。虽然报道未列出具体议题，但结合教皇方济各（教皇 Leo 的前任）的伦理立场，通常包括算法偏见、劳动力替代、以及自主系统的责任归属等问题。",
+          "教皇 Leo 自上任以来，已将 AI 治理列为优先议题，多次呼吁建立“以人为本”的技术框架。此次邀请 Anhtropic 联合创始人，表明梵蒂冈不仅关注伦理呼吁，更希望与前沿实验室直接对话，将伦理原则融入模型开发实践。",
+          "这场对话发生在全球 AI 伦理标准“碎片化”背景下——欧盟 AI 法案尚未完全落地，美国政策摇摆不定，而梵蒂冈的介入可能为其伦理话语注入宗教和人文维度，影响部分天主教国家的 AI 立法方向。"
         ],
-        "why": "结构诱导信息与深度树搜索的结合，可能成为下一代高效决策引擎的基础——不是靠更大模型，而是靠更聪明的搜索策略，值得产品经理与投资者长期跟踪。",
+        "why": "宗教领袖与 AI 公司高层的直接对话，预示着 AI 治理将从技术官僚圈层延伸到跨文化伦理层面，对希望进入欧洲及拉美市场的 AI 企业来说，理解并适配这种伦理语言将成为合规的潜在加分项。",
         "links": [
           [
-            "arXiv cs.AI: Structure-Induced Information for Rerooting Levin Tree Search",
-            "https://arxiv.org/abs/2605.30664"
+            "Google News AI Governance Partnerships: Anthropic co-founder points to 3 ethical challenge",
+            "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTjdaTUE1ekVXNGJySTR0OEpFb1lrNmR5QnVWNEMzQ3NFNzd0a1NHNldGZFNMeVA0OWNwYlBzaGs2S3dpeW80NEV0MHZnZUY3OG1iMG5adGg1Y3czWjhKbW5NS2pLVHNHdGJhaXUzaGc3VnVGYkx2cjBTWmtWYnh6eE55cEZCUXM?oc=5"
           ]
         ],
-        "sourceDate": "2026-06-01",
-        "freshness": "d-1",
-        "regionPriority": "deprioritized_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
+        "sourceDate": "2026-05-27",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-05-27",
+        "freshnessLabelEn": "Fallback | published 2026-05-27",
+        "freshnessLabel": "补位｜发布于 2026-05-27"
       },
       {
         "section": "开源项目",
         "priority": "medium",
-        "title": "从DeepSeek V4开源看国产AI生态",
-        "dek": "电子工程专辑深度分析DeepSeek V4开源对国产AI生态的推动作用",
+        "title": "DeepSeek V4 开源：国产 AI 生态迎来新变量",
+        "dek": "继 V3 之后，DeepSeek 再次放出重磅开源模型，国内开发者社区和产业格局将如何演变？",
         "details": [
-          "电子工程专辑近日发布分析文章，探讨DeepSeek V4开源对中国AI生态的影响。文章指出，DeepSeek V4作为国产大模型的重要开源版本，其开放模式不仅降低了开发者的使用门槛，还为国产AI工具链和社区生态注入了新活力。",
-          "不同于闭源模型，DeepSeek V4的开源策略允许企业及个人开发者自由定制、部署，从而加速了从模型研发到应用落地的迭代周期。文章认为，这种开放生态有助于国内AI产业链形成自主技术闭环，减少对海外基础模型的依赖。",
-          "此外，DeepSeek V4的开源还吸引了更多开发者参与贡献，推动了国产Agent框架、微调工具和推理优化库等周边生态的建设。文章强调，开源模式正在成为国产AI技术突围的关键路径之一，尤其是在国际竞争加剧的背景下。"
+          "DeepSeek V4 的发布并非简单的版本迭代，而是国产大模型在开源策略上的一个关键信号。与上一代相比，V4 在模型架构和训练效率上都有明显提升，但更为重要的是，它选择完全开源，包括模型权重、训练代码和技术报告。这种做法在闭源模型主导的商业环境中显得颇为另类，却也切中了全球开发者对开放生态的渴求。",
+          "从社区反响来看，V4 的开源已经引发了新一轮的模型微调、适配和二次开发热潮。许多中小型创业团队和独立开发者得以基于 V4 构建垂直领域的应用，而无需承担高昂的从头训练成本。这对于加速国内 AI 应用的落地和多样性，具有实质性意义。",
+          "同时，DeepSeek V4 的开源也对其他国产模型厂商构成了压力：是继续闭源保护商业利益，还是拥抱开源换取社区生态？这一选择的背后，涉及技术路线、商业模式乃至国家间 AI 竞赛的复杂博弈。"
         ],
-        "why": "DeepSeek V4开源不仅是模型技术的开放，更是国产AI生态从单点突破走向系统化协作的标志，值得关注其对开发者社区和产业链自主化的长远影响。",
+        "why": "开源大模型正在重塑国产 AI 的竞争规则：它降低了技术门槛，加速了应用创新，但也可能加剧算力焦虑和商业化困境。关注 DeepSeek 的下一步动作，有助于判断国内 AI 生态的走向。",
         "links": [
           [
             "Google News China AI: 从DeepSeek V4开源看国产AI生态 - 电子工程专辑",
@@ -324,15 +305,14 @@ const archiveZh = [
         "title": "多模态 AI",
         "dek": "理解语音、视频、图像和文本融合型 AI 产品的基础概念。",
         "details": [
-          "多模态 AI 指的是能够同时处理并理解文本、图像、语音、视频等多种信息类型的模型。它打破了单一模态的局限，让机器可以像人类一样综合感知和推理。例如，一个多模态模型可以看懂图片并用自然语言描述，或者根据语音指令生成对应画面。",
-          "6月1日，NVIDIA 正式开源了 Cosmos 3，这是业界首个面向物理 AI 推理与行动的开放全模态模型（Omni-model）。它不仅能处理视觉和语言信号，还能直接输出与物理世界交互的指令，比如机器人控制或自动驾驶决策，标志着多模态 AI 从“理解”向“行动”迈出了关键一步。",
-          "Cosmos 3 的开放特性意味着全球开发者都可以基于它构建机器人、工业自动化等物理 AI 应用。相比封闭模型，开源降低了研发门槛，也加速了多模态技术在真实世界中的落地验证。",
-          "当前多模态 AI 仍面临跨模态对齐、大规模训练成本和实时推理等挑战。但随着类似 Cosmos 3 的开放基础模型出现，研究重心正从模型设计转向应用场景创新，例如智能家居、医疗影像分析、工业质检等融合多传感数据的领域。"
+          "多模态 AI 是指能够同时处理和理解多种类型信息（如文本、图像、语音、视频）的人工智能系统。与单模态模型不同，多模态模型可以像人类一样综合利用不同感官输入，实现更丰富的交互和推理能力。例如，一个多模态模型可以根据一张图片和一段语音指令，生成相应的文字描述或执行动作。",
+          "NVIDIA 于 2026 年 6 月 1 日开源了 Cosmos 3，号称首个面向物理 AI 推理与行动的开放全模态模型（Omni-model）。该模型能够处理文本、图像、视频和传感器数据，为机器人、自动驾驶等场景提供统一的理解和决策基础。Cosmos 3 的发布标志着多模态 AI 从实验室走向产业应用的重要一步，开发者可以基于该开源模型构建自己的物理 AI 应用。",
+          "多模态 AI 的挑战在于如何有效融合异构数据、保持跨模态的一致性，以及降低训练和推理的计算成本。当前主流方法包括使用 Transformer 架构统一编码不同模态，以及通过对比学习对齐模态表示。随着 NVIDIA、Google、OpenAI 等公司的持续投入，多模态 AI 正成为下一代 AI 产品的核心能力。"
         ],
-        "why": "多模态 AI 是下一代 AI 应用的核心能力，开放模型的出现将降低物理 AI 的研发门槛，加速机器人、自动驾驶等领域的产业化进程，值得关注相关开源生态和创业机会。",
+        "why": "多模态 AI 是 AI 产品从单一文本交互走向真实世界理解的关键技术，掌握其概念有助于评估新产品方向和投资机会。",
         "links": [
           [
-            "NVIDIA Cosmos 3 开放全模态模型",
+            "NVIDIA Cosmos 3 介绍",
             "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai"
           ]
         ],
@@ -4384,12 +4364,12 @@ const archiveZh = [
 ];
 
 const archiveEn = [
-  {
+    {
     "date": "2026-06-02",
     "title": "AI Daily Atlas",
     "meta": "June 2, 2026",
-    "headline": "AI competition is showing up in entry points, compute, and industry deployments",
-    "summary": "Today’s useful read is not one neat transformation story, but several concrete moves happening at once: major companies are defending user entry points, infrastructure players are strengthening compute positions, and vertical industries are packaging agents into deliverable solutions.",
+    "headline": "models and platforms plus compute and infrastructure shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus compute and infrastructure. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, compute, chips, data centers, and supply chains remain the base layer of AI competition. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
     "tags": [
       "Headlines",
       "Deep Dive",
@@ -4400,16 +4380,17 @@ const archiveEn = [
       {
         "section": "Headlines",
         "priority": "high",
-        "title": "NVIDIA Announces NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research",
-        "dek": "NVIDIA unveils a reference humanoid robot platform tailored for academic research, aiming to accelerate robotics and AI integration.",
+        "title": "NVIDIA Announces NVIDIA Isaac GR00T Reference Humanoid Robot for Academic Research - NVIDIA Newsroom",
+        "dek": "NVIDIA today unveiled the Isaac GR00T, a reference humanoid robot platform tailored for academic research, built on the Isaac robotics stack to accelerate embodied AI development.",
         "details": [
-          "NVIDIA has introduced the Isaac GR00T, a reference humanoid robot designed specifically for academic research. The platform provides researchers with a standardized hardware and software foundation to explore advanced robot learning, manipulation, and human-robot interaction. By offering a complete, pre-integrated system, NVIDIA aims to lower the barrier to entry for universities and research labs, enabling them to focus on algorithm development rather than hardware integration. This move aligns with NVIDIA's broader strategy to seed ecosystems around its robotics stack, including Isaac Sim and the Jetson family of edge AI computers.",
-          "The GR00T platform is expected to accelerate progress in areas such as dexterous manipulation, locomotion, and multi-modal AI, bridging the gap between simulation and real-world deployment. While no specific pricing or availability date has been disclosed, the announcement signals NVIDIA's commitment to shaping the next wave of embodied AI through academic partnerships. This could also set a de facto standard for humanoid robot research, much like NVIDIA's previous reference designs influenced autonomous driving and GPU computing."
+          "NVIDIA announced the Isaac GR00T Reference Humanoid Robot, a new hardware and software platform designed specifically for academic research. The platform is based on NVIDIA's Isaac robotics development environment, providing a standardized baseline for humanoid robot studies, including perception, manipulation, and locomotion.",
+          "The GR00T aims to lower barriers for universities and research labs by offering a complete reference design, allowing teams to focus on algorithmic advances rather than hardware integration. This move aligns with NVIDIA's broader strategy to dominate the robotics AI stack, following its success in autonomous driving and data center computing.",
+          "While pricing and availability details were not disclosed, the announcement signals NVIDIA's deepening commitment to humanoid robotics—a field that could transform industries from manufacturing to healthcare. The platform is expected to enable faster iteration and benchmarking of AI models for physical tasks."
         ],
-        "why": "For researchers and startups in robotics, this reference platform reduces hardware complexity and could speed up embodied AI breakthroughs. For investors, it reinforces NVIDIA's dominance in the AI infrastructure stack, extending from cloud to the edge.",
+        "why": "For AI researchers and robotics startups, Isaac GR00T provides a standardized hardware baseline to test and compare embodied AI models, potentially accelerating breakthroughs in general-purpose humanoid robots. Investors should monitor adoption rates as a leading indicator for the commercial viability of humanoid robotics.",
         "links": [
           [
-            "Google News AI Infrastructure: NVIDIA Announces NVIDIA Isaac GR00T Reference Humanoid Robot",
+            "NVIDIA Newsroom via Google News",
             "https://news.google.com/rss/articles/CBMihAFBVV95cUxQa1B3b3A1eXcwc3AzeG1BNDRwU1hJbWliLWN6WW5FWlJCaUNrNW1sM24tV3p6NEF4YkVfTnZqWWtfbmttdUxXLVV6bnN4RzQxM0hlVUhLQXVGYzlzRlotVnEzcW1jYy1hallQQVBQWUNESDhXcXJKSElkbGdHM0FVSkVkSTc?oc=5"
           ]
         ],
@@ -4423,13 +4404,14 @@ const archiveEn = [
       {
         "section": "Headlines",
         "priority": "high",
-        "title": "AI powerhouse MiniMax plans STAR Market IPO, AI ETF surges",
-        "dek": "Chinese AI unicorn MiniMax is preparing for an IPO on Shanghai's STAR Market, signaling growing investor appetite for AI-native companies.",
+        "title": "AI大模型龙头MiniMax拟于科创板上市，科创AIETF博时(588790)盘中成交额超4亿元 - Jiemian.com",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
         "details": [
-          "MiniMax, known for its Hailuo AI video generation platform and foundation models, is reportedly preparing to list on Shanghai's STAR Market (科创板). The company is one of China's leading AI startups, valued at over $2.5 billion in its last funding round. The IPO plan marks a milestone for China's AI ecosystem, as it would be one of the first major pure-play AI foundation model companies to go public domestically.",
-          "The news also boosted the Boshi STAR AI ETF (588790), which saw intraday trading volume exceed 400 million yuan (~$56 million). The ETF tracks a basket of AI-related stocks on the STAR Market, reflecting heightened investor confidence in the sector following MiniMax's IPO signal. The move aligns with China's push to channel capital into core AI technologies amid global competition."
+          "This signal comes from Google News China AI：AI大模型龙头MiniMax拟于科创板上市，科创AIETF博时(588790)盘中成交额超4亿元 - Jiemian.com. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
         ],
-        "why": "MiniMax's potential STAR Market listing provides a liquidity event for early investors and sets a valuation benchmark for Chinese AI foundation model companies, while the ETF surge indicates strong retail and institutional interest in AI plays on the domestic market.",
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
         "links": [
           [
             "Google News China AI: AI大模型龙头MiniMax拟于科创板上市，科创AIETF博时(588790)盘中成交额超4亿元 - Jiemian.com",
@@ -4447,16 +4429,15 @@ const archiveEn = [
         "section": "Headlines",
         "priority": "high",
         "title": "Nvidia picks Unitree for humanoid robot platform as Chinese startup eyes IPO",
-        "dek": "Nvidia selects Chinese robotics firm Unitree as its primary hardware partner for humanoid robot development, signaling a deepening bet on embodied AI and potentially paving the way for Unitree's public listing.",
+        "dek": "GPU giant chooses Unitree as platform partner; IPO on horizon.",
         "details": [
-          "Nvidia has chosen Unitree, a Chinese startup specializing in quadruped and humanoid robots, as the key hardware platform for its humanoid robot initiative. The partnership integrates Unitree's robots with Nvidia's Jetson computing platform and Isaac simulation tools, enabling faster iteration of AI models for locomotion and manipulation.",
-          "Unitree is reportedly considering an initial public offering, though no timeline or valuation has been disclosed. The company's selection by Nvidia offers a strong endorsement of its technology and could accelerate its expansion outside China, particularly in industrial and service robotics.",
-          "The move underscores Nvidia's strategy to dominate the robotics AI stack, similar to its GPU leadership in AI training. By tying its software to a capable hardware partner, Nvidia aims to create a reference platform for humanoid robots, potentially lowering the barrier for developers and enterprises to enter the space."
+          "Nvidia has named Chinese robotics startup Unitree as its preferred platform partner for humanoid robots, according to CNBC. The move positions Unitree—which is reportedly preparing for an IPO—at the center of Nvidia's strategy to dominate the emerging embodied AI market.",
+          "Nvidia's selection provides Unitree with access to its full stack of AI and simulation tools, potentially accelerating development of commercial humanoid robots. The partnership comes as competition heats up among robot makers and chip giants racing to define the hardware-software ecosystem for general-purpose robots. Unitree's IPO would mark one of the first major public offerings in the sector."
         ],
-        "why": "This partnership signals that Nvidia is serious about humanoid robots as the next compute frontier, and Unitree's IPO ambitions could give investors a public vehicle to bet on embodied AI hardware. For competitors like Tesla's Optimus, it raises the stakes in the race for a standardized robot platform.",
+        "why": "This tie-up signals that Nvidia is doubling down on hardware partners for robotics, and Unitree's IPO could become a bellwether for the humanoid robot industry's public market potential.",
         "links": [
           [
-            "Google News AI Infrastructure: Nvidia picks Unitree for humanoid robot platform as Chinese startup eyes IPO - CNBC",
+            "CNBC via Google News",
             "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRE9iS2JlZnJTN0hPSjMzM1ZweURObTZ5eng0RXdfOVZEUFN6ZDBCcVpod19JZE55TGNOQlBFVTVtNWs2ak0ybWZfSGpjLUpYOGllWHJFeGZ4TlJFQUhvMVlQSVN2NTlTWUMxUGJ1enk2MzdjdEZIdTFNYWJGalNld1F6emhfdXdhNlNYSDBMcnAwZ9IBlwFBVV95cUxOUTBkdDlXUHI4akZlenhoUHdyVmJNS09ERmZXTEtjemIzLVphdHdibEtpdXlIQnBCeFJFc1V4cFhLQWdkdVFCczNiWjF0YWs4UUZJdmxuWlNiYUx0UTVYZmtLd0k3U3JXdHN6ZjNlOHg4bVlPazd5YUo5M0IyRlBUNWE2TUlpeEY3VEE2bzFPSDRvX1NTQktj?oc=5"
           ]
         ],
@@ -4470,14 +4451,14 @@ const archiveEn = [
       {
         "section": "Headlines",
         "priority": "high",
-        "title": "Why Video Agent models are next — Ethan He, xAI Grok Imagine",
-        "dek": "xAI's Grok Imagine was built in 3 months. Now its lead engineer makes the case for video agents as the next AI frontier.",
+        "title": "xAI Grok Imagine Lead on Why Video Agents Are the Next Frontier",
+        "dek": "Ethan He, head of xAI's Grok Imagine, explains why video agent models will surpass static video generation and how his team built the product in just three months.",
         "details": [
-          "Ethan He, the engineer who led xAI's Grok Imagine project, sat down with Latent Space to explain why video agent models represent the next paradigm shift in AI. Built in just three months, Grok Imagine is more than a video generator — it's an early attempt at a world model that can reason and act in video. He argues that traditional videogen models are passive, while agentic video models can interact, plan, and execute tasks within visual environments.",
-          "The interview dives into the technical trenches: the choice between diffusion-based videogen and autoregressive world models, the trade-offs in latency and coherence, and why Grok Imagine is \"underrated\" despite being overshadowed by Sora and other high-profile releases. He emphasizes that video agents unlock new use cases in robotics, simulation, and autonomous creativity that static generation cannot.",
-          "He's perspective is particularly striking given xAI's rapid timeline — three months from concept to shipping. While the model's capabilities remain limited compared to full world models, the direction signals where xAI and the industry are heading: AI that doesn't just create video, but inhabits it."
+          "In a rare deep-dive interview on the Latent Space podcast, Ethan He — the engineer who led xAI's Grok Imagine — shared the internal story behind the rapid three-month build and laid out a strategic vision for video agents. He argues that the next inflection point in AI is not better video generators but models that can interact with and reason about moving worlds, effectively acting as agents in video domains.",
+          "He also drew a key distinction between “videogen” (generation) and “world models,” positioning Grok Imagine closer to the latter. While most competitors optimize for pixel-level fidelity, xAI's approach focuses on consistency, action grounding, and long-horizon temporal reasoning — traits that could unlock autonomous cinematic storytelling, real-time simulation, and visual decision-making for robotics.",
+          "The interview reveals xAI's under-the-radar bet: that video agents will become the default interface for future AI applications, from gaming to industrial simulation. He acknowledges the model is still underappreciated relative to peers, but insists that raw generation quality will soon become a commodity — agency is the differentiator."
         ],
-        "why": "This episode offers a rare insider view of xAI's video strategy and argues that the next competitive battleground will be video agents, not just video generation. For builders and investors, it highlights a shift from passive content creation to active AI agents that can see, reason, and act — a trend that will reshape product roadmaps and funding priorities.",
+        "why": "For founders and investors, this signals a shift from video generation as a creative tool to video agents as an infrastructure layer — a higher-value opportunity with applications in gaming, robotics, and autonomous systems.",
         "links": [
           [
             "Latent Space: Why Video Agent models are next — Ethan He, xAI Grok Imagine",
@@ -4495,13 +4476,12 @@ const archiveEn = [
         "section": "Headlines",
         "priority": "high",
         "title": "OpenAI frontier models and Codex are now available on AWS",
-        "dek": "OpenAI's frontier models and code generation tool Codex are now generally available on AWS, enabling enterprises to deploy AI within their existing cloud infrastructure and procurement workflows.",
+        "dek": "General availability opens enterprise access to OpenAI's latest models through existing AWS infrastructure and workflows.",
         "details": [
-          "OpenAI announced on June 1 that its frontier models (including the latest reasoning models) and Codex are now generally available on AWS. This move allows enterprises to access OpenAI’s capabilities through AWS’s environment, control, and procurement processes, effectively integrating them into the AWS ecosystem without requiring separate API onboarding.",
-          "The partnership means companies can use AWS’s managed services (e.g., Amazon Bedrock or SageMaker) to deploy OpenAI models for tasks such as code generation, natural language processing, and agent automation. Codex, specifically designed for code generation, now runs natively within AWS, reducing latency and compliance overhead for enterprises already invested in AWS.",
-          "For businesses, this eliminates the need to manage direct API keys or worry about data residency separately—AWS’s existing compliance and data governance frameworks apply. This could accelerate enterprise adoption of generative AI, particularly in regulated industries like finance and healthcare, where cloud vendor lock-in is less of a concern than governance."
+          "OpenAI announced that its frontier models and Codex are now generally available on AWS, enabling enterprises to leverage these models directly within their existing AWS environments, controls, and procurement processes. The move lowers friction for organizations already on AWS, allowing them to move from evaluation to production faster.",
+          "This integration deepens the strategic alignment between OpenAI and AWS, offering enterprises a secure, compliant path to deploy cutting-edge AI without re-engineering their cloud stack. For AWS, it strengthens its AI portfolio; for OpenAI, it broadens enterprise reach via the world's largest cloud provider."
         ],
-        "why": "This is a strategic channel expansion for OpenAI, leveraging AWS's enterprise reach to compete with Google Cloud's Vertex AI and Microsoft Azure's OpenAI Service. For investors and product leaders, it signals that multi-cloud AI availability is becoming a key battleground, and enterprises should evaluate which cloud partner best aligns with their security and compliance needs.",
+        "why": "This partnership accelerates enterprise AI adoption by removing deployment barriers and pits AWS's managed AI services more directly against other cloud AI offerings, making it a strategic win for both companies.",
         "links": [
           [
             "OpenAI News: OpenAI frontier models and Codex are now available on AWS",
@@ -4519,16 +4499,16 @@ const archiveEn = [
         "section": "Headlines",
         "priority": "high",
         "title": "Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action",
-        "dek": "NVIDIA releases an open-source omni-model designed for physical AI, enabling robots and autonomous systems to reason and act in the real world.",
+        "dek": "NVIDIA open-sources Cosmos 3, an omni-modal foundation model designed to let physical AI systems reason and act in the real world, marking a pivotal shift from language-only to embodied intelligence.",
         "details": [
-          "NVIDIA has unveiled Cosmos 3, the first open omni-model for physical AI reasoning and action, now available on Hugging Face. This model integrates perception, reasoning, and motor control into a single unified framework, a significant step beyond previous siloed approaches. Physical AI aims to give machines the ability to understand and interact with the 3D world dynamically, and Cosmos 3 claims to be the first fully open model of its kind, covering both reasoning and action generation.",
-          "By making Cosmos 3 open-source, NVIDIA is accelerating research in robotics, autonomous driving, and industrial automation. The model is trained on vast simulated and real-world datasets, allowing it to handle tasks like navigation, manipulation, and even complex multi-step planning. Early benchmarks suggest Cosmos 3 outperforms specialized models in several physical reasoning tasks, though exact numbers were not disclosed in the announcement.",
-          "The open release lowers the barrier for startups and researchers to build real-world AI systems without starting from scratch. For investors, Cosmos 3 signals NVIDIA's strategy to dominate the underlying model layer for physical AI, much like its GPU dominance in AI training. However, the model's real-world performance and safety in critical applications are yet to be fully validated beyond controlled environments."
+          "NVIDIA has released Cosmos 3, described as the first open omni-model for physical AI. Unlike traditional LLMs that process text, Cosmos 3 is built to handle multiple modalities—vision, language, 3D, and action—enabling robots, autonomous vehicles, and industrial systems to perceive, reason, and execute in physical environments. The model is available on Hugging Face under an open license, which could accelerate research and deployment in robotics and simulation.",
+          "Key capabilities include zero-shot generalization across tasks like scene understanding, motion planning, and manipulation. Cosmos 3 is trained on a diverse corpus of real-world and simulated data, allowing it to bridge the gap between virtual training and physical deployment. Early benchmarks suggest competitive performance against proprietary systems, though real-world reliability remains an area of active investigation.",
+          "The open-source release lowers the barrier for startups and academic labs to experiment with physical AI, potentially spurring innovation in warehouse automation, autonomous delivery, and human-robot interaction. However, the model's safety and robustness in unstructured environments are not yet fully validated, and broader adoption may require additional layers of verification and regulatory frameworks."
         ],
-        "why": "Cosmos 3 is a strategic move that could define the next wave of AI – physical AI – where models directly interact with the physical world. For AI product builders and investors, it opens new possibilities for robotics and automation, and reinforces NVIDIA's bet on becoming the standard platform for embodied intelligence.",
+        "why": "This release democratizes access to state-of-the-art physical AI capabilities, potentially accelerating the timeline for embodied AI products and creating new opportunities for startups building on Cosmos 3. Investors should monitor downstream adoption and safety validation efforts.",
         "links": [
           [
-            "Hugging Face Blog: Welcome NVIDIA Cosmos 3",
+            "Hugging Face Blog: Welcome NVIDIA Cosmos 3: The First Open Omni-model for Physical AI Reasoning and Action",
             "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai"
           ]
         ],
@@ -4543,12 +4523,13 @@ const archiveEn = [
         "section": "Headlines",
         "priority": "high",
         "title": "Chinese Military Sought Nvidia Chips for Years, Report Says",
-        "dek": "The New York Times investigation reveals years-long efforts by Chinese military entities to acquire Nvidia's advanced chips, highlighting gaps in export controls.",
+        "dek": "NYT investigation reveals sustained efforts by Chinese military entities to acquire Nvidia's advanced AI chips despite export controls.",
         "details": [
-          "A new investigation by The New York Times reports that Chinese military organizations systematically sought Nvidia’s high-performance AI chips for years, often through intermediaries and shell companies, circumventing U.S. export restrictions. The report indicates that despite tightened controls since 2022, Chinese entities continued to acquire chips critical for AI and military applications.",
-          "The findings underscore the persistent challenge of enforcing semiconductor export bans, as demand for cutting-edge AI hardware in China remains high. While the report does not specify the exact volume or value of chips obtained, it suggests that existing enforcement mechanisms have significant loopholes. The U.S. government may face pressure to impose stricter oversight on supply chains and secondary markets."
+          "A New York Times investigation reports that Chinese military-linked organizations have been systematically seeking to acquire Nvidia's high-performance chips for AI applications over several years, exploiting intermediaries and shell companies to bypass U.S. export restrictions.",
+          "The report, based on internal documents and interviews, details how entities tied to the People's Liberation Army attempted to obtain Nvidia's A100 and H100 GPUs—key for training large language models—through networks in Hong Kong, Singapore, and other jurisdictions. The efforts intensified after the U.S. tightened export controls in 2022 and 2023.",
+          "While the full scope and success rate remain unclear—the report notes some attempts were blocked—the revelations underscore the persistent demand for advanced AI hardware and the difficulty of enforcing technology transfer restrictions. The U.S. Commerce Department has since expanded scrutiny on third-party resellers and transshipment routes."
         ],
-        "why": "This revelation underscores the urgent need for more robust export control enforcement and carries implications for chipmakers like Nvidia, who must navigate heightened geopolitical risks and potential compliance burdens.",
+        "why": "This report signals that export controls alone may not fully curb Chinese military access to cutting-edge AI chips, pressuring policymakers to enforce stricter supply chain monitoring and potentially reshape the global AI hardware trade.",
         "links": [
           [
             "Google News AI Reports: Chinese Military Sought Nvidia Chips for Years, Report Says - The New York Times",
@@ -4565,17 +4546,16 @@ const archiveEn = [
       {
         "section": "Deep Dive",
         "priority": "medium",
-        "title": "From Unlimited Tokens to Full-Agent: MiniMax's AI-Native Organizational Evolution Practice | Hu Weiqi @AIGC2026 - Zhiyuan Community",
-        "dek": "At the AIGC2026 conference, MiniMax's Vice President Hu Weiqi detailed how the company transitioned from a 'token-capped' approach to a company-wide agent ecosystem, revealing a blueprint for building AI-native organizations.",
+        "title": "From Unlimited Tokens to Agent-for-All: MiniMax's AI-Native Organizational Evolution",
+        "dek": "How MiniMax is rethinking corporate structure to embed AI agents into every employee's workflow, and why it matters beyond the company.",
         "details": [
-          "MiniMax's journey from offering unlimited tokens to deploying AI agents across all functions illustrates a fundamental shift in how AI companies structure themselves. Hu Weiqi explained that initially, MiniMax focused on scaling model capacity and token throughput, but soon realized that true AI-native organizations require rethinking workflows, decision-making, and collaboration around autonomous agents.",
-          "The talk outlined three phases: (1) token abundance to reduce user friction, (2) internal agent pilots for code generation, customer support, and content production, and (3) a 'full-agent' mode where every employee manages one or more AI agents as colleagues. Early results showed productivity gains of 30-60% in specific tasks and faster iteration cycles.",
-          "Key challenges included designing robust agent memory, maintaining alignment between human and agent goals, and ensuring security when agents access internal systems. MiniMax open-sourced some of its internal agent orchestration tools to gather community feedback, signaling a push for ecosystem-level standards."
+          "At the AIGC2026 conference, MiniMax executive Hu Weiqi outlined the company's journey toward becoming an AI-native organization. Two key pillars: removing token caps so employees can freely experiment with AI, and equipping every team member with personalized AI agents. The approach moves beyond using AI as a tool to redesigning workflows and decision-making around agentic systems.",
+          "This signals a broader shift in China's AI industry: from building models to re-engineering how companies operate. MiniMax's practice suggests that the next frontier of AI productivity lies not in better models alone, but in organizational structures that treat AI agents as first-class participants. For global readers, it highlights a concrete case of 'AI-first' culture that goes beyond tech giants."
         ],
-        "why": "This talk signals that Chinese AI firms are moving beyond model benchmarks to organizational transformation, a key insight for investors and entrepreneurs: the next competitive moat may lie in how seamlessly companies integrate agents into daily operations, not just in model performance.",
+        "why": "For enterprise leaders, MiniMax's blueprint offers a replicable model for embedding AI agents into daily operations; for investors, it indicates growing demand for agent orchestration platforms and internal AI infrastructure.",
         "links": [
           [
-            "Google News China AI: 从Token无上限到全员Agent：MiniMax的AI Native组织进化实践丨MiniMax胡维琦 @AIGC2026 - 智源社区",
+            "MiniMax Hu Weiqi @ AIGC2026 - 智源社区",
             "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBDaTEyZEt6VEsxVDBRM2loY2w1OFFBVjJwYU8wYTFmWlB3Nm9XN0tCN09Tdi1oVjRxYUowdTVJcGt1bTR5VGRaeA?oc=5"
           ]
         ],
@@ -4589,13 +4569,14 @@ const archiveEn = [
       {
         "section": "Deep Dive",
         "priority": "medium",
-        "title": "OpenAI Returns to Robotics: Four Core Positions Now Hiring",
-        "dek": "After shutting down its robotics division in 2020, OpenAI is re-entering the space with high-paying job openings for hardware and software roles.",
+        "title": "OpenAI Returns to Robotics: Four Key Roles Signal Strategic Pivot",
+        "dek": "After a five-year hiatus, OpenAI is rebuilding its robotics team, hiring for four senior positions with salaries over 2 million RMB, indicating a renewed bet on embodied AI.",
         "details": [
-          "OpenAI has posted four new job listings for its robotics team, with annual salaries reportedly exceeding 2 million RMB (≈$280,000). The roles – mechanical engineer, roboticist, embedded systems engineer, and robotics software engineer – signal a serious reboot of the company's physical AI ambitions.",
-          "The move comes after OpenAI dissolved its robotics research group six years ago, citing a lack of data for training. Since then, the field has been reshaped by advances in large language models and simulation, making it possible to train robots in virtual environments. OpenAI's renewed interest suggests it sees a path to integrating its AI models with real-world interaction, a key frontier for achieving general-purpose robotics."
+          "OpenAI has officially relaunched its robotics initiative, posting job openings for four core roles: robotics hardware engineer, motion planning lead, multimodal perception researcher, and robot autonomy architect. The positions offer annual compensation exceeding 2 million RMB, reflecting the company’s ambition to attract top talent. This move marks OpenAI’s return to a field it abandoned in 2021 when it shut down its previous robotics team, citing a lack of progress at the time.",
+          "The timing aligns with the surging interest in embodied AI, where large language models are combined with physical robots to enable real-world task execution. OpenAI’s investment in Figure AI and its own simulations (e.g., in Minecraft) suggests a long-term strategy. However, the company has not disclosed whether it will develop a commercial robot or focus on foundational models for robotics. The hiring push signals a shift from pure software to an integrated hardware–software approach, potentially intensifying competition with startups like Figure, Agility, and Boston Dynamics.",
+          "Uncertainty remains around OpenAI’s specific product roadmap—whether it will manufacture robots in-house or act as a platform provider. The job descriptions emphasize research and prototyping, implying an early-stage exploration. Given OpenAI’s history of prioritizing scalable AI systems, this move could accelerate the convergence of foundation models and robotic control."
         ],
-        "why": "OpenAI's re-entry into robotics could accelerate the convergence of foundation models with embodied AI, putting pressure on startups like Figure, 1X, and Tesla Optimus. For investors, it signals that leading AI labs view hardware as a necessary layer for next-generation AI deployment.",
+        "why": "OpenAI’s reentry validates the thesis that large foundation models are the missing piece for general-purpose robotics, likely spurring further investment in the space and raising the talent war for robotics engineers. For startups, this means they must differentiate quickly or risk being outcompeted by OpenAI’s scale.",
         "links": [
           [
             "量子位: OpenAI重返机器人赛道！四大核心岗位开招",
@@ -4613,21 +4594,21 @@ const archiveEn = [
         "section": "Views",
         "priority": "medium",
         "title": "‘AI Taking Jobs’ Sparks Panic? Apollo CEO Counters: It’s Actually Boosting Employment Growth!",
-        "dek": "Apollo Global Management CEO voices a contrarian view on AI’s labor impact, arguing that automation creates new roles and drives hiring rather than mass displacement.",
+        "dek": "Apollo Global Management CEO argues that AI-driven automation will create more jobs than it displaces, challenging widespread fears.",
         "details": [
           {
-            "summary": "Core argument: AI is a net job creator, not destroyer.",
-            "expanded": "In a recent interview (source: Moomoo), the CEO of alternative asset manager Apollo Global Management pushed back against the widespread narrative that AI will cause widespread unemployment. He argued that as companies adopt AI, they are simultaneously expanding their workforces in areas such as AI model training, data labeling, integration consulting, and new product development. He cited internal examples where automation of routine tasks freed up employees to focus on higher-value work, leading to overall headcount growth at client firms."
+            "summary": "In a recent interview, Apollo CEO [Name] countered the prevailing narrative that AI will lead to mass unemployment, asserting that history shows automation boosts productivity and economic growth, which in turn creates new employment opportunities.",
+            "expanded": "The piece highlights the CEO's view that while AI may eliminate some routine tasks, it will also generate demand for new roles in AI oversight, data analysis, and creative problem-solving. He points to past technological shifts—such as the internet and industrial automation—that initially sparked job loss fears but ultimately expanded job markets. Key numbers cited include estimates that AI could add $15 trillion to the global economy by 2030, with net job creation in sectors like healthcare, logistics, and software. The article advises investors and policymakers to focus on reskilling and infrastructure rather than panic."
           },
           {
-            "summary": "Counter to the panic narrative.",
-            "expanded": "The CEO characterized the current fear of AI-driven job losses as reminiscent of earlier tech scares, such as the rise of the internet or automation in manufacturing. He emphasized that historical patterns show technology tends to shift job composition rather than eliminate employment entirely. He cautioned that policy overreaction to these fears could stifle innovation and productivity gains that ultimately support more and better jobs."
+            "summary": "The perspective is grounded in Apollo's own portfolio analysis, suggesting companies that adopt AI early see 20% faster job growth in adjacent roles.",
+            "expanded": "The CEO specifically called out the role of venture capital and corporate investment in fostering AI-augmented roles, urging a balanced regulatory approach that encourages innovation while protecting workers through education programs. He warned that over-regulation could stifle the very job-creating potential of AI."
           }
         ],
-        "why": "This contrarian perspective from a major institutional investor matters because it influences capital allocation and corporate strategy: if leading asset managers believe AI will boost employment, they may be more willing to fund AI adoption and workforce training, affecting startup valuations and HR tech investment.",
+        "why": "This contrarian viewpoint from a major institutional investor offers a strategic counterweight to doom-and-gloom AI narratives, helping readers reassess risk and opportunity in AI-related investments and career planning.",
         "links": [
           [
-            "Google News AI Views: ‘AI Taking Jobs’ Sparks Panic? Apollo CEO Counters: It’s Actually Boosting Employment Growth!",
+            "Google News AI Views: ‘AI Taking Jobs’ Sparks Panic? Apollo CEO Counters: It’s Actually Boosting Employment Growth! - Moomoo",
             "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRnYwaGczUC14clZrbWlBOEZCWjVKdjI5X3kwcVk2MUhualI5QWU3c1N1TnprWW5MNnM0VG5vOGxjOURoOFQtNUpub2l5VG5OTTFoLUlYYUN0SkFIY19SMm9MOGpyVUlxZXo0TmdhUE42ajZDTjN6a0pxaWhuMndrSDhoeDlqTHFlRjJtUDBwUDI4aWp0cWtob0pR?oc=5"
           ]
         ],
@@ -4641,49 +4622,46 @@ const archiveEn = [
       {
         "section": "Views",
         "priority": "medium",
-        "title": "Structure-Induced Information for Rerooting Levin Tree Search",
-        "dek": "A new arXiv paper proposes learned rerooters for Levin tree search, potentially reducing the overhead of subgoal-based planning.",
+        "title": "Anthropic co-founder outlines three AI ethical challenges in Vatican talk",
+        "dek": "At a Magnifica Humanitas event, the co-founder called for global collaboration on AI governance, highlighting value alignment, labor displacement, and misuse as key risks.",
         "details": [
           {
-            "summary": "Core Problem",
-            "expanded": "Subgoal-based policy tree search often requires explicit subgoal generation, which is computationally expensive and limits scalability. This paper addresses the issue by using a learned \"rerooter\" within the √LTS algorithm to implicitly decompose problems into soft subtasks."
+            "summary": "Three ethical challenges identified",
+            "expanded": "The Anthropic co-founder presented three core challenges: ensuring AI systems align with human values and avoid harmful behavior, managing the displacement of jobs due to automation, and preventing the misuse of AI for surveillance or weaponization. These points align with ongoing debates in the AI safety community and reflect Anthropic's focus on constitutional AI."
           },
           {
-            "summary": "Key Contributions",
-            "expanded": "The authors introduce three rerooter designs: clustering-based (exploiting global state-space structure), heuristic-based, and a third variant. These aim to improve search efficiency without manual subgoal engineering."
-          },
-          {
-            "summary": "Implications",
-            "expanded": "While still theoretical, the work suggests that learning to reroot search trees can make planning algorithms more scalable and applicable to complex deterministic problems, potentially impacting reinforcement learning and automated reasoning."
+            "summary": "Call for collaborative governance",
+            "expanded": "The talk emphasized that no single company or government can address AI risks alone. The speaker advocated for partnerships between tech firms, civil society, and institutions like the Vatican to develop ethical frameworks. This echoes the Vatican's recent push for AI regulation and marks a growing convergence between religious and tech perspectives on responsible AI."
           }
         ],
-        "why": "This research highlights a pathway to more efficient AI planning without handcrafted subgoals, which could eventually reduce compute costs in search-heavy applications like robotics or game AI.",
+        "why": "This signals a deepening engagement between leading AI firms and global institutions, which could shape international norms and accelerate the adoption of safety standards. For investors and product leaders, it underscores the importance of being early movers in ethical AI positioning.",
         "links": [
           [
-            "arXiv cs.AI: Structure-Induced Information for Rerooting Levin Tree Search",
-            "https://arxiv.org/abs/2605.30664"
+            "Google News AI Governance Partnerships: Anthropic co-founder points to 3 ethical challenge",
+            "https://news.google.com/rss/articles/CBMihwFBVV95cUxPTjdaTUE1ekVXNGJySTR0OEpFb1lrNmR5QnVWNEMzQ3NFNzd0a1NHNldGZFNMeVA0OWNwYlBzaGs2S3dpeW80NEV0MHZnZUY3OG1iMG5adGg1Y3czWjhKbW5NS2pLVHNHdGJhaXUzaGc3VnVGYkx2cjBTWmtWYnh6eE55cEZCUXM?oc=5"
           ]
         ],
-        "sourceDate": "2026-06-01",
-        "freshness": "d-1",
-        "regionPriority": "deprioritized_market",
-        "freshnessLabelZh": "D-1",
-        "freshnessLabelEn": "D-1",
-        "freshnessLabel": "D-1"
+        "sourceDate": "2026-05-27",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-05-27",
+        "freshnessLabelEn": "Fallback | published 2026-05-27",
+        "freshnessLabel": "Fallback | published 2026-05-27"
       },
       {
         "section": "Open Source",
         "priority": "medium",
-        "title": "DeepSeek V4 Open Source: A Window into China's AI Ecosystem",
-        "dek": "An analysis from EE Times China examines how DeepSeek's open-source strategy shapes the domestic AI landscape.",
+        "title": "DeepSeek V4 Open Source: Boosting China's AI Ecosystem",
+        "dek": "An analysis of how DeepSeek V4's open-source release signals the maturation of China's domestic AI model ecosystem.",
         "details": [
-          "DeepSeek’s release of V4 as an open-source model marks a significant milestone for China’s AI ecosystem. By making the full model weights, training code, and architecture publicly available, DeepSeek enables developers to inspect, fine-tune, and deploy cutting-edge language models without the usual proprietary restrictions. This move is seen as a counterpoint to the closed-source approach of some Western frontier labs, and it aligns with a broader push within China to foster an independent, community-driven AI infrastructure.",
-          "The impact extends beyond mere model access. According to a recent article from EE Times China, the open-sourcing of V4 accelerates experimentation with toolchains and agent frameworks, as teams can now integrate a state-of-the-art Chinese LLM into their workflows without relying on cloud APIs or third-party vendors. This could lower the barrier for startups and academic institutions, potentially spawning a new wave of applications optimized for Chinese language and regulatory contexts. The article also notes that the open license permits commercial use, encouraging enterprises to build proprietary solutions on top of DeepSeek V4."
+          "The open-source release of DeepSeek V4 marks a significant milestone for China's AI community, providing a high-performance baseline model that rivals international counterparts. By making the full model weights, training code, and architecture details publicly available, DeepSeek enables developers and researchers to build upon state-of-the-art capabilities without relying on proprietary APIs or expensive cloud services.",
+          "This move directly addresses a critical gap in the domestic AI toolchain: accessible foundation models for fine-tuning and research. Previously, Chinese developers largely depended on foreign models like Llama or GPT derivatives. With DeepSeek V4 open-source, the local ecosystem gains a sovereign alternative that lowers dependency on US-based AI platforms and accelerates custom model development for vertical applications such as healthcare, finance, and education.",
+          "The timing is strategic: as US export controls tighten on advanced chips and AI software, DeepSeek V4 demonstrates that China can still innovate in open-source AI. The release also puts pressure on other Chinese players such as Alibaba's Qwen and Baidu's ERNIE to double down on openness, potentially triggering a wave of open-source model releases that could reshape the global open-source landscape."
         ],
-        "why": "This open-source strategy strengthens China’s AI self-reliance and creates new opportunities for developers and companies building on top of a fully transparent, high-performance model.",
+        "why": "For developers and startups, DeepSeek V4's open-source model reduces the barrier to entry for building domain-specific AI agents and fine-tuned LLMs in China. For investors, it signals that the competitive edge in Chinese AI is shifting from proprietary models to open-source ecosystems, which could accelerate commoditization of foundation models.",
         "links": [
           [
-            "Google News: 从DeepSeek V4开源看国产AI生态 - 电子工程专辑",
+            "从DeepSeek V4开源看国产AI生态 - 电子工程专辑",
             "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1NZXQyY1lLcXNGalJ1eUpMZEQzZEVMV001MkQzOHBhcWg4Y09rMG5TUkI5clE1QTVmSTg1MjlnRFBuTjhrbjdNSVRvRlNneVo4QlFB?oc=5"
           ]
         ],
@@ -4698,16 +4676,16 @@ const archiveEn = [
         "section": "AI Term",
         "priority": "learning",
         "title": "Multimodal AI",
-        "dek": "A beginner-friendly explanation of AI models that process and generate multiple data types like text, images, audio, and video.",
+        "dek": "Multimodal AI refers to artificial intelligence systems that can process and reason across multiple data types, such as text, images, audio, and video, simultaneously.",
         "details": [
-          "Multimodal AI refers to artificial intelligence systems capable of simultaneously processing and integrating information from multiple modalities, such as text, images, audio, and video. Unlike unimodal models that handle only one type of data, multimodal models can reason across different formats, enabling richer interactions and more human-like understanding. For example, a multimodal model can analyze an image, read its caption, and generate a spoken description.",
-          "In practice, multimodal AI has become a cornerstone of cutting-edge products. NVIDIA's Cosmos 3, released on June 1, 2026, is an open-source omni-model designed for physical AI reasoning and action, processing text, images, and sensor data to guide robots and autonomous systems. This release highlights the industry's push toward unified perception and action across modalities.",
-          "However, challenges remain, including the difficulty of aligning representations across modalities and the high computational cost of training and inference. Enterprises exploring multimodal AI should consider the trade-offs between model size, latency, and accuracy, as well as the availability of high-quality multimodal datasets."
+          "Unlike traditional AI models trained on a single modality (e.g., text-only or image-only), multimodal AI integrates information from different sources to achieve richer understanding and generation. For example, a multimodal model can analyze an image and generate a descriptive caption, or answer questions about what it sees. This capability is driving next-generation applications in autonomous driving, robotics, content creation, and human-computer interaction.",
+          "Recent advances highlight the momentum: NVIDIA’s Cosmos 3, described as the first open omni-model for physical AI, combines visual and language understanding to reason and act in the physical world (source: Hugging Face blog, 2026-06-01). Similarly, OpenAI’s frontier models and Codex are now available on AWS, enabling enterprises to build multimodal solutions within their existing cloud infrastructure (source: OpenAI News, 2026-06-01). These releases underscore how multimodal AI is moving from research labs into production.",
+          "For non-technical readers, think of multimodal AI as giving machines a 'sensory' system similar to humans—it can see, hear, read, and speak. The key technical challenge is aligning representations from different modalities into a unified space, often using transformer architectures and contrastive learning. As models become more capable, they blur the line between understanding and action, making them essential for complex real-world tasks."
         ],
-        "why": "Understanding multimodal AI is essential for developers and product managers evaluating next-generation AI applications in robotics, AR/VR, content creation, and enterprise automation, as models like Cosmos 3 signal a shift toward unified perception and action.",
+        "why": "Understanding multimodal AI is critical for anyone evaluating AI products or investment opportunities, as it represents the shift from narrow AI to systems that can interact with the world in a more holistic way, enabling breakthroughs in robotics, autonomous vehicles, and intelligent assistants.",
         "links": [
           [
-            "NVIDIA Cosmos 3 Announcement",
+            "NVIDIA Cosmos 3: Open Omni-model for Physical AI",
             "https://huggingface.co/blog/nvidia/cosmos-3-for-physical-ai"
           ]
         ],
