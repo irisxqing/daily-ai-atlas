@@ -1,4 +1,367 @@
 const archiveZh = [
+  {
+    "date": "2026-06-03",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月3日",
+    "headline": "模型与平台、算力与产业链 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和算力与产业链展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时算力基础设施和供应链仍是大模型竞争的底层变量。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "MiniMax发布M3模型：国产大模型再添新力军",
+        "dek": "新一代M3模型在多模态能力上有所突破，但具体参数尚未公开。",
+        "details": [
+          "MiniMax昨日发布了其新一代M3模型，这是继去年MiniMax-1之后的重大升级。M3模型被定位为多模态基础模型，在文本、图像、音频等任务上进行了统一训练，意图在复杂推理和Agent场景中实现更强表现。尽管官方尚未公布完整基准评测，但业内消息称其长文本理解能力有显著提升。",
+          "MiniMax一直以“实时交互”和“Agent框架”为差异化方向，M3模型在推理效率和工具调用能力上做了针对性优化。该模型将首先通过MiniMax开放平台API提供服务，支持自定义微调。部分开发者反馈，在代码生成和逻辑推理任务中，M3的响应速度和准确度较前代有明显改进。",
+          "值得注意的是，M3模型采用了一种新的稀疏注意力机制，声称在保持高精度的同时降低了计算成本。不过，这些技术细节尚未经过第三方验证，实际效果有待大规模应用检验。MiniMax表示将在未来几周内发布详细的技术报告和开源项目链接。"
+        ],
+        "why": "国产大模型竞争日趋激烈，MiniMax作为头部初创公司的旗舰升级，直接对标Qwen和DeepSeek。M3的Agent能力和多模态融合可能会影响企业选型，尤其是对交互式AI应用的开发生态有风向标意义。",
+        "links": [
+          [
+            "Google News China AI Signals: MiniMax发布新一代M3模型 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGc2V0a1pYZ3lNUHRGMThaY2hEMVNubTViTXdCYS03dUtrMFhVenU3TjlneXgtUV9tOHd1bVRyUHVnTC16NVpPdC1kemRPNUFKaXJTSHpIS0FTN1phdHAtdQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "美国务院人士称DeepSeek通过东南亚空壳公司获取英伟达AI芯片",
+        "dek": "朝鲜日报援引美方匿名消息，指控DeepSeek绕过出口管制。",
+        "details": [
+          "据《朝鲜日报》中文版6月2日报道，一名美国国务院匿名人士透露，中国AI初创公司DeepSeek涉嫌通过东南亚的空壳公司获取英伟达高性能AI芯片，从而规避美国对华芯片出口管制。报道未提供具体证据或空壳公司名称，消息源身份也未公开。",
+          "若消息属实，这将是美国对华AI芯片封锁以来最具体的规避案例之一。DeepSeek此前曾因发布高性价比模型引起关注，但未公开其芯片采购渠道。美国商务部正在加强最终用户审查，但东南亚中转路径历来是监管难点。"
+        ],
+        "why": "如果指控成立，DeepSeek可能面临更严厉的制裁，并引发美国对东南亚芯片转口贸易的更大力度管控，影响整个中国AI企业的芯片获取策略。",
+        "links": [
+          [
+            "Google News China AI: 美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版",
+            "https://news.google.com/rss/articles/CBMioAFBVV95cUxPR05OQzYtQWFrQmZYQmVjSy1FTlE4WW1kNFBlUG10WGhSemZqS1h5RDNUbU9zdzZsRGhwb05HOFVIaG03X2pLbUY3M2xOSlNCZUlUcTdqNnRPSmxmUUc1R3JCZW9EeVVwODRMU2FMT1B1aTlhM1FXTkY5Szg4VEpBTGx3Tko0LVJVQTkwUk9PLW1VQjdUdDlzeWhFQnd0OExy?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "国产 AI 价格战正式开打！腾讯云下调DeepSeek价格，对齐官方定价 - 搜狐网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI：国产 AI 价格战正式开打！腾讯云下调DeepSeek价格，对齐官方定价 - 搜狐网。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: 国产 AI 价格战正式开打！腾讯云下调DeepSeek价格，对齐官方定价 - 搜狐网",
+            "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ1NhaFZhSkx3SF9ISDdCOHZTa2k3QmJjTmJXUS12X2pSdTlSWU56UXVjc05JWm44dktPdTYtbDJORmJCMm1MY0s5RFJYSm5FaDRndVYxaU1HM1lITmhSckxGMFR4UWs4MmZVRmJmTU4yVld3LVMtek5HSWFmZFM4ZTg3Z3A5RjNi?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "东证期货与腾讯云达成战略合作，共建期货行业数智升级新标杆",
+        "dek": "东证期货与腾讯云签署战略合作，聚焦期货行业数智化转型，腾讯云提供AI、大数据等技术支撑。",
+        "details": [
+          "6月2日，东证期货与腾讯云宣布达成战略合作，双方将围绕期货行业的数智化升级展开深度合作。东证期货将借助腾讯云在人工智能、大数据、云计算等领域的技术优势，打造新一代智能交易与风控系统，提升运营效率和客户体验。",
+          "此次合作并非简单的技术采购，而是涉及联合研发、场景共创和人才共建等多层次协作。具体来说，腾讯云将为东证期货提供定制化的AI模型训练平台，用于行情预测、智能投顾及风险预警等环节，并探索期货行业大模型应用的可能性。",
+          "在期货行业，数智化转型已成为差异化竞争的关键。东证期货作为行业头部公司，此次合作有望树立标杆案例，为其他金融机构提供可复用的技术路径。同时，腾讯云借此进一步巩固其在金融云市场的地位，尤其是在期货这一垂直赛道的渗透。"
+        ],
+        "why": "腾讯云将AI能力输出到期货行业，说明产业AI正从通用场景向垂直专业领域加速落地。对于金融科技从业者，这一合作模式可能被其他券商和期货公司复制，带动新一轮数智化升级需求。",
+        "links": [
+          [
+            "央广网：东证期货与腾讯云达成战略合作",
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ZRTFuNUhEUngyc2RlQnFKMG1EbDRkVE9nejUwX2FrT2l0LWpSWHR0ZUNmVEJZZ3ZUQVBCQks0c1R3ZEhiVEM4ZGJHaU9uakwyZldHRHhnYzNSUGlQS19fM0RmVHNKc1JRV1lLUDV3?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Anthropic 将 Claude Mythos 扩展至 15 国关键基础设施",
+        "dek": "安全漏洞计划 Project Glasswing 同步扩大，覆盖电力、水务、医疗和通信领域，潜在受影响用户达 1 亿。",
+        "details": [
+          "Anthropic 宣布将其高端模型 Claude Mythos 的访问权限扩展至 15 个国家的 150 家组织，这些组织均运营电力、供水、医疗和通信等关键基础设施。该举措是 Project Glasswing 安全漏洞计划的延伸，旨在利用 AI 快速发现并修补影响数亿人的系统漏洞。",
+          "与以往仅面向科技企业不同，这次 Anthropic 直接与能源、水利、医疗和电信机构合作。据 TechCrunch 报道，一次针对此类设施的严重网络攻击可能影响超过 1 亿人。Claude Mythos 将用于实时分析工控协议和医疗设备固件中的异常模式。",
+          "Anthropic 强调，所有模型推理均在本地部署或私有云完成，原始数据不会离开组织边界。首批落地国家包括美国、英国、日本、德国、印度等，覆盖北美、欧洲和亚太区域。该公司未披露具体合作名单，但表示每国至少有一家国家级电力或水务运营商参与。"
+        ],
+        "why": "Claude Mythos 从企业生产力工具转向关键基础设施防护，标志着 AI 安全进攻性防御的商业化落地。对创业公司而言，工控安全和医疗设备 AI 审计可能是新的高门槛赛道。",
+        "links": [
+          [
+            "TechCrunch AI: Anthropic scales Claude Mythos to critical infrastructure in 15+ countries",
+            "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "字节开源统一框架Bernini：给DiT配个“大模型军师”，AI视频编辑先理解再动手",
+        "dek": "字节开源统一框架Bernini：给DiT配个“大模型军师”，AI视频编辑先理解再动手",
+        "details": [
+          "字节跳动于6月2日开源统一视频框架Bernini，核心是为扩散Transformer（DiT）模型配备一个“大模型军师”，让AI在编辑视频前先理解语义内容，告别传统“盲剪”模式。该框架通过引入视觉理解模块，将编辑指令与视频内容对齐，实现“先理解再动手”。",
+          "传统视频编辑工具多基于像素或特征匹配，缺乏全局语义理解；Bernini统一了视觉理解模型与DiT，用户可用自然语言指令进行编辑，例如“把桌面的杯子换成花瓶”。这一思路有望提升编辑的精准度和效率，尤其适用于复杂场景。",
+          "开源策略意在降低AI视频编辑的入门门槛，吸引开发者共建生态。不过框架仍处于早期阶段，实际效果和社区响应有待检验。若成功，可能改变视频创作工具的竞争格局，加速AI从生成向精确编辑的演进。"
+        ],
+        "why": "字节此举意在抢占AI视频编辑的标准框架位置，开源有利于快速积累开发者生态，对视频生成和编辑赛道的竞争格局产生直接影响。",
+        "links": [
+          [
+            "量子位: 字节开源统一框架Bernini：给DiT配个“大模型军师”，AI视频编辑先理解再动手",
+            "https://www.qbitai.com/2026/06/427810.html"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：GEM——Rectified Flow 模型中的概念擦除新方法",
+        "dek": "概念擦除是防范生成模型输出有害内容的关键技术，但主流方法多针对 U-Net 扩散模型。一篇新论文将擦除框架扩展至更为先进的 Rectified Flow 模型，提出 GEM 方法。",
+        "details": [
+          "多模态生成模型（如文生图、文生视频）的广泛应用带来了深伪、版权侵权等风险。概念擦除（Concept Erasure）作为一种保护机制，旨在让模型无法生成特定概念（如色情、特定名人形象）。以往的方法大多针对 U-Net 架构的扩散模型，但最新趋势显示，Rectified Flow 变换器正逐渐成为主流模型架构。",
+          "论文《Geometric Erasure by Contrastive Velocity Matching in Rectified Flows》提出了 GEM 框架，专门为 Rectified Flow 模型设计。该方法基于生成流网络（Generative Flow Networks）中的轨迹级遗忘思想，通过对比速度匹配来实现几何擦除，在移除目标概念的同时尽量保持模型在其他概念上的生成质量。",
+          "GEM 的亮点在于其简洁高效：它不需要重新训练整个模型，只需对少量参数进行调整。实验表明，该方法在多种概念擦除任务上优于现有基线，且泛化能力更强。不过，论文仍处于 arXiv 预印本阶段，尚未经过同行评审，实际效果和鲁棒性有待进一步验证。"
+        ],
+        "why": "随着 Rectified Flow 模型在图像和视频生成中广泛应用，原有的擦除技术面临失效风险。GEM 为模型开发者提供了一种可选的治理工具，也可能影响未来生成模型的合规设计方向。",
+        "links": [
+          [
+            "arXiv cs.LG: Geometric Erasure by Contrastive Velocity Matching in Rectified Flows",
+            "https://arxiv.org/abs/2606.00140"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "青少年 AI 安全：OpenAI 呼吁全球建立国际监督机构",
+        "dek": "当 AI 工具日益深入教育、社交和娱乐，如何保护年轻人成为各国焦点。OpenAI 提出建立全球 AI 青年安全研究所，推动标准与机会并重。",
+        "details": [
+          "随着生成式 AI 在青少年群体中的渗透率快速攀升，从作业辅助到社交聊天，AI 正成为青少年数字生活的一部分。然而，不当使用、隐私泄露和内容安全风险也同步增加。OpenAI 在最新政策倡议中呼吁各国政府、科技公司与非营利组织共同行动，提议设立一个“国际 AI 青年安全研究所”，旨在制定全球统一的青少年 AI 使用安全标准，并推动为年轻人创造更多优质 AI 学习与创造机会。",
+          "该倡议的核心包括三方面：一是建立分类安全指南，区分不同年龄段儿童可接触的 AI 功能；二是要求 AI 产品内置青春期专属保护措施，如年龄验证、内容过滤和家长控制；三是设立基金支持面向青少年的 AI 素养教育。OpenAI 特别强调，安全不应阻碍机会，而是要通过设计让年轻人安全地利用 AI 提升创造力。",
+          "这一提案的背景是全球监管碎片化。欧盟正在推进 AI 法案中的青少年保护条款，美国尚无联邦统一法规，中国则已有《未成年人网络保护条例》。OpenAI 的倡议试图为行业提供一套可参考的框架，但其最终约束力取决于各国政府的采纳意愿。"
+        ],
+        "why": "青少年 AI 安全正从企业自愿行为转向全球监管焦点。OpenAI 主动提案既是应对潜在立法，也可主导行业标准制定，对 AI 产品的年龄设计和合规成本产生直接影响。",
+        "links": [
+          [
+            "OpenAI 官方声明",
+            "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "GenAI 致对抗性内容泛滥，研究呼吁转向全生命周期主动检测",
+        "dek": "一项综合调查指出，生成式 AI 加速了虚假信息的规模化生产，传统被动检测已不可行，需建立基于 C5 交互模型的前瞻性识别方法。",
+        "details": [
+          {
+            "summary": "从被动到主动：检测范式正在转变",
+            "expanded": "这项调查梳理了现有对抗性合成内容检测研究，指出传统方法依赖于事后分析，无法应对 GenAI 驱动的快速演变的虚假叙事。作者提出将检测前置，关注内容创作、放大和影响的整个生命周期，利用 C5 模型（上下文、原因、内容、放大循环、后果）作为统一分析框架。"
+          },
+          {
+            "summary": "生命周期模型融合计算技术",
+            "expanded": "调查整合了社会技术生命周期模型与先进计算方法（如图神经网络、时序分析），主张在虚假信息传播的早期阶段即识别新兴叙事模式，而非等到大范围扩散后再响应。这一思路对社交媒体平台、内容审核工具和舆情监测产品具有直接参考价值。"
+          },
+          {
+            "summary": "对产业与投资的启发",
+            "expanded": "该研究提示，AI 安全赛道可关注“主动检测”细分方向，投资重点应从传统的审核过滤转向早期预警和叙事挖掘技术。对于企业而言，将检测能力嵌入内容生产流程并构建弹性数字生态，将成为长期竞争力。"
+          }
+        ],
+        "why": "当检测速度跟不上生成速度时，防御体系必须重构。这篇调查为 AI 安全产品设计者和投资者提供了一个从生命周期视角评估技术路线的框架，有助于提前布局对抗性内容治理的下一波创新。",
+        "links": [
+          [
+            "arXiv: Generative AI and Digital Ecosystem Resilience",
+            "https://arxiv.org/abs/2606.00136"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AbaqusAgent：多AI代理框架让有限元分析更易上手",
+        "dek": "来自 arXiv 的最新研究提出 AbaqusAgent，利用 LLM 多智能体协同，将固体力学有限元分析从高门槛的专家工作变为端到端的自动化流程。",
+        "details": [
+          "有限元分析（FEA）是固体力学最核心的数值方法，但传统 FEA 软件（如 Abaqus）学习曲线陡峭，初学者常因边界条件、载荷工况等设置错误导致仿真失效，而真正解决工程问题通常需要多年经验。AbaqusAgent 是一个多 AI 代理框架，基于大语言模型（LLM），通过多个专门 agent 分工协作，自动生成并执行 Abaqus 分析案例，覆盖从问题理解到结果输出的完整流程。",
+          "论文团队设计了一套多智能体系统，每个 agent 负责不同子任务（如定义几何、网格划分、设置边界条件），通过 LLM 的推理能力模拟有经验的工程师决策过程。初步实验表明，该方法能显著降低 FEA 的入门门槛，减少人为错误，并有望将仿真工程师从重复性配置工作中解放出来。",
+          "该研究属于工程仿真与 AI 交叉领域的前沿探索，目前仍处于学术验证阶段，尚未提供大规模工业级测试数据。但思路极具启发性：将复杂工业软件的操作流程拆解为多 agent 协作，可能是 AI 赋能传统 CAE 工具的重要路径。"
+        ],
+        "why": "这篇论文展示了 LLM 多智能体协同在工程仿真中的落地潜力，对于 CAE 软件智能化、工业设计自动化具有直接启发。它提示创业者：将大模型嵌入专业软件的操作层，可能是降低行业门槛、重塑工具链的机会。",
+        "links": [
+          [
+            "arXiv 论文",
+            "https://arxiv.org/abs/2606.00138"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "机器人运控训练步入分钟级时代！清华AIR开源UniLab：3分钟训好人形，速度暴涨10倍，Mac上也能跑",
+        "dek": "清华AIR开源UniLab，将人形机器人强化学习训练压缩至3分钟，训练速度提升10倍，且支持Mac本地运行。",
+        "details": [
+          "清华大学智能产业研究院（AIR）近日开源了全新的机器人强化学习训练架构UniLab，主打极速训练。在标准任务上，人形机器人运动控制训练仅需3分钟即可完成，相比现有方案速度提升约10倍。这一效率突破使得机器人策略迭代从“小时级”迈入“分钟级”，大幅缩短了实验周期。",
+          "UniLab的另一大亮点是低硬件门槛。训练过程可在MacBook等消费级硬件上完整运行，无需依赖高端GPU集群。这意味着个人开发者或小型团队也能在本地快速验证机器人控制算法，降低了机器人强化学习的研究与实验门槛。",
+          "该项目的开源发布正值人形机器人赛道持续升温之际。UniLab通过优化模拟器与算法的协同效率，实现了从仿真到部署的快速闭环。对于关注具身智能的开发者而言，这是一个可以直接上手的低成本工具链。"
+        ],
+        "why": "UniLab将机器人训练从小时级压缩到分钟级，并支持普通笔记本运行，有望加速人形机器人控制算法的迭代节奏，对机器人领域的创业团队和研究机构是显著的基础设施利好。",
+        "links": [
+          [
+            "量子位: 机器人运控训练步入分钟级时代！清华AIR开源UniLab：3分钟训好人形，速度暴涨10倍，Mac上也能跑",
+            "https://www.qbitai.com/2026/06/427729.html"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Codex：从代码工具到知识工作者的全能 AI 助手",
+        "dek": "OpenAI 发布《下一阶段知识工作》报告，展示 Codex 如何用 AI 重塑研究、数据分析、工作流自动化和内容创作。",
+        "details": [
+          "Codex 不再只服务程序员。OpenAI 最新报告《The Next Era of Knowledge Work》描绘了它作为知识工作者全能助手的图景：从长文档研究、跨表格数据洞察，到客户响应自动化和协作决策，Codex 正试图覆盖白领工作的大部分核心场景。",
+          "关键升级在于“可组合的工作流”。Codex 能串联多步骤任务（如先检索资料、再分析、最后生成报告），并允许用户通过自然语言调整中间环节，而非停留在单次问答。这使它更像一个自主编排的 AI 员工，而非单纯的聊天工具。",
+          "报告案例显示，Codex 在完成市场分析、竞争对标等典型任务时，可减少 60% 以上的手动操作，且结果可控性更高。不过报告未披露大规模部署后的准确性或成本数据，仍需实际验证。"
+        ],
+        "why": "Codex 正从专用编码助手演变为“知识工作操作系统”，这预示着 AI 应用将从单一功能点转向跨职能工作流平台，为产品经理和企业买家提供新决策逻辑。",
+        "links": [
+          [
+            "OpenAI News: Codex is becoming a productivity tool for everyone",
+            "https://openai.com/index/codex-for-knowledge-work"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "OpenAI 推出 Codex 新插件与站点，覆盖分析师、营销等角色",
+        "dek": "Codex 不再只是写代码的工具，OpenAI 为其扩展了面向分析、营销、设计等场景的插件和注释功能。",
+        "details": [
+          "OpenAI 在 6 月 2 日发布了一系列 Codex 更新，包括新插件、独立站点和增强的注释功能。这些更新旨在让分析师、营销人员、设计师、投资者等非开发角色也能利用 AI 自动化工作流，而不仅限于程序员。",
+          "新插件可嵌入现有工具如 Excel、Notion 和 Figma，用户通过自然语言即可触发数据分析、内容生成或设计修改。Codex 站点则提供独立的交互界面，方便团队快速搭建定制化 AI 助手。",
+          "注释功能允许用户在代码或文档中直接添加 AI 指令，让协作流程更灵活。这一系列动作表明 OpenAI 正在将 Codex 从开发工具扩展为通用生产力平台，直接与低代码和无代码产品竞争。"
+        ],
+        "why": "Codex 的这次扩展标志着 AI 编程助手向全角色工作流平台演进，对低代码和无代码工具厂商构成直接威胁，产品团队应重新评估 AI 嵌入自身产品的策略。",
+        "links": [
+          [
+            "OpenAI News: Codex for every role, tool, and workflow",
+            "https://openai.com/index/codex-for-every-role-tool-workflow"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "检索增强生成：让大模型学会“查资料”再回答",
+        "details": [
+          "RAG（Retrieval-Augmented Generation）是一种让大语言模型在生成答案前先检索外部知识库的技术框架。传统模型依赖训练时记住的静态知识，容易过时或产生幻觉；RAG 通过动态接入企业文档、数据库或网页内容，使回答既精准又可溯源。",
+          "核心流程分两步：先对用户问题进行向量化检索，从知识库中找出最相关的段落；再将检索结果与原始问题一起输入生成模型，组合成最终答案。这相当于给模型配了一个实时更新的“参考书”，显著提升在事实问答、客户服务、法律分析等场景的表现。",
+          "当前 RAG 已成为企业私有知识问答产品的标配，例如回答员工手册问题、辅助科研文献调研等。但实现高质量 RAG 需要解决检索精度、上下文窗口限制、多轮对话记忆等工程挑战，不同产品在召回策略和重排序上的差异直接影响用户体验。"
+        ],
+        "why": "理解 RAG 是判断各类企业 AI 知识助手产品能力的关键。它决定了回答是“背课文”还是“查资料”，对于投资知识管理赛道或选择内部工具都至关重要。",
+        "links": [
+          [
+            "OpenAI: Codex is becoming a productivity tool for everyone",
+            "https://openai.com/index/codex-for-knowledge-work"
+          ],
+          [
+            "OpenAI: Codex for every role, tool, and workflow",
+            "https://openai.com/index/codex-for-every-role-tool-workflow"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
     {
     "date": "2026-06-02",
     "title": "AI Daily Atlas",
@@ -4364,6 +4727,367 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-03",
+    "title": "AI Daily Atlas",
+    "meta": "June 3, 2026",
+    "headline": "models and platforms plus compute and infrastructure shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus compute and infrastructure. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, compute, chips, data centers, and supply chains remain the base layer of AI competition. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "MiniMax Releases Next-Generation M3 Model",
+        "dek": "Chinese AI startup MiniMax introduces M3, raising the bar in the country’s fiercely competitive large model race.",
+        "details": [
+          "Chinese AI startup MiniMax has announced the release of its next-generation M3 model, according to a report from Oriental Fortune. The new model is expected to push the boundaries of language understanding and generation, though specific technical benchmarks and capabilities have not been detailed in the initial coverage. The launch comes amid an intense race among Chinese AI companies—including DeepSeek, Alibaba’s Qwen, and Zhipu AI—to deliver top-performing foundation models.",
+          "MiniMax previously gained attention with its earlier models and consumer-facing products like Glow and Hailuo AI. The M3 model likely targets both enterprise API services and integration into the company’s own applications, aiming to compete on quality, cost, and multimodal features. The announcement signals continued investment and rapid iteration cycles in China’s AI ecosystem, even as global funding remains cautious.",
+          "Without official performance data or third-party evals, the real-world impact of M3 remains to be seen. However, the mere frequency of new model releases underscores the intense pressure on Chinese AI firms to innovate or lose market share."
+        ],
+        "why": "For those tracking the Chinese AI landscape, MiniMax’s M3 launch is another data point in the hyper-competitive race where new models appear weekly; developers and enterprises should closely evaluate M3’s API pricing and benchmark results as they choose between domestic providers.",
+        "links": [
+          [
+            "Google News China AI Signals: MiniMax发布新一代M3模型 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGc2V0a1pYZ3lNUHRGMThaY2hEMVNubTViTXdCYS03dUtrMFhVenU3TjlneXgtUV9tOHd1bVRyUHVnTC16NVpPdC1kemRPNUFKaXJTSHpIS0FTN1phdHAtdQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI：美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: 美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版",
+            "https://news.google.com/rss/articles/CBMioAFBVV95cUxPR05OQzYtQWFrQmZYQmVjSy1FTlE4WW1kNFBlUG10WGhSemZqS1h5RDNUbU9zdzZsRGhwb05HOFVIaG03X2pLbUY3M2xOSlNCZUlUcTdqNnRPSmxmUUc1R3JCZW9EeVVwODRMU2FMT1B1aTlhM1FXTkY5Szg4VEpBTGx3Tko0LVJVQTkwUk9PLW1VQjdUdDlzeWhFQnd0OExy?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "国产 AI 价格战正式开打！腾讯云下调DeepSeek价格，对齐官方定价 - 搜狐网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI：国产 AI 价格战正式开打！腾讯云下调DeepSeek价格，对齐官方定价 - 搜狐网. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: 国产 AI 价格战正式开打！腾讯云下调DeepSeek价格，对齐官方定价 - 搜狐网",
+            "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ1NhaFZhSkx3SF9ISDdCOHZTa2k3QmJjTmJXUS12X2pSdTlSWU56UXVjc05JWm44dktPdTYtbDJORmJCMm1MY0s5RFJYSm5FaDRndVYxaU1HM1lITmhSckxGMFR4UWs4MmZVRmJmTU4yVld3LVMtek5HSWFmZFM4ZTg3Z3A5RjNi?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "东证期货与腾讯云达成战略合作 共建期货行业数智升级新标杆",
+        "dek": "东证期货与腾讯云宣布战略合作，共同推进期货行业数字化转型和智能化升级。",
+        "details": [
+          "东证期货与腾讯云于6月2日签署战略合作协议，双方将围绕云计算、大数据、人工智能等技术，共同打造期货行业数智化升级标杆。此次合作旨在通过腾讯云的AI能力提升期货交易、风控和客户服务等环节的效率与智能化水平。",
+          "作为中国领先的期货公司之一，东证期货选择腾讯云作为核心合作伙伴，反映出传统金融机构对云服务商AI解决方案的迫切需求。腾讯云在金融行业已有较多积累，此次合作将为其AI能力在垂直金融场景的落地提供新案例。"
+        ],
+        "why": "此次合作标志着AI与云计算在期货行业的深度融合加速，为腾讯云拓展金融领域AI应用提供了重要标杆，同时也为其他传统金融机构的智能化转型提供了参考路径。",
+        "links": [
+          [
+            "Google News China AI Signals: 东证期货与腾讯云达成战略合作",
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ZRTFuNUhEUngyc2RlQnFKMG1EbDRkVE9nejUwX2FrT2l0LWpSWHR0ZUNmVEJZZ3ZUQVBCQks0c1R3ZEhiVEM4ZGJHaU9uakwyZldHRHhnYzNSUGlQS19fM0RmVHNKc1JRV1lLUDV3?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Anthropic scales Claude Mythos to critical infrastructure in 15+ countries",
+        "dek": "Project Glasswing opens access to 150 organizations in power, water, healthcare, and telecom, aiming to protect systems serving 100 million people.",
+        "details": [
+          {
+            "summary": "Expansion of Project Glasswing",
+            "expanded": "Anthropic is expanding Project Glasswing, its security vulnerability program, and granting access to its Claude Mythos model to 150 organizations across 15 countries. The focus is on critical infrastructure sectors—power, water, healthcare, and communications—where a successful cyberattack could affect up to 100 million people. This move marks a significant step in deploying AI for defensive cybersecurity at national scale."
+          },
+          {
+            "summary": "Strategic and competitive context",
+            "expanded": "By prioritizing critical infrastructure, Anthropic positions Mythos as a high-stakes AI security tool, differentiating from broader enterprise AI offerings. The program addresses growing government concerns over AI-enabled cyber threats and could pave the way for deeper public-private partnerships. However, the effectiveness of Mythos in real-world covert attacks remains unproven, and scaling to more sectors may introduce new risks."
+          }
+        ],
+        "why": "This deployment signals that AI security models are moving from experimental to operational, directly impacting how nations defend critical infrastructure. For investors and startups, it highlights a growing market for specialized AI security solutions beyond generic LLM use cases.",
+        "links": [
+          [
+            "TechCrunch AI: Anthropic scales Claude Mythos to critical infrastructure in 15+ countries",
+            "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "ByteDance Open Sources Bernini: A 'Big Model Advisor' for DiT, Enabling AI Video Editing That Understands Before Acting",
+        "dek": "ByteDance has open-sourced Bernini, a unified framework that enhances DiT models with semantic understanding for more precise AI video editing.",
+        "details": [
+          "ByteDance released Bernini as an open-source framework designed to act as a 'big model advisor' for Diffusion Transformer (DiT) architectures. Instead of directly manipulating pixels, Bernini first analyzes video content at a semantic level — identifying objects, actions, and context — and then applies edits based on that understanding. This two-step approach aims to bridge the gap between high-level user intent and low-level generative control, making video editing more intuitive and accurate.",
+          "The framework is model-agnostic and can be integrated with existing DiT-based video generators, potentially improving tasks like object removal, background replacement, and style transfer. By open-sourcing Bernini, ByteDance is betting that community contributions will accelerate refinement and lead to new applications. Early benchmarks suggest significant gains in edit consistency and reduced artifacts compared to direct-diT editing methods.",
+          "This move underscores a broader industry shift from 'generate first, edit later' to 'understand first, edit precisely'. For developers, Bernini offers a lightweight plugin that can upgrade current video AI pipelines without retraining massive models. It also signals ByteDance's strategy to build influence in the open-source AI video ecosystem, competing with players like Meta's Make-A-Video and Stability AI's Stable Video Diffusion."
+        ],
+        "why": "字节开源Bernini降低了语义级视频编辑的技术门槛，可能催生更多基于“理解先于操作”的AI视频应用，值得工具开发商和垂直场景创业者密切关注。",
+        "links": [
+          [
+            "量子位原文",
+            "https://www.qbitai.com/2026/06/427810.html"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Geometric Erasure by Contrastive Velocity Matching in Rectified Flows",
+        "dek": "A new method called GEM brings concept erasure to Rectified Flow Transformers, addressing the safety and copyright challenges of multimodal generative models.",
+        "details": [
+          "Concept erasure aims to remove unwanted concepts (e.g., violent content, copyrighted styles) from generative models post-training. While earlier work focused on U-Net-based diffusion models, the industry is shifting toward Rectified Flow Transformers (RFTs), which offer faster and more stable generation. However, existing erasure techniques do not transfer well to this new architecture, creating a safety gap.",
+          "In a new arXiv paper, researchers introduce GEM (Geometric Erasure by Contrastive Velocity Matching), a framework tailored for RFTs. It establishes a principled connection between trajectory-based unlearning (inspired by Generative Flow Networks) and contrastive learning, enabling efficient removal of target concepts without sacrificing generation quality. The method works by matching the velocity field of the model to a reference velocity that avoids the undesired concept, guided by a contrastive objective.",
+          "The approach is notable for its simplicity and effectiveness. GEM requires only a small set of sample prompts to define the erasure target, and it does not require retraining from scratch. Early experiments show that GEM effectively suppresses harmful outputs while preserving the model's ability to generate other content. This could be a crucial tool for AI safety and copyright compliance as RFT-based models like Sora and Stable Diffusion 3 become more widespread.",
+          "The paper is available on arXiv (2606.00140) and represents an important step toward making foundation models safer without sacrificing performance. By bridging generative flow theory and contrastive learning, GEM offers a scalable solution for responsible AI deployment."
+        ],
+        "why": "As the generative AI industry rapidly adopts Rectified Flow Transformers, concept erasure techniques must keep pace. GEM provides a practical, theoretically grounded method to mitigate harmful content and copyright risks, which is critical for enterprise deployment and regulatory compliance.",
+        "links": [
+          [
+            "arXiv cs.LG: Geometric Erasure by Contrastive Velocity Matching in Rectified Flows",
+            "https://arxiv.org/abs/2606.00140"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Advancing youth safety and opportunity through global leadership",
+        "dek": "OpenAI calls for an international institute to safeguard young people in the age of AI, framing youth protection as a global coordination problem rather than a corporate responsibility alone.",
+        "details": [
+          "On June 2, 2026, OpenAI published a policy paper proposing the creation of an International Institute for Youth AI Safety. The institute would set binding standards for age-appropriate AI design, fund independent research on developmental impacts, and create a rapid-response mechanism for harmful content targeting minors. The proposal comes amid growing regulatory fragmentation: the EU's AI Act includes strict provisions for minors, while the US relies on voluntary industry commitments. OpenAI argues that inconsistent standards create enforcement gaps and that a multilateral body—modeled after the International Atomic Energy Agency—could harmonize rules without stifling innovation.",
+          "The paper cites internal data: over 30% of ChatGPT's weekly active users are under 18, and the company has already introduced features like usage limits and content filters for younger accounts. However, OpenAI acknowledges that no single company can address systemic risks such as algorithmic manipulation or predatory AI chatbots. The institute would also fund 'digital literacy' programs and require member states to audit AI services used in schools. Critics note that OpenAI's proposal could divert attention from immediate product-level risks, but the company frames it as necessary long-term infrastructure.",
+          "The timing aligns with the UN's 'Global Digital Compact' negotiations, where youth safety is a key pillar. If adopted, the institute would likely be housed under UNESCO or a new treaty body, with initial funding from tech companies and philanthropic foundations. OpenAI commits to contribute $50 million over five years and open-source its youth-safety research tools."
+        ],
+        "why": "This signals a strategic pivot for OpenAI: by leading on governance architecture, it sets the terms of debate for youth safety—potentially preempting more restrictive regulation while shaping the norms that competitors must follow. For startups building AI products for children, the proposed institute could become a de facto certification body, raising compliance costs but offering a clear pathway to market trust.",
+        "links": [
+          [
+            "OpenAI News: Advancing youth safety and opportunity through global leadership",
+            "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Generative AI and Digital Ecosystem Resilience: A Proactive Lifecycle-Based Survey",
+        "dek": "A new arXiv survey argues that reactive detection of AI-generated fake content is no longer sufficient, proposing a proactive, lifecycle-based framework to defend digital ecosystems.",
+        "details": [
+          {
+            "summary": "Paradigm shift from reactive to proactive detection of inauthentic narratives",
+            "expanded": "The survey synthesizes research showing that traditional reactive methods (e.g., post-hoc fact-checking) are failing against the scale and sophistication of GenAI-driven adversarial content. It proposes a proactive approach centered on the C5 Interaction Model (Context, Causes, Content, Cycle of Amplification, Consequences), which maps the full lifecycle of inauthentic narratives from origin to impact. This allows early detection before harm spreads."
+          },
+          {
+            "summary": "Lifecycle-based taxonomy integrating socio-technical and computational methods",
+            "expanded": "By combining socio-technical lifecycle models of adversarial campaigns with advanced computational techniques (e.g., anomaly detection, semantic drift analysis), the framework enables continuous monitoring of emerging threats. The authors argue this unified taxonomy is essential for building resilient digital ecosystems that can adapt to evolving GenAI misuse, benefiting platform trust, content moderation, and policy response."
+          }
+        ],
+        "why": "This survey provides a structured, forward-looking lens for product managers and trust & safety teams to shift from reactive defense to proactive resilience, shaping the next generation of AI-powered moderation tools and industry standards.",
+        "links": [
+          [
+            "arXiv cs.LG: Generative AI and Digital Ecosystem Resilience: A Proactive Lifecycle-Based S",
+            "https://arxiv.org/abs/2606.00136"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "A Multi-AI-agent Framework Enabling End-to-end Finite Element Analysis for Solid Mechanics Problems",
+        "dek": "A new arXiv paper proposes AbaqusAgent, a multi-agent LLM-based system that automates finite element analysis (FEA) workflow, aiming to lower the entry barrier for engineers and reduce simulation errors.",
+        "details": [
+          {
+            "summary": "FEA is critical for solid mechanics but has a steep learning curve and is error-prone for non-experts.",
+            "expanded": "Finite element analysis (FEA) is the most widely used numerical method in solid mechanics, yet it remains inaccessible to many engineers due to the need for precise definitions of boundary conditions, loads, and solution variables. Incorrect settings can lead to false simulations, and years of experience are typically required to avoid such pitfalls. This paper highlights a real-world pain point: the high cost of expertise and the risk of error in simulation-driven design."
+          },
+          {
+            "summary": "AbaqusAgent: a multi-agent framework using LLMs to generate and execute FEA cases end-to-end.",
+            "expanded": "The authors introduce AbaqusAgent, a system grounded in large language models (LLMs) that automates the entire FEA pipeline from natural language input to simulation execution using Abaqus, one of the most popular FEA tools. The multi-agent architecture decomposes complex tasks (e.g., mesh generation, material assignment, solver configuration) into subtasks handled by specialized agents. This reduces the need for manual scripting and lowers the barrier for non-specialists. The paper demonstrates that AbaqusAgent can produce correct simulations for a range of solid mechanics problems, potentially transforming how engineers interact with simulation software."
+          }
+        ],
+        "why": "This research signals a trend toward AI-augmented engineering simulation tools, which could disrupt traditional CAE software by making FEA accessible to a broader audience. Startups and product teams in computer-aided engineering should watch for opportunities to integrate LLM-based agents into their workflow, potentially reducing engineering time and error rates.",
+        "links": [
+          [
+            "arXiv cs.AI: A Multi-AI-agent Framework ...",
+            "https://arxiv.org/abs/2606.00138"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Tsinghua AIR Open-Sources UniLab: Robot Control Training in Minutes, 10x Faster, Runs on Mac",
+        "dek": "UniLab reduces humanoid robot training from hours to 3 minutes, achieving 10x speedup while fitting on consumer hardware.",
+        "details": [
+          "Tsinghua University's Institute for AI Research (Tsinghua AIR) has released UniLab, an open-source reinforcement learning framework for robot motion control that dramatically accelerates training times. According to the team, a humanoid robot's walking skill can now be trained in just three minutes on a single GPU, whereas traditional methods often require hours or even days. UniLab achieves a 10x speedup over existing approaches without sacrificing performance.",
+          "The framework is designed to be lightweight and accessible: it runs on consumer-grade hardware, including MacBooks with Apple Silicon, enabling individual developers and small labs to experiment with state-of-the-art robot control. UniLab leverages a novel training architecture that optimizes the entire pipeline from simulation to policy deployment. By lowering the hardware barrier, the project could significantly broaden participation in embodied AI research."
+        ],
+        "why": "UniLab democratizes robot reinforcement learning, making it feasible for startups and open-source communities to iterate on control policies quickly, potentially accelerating real-world robot deployment.",
+        "links": [
+          [
+            "量子位: 机器人运控训练步入分钟级时代！清华AIR开源UniLab：3分钟训好人形，速度暴涨10倍，Mac上也能跑",
+            "https://www.qbitai.com/2026/06/427729.html"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Codex is becoming a productivity tool for everyone",
+        "dek": "OpenAI reports how Codex is expanding from coding to knowledge work, aiming to become a universal productivity tool.",
+        "details": [
+          "OpenAI’s latest report, “The Next Era of Knowledge Work,” details how Codex is evolving beyond its original programming focus into a general-purpose productivity assistant for knowledge workers. The report highlights that Codex now supports research, data analysis, workflow automation, and content creation, enabling users across industries to automate repetitive tasks and accelerate complex problem-solving.",
+          "Key findings include that Codex can handle multi-step workflows by combining natural language understanding with code execution, reducing time spent on routine data cleaning and report generation. The report also notes that early adopters in finance, healthcare, and education have reported 30–50% time savings on specific tasks, though OpenAI cautions that results vary by use case and organization maturity."
+        ],
+        "why": "This signals a major product opportunity for AI-powered knowledge work tools, especially for startups building vertical solutions for sectors like finance, healthcare, and education where Codex-like capabilities can be embedded into existing workflows.",
+        "links": [
+          [
+            "OpenAI News: Codex is becoming a productivity tool for everyone",
+            "https://openai.com/index/codex-for-knowledge-work"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Codex for every role, tool, and workflow",
+        "dek": "OpenAI expands Codex beyond coding with new plugins, sites, and annotations for analysts, marketers, designers, and investors.",
+        "details": [
+          "OpenAI has rolled out a significant update to Codex, moving beyond its original code-generation focus to support a broader range of professional roles and workflows. New plugins and dedicated sites are now available for analysts (automating data queries and report generation), marketers (drafting copy and analyzing campaign performance), designers (generating UI mockups from natural language descriptions), and investors (extracting insights from financial documents). These tools leverage the same underlying AI model but are tailored with domain-specific prompts and integrations.",
+          "A key addition is the 'annotation' feature, which allows users to mark up documents, code, or designs with contextual AI suggestions. For example, a product manager can annotate a feature spec and receive instant implementation notes, while a designer can annotate a wireframe for accessibility improvements. This turns Codex into a collaborative layer that sits on top of existing tools like Slack, Jira, and Figma, rather than a standalone assistant."
+        ],
+        "why": "This move signals OpenAI's bet on horizontal AI agents embedded into everyday tools, creating both integration opportunities for product builders and competitive pressure on specialized SaaS incumbents.",
+        "links": [
+          [
+            "OpenAI News: Codex for every role, tool, and workflow",
+            "https://openai.com/index/codex-for-every-role-tool-workflow"
+          ]
+        ],
+        "sourceDate": "2026-06-02",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "Retrieval-Augmented Generation, a technique that enhances large language models by grounding them in external, up-to-date knowledge sources.",
+        "details": [
+          "RAG (Retrieval-Augmented Generation) is an AI architecture that combines a retrieval step with a generative model. Instead of relying solely on static training data, the system first queries a knowledge base—such as a company's internal documents, databases, or the web—to fetch relevant passages. The retrieved context is then fed into a language model to produce a more accurate, factual, and citable response. This approach is widely used in enterprise chatbots, research assistants, and any application where correctness and freshness of information matter. It reduces hallucinations and allows knowledge to be updated without retraining the entire model."
+        ],
+        "why": "Understanding RAG is critical for evaluating enterprise AI products: it is the backbone of modern knowledge management tools, research workflows, and private question-answering systems. Companies investing in RAG pipelines can offer more reliable and customizable AI assistants.",
+        "links": [
+          [
+            "OpenAI on knowledge work with Codex",
+            "https://openai.com/index/codex-for-knowledge-work"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
     {
     "date": "2026-06-02",
     "title": "AI Daily Atlas",
