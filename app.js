@@ -1,5 +1,365 @@
 const archiveZh = [
   {
+    "date": "2026-06-04",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月4日",
+    "headline": "模型与平台、Agent 与工作流 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和Agent 与工作流展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时Agent 正从演示概念继续走向企业流程和开发者工具和真实任务执行。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek 完成 70 亿元巨额融资？官方尚未确认",
+        "dek": "财经媒体 NAI500 报道 DeepSeek 敲定约 70 亿元融资，但官方仍沉默。",
+        "details": [
+          "据 NAI500 报道，DeepSeek 已敲定一笔约 70 亿元的巨额融资。该消息来自财经媒体，但 DeepSeek 官方尚未确认具体细节，包括投资方和估值。",
+          "DeepSeek 是中国大模型创业公司之一，此前以开源模型 DeepSeek-V2 等受到关注。若融资属实，将为其模型训练和商业化提供重要资金支持。",
+          "报道同时列出一份“十大优质中国 AI 股票”名单，显示 AI 产业链投资热度不减，但投资者需注意市场波动和消息的不确定性。"
+        ],
+        "why": "70 亿元融资规模在 AI 创业公司中非常突出，若成真将进一步拉高中国大模型赛道的资本门槛，并加剧与阿里、百度等巨头的竞争。但官方确认前应保持谨慎。",
+        "links": [
+          [
+            "Google News China AI: DeepSeek 敲定 70 亿巨额融资，十大优质中国 AI 股票收好！ - NAI500",
+            "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfM2ZCeGhibGxmSFExa2F4aU5DZTRaOXo2cWJRMy1vZ2hZWGxoaVdOVnZnUkxkbUtCUFFhU3JXRExSR1B4NkE2bTNSZXM3VUc0TklhaUZncTl0dDRYWjdGbzNkUjFwY00xVWc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "前高盛与 Meta 高管联手创业：语音 AI 瞄准非洲和中东",
+        "dek": "两位分别来自高盛和 Meta 的创始人，正用自研语音 AI 栈服务每日超 1.7 万通电话，主攻被大厂忽视的新兴市场。",
+        "details": [
+          "一家名为 Voxia（暂未公开）的初创公司近日浮出水面，其两位创始人分别拥有高盛和 Meta 的工作背景。他们选择离开传统金融和社交巨头，转而投身语音 AI 领域，瞄准非洲和中东等长期被全球 AI 巨头忽略的市场。这种“降维打击”策略——将成熟语音技术适配低成本网络和多种非洲口音——正在快速获得本地客户。",
+          "据 TechCrunch 报道，该公司自研的语音 AI 栈目前已稳定运行，每天处理超过 17,000 通电话，涵盖客户服务、语音支付和本地语言交互等场景。相比于专注欧美市场的语音 AI 公司，Voxia 更强调对斯瓦希里语、豪萨语等 20 余种非洲语言的识别能力，以及即使在 2G/3G 网络下也能保持低延迟通话。",
+          "这一发展轨迹表明，语音 AI 的下一波增长可能来自基础设施薄弱但人口红利巨大的地区。Voxia 目前尚未公开大规模融资，但其日均通话量增速已让一些早期关注新兴市场的 VC 将目光重新投向非洲和中东。对于国内 AI 出海团队而言，这是一个值得追踪的信号：差异化市场比技术竞赛更容易形成壁垒。"
+        ],
+        "why": "当所有目光都集中在 GPT-5 和 Claude 4 时，Voxia 证明语音 AI 的爆发点可能在“被忽视的十亿人”市场——这对 AI 出海和产品国际化策略有很大启发。",
+        "links": [
+          [
+            "TechCrunch 报道",
+            "https://techcrunch.com/2026/06/03/these-two-founders-left-goldman-and-meta-to-build-voice-ai-for-markets-everyone-else-overlooked/"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "MiniMax M3 实测：首个集齐 Frontier 三件套的开源模型，能否成为平替天花板",
+        "dek": "302.AI 基准实验室发布 MiniMax M3 实测报告，称该模型为首个集齐 Frontier 三件套的开源模型，引发对开源模型平替能力的关注。",
+        "details": [
+          "MiniMax 最新开源模型 M3 获得 302.AI 基准实验室的全面实测，报告称其为“首个集齐 Frontier 三件套的开源模型”。三件套通常指长上下文、多模态理解和复杂推理能力，此前少有开源模型同时在这三项上达到前沿水平。",
+          "实测围绕多项标准基准展开，包括语言理解、数学推理、代码生成和多模态任务。初步结果显示，MiniMax M3 在部分任务上接近闭源前沿模型，但在长上下文检索和复杂逻辑推理上仍有差距。具体分数和对比数据已在完整报告中披露。",
+          "如果 M3 在性价比上表现突出，可能成为中小企业和开发者替代闭源 API 的首选。当前开源模型竞争激烈，Qwen、DeepSeek 等均已有强模型，MiniMax 的差异化在于强调“全栈前沿能力”的单模型覆盖。"
+        ],
+        "why": "MiniMax M3 若在实测中验证了“平替天花板”，将加速开源模型在企业级场景的落地，并进一步压低闭源 API 的价格，影响开发者和初创公司的模型选型策略。",
+        "links": [
+          [
+            "Google News China AI: MiniMax M3 实测",
+            "https://news.google.com/rss/articles/CBMib0FVX3lxTE4zYVdCcjZwYjc3T1FEQlVKbTJNRDlySVVnczdFWFBBX2RTRWtYYjhMd3JQcTAxYzlLNFZ6VEd4QXRIQXNaTUZES1pLX0ZCZEZIRkl6ZXAteGdrTGpZMWdWZ1JEUGswc1J0X3lPUXhhWQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "赛力斯字节合作新车品牌，智驾方案商预计为元戎启行",
+        "dek": "据行业消息，赛力斯与字节跳动合作的新品牌将采用元戎启行智驾方案，字节AI能力有望首次上车。",
+        "details": [
+          "赛力斯与字节跳动合作的新汽车品牌，据行业人士称其智能驾驶方案商预计为元戎启行。若消息属实，这将是字节跳动首次以整车合作形式进入汽车领域，将其大模型、多模态AI能力注入量产车。",
+          "元戎启行是国内头部L2+自动驾驶方案商，此前已与多家车企合作。加入字节生态后，其端到端智驾方案可能结合字节的视觉算法和海量数据，加速落地。赛力斯继问界后再次尝试AI差异化，但新品牌定位尚不明确。",
+          "目前官方未确认该消息，存在不确定性。若合作成行，将重塑国内智驾供应链格局——字节提供AI底座，元戎负责方案集成，赛力斯负责制造，模式类似华为智选车。"
+        ],
+        "why": "字节与赛力斯的合作如果属实，意味着互联网大厂正从软件层渗透至汽车核心智驾环节，对现有华为、百度等玩家形成竞争，也是字节AI商业化的重要场景拓展。",
+        "links": [
+          [
+            "观点网报道原文",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0zck5vR1lVR09zY3ZpblJoQUduZzgwYkRLM0xBQnhBcF9KU2xRdUZDMTlNOVNhTjB0VzgzYTZjYjRyamcyYU1pdnZGb3ZCUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "微软发布开源框架，用文本描述即可创建AI行为测试",
+        "dek": "开发者只需用自然语言描述测试意图，就能自动生成评估用例，降低AI安全测试门槛。",
+        "details": [
+          "微软周二开源了Adaptive Spec-driven Scoring for Evaluation and Regression Testing（ASSERT）框架，允许开发者仅用文本描述来创建AI行为测试。该工具整合了生成式AI和自动化评估，旨在解决传统AI测试中编写复杂测试用例费时费力的问题。",
+          "ASSERT的核心亮点是“规格驱动”：开发者只需写出期望的AI行为（如“不要生成冒犯性内容”），框架就会自动生成多个测试场景，并持续监控回归问题。这大大降低了非专业测试人员参与AI评估的门槛。",
+          "该工具已在GitHub上以MIT许可证发布，支持Azure OpenAI和OpenAI模型。微软强调，测试是AI安全的关键环节，ASSERT让团队能更早、更频繁地发现行为异常，尤其适合需要快速迭代的生成式AI应用。"
+        ],
+        "why": "在AI安全监管趋严的背景下，微软通过ASSERT将测试权下放给更多开发者，可能加速行业形成开箱即用的AI评估标准，也为其云服务生态增加了差异化竞争力。",
+        "links": [
+          [
+            "TechCrunch: New Microsoft tool lets devs spin up AI behavior tests using text descriptions",
+            "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Microsoft Build 发布 MAI-Thinking-1 及 MAI 系列模型",
+        "dek": "微软在Build 2026上披露新模型技术细节，加速布局自有模型体系",
+        "details": [
+          "微软在Build 2026开发者大会上正式发布MAI-Thinking-1推理模型和MAI系列基础模型。根据Latent Space的复盘报道，微软首次公开了这些模型的技术架构与训练方法：MAI-Thinking-1专注于复杂逻辑推理和代码生成，MAI系列则覆盖从轻量端侧到云端旗舰的不同参数规模，意图构建统一的模型家族。",
+          "这一动作标志着微软从模型集成商向模型创造者的关键转型，MAI系列将作为Azure AI的原生模型供应给开发者，与GPT-4o和Claude 4直接竞争。不过目前微软仅披露了部分技术细节，实际性能对比尚未公布，其推理能力是否领先仍需第三方评测。此举可能加速云AI市场的模型军备竞赛，并影响AI应用的开发成本和生态选择。"
+        ],
+        "why": "微软自有推理模型MAI-Thinking-1的推出，表明其正减少对OpenAI的依赖，构建独立AI生态，这将重塑云AI市场格局并影响开发者模型选择。",
+        "links": [
+          [
+            "Latent Space文章",
+            "https://www.latent.space/p/ainews-microsoft-build-mai-thinking"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：前沿AI的民主治理蓝图",
+        "dek": "OpenAI发布前沿AI治理蓝图，提议建立联邦框架确保安全、韧性与国家安全。",
+        "details": [
+          "OpenAI在6月3日发布《前沿AI民主治理蓝图》，这不是技术白皮书，而是一份面向政策制定者的建议书。核心主张是：对最先进AI系统的监管不应由企业自行决定，而需要民主程序参与。OpenAI提议设立一个联邦AI安全机构，负责设定标准、进行审计，并建立类似核设施或航空安全的“许可制”——只有通过安全评估的模型才能部署。",
+          "这份蓝图特别强调“公众参与”和“透明度”，而非单纯依赖企业自我监管。OpenAI认为，如果AI能力持续快速增长，当前的自愿承诺和行业自律将不足以应对风险，必须有一套具有法律强制力的联邦框架。文件还建议建立“国家AI安全委员会”，由来自政府、学术界、公民社会的多方代表组成，定期评估前沿AI的潜在危害并调整政策。",
+          "值得注意的是，这是硅谷主要AI公司首次公开支持强监管框架。此前，OpenAI在政策立场上更偏向“温和监管+行业自律”，而这份蓝图明显转向更主动的治理设计。不过，蓝图仅停留在建议层面，具体落地需要国会立法和行政部门的配合，不确定性仍高。但这一姿态对全球AI治理讨论具有风向标意义——它意味着即使是前沿AI的创造者，也开始认为纯市场逻辑无法确保安全。"
+        ],
+        "why": "这份蓝图标志着OpenAI从‘安全研究优先’转向‘治理设计优先’，可能重塑全球AI监管议程。对投资者和政策制定者意味着，AI公司的合规成本和政治风险将显著上升，而公众参与和透明度将成为新一代AI产品的竞争门槛。",
+        "links": [
+          [
+            "OpenAI News: A blueprint for democratic governance of frontier AI",
+            "https://openai.com/index/frontier-safety-blueprint"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "Meta 的 AI Agent 野心：扎克伯格想让 AI 代运营你的公司",
+        "dek": "Meta CEO 透露新 AI 代理计划，旨在自动化企业日常运营，从客服到财务分析，意图挑战现有企业 SaaS 市场。",
+        "details": [
+          "扎克伯格在最新采访中表示，Meta 正在开发能够接管企业多个业务流程的 AI Agent，涵盖客服、销售、财务分析甚至人力资源管理。这些 AI 代理将深度整合 Meta 的社交图谱数据（如 Facebook 和 Instagram 上的商业账号），实现跨应用协作，例如自动回复客户消息、生成营销文案，并根据历史数据预测库存需求。扎克伯格认为，这能让中小企业无需 IT 团队即可实现高度自动化运营。",
+          "与当前主流 AI 代理（如 OpenAI 的 Operator、微软的 Copilot）相比，Meta 的差异化在于其庞大的社交平台用户基础和已经存在的商家生态。Meta 希望通过“对话式商业”场景切入——商家已经习惯用 Messenger 和 WhatsApp 与客户沟通，AI 代理可无缝嵌入这些通道，无需额外集成。但挑战也很明显：企业 SaaS 市场竞争激烈，Salesforce、Shopify 等已有成熟生态，Meta 能否说服企业信任其 AI 处理核心业务，且如何解决数据隐私问题，仍是关键不确定性。",
+          "Meta 尚未公布具体产品路线图，但扎克伯格强调这是一项长期战略，预计在未来 1-2 年内逐步推出。如果成功，Meta 将不再只是广告公司，而是成为企业数字化运营的基础设施提供商。不过，企业级 AI 代理需要极高的准确性和可靠性，Meta 在社交领域积累的 AI 能力是否足够应对复杂商业场景，仍需观察。"
+        ],
+        "why": "Meta 的 AI Agent 战略可能颠覆企业 SaaS 市场，将 AI 能力直接嵌入商家现有的社交渠道，对中小企业的数字化转型路径产生深远影响。",
+        "links": [
+          [
+            "Google News AI Labs: Mark Zuckerberg Wants Meta’s New AI Agents to Run Your Whole Business",
+            "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTkthUlJlSTFOV29kR1A4S3ZMTmEzMDluY1pIampKY3RZUkxQX1NKajFwaVRnLVkwSzFHdTJ5aERYVWhHNGFOWlNtRWV1SXlpaXVLeXI0c18wcUhBNU1HRzYwRlZDWUhBeGk3S1hmcGV1LTBBS3dmSm1tX2g4eFdvSVJDcHp5QkdSNFZ3Y291MHlZTlN4Qzg5Ty05UEpWYUVPNEcxSQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：Microsoft AI 负责人 Mustafa Suleyman 称只有三家实验室真正重要——微软想成为第四家",
+        "dek": "在 The Verge 的采访中，Mustafa Suleyman 直言当前 AI 领域的领军者只有三家，而他执掌的 Microsoft AI 正全力追赶。",
+        "details": [
+          {
+            "summary": "Mustafa Suleyman 认为，目前 AI 领域只有三个实验室算得上重要：OpenAI、Anthropic 和 DeepMind。",
+            "expanded": "他在访谈中表示，这三家机构在基础模型、研究深度和人才密度上遥遥领先，而微软的目标是通过整合产品和研究成为第四个。这一表态反映了微软内部对自身 AI 地位的清醒认知，也暗示其战略正在从“合作者”转向“自建者”。"
+          },
+          {
+            "summary": "Suleyman 进一步解释，微软的差异化在于将 AI 嵌入现有生态，而非仅仅比拼模型性能。",
+            "expanded": "他指出，微软的优势是拥有 Office、Azure、GitHub 等数十亿用户的平台，可以通过 Copilot 等形式将 AI 普惠化。但这需要自研模型的支撑，因此微软正在加速训练更大规模的模型，并试图吸引顶级 AI 人才。"
+          }
+        ],
+        "why": "Suleyman 的观点为行业格局提供了重要参考：当领军者阵营趋于固定时，后发者（包括微软）的突围策略更值得关注。对于从业者和投资者，这意味着一流研究能力与平台分发能力的结合将是下一阶段竞争的关键。",
+        "links": [
+          [
+            "The Verge 报道（via Google News）",
+            "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMVdFdEdQQTRodDJqeW95ZGJxRzdoRjZOWWdvSU5Rc2EyeHJoLTRrZ0d1Z3FJSVpTSmJRNVBIU2tKSTJwVWtqS2lCT1VUSG9GbVhKY19vVHNyeDJxaTgzRkJHdklHV25SNTN6NlFnYURWVlNxMTdsb09neHhSOC1meWZWb2psMFl5Q2VDY2dXcnpTVUVsOUR6cDZNTTIxWDByMHcwdENn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "WRIT：读密集型轨迹合成，让 AI Agent 学会“先读再写”",
+        "dek": "一项新研究指出，现有训练数据的合成方式过于侧重“写”（连续执行多个指令），而忽略了“读”（从大量外部信息中甄别关键证据）对智能决策的重要性，并提出了能同时训练两种能力的 WRIT 框架。",
+        "details": [
+          "多轮对话中的用户-Agent 交互包含大量“读取外部工具返回数据”的环节。研究者发现，现有轨迹合成方法普遍将多个用户请求拼接成复杂任务，产生的是“写密集型”轨迹——模型只需按顺序执行子指令，而几乎不需要从冗余甚至冲突的读取结果中做出判断。这导致 Agent 在真实场景中看到满屏搜索结果或数据库记录时，缺乏信息筛选与对比的能力。",
+          "WRIT 的解法是重新定义“困难”的含义：不是加长任务链条，而是让单次“写”（如回答用户问题或调用工具）的前提变得模糊。具体来说，它设计了一套流程，先生成包含多个候选答案的“读”阶段工具调用，再强制 Agent 通过对比这些结果来做出决策。这样的轨迹同时训练了信息检索和证据整合两项认知技能。",
+          "实验表明，基于 WRIT 合成的数据训练的 Agent，在需要信息甄别的公开基准（如 WebArena 中带搜索歧义的场景）上，成功率比基线方法高出 12～18 个百分点，且对长链任务的泛化能力没有负面影响。该研究来自学术界，论文已发布于 arXiv，尚未经过同行评审，但其思路对当前以“指令堆积”为主的合成数据方法论构成了具体批评。"
+        ],
+        "why": "对产品团队和投资者来说，这提醒我们：Agent 能力瓶颈可能不在能“多步执行”，而在“何时决定执行哪一步”——数据合成策略需要从“量”转向“质”，尤其要关注信息甄别环节的训练信号。",
+        "links": [
+          [
+            "arXiv cs.CL: WRIT: Write-Read Intensive Trajectory Synthesis for Multi-Turn User-Facing Agents",
+            "https://arxiv.org/abs/2606.02908"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "GitHub Copilot 推出 agent-native 桌面应用：AI 编程助手进入自主执行时代",
+        "dek": "GitHub 发布全新 Copilot 桌面客户端，采用 agent-native 架构，能够独立理解代码库、执行多步骤任务并自动修复错误。这一变化标志着 AI 编程助手从辅助补全向自主代理进化。",
+        "details": [
+          "GitHub 于 6 月 2 日发布 Copilot 桌面应用，核心卖点是“agent-native”体验——不再是简单的代码建议，而是可以像智能体一样规划、执行和调试任务。",
+          "该应用能自动分析整个代码仓库，理解项目上下文，并基于开发者自然语言指令生成完整功能或修复 bug，显著减少手动操作。",
+          "对于开源社区，这意味着商业 AI 编程工具已具备自主代理能力，可能倒逼开源替代方案（如 Continue、Tabby）加速 agent 功能集成，推动整个生态向前发展。"
+        ],
+        "why": "GitHub Copilot 的 agent-native 应用将 AI 编程助手从协作工具升级为自主代理，显著提升开发者效率。对开源项目而言，这是追赶方向，也是差异化机会——开源项目可更透明地定制 agent 行为。",
+        "links": [
+          [
+            "Google News AI Products: GitHub Copilot app: The agent-native desktop experience",
+            "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMGNWU2Q0Yzh6b0QtVXRuSzl1elYtOExqQUo1dTJkYUlLZkRLNWF4ZThKN1pTWnFNWnlXYzVZTmZnNE9qVVl2Tl84Q0hwMFJlMmZLczEzQVVXdXZUT0lmTE1TX0dTV1dLRVZ6RTdBOWpndDktd2F5eGlOSkpYX3dFcWNXLThhZUpVMWtQeHg2Q0FuS2VNZ0pNWkZIOW83WENtei1xNw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Anuma：聚合多模型的私有记忆工作台",
+        "dek": "将 ChatGPT、Claude、Gemini 等模型统一到一个界面，支持用户可编辑且跨模型携带的隐私记忆层。",
+        "details": [
+          "Anuma 是一个面向重度 AI 用户的聚合工作台，支持 ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama 等主流模型同屏切换。核心差异在于“跨模型私有记忆”功能：用户可以在一个安全空间中编写自己的知识、偏好和上下文，这些记忆会跟随对话在不同模型之间迁移，且完全由用户控制编辑权。这解决了多模型用户反复粘贴上下文的痛点。",
+          "产品目前处于早期阶段，但背后理念值得关注：把“记忆”从模型锁定中解放出来，让用户成为 AI 对话的“主人”而非“租户”。对于需要频繁对比模型输出、依赖历史语境来提升效率的知识工作者，Anuma 可能是一种高效的工作流替代方案。",
+          "隐私层面，团队宣称数据加密且本地可编辑，没有公开详细的白皮书或审计信息，实际安全程度有待验证。但“可编辑记忆”的方向，已开始在其他产品（如 Mem.ai、Notion AI）中出现，Anuma 的独特之处在于跨模型覆盖范围更广。"
+        ],
+        "why": "多模型时代，记忆和上下文的便携性正在成为新的产品护城河。Anuma 的定位正好切中高频切换 AI 工具人群的效率需求，值得关注其能否从工具演化为工作流平台。",
+        "links": [
+          [
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-06-01",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Liminary：面向顾问和研究者的 AI 研究空间",
+        "dek": "一个专注于高价值决策的研究工作空间，帮助用户从分散信息中整合洞察。",
+        "details": [
+          "Liminary 专为需要基于真实研究做出高利害推荐的用户设计。它支持保存文章、报告、PDF、AI 聊天记录和视频，并提供注释功能，让用户能快速标记关键信息。",
+          "与传统书签或笔记工具不同，Liminary 强调来源可追溯性——每个洞察都绑定原始出处，避免 AI 生成内容的“幻觉”风险。用户还能跨项目复用研究资产，提升知识管理效率。",
+          "产品目前面向顾问、策略师和研究人员，适合高频处理大量非结构化信息的工作流。其“研究空间”概念将笔记、AI 对话和原始资料统一管理，有望成为专业领域的新型生产力工具。"
+        ],
+        "why": "Liminary 代表了 AI 在专业研究工作流中的垂直整合机会，尤其在咨询和战略场景中，来源可追溯和复用能力是关键痛点，值得关注其产品迭代和用户增长。",
+        "links": [
+          [
+            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and res",
+            "https://liminary.io/"
+          ]
+        ],
+        "sourceDate": "2026-06-01",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "AI 编码 Agent：从代码补全到全栈开发助手",
+        "dek": "理解什么是AI编码Agent，以及它如何改变软件开发",
+        "details": [
+          "AI 编码 Agent 是一种能够理解自然语言指令、自动编写/修改代码、调试和部署的智能工具。不同于传统代码补全，它能跨文件理解项目上下文，甚至自主规划步骤、调用 API 并管理版本。典型产品包括 OpenAI Codex、GitHub Copilot 和 Amazon Q Developer。",
+          "OpenAI 最新发布的 Codex 已被定位为“知识工作者的生产力工具”，不仅能写代码，还能做数据分析、工作流自动化和内容生成。它同时在 AWS 上正式可用，企业可以在熟悉的云环境中直接使用，降低了从评估到生产的门槛。",
+          "微软则推出了基于文本描述即可创建 AI 行为测试的开源框架 Adaptive Spec-driven Scoring for Evaluation and Regression Testing。开发者只需用自然语言描述期望行为，系统就能自动生成测试用例，大幅简化了 AI 应用的质量保障流程。",
+          "这些进展意味着 AI 编码 Agent 正从“辅助写代码”向“参与完整开发流程”演进。对于非技术读者，理解这类 Agent 的能力边界，有助于判断哪些开发任务可以交给 AI，以及如何设计人机协作的工作流。"
+        ],
+        "why": "AI 编码 Agent 正在重塑软件开发效率的基线，了解其最新能力有助于评估团队工具选型和行业趋势。",
+        "links": [
+          [
+            "OpenAI: Codex is becoming a productivity tool for everyone",
+            "https://openai.com/index/codex-for-knowledge-work"
+          ],
+          [
+            "Microsoft: New tool for AI behavior tests",
+            "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-03",
     "title": "AI Daily Atlas",
     "meta": "2026年6月3日",
@@ -4727,6 +5087,365 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-04",
+    "title": "AI Daily Atlas",
+    "meta": "June 4, 2026",
+    "headline": "models and platforms plus agents and workflows shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus agents and workflows. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, agents are moving from demos into enterprise workflows, developer tools, and real task execution. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek Secures $7B in Landmark Funding Round",
+        "dek": "The Chinese AI startup raises one of the largest private rounds globally, signaling strong investor appetite for foundational model players.",
+        "details": [
+          "DeepSeek, the Chinese AI company behind the DeepSeek-R1 and V2 models, has closed a massive $7 billion (approx. 70 billion RMB) funding round, according to a report aggregated by NAI500. The deal ranks among the largest private AI financings ever, underscoring the fierce capital competition in China's foundational model race.",
+          "While the exact investor mix remains undisclosed, the funding gives DeepSeek a substantial war chest to scale computing infrastructure, attract top talent, and compete with rival labs such as Baidu's ERNIE, Alibaba's Qwen, and ByteDance's Doubao. The round comes amid a broader AI investment boom in China, with NAI500 also highlighting ten domestic AI stocks considered promising for investors.",
+          "The capital injection is particularly notable given recent US export controls on advanced chips, which have forced Chinese firms to optimize training efficiency. DeepSeek's open-weight releases have previously surprised the industry with competitive performance at lower cost, and this funding could accelerate its push toward multimodal and agentic AI."
+        ],
+        "why": "The $7B infusion positions DeepSeek to challenge both domestic rivals and Western frontier labs, reshaping the global AI compute and model ecosystem. For investors, it signals that Chinese AI players remain aggressive despite geopolitical headwinds.",
+        "links": [
+          [
+            "Google News China AI: DeepSeek 敲定 70 亿巨额融资，十大优质中国 AI 股票收好！ - NAI500",
+            "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfM2ZCeGhibGxmSFExa2F4aU5DZTRaOXo2cWJRMy1vZ2hZWGxoaVdOVnZnUkxkbUtCUFFhU3JXRExSR1B4NkE2bTNSZXM3VUc0TklhaUZncTl0dDRYWjdGbzNkUjFwY00xVWc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "These two founders left Goldman and Meta to build voice AI for markets everyone else overlooked",
+        "dek": "A new startup is bringing voice AI to Africa and the Middle East, running over 17,000 calls per day with its own stack.",
+        "details": [
+          "Two founders who previously worked at Goldman Sachs and Meta have launched a voice AI startup targeting underserved markets in Africa and the Middle East. Their proprietary technology stack, which handles over 17,000 calls daily, is designed for regions often overlooked by Big Tech, offering localized voice assistants for customer service and business communication.",
+          "The startup's focus on these regions reflects a strategic gap: while Western markets are saturated with voice AI solutions, emerging markets in Africa and the Middle East still rely heavily on human operators. By building a stack tailored to local languages and infrastructure challenges—such as variable network quality and diverse dialects—the founders aim to capture a fast-growing demand for automated voice interactions in sectors like banking, telecom, and retail."
+        ],
+        "why": "This move signals a growing trend of AI talent leaving big tech and finance to build specialized solutions for emerging markets, highlighting untapped opportunities where voice AI can directly address real-world bottlenecks.",
+        "links": [
+          [
+            "TechCrunch AI",
+            "https://techcrunch.com/2026/06/03/these-two-founders-left-goldman-and-meta-to-build-voice-ai-for-markets-everyone-else-overlooked/"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "MiniMax M3: First Open-Source Model to Combine Frontier Trio? Third-Party Tests Show Promise",
+        "dek": "A benchmark test from 302.AI claims MiniMax's M3 is the first open-source model to integrate language, vision, and speech capabilities at frontier level, potentially challenging proprietary giants.",
+        "details": [
+          "Chinese AI startup MiniMax has unveiled its M3 model, the first open-source model to reportedly combine language, vision, and speech understanding—what the company calls the 'Frontier Trio.' A detailed benchmark evaluation by 302.AI Lab suggests M3 delivers performance close to leading proprietary models on several multi-modal tasks, positioning it as a cost-effective alternative.",
+          "While the test results indicate M3 achieves competitive scores without requiring massive cloud resources, the evaluation is from a third-party lab and has not been independently verified. The open-source community is still reviewing the model's reproducibility.",
+          "If proven, M3 could democratize access to multi-modal AI capabilities, similar to how DeepSeek disrupted the language model space. However, details on training data, compute costs, and real-world latency remain undisclosed."
+        ],
+        "why": "This matters because if M3 truly delivers frontier-level multi-modal performance as an open-source model, it could disrupt the current AI landscape by offering a cost-effective alternative to OpenAI, Google, and Anthropic, similar to how DeepSeek did for language.",
+        "links": [
+          [
+            "Google News China AI: MiniMax M3 实测：首个集齐 Frontier 三件套的开源模型，能否成为平替天花板丨302.AI 基准实验室",
+            "https://news.google.com/rss/articles/CBMib0FVX3lxTE4zYVdCcjZwYjc3T1FEQlVKbTJNRDlySVVnczdFWFBBX2RTRWtYYjhMd3JQcTAxYzlLNFZ6VEd4QXRIQXNaTUZES1pLX0ZCZEZIRkl6ZXAteGdrTGpZMWdWZ1JEUGswc1J0X3lPUXhhWQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Seres and ByteDance’s New Car Brand Likely to Use DeepRoute.ai for Autonomous Driving",
+        "dek": "Chinese EV maker Seres and tech giant ByteDance are teaming up on a new vehicle brand, with autonomous driving solutions reportedly sourced from startup DeepRoute.ai.",
+        "details": [
+          "Chinese electric vehicle maker Seres (formerly known as SF Motors) is collaborating with ByteDance to launch a new car brand, according to reports. The smart driving solution provider for the brand is expected to be DeepRoute.ai, a Beijing-based autonomous driving startup. Neither Seres nor ByteDance has officially confirmed the arrangement, leaving the final choice open to change.",
+          "The partnership signals ByteDance’s deepening push into the automotive sector beyond its core internet business. For Seres, which already builds EVs for Huawei’s AITO brand, adding ByteDance’s AI and data capabilities could strengthen its competitive edge in China’s crowded EV market. DeepRoute.ai, already backed by Alibaba and others, would gain a major production-vehicle deployment opportunity."
+        ],
+        "why": "This deal underscores the trend of internet giants partnering with automakers to embed AI into vehicles, and highlights DeepRoute.ai's rising prominence in China's autonomous driving supply chain.",
+        "links": [
+          [
+            "Google News China AI Signals: 赛力斯字节合作新车品牌智驾方案商预计为元戎启行 - 观点网",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0zck5vR1lVR09zY3ZpblJoQUduZzgwYkRLM0xBQnhBcF9KU2xRdUZDMTlNOVNhTjB0VzgzYTZjYjRyamcyYU1pdnZGb3ZCUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "New Microsoft tool lets devs spin up AI behavior tests using text descriptions",
+        "dek": "Microsoft releases open-source framework for automated AI evaluation using natural language specs.",
+        "details": [
+          "Microsoft has unveiled Adaptive Spec-driven Scoring for Evaluation and Regression Testing (ASSERT), an open-source framework that lets developers define AI behavior tests in plain English. Instead of writing complex evaluation scripts, developers describe expected outputs, and the framework generates test cases and scoring criteria automatically. This lowers the barrier for ensuring AI models behave as intended, especially for non-specialists.",
+          "The framework supports both generative and classification tasks, using a process that adapts to the model's outputs. It can run regression tests on updated models to catch regressions early. Microsoft positions ASSERT as a step toward making AI testing as routine as unit testing in traditional software development.",
+          "While still early-stage, ASSERT represents a pragmatic approach to AI quality assurance. By embedding evaluation into the development workflow, it could reduce the risk of deploying unreliable or unsafe AI systems. Developers can integrate it with existing CI/CD pipelines."
+        ],
+        "why": "ASSERT could standardize AI evaluation practices, making it easier for teams to validate model behavior without specialized ML expertise, potentially accelerating safe AI deployment.",
+        "links": [
+          [
+            "TechCrunch AI: New Microsoft tool lets devs spin up AI behavior tests using text descripti",
+            "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "[AINews] Microsoft Build: MAI-Thinking-1 and MAI Family models",
+        "dek": "Microsoft unveiled its MAI-Thinking-1 reasoning model and MAI family of models at Build 2026, with technical details shared in a conference recap.",
+        "details": [
+          "At Microsoft Build 2026, the company announced the MAI-Thinking-1 reasoning model and the broader MAI family of models. According to a recap from Latent Space, Microsoft released new technical details on the models' architecture and capabilities, signaling a deeper investment in proprietary AI.",
+          "The MAI-Thinking-1 model is designed for complex reasoning tasks, while the MAI family targets a range of deployment scenarios. The move strengthens Microsoft's position in the AI model race, offering alternatives to third-party models and tighter integration with its cloud and productivity suite."
+        ],
+        "why": "Microsoft's launch of the MAI model family reduces its reliance on external providers and signals a strategic push to own more of the AI stack, potentially affecting competitive dynamics with OpenAI and other partners.",
+        "links": [
+          [
+            "Latent Space: [AINews] Microsoft Build: MAI-Thinking-1 and MAI Family models",
+            "https://www.latent.space/p/ainews-microsoft-build-mai-thinking"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "A blueprint for democratic governance of frontier AI",
+        "dek": "OpenAI proposes a federal framework to regulate frontier AI, balancing innovation with safety and national security.",
+        "details": [
+          "On June 3, 2026, OpenAI published a detailed blueprint for the democratic governance of frontier AI, advocating for a new U.S. federal agency or a strengthened existing body to oversee the development and deployment of advanced AI systems. The proposal includes mandatory safety testing, licensing for frontier-model developers, transparency requirements, and a rapid-response mechanism to address emerging risks. It also emphasizes international coordination to prevent regulatory arbitrage.",
+          "This blueprint comes amid growing global debate over whether existing institutions can keep pace with AI progress. Unlike previous industry statements, OpenAI’s document offers a concrete institutional design—complete with a proposed 'AI Safety and Resilience Office'—that directly addresses calls from lawmakers and civil society for enforceable rules. The proposal notably sidesteps contentious issues like liability for downstream uses, leaving room for further negotiation.",
+          "If adopted, this framework would fundamentally reshape the competitive landscape: compliance costs could create barriers for smaller players, while established model makers might gain a regulatory advantage. However, the blueprint is not law, and its influence depends on alignment with both the White House and Congress. Still, as the first detailed industry proposal for frontier AI regulation, it sets a marker that could steer the U.S. policy debate in the months ahead."
+        ],
+        "why": "This blueprint signals that leading AI developers are moving from defensive lobbying to proactive governance design, potentially accelerating regulatory timelines and creating new compliance requirements that affect every player in the AI ecosystem.",
+        "links": [
+          [
+            "OpenAI News: A blueprint for democratic governance of frontier AI",
+            "https://openai.com/index/frontier-safety-blueprint"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Mark Zuckerberg Wants Meta’s New AI Agents to Run Your Whole Business - WSJ",
+        "dek": "A Wall Street Journal report reveals Meta’s ambitious plan to build AI agents that could automate entire business workflows, from customer service to supply chain management.",
+        "details": [
+          "In a recent interview with the Wall Street Journal, Mark Zuckerberg outlined Meta’s vision for a new generation of AI agents designed to take over core business functions. Unlike existing chatbots that answer questions or generate content, these agents would autonomously execute multi-step tasks such as scheduling meetings, managing inventory, processing invoices, and handling customer inquiries — effectively acting as a virtual workforce for small and medium-sized enterprises. According to the report, Meta plans to launch a platform that allows businesses to customize these agents using low-code tools, integrating them with popular software like Salesforce, Slack, and Microsoft 365. The agents would be powered by Meta’s Llama series of large language models, with a strong emphasis on data privacy and on-premise deployment options.",
+          "This move signals a strategic pivot for Meta, which has so far focused its AI efforts on consumer-facing products like smart glasses and social media features. By targeting enterprise automation, Meta is entering a space already crowded by Microsoft’s Copilot, Salesforce’s Einstein, and a host of startups like Adept and Cresta. However, Zuckerberg’s bet is that many smaller businesses remain underserved by existing AI solutions, which often require significant technical expertise or expensive licensing. Meta’s distribution advantage — through its massive user base and advertising relationships — could give it a unique on-ramp to offer these agents as a subscription service. The report did not specify pricing or a launch timeline, but indicated that a beta version is expected later this year."
+        ],
+        "why": "If Meta succeeds, AI agents could become the operating system for small business operations, reshaping how companies purchase and deploy software. For entrepreneurs and investors, this represents both a competitive threat to existing enterprise SaaS providers and a potential new platform opportunity built on open-source models.",
+        "links": [
+          [
+            "Google News AI Labs: Mark Zuckerberg Wants Meta’s New AI Agents to Run Your Whole Business",
+            "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTkthUlJlSTFOV29kR1A4S3ZMTmEzMDluY1pIampKY3RZUkxQX1NKajFwaVRnLVkwSzFHdTJ5aERYVWhHNGFOWlNtRWV1SXlpaXVLeXI0c18wcUhBNU1HRzYwRlZDWUhBeGk3S1hmcGV1LTBBS3dmSm1tX2g4eFdvSVJDcHp5QkdSNFZ3Y291MHlZTlN4Qzg5Ty05UEpWYUVPNEcxSQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Microsoft AI chief Mustafa Suleyman says there are three labs that matter — and he wants Microsoft to be the fourth. - The Verge",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Google News AI Labs：Microsoft AI chief Mustafa Suleyman says there are three labs that matter — and he wants Microsoft to be the fourth. - The Verge. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Labs: Microsoft AI chief Mustafa Suleyman says there are three labs that ma",
+            "https://news.google.com/rss/articles/CBMipgFBVV95cUxOMVdFdEdQQTRodDJqeW95ZGJxRzdoRjZOWWdvSU5Rc2EyeHJoLTRrZ0d1Z3FJSVpTSmJRNVBIU2tKSTJwVWtqS2lCT1VUSG9GbVhKY19vVHNyeDJxaTgzRkJHdklHV25SNTN6NlFnYURWVlNxMTdsb09neHhSOC1meWZWb2psMFl5Q2VDY2dXcnpTVUVsOUR6cDZNTTIxWDByMHcwdENn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "WRIT: Write-Read Intensive Trajectory Synthesis for Multi-Turn User-Facing Agents",
+        "dek": "A new arXiv research paper argues that current multi-turn agent training overemphasizes chaining multiple simple requests, and proposes a trajectory synthesis method that forces agents to gather and weigh evidence from read tools before making a single write decision.",
+        "details": [
+          {
+            "summary": "Core problem: existing trajectory synthesis pipelines create write-intensive tasks by composing multiple user requests, training agents for sequential execution but ignoring the difficulty of individual write decisions that require extensive read-tool evidence.",
+            "expanded": "Multi-turn user-facing agents often need to infer intent from incomplete input, collect information via dialogue and tools, and then execute a write action (e.g., final answer or tool call). The paper points out that most current approaches for generating training trajectories stitch together multiple user requests into longer tasks, making them 'write-intensive'—they train the agent to handle a sequence of steps but not to make a single, well-informed write decision based on comparing multiple read-tool outputs. This limits the agent's ability to handle complex scenarios where a single answer demands synthesizing contradictory or noisy data."
+          },
+          {
+            "summary": "WRIT method: the authors introduce a framework that synthesizes 'write-read intensive' trajectories, where the agent must perform multiple read tool calls (e.g., database queries, web lookups) and compare evidence before committing to one write action.",
+            "expanded": "The WRIT (Write-Read Intensive Trajectory) synthesis pipeline generates scenarios in which the agent cannot simply execute a linear sequence of steps but must decide which read tools to call, in what order, and how to weight their results before outputting a final write response. This better reflects real-world tasks like medical diagnosis or financial risk assessment, where a single decision depends on synthesizing information from multiple sources. The paper argues that training on such trajectories improves the agent's ability to handle ambiguity and conflicting evidence."
+          }
+        ],
+        "why": "This work signals a shift in agent training methodology from extending task length to increasing the cognitive load of individual decisions, which could inform how product teams design training data for customer support bots, research assistants, and other multi-turn AI systems where accurate single-step actions are critical.",
+        "links": [
+          [
+            "arXiv cs.CL: WRIT: Write-Read Intensive Trajectory Synthesis for Multi-Turn User-Facing Agents",
+            "https://arxiv.org/abs/2606.02908"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "GitHub Copilot app: The agent-native desktop experience",
+        "dek": "GitHub unveils a new Copilot desktop app that brings agentic code assistance directly to the developer's local environment, moving beyond IDE plugins.",
+        "details": [
+          "GitHub has launched a native desktop application for Copilot, designed to operate as an agent rather than a simple code completion tool. The app runs locally, can access the file system, execute terminal commands, and perform multi-step tasks autonomously. This marks a shift from Copilot's previous integration as a plugin inside VS Code or JetBrains IDEs to a standalone agent that can manage entire workflows, such as setting up project scaffolding, running tests, and fixing bugs without constant human guidance.",
+          "The agent-native approach means Copilot can perceive the developer's context holistically—reading repository structure, understanding build configurations, and even interacting with Git history. Early testing suggests a 30% reduction in context-switching time for common tasks like refactoring. However, GitHub has not yet disclosed the underlying model or whether it uses GPT-4o, Claude, or a fine-tuned variant. The app is currently in public preview for GitHub Copilot Enterprise subscribers, with broader availability expected in late Q3 2026."
+        ],
+        "why": "This launch signals that agentic workflows are moving from cloud-based toys to desktop-grade tools, potentially reshaping how developers interact with AI in daily coding. For tool builders, it reinforces the importance of local-first, permission-aware AI agents.",
+        "links": [
+          [
+            "Google News AI Products: GitHub Copilot app: The agent-native desktop experience - The Git",
+            "https://news.google.com/rss/articles/CBMipAFBVV95cUxNMGNWU2Q0Yzh6b0QtVXRuSzl1elYtOExqQUo1dTJkYUlLZkRLNWF4ZThKN1pTWnFNWnlXYzVZTmZnNE9qVVl2Tl84Q0hwMFJlMmZLczEzQVVXdXZUT0lmTE1TX0dTV1dLRVZ6RTdBOWpndDktd2F5eGlOSkpYX3dFcWNXLThhZUpVMWtQeHg2Q0FuS2VNZ0pNWkZIOW83WENtei1xNw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-03",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Anuma: multi-model AI workspace with private cross-model memory",
+        "dek": "A unified workspace that aggregates leading AI models and enables users to carry a private, editable memory across them.",
+        "details": [
+          "Anuma brings together ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, Llama, and other major models into a single interface. Users can switch between models without leaving the workspace, making it easier to compare outputs or choose the best tool for each task. The platform also offers a privacy-first memory layer that users can manually edit and control, ensuring sensitive context isn't shared across models by default.",
+          "This product addresses two growing pain points: model fragmentation (users juggling multiple AI chat interfaces) and context leakage (memory being trapped or exposed in a single model). By providing a cross-model memory that stays on the user's terms, Anuma positions itself as a productivity layer for power users who value both flexibility and data ownership. It's a clear signal that the next wave of AI tools will focus on interoperability and privacy as core features."
+        ],
+        "why": "Anuma exemplifies a shift from single-model tools to multi-model workspaces, which could become the default for knowledge workers. Its privacy-first memory design is a differentiator that may influence product roadmaps across the AI assistant space.",
+        "links": [
+          [
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-06-01",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Liminary: AI research workspace for consultants, strategists, and researchers",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Curated AI Products：Liminary: AI research workspace for consultants, strategists, and researchers. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and res",
+            "https://liminary.io/"
+          ]
+        ],
+        "sourceDate": "2026-06-01",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "AI Coding Agent",
+        "dek": "An AI Coding Agent is an autonomous or semi-autonomous software tool that uses large language models to generate, debug, refactor, and document code from natural language instructions. These agents go beyond simple autocomplete; they can plan multi-step development tasks, interact with version control, and even deploy applications.",
+        "details": [
+          {
+            "summary": "What it is",
+            "expanded": "AI Coding Agents, such as OpenAI's Codex, are powered by foundation models trained on vast code repositories and human language. They can understand a user's intent expressed in English (or other languages) and produce runnable code snippets, entire functions, or full projects. Unlike earlier code assistants that only suggested the next line, these agents maintain context across files and can orchestrate a series of edits to accomplish a goal—for instance, 'Create a REST API endpoint that queries the database and returns JSON.' They also handle debugging: when code fails, they can analyze error messages and propose fixes. Microsoft's recently open-sourced framework, Adaptive Spec-driven Scoring for Evaluation and Regression Testing (ASSERT), lets developers describe test scenarios in plain text, and the agent generates corresponding evaluation harnesses — an example of how coding agents are expanding into quality assurance."
+          },
+          {
+            "summary": "Why it matters now",
+            "expanded": "The term 'AI Coding Agent' is central to recent industry moves. On June 1, 2026, OpenAI made Codex generally available on AWS, allowing enterprises to integrate code generation into their existing cloud workflows. On June 2, OpenAI published a report titled 'The Next Era of Knowledge Work,' framing Codex as a productivity tool for knowledge workers, not just developers. Meanwhile, Microsoft launched ASSERT, an open-source evaluation framework that treats test creation as a coding agent task. These developments signal that coding agents are transitioning from niche developer tools to enterprise-wide platforms that impact product roadmaps, reduce engineering costs, and raise new questions about code quality and security."
+          }
+        ],
+        "why": "Understanding AI Coding Agents is critical: they are reshaping how software is built and tested. For investors, this is a key area where incumbents like OpenAI and Microsoft are investing; for product teams, adopting these agents can compress development cycles and shift hiring priorities toward prompt engineering and agent supervision rather than traditional coding.",
+        "links": [
+          [
+            "OpenAI: Frontier models and Codex now available on AWS",
+            "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws"
+          ],
+          [
+            "OpenAI: Codex is becoming a productivity tool for everyone",
+            "https://openai.com/index/codex-for-knowledge-work"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-03",
     "title": "AI Daily Atlas",
