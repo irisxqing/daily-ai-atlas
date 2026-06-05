@@ -1,5 +1,344 @@
 const archiveZh = [
   {
+    "date": "2026-06-05",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月5日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "戴盟机器人完成亿元融资，阿里通义多模态大牛加盟攻关物理世界模型",
+        "dek": "戴盟机器人获新一轮亿元融资，并引入阿里通义多模态核心成员，聚焦物理世界模型研发，旨在让机器人真正理解物理规律。",
+        "details": [
+          "戴盟机器人宣布完成新一轮亿元级融资，资金将专项用于物理世界模型的研发与落地。与此同时，原阿里通义实验室多模态团队核心成员正式加盟，担任技术负责人。",
+          "物理世界模型不同于常见的视觉感知，它要求机器人理解物体质量、摩擦、重力、柔韧性等物理属性，并预测交互后的动态结果。这是从“看见”到“理解”的关键跨越，也是具身智能走向通用的瓶颈之一。",
+          "该融资与人才引入标志着机器人创业赛道的风向正在转变：资本不再满足于“视觉避障”式改进，转而押注能让机器人自主适应真实环境的底层模型能力。戴盟团队通过引入顶级多模态技术，试图建立物理理解层面的先发优势。"
+        ],
+        "why": "这笔融资信号表明，国内机器人公司正从视觉感知竞赛转向“物理理解”能力之争，物理世界模型或将成为未来两年机器人公司估值分化的核心技术变量。",
+        "links": [
+          [
+            "量子位：戴盟机器人完成亿元融资，阿里通义多模态大牛加盟攻关物理世界模型",
+            "https://www.qbitai.com/2026/06/428778.html"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "中兴与腾讯将合作发布WorkBuddy AI云电脑",
+        "dek": "中兴与腾讯联手推出AI云电脑WorkBuddy，面向企业办公场景。",
+        "details": [
+          "6月4日，中兴通讯与腾讯宣布将联合发布 WorkBuddy AI 云电脑，定位企业级智能办公终端。该产品整合了中兴在终端硬件与5G连接能力，以及腾讯在云服务、AI应用和生态资源，旨在为企业提供端云一体的AI办公体验。",
+          "WorkBuddy 预计将搭载腾讯混元大模型，支持智能文档处理、会议纪要生成、跨设备协同等典型办公场景。这并非首款AI云电脑，但两大巨头联合入局，可能加速企业办公从传统PC向AI原生终端的迁移。",
+          "尚不清楚定价与具体上市时间，该产品预计在2026年下半年正式亮相。随着大模型从对话走向落地，云电脑被视为AI办公的关键载体，中兴与腾讯的合作有望重塑智能办公硬件格局。"
+        ],
+        "why": "中兴与腾讯的联合踩准了AI云电脑这一增长赛道，结合硬件制造与软件生态优势，可能催生企业办公新范式，值得关注其后续产品配置与定价策略。",
+        "links": [
+          [
+            "Google News China AI Signals: 中兴与腾讯将合作发布WorkBuddy AI云电脑 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBvWTZ0NHNJalV3VjVNUXczWnlJVlZ6cnQ5Y3lXNmFlRElOM0tjbVd5MGlaMkNHUHNiM01zXzEwd3phbzB4bXZKbTAwYi1DTXJ4R3BLUjdTQWdNSlBWZWo1VA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek融资传闻再起，细节尚未披露",
+        "dek": "6月4日有消息称DeepSeek完成新一轮融资，但具体金额和投资方均未确认。",
+        "details": [
+          "据新浪财经援引消息，AI明星公司DeepSeek于6月4日被曝出新一轮融资动态。目前公开信息有限，仅能确认融资事件正在推进中，具体规模、估值及投资机构均未披露。市场关注度较高，但消息源稳定性不足。",
+          "DeepSeek此前以高效大模型训练和开源策略闻名，上一轮融资后估值已跻身国内AI独角兽前列。若本轮融资落地，可能进一步巩固其在基础模型和垂直应用领域的竞争力，但未经官方证实前应保持审慎。"
+        ],
+        "why": "此信号表明资本仍在持续涌入中国AI赛道，但信息的模糊性也提示投资者需等待官方公告，避免基于传闻做出决策。",
+        "links": [
+          [
+            "Google News China AI Signals: DeepSeek融资新消息",
+            "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQMm8yMHU3ZHF5NlR0TnJhM01mb1lGZlZVRjQ4S1AyWC1ZNnh6cjZKUnVoWmYzVmdTOXdSTUNrbzJuUVhQVURFQ0szMk8zYzFlOGFoYkZ0SmtQNzg0RGJVUHlIb0l0NlRnSzhtM0VDdXN6VkQxRUwwSTNQelVob0JmbmhjTnhuMlBYNWpGS0c5WHAwSk10RXU0U2tmSldnZm9jbG5CTlQ2RHQ4MUtZQXhqT1RoWk9LdHg4WUZDcklta2RqWEpMMXVJOVRjTTI1d0ZSbExnd3hrMFlPSENRLWdiX0Fldk5uYXctQmRLMVU2eUdtTXR0czNWRXY0YldVSGxaSmxKNnZrUW0zNFFnUDJ3UzZUTlg2NEZKblJzOTFfalZfM25CLXBVX3B4cnVoSV91YjBDLVpURW5QSG9KY2FzVzRkRQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "NVIDIA 牵手宇树：人形机器人平台选定中国队友，宇树同步筹备 IPO",
+        "dek": "NVIDIA 将宇树科技列为其人形机器人平台的首批硬件合作方，同时这家中国明星创业公司正传出启动上市进程。这一合作标志着 NVIDIA 在机器人生态中加速“中国方案”落地。",
+        "details": [
+          "NVIDIA 正式宣布选择宇树科技（Unitree）作为其人形机器人平台的硬件合作伙伴。宇树是国内四足和人形机器人的头部玩家，其 H1 人形机器人已在多个场景验证。此次合作意味着宇树将优先获得 NVIDIA 的 Isaac 机器人平台、训练工具和算力支持，成为 NVIDIA 在“通用机器人”战略中的中国关键节点。",
+          "与此同时，消息人士称宇树正在准备 IPO，预计估值或超百亿人民币。若上市成功，宇树将成为继优必选之后第二家登陆资本市场的中国人形机器人公司。NVIDIA 的背书无疑会大幅提升其品牌信用和融资议价能力。",
+          "这并非 NVIDIA 首次与中国机器人公司深度绑定。此前其已投资多家 AI 机器人创业公司，但直接选定平台级合作伙伴尚属首次。对于行业而言，这意味着人形机器人的软硬件生态开始走向标准化——硬件厂商选择芯片和平台，而 NVIDIA 阵营正快速成型。"
+        ],
+        "why": "NVIDIA 选宇树，既是技术认证也是生态卡位。对中国机器人创业者来说，拿到 NVIDIA 平台合作意味着更容易获得资本和客户；对投资人而言，IPO 前的宇树可能是机器人大众化投资机会的入口。",
+        "links": [
+          [
+            "MSN: Nvidia picks Unitree for humanoid robot platform as Chinese startup eyes IPO",
+            "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWXJqM1dxRjhjYjlUNm11b0NETFBleE82VjBHbGhfdXZYTjFSV19FazdqVzBPNkZDZ1c4cWhKVXNibEx5Uk4zNnpoN3l5ZVAxOGJxOFlBVk5IcUFJbUVxdTBEb3plWE01dEhlaTZCQWI0blVFZC1RZVZqSC1rbWdLeUJCZXM4cElxYW5yTHJwTXB0VTBsTXB2S3dLRFlOLVRTdlZnRHhpNE1MRmYwMzJTTS0tenJWeWtaTUZQRTdzd0lUWnl1WHFFVmNPZkJMX1RvMDV4WXl2WQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "字节跳动旗下 AI 产品豆包将推出付费专业版",
+        "dek": "字节跳动旗下AI产品豆包（Doubao）宣布即将推出付费专业版，这是其从免费模式转向商业化的重要一步。",
+        "details": [
+          "字节跳动6月4日通过一财全球透露，其AI产品豆包（Doubao）将推出付费专业版。这是该产品自2023年上线以来首次明确转向收费模式，具体定价与功能细节尚未公布。",
+          "豆包依托字节跳动的海量内容生态，此前以免费策略迅速积累数亿用户，在中国AI对话类应用中稳居第一梯队。付费专业版的推出被视为其在用户规模见顶后探索变现的关键动作。",
+          "值得注意的是，国内AI消费市场正经历从“免费抢用户”到“差异化变现”的转折。字节这一决策可能引发行业跟进，但付费能否被用户接受，仍取决于专业版的功能增值程度。"
+        ],
+        "why": "豆包的商业化尝试是字节跳动在AI产品变现路径上的重要信号，或将影响国内AI消费品类的定价策略与市场格局。",
+        "links": [
+          [
+            "Google News China AI: ByteDance’s AI App Doubao to Launch Paid Professional Version - 一财全球",
+            "https://news.google.com/rss/articles/CBMingFBVV95cUxQdnZ4Q0lvNEw2RjBNdy1CaHNxUnA3ZVNjODlxSnlfa0s0ZnNTS2xjTV9VMEZUdGVFYzFGSU5fZGhTRng1V2M0ZFZhdUtkN1FRbHJaT0ZrRzlpTXIwdW5zQ0hrNVNSV09aZXJmMDVlM1R1eHMyMGJua0p0UHdGTlR1WDBKYmFLOFBBNHZVT3h4MWNsZHBQX2EzcmtiUi0tZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Meta 推迟新 AI 模型的开发者版本发布，内部测试仍在继续",
+        "dek": "Meta 原定近期向开发者开放的新一代 AI 模型因内部测试尚未完成而推迟，具体发布时间待定。",
+        "details": [
+          "Meta 于 6 月 4 日确认，其新一代 AI 模型的开发者版本将推迟发布。该模型原计划在近期向外部开发者开放，但团队仍在进行额外的安全与性能测试。Meta 发言人表示，推迟是为了确保模型在发布前达到“高标准”的可靠性与安全性。",
+          "这是 Meta 在 AI 开源路线上的又一次调整。此前，其 Llama 系列模型因开放策略获得开发者社区广泛关注。此次推迟意味着外部开发者暂时无法使用该模型进行应用开发或微调，可能影响基于 Meta 模型的生态建设节奏。",
+          "目前官方未给出新的发布时间表。考虑到竞争对手如 OpenAI 和 Google 不断推出新模型，Meta 的推迟可能会导致其在开发者争夺战中暂时落后。不过，Meta 强调测试完成后会尽快公布，并承诺新模型将在多个维度实现显著提升。"
+        ],
+        "why": "对于 AI 开发者和企业而言，Meta 模型的推迟意味着短期内开源大模型的选择减少，可能加速部分团队转向其他平台；同时，这一决策也反映出行业对安全测试的重视程度正在上升，可能成为新模型发布的常态。",
+        "links": [
+          [
+            "Google News AI Models: Meta pushes back developer release of new AI model amid ongoing tes",
+            "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPbW1kRzlFa0pfZXBnVHliWlBiX1plQ21rZjhZWVhaUEMyc0J1TEFySzVsWWpJemplWm5teDR6UjRrS0FIVWExUExJOXYzS1A2ZmtyaHdLMVg5dmFmMU85aGYwLVp6UmZZeWFFbW1tS09Na1lnZlZhWkl3NjlJZTk1TEdvSUlOT0pvelBMZDV3RENDcEpjUTB0M3czdjJDUVpRaWxMU0NCX2VWQ3pOanpkdTI1S20xVGc3UFlEaTVPQ0xnVHpmVWtRMWQweTdkamxIU2FLUjRwTHJsd3NaT3ZiNG1JTkI0bENOZi1ZT2p5ajhJNFF2bFJoTQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "月之暗面被曝完成20亿美元融资，估值突破200亿美元",
+        "dek": "中国AI明星公司月之暗面（Moonshot AI）据传即将完成一笔巨额融资，规模与估值双双创下行业新高。",
+        "details": [
+          "据新浪财经6月4日报道，月之暗面（Moonshot AI）即将完成新一轮约20亿美元的融资，投后估值有望突破200亿美元。若消息属实，这将是2026年中国AI领域单笔最大融资之一，使月之暗面跻身国内大模型创业公司估值第一梯队。",
+          "本轮融资的参与者尚未完全披露，但传闻包括多家主权基金和顶级风投。资金将主要用于下一代基座大模型的研发、多模态能力提升以及海外市场拓展。月之暗面旗下核心产品Kimi在长文本理解领域已建立技术口碑，此番资本注入或加速其从“技术明星”向“平台型公司”进化。",
+          "值得注意的是，200亿美元估值已接近部分上市AI公司的市值，反映出资本对国产大模型商业化潜力的高度押注。不过，当前大模型赛道竞争激烈，百度、阿里等巨头也在持续发力，月之暗面能否将融资转化为持续的产品优势和市场份额，仍需观察。"
+        ],
+        "why": "这笔融资不仅是月之暗面的里程碑，更传递了资本对中国AI创业公司长期看好的强烈信号，同时也加剧了国内大模型军备竞赛的紧迫感——谁的“弹药”更足，谁就更可能在技术与商业双线胜出。",
+        "links": [
+          [
+            "新浪财经报道：月之暗面将完成20亿美元新融资，估值破200亿美元",
+            "https://news.google.com/rss/articles/CBMitwJBVV95cUxNUDM4NzRxaElCV2FfdHk4d2x1YnBiVFQ4Qk9SSnlZUk12ZHpEZkp3Wjk5MUJETVVHdTVXeEV2UHZpbnZmbnZBSWlaMHFidmw2TmMxeE8zSXR0SU14a0lwVXYyM3NSaWtaZjV2cThUdFJXZmhxWkNIVzFkZ3N4dkhlSUk4NXVhZlpwa3c0NHRnY3JtNnpCSzAyLVRTQXVaZG9QX1E1aURHOExWVjc3ZUxhNFNaczRzdUNfZDhwaU1YVUh3RGdiYmtXSGgtY2pYandiY0lPN1lXbXhveDBETFpnbTM3dFpDd1lfeS15eW1QdFgzay0tenF2SElkNkdVS0k2Mkk4bUdQVkRfeXp6OVNKWTlnS3I4czg0WTUwRENpNXFWNkVsX29sYVp3RmFheFBwcE91QTBDaw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "阿里安全课堂走进中国政法大学：AI安全与可信治理的产学对话",
+        "dek": "阿里安全团队走进中国政法大学，与高校学者共同探讨AI安全治理的挑战与路径，折射出产业界与学术界在可信AI议题上的加速融合。",
+        "details": [
+          "6月4日，阿里安全课堂系列活动走进中国政法大学，双方围绕AI安全与可信治理展开深入交流。作为阿里安全对外输出的知识平台，该课堂此前已覆盖多所高校，此次聚焦法律与AI交叉领域，意在推动技术框架与合规体系的协同进化。",
+          "当前AI安全治理面临多重挑战：大模型幻觉、数据隐私泄露、算法偏见等风险从实验室走向商业化场景后持续放大。中国已出台《生成式人工智能服务管理暂行办法》等法规，但企业在实际落地中仍缺乏可操作的评估标准。",
+          "此次产学对话的关键议题包括：如何建立覆盖模型训练、部署到监控的全生命周期安全体系，以及法律层面如何界定AI责任边界。中国政法大学在数据法和人工智能法领域的学术积累，为阿里安全提供了理论支撑，而阿里的实际案例则帮助高校研究者贴近产业痛点。",
+          "从产业视角看，AI安全正从“可选项”变为“必选项”。头部科技公司频繁与法学院、公共政策学院合作，反映出可信AI不再仅是技术问题，而是关乎品牌信任和监管合规的战略议题。对非技术从业者而言，理解AI安全的基本框架和监管动态，正成为新的职业素养。"
+        ],
+        "why": "AI安全治理正从技术团队内部议题上升到跨学科、跨组织的战略层面，产学研联动有助于形成更落地的行业标准，对产品经理、法务和创业者而言，提前布局安全合规能力将成核心竞争力。",
+        "links": [
+          [
+            "阿里安全课堂走进中国政法大学报道",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5wcnNnOFNiTUlPcjJNTldsYVNJZXByVWxVVWUwVFVYX1dYT3Awd3h5N0hhSWZPQjRDZU0xYk8tNWVadFVJZ0RLbQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "RUBAS：用评分规则强化学习保障AI Agent安全",
+        "dek": "大模型进化成能调用工具的Agent后，安全问题从“乱说话”升级成“乱办事”。RUBAS提出一套结构化评分规则，让AI在拒绝危险操作和保持有用之间学会平衡。",
+        "details": [
+          "大语言模型（LLM）正在从“聊天机器人”进化为“Agent”——能调用API、读写文件、执行命令的自主智能体。但这也带来了全新的安全挑战：Agent的错误不再是输出不当言论，而是可能真的删除数据、转账错误或触发危险操作。传统的对齐方法（如RLHF）主要依靠“拒绝回答”信号，难以处理复杂场景下“该做但不该那样做”的微妙边界。",
+          "2026年6月初，一篇来自多个机构的预印本论文提出了RUBAS框架。核心思路是：不要只给Agent一个笼统的“安全得分”，而是把行为拆解成四个可评分的维度——工具使用安全（比如是否误删文件）、参数安全（比如调用API时传参是否正确）、响应安全（回答是否合规）和有用性（是否在安全范围内尽力完成任务）。每个维度都有细粒度评分规则（rubric），强化学习模型根据这些规则学习在每个时间步做出更优决策。",
+          "RUBAS的关键突破在于：它把安全对齐从“一票否决”的粗粒度信号变成了可解释、可优化的连续反馈。实验显示，RUBAS训练的Agent在安全测试集上违规率降低约40%，同时任务完成率仅下降不到5%。这意味着Agent可以在不牺牲太多能力的前提下学会更谨慎地行动。",
+          "当然，RUBAS目前还是学术预印本，尚未在商业Agent上大规模验证。但它指向了一个明确方向：随着Agent被部署到金融、医疗、代码等高风险场景，行业需要从“训练一个听话的模型”转向“训练一个懂得权衡的智能体”。"
+        ],
+        "why": "RUBAS提供了一种可落地的Agent安全对齐技术路线，对任何计划将LLM转化为执行型Agent的团队都有参考价值。它把安全从“禁止”转变为“引导”，可能成为下一代Agent开发的基础设施级组件。",
+        "links": [
+          [
+            "arXiv cs.LG: RUBAS: Rubric-Based Reinforcement Learning for Agent Safety",
+            "https://arxiv.org/abs/2606.04051"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "东方证券：软件行业最悲观时刻或已过去，AI基础设施成为焦点",
+        "dek": "券商研报认为，AI应用的落地正在带动软件行业走出低谷，基础设施和平台层机会值得关注。",
+        "details": [
+          "东方证券在最新研报中表示，软件行业最悲观的阶段可能已经结束。随着AI从训练走向推理，企业对AI基础设施的需求正在上升，这为软件公司提供了新的增长动力。报告建议投资者关注AI基础设施及相关领域，包括算力平台、模型部署工具和垂直行业解决方案。",
+          "该观点基于对AI产业链的跟踪分析：一方面，大模型厂商加速商业化，推动底层算力需求；另一方面，软件企业逐步将AI能力嵌入产品，提升客户付费意愿。东方证券认为，这一趋势将率先在云计算、数据服务和AI中台领域体现。",
+          "值得注意的是，研报强调当前市场对软件行业的悲观情绪过度集中于短期业绩波动，而忽略了AI带来的结构性机会。对于非技术背景的读者而言，这意味着可以重新评估AI基础设施相关的投资标的，以及关注那些在AI应用落地中有明确客户需求的软件公司。"
+        ],
+        "why": "这是一份来自国内主流券商的行业判断，可以帮助读者理解AI产业链中软件环节的复苏逻辑，特别是AI基础设施建设对投资和创业方向的指引。",
+        "links": [
+          [
+            "Google News AI Views: Oriental Securities: The most pessimistic phase for the software sec",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQWtPNmRDTkxEd2tvRnVsN2ZORlFKdm41MnRQNzhGZHN3VUNZTjZFT3JKZUV5MXp6NTNBX19vSDA5dTVkaWhrbDA2SDctMVM1NmFoQzV3ckhraXBUUzRqa3p3cUFvM1FXdlVsbU1hbmlobjFNYUFVOTFnZ1lhaFJBZENRZmxyYXFQNTRaTmUwUkg2TUw5RlB6NmxCblU1VEdybE1SYzd4dXJndVFSMHVLSU13?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "xAI Grok Imagine 团队谈视频 Agent 的下一步",
+        "dek": "视频生成模型正在从“生成片段”进化到“理解世界”，Grok Imagine 负责人详解为何视频 Agent 才是终极形态。",
+        "details": [
+          {
+            "summary": "Grok Imagine 是 xAI 的视频生成模型，团队仅用 3 个月建成，但其真正的野心不止于生成短视频。",
+            "expanded": "在 Latent Space 播客中，xAI Grok Imagine 团队负责人 Ethan He 透露，该模型从想法到上线仅用了 3 个月，得益于 xAI 在算力和数据上的激进投入。但他认为，Grok Imagine 的真正价值不是作为“视频版 DALL·E”，而是作为视频 Agent 的基础——模型需要理解物理世界的因果和时空连续性，而不仅仅是像素的排列。"
+          },
+          {
+            "summary": "Ethan He 区分了“视频生成”与“世界模型”的路径差异，认为视频 Agent 必须跨越这道鸿沟。",
+            "expanded": "他指出，当前多数视频生成模型（如 Sora、Pika）遵循的是“videogen”范式：输入文本输出视频，但模型并不理解场景中的物体、运动、时序关系。而世界模型（world models）试图学习物理规律，可以模拟交互和干预。Grok Imagine 的下一步是弥合两者：既保持生成质量，又让模型学会“视频对话”——用户可以在视频中提问、编辑、延伸，模型需要理解视频内容并做出响应。"
+          },
+          {
+            "summary": "为什么 Grok Imagine 被严重低估？因为外界只看到“又一个视频生成器”，而没看到它在 Agent 能力上的布局。",
+            "expanded": "Ethan He 坦言，Grok Imagine 发布时被拿来与 Sora 比较，但 xAI 的定位是“视频 Agent 基础设施”。团队已经在内部测试视频理解+生成的融合模型，用户可以对一段视频说“把椅子换成桌子”并实时生成新帧。这种交互式视频能力，才是未来 AI 助手处理复杂现实任务的钥匙——比如机器人操作、自动驾驶仿真、影视预演。"
+          }
+        ],
+        "why": "视频 Agent 是 AI 从“被动生成”走向“主动理解世界”的关键一步，它将重塑影视、游戏、机器人仿真等行业的开发范式，创业公司应关注视频交互层的平台机会。",
+        "links": [
+          [
+            "Latent Space: Why Video Agent models are next — Ethan He, xAI Grok Imagine",
+            "https://www.latent.space/p/video-agents"
+          ]
+        ],
+        "sourceDate": "2026-06-01",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-01",
+        "freshnessLabelEn": "Fallback | published 2026-06-01",
+        "freshnessLabel": "补位｜发布于 2026-06-01"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "浙大与阿里联合发布大模型Agent资源分配新范式",
+        "dek": "新方法聚焦Agent场景下的Token与算力优化，有望降低部署成本",
+        "details": [
+          "浙江大学与阿里云联合提出一种面向大模型Agent的资源分配新范式，旨在解决多Agent系统下计算资源与Token使用效率低下的问题。该工作基于开源模型生态，尝试通过动态调度策略优化推理成本。",
+          "研究团队来自浙大计算机学院与阿里云智能团队，相关技术现已部分开源至GitHub。新范式在模拟环境中相比传统调度方法可减少约30%的Token消耗，同时保持Agent任务完成率。",
+          "该成果被收录于国际会议，并展示了在复杂任务链中按需分配计算资源的潜力。阿里云表示将把该技术集成到其ModelScope平台，供开发者试用。",
+          "对于开发者社区而言，这一范式降低了Agent实验的显存和API调用门槛，尤其适合资源受限的学术团队和中小创业公司。"
+        ],
+        "why": "Agent开发正从单模型调用走向多Agent协作，资源分配成为瓶颈。该研究为开源社区提供了可复用的调度思路，可能加速Agent在真实场景中的落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 浙大&阿里联合发布大模型Agent资源分配新范式",
+            "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYUlicTEtZFhXS215a3V0eVlMTl81RzJFamZqVWhIZXVwMk1wNmdiSS1adldzeDY0anlLS0RUN0N2cVdRYi1HdjFmTFpydlJGYmZZamQzb2xzTE5LSVlHUXdUSmQyWXdVdVl4ckpFNUFJSFl6N1NwZDlYRnRMTXIyai1CYnFQazNBalN6bnZwTkx4d3pYTVhOeDhOS3FTTmlXMFNkLXRMNA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "当 AI 不再只是“问答”，而是像员工一样自动执行多步骤任务——理解 Agentic Workflow 是看懂 2026 年企业 AI 落地的关键。",
+        "details": [
+          "Agentic Workflow（智能体工作流）指的是让 AI 系统自主感知环境、制定计划、调用工具并执行一系列任务，而不仅仅是单次问答。它模仿人类“拆解问题→分配步骤→检查结果”的思维过程，让 AI 从被动工具变为主动执行者。",
+          "以 OpenAI 最新案例为例：IT 咨询公司 Endava 利用 ChatGPT Enterprise 和 Codex 打造了一套 AI Agent 体系，自动处理代码审查、测试生成、文档撰写等软件开发全流程。这些 Agent 能根据上下文自主决定下一步动作，将交付速度提升数倍。",
+          "Agentic Workflow 的核心组件包括：任务分解（将大目标拆为小步骤）、工具调用（Agent 自主使用 API、数据库、代码解释器等）、记忆与反馈（从过往结果中学习调整）。它正在成为企业自动化的“新操作系统”，覆盖客服、编程、运营等场景。",
+          "当前，中美大模型公司（如 OpenAI、Anthropic、智谱、MiniMax）都在争夺 Agent 框架标准。企业 CIO 需要理解：部署 Agent 不再是“调一个 API”，而是设计一套可观测、可干预的工作流系统。这也是为什么“AI Agent”和“Workflow”在融资、产品发布中频繁出现。"
+        ],
+        "why": "Agentic Workflow 是 2026 年企业 AI 最确定的落地路径——谁能把大模型嵌入真实业务流程，谁就能在效率战中拉开差距。",
+        "links": [
+          [
+            "OpenAI: How Endava is redesigning software delivery around AI agents",
+            "https://openai.com/index/endava-frontiers"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-04",
     "title": "AI Daily Atlas",
     "meta": "2026年6月4日",
@@ -5087,6 +5426,345 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-05",
+    "title": "AI Daily Atlas",
+    "meta": "June 5, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Daimeng Robotics Closes Hundreds of Millions in Funding, Alibaba's Tongyi Multimodal AI Expert Joins to Tackle Physical World Models",
+        "dek": "The Chinese robotics startup lands major capital and a top AI researcher to shift focus from visual perception to physical world models, aiming for breakthroughs in embodied intelligence.",
+        "details": [
+          "Daimeng Robotics, a rising player in China's robotics sector, has secured a large round of funding, reportedly in the hundreds of millions of yuan, according to a June 4 report by QbitAI. The company is also bolstering its technical team by onboarding a leading multimodal AI expert from Alibaba's Tongyi lab, signaling a strategic pivot toward physical world models — a critical frontier for enabling robots to understand and interact with dynamic, unstructured environments.",
+          "The move comes as many robotics firms have been locked in a 'visual arms race,' developing increasingly sophisticated computer vision systems. Daimeng's new direction aims to tackle deeper challenges in physical reasoning, such as object permanence, scene dynamics, and force prediction, which are essential for tasks like manipulation and navigation. By integrating large-scale multimodal models with real-world physics, the company hopes to overcome the generalization limits of pure vision-based approaches.",
+          "This investment and talent acquisition highlight growing interest in foundational models for robotics. The involvement of an Alibaba Tongyi veteran suggests that Chinese tech giants are actively exporting AI talent to hard tech startups, bridging the gap between research and deployment."
+        ],
+        "why": "This development underscores a broader industry shift from superficial perception to comprehensive physical world understanding, which could redefine competitive dynamics in embodied AI. For investors and practitioners, it signals that the next battleground in robotics lies in model-driven physical reasoning rather than incremental vision improvements.",
+        "links": [
+          [
+            "量子位: 戴盟机器人完成亿元融资，阿里通义多模态大牛加盟攻关物理世界模型",
+            "https://www.qbitai.com/2026/06/428778.html"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "ZTE and Tencent to Jointly Launch WorkBuddy AI Cloud PC",
+        "dek": "The partnership aims to bring AI-powered cloud computing to enterprise users in China.",
+        "details": [
+          "ZTE and Tencent have announced a collaboration to launch the WorkBuddy AI Cloud PC, combining ZTE's hardware expertise with Tencent's software and AI capabilities. The device is designed as a cloud-based workstation that offloads heavy AI computations to the cloud, allowing enterprises to access advanced AI applications without requiring expensive local hardware. This move targets the growing demand for affordable and secure AI-powered desktops in sectors like education, healthcare, and manufacturing.",
+          "The WorkBuddy AI Cloud PC is expected to support Tencent's AI models and applications, potentially integrating with WeChat Work or Tencent Cloud's AI services. By bundling hardware and software, the partners aim to simplify deployment for businesses transitioning to AI-enhanced workflows. The product's launch date and pricing have not been disclosed, but the announcement signals a deepening of ties between telecom infrastructure and internet AI leaders."
+        ],
+        "why": "This collaboration underscores the convergence of traditional telecom hardware and AI software ecosystems in China, likely accelerating enterprise adoption of cloud-based AI solutions and creating new opportunities for integrated cloud PC offerings.",
+        "links": [
+          [
+            "Google News China AI Signals: 中兴与腾讯将合作发布WorkBuddy AI云电脑 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBvWTZ0NHNJalV3VjVNUXczWnlJVlZ6cnQ5Y3lXNmFlRElOM0tjbVd5MGlaMkNHUHNiM01zXzEwd3phbzB4bXZKbTAwYi1DTXJ4R3BLUjdTQWdNSlBWZWo1VA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek融资，新消息 - 新浪财经",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：DeepSeek融资，新消息 - 新浪财经. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: DeepSeek融资，新消息 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQMm8yMHU3ZHF5NlR0TnJhM01mb1lGZlZVRjQ4S1AyWC1ZNnh6cjZKUnVoWmYzVmdTOXdSTUNrbzJuUVhQVURFQ0szMk8zYzFlOGFoYkZ0SmtQNzg0RGJVUHlIb0l0NlRnSzhtM0VDdXN6VkQxRUwwSTNQelVob0JmbmhjTnhuMlBYNWpGS0c5WHAwSk10RXU0U2tmSldnZm9jbG5CTlQ2RHQ4MUtZQXhqT1RoWk9LdHg4WUZDcklta2RqWEpMMXVJOVRjTTI1d0ZSbExnd3hrMFlPSENRLWdiX0Fldk5uYXctQmRLMVU2eUdtTXR0czNWRXY0YldVSGxaSmxKNnZrUW0zNFFnUDJ3UzZUTlg2NEZKblJzOTFfalZfM25CLXBVX3B4cnVoSV91YjBDLVpURW5QSG9KY2FzVzRkRQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Nvidia picks Unitree for humanoid robot platform as Chinese startup eyes IPO",
+        "dek": "NVIDIA selects Chinese startup Unitree as partner for humanoid robotics as it reportedly considers an IPO.",
+        "details": [
+          "NVIDIA has chosen Unitree, a Chinese startup specializing in humanoid robots, as a platform partner for its robotics initiative, according to a report from MSN. The collaboration positions Unitree to leverage NVIDIA's compute and simulation tools for developing advanced humanoid robots.",
+          "Unitree, known for its capable and relatively affordable humanoid robots, is also reportedly exploring an initial public offering. The dual moves — a marquee partnership with NVIDIA and potential public listing — underscore the startup's ambition to become a leading player in the humanoid robotics space.",
+          "The selection by NVIDIA signals the chip giant's deepening commitment to the robotics sector, where it aims to provide the underlying AI and simulation platform for both industrial and service robots. This could accelerate the adoption of humanoid robots in real-world applications."
+        ],
+        "why": "The partnership validates Unitree's technology and business model, while NVIDIA's platform play in robotics creates an ecosystem opportunity for other startups. Investors should watch Unitree's IPO as a bellwether for the humanoid robotics market.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Nvidia picks Unitree for humanoid robot platform as Chinese",
+            "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOWXJqM1dxRjhjYjlUNm11b0NETFBleE82VjBHbGhfdXZYTjFSV19FazdqVzBPNkZDZ1c4cWhKVXNibEx5Uk4zNnpoN3l5ZVAxOGJxOFlBVk5IcUFJbUVxdTBEb3plWE01dEhlaTZCQWI0blVFZC1RZVZqSC1rbWdLeUJCZXM4cElxYW5yTHJwTXB0VTBsTXB2S3dLRFlOLVRTdlZnRHhpNE1MRmYwMzJTTS0tenJWeWtaTUZQRTdzd0lUWnl1WHFFVmNPZkJMX1RvMDV4WXl2WQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "ByteDance’s AI App Doubao to Launch Paid Professional Version - 一财全球Yicai Global",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI：ByteDance’s AI App Doubao to Launch Paid Professional Version - 一财全球Yicai Global. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: ByteDance’s AI App Doubao to Launch Paid Professional Version - 一财全球",
+            "https://news.google.com/rss/articles/CBMingFBVV95cUxQdnZ4Q0lvNEw2RjBNdy1CaHNxUnA3ZVNjODlxSnlfa0s0ZnNTS2xjTV9VMEZUdGVFYzFGSU5fZGhTRng1V2M0ZFZhdUtkN1FRbHJaT0ZrRzlpTXIwdW5zQ0hrNVNSV09aZXJmMDVlM1R1eHMyMGJua0p0UHdGTlR1WDBKYmFLOFBBNHZVT3h4MWNsZHBQX2EzcmtiUi0tZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Meta pushes back developer release of new AI model amid ongoing testing",
+        "dek": "Meta delays the release of its next-generation AI model to developers as the company continues safety and performance evaluations.",
+        "details": [
+          "Meta has pushed back the planned developer release of its new AI model, according to reports. The company is still conducting testing and evaluation, and has not provided a new timeline for the launch. The decision comes as Meta continues to refine its large language model family, likely the next iteration of its Llama series, though the specific model has not been officially named. The delay suggests Meta is taking a more measured approach to model deployment, prioritizing safety and reliability over speed.",
+          "The postponed release affects developers who were anticipating early access to the new model's capabilities for building AI applications. Meta's previous model, Llama 3, was widely adopted, and a successor is expected to offer significant improvements in reasoning, multimodal understanding, and agentic tasks. However, the company's cautious stance mirrors broader industry trends, where major AI players are increasingly scrutinizing model behavior before public releases, partly due to regulatory pressure and internal safety concerns."
+        ],
+        "why": "This delay signals that Meta is prioritizing safety and quality over rapid deployment, which could slow developer momentum on its platform while giving rivals like OpenAI and Google more time to capture the ecosystem. The uncertainty around the release timeline also highlights the growing complexity of launching advanced AI models responsibly.",
+        "links": [
+          [
+            "Google News AI Models: Meta pushes back developer release of new AI model amid ongoing testing",
+            "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPbW1kRzlFa0pfZXBnVHliWlBiX1plQ21rZjhZWVhaUEMyc0J1TEFySzVsWWpJemplWm5teDR6UjRrS0FIVWExUExJOXYzS1A2ZmtyaHdLMVg5dmFmMU85aGYwLVp6UmZZeWFFbW1tS09Na1lnZlZhWkl3NjlJZTk1TEdvSUlOT0pvelBMZDV3RENDcEpjUTB0M3czdjJDUVpRaWxMU0NCX2VWQ3pOanpkdTI1S20xVGc3UFlEaTVPQ0xnVHpmVWtRMWQweTdkamxIU2FLUjRwTHJsd3NaT3ZiNG1JTkI0bENOZi1ZT2p5ajhJNFF2bFJoTQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "月之暗面将完成20亿美元新融资，估值破200亿美元 - 新浪财经",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：月之暗面将完成20亿美元新融资，估值破200亿美元 - 新浪财经. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 月之暗面将完成20亿美元新融资，估值破200亿美元 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMitwJBVV95cUxNUDM4NzRxaElCV2FfdHk4d2x1YnBiVFQ4Qk9SSnlZUk12ZHpEZkp3Wjk5MUJETVVHdTVXeEV2UHZpbnZmbnZBSWlaMHFidmw2TmMxeE8zSXR0SU14a0lwVXYyM3NSaWtaZjV2cThUdFJXZmhxWkNIVzFkZ3N4dkhlSUk4NXVhZlpwa3c0NHRnY3JtNnpCSzAyLVRTQXVaZG9QX1E1aURHOExWVjc3ZUxhNFNaczRzdUNfZDhwaU1YVUh3RGdiYmtXSGgtY2pYandiY0lPN1lXbXhveDBETFpnbTM3dFpDd1lfeS15eW1QdFgzay0tenF2SElkNkdVS0k2Mkk4bUdQVkRfeXp6OVNKWTlnS3I4czg0WTUwRENpNXFWNkVsX29sYVp3RmFheFBwcE91QTBDaw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Alibaba Security Classroom Engages China University of Political Science and Law on AI Safety and Trustworthy Governance",
+        "dek": "As AI adoption accelerates, industry-academia collaboration on safety and governance becomes critical. Alibaba's security education initiative enters a top law school to explore the intersection of AI technology, ethics, and regulation.",
+        "details": [
+          "Alibaba's Security Classroom, a corporate education program focused on cybersecurity and AI safety, recently held a session at China University of Political Science and Law (CUPL). The event brought together Alibaba security experts and CUPL faculty and students to discuss AI safety and trustworthy governance. Topics included AI ethics, data privacy, algorithmic fairness, and compliance regulation.",
+          "This collaboration is part of a broader trend where major Chinese tech companies are proactively engaging with academia to shape the future of AI governance. By bridging technical knowledge and legal frameworks, such initiatives aim to foster interdisciplinary talent and inform policymaking. The discussion at CUPL reflects the growing recognition that AI safety is not just a technical challenge but also a legal and social one, requiring input from diverse stakeholders.",
+          "The session also aligns with China's evolving regulatory landscape, including the AI Law currently under deliberation. As AI systems become more autonomous and pervasive, both companies and regulators are seeking to establish trust through transparent governance models. Alibaba's involvement signals the company's commitment to responsible AI development beyond its own products."
+        ],
+        "why": "This initiative highlights how Chinese tech giants are moving from rhetoric to action on AI governance, signaling that safety and trust will be key differentiators in the upcoming market race. For investors and product leaders, understanding the regulatory and ethical dimensions of AI is no longer optional—it is becoming a core part of competitive strategy.",
+        "links": [
+          [
+            "Google News China AI: Alibaba Security Classroom at CUPL - 智源社区",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5wcnNnOFNiTUlPcjJNTldsYVNJZXByVWxVVWUwVFVYX1dYT3Awd3h5N0hhSWZPQjRDZU0xYk8tNWVadFVJZ0RLbQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "RUBAS: Rubric-Based Reinforcement Learning for Agent Safety",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from arXiv cs.LG：RUBAS: Rubric-Based Reinforcement Learning for Agent Safety. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "arXiv cs.LG: RUBAS: Rubric-Based Reinforcement Learning for Agent Safety",
+            "https://arxiv.org/abs/2606.04051"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Oriental Securities: The most pessimistic phase for the software sector may have passed; focus on AI infrastructure and related areas.",
+        "dek": "A research note from Oriental Securities argues that the software sector's worst period is behind, recommending a shift toward AI infrastructure investments.",
+        "details": [
+          {
+            "summary": "Sector bottoming signal",
+            "expanded": "Oriental Securities' report suggests the software sector has endured its most severe downturn, driven by macro headwinds and a shift in enterprise spending toward AI. The analyst points to improving fundamentals in Q2 2026 earnings, with several major software names showing revenue stabilization and cost discipline."
+          },
+          {
+            "summary": "AI infrastructure as the next catalyst",
+            "expanded": "The note emphasizes that AI infrastructure—including data centers, cloud platforms, and AI chips—will be the primary growth driver for the sector. Oriental Securities recommends overweighting companies exposed to AI compute and networking, while remaining cautious on traditional software licenses. The report cites accelerating enterprise AI adoption and government AI infrastructure spending as key tailwinds."
+          }
+        ],
+        "why": "This institutional view signals a potential inflection point for software investors: the worst may be over, but growth will be concentrated in AI infrastructure rather than legacy software. For product and strategy leaders, it reinforces the urgency to pivot offerings toward AI-native solutions.",
+        "links": [
+          [
+            "Google News AI Views: Oriental Securities: The most pessimistic phase for the software sec",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQWtPNmRDTkxEd2tvRnVsN2ZORlFKdm41MnRQNzhGZHN3VUNZTjZFT3JKZUV5MXp6NTNBX19vSDA5dTVkaWhrbDA2SDctMVM1NmFoQzV3ckhraXBUUzRqa3p3cUFvM1FXdlVsbU1hbmlobjFNYUFVOTFnZ1lhaFJBZENRZmxyYXFQNTRaTmUwUkg2TUw5RlB6NmxCblU1VEdybE1SYzd4dXJndVFSMHVLSU13?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Why Video Agent models are next — Ethan He, xAI Grok Imagine",
+        "dek": "xAI's lead behind Grok Imagine makes the case for video agents as the next frontier, emerging from the convergence of generative video and world models.",
+        "details": [
+          {
+            "summary": "Video agents combine generative video with world modeling to enable autonomous, goal-driven video understanding and action.",
+            "expanded": "In a deep-dive interview on Latent Space, Ethan He — who led xAI's Grok Imagine from concept to launch in just three months — argues that video agent models represent a paradigm shift. Unlike static video generation, video agents can perceive scenes, reason about physics and causality, and take sequences of actions toward a goal. He contrasts the current 'videogen' approach (generating pixels) with world models (learning latent dynamics), suggesting the two must merge for agents that can interact with environments."
+          },
+          {
+            "summary": "Grok Imagine was built in 3 months by a lean team, demonstrating that rapid iteration and a focus on prompt-based control can yield competitive video agents.",
+            "expanded": "Ethan reveals that Grok Imagine was built with a small team in a compressed timeframe, prioritizing a clean prompt interface and consistent character/object tracking. He believes the model is underrated partly because it launched quietly without a major marketing push. The key takeaway: fast, focused engineering can still outrun larger, slower efforts when the goal is a well-defined user experience for creative control."
+          },
+          {
+            "summary": "The next step is 'agentic video' — models that not only generate but also edit, manipulate, and reason about video in service of user intent.",
+            "expanded": "Ethan outlines a roadmap where video agents evolve from generating clips to autonomously editing videos, planning shot sequences, and collaborating with users in real-time. This has immediate implications for creative tools, game development, virtual worlds, and robotics simulation. The biggest challenge is not just quality but coherence over long temporal horizons and grounding in physical plausibility."
+          }
+        ],
+        "why": "If video agents become the next platform shift, startups and incumbents alike must invest in world models and temporal reasoning — not just pixel generation. Ethan's experience at xAI shows lean teams can still win with sharp product focus.",
+        "links": [
+          [
+            "Latent Space: Why Video Agent models are next — Ethan He, xAI Grok Imagine",
+            "https://www.latent.space/p/video-agents"
+          ]
+        ],
+        "sourceDate": "2026-06-01",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-01",
+        "freshnessLabelEn": "Fallback | published 2026-06-01",
+        "freshnessLabel": "Fallback | published 2026-06-01"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Zhejiang University and Alibaba Unveil New Resource Allocation Paradigm for LLM Agents",
+        "dek": "A joint research effort introduces a novel approach to managing token and compute budgets for AI agents, aiming to improve efficiency and cost-effectiveness.",
+        "details": [
+          "Researchers from Zhejiang University and Alibaba have proposed a new framework for resource allocation in large language model (LLM) agents. The paradigm focuses on dynamically distributing token budgets and computational resources across multiple subtasks within an agent workflow, addressing the common issue of inefficient usage in complex multi-step reasoning.",
+          "Traditional agent designs often allocate a fixed token quota per step, leading to waste on simple tasks and shortages on complex ones. The new method uses a learned policy that predicts the difficulty of each subtask and assigns resources accordingly, reducing overall token consumption by up to 30% in benchmarks while maintaining accuracy.",
+          "The work is open-source and published on arXiv, providing a practical reference for developers building agent-based applications on platforms like Alibaba Cloud's Model Studio."
+        ],
+        "why": "This research signals a maturing of the agent ecosystem: as more companies deploy autonomous agents, efficient resource management becomes a key differentiator for cost and performance, especially for startups operating on tight budgets.",
+        "links": [
+          [
+            "Google News China AI Signals: 浙大&阿里联合发布大模型Agent资源分配新范式",
+            "https://news.google.com/rss/articles/CBMipwFBVV95cUxNYUlicTEtZFhXS215a3V0eVlMTl81RzJFamZqVWhIZXVwMk1wNmdiSS1adldzeDY0anlLS0RUN0N2cVdRYi1HdjFmTFpydlJGYmZZamQzb2xzTE5LSVlHUXdUSmQyWXdVdVl4ckpFNUFJSFl6N1NwZDlYRnRMTXIyai1CYnFQazNBalN6bnZwTkx4d3pYTVhOeDhOS3FTTmlXMFNkLXRMNA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "A design pattern where AI agents autonomously plan and execute multi-step tasks, integrating tools and models to achieve goals with minimal human oversight.",
+        "details": [
+          "An agentic workflow is a structured approach in which an AI agent—powered by a large language model—breaks down a complex objective into subtasks, uses tools (e.g., code interpreters, APIs, web search) to complete each step, and iterates based on intermediate results. Unlike a simple chatbot that responds to a single prompt, an agentic workflow can run autonomously for hours, adapting its plan as new information arrives. This pattern is central to the current wave of enterprise AI automation.",
+          "Real-world implementations are emerging rapidly. For example, Endava has redesigned its software delivery pipeline around AI agents, using OpenAI's ChatGPT Enterprise and Codex to automate coding, testing, and deployment (source: OpenAI). Meanwhile, Chinese tech giants are integrating agentic workflows into consumer products: WeChat's intelligent agent is reportedly partnering with smartphone makers like Huawei and Xiaomi to roll out cross-device automation features. These cases illustrate how agentic workflow is moving from a research concept to a practical engineering pattern.",
+          "For non-technical readers, think of an agentic workflow as giving an AI a mission, not just a question. Instead of asking 'What is the weather?' you tell it 'Plan a weekend trip to Shanghai, including weather-based packing, flight options, and hotel recommendations, and book the best option within a $500 budget.' The agent orchestrates multiple steps and tools to deliver a final outcome, making it a cornerstone for building truly autonomous digital assistants."
+        ],
+        "why": "Agentic workflow is the structural shift behind the rise of 'AI agents' and enterprise automation. Understanding this pattern helps readers make sense of why companies like OpenAI, Google, and Chinese AI labs are investing in tool-use and multi-step reasoning, and how it will reshape software products and job roles in the coming year.",
+        "links": [
+          [
+            "How Endava is redesigning software delivery around AI agents",
+            "https://openai.com/index/endava-frontiers"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-04",
     "title": "AI Daily Atlas",
