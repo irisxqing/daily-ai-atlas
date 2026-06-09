@@ -1,5 +1,365 @@
 const archiveZh = [
   {
+    "date": "2026-06-09",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月9日",
+    "headline": "算力与产业链、模型与平台 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕算力与产业链和模型与平台展开。算力基础设施和供应链仍是大模型竞争的底层变量，同时模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "LG将在韩国部署NVIDIA AI工厂",
+        "dek": "韩国LG集团宣布将采用NVIDIA技术建设AI工厂，进一步扩展全球AI基础设施布局。",
+        "details": [
+          "韩国LG集团宣布将部署NVIDIA AI工厂，成为最新一家加入全球AI基础设施建设浪潮的大型企业。该工厂将基于NVIDIA的GPU和AI平台，为LG自身的AI业务及对外服务提供算力支持。",
+          "LG作为韩国科技与制造巨头，此前已在AI、机器人等领域有所布局。此次与NVIDIA合作建设AI工厂，标志着其从传统制造向AI驱动的数字化转型加速，同时也反映了全球企业对高性能AI算力的迫切需求。",
+          "该项目的具体规模、投资金额和时间表尚未公布，但预计将显著提升韩国本土的AI算力储备。分析人士认为，这一举措可能进一步推动韩国在AI领域的竞争力，并带动上下游产业链的发展。"
+        ],
+        "why": "LG部署NVIDIA AI工厂是AI基础设施全球化的重要信号，表明传统制造业巨头正加速向AI转型，同时也为NVIDIA在亚太地区的业务拓展提供了新的增长点。",
+        "links": [
+          [
+            "Google News AI Infrastructure: South Korea's LG to deploy Nvidia AI factory - Data Center ",
+            "https://news.google.com/rss/articles/CBMikAFBVV95cUxQXzg2cGg4RDEzeUtsVUtYbDNyQndsSE04VmRiYjJ5MjBkdTMzajNlcjQyMUQzYUdCRWVwN29mY2pxRlN3ZjFfZV9XbGh5T1hjcnBzMWVpUWx6RWtrZjFLY3JFZTlHQVJZOXJYRllhY0k4RTYydmpCWUQwWE1IaWJ6em9WU3FZN1hSZlBjcVZfaC0?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Kimi 再融 136 亿，估值破 2000 亿，赴港 IPO 提速",
+        "dek": "月之暗面旗下 AI 助手 Kimi 被曝完成约 136 亿元新融资，估值突破 2000 亿元，同时加速筹备赴港上市。",
+        "details": [
+          "据 36Kr 报道，月之暗面（Moonshot AI）旗下明星产品 Kimi 正接近完成一轮约 136 亿元人民币的新融资，估值突破 2000 亿元大关。这轮融资由多家一线机构跟投，资金将主要用于基础模型迭代、多模态能力拓展以及海外市场开拓。月之暗面也被曝正在同步推进赴港 IPO 进程，上市时间表或进一步提前。",
+          "Kimi 当前是国内用户规模最大的 AI 原生应用之一，尤其在长文本处理、知识问答等场景拥有显著优势。2026 年初推出的「Kimi 深度研究」模式进一步拉高了付费转化率，月活已突破 1.2 亿。此轮融资后，月之暗面将有能力与字节跳动的豆包、阿里巴巴的通义千问等头部产品正面竞争。",
+          "赴港 IPO 提速意味着中国 AI 公司在资本市场的退出渠道正在打通。如果顺利上市，月之暗面将成为继商汤之后又一家在港交所上市的国内 AI 独角兽，可能带动二级市场对 AI 赛道的重新估值。不过，交易细节尚未公开确认，融资额和估值仍存在变数。"
+        ],
+        "why": "Kimi 是当前国内 C 端 AI 应用的标杆，此轮巨额融资和 IPO 提速释放了国产大模型加速商业化和资本化的强烈信号，对 AI 创业公司的融资节奏和上市路径有重要参考意义。",
+        "links": [
+          [
+            "Google News China AI Signals: 估值破2000亿，曝Kimi再融136亿，赴港IPO提速 - 36 Kr",
+            "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1ldjRLVTB2UWVTa1I0YXhKUnhFd3IyN0wwN2FhRy1LbjJ4U3BFWnJGRUtFc2hMNjdpOGNkT0NWVTBXblVQcDk3TE5tTHZQRmlq?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek 被指通过东南亚空壳获取英伟达芯片：美国务院人士爆料",
+        "dek": "美国务院未具名人士称 DeepSeek 利用东南亚中间商规避对华芯片禁令，若属实将加剧中美技术脱钩。",
+        "details": [
+          "据《朝鮮日報》援引美国务院人士消息，中国 AI 公司 DeepSeek 涉嫌通过东南亚的空壳公司渠道，获取被美国限制出口的英伟达高端 AI 芯片。该消息未被官方证实，但已引起华盛顿对中国企业规避出口管制的关注。",
+          "美国自 2022 年起对华实施先进半导体出口限制，英伟达 A100/H100 等芯片需特殊许可方能进入中国。DeepSeek 作为国内大模型新锐，此前曾发布 DeepSeek-V2 等开源模型，其算力来源一直受外界猜测。若该爆料属实，将表明现有管制存在执行漏洞。",
+          "目前 DeepSeek 及英伟达均未回应。美国商务部工业安全局（BIS）可能就此展开调查，进一步收紧对中资企业的芯片供应政策，中美科技博弈或再升级。"
+        ],
+        "why": "该爆料若被证实，将直接冲击中国 AI 公司的算力获取路径，并可能促使美国强化对东南亚转口渠道的监管，对依赖海外芯片的中国大模型企业构成重大不确定性。",
+        "links": [
+          [
+            "美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版",
+            "https://news.google.com/rss/articles/CBMijgFBVV95cUxPek1GQ2p5U3BfSDlpX1VQSWJvYWhpalhlSVQ4WVBzb3RFUkpBeWQ3cEVnMGtSTlR2d0ttbVZIdEd4cldkV3JJcVBxS0FqZ3BPekJxZExFeE90VVhDb1RtNnZ6dXoyY1g0MUpyWlRYTlpBVVBWQVF1SWFwcFcwV0tkX2JPY0lrZEZqR1I2dUNB?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "腾讯内部宣布调整 token 额度；宇树回应牵手英伟达；阿里员工 7 万字离职帖引爆内网｜AI 周报 - Infoq.cn",
+        "dek": "AI 超级公司或明星创业公司的关键人事/组织新闻，需要补足背景、影响和后续观察点。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：腾讯内部宣布调整 token 额度；宇树回应牵手英伟达；阿里员工 7 万字离职帖引爆内网｜AI 周报 - Infoq.cn。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯内部宣布调整 token 额度；宇树回应牵手英伟达；阿里员工 7 万字离职帖引爆内网｜AI 周报 - Infoq.c",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1qN083eldZb05NYzJrSXI2eGdqZmZudzYzZ2owTDlHQ0M5SUVwUnBDaWtubzhnUG5ic2NfZWRXejJFZmtYU2JGSzZ4UDNUWS1FbHNDaUUwX0l6UQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "软通动力与腾讯云签署AI战略合作协议",
+        "dek": "双方将在AI大模型与行业应用领域深度合作",
+        "details": [
+          "6月8日，软通动力与腾讯云签署AI战略合作协议。双方将围绕AI大模型、行业AI解决方案等领域展开深度合作，助力企业数智化转型。软通动力作为领先的IT服务商，将结合腾讯云的AI能力和云计算底座，共同开拓市场。",
+          "此次合作并非首次，此前双方已在多个数字化项目中有过合作基础。软通动力在金融、制造等行业拥有深厚客户积累，腾讯云则希望借助ISV渠道加速AI在产业端的落地。不过，合作的具体技术路线和首批方案尚未披露。",
+          "对行业而言，这是腾讯云在AI生态布局中的重要一步。通过绑定头部服务商，腾讯云可以更快地将大模型能力转化为行业解决方案，与阿里云、华为云等对手展开竞争。"
+        ],
+        "why": "软通动力与腾讯云的合作是AI大模型从技术走向行业应用的关键信号，表明腾讯云正在通过绑定核心ISV加速商业化落地，对关注企业AI服务赛道的读者有重要参考价值。",
+        "links": [
+          [
+            "Google News China AI Signals: 软通动力与腾讯云签署AI战略合作协议 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE90U2ZFenJjQzNRbHczUjFFMjR5ZnFReEJhSDFUcWtGSHc1MDVCeGVjV25kX0JKMnpvRXBkMVlqNUdsajhHWnFHWnVhSHlYLTVjU24yM3JNblhNSGNLMVhrRw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "OpenAI 启动经济研究交流计划，邀请学者探索 AI 经济影响",
+        "dek": "该计划旨在系统评估 AI 对劳动力市场、生产力及宏观经济的真实影响，首批研究项目现已开放申请。",
+        "details": [
+          "OpenAI 于 6 月 8 日正式推出“经济研究交流”（Economic Research Exchange）计划，面向全球学者征集关于 AI 经济影响的提案。该计划将资助独立研究项目，重点考察 AI 对就业结构、生产效率以及收入分配等维度的影响，试图为政策制定者和企业提供数据驱动的洞察。",
+          "当前围绕 AI 的经济效应存在大量争议：既有观点认为 AI 将大规模替代岗位，也有研究指出它会创造新工种并提升整体产出。OpenAI 此次行动意味着它希望在公共讨论中建立更严谨的实证基础，而非仅停留在理论推测。首批申请截止日期尚未公布，但名额有限，入选项目将获得 OpenAI 的数据和计算资源支持。",
+          "值得注意的是，该计划并非 OpenAI 首次涉足经济研究——此前其已发布过关于 ChatGPT 对劳动力影响的内部报告。但本次以开放合作形式邀请外部机构参与，标志着其从“自我评估”转向“第三方验证”，这或能提升结论的公信力。不过，项目最终能否产出具广泛影响力的结论，仍取决于申请者的质量与研究设计的严谨性。"
+        ],
+        "why": "对行业观察者而言，这是 OpenAI 在 AI 治理领域的重要布局：通过资助独立研究，它既能塑造 AI 经济影响的叙事，又能为未来的监管沟通储备学术证据。投资者可关注后续研究结论是否会影响市场对 AI 替代风险的定价。",
+        "links": [
+          [
+            "OpenAI News: Introducing the OpenAI Economic Research Exchange",
+            "https://openai.com/index/economic-research-exchange"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "OpenAI 发布 AGI 受益全人类计划：可及性、安全与共享繁荣",
+        "dek": "OpenAI 提出 AGI 发展路线图，核心是确保技术红利广泛分配，并主动管理风险。",
+        "details": [
+          "OpenAI 6月8日发布题为《Built to benefit everyone: our plan》的长期愿景文章，首次系统阐述其 AGI 建设原则。文章提出三大支柱：广泛可及性（让全球用户都能使用 AI 工具）、前瞻性安全（在能力提升前部署防护措施）和共享繁荣（确保经济增长不被少数公司独占）。这标志着 OpenAI 从“模型发布商”向“社会基础设施运营者”的角色转型。",
+          "在可及性方面，OpenAI 重申免费层 ChatGPT 将继续存在，并计划通过 API 降低开发者接入成本。安全层面，文章承诺在训练下一代模型前进行独立审计，并公开“能力门槛”评估框架——当模型达到特定危险能力时，将暂停训练并启动审查。共享繁荣部分则提到将设立基金支持 AI 教育、再培训计划，并与政府合作设计税收再分配机制。",
+          "尽管文章未披露具体时间表或技术细节，但它反映出行业共识：AGI 的治理不能仅靠技术社区。OpenAI 特别强调“全球合作”，称将邀请学术界、公民社会和政策制定者参与规则制定。此举可能影响其他 AI 公司发布类似宣言，但也面临“口号多于行动”的质疑。"
+        ],
+        "why": "这是 OpenAI 迄今最清晰的社会契约声明，暗示 AGI 商业化可能伴随更强的监管承诺，对投资者和创业者意味着未来合规成本与公共责任将显著上升。",
+        "links": [
+          [
+            "OpenAI News: Built to benefit everyone: our plan",
+            "https://openai.com/index/built-to-benefit-everyone-our-plan"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "微信拉起“Agent朋友圈”、腾讯凑齐美团京东“铁三角”：正面狙击阿里字节能否改写AI入口竞争格局？",
+        "dek": "腾讯正通过微信生态拉起一个由美团、京东等伙伴组成的AI Agent“朋友圈”，试图在AI入口战中挑战阿里和字节。这一策略能否改写格局？",
+        "details": [
+          "微信正在成为腾讯AI战略的枢纽。据报道，腾讯近期在微信内密集引入美团、京东等第三方服务的AI Agent，用户可直接通过微信调用订餐、购物等智能体，无需跳出App。这相当于在超级应用内部搭建了一个“AI服务市场”，让微信从一个社交工具演变为AI驱动的服务入口。",
+          "腾讯的“铁三角”策略清晰：微信提供流量和场景，美团和京东提供垂直服务能力，而腾讯的混元大模型则作为底层推理引擎。相比阿里通过夸克、钉钉等独立App布局AI，以及字节跳动将豆包嵌入抖音，腾讯选择的是“中心化入口+生态伙伴”路线，意图绕过对手的垂直深耕。",
+          "这一战略的关键挑战在于：微信是否能承载复杂的AI交互？目前用户对聊天界面内调用第三方服务的习惯尚未养成，且Agent的质量和响应速度直接影响体验。此外，阿里和字节在电商、本地生活等领域的AI改造同样激进，腾讯的联盟能否形成足够差异化仍存疑问。",
+          "不过，腾讯的生态协同优势不容小觑。微信的12亿月活用户基础、与美团京东的深度投资关系，以及混元大模型的持续迭代，都可能让腾讯在AI入口战中后发制人。未来6个月，AI Agent在微信中的渗透率将是观察竞争走向的核心指标。"
+        ],
+        "why": "腾讯这一动作标志着AI入口之争从单点应用升级为生态战争。微信若成功聚合第三方AI服务，可能重塑BAT在AI时代的座次；对创业者而言，腾讯的“Agent朋友圈”政策将决定哪些垂直服务能获得超级流量红利。",
+        "links": [
+          [
+            "Google News China AI Signals: 微信拉起“Agent朋友圈”、腾讯凑齐美团京东“铁三角” - 每日经济新闻",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1TZThKcWQwX0duWnJ5ZFl5bUdIY21hT0c2MVVQOGRmWmczNk9NWmJKaVNuYTgwOWk5RXhTaVRpcFJzeWwwRzZsOWZCaVdhLXYwVm15bHB5eFdzUE5aUHhkblBIUmk4dw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "阿里成立TokenFoundry事业部，周靖人任首席科学家：AI基础设施的独立化信号",
+        "dek": "阿里巴巴新设TokenFoundry事业部，由原阿里云智能CTO周靖人担任首席科学家，这不仅是组织调整，更透露出阿里将AI基础设施作为独立战略单元的决心。",
+        "details": [
+          {
+            "summary": "事业部独立运作，阿里加速AI基础设施布局",
+            "expanded": "阿里巴巴成立专门的TokenFoundry事业部，并由技术领袖周靖人挂帅首席科学家，表明AI基础设施（如算力平台、模型推理优化）正从云业务中剥离为独立方向。此举有助于集中资源，但也面临与阿里云现有业务的协同挑战——具体产品形态和团队规模尚未披露，需观察后续落地。"
+          },
+          {
+            "summary": "周靖人转任首席科学家，技术前瞻性优先于业务管理",
+            "expanded": "周靖人此前任阿里云智能CTO，此次出任TokenFoundry首席科学家，暗示其角色更偏向技术战略与前沿研究，而非日常运营。这延续了阿里“让技术领袖专注技术”的用人思路，类似达摩院模式，但TokenFoundry作为事业部需兼顾商业化，平衡点值得关注。"
+          }
+        ],
+        "why": "该组织调整反映了阿里对AI基础设施长期投入的决心，可能催生独立算力或工具链产品，对云厂商和AI开发者生态有直接竞争或合作影响。",
+        "links": [
+          [
+            "Google News China AI: 阿里巴巴AI新动作：TokenFoundry事业部成立，周靖人任首席科学家 - 第一电动网",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9nY3VzWldDN3p5ay1velhxdVowZkxHbUFIMjVHRmItZENHYkUzbzgya2wyWWtFTVc3blVZbUxJbng1WE0ydm5NZ1NVdWlfQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：科技巨头AI Agent竞争的四大主线",
+        "dek": "36Kr 梳理了主要科技公司在AI Agent领域的竞争路径，帮助读者快速把握行业态势。",
+        "details": [
+          "36Kr 近日发布分析文章，指出全球科技巨头在 AI Agent 领域的竞争正沿四条主要轨迹展开。文章将当前市场格局归纳为四个方向：一是平台型生态扩张，以云服务为基础构建 Agent 开发平台；二是垂直场景深耕，聚焦特定行业或职能的自动化流程；三是轻量化工具切入，通过 Agent 桌面/浏览器插件抢占个人用户入口；四是开源社区驱动，利用开放生态加速迭代。这些路径反映了企业在技术路线、商业模式和用户触达策略上的根本差异。",
+          "文章认为，这四大主线并非互斥，部分公司会同时布局多条线，但资源分配和战略重心决定了其竞争优势的差异。对于非技术读者而言，理解这些路径有助于判断哪些产品可能率先赢得市场，以及不同投资方向的风险收益特征。"
+        ],
+        "why": "36Kr 的这篇分析提供了一套简洁的分类框架，帮助读者跳出单点新闻，从竞争格局的角度理解AI Agent领域的核心动态，对产业观察者和投资人具有参考价值。",
+        "links": [
+          [
+            "Google News AI Products",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBrNE5oQ3Jfa0sxQWp5dm0yd1ZWODlXSjNCQVBIQ2treDFESnMtMmlFX3hWaW9ESWQ3eExkS1MxMFNmU0RINEl1X3JTQlR3a2pEQVN3?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "OpenEnv 获开源社区力挺，或成智能体强化学习新标准",
+        "dek": "Hugging Face 博客指出，大量开发者正在为 OpenEnv 贡献代码和任务，推动其成为 Agentic RL 的通用测试平台。",
+        "details": [
+          "OpenEnv 是一个开源的多智能体强化学习环境框架，近期获得了开发者社区的广泛支持。根据 Hugging Face 博客，社区成员正在通过提交新任务、改进接口和编写教程来推动 OpenEnv 成为 Agentic RL 的主流评估平台。该框架支持从简单网格世界到复杂3D环境的多种场景，并提供了标准化的训练和评估接口。",
+          "这种社区驱动的支持模式，降低了研究者进入 Agentic RL 领域的门槛。与商业封闭环境不同，OpenEnv 的开放性使得研究人员可以自由修改和扩展，加速了算法创新。目前已有多个知名实验室和高校开始将其作为默认测试环境。"
+        ],
+        "why": "OpenEnv 获得社区支持，标志着 Agentic RL 领域的工具生态正在从碎片化走向标准化。对于创业者和开发者而言，围绕该环境开发工具链、扩展任务集或提供评估服务，都可能成为新的机会。",
+        "links": [
+          [
+            "Hugging Face Blog: The Open Source Community is backing OpenEnv for Agentic RL",
+            "https://huggingface.co/blog/openenv-agentic-rl"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Walrus Memory：让AI Agent跨应用和会话保持记忆",
+        "dek": "一款新工具试图解决AI agent的上下文丢失问题，实现跨session的持久化记忆",
+        "details": [
+          "Walrus Memory 是一款新登场的 AI 工具，核心目标是解决目前 AI Agent 普遍存在的“上下文健忘”问题。它提供了一个外部记忆层，让 agent 可以跨不同应用（如 Slack、Notion、浏览器）和多次会话持续记忆用户偏好、项目上下文和历史对话，实现真正连贯的交互体验。",
+          "与传统的聊天上下文窗口不同，Walrus Memory 的记忆是持久化的——即使切换应用或关闭会话，agent 仍能 recall 之前的信息。这对于需要长期跟踪的复杂任务（如项目管理、研究调研）尤其有价值，用户无需反复提供背景，相当于为 AI 工作流装上了“长期记忆”。",
+          "目前该产品已上线 Product Hunt，从演示看它允许用户自定义记忆存储和检索规则。作为生产力方向的新尝试，它反映了 AI 应用从“单次问答”向“持续协作”演进的趋势，也为创业者在 Agent 基础设施层（记忆、工具调用、跨应用）提供了新的思路。"
+        ],
+        "why": "Walrus Memory 体现了 AI Agent 下一阶段的关键能力——持久化记忆与跨应用协作。对产品经理和创业者来说，这意味着围绕“长期记忆”构建的工作流自动化工具可能迎来机会，尤其是需要持续上下文的任务场景。",
+        "links": [
+          [
+            "Google News 来源",
+            "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5vZjBUYkdIOW1aeVFVSUt1VEdCbk1IR0NZaHhqblJXZFAwMVA4ekRkY3FRQVd5bW53Z1pNSDRQNndKNkdFVDdhbERmU0JJVURWdVNNZ21pUHhLZjkwQXRF?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Brief：让 AI Agent 自动寻找产品市场匹配",
+        "dek": "这款 Product Hunt 新产品帮你用 Agent 探索 PMF，快速验证产品方向。",
+        "details": [
+          "Brief 是近期在 Product Hunt 上发布的一款 AI 生产力工具，核心功能是“导航你的 agents 去找到产品市场匹配”。它利用 AI 代理自动收集用户反馈、分析市场数据，帮助产品团队更高效地验证假设。",
+          "对于非技术背景的用户，Brief 降低了对数据分析工具的使用门槛——你只需要设定目标，Agent 就会自动执行调研、提炼洞察，并生成可操作的 PMF 报告。",
+          "该产品出现在 Product Hunt 的 AI 产品发现频道中，同台竞争的有不少 agent 类生产力工具。Brief 的差异点在于聚焦 PMF 这一具体场景，而非通用任务。"
+        ],
+        "why": "Brief 代表了 AI agent 从通用助手向垂直工作流工具的演进，产品团队可以花更少时间在数据收集上，更快迭代产品方向。",
+        "links": [
+          [
+            "Brief on Product Hunt",
+            "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5tZE40ZXVtOTBSSzNIMmZ3VlR3dzRjOWtKMldUbkI2aXJvOVJUaGJaeV83NU95MmdnOExEdGlfRURWdUdLaWRBTnpnSXhpMUdsY0tjOEVEekU?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "AI模型评测：从跑分到真实场景，Kimi世界杯实验给出新答案",
+        "dek": "当基准测试被刷爆，Kimi用300个Agent预测104场世界杯比赛，展示了一种更贴近真实使用场景的评测思路。",
+        "details": [
+          "传统模型评测依赖标准化基准（如MMLU、HumanEval），但近年来高分不断，与用户实际体验的差距却越来越大。开发者抱怨“跑分冠军”在真实任务中表现平庸，业界开始反思：什么才是真正有意义的模型能力信号？单纯堆高benchmark分数的新闻，已很难区分模型的实际可用性。",
+          "Kimi在2026世界杯期间进行了一场公开实验：用300个AI Agent预测104场比赛，从球队状态、球员伤停到历史数据，模拟真实的分析决策流程。这不仅是一次营销，更是一次公开的模型评测——Agent能否处理多源信息、做出推理并给出可验证的预测结果？实验过程和数据可能成为评测agent能力的重要参考。",
+          "与此同时，OpenAI成立了经济研究交流中心（Economic Research Exchange），计划资助研究AI对就业、生产力的实际影响。这类研究本质上也是在真实经济场景中评测模型的价值，而非仅关注模型参数或跑分。模型评测正在从实验室走向产业应用，Kimi的实验和OpenAI的倡议都指向同一个方向。",
+          "对于非技术读者而言，未来判断模型好坏的标准或许不再是排行榜上的数字，而是它能否帮你完成一个具体的任务——比如预测比赛结果、规划旅行路线、辅助投资决策。Kimi的世界杯实验提供了一个可复现的评测思路，也提醒我们：真正有用的模型评测，应该像考试一样考“应用题”，而不是“填空题”。"
+        ],
+        "why": "对产品人和投资者而言，Kimi的公开实验和OpenAI的研究倡议表明：模型评测正在从学术基准转向真实场景，关注应用效果而非跑分。这会影响AI公司的技术宣传策略和投资决策——谁能拿出更有说服力的场景化评测，谁就能在用户和资本面前占得先机。",
+        "links": [
+          [
+            "300个Agent预测104场比赛，Kimi拿世界杯做一场AI公开实验",
+            "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBUVTlsLVJ1dndOUUp0VWJ1bllwMHVheWFxODAtWk00RmhaTk1hR2M5R2QtRzNYYlNjUERBQUs0eTVxZy16cHc?oc=5"
+          ],
+          [
+            "OpenAI 经济研究交流中心",
+            "https://openai.com/index/economic-research-exchange"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-05",
     "title": "AI Daily Atlas",
     "meta": "2026年6月5日",
@@ -5426,6 +5786,353 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-09",
+    "title": "AI Daily Atlas",
+    "meta": "June 9, 2026",
+    "headline": "compute and infrastructure plus models and platforms shape today’s AI map",
+    "summary": "The main signal today is compute and infrastructure plus models and platforms. compute, chips, data centers, and supply chains remain the base layer of AI competition At the same time, models, APIs, and platform entry points are still moving quickly, with usability becoming the key test. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "South Korea's LG to deploy Nvidia AI factory - Data Center Dynamics",
+        "dek": "LG Group plans to build an AI factory using Nvidia's full-stack AI infrastructure, marking a major enterprise adoption of Nvidia's AI factory concept in South Korea.",
+        "details": [
+          "South Korea's LG Group has announced plans to deploy an Nvidia AI factory, according to Data Center Dynamics. The initiative will leverage Nvidia's complete AI infrastructure stack, including GPUs, networking, and software, to create a dedicated AI computing facility. This move positions LG among a growing list of global enterprises investing in purpose-built AI factories to accelerate internal AI research and product development.",
+          "While specific financial terms and deployment timelines remain undisclosed, the project is expected to significantly boost LG's AI capabilities across its consumer electronics, home appliances, and automotive components divisions. The AI factory will likely be used for training large language models and computer vision systems, as well as running inference for LG's smart devices. This deployment also underscores Nvidia's expanding footprint in the Asia-Pacific enterprise AI infrastructure market."
+        ],
+        "why": "This deal signals that Nvidia's AI factory model is gaining traction beyond cloud hyperscalers, moving into diversified industrial conglomerates. For competitors like AMD and Intel, it highlights the challenge of displacing Nvidia's integrated stack in enterprise AI deployments.",
+        "links": [
+          [
+            "Google News AI Infrastructure: South Korea's LG to deploy Nvidia AI factory - Data Center Dynamics",
+            "https://news.google.com/rss/articles/CBMikAFBVV95cUxQXzg2cGg4RDEzeUtsVUtYbDNyQndsSE04VmRiYjJ5MjBkdTMzajNlcjQyMUQzYUdCRWVwN29mY2pxRlN3ZjFfZV9XbGh5T1hjcnBzMWVpUWx6RWtrZjFLY3JFZTlHQVJZOXJYRllhY0k4RTYydmpCWUQwWE1IaWJ6em9WU3FZN1hSZlBjcVZfaC0?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Kimi's Valuation Exceeds 200B Yuan, Raising Another 13.6B, Accelerating Hong Kong IPO: 36Kr",
+        "dek": "Chinese AI startup Kimi reportedly closes a massive new funding round, pushing valuation past 200 billion yuan and speeding up its Hong Kong listing plans.",
+        "details": [
+          "According to a 36Kr report on June 8, 2026, Chinese AI company Kimi is raising 13.6 billion yuan (approx. $1.9 billion) in a new financing round, pushing its post-money valuation to over 200 billion yuan (approx. $28 billion). The report also indicates the company is fast-tracking its initial public offering in Hong Kong, signaling strong momentum in China's AI fundraising ecosystem.",
+          "If confirmed, this would be one of the largest private AI funding rounds globally in 2026, reflecting sustained investor appetite for Chinese foundational model players despite geopolitical headwinds. The accelerated IPO timeline suggests Kimi aims to leverage Hong Kong's capital market for further expansion and to provide liquidity for early backers.",
+          "The news comes amid a broader wave of Chinese AI startups seeking public listings, as regulatory clarity improves and competition intensifies. Kimi's valuation leap from its previous round underscores the rapid re-rating of top-tier Chinese AI labs."
+        ],
+        "why": "The mega-round and IPO push highlight how Chinese AI champions are racing to secure war chests and go public, reshaping the competitive landscape and offering a bellwether for cross-border capital flows in AI.",
+        "links": [
+          [
+            "Google News China AI Signals: 估值破2000亿，曝Kimi再融136亿，赴港IPO提速 - 36 Kr",
+            "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1ldjRLVTB2UWVTa1I0YXhKUnhFd3IyN0wwN2FhRy1LbjJ4U3BFWnJGRUtFc2hMNjdpOGNkT0NWVTBXblVQcDk3TE5tTHZQRmlq?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI：美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: 美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版",
+            "https://news.google.com/rss/articles/CBMijgFBVV95cUxPek1GQ2p5U3BfSDlpX1VQSWJvYWhpalhlSVQ4WVBzb3RFUkpBeWQ3cEVnMGtSTlR2d0ttbVZIdEd4cldkV3JJcVBxS0FqZ3BPekJxZExFeE90VVhDb1RtNnZ6dXoyY1g0MUpyWlRYTlpBVVBWQVF1SWFwcFcwV0tkX2JPY0lrZEZqR1I2dUNB?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "腾讯内部宣布调整 token 额度；宇树回应牵手英伟达；阿里员工 7 万字离职帖引爆内网｜AI 周报 - Infoq.cn",
+        "dek": "AI 超级公司或明星创业公司的关键人事/组织新闻，需要补足背景、影响和后续观察点。",
+        "details": [
+          "This signal comes from Google News China AI Signals：腾讯内部宣布调整 token 额度；宇树回应牵手英伟达；阿里员工 7 万字离职帖引爆内网｜AI 周报 - Infoq.cn. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯内部宣布调整 token 额度；宇树回应牵手英伟达；阿里员工 7 万字离职帖引爆内网｜AI 周报 - Infoq.c",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1qN083eldZb05NYzJrSXI2eGdqZmZudzYzZ2owTDlHQ0M5SUVwUnBDaWtubzhnUG5ic2NfZWRXejJFZmtYU2JGSzZ4UDNUWS1FbHNDaUUwX0l6UQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "iSoftStone and Tencent Cloud Sign AI Strategic Cooperation Agreement",
+        "dek": "The partnership underscores deepening AI collaboration between traditional IT services and cloud giants in China.",
+        "details": [
+          "iSoftStone, a leading digital transformation services provider, announced a strategic cooperation agreement with Tencent Cloud focused on artificial intelligence. The deal, reported by Chinese financial media East Money on June 8, signals a push to integrate Tencent's AI capabilities with iSoftStone's enterprise solutions.",
+          "While specific terms were not disclosed, the partnership likely covers joint development of industry-specific AI models and deployment of intelligent applications across sectors such as finance, manufacturing, and government. This reflects a broader trend of Chinese cloud providers expanding AI partnerships with system integrators to accelerate enterprise adoption.",
+          "The agreement adds to a wave of AI alliances in China's cloud market, where Alibaba Cloud, Baidu AI Cloud, and Huawei Cloud are also competing for enterprise clients. iSoftStone's established client base could provide Tencent Cloud with a distribution channel for its AI services, though execution risks and market saturation remain."
+        ],
+        "why": "This partnership highlights how traditional IT service firms are becoming crucial channels for cloud-based AI solutions in China; for competitors and investors, it signals a model for go-to-market expansion in China's fragmented enterprise AI market.",
+        "links": [
+          [
+            "Google News China AI Signals: 软通动力与腾讯云签署AI战略合作协议 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE90U2ZFenJjQzNRbHczUjFFMjR5ZnFReEJhSDFUcWtGSHc1MDVCeGVjV25kX0JKMnpvRXBkMVlqNUdsajhHWnFHWnVhSHlYLTVjU24yM3JNblhNSGNLMVhrRw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Introducing the OpenAI Economic Research Exchange",
+        "dek": "OpenAI launches a new initiative to study AI's impact on jobs, productivity, and economic growth.",
+        "details": [
+          "OpenAI has announced the launch of the Economic Research Exchange, a program designed to fund and support independent research into how AI affects employment, productivity, and the broader economy. The initiative invites researchers to submit proposals for selected projects, with applications now open.",
+          "This move signals OpenAI's proactive effort to shape the understanding of AI's economic consequences. By fostering academic research, the company aims to provide data-driven insights that could influence policy debates, corporate strategy, and public perception of AI's role in the workforce.",
+          "The Research Exchange could become a key resource for policymakers and business leaders navigating the rapid adoption of AI, offering empirical evidence on job displacement, productivity gains, and income distribution."
+        ],
+        "why": "By funding independent economic research, OpenAI is positioning itself at the center of the AI-economic discourse, which may guide investment decisions, workforce planning, and regulatory frameworks globally.",
+        "links": [
+          [
+            "OpenAI News: Introducing the OpenAI Economic Research Exchange",
+            "https://openai.com/index/economic-research-exchange"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "OpenAI's Vision for AGI: Access, Safety, and Shared Prosperity",
+        "dek": "In a new policy blog, OpenAI outlines its plan to ensure artificial general intelligence benefits everyone, not just a select few. The post touches on universal access, safety guarantees, and economic redistribution.",
+        "details": [
+          "OpenAI published 'Built to benefit everyone: our plan' on June 8, 2026, laying out its vision for how AGI can be developed and deployed for broad societal benefit. The company argues that without deliberate design, advanced AI could concentrate wealth and power, exacerbating inequality. To counter this, OpenAI proposes three pillars: universal access to AI capabilities, robust safety frameworks to prevent misuse, and mechanisms to share the economic gains across society.",
+          "The plan is notably short on concrete implementation details, but it signals OpenAI's intent to move beyond product announcements and engage in public policy discussion. The company emphasizes that AGI should be a tool for empowerment—not just for the tech elite, but for educators, healthcare workers, small businesses, and underserved communities.",
+          "This comes at a time when competitors like Google DeepMind and Anthropic are also publishing their own safety and equity frameworks. OpenAI's blog can be seen as a bid to shape the global narrative around AGI governance, especially as regulators in the US, EU, and China ramp up oversight. The vagueness of the proposals, however, leaves critics questioning whether this is a genuine roadmap or a PR move."
+        ],
+        "why": "For investors and product leaders, this signals OpenAI's strategic pivot toward positioning itself as a responsible steward of AGI—a move that could influence regulatory outcomes and public trust. Startups building on OpenAI's platform should watch for upcoming API policy changes tied to these access and safety commitments.",
+        "links": [
+          [
+            "OpenAI News: Built to benefit everyone: our plan",
+            "https://openai.com/index/built-to-benefit-everyone-our-plan"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "WeChat Builds an 'Agent Circle', Tencent Forms a 'Iron Triangle' with Meituan and JD.com: Can It Reshape the AI Gateway Battle Against Alibaba and ByteDance?",
+        "dek": "Tencent is leveraging WeChat’s massive user base to create an AI agent ecosystem, partnering with Meituan and JD.com to offer integrated services through conversational AI—a direct challenge to Alibaba and ByteDance’s AI-driven super-app strategies.",
+        "details": [
+          "In the latest move of China's AI gateway war, Tencent is rallying its ecosystem allies to turn WeChat into a central AI agent platform. By integrating Meituan (food delivery, local services) and JD.com (e-commerce) as core 'agents' within WeChat, Tencent aims to let users complete tasks like ordering food, shopping, or booking services via natural language conversations. This 'iron triangle' strategy directly counters Alibaba's push to embed AI agents into its Taobao and Alipay apps, and ByteDance's similar efforts with Douyin.",
+          "The article from National Business Daily analyzes the strategic logic: WeChat, with over 1.3 billion monthly active users, offers a unique social graph and persistent user engagement—ideal for agent-based task delegation. Unlike Alibaba and ByteDance, which control both the platform and the services, Tencent relies on partnerships, creating a 'federated agent network'. This could lower friction for users but introduces coordination challenges, especially around data sharing and revenue splits.",
+          "Key numbers: Tencent reported strong Q1 2026 earnings, with advertising revenue up 22% year-on-year, partly driven by AI-enhanced WeChat Moments and Mini Programs. Meanwhile, competitor ByteDance's Doubao AI assistant has expanded to over 200 million daily active users, signaling the stakes. The outcome of this agent battle will likely determine whether social super-apps or commerce-centric apps dominate the next generation of AI-powered consumer experiences."
+        ],
+        "why": "This story matters because it shows how AI agents are reshaping platform competition in China: rather than building standalone AI assistants, Tencent is weaponizing its existing social graph by turning WeChat into an agent hub. The success or failure of this 'federated' approach could influence global strategies for companies like Meta or Line weighing similar moves.",
+        "links": [
+          [
+            "Google News China AI Signals: 微信拉起“Agent朋友圈”、腾讯凑齐美团京东“铁三角”：正面狙击阿里字节能否改写AI入口竞争格局？ - 每日经济新闻",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1TZThKcWQwX0duWnJ5ZFl5bUdIY21hT0c2MVVQOGRmWmczNk9NWmJKaVNuYTgwOWk5RXhTaVRpcFJzeWwwRzZsOWZCaVdhLXYwVm15bHB5eFdzUE5aUHhkblBIUmk4dw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Alibaba AI Establishes TokenFoundry Business Unit, Appoints Zhou Jingren as Chief Scientist - Analysis from First Electric Network",
+        "dek": "An analysis piece examines Alibaba's new organizational move to commercialize AI tokens under Zhou Jingren's leadership, signaling a strategic shift in monetization.",
+        "details": [
+          "According to a report by First Electric Network, Alibaba has officially launched a new business unit called TokenFoundry, tasked with developing and monetizing AI token-based products and services. The unit will be led by Zhou Jingren, who previously served as Alibaba Cloud's chief scientist and was a key figure behind the Qwen large model series.",
+          "The formation of TokenFoundry represents Alibaba's strategic push to treat AI computation and model inference as a measurable, billable resource—similar to cloud computing's pay-as-you-go model. This move aligns with an industry trend where AI companies are creating dedicated business units to capture value from the growing demand for AI APIs and model serving.",
+          "Zhou Jingren's appointment is notable given his extensive background in AI research at Microsoft Research Asia and his leadership in developing Alibaba's own AI models. His role as chief scientist for the new unit suggests a strong emphasis on R&D-driven productization.",
+          "The report suggests that this organizational change could accelerate Alibaba's competitiveness in the AI market, particularly against other Chinese AI players like Baidu and Tencent who have also restructured around AI."
+        ],
+        "why": "This development signals that Chinese tech giants are increasingly formalizing AI monetization strategies, which could lead to more aggressive pricing and product differentiation in the AI-as-a-service market. Investors and startups should watch for similar moves from competitors.",
+        "links": [
+          [
+            "Original article on Google News China AI",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9nY3VzWldDN3p5ay1velhxdVowZkxHbUFIMjVHRmItZENHYkUzbzgya2wyWWtFTVc3blVZbUxJbng1WE0ydm5NZ1NVdWlfQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Four Main Trajectories of the AI Agents Competition among Major Tech Companies - 36 Kr",
+        "dek": "A 36 Kr analysis categorizes the AI agent strategies of big tech into four distinct paths, helping readers understand the competitive landscape beyond individual product launches.",
+        "details": [
+          "In a recent deep-dive, Chinese tech media 36 Kr identifies four main trajectories in the AI agent race among major tech companies. The piece argues that firms are diverging in their approach: some prioritize deep platform integration (e.g., embedding agents into existing ecosystems like Google's Workspace or Microsoft's Copilot), while others bet on open-source frameworks to spur community innovation. A third trajectory focuses on vertical-specific agents tailored for industries like healthcare or finance, and a fourth emphasizes consumer-facing personal assistants that aim for broad daily utility. The analysis notes that these paths are not mutually exclusive, but companies are increasingly forced to pick a primary lane to allocate R&D resources effectively.",
+          "The article highlights that the agent competition is no longer just about model capability but about distribution, data moats, and user stickiness. For instance, platform-based agents leverage existing user bases and workflows, while open-source approaches trade control for ecosystem scale. The piece also cautions that the winner may not be the one with the best agent today, but the one that can best iterate based on real-world usage and feedback loops."
+        ],
+        "why": "This framework helps product leaders and investors map the competitive dynamics beyond headline news, revealing that the AI agent market is segmenting into distinct strategic bets. Understanding these trajectories can guide decisions on which ecosystem to build upon or which gap to target.",
+        "links": [
+          [
+            "Google News AI Products: Four Main Trajectories of the AI Agents Competition among Major Tech Companies - 36 Kr",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBrNE5oQ3Jfa0sxQWp5dm0yd1ZWODlXSjNCQVBIQ2treDFESnMtMmlFX3hWaW9ESWQ3eExkS1MxMFNmU0RINEl1X3JTQlR3a2pEQVN3?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "The Open Source Community is backing OpenEnv for Agentic RL",
+        "dek": "Hugging Face blog highlights growing community adoption of OpenEnv, an open-source framework for agentic reinforcement learning.",
+        "details": [
+          "OpenEnv is an open-source framework designed to standardize environment construction for agentic reinforcement learning (RL). It provides modular, interoperable components that allow developers to build, test, and share training environments for autonomous agents more easily.",
+          "According to a recent Hugging Face blog post, the open-source community is rallying around OpenEnv as a foundational tool for agentic RL. Contributors are actively extending its library with new tasks, benchmarks, and integrations, making it a go-to resource for both researchers and practitioners.",
+          "The framework aims to reduce the friction of building custom environments from scratch, enabling faster iteration and more reproducible experiments. This community-driven approach could accelerate progress in agentic AI, where environment complexity is a major bottleneck."
+        ],
+        "why": "For developers and startups, OpenEnv lowers the barrier to entry for agentic RL development, potentially spawning a new ecosystem of pre-built environments and tools. Investors should watch this as a signal of where open-source infrastructure is heading in the AI agent space.",
+        "links": [
+          [
+            "Hugging Face Blog: The Open Source Community is backing OpenEnv for Agentic RL",
+            "https://huggingface.co/blog/openenv-agentic-rl"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Walrus Memory: Enable agents to keep context & work across apps + sessions",
+        "dek": "A new tool on Product Hunt aims to solve the persistent context problem for AI agents, allowing them to remember past interactions and work seamlessly across different applications and sessions.",
+        "details": [
+          "Walrus Memory is a context management layer designed for AI agents. It enables agents to retain memory from previous conversations and tasks, even as they switch between apps or sessions. This addresses a major limitation of current agents, which often start fresh each time, losing critical context.",
+          "The tool likely integrates via API or SDK, allowing developers to give their agents a 'memory' that persists across user interactions and application boundaries. This could significantly improve workflows where agents need to recall user preferences, past decisions, or ongoing project status across tools like Slack, Notion, or email."
+        ],
+        "why": "As AI agents move from novelty to daily productivity tools, persistent context becomes a critical feature. Walrus Memory represents a product opportunity for startups to build middleware that bridges the gap between stateless agents and complex, multi-app workflows.",
+        "links": [
+          [
+            "Product Hunt – Walrus Memory",
+            "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5vZjBUYkdIOW1aeVFVSUt1VEdCbk1IR0NZaHhqblJXZFAwMVA4ekRkY3FRQVd5bW53Z1pNSDRQNndKNkdFVDdhbERmU0JJVURWdVNNZ21pUHhLZjkwQXRF?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Brief: Navigate your agents to product-market fit - Product Hunt",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Google News AI Product Discovery：Brief: Navigate your agents to product-market fit - Product Hunt. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Product Discovery: Brief: Navigate your agents to product-market fit - Prod",
+            "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5tZE40ZXVtOTBSSzNIMmZ3VlR3dzRjOWtKMldUbkI2aXJvOVJUaGJaeV83NU95MmdnOExEdGlfRURWdUdLaWRBTnpnSXhpMUdsY0tjOEVEekU?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Model Evals",
+        "dek": "Understanding how AI model evaluations work and why they matter beyond benchmark scores.",
+        "details": [
+          "Model evaluations (evals) are systematic tests designed to measure an AI model's capabilities across tasks like reasoning, coding, knowledge retention, and safety. While simple benchmarks (e.g., MMLU, HumanEval) provide quick scores, they often fail to capture real-world behavior—models can memorize test data or overfit to popular benchmarks. Advanced evals use adversarial testing, multi-step agent simulations, and human preference ratings to assess robustness and alignment. For example, Kimi's recent experiment using 300 AI agents to predict 104 World Cup matches is a real-world eval that tests reasoning under uncertainty and collaboration, not just a static score. The key takeaway: a high benchmark number doesn't guarantee a model will perform well in your specific use case; understanding the eval methodology is crucial for making informed choices."
+        ],
+        "why": "For practitioners and investors, focusing on evaluation methodology rather than leaderboard rankings helps avoid hype and select models that truly fit the task at hand.",
+        "links": [
+          [
+            "Kimi World Cup Agent Experiment - 智东西",
+            "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBUVTlsLVJ1dndOUUp0VWJ1bllwMHVheWFxODAtWk00RmhaTk1hR2M5R2QtRzNYYlNjUERBQUs0eTVxZy16cHc?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-05",
     "title": "AI Daily Atlas",
