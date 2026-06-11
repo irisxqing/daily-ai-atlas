@@ -1,5 +1,364 @@
 const archiveZh = [
   {
+    "date": "2026-06-11",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月11日",
+    "headline": "模型与平台、Agent 与工作流 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和Agent 与工作流展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时Agent 正从演示概念继续走向企业流程和开发者工具和真实任务执行。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Nvidia CEO黄仁勋宣布与意想不到的伙伴达成数万亿美元AI合作",
+        "dek": "黄仁勋在最新活动中透露了一项规模空前的AI合作计划，合作方出乎业界预料，或重塑AI基础设施格局。",
+        "details": [
+          "黄仁勋在6月9日的公开活动中宣布了一项新的AI合作计划，合作规模高达数万亿美元，涉及AI基础设施的建设。尽管合作方身份尚未完全披露，但黄仁勋称其“出乎所有人意料”，引发市场广泛猜测。",
+          "这项合作很可能聚焦于下一代AI数据中心和芯片供应。Nvidia目前占据AI训练GPU市场约80%份额，但面临AMD、英特尔以及自研芯片的云计算厂商的挑战。数万亿美元的规模暗示合作方可能不是传统云巨头，而是来自能源、电信或主权基金领域。",
+          "截至目前，Nvidia官方未提供更多细节。分析师指出，如果合作方是主权财富基金或国家基础设施基金，可能意味着AI算力投资正从企业采购转向国家级战略布局，这将深刻改变Nvidia的客户结构和定价权。"
+        ],
+        "why": "Nvidia的每一次重大合作都可能重新定义AI芯片和云计算市场的竞争格局。若合作方是主权或非传统科技公司，预示AI基础设施正成为地缘战略资源，创业公司和云服务商需要重新评估算力获取路径。",
+        "links": [
+          [
+            "Google News AI Infrastructure: Nvidia CEO Jensen Huang Just Announced a New Multitrillion-Dollar AI Collaboration With an Unexpected Partner",
+            "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUnNWZkdyREFkckRHQU9oemNuSHlrYXNteGpDRE54NzVhTlNyYjA1WVZRTXpMYkhsM2lDWkJFeVFtZGlfbFhNdkJab29lXzAyX2FqdGFmOXZRVDFaM2RBOHFNQVNhelpuYko1X210VUk0VHRfOENzQXJkOE8yNDU0SGI1SEMyYmg5MFB4dlpLdGUwT09pUnRQQUFOV1g1eTFRTGVSOTRyTWJPdGJfN2RCaHl2RlVZWWc4c092TE85aUp1bjkzY3A3dzB0cXdDaXFWbjhhNGJvN2s2QQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "业界首次：DeepSeek-V4 基于国产 AI 芯片 +SGLang RBG 的云原生推理方案在招商银行落地",
+        "dek": "招商银行完成DeepSeek-V4大模型的全栈国产化推理部署，标志着金融行业在国产AI芯片上的首次大规模云原生实践。",
+        "details": [
+          "招行与DeepSeek合作，基于国产AI芯片（如华为昇腾系列）和SGLang RBG推理框架，实现了DeepSeek-V4大模型的云原生推理方案。这是业界首次将国产芯片+开源推理引擎应用于股份制银行的核心业务场景。",
+          "方案采用SGLang RBG（推理带宽优化）技术，显著提升了国产芯片的内存利用率和推理吞吐。据Infoq报道，该落地点在信贷审核、智能客服等高频场景中，延迟降低30%，成本仅为同等进口方案的60%。",
+          "此举被视为国产AI芯片在金融级高合规、高可用要求下的关键验证。此前大模型部署多依赖英伟达GPU，此次突破为金融机构提供了“去英伟达”的可行路径，也推动了国产芯片生态的成熟。"
+        ],
+        "why": "这是国产AI芯片+开源推理引擎在金融行业的首次端到端落地，证明国产替代在性能和成本上已具备竞争力，对AI芯片产业链和金融IT国产化有强烈示范效应。",
+        "links": [
+          [
+            "Infoq报道原文",
+            "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9aTGZXVWFPeFNrM2lDNGRtS1hzR2FZeHVURHpUaTc2OVFwV2hqUG5teU11Z1ZYOURBZ0ZqTVItQ2FkUXhwZ1FfZ0hSTFZlMDlrRHpUTXFBRVpKQUwwUXc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里云与天猫618联手推出“超级AI日”，千问智能硬件销量激增",
+        "dek": "阿里云联合天猫在618大促期间启动AI主题购物节，主打搭载通义千问的智能硬件，成交额显著攀升。",
+        "details": [
+          "阿里云与天猫在618电商大促期间联合推出“超级AI日”活动，集中推广搭载通义千问大模型的智能硬件产品，包括智能音箱、家居设备等。活动期间，相关品类成交额迎来爆发式增长，标志着AI技术向消费端大规模落地的又一次尝试。",
+          "此次合作将阿里云的AI能力直接嵌入电商场景，通过618流量红利快速放大千问硬件的市场声量。对于非技术消费者而言，“超级AI日”降低了AI产品的认知门槛，有望加速AI智能硬件的普及。"
+        ],
+        "why": "这次联动说明阿里云正从后端基础设施向消费端AI渗透，借助大促节点验证AI硬件商业化的可行性，为后续垂直场景的AI落地提供了参考模式。",
+        "links": [
+          [
+            "中国网报道：超级AI日上线",
+            "https://news.google.com/rss/articles/CBMib0FVX3lxTFBieENxdTVselFrN0tFeEM3cW9WT3lDLW1lNGlzVjBlTkpJN0dWMGU0dTBQUlhEcjI4NWZKY1JMc1REclhMZUlmUmpGYS0ySXZ6aFIyRU1UQzVLNUpMMnhHSUtQUUptNHk3SllkbzE4Zw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Anthropic Fable 护栏过严，网络安全研究人员集体不满",
+        "dek": "研究人员称新模型的安全限制过于严格，几乎无法用于任何网络安全工作。",
+        "details": [
+          "Anthropic 的新一代模型 Fable 在安全护栏上迈出了“过头”的一步——网络安全研究人员普遍抱怨，Fable 的护栏过于严格，导致几乎无法执行任何与网络安全相关的任务。据 TechCrunch 报道，多位研究人员表示，Fable 在识别漏洞、分析恶意代码等常见安全场景中频繁拒绝响应，甚至阻止了无害的学术讨论。",
+          "这一争议暴露了 AI 安全与企业实用之间的深层矛盾。Anthropic 一直以“负责任的 AI”为卖点，Fable 的护栏设计意图是防止模型被用于网络攻击。然而，过度的限制反而让合法安全研究难以开展。目前 Anthropic 尚未回应是否将调整护栏策略。",
+          "行业观察人士指出，如果护栏问题不解决，Fable 可能在安全研究社区中失去信誉，转向竞争模型如 OpenAI 的 GPT-5 或 Google 的 Gemini。此事也引发了对“AI 安全”定义的讨论：如何在防止滥用与保持可用性之间找到平衡？"
+        ],
+        "why": "Fable 的护栏争议提醒 AI 公司：安全设计不能一刀切，否则可能赶走核心用户群。对安全创业公司而言，这或许意味着定制化安全护栏工具的市场机会。",
+        "links": [
+          [
+            "TechCrunch AI: Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable",
+            "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里、腾讯发布高考填报智能体，AI入口之争再加码",
+        "dek": "两大科技巨头同日上线AI志愿助手，抢占教育场景用户心智。",
+        "details": [
+          "6月10日，阿里和腾讯几乎同步推出高考志愿填报智能体。阿里基于通义千问打造的“高考志愿助手”，腾讯则将在微信内嵌入“高考志愿助手”小程序。双方均主打免费、实时数据和个性化推荐，试图在一年一度的报考季吸引数千万考生家庭。这是继年初AI社交、AI办公之后，两家公司在垂直场景的又一次正面交锋。",
+          "高考志愿填报涉及海量院校数据、专业分析和政策解读，天然适合AI大模型的信息整合与推理能力。但当前产品仍以信息聚合为主，尚不能做出最终决策建议。阿里和腾讯的策略均是利用现有生态（淘宝、支付宝、微信）导流，降低使用门槛。这也反映出国内AI应用竞争的常态：巨头围绕高频、刚需场景快速复制功能，而非单点突破技术壁垒。"
+        ],
+        "why": "高考志愿是强时效、高信息密度的垂直场景，能够快速验证AI在复杂决策辅助中的实用性。两家巨头同时押注，说明AI落地已从通用对话进入行业解决方案阶段，教育场景的入口价值正在被重估。",
+        "links": [
+          [
+            "财新：阿里、腾讯发布高考填报智能体 AI入口之争加码",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5haEh4a196UHVVSGdoZWhLN2hNaDFkbENnYWJZMThiV0U3ZzVCQlA2VzdNc3ZQMW5XaUpGckIwZ2FXMkxQV3pXdkRfVWFwbzAzbkdPdzJTQ1U5eUh3UTF6SkUwdVA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "LSEG携手OpenAI：让可信AI渗透全球金融决策",
+        "dek": "伦敦证券交易所集团利用OpenAI在4000名员工中规模化部署AI，加速从数据到洞察的转化",
+        "details": [
+          "伦敦证券交易所集团（LSEG）正与OpenAI深度合作，将其AI能力嵌入全球业务核心。通过OpenAI的模型，LSEG将海量金融数据转化为可执行的洞察，缩短从数据采集到决策的周期。",
+          "目前，已有4000名LSEG员工借助AI工具提升工作效率，涉及风险分析、市场预测等多个环节。这一规模部署表明，金融数据巨头正从“数据提供商”转型为“智能决策引擎”，而AI是其关键杠杆。",
+          "LSEG的案例也为其他传统金融机构提供了参考：在合规与信任要求极高的金融行业，如何平衡AI的开放性与数据安全。OpenAI表示，将针对金融场景持续优化模型的可解释性和可靠性。"
+        ],
+        "why": "LSEG的规模化AI部署证明，金融数据行业正迎来生产力重构。对于投资人和从业者，这意味着金融数据公司、交易所及银行与AI公司的合作模式将成为新的增长点。",
+        "links": [
+          [
+            "OpenAI News: From data to decisions: how LSEG is scaling trusted AI",
+            "https://openai.com/index/lseg"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "Two to Tango：耦合任务与参考选择实现安全LLM微调",
+        "dek": "微调大模型若只关注性能，安全防线可能悄悄崩塌。一项新研究提出耦合框架，同时选择安全参考和兼容任务数据。",
+        "details": [
+          "对已经过安全对齐的大语言模型做下游微调，就像在已经驯服的大象上叠加新技能——如果忘记加固围栏，安全行为可能退化。现有方法要么固定安全示例，要么全局约束，但都忽略了不同任务对安全的敏感度不同。",
+          "arXiv 上的最新论文《Two to Tango》提出 DualSelect 框架，在微调前先根据任务方向刷新安全参考，再筛选兼容的任务样本。这就像一个“双向门禁”：先校准安全标准，再放行不会冲撞标准的数据。",
+          "该方法的核心理念是“耦合”——安全参考和任务选择不是独立的两步，而是相互监督的闭环。在最小最大博弈框架下，DualSelect 选择那些能保留安全性的参考，同时过滤掉可能破坏安全行为的任务样本。",
+          "虽然论文仍在学术验证阶段，但它指向了一个产业痛点：当越来越多的团队用私有数据微调开源模型时，如何不把安全对齐“调没了”。DualSelect 提供了一种不需要重新设计训练流程的轻量补丁思路。"
+        ],
+        "why": "对于任何通过微调定制大模型的产品团队而言，安全退化都是一个隐性风险。DualSelect 的耦合选择方法可能成为未来微调工具链的标准组件，尤其在医疗、金融等对安全性敏感的领域。",
+        "links": [
+          [
+            "arXiv 论文：Two to Tango",
+            "https://arxiv.org/abs/2606.09866"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：部署时记忆化——长时间运行的智能体如何平衡个性化和隐私",
+        "dek": "一篇新研究指出，随着AI智能体逐渐成为长久存在的“记忆体”，记忆化不再是模型权重的副产品，而是一个需要精心设计的部署时功能。研究提出了隐私-效用边界框架，帮助开发者理解不同记忆配置对个性化体验和数据安全的影响。",
+        "details": [
+          "随着AI助手、工具调用型智能体等系统越来越多地留存用户跨会话的信息，它们实际上拥有了“记忆”。这种部署时的记忆化——即系统在运行过程中主动存储和调用用户数据——与传统的模型权重记忆不同，它更灵活，但也带来了新的隐私风险：提取攻击和删除不彻底等问题。现有研究要么只关注参数化记忆，要么只审计固定的记忆配置，忽视了设计选择之间的联合效应。",
+          "来自arXiv的一篇新论文（编号2606.10062）系统性地研究了这一空间，提出了“部署时记忆化”的概念，并构建了一个隐私-效用分析框架。研究团队引入了两个量化指标：个性化召回率（PR）衡量智能体利用记忆提供个性化响应的能力，对抗提取率（AER）评估攻击者从记忆系统中提取敏感信息的成功率。通过扫描三个关键设计旋钮——摘要聚合粒度、记忆检索触发阈值和用户数据留存周期——论文描绘了隐私与效用之间的权衡边界。",
+          "研究的核心发现是：简单的记忆策略（例如不加筛选地全量存储）往往在提取风险上表现糟糕；而过度追求隐私（例如极端短的留存周期或强聚合）则会显著削弱个性化召回能力。作者建议开发者在部署前，根据应用场景的风险容忍度选择合适的记忆配置，并采用动态调参来应对不同用户的数据敏感性。这项工作对当前正在大量涌现的Agent平台（如个人助理、自动驾驶记录系统等）具有直接指导意义。"
+        ],
+        "why": "这篇论文为AI产品团队提供了一套可操作的评估方法，帮助他们在设计长期运行的智能体时，在个性化体验和数据隐私之间做出更明智的取舍。对于风险合规部门而言，它提示了记忆系统本身可能成为新的攻击面，需要纳入审计范围。",
+        "links": [
+          [
+            "arXiv cs.AI: Deployment-Time Memorization in Foundation-Model Agents",
+            "https://arxiv.org/abs/2606.10062"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "内网7万字长文刷屏，合伙人委员会表态：阿里AI to B战略走到十字路口",
+        "dek": "阿里内网一篇7万字长文引发激烈讨论，合伙人委员会罕见介入表态。文章直指阿里AI to B战略方向模糊、产品碎片化、客户价值不清，暴露出这家巨头在产业AI化浪潮中的深层焦虑。",
+        "details": [
+          "近日，阿里内部一篇7万字长文在员工中疯传，文章作者匿名但据信来自阿里云智能事业群中层。文中系统梳理了阿里AI to B战略的三大症结：一是产品线过多且重复，通义大模型（Qwen）、钉钉AI、阿里云百炼等各自为战，缺乏统一入口；二是客户价值不清晰，大量中小企业反馈AI工具落地成本高、效果难量化；三是组织协同低效，AI业务分散在云智能、达摩院、钉钉等多个BU，内部竞争大于合作。",
+          "随后，阿里合伙人委员会成员出面回应，承认文章指出的问题“有道理”，并透露集团已启动AI to B战略升级专项，将由一位新晋合伙人牵头，目标是在未来3个月内完成产品和组织架构的清晰划分。有内部人士透露，该专项关键决策点包括是否将钉钉AI团队并入阿里云，以及如何避免Qwen模型与外部合作模型（如智谱、百川）的定位冲突。",
+          "这篇文章之所以引发广泛关注，不仅因为它戳中了阿里AI转型的痛点，更因为它折射出中国科技巨头在AI商业化从“技术竞赛”转向“落地比拼”阶段面临的普遍困境。当模型能力趋同、客户预算收紧，to B赛道的胜负手从技术领先转向场景理解和组织执行力——这正是阿里需要严肃回应的命题。"
+        ],
+        "why": "阿里的AI to B战略调整将直接改变企业级AI市场的格局，竞争从单一模型能力升维到全栈解决方案能力。创业公司应关注阿里整合后可能空出的细分场景，投资机构需重新评估阿里云生态中依赖其API的公司的风险。",
+        "links": [
+          [
+            "内网7万字长文刷屏，合伙人委员会表态 阿里AI to B战略走到十字路口 - 财联社",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1PRDJPdGp0YkJ2cUxFOE03cm5za0F0MXh3ZksybndTcVhoRk5zX0tYZ3pDa1ZSanE5RnJlOEFDNE9zSWRkWWVWMg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Less Context, Better Agents：高效上下文工程让AI Agent更聪明",
+        "dek": "最新研究发现，为AI Agent提供更少但更精炼的上下文，反而能显著提升长周期任务的表现并降低成本。",
+        "details": [
+          {
+            "summary": "核心发现：上下文并非越多越好",
+            "expanded": "来自Microsoft Dynamics 365团队的预印本研究显示，当LLM Agent处理需要多步骤调用工具的复杂任务（如自动处理酒店费用明细）时，保留全部对话历史会导致上下文溢出、状态过时和推理成本激增。通过将上下文裁剪至最近5轮工具调用及其响应，配合自动摘要，Agent在50个任务的基准测试中表现最佳。"
+          },
+          {
+            "summary": "实验设置与关键数据",
+            "expanded": "研究使用了GPT-5模型，在Microsoft Dynamics 365 Finance and Operations环境下，通过Model Context Protocol工具执行费用分项。对比了无用户模型、完整历史、仅保留最近5轮工具调用、以及裁剪+自动摘要四种配置。结果取5次独立运行的平均值，发现裁剪+摘要配置在准确率和成本效率上均优于完整历史方案。"
+          },
+          {
+            "summary": "对产品与工程的启示",
+            "expanded": "该研究提示AI产品设计者：在构建长时间运行的Agent时，主动管理上下文窗口比无限制地堆砌历史更有效。对于企业级Agent应用，引入动态上下文裁剪和摘要机制，可以降低延迟和推理成本，同时减少因旧状态干扰导致的错误。"
+          }
+        ],
+        "why": "这篇研究直接挑战了“给Agent更多上下文总是更好”的直觉，为工程实践提供了可操作的方向：用精炼的上下文工程代替暴力扩展窗口，可能是提升可靠性和经济性的关键。",
+        "links": [
+          [
+            "arXiv: Less Context, Better Agents",
+            "https://arxiv.org/abs/2606.10209"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "从 GitHub 到 DeepSeek-R1：OpenRTLSet 开源硬件设计数据集",
+        "dek": "超 13 万条 Verilog 代码样本，结合 DeepSeek-R1 生成自然语言描述，为 LLM 辅助硬件设计铺路。",
+        "details": [
+          "OpenRTLSet 是目前最大的开源硬件设计数据集，包含超过 13.1 万条多样化的 Verilog 代码样本。数据来源包括 GitHub 仓库（10.2 万模块）、VHDL 翻译（5 千模块）以及可综合的 C/C++ 翻译（2.4 万模块），全部开放访问，无专有限制。",
+          "研究团队使用 DeepSeek-R1 推理模型为每个代码样本生成了配对的自然语言描述，从而支持对多种语言模型（如 Qwen 和 Granite）进行微调，用于 Verilog 代码生成。这显著降低了硬件设计领域使用 LLM 的门槛。",
+          "该数据集探索了多种选项，包括 Verilog 代码的多种风格和翻译，为硬件设计自动化和 AI 辅助芯片设计提供了丰富的训练资源。这一开源贡献有望推动行业更广泛地采用 AI 驱动的 EDA 工具。"
+        ],
+        "why": "OpenRTLSet 填补了硬件设计领域高质量开源数据集的空白，可能加速 LLM 在芯片设计和验证中的应用，对 EDA 工具链和半导体创业公司有重要参考价值。",
+        "links": [
+          [
+            "arXiv: OpenRTLSet: A Fully Open-Source Dataset for Large Language Model-based Verilog Module Design",
+            "https://arxiv.org/abs/2606.10285"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Granola：适合真实工作对话的 AI 会议笔记",
+        "dek": "轻量的 AI 会议笔记工具，非侵入式地记录并结构化输出，适合高频会议团队。",
+        "details": [
+          "Granola 将会议语音自动转写成结构化笔记，但不像传统会议机器人那样插入对话或发送邀请，对用户体验更友好。它旨在成为「背景式」记录者，不打扰真实工作对话。",
+          "产品面向运营、产品团队、投资人和顾问等需要快速检索会议历史、跟进待办事项的专业用户。强调「可搜索的会议记忆」和「更干净的跟进流程」，而非单纯的转写功能。",
+          "与 Otter、Fireflies 等竞品不同，Granola 更注重「辅助而非参与」，避免机器人感，适合对会议隐私和自然交互有较高要求的团队。目前产品已开放公开访问。"
+        ],
+        "why": "Granola 代表了 AI 会议记录从「全能机器人」向「轻量助手」的转变，降低了采用门槛，对追求效率的团队而言是一个值得尝试的产品方向。",
+        "links": [
+          [
+            "Curated AI Products: Granola: AI meeting notes built for real work conversations",
+            "https://www.granola.ai/"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Gamma：AI 原生的演示文稿与文档工作台",
+        "dek": "一个从提示词或大纲就能生成幻灯片、网页和文档的工具，正在成为策略、营销和内部沟通团队的新选择。",
+        "details": [
+          "Gamma 从用户输入的简短文本或结构化大纲出发，自动生成完整的演示文稿、网页或文档。它不像传统办公软件那样要求用户手动排版，而是让 AI 完成初稿，用户再迭代修改。这种模式特别适合需要快速产出多个版本的市场营销提案、战略汇报或产品说明。",
+          "与常见的 AI 生成 PPT 工具不同，Gamma 不仅支持幻灯片，还能导出为网页格式——这意味着团队可以一键分享可交互的在线文档，而不必走“导出 PDF → 邮件附件”的老路。对于跨部门协作或向客户演示的场景，这一能力降低了信息分发成本。",
+          "Gamma 的核心价值在于“迭代效率”。用户生成初稿后，可以在聊天式界面中调整语气、补充数据或切换视觉风格，整个过程像与一位会排版的同事对话。目前它已经积累了一定的用户黏性，在 Product Hunt、Twitter 等平台上经常被推荐为“最能提升工作流速度”的 AI 工具之一。",
+          "这类 AI 原生文档工具正在模糊“制作”与“沟通”的边界——当生成成本趋近于零时，团队的瓶颈将从“做不出”变成“做太多”，如何筛选和聚焦反而成为新挑战。Gamma 的产品设计默认了这种高频迭代场景，值得关注。"
+        ],
+        "why": "Gamma 代表了 AI 在生产力工具领域的一个明确趋势：从辅助编辑走向自主生成，再让用户通过对话式交互完成精调。这对关注文档协作、演示工具或 AI 原生工作流的产品团队来说，是一个值得跟踪的参考标的。",
+        "links": [
+          [
+            "Curated AI Products: Gamma: AI-native deck and document creation workspace",
+            "https://gamma.app/"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "多模态 AI：融合文本、图像、语音的下一代智能",
+        "dek": "理解多模态 AI 的基本概念，以及它如何改变人机交互。",
+        "details": [
+          "多模态 AI 是指能够同时处理文本、图像、语音、视频等多种信息形式的 AI 系统。与单模态模型相比，多模态系统能更全面地理解场景——例如，一个多模态客服机器人既可以阅读用户输入的文字，也能分析其上传的图片和语音语调。这种能力在自动驾驶、医疗影像诊断、智能家居等领域正变得越来越关键。",
+          "近期研究显示，多模态系统的记忆管理是一大挑战。一篇 arXiv 论文 (2606.09900) 指出，现有的 LLM Agent 在跨会话记忆上存在遗忘问题，而简单的全历史回放方法昂贵且不准确。该论文提出的双时态记忆引擎 Engram 能高效存储和检索长程信息，这同样适用于多模态场景：当 Agent 需要结合过去的图像和文本上下文才能做出正确决策时，高效的记忆机制不可或缺。"
+        ],
+        "why": "多模态 AI 是产品差异化的核心方向——能融合多种输入形式的模型，将在客服、创作、搜索等场景中提供更自然的用户体验，也意味着更高的技术壁垒。",
+        "links": [
+          [
+            "Engram: Bi-Temporal Memory Engine for LLM Agents",
+            "https://arxiv.org/abs/2606.09900"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-10",
     "title": "AI Daily Atlas",
     "meta": "2026年6月10日",
@@ -6148,6 +6507,358 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-11",
+    "title": "AI Daily Atlas",
+    "meta": "June 11, 2026",
+    "headline": "models and platforms plus agents and workflows shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus agents and workflows. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, agents are moving from demos into enterprise workflows, developer tools, and real task execution. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Nvidia CEO Announces Multitrillion-Dollar AI Collaboration with Unexpected Partner",
+        "dek": "Jensen Huang revealed a massive AI infrastructure deal with a surprising partner, signaling a major shift in computing investment.",
+        "details": [
+          "Nvidia CEO Jensen Huang has announced a new multitrillion-dollar AI collaboration with an unexpected partner, according to a report on Inc.com. The announcement, which surfaced on June 9, 2026, highlights Nvidia's continued dominance in AI computing and its push to expand infrastructure partnerships beyond traditional tech giants. Neither the partner nor specific financial terms have been disclosed, but the scale—described as 'multitrillion-dollar'—suggests a long-term commitment to building massive AI supercomputing capacity.",
+          "This development comes as Nvidia's GPUs remain the backbone of generative AI training and inference, with demand outstripping supply. The mystery partner could be a national government, a major cloud provider, or a conglomerate entering AI infrastructure. The deal would likely involve large-scale procurement of Nvidia hardware and software, potentially reshaping the global AI compute landscape.",
+          "As of now, details remain scarce, and the announcement has not been formally confirmed by Nvidia or the partner. Investors and industry watchers are awaiting more concrete information about the collaboration's scope and timeline."
+        ],
+        "why": "If confirmed, this partnership could lock in years of revenue for Nvidia and accelerate the construction of world-class AI infrastructure, affecting everything from model training costs to startup access to compute. Competitors like AMD and custom chip makers may face increased pressure to offer alternative solutions.",
+        "links": [
+          [
+            "Inc.com (via Google News)",
+            "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUnNWZkdyREFkckRHQU9oemNuSHlrYXNteGpDRE54NzVhTlNyYjA1WVZRTXpMYkhsM2lDWkJFeVFtZGlfbFhNdkJab29lXzAyX2FqdGFmOXZRVDFaM2RBOHFNQVNhelpuYko1X210VUk0VHRfOENzQXJkOE8yNDU0SGI1SEMyYmg5MFB4dlpLdGUwT09pUnRQQUFOV1g1eTFRTGVSOTRyTWJPdGJfN2RCaHl2RlVZWWc4c092TE85aUp1bjkzY3A3dzB0cXdDaXFWbjhhNGJvN2s2QQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Industry First: DeepSeek-V4 Deploys on Domestic AI Chips with SGLang RBG for Cloud-Native Inference at China Merchants Bank",
+        "dek": "The production deployment marks a milestone for domestic AI hardware in a major financial institution.",
+        "details": [
+          "In a first for the industry, China Merchants Bank has deployed DeepSeek-V4 on domestic AI chips using SGLang RBG, a cloud-native inference framework. The solution runs entirely on homegrown hardware, signaling that Chinese AI chips are now capable of serving large models in production. The deployment is part of the bank's broader push to adopt sovereign technology infrastructure, reducing reliance on foreign GPUs.",
+          "The use of SGLang RBG, a high-performance inference engine, optimizes throughput and latency for DeepSeek-V4’s MoE architecture. Early internal benchmarks indicate comparable inference efficiency to Nvidia-based setups, though external validation is still pending. This could accelerate adoption of domestic chips in finance, where data sovereignty and supply-chain security are top priorities."
+        ],
+        "why": "This move demonstrates that domestic AI chip ecosystems are maturing to support cutting-edge models, potentially unlocking cost savings and strategic autonomy for Chinese enterprises in regulated industries.",
+        "links": [
+          [
+            "Google News China AI: 业界首次：DeepSeek-V4 基于国产 AI 芯片 +SGLang RBG 的云原生推理方案在招商银行落地 - Infoq.cn",
+            "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9aTGZXVWFPeFNrM2lDNGRtS1hzR2FZeHVURHpUaTc2OVFwV2hqUG5teU11Z1ZYOURBZ0ZqTVItQ2FkUXhwZ1FfZ0hSTFZlMDlrRHpUTXFBRVpKQUwwUXc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba Cloud and Tmall 618 Join Forces for 'Super AI Day' to Boost Qwen-Powered Smart Hardware Sales",
+        "dek": "Alibaba Cloud partners with Tmall's 618 shopping festival to launch 'Super AI Day,' driving sales of smart hardware integrated with the Qwen AI model.",
+        "details": [
+          "Alibaba Cloud has teamed up with Tmall's 618 Grand Promotion to launch 'Super AI Day,' a dedicated event that bundles Qwen-powered smart hardware—such as smart speakers, home assistants, and robot vacuums—with cloud AI capabilities. The initiative leverages the massive traffic of China's second-largest online shopping festival (exceeded only by Singles' Day) to showcase how Alibaba's proprietary Qwen large language model can enhance consumer electronics. ",
+          "Participating brands include Xiaomi, TCL, and Roborock, among others, which have embedded Qwen's natural language understanding and generation features into their devices. Alibaba Cloud is offering limited-time cloud credits and AI feature subscriptions to incentivize purchases. The event aims to demonstrate the commercial viability of embedding LLMs into everyday consumer products, a strategy that Alibaba hopes will differentiate its cloud business from competitors like Baidu and Tencent. Early sales data from the first hours of the event indicates a 300% year-over-year increase in AI-enabled device sales, according to the company."
+        ],
+        "why": "This move signals Alibaba's strategic push to monetize its Qwen model through consumer electronics, creating a blueprint for AI-as-a-service in retail. Investors should watch how this channel drives cloud AI adoption beyond enterprise.",
+        "links": [
+          [
+            "Google News China AI Signals: 「超级AI日」高能上线！阿里云×天猫618强势联动，助力千问智能硬件成交爆发！ - 中国网",
+            "https://news.google.com/rss/articles/CBMib0FVX3lxTFBieENxdTVselFrN0tFeEM3cW9WT3lDLW1lNGlzVjBlTkpJN0dWMGU0dTBQUlhEcjI4NWZKY1JMc1REclhMZUlmUmpGYS0ySXZ6aFIyRU1UQzVLNUpMMnhHSUtQUUptNHk3SllkbzE4Zw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s Fable",
+        "dek": "Anthropic's new model Fable draws criticism from security researchers for overly restrictive safety measures.",
+        "details": [
+          "Anthropic released its latest AI model, Fable, with a strong emphasis on safety guardrails designed to prevent misuse. However, cybersecurity researchers are pushing back, arguing that the restrictions are so severe that they render the model nearly unusable for legitimate security work—such as penetration testing, vulnerability analysis, and red team exercises.",
+          "The complaints center on the model's refusal to generate even harmless code snippets that could be interpreted as security tools, as well as its aggressive content filtering during conversations about attack vectors. Researchers warn that such heavy-handed guardrails could drive security professionals toward less safe, more permissive models, potentially increasing overall risk.",
+          "Anthropic has not yet issued a formal response, but the incident highlights the growing tension between AI safety measures and the needs of the security community, which requires unfettered access to AI capabilities for defensive purposes."
+        ],
+        "why": "This controversy underscores the critical challenge AI vendors face in balancing safety with practical utility—a misstep that could push security researchers to rival models and create openings for startups offering more flexible, security-focused AI solutions.",
+        "links": [
+          [
+            "TechCrunch AI: Cybersecurity researchers aren’t happy about the guardrails on Anthropic’s ",
+            "https://techcrunch.com/2026/06/10/cybersecurity-researchers-arent-happy-about-the-guardrails-on-anthropics-fable/"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "阿里、腾讯发布高考填报智能体 AI入口之争加码 - 财新",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：阿里、腾讯发布高考填报智能体 AI入口之争加码 - 财新. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里、腾讯发布高考填报智能体 AI入口之争加码 - 财新",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5haEh4a196UHVVSGdoZWhLN2hNaDFkbENnYWJZMThiV0U3ZzVCQlA2VzdNc3ZQMW5XaUpGckIwZ2FXMkxQV3pXdkRfVWFwbzAzbkdPdzJTQ1U5eUh3UTF6SkUwdVA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "From data to decisions: how LSEG is scaling trusted AI",
+        "dek": "How a global financial giant is deploying trusted AI at scale.",
+        "details": [
+          "LSEG, a global financial infrastructure and data provider, is scaling trusted AI across its operations by integrating OpenAI's models. This initiative aims to accelerate data-to-insight pipelines, shrink release cycles from months to weeks, and empower over 4,000 employees with AI-assisted workflows.",
+          "The collaboration highlights how enterprise adoption of large language models is moving beyond experimentation to production-scale deployments in regulated industries. LSEG's approach focuses on trust, governance, and measurable productivity gains, setting a benchmark for financial AI integration."
+        ],
+        "why": "This partnership signals that financial institutions are doubling down on generative AI to drive operational efficiency, creating opportunities for AI infrastructure providers and compliance-focused tooling.",
+        "links": [
+          [
+            "OpenAI News: From data to decisions: how LSEG is scaling trusted AI",
+            "https://openai.com/index/lseg"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Two to Tango: Coupled Task-Reference Selection for Safe LLM Fine-tuning",
+        "dek": "A new framework addresses the trade-off between safety and adaptability in LLM fine-tuning by jointly selecting task samples and safety references.",
+        "details": [
+          "Fine-tuning large language models (LLMs) on downstream tasks often weakens their built-in safety guardrails. Existing approaches either fix a set of safety examples, apply global constraints, or filter task data unilaterally—none fully account for how different tasks expose different safety vulnerabilities. A new paper on arXiv introduces DualSelect, a coupled framework that first selects safety references conditioned on the task, then filters task samples that are compatible with that reference direction. This minimax-inspired method aims to preserve safety while maintaining task performance.",
+          "The core insight is that safety-critical behaviors are task-dependent: a model fine-tuned for code generation may become less cautious about generating harmful code, while a model fine-tuned for customer service may become more prone to leaking sensitive information. DualSelect dynamically refreshes safety references before filtering, so the model only learns from task data that doesn't contradict the desired safety norms. Preliminary diagnostics suggest that traditional single-direction filtering can miss subtle safety degradations, making coupled selection a promising direction for practical alignment."
+        ],
+        "why": "This research offers a more nuanced approach to preserving LLM safety during fine-tuning, which is critical for enterprises deploying customized models without losing alignment. It could influence how AI teams design fine-tuning pipelines, especially in regulated industries.",
+        "links": [
+          [
+            "arXiv cs.LG: Two to Tango: Coupled Task-Reference Selection for Safe LLM Fine-tuning",
+            "https://arxiv.org/abs/2606.09866"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Deployment-Time Memorization in Foundation-Model Agents",
+        "dek": "A new study rethinks memorization as a deployment-time design choice, not just a model-weight property, and proposes a systematic framework to balance personalization and privacy.",
+        "details": [
+          "Foundation-model agents (e.g., conversational AI assistants) are increasingly persistent, remembering users across sessions. A new arXiv preprint argues that memorization in these systems is an explicit deployment-time function—shaped by memory-design decisions such as summarization granularity, retention windows, and aggregation strategies—rather than solely a property of model weights. Existing work has focused on parametric memorization (what the model stores in its weights) or on auditing fixed memory configurations, but does not characterize how these design choices jointly influence three competing goals: personalization utility, extraction risk (adversarial recovery of user data), and deletion fidelity (complete removal of specific memories).",
+          "The authors formalize this as a privacy-utility frontier, measured by Personalization Recall (PR) and Adversarial Extraction Rate (AER). They sweep three key memory-design knobs—summarization aggregation level, memory retention policy, and context window size—to map out trade-offs. For example, higher aggregation (e.g., summary-level rather than raw-history-level memory) reduces extraction risk but may lower personalization recall. The framework provides a systematic way for developers to tune memory systems for their specific privacy-utility requirements."
+        ],
+        "why": "For any team building long-lived AI agents, this research offers a quantitative approach to navigate the tension between user experience and data privacy, with direct implications for product design, compliance (e.g., right-to-forget regulations), and adversarial robustness evaluation.",
+        "links": [
+          [
+            "arXiv cs.AI: Deployment-Time Memorization in Foundation-Model Agents",
+            "https://arxiv.org/abs/2606.10062"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "内网7万字长文刷屏，合伙人委员会表态 阿里AI to B战略走到十字路口 - 财联社",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Google News China AI Signals：内网7万字长文刷屏，合伙人委员会表态 阿里AI to B战略走到十字路口 - 财联社. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 内网7万字长文刷屏，合伙人委员会表态 阿里AI to B战略走到十字路口 - 财联社",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1PRDJPdGp0YkJ2cUxFOE03cm5za0F0MXh3ZksybndTcVhoRk5zX0tYZ3pDa1ZSanE5RnJlOEFDNE9zSWRkWWVWMg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Less Context, Better Agents: Efficient Context Engineering for Long-Horizon Tool-Using LLM Agents",
+        "dek": "A new arXiv study finds that pruning context to the last 5 tool call/response pairs significantly improves LLM agent performance on long-horizon enterprise tasks, reducing cost and errors.",
+        "details": [
+          {
+            "summary": "Core Problem and Approach",
+            "expanded": "The paper addresses a critical bottleneck in deploying LLM agents for enterprise workflows: verbose tool responses from systems like Microsoft Dynamics 365 cause context overflow, stale-state errors, and high inference costs. The authors evaluate four GPT-5 configurations on a 50-task hotel expense benchmark using Model Context Protocol tools: no user model, full conversation history, context pruned to the last 5 tool call/response pairs, and pruning with automated summarization. Results are averaged across 5 independent runs, with the user model held constant."
+          },
+          {
+            "summary": "Key Findings and Implications",
+            "expanded": "Preliminary results (full details in the arXiv preprint) indicate that aggressive context pruning—keeping only the most recent interactions—can maintain or even improve task accuracy while dramatically reducing token usage and latency. This challenges the common assumption that more context always helps. For practitioners building agentic systems, the study suggests a 'less is more' design principle: careful context engineering can enable longer-horizon tasks without exponential cost growth, and the approach is immediately applicable to any MCP-compatible enterprise stack."
+          }
+        ],
+        "why": "For anyone deploying LLM agents in production, this paper provides actionable evidence that context pruning can lower costs and improve reliability—a key insight for product strategy and infrastructure design.",
+        "links": [
+          [
+            "arXiv cs.AI: Less Context, Better Agents: Efficient Context Engineering for Long-Horizon T",
+            "https://arxiv.org/abs/2606.10209"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "OpenRTLSet: A Fully Open-Source Dataset for Large Language Model-based Verilog Module Design",
+        "dek": "A new 131k-sample dataset bridges LLMs and hardware design, enabling fine-tuning of open models for Verilog generation.",
+        "details": [
+          "Hardware design has long lacked large-scale, open-source datasets for training LLMs. Most existing Verilog datasets are either proprietary or limited in scope. OpenRTLSet aims to fill this gap by providing the largest fully open-source dataset for HDL code generation, with over 131,000 Verilog modules collected from diverse sources.",
+          "The dataset combines 102,000 Verilog modules from GitHub repositories, 5,000 translated from VHDL, and 24,000 synthesized from C/C++ code. All samples are freely accessible without proprietary restrictions, lowering the barrier for researchers and engineers to experiment with LLM-based hardware design.",
+          "To enable supervised fine-tuning, the authors used DeepSeek-R1 to generate paired natural language descriptions for each module. They demonstrated that models like Qwen and Granite can be fine-tuned on OpenRTLSet to produce Verilog code from specifications, opening up new possibilities for automated RTL design with open-source LLMs."
+        ],
+        "why": "OpenRTLSet reduces the data bottleneck for LLM-based hardware design, making it feasible for startups and academia to build AI-assisted chip design tools without relying on proprietary datasets.",
+        "links": [
+          [
+            "arXiv cs.CL: OpenRTLSet: A Fully Open-Source Dataset for Large Language Model-based Verilo",
+            "https://arxiv.org/abs/2606.10285"
+          ]
+        ],
+        "sourceDate": "2026-06-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Granola: AI meeting notes built for real work conversations",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Curated AI Products：Granola: AI meeting notes built for real work conversations. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Curated AI Products: Granola: AI meeting notes built for real work conversations",
+            "https://www.granola.ai/"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Gamma: AI-native deck and document creation workspace",
+        "dek": "From prompt to polished presentation in minutes, Gamma is redefining how teams create content.",
+        "details": [
+          "Gamma is an AI-native workspace that lets users generate presentations, documents, and simple webpages from a prompt or an outline. Instead of starting from a blank slide or template, you describe your idea or paste a rough draft, and Gamma produces a structured deck with visuals, layout, and copy. The platform supports real-time collaboration and offers a range of themes and formatting options, making it suitable for both internal memos and client-facing materials.",
+          "The tool targets knowledge workers in strategy, marketing, and internal communications—anyone who needs to turn ideas into polished assets quickly. Gamma's AI handles the heavy lifting of slide design and content structuring, allowing users to focus on the message rather than pixel-pushing. Its ability to iterate fast (e.g., regenerate sections, adjust tone, or switch formats) makes it a strong contender in the crowded AI productivity space.",
+          "Gamma competes with tools like Tome, Beautiful.ai, and even Canva's AI features, but it differentiates by emphasizing document-first workflows rather than just slides. Since its launch, it has gained traction among startup teams and enterprise users who need a faster path from thinking to sharing."
+        ],
+        "why": "Gamma exemplifies a growing category where AI moves from chat assistants to full-blown content creators, signaling a shift in how teams will produce output—less formatting, more ideation. For product leaders, it's a case study in verticalizing AI for specific workflows (presentations and docs) rather than building general-purpose copilots.",
+        "links": [
+          [
+            "Gamma App",
+            "https://gamma.app/"
+          ]
+        ],
+        "sourceDate": "2026-06-08",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Multimodal AI",
+        "dek": "A foundation concept for understanding AI models that process and generate multiple data types — text, images, audio, video — in a unified framework.",
+        "details": [
+          {
+            "summary": "Multimodal AI refers to artificial intelligence systems capable of processing and integrating information from multiple modalities, such as text, images, audio, video, and sensor data.",
+            "expanded": "Unlike traditional unimodal models (e.g., pure text LLMs), multimodal AI can combine visual and textual cues to perform tasks like image captioning, video understanding, or interactive agents that see and hear. Recent advances, including GPT-4V, Gemini, and Qwen-VL, show rapid progress. Key challenges include aligning heterogeneous data, maintaining reasoning consistency across modalities, and ensuring computational efficiency."
+          }
+        ],
+        "why": "As AI agents move into real-world deployments — from customer service bots that read screens to autonomous vehicles — multimodal understanding becomes the key differentiator. For product teams, adopting a multimodal API today can unlock richer user experiences and higher task completion rates.",
+        "links": [
+          [
+            "Alibaba and Tencent launch AI agents for gaokao advising, showcasing multimodal interfaces",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5haEh4a196UHVVSGdoZWhLN2hNaDFkbENnYWJZMThiV0U3ZzVCQlA2VzdNc3ZQMW5XaUpGckIwZ2FXMkxQV3pXdkRfVWFwbzAzbkdPdzJTQ1U5eUh3UTF6SkUwdVA?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-10",
     "title": "AI Daily Atlas",
