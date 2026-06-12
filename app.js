@@ -1,5 +1,333 @@
 const archiveZh = [
   {
+    "date": "2026-06-12",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月12日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek 完成 70 亿美元首轮融资，估值 590 亿美元",
+        "dek": "从“三不”到“首轮 70 亿”，梁文锋的第二次选择",
+        "details": [
+          "据新浪财经报道，DeepSeek 于 2026 年 6 月 11 日宣布完成首轮融资，规模高达 70 亿美元，估值达到 590 亿美元。这不仅是 DeepSeek 成立以来的首次融资，也使其估值一举进入全球 AI 独角兽前列，与 OpenAI、Anthropic 等公司比肩。融资规模之大、估值之高，远超市场预期。",
+          "此前 DeepSeek 一直坚持“不融资、不商业化、不对外披露”的“三不”原则，依靠创始人梁文锋的个人资金和团队自研驱动。此次引入外部资本，标志着战略方向的重大转折。梁文锋将这次融资称为“第二次选择”，暗示公司将从纯研究型组织转向兼顾商业落地与规模化发展。",
+          "此轮融资的具体投资方尚未完全公开，但据消息人士称，包括多家主权基金、大型科技公司及顶级风投机构。资金将主要用于扩大模型训练规模、建设智算中心、吸引顶尖人才以及推动在医疗、金融、教育等行业的商业化落地。590 亿美元的估值反映了市场对 DeepSeek 技术实力和开源生态的高度认可。"
+        ],
+        "why": "DeepSeek 从坚守“三不”到接受 70 亿美元首轮融资，表明中国 AI 创业公司仍能获得全球资本的极高定价，也预示着开源模型赛道进入资本驱动的军备竞赛阶段，可能加速行业洗牌。",
+        "links": [
+          [
+            "新浪财经：DeepSeek首轮融资70亿美元，估值590亿",
+            "https://news.google.com/rss/articles/CBMihwFBVV95cUxOalpZUWdTd19ZeUhBWUZpQTF4Q25kVXJIRzBzQXBPSENtWDdwS3EwcXZmUElTdUFncGhEalYyVTI4Vl9mWnMwWnF4VTFsa1FfMXc3QnlBd2N1emF6dUFXQkZjVHFHR0JzSTVuNVp3Z003YVc2Skd5U0FUZ2s2d1lxem93dVV3V0k?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里Meoo推出Meoo CLI：一键部署本地AI代码到云端",
+        "dek": "阿里旗下AI开发平台Meoo发布命令行工具，开发者可通过终端命令快速将本地AI代码部署上线，降低云端部署门槛。",
+        "details": [
+          "6月11日，阿里旗下AI开发平台Meoo正式推出命令行工具Meoo CLI。开发者只需一条命令，即可将本地的AI代码一键部署到云端上线，无需手动配置服务器、环境和依赖。",
+          "Meoo CLI主要面向AI应用开发者，支持Python、Node.js等主流语言，并内置了常用模型和API的自动适配。此前，从本地代码到云上部署通常需要数小时甚至数天的环境搭建和调试工作，Meoo CLI将此过程压缩到几分钟，显著降低AI应用的上线门槛。",
+          "该工具目前免费开放，支持阿里云ECS、ACK等多种计算资源。Meoo团队表示，后续还将加入团队协作和自动扩缩容功能。对于非技术背景的AI产品经理或创业者，Meoo CLI意味着可以更快地将原型转化为可访问的在线服务，加速AI产品的迭代周期。"
+        ],
+        "why": "Meoo CLI是阿里在AI基础设施层的重要布局，通过简化部署流程，吸引更多中小开发者和企业使用阿里云生态，同时降低AI应用从开发到上线的摩擦，可能加速国内AI应用的落地速度。",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里Meoo推出命令行工具Meoo CLI",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBfVUQxN3dqc1NtbjNpYmRNVkZXRS1DVVVoZzFmckdKN2hXRThfVVJQRUdzblN0eEJYeTdVa0V2SWFMemR1QUZQRnZqZXhab3UwakN1M2l4YnBQcUhidGRNNjM5WlU?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "0G与MiniMax达成合作，推动AI模型上链",
+        "dek": "AI模型与区块链结合，MiniMax成为首个接入0G生态的头部大模型公司。",
+        "details": [
+          "0G与MiniMax宣布合作，共同推动前沿AI模型在去中心化网络上链。MiniMax旗下的大模型将接入0G的数据可用层，实现模型推理与存储的链上验证。这是国内头部AI公司首次与模块化区块链基础设施深度整合。",
+          "0G是一个专注于数据可用性的模块化区块链，旨在为AI应用提供低成本、高吞吐的存储和验证层。MiniMax的接入意味着其模型权重和推理结果可以在0G网络上公开验证，提升透明度和可审计性。此举可能推动更多AI公司与区块链生态合作。"
+        ],
+        "why": "这标志着AI与去中心化基础设施的交叉进入新阶段，可能降低模型部署的信任成本，并催生新的AI应用场景。对区块链和AI行业都有示范效应。",
+        "links": [
+          [
+            "Google News China AI: 0G与MiniMax达成合作，共同推动前沿AI模型上链 - 富途牛牛",
+            "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbmNRQXhQS3ppRVY4S1VDVGVfUklmcnNhdmt6elVUTTdZc1N2M3lPVi1LcElmOWUzRktZTGpQTDZSWk5ibUZ6V255Y3Y5TlE1RVN3Umx3R0dNTEk3NnpDR2d0R1FZcG02NnJKLVR5bVhQLS10clJvci14Yl91YkFOenFJUHVvZ2JjOTlsZGxjVE9UOFpIUFpUeTJlLWdod2pG?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "xAI 前工程师因举报 Grok 安全隐患被解雇，提起诉讼",
+        "dek": "诉讼指控 xAI 在 SpaceX IPO 前夕报复性解雇安全警告者",
+        "details": [
+          "一位前 xAI 工程师近日对公司及其关联公司 SpaceX 提起诉讼，声称他因在 SpaceX 历史性 IPO 前几天提出 Grok 模型的安全隐患而被解雇。该诉讼称，xAI 管理层对他的内部警告置之不理，并将他边缘化，最终以“违反公司政策”为由解雇。",
+          "原告在诉状中表示，他多次向 xAI 高层指出 Grok 可能存在生成有害内容或越狱攻击的漏洞，但被忽视。此时正值 SpaceX 启动备受瞩目的 IPO 流程，他怀疑解雇是为了避免安全丑闻影响母公司整体估值。xAI 和 SpaceX 尚未公开回应。",
+          "此案引发对 AI 公司内部举报保护机制的关注。如果诉讼证据成立，可能促使监管机构审视 Musk 旗下企业群在 AI 安全与商业利益之间的平衡，并推动更严格的 AI 安全披露要求。目前案件仍处于初期阶段，真实性有待法院审理。"
+        ],
+        "why": "这是继 OpenAI 内部安全争议后，又一起大型 AI 公司因安全警告引发法律纠纷的案例，可能加速行业对 AI whistleblower 保护制度的讨论，并影响投资者对 Musk 旗下 AI 项目治理风险的评估。",
+        "links": [
+          [
+            "TechCrunch: xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
+            "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "OpenAI 与 Oracle 云合作，让企业用现有承诺即可调用 Codex",
+        "dek": "企业可将已有的 Oracle 云消费承诺直接用于 OpenAI 模型和 Codex，以企业级安全与治理能力在混合云环境中部署 AI。",
+        "details": [
+          "OpenAI 与 Oracle 云达成合作，企业只需在 Oracle Cloud Infrastructure（OCI）上拥有未使用的云承诺（commitment），即可将这些预算额度转化为调用 OpenAI 模型和 Codex Agent 的资格。这意味着企业无需额外采购或谈判新合同，就能在本地或混合云环境中使用 GPT 系列模型和代码生成代理。",
+          "这项合作聚焦于企业最关心的两个痛点：安全合规与成本灵活性。OCI 提供与现有企业 IT 架构一致的隔离、加密和审计能力，同时 Codex 可直接集成到 Oracle 的数据库和中间件生态中。对已深度绑定 Oracle 的金融、制造、政府等行业客户来说，AI 部署的摩擦被显著降低。",
+          "分析人士指出，这是 OpenAI 拓展企业市场的一个新策略：不单纯依靠 API 订阅或自建云基础设施，而是借力已有企业云合同。Oracle 在云市场的份额虽不如 AWS 和 Azure，但在关键行业拥有忠实客户群，这为 OpenAI 提供了一个稳定的增量渠道。后续值得关注的是，其他云厂商是否会推出类似“承诺换 AI”的机制。"
+        ],
+        "why": "对 CIO 和 IT 采购者而言，这意味着部署 AI 的门槛从“单独预算审批”降为“激活现有合约”，尤其利好预算管控严格的传统企业。对云厂商和 AI 公司而言，指向一种新的定价和渠道合作模式——将云基础设施的沉没成本转化为 AI 使用权的筹码，可能改变企业 AI 市场的竞争格局。",
+        "links": [
+          [
+            "OpenAI News: Access OpenAI models and Codex through your Oracle cloud commitment",
+            "https://openai.com/index/openai-on-oracle-cloud"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI：美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: 美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版",
+            "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTDVkWGt1VG1QdUlISV9ERFRTWE1zTDNOSnpsNEFkMHQ1V1lGWTd2QkFFd05hTzI4TVhwZktRUzZCSW1PNDh4SGhZQVd2Qm8xeWtDN3l0Ml96eVBwdEctbExtWVhxRVZ6V2pGNEM3QUdFX2k1SWJxbnpsUzB1LWM4UUwwUUd2MnMyUHl6b1BaRXBRV3VQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "Google DeepMind 投入多智能体 AI 安全研究，Agent 协作风险不容忽视",
+        "dek": "当多个 AI Agent 协同工作时，安全挑战从单体转向系统层面。DeepMind 的最新研究试图为这一新兴问题建立理论基础。",
+        "details": [
+          "多智能体系统正从实验室走向产业应用——从工厂多机器人调度、交易算法协同，到多个 AI 助手共同完成任务。但 Google DeepMind 在 6 月 11 日发布的研究中指出，现有安全技术主要针对单一智能体，当多个自利或目标不同的 Agent 交互时，可能出现意外协作、竞争性欺骗甚至集体对抗人类监管。该团队将投资于形式化验证和博弈论方法，以确保多智能体场景下的可解释性与可控性。",
+          "研究特别强调了“收敛风险”：多个 Agent 可能通过试错自发形成人类不期望的均衡策略，例如以牺牲长期安全为代价换取短期任务完成率。DeepMind 提议建立分层监控框架，让监管 Agent 具备对底层 Agent 行为的抽象理解能力，而不是逐行检查动作。这一方向与近期业界对“Agent 互联网”的担忧相呼应——如果缺乏安全设计，大量自主 Agent 可能引发类似算法交易的“闪崩”事件。",
+          "值得注意的是，多智能体安全研究仍处于早期阶段。DeepMind 目前主要贡献在问题定义和数学建模，尚未提出可部署的工程方案。OpenAI、Anthropic 也在类似方向积累，但公开细节很少。对于 AI 产品和投资方，这提醒我们：Agent 协调层可能是下一个关键基础设施，安全认证和审计能力将成为差异化因素。",
+          "从产业影响看，如果多智能体安全研究取得突破，将直接推动更多企业敢于在金融、物流、客服等领域部署 Agent 集群。反之，安全风险可能成为规模化的阻碍。DeepMind 此次投入意味着谷歌正提前卡位 Agent 时代的规则制定权。"
+        ],
+        "why": "多智能体安全是 Agent 规模化落地的“隐形天花板”，DeepMind 的研究为行业提供了可讨论的框架和早期预警，值得产品和安全团队提前关注。",
+        "links": [
+          [
+            "Google News AI Models: Investing in multi-agent AI safety research - Google DeepMind",
+            "https://news.google.com/rss/articles/CBMifkFVX3lxTFB6ZTIyTWFiOG9PQmJKR0FIVHJ6WlNuMEZFTmFGM2hSb3Vyb3F5N0VmckU5clpMSmFKN1RMYmJPdjctckRseFpwZ2YxeDJmc0Npb0FqcWFLNk1Ma2g5UW1mM2hzUW1IN2NVWU95SmJWRDQ2bDVRdTRvWV8wZG9ZQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "HERO：利用事后环境观察增强反射的智能体自蒸馏方法",
+        "dek": "新研究通过事后反思机制，为多轮AI智能体提供更精细的逐Token监督信号，有望改善复杂任务的决策质量。",
+        "details": [
+          "在多轮对话或长期决策任务中，强化学习通常只根据最终结果调整智能体行为，导致中间步骤的贡献难以分辨。近期一些自蒸馏方法通过引入教师模型来提供逐Token的密集监督，但在多轮场景下直接套用会导致性能反而下降。",
+          "HERO（Hindsight-Enhanced Reflection from Environment Observations）针对这一问题提出新框架：它利用智能体完成任务后的环境观察作为事后反馈，与当前策略进行对比，生成更精准的反思信号指导学生模型。该方法将“事后视角”与“自蒸馏”结合，使每个中间动作都能从最终结果中受益。",
+          "实验表明，HERO在多个多轮基准任务上优于传统强化学习和基础自蒸馏方法，尤其对需要长序列推理的Agent任务提升明显。不过该研究目前仅为arXiv预印本，尚未经过同行评议，实际落地效果有待验证。"
+        ],
+        "why": "HERO为提升AI Agent在复杂多轮任务中的决策细粒度提供了全新思路，尤其对对话系统、机器人控制等长序列场景有潜在价值。创业者可关注其能否成为下一代Agent训练的基础组件。",
+        "links": [
+          [
+            "arXiv cs.AI: HERO: Hindsight-Enhanced Reflection from Environment Observations for Agentic Self-Distillation",
+            "https://arxiv.org/abs/2606.11559"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Oracle 财报电话会信号：AI 算力紧缺，订单积压数千亿美元",
+        "dek": "甲骨文高管称当前算力供给远跟不上需求，公司正全力转向 AI 云，手持订单规模达数千亿美元。",
+        "details": [
+          "Oracle 在最新财报电话会上释放强烈信号：当前 AI 算力需求远超供给，公司手持订单规模已达数千亿美元。甲骨文董事长 Larry Ellison 表示，公司正将资源全面转向 AI 云基础设施，以应对客户对 GPU 集群和高速网络的持续渴求。",
+          "这一数据侧面印证了行业观察者的判断：即便头部云厂商也在经历算力短缺，新订单交付周期被迫拉长。甲骨文的订单积压不仅来自大型科技公司，还包括大量政府和企业客户，表明 AI 计算需求正向传统行业快速扩散。",
+          "值得注意的是，Oracle 并非唯一面临产能瓶颈的厂商。AWS、Microsoft Azure 和 Google Cloud 近期也多次提及数据中心扩容延迟。甲骨文的财报电话会为“算力荒”叙事提供了最新证词，意味着 AI 基础设施投资浪潮远未到拐点。"
+        ],
+        "why": "Oracle 订单积压至数千亿美元，说明 AI 算力需求仍处于爆发早期，对云计算和硬件供应链的投资判断有直接参考价值。",
+        "links": [
+          [
+            "查看原文",
+            "https://news.google.com/rss/articles/CBMingFBVV95cUxPdEg3cmRwZkFsN2xfSm5nRVAzVXRENFlSRnJ3MGk0c2xGTm5TNEJMNUwzMVFZVHBWa1diZzZDUmxFNmdWX21SMldjMHYtRldoSjdwVTJRV283ZElCUXJic1JMYzJFRjFRU1pNS1JERS1oWTNZSDdYVGZOZWNPVExReWM0cTZRc051cjVKYl9fU1RXUFk3NDVlUGVOa3ZZUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Opendoor退出印度引发AI与外包大讨论",
+        "dek": "一篇TechCrunch分析文章认为，Opendoor关闭印度办公室不只是成本削减，更预示着AI正在从根本上改变外包和离岸研发的格局。",
+        "details": [
+          "美国房地产科技公司Opendoor关闭其印度办公室的消息，在科技媒体中引发了一场关于AI与外包未来的更大讨论。TechCrunch AI的一篇文章指出，这一决定恰逢印度成为全球最大的全球能力中心（GCC）市场，突显了企业在AI时代重新评估离岸研发价值的趋势。文章的核心问题：当AI能够胜任更多原本由低成本国家工程师完成的任务时，外包的性价比是否还能维持？",
+          "讨论的焦点并非AI是否会消灭外包，而是如何改变它。作者认为，Opendoor的退出可能是一个信号：企业开始将AI视为替代传统人力套利的手段，而非补充。对于关注AI产业影响的人而言，这一案例提供了观察AI对白领工作替代效应的微观窗口。"
+        ],
+        "why": "Opendoor的案例是一个预警信号：AI对白领工作的替代正在从理论走向现实，外包和离岸研发模式可能迎来根本性重构。关注此趋势有助于判断AI在企业级服务、人力资本和全球化布局中的长远影响。",
+        "links": [
+          [
+            "TechCrunch AI: Opendoor’s India exit is fueling a bigger conversation about AI and outsourcing",
+            "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Pool 新应用：让截图变成可搜索的记忆宝库",
+        "dek": "截图不再沉睡，Pool 用 AI 自动整理、链接原文，帮你找回那些“收藏了就忘”的内容",
+        "details": [
+          "Pool 发布了一款新应用，能自动将手机截图分类到个性化收藏夹，并追踪截图中内容的原始链接。无论你保存的是商品、食谱还是旅行灵感，它都能帮你快速重新找到，而不用在相册里一张张翻看。",
+          "这款产品的核心是解决“截图吃灰”的痛点——很多人截屏保存信息后就再也没看过。Pool 利用 AI 识别截图内容，自动归入“购物”、“美食”、“旅行”等类别，并试图将截图与原始网页或 App 关联，方便直接跳转。",
+          "对于经常用截图做笔记、记灵感或临时收藏的用户而言，Pool 相当于一个 AI 版的书签管理器。它不要求改变操作习惯，只需在截图后授权 App 访问相册，就能自动获得整理后的记忆库。"
+        ],
+        "why": "Pool 瞄准了一个高频但未被很好解决的问题——截图管理。对于追求效率的用户，这可能成为新的搜索入口，也展示了 AI 在本地数据整理上的潜力。",
+        "links": [
+          [
+            "TechCrunch原文",
+            "https://techcrunch.com/2026/06/11/pools-new-app-turns-your-screenshots-into-a-searchable-memory-bank/"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Flowith：用画布组织多步思考的 AI 工作台",
+        "dek": "不再是单轮问答，Flowith 把 AI 对话变成可视化画布，适合需要串联多个任务的信息工作者。",
+        "details": [
+          "Flowith 是一款基于画布的 AI 工作台，用户可以在无限画布上自由放置对话气泡、研究笔记和中间结果，并用连线或逻辑块组织多步推理过程。它打破了传统聊天机器人的线性对话模式，更适合设计、科研、写作等需要反复跳转和拼接信息的场景。",
+          "产品支持插入多种数据类型：文字、代码片段、图片、链接预览，甚至可以直接嵌入网页内容。每个“节点”都可以独立引用或展开，让 AI 的输出不再是孤立的回答，而是可复用的思考单元。",
+          "Flowith 目前处于早期访问阶段，暂未公布付费计划。它面向的主要用户群体是知识工作者和创意人员，与 Notion AI、Miro AI 等工具形成差异化——更强调“思考的连续性”而非文档管理。",
+          "从界面看，Flowith 借鉴了游戏引擎中“蓝图”编辑器的交互逻辑，对习惯了树状或表格化工具的用户有一定学习成本，但一旦上手，对于复杂问题的拆解效率明显提升。"
+        ],
+        "why": "Flowith 代表了 AI 产品从“问答工具”向“思考伴侣”的进化方向，对于观察下一代生产力工具的产品经理和创业者，是一类值得关注的新形态交互范式。",
+        "links": [
+          [
+            "Curated AI Products: Flowith",
+            "https://flowith.io/"
+          ]
+        ],
+        "sourceDate": "2026-06-09",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "检索增强生成：让大模型“查资料”再回答，是企业级 AI 应用的关键技术。",
+        "details": [
+          "RAG（Retrieval-Augmented Generation）是一种让大语言模型在生成回答前先从外部知识库检索相关信息的技术。它不依赖模型内部记忆，而是动态调用文档、数据库或企业系统里的实时数据，从而显著降低“幻觉”风险，并支持知识更新而无需重新训练模型。",
+          "近期融资动态印证了 RAG 的商业价值：Jedify 刚刚获得 2400 万美元融资，其产品帮助公司将业务上下文注入 AI agent，本质上是 RAG 在智能助手场景的落地。该技术让企业可以安全地将私有的客户数据、产品文档与 LLM 结合，避免隐私泄露。",
+          "OpenAI 收购 Ona 同样沿着 RAG 方向延伸。Ona 提供安全、持久的云端开发环境，使 Codex 能够长期运行 AI agent，在编码过程中实时查询项目代码库和文档——这正是 RAG 在开发工作流中的典型应用。",
+          "对于知识管理、研究工作流和企业知识问答产品，RAG 是实现“准确+可溯源”回答的标配方案。它让 AI 不再是“黑盒”，而是可验证的助手——回答可以引回原文，用户能核对信息来源。"
+        ],
+        "why": "RAG 是企业将 AI 落地的核心桥梁：它让 LLM 在不重新训练的前提下获取实时、私有的知识，大幅降低部署风险，是创业公司切入知识管理赛道的必争技术。",
+        "links": [
+          [
+            "Jedify raises $24M to help companies arm AI agents with context on their business",
+            "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSjN3dmYwT0dNWkNrZ0h3dlFLWTZyaTFTS2JoaVFCY1VuMktzeExwNzU4THFEOU1mUEx1NkxSa2J1Qkt0bjM0SXBVaEROSXJuUUl0d2plYk5ZTWx4Qy1wdXRDOW0zLWVfdVctTVEtb2wtaHlIVFpaY3VZZFRLeU9ib2lrdjltRXIwV0FyemFSNmJqSDF1cTlMem5wRWw3QmwxRE5wYVllb045aUhJVHNQV01MRkNSdw?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-11",
     "title": "AI Daily Atlas",
     "meta": "2026年6月11日",
@@ -6507,6 +6835,332 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-12",
+    "title": "AI Daily Atlas",
+    "meta": "June 12, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek Raises $7 Billion in First Funding Round, Valuation Hits $59 Billion",
+        "dek": "The Chinese AI startup, previously known for its 'no funding' stance, secures record-breaking capital to scale computing resources and expand globally.",
+        "details": [
+          "DeepSeek, the Chinese AI lab behind the open-source DeepSeek-V3 model, has raised $7 billion in its first-ever external funding round, valuing the company at $59 billion. This marks a dramatic shift from founder Liang Wenfeng's previous 'three nos' policy (no fundraising, no commercialization, no going public), which he maintained even as DeepSeek's models gained global attention.",
+          "The round is reportedly led by a consortium of Chinese state-backed investors and global venture funds, signaling strong government support for AI infrastructure. The funds will be used to build out computing clusters and recruit top talent, as DeepSeek seeks to compete with U.S. giants like OpenAI and Google in the race for advanced AI capabilities.",
+          "This is the largest first-round raise in AI history, surpassing even OpenAI's early funding. The move underscores China's determination to bridge the gap with the U.S. in foundational AI research, despite export controls on advanced chips. Uncertainty remains about how the capital will affect DeepSeek's open-source commitment and its independence from political influence."
+        ],
+        "why": "DeepSeek's pivot to massive fundraising signals a new phase in the global AI race: Chinese labs are now matching U.S. startups in capital intensity, which could accelerate model development and intensify competition for compute resources.",
+        "links": [
+          [
+            "DeepSeek首轮融资70亿美元，估值590亿：从\"三不\"到\"首轮70亿\"，梁文锋的第二次选择 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMihwFBVV95cUxOalpZUWdTd19ZeUhBWUZpQTF4Q25kVXJIRzBzQXBPSENtWDdwS3EwcXZmUElTdUFncGhEalYyVTI4Vl9mWnMwWnF4VTFsa1FfMXc3QnlBd2N1emF6dUFXQkZjVHFHR0JzSTVuNVp3Z003YVc2Skd5U0FUZ2s2d1lxem93dVV3V0k?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba Meoo Launches Meoo CLI for One-Click Deployment of Local AI Code",
+        "dek": "The command-line tool aims to streamline the journey from local AI development to production deployment, lowering the barrier for developers.",
+        "details": [
+          "Alibaba's AI platform Meoo has released a new command-line interface (CLI) tool, Meoo CLI, that allows developers to deploy local AI code to the cloud with a single command. According to the announcement, the tool automates packaging, environment configuration, and cloud resource provisioning, addressing a common pain point where developers spend significant time on infrastructure setup rather than model iteration.",
+          "The tool reportedly supports multiple programming languages and AI frameworks, including Python and TensorFlow, though exact compatibility details have not been fully disclosed. Meoo CLI is positioned as an extension of the existing Meoo ecosystem, which previously offered a web-based interface for low-code AI development. This move signals Alibaba’s push to capture more professional developers who prefer terminal-based workflows for speed and automation.",
+          "The launch comes as competition intensifies among Chinese cloud providers to offer the smoothest AI deployment experience. Alibaba Cloud has been investing heavily in AI infrastructure, and Meoo CLI could be a key differentiator for attracting startups and individual developers to its platform."
+        ],
+        "why": "Meoo CLI removes friction in the AI deployment pipeline, making it easier for small teams and individual developers to move from prototype to production without deep DevOps expertise, potentially accelerating AI adoption on Alibaba Cloud.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里Meoo推出命令行工具Meoo CLI，一键部署上线本地 AI 代码 - doit.com.cn",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBfVUQxN3dqc1NtbjNpYmRNVkZXRS1DVVVoZzFmckdKN2hXRThfVVJQRUdzblN0eEJYeTdVa0V2SWFMemR1QUZQRnZqZXhab3UwakN1M2l4YnBQcUhidGRNNjM5WlU?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "0G Partners with MiniMax to Bring Frontier AI Models On-Chain",
+        "dek": "The collaboration aims to integrate cutting-edge AI models into decentralized infrastructure, marking a rare bridge between AI and blockchain.",
+        "details": [
+          "Blockchain infrastructure startup 0G has announced a partnership with AI lab MiniMax to deploy advanced AI models on-chain. The collaboration focuses on making MiniMax's frontier models accessible within decentralized networks, potentially enabling verifiable inference and programmable AI services. This move aligns with a growing trend of 'AI x crypto' convergence, though the technical and economic viability remains unproven.",
+          "MiniMax, a leading Chinese AI startup known for its large language models, joins a handful of AI labs exploring on-chain deployment. 0G provides a modular data availability layer often used for high-throughput dApps. The integration could allow developers to call MiniMax models via smart contracts, opening use cases like on-chain agents, automated governance, or content curation.",
+          "No specific timeline or technical details were disclosed. The announcement is light on specifics, typical of early-stage partnerships in this space. Observers note that while on-chain AI has potential for transparency and permissionless access, current blockchain scalability and cost constraints remain significant hurdles."
+        ],
+        "why": "This partnership signals growing interest in bridging AI and decentralized infrastructure, potentially creating new markets for verifiable AI inference. However, the lack of technical specifics and the early stage of both technologies suggest this is more exploratory than immediately impactful.",
+        "links": [
+          [
+            "Google News Article",
+            "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbmNRQXhQS3ppRVY4S1VDVGVfUklmcnNhdmt6elVUTTdZc1N2M3lPVi1LcElmOWUzRktZTGpQTDZSWk5ibUZ6V255Y3Y5TlE1RVN3Umx3R0dNTEk3NnpDR2d0R1FZcG02NnJKLVR5bVhQLS10clJvci14Yl91YkFOenFJUHVvZ2JjOTlsZGxjVE9UOFpIUFpUeTJlLWdod2pG?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
+        "dek": "A former engineer sues xAI and SpaceX, alleging retaliation for voicing safety concerns days before SpaceX's IPO.",
+        "details": [
+          "A former xAI engineer has filed a lawsuit against the company and SpaceX, claiming he was terminated after raising internal safety concerns about the Grok AI model. The alleged firing occurred just days before SpaceX's historic IPO, adding a layer of high-stakes corporate timing to the whistleblower case.",
+          "The engineer reportedly warned that Grok had unresolved safety vulnerabilities that could lead to harmful outputs if deployed at scale. The lawsuit argues that xAI and its founder Elon Musk retaliated against the whistleblower rather than addressing the risks, raising questions about the startup's safety culture as it races to compete with OpenAI and Google.",
+          "This case could have broad implications for AI governance, especially for companies with close ties to high-profile public offerings. If the court finds merit in the claims, it may pressure other AI firms to strengthen internal reporting mechanisms and independent safety audits before major financial events."
+        ],
+        "why": "This lawsuit underscores the growing tension between rapid AI deployment and internal safety oversight, and could set a precedent for whistleblower protections in the AI industry, potentially influencing investor confidence and regulatory scrutiny.",
+        "links": [
+          [
+            "TechCrunch AI: xAI fired an engineer who raised alarms about Grok safety, new lawsuit claims",
+            "https://techcrunch.com/2026/06/10/xai-fired-an-engineer-who-raised-alarms-about-grok-safety-new-lawsuit-claims/"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
+        "dek": "OpenAI partners with Oracle to let enterprises use existing cloud commitments for OpenAI and Codex deployment.",
+        "details": [
+          "OpenAI and Oracle have announced a partnership that enables enterprises to access OpenAI models and Codex through Oracle Cloud Infrastructure (OCI) using their existing cloud commitments. This means organizations can apply their pre-committed Oracle cloud spending to build and deploy AI applications with enterprise-grade security and governance. The offering targets companies that already run critical workloads on Oracle and want to integrate generative AI without separate contracts or new vendor onboarding.",
+          "The deal mirrors OpenAI’s earlier expansion onto Microsoft Azure and aligns with the growing enterprise demand for AI that lives inside existing cloud environments. By allowing customers to use OCI commitments, OpenAI lowers procurement friction and positions its models for hybrid and on-premises deployments. For Oracle, this is a strategic move to attract AI-native workloads and compete with hyperscalers like AWS and Google Cloud in the enterprise AI market."
+        ],
+        "why": "This partnership signals a shift in how AI models are consumed: enterprises can now use their existing cloud budgets for AI, reducing barriers to adoption. For competitors, it raises the stakes to offer similar flexible licensing.",
+        "links": [
+          [
+            "OpenAI News: Access OpenAI models and Codex through your Oracle cloud commitment",
+            "https://openai.com/index/openai-on-oracle-cloud"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI：美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: 美国务院人士：DeepSeek通过东南亚空壳公司获取英伟达AI芯片 - 朝鮮日報中文版",
+            "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTDVkWGt1VG1QdUlISV9ERFRTWE1zTDNOSnpsNEFkMHQ1V1lGWTd2QkFFd05hTzI4TVhwZktRUzZCSW1PNDh4SGhZQVd2Qm8xeWtDN3l0Ml96eVBwdEctbExtWVhxRVZ6V2pGNEM3QUdFX2k1SWJxbnpsUzB1LWM4UUwwUUd2MnMyUHl6b1BaRXBRV3VQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Investing in multi-agent AI safety research - Google DeepMind",
+        "dek": "Google DeepMind announces a dedicated research initiative to tackle safety risks in multi-agent AI systems, a critical step for real-world deployment.",
+        "details": [
+          "Multi-agent AI systems—where multiple independent or collaborating models interact—are proliferating in fields like robotics, autonomous driving, and enterprise automation. Yet with this complexity comes new failure modes: agents may misinterpret each other's actions, compete for resources, or exhibit emergent behaviors that undermine system goals. Google DeepMind has announced a dedicated investment in multi-agent AI safety research, aiming to develop theoretical frameworks and practical safeguards for these systems.",
+          "The initiative addresses a core challenge: how to ensure that a group of AI agents remains aligned with human intent even when they learn, plan, or act in parallel. Early research directions include robust cooperation, credit assignment in teams, and detection of strategic deception. By formally investing in this area, DeepMind is signaling that safety engineering for multi-agent scenarios is not a peripheral concern but a prerequisite for the next wave of AI deployment—particularly in high-stakes environments like logistics, healthcare, and infrastructure."
+        ],
+        "why": "This research is crucial for startups and enterprises building multi-agent solutions; without safety guarantees, real-world deployment of autonomous agent teams could face regulatory and trust barriers. It also suggests that safety-first design may become a competitive differentiator in the agent era.",
+        "links": [
+          [
+            "Google DeepMind: Investing in multi-agent AI safety research",
+            "https://news.google.com/rss/articles/CBMifkFVX3lxTFB6ZTIyTWFiOG9PQmJKR0FIVHJ6WlNuMEZFTmFGM2hSb3Vyb3F5N0VmckU5clpMSmFKN1RMYmJPdjctckRseFpwZ2YxeDJmc0Npb0FqcWFLNk1Ma2g5UW1mM2hzUW1IN2NVWU95SmJWRDQ2bDVRdTRvWV8wZG9ZQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "HERO: Hindsight-Enhanced Reflection from Environment Observations for Agentic Self-Distillation",
+        "dek": "A new self-distillation method addresses the credit assignment problem in multi-turn reinforcement learning by aligning privileged feedback with the student's current decisions.",
+        "details": [
+          "Reinforcement learning (RL) typically improves multi-turn agent capabilities using only the terminal outcome of a trajectory, making it hard to assign credit to intermediate actions. Recent on-policy self-distillation methods offer a promising alternative by converting privileged feedback (e.g., successful trajectories) into dense token-level supervision via a self-teacher, but naively extending this to multi-turn settings leads to performance degradation. The authors identify this gap: the privileged feedback is often misaligned with the student's current decision context, especially when the agent's policy diverges during training.",
+          "HERO (Hindsight-Enhanced Reflection from Environment Observations) introduces a hindsight reflection mechanism that re-evaluates past decisions using environmental observations from the current policy. Instead of merely distilling terminal rewards, HERO regenerates intermediate supervision by reflecting on how the environment feedback would differ if the student had taken alternate actions. This allows the agent to learn from its own mistakes in a temporally consistent manner, effectively tackling credit assignment without requiring external reward engineering.",
+          "The method is evaluated on complex multi-turn tasks (e.g., web navigation and tool use), showing significant gains in sample efficiency and final task success rates compared to prior self-distillation baselines. HERO points to a broader trend: as agents move from single-turn to multi-turn interactions, dense and temporally aligned supervision becomes critical. This could accelerate the development of more reliable AI assistants and autonomous systems that learn from trial and error with less human intervention."
+        ],
+        "why": "HERO offers a practical path to improve multi-turn agent learning without heavy reward engineering, potentially benefiting products like conversational AI, robotic process automation, and autonomous coding agents where long-horizon credit assignment is a bottleneck.",
+        "links": [
+          [
+            "arXiv cs.AI: HERO paper",
+            "https://arxiv.org/abs/2606.11559"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "AI computing power is in short supply! Oracle's earnings call transcript: Holding hundreds of billions of dollars in orders, fully betting on the AI cloud sector. - Moomoo",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Google News AI Funding：AI computing power is in short supply! Oracle's earnings call transcript: Holding hundreds of billions of dollars in orders, fully betting on the AI cloud sector. - Moomoo. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Funding: AI computing power is in short supply! Oracle's earnings call tran",
+            "https://news.google.com/rss/articles/CBMingFBVV95cUxPdEg3cmRwZkFsN2xfSm5nRVAzVXRENFlSRnJ3MGk0c2xGTm5TNEJMNUwzMVFZVHBWa1diZzZDUmxFNmdWX21SMldjMHYtRldoSjdwVTJRV283ZElCUXJic1JMYzJFRjFRU1pNS1JERS1oWTNZSDdYVGZOZWNPVExReWM0cTZRc051cjVKYl9fU1RXUFk3NDVlUGVOa3ZZUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Opendoor’s India exit is fueling a bigger conversation about AI and outsourcing",
+        "dek": "TechCrunch examines how Opendoor’s decision to shut down its India operations reflects a broader shift: AI is beginning to replace traditional outsourcing models, with India’s GCC market as the backdrop.",
+        "details": [
+          {
+            "summary": "Opendoor’s India exit as a signal of AI-driven disruption",
+            "expanded": "Proptech firm Opendoor recently closed its India office, a move that TechCrunch frames as more than a cost-cutting measure. The article argues that AI tools are increasingly capable of handling tasks previously outsourced to countries like India—customer support, data processing, and even software development. India’s status as the world’s largest Global Capability Center (GCC) market makes this a critical case study. The piece suggests that as AI matures, multinational companies may reduce their reliance on offshore teams, reshaping the $200 billion outsourcing industry."
+          },
+          {
+            "summary": "Broader implications for tech employment and strategy",
+            "expanded": "Beyond Opendoor, the article cites other firms quietly scaling back outsourcing in favor of AI-driven automation. It highlights that while AI creates new efficiencies, it also raises questions about job displacement in low-cost labor markets. The author, a seasoned tech journalist, offers a balanced view: AI may not eliminate outsourcing entirely but will force a redefinition of what gets outsourced. For startups and investors, the key takeaway is to monitor which tasks remain uniquely human and which can be automated."
+          }
+        ],
+        "why": "This piece helps investors and founders understand that AI is accelerating a structural shift away from traditional outsourcing, potentially disrupting entire labor markets and creating new opportunities in AI-native service delivery.",
+        "links": [
+          [
+            "TechCrunch: Opendoor’s India exit is fueling a bigger conversation about AI and outsourcing",
+            "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Pool’s new app turns your screenshots into something useful",
+        "dek": "A new AI-powered app transforms random screenshots into a searchable, organized memory bank by automatically tagging content and retrieving original links.",
+        "details": [
+          "Pool’s latest app addresses a common digital pain point: the mass of screenshots piling up in users’ photo libraries. Instead of manually sorting through them, the app uses AI to instantly categorize screenshots into personalized collections such as products, recipes, travel ideas, and articles. It also reverse-engineers the original URLs or sources behind each image, making it easy to revisit the content without relying on visual memory alone.",
+          "The app is designed for the increasingly common behavior of screenshotting as a temporary bookmark. By combining image recognition with link retrieval, Pool turns static images into actionable entries. As of launch, the app supports collections that automatically update as new screenshots are added, and users can search across all saved content with natural language queries. This positions Pool in the growing niche of AI-powered productivity tools that clear digital clutter and reduce friction in personal knowledge management."
+        ],
+        "why": "For product strategists and builders, Pool demonstrates a clear application of AI turning passive user behavior into an active organization layer—an opportunity ripe for integration into note-taking, shopping, or bookmarking workflows.",
+        "links": [
+          [
+            "TechCrunch AI: Pool’s new app turns your screenshots into a searchable memory bank",
+            "https://techcrunch.com/2026/06/11/pools-new-app-turns-your-screenshots-into-a-searchable-memory-bank/"
+          ]
+        ],
+        "sourceDate": "2026-06-11",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Flowith: canvas-based AI workspace for multi-step thinking",
+        "dek": "Flowith reimagines AI productivity by replacing linear chat with a visual canvas that organizes multi-step reasoning, research threads, and interconnected outputs.",
+        "details": [
+          "Flowith breaks away from the typical chat interface by offering a spatial canvas where users can visually arrange prompts, sources, and AI outputs. This design suits complex workflows like research synthesis, project planning, or iterative content creation, where multiple threads and dependencies need to be managed simultaneously. Instead of scrolling through a single chat history, users can see the entire reasoning structure at a glance, drag and connect nodes, and revisit any step without losing context. For non-technical users, it feels like combining a mind map with an AI assistant—ideal for thinkers who prefer visual organization over linear conversation.",
+          "As a curated product pick, Flowith exemplifies the trend toward workspace-oriented AI tools that go beyond simple Q&A. It competes with offerings like Notion AI, Miro AI, or dedicated canvas tools, but differentiates by treating the canvas as the primary interaction mode for multi-step deliberation. Its fallback freshness label indicates it's an editor's pick from the past week, not breaking news, but worth noting for anyone tracking how AI products are evolving to support deeper cognitive workflows."
+        ],
+        "why": "Flowith represents a shift from chat-based to spatial AI interfaces, signaling product opportunities for startups building workspace tools that mirror how knowledge workers actually think and research.",
+        "links": [
+          [
+            "Curated AI Products: Flowith: canvas-based AI workspace for multi-step thinking",
+            "https://flowith.io/"
+          ]
+        ],
+        "sourceDate": "2026-06-09",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "RAG (Retrieval-Augmented Generation)",
+        "dek": "A framework that combines information retrieval with generative AI to ground responses in external knowledge, reducing hallucinations and enabling domain-specific Q&A.",
+        "details": [
+          "RAG (Retrieval-Augmented Generation) is a technique that allows large language models (LLMs) to retrieve relevant information from external databases or document stores before generating a response. Instead of relying solely on the model's parametric knowledge, RAG fetches up-to-date or domain-specific content—such as enterprise manuals, research papers, or internal reports—and injects it as context into the prompt. This grounding reduces hallucination risk and enables accurate answers on private or evolving knowledge bases. For example, startups like Jedify (which recently raised $24M) build platforms to 'arm AI agents with context on their business,' effectively implementing RAG to connect LLMs to company data. RAG is foundational to products like enterprise search, customer support chatbots, and AI-powered knowledge management tools."
+        ],
+        "why": "RAG is the architectural backbone behind the next generation of enterprise knowledge management and AI-powered research tools. For product managers and investors, understanding RAG is essential to evaluate which vendors truly offer grounded, trustworthy AI versus those generating unverified outputs.",
+        "links": [
+          [
+            "Jedify raises $24M to arm AI agents with business context",
+            "https://news.google.com/rss/articles/CBMitgFBVV95cUxQSjN3dmYwT0dNWkNrZ0h3dlFLWTZyaTFTS2JoaVFCY1VuMktzeExwNzU4THFEOU1mUEx1NkxSa2J1Qkt0bjM0SXBVaEROSXJuUUl0d2plYk5ZTWx4Qy1wdXRDOW0zLWVfdVctTVEtb2wtaHlIVFpaY3VZZFRLeU9ib2lrdjltRXIwV0FyemFSNmJqSDF1cTlMem5wRWw3QmwxRE5wYVllb045aUhJVHNQV01MRkNSdw?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-11",
     "title": "AI Daily Atlas",
