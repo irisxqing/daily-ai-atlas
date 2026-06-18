@@ -1,5 +1,377 @@
 const archiveZh = [
   {
+    "date": "2026-06-18",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月18日",
+    "headline": "模型与平台、Agent 与工作流 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和Agent 与工作流展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时Agent 正从演示概念继续走向企业流程和开发者工具和真实任务执行。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里发布世界模型HappyOyster 1.0（快乐生蚝）",
+        "dek": "定位为世界模型，挑战物理世界模拟",
+        "details": [
+          "据观点网报道，阿里于6月17日发布了世界模型HappyOyster 1.0，中文名“快乐生蚝”。该模型被定位为世界模型，区别于传统的语言模型，旨在理解和模拟物理世界的动态规律。阿里在AI基础模型领域已推出通义千问系列，此次向世界模型延伸，显示出其在多模态和具身智能方向的野心。",
+          "世界模型的核心能力在于对物理交互的预测与推理，常被用于自动驾驶、机器人控制等场景。HappyOyster 1.0的具体技术细节尚未公开，但业内推测它可能基于阿里在视觉-语言-动作联合建模方面的积累。若性能达到预期，有望降低机器人开发的门槛，加速具身智能落地。",
+          "目前该消息主要来自观点网的报道，阿里官方尚未发布详细技术报告或开源计划。坊间猜测此模型或与阿里达摩院的机器人项目有关，但尚未得到证实。后续需关注阿里是否会在云栖大会等场合披露更多信息，以及是否有第三方评测结果。"
+        ],
+        "why": "世界模型被视为通往通用人工智能的关键拼图之一，阿里此时入局，表明其正从大语言模型竞争延伸至更底层的物理世界理解能力。对于投资和创业方向，需关注具身智能、仿真环境及机器人训练数据链的机会。",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里发布世界模型HappyOyster 1.0（快乐生蚝1.0） - 观点网",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8yaC1yNEFxQlBTTHJLclVJZlZDaC1mcEpsbnZhaS1OYV9tMnZrWnFKSTMtclU3Tkk0SHNLVzdtQmJ3TlMtZmJBVy1XNmxFdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里发布世界模型HappyOyster 1.0，用户可实时探索、导演并重塑 AI 世界",
+        "dek": "阿里推出世界模型HappyOyster 1.0，用户可实时交互并动态改变AI虚拟世界，开启下一代生成式体验。",
+        "details": [
+          "6月17日，阿里巴巴发布世界模型HappyOyster 1.0，用户可在其中实时探索、导演并重塑AI生成的虚拟世界。与静态AI生成不同，该模型支持用户在运行时干预和改变世界状态，类似实时游戏引擎与AI的结合。",
+          "HappyOyster 1.0并非传统意义上的3D渲染引擎，而是基于深度学习的动态世界模型。用户可以通过自然语言或简单操作，即时调整场景、物体行为甚至物理规则，比如让天空突然下雨或让建筑生长出藤蔓。",
+          "该产品目前仍处于早期阶段，阿里未公布具体技术细节和商用时间表。不过，业内认为这是继文本、图像、视频生成之后，AI向可交互世界迈出的重要一步，可能重塑游戏、影视和虚拟社交等产业。",
+          "阿里在AI领域持续加码，此前已发布通义千问系列大模型。HappyOyster 1.0标志着其从语言和视觉模型向可交互世界模型的战略延伸，但实际效果和用户规模有待市场验证。"
+        ],
+        "why": "世界模型是AI从内容生成走向环境模拟的关键方向，阿里率先推出可实时交互的产品，可能加速游戏和虚拟世界领域的AI应用落地，但技术和用户体验仍需观察。",
+        "links": [
+          [
+            "雷峰网报道：阿里发布世界模型HappyOyster 1.0",
+            "https://news.google.com/rss/articles/CBMid0FVX3lxTE5qYllPQVVDRXp4TlFYLVpTYXBXRjB4V1pTT2dSQ015VElkU3JhclRLbmJWcjk5OEZ3SlBFQVF6RmhYaFpoeHN4MEEzSmUzR2owNHBMWUkyTDhnVC12SUZsbGItaWRha1RWVldBcFJ3cVRzZXBJREFN?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek完成超74亿美元融资，估值创中国AI初创最高",
+        "dek": "据华尔街日报中文网报道，DeepSeek本轮融资超过74亿美元，估值超越所有中国AI初创公司，显示大模型赛道的资本热度持续升温。",
+        "details": [
+          "中国AI大模型公司DeepSeek近日完成新一轮融资，总额超过74亿美元。据华尔街日报中文网报道，这笔融资使其估值成为国内AI初创企业中的最高水平。虽然具体投资方尚未完全披露，但此举表明DeepSeek在基础大模型领域的领先地位获得了资本市场的强力背书。",
+          "此次融资发生在全球AI投资热潮的背景下，中国大模型公司纷纷加速融资以支撑高昂的算力和研发成本。DeepSeek凭借其开源模型策略和技术实力，已积累大量开发者用户，本轮资金预计将用于更大规模模型的训练、商业化落地以及生态建设。",
+          "值得注意的是，中国AI初创企业的估值天花板正被不断突破。此前，MiniMax、智谱AI等公司也曾获得大额融资，但DeepSeek此次的规模和估值水平均创下新高。不过，巨额融资能否转化为可持续的商业模式，仍需观察行业竞争格局和商业化进展。"
+        ],
+        "why": "这标志着中国AI大模型赛道的资本集中度进一步提升，DeepSeek获得充裕弹药后，可能加速技术迭代和商业化，同时给其他创业公司带来估值压力。",
+        "links": [
+          [
+            "华尔街日报中文网报道",
+            "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaVRJRmZQSTFJYWlBRXQyemh4cXVOVGozcUQwd1ZHR0pMVV9MYnViMEVtMVdjY3Z3aWxlbFEwUFVTSlR6QlNiallOeUtPbnFGME92REJxR1d1UHRiejNuVG5BMFRkbHdLZzE1U0ZoUVUzT0xJbDdFdW9UVS1VUnRwN0l1el9IbG9USFFBNVF0Qkc2Y0dwbDVWQkF3MG45VzQ0NzJZdHppSU0zaURxLXJocFJnOU4xOGROQUE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "汇丰与 Google Cloud 宣布达成变革性 AI 银行合作",
+        "dek": "全球银行业巨头汇丰与 Google Cloud 签署多年合作协议，将利用 Gemini 等生成式 AI 技术重塑零售、财富及企业银行服务。",
+        "details": [
+          "汇丰银行（HSBC）与 Google Cloud 于 6 月 17 日联合宣布一项“变革性”多年合作协议，计划将 Gemini 大模型及 Google Cloud 的 AI 能力深度嵌入核心银行系统。双方称将首先聚焦于零售银行的智能客服、财富管理的个性化投顾，以及企业银行的反欺诈与合规自动化，但未披露具体财务条款与落地时间表。这是继摩根大通与亚马逊云、高盛与微软之后，又一家全球系统重要性银行与云巨头在 AI 方向上的深度绑定。",
+          "尽管公告中缺乏可量化的 KPI 与试点细节，但汇丰在全球 60 余个市场的零售与批发业务体量，意味着一旦模型落地，其 AI 调用量可能迅速达到业界最大规模之一。Google Cloud 此前在金融服务行业已通过“反洗钱 AI”等场景积累合规经验，但面向核心交易系统的生成式 AI 部署仍处于早期探索阶段。行业观察者认为，云厂商与银行的“AI 大单”正从基础设施层向业务决策层迁移，但技术成熟度与监管审慎性之间的平衡仍是关键挑战。"
+        ],
+        "why": "这一合作标志着银行业 AI 化从“试验”进入“战略核心”阶段，云厂商的行业解决方案能力将成为下一轮竞争分水岭。对创业公司而言，高度定制化的合规 AI 可能比通用模型更有市场。",
+        "links": [
+          [
+            "PR Newswire 原文",
+            "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQRUZSZlo5dEFCall4TXpSaDRYX1E2VG1YaWpJSGItU0g4VEhtVmRIbENnUXY4bkw0c3dHZ3Vndm96Si05ZWRVRV9hZTlaOXMtMXVEdFJveFVUbnJwVm16VGFkWmdZRURia0VUZmNWbmp0Rnk0cGtPZmxvUi1PVzZRRnc3TVhyWHpsamp4V29uTnFGYkpaTFdlcnRFSFdYRkczcjV4aWxyYVJHMklHYm90c1lDS0F0aXd3dGkycVVOQUZ1dw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek 芯片突围引热议，风闻文章解读普通人机会",
+        "dek": "DeepSeek 芯片突围话题引发关注，风闻文章分析普通人可抓住的 AI 机会。",
+        "details": [
+          "DeepSeek 近期因在 AI 芯片领域的进展成为舆论焦点。一篇来自风闻的深度文章梳理了其技术路径，并指出这一突破可能降低 AI 训练成本，从而惠及普通开发者和创业者。",
+          "文章还讨论了普通人如何抓住这一机会，建议关注 AI 应用层、数据标注和垂直模型微调等方向，同时提醒注意芯片供应链风险。",
+          "虽然文章内容偏向科普，但其传递的信号——中国 AI 芯片企业正在缩小差距——值得产业人士关注。"
+        ],
+        "why": "这篇文章反映了中国 AI 创业圈对芯片自主化的信心，同时提醒普通从业者关注上游技术突破带来的下游应用机会。",
+        "links": [
+          [
+            "风闻文章",
+            "https://news.google.com/rss/articles/CBMidEFVX3lxTE9EdTlnaUdkVzJJcloxV21BNVVHRXY0UVMwYTlJQ3F4d25oR080VVQwNmJwMGI2eXRpYkl1R2xoTV9TSmhjdGh5TXpWV0FRbHVtYjFwQmdlMmRPMVg4TXA0T0RhYjlUQ21jM3Q2dEl6UHpEdDYz?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "微软发布 Copilot Cowork 智能体，成本降低近 40%，直指 Claude",
+        "dek": "微软推出新一代协作智能体，以显著成本优势挑战 Anthropic 的 Claude，企业 AI 助手竞争再升级。",
+        "details": [
+          "微软于 6 月 17 日发布 Copilot Cowork 智能体（intelligent agent），主打企业协作场景，宣称可将相关任务处理成本降低近 40%。该产品直接对标 Anthropic 的 Claude，试图在 AI 助手市场争夺企业客户。",
+          "Copilot Cowork 集成于 Microsoft 365 生态，可自动执行会议总结、文档协作、工作流编排等复杂任务。微软强调其通过底层模型优化和任务调度算法实现成本压缩，而非简单降价。",
+          "此举正值企业级 AI 助手价格战白热化阶段。此前 Claude 已凭借长上下文和安全性获得不少企业订单，微软以成本优势切入，可能迫使竞争对手调整定价策略。目前尚不清楚该产品的具体定价细节及公测时间。"
+        ],
+        "why": "微软以成本优势切入企业 AI 助手市场，将加速该领域的价格竞争，并推动更多企业采用智能化工作流。对于依赖 AI 助手的企业而言，成本降低直接意味着 ROI 提升，同时也可能影响其他 AI 厂商的定价策略。",
+        "links": [
+          [
+            "Google News AI Products",
+            "https://news.google.com/rss/articles/CBMiSkFVX3lxTFA3cGsxelhmX3Uxbzh6MzhsYkhyZWhNbkRnVUdtTjB6S0puYkFpbHNyUU9NaklQQ21JbjNtb081TC1zNUxEanc2VWZn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI Agent 时代，谁赢谁输？一位拒绝 OpenAI 的创始人判断：英伟达是赢家，谷歌和 Meta 可能落败",
+        "dek": "随着 AI 从对话模型迈向自主代理（Agent），技术栈的权力重心正在发生偏移。一位早期拒绝 OpenAI 邀请的创始人认为，基础设施层将比应用层捕获更多价值。",
+        "details": [
+          "一位曾拒绝 OpenAI 创始邀请的 AI 创业者近日公开发声：在即将到来的 AI Agent 时代，最大的赢家将是英伟达，而谷歌和 Meta 这类以广告为核心的科技巨头可能面临结构性的威胁。该观点基于一个核心判断——Agent 需要连续、高密度的实时推理，这将极大拉高对 GPU 算力的需求，而非继续堆砌大模型参数。",
+          "该创始人解释，AI Agent 与传统聊天机器人不同：它们需要执行任务、调用工具、记忆上下文并做出决策，每一次交互都可能触发多次模型推理。这意味着推理侧的算力消耗将以指数级增长，英伟达作为 GPU 的市场主导者，将成为这波需求的直接受益方。相比之下，谷歌和 Meta 的商业模式仍然严重依赖搜索广告和社交广告，如果用户越来越多地通过 AI Agent 完成搜索和推荐，它们的广告收入将受到侵蚀。",
+          "值得注意的是，该观点也与近期多家投行的研报形成呼应——多位分析师指出，AI 推理市场正在成为英伟达的新增长引擎，而其竞争对手在 Agent 基础设施层面的布局仍不成熟。虽然谷歌和 Meta 也在大力投入 Agent 研发（例如 Google Project Mariner、Meta AI 的智能助手），但该创始人认为，自研芯片和开源模型无法短时间内撼动英伟达在推理加速领域的生态优势。",
+          "当然，这一判断并非定论。谷歌拥有庞大的用户数据和分发渠道，Meta 掌控着社交互动场景，它们可能通过深度整合 Agent 功能来巩固自身壁垒。但该观点至少提醒市场：AI Agent 的崛起不仅是技术演进，更可能重塑整个科技行业的价值分配。"
+        ],
+        "why": "这一观点将 AI 竞争从模型规模转向了推理基础设施和商业模式适应性，提示投资者关注英伟达在 Agent 时代的需求弹性，同时也给布局应用层的公司敲响警钟——如果不能将 Agent 转化为可持续的营收模式，可能沦为算力提供方的打工者。",
+        "links": [
+          [
+            "Google News AI Models: Google, Meta Could Lose In AI Agent Era While Nvidia Wins, Says Founder Who Rejected OpenAI - Benzinga",
+            "https://news.google.com/rss/articles/CBMiygFBVV95cUxOaWIzd2d3MTdrbks4R3I2SlRfOUc3bHpWTHMxT3BEMHRZajBmUWJtNkt0c0pIdk1ZLWcwS0lFVkN1bFEyWW1jVjN6OFFzNjJUbG04SHJOOVVzenJac0ZUajNNVm5aOHBwVE0xTzIyUHlhSDF5UFZVbTNmVUVOYlRFajA4bDJWTGpSTzNjdm4wSmhMMG45enRmVldQX1lndDByNEZTbEdOako4bXZadG8xVVFtMXFPV0QycVZtTnRPQ0d3YWZPR2NFbm1R?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "当规则学会学习：一个自演化法律案例检索代理",
+        "dek": "一篇arXiv论文提出让LLM自动生成并优化查询改写规则，从而提升传统BM25检索效果，无需模型训练。",
+        "details": [
+          "法律案例检索是AI落地的经典难题：法律语言高度结构化，措辞的细微差异就可能导致检索结果谬以千里。虽然基于稠密向量的检索模型近年进步显著，但一系列实证研究发现，传统BM25算法在这个领域依然是强有力的基线——它依赖的关键词精确匹配能力，恰恰是许多神经网络模型未能完全替代的。",
+          "一篇6月17日上传至arXiv的论文由此切入：能否在不做任何参数训练的前提下，让BM25的效果再进一步？研究者设计了一个自演化框架，核心是一个基于LLM的智能体。这个智能体被赋予了一个自动评估环境，能够迭代地创建查询改写规则、设计验证实验、淘汰无效规则，并保留那些能有效提升检索精度的改写策略。整个流程类似让AI自己当“规则工程师”，不断试错和改进。",
+          "论文在多个法律检索基准上测试，证明该方法优于静态的BM25和部分轻量级神经网络模型。更重要的是，所有规则均由LLM自动发现，无需人工标注或领域专家介入。这为法律科技、知识管理等对可解释性和低成本要求较高的场景，提供了一条实用路径。"
+        ],
+        "why": "这项研究展示了LLM作为策略生成器的潜力：不追求替代传统算法，而是通过自动规则优化让经典方法焕发新效能。对法律科技、企业知识库检索等方向，意味着不必依赖昂贵的大模型推理即可显著提升检索质量，降低落地门槛。",
+        "links": [
+          [
+            "arXiv cs.AI: When Rules Learn: A Self-Evolving Agent for Legal Case Retrieval",
+            "https://arxiv.org/abs/2606.17220"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "微信支付发布AI专属卡 WorkBuddy率先接入",
+        "dek": "当支付入口从App转向对话，AI Agent的商业化迎来关键一环",
+        "details": [
+          "微信支付近日推出AI专属卡功能，用户可在与智能体的对话中直接提出消费需求，完成支付闭环。首款接入的Agent是WorkBuddy。这一动作意味着微信支付正将决策和支付能力开放给AI对话界面，而非仅停留于传统App内。",
+          "从行业视角看，这不仅是支付接口的升级，更是AI Agent落地商业场景的重要基础设施。当Agent能直接调用支付工具，其自主执行任务的能力将从信息查询跨越到真实交易，Agent从“助手”变成“执行者”。",
+          "对创业者和产品经理而言，微信支付的这一步降低了AI应用的内付费门槛，但也意味着平台方将掌控支付行为数据。未来Agent的商业模式可能不再依赖订阅，而是按交易抽佣或任务成功付费。"
+        ],
+        "why": "支付是AI Agent商业化的最后一公里，微信支付此举可能催生新的Agent经济模式——从对话到交易的闭环将改变用户习惯和行业格局。",
+        "links": [
+          [
+            "量子位: 微信支付发布AI专属卡 WorkBuddy率先接入",
+            "https://www.qbitai.com/2026/06/436160.html"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "配对正确，拆分出错：多模态大模型知识编辑存在模态解耦失败",
+        "dek": "研究发现MLLMs中实体知识并非统一存储，而是分散在模态特异性路径中，导致编辑后仅多模态输入更新，单模态输入仍返回旧知识。",
+        "details": [
+          {
+            "summary": "核心发现：知识编辑在多模态输入下成功，但单模态输入下失效。",
+            "expanded": "研究者发现，当前多模态大语言模型（MLLMs）的知识编辑存在一个未被充分探索的问题——编辑解耦失败。具体来说，当模型通过图文配对输入触发实体知识更新时，知识确实被修改；但若将配对输入拆分为独立的文本或图像输入，模型往往恢复到编辑前的旧知识。这表明MLLMs中的实体知识并非以统一表示存储，而是分散在解耦的模态特异性神经通路中。"
+          },
+          {
+            "summary": "实验验证：通过神经元定位和编辑实验确认模态特异性。",
+            "expanded": "团队对多个开源MLLM进行了深入实证分析，采用神经元激活追踪和因果干预技术，定位到了对特定模态敏感的神经元群。当这些模态特异性神经元被编辑后，模型在多模态输入下正确反映新知识，但在单模态输入下仍激活旧知识对应的神经元。这一发现挑战了现有知识编辑方法假设知识“全局更新”的范式。"
+          },
+          {
+            "summary": "产业启示：对AI产品部署中知识更新可靠性提出新要求。",
+            "expanded": "这意味着，在企业使用MLLM处理混合输入（如同时支持图片问答和纯文本搜索）时，单纯的多模态知识编辑无法保证一致性。实际应用需额外设计模态对齐机制或验证流程，否则可能出现“图配文正确，纯文回答错误”的割裂现象，影响用户体验和决策可靠性。"
+          }
+        ],
+        "why": "该研究揭示了多模态知识编辑的一个关键盲区，对依赖混合输入场景的AI产品（如智能客服、多模态搜索）具有直接警示作用：知识更新不能只依赖多模态测试，必须建立跨模态验证体系。",
+        "links": [
+          [
+            "arXiv cs.LG: Correct When Paired, Wrong When Split",
+            "https://arxiv.org/abs/2606.17057"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "头部具身大脑公司再获数亿美元融资：世界模型路线，15家VC抢着投",
+        "dek": "半年三连发：从开源到端侧再到训练场",
+        "details": [
+          "一家头部具身智能大脑公司近日完成数亿美元新一轮融资，由15家VC联合投资。该公司坚持世界模型技术路线，半年内连续发布开源具身智能框架、端侧推理引擎以及大规模仿真训练场三大基础设施。",
+          "本轮融资将重点用于扩大开源社区生态、加速端侧部署方案在工业和服务场景的落地，以及建设具身智能训练数据集。目前其开源框架已吸引全球众多开发者参与贡献，成为具身智能领域最活跃的开源项目之一。",
+          "该公司是少数同时具备世界模型预训练、端侧实时推理和物理仿真训练场三大能力的团队。投资方涵盖产业资本、顶级风投及国资背景基金，侧面印证具身智能赛道正从实验室走向产业化规模验证阶段。"
+        ],
+        "why": "具身智能的开源生态正从单一模型向完整工具链演进，这家公司的融资表明投资者对世界模型路线和开源社区模式的认可。其开源框架和训练场可能成为下一阶段机器人应用的重要开发基座。",
+        "links": [
+          [
+            "量子位报道",
+            "https://www.qbitai.com/2026/06/436148.html"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Recall：把文章、视频和 PDF 变成可搜索的个人知识库",
+        "dek": "自动化收藏与检索，让碎片知识真正为你所用",
+        "details": [
+          "Recall 是一款面向知识工作者的 AI 工具，核心能力是自动保存并理解你浏览过的网页、YouTube 视频、播客、PDF、书籍和笔记。它不只是收藏夹，而是将零散信息转化为可检索、可对话的个人知识库。",
+          "使用场景非常直观：你读了一篇深度文章或看了一段技术讲解，Recall 会自动生成摘要、添加标签，并尝试建立不同内容之间的关联。之后你可以直接用自然语言向它提问，比如“上周那篇关于多模态模型的文章里提到的对比损失函数是什么”。",
+          "对非技术用户来说，Recall 降低了“信息囤积—遗忘”的挫败感。它把被动收藏升级为主动知识管理，特别适合每天接触大量 AI 资讯但又难以系统归纳的读者。",
+          "目前 Recall 处于产品早期阶段，但方向明确：让用户不再依赖浏览器书签或本地文件夹，而是通过一个统一界面与所有已读内容互动。如果持续迭代，它有可能成为知识工作者的默认信息中枢。"
+        ],
+        "why": "Recall 验证了一个清晰的 PMF：在信息过载时代，用户需要的不是更多收藏工具，而是能理解内容、主动关联并随时回应的智能记忆体。对于创业团队，这是知识管理赛道中的差异化切入点。",
+        "links": [
+          [
+            "Curated AI Products: Recall: personal AI knowledge base for articles, videos, PDFs, and no",
+            "https://www.recall.it/"
+          ]
+        ],
+        "sourceDate": "2026-06-15",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Magic Patterns：用 AI 生成可交互产品原型",
+        "dek": "PM 和创始人可以像聊天一样描述想法，AI 自动产出可交互的 UI 原型，让产品讨论在写代码之前就能发生。",
+        "details": [
+          "Magic Patterns 是一款面向产品团队的设计代理工具，支持从文字提示、截图、现有样式或设计系统出发，一键生成可交互的产品原型。它相当于将前端原型设计的工作量压缩到几轮对话中，尤其适合那些需要快速验证产品方向但缺少专职设计师的早期团队。",
+          "与 Figma 插件或传统原型工具不同，Magic Patterns 生成的不仅是静态界面，而是带有基础交互逻辑的可点击演示。这意味着 PM 或创始人可以直接用它在团队内部或与投资人展开“可操作”的产品讨论，而不必等到工程团队搭建出第一个版本。",
+          "工具目前主要面向产品经理和创始人，强调“让产品想法在工程投入之前就变得可讨论”。其底层使用了设计系统识别和模式匹配技术，能够理解品牌的视觉风格并保持一致输出。",
+          "值得关注的是，Magic Patterns 代表的“AI 设计代理”类别正在快速崛起——它们不是取代设计师，而是将产品从想法到低保真原型的迭代周期从几天压缩到一小时以内。对于希望加速产品验证周期的创业公司或大厂内部创新团队来说，这类工具可能成为标准配置。"
+        ],
+        "why": "Magic Patterns 展示了 AI 在“设计-开发”协作链条中的落点：降低原型制作门槛，让非技术人员也能参与产品定义，这可能改变早期产品的决策流程和团队分工。",
+        "links": [
+          [
+            "Curated AI Products: Magic Patterns: AI design agent for interactive product prototypes",
+            "https://www.magicpatterns.com/"
+          ]
+        ],
+        "sourceDate": "2026-06-15",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "AI 编码 Agent",
+        "dek": "理解 Codex、Copilot 和开发者工具新闻时最常见的产品形态。",
+        "details": [
+          "AI 编码 Agent 是指能够根据自然语言描述自动生成、补全或重构代码的智能工具。它不同于传统的代码补全插件，能理解上下文、调用 API 甚至自主编写完整函数。当前主流的编码 Agent 包括 GitHub Copilot、Codeium、Amazon CodeWhisperer 等，它们底层大多基于大语言模型。",
+          "OpenAI 在 2026-06-16 发布的“部署模拟”（Deployment Simulation）研究，为编码 Agent 的安全性提供了一种预测试方法。通过模拟真实对话数据，可以在模型上线前预测其行为偏差，这对于在开发工具中应用编码 Agent 至关重要——避免生成安全漏洞或不符合意图的代码。（来源：OpenAI 博客）",
+          "同样在 2026-06-17，OpenAI 推出了 LifeSciBench，一个由专家撰写的基准，用于评估 AI 处理生命科学研究任务的能力。这类专业领域基准的构建思路也适用于编码 Agent：需要设计涵盖代码正确性、效率、安全性等多维度的评测体系，以帮助开发者选择合适的工具。",
+          "阿里在 2026-06-17 发布了世界模型 HappyOyster 1.0，虽然不直接是编码 Agent，但体现了中国大厂在“理解与生成物理世界”上的投入。相比之下，编码 Agent 更聚焦于虚拟世界的符号操作，但二者在指令遵循与工具调用方面有共通的技术基础。"
+        ],
+        "why": "AI 编码 Agent 是当下开发者工具中增长最快的品类，理解其工作原理、评估方法和安全预验证手段，有助于企业在选型时做出更明智的决策，也能帮助个人开发者判断是否值得将其纳入工作流。",
+        "links": [
+          [
+            "OpenAI: 部署模拟",
+            "https://openai.com/index/deployment-simulation"
+          ],
+          [
+            "OpenAI: LifeSciBench",
+            "https://openai.com/index/introducing-life-sci-bench"
+          ],
+          [
+            "阿里发布世界模型HappyOyster 1.0",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8yaC1yNEFxQlBTTHJLclVJZlZDaC1mcEpsbnZhaS1OYV9tMnZrWnFKSTMtclU3Tkk0SHNLVzdtQmJ3TlMtZmJBVy1XNmxFdw?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-12",
     "title": "AI Daily Atlas",
     "meta": "2026年6月12日",
@@ -6835,6 +7207,364 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-18",
+    "title": "AI Daily Atlas",
+    "meta": "June 18, 2026",
+    "headline": "models and platforms plus agents and workflows shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus agents and workflows. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, agents are moving from demos into enterprise workflows, developer tools, and real task execution. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba Launches World Model HappyOyster 1.0",
+        "dek": "Alibaba unveils its first world model, HappyOyster 1.0, signaling a push into physics-grounded AI reasoning.",
+        "details": [
+          "Alibaba has released HappyOyster 1.0, a world model designed to simulate physical environments and predict interactions. World models, a concept popularized by research groups like DeepMind, aim to build internal representations of the world that enable agents to reason about cause and effect. The launch places Alibaba among a growing list of companies—including Google, Meta, and startups like World Labs—exploring this frontier. While specifics on capabilities and benchmarks were not disclosed in the limited announcement, the model's whimsical name \"HappyOyster\" may hint at a focus on creative or open-ended simulation.",
+          "The announcement, carried by Guandian.cn (Observers Network), is brief and lacks technical details. Industry watchers will be looking for more data on how HappyOyster performs on common world model tasks, such as long-horizon planning and interactive scene generation. This release reinforces the trend of Chinese tech firms investing in fundamental AI research, even as the global narrative around world models remains largely experimental."
+        ],
+        "why": "World models are seen as a potential path to machines that understand causality and can plan in complex environments. Alibaba's entry validates this direction and may accelerate adoption in robotics, autonomous driving, and game design within China.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里发布世界模型HappyOyster 1.0（快乐生蚝1.0） - 观点网",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8yaC1yNEFxQlBTTHJLclVJZlZDaC1mcEpsbnZhaS1OYV9tMnZrWnFKSTMtclU3Tkk0SHNLVzdtQmJ3TlMtZmJBVy1XNmxFdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba Releases World Model HappyOyster 1.0, Users Can Explore, Direct, and Reshape AI Worlds in Real Time",
+        "dek": "Alibaba unveils HappyOyster 1.0, a world model that lets users interactively explore, direct, and reshape AI-generated environments, signaling a push into immersive AI experiences.",
+        "details": [
+          "Alibaba has released HappyOyster 1.0, a world model designed for real-time user interaction. Unlike traditional generative AI that produces static outputs, HappyOyster allows users to explore dynamic AI worlds, direct narratives, and reshape scenes on the fly. The model is positioned as a step toward more interactive and controllable AI environments.",
+          "The announcement, covered by Chinese tech media Leiphone, comes amid growing competition in world models from players like Google’s Genie and OpenAI’s Sora. However, Alibaba has not disclosed technical benchmarks, training data, or commercial availability, leaving questions about performance and accessibility. The model likely leverages Alibaba’s Tongyi Qianwen infrastructure, but official confirmation is pending.",
+          "HappyOyster 1.0 targets content creators and game developers by enabling real-time scene editing without coding. Early demonstrations show users altering terrain, adding objects, and directing character behaviors. If widely adopted, it could lower barriers for interactive storytelling and virtual world building, though scalability and latency remain concerns."
+        ],
+        "why": "This release positions Alibaba as a contender in the world model race, potentially creating new use cases for interactive AI in gaming, simulation, and creative tools, and challenging Western counterparts in the immersive AI space.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里发布世界模型HappyOyster 1.0，用户可实时探索、导演并重塑 AI 世界 - 雷峰网",
+            "https://news.google.com/rss/articles/CBMid0FVX3lxTE5qYllPQVVDRXp4TlFYLVpTYXBXRjB4V1pTT2dSQ015VElkU3JhclRLbmJWcjk5OEZ3SlBFQVF6RmhYaFpoeHN4MEEzSmUzR2owNHBMWUkyTDhnVC12SUZsbGItaWRha1RWVldBcFJ3cVRzZXBJREFN?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek Raises Over $7.4 Billion, Becomes China's Most Valuable AI Startup",
+        "dek": "The fundraising round underscores strong investor confidence in domestic AI champions amid geopolitical tensions.",
+        "details": [
+          "DeepSeek has completed a funding round exceeding $7.4 billion, giving it the highest valuation among Chinese AI startups, according to the Wall Street Journal. The exact valuation was not disclosed, but the sum marks one of the largest private AI raises globally this year.",
+          "The round highlights sustained appetite for Chinese foundational model makers even as U.S. export controls tighten. DeepSeek now has resources to compete more aggressively with models from Alibaba, Baidu, and Tencent, and potentially challenge OpenAI and Anthropic in global benchmarks.",
+          "Observers note the deal signals a shift: Chinese AI companies are no longer just catching up but are becoming primary destinations for mega-rounds. The capital war chest will likely accelerate model scaling and deployment, especially in enterprise and government applications."
+        ],
+        "why": "This funding validates that Chinese AI startups can command Silicon Valley-scale rounds, reshaping competitive dynamics and investment flows. For product and strategy teams, it means a well-funded rival is about to accelerate model improvements and market expansion.",
+        "links": [
+          [
+            "Wall Street Journal (Chinese)",
+            "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaVRJRmZQSTFJYWlBRXQyemh4cXVOVGozcUQwd1ZHR0pMVV9MYnViMEVtMVdjY3Z3aWxlbFEwUFVTSlR6QlNiallOeUtPbnFGME92REJxR1d1UHRiejNuVG5BMFRkbHdLZzE1U0ZoUVUzT0xJbDdFdW9UVS1VUnRwN0l1el9IbG9USFFBNVF0Qkc2Y0dwbDVWQkF3MG45VzQ0NzJZdHppSU0zaURxLXJocFJnOU4xOGROQUE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "HSBC AND GOOGLE CLOUD ANNOUNCE TRANSFORMATIVE AI BANKING PARTNERSHIP - PR Newswire",
+        "dek": "HSBC partners with Google Cloud to accelerate AI adoption in banking, signaling a major push for generative AI in financial services.",
+        "details": [
+          "HSBC and Google Cloud have announced a transformative AI banking partnership, according to a PR Newswire release dated June 17, 2026. The collaboration aims to leverage Google Cloud's AI infrastructure and tools to enhance HSBC's banking operations, customer experiences, and risk management. No specific financial terms or technology integrations were disclosed in the initial announcement.",
+          "This deal marks one of the largest AI partnerships between a global bank and a cloud provider, highlighting the growing urgency among financial institutions to embed generative AI into core services. The partnership could serve as a blueprint for other banks, though the lack of concrete details leaves questions about the scope of implementation and time to impact."
+        ],
+        "why": "For financial sector observers and AI investors, this partnership validates the thesis that generative AI will reshape banking, potentially unlocking significant cost savings and revenue growth. It also signals that Google Cloud is aggressively competing with AWS and Azure for high-value AI enterprise deals.",
+        "links": [
+          [
+            "Google News AI Models: HSBC AND GOOGLE CLOUD ANNOUNCE TRANSFORMATIVE AI BANKING PARTNERSHI",
+            "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQRUZSZlo5dEFCall4TXpSaDRYX1E2VG1YaWpJSGItU0g4VEhtVmRIbENnUXY4bkw0c3dHZ3Vndm96Si05ZWRVRV9hZTlaOXMtMXVEdFJveFVUbnJwVm16VGFkWmdZRURia0VUZmNWbmp0Rnk0cGtPZmxvUi1PVzZRRnc3TVhyWHpsamp4V29uTnFGYkpaTFdlcnRFSFdYRkczcjV4aWxyYVJHMklHYm90c1lDS0F0aXd3dGkycVVOQUZ1dw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek Sparks Discussion on AI Chip Breakthroughs and Opportunities for Ordinary Users",
+        "dek": "A widely circulated opinion piece on Chinese media platform Guancha highlights how DeepSeek's progress in AI chips could democratize access to advanced computing and create new opportunities for individuals.",
+        "details": [
+          "An opinion piece published on Guancha (Wind News) examines DeepSeek's recent momentum, framing its AI chip advancements as a potential shift in China's AI hardware landscape. The article suggests that by reducing reliance on imported chips, DeepSeek could lower barriers for domestic developers and entrepreneurs, enabling more people to participate in AI innovation. While specific technical details are not disclosed in the piece, it positions DeepSeek as a catalyst for broader AI adoption in China, potentially creating jobs and business opportunities in areas such as model fine-tuning, application development, and AI education. The discussion comes amid growing interest in Chinese AI startups that offer cost-effective alternatives to Western models.",
+          "The piece does not cite specific performance benchmarks or funding figures, but its viral spread on Chinese social media reflects public enthusiasm for homegrown AI breakthroughs. Observers note that DeepSeek's open-weight models have already gained traction among developers, and any chip-level progress could further its ecosystem. However, the article remains a commentary rather than a confirmed report, and the actual impact on hardware supply chains remains unverified."
+        ],
+        "why": "This signals that DeepSeek's narrative is evolving from a model provider to a hardware-software integrated player, which could reshape competitive dynamics in China's AI stack and create new investment themes in domestic chip alternatives.",
+        "links": [
+          [
+            "DeepSeek AI chip breakthrough discussion",
+            "https://news.google.com/rss/articles/CBMidEFVX3lxTE9EdTlnaUdkVzJJcloxV21BNVVHRXY0UVMwYTlJQ3F4d25oR080VVQwNmJwMGI2eXRpYkl1R2xoTV9TSmhjdGh5TXpWV0FRbHVtYjFwQmdlMmRPMVg4TXA0T0RhYjlUQ21jM3Q2dEl6UHpEdDYz?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Cost Reduction of Nearly 40%! Microsoft Launches Copilot Cowork Intelligent Agent, Directly Competing with Claude",
+        "dek": "Microsoft's new Copilot update introduces a cowork intelligent agent, promising significant cost savings for enterprise users while taking on Anthropic's Claude.",
+        "details": [
+          "Microsoft has rolled out a new feature called \"Copilot Cowork Intelligent Agent\" as part of its Copilot suite, directly challenging Anthropic's Claude in the enterprise AI assistant space. The agent is designed to autonomously handle complex, multi-step workflows across Microsoft 365 applications, reducing manual handoffs and boosting productivity.",
+          "According to the announcement, the new agent can cut operational costs by nearly 40%, a figure that could sway budget-conscious enterprises evaluating AI adoption. While specific pricing details remain unclear, the cost reduction likely stems from automation of routine tasks and streamlined collaboration processes, positioning Copilot as a more affordable alternative to dedicated agent platforms.",
+          "This launch underscores Microsoft's aggressive push to embed AI agents into everyday work tools, leveraging its existing ecosystem to gain an edge over standalone competitors like Claude. With enterprises increasingly demanding ROI from AI investments, the cost-saving narrative may accelerate Copilot's adoption in the coming quarters."
+        ],
+        "why": "Microsoft's low-cost agent strategy could pressure other AI providers to justify premium pricing, making enterprise AI procurement more cost-sensitive and accelerating the shift from experimental to operational deployments.",
+        "links": [
+          [
+            "Google News AI Products: Cost Reduction of Nearly 40%! Microsoft Launches Copilot Cowork Intelligent Agent, Directly Competing with Claude",
+            "https://news.google.com/rss/articles/CBMiSkFVX3lxTFA3cGsxelhmX3Uxbzh6MzhsYkhyZWhNbkRnVUdtTjB6S0puYkFpbHNyUU9NaklQQ21JbjNtb081TC1zNUxEanc2VWZn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "AI Agent Era Could Flip the Odds: Google and Meta at Risk, Nvidia Poised to Win, Says Founder",
+        "dek": "A founder who once turned down OpenAI argues that the rise of AI agents will reshape the competitive landscape, favoring infrastructure providers over model builders.",
+        "details": [
+          "In a provocative take on the future of AI, a founder who previously rejected an opportunity from OpenAI argues that the AI agent era will dramatically shift power dynamics among tech giants. The core thesis: as AI shifts from single-turn Q&A to multi-step autonomous agents, the value will concentrate in the compute layer—specifically Nvidia—rather than in the frontier model owners. Google and Meta, which have invested heavily in building massive general-purpose models, could see their advantage eroded because agents require real-time inference at scale, not just benchmark-leading intelligence.",
+          "The founder points out that agents introduce massive new workloads: continuous reasoning, tool use, memory, and orchestration. These tasks demand low-latency, high-throughput compute that plays directly to Nvidia's strengths. Meanwhile, Google and Meta's business models rely on advertising and cloud services that may not translate seamlessly into an agent-dominated world. The argument echoes a growing debate about whether owning the best model is a sustainable moat or just a necessary condition to compete.",
+          "Although the article does not name the founder or provide detailed data, it reflects a real and intensifying industry conversation. If the thesis holds, investors and entrepreneurs should bet on infrastructure and middleware that enable agent ecosystems, rather than on generalized AI models that may become commoditized."
+        ],
+        "why": "This perspective challenges the prevailing narrative that frontier models are the ultimate prize. It suggests that the infrastructure layer—especially AI chips and agent orchestration platforms—may offer more durable competitive advantages as agents become mainstream, guiding where to place strategic bets.",
+        "links": [
+          [
+            "Benzinga via Google News",
+            "https://news.google.com/rss/articles/CBMiygFBVV95cUxOaWIzd2d3MTdrbks4R3I2SlRfOUc3bHpWTHMxT3BEMHRZajBmUWJtNkt0c0pIdk1ZLWcwS0lFVkN1bFEyWW1jVjN6OFFzNjJUbG04SHJOOVVzenJac0ZUajNNVm5aOHBwVE0xTzIyUHlhSDF5UFZVbTNmVUVOYlRFajA4bDJWTGpSTzNjdm4wSmhMMG45enRmVldQX1lndDByNEZTbEdOako4bXZadG8xVVFtMXFPV0QycVZtTnRPQ0d3YWZPR2NFbm1R?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "When Rules Learn: A Self-Evolving Agent for Legal Case Retrieval",
+        "dek": "A novel framework uses LLM agents to iteratively craft and validate query rewriting rules, boosting BM25 without any training — hinting at a paradigm shift toward emergent rule-based AI.",
+        "details": [
+          "Legal case retrieval is notoriously difficult because legal language is dense, and queries must often match specific wording in precedent cases. While dense retrieval models have made strides, empirical studies consistently show that BM25 remains a strong baseline — robust but inflexible. This suggests that domain-specific keyword optimization still matters, yet manually crafting rewrite rules is labor-intensive and brittle.",
+          "To address this, researchers propose a self-evolving framework that equips an LLM agent with an automatic evaluation environment. The agent iteratively creates rewriting rules, designs validation experiments over rule combinations, and eliminates ineffective ones — all without any parameter training. Over multiple cycles, the agent converges on a set of rules that significantly improve BM25's recall and precision on standard legal benchmarks.",
+          "The significance lies in its 'rule learning' paradigm: instead of fine-tuning models, the system evolves interpretable, human-readable rules through trial and error. This approach offers transparency, adaptability, and cost efficiency — especially valuable in high-stakes fields like law, where explainability is paramount. It also challenges the assumption that more parameters always mean better retrieval, pointing toward a hybrid future where rules and models complement each other."
+        ],
+        "why": "For AI and legal tech practitioners, this work demonstrates that self-evolving rule-based systems can rival or complement trained models, offering a low-cost, interpretable path to domain-specific retrieval improvements. It may reshape how we think about fine-tuning versus rule evolution in specialized AI applications.",
+        "links": [
+          [
+            "arXiv:2606.17220",
+            "https://arxiv.org/abs/2606.17220"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "微信支付发布AI专属卡 WorkBuddy率先接入",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from 量子位：微信支付发布AI专属卡 WorkBuddy率先接入. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "量子位: 微信支付发布AI专属卡 WorkBuddy率先接入",
+            "https://www.qbitai.com/2026/06/436160.html"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Correct When Paired, Wrong When Split: Decoupling and Editing Modality-Specific Neurons in MLLMs",
+        "dek": "New research reveals a critical failure mode in multimodal LLM knowledge editing: updates that work on paired text-image inputs often revert when inputs are split, exposing modality-specific neuron pathways.",
+        "details": [
+          {
+            "summary": "Core finding: Knowledge in MLLMs is stored not as a unified representation but across disentangled modality-specific pathways, causing editing decoupling failure.",
+            "expanded": "The paper from arXiv cs.LG (2606.17057) systematically analyzes a previously underexplored issue in knowledge editing for multimodal large language models (MLLMs). When an entity-related fact is updated using paired text-image queries, the model correctly reflects the new knowledge. However, if the same entity is queried via text-only or image-only inputs, the model often reverts to outdated pre-edit facts. This 'decoupling failure' indicates that entity knowledge is distributed across separate modality-specific neuron groups rather than stored in a shared representation. The authors confirm this through neuron-level analysis and propose a targeted editing method that aims to co-update modality-specific pathways to ensure consistent behavior across all input types."
+          },
+          {
+            "summary": "Implications for MLLM safety and reliability: Current editing benchmarks may overestimate effectiveness if they test only multimodal inputs.",
+            "expanded": "Most existing evaluation protocols for MLLM knowledge editing rely on multimodal queries (text + image). This research shows that such evaluations are insufficient, as they miss the failure mode triggered by unimodal inputs. The finding has direct implications for deploying editable MLLMs in safety-critical applications—e.g., a model that correctly refuses a toxic query when an image is present might still produce harmful text-only responses. The paper also demonstrates that simply editing with more multimodal examples does not solve the problem; the modality-specific pathways need to be explicitly aligned. This work is likely to influence future benchmark design and editing algorithms in the multimodal AI community."
+          }
+        ],
+        "why": "This paper exposes a fundamental limitation in current multimodal knowledge editing that could undermine trust and safety in deployed MLLMs. Practitioners and researchers should account for unimodal failure modes when designing editing pipelines and evaluation protocols, and consider the findings when building applications that rely on consistent fact updates across all input modalities.",
+        "links": [
+          [
+            "arXiv cs.LG: Correct When Paired, Wrong When Split: Decoupling and Editing Modality-Specific Neurons in MLLMs",
+            "https://arxiv.org/abs/2606.17057"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Embodied Brain Startup Nabs Hundreds of Millions in Funding, World Model Approach Attracts 15 VCs",
+        "dek": "The company behind the open-source embodied brain framework raises a massive round, signaling investor appetite for world models and embodied AI infrastructure.",
+        "details": [
+          "A leading embodied brain company has secured hundreds of millions of dollars in new funding, with 15 venture capital firms participating. The round highlights growing investor conviction in world model architectures as the path to general-purpose robot intelligence.",
+          "Over the past six months, the startup has shipped three major releases: an open-source embodied brain framework, an on-device inference engine optimized for edge robots, and a training ground simulation platform. These milestones position it as a key infrastructure provider for the embodied AI ecosystem.",
+          "The world model approach—which builds an internal predictive model of the environment—is increasingly seen as superior to traditional reinforcement learning for complex, open-ended tasks. This funding influx suggests the strategy is gaining traction beyond academia and into commercial deployment.",
+          "While the exact valuation and lead investors were not disclosed, the sheer number of VCs in the round indicates strong conviction and likely a high valuation. The capital will be used to scale the training ground platform and expand deployment partnerships with robot makers."
+        ],
+        "why": "For developers and startups building on embodied AI, this signals that world model-based frameworks are becoming a funded standard, making it a strategic time to align toolchains and skill sets with this approach.",
+        "links": [
+          [
+            "量子位: 头部具身大脑公司再获数亿美元融资！世界模型路线，15家VC抢着投",
+            "https://www.qbitai.com/2026/06/436148.html"
+          ]
+        ],
+        "sourceDate": "2026-06-17",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Recall: personal AI knowledge base for articles, videos, PDFs, and notes",
+        "dek": "Turn your daily reading into a searchable, chat-ready knowledge base.",
+        "details": [
+          "Recall is a productivity tool that automatically saves and organizes content from web pages, YouTube videos, podcasts, PDFs, books, and notes. It summarizes each item, adds tags, connects related pieces, and lets you chat with your entire collection using natural language. Instead of drowning in an endless reading list, you can build a reusable personal knowledge base that grows with you.",
+          "The product is especially useful for knowledge workers and AI enthusiasts who consume a high volume of online content daily. By transforming scattered bookmarks and notes into a unified, searchable repository, Recall helps you actually retain and reuse insights rather than losing them in the noise. It represents a practical application of AI for personal knowledge management—a space that is seeing increasing demand."
+        ],
+        "why": "For anyone trying to stay on top of AI developments, Recall turns passive reading into an active, queryable asset, reducing information overload and making it easier to connect ideas across sources.",
+        "links": [
+          [
+            "Curated AI Products: Recall: personal AI knowledge base for articles, videos, PDFs, and no",
+            "https://www.recall.it/"
+          ]
+        ],
+        "sourceDate": "2026-06-15",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Magic Patterns: AI design agent for interactive product prototypes",
+        "dek": "Generate clickable prototypes from prompts, screenshots, or existing design systems — no coding required.",
+        "details": [
+          {
+            "summary": "Prompt-to-prototype in seconds",
+            "expanded": "Magic Patterns lets product teams describe an idea in natural language, paste a screenshot, or feed in an existing design system, and instantly receives an interactive mockup. This transforms a fuzzy concept into a testable prototype that stakeholders can click through, making it far easier to align on product direction before any engineering work begins."
+          },
+          {
+            "summary": "Built for PMs and founders",
+            "expanded": "The tool is designed for people who need to communicate product ideas quickly — product managers, startup founders, and non-designers. By bridging the gap between ideation and a tangible demo, Magic Patterns reduces the friction of early-stage validation. It also respects brand consistency by allowing users to import their own design tokens or style guides."
+          }
+        ],
+        "why": "Magic Patterns exemplifies how AI can compress the design-to-feedback loop, making product discovery more accessible for small teams and non-designers. It's a strong signal for productivity-focused AI tools that target real workflow pain points.",
+        "links": [
+          [
+            "Curated AI Products: Magic Patterns: AI design agent for interactive product prototypes",
+            "https://www.magicpatterns.com/"
+          ]
+        ],
+        "sourceDate": "2026-06-15",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "AI Coding Agent",
+        "dek": "An AI system that autonomously performs software development tasks, from code generation to debugging and deployment.",
+        "details": [
+          "An AI Coding Agent is a software system that uses large language models (LLMs) to plan, write, test, and fix code with limited human intervention. Unlike simple code copilots, coding agents maintain context across multiple files, execute commands in sandboxed environments, and iterate based on error feedback. Examples include GitHub Copilot, OpenAI Codex, and emerging tools like Cursor and Devin.",
+          "The trend is shifting from inline code suggestions to autonomous agents that can manage entire workflows: fetching requirements, generating pull requests, and running CI checks. In June 2026, companies like Conduct (which raised $60M in Series A led by Index, ICONIQ, and SAP) and open-source projects are pushing agentic capabilities into enterprise development pipelines.",
+          "For non-technical readers, AI Coding Agents represent a step change in developer productivity—potentially reducing routine coding time by 50-80% and enabling more people to build software. Understanding this term helps evaluate which AI tools offer genuine workflow automation versus mere snippet generation."
+        ],
+        "why": "Grasping 'AI Coding Agent' is essential to differentiate between basic code completers and truly autonomous development tools. This distinction impacts investment in developer tools, startup strategy, and team productivity planning.",
+        "links": [
+          [
+            "Conduct completes $60M Series A led by Index, ICONIQ and SAP",
+            "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNREtvd215ZXdaeFJaMS1ieXdCYlFucDlNR1hGZk9IdktBWDk3M1B6NmRLdDJiVmQzTm40OW9GSjF0dWR1blhwU2RFS0NaRENkRnBQZWtnRUZhU0wxb0l3Q2E2VHkwOWZOQTlMYjhVMy00NzYzSWxuQW1KczFOM0dQYkJMMUR2ZzNUSG5CXzd1eXJMV2F1MHdFMU1LUU9vb3lfS01Jd0U5aWM?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-12",
     "title": "AI Daily Atlas",
