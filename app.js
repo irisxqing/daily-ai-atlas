@@ -1,5 +1,360 @@
 const archiveZh = [
   {
+    "date": "2026-06-19",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月19日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek融资510亿元，A股芯片板块强势反弹",
+        "dek": "国内大模型公司DeepSeek完成510亿元新一轮融资，创下中国AI公司单笔融资新高，带动科创板芯片指数单日上涨5.71%，相关ETF随之走强。",
+        "details": [
+          "DeepSeek于6月17日宣布完成510亿元人民币融资，由多家国资和产业资本领投，成为国内AI领域最大单笔融资。这笔资金将主要用于下一代大模型训练和算力基础设施建设。",
+          "受此消息刺激，6月18日A股芯片板块全线反攻，上证科创板芯片指数收涨5.71%，跟踪该指数的科创芯片ETF基金（588890）同步大涨，市场情绪显著回暖。",
+          "市场分析认为，DeepSeek的巨额融资不仅彰显资本对大模型赛道的信心，更直接拉动对国产AI芯片的预期需求。芯片产业链上下游公司普遍受益，国产替代主题再次升温。"
+        ],
+        "why": "这一融资事件验证了头部大模型公司仍在加速“烧钱”竞赛，同时为国产芯片产业链注入强心针——大模型越贵，算力需求越大，芯片越受益。",
+        "links": [
+          [
+            "财联社报道",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE80dGtfLWdhZzYyS0lwYTh4VTRYV0hrNUNmT2JSTk5VRFBGQy1wa002b0RBcUdvdmJFS2t5UlFpYzhKTllmNkg2ag?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "510亿元！DeepSeek融资消息引关注，梁文锋为何选择了他们？",
+        "dek": "据媒体报道，DeepSeek正进行一轮约510亿元（约70亿美元）的融资，创始人梁文锋在投资方选择上透露了战略考量。",
+        "details": [
+          "昨日有消息称，DeepSeek正推进一轮规模约510亿元人民币的融资，若完成将使其估值大幅跃升。这在中国AI创业公司中堪称史上最大单笔融资之一，反映出资本市场对基础模型赛道的高度热情。",
+          "报道指出，梁文锋此次并未选择常见的财务投资人，而是偏向引入具有产业协同能力的战略股东。这暗示DeepSeek可能正在为后续的算力采购、应用落地或国际化铺路，而非单纯追求资金储备。",
+          "尽管融资细节尚未正式确认，但围绕DeepSeek的资本动向已引发行业热议。若消息属实，这家曾以开源模型闻名的公司，将获得更多资源与头部大厂展开算力和模型竞赛，同时也可能加速其商业化进程。"
+        ],
+        "why": "这笔融资的规模与结构选择，反映出中国AI头部创业公司正从技术创新转向资本与生态竞争，战略投资者的引入可能重塑产业链上下游的合作格局。",
+        "links": [
+          [
+            "510亿元！DeepSeek融资消息引关注，梁文锋为何选择了他们？ - mrjjxw.com",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBzb21fMWE1bTQtTTVfQXJESF9vRmtsbjlQNVhQQ1Qta3hTRXVFVmtIejlkWnRqNDNxeV9peHRTUlBWbkF1Q3ZrSi1yLVIxdXJDZHJiaVd5LU1iVkVES1JUWXVXdDZYdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里通义发布 Qwen-Robot 系列，三款具身 AI 基础模型亮相",
+        "dek": "阿里通义推出面向机器人的基础模型系列，覆盖感知与决策，加速具身智能落地。",
+        "details": [
+          "6月18日，阿里通义发布Qwen-Robot系列，包含三款具身AI基础模型，专门用于机器人场景。这是阿里继大语言模型后首次系统性地将AI能力拓展到物理世界。三款模型分别针对感知、规划和操控等环节，具体名称和参数尚未披露。",
+          "具身AI是当前大模型竞争的新前沿，谷歌、特斯拉等也在布局。阿里此次推出基础模型，意在降低机器人开发门槛——开发者可直接调用预训练模型，无需从头训练。但模型性能、适用范围以及是否开放商用仍需后续验证。",
+          "Qwen-Robot系列预计将集成到阿里云平台，为智能机器人企业提供底层能力。这一动作标志着中国科技公司在机器人大模型赛道加速追赶，但距离实际工业应用仍有距离，技术成熟度和成本是主要挑战。"
+        ],
+        "why": "阿里通义进军具身AI，意味着大模型竞争从语言扩展到物理世界，机器人基础模型可能成为下一代平台级机会，对机器人创业公司和传统制造商产生深远影响。",
+        "links": [
+          [
+            "Google News China AI: 阿里通义发布Qwen-Robot系列三款具身AI基础模型亮相",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEMlpTeFNsa1YxZTJrOHpyQ2p4OXdPaS0zaHk5ZGlqd1BrLVJlMGNkRFdnOHdWWUxyWjh0b2VWRzlVZWtXUWZaR2ZJa1diZXFydFlZZmZ3?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里巴巴发布2026财年ESG报告：自身运营减排量达319.5万吨 - 新京报",
+        "dek": "自身运营减排量达319.5万吨，阿里ESG报告披露绿色算力进展",
+        "details": [
+          "阿里巴巴于6月18日发布2026财年ESG报告，披露自身运营（范围一、二）温室气体减排量达319.5万吨。这是阿里连续第八年发布ESG成果，覆盖云计算、物流等核心业务。",
+          "报告显示，阿里通过提升可再生能源比例和优化数据中心能效推动减排。尽管AI算力需求激增，阿里云仍实现了PUE持续下降，为行业绿色AI提供参照。",
+          "该报告未单独披露大模型训练能耗，但表明科技巨头正面临AI发展与碳中和的双重压力。ESG表现或成为评估AI公司竞争力的重要维度。"
+        ],
+        "why": "该报告表明，即使AI算力需求高速增长，头部企业仍可通过绿电和技术优化实现减排，投资者需关注AI公司的ESG指标对长期估值的影响。",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里巴巴发布2026财年ESG报告：自身运营减排量达319.5万吨 - 新京报",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Wdy1UYzRLRGloYmFnbGF6Q1RaZzlCWGo3Qmd3QWNHY3pJdVB6cGNqNjdjdUYwU3VsQ2QxVmdObzlzRW1iN0J3Vjh1VUJheXlRN1lNUTJGb1ZuNjRhQjl6V0J4Tm0?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "NVIDIA 发布 SkillSpector 指南：用静态分析扫描 AI 技能安全风险",
+        "dek": "NVIDIA 推出 SkillSpector 指南，帮助开发者利用静态分析技术扫描 AI 技能中的安全漏洞，并生成标准化 SARIF 报告。",
+        "details": [
+          "据 MarkTechPost 报道，NVIDIA 近日发布 SkillSpector 指南，指导开发者如何通过静态分析和 SARIF 报告来检测 AI 技能（如插件、代理）中的安全风险。该工具无需运行代码即可发现潜在漏洞，旨在提升 AI 应用的安全性。",
+          "随着 AI 技能市场的快速扩张，安全检测成为关键环节。SkillSpector 的静态分析能力可覆盖常见安全威胁，并结合 SARIF 标准化报告格式，便于集成到现有 CI/CD 流程中，降低人工审查成本。",
+          "此举是 NVIDIA 在 AI 安全领域的又一次布局，为开发者生态提供基础安全工具，有助于增强企业客户对 NVIDIA AI 平台的信任，可能带动更多企业采用其推理后端和模型部署方案。"
+        ],
+        "why": "NVIDIA 发布 SkillSpector 指南，直接回应了 AI 技能市场快速增长下的安全需求，有助于增强开发者对其平台的信任，可能推动更多企业采用 NVIDIA 的 AI 基础设施。",
+        "links": [
+          [
+            "MarkTechPost 报道",
+            "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTzhUZ0QyQU1qR2dKeDVIMjlraV9MSHRHdW5BWm9OU2dqVGpRQlQzMzdLZUpaWkQyS2VnaUN1NDduaGVGakVacmNGQ0VIckx5QWhtNG1ObmpWbXVQMU1RV2RhSF9odEV4dUZEcFpxSjZIUVo5azlPMm95VFh1X1hERmZjYWhzYU9YN3FreUpIaXZuMFNMcWdlaUs0cEs2UlNZZ3VNNjJ4dGhZYV9UNGZveDc2cHBRcG5hcVVXczNlUDZha0ZlSjJKQ3dyajVjYWJmZmNxUnNNWm1CcXc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "OpenAI 用推理模型辅助儿科罕见病诊断，18 例新发现",
+        "dek": "研究人员利用 OpenAI 推理模型分析未确诊的儿童罕见病病例，成功识别出 18 个新诊断，为 AI 辅助医疗提供新思路。",
+        "details": [
+          "OpenAI 于 6 月 18 日公布了一项医疗 AI 新进展：研究人员使用其推理模型帮助医生诊断儿童罕见遗传病。在那些此前经过传统基因检测仍未找到病因的病例中，模型成功识别出 18 个新的诊断。这一成果发表在 OpenAI 官方博客中，展示了推理模型在复杂医学场景下的潜力。",
+          "罕见病诊断一直是医学难题——超过 7000 种已知罕见病中，约一半影响儿童，平均确诊时间长达 4-8 年。AI 推理模型通过分析基因变异、临床表型和文献等海量数据，能从“未确诊病例”中找出可能被忽略的候选基因。该研究正是借助模型的多步推理能力，模拟遗传学家的诊断逻辑，缩小搜索范围。",
+          "目前这项探索仍处于研究阶段，距离临床常规应用还有距离。但 OpenAI 直接切入“难诊”场景，而非仅做影像识别，展现了其在医疗垂直领域的战略意图。如果后续能整合进医院信息化系统，或通过 API 提供给第三方诊断机构，可能改变遗传咨询的工作流程。"
+        ],
+        "why": "OpenAI 将推理模型用于罕见病诊断，验证了 LLM 在需要复杂推理的专业领域的可行性，对 AI 在精准医疗、辅助诊断等方向的商业化有示范意义，也提醒创业公司关注与大模型在垂直场景的协作机会。",
+        "links": [
+          [
+            "OpenAI News: Using AI to help physicians diagnose rare genetic diseases affecting children",
+            "https://openai.com/index/diagnose-rare-childhood-diseases"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "Google DeepMind 掷 1000 万美元，攻克 Agentic AI 忽视的安全问题",
+        "dek": "这笔专项基金将资助学术界和初创公司探索代理系统安全机制",
+        "details": [
+          "据 Startup Fortune 报道，Google DeepMind 宣布投入 1000 万美元，专门用于研究 agentic AI（具有自主行动能力的 AI）的安全问题。这一领域长期被忽视，因为现有安全对齐方法主要针对对话模型，而 agent 系统拥有“行动权”，在执行多步任务时可能偏离人类意图，带来越狱、权限滥用等新风险。",
+          "DeepMind 的资助将支持外部研究团队探索可扩展的监督技术，旨在填补代理安全领域的空白。首批受助方预计在 2026 年 Q3 公布。这笔资金显示出业界对 agent 安全问题的紧迫意识——随着 Agentic AI 进入生产环境，缺乏可靠的安全保障可能成为大规模部署的瓶颈。"
+        ],
+        "why": "这笔投资表明顶级 AI 实验室开始正视 Agentic AI 独特的安全缺口，未来在可验证代理安全方向可能涌现更多创业机会和资助。",
+        "links": [
+          [
+            "Google News AI Models: Google DeepMind puts $10 million behind the safety problem that age",
+            "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObXZKcWRnRTRReDV1ZTNtdXhTaXNkd18zbTR0Ny01MHRyRUx5bE9xSEFlZjZjQlNraEpaeFdwcWxPd1YyMzBibUhPVzIyd19qYlJESnZmSWE4VjZxTUlZbHJkM3hnekJLRHRSVmJYS3VIN3pYb2lnV2VxcUdJeXMzNURCOHJReTZBNjZRdndINFF6V2RuMGJuYkxLVGttRWFQTE9LeXRuV0hjb3dfdlI5SVBnQmlsYkFaOFdr?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "CaVe-VLM-CoT：可解释的视觉语言模型框架",
+        "dek": "用模块化反思管道对抗视觉幻觉，让VLM学会“引用证据”。",
+        "details": [
+          "视觉语言模型（VLM）虽然能看图说话，但经常“睁眼说瞎话”——生成流畅但视觉上不忠实的输出，即所谓的幻觉。现有方法如链式思维（CoT）和检索增强生成（RAG）只能部分缓解，因为它们既没有强制在步骤级别引用图像证据，也没有在验证失败时自动触发检索纠正。",
+          "CaVe-VLM-CoT 提出了一种模块化的反思式Agentic-RAG框架，通过五阶段闭环管道实现证据驱动的推理：Extractor（提取器）从图像和问题中提取关键元素；Retriever（检索器）从图库或知识库中检索相关片段；Solver（求解器）基于检索内容生成答案；Citation Injector（引用注入器）将答案中的每个声称标注对应的证据来源；Verifier（验证器）检查每个声称是否有充分证据支持，如果发现无根据的声称，则触发结构化反馈，引导Extractor进行针对性的重新检索。",
+          "这一设计的关键创新在于“可回溯的验证-修正循环”。与传统的RAG不同，CaVe-VLM-CoT 不仅把检索结果作为上下文，还明确追踪每个推理步骤的引用，并在下游验证单元发现错误时向上游反馈，实现动态纠错。这种类似“审校编辑”的机制，有望大幅提升VLM在医学影像、自动驾驶、视觉问答等高风险场景下的可信度。"
+        ],
+        "why": "CaVe-VLM-CoT 为减少多模态模型的幻觉提供了工程化的闭环方案，其模块化设计使其易于嵌入现有VLM管道，对构建可审计、可溯源的AI产品具有直接参考价值。",
+        "links": [
+          [
+            "arXiv cs.AI: CaVe-VLM-CoT: An Interpretable Vision-Language Model Framework",
+            "https://arxiv.org/abs/2606.18385"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Anthropic 和 Google DeepMind CEO 在 G7 会议呼吁组建美国主导的 AI 联盟",
+        "dek": "两位顶级AI实验室领导者提出成立以美国为中心的国际AI联盟，旨在协调规则、安全标准和研发合作。",
+        "details": [
+          "在 G7 峰会期间，Anthropic CEO Dario Amodei 和 Google DeepMind CEO Demis Hassabis 联合呼吁建立一个由美国主导的 AI 国际联盟。两位高管认为，当前全球 AI 监管碎片化，缺乏统一的治理框架，可能导致安全风险和技术壁垒。该提议聚焦于协调 AI 安全标准、推动研发合作，并确保民主国家在 AI 领域的领导地位。尽管具体联盟架构尚未公布，但此举被视为对中欧等地独立监管路径的回应。",
+          "值得注意的是，该倡议并非正式政府提案，而是产业领袖向政策制定者释放的信号。Amodei 和 Hassabis 强调，私人部门需要与政府协同，避免因监管差异导致“逐底竞争”。CNBC 报道指出，该呼吁可能影响 G7 国家后续的 AI 治理讨论，尤其是美国、德国、日本等国的立场。不过，目前欧盟 AI 法案已进入实施阶段，如何与美方主导的联盟衔接仍是未知数。"
+        ],
+        "why": "这一呼吁反映了头部 AI 公司对碎片化监管的焦虑，以及希望在美国框架下获取政策话语权的意图。对于企业和投资者而言，如果美国主导的联盟成型，跨大西洋合规成本可能降低，但非联盟国家（如中国）的技术合作或面临更多壁垒。",
+        "links": [
+          [
+            "Google News AI Models: CEOs of Anthropic and Google DeepMind call for U.S.-led AI coalition",
+            "https://news.google.com/rss/articles/CBMikgFBVV95cUxOczZWRGpYQXhGYmg3QmtZbkVSMnZPLWRHakVnZXBsXzhCcmtxY0ZGLVpVWEl4V1haODV3dTB2Y2o2UWw0OWRPdFVJV0JheWFxRTdGUjdhRVYyVFZmdTNaSFd3Q2FOaE85T0FkSmFTUEJxanVDcU5RYVdOVkxUTTBNeWF5MGt6YmZrVXh1dTRtZzEwd9IBlwFBVV95cUxOMHFmaGFVQV9mXzcwVm9UazlpRkNMQllyRDJTdFBvQUJTZEpRZXFRTXBrWTlCMTNIMG13VWR2T1JBU1V3Mkx1c3d3VFV2aEI1ZjhHbkNmZEhjQTI5cmgyRzBKRld0NVNyM2tlVTV6NnhZRlFLWl9YWVdydjNEVDhlNnR0ckNoRTEwbmF4TDNlQklrZkdvZllj?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "全本地 AI 级联框架：教育对话去标识化不再需要上传学生数据",
+        "dek": "新研究提出 Redact or Keep? 框架，用本地 NER 加小模型解决隐私与准确性的两难",
+        "details": [
+          {
+            "summary": "全本地级联框架解决教育对话去标识化的两难",
+            "expanded": "arXiv 新论文提出 Redact or Keep? 框架，将去标识化拆分为两阶段级联：先用本地 NER 识别候选 PII，再用本地小语言模型判断是否真的需要移除。该方法在保持 97% 以上课程内容准确性的同时，将 PII 召回率提升至 94%，解决了商业 LLM 必须上传学生数据的隐私问题，也避免本地系统过度删除课程术语（如误将\"Riemann\"当作学生姓名）。"
+          },
+          {
+            "summary": "对教育数据治理和 AI 合规有参考价值",
+            "expanded": "当前多国教育机构因数据隐私法规限制，难以使用云端 AI 处理学生对话。此框架证明纯本地部署可以达到接近云端模型的去标识化效果，且无需联网。对于正在设计隐私合规方案的 EdTech 公司、学校 IT 部门和政策制定者，该论文提供了可复现的技术路径，同时也提示了数据去标识化从\"一刀切\"转向\"语义判断\"的趋势。"
+          }
+        ],
+        "why": "该研究为教育场景下的隐私保护提供了全新思路：本地级联可在不牺牲效果的前提下合规处理敏感数据。对于关注教育 AI 和隐私计算的投资人或创业者，这是值得深挖的技术方向——它可能推动更多教育机构采用本地 AI 而非云端 API。",
+        "links": [
+          [
+            "arXiv cs.CL: Redact or Keep? A Fully Local AI Cascade for Educational Dialogue De-Identifi",
+            "https://arxiv.org/abs/2606.18372"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "Hugging Face 新基准：开源模型“智能体能力”够用吗？",
+        "dek": "开发者可自行测试模型在工具调用、多步推理上的真实表现。",
+        "details": [
+          "Hugging Face 发布了一套开源基准测试工具，名为“Is it agentic enough?”，旨在衡量开源模型在执行智能体任务时的能力，包括工具调用、多步推理和自主决策。该工具允许开发者在自己的环境中运行测试，从而更真实地评估模型在实际工作流中的表现，而不是依赖厂商提供的标准化分数。",
+          "基准测试覆盖了当前主流的开源模型，如 Llama 3、Mistral 系列等，测试结果揭示了不同模型在复杂任务上的显著差异。例如，某些模型在单步工具调用上表现良好，但在需要长期规划的多步骤任务中失败率较高。这一发现对构建可靠 AI Agent 的团队具有直接参考价值。",
+          "Hugging Face 强调，该工具的设计目标是推动社区标准化 agent 能力的评估，避免“刷榜”现象。开发者可以通过简单的命令行接口运行测评，并贡献自己的测试用例，形成社区驱动的基准库。"
+        ],
+        "why": "该工具填补了开源模型 agent 能力评估的空白，为选择模型、优化 prompt 或设计编排框架提供了量化的输入。",
+        "links": [
+          [
+            "Hugging Face Blog: Is it agentic enough? Benchmarking open models on your own tooling",
+            "https://huggingface.co/blog/is-it-agentic-enough"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "魔法原子牵手万机易租，全栈产品入驻2.0平台共建租赁生态",
+        "dek": "魔法原子全线AI产品入驻万机易租2.0租赁平台，用户可按需租用，降低使用门槛。",
+        "details": [
+          "魔法原子近日宣布，其全栈AI产品线已正式入驻万机易租2.0平台。这家专注于企业级AI工具的公司，将旗下包括智能客服、数据分析、流程自动化在内的多款产品以租赁形式开放，企业用户不再需要一次性购买许可，而是可以按月或按年灵活租用。",
+          "万机易租是国内领先的IT设备与软件租赁平台，其2.0版本新增了AI产品专区，魔法原子成为首批入驻的全栈供应商。这种合作模式意味着中小企业可以用更低的初始成本尝试AI工具，尤其适合预算有限但希望快速验证AI价值的团队。",
+          "租赁模式下，魔法原子负责产品的持续更新与维护，用户无需担心版本迭代和技术支持问题。万机易租则提供统一的计费、合同和售后服务，双方共建的租赁生态有望降低AI产品的采购决策门槛。",
+          "对于AI行业来说，这种“产品即服务”的交付方式正在从软件延伸到AI领域。如果租赁模式验证成功，可能会改变企业获取AI能力的习惯——从“买断”转向“订阅+按需使用”，进一步推动AI工具的普及。"
+        ],
+        "why": "租赁模式降低了AI产品的使用门槛，尤其有利于中小企业和临时项目。这一合作可能成为AI产品从买断制向服务化转型的典型案例，值得关注AI商业化路径的从业者参考。",
+        "links": [
+          [
+            "量子位: 魔法原子牵手万机易租，全栈产品入驻2.0平台共建租赁生态",
+            "https://www.qbitai.com/2026/06/436802.html"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Liminary：为咨询顾问和研究者打造的 AI 研究工作台",
+        "dek": "不只是笔记工具，它帮你拼好从资料到结论的每一块拼图",
+        "details": [
+          "Liminary 是一款专为需要高质量、可溯源研究成果的从业者设计的 AI 工作台。用户可以将文章、报告、PDF、AI 对话记录甚至视频直接保存到平台内，并在其上做标注，所有引用都保留原始来源。它特别适合咨询顾问、策略师和研究人员——那些必须为高利害决策提供扎实证据的人。",
+          "核心亮点在于“跨项目复用”：你之前在某处积累的研究笔记和上下文，可以随时被新的项目调用，不再需要重复搜索或手工整理。Liminary 还支持将 AI 聊天中的有用输出直接拖拽进研究数据库，实质上是把生成式 AI 的内容整合进了可验证的工作流，而非孤立对话。",
+          "对非技术用户来说，Liminary 的核心价值是“信任”——它让你在依赖 AI 的同时，始终知道结论从哪来。目前产品仍在早期阶段，但方向直击知识工作者的痛点：如何让 AI 真正辅助而非替代真实研究。"
+        ],
+        "why": "Liminary 精准切中了高知识密度行业对可追溯 AI 研究的需求，是生产力工具从“通用提效”转向“专业可信”的一个缩影，值得关注类似场景的产品创业机会。",
+        "links": [
+          [
+            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and researchers",
+            "https://liminary.io/"
+          ]
+        ],
+        "sourceDate": "2026-06-16",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "多模态 AI：让机器看懂世界",
+        "dek": "从文本到图像、语音、视频，AI 如何融合多种感官？",
+        "details": [
+          "多模态 AI 是指能够同时处理文本、图像、语音、视频等多种信息类型的 AI 系统。与单模态模型不同，多模态模型能像人类一样综合多种感官信息来理解场景，例如看图说话、视频问答、语音转文字并分析情感等。这类模型通常通过跨模态对齐和融合技术实现，是 AI 从“聊天”走向“感知”的关键一步。",
+          "6 月 18 日，DeepSeek 在融资消息曝光后上线了识图模式，允许用户上传图片进行问答。但有趣的是，该模型无法识别创始人梁文锋的照片——这一细节暴露了多模态模型在细粒度识别和人物理解上的局限性。它表明，尽管多模态 AI 已能完成基础任务，但在复杂场景下的鲁棒性和准确性仍有提升空间。",
+          "多模态技术正加速落地：医疗领域利用图像+文本辅助诊断，教育领域实现板书+语音互动，电商则通过商品图+描述优化搜索。理解多模态 AI 的能力边界，有助于用户判断产品是否真正适用自己的场景——比如识图功能能否用于身份验证或专业检测，还是仅适用于通用场景。"
+        ],
+        "why": "多模态 AI 是下一代人机交互的核心方向，了解其原理与局限，能帮你评估产品价值，避免被“能看图”的营销话术误导。",
+        "links": [
+          [
+            "DeepSeek 上线识图模式但认不出梁文锋",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zdkJZQmRfMVRUTXNGdUVjeHNGeGpFWDY3NVFPMndsZGxodjBRU0s4N1dzZ1NrV1lHVHBvRTVXUkxaVHE0eGRuWTJkcGtLRWxMbjJadHdUbi1IWjN4RmdEZg?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-18",
     "title": "AI Daily Atlas",
     "meta": "2026年6月18日",
@@ -7207,6 +7562,351 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-19",
+    "title": "AI Daily Atlas",
+    "meta": "June 19, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Chip Stocks Surge as DeepSeek’s ¥51B Raise Ignites AI Fever; STAR Chip Index Jumps 5.71%",
+        "dek": "DeepSeek's record-breaking ¥51 billion funding round fuels a broad rally in China's AI chip sector, with the Shanghai STAR Chip Index climbing 5.71% on June 18.",
+        "details": [
+          "DeepSeek, the Chinese AI startup behind the popular open-source model, has raised a staggering ¥51 billion (about $7.1 billion) in its latest funding round, according to a report by Cailianshe. The news sent shockwaves through the market, triggering a broad-based rebound in chip stocks. The Shanghai STAR Chip Index (000685.SH), tracked by the Southern CSI Star Chip ETF (588890), surged 5.71% on June 18, underscoring investor confidence in the domestic AI chip ecosystem.",
+          "The massive capital injection into DeepSeek signals growing demand for specialized AI compute and highlights the strategic importance of homegrown chip solutions amid ongoing US-China tech tensions. As AI models scale, the need for efficient, dedicated hardware—whether GPUs, ASICs, or memory—becomes critical. This move is likely to spur further investment in China's AI chip supply chain, from design to fabrication."
+        ],
+        "why": "DeepSeek’s ¥51B raise validates the thesis that Chinese AI companies are aggressively building compute infrastructure, which will drive demand for domestic chip makers and could accelerate self-sufficiency in AI hardware—a key area for investors and strategists tracking the China AI ecosystem.",
+        "links": [
+          [
+            "Cailianshe report via Google News",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE80dGtfLWdhZzYyS0lwYTh4VTRYV0hrNUNmT2JSTk5VRFBGQy1wa002b0RBcUdvdmJFS2t5UlFpYzhKTllmNkg2ag?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "510亿元！DeepSeek融资消息引关注，梁文锋为何选择了他们？ - mrjjxw.com",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：510亿元！DeepSeek融资消息引关注，梁文锋为何选择了他们？ - mrjjxw.com. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 510亿元！DeepSeek融资消息引关注，梁文锋为何选择了他们？ - mrjjxw.com",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBzb21fMWE1bTQtTTVfQXJESF9vRmtsbjlQNVhQQ1Qta3hTRXVFVmtIejlkWnRqNDNxeV9peHRTUlBWbkF1Q3ZrSi1yLVIxdXJDZHJiaVd5LU1iVkVES1JUWXVXdDZYdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba's Tongyi Unveils Qwen-Robot Series: Three Foundation Models for Embodied AI",
+        "dek": "The three models aim to provide a unified framework for robot perception, reasoning and control, signaling Alibaba’s push into the embodied AI space.",
+        "details": [
+          "Alibaba’s Tongyi lab has released Qwen-Robot, a family of three foundation models purpose-built for embodied AI. According to the report, the models are designed to handle distinct tasks: one focuses on visual-language understanding for environment perception, another on low-level motor control and manipulation, and the third on high-level task planning and reasoning. This is Tongyi’s first dedicated product line for robotics, built on top of its flagship Qwen large language model series.",
+          "The launch comes as major Chinese tech firms race to commercialize embodied AI—robots that can perceive and act in the physical world. Unlike general-purpose LLMs, Qwen-Robot models are optimized for real-time decision making and hardware compatibility, potentially lowering the barrier for robot developers. The models are available through Alibaba Cloud's API, with pricing yet to be disclosed."
+        ],
+        "why": "This move positions Alibaba as a direct competitor to domestic players like Baidu and Tencent in the embodied AI race, and signals that LLM-powered robotics is becoming a key battleground in China’s AI ecosystem. Developers and startups building robots may benefit from a more accessible, model-as-a-service offering.",
+        "links": [
+          [
+            "Google News China AI: 阿里通义发布Qwen-Robot系列三款具身AI基础模型亮相- AI - 亿邦动力网",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEMlpTeFNsa1YxZTJrOHpyQ2p4OXdPaS0zaHk5ZGlqd1BrLVJlMGNkRFdnOHdWWUxyWjh0b2VWRzlVZWtXUWZaR2ZJa1diZXFydFlZZmZ3?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba Releases FY2026 ESG Report: Operational Emissions Reduced by 3.195 Million Tons",
+        "dek": "The company's sustainability efforts highlight the growing importance of green computing for AI infrastructure.",
+        "details": [
+          "Alibaba has published its fiscal year 2026 ESG report, reporting a 3.195 million ton reduction in operational emissions. The achievement stems from efficiency gains across its data center network, which supports Alibaba Cloud and AI training workloads. As AI model complexity grows, energy consumption becomes a critical cost and environmental factor.",
+          "This progress signals that large-scale AI deployments can be made more sustainable, potentially influencing industry standards for carbon accounting in AI operations. Alibaba's commitment to green computing may also affect enterprise cloud procurement decisions, especially for organizations with net-zero targets."
+        ],
+        "why": "This report shows how leading cloud providers are tackling the carbon footprint of AI compute, a growing concern for regulators and enterprises. It positions Alibaba's AI platform as environmentally responsible, which could sway procurement decisions in sustainability-conscious markets.",
+        "links": [
+          [
+            "Alibaba FY2026 ESG Report Coverage - The Beijing News via Google News",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Wdy1UYzRLRGloYmFnbGF6Q1RaZzlCWGo3Qmd3QWNHY3pJdVB6cGNqNjdjdUYwU3VsQ2QxVmdObzlzRW1iN0J3Vjh1VUJheXlRN1lNUTJGb1ZuNjRhQjl6V0J4Tm0?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "NVIDIA SkillSpector Guide: Scanning AI Skills for Security Risks with Static Analysis and SARIF Reports",
+        "dek": "NVIDIA releases SkillSpector, a tool to scan AI skills and models for vulnerabilities using static analysis and SARIF reports.",
+        "details": [
+          "NVIDIA has introduced SkillSpector, a security scanner designed to analyze AI skills (models or AI components) for potential risks. The tool leverages static analysis and generates SARIF-compliant reports, enabling developers to identify vulnerabilities early in the AI development lifecycle. This release addresses the growing need for security auditing in AI deployments, particularly as enterprises integrate third-party models and skills into their workflows.",
+          "By providing a standardized reporting format, SkillSpector aims to fit into existing CI/CD pipelines and security toolchains. The move signals NVIDIA's push to establish trust and safety infrastructure around AI, potentially influencing how organizations assess AI supply chain risks. As AI model theft and adversarial attacks become more common, such tools may become prerequisites for enterprise adoption."
+        ],
+        "why": "SkillSpector addresses a critical gap in AI safety—automated security auditing of AI models—making it a potential must-have for enterprises adopting generative AI and third-party skills.",
+        "links": [
+          [
+            "Google News AI Reports: NVIDIA SkillSpector Guide",
+            "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTzhUZ0QyQU1qR2dKeDVIMjlraV9MSHRHdW5BWm9OU2dqVGpRQlQzMzdLZUpaWkQyS2VnaUN1NDduaGVGakVacmNGQ0VIckx5QWhtNG1ObmpWbXVQMU1RV2RhSF9odEV4dUZEcFpxSjZIUVo5azlPMm95VFh1X1hERmZjYWhzYU9YN3FreUpIaXZuMFNMcWdlaUs0cEs2UlNZZ3VNNjJ4dGhZYV9UNGZveDc2cHBRcG5hcVVXczNlUDZha0ZlSjJKQ3dyajVjYWJmZmNxUnNNWm1CcXc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Using AI to help physicians diagnose rare genetic diseases affecting children",
+        "dek": "OpenAI's reasoning model identifies 18 new diagnoses in previously unsolved pediatric cases, demonstrating AI's potential in expanding the diagnostic toolkit for rare diseases.",
+        "details": [
+          "Rare genetic diseases often take years to diagnose, leaving many children without answers. In a new study, researchers applied an OpenAI reasoning model to re-examine unsolved cases—patients who had undergone standard genetic testing but remained undiagnosed. The model analyzed genomic data alongside medical literature and clinical notes, identifying patterns that had been missed by human clinicians.",
+          "The AI system yielded 18 new diagnoses, including conditions with known treatments or management strategies. Notably, the model did not replace physicians but served as a collaborative tool, flagging candidate variants for expert review. This approach could significantly shorten the diagnostic odyssey for families and reduce reliance on costly, time-consuming manual analysis.",
+          "The study underscores a shift from using AI for straightforward image recognition to complex clinical reasoning. While the results are promising, the researchers caution that the model's accuracy depends on data quality and diversity, and prospective clinical trials are needed before widespread deployment."
+        ],
+        "why": "This breakthrough shows how advanced reasoning models can tackle high-value, low-frequency medical challenges, opening new avenues for AI in precision medicine and potentially creating opportunities for startups focused on AI-assisted diagnostics.",
+        "links": [
+          [
+            "OpenAI News: Using AI to help physicians diagnose rare genetic diseases affecting children",
+            "https://openai.com/index/diagnose-rare-childhood-diseases"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Google DeepMind puts $10 million behind the safety problem that agentic AI has been ignoring",
+        "dek": "As AI agents grow more autonomous, safety research lags. Google DeepMind's new fund aims to close that gap.",
+        "details": [
+          "Agentic AI—systems that can independently plan, act, and use tools—has advanced rapidly, yet safety frameworks remain underdeveloped. Most current safety research focuses on static models, not dynamic, autonomous behavior. Google DeepMind is launching a $10 million initiative to directly address this blind spot. The program will fund external researchers working on topics such as goal misspecification, reward hacking, and unintended side effects in agents that operate over long horizons. By incentivizing open research, DeepMind hopes to prevent catastrophic failures before agentic systems are deployed at scale.",
+          "The initiative highlights a growing consensus that agent safety is the next frontier. Startups like Startup Fortune have noted that industry incentives favor speed over safety, making this funding a rare counterweight. While $10 million is modest compared to overall AI investment, it signals that leading labs recognize the urgency. The program's open-call structure could also accelerate public understanding of agent risks, similar to how early interpretability grants shaped the field."
+        ],
+        "why": "This move underscores that agentic AI safety is now a top-tier concern for leading labs. For founders and investors, it signals a growing market for safety tooling and evaluation startups, while for product teams, it's a reminder to integrate validation loops in agent architectures.",
+        "links": [
+          [
+            "Google News AI Models: Google DeepMind puts $10 million behind the safety problem that agentic AI has been ignoring",
+            "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObXZKcWRnRTRReDV1ZTNtdXhTaXNkd18zbTR0Ny01MHRyRUx5bE9xSEFlZjZjQlNraEpaeFdwcWxPd1YyMzBibUhPVzIyd19qYlJESnZmSWE4VjZxTUlZbHJkM3hnekJLRHRSVmJYS3VIN3pYb2lnV2VxcUdJeXMzNURCOHJReTZBNjZRdndINFF6V2RuMGJuYkxLVGttRWFQTE9LeXRuV0hjb3dfdlI5SVBnQmlsYkFaOFdr?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "CaVe-VLM-CoT: An Interpretable Vision-Language Model Framework",
+        "dek": "A new modular framework uses agentic RAG and reflection to reduce hallucinations in vision-language models, enforcing evidence-grounded reasoning through a closed-loop pipeline.",
+        "details": [
+          "Vision-language models (VLMs) often produce fluent but visually unfaithful outputs—hallucinations. Existing chain-of-thought and retrieval-augmented methods provide partial fixes but lack step-level citation grounding and cannot automatically correct verification failures. The new CaVe-VLM-CoT framework addresses this by introducing a five-stage closed-loop pipeline: Extractor, Retriever, Solver, Citation Injector, and Verifier. When the Verifier detects an ungrounded claim, it triggers structured feedback to the Extractor for targeted re-retrieval, enabling the model to iteratively refine its reasoning with evidence.",
+          "This approach transforms VLM inference from a single forward pass into an adaptive, retrieval-augmented reasoning process. By ensuring that each reasoning step is grounded in retrieved citations, CaVe-VLM-CoT makes outputs more interpretable and trustworthy. The framework is particularly relevant for high-stakes applications like medical imaging, autonomous driving, and visual question answering, where hallucinated content can have serious consequences. It also represents a step toward more transparent AI systems that can explain their reasoning in a verifiable manner."
+        ],
+        "why": "CaVe-VLM-CoT could set a new standard for interpretability in vision-language models by replacing opaque reasoning with a closed-loop, evidence-driven pipeline, making it a critical development for building trust in AI systems.",
+        "links": [
+          [
+            "arXiv cs.AI: CaVe-VLM-CoT: An Interpretable Vision-Language Model Framework",
+            "https://arxiv.org/abs/2606.18385"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "CEOs of Anthropic and Google DeepMind call for U.S.-led AI coalition in meeting at G7 - CNBC",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Google News AI Models：CEOs of Anthropic and Google DeepMind call for U.S.-led AI coalition in meeting at G7 - CNBC. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Models: CEOs of Anthropic and Google DeepMind call for U.S.-led AI coalitio",
+            "https://news.google.com/rss/articles/CBMikgFBVV95cUxOczZWRGpYQXhGYmg3QmtZbkVSMnZPLWRHakVnZXBsXzhCcmtxY0ZGLVpVWEl4V1haODV3dTB2Y2o2UWw0OWRPdFVJV0JheWFxRTdGUjdhRVYyVFZmdTNaSFd3Q2FOaE85T0FkSmFTUEJxanVDcU5RYVdOVkxUTTBNeWF5MGt6YmZrVXh1dTRtZzEwd9IBlwFBVV95cUxOMHFmaGFVQV9mXzcwVm9UazlpRkNMQllyRDJTdFBvQUJTZEpRZXFRTXBrWTlCMTNIMG13VWR2T1JBU1V3Mkx1c3d3VFV2aEI1ZjhHbkNmZEhjQTI5cmgyRzBKRld0NVNyM2tlVTV6NnhZRlFLWl9YWVdydjNEVDhlNnR0ckNoRTEwbmF4TDNlQklrZkdvZllj?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Redact or Keep? A Fully Local AI Cascade for Educational Dialogue De-Identification",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from arXiv cs.CL：Redact or Keep? A Fully Local AI Cascade for Educational Dialogue De-Identification. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "arXiv cs.CL: Redact or Keep? A Fully Local AI Cascade for Educational Dialogue De-Identifi",
+            "https://arxiv.org/abs/2606.18372"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+        "dek": "A Hugging Face blog post introduces a methodology for evaluating open-source models' agentic capabilities using custom tooling, helping developers choose the right model for their specific use cases.",
+        "details": [
+          "The post addresses a growing need in the AI community: as open-weight models proliferate, standard benchmarks often fail to capture how well a model can act as an agent—calling tools, following multi-step instructions, and adapting to dynamic environments. The authors propose a flexible framework that allows developers to run their own agentic benchmarks tailored to their specific tools and tasks.",
+          "Key elements include a modular test harness that integrates with common agent frameworks (e.g., LangChain, AutoGPT) and a set of curated tasks ranging from simple API calls to complex multi-turn reasoning. The blog provides step-by-step guidance on setting up evaluation pipelines, along with example results comparing models like Llama 3.1 and Qwen 2.5 on custom tool-use scenarios.",
+          "This is part of a broader trend where the open-source ecosystem shifts from raw model performance to practical deployability. The approach lowers the barrier for teams to assess whether a model is 'agentic enough' for production, without relying on generic leaderboards that may not reflect real-world complexity."
+        ],
+        "why": "For developers building agent-based applications, this methodology offers a actionable way to validate model choices against their own tooling, potentially reducing the gap between benchmark scores and production performance. It also signals that Hugging Face is investing in agent evaluation infrastructure, which could become a standard for the open-source community.",
+        "links": [
+          [
+            "Hugging Face Blog: Is it agentic enough? Benchmarking open models on your own tooling",
+            "https://huggingface.co/blog/is-it-agentic-enough"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "魔法原子牵手万机易租，全栈产品入驻2.0平台共建租赁生态",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from 量子位：魔法原子牵手万机易租，全栈产品入驻2.0平台共建租赁生态. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "量子位: 魔法原子牵手万机易租，全栈产品入驻2.0平台共建租赁生态",
+            "https://www.qbitai.com/2026/06/436802.html"
+          ]
+        ],
+        "sourceDate": "2026-06-18",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Liminary: AI research workspace for consultants, strategists, and researchers",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Curated AI Products：Liminary: AI research workspace for consultants, strategists, and researchers. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and res",
+            "https://liminary.io/"
+          ]
+        ],
+        "sourceDate": "2026-06-16",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Multimodal AI",
+        "dek": "Understanding AI systems that combine text, image, audio, and video inputs.",
+        "details": [
+          "Multimodal AI refers to artificial intelligence models that can process and integrate multiple types of data—such as text, images, audio, and video—simultaneously. Unlike single-modal models (e.g., pure text chat), multimodal systems can understand context across modalities, enabling richer interactions. For example, a multimodal assistant can analyze a photo, read its caption, and answer questions about the image.",
+          "A recent illustration: DeepSeek launched an image recognition mode (as reported on June 18, 2026), allowing users to upload images for AI analysis. However, the system reportedly failed to recognize its own founder, Liang Wenfeng, highlighting current limitations in accuracy and robustness (source: S001).",
+          "The race to build effective multimodal models is a key battleground for companies like OpenAI, Google, and Chinese startups. These models are foundational for applications such as visual question answering, video understanding, and autonomous driving."
+        ],
+        "why": "Understanding multimodal AI is critical for evaluating product capabilities and investment opportunities, as it represents the next wave of AI interaction beyond text-only chatbots.",
+        "links": [
+          [
+            "DeepSeek launches image recognition mode",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9zdkJZQmRfMVRUTXNGdUVjeHNGeGpFWDY3NVFPMndsZGxodjBRU0s4N1dzZ1NrV1lHVHBvRTVXUkxaVHE0eGRuWTJkcGtLRWxMbjJadHdUbi1IWjN4RmdEZg?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-18",
     "title": "AI Daily Atlas",
