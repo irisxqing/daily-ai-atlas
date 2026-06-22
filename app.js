@@ -1,5 +1,342 @@
 const archiveZh = [
   {
+    "date": "2026-06-22",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月22日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：The US banned Anthropic’s Fable 5 release, but the numbers don’t s",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 TechCrunch AI：The US banned Anthropic’s Fable 5 release, but the numbers don’t seem to care。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "TechCrunch AI: The US banned Anthropic’s Fable 5 release, but the numbers don’t seem to ca",
+            "https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care/"
+          ]
+        ],
+        "sourceDate": "2026-06-20",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-20",
+        "freshnessLabelEn": "Weekend window | 2026-06-20",
+        "freshnessLabel": "周末窗口｜2026-06-20"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里同日发布AI版支付宝与Qwen-Robot：超级应用全面AI化，IT外包迎来新变量",
+        "dek": "支付宝升级AI助手，千问机器人同步亮相，阿里生态AI化提速；行业分析认为超级应用AI改造将重塑IT服务需求。",
+        "details": [
+          "6月20日，阿里巴巴同日推出两款AI产品：AI版支付宝和Qwen-Robot。支付宝升级为AI助手，在支付、理财、生活服务等场景中深度整合大模型能力，用户可通过自然语言完成复杂操作，被称为“AI超级应用”的里程碑。据悉，新版支付宝已开放灰度测试，覆盖数亿用户，但具体功能细节尚未完全公开。",
+          "Qwen-Robot则是阿里千问系列在实体机器人领域的首次落地，主打家居和轻商用场景。该机器人集成千问大模型，支持语音交互、物体识别和自主导航，定价暂未公布。分析人士指出，阿里同时押注软件和硬件AI，意在构建从云到端的完整生态。",
+          "两个产品同日发布引发IT外包行业讨论。业内观点认为，超级应用全面AI化将催生大量定制开发、数据标注、模型微调等外包需求，但同时也可能淘汰部分传统IT运维岗位。该趋势的不确定性在于：AI功能能否真正提升用户黏性，以及中小外包商能否跟上技术迭代速度。"
+        ],
+        "why": "阿里同日双发AI产品，标志着中国超级应用从“连接一切”转向“智能一切”，IT外包服务商需提前布局AI定制化能力，以抓住生态升级带来的结构性机会。",
+        "links": [
+          [
+            "AI版支付宝与Qwen-Robot同日发布：超级应用全面AI化，IT外包机会在哪 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaDJBZ3hvSHRTMFFJLWJhcEJHT3hpeURVbnBiMU9NbUdNWGlSU3E5VHRKazdlb0lWQzNha2xBbXVDdVc2Q2M3WjlUMzQ1RWNHZndndnZwQ0dtbldrNTZOUXZnbjJKMjlpUmxmOEZ2U21YUHBnYXI2N3JnYzRaRGRseHZ6Zw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-20",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-20",
+        "freshnessLabelEn": "Weekend window | 2026-06-20",
+        "freshnessLabel": "周末窗口｜2026-06-20"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "摩尔线程、长鑫存储、Kimi的共同投资人王捷：AI这艘巨轮，越过山丘后，经济系统会发生什么？",
+        "dek": "王捷作为多家硬科技公司的早期投资人，在最新观点中探讨AI对经济系统的深远影响",
+        "details": [
+          "摩尔线程、长鑫存储和Kimi的共同投资人王捷近日发表观点，认为AI技术正越过关键拐点，将对经济系统产生类似工业革命的冲击。他强调，算力基础设施和AI应用的双重突破将重新定义价值创造方式，但具体影响路径仍存在不确定性。",
+          "王捷指出，AI带来的不仅是效率提升，更可能改变资源分配和就业结构，催生全新的经济组织形态。不过，他指出这一过程需要5-10年才能真正显现，短期内市场和监管需适应快速变化。",
+          "作为中国AI产业链上的关键投资人，王捷的观点反映了资本圈对AI长期影响的共识与分歧。其投资组合覆盖芯片、存储和AI应用，视角具有产业纵深。"
+        ],
+        "why": "王捷的多重投资人身份使他的观点兼具产业洞察和资本逻辑，对理解中国AI产业的下一个投资风口和宏观经济转向有重要参考价值。",
+        "links": [
+          [
+            "新浪财经：王捷谈AI对经济系统的影响",
+            "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNnJSamNLTW9FbUN1eE9DM29EUE1QLTV0WTR0dWtrZC10N3Y3MDJwRFRDcWdyOXNYaFZtYmd2WDBNSk94ZG9GUmdsQXM2Y1puemNILXgxQjhoTHRPSjh6VzlZYjJkdDRqTV9UOWpZR3kyXzU1ZDNIRmgwZ0xWZHlpcDNlNDc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-21",
+        "freshnessLabelEn": "Weekend window | 2026-06-21",
+        "freshnessLabel": "周末窗口｜2026-06-21"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Manus新动向：传腾讯等中国投资方拟20亿美元买回股权",
+        "dek": "中国AI Agent明星公司Manus传出资本结构重大变化，多家国内投资方计划以20亿美元估值收购公司股份，这一动向可能重塑其发展路线。",
+        "details": [
+          "据电子工程专辑等多家媒体援引消息人士报道，Manus正与腾讯等多家中国投资方进行谈判，拟以约20亿美元的估值买回部分或全部股权。这笔交易若完成，将意味着Manus的股东结构从外资主导转向中资主导，并可能影响其未来融资和上市策略。目前谈判仍处于初步阶段，最终能否达成尚不确定。",
+          "Manus以开发能够自主执行复杂任务的AI Agent闻名，此前曾获得包括红杉中国在内的多轮融资。此次腾讯等机构的介入，被视为中国头部科技公司加速布局Agent赛道的重要信号。若交易成真，Manus有望获得更丰富的本土资源和场景支持。",
+          "值得注意的是，20亿美元的估值相较此前传闻的峰值有所下调，反映出当前一级市场对AI创业公司估值趋于理性。Manus方面未对传闻做出正式回应，消息人士也强调交易存在变数，最终结构可能与报道有出入。"
+        ],
+        "why": "此交易信号显示中国资本对AI Agent赛道的战略兴趣不减，同时Manus的股权重组可能预示其将更深度融入本土生态，对行业竞争格局和投融资风向具有参考价值。",
+        "links": [
+          [
+            "Google News China AI Signals: Manus新动向，传腾讯等中国投资方拟20亿美元买回股权！ - 电子工程专辑",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB6VXpKLURlSnJ0eS0ySm83XzNQZUR3T1NOajhjazdYMUV0UGg3XzNENjdJVWNxLUQ3MUNXd3BkWWtiZVY2bEZhcTUxM0tjaTZuQ0dF?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-21",
+        "freshnessLabelEn": "Weekend window | 2026-06-21",
+        "freshnessLabel": "周末窗口｜2026-06-21"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Meta员工士气跌至20年谷底！内部直播当众开骂，CTO承认AI重组糟糕透顶",
+        "dek": "抢人最猛的Meta，似乎先从内部裂开了",
+        "details": [
+          "据量子位报道，Meta内部员工士气跌至近20年最低点。在一次全员内部直播中，有员工当众指责管理层，CTO也罕见承认最近的AI组织重组“糟糕透顶”。这场冲突直接反映了Meta在全力押注AI的同时，内部资源重新分配引发了严重不满。",
+          "多名员工在匿名论坛中表示，AI重组导致大量非核心团队被裁撤或边缘化，而AI部门则获得不成比例的资源和晋升机会。这种“AI优先”策略虽然帮助Meta在人才市场抢人，却让老员工感到被抛弃。内部调查显示，员工对领导层的信任度已降至2005年以来最低。",
+          "CTO在直播中坦言，重组过程过于仓促，沟通不足，并承诺将改善内部透明度。但员工普遍认为，这只是安抚话术，因为Meta仍在持续从外部高薪挖角AI人才，而内部转岗却层层设限。这场风波可能影响Meta下半年的产品交付节奏，尤其是Llama 4等关键项目的推进。"
+        ],
+        "why": "Meta的AI转型正在以牺牲内部凝聚力为代价，投资者需要警惕组织动荡对产品落地节奏的拖累；对从业者而言，Meta的AI部门依然是最佳跳板，但非AI岗位风险加剧。",
+        "links": [
+          [
+            "量子位: Meta员工士气跌至20年谷底！内部直播当众开骂，CTO承认AI重组糟糕透顶",
+            "https://www.qbitai.com/2026/06/436966.html"
+          ]
+        ],
+        "sourceDate": "2026-06-20",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-20",
+        "freshnessLabelEn": "Weekend window | 2026-06-20",
+        "freshnessLabel": "周末窗口｜2026-06-20"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里巴巴AI商业化进入新阶段，阿里是否值得投资？ - TradingKey",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 Google News China AI：阿里巴巴AI商业化进入新阶段，阿里是否值得投资？ - TradingKey。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: 阿里巴巴AI商业化进入新阶段，阿里是否值得投资？ - TradingKey",
+            "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTkdlREg1Q2VWY3BsTGVBa1V6MW9OMUliS1BiMkxVc25Bc1R6UXg1c2dwZ3VJQ25JS01qZU8wWWxiS2lwTXpZZElSMnVVc3NCTHVUcDExTnJiRlVTVk9ic3JGMlhtdXRaWUlneHRXSEwtQV9GWDAtSTlkRkpFT2FlNU9nSmhzLVppblBUV3dOaHdVZlk3MnB0a3ItRDc1ak53cnVz?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-21",
+        "freshnessLabelEn": "Weekend window | 2026-06-21",
+        "freshnessLabel": "周末窗口｜2026-06-21"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Google DeepMind 新路线图：将高级 AI 视为“内部威胁”",
+        "dek": "DeepMind 发布网络安全路线图，将高级 AI 系统列为潜在内部威胁，引发业界对 AI 安全监管的新讨论。",
+        "details": [
+          "Google DeepMind 在最新发布的网络安全路线图中，首次将高级 AI 模型归类为“内部威胁”。这意味着，即使是自研的顶尖 AI 系统，也可能因能力过强而被滥用或失控，需要像防范恶意员工一样加以监控和约束。",
+          "路线图提出了多项具体措施，包括对模型访问权限的严格管控、行为日志审计，以及应急关闭机制。DeepMind 认为，随着 AI 能力逼近通用人工智能，传统的外部攻击防御已不足够，必须从内部构建安全护栏。",
+          "这一做法反映出业界对 AI 安全风险的认知从“外部威胁”转向“内生风险”。如果其他头部实验室跟进，可能推动全球 AI 开发范式的转变——安全性将成为与性能同等重要的考核指标，甚至影响模型发布节奏和开源策略。"
+        ],
+        "why": "DeepMind 的“内部威胁”框架为 AI 安全设立了更高标准，对安全产品、企业 AI 治理及政策制定都有直接启示，也预示着未来 AI 系统将面临更严格的内部审计要求。",
+        "links": [
+          [
+            "Google News AI Models: Google DeepMind Treats Advanced AI as ‘Insider Threats’ in New Cybersecurity Roadmap",
+            "https://news.google.com/rss/articles/CBMivgFBVV95cUxNakJ3amVNY3JOb3VrTEJYbUFnZkRPRENqMjdQUEIwLTU2TG52clhSWjFXLUV5QVBUOW45RVFCNmFMeWpPSTJwVlN1bzhGWDFaaVdPQklDQTBjY19yUTlDZkl4R0JmOW5QUE9BaW9iOGs5aXRFOEY0WElkdE1TVkZkMkExWVhFdlp3ZGtpTEtLQTkxTzNOMHRJRTZTSExtUHltQTNraWx2elpraVM1QjVXXzNKQXF4a0dreW9vY1dR?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-21",
+        "freshnessLabelEn": "Weekend window | 2026-06-21",
+        "freshnessLabel": "周末窗口｜2026-06-21"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：安森美半导体发布 GaNEXUS，剑指 AI 数据中心与机器人能效",
+        "dek": "安森美推出基于氮化镓的功率平台，试图在 AI 基础设施的能耗战场抢占先机。",
+        "details": [
+          "安森美半导体（ON Semiconductor）于本周末宣布推出 GaNEXUS，一款全新的氮化镓（GaN）功率平台，专门针对 AI 数据中心和机器人应用。随着 AI 模型规模持续膨胀，数据中心功耗已成为行业核心痛点，传统的硅基功率器件逐渐逼近效率天花板。GaN 技术凭借更高的开关频率和更低的导通损耗，正被视为下一代电源转换的关键。",
+          "GaNEXUS 的具体技术指标尚未完全公开，但安森美声称其能显著降低系统功耗并提升功率密度。在机器人领域，高效的电源管理意味着更长的续航和更小的散热需求，这对于人形机器人和工业自动化尤为重要。值得注意的是，GaN 供应链目前仍由英飞凌、纳微半导体等厂商主导，安森美的入局可能加剧竞争，同时也为 AI 硬件设计者提供了更多选择。"
+        ],
+        "why": "GaN 功率芯片正在成为 AI 基础设施的隐形瓶颈——当 GPU 算力提升数十倍，供电效率若不跟进，整体 TCO 将失控。安森美的入局意味着 GaN 产业进入巨头混战阶段，对于数据中心运营商和机器人制造商来说，电源方案选择将更加关键。",
+        "links": [
+          [
+            "Google News AI Infrastructure: ON Semiconductor (ON) Launches GaNEXUS For AI Data Centers",
+            "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVk9WUWpSUnQ4TGdFTHBId0xWU2d3Q1pPVkF6enoweXZGT2xSc1pLR1h2aF9Nczg2RDdxaVR2a0NqRnY0Tk5tWjZEMG5QVVhrNGVJNkpZVFdxb1JELVAzWjBLZ3piSnV3ZFo3M2V2YmJHamk1SVdHTHd6YU1DaDZOQjE0U0NZTTB1Z0hnRGlULTdMNGFwbmRJUTlqQTY4QVdtRnNUaA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-21",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-06-21",
+        "freshnessLabelEn": "Weekend window | 2026-06-21",
+        "freshnessLabel": "周末窗口｜2026-06-21"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 安全新范式：DeepMind 将自家 Agent 视为内部威胁，发布控制路线图",
+        "dek": "Google DeepMind 提出一套 AI 控制框架，把自主智能体当作潜在内部风险来管理，为行业划定合规边界。",
+        "details": [
+          "Google DeepMind 近日发布了一份 AI 控制路线图，核心思路是将公司自家开发的 AI agent（智能体）视为“内部威胁”，并以此为基础设计安全控制机制。这不同于传统上只防范外部攻击的思路，而是假设 agent 本身可能因目标错位、误操作或被恶意利用而引发风险。路线图要求 agent 在访问敏感数据、执行关键操作时必须经过多层审批和实时监控，类似于企业内部针对高风险员工的安全管理。",
+          "路线图还提出了“最小权限”原则：即使 agent 拥有强大能力，也默认只能访问完成任务所需的最少资源，并在每次操作前进行风险评估。DeepMind 同时开放了一套基准测试工具，用于评估 agent 的“风险系数”，包括其偏离指令的概率、对越狱攻击的抵抗力等。这意味着 agent 的开发不再是纯技术问题，而是融入企业合规与审计流程。",
+          "对行业而言，DeepMind 此举可能成为 AI agent 安全领域的“萨班斯-奥克斯利法案”。随着 OpenAI、Anthropic、微软等公司纷纷推出自主 agent 产品，类似的控制框架将直接影响产品设计——例如 agent 的权限边界、日志记录要求、人工干预机制等。初创公司若想进入企业市场，可能需要证明其 agent 通过了类似的安全审计。",
+          "值得注意的是，DeepMind 明确将“内部威胁”视角延伸到了开源模型领域：即使第三方微调的 agent 也可能被视为组织内部的“风险节点”。这暗示未来云平台可能会对 agent 的运行时行为进行持续扫描，就像今天的端点安全软件监控可执行文件一样。安全合规成本可能因此上升，但也可能催生新的“AI agent 保险”或“合规即服务”市场。"
+        ],
+        "why": "这一路线图将 agent 安全问题从技术讨论推向组织治理层面，预示着 AI 产品上市的合规门槛即将大幅提高，所有开发自主 agent 的公司都应提前评估自身的安全控制体系。",
+        "links": [
+          [
+            "Google News 原文",
+            "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMnZFQ2M3OVBSYVVHUGNJRXRSbWh0MDA4bUpvdTZlLW5CeHhKaE9xX0pFNjdJekxjWjY5czgxQjlEM1B1LWdfaHl6MWtCeGZPYzZCMENnY2dIS18tUk90anpjWXFBYXAxRENyT1VEMkpDdXRyR0hDNV9lMmtadjRXUXc2Z0F2UFdER3JPSEZ5VzJTNnV6YkJia3otYkppSkIycGlUekE2TEdTQkZybTVwaWNKZ25aWXZYWnVCbGgtYW5ONElzWlhZbVpfUHJkdEpRYzU0TkhBY193ZGNFYlRuSl9QWU4?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-21",
+        "freshnessLabelEn": "Weekend window | 2026-06-21",
+        "freshnessLabel": "周末窗口｜2026-06-21"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AMD 与 NVIDIA 对决：AI 芯片、CPU、GPU 与机器人下一阶段谁主沉浮？",
+        "dek": "The Motley Fool 对比分析两巨头在 AI 训练、推理、数据中心及机器人领域的竞争格局",
+        "details": [
+          {
+            "summary": "AI 训练与推理：NVIDIA 仍占主导，AMD 性价比突围",
+            "expanded": "文章指出，NVIDIA 凭借 CUDA 生态和 Blackwell 架构在 AI 训练市场保持统治力，但 AMD MI300X 在推理场景中展现出更高性价比，且开源软件支持（如 ROCm）逐步缩小差距。对云厂商而言，AMD 提供了成本优化的第二选择。"
+          },
+          {
+            "summary": "CPU 与数据中心：AMD EPYC 蚕食英特尔，NVIDIA Grace Hopper 另辟蹊径",
+            "expanded": "在 CPU 领域，AMD EPYC 凭借核心数和功耗优势持续从英特尔手中夺取份额，已被多家超大规模云商采用。而 NVIDIA 的 Grace Hopper 超级芯片将 ARM CPU 与 GPU 紧密耦合，面向 HPC 和 AI 融合场景，形成差异化竞争。"
+          },
+          {
+            "summary": "机器人：新战场的生态博弈",
+            "expanded": "双方均将机器人视为下一增量市场。NVIDIA 推出 Isaac Sim 和 Jetson 边缘计算平台，主打仿真与部署闭环；AMD 则通过收购赛灵思和自适应计算技术切入工业机器人。文章认为，软件生态（如 NVIDIA Omniverse vs. AMD 开源栈）将是关键胜负手。"
+          }
+        ],
+        "why": "这篇文章为投资者提供了清晰的比较框架：在 AI 基础设施投资热潮中，理解两家的差异（生态 vs. 性价比、GPU vs. CPU+自适应）有助于判断持仓风险与增长潜力。",
+        "links": [
+          [
+            "Google News AI Infrastructure: AMD vs. NVDA: Which Artificial Intelligence (AI) Semiconduc",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxNclBVSElJZjBXOUNZM3hNUk4xNHRiUk9SM1NhWDlKZEtiUThHWENyTkJaTUFEelduY1RodWVtRFNMTHltdTVnUVh0NEpmTG15cUdROWpadnp1VzRZM1hZblZIT2ZpYkpNcWlOd0c5S2ZBLTB1VTFmR0hIQ3NuRXVZVGFhcUpZYWNtZjJ5bGw3SUxocFA0cHZNcg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-19",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-19",
+        "freshnessLabelEn": "Fallback | published 2026-06-19",
+        "freshnessLabel": "补位｜发布于 2026-06-19"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "GitHub 内部数据分析代理 Qubot 的构建实践",
+        "dek": "GitHub 开源分享其基于 Copilot 构建的内部数据分析代理 Qubot，让任意员工用自然语言查询数据，并总结了工程经验。",
+        "details": [
+          "GitHub 工程团队近日分享了其内部数据分析代理 Qubot 的构建过程。Qubot 基于 GitHub Copilot 构建，允许员工通过自然语言提问来查询公司内部数据，无需掌握 SQL 或复杂工具。",
+          "Qubot 的核心是一个 Copilot-powered 聊天界面，后端连接了多个数据源，并使用了检索增强生成（RAG）来确保回答基于实际数据。团队特别强调了在构建过程中遇到的挑战，包括数据权限控制、查询准确性以及如何让模型理解公司特有的数据 schema。",
+          "据博客介绍，Qubot 目前在 GitHub 内部已被广泛使用，显著降低了数据获取门槛，让非技术角色也能自助分析。这一实践展示了将 Copilot 扩展为内部工具代理的可行模式，对希望构建类似系统的团队具有参考价值。"
+        ],
+        "why": "Qubot 的案例表明，GitHub Copilot 的潜力远不止代码补全，它可以作为企业级数据分析代理的基座，推动数据民主化，同时也为 Copilot 生态的下一步扩展提供了方向。",
+        "links": [
+          [
+            "GitHub AI & ML: How we built an internal data analytics agent",
+            "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/"
+          ]
+        ],
+        "sourceDate": "2026-06-20",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-20",
+        "freshnessLabelEn": "Weekend window | 2026-06-20",
+        "freshnessLabel": "周末窗口｜2026-06-20"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Anuma：多模型AI工作空间，隐私优先的跨模型记忆层可携带",
+        "dek": "在一个界面里同时调用ChatGPT、Claude、Gemini等主流模型，并让对话记忆跨模型同步，Anuma试图解决“多AI账号切换+上下文丢失”的痛点。",
+        "details": [
+          "Anuma 将 ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama 等主流模型聚合到同一个工作空间中，用户无需频繁切换标签页或复制粘贴对话历史。这一设计针对的是“多模型并行使用”场景——比如用 GPT-4o 写初稿、用 Claude 审校、再用 Gemini 做数据验证。",
+          "该产品的核心差异在于“隐私优先的记忆层”：用户可以在一个安全区域里自定义记忆内容（如项目背景、个人偏好），这些记忆会随着对话自动传递到不同模型，且用户能随时编辑或删除。与传统“记忆功能”不同，Anuma 强调数据归属用户，不在模型供应商侧持久化。",
+          "目前该产品仍处于早期访问阶段，官网提供了候补列表。从社区反馈看，跨模型记忆的准确性和延迟是主要关注点——当记忆层需要在不同 API 间同步格式和摘要时，可能会出现上下文稀释或错误传递，公司尚未公布具体的技术白皮书。",
+          "在工作流层面，Anuma 类似“AI 工作台”概念，与 TypingMind、Chatbox 等客户端工具形成竞争，但更强调记忆层作为跨模型“胶水”。如果隐私设计和记忆精确度达标，它有可能成为知识工作者用多模型协作的统一入口。"
+        ],
+        "why": "多模型协作是当前工作流里的真实需求，但记忆断裂是最大痛点；Anuma 用隐私优先的记忆层切入，若体验顺利，可能形成新的“AI 操作系统”雏形，值得产品经理和效率工具创业者关注。",
+        "links": [
+          [
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-06-19",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "Agentic Workflow：AI 自主执行任务的流程设计",
+        "dek": "理解 Agentic Workflow，就能看懂 Manus 等 AI Agent 产品如何自动分解、决策和执行复杂任务。",
+        "details": [
+          "Agentic Workflow（智能体工作流）是指 AI 模型不再只是被动响应指令，而是自主规划、调用工具、执行多步骤任务并动态调整的流程框架。它让 AI 从“聊天机器人”升级为“数字员工”，能像人类一样拆解目标、选择最佳路径，并在遇到障碍时自我纠正。这是当前企业自动化和 AI Agent 产品的技术核心——没有标准化的 Agentic Workflow，AI 很难在真实业务中可靠落地。",
+          "最近 Manus 等 AI Agent 产品的动向即是这一趋势的体现。据电子工程专辑报道，腾讯等中国投资方拟以 20 亿美元买回 Manus 股权（该消息尚未确认），这表明市场对 Agent 类产品的估值逻辑正在成形。Manus 正是通过 Agentic Workflow 设计，让用户用自然语言描述任务后，自动拆解、搜索、生成结果。这类产品的涌现，意味着 Agentic Workflow 已从实验室走向商业验证，未来可能重塑 SaaS 和自动化工具市场。",
+          "对于非技术读者，理解 Agentic Workflow 有助于判断：当新闻中出现“AI Agent”“自主智能体”“工作流自动化”时，背后都是同一套让 AI 像“打工仔”一样干活的流程设计。它直接影响企业采购决策——是买一个只回答问题的聊天机器人，还是一个能独立完成报销、写报告、管理项目的 AI 员工。"
+        ],
+        "why": "Agentic Workflow 是 AI 从工具进化为代理的关键架构，理解它能帮助快速识别哪些 AI 产品具备真正的自动化能力，避免被“伪 Agent”概念迷惑。",
+        "links": [
+          [
+            "电子工程专辑：Manus新动向，传腾讯等中国投资方拟20亿美元买回股权",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB6VXpKLURlSnJ0eS0ySm83XzNQZUR3T1NOajhjazdYMUV0UGg3XzNENjdJVWNxLUQ3MUNXd3BkWWtiZVY2bEZhcTUxM0tjaTZuQ0dF?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-19",
     "title": "AI Daily Atlas",
     "meta": "2026年6月19日",
@@ -7562,6 +7899,335 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-22",
+    "title": "AI Daily Atlas",
+    "meta": "June 22, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "The US banned Anthropic’s Fable 5 release, but the numbers don’t seem to care",
+        "dek": "Despite an emergency government order to pull Fable 5 and Mythos 5 over jailbreak concerns, benchmark scores and market discussions suggest little immediate impact.",
+        "details": [
+          "Over the weekend, the U.S. government forced Anthropic to withdraw its two newest models, Fable 5 and Mythos 5, after Amazon researchers reported a method to bypass Fable 5’s safety guardrails. Citing national security, the move marks an unprecedented direct intervention in model release, even as Anthropic argued the same jailbreak technique works on other frontier models.",
+          "Cybersecurity researchers quickly signed an open letter condemning the ban as dangerous and counterproductive, warning that suppressing model releases could drive safety research underground. Anthropic itself noted the vulnerability is not unique to its models, raising questions about whether the government’s action was proportionate or targeted.",
+          "Yet the market and broader AI community seem unfazed: Fable 5’s benchmark scores continue to be cited in comparison tables, and no major customer has publicly paused adoption. The incident underscores a growing tension where regulatory actions fail to slow the underlying technological momentum.",
+          "The podcast episode from which this summary is drawn unpacks the details further, including the open letter and Anthropic’s response."
+        ],
+        "why": "This is a defining moment for AI regulation: government forced a model takedown, but the technology’s trajectory—and investment—remains unaffected, signaling that regulatory overreach may struggle to keep pace with AI’s competitive dynamics.",
+        "links": [
+          [
+            "TechCrunch AI podcast: The US banned Anthropic’s Fable 5 release, but the numbers don’t seem to care",
+            "https://techcrunch.com/podcast/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care/"
+          ]
+        ],
+        "sourceDate": "2026-06-20",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-20",
+        "freshnessLabelEn": "Weekend window | 2026-06-20",
+        "freshnessLabel": "Weekend window | 2026-06-20"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba Launches AI-Powered Alipay and Qwen-Robot on Same Day, Signaling Super App AI‑ification",
+        "dek": "The twin releases mark a strategic push to embed AI into China’s largest payment platform, with ripple effects for IT outsourcing.",
+        "details": [
+          "On June 20, Alibaba released an AI‑powered version of its super app Alipay alongside its Qwen‑Robot, a general‑purpose AI agent. The simultaneous launch underscores Alibaba’s ambition to transform its flagship consumer platform into an AI‑native ecosystem, integrating conversational assistants, task automation, and personalized services directly into the payments and lifestyle app. The move follows similar AI upgrades by Tencent and ByteDance, but Alipay’s massive user base – over 1 billion – makes this a potential inflection point for AI adoption in daily transactions. The article from Sina Finance also highlights emerging demand for IT outsourcing as enterprises scramble to build similar AI capabilities.",
+          "While Alibaba did not disclose specific feature details, the AI‑powered Alipay is expected to include voice‑activated payments, intelligent customer service, and proactive financial advice. Qwen‑Robot, built on Alibaba’s Qwen large language model, is positioned as a multiskilled assistant for task execution. The dual debut suggests a comprehensive strategy to own both the platform layer (Alipay) and the model layer (Qwen), potentially accelerating the “super app AI‑ification” trend in China. However, execution risks include user privacy concerns and the challenge of retrofitting a legacy app with AI without disrupting core payment functions."
+        ],
+        "why": "This simultaneous launch indicates that Alibaba is doubling down on AI as the primary differentiator for super apps, which could pressure competitors and create a surge in demand for AI integration services – a clear opportunity for IT outsourcing firms and AI middleware providers.",
+        "links": [
+          [
+            "Google News China AI: AI版支付宝与Qwen-Robot同日发布：超级应用全面AI化，IT外包机会在哪 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaDJBZ3hvSHRTMFFJLWJhcEJHT3hpeURVbnBiMU9NbUdNWGlSU3E5VHRKazdlb0lWQzNha2xBbXVDdVc2Q2M3WjlUMzQ1RWNHZndndnZwQ0dtbldrNTZOUXZnbjJKMjlpUmxmOEZ2U21YUHBnYXI2N3JnYzRaRGRseHZ6Zw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-20",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-20",
+        "freshnessLabelEn": "Weekend window | 2026-06-20",
+        "freshnessLabel": "Weekend window | 2026-06-20"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Investor Wang Jie on AI's Economic Impact: 'The Giant Ship Has Crossed the Hill'",
+        "dek": "A prominent Chinese investor behind Moore Threads, CXMT, and Kimi shares his vision of how AI will reshape the economic system beyond the current hype cycle.",
+        "details": [
+          "Wang Jie, a key investor in major Chinese AI and semiconductor companies including Moore Threads, ChangXin Memory Technologies (CXMT), and the popular AI assistant Kimi, published a lengthy analysis on Sunday examining how AI will transform the broader economic system once the technology matures. Drawing from his portfolio spanning GPU chips, memory, and consumer AI, Wang argues that the current AI wave is only the first phase, and the real disruption will come when AI becomes a foundational infrastructure—like electricity—rather than a standalone product.",
+          "Wang warns that as AI costs drop and capabilities surge, traditional economic metrics like GDP may lose relevance, and new forms of value creation and distribution will emerge. He specifically highlights the risk of 'AI-driven deflation' in labor markets and the need for new social safety nets. The piece has drawn attention in Chinese tech circles for its pragmatic yet provocative take from an insider with deep ties to both AI infrastructure and applications."
+        ],
+        "why": "This rare long-form commentary from a top-tier Chinese venture investor offers a strategic lens on how the AI supply chain and downstream applications might evolve, influencing both investment decisions and corporate strategy in the next 3-5 years.",
+        "links": [
+          [
+            "Google News China AI: 摩尔线程、长鑫存储、Kimi的共同投资人王捷：AI这艘巨轮，越过山丘后，经济系统会发生什么？ - 新浪财经",
+            "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNnJSamNLTW9FbUN1eE9DM29EUE1QLTV0WTR0dWtrZC10N3Y3MDJwRFRDcWdyOXNYaFZtYmd2WDBNSk94ZG9GUmdsQXM2Y1puemNILXgxQjhoTHRPSjh6VzlZYjJkdDRqTV9UOWpZR3kyXzU1ZDNIRmgwZ0xWZHlpcDNlNDc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-21",
+        "freshnessLabelEn": "Weekend window | 2026-06-21",
+        "freshnessLabel": "Weekend window | 2026-06-21"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Manus New Developments: Tencent-led Chinese Investors Reportedly Plan $2B Buyout of Equity",
+        "dek": "Unconfirmed reports suggest a consortium led by Tencent is moving to repurchase equity in Manus for $2 billion, signaling strategic reshuffling in China’s AI startup landscape.",
+        "details": [
+          "According to unconfirmed reports circulating on June 21, 2026, a group of Chinese investors spearheaded by Tencent is planning to buy back equity in AI startup Manus for approximately $2 billion. The move, if true, would represent a significant capital restructuring involving one of China’s largest tech firms. Manus, a relatively young AI company, had previously attracted investment from multiple Chinese backers, and the reported buyout suggests either a consolidation of ownership or a strategic repositioning amid heightened competition in China’s AI sector. The deal’s exact terms and motivations remain unclear, and no official confirmation has been provided by Tencent or Manus.",
+          "The reported $2 billion valuation underscores the high stakes in China’s AI market, where startups are increasingly jostling for dominance in areas like foundation models and enterprise AI. Tencent’s potential move to acquire additional control could be aimed at strengthening its own AI capabilities, similar to how other Chinese tech giants have sought to integrate startups into their ecosystems. However, the lack of concrete details warrants caution: the figure and the buyer consortium may change, and the deal could still fall through due to regulatory or valuation disagreements."
+        ],
+        "why": "This report, if confirmed, signals a trend of Chinese tech giants consolidating AI startups through large buyouts, potentially reshaping the competitive dynamics and exit opportunities for investors in China’s AI space.",
+        "links": [
+          [
+            "Google News China AI Signals: Manus新动向，传腾讯等中国投资方拟20亿美元买回股权！ - 电子工程专辑",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB6VXpKLURlSnJ0eS0ySm83XzNQZUR3T1NOajhjazdYMUV0UGg3XzNENjdJVWNxLUQ3MUNXd3BkWWtiZVY2bEZhcTUxM0tjaTZuQ0dF?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-21",
+        "freshnessLabelEn": "Weekend window | 2026-06-21",
+        "freshnessLabel": "Weekend window | 2026-06-21"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Meta Employee Morale Hits 20-Year Low: CTO Admits AI Reorganization 'Terrible' in Heated Livestream",
+        "dek": "Internal tensions boil over as Meta's aggressive AI restructuring leads to public confrontation during an all-hands livestream, raising questions about talent retention and execution.",
+        "details": [
+          "Meta's internal culture has reached a nadir not seen in two decades, according to a leaked all-hands meeting on June 20. During a livestream Q&A, employees openly berated executives about a chaotic AI reorganization that has upended teams and stalled projects. Chief Technology Officer Andrew Bosworth acknowledged the process was 'terrible' and admitted the company had mishandled communication and role changes.",
+          "The unrest comes as Meta has been aggressively pivoting to AI, poaching talent from rivals and pouring billions into infrastructure. However, the rapid restructuring—including merging AI research teams with product groups—has created confusion over reporting lines, shifting priorities, and fears of layoffs disguised as redeployments. Multiple engineering leads have reportedly left or considered leaving.",
+          "The morale crisis could undermine Meta's ability to execute on its AI roadmap, including the next-generation Llama model and enterprise AI tools. While the company remains a top spender in AI, internal dysfunction may slow innovation and hurt its competitive position against OpenAI, Google, and Microsoft. Investors are watching whether CEO Mark Zuckerberg will intervene directly to stabilize the organization."
+        ],
+        "why": "Meta's internal turmoil is a stark reminder that even deep-pocketed AI leaders can stumble on organizational friction—investors and talent should monitor whether this disrupts product delivery or triggers further high-profile exits.",
+        "links": [
+          [
+            "量子位: Meta员工士气跌至20年谷底！内部直播当众开骂，CTO承认AI重组糟糕透顶",
+            "https://www.qbitai.com/2026/06/436966.html"
+          ]
+        ],
+        "sourceDate": "2026-06-20",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-20",
+        "freshnessLabelEn": "Weekend window | 2026-06-20",
+        "freshnessLabel": "Weekend window | 2026-06-20"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba AI Commercialization Enters New Phase: Investment Analysis",
+        "dek": "TradingKey examines whether Alibaba's AI push is translating into revenue growth and what it means for investors.",
+        "details": [
+          "Alibaba is deepening its AI commercialization by integrating models like Qwen into its e-commerce, cloud, and local services. TradingKey's analysis explores whether this shift is driving sustainable revenue growth, with investors closely monitoring the impact on Alibaba's valuation.",
+          "Key context: The Chinese tech giant has been ramping up AI spending and product launches, but clear AI-specific revenue disclosures remain limited. Competition from Tencent, ByteDance, and Baidu adds pressure.",
+          "The article highlights both opportunities—such as cloud AI services and enterprise solutions—and uncertainties, including pricing power and regulatory landscape. Investors are advised to track upcoming earnings for AI contribution metrics."
+        ],
+        "why": "This analysis signals that Alibaba's AI monetization is a key inflection point for its stock, impacting investment decisions and competitive positioning in China's AI race.",
+        "links": [
+          [
+            "TradingKey via Google News",
+            "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTkdlREg1Q2VWY3BsTGVBa1V6MW9OMUliS1BiMkxVc25Bc1R6UXg1c2dwZ3VJQ25JS01qZU8wWWxiS2lwTXpZZElSMnVVc3NCTHVUcDExTnJiRlVTVk9ic3JGMlhtdXRaWUlneHRXSEwtQV9GWDAtSTlkRkpFT2FlNU9nSmhzLVppblBUV3dOaHdVZlk3MnB0a3ItRDc1ak53cnVz?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-21",
+        "freshnessLabelEn": "Weekend window | 2026-06-21",
+        "freshnessLabel": "Weekend window | 2026-06-21"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google DeepMind Treats Advanced AI as ‘Insider Threats’ in New Cybersecurity Roadmap",
+        "dek": "Google DeepMind proposes treating advanced AI models as 'insider threats' as part of a new cybersecurity roadmap, signaling a shift in how frontier models are secured.",
+        "details": [
+          "Google DeepMind has published a cybersecurity roadmap that reclassifies advanced AI models as potential 'insider threats' within an organization. The approach draws parallels to how companies handle human employees with access to sensitive data, applying similar monitoring, access controls, and anomaly detection to AI systems. The roadmap likely outlines technical measures such as sandboxing, behavioral auditing, and credential segregation for AI agents. This represents a significant departure from traditional perimeter-based security models, acknowledging that future AI systems may act unpredictably or be exploited by adversaries.",
+          "The framework comes amid growing industry concern over jailbreaks, prompt injection, and model misuse. By framing AI as an insider rather than an external tool, DeepMind aims to preempt risks from autonomous agents that could inadvertently leak data or execute harmful actions. The roadmap is still conceptual, and details on enforcement or adoption timelines remain unclear. However, it could influence enterprise security standards and regulatory discussions around AI accountability."
+        ],
+        "why": "This signals that even top AI labs anticipate increasingly autonomous models requiring new security paradigms, which will impact enterprise deployment strategies, insurance policies, and compliance frameworks for AI agents.",
+        "links": [
+          [
+            "Google News AI Models: Google DeepMind Treats Advanced AI as ‘Insider Threats’ in New Cybersecurity Roadmap - Security Boulevard",
+            "https://news.google.com/rss/articles/CBMivgFBVV95cUxNakJ3amVNY3JOb3VrTEJYbUFnZkRPRENqMjdQUEIwLTU2TG52clhSWjFXLUV5QVBUOW45RVFCNmFMeWpPSTJwVlN1bzhGWDFaaVdPQklDQTBjY19yUTlDZkl4R0JmOW5QUE9BaW9iOGs5aXRFOEY0WElkdE1TVkZkMkExWVhFdlp3ZGtpTEtLQTkxTzNOMHRJRTZTSExtUHltQTNraWx2elpraVM1QjVXXzNKQXF4a0dreW9vY1dR?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-21",
+        "freshnessLabelEn": "Weekend window | 2026-06-21",
+        "freshnessLabel": "Weekend window | 2026-06-21"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "ON Semiconductor (ON) Launches GaNEXUS For AI Data Centers And Robotics - Yahoo Finance",
+        "dek": "A new GaN power platform aims to boost energy efficiency and density in AI infrastructure and humanoid robots.",
+        "details": [
+          "ON Semiconductor introduced GaNEXUS, a gallium nitride (GaN) power platform designed for AI data centers and robotics. GaN technology enables higher efficiency, faster switching, and better thermal performance than traditional silicon power devices, which is critical as AI servers consume increasing power and robots require compact, reliable energy systems.",
+          "The launch positions ON Semi in direct competition with Infineon, Texas Instruments, and others in the high-growth GaN power market. Data center operators are under pressure to reduce electricity costs and heat dissipation, while humanoid robot developers need lightweight, high-density power supplies. The GaNEXUS platform could address both by combining driver and power stages in a single chip, simplifying design and reducing footprint."
+        ],
+        "why": "This signals that power semiconductor innovation is becoming a key enabler for scaling AI infrastructure and next-generation robotics, potentially creating new supply chain opportunities and shifting competitive dynamics in the power IC market.",
+        "links": [
+          [
+            "Google News AI Infrastructure: ON Semiconductor (ON) Launches GaNEXUS For AI Data Centers ",
+            "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVk9WUWpSUnQ4TGdFTHBId0xWU2d3Q1pPVkF6enoweXZGT2xSc1pLR1h2aF9Nczg2RDdxaVR2a0NqRnY0Tk5tWjZEMG5QVVhrNGVJNkpZVFdxb1JELVAzWjBLZ3piSnV3ZFo3M2V2YmJHamk1SVdHTHd6YU1DaDZOQjE0U0NZTTB1Z0hnRGlULTdMNGFwbmRJUTlqQTY4QVdtRnNUaA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-21",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-06-21",
+        "freshnessLabelEn": "Weekend window | 2026-06-21",
+        "freshnessLabel": "Weekend window | 2026-06-21"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Google DeepMind's AI Control Roadmap treats its own agents as insider threats and sets the compliance bar for everyone else",
+        "dek": "A new framework from Google DeepMind proposes treating AI agents as potential insider threats, outlining controls that could become industry standards for secure agent deployment.",
+        "details": [
+          {
+            "summary": "Agent-as-insider-threat paradigm",
+            "expanded": "Google DeepMind's AI Control Roadmap flips the traditional security model by treating its own AI agents not as trusted tools but as entities that could leak data or act maliciously. The framework recommends continuous monitoring, strict access controls, and kill-switch mechanisms for any agent with system-level access."
+          },
+          {
+            "summary": "Compliance blueprint for the industry",
+            "expanded": "The roadmap explicitly positions itself as a benchmark for others, suggesting that any company deploying autonomous agents should adopt similar 'least privilege' principles. This includes auditing agent actions, logging all decision traces, and requiring human approval for high-risk operations."
+          },
+          {
+            "summary": "Implications for enterprise AI adoption",
+            "expanded": "While the roadmap is designed for internal safety at DeepMind, it signals that enterprise customers and regulators will likely demand comparable security measures. Startups building agent platforms may need to bake in compliance features from day one, potentially raising development costs but also creating a new market for agent security tools."
+          }
+        ],
+        "why": "This roadmap could become the de facto standard for AI agent safety, forcing companies to prioritize control mechanisms or risk falling behind on compliance. For investors and builders, it highlights a growing opportunity in agent governance and security infrastructure.",
+        "links": [
+          [
+            "Startup Fortune article via Google News",
+            "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOMnZFQ2M3OVBSYVVHUGNJRXRSbWh0MDA4bUpvdTZlLW5CeHhKaE9xX0pFNjdJekxjWjY5czgxQjlEM1B1LWdfaHl6MWtCeGZPYzZCMENnY2dIS18tUk90anpjWXFBYXAxRENyT1VEMkpDdXRyR0hDNV9lMmtadjRXUXc2Z0F2UFdER3JPSEZ5VzJTNnV6YkJia3otYkppSkIycGlUekE2TEdTQkZybTVwaWNKZ25aWXZYWnVCbGgtYW5ONElzWlhZbVpfUHJkdEpRYzU0TkhBY193ZGNFYlRuSl9QWU4?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-21",
+        "freshnessLabelEn": "Weekend window | 2026-06-21",
+        "freshnessLabel": "Weekend window | 2026-06-21"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "AMD vs. NVDA: Which Artificial Intelligence (AI) Semiconductor Stock Dominates the Next Phase of CPUs, GPUs, and Robotics? - The Motley Fool",
+        "dek": "A Motley Fool analysis compares AMD and NVIDIA as AI semiconductor stocks, examining their positions in CPUs, GPUs, and robotics for the next phase of growth.",
+        "details": [
+          "This Motley Fool article offers a side-by-side evaluation of AMD and NVIDIA as AI chip leaders, focusing on their strategies across CPUs, GPUs, and robotics. The author argues that NVIDIA currently dominates the AI landscape due to its entrenched CUDA ecosystem, powerful GPU architectures (e.g., Blackwell), and comprehensive software stack, which make it the default choice for large-scale AI training and inference. In contrast, AMD is positioned as a strong challenger with its MI300 series accelerators, which offer competitive performance and better price efficiency, particularly in the inference segment. Additionally, AMD leverages its x86 CPU strength in the data center, while NVIDIA relies on its Grace Arm-based CPUs.",
+          "On the robotics front, the article highlights NVIDIA's Isaac platform for simulating and training robots, which is gaining traction in humanoid and industrial robotics. AMD, through its acquisition of Xilinx, brings FPGA capabilities that can enable low-latency processing for real-time robotics applications. The author suggests that while NVIDIA has a clear edge in the near term, AMD's diversified portfolio—covering CPUs, GPUs, and adaptive computing—could yield longer-term advantages as AI workloads diversify. The piece is investment-oriented, advising readers to weigh NVIDIA's dominance against AMD's value and strategic bets."
+        ],
+        "why": "For investors and technology buyers, this analysis clarifies the competitive dynamics between the two AI chip giants, helping decision-makers evaluate short-term performance (NVIDIA) versus long-term optionality (AMD) in the evolving AI hardware market.",
+        "links": [
+          [
+            "Google News AI Infrastructure: AMD vs. NVDA: Which Artificial Intelligence (AI) Semiconductor Stock Dominates the Next Phase of CPUs, GPUs, and Robotics? - The Motley Fool",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxNclBVSElJZjBXOUNZM3hNUk4xNHRiUk9SM1NhWDlKZEtiUThHWENyTkJaTUFEelduY1RodWVtRFNMTHltdTVnUVh0NEpmTG15cUdROWpadnp1VzRZM1hZblZIT2ZpYkpNcWlOd0c5S2ZBLTB1VTFmR0hIQ3NuRXVZVGFhcUpZYWNtZjJ5bGw3SUxocFA0cHZNcg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-19",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-19",
+        "freshnessLabelEn": "Fallback | published 2026-06-19",
+        "freshnessLabel": "Fallback | published 2026-06-19"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "How we built an internal data analytics agent",
+        "dek": "GitHub shares lessons from building Qubot, a Copilot-powered analytics agent that lets employees query data in plain English.",
+        "details": [
+          "GitHub's engineering team built Qubot, an internal agent powered by GitHub Copilot, to let any employee ask questions about company data using natural language. The system connects to multiple data sources and returns answers via a chat interface. The technical post details the architecture, including how they handle schema discovery, query generation, and security constraints.",
+          "Key learnings include the importance of iterating on prompt design, the need for a feedback loop to improve query accuracy, and the value of restricting agent capabilities to trusted data sets to prevent unsafe queries. The agent also demonstrates a growing pattern in enterprise AI: using large language models as a natural-language layer over existing databases and APIs."
+        ],
+        "why": "For teams exploring internal AI agents, this real-world case study offers practical patterns on integrating LLMs with enterprise data, highlighting both the potential and the operational guardrails required.",
+        "links": [
+          [
+            "GitHub AI & ML: How we built an internal data analytics agent",
+            "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/"
+          ]
+        ],
+        "sourceDate": "2026-06-20",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-20",
+        "freshnessLabelEn": "Weekend window | 2026-06-20",
+        "freshnessLabel": "Weekend window | 2026-06-20"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Anuma: multi-model AI workspace with private cross-model memory",
+        "dek": "Anuma aggregates ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, Llama and more into a unified workspace with privacy-first cross-model memory.",
+        "details": [
+          "Anuma is a multi-model AI workspace that lets users access a wide range of language models—including ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, and Llama—all from a single interface. The product eliminates the need to switch between tabs or subscriptions by providing a unified chat environment where each model can be invoked as needed.",
+          "A key differentiator is Anuma's cross-model memory layer, which is designed with privacy in mind. Users can create, edit, and manage memories that persist across different AI models. This means context like user preferences or project details can be carried from one model conversation to another without leaking data to third parties. The memory is user-controlled and can be deleted or modified at any time.",
+          "By combining model aggregation with a private memory system, Anuma addresses a common pain point for power users who rely on multiple AI tools for different strengths—e.g., using Claude for long-form reasoning and ChatGPT for coding. The workspace approach simplifies workflow and reduces friction, while the memory feature adds a layer of continuity that standalone model interfaces typically lack."
+        ],
+        "why": "Anuma illustrates a growing product opportunity: building multi-model orchestration with user-centric memory. For teams evaluating AI workspaces, the privacy-first memory could be a deciding factor against competitors that lock context into a single model.",
+        "links": [
+          [
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-06-19",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "Understanding the common language behind agent and enterprise automation news.",
+        "details": [
+          "An agentic workflow is a structured process where AI agents—autonomous programs that can perceive, reason, and act—collaborate to complete complex tasks. Unlike traditional software that follows rigid rules, agents in an agentic workflow can make decisions, use tools, and adapt to changing contexts. This concept is central to the rise of AI agents, as seen in products like Manus and the shift toward autonomous enterprise automation.",
+          "Key components include task decomposition (breaking a goal into subtasks), tool use (calling APIs, databases, or other software), memory (retaining context across steps), and multi-agent coordination (agents specializing in different roles). The term has become common in discussions from startups (e.g., Manus, AutoGPT) to big tech (Microsoft Copilot, Google Vertex AI Agent Builder), making it essential for understanding the latest AI product and investment narratives."
+        ],
+        "why": "Grasping agentic workflow helps decode why companies are moving from single-model chatbots to multi-agent systems, and why investors are pouring money into agent infrastructure and orchestration layers.",
+        "links": [
+          [
+            "Is the US government’s Anthropic ban accidentally helping the brand?",
+            "https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-19",
     "title": "AI Daily Atlas",
