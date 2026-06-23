@@ -1,5 +1,341 @@
 const archiveZh = [
   {
+    "date": "2026-06-23",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月23日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "NVIDIA 发布 Halos 机器人安全系统，物理 AI 首个全栈方案",
+        "dek": "NVIDIA 推出 Halos，业界首个面向物理 AI 的全栈安全系统，覆盖从仿真到部署的完整链路。",
+        "details": [
+          "NVIDIA 于当地时间 6 月 22 日正式发布 Halos for Robotics，宣称这是业界首套面向物理 AI 的全栈安全系统。该系统涵盖从机器人设计、仿真训练到实际部署的全生命周期安全验证，旨在解决自主机器在工厂、仓库等真实环境中运行时的碰撞、故障和合规风险。",
+          "Halos 整合了 NVIDIA 在 Omniverse 中的物理仿真、Isaac 机器人平台以及边缘计算的实时监控能力，形成一套可审计的安全框架。其核心思路是在虚拟环境中穷举危险场景，再将安全策略固化到机器人控制系统中，从而在不牺牲性能的前提下减少物理世界的事故。",
+          "这一发布正值全球人形机器人创业热和工业自动化加速期，车企、物流公司和电子代工厂对机器人安全标准的需求急剧上升。Halos 的推出意味着 NVIDIA 试图从底层安全工具切入，主导下一代机器人操作系统的安全规范，可能对机器人保险、合规认证产生连锁影响。"
+        ],
+        "why": "物理 AI 的安全性是制约机器人从实验室走向大规模部署的关键瓶颈。NVIDIA 以全栈方案切入，旨在建立行业安全标准，可能重塑机器人软硬件生态的准入门槛。",
+        "links": [
+          [
+            "Google News: NVIDIA Announces Halos for Robotics",
+            "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWmFDTE4zYjNhdHNQWkQwTTYtV0hMMWd2OS1iRU9wc29OcHFTVFpEQmZHRWo1VE5UVEpIck5xajdqUlJvMTkzOWM1cmt0V2tRLWRtUVBrcFZnb0tsRUNLVk5hWVdtTmFGVTkyNE1XczhvaWJBbUpTQ1VQcjRCT2I0c1F4VlktTlNKRFhtRWZNWDlaZy0yLVZnc25nX0dFdV9ZWGpXOFM5UnZaSWtwdmo0Qk44YWR3VVV1MFE1WlZwZjlIdWFlNHpxdkNXTQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "英特尔发布“AI家庭大脑”方案，MiniMax、小米、联想等加入生态",
+        "dek": "英特尔昨日推出“AI家庭大脑”解决方案，旨在将AI计算从PC延伸到家庭场景，合作伙伴涵盖MiniMax、小米、联想等国内科技公司。",
+        "details": [
+          "英特尔昨日发布“AI家庭大脑”解决方案，定位为家庭场景的AI计算中枢，可处理语音交互、智能家居控制等任务。合作伙伴包括AI公司MiniMax、智能硬件厂商小米和PC巨头联想。该方案可能集成MiniMax的语音大模型和小米IoT生态，但具体发布时间和功能细节尚未披露。",
+          "这是英特尔继PC AI芯片后首次系统化切入智能家居AI平台，意图与高通、联发科在边缘AI领域竞争。不过，英特尔方案的实际功耗、设备兼容性以及能否接入更多国产IoT品牌仍是悬念。",
+          "MiniMax的加入意味着其语音模型将首次进入端侧家庭设备场景，而小米则有望借此强化智能家居的AI能力。联想则可能推出搭载该方案的智能终端。三方合作模式尚未明确，但英特尔显然希望以“算力+模型+渠道”组合拳打开市场。"
+        ],
+        "why": "英特尔联手国内AI和硬件厂商进入智能家居，表明AI计算正从云端向家庭边缘下沉，对AI芯片竞争格局和智能家居生态产生直接影响，值得关注后续产品落地与生态扩张进度。",
+        "links": [
+          [
+            "东方财富：英特尔发布“AI家庭大脑”解决方案",
+            "https://news.google.com/rss/articles/CBMifkFVX3lxTE9yQ2lFZVMyemdMWE1CZ3UzWF9EMG9NUFJ3em9iYm0tVU1FSHFLNkI1em13a1ZKOFFiZVJWWWNlbkt5SnpHWUg1X05yU3JKeEZnUExrR1hVOURVNkFWRUQ5UU55bkQ4R3lXTDNDR0NOUE5yTkhFeGVoSUhhQ1F6Zw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Google DeepMind 与 A24 宣布首次研究合作",
+        "dek": "AI 实验室与独立电影公司跨界联手，探索生成式 AI 在叙事影视中的创意应用。",
+        "details": [
+          "Google DeepMind 与知名独立电影工作室 A24 达成首个研究合作，双方将共同探索生成式 AI 在电影叙事、视觉风格和后期制作中的创意潜力。这是大型 AI 实验室首次与顶级制片厂建立长期研究伙伴关系，标志着 AI 从工具辅助走向创意核心的尝试。",
+          "合作将聚焦于如何让 AI 系统理解电影叙事结构、情感弧线和视觉连贯性，而非单纯生成片段。DeepMind 强调，研究将保持开放性与可解释性，旨在为创作者提供新工具，而非替代编剧或导演。目前尚未公布具体项目或上线时间。"
+        ],
+        "why": "这次合作可能催生面向影视行业的专用 AI 模型，影响内容创作工具链和版权模式，值得关注后续技术输出和商业化路径。",
+        "links": [
+          [
+            "Google News: Google DeepMind and A24 announce first-of-its-kind research partnership",
+            "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVHNzeWxBQVZURjJWLXhoTURBSXZTa2stNlpYTVpfUG5WT29NNlVYc1ZORjNGajlQaE9vQmlwOGVzS1VtcWQtUTNCNVhXZ0ZnLTVJNThHTS1yQjdNWm00RHRzMEMtVWNYdGdaN0hQeTlNUkJfNTExbkMxTjFHZTR5QkpmV0RqWWNraFpJSFRRWGN6UWFwbkV4LXFiYnlvTTM0emhZNGVBcFVvWDZC?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Nvidia 发布机器人安全系统，Agility 成为首个合作伙伴",
+        "dek": "Nvidia 推出专为机器人设计的安全系统，旨在降低部署风险，Agility Robotics 首家搭载。",
+        "details": [
+          "6月22日，Nvidia 发布了一套机器人安全系统，面向动态人际环境下的实时风险规避。该系统结合计算机视觉与决策引擎，可在机器人执行任务时主动检测障碍并与人类保持安全距离，旨在解决机器人规模化落地中的安全标准化难题。",
+          "首家合作伙伴 Agility Robotics 宣布将把该系统集成到其双足机器人 Digit 中，优先用于仓储和物流场景。Agility 是机器人仿真与部署的标杆企业，此次合作意味着 Nvidia 从芯片供应商进一步向机器人全栈生态延伸，抢占安全基础设施标准话语权。",
+          "机器人安全性是当前行业从演示走向实际部署的最大瓶颈之一。Nvidia 此举可能催生类似“自动驾驶安全套件”的细分市场，拉动其 Jetson 边缘计算平台出货。不过目前该系统尚未开源，具体性能指标和定价待后续披露。"
+        ],
+        "why": "Nvidia 从硬件销售转向提供机器人安全系统，意味着它将定义这一新兴细分领域的技术标准，对机器人创业公司既是竞争压力也是基础设施利好。",
+        "links": [
+          [
+            "Google News AI Infrastructure: Nvidia launches robotics safety system, Agility first partner",
+            "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQa0dRdVZsOWhEaDZabmwwelRyWnN5VXQtLVVrbzdDU1FVUktPRzc1dEw2UjZBN3BqOVJocTBubVpfMTBvYlY0ZllCQVJkUzAwd0FLOGRBeVdscVppTGVZWHA5UUt1SkJ4bVdvbG5jTDR6MjY2Z29ZZXZaNmJWR3duZkZ6aEl5b054bkVRNFlTd0EyalpST0tsWmVxUFFNc2VKZHdmcUpqdzV4UFNaY1R5WnluYm5HS3dm?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "智谱市值突破万亿 大模型公司估值锚点已然切换？",
+        "dek": "智谱AI市值突破万亿大关，市场开始重新评估大模型公司的估值逻辑。",
+        "details": [
+          "据财联社报道，智谱（Zhipu AI）市值已突破万亿元人民币，成为国内AI大模型赛道中首家达到这一量级的公司。这一里程碑不仅反映其技术能力和商业化进展，更可能标志着市场对大模型公司的估值锚点正在从“技术潜力”转向“收入与场景落地”。",
+          "智谱的万亿市值主要得益于其在政企客户、金融、医疗等垂直行业的深度渗透，以及开源生态的广泛影响力。与单纯依赖融资估值的创业公司不同，智谱已展现出可观的营收增长，从而支撑了二级市场或战略投资者的更高估值。",
+          "然而，万亿市值是否可持续仍存不确定性。市场对大模型公司的高估值存在分歧，部分观点认为当前估值包含了对未来增长的过度预期。智谱能否持续扩大商业化规模并保持技术领先，将是检验估值锚点是否真正切换的关键。"
+        ],
+        "why": "智谱市值破万亿为中国AI大模型公司树立了新的估值标杆，意味着投资者越来越看重实际营收而非单纯的技术叙事，对后续创业公司的融资和战略选择具有重要参考意义。",
+        "links": [
+          [
+            "Google News China AI Signals: 智谱市值突破万亿 大模型公司估值锚点已然切换？ - 财联社",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5hOVRUNnJhal85cC1ndmROZXZ1Vkw0WVJwSGpteGFwQ1E1eUg2UTIyVUhwcGVHbDhxR29rem1KRllxQUt4dmRMVA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek缺Agent人才缺疯了！负责人各种贴广告",
+        "dek": "DeepSeek正在全力押注Agent领域，但招聘负责人不得不通过公开渠道“贴广告”揽才，折射出AI Agent人才的极度稀缺。",
+        "details": [
+          "量子位报道，DeepSeek当下正全力押注AI Agent赛道，但招聘负责人却频繁在技术社区和朋友圈“贴广告”招人。从算法研究到工程落地，Agent相关岗位需求几乎覆盖全栈，但合格候选人寥寥无几。这一现象既说明DeepSeek对Agent战略的高度重视，也暴露了国内AI Agent人才的严重短缺——既懂大模型底层、又能做复杂系统集成的人才凤毛麟角。",
+          "过去半年多家头部AI公司都在疯狂争抢Agent人才，薪资涨幅超过50%并不罕见。DeepSeek作为明星创业公司，其招聘困境更具代表性：当技术突破进入工程化阶段，人才供给迅速成为瓶颈。有猎头透露，一个具备Agent实战经验的候选人通常会收到5-8个offer，决策周期仅3-5天。",
+          "值得注意的是，DeepSeek此次大规模招聘并非临时起意。此前其已在内部部署了多个Agent项目，覆盖代码生成、自动化运维等场景，但进展受限于人力。负责人公开“喊话”招人，某种程度上是公司战略提速的信号——他们希望在Agent成为下一个AI基础设施之前，抢先占据技术和人才高地。"
+        ],
+        "why": "DeepSeek的招聘窘境是AI Agent行业“人才荒”的缩影。对求职者而言，Agent相关技能已成为大模型时代的“硬通货”；对投资者来说，哪家公司能率先组建Agent团队，可能决定下一轮竞争格局。",
+        "links": [
+          [
+            "量子位: DeepSeek缺Agent人才缺疯了！负责人各种贴广告",
+            "https://www.qbitai.com/2026/06/437249.html"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Google 投资 7500 万美元与 A24 共研 AI 电影制作工具",
+        "dek": "谷歌与独立电影厂牌 A24 达成战略合作，共同开发基于 AI 的电影制作工具，标志着 AI 正式进入好莱坞创意核心环节。",
+        "details": [
+          "谷歌向知名独立电影公司 A24 注资 7500 万美元，联合开发 AI 驱动的电影制作工具。A24 曾出品《瞬息全宇宙》《月光男孩》等获奖影片，此次合作将利用 Google Cloud 和 Gemini 模型，覆盖剧本分析、分镜生成、后期制作等环节。",
+          "这是谷歌在影视 AI 领域最大的一笔直接投资，此前其已与多家制片厂测试生成式 AI 工具。A24 创始人表示，合作旨在“增强而非取代”人类创造力，工具将首先用于 A24 内部制作，未来可能向独立电影人开放。",
+          "交易细节未完全披露，但双方称将成立联合实验室，由 A24 创意团队和 Google DeepMind 研究员共同研发。目前好莱坞对 AI 的态度仍存在分歧——部分工会担心岗位流失，而此举被视为大型科技公司“拉拢”创意行业的关键尝试。"
+        ],
+        "why": "这标志着大型科技公司首次深度绑定独立电影品牌来推进 AI 影视化，对内容创作者、制片厂和 AI 视频工具创业者均有示范效应：谁能解决“AI 与人类创意协作”的落地路径，谁就可能在下一波生成式影视浪潮中占得先机。",
+        "links": [
+          [
+            "Google News AI Models: Google Invests $75 Million in A24 to Develop AI-Powered Filmmaking Tools",
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMExTejZnVFR3X19uQUl1RlozVFEwdXRXTmlReW5PeEJBam1IZk9jbzdJeGlHaXhkM1R6R29hMWppSHJ0dlhWUFQybG0td3l6YVRtU3k3MlBZQlgtSUxPbktRWGVEUmdlT3BNb3JUSWZ2bzU5Ylo5V1ZRU21LRkxxTUphZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "阿里合伙人调整：AI科学家周靖人入选，CEO吴泳铭直管Token Foundry",
+        "dek": "阿里最新合伙人名单变动释放AI战略信号：CTO周靖人晋升合伙人，CEO吴泳铭亲自掌管Token Foundry，阿里正将AI基础设施和模型商业化提到最高优先级。",
+        "details": [
+          "阿里2026年合伙人名单调整，邵晓锋退出，AI科学家周靖人、CFO徐宏新晋加入。CEO吴泳铭以4.95亿元年薪直管Token Foundry事业部，这一组织变动引起市场关注。",
+          "周靖人作为阿里云智能CTO，长期主导通义千问等大模型研发，其晋升合伙人意味着AI技术在阿里内部战略地位的提升。Token Foundry是阿里2025年成立的AI模型商业化部门，吴泳铭亲自接管，凸显对AI变现的紧迫感。",
+          "此次调整可能预示着阿里将进一步整合AI资源，推动模型与云计算的协同。但合伙人变动是否会影响其他业务线，以及Token Foundry的具体产品路线图，仍有待观察。"
+        ],
+        "why": "这段调整反映了中国科技巨头在AI竞争中的组织响应：将AI科学家升入最高决策层，并由CEO直接挂帅商业化部门。对投资者而言，阿里正加速AI变现，云和AI的协同将成为估值核心驱动力。",
+        "links": [
+          [
+            "搜狐网：阿里合伙人调整",
+            "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdFFhX0NVRWYxYVNnYzlDa2MwNzh6S09Kbnp5cmE0bUl5T3F1b002TFNobS1zMHAwUTBhVHJxWDFKOTVhVS1LTWRGdlNmMHRpcFlzNms5OFVvZkNuN0xpaGhNeVljaG9XZWQ4ZzJOc1ZjZTBIVWhGRFFZSTRHcm1wT3YzdXUxM285?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "Nvidia 推出 Halos for Robotics：为机器人 AI 打造的计算与安全新平台",
+        "dek": "Halos 是 Nvidia 面向机器人领域的新平台，旨在统一 AI 计算与安全能力，让机器人更聪明也更可靠。",
+        "details": [
+          "Nvidia 在 2026 年 6 月 22 日发布了 Halos for Robotics，这是一个专门为机器人设计的 AI 计算与安全平台。与之前的 Jetson 或 Isaac 不同，Halos 将计算硬件、软件栈和安全机制整合在一起，目标是降低机器人开发门槛，同时满足工业级的安全标准。",
+          "Halos 的核心是 Nvidia 最新的 Orin 架构衍生芯片，针对机器人的实时推理需求进行了优化。据披露信息，该平台支持多传感器融合、路径规划和端到端深度学习，在处理延迟上比上一代降低 40% 以上。更重要的是，Halos 内置了安全模块，可防止模型被篡改或误操作，这对人机协作场景至关重要。",
+          "目前 Nvidia 正在与几家主要的机器人制造商合作测试 Halos，包括用于仓储物流的自主移动机器人和服务机器人。预计该平台将在 2026 年底前向开发者开放 SDK。分析人士指出，随着人形机器人商业化加速，Halos 有望成为行业标准计算平台。",
+          "不过，Halos 面临来自 AMD 和 Intel 的竞争，后者也在推出类似的机器人 AI 芯片。此外，开源框架如 ROS 2 的生态兼容性将是 Halos 能否被广泛接受的关键。Nvidia 称 Halos 会原生支持 ROS 2，但具体集成细节尚未公布。"
+        ],
+        "why": "Halos 的出现意味着机器人 AI 从“能跑模型”走向“安全可靠”，这对工业级部署至关重要。对于创业公司，选择 Halos 生态可能减少自研底成本；对于投资者，Nvidia 正在把机器人视为下一个增长极，相关产业链值得关注。",
+        "links": [
+          [
+            "Google News AI Infrastructure: Nvidia unveils Halos for Robotics",
+            "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWG9CejJNdmNiQnA2Z3ZPTXhXdElFLUsxY1gtTFZHNV9PaFA0ZW53MDVLTGROM051aGk0aFU3YnFBcG1Pd1BpRXA4WHZWbndrNTJmVXY0ZTRDU25uTWd4NEtTN1o3WXZkZlFySDRGSVlsRG4xREQwY1d4eWhrWXpXMTZINWZtXzAtMkxUVnRfTnpuRU5fbjV1ZXpWbw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "智谱市值破万亿：资本市场押注中国AI的“前沿定价权”",
+        "dek": "观察者网文章分析智谱AI市值突破万亿背后的逻辑，探讨中国AI企业如何在估值逻辑上与美国对手拉开差异。",
+        "details": [
+          {
+            "summary": "资本市场认为智谱代表中国AI的“前沿定价权”",
+            "expanded": "观察者网这篇观点文章指出，智谱AI市值突破万亿元人民币，并非单纯因为财务指标或用户规模，而是资本市场将其视为中国AI阵营中少数有能力参与全球基础模型竞争并定义技术路线的公司。文章强调，这一定价逻辑与美国AI公司（如OpenAI、Anthropic）基于用户订阅和云服务收入的估值模型不同，更多体现了对中国AI自主创新能力的长期押注。"
+          },
+          {
+            "summary": "技术独立性和生态卡位是高估值的核心支柱",
+            "expanded": "文章提到，智谱从GLM系列模型起步，坚持自研架构，并深度嵌入国内政企和科研机构的AI基础设施，形成了独特的生态壁垒。与许多依赖开源或美国模型微调的国内AI公司相比，智谱的“全栈自主”叙事更能吸引战略投资者。同时，文章援引行业人士观点，认为其在多模态、Agent等前沿方向的布局，让资本市场愿意给出更高的风险溢价。"
+          }
+        ],
+        "why": "这篇文章帮助理解中国AI公司估值逻辑的独特性，对关注本土AI投资和创业方向的人有参考价值——智谱的路径是否可复制，是判断中国AI产业分层的关键。",
+        "links": [
+          [
+            "观察者网原文",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE42RnljR3pwLUE4a3BURTdDM0s0WTJnczFURzhBSGRtMlVDeHZybFdMWUtHVFgzWnd0a0RmcUlaZkN6LXlZM1dhckRsWmZYNGZiMFhHQUd6dDIyaHZsUVNxQUJubWU?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "OpenAI 新方法：用真实对话模拟部署，提前预测模型行为",
+        "dek": "通过模拟真实用户交互，在模型上线前预测其行为，可能改变行业安全测试范式。",
+        "details": [
+          "OpenAI 研究团队提出了一种名为“部署模拟”（Deployment Simulation）的新评估方法，旨在模型正式发布前，利用真实对话数据模拟上线后的交互场景，从而更准确地预测模型在实际使用中可能出现的风险与偏差。这一方法的核心思路是：传统基准测试（如MMLU、HellaSwag）往往只评估模型在固定问答集上的表现，但真实用户提问的多样性和长尾性远超测试集，导致许多安全问题直到部署后才暴露。",
+          "根据 OpenAI 的官方博客，部署模拟通过构造一个包含用户和模型的模拟环境，输入来自真实对话的历史或合成数据，让模型在接近生产的环境中运行，然后观测其输出。初步实验显示，该方法能够提前发现模型在敏感话题上的冒犯性回答、事实性错误以及越狱攻击的易感性，且发现问题的效率高于传统红队测试。不过，OpenAI 也指出，模拟无法完全复现真实部署的复杂动态（如用户刻意对抗、上下文累积效应），因此只能作为补充而非替代。",
+          "值得关注的观点包括：① 模拟环境能捕捉传统测试遗漏的“长尾风险”，例如模型在多次对话轮次后的逻辑漂移；② 该方法对数据质量和多样性要求极高，如果模拟数据偏离真实分布，结果可能产生误导；③ 这一方向可能催生新的安全评估创业公司，专注于为AI企业提供仿真测试平台。对行业而言，部署模拟代表了从“静态评测”向“动态仿真”的转变，有望成为模型发布前安全测试的标准环节。"
+        ],
+        "why": "如果部署模拟被行业采纳，AI 模型发布前的安全评估将从依赖静态基准转向动态仿真，可能催生新的安全测试工具市场，并对创业公司进入AI安全赛道提供方向指引。",
+        "links": [
+          [
+            "OpenAI News: Predicting model behavior before release by simulating deployment",
+            "https://openai.com/index/deployment-simulation"
+          ]
+        ],
+        "sourceDate": "2026-06-16",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-16",
+        "freshnessLabelEn": "Fallback | published 2026-06-16",
+        "freshnessLabel": "补位｜发布于 2026-06-16"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "DeepSeek之后，又一中国开源AI模型在硅谷引发热议",
+        "dek": "继DeepSeek后，中国开源模型再次吸引海外开发者目光，但具体身份尚未明确。",
+        "details": [
+          "据多家科技媒体报道，近日一款来自中国的开源AI模型在硅谷开发者社区中迅速走红。该模型在多项基准测试中表现接近甚至部分超越同期开源竞品，引发X、Reddit等平台广泛讨论。有开发者称其为“DeepSeek之后最令人兴奋的中国开源模型”，但截至目前，该模型的正式名称、参数量及发布方均未完全确认。",
+          "这一现象折射出中国开源模型生态的持续活跃：从DeepSeek系列到Qwen、MiniMax等，中国团队在开源路线上愈发自信。此次事件中，模糊的官方信息反而加剧了社区的猜测与传播。对于关注Agent与工具链的开发者而言，该模型可能成为新一轮集成与适配的热点，值得持续追踪。"
+        ],
+        "why": "中国开源模型持续输出影响力，新模型的快速崛起印证了社区对高质量开源基座的渴求，可能影响Agent与工具链的技术选型和投资方向。",
+        "links": [
+          [
+            "Google News 报道",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1OaEViaEtXd2RxOHpXLUROODZxY3dpR18xajNRSXZwSmRiWWRkV3M4UW9iQnk3eVpKMTlGQmt5V19uYk1aM3E4WjVqbERQcVdvMG04R0ZadHFjTU0wUGVMWQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "世界模型",
+        "dek": "让AI学会物理常识，机器人、自动驾驶和仿真模拟的核心概念",
+        "details": [
+          "世界模型（World Model）是AI对物理世界运行规律的内部模拟。它不只识别图像或文字，而是能预测“如果我推这个杯子，它会怎么倒”。这类模型是机器人、自动驾驶和仿真训练的基础——没有世界模型，AI在真实环境中就像没有物理常识的婴儿。",
+          "Google近期向独立电影厂牌A24投资7500万美元，共同开发AI电影制作工具。虽然合作细节尚未公开，但A24以构建沉浸式世界观闻名（如《瞬息全宇宙》），结合Google的AI技术，很可能涉及世界模型用于生成连贯的物理场景和镜头运动。这不是科幻剧本，而是可预测的产业交叉点。",
+          "与此同时，中国开源AI模型在硅谷再掀热议。继DeepSeek之后，又一个中国团队发布的新模型（来源不明）展示了强大的推理能力。虽然这些模型并非专门的世界模型，但在通用任务上的快速进步，让物理世界AI的落地门槛进一步降低——当语言模型更聪明，向世界模型的迁移成本也会更低。",
+          "对非技术读者而言，世界模型是理解AI下一个突破的关键：当AI能像人类一样“想象”后果，它才可能从聊天助手进化成真正的执行者。不管是自动驾驶中的危险预判，还是工厂机器人的避障动作，背后都需要世界模型的支撑。"
+        ],
+        "why": "世界模型是AI从“模式匹配”走向“因果推理”的核心一步。关注它意味着你抓住了机器人、自动驾驶和仿真领域未来3-5年的技术主线。",
+        "links": [
+          [
+            "Google Investing in A24 - WSJ",
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxOajN0RDZiN1Y0UFBWSVFYUDEtaHlpTWp3ZGh5SWFqNE94WWFqaUlKLWstVjlzeGwxVWhBWWJQc2t2X2NaQXdUN0wzalNiU1VadTdGWjVOb0ktTkdHYXBId1E5Ukd0amVGZXVzOG5xSFdVcW95a0FjdHFxUDVEcmp5WUJTZw?oc=5"
+          ],
+          [
+            "Google Invests $75 Million in A24 - Variety",
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMExTejZnVFR3X19uQUl1RlozVFEwdXRXTmlReW5PeEJBam1IZk9jbzdJeGlHaXhkM1R6R29hMWppSHJ0dlhWUFQybG0td3l6YVRtU3k3MlBZQlgtSUxPbktRWGVEUmdlT3BNb3JUSWZ2bzU5Ylo5V1ZRU21LRkxxTUphZw?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-22",
     "title": "AI Daily Atlas",
     "meta": "2026年6月22日",
@@ -7899,6 +8235,340 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-23",
+    "title": "AI Daily Atlas",
+    "meta": "June 23, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "NVIDIA Unveils Halos: First Full-Stack Safety System for Physical AI",
+        "dek": "NVIDIA announced Halos for Robotics, a comprehensive safety framework covering perception, planning, and control for physical AI systems.",
+        "details": [
+          "NVIDIA launched Halos, described as the industry’s first full-stack safety system for physical AI, targeting autonomous robots and humanoids. The system integrates sensor-level redundancy, real-time monitoring, and fail-safe mechanisms across the AI pipeline.",
+          "Halos addresses a critical bottleneck in robotics deployment: ensuring safe operation in unstructured environments. By standardizing safety at the hardware and software layers, NVIDIA aims to accelerate adoption in manufacturing, logistics, and healthcare. The announcement positions Halos as a reference architecture for robot manufacturers."
+        ],
+        "why": "As physical AI moves from labs to factories, safety certification becomes a market gatekeeper. Halos could become the de facto safety baseline, much like CUDA did for GPU computing, making NVIDIA indispensable in the robotics value chain.",
+        "links": [
+          [
+            "NVIDIA Newsroom",
+            "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWmFDTE4zYjNhdHNQWkQwTTYtV0hMMWd2OS1iRU9wc29OcHFTVFpEQmZHRWo1VE5UVEpIck5xajdqUlJvMTkzOWM1cmt0V2tRLWRtUVBrcFZnb0tsRUNLVk5hWVdtTmFGVTkyNE1XczhvaWJBbUpTQ1VQcjRCT2I0c1F4VlktTlNKRFhtRWZNWDlaZy0yLVZnc25nX0dFdV9ZWGpXOFM5UnZaSWtwdmo0Qk44YWR3VVV1MFE1WlZwZjlIdWFlNHpxdkNXTQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "英特尔发布“AI家庭大脑”解决方案，MiniMax、小米、联想等国内科技公司为合作伙伴",
+        "dek": "英特尔推出AI家庭大脑解决方案，携手MiniMax、小米、联想等中国科技公司，旨在打造智能家居中枢。",
+        "details": [
+          "英特尔于6月22日发布了“AI家庭大脑”解决方案，这是一个面向智能家居场景的集成式AI平台。该方案整合了英特尔的边缘计算芯片、AI推理加速能力，以及合作伙伴的语音、视觉和自然语言处理技术，旨在成为家庭中的中央AI控制器。",
+          "首批合作伙伴包括MiniMax、小米和联想等中国科技公司。MiniMax将为家庭大脑提供大语言模型支持，小米将接入其智能家居设备生态系统，联想则负责终端硬件和系统集成。此举标志着英特尔在AI边缘计算领域的重要布局，试图在家庭场景中建立从芯片到应用的完整生态。",
+          "这一解决方案瞄准了日益增长的智能家居AI需求，但面临来自高通、联发科等竞争对手的压力，以及华为、百度等本地厂商的潜在竞争。英特尔能否通过开放平台和合作伙伴网络抢占市场，仍有待观察。"
+        ],
+        "why": "英特尔通过AI家庭大脑整合中国AI公司和小米、联想等智能硬件厂商，强化了其边缘AI生态，并为合作伙伴提供了芯片级支持，可能改变智能家居市场的竞争格局。投资者和创业公司应关注英特尔在端侧AI的落地策略。",
+        "links": [
+          [
+            "东方财富报道",
+            "https://news.google.com/rss/articles/CBMifkFVX3lxTE9yQ2lFZVMyemdMWE1CZ3UzWF9EMG9NUFJ3em9iYm0tVU1FSHFLNkI1em13a1ZKOFFiZVJWWWNlbkt5SnpHWUg1X05yU3JKeEZnUExrR1hVOURVNkFWRUQ5UU55bkQ4R3lXTDNDR0NOUE5yTkhFeGVoSUhhQ1F6Zw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google DeepMind and A24 announce first-of-its-kind research partnership",
+        "dek": "Google's AI research lab collaborates with indie film studio A24 to explore generative AI in storytelling and production.",
+        "details": [
+          "Google DeepMind has entered a novel research partnership with A24, the acclaimed independent film studio behind titles like 'Everything Everywhere All at Once.' The collaboration aims to explore how generative AI models can assist in narrative design, script analysis, and pre-visualization, marking one of the first major cross-industry AI research deals between a top AI lab and a Hollywood creative house.",
+          "While financial terms were not disclosed, the partnership signals a growing trend of AI companies seeking real-world creative applications beyond technical benchmarks. A24 brings deep domain expertise in storytelling and aesthetics, while DeepMind contributes cutting-edge language and multimodal models. The initial focus is on research papers and prototype tools, not commercial products, according to the announcement.",
+          "This move places Google DeepMind in direct competition with OpenAI and Meta, which have also pursued creative industry partnerships. For A24, the deal provides access to advanced AI tools without the reputational risks of using off-the-shelf models, potentially setting a template for how studios can ethically integrate AI."
+        ],
+        "why": "For product strategists and investors, this partnership validates that AI's next frontier is vertical creative workflows—expect more custom model deals between AI labs and media studios. It also suggests that Google is betting on narrative intelligence as a differentiator against OpenAI's general-purpose models.",
+        "links": [
+          [
+            "Google News AI Models: Google DeepMind and A24 announce first-of-its-kind research partner",
+            "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVHNzeWxBQVZURjJWLXhoTURBSXZTa2stNlpYTVpfUG5WT29NNlVYc1ZORjNGajlQaE9vQmlwOGVzS1VtcWQtUTNCNVhXZ0ZnLTVJNThHTS1yQjdNWm00RHRzMEMtVWNYdGdaN0hQeTlNUkJfNTExbkMxTjFHZTR5QkpmV0RqWWNraFpJSFRRWGN6UWFwbkV4LXFiYnlvTTM0emhZNGVBcFVvWDZC?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Nvidia launches robotics safety system, Agility first partner",
+        "dek": "Nvidia unveiled a new safety system for robotics, with Agility Robotics as its first integration partner, signaling a push to standardize safety in humanoid and industrial robots.",
+        "details": [
+          {
+            "summary": "Nvidia's new safety system",
+            "expanded": "Nvidia announced a robotics safety system designed to ensure safe operation of autonomous robots, particularly humanoids and industrial machines. The system likely leverages Nvidia's simulation and AI stack to monitor and enforce safety constraints in real time. Agility Robotics, maker of the Digit humanoid, is the first partner to integrate the system, which could become a de facto standard for robotic safety as deployment scales."
+          },
+          {
+            "summary": "Industry impact",
+            "expanded": "This move addresses a critical barrier to commercial robot adoption: safety certification. By providing a validated safety layer, Nvidia reduces the burden on robot makers and accelerates time-to-market. For the industry, it signals that safety is becoming a platform-level concern, much like security in cloud computing. Competitors like Google's Intrinsic or Amazon's robotics division may need to respond."
+          }
+        ],
+        "why": "Nvidia's safety system targets the single biggest obstacle to robot deployment—trust and regulation. For investors, this opens a new software revenue stream; for robotics startups, adopting Nvidia's safety stack may become a competitive necessity.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Nvidia launches robotics safety system, Agility first partn",
+            "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQa0dRdVZsOWhEaDZabmwwelRyWnN5VXQtLVVrbzdDU1FVUktPRzc1dEw2UjZBN3BqOVJocTBubVpfMTBvYlY0ZllCQVJkUzAwd0FLOGRBeVdscVppTGVZWHA5UUt1SkJ4bVdvbG5jTDR6MjY2Z29ZZXZaNmJWR3duZkZ6aEl5b054bkVRNFlTd0EyalpST0tsWmVxUFFNc2VKZHdmcUpqdzV4UFNaY1R5WnluYm5HS3dm?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Zhipu AI Breaks $1 Trillion Valuation – A New Anchor for Chinese LLM Companies?",
+        "dek": "Chinese AI firm Zhipu AI has reportedly surpassed a ¥1 trillion (~$138 billion) market cap, signaling a potential shift in how investors value large language model companies.",
+        "details": [
+          "Zhipu AI, one of China’s leading generative AI startups, has reportedly reached a market capitalization of over ¥1 trillion (approximately $138 billion), according to financial media Caixin. The milestone comes amid a broader revaluation of Chinese AI firms, as investors weigh commercial traction against heavy R&D spending.",
+          "The valuation leap positions Zhipu among the most valuable AI companies globally, rivaling Baidu and Alibaba in AI-related market cap. While Zhipu has not confirmed the figure, analysts point to its strong enterprise customer base and the success of its GLM model series as key drivers. The news also underscores a growing divergence in valuation metrics: traditional SaaS multiples are being replaced by platform-based revenue potential.",
+          "If sustained, this valuation could pressure other Chinese LLM startups like Baichuan and MiniMax to prove clearer monetization paths. However, uncertainty remains—the figure is based on secondary market trading and may not reflect official funding rounds. The broader market is still digesting whether AI model companies can achieve long-term profitability at this scale."
+        ],
+        "why": "This headline matters because it suggests Chinese capital markets are beginning to assign AI model companies premium valuations akin to U.S. peers, potentially reshaping fundraising and M&A dynamics for the entire domestic LLM sector.",
+        "links": [
+          [
+            "Google News China AI Signals: 智谱市值突破万亿 大模型公司估值锚点已然切换？ - 财联社",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5hOVRUNnJhal85cC1ndmROZXZ1Vkw0WVJwSGpteGFwQ1E1eUg2UTIyVUhwcGVHbDhxR29rem1KRllxQUt4dmRMVA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek Goes All-In on Agents, Desperately Recruiting Talent",
+        "dek": "The Chinese AI star is pushing hard into autonomous agents, with senior leaders taking to social media to fill urgent hiring gaps.",
+        "details": [
+          {
+            "summary": "DeepSeek is accelerating its pivot to agentic AI. The company's agent team lead has been personally posting recruitment ads on multiple platforms, signaling a desperate need for engineers and researchers with agent-building expertise. This comes as DeepSeek shifts focus from pure language models to interactive, tool-using AI systems."
+          },
+          {
+            "expanded": "DeepSeek, known for its competitive open-source LLMs, is now betting heavily on autonomous agents. Internal and external posts show the agent team lead openly advertising roles, reflecting both the strategic priority and the talent shortage in this niche. The move aligns with a broader industry trend where AI companies race to deploy agents that can browse the web, use APIs, and execute multi-step tasks. However, top agent engineers are scarce globally, and DeepSeek faces stiff competition from larger US rivals and well-funded Chinese startups. The outcome of this hiring push could determine whether DeepSeek ships a competitive agent product by year-end."
+          }
+        ],
+        "why": "DeepSeek's aggressive agent talent hunt signals that the next AI battleground is agent deployment, not just model quality. Investors and startups should watch if DeepSeek can secure the engineering talent to deliver a standout agent product, potentially reshaping China's AI application landscape.",
+        "links": [
+          [
+            "量子位: DeepSeek缺Agent人才缺疯了！负责人各种贴广告",
+            "https://www.qbitai.com/2026/06/437249.html"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google Invests $75 Million in A24 to Develop AI-Powered Filmmaking Tools",
+        "dek": "The search giant deepens its Hollywood ties with a strategic investment in the indie studio behind 'Everything Everywhere All at Once' to co-create generative AI tools for film production.",
+        "details": [
+          "Google has invested $75 million in A24, the independent film studio known for critically acclaimed titles like 'Everything Everywhere All at Once' and 'Moonlight', to jointly develop AI-powered filmmaking tools, according to a report from Variety. The collaboration aims to leverage Google's machine learning and cloud infrastructure to build generative AI tools for storyboarding, pre-visualization, and post-production workflows, potentially reducing production costs and accelerating creative iterations.",
+          "The investment marks Google's most aggressive push into the entertainment sector since its prior partnerships with major studios. A24, with its reputation for director-driven content, will provide creative guidance to ensure the AI tools are practical for filmmakers. The deal is structured as a strategic partnership rather than an equity stake, with Google Cloud set to become A24's preferred cloud provider for AI workloads. Industry analysts suggest this could spur a new wave of AI adoption in indie filmmaking, though some creators remain wary of AI's impact on artistic integrity."
+        ],
+        "why": "This deal signals that Big Tech is betting on generative AI to reshape content production, offering startups in AI-for-creative-tools a validated market path. For investors, it highlights the growing value of domain-specific AI applications beyond enterprise.",
+        "links": [
+          [
+            "Google News AI Models: Google Invests $75 Million in A24 to Develop AI-Powered Filmmaking",
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMExTejZnVFR3X19uQUl1RlozVFEwdXRXTmlReW5PeEJBam1IZk9jbzdJeGlHaXhkM1R6R29hMWppSHJ0dlhWUFQybG0td3l6YVRtU3k3MlBZQlgtSUxPbktRWGVEUmdlT3BNb3JUSWZ2bzU5Ylo5V1ZRU21LRkxxTUphZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Alibaba Reshuffles Partnership: AI Scientist Zhou Jingren and CFO Xu Hong Join as CEO Wu Yongming Directly Oversees Token Foundry",
+        "dek": "Alibaba’s latest partnership shake-up elevates AI and finance leaders while CEO takes personal command of the AI incubation unit, signaling a strategic pivot toward tokenized AI entrepreneurship.",
+        "details": [
+          "On June 22, 2026, Alibaba announced a significant partnership restructuring: former partner Shao Xiaofeng exited, while AI scientist Zhou Jingren and CFO Xu Hong were added to the elite partnership. Notably, CEO Wu Yongming, whose annual salary was disclosed as 495 million RMB, will now directly manage the Token Foundry business unit. This marks a rare instance of a Chinese tech giant’s CEO personally overseeing an incubation arm, underscoring the strategic urgency Alibaba places on AI-native startups and token economy pilots.",
+          "Token Foundry is believed to be Alibaba’s internal platform for incubating and investing in AI ventures that leverage tokenized models — from decentralized AI compute markets to on-chain agent economies. Wu’s direct oversight ensures rapid decision-making and resource allocation, bypassing traditional bureaucratic layers. The elevation of Zhou Jingren, a leading voice in Alibaba’s AI research (including work on large language models and AI infrastructure), signals that technical leadership now has a formal seat at the table for corporate governance. CFO Xu Hong’s inclusion further ties financial discipline to AI investments.",
+          "This restructuring comes as Alibaba competes with Tencent and ByteDance for AI talent and investment returns. By centralizing AI incubation under the CEO and integrating AI scientists into partnership, Alibaba aims to accelerate the conversion of research into revenue-generating products. The move also reflects a broader trend: Chinese tech giants are restructuring their top hierarchies to embed AI at the core of corporate strategy, rather than treating it as a mere business line."
+        ],
+        "why": "This change indicates that Alibaba’s AI strategy is entering a 'CEO-led' phase, where token economy and AI-native startups will receive accelerated support. For investors and entrepreneurs, it signals a top-down commitment to AI incubation, potentially creating new opportunities for partnerships and funding within the Alibaba ecosystem.",
+        "links": [
+          [
+            "Alibaba Partnership Restructuring Coverage (Sohu via Google News)",
+            "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPdFFhX0NVRWYxYVNnYzlDa2MwNzh6S09Kbnp5cmE0bUl5T3F1b002TFNobS1zMHAwUTBhVHJxWDFKOTVhVS1LTWRGdlNmMHRpcFlzNms5OFVvZkNuN0xpaGhNeVljaG9XZWQ4ZzJOc1ZjZTBIVWhGRFFZSTRHcm1wT3YzdXUxM285?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Nvidia unveils Halos for Robotics to improve robot AI compute and safety",
+        "dek": "Nvidia’s new Halos platform aims to unify AI compute and safety for robots, addressing a key bottleneck in real-world deployment.",
+        "details": [
+          "Nvidia has introduced Halos for Robotics, a platform designed to enhance both AI computing performance and safety in robotic systems. While consumer and industrial robots have advanced rapidly, many still struggle with the conflicting demands of real-time inference, low latency, and fail-safe operation. Halos appears to address this by providing a unified stack that leverages Nvidia’s GPU-accelerated AI capabilities along with hardware-level safety mechanisms. Although Nvidia has not disclosed full specifications, the move signals a strategic push to capture the growing robot AI middleware market, which analysts expect to exceed $10 billion by 2030.",
+          "The announcement comes amid rising competition from specialized robotics chips from companies like Qualcomm and AMD, as well as open frameworks such as ROS 2. Halos could lower the barrier for startups and manufacturers by offering a validated, turnkey solution that combines high compute throughput with certified safety coverage (e.g., ISO 13849 or IEC 61508). If successful, it may accelerate the adoption of AI-powered robots in warehouses, healthcare, and autonomous driving-adjacent domains. However, the platform’s openness and pricing remain unknown, and its dependence on Nvidia’s proprietary ecosystem could deter some developers."
+        ],
+        "why": "For robotics startups and industrial adopters, Halos could simplify the path from prototype to production-ready AI safety, but also locks them into Nvidia’s ecosystem — a trade-off worth monitoring for long-term strategic planning.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Nvidia unveils Halos for Robotics to improve robot AI compu",
+            "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWG9CejJNdmNiQnA2Z3ZPTXhXdElFLUsxY1gtTFZHNV9PaFA0ZW53MDVLTGROM051aGk0aFU3YnFBcG1Pd1BpRXA4WHZWbndrNTJmVXY0ZTRDU25uTWd4NEtTN1o3WXZkZlFySDRGSVlsRG4xREQwY1d4eWhrWXpXMTZINWZtXzAtMkxUVnRfTnpuRU5fbjV1ZXpWbw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Zhipu AI Surpasses Trillion Yuan Market Cap: Capital Markets Bet on China's AI 'Frontier Pricing Power' - Guancha.cn",
+        "dek": "An opinion piece from Guancha.cn argues that Zhipu AI's trillion-yuan valuation signals investor confidence in China's AI frontier pricing power, but warns of challenges ahead.",
+        "details": [
+          "The article from Guancha.cn discusses the significance of Zhipu AI breaking the trillion-yuan market cap threshold, a milestone that places it among the world's most valuable AI startups. It argues that this valuation reflects capital markets' belief in China's ability to command 'frontier pricing power' in AI, meaning Chinese companies can set standards and capture premium value rather than just following global trends. The piece highlights Zhipu's open-source GLM model series and its strong performance in government and enterprise contracts as key drivers of investor confidence.",
+          "However, the author also injects caution, noting that the valuation comes amid geopolitical tensions and a capital-intensive race where profitability remains elusive. Comparisons are drawn to U.S. counterparts like OpenAI and Anthropic, suggesting that while Chinese AI firms have gained market recognition, they face unique challenges such as restricted access to advanced chips and a fragmented domestic market. The piece concludes that the trillion-yuan valuation is both a validation and a test of whether Zhipu can sustain its lead and convert technical leadership into sustainable revenue."
+        ],
+        "why": "This article offers a balanced view of Zhipu AI's valuation milestone, providing context for investors and analysts tracking the Chinese AI ecosystem. It underscores the strategic importance of owning foundational models and the competitive dynamics between U.S. and Chinese AI leaders.",
+        "links": [
+          [
+            "Guancha.cn Article via Google News",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE42RnljR3pwLUE4a3BURTdDM0s0WTJnczFURzhBSGRtMlVDeHZybFdMWUtHVFgzWnd0a0RmcUlaZkN6LXlZM1dhckRsWmZYNGZiMFhHQUd6dDIyaHZsUVNxQUJubWU?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Predicting model behavior before release by simulating deployment",
+        "dek": "OpenAI proposes a new safety evaluation method that simulates real-world deployment with actual conversation data to catch failures before release.",
+        "details": [
+          {
+            "summary": "Core idea: simulate deployment environment using real user conversations.",
+            "expanded": "OpenAI's Deployment Simulation method recreates the conditions of live deployment by feeding models real conversation data instead of artificial test sets. This allows evaluators to observe how the model behaves when facing genuine user prompts, edge cases, and adversarial inputs. The approach aims to detect safety failures, biases, or refusal patterns that only surface in open-ended interactions."
+          },
+          {
+            "summary": "Why this matters for AI safety and evaluation.",
+            "expanded": "Traditional red-teaming and benchmark testing often miss issues that emerge in diverse, real-world usage. By simulating deployment before launch, OpenAI hopes to reduce the gap between controlled testing and actual harm. This technique could become a standard practice for frontier model releases, influencing how safety teams design pre-deployment checks and how regulators define evaluation requirements."
+          }
+        ],
+        "why": "This method could reshape pre-release safety standards for large models, making it harder for companies to claim 'safe' without realistic simulation. Investors and startups building evaluation tooling should watch for demand in conversation-level simulation platforms.",
+        "links": [
+          [
+            "OpenAI News: Predicting model behavior before release by simulating deployment",
+            "https://openai.com/index/deployment-simulation"
+          ]
+        ],
+        "sourceDate": "2026-06-16",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-16",
+        "freshnessLabelEn": "Fallback | published 2026-06-16",
+        "freshnessLabel": "Fallback | published 2026-06-16"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Another Chinese Open-Source AI Model Sparks Silicon Valley Buzz After DeepSeek",
+        "dek": "A new Chinese open-source AI model is generating buzz in Silicon Valley, continuing the trend set by DeepSeek earlier this year.",
+        "details": [
+          "According to a report by cnBeta (via Google News), the yet-unnamed model has caught the attention of developers and researchers in Silicon Valley, though specific details about its architecture, parameters, or benchmark performance have not been disclosed in the brief report. This follows the pattern of DeepSeek, which gained international recognition earlier in 2026 for its strong performance and openness.",
+          "The timing underscores the growing influence of Chinese open-source AI projects on global AI development. While the exact model remains unnamed in the coverage, the buzz signals that the ecosystem of Chinese foundation models is actively seeking international collaboration and validation."
+        ],
+        "why": "This development reinforces the strategic importance of tracking Chinese open-source models for AI product teams and investors, as they can quickly become viable alternatives to Western models in cost-sensitive or regulated markets.",
+        "links": [
+          [
+            "Google News China AI: DeepSeek之后中国又一开源AI模型引发硅谷热议- AI 人工智能 - cnBeta.COM",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1OaEViaEtXd2RxOHpXLUROODZxY3dpR18xajNRSXZwSmRiWWRkV3M4UW9iQnk3eVpKMTlGQmt5V19uYk1aM3E4WjVqbERQcVdvMG04R0ZadHFjTU0wUGVMWQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "What is a World Model?",
+        "dek": "A brief explainer of world models — AI systems that learn internal representations of the physical world, enabling planning, simulation, and generalization in robotics, autonomous driving, and embodied AI.",
+        "details": [
+          "A world model is an AI system that builds an internal representation of how the physical world behaves. Unlike language models that predict text tokens, world models learn the dynamics of environments — such as physics, object interactions, and spatial relationships — allowing them to simulate possible futures and plan actions. This concept, popularized by researchers like David Ha and Jürgen Schmidhuber, is fundamental to reinforcement learning, robotics, and autonomous systems, where agents must reason about unseen states and outcomes.",
+          "Recent investments, such as Google's $75 million partnership with A24 to develop AI-powered filmmaking tools, hint at world model techniques being applied to creative domains. In film production, world models could simulate scenes, lighting, and camera movements, reducing need for physical sets. More broadly, world models are critical for self-driving cars (predicting pedestrian behavior) and robotics (grasping objects in cluttered spaces). As AI moves beyond text and images into the physical world, world models become the backbone of general-purpose intelligence."
+        ],
+        "why": "Understanding world models helps readers decode why companies like Google, Tesla, and DeepMind are investing in simulation, robotics, and autonomous systems — these bets hinge on the ability to model and predict the physical world, not just generate text.",
+        "links": [
+          [
+            "Google Invests $75M in A24 for AI Filmmaking Tools",
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMExTejZnVFR3X19uQUl1RlozVFEwdXRXTmlReW5PeEJBam1IZk9jbzdJeGlHaXhkM1R6R29hMWppSHJ0dlhWUFQybG0td3l6YVRtU3k3MlBZQlgtSUxPbktRWGVEUmdlT3BNb3JUSWZ2bzU5Ylo5V1ZRU21LRkxxTUphZw?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-22",
     "title": "AI Daily Atlas",
