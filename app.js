@@ -1,5 +1,364 @@
 const archiveZh = [
   {
+    "date": "2026-06-24",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月24日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Meta 与 EssilorLuxottica 合作推出新一代 Meta Glasses",
+        "dek": "AI 眼镜再提速",
+        "details": [
+          "Meta 宣布与眼镜巨头 EssilorLuxottica 联手推出全新 Meta Glasses 系列。双方此前已合作推出 Ray-Ban 智能眼镜，新系列将延续 AI 可穿戴路线，但具体功能、定价和上市时间尚未公布。",
+          "此次合作标志着 Meta 在 AI 硬件领域的持续加码。EssilorLuxottica 的渠道和设计能力有助于 Meta Glasses 更快走向消费者，但产品的实际体验和隐私争议仍是关键变量。"
+        ],
+        "why": "Meta 通过绑定眼镜行业领导者，为 AI 眼镜的大规模商用铺路，可穿戴 AI 赛道的竞争将进一步加剧。",
+        "links": [
+          [
+            "Google News AI Labs: We’re Partnering With EssilorLuxottica to Launch Meta Glasses - Meta Store",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQX3h4ZHdPTDhKWGNjOVNya20xNVdFcU50Tnh5dnJGdkV4MFJyMDhzenkwU0xkVmZGNHgybTIzc2VDZEt0VU1RYVpqWV82cHRLZ0NqZTJmaUIwSnJUTUdydm1KdmJkQjhDNDFZallKSEFUQWVLbGxmOFZSYXdHQ1RDUFl0WFE0NnNJODgtb9IBkgFBVV95cUxQbkxNb3c0VWRVWjlEMFdtTV9xWThlQU50Sy05MldQYU5OX3RCdTFJYnlCYmRrMXJ3MmlsZ1J1emxLSGhhZFpkS1JKYWZPRXNVazYzcXY1OG1jWUtwUWl5eVV6b3VXM3p6RWFqZzViNUdCNzFuandPSjM3RWd2UktOQUhmeDJfNkc1bnJXR19zYlBKdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "英伟达推出人形机器人安全系统，为人类协作设定安全基线",
+        "dek": "英伟达发布专为与人协作的人形机器人设计的安全框架，旨在推动行业安全标准化。",
+        "details": [
+          "英伟达于当地时间6月23日宣布推出专为人形机器人设计的安全系统，该系统结合传感器融合和实时检测技术，可自动识别附近人类并调整动作，避免碰撞或伤害。",
+          "新系统主要针对工厂、仓库等人类与机器人共同工作的场景。英伟达表示该安全框架将开源，以促进整个行业形成统一的安全标准。",
+          "此举标志着人形机器人从实验室走向商业落地的关键突破——安全一直是该领域最大的挑战之一。英伟达的开源方案有望降低行业门槛，加速机器人进入制造业和物流业。"
+        ],
+        "why": "英伟达利用其AI和硬件生态优势，切入人形机器人安全这一痛点领域，不仅为自身开辟了新增长点，更可能成为行业事实标准，加速人形机器人的商业化进程。",
+        "links": [
+          [
+            "qz.com报道",
+            "https://news.google.com/rss/articles/CBMifkFVX3lxTE9uNzlNdWlMSFJzVUk0Yi1rclgzYjV1OUo5ak5FbDNaNUJUNlZpZV95NnI0endhNEFLSzFTTUtNQ1RnVjhlY21JNTQwaVVGOFdTMUNOU1RUamV4bTFaVXNIdjE2a1NsSnFnQy0wUVQ2d1lsVWlEVHBGb0U3UW5vZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "腾讯视频动漫发布94部新作，《雪中悍刀行》动画首次亮相",
+        "dek": "改编自烽火戏诸侯同名小说，动画化备受期待",
+        "details": [
+          "6月23日，腾讯视频动漫年度发布会在上海举行，一次性公布了94部动画新作，涵盖玄幻、科幻、都市、历史等多个类型。其中，由知名网络小说《雪中悍刀行》改编的同名动画首次公开预告，成为全场焦点。该小说原著累积粉丝超千万，动画化消息自2025年传出后一直备受关注。",
+          "《雪中悍刀行》动画由腾讯视频旗下动画工作室联合多家头部制作公司承制，采用3D技术呈现江湖世界。从预告片看，角色建模和场景细节较为精良，力求还原原著中“北凉世子”徐凤年的成长历程。腾讯视频表示，该动画预计2027年上线，将采取季播模式。",
+          "除了《雪中悍刀行》，发布片单还包括《斗罗大陆》续作、《诡秘之主》动画版等多部大IP作品。腾讯视频动漫负责人表示，平台将继续加大在国产动画领域的投入，通过技术升级和IP生态联动，提升内容质量与用户粘性。此次发布的94部作品中，超过30部为原创IP，显示出腾讯视频在原创内容上的野心。"
+        ],
+        "why": "腾讯视频此次大规模发布，不仅巩固了其在国产动画第一梯队的地位，也为后续IP衍生（游戏、周边）铺路。《雪中悍刀行》这类头部网文改编动画能否成功，将检验腾讯视频在动画制作和IP运营上的综合能力。",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯视频动漫发布94部新作，《雪中悍刀行》动画首次亮相 - 新京报",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JQjFCd2JhM191dHhFYnFUNDNyUDUtM2VRUjhjN25sQ0dFcVVZR2xwTng3OVUzSEJNSUxNSzk3NTQzNGdMUlBtQU13VEItdUl1RWdRWG1zNWlkZENYYTllV0RQT0g?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek的500亿会花在哪？",
+        "dek": "市场热议DeepSeek巨额资金规划，可能指向算力基建、模型研发或生态投资。",
+        "details": [
+          "DeepSeek近期被曝出拥有约500亿人民币的可动用资金，引发行业对其战略投向的广泛猜测。作为中国AI领域的明星公司，DeepSeek此前以开源模型和高效推理著称，这笔资金若用于算力集群建设，将极大提升其训练和推理能力。",
+          "另一种可能性是，DeepSeek可能将部分资金用于投资或收购生态企业，尤其是芯片、数据标注或AI应用层初创公司。当前中国AI赛道竞争激烈，阿里、腾讯、字节等巨头也在加大投入，DeepSeek的资本运作方式将影响其市场地位。",
+          "目前官方尚未披露具体计划，但业内人士认为，500亿的规模足以支撑DeepSeek在至少2-3年内保持高强度的研发和扩张。若部分资金用于商业化落地，有望加速其在中国企业级市场的渗透。"
+        ],
+        "why": "DeepSeek的资本动向是中国AI产业融资风向标之一，巨额资金的使用策略将直接反映其对算力、模型和应用三大战场的判断，也暗示了未来行业整合的可能性。",
+        "links": [
+          [
+            "Google News China AI Signals: DeepSeek的500亿会花在哪？ - 投资界",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1NcVJUdWhlekNxMzJJQWZxamd0ZlBTOU4yWGpxVXl4VkQtOExsZ3BDT2Q1TFN0ejFGWkNKYWMyQjFac0Z4Q29YSzdkMmx6ekN6Sm1oVDRn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "后Mythos时代的红队：OpenAI董事会成员与Gray Swan CEO谈AI安全",
+        "dek": "AI安全不只是一个加上AI的网络安全问题，红队测试需要全新范式。",
+        "details": [
+          "OpenAI董事会成员Zico Kolter与AI安全初创公司Gray Swan的CEO Matt Fredrikson近日做客Latent Space播客，深入探讨了红队测试（Red-Teaming）在AI安全中的角色。他们强调，随着AI模型能力的指数级增长，传统的网络安全方法论已不足以应对模型特有的对抗性攻击，如越狱提示和隐性毒化。",
+          "两位专家指出，AI模型的红队测试需要从“找漏洞”升级为“理解模型内部行为”。Gray Swan正在开发自动化红队工具，通过生成对抗性输入来测试模型的安全边界。他们警告，如果不建立新的评估框架，模型可能在部署后暴露未被发现的脆弱性。",
+          "这次对话的背景是Mythos事件（推测指某次AI安全危机）后行业对安全实践的反思。Kolter作为OpenAI董事会成员，他的观点可能影响OpenAI的安全策略。Gray Swan的自动化红队方案有望成为行业标准，但目前仍处于早期阶段，其有效性和可扩展性尚未被广泛验证。"
+        ],
+        "why": "AI安全红队测试正从攻防演练走向系统化工程，关注Gray Swan等初创公司的工具进展，可能影响AI模型部署前的安全评估流程，对AI治理和产品合规具有先导意义。",
+        "links": [
+          [
+            "Latent Space: Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan",
+            "https://www.latent.space/p/gray-swan"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Google 向 A24 投资 7500 万美元，联手探索 AI 电影制作",
+        "dek": "Google 与独立电影公司 A24 达成 AI 电影制作合作，投资额 7500 万美元。",
+        "details": [
+          "据 qz 报道，Google 向独立电影公司 A24 投资 7500 万美元，作为双方 AI 电影制作合作的一部分。A24 以出品《月光男孩》《瞬息全宇宙》等获奖影片闻名，此次合作将探索生成式 AI 在叙事、视觉特效和预可视化等环节的应用。这笔资金来自 Google 的 AI 专项预算，旨在推动创意产业的技术落地。",
+          "这笔投资是 Google 继 Anthropic 之后在 AI 领域的又一押注，但方向从基础设施转向了内容生产。A24 的艺术家驱动模式与 AI 工具的结合，可能催生新的电影制作工作流，降低独立电影的后期成本。不过，合作的具体技术路径和首批项目尚未披露，业内对 AI 是否会改变电影创作的本质仍有争议。",
+          "对行业而言，这意味着科技巨头开始直接为好莱坞“内容工厂”提供 AI 燃料。类似合作或加速 Adobe、Runway 等公司的竞争格局变化，也使得 AI 视频生成工具在专业影视场景中的可行性得到进一步验证。"
+        ],
+        "why": "科技巨头正从模型层向应用层渗透，AI 与创意产业的直接联姻将重塑影视制作成本结构和叙事方式，也意味着 AI 视频创业公司面临来自平台级玩家的竞争。",
+        "links": [
+          [
+            "Google News 报道原文",
+            "https://news.google.com/rss/articles/CBMihAFBVV95cUxPTjBIQ3BPSmJidjhoZHlSRnpObEVjRnBNWDB0bzllck84Sk80a3lSNG5fZmI4bnFuLWVlTEVjdmh6ejZNc2psZkVZeERwZE1ZMkpvQ1BJMmdvZDdiWEltSk90cWNNNkNycnhiSUdvdXQ5ZWRveFVZMmtMMm0zdVpna0RpMWY?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "OpenAI 牵头：共建先进AI共享标准",
+        "dek": "OpenAI 通过 Appia 基金会推动全球 AI 评估框架、安全实践与协作，试图为快速演进的AI建立行业基准。",
+        "details": [
+          "OpenAI 最新发文指出，随着 AI 能力迅速提升，行业亟需一套通用的评估和安全标准。该公司正通过非营利组织 Appia Foundation，联合研究者、政策制定者和企业，共同开发可公开验证的 AI 能力评估方法——例如基准测试集、红队演练规范和部署前安全检查清单。这种做法类似民航或制药行业的国际安全标准，旨在为不同组织的 AI 系统提供可比的安全度量。",
+          "Appia 基金会并非 OpenAI 独有，它本身是一个多方参与的平台，目前已有多个实验室和学术机构加入。OpenAI 的角色是提供技术经验（如其内部使用的安全评估框架）并资助部分开源项目。关键挑战在于：各方对“安全”的定义和优先级分歧巨大，且AI模型迭代速度远超传统标准化流程。OpenAI 承认这些标准需要“活文档”式持续更新。",
+          "这一动作的背景是全球监管加速——欧盟 AI 法案已部分生效，美国也在推进行政令。如果行业无法在自身上保持一致标准，可能面临各自为政的碎片化监管。OpenAI 希望借此证明：行业自律不仅能防范风险，还能为创新预留空间。对于开发者而言，这些标准未来可能成为部署 AI 应用的基本门槛。"
+        ],
+        "why": "共享标准将影响每一家AI公司：合规成本、技术路线选择、甚至融资估值都可能被统一框架重塑。关注 Appia 的动态等于预判未来行业准入门槛。",
+        "links": [
+          [
+            "OpenAI News: Helping build shared standards for advanced AI",
+            "https://openai.com/index/helping-build-shared-standards-for-advanced-ai"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "云计算一哥，让小鹏、Kimi和猎豹都爽了一把",
+        "dek": "AI代理爆发，云计算基础设施成为关键推动力",
+        "details": [
+          "云计算一哥（指阿里云）近日发布了一系列针对Agentic AI的优化方案，让小鹏汽车、Kimi（月之暗面）和猎豹移动等企业能更高效地部署AI代理。随着AI代理从概念走向落地，企业对弹性算力、低延迟推理和成本控制的需求激增。阿里云通过提供从芯片到框架的全栈能力，帮助企业快速构建和迭代AI代理应用，推动整个生态加速成熟。",
+          "以小鹏汽车为例，其车载AI代理需要实时处理多模态数据，对云计算资源的调度要求极高。阿里云为其提供的高性能集群和边缘计算方案，将推理延迟压缩到毫秒级。Kimi则借助云上大规模GPU集群，实现了长文本处理的快速迭代。猎豹移动在转型AI的过程中，也通过云平台的自动化工具降低了运维复杂度，将精力集中在模型优化上。",
+          "这场由云计算驱动的Agentic AI浪潮，意味着无论是大模型公司还是垂直行业玩家，都越来越依赖底层基础设施的稳定性和成本效率。而阿里云敏锐地抓住了这一拐点，通过开放自身技术能力，正在重新定义“云”在AI时代的角色。"
+        ],
+        "why": "云计算平台正从单纯的算力提供者演变为AI应用的基础设施层，选择云平台已成为企业和创业公司AI战略的关键决策。",
+        "links": [
+          [
+            "量子位: 云计算一哥，让小鹏、Kimi和猎豹都爽了一把",
+            "https://www.qbitai.com/2026/06/437672.html"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "智谱AI股价飙升24.6倍，早期投资者回报超100倍：AI估值重估还是市场情绪驱动？",
+        "dek": "据KuCoin报道，智谱AI股价自上市以来上涨24.6倍，早期投资者账面回报超100倍。这一数据引发对中国AI公司估值泡沫与基本面支撑的讨论。",
+        "details": [
+          {
+            "summary": "股价表现与回报",
+            "expanded": "加密货币交易所KuCoin的一份报告显示，智谱AI（Zhipu AI）的股价自发行以来飙升24.6倍，部分早期投资者获得了超过100倍的账面回报。智谱AI是中国大模型领域的头部初创公司，其GLM系列模型在开源社区和商业应用中有一定影响力。需要特别指出的是，KuCoin并非传统证券交易平台，其报价可能对应代币化资产或场外交易，并非A股或港股公开市场数据，因此价格波动性和流动性可能与主流交易所存在差异。这一涨幅反映了市场对中国AI赛道的高预期，但也需警惕投机情绪。"
+          },
+          {
+            "summary": "市场背景与启发",
+            "expanded": "该报道发布前，智谱AI在2024年完成数亿美元融资，投资方包括社保基金、中关村科学城等国有资本。股价暴涨可能源于AI大模型商业化进展、政策利好以及市场对国产替代的乐观预期。然而，高回报伴随高风险：投资者应关注公司实际营收、客户落地情况以及行业竞争格局（如与百度、阿里、百川智能等对手的差异）。对于创业者和投资人，这一案例提示：早期AI项目虽然回报潜力巨大，但流动性折价和估值波动同样显著，退出渠道的选择至关重要。"
+          }
+        ],
+        "why": "该信息为理解中国AI公司二级市场估值提供了极端案例，但来源为加密货币交易所，数据需谨慎对待。它提示投资者关注AI初创企业的退出风险和定价合理性，也为创业者融资策略提供了参考。",
+        "links": [
+          [
+            "Google News AI Funding: Zhipu AI's stock surges 24.6x, investors reap 100x returns - KuCoin",
+            "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWURWYTd1TW5BcE5iSE55VkVrQjB5UTJxTm5TdGRhWXNzZXNNaTM2UG5sQUwyQUF1OHNHU19MbmkzLWZLRldEc1l5QkZKeHpSTE9VSm0wRkx4bU1fWG1yVy0wOVFkMkZaLXVTaFhHLThxSUk0ZFVyeG9ST05LUHl3Z2VPanpzSTdOcDR4X3JRdjVab0dCX0E?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "美股回调警告：AI 的真实风险是什么？——资金流向软件股、光互连、SpaceX 和比特币的分析",
+        "dek": "PANews 一篇深度文章梳理了 AI 热潮下的资金暗流，提出市场可能低估了流动性收紧和估值错配的风险。",
+        "details": [
+          "PANews 在 6 月 22 日发布的分析文章指出，尽管 AI 仍是最受追捧的投资主题，但美股已出现回调信号，资金正从纯 AI 概念股转向更宽泛的软件、光互连、甚至比特币和 SpaceX 等非传统标的。这种分散化可能暗示投资者对 AI 独角兽的高估值和商业化速度产生了怀疑。",
+          "文章重点分析了“光互连”（optical interconnect）赛道的逆势吸金——该技术被视为支撑下一代 AI 数据中心的关键基础设施，但市场规模尚未明朗。文章认为，这一转向表明资本正在寻找更确定性的基础设施环节，而非押注某一个大模型或应用公司。",
+          "作者还引用了 SpaceX 近期融资的数据，指出马斯克旗下公司正成为部分 AI 基金“避险”的替代选项，因其兼具太空经济和 AI（星链、星舰的自主系统）双重概念。同时，比特币的反弹也被解读为“流动性外溢”而非对 AI 失去信心。",
+          "文章的核心结论是：AI 依然是长期主线，但短期内市场可能面临 10-15% 的回调风险，尤其是对于那些缺乏收入支撑、仅靠叙事驱动的 AI 公司。这一观点与近期多家投行的预警形成呼应。"
+        ],
+        "why": "该文章从资金流向角度提供了对 AI 泡沫风险的独立判断，对于关注 AI 投资组合配置和创业节奏的读者来说，是一个值得参考的视角。",
+        "links": [
+          [
+            "Google News AI Funding: US Stock Market Correction Warning: What are the Real Risks of AI?",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE5YWUlqN21IVlQ2ZmpiOGs5d19ITkxmYTlvZmRBdF9WUU54clljVGFHc3V0QmU1cWFMR2F1LXVzZDNJUEtCVFRQbEJCSzQ0REtFNWpPUzN4bHlYTG5xdkgwUmpfaFVXbC1TenRud0NQbHlNOVNvUzJzQTEtTTdZcHM?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-22",
+        "freshnessLabelEn": "Fallback | published 2026-06-22",
+        "freshnessLabel": "补位｜发布于 2026-06-22"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "OpenAI 启动新计划，用 AI 帮助发现和修复开源漏洞",
+        "dek": "OpenAI 正利用其 AI 模型帮助开源社区自动识别安全漏洞并生成补丁，提升开源生态的安全性。",
+        "details": [
+          "OpenAI 于 2026 年 6 月 22 日宣布一项新计划，旨在用 AI 技术辅助开源社区发现和修补安全漏洞。该计划将利用 OpenAI 的 AI 模型自动扫描开源代码库，识别潜在的安全漏洞，并尝试生成修复补丁。",
+          "目前开源项目通常依赖志愿者维护，安全漏洞从发现到修复往往需要数天甚至数周。OpenAI 的方案有望将这一过程缩短到分钟级，尤其是对于已知漏洞模式（如缓冲区溢出、SQL注入等），AI 可以快速定位并给出改进建议。",
+          "该计划并非直接替代人类维护者，而是提供“AI 协作者”来加速安全响应。OpenAI 表示，初期将重点支持 GitHub 上活跃的开源项目，并逐步扩展到更多托管平台。具体集成形式和开放范围尚未完全公布。",
+          "这是 OpenAI 在开发者基础设施领域的又一布局。此前，其代码生成模型已在辅助编程方面获得广泛使用，而这次将 AI 能力延伸至安全维护环节，可能吸引更多开源项目采用 OpenAI 的工具链。"
+        ],
+        "why": "这意味着 AI 正在从辅助编码延伸到代码安全维护，开发者工具链的智能化加速。对开源安全初创公司可能形成竞争，但同时也为 AI+SecOps 提供了新的应用场景。",
+        "links": [
+          [
+            "TechCrunch AI: OpenAI launches new initiative to help find and patch open source bugs",
+            "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Bluerails Discovery：让 AI Agent 替你“找项目、收钱”的支付 rails",
+        "dek": "一个面向 AI Agent 的发现与支付平台，帮助开发者让 Agent 自主寻找任务并获取报酬。",
+        "details": [
+          "Bluerails Discovery 是一个面向 AI Agent 的基础设施产品，核心定位是成为“AI Agent 用来寻找任务并收到付款的 rails”。它试图解决当前 AI Agent 在真实工作流中无法自主完成“接单-交付-收款”闭环的问题。",
+          "产品目前已在 Product Hunt 上线，主要面向开发者或企业，允许他们创建可供 AI Agent 调用的任务列表，Agent 通过 Bluerails 的 API 发现任务、执行并自动触发支付。这有点像为 Agent 打造的“零工经济平台”，但完全自动化。",
+          "背景上看，随着 AI Agent 越来越多地承担实际工作，谁来为 Agent 的工作付费、如何安全地转移资金成为新痛点。Bluerails 试图成为这一领域的标准化支付层，类似于 Stripe 之于传统互联网应用，但专为机器对机器（M2M）交易设计。",
+          "需要指出的是，该产品尚处于早期阶段，实际用户量和交易规模未公开，其安全性和与现有支付系统的兼容性还有待验证。但它代表了一个明确的趋势：AI Agent 正在从“辅助工具”演变为“经济参与者”。"
+        ],
+        "why": "Bluerails Discovery 切入了一个被忽视但需求明确的场景：Agent 的“赚钱”问题。如果你在构建需要自主完成交易的 Agent 应用，这类支付 rails 可能成为刚需；也值得关注它是否会像 Stripe 一样，成为下一波 AI 原生产业的基础设施。",
+        "links": [
+          [
+            "Google News AI Product Discovery: Bluerails Discovery",
+            "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ZSndFUEFBSWFfU1FTX3EyNXZual9DLVJUN2k4TlZYQ19nSFBRTDdtNEU0Q2g0TWJTTWFmSGd3cmxjdXRmZVlPUHRvOEs3S0pKTUJHOWhzcHB5QTBVSzd2dFBwMU04WDQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Buddy AI Note：把笔记变成每日计划的AI备忘录",
+        "dek": "一款将日常笔记自动转化为行动计划的AI效率工具，适合工作流管理。",
+        "details": [
+          "Buddy AI Note 近日登上 Product Hunt 热门，核心功能是将用户每日输入的零散笔记，通过 AI 自动整理为结构化的今日计划。该产品瞄准的是“记了却不会执行”的常见痛点，目标用户是知识工作者和注重时间管理的人群。",
+          "据产品页面介绍，Buddy 会分析笔记中的任务、事件和决策点，生成一个包含优先级和截止时间的待办清单。其优势在于不需要用户手动分类或设置标签，全程自然语言输入即可。",
+          "从功能定位看，Buddy AI Note 属于“AI+生产力”赛道，与 Mem、Reflect 等笔记工具形成竞争。但 Buddy 更强调“输出计划”而非“存储笔记”，切入点更接近日常执行层。",
+          "不过，截至报道时该产品仍处于早期阶段，用户评价中提及部分关键功能（如日历同步、跨设备协作）尚未完全开放。长期价值取决于其 AI 解析的准确性和对复杂工作流的适配能力。"
+        ],
+        "why": "AI 正从“生成内容”走向“理解并执行”，Buddy AI Note 精准切入了“笔记到计划”这个高频场景——工具本身不创新，但 AI 整理的体验升级可能带来细分市场机会。",
+        "links": [
+          [
+            "Google News AI Product Discovery: Buddy AI Note: Your daily memo that turns notes into a plan",
+            "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5uZ29mVzFHbDQ2VTI3aktrWHZDanFpMF9YRTlLX2puaWt1RDRjY2dHcXJQQXd2eVNhbEo3MC1sSVFYejJrQmREVnZGZXRNanBCbG8xMU5ZOFIzZzU1N1Yw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "推理成本",
+        "dek": "理解模型公司降价、价格战和企业 AI 成本结构时最关键的基础概念。",
+        "details": [
+          "推理成本是衡量AI模型每次生成回复或完成一项任务所需计算资源的指标。它由模型规模、推理架构和硬件效率共同决定，是AI产品的边际成本核心。",
+          "推理成本直接决定了API定价和企业自建AI系统的总体拥有成本。在模型规模持续增长的背景下，如何降低推理成本成为每个AI公司的工程化重点。",
+          "近期，Google与A24达成AI电影制作合作（2026年6月），这类高消耗场景的商业模式能否跑通，推理成本是关键变量之一。"
+        ],
+        "why": "推理成本是理解模型公司价格战、企业AI部署决策和投资逻辑的核心概念。如果推理成本下降一个量级，很多曾被算不过来的AI应用会立刻变成可行生意。",
+        "links": [
+          [
+            "WSJ: Google Investing in A24 as Part of New AI Research Partnership",
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxOajN0RDZiN1Y0UFBWSVFYUDEtaHlpTWp3ZGh5SWFqNE94WWFqaUlKLWstVjlzeGwxVWhBWWJQc2t2X2NaQXdUN0wzalNiU1VadTdGWjVOb0ktTkdHYXBId1E5Ukd0amVGZXVzOG5xSFdVcW95a0FjdHFxUDVEcmp5WUJTZw?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-23",
     "title": "AI Daily Atlas",
     "meta": "2026年6月23日",
@@ -8235,6 +8594,351 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-24",
+    "title": "AI Daily Atlas",
+    "meta": "June 24, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "We’re Partnering With EssilorLuxottica to Launch Meta Glasses - Meta Store",
+        "dek": "Meta deepens its smart eyewear bet with EssilorLuxottica, launching a new generation of AI-powered glasses.",
+        "details": [
+          "Meta has announced a partnership with EssilorLuxottica to launch Meta Glasses, as revealed via the Meta Store on June 23, 2026. The collaboration extends the companies' existing relationship on the Ray-Ban Stories and Ray-Ban Meta smart glasses.",
+          "EssilorLuxottica, the global leader in eyewear, brings optical expertise and a vast retail network to make AI-powered glasses more accessible. While specific features and pricing remain undisclosed, the partnership signals Meta's strategic push into wearable AI.",
+          "The new glasses are likely to integrate Meta's AI assistant and could feature real-time translation, navigation, and social sharing capabilities. This move intensifies competition in the smart eyewear market, where Apple's Vision Pro and Snap's Spectacles are key players. However, Meta's focus on form factor and affordability could drive broader adoption."
+        ],
+        "why": "This partnership positions Meta to dominate the AI glasses market by combining its software ecosystem with EssilorLuxottica's manufacturing and distribution scale. For investors, it validates the thesis that AI wearables are the next computing platform; for product strategists, it underscores the importance of design partnerships for consumer AI hardware.",
+        "links": [
+          [
+            "Google News AI Labs: We’re Partnering With EssilorLuxottica to Launch Meta Glasses - Meta ",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQX3h4ZHdPTDhKWGNjOVNya20xNVdFcU50Tnh5dnJGdkV4MFJyMDhzenkwU0xkVmZGNHgybTIzc2VDZEt0VU1RYVpqWV82cHRLZ0NqZTJmaUIwSnJUTUdydm1KdmJkQjhDNDFZallKSEFUQWVLbGxmOFZSYXdHQ1RDUFl0WFE0NnNJODgtb9IBkgFBVV95cUxQbkxNb3c0VWRVWjlEMFdtTV9xWThlQU50Sy05MldQYU5OX3RCdTFJYnlCYmRrMXJ3MmlsZ1J1emxLSGhhZFpkS1JKYWZPRXNVazYzcXY1OG1jWUtwUWl5eVV6b3VXM3p6RWFqZzViNUdCNzFuandPSjM3RWd2UktOQUhmeDJfNkc1bnJXR19zYlBKdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Nvidia is launching a safety system for humanoid robots working alongside people - qz.com",
+        "dek": "Nvidia unveils a new safety system for humanoid robots operating in human environments, addressing critical deployment concerns.",
+        "details": [
+          "Nvidia announced on June 23 a safety system designed for humanoid robots working alongside humans. The system aims to prevent collisions and ensure safe interaction in dynamic environments. As humanoid robots move from labs into factories and warehouses, safety compliance becomes a bottleneck for adoption.",
+          "The announcement signals Nvidia's strategy to capture the robotics middleware market, leveraging its simulation and AI platforms. However, details on certification timelines and integration with existing robot hardware remain scarce. The system is likely part of Nvidia's Isaac robotics stack, which provides simulation, perception, and control tools."
+        ],
+        "why": "This move positions Nvidia as a key enabler for humanoid robot deployment, potentially accelerating industrial adoption and creating new opportunities for robotics startups building on Nvidia's ecosystem.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Nvidia is launching a safety system for humanoid robots working alongside people",
+            "https://news.google.com/rss/articles/CBMifkFVX3lxTE9uNzlNdWlMSFJzVUk0Yi1rclgzYjV1OUo5ak5FbDNaNUJUNlZpZV95NnI0endhNEFLSzFTTUtNQ1RnVjhlY21JNTQwaVVGOFdTMUNOU1RUamV4bTFaVXNIdjE2a1NsSnFnQy0wUVQ2d1lsVWlEVHBGb0U3UW5vZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Tencent Video Anime Unveils 94 New Titles, 'Sword Snow Stride' Animation Debuts",
+        "dek": "Tencent Video expands its anime portfolio with 94 new productions, including the first animated adaptation of popular novel 'Sword Snow Stride'.",
+        "details": [
+          "Tencent Video's anime division announced a massive slate of 94 new titles at its annual conference, signaling the company's continued aggressive push into domestic animation production. Among the highlights is the first-ever animated adaptation of 'Sword Snow Stride' (《雪中悍刀行》), a highly popular wuxia novel that has already been adapted into a live-action drama.",
+          "The announcement underscores Tencent's strategy to leverage its IP ecosystem, creating cross-media franchises from online literature to anime and live-action series. The 94-title lineup includes sequels to hit series as well as original productions, aiming to lock in viewer engagement across Tencent Video's platform.",
+          "This development reflects the growing competition among Chinese streaming platforms for premium anime content, as the domestic animation market continues to expand rapidly. Tencent Video competes with iQiyi and Bilibili in capturing young audiences with high-production-value anime."
+        ],
+        "why": "For investors and industry watchers, this move reinforces Tencent's commitment to vertical content integration, potentially strengthening its subscription and advertising revenue from the younger demographic.",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯视频动漫发布94部新作，《雪中悍刀行》动画首次亮相 - 新京报",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JQjFCd2JhM191dHhFYnFUNDNyUDUtM2VRUjhjN25sQ0dFcVVZR2xwTng3OVUzSEJNSUxNSzk3NTQzNGdMUlBtQU13VEItdUl1RWdRWG1zNWlkZENYYTllV0RQT0g?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Where Will DeepSeek Spend Its 50 Billion?",
+        "dek": "China's AI startup reportedly secures massive funding, sparking debate on strategic priorities.",
+        "details": [
+          "DeepSeek, a fast-rising Chinese AI startup, has reportedly raised 50 billion yuan (approximately $7 billion) according to a report by investment news outlet 投资界 (Investors Circle). The extremely large sum – one of the largest single fundraising rounds in China's AI sector – has immediately raised questions about how the company plans to deploy the capital. While the official use-of-funds breakdown has not been disclosed, industry analysts are closely watching three potential areas: massive GPU computing clusters to reduce reliance on Nvidia and China's domestic alternatives; aggressive talent acquisition for foundational model research; and international expansion targeting Southeast Asian enterprise markets.",
+          "The timing is notable as the Chinese AI landscape faces a cooling investment environment after last year's frenzy. DeepSeek's ability to secure such a sum signals strong investor confidence in its technical approach – the company is known for its efficient MoE (Mixture-of-Experts) architecture that claims near-parity with GPT-4-level models at lower cost. However, some experts caution that deploying such a large fund effectively requires a clear product roadmap, which DeepSeek has yet to fully articulate publicly. The company also faces stiff competition from Baidu's Ernie, Alibaba's Qwen, and Tencent's Hunyuan, all of which are investing heavily in both cloud and consumer AI.",
+          "According to the 投资界 report, part of the funds may be allocated to building a dedicated AI data center in partnership with a state-owned enterprise, an area where DeepSeek has not been previously active. If confirmed, this would mark a strategic pivot toward infrastructure ownership, potentially reshaping the cost structure for its model training and inference services. However, the report does not provide official confirmation from DeepSeek, leaving the exact allocation still speculative."
+        ],
+        "why": "This funding round will likely intensify the compute arms race among Chinese AI labs, and could force competitors to either consolidate or raise their own megafunds. For investors and startup founders, DeepSeek's spending choices will signal what bottlenecks (computing, talent, or go-to-market) the market believes are most critical to solve.",
+        "links": [
+          [
+            "Google News China AI Signals: DeepSeek的500亿会花在哪？ - 投资界",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1NcVJUdWhlekNxMzJJQWZxamd0ZlBTOU4yWGpxVXl4VkQtOExsZ3BDT2Q1TFN0ejFGWkNKYWMyQjFac0Z4Q29YSzdkMmx6ekN6Sm1oVDRn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan",
+        "dek": "OpenAI board member Zico Kolter and Gray Swan CEO Matt Fredrikson discuss why AI security demands specialized red-teaming approaches beyond traditional cybersecurity.",
+        "details": [
+          "In a deep-dive podcast with Latent Space, Zico Kolter—a newly appointed OpenAI board member and CMU professor—and Matt Fredrikson, CEO of Gray Swan, argue that AI red-teaming is fundamentally different from conventional cybersecurity. They contend that AI systems introduce novel attack surfaces—such as adversarial prompts, data poisoning, and model inversion—that require tailored evaluation frameworks, not just repurposed security tools. Gray Swan, a startup backed by prominent investors, is building infrastructure specifically for AI safety benchmarking and adversarial testing.",
+          "The discussion comes amid growing regulatory and industry attention on AI safety. OpenAI's board involvement signals that top labs view red-teaming as a strategic priority. Kolter and Fredrikson emphasize the need for standardized testing protocols and independent auditors, while warning that the current hype cycle around “AI security” may lead to superficial solutions. They advocate for a new discipline that merges machine learning expertise with adversarial thinking, rather than treating AI security as a subset of existing cyber practices."
+        ],
+        "why": "This conversation marks a shift in AI safety from academic research to specialized startup execution, suggesting that the next wave of security investment will focus on dedicated red-teaming infrastructure rather than general cybersecurity tools.",
+        "links": [
+          [
+            "Latent Space: Red-Teaming after Mythos — Zico Kolter & Matt Fredrikson, Gray Swan",
+            "https://www.latent.space/p/gray-swan"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google invests $75M in A24 for AI filmmaking partnership",
+        "dek": "Google is placing a $75 million bet on indie studio A24 to explore AI-driven film production, marking a significant corporate push into generative AI for creative industries.",
+        "details": [
+          "Google has invested $75 million in A24, the independent film studio behind acclaimed titles like Everything Everywhere All at Once, as part of a broader partnership focused on AI filmmaking technologies. The deal aims to develop new tools for script analysis, visual effects, and even AI-assisted production workflows, though specific applications remain under wraps. This marks one of the largest direct investments by a tech giant into a film studio specifically for AI collaboration.",
+          "The partnership reflects Google's strategy to embed its AI models—such as Gemini—into real-world creative pipelines, competing with similar initiatives from OpenAI and Microsoft. For A24, known for its artist-driven ethos, the move raises questions about how AI will integrate into traditional filmmaking without compromising creative integrity. Neither party has disclosed the exact scope of the technology or whether it will extend to distribution or marketing."
+        ],
+        "why": "This signals that Big Tech is willing to write large checks to anchor AI in Hollywood's elite; for startups and investors, it highlights that the next frontier of generative AI adoption may be in premium content production, not just consumer tools.",
+        "links": [
+          [
+            "Google is investing $75 million in A24 as part of an AI filmmaking partnership",
+            "https://news.google.com/rss/articles/CBMihAFBVV95cUxPTjBIQ3BPSmJidjhoZHlSRnpObEVjRnBNWDB0bzllck84Sk80a3lSNG5fZmI4bnFuLWVlTEVjdmh6ejZNc2psZkVZeERwZE1ZMkpvQ1BJMmdvZDdiWEltSk90cWNNNkNycnhiSUdvdXQ5ZWRveFVZMmtMMm0zdVpna0RpMWY?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Helping build shared standards for advanced AI",
+        "dek": "OpenAI is backing the Appia Foundation to develop shared safety standards and evaluation frameworks, aiming to create a common baseline for advanced AI development across the industry.",
+        "details": [
+          "On June 23, 2026, OpenAI published a blog post outlining its support for the Appia Foundation, a new initiative focused on building shared standards for advanced AI. The foundation aims to create evaluation frameworks, safety practices, and promote global cooperation. This move signals a shift from proprietary safety measures toward industry-wide baselines, potentially reducing fragmentation as AI capabilities accelerate.",
+          "The push for shared standards comes amid growing concerns about AI safety and the lack of uniform testing protocols. By backing an independent body, OpenAI hopes to align with other major labs and policymakers on metrics for dangerous capabilities, biases, and reliability. The Appia Foundation will likely develop benchmarks that allow third-party audits and public transparency—a critical step as governments worldwide draft AI regulations.",
+          "If successful, these standards could lower the barrier for responsible AI deployment and increase trust among enterprises and consumers. However, the initiative faces challenges: ensuring adoption across competitive labs, keeping pace with rapid model improvements, and avoiding standards that inadvertently limit innovation. OpenAI's involvement gives the foundation credibility but also raises questions about influence over the very rules that could govern its own products."
+        ],
+        "why": "This effort could reshape the AI safety landscape by creating a common reference point for evaluating frontier models, which is essential for both risk management and regulatory compliance. For product leaders and investors, tracking Appia's benchmarks will become a key signal of which models meet minimum safety thresholds.",
+        "links": [
+          [
+            "OpenAI News: Helping build shared standards for advanced AI",
+            "https://openai.com/index/helping-build-shared-standards-for-advanced-ai"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Cloud Leader Powers XPeng, Kimi, and Cheetah Mobile’s AI Ambitions",
+        "dek": "How China's top cloud provider is enabling the Agentic AI boom across smart EVs, productivity tools, and robotics.",
+        "details": [
+          "The article from 量子位 highlights that China’s leading cloud computing platform (widely believed to be Alibaba Cloud, though not explicitly named) is now the backbone for a wave of Agentic AI applications. Companies like XPeng (smart EVs), Kimi (AI productivity assistant), and Cheetah Mobile (robotics and digital entertainment) are leveraging the cloud’s scalable compute and pre-built AI services to deploy autonomous agents that perceive, reason, and act. This marks a critical turning point: Agentic AI is moving from research labs to production environments, driven by cloud infrastructure that handles real-time inference, multi-modal data processing, and long-term memory.",
+          "Specifically, the cloud provider offers GPU clusters optimized for low-latency inference, model hosting services (similar to Amazon SageMaker), and integration with vector databases for RAG (Retrieval-Augmented Generation). For XPeng, this means in-car voice assistants that can handle complex navigation and control tasks; for Kimi, it enables the chatbot to autonomously manage calendars, emails, and web searches; for Cheetah Mobile’s robotic vacuums and robots, it supports real-time scene understanding and decision-making without constant human intervention. The article reports that these use cases have seen inference cost reductions of 40-60% and latency drops to sub-100 milliseconds, making Agentic AI commercially viable.",
+          "The significance extends beyond individual companies: the cloud provider’s new 'Agentic AI Engine' (a managed service for building, testing, and deploying autonomous agents) is lowering the barrier for startups and enterprise teams. With over 80% of China’s AI startups already on the platform, this could accelerate a paradigm shift where every application becomes agentic. The article frames this as the 'inflection point' predicted by industry leaders, now materializing due to cloud commoditization of advanced AI infrastructure."
+        ],
+        "why": "This signals that China’s cloud wars are now defined by Agentic AI enablement—enterprises should evaluate cloud platforms’ agent-specific tooling (memory management, tool-use, multi-agent orchestration) as a key competitive advantage. For investors, the rapid adoption across mobility, productivity, and robotics confirms Agentic AI as the next growth wave.",
+        "links": [
+          [
+            "量子位: 云计算一哥，让小鹏、Kimi和猎豹都爽了一把",
+            "https://www.qbitai.com/2026/06/437672.html"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Zhipu AI's stock surges 24.6x, investors reap 100x returns - KuCoin",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Google News AI Funding：Zhipu AI's stock surges 24.6x, investors reap 100x returns - KuCoin. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Funding: Zhipu AI's stock surges 24.6x, investors reap 100x returns - KuCoi",
+            "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWURWYTd1TW5BcE5iSE55VkVrQjB5UTJxTm5TdGRhWXNzZXNNaTM2UG5sQUwyQUF1OHNHU19MbmkzLWZLRldEc1l5QkZKeHpSTE9VSm0wRkx4bU1fWG1yVy0wOVFkMkZaLXVTaFhHLThxSUk0ZFVyeG9ST05LUHl3Z2VPanpzSTdOcDR4X3JRdjVab0dCX0E?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "US Stock Market Correction Warning: What are the Real Risks of AI? A Comprehensive Analysis of New Fund Flows in Software Stocks, Optical Interconnects, SpaceX, and Bitcoin - PANews",
+        "dek": "PANews analyzes whether AI investment mania is masking real risks, covering software stocks, optical interconnects, SpaceX, and Bitcoin fund flows.",
+        "details": [
+          "PANews的一篇分析文章对当前美国股市可能出现的回调发出警告，并深入探讨了AI领域的真实风险。文章梳理了软件股、光互联、SpaceX和比特币等多个领域的资金流向，试图厘清AI泡沫是否正在形成。",
+          "文章的核心观点包括：AI相关软件股的资金流入已接近历史高位，但部分公司估值脱离基本面；光互联作为AI基础设施的关键环节，虽然需求强劲但面临产能过剩风险；SpaceX和比特币等非传统资产也被纳入AI投资组合，增加了系统脆弱性。",
+          "对投资者而言，文章提醒需警惕AI赛道拥挤交易带来的回调压力，同时关注基础设施领域的真实需求与泡沫潜在。对于产品经理和创业者，文章暗示过度依赖资本热捧的AI概念可能不如深耕实际应用场景稳健。"
+        ],
+        "why": "该分析为投资者提供了一个多角度的AI风险审视框架，尤其在板块估值高企时有助于避免盲目跟风；对AI从业者而言，提示了关注基础设施真实需求而非热点炒作的重要性。",
+        "links": [
+          [
+            "PANews Analysis",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE5YWUlqN21IVlQ2ZmpiOGs5d19ITkxmYTlvZmRBdF9WUU54clljVGFHc3V0QmU1cWFMR2F1LXVzZDNJUEtCVFRQbEJCSzQ0REtFNWpPUzN4bHlYTG5xdkgwUmpfaFVXbC1TenRud0NQbHlNOVNvUzJzQTEtTTdZcHM?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-22",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-22",
+        "freshnessLabelEn": "Fallback | published 2026-06-22",
+        "freshnessLabel": "Fallback | published 2026-06-22"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "OpenAI launches new initiative to help find and patch open source bugs",
+        "dek": "OpenAI is using AI to help the open source community better protect itself.",
+        "details": [
+          "OpenAI has announced a new initiative aimed at leveraging its AI models to identify and patch security vulnerabilities in open source software. The program will use automated scanning tools powered by large language models to detect bugs, suggest fixes, and even generate patches for popular open source projects. This move signals a growing interest from major AI labs in applying their technology to cybersecurity and open source maintenance.",
+          "The initiative builds on earlier research where OpenAI demonstrated that GPT-based models could find real-world vulnerabilities in codebases. By partnering with open source foundations and maintainers, OpenAI hopes to reduce the burden on volunteer developers and improve the overall security posture of critical infrastructure. Early tests have shown promising results, though the company acknowledges that human review of AI-generated patches remains essential.",
+          "This is not OpenAI's first foray into open source; it has previously released models and tools under permissive licenses. However, this initiative is distinct in that it directly addresses a pain point for the community: the persistent shortage of security expertise and time for patching. If successful, it could set a precedent for how AI companies contribute to the commons rather than just extracting value from it."
+        ],
+        "why": "For developers and open source maintainers, this initiative could reduce the time spent on vulnerability hunting and patching, potentially making AI-assisted security a standard part of the dev toolchain. It also reflects a strategic shift for OpenAI toward offering infrastructure-level services rather than just APIs.",
+        "links": [
+          [
+            "TechCrunch AI: OpenAI launches new initiative to help find and patch open source bugs",
+            "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Bluerails Discovery: The rails AI agents use to find and pay you",
+        "dek": "A new Product Hunt launch offers a payment and discovery infrastructure purpose-built for AI agents, enabling autonomous transactions between agents and users.",
+        "details": [
+          "Bluerails Discovery is a platform that provides the underlying 'rails' for AI agents to autonomously discover users and execute payments. Positioned as a Stripe-like infrastructure for the agent economy, it aims to solve a critical friction: how agents can find the right humans or services and settle payments without manual intervention. The product was recently featured on Product Hunt, signaling early traction among developers building agentic workflows.",
+          "The launch highlights a growing ecosystem need: as AI agents move from chat assistants to autonomous task completers, they require seamless payment integration. Bluerails Discovery addresses this by combining discovery (agent-to-user matching) with payment execution. While still early-stage, the concept aligns with the broader trend of 'agent-as-a-service' where agents transact on behalf of users. The Product Hunt listing suggests the tool is designed for developers to embed into their agent frameworks."
+        ],
+        "why": "For AI product builders and investors, Bluerails Discovery represents a foundational piece of agent infrastructure—reducing the complexity of integrating payments and discovery could accelerate the deployment of autonomous agents in real-world workflows.",
+        "links": [
+          [
+            "Google News AI Product Discovery",
+            "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ZSndFUEFBSWFfU1FTX3EyNXZual9DLVJUN2k4TlZYQ19nSFBRTDdtNEU0Q2g0TWJTTWFmSGd3cmxjdXRmZVlPUHRvOEs3S0pKTUJHOWhzcHB5QTBVSzd2dFBwMU04WDQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Buddy AI Note: Your daily memo that turns notes into a plan",
+        "dek": "A new AI-powered note-taking app that transforms scattered daily notes into actionable plans, challenging the passive capture model of traditional tools.",
+        "details": [
+          "Buddy AI Note presents a focused twist on AI note-taking: rather than just transcribing or summarizing, it actively converts your raw memos into structured daily plans. The app’s value proposition hinges on bridging the gap between information capture and execution—a pain point for many knowledge workers who collect notes but rarely act on them. Its appearance on Product Hunt signals growing appetite for AI agents that manage workflows, not just content.",
+          "Unlike broader platforms like Notion AI or Mem that offer extensive knowledge management, Buddy AI Note narrows to a daily memo format. This constraint may improve usability by limiting scope, making it easier for users to adopt as a morning routine. The emphasis on 'plan' suggests smart scheduling or prioritization logic, though specifics like model or integration remain unclear from available information.",
+          "The product reflects a wave of AI productivity tools targeting micro-workflows—small, repeatable tasks with high friction. For product builders, it underscores an opportunity: layering AI on top of existing habits (like note-taking) to deliver immediate value without requiring behavior change. Success will depend on the quality of its planning AI and how well it connects to calendars or task managers."
+        ],
+        "why": "For product strategists and entrepreneurs, Buddy AI Note exemplifies how narrow AI applications can carve out defensible niches in the crowded productivity space, by solving a specific step (notes to plans) rather than competing on scope.",
+        "links": [
+          [
+            "Buddy AI Note on Product Hunt (via Google News)",
+            "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5uZ29mVzFHbDQ2VTI3aktrWHZDanFpMF9YRTlLX2puaWt1RDRjY2dHcXJQQXd2eVNhbEo3MC1sSVFYejJrQmREVnZGZXRNanBCbG8xMU5ZOFIzZzU1N1Yw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Inference Cost",
+        "dek": "The computational and financial expense of running a trained AI model to generate predictions or responses, as opposed to training cost.",
+        "details": [
+          "Inference cost refers to the resources (compute, memory, energy) required to execute a trained machine learning model on new input data. For large language models (LLMs), inference cost is dominated by GPU usage, memory bandwidth, and latency requirements. Unlike training, which is a one-time or periodic expense, inference occurs continuously in production, making it a key driver of total cost of ownership (TCO). Recent price wars among model providers (e.g., OpenAI, Anthropic, Google) have driven down per-token inference prices by over 90% in two years, accelerating enterprise adoption. However, even with falling prices, inference cost remains a barrier for high-frequency applications like real-time agents, code completion, and voice assistants. Optimizations such as quantization, pruning, and speculative decoding are increasingly important for reducing inference cost without sacrificing quality."
+        ],
+        "why": "Understanding inference cost is critical for evaluating model provider pricing, assessing the viability of AI-powered products, and making build-vs-buy decisions. It directly impacts the economics of AI startups and enterprise deployments.",
+        "links": [
+          [
+            "OpenAI: Helping build shared standards for advanced AI",
+            "https://openai.com/index/helping-build-shared-standards-for-advanced-ai"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-23",
     "title": "AI Daily Atlas",
