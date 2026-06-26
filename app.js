@@ -1,5 +1,340 @@
 const archiveZh = [
   {
+    "date": "2026-06-26",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月26日",
+    "headline": "模型与平台、算力与产业链 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和算力与产业链展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时算力基础设施和供应链仍是大模型竞争的底层变量。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek融资传闻背后：中国大模型开始按战略资产重新定价",
+        "dek": "风闻文章指出，DeepSeek的融资传闻不仅关乎其自身估值，更反映出中国大模型产业正在从技术竞赛转向战略资产定价的新阶段。",
+        "details": [
+          "据风闻报道，近期市场传闻DeepSeek正在推进新一轮融资，尽管官方未予确认，但资本市场已开始按“战略资产”逻辑对其进行重新定价。这意味着投资者不再仅看重模型参数或跑分，而是关注其对国家算力基础设施、产业数字化和AI安全等方向的战略价值。",
+          "该文章认为，中国大模型公司的估值逻辑正在发生根本性转变：从早期的“烧钱换用户”转向“稀缺资源+政策适配”的权重。DeepSeek因在高效训练、国产算力适配等方面的积累，被认为具备类似“新型基础设施”的属性，融资谈判中可能出现远超传统技术公司市盈率的溢价。",
+          "目前这一信号尚未被普遍接受，但若DeepSeek融资落地，可能成为行业分水岭——更多头部模型企业将重新定义商业模式，从卖API转向提供“AI时代操作系统”级别的战略服务。这对创业公司、投资人和产业政策制定者都有重要启示。"
+        ],
+        "why": "这条新闻提示，中国大模型的估值逻辑正在从技术竞赛转向战略资产定价，投资者和政策制定者需重新评估相关公司的长期价值，尤其是具备算力、数据和安全壁垒的企业。",
+        "links": [
+          [
+            "Google News China AI Signals: DeepSeek融资传闻背后：中国大模型开始按战略资产重新定价 - 风闻",
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5OR3l2bEY1RV8tcFRjRVpHcEJubWlSSmhKVTJJUlpBVTZSZ2JicWhtdFkwM0xzeGswMkl0YmR1Q0xkamwxcGltc1lMMjFtcEM5aXBzVjFvWHpYLUk?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "2026腾讯视频年度发布剧集超120部，多元品类共筑内容生态",
+        "dek": "腾讯视频在2026年度发布会上公布超120部剧集片单，涵盖多元类型，持续强化长视频内容生态。",
+        "details": [
+          "腾讯视频于6月25日举办年度发布会，宣布2026年将推出超过120部剧集，覆盖古装、现实、悬疑、科幻等多个品类。这是腾讯视频近年来规模最大的片单发布，显示出其在长视频领域的持续投入。",
+          "此次片单中，头部IP续作与原创项目并重，包括《庆余年3》《繁花2》等期待值较高的作品，以及多部与AI制作工具结合的创新项目。腾讯视频表示，将引入AI辅助剧本评估、虚拟拍摄和智能推荐，以提升内容生产效率。",
+          "在行业竞争加剧的背景下，腾讯视频此举旨在巩固其国内长视频平台的领先地位。同时，AI技术的深度应用可能改变传统影视制作流程，为内容生态注入新变量。"
+        ],
+        "why": "腾讯视频的大规模内容投入显示其押注长视频赛道，同时AI技术加速渗透影视制作，可能改变内容生产与分发方式，对影视行业从业者和AI应用公司均具有参考价值。",
+        "links": [
+          [
+            "Google News China AI Signals: 2026腾讯视频年度发布剧集超120部，多元品类共筑内容生态 - 新京报",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE00TW9od3Z0T1phQUIyRmg3TmVqQlJSbmVLVjhMajJrOVpPT0lpVXJCVllzRjYyNHpZSDYyUjVXYjQ4MUxxN1g3MWRKRE52aTZCU3ptWThuM0VSSDRDQWw2SFRsYjc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里Meoo CLI上线QoderWork技能市场，AI编程工具走向生态化",
+        "dek": "阿里旗下AI编程助手Meoo CLI推出QoderWork技能市场，开发者可购买或上架定制化编程技能包，加速AI辅助开发从通用走向专业场景。",
+        "details": [
+          "阿里近日在其AI编程工具Meoo CLI中上线了名为QoderWork的技能市场。该市场允许开发者上传和交易定制化的AI编程技能包，例如特定框架的代码生成、数据库查询优化或部署脚本自动化等。这一举措将Meo CLI从一个单纯的代码补全工具升级为可扩展的AI开发平台。",
+          "技能市场采用类似应用商店的模式，开发者可以按需购买或免费获取第三方技能包，也可自主创作并上架获取收益。首批上架的技能包覆盖了Python数据科学、Kubernetes运维、前端React组件生成等高频场景。这标志着阿里正试图通过生态聚合来提升其AI开发工具的市场竞争力。",
+          "Meoo CLI此前已支持自然语言生成代码、多文件重构等功能，QoderWork的加入进一步降低了垂直领域开发者的使用门槛。对于企业团队，可以内部发布私有技能包，确保代码规范和安全。目前该市场仅面向中国区用户开放，未来可能拓展至全球。"
+        ],
+        "why": "阿里将AI编程工具从单点功能转向平台生态，增强开发者粘性，并可能催生新的AI技能交易市场。对于创业公司，类似模式或可复制到其他AI工具领域。",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里Meoo CLI上线QoderWork技能市场 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9rMVNseDdzQjNrNTJWMzY1UGx0Mzh0alhha3o2anA4T2pVd3ZHY3BUUE03R2luOVJYemIxY3BGcW42aVhOVjg4RW9MQm02NXdjSGxtbjJjS3U5QWxaSWNlVw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：NVIDIA 推出 AI Agent 工具包和机器人平台，股价应声上涨",
+        "dek": "NVIDIA 通过新工具包和机器人平台巩固 AI 基础设施与自动化领导地位，市场反应积极，股价攀升。",
+        "details": [
+          "6月25日，NVIDIA 发布全新的 AI Agent 工具包和机器人平台，旨在简化 AI 代理开发并加速人形机器人及工业自动化落地。消息公布后，公司股价应声上涨，显示投资者对其从芯片向平台转型战略的认可。",
+          "新工具包集成了预训练模型、编排框架和部署工具，帮助开发者快速构建、测试和上线 AI 代理；机器人平台则提供模拟环境、感知算法和运动控制模块，瞄准仓储、制造等场景。NVIDIA 强调，这两款产品均可与现有 GPU 基础设施无缝衔接。",
+          "尽管具体定价和首批客户信息尚未公开，但分析师指出，NVIDIA 正试图将 AI 芯片的硬件优势延伸到软件生态。若工具包和平台被广泛采用，将进一步锁定开发者群体，形成更强的生态护城河。"
+        ],
+        "why": "NVIDIA 正从 GPU 制造商转型为 AI 平台公司，AI Agent 和机器人是其下一个增长引擎。关注其生态工具链的成熟度，对评估 AI 落地效率和投资机会至关重要。",
+        "links": [
+          [
+            "Google News AI Infrastructure: NVIDIA shares climb on back of new AI agent toolkit and robotics platform launches",
+            "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ERzVCRTExV250MUctMW41ejFycXZuTVp2NktlY0c1TkhlQXNOTHBReEZJdk5pNTZDcDRmM2t3bURfQjFhcTB2LWpXa0M0M2hfNkNtck04SGFtb1V6ZTdoRmhWdlhCTTlV?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Anthropic 的 Mythos 模型在机密美国政府系统中发现漏洞",
+        "dek": "据联邦新闻网络报道，一位官员透露，Anthropic 的旗舰安全模型 Mythos 在参与一次机密政府系统的安全测试时成功发现了多个漏洞。这标志着 AI 在国家级安全审查中的应用迈出关键一步。",
+        "details": [
+          "Anthropic 的 Mythos 模型在一次针对美国机密政府系统的安全测试中发现了多个安全漏洞。据一位了解测试结果的官员向 Federal News Network 透露，该模型在模拟攻击中成功识别了此前未被发现的风险点，这些漏洞可能涉及敏感数据的访问路径。测试的具体范围和涉及的部门尚未公开。",
+          "Mythos 是 Anthropic 于 2025 年底推出的安全优先模型，专为高安全环境设计，其核心训练目标包括“发现系统弱点”而非仅执行常规任务。此次测试被认为是美国政府在国家级关键基础设施安全评估中首次引入前沿 AI 模型的案例之一。",
+          "该官员强调，测试结果“令人印象深刻”，但拒绝透露漏洞的具体数量或严重级别，称相关信息仍属机密。Anthropic 方面未予置评，但此前曾表示 Mythos 在内部红队测试中表现优于同类模型。此举可能加速其他政府机构对 AI 安全工具的使用。"
+        ],
+        "why": "AI 从“生成内容”转向“主动发现威胁”的能力正在获得国家安全领域的认可。Anthropic 的这次测试可能开启政府安全采购的新赛道，对依赖 AI 进行渗透测试的初创公司构成竞争压力。",
+        "links": [
+          [
+            "Federal News Network 报道",
+            "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPdVVsLWtwZjZ6YmwzY29NX1B3YXlIWjZJQlJPV1Jvekp1cHVIWDJ5UXg5TFlQaklhS3l2Q0VCQ3JHdmdZRnMxUFRyMHJzcGwzV2cycGN5dDhQOVphLXc3a2x1Y0NmNGF3OVY3ZE5Wc0tHVkVlRG9lN21lYWNmS1R3M2JDbWdLRmdnRUhXX1FyRHdYVVQzX1dhbVZyY1VtOE54YlJGVEtmZHZZcXBNNERueHVUTmhLNERhU29qV0xRTlN3em5XbEpFRV94Qm1aRHlCYlNTRXFXVWVybWJwLVpOcGJhcGZnVFJZVFFZcFA3bjY?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：NVIDIA NeMo AutoModel 加速 Transformer 微调",
+        "dek": "NVIDIA 推出 NeMo AutoModel，旨在简化并加速大型 Transformer 模型的微调流程，降低定制 AI 模型的门槛。",
+        "details": [
+          "Hugging Face 博客发布 NVIDIA NeMo AutoModel，这是一套自动化微调工具，可大幅缩短 Transformer 模型的训练时间。该工具利用自动模型选择、混合精度训练和梯度累积等技术，在保持精度的同时提升效率。",
+          "对于拥有中等规模算力的团队，NeMo AutoModel 可将微调时间从数天缩短到数小时。目前该工具主要支持 GPT、LLaMA 等主流架构，并已集成到 Hugging Face 生态系统，方便开发者直接调用。",
+          "NVIDIA 表示，该工具专为无法访问大规模 GPU 集群的团队设计，旨在让更多企业能快速定制 LLM 以满足垂直场景需求。不过，当前版本仍处于测试阶段，部分高级功能（如多节点分布式训练）尚待完善。"
+        ],
+        "why": "NVIDIA 将自动化引入微调环节，可能显著降低大模型定制的算力门槛，加速行业应用落地。对于创业公司和中型企业，这是一项值得关注的基础设施级更新。",
+        "links": [
+          [
+            "Hugging Face Blog: Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
+            "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：为何前沿生态系统必须开放——Databricks 联合创始人访谈",
+        "dek": "Databricks 技术领袖探讨每个公司构建 Agent Cloud 所需的开放之路",
+        "details": [
+          "在 Latent Space 播客的一次罕见双人访谈中，Databricks 联合创始人兼首席技术官 Matei Zaharia 和联合创始人 Reynold Xin 就“为什么前沿生态系统必须开放”展开了深入讨论。两人认为，随着 AI 从模型训练转向 Agent 和云服务，开放生态将决定企业能否摆脱对少数巨头的依赖，真正掌控自己的 AI 能力。",
+          "Zaharia 指出，封闭生态系统可能导致技术锁定和创新能力下降，而开放标准（如 Apache Spark、MLflow 和 Delta Lake 等 Databricks 贡献的项目）已证明能加速整个行业的进步。当前 AI 领域面临类似分叉点：若 Agent 框架和云基础设施被少数公司把持，企业将失去灵活性。Xin 补充，开放生态并非否定商业化，而是确保基础层可互操作，让每家组织都能像构建数据平台一样构建自己的 Agent Cloud。",
+          "访谈还提到，Agent Cloud 的概念要求底层计算、数据治理和 AI 模型无缝协作，而这必须通过开放 API 和共享规范实现。Databricks 正在推动其 Unity Catalog 和 Mosaic AI 等组件开源化，目标是降低生态碎片化风险，让企业无论选择哪个模型或工具都能保持统一的数据层。",
+          "两位技术领袖没有回避开放与商业化的矛盾，他们认为健康的前沿生态应像开源软件一样：核心基础设施免费开放，增值服务收费。这种模式已在 Databricks 自身得到验证，其云平台年营收已超 32 亿美元，而用户社区贡献了数千个集成和扩展。"
+        ],
+        "why": "这次访谈清晰传达了 AI 基础设施开放与封闭之争正从模型层延伸到 Agent 平台层，企业选择技术栈时必须评估生态绑定风险，开源策略将成为未来竞争力的关键变量。",
+        "links": [
+          [
+            "Latent Space: Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks",
+            "https://www.latent.space/p/databricks"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 安全新思路：用模型内部「熵」变化检测越狱攻击",
+        "dek": "一篇来自 arXiv 的新研究提出，通过追踪大模型内部各层 token 预测熵的动态轨迹，可以更早发现恶意提示——比只看输入或输出更精确。",
+        "details": [
+          "越狱攻击（jailbreak）是当前大模型安全的主要威胁之一：精心构造的提示词可以绕过安全对齐，让模型输出违反政策的内容。目前大多数防御手段要么在输入层过滤，要么在输出层审核，但攻击者总能找到变体。这篇来自 arXiv 的论文换了一个视角——不盯着输入或输出，而是观察模型‘思考’过程中的内部表征。",
+          "研究者使用了‘logit lens’技术，分析冻结的大语言模型在每一层中 token 级别的预测熵（predictive entropy）轨迹。熵在这里可以理解为模型对下一个词的‘不确定程度’。他们发现，仅仅用整个提示层的熵统计值（如平均值、方差）几乎无法区分正常请求和越狱攻击；但那些捕捉熵在 token 位置之间如何演化的特征——例如单调性、变化率——却包含了很强的判别信号。",
+          "换句话说，正常请求和恶意提示在模型内部引发的‘困惑模式’是不同的。这种方法不需要修改模型权重，也不需要额外的分类器，只需在推理时记录各层的熵轨迹即可检测异常。论文在多个开源模型和越狱数据集上验证了效果，准确率显著优于单纯基于输入/输出的检测器。",
+          "当然，这仍是一个研究阶段的方案。论文没有公开完整数据集或可复现代码（预印本仅描述方法），且计算开销会随层数增加。不过，它指向了一个有潜力的方向：安全检测也许应该更关注模型的‘思维过程’而非表面行为。"
+        ],
+        "why": "对 AI 安全从业者和产品团队来说，这意味着未来可以构建更轻量、更难绕过的内部监控机制——不必依赖不断更新的对抗样本库，而是利用模型自身的计算模式来发现异常。",
+        "links": [
+          [
+            "arXiv cs.CL: What Intermediate Layers Know: Detecting Jailbreaks from Entropy Dynamics",
+            "https://arxiv.org/abs/2606.25182"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Cerebras 股价暴跌，CEO 称利润率预期被误解",
+        "dek": "上市后首份财报引发市场恐慌，CEO 紧急澄清长期毛利率未被准确理解。",
+        "details": [
+          {
+            "summary": "AI 芯片公司 Cerebras 在上市后首份财报中给出低于预期的核心业务毛利率指引，导致股价单日暴跌。",
+            "expanded": "TechCrunch 报道，Cerebras 在 2026 年 6 月 24 日发布的财报显示，其核心业务（AI 训练芯片及配套系统）的未来毛利率区间较此前市场预期有所收窄。投资者迅速抛售，股价应声大跌。CEO Andrew Feldman 随后在电话会上表示，市场误解了公司的长期毛利率轨迹，短期指引的收紧是为了扩大客户规模而非利润恶化。这一事件折射出市场对 AI 芯片公司盈利可持续性的高度敏感：即便收入增长强劲，毛利率的边际变化就能引发剧烈波动。Cerebras 当前的挑战在于如何平衡规模化扩张与盈利能力，尤其是面对英伟达和 AMD 的竞争。"
+          },
+          {
+            "summary": "关键在于，Cerebras 的毛利率变动究竟是短期阵痛还是长期趋势。",
+            "expanded": "从报告数据看，Cerebras 的毛利率下降主要源于对超大规模客户的折扣策略以及新产品的初期成本。CEO 强调，随着下一代芯片量产，成本结构将显著改善。但投资者显然需要更明确的证据。这场股价波动本质上是一次“预期差”事件：市场此前给予了 Cerebras 类似于英伟达的利润率溢价，而实际指引打破了这一幻想。对于关注 AI 基础设施投资的读者而言，这意味着应更关注芯片公司的单位经济模型而非单纯收入增速——高增长不等于高利润。"
+          }
+        ],
+        "why": "Cerebras 作为 AI 芯片新贵的首份财报股价暴跌，揭示了市场对 AI 硬件公司盈利模式的严格审视，对投资 AI 基础设施和芯片赛道有直接参考意义。",
+        "links": [
+          [
+            "TechCrunch AI: Cerebras stock plunges after earnings as CEO says margin outlook was misunderstood",
+            "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "机器人赛道VC年中破年度纪录：为什么物理AI能拿到软件级估值",
+        "dek": "Tech Times分析：2026上半年机器人风投已超去年全年，物理AI公司估值倍数逼近纯软件企业。",
+        "details": [
+          "Tech Times 发布分析文章指出，截至2026年上半年，机器人领域的风险投资总额已打破去年全年纪录。这一数据来自多家VC数据库的汇总，显示资本正以前所未有的速度涌入物理AI赛道。文章核心观点是：物理AI（即机器人+AI）公司正以接近软件公司的估值倍数融资，而传统上硬件公司估值远低于软件。作者认为，这种转变源于投资者认识到，物理AI的商业化壁垒更高、数据闭环更深，且一旦形成规模，复购率和客户粘性可能超过纯软件产品。",
+          "文章还援引了多位投资人的看法：物理AI的“护城河”在于硬件制造、供应链管理和实时环境感知的整合能力，这些无法被大模型快速复制。例如，仓储机器人、人形机器人和自动驾驶出租车领域的头部企业，其融资轮次中出现了大量跨行业战略投资者，进一步推高了估值。不过，作者也提醒，当前估值泡沫风险存在，部分公司尚未实现正向现金流，投资者需警惕“硬件+AI”的交付周期比纯软件长2-3倍。"
+        ],
+        "why": "这篇观点对AI从业者和投资者有直接参考价值：它揭示了资本从纯软件向物理AI迁移的趋势，暗示硬件+AI的创业机会可能被低估或被重新定价。建议关注那些在垂直场景中已有量产能力或明确商业合同的机器人公司。",
+        "links": [
+          [
+            "Google News AI Infrastructure：Robotics VC Breaks Annual Records at Midyear",
+            "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYjd6UHdneDlJc1JXNlhUaHlYT0Uzc1pXM2pMeVdtZXVWM2RId1Y0THFSVTdsa21JT1dqWTdxbnZaUTZ3WWd3cWpMdUpaWU9GZzlDMjdQNklNWU02UUY3Y1FFZGF6NUlLQ09ROUVyNkZILVFUeGZnNloxNlZEVlRkWGZWNkF0MXdpUWoxVTNSVVRoRHpFX1JlN2hKN25hMF9zSnZfVmotR0MxUDFXdmtWZU12S0FCZ3ViWVl2by1HenZ3NktraHp6UFRVbWNJVFM0UlJJTU5vbw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Gamma：AI 原生的演示文稿与文档工作台",
+        "dek": "从提示词或大纲出发，一站式生成演示文稿、网页和文档，为策略、营销和内部沟通工作流提速。",
+        "details": [
+          "Gamma 是一款 AI 原生创作工具，用户只需输入提示词或拖拽大纲，即可自动生成结构完整的演示文稿、文档或轻量网页。它内置多种模板与设计引擎，支持实时协作编辑，适合需要快速迭代文案与视觉的团队。",
+          "与传统的 PowerPoint 或 Google Slides 不同，Gamma 将内容生成与排版打包为一个步骤。用户可以在写作过程中随时调整 AI 输出，而非从空白页开始。这种“对话式”创作降低了设计门槛，让非设计背景的成员也能产出质感一致的品牌材料。",
+          "在实际场景中，Gamma 常用于营销方案初稿、产品需求文档、内部培训页面等高频更新场景。据其官网介绍，超过 200 万团队使用该工具，典型用户包括增长团队、产品经理和独立顾问。",
+          "不过，Gamma 的 AI 生成逻辑仍依赖于用户提供足够清晰的结构提示，在复杂数据可视化和大规模文档协作上不如专用工具深入。对于追求高度定制化品牌设计的团队，可能仍需后期人工调校。"
+        ],
+        "why": "Gamma 展示了 AI 如何从“辅助生成”进化到“端到端创建”，尤其适合需要高频输出演示材料的中小团队。它提示了一个产品机会：将 AI 写作与设计工作流深度融合，而非仅做单点功能。",
+        "links": [
+          [
+            "Curated AI Products: Gamma: AI-native deck and document creation workspace",
+            "https://gamma.app/"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Granola：更适合真实工作对话的 AI 会议笔记",
+        "dek": "不刷存在感、不打断流程，Granola 把会议变成可搜索的结构化笔记。",
+        "details": [
+          "Granola 是一款轻量级的 AI 会议笔记工具，与大多数需要机器人进入会议的应用不同，它静默运行在本地，不会在会议中发送“正在记录”的提示或参与对话。用户会后即可获得一份结构清晰的纪要，包含讨论要点、决策和待办事项。",
+          "它面向需要频繁开会并产出可追溯笔记的人群，比如产品经理、运营、投资人、顾问。Granola 不强调实时转录，而是更关注“会后记忆”，让用户能快速搜索过去的会议内容，而不是重听录音。",
+          "在大量会议笔记工具陷入功能堆叠的背景下，Granola 选择做减法——没有 AI 总结聊天、不生成 Action Items 自动提醒，只做好一件事：把语音转为可阅读、可搜索的会议记录。这种克制的产品哲学或许值得国内产品团队参考。",
+          "需要提醒的是，Granola 目前主要运行在 macOS 上，并且对英文内容的支持优于中文，使用前需确认是否符合自身工作流。作为一款仍处于早期阶段的工具，它的准确率和适配性还有待更多用户验证。"
+        ],
+        "why": "Granola 代表了 AI 笔记工具从“功能叠满”向“精准场景”演变的趋势，适合观察如何在真实工作流中通过减法来赢得用户黏性。对产品团队来说，这是一个关于“做少”而非“做多”的案例。",
+        "links": [
+          [
+            "Curated AI Products: Granola: AI meeting notes built for real work conversations",
+            "https://www.granola.ai/"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "RAG（检索增强生成）",
+        "dek": "当大模型“不知道”的时候，RAG 让它学会翻书——不是重新训练，而是实时检索外部知识库来辅助回答。",
+        "details": [
+          "RAG（Retrieval-Augmented Generation）的核心思路是：当用户提问时，系统先从一个知识库（比如公司内部文档、网页、数据库）中检索出最相关的片段，然后把这些片段作为“上下文”附加给大模型，让模型基于检索到的信息生成回答。这意味着模型不需要记住所有知识，只要会“查资料”就行。",
+          "在实际应用中，RAG 通常包含两个关键组件：检索器（Retriever）和生成器（Generator）。检索器负责从海量文本中快速找出与问题相关的段落，常用方法包括向量搜索（Embedding + 相似度计算）和关键词搜索。生成器则是一个大语言模型，根据问题和检索到的上下文合成最终答案。",
+          "RAG 的优势在于：知识可以随时更新（替换知识库即可），不需要重新训练模型；能有效减少模型“编造”（幻觉）；适合企业级知识问答、客服系统、研究辅助等场景。OpenAI 在最新的 agent 研究论文中展示的复杂任务处理，底层也依赖 RAG 来获取动态信息。"
+        ],
+        "why": "RAG 是当前企业落地生成式 AI 最实用的技术方案之一：它解决了大模型知识过时和幻觉问题，让 AI 能在不暴露训练数据的情况下，安全地连接内部知识库，快速构建问答、搜索、摘要等工具。",
+        "links": [
+          [
+            "OpenAI：Agent 如何改变工作方式",
+            "https://openai.com/index/how-agents-are-transforming-work"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-25",
     "title": "AI Daily Atlas",
     "meta": "2026年6月25日",
@@ -8919,6 +9254,346 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-26",
+    "title": "AI Daily Atlas",
+    "meta": "June 26, 2026",
+    "headline": "models and platforms plus compute and infrastructure shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus compute and infrastructure. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, compute, chips, data centers, and supply chains remain the base layer of AI competition. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek Financing Rumor Signals Strategic Revaluation of China's AI Models",
+        "dek": "Unconfirmed reports of a major fundraising round for DeepSeek are fueling a narrative that Chinese large language model startups are being priced less like technology companies and more like strategic national assets.",
+        "details": [
+          "A rumor circulating in Chinese media on June 25 suggests that DeepSeek, a prominent AI model developer, is in talks to raise a substantial new round of funding. While the exact amount and lead investors remain unverified, the very existence of the speculation has triggered broader discussions about how China's model ecosystem is being valued by both domestic and international capital markets. The report, published by Guancha (Observer) via Google News’ China AI Signals feed, does not cite named sources or specific financial terms, making the details highly uncertain.",
+          "The significance of this rumor lies in its implications for the entire Chinese AI model landscape. If DeepSeek—known for its efficiency-driven approach and open-weight releases—can command a premium valuation, it would suggest that investors are increasingly viewing leading Chinese AI labs as strategic assets tied to national technological sovereignty, rather than merely as commercial enterprises. This shift mirrors similar dynamics seen in semiconductor and critical infrastructure sectors, where geopolitical factors override traditional financial metrics."
+        ],
+        "why": "For investors and product strategists, this signals that the pricing of Chinese AI models is becoming decoupled from pure revenue or user metrics, and instead reflects geopolitical and industrial policy value. This could lead to inflated valuations but also increased government-backed support, altering competitive dynamics for Western firms.",
+        "links": [
+          [
+            "Google News China AI Signals: DeepSeek融资传闻背后：中国大模型开始按战略资产重新定价 - 风闻",
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5OR3l2bEY1RV8tcFRjRVpHcEJubWlSSmhKVTJJUlpBVTZSZ2JicWhtdFkwM0xzeGswMkl0YmR1Q0xkamwxcGltc1lMMjFtcEM5aXBzVjFvWHpYLUk?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Tencent Video Unveils 120+ New Dramas at 2026 Annual Showcase, Expanding Content Ecosystem",
+        "dek": "Tencent Video announced over 120 new dramas at its 2026 annual event, covering diverse genres and reinforcing its leadership in China's streaming market.",
+        "details": [
+          "At its 2026 annual content presentation, Tencent Video revealed a slate of more than 120 upcoming dramas, spanning genres from historical epics and suspense thrillers to modern romance and sci-fi. The lineup includes high-profile adaptations of popular IPs, as well as original productions aimed at attracting both domestic and international audiences. The company emphasized its commitment to 'premium content' and 'differentiated programming' to compete with rivals like iQiyi and Youku.",
+          "The event also highlighted Tencent Video's strategy of leveraging ecosystem synergies with Tencent's broader entertainment assets, including literature (China Literature) and gaming. While no specific AI-related announcements were made, Tencent has been integrating AI tools for script analysis and recommendation algorithms behind the scenes, though the company did not disclose new AI initiatives at this event."
+        ],
+        "why": "This massive content investment signals Tencent’s bet on original dramas to retain subscribers amid rising competition from short-video platforms, and it underscores the importance of exclusive IP in China’s streaming wars.",
+        "links": [
+          [
+            "Google News China AI Signals: 2026腾讯视频年度发布剧集超120部，多元品类共筑内容生态 - 新京报",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE00TW9od3Z0T1phQUIyRmg3TmVqQlJSbmVLVjhMajJrOVpPT0lpVXJCVllzRjYyNHpZSDYyUjVXYjQ4MUxxN1g3MWRKRE52aTZCU3ptWThuM0VSSDRDQWw2SFRsYjc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba Launches Meoo CLI and QoderWork Skills Marketplace",
+        "dek": "Alibaba's new AI command-line tool and skill marketplace aim to empower developers with modular, on-demand AI capabilities.",
+        "details": [
+          "On June 25, 2026, Alibaba released the Meoo Command Line Interface (CLI) and simultaneously launched the QoderWork Skills Marketplace, as reported by Chinese financial media East Money. The Meoo CLI is designed to provide developers with direct, scriptable access to Alibaba's AI models and services, streamlining workflows for automation and integration tasks.",
+          "The QoderWork Skills Marketplace complements the CLI by offering a curated catalog of reusable skill modules—from natural language processing to computer vision—that developers can deploy via simple CLI commands. This move positions Alibaba alongside other major cloud providers that are building ecosystem lock-in through developer tooling and marketplace dynamics.",
+          "For enterprises, the combination lowers the barrier to adopting AI capabilities without deep expertise, potentially accelerating deployment in sectors like e-commerce, logistics, and finance. However, the success of the marketplace will depend on the quality and breadth of third-party contributed skills, which remains to be seen."
+        ],
+        "why": "This launch signals Alibaba's strategic push to own the developer toolchain layer, competing directly with AWS, Azure, and Google Cloud in the AI-assisted coding and automation space. For startups and enterprises, it offers a lower-friction path to integrate Alibaba's AI ecosystem.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里Meoo CLI上线QoderWork技能市场 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9rMVNseDdzQjNrNTJWMzY1UGx0Mzh0alhha3o2anA4T2pVd3ZHY3BUUE03R2luOVJYemIxY3BGcW42aVhOVjg4RW9MQm02NXdjSGxtbjJjS3U5QWxaSWNlVw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "NVIDIA shares climb on back of new AI agent toolkit and robotics platform launches",
+        "dek": "NVIDIA's stock rises after unveiling an AI agent toolkit and robotics platform, signaling expanded enterprise and industrial AI push.",
+        "details": [
+          "NVIDIA shares gained on June 25 following the announcement of a new AI agent toolkit and a robotics platform. The toolkit aims to simplify development of autonomous AI agents, while the robotics platform targets industrial automation and humanoid robot training. Both releases leverage NVIDIA's GPU-accelerated computing stack, reinforcing its dominance in AI infrastructure.",
+          "The launches come amid growing competition from AMD and custom chip efforts by cloud giants. NVIDIA's strategy appears to be expanding beyond core training/inference into higher-level software platforms that lock in developers and enterprises. The move also aligns with rising demand for AI agents that can perform complex tasks, a trend boosted by recent progress in large language models.",
+          "Though share price reaction was positive, the actual revenue impact remains uncertain until next earnings. Analysts will watch adoption rates of the toolkit and platform among robotics startups and industrial players."
+        ],
+        "why": "NVIDIA's platform expansion into AI agents and robotics reinforces its ecosystem moat, posing challenges for competitors and offering new investment angles in AI software infrastructure.",
+        "links": [
+          [
+            "Google News AI Infrastructure: NVIDIA shares climb on back of new AI agent toolkit and robotics platform launches",
+            "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1ERzVCRTExV250MUctMW41ejFycXZuTVp2NktlY0c1TkhlQXNOTHBReEZJdk5pNTZDcDRmM2t3bURfQjFhcTB2LWpXa0M0M2hfNkNtck04SGFtb1V6ZTdoRmhWdlhCTTlV?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Anthropic’s Mythos model found vulnerabilities in classified US government systems, official says",
+        "dek": "Federal News Network reports that Anthropic's latest AI model uncovered security flaws in sensitive government networks, raising both opportunities and concerns.",
+        "details": [
+          "According to a report by Federal News Network, Anthropic's Mythos model successfully identified vulnerabilities in classified US government systems during a controlled test. An official familiar with the results confirmed the findings but declined to specify the number or severity of the flaws. This marks one of the first publicly acknowledged instances where a frontier AI model has been applied to penetrate high-security government infrastructure, highlighting the model's advanced capability in identifying weak points that might otherwise go unnoticed.",
+          "While the exact scope remains undisclosed, the incident underscores the dual-use nature of powerful AI: it can serve as a potent tool for defensive cybersecurity audits while also posing risks if misused. The outcome has prompted renewed debate within the intelligence community about red-teaming protocols and the need for robust guardrails. Anthropic has not commented beyond confirming the collaboration, and no timeline for broader deployment has been announced."
+        ],
+        "why": "This development signals that frontier AI models are crossing into national security applications, which could accelerate both defensive adoption and regulatory scrutiny. For cybersecurity startups and policy analysts, it highlights a new frontier in AI-driven vulnerability discovery and the urgent need for ethical boundaries.",
+        "links": [
+          [
+            "Federal News Network (via Google News)",
+            "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPdVVsLWtwZjZ6YmwzY29NX1B3YXlIWjZJQlJPV1Jvekp1cHVIWDJ5UXg5TFlQaklhS3l2Q0VCQ3JHdmdZRnMxUFRyMHJzcGwzV2cycGN5dDhQOVphLXc3a2x1Y0NmNGF3OVY3ZE5Wc0tHVkVlRG9lN21lYWNmS1R3M2JDbWdLRmdnRUhXX1FyRHdYVVQzX1dhbVZyY1VtOE54YlJGVEtmZHZZcXBNNERueHVUTmhLNERhU29qV0xRTlN3em5XbEpFRV94Qm1aRHlCYlNTRXFXVWVybWJwLVpOcGJhcGZnVFJZVFFZcFA3bjY?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
+        "dek": "NVIDIA unveils NeMo AutoModel to streamline transformer fine-tuning, promising faster, more accessible model customization for enterprises.",
+        "details": [
+          "NVIDIA has announced NeMo AutoModel, a new addition to its NeMo framework that automates the fine-tuning process for transformer-based models. The tool is designed to reduce the time and computational resources required to adapt large language models (LLMs) to specific tasks or domains. By leveraging optimized GPU kernels and automated hyperparameter selection, NeMo AutoModel aims to make fine-tuning accessible to a broader range of developers without deep expertise in machine learning operations.",
+          "This release comes as enterprises increasingly seek to deploy customized LLMs for applications like customer service, code generation, and domain-specific analytics. The ability to fine-tune efficiently could lower barriers for smaller teams and accelerate the adoption of generative AI in regulated industries where data privacy demands on-premise customization. However, benchmarks comparing NeMo AutoModel to existing fine-tuning methods have not been disclosed, leaving room for competitive uncertainty."
+        ],
+        "why": "For AI practitioners, this tool simplifies the complex workflow of model customization, potentially saving weeks of manual tuning. It also signals NVIDIA's push to own the full stack—from hardware to software—for enterprise AI deployment, which may affect cloud AI service strategies.",
+        "links": [
+          [
+            "Hugging Face Blog: Accelerating Transformers Fine-Tuning with NVIDIA NeMo AutoModel",
+            "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks",
+        "dek": "Databricks technical leaders make the case for open ecosystems as the foundation for enterprise AI agent clouds, arguing against walled-garden approaches.",
+        "details": [
+          {
+            "summary": "Open vs. closed debate",
+            "expanded": "In a rare joint interview, Databricks co-founder Matei Zaharia and Chief Architect Reynold Xin argue that the frontier AI ecosystem must remain open for enterprises to build reliable, customizable agent clouds. They contrast this with vendor-controlled platforms, warning that closed models limit flexibility and create lock-in."
+          },
+          {
+            "summary": "Enterprise agent cloud vision",
+            "expanded": "The duo outlines what it will take for every company to operate its own agent cloud: open standards, portable models, and interoperable tooling. They emphasize that Databricks' open-source heritage (Apache Spark, MLflow) positions it to support heterogeneous AI stacks, rather than prescribing a single model provider."
+          },
+          {
+            "summary": "Strategic implications",
+            "expanded": "This perspective challenges the prevailing narrative that proprietary frontier models (e.g., from OpenAI, Google) will dominate enterprise AI. By advocating for openness, Databricks aligns with a growing industry push for modular, composable AI infrastructure—a trend that could reshape how organizations deploy and govern agents."
+          }
+        ],
+        "why": "This discussion offers a strategic lens for evaluating the open vs. closed AI debate, directly impacting decisions on platform selection, vendor risk, and long-term investment in enterprise AI architecture.",
+        "links": [
+          [
+            "Latent Space: Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Dat",
+            "https://www.latent.space/p/databricks"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "What Intermediate Layers Know: Detecting Jailbreaks from Entropy Dynamics",
+        "dek": "A new arXiv study reveals that monitoring how token prediction entropy evolves across LLM layers can detect jailbreak attempts more effectively than static prompt analysis, opening a new interpretability-based defense avenue.",
+        "details": [
+          "Jailbreak attacks remain a persistent vulnerability in aligned large language models (LLMs), where carefully crafted prompts can bypass safety training to elicit policy-violating responses. Most existing defenses operate at the prompt or output level—filtering inputs or checking outputs—but fail to understand how harmful intent is encoded internally. A new preprint from arXiv (2606.25182) investigates this gap by analyzing token-level predictive entropy trajectories across model layers using the logit lens technique, offering a window into the model's internal decision process.",
+          "The researchers found that static aggregate statistics of prompt-level entropy—such as mean and variance—carry little discriminative signal for distinguishing jailbreak prompts from benign ones. Instead, features that capture how entropy evolves across token positions, such as monotonicity and other trajectory dynamics, prove highly effective. This suggests that jailbreak prompts induce a distinct pattern of uncertainty as the model processes them layer by layer, which can be leveraged as a detection signal without requiring access to model weights.",
+          "This detection method has practical implications: it is lightweight, operates on a frozen model, and does not degrade user experience like some input sanitizers. However, the paper is preliminary—tested on a single model architecture—and generalizability to closed-source models remains unverified. If validated, it could be integrated into LLM deployment pipelines as an interpretability-based defense, complementing existing guardrails like output classifiers. For AI safety researchers and product teams, this work highlights the untapped potential of internal representations for building more robust protections."
+        ],
+        "why": "This research offers a promising, interpretability-driven approach to jailbreak detection that could complement existing safety measures without sacrificing latency or requiring model retraining, making it relevant for any organization deploying LLMs in production.",
+        "links": [
+          [
+            "arXiv cs.CL: What Intermediate Layers Know: Detecting Jailbreaks from Entropy Dynamics",
+            "https://arxiv.org/abs/2606.25182"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Cerebras stock plunges after earnings as CEO says margin outlook was misunderstood",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from TechCrunch AI：Cerebras stock plunges after earnings as CEO says margin outlook was misunderstood. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "TechCrunch AI: Cerebras stock plunges after earnings as CEO says margin outlook was misund",
+            "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Robotics VC Breaks Annual Records at Midyear: Why Physical AI Commands Software Multiples - Tech Times",
+        "dek": "A Tech Times analysis argues that physical AI startups are attracting record venture capital and commanding software-like valuation multiples, driven by the convergence of embodied intelligence, robust hardware-software moats, and long-term industrial demand.",
+        "details": [
+          {
+            "summary": "Record VC inflow into robotics at mid-2026",
+            "expanded": "According to a Tech Times report published on June 25, 2026, venture capital investment in robotics startups has already surpassed full-year 2025 totals by the midpoint of 2026. The piece highlights that physical AI—robots that perceive, reason, and act in the real world—is seeing a surge in both deal value and valuation multiples, often compared to high-growth software companies."
+          },
+          {
+            "summary": "Why physical AI commands software multiples",
+            "expanded": "The article argues that physical AI companies benefit from compounding defensibility: proprietary datasets from real-world deployment, hardware-software integration that creates switching costs, and a total addressable market spanning manufacturing, logistics, healthcare, and domestic services. Investors are pricing in not just current revenue but the potential for recurring service and data-licensing revenue—a pattern long seen in enterprise software."
+          },
+          {
+            "summary": "Key investor perspective",
+            "expanded": "The report quotes unnamed venture partners noting that the most aggressive valuations are going to startups that demonstrate a clear path to 'data flywheels'—where every robot deployment generates training data that improves the AI model, creating a self-reinforcing competitive advantage. This, they argue, justifies 20–30x revenue multiples, a range typically reserved for software-as-a-service companies."
+          }
+        ],
+        "why": "This analysis signals that robotics and physical AI are moving from hardware-heavy, low-margin businesses to platform-like investment narratives. For product and strategy leaders, it suggests that building data loops and software stickiness is becoming the key to commanding premium valuations in the physical AI space.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Robotics VC Breaks Annual Records at Midyear: Why Physical AI Commands Software Multiples",
+            "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYjd6UHdneDlJc1JXNlhUaHlYT0Uzc1pXM2pMeVdtZXVWM2RId1Y0THFSVTdsa21JT1dqWTdxbnZaUTZ3WWd3cWpMdUpaWU9GZzlDMjdQNklNWU02UUY3Y1FFZGF6NUlLQ09ROUVyNkZILVFUeGZnNloxNlZEVlRkWGZWNkF0MXdpUWoxVTNSVVRoRHpFX1JlN2hKN25hMF9zSnZfVmotR0MxUDFXdmtWZU12S0FCZ3ViWVl2by1HenZ3NktraHp6UFRVbWNJVFM0UlJJTU5vbw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Gamma: AI-native deck and document creation workspace",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Curated AI Products：Gamma: AI-native deck and document creation workspace. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Curated AI Products: Gamma: AI-native deck and document creation workspace",
+            "https://gamma.app/"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Granola: AI meeting notes built for real work conversations",
+        "dek": "A local-first, non-intrusive AI notepad that turns meeting notes into structured summaries without recording or bots.",
+        "details": [
+          "Granola is an AI-powered note-taking tool designed for real conversations. Unlike traditional meeting bots that record audio and transcribe everything, Granola works locally and requires no bot to join your call. It allows users to take brief notes during a meeting and then instantly transforms them into clean, structured summaries with action items and key points, all while preserving privacy and minimizing disruption.",
+          "What sets Granola apart is its focus on the human workflow: it doesn't try to capture every word, but instead helps you organize your own notes with AI. This makes it ideal for product teams, consultants, and operators who have frequent meetings and need quick, searchable meeting memory without the overhead of full transcription. For users concerned about privacy or meeting bot fatigue, Granola offers a lightweight alternative that respects the natural flow of conversation."
+        ],
+        "why": "Granola shows how AI productivity tools are moving away from massive always-on transcription toward lightweight, context-aware assistants — a trend that signals opportunity for startups building non-intrusive, workflow-integrated AI.",
+        "links": [
+          [
+            "Granola Official Website",
+            "https://www.granola.ai/"
+          ]
+        ],
+        "sourceDate": "2026-06-23",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "Retrieval-Augmented Generation (RAG) combines a retrieval system with a generative AI model, enabling factual, ground knowledge access without full model retraining. It's essential for enterprise knowledge management, research workflows, and private knowledge Q&A products.",
+        "details": [
+          "RAG works by first retrieving relevant documents or snippets from a vector database or search index, then feeding them as context to a large language model (LLM) for answer generation. This architecture reduces hallucination, allows dynamic knowledge updates, and keeps sensitive data private since the model does not memorize proprietary information.",
+          "Recent developments, such as the Chinese AI model advances noted by The New York Times, often integrate RAG to compete with proprietary models like Anthropic and OpenAI. Meanwhile, OpenAI's research on agents shows how retrieval-based context can extend task complexity and productivity, directly leveraging RAG principles.",
+          "For knowledge management and research workflows, RAG enables users to query internal documents, research papers, or databases with natural language, returning concise answers with citations. This accelerates insight discovery and decision-making in fields like law, healthcare, finance, and academia."
+        ],
+        "why": "Understanding RAG is crucial for anyone building or evaluating AI-powered knowledge products—it's the dominant approach for grounding AI in real-world data without exposing private information. Mastering RAG concepts helps in choosing between fine-tuning vs. retrieval strategies for enterprise AI deployments.",
+        "links": [
+          [
+            "OpenAI: How agents are transforming work",
+            "https://openai.com/index/how-agents-are-transforming-work"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-25",
     "title": "AI Daily Atlas",
