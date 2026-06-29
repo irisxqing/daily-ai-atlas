@@ -1,5 +1,373 @@
 const archiveZh = [
   {
+    "date": "2026-06-29",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月29日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek 更新 V4 版 AI 模型，推理速度最高提升 85%",
+        "dek": "中国 AI 初创公司 DeepSeek 发布新一代模型，推理效率大幅跃进，开发者成本有望降低。",
+        "details": [
+          "DeepSeek 于近日更新了其旗舰模型 V4 版本，重点优化推理性能。据官方披露，新模型在多项基准测试中推理速度最高提升 85%，响应延迟显著缩短。这是 DeepSeek 继年初发布 V3 后最大规模的模型升级。",
+          "推理速度的提升直接意味着更低的算力消耗和更快的用户响应。对于 API 调用方而言，同等任务下所需的推理时间减少，计算成本也随之下降。在价格敏感的开发者市场，这一改进有助于 DeepSeek 吸引更多中小团队接入。",
+          "V4 版的发布正值中国大模型价格战趋缓、市场转向比拼实际性能的节点。提升推理效率而非单纯堆参数，反映出 DeepSeek 正试图在工程优化层面建立差异化优势。"
+        ],
+        "why": "推理速度是模型落地成本的关键变量。DeepSeek V4 的 85% 提升将直接压缩开发者的使用门槛，可能推动更多企业从实验转向生产部署，加剧国内 MaaS 市场的竞争。",
+        "links": [
+          [
+            "Google News: DeepSeek更新V4版AI模型 推理速度最高提升85% - 联合早报",
+            "https://news.google.com/rss/articles/CBMiakFVX3lxTE9YcU9HeGFrdjQxdEFVVHUzeDBuOHFPXy02eEJLMmtZd2hpc0JTM3lYR2M0d3JkbTd3ODFFM3p4Tm41WDZWZFlTN3BuUDhJN20xSjhLSi1jSU5leENpMFlMRnhqOXFtclUyeEE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "周末窗口｜2026-06-28"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "特朗普政府批准Anthropic向部分企业和政府机构发布Mythos AI模型",
+        "dek": "据多家媒体报道，美国特朗普政府已批准Anthropic向部分企业客户和政府机构发布其先进大语言模型Mythos，标志着AI安全审查从限制转向有条件放行。",
+        "details": [
+          "据多家媒体报道，特朗普政府已批准Anthropic向部分企业客户和美国政府机构发布其最新大语言模型Mythos。这是美国首次在政府层面明确放行一家AI公司的前沿模型，标志着AI监管进入新阶段。",
+          "Mythos模型此前因安全审查和技术评估被推迟数月，Anthropic一直强调其“负责任的扩展”策略。此次获批正值美国政府加速制定AI安全标准之际，或为后续企业提供参考框架。",
+          "分析认为，这一决定可能重塑AI竞争格局：Anthropic得以在政府领域率先落地，而OpenAI、谷歌等尚未获得同等明确许可。同时，Mythos的商业化推广将直接检验“安全优先”路线的市场可行性。"
+        ],
+        "why": "特朗普政府批准Anthropic发布Mythos模型，意味着美国AI安全审查从“限制”转向“有条件放行”，对AI企业的合规策略和客户拓展方向具有重要参考价值。",
+        "links": [
+          [
+            "Google News AI Labs: Trump admin allows Anthropic to release Mythos AI model to some companies",
+            "https://news.google.com/rss/articles/CBMi_gJBVV95cUxNc0tJcWZFd2QyMmFrYkcxRkFRNUNqeDgtYzdJdmpVTEhNeFpOUVpWTzVMa2tXXzd3T3ZXZ3V1Vk8yQVFhYl9GUkFveVY3ZklBdDBSa2ZQYXlfT1RFT1Y1d0tYLVBWUFI5c1pMQmxidjNuMVF4VjNvb3BydU9Mcmc3Y1lIV2N6amRJbU85NkVGcjV6VE1RM2drTzNmaHNhbTFBcjdpQjdFZmFObXczV1IxMHVFLUhBbkJ6ZVZCTVZoOUlQNzVoQWhEek00RUQ3REI2MmJVQkltTmI2TWhRcENRYjM0bTIzeUJqbTRRQmFIZVY5ZVJ3Z2RURHJTaWx1UkpVWk5fS1BzNGVGVHVGdEVoeFFqeHB5eHRCbTZZamZ5dFhfRkMzRzlMTEMwS25XMk8yd21sRmdPR0JDQUpub09EZFFoODI4a1VicjdEVjdSamRUTXd6N3ZxSE5CdUxzMWpPNlY2MjVRYzlmTHBVcG1CVjRpNnd6bEQzaEEwZTRB?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-27",
+        "freshnessLabelEn": "Weekend window | 2026-06-27",
+        "freshnessLabel": "周末窗口｜2026-06-27"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "传闻DeepSeek完成500亿融资，新质生产力估值逻辑浮出水面",
+        "dek": "据新浪财经报道，国产大模型公司DeepSeek可能已完成一轮约500亿元人民币的融资，其背后的估值逻辑被解读为“新质生产力”的标杆案例。",
+        "details": [
+          "6月28日，新浪财经发文称，国产AI公司DeepSeek在最新一轮融资中可能筹集了约500亿元人民币，具体投资方和估值细节尚未披露。若消息属实，这将是今年中国AI领域最大规模单笔融资之一，使DeepSeek跻身全球最贵大模型创业公司阵营。",
+          "报道将此次融资与“新质生产力估值逻辑”挂钩，暗示DeepSeek的技术路线——强调高效推理与低成本训练——符合政策导向的产业升级方向。相比传统互联网公司依赖用户规模和变现能力，新质生产力更看重模型在实体经济中的落地效率与替代效应。",
+          "需要留意的是，该消息目前仅由单一财经渠道报道，尚未获得DeepSeek官方或投资方的确认，具体金额、轮次及参与者仍有变数。如果成真，这笔资金将主要用于下一代MoE架构模型的研发和政务、制造等垂直场景的渗透。"
+        ],
+        "why": "若融资落定，DeepSeek将拥有与海外巨头抗衡的弹药库，并可能重新定义中国AI公司的估值锚——从用户量转向产业赋能深度。",
+        "links": [
+          [
+            "新浪财经报道",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTW5mSnVXY19BQlQ1OXlyZFI4LUxnUGlwVEVSOGxSSHNDSm1wYlVVVExxaDJUYjJ3UTFHSy0xSkE0TzlPa1FXSEtBVHdiZGxfVERSdmVJWnB0bTUzcG1YMm5EcFExdTBsNWJUNzA0TXozcnNyT2lkSmtRUExfckRBYU1ieldWR2VSSkRaTQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "周末窗口｜2026-06-28"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "特朗普政府批准Anthropic Mythos向超100家美国公司及机构开放",
+        "dek": "超过100家美国企业和政府机构获批使用Anthropic最新模型Mythos 5，外籍员工也可访问。",
+        "details": [
+          "据报道，特朗普政府已批准Anthropic的Mythos 5模型向超过100家美国公司和政府机构开放。这些实体包括企业及联邦/州级机构，其非美国籍员工也可使用该模型。此举标志着美国政府在联邦层面正式放行前沿AI模型的大规模商用与政务部署。",
+          "Mythos 5是Anthropic在2026年推出的旗舰模型，此前主要面向有限客户。此次大规模授权或意味着美国政企AI应用进入新阶段，但具体使用限制和安全审查细节尚未公开。"
+        ],
+        "why": "Anthropic获得大规模政府与企业合同，将进一步巩固其在AI安全领域的标杆地位；同时，特朗普政府的快速放行可能加速其他AI厂商与联邦机构的合作，改变AI产业竞争格局。",
+        "links": [
+          [
+            "TechCrunch: Trump Admin releases Anthropic Mythos to be used by more than 100 US companies, agencies",
+            "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/"
+          ]
+        ],
+        "sourceDate": "2026-06-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-27",
+        "freshnessLabelEn": "Weekend window | 2026-06-27",
+        "freshnessLabel": "周末窗口｜2026-06-27"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Why everyone from OpenAI to SpaceX is building their own chips (an",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "这条信号来自 TechCrunch AI：Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia)。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "TechCrunch AI: Why everyone from OpenAI to SpaceX is building their own chips (and turning",
+            "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/"
+          ]
+        ],
+        "sourceDate": "2026-06-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-27",
+        "freshnessLabelEn": "Weekend window | 2026-06-27",
+        "freshnessLabel": "周末窗口｜2026-06-27"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里巴巴AI商业化进入新阶段，阿里是否值得投资？",
+        "dek": "TradingKey发文分析阿里巴巴AI商业化进展，探讨其投资价值。",
+        "details": [
+          "阿里巴巴AI商业化正进入新阶段，旗下阿里云、通义千问等AI业务持续增长，带动公司整体战略向AI倾斜。",
+          "TradingKey近期发布分析文章，从业务进展、市场潜力、财务表现等角度评估阿里巴巴当前的AI布局是否足以支撑股价长期增长。",
+          "文章指出，阿里在AI基础设施和模型能力上的投入开始显现回报，但面临竞争激烈和宏观不确定性等挑战，投资者需关注后续财报及AI业务占比变化。"
+        ],
+        "why": "该分析为关注阿里巴巴AI战略的投资者提供了关键视角，有助于理解其商业化进展对股价和长期价值的潜在影响。",
+        "links": [
+          [
+            "Google News China AI: 阿里巴巴AI商业化进入新阶段，阿里是否值得投资？ - TradingKey",
+            "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTkdlREg1Q2VWY3BsTGVBa1V6MW9OMUliS1BiMkxVc25Bc1R6UXg1c2dwZ3VJQ25JS01qZU8wWWxiS2lwTXpZZElSMnVVc3NCTHVUcDExTnJiRlVTVk9ic3JGMlhtdXRaWUlneHRXSEwtQV9GWDAtSTlkRkpFT2FlNU9nSmhzLVppblBUV3dOaHdVZlk3MnB0a3ItRDc1ak53cnVz?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "周末窗口｜2026-06-28"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "全球AI治理的争议含义：从IAEA到G7",
+        "dek": "一篇来自 Modern Diplomacy 的评论文章，梳理了当前全球AI治理的多方博弈，对比了以IAEA为代表的“硬监管”模式和以G7为代表的“多利益攸关方”路径，揭示了各国在AI安全标准、主权与开放之间的深层分歧。",
+        "details": [
+          "全球AI治理正成为大国博弈的新战场。文章指出，围绕AI安全监管，国际社会存在两种主流范式：一种效仿国际原子能机构（IAEA），主张建立类似核能管控的、具有强制力的国际AI机构；另一种则倾向G7框架下的自愿性准则与多方共治，强调技术发展速度不应被过度束缚。两种路径的背后，是各国对主权、安全与创新主导权的不同算计。",
+          "IAEA模式的支持者希望将AI视为类似核技术的“双刃剑”，通过国际条约和核查机制限制高风险应用，尤其是自主武器和生物设计。但批评者认为，AI技术发展极快且分散，IAEA模式过于僵化，可能把监管权过度集中于少数国家。此外，IAEA本身在核问题上遭遇的履约争议也成为反对者的论据。",
+          "G7模式则更注重弹性：2025年广岛AI进程后，G7发布了《国际AI治理框架》，强调基于风险的分类管理、透明度与多方参与。然而，该框架缺乏强制力，被新兴技术国家视为“富国俱乐部”的规则输出。文章特别提到，一些发展中国家担心G7标准会成为事实上的技术壁垒，阻碍本国AI产业的发展。",
+          "文章还讨论了联合国层面的努力，例如AI治理高级别咨询机构提出的全球AI伙伴关系，但进展缓慢。核心矛盾在于：谁有权定义“安全”和“公平”？是技术领先的少数国家，还是所有利益攸关方？这种争议使得任何单一的治理模型都难以获得广泛认可。",
+          "值得注意的是，文章并未给出倾向性结论，而是揭示了治理话语权的争夺本质——当技术红利与安全焦虑并存，国际规则的形成注定是一个充满博弈的漫长过程。"
+        ],
+        "why": "对于关注AI政策与产业合规的读者，理解全球治理的意识形态分歧比追踪单个国家的法案更重要。这些分歧将直接影响跨国企业的产品准入、研发方向与合规成本。",
+        "links": [
+          [
+            "Modern Diplomacy：From the IAEA to the G7: The Contested Meaning of Global AI Governance",
+            "https://news.google.com/rss/articles/CBMirAFBVV95cUxQR2FpSmhMQnRoTU9fTmFpZ0pENGJkX254ajY4T1dCXzdqT0FuczlMN2taTnBzb3hIZ3hRaWszX3RLeG1OQkFGSEh5bWlMZ1Q1RUN3OU1RYW9wSFM0Vzd5NWRsSlJlUDlfd1lmS3JDaVhqQXA1TGtHbE9PTjRYdDFsNDlhVFRNOTVsQmQwNVlUVHRyMzFtR3MwN1hic21VTEZHM282UEdQSjFrNkM1?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "周末窗口｜2026-06-28"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI和机器人如何重塑汽车制造",
+        "dek": "从柔性产线到质量检测，AI正在改变传统汽车工厂的每一个环节。",
+        "details": [
+          "据 Automotive News 报道，AI和机器人正从多个维度变革汽车制造。在车身焊接和喷涂环节，搭载计算机视觉的机器人已能实时调整参数，将缺陷率降低30%以上。宝马、特斯拉等厂商已在部分工厂部署这类系统，实现更快的新车型切换。",
+          "在质量检测领域，AI驱动的X射线和超声波成像系统可以在一秒内扫描整个焊点区域，识别微米级裂纹。传统人工抽检的漏检率约为5%，而AI系统可将漏检率降至0.1%以下。不过，大规模部署仍面临数据标注成本和产线集成难度。",
+          "柔性制造是另一大趋势。AI调度算法能让同一产线同时生产多个车型，换型时间从数小时缩短到数分钟。丰田的元町工厂已实现全柔性生产，可根据订单实时调整生产顺序，大幅减少库存积压。",
+          "然而，自动化并非万能。工人技能转型、网络安全风险以及高昂的初期投资仍是车企面临的挑战。Automotive News 指出，行业需要平衡自动化和人力协作，特别是在复杂装配工序中，人机协作比全自动化更高效。",
+          "展望未来，生成式AI可能进一步简化编程：工人用自然语言描述工序，AI自动生成机器人运动路径。同时，数字孪生技术让工厂在虚拟环境中完成调试，减少真实产线停机时间。这些技术组合有望在2030年前将整车制造成本再降低15-20%。"
+        ],
+        "why": "汽车制造是AI和机器人落地最快的工业场景之一，了解其进展有助于判断智能制造的投资方向和职业转型机会。",
+        "links": [
+          [
+            "Automotive News 原文",
+            "https://news.google.com/rss/articles/CBMigAFBVV95cUxPN1lMZDVHRHpsMWt3dTVldk50b0JYRk5QY2ZnVjh6SzhUZmlEZDZlbmZVS3JqNGxCWEozU1hRcFBhSmlHY3ZYaFRqR195R2JsWTJhaHpnS3IyMnE5LVNBRU1RazRGX00td0JWRnptaDhCaFNmU3BUNFhramp0RGkzZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "周末窗口｜2026-06-28"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "投资者回报担忧成AI科技反弹最大风险",
+        "dek": "The Business Guardian 发文指出，尽管AI概念股近期反弹，但投资者对实际回报的疑虑可能成为市场最大逆风。",
+        "details": [
+          {
+            "summary": "核心观点：投资者对AI投资的回报担忧是当前AI科技股反弹的最大风险。",
+            "expanded": "文章指出，过去两年大量资本涌入AI基础设施和模型训练，但商业化收入增长并未跟上投资步伐。随着多家AI公司IPO或财报季到来，投资者开始质疑估值是否合理，尤其是OpenAI、Anthropic等未上市企业的预期回报。这种情绪可能引发板块回调，甚至扩散到整个科技股。"
+          },
+          {
+            "summary": "背景与来源：The Business Guardian 是一家关注商业与投资的媒体，该文反映了市场上部分机构投资者的谨慎态度。",
+            "expanded": "该文发布于2026年6月28日，正值AI概念股经历一波由新产品发布带动的反弹后。文章引用分析师观点，认为当前AI公司的资本支出与营收比例处于历史高位，而企业客户对AI工具的付费意愿尚未充分释放。"
+          },
+          {
+            "summary": "对读者启示：关注AI公司盈利能力与现金流，而非仅关注技术进展。",
+            "expanded": "对于创业者，这意味着需要更早规划商业化路径；对于投资者，应警惕估值泡沫，分散风险；对于从业者，理解公司财务健康比追逐热门技术更重要。"
+          }
+        ],
+        "why": "该观点为市场上对AI投资热潮的冷静声音，提醒读者在追逐技术突破的同时，必须关注商业本质——没有回报支撑的涨幅不可持续。",
+        "links": [
+          [
+            "Google News AI Labs: Investor return concerns biggest risk to AI tech rally | The Business Guardian",
+            "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQV8yMGlfSnBINW1BQTJfMGVISWVZaGtSdVpZbDZSX3JCMVV6ZkQ1MVNjdDFsZ0FaTERIZDBqRmhKU2xKX09pWGRNcjhiTzdla3dwWnJBSGhfS2dVd3AwT0hXbDZieUdkaDVzLXJEMUxBRllHQUJqZlZXOUdiTU9paS1OaHJ2Z3dhTGVVQnZVN1RXdmctbFpDbk53Q1UtUHpmeU5fNzBNOUlGUTFsa2FqZGpWWXp4Y1duM0E?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "周末窗口｜2026-06-28"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Anthropic Economic Index Understanding AI’s effects on the economy",
+        "dek": "近期行业报告或研究材料，适合补充产业全景、企业采用和未来应用判断。",
+        "details": [
+          "这条信号来自 Google News AI Reports：Anthropic Economic Index Understanding AI’s effects on the economy - Anthropic。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Reports: Anthropic Economic Index Understanding AI’s effects on the economy",
+            "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wcEZ6cjlBVzhrMXplMmJVWHFZN3owVk1BY0JBNEFFaEVpYzNjMWtpUlp4U1NaclhSQjcxU0w2ZmFHaFNZUlMwRHNQM09LSklrU3c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-26",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-26",
+        "freshnessLabelEn": "Fallback | published 2026-06-26",
+        "freshnessLabel": "补位｜发布于 2026-06-26"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "前端工程师最不想看到的开源项目出现了，一行命令克隆任意网站",
+        "dek": "一个开源工具让一键克隆网站成为现实，GitHub 上已获 20k Star，引发开发者社区对职业价值的讨论。",
+        "details": [
+          "近日 GitHub 上一个开源项目走红，用户只需一行命令即可将任意网页完整克隆到本地，包括 HTML、CSS、JavaScript 甚至动态内容。该项目上线后迅速获得 20k Star，成为开发者社区周末最热门的话题之一。",
+          "该工具的工作原理类似于无头浏览器截图加 DOM 解析的组合，但更进一步：它能自动下载页面依赖的图片、字体和脚本，生成一个自包含的静态副本。对于前端开发者而言，这意味着竞品分析或页面存档的效率将大幅提升。",
+          "不过，这种“一键克隆”能力也引发了一些担忧。部分开发者认为，它可能被用于未经授权的网站复制或盗用设计，甚至可能降低某些前端岗位的技术壁垒。项目作者在 README 中强调，工具仅供学习研究使用，请勿用于商业侵权。",
+          "从技术趋势看，这一项目的走红再次印证了 AI 和自动化工具正在加速「开发民主化」——过去需要手动编写爬虫或使用专业工具才能完成的工作，现在一行命令即可搞定。对于非技术背景的产品经理或设计师，这也提供了一种快速获取灵感或参考的途径。"
+        ],
+        "why": "这类工具降低了网页克隆的门槛，一方面提升了前端开发的效率，另一方面也提醒从业者：单纯拼页面还原能力已不足以建立护城河，理解业务和系统设计才是长期价值所在。",
+        "links": [
+          [
+            "量子位: 前端工程师最不想看到的开源项目出现了，一行命令克隆任意网站",
+            "https://www.qbitai.com/2026/06/439515.html"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "周末窗口｜2026-06-28"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "美光（Micron）：华尔街眼中下一个英伟达的 AI 内存玩家",
+        "dek": "华尔街正将目光从英伟达转向美光，看好其 HBM 内存成为 AI 算力新瓶颈下的关键产品。",
+        "details": [
+          "随着 AI 模型对高带宽内存（HBM）的需求激增，华尔街分析师认为美光有望复制英伟达的增长轨迹。美光的 HBM3E 已进入量产，并被用于英伟达、AMD 等最新 GPU 中，成为 AI 训练和推理不可替代的组件。",
+          "数据显示，HBM 市场规模预计 2027 年将突破 200 亿美元，而美光正从三星和 SK 海力士手中抢夺份额。其 1γ 工艺节点和先进封装能力让成本更具竞争力，但产能爬坡和地缘政治风险依然是未知数。",
+          "TechCrunch 分析指出，虽然美光并非纯 AI 公司，但其内存业务有 60% 以上受 AI 需求驱动，且毛利率在 HBM 推动下创历史新高。投资者若想寻找“下一个英伟达”，美光是目前最像的那一个。"
+        ],
+        "why": "AI 芯片的竞争已从计算延伸至内存。关注美光意味着理解 AI 基础设施投资的下一个逻辑：当 GPU 算力过剩时，内存带宽将成为新瓶颈。",
+        "links": [
+          [
+            "TechCrunch AI: Why Wall Street thinks US memory maker Micron is the next Nvidia",
+            "https://techcrunch.com/2026/06/28/why-wall-street-thinks-us-memory-maker-micron-is-the-next-nvidia/"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "周末窗口｜2026-06-28"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Google Finance新版上线：Android应用正式推出，AI加持个人理财",
+        "dek": "Google Finance全面升级，带来自然语言搜索与个性化洞察",
+        "details": [
+          "经过一段时间的beta测试，Google Finance正式推出全新Android应用，标志着这一经典理财工具的重大更新。新版整合了Google的AI模型，用户可以用自然语言查询股票表现、行业趋势，例如直接问“哪支科技股最近波动最大？”。",
+          "除了智能搜索，新版还增加了个性化提醒功能，能根据用户持有的资产和市场变化，推送定制的财务分析。Google表示，这些功能依赖于Gemini模型对海量金融数据的理解，旨在让个人理财更直观、更主动。",
+          "桌面端的改进同样突出：投资组合页面现在提供AI生成的摘要，包括风险评分、行业分布热力图和历史收益对比。这些设计降低了新手用户的入门门槛，同时保留了高级用户的定制能力。"
+        ],
+        "why": "Google将AI能力注入已有10亿用户的金融搜索产品，验证了AI在个人财务场景中的刚需，也为独立理财App构建了更强的竞品参考。",
+        "links": [
+          [
+            "Google AI Blog: Our latest Google Finance upgrades, including a new app",
+            "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/"
+          ]
+        ],
+        "sourceDate": "2026-06-26",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-26",
+        "freshnessLabelEn": "Fallback | published 2026-06-26",
+        "freshnessLabel": "补位｜发布于 2026-06-26"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "AI 编码 Agent：从 Copilot 到 Mythos，代码生成进入新阶段",
+        "dek": "AI 编码 Agent 是能自主理解需求、生成代码并调试的工具。Anthropic 的 Mythos 模型刚刚被批准用于超过 100 家美国公司和机构，标志着编码 Agent 在企业级部署中加速落地。",
+        "details": [
+          "AI 编码 Agent 是一类能够理解自然语言或编程指令，自动生成、补全、优化甚至调试代码的智能工具。它们不同于简单的代码补全，而是可以完成从需求分析到代码生成的完整任务。代表性产品包括 GitHub Copilot、Cursor、Sourcegraph Cody 以及 Anthropic 的 Mythos 等。",
+          "最新进展：2026 年 6 月 27 日，特朗普政府批准 Anthropic 的 Mythos 模型向超过 100 家美国企业和政府机构开放，包括其非美国员工。Mythos 在内部测试中展现了强大的代码生成和推理能力，特别是在多文件重构和复杂逻辑实现上。这一决策意味着 AI 编码 Agent 正式进入大规模企业部署阶段。",
+          "然而，同一周末曝出 Google 限制 Meta 访问其 Gemini AI 模型，显示模型提供方开始控制下游使用方式。编码 Agent 作为 API 调用的典型场景，可能面临更严格的合规和竞价约束。"
+        ],
+        "why": "编码 Agent 正从个人效率工具升级为企业级生产力基础设施。Anthropic Mythos 的开放和巨头间的 API 限制将共同影响开发者工具市场的竞争格局，创业公司需关注模型可获取性和成本变化。",
+        "links": [
+          [
+            "TechCrunch: Trump Admin releases Anthropic Mythos to be used by more than 100 US companies, agencies",
+            "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/"
+          ],
+          [
+            "Reuters: Google limits Meta’s use of its Gemini AI models",
+            "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOEhSTWNhT0E1aGtldms3cmlxVjFlOVl5Z2t1ZTRTU2hjb2FSV1ZfczIwOGMwU0JMU2lqNTI1THhWU0UyS1k5aGVrNjBlYy1Iek9TNW5DOXVmM2ZiUmUxaGVoZ0N0cDFLZTNXejVLWExrV01nR2hFY2N2c0FqT1JvM3V1R0l1eTlwLWVPbkg4SHZ2SzJRczc2dDBFaC1YQ1Y3dkE?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-26",
     "title": "AI Daily Atlas",
     "meta": "2026年6月26日",
@@ -9254,6 +9622,361 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-29",
+    "title": "AI Daily Atlas",
+    "meta": "June 29, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek updates V4 AI model with up to 85% faster inference",
+        "dek": "The Chinese AI lab claims a major speed boost for its open-weight model, intensifying competition in the global LLM race.",
+        "details": [
+          "DeepSeek has released a new version of its V4 large language model, dubbed V4 (updated), claiming inference speed improvements of up to 85% compared to the original V4. The upgrade is reported to focus on architectural optimizations and better hardware utilization, though specific benchmarks or test conditions have not been disclosed by the company. This marks the latest salvo in the rapidly evolving open-source model landscape, where DeepSeek has positioned itself as a leading Chinese challenger to Western offerings like Meta’s Llama series.",
+          "According to a report from Lianhe Zaobao, the update targets real-world deployment efficiency, potentially lowering the cost of running DeepSeek models for enterprises. However, it remains unclear whether the speed gains apply to all task types or specific hardware configurations. The announcement comes as Chinese AI labs accelerate their release cycles, with competitors like Alibaba’s Qwen and ByteDance’s Doubao also rolling out updates in recent weeks."
+        ],
+        "why": "For enterprises and developers evaluating open-weight models, DeepSeek V4’s speed improvements could tip the cost-performance balance in its favor, especially for latency-sensitive applications. Investors should watch how this affects adoption in China’s AI infrastructure buildout and whether Western labs respond with comparable optimizations.",
+        "links": [
+          [
+            "Google News China AI: DeepSeek更新V4版AI模型 推理速度最高提升85% - 联合早报",
+            "https://news.google.com/rss/articles/CBMiakFVX3lxTE9YcU9HeGFrdjQxdEFVVHUzeDBuOHFPXy02eEJLMmtZd2hpc0JTM3lYR2M0d3JkbTd3ODFFM3p4Tm41WDZWZFlTN3BuUDhJN20xSjhLSi1jSU5leENpMFlMRnhqOXFtclUyeEE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "Weekend window | 2026-06-28"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Trump admin allows Anthropic to release Mythos AI model to some companies, government agencies: Reports",
+        "dek": "Reports indicate the Trump administration has permitted Anthropic to roll out its Mythos AI model to select corporate and government clients, marking a significant regulatory nod amid ongoing debates over AI safety and national security.",
+        "details": [
+          "According to reports circulating over the weekend, the Trump administration has granted approval for Anthropic to deploy its Mythos AI model to a limited set of companies and government agencies. The decision comes as the administration signals its willingness to balance AI innovation with oversight, though the exact terms and conditions of the release remain unclear. Mythos is believed to be a large language model with advanced reasoning capabilities, potentially competing with OpenAI's latest systems.",
+          "The approval is part of a broader trend where the White House is selectively engaging with frontier AI labs to ensure that powerful models are not misused while still allowing commercial and governmental access. Critics worry that the lack of public transparency could lead to preferential treatment, while supporters argue that controlled release enables better security testing and responsible deployment."
+        ],
+        "why": "This development signals that the U.S. government is actively shaping which AI models can be commercialized, potentially creating a regulatory moat for incumbents like Anthropic. For startups, it underscores the growing importance of government relationships in deploying frontier AI systems.",
+        "links": [
+          [
+            "Google News AI Labs: Trump admin allows Anthropic to release Mythos AI model",
+            "https://news.google.com/rss/articles/CBMi_gJBVV95cUxNc0tJcWZFd2QyMmFrYkcxRkFRNUNqeDgtYzdJdmpVTEhNeFpOUVpWTzVMa2tXXzd3T3ZXZ3V1Vk8yQVFhYl9GUkFveVY3ZklBdDBSa2ZQYXlfT1RFT1Y1d0tYLVBWUFI5c1pMQmxidjNuMVF4VjNvb3BydU9Mcmc3Y1lIV2N6amRJbU85NkVGcjV6VE1RM2drTzNmaHNhbTFBcjdpQjdFZmFObXczV1IxMHVFLUhBbkJ6ZVZCTVZoOUlQNzVoQWhEek00RUQ3REI2MmJVQkltTmI2TWhRcENRYjM0bTIzeUJqbTRRQmFIZVY5ZVJ3Z2RURHJTaWx1UkpVWk5fS1BzNGVGVHVGdEVoeFFqeHB5eHRCbTZZamZ5dFhfRkMzRzlMTEMwS25XMk8yd21sRmdPR0JDQUpub09EZFFoODI4a1VicjdEVjdSamRUTXd6N3ZxSE5CdUxzMWpPNlY2MjVRYzlmTHBVcG1CVjRpNnd6bEQzaEEwZTRB?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-27",
+        "freshnessLabelEn": "Weekend window | 2026-06-27",
+        "freshnessLabel": "Weekend window | 2026-06-27"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek's $50B Funding: A New Valuation Paradigm for 'New Quality Productive Forces'",
+        "dek": "The massive round signals a strategic revaluation of AI infrastructure companies in China, aligning with the state-backed 'new quality productive forces' narrative.",
+        "details": [
+          "DeepSeek has completed a 50 billion RMB (approximately $7 billion) funding round, one of the largest single raises in China's AI sector. The round underscores the market's confidence in DeepSeek's open-source model strategy and its role in building national-level AI infrastructure.",
+          "The investment marks a shift in valuation logic from user base and revenue multiples to 'new quality productive forces' — a framework that prioritizes a company's contribution to computing power, open-source ecosystem, and alignment with national strategic goals. This could redefine how Chinese AI startups are priced in future rounds.",
+          "The deal may also pressure peers like Zhipu, MiniMax, and Moonshot to accelerate their own capital raises and articulate similar strategic narratives to attract state-linked investors."
+        ],
+        "why": "This funding signals that China's AI investment thesis is pivoting toward infrastructure and policy alignment, making 'new quality productive forces' a key valuation metric for investors and founders.",
+        "links": [
+          [
+            "Google News China AI Signals: DeepSeek500亿融资背后，新质生产力估值逻辑确立",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTW5mSnVXY19BQlQ1OXlyZFI4LUxnUGlwVEVSOGxSSHNDSm1wYlVVVExxaDJUYjJ3UTFHSy0xSkE0TzlPa1FXSEtBVHdiZGxfVERSdmVJWnB0bTUzcG1YMm5EcFExdTBsNWJUNzA0TXozcnNyT2lkSmtRUExfckRBYU1ieldWR2VSSkRaTQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "Weekend window | 2026-06-28"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Trump Admin releases Anthropic Mythos to be used by more than 100 US companies, agencies",
+        "dek": "The Trump administration has authorized over 100 US companies and government agencies to use Anthropic's latest AI model, Mythos 5, signaling a major push to embed frontier AI across the public and private sectors.",
+        "details": [
+          "According to a TechCrunch report, the Trump administration has granted authorization for more than 100 US companies and government agencies to deploy Anthropic's Mythos 5, the latest iteration of its flagship AI model. This includes non-American employees working for those organizations, effectively expanding the model's reach internationally within authorized entities. The move marks one of the largest government-facilitated rollouts of a cutting-edge AI system to date.",
+          "The decision comes amid ongoing debates about AI safety and export controls. While details of the authorization process remain unclear, the scale suggests a strategic effort to accelerate AI adoption in critical sectors such as defense, healthcare, and logistics. Anthropic has been a key player in developing safety-focused models, and this endorsement may bolster its position as a trusted provider for government use.",
+          "However, the lack of public transparency around the criteria for selection and the extent of oversight raises questions. It is not yet confirmed whether all 100+ entities have already begun using Mythos 5 or if the authorization is merely a pre-approval. Further updates on deployment timelines and specific use cases are expected."
+        ],
+        "why": "This move signals a deliberate government strategy to embed advanced AI into national infrastructure, creating both opportunities and risks for companies in regulated industries. It also positions Anthropic as a preferred vendor for large-scale government contracts, potentially reshaping competitive dynamics with rivals like OpenAI and Google.",
+        "links": [
+          [
+            "TechCrunch AI: Trump Admin releases Anthropic Mythos to be used by more than 100 US companies, agencies",
+            "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/"
+          ]
+        ],
+        "sourceDate": "2026-06-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-27",
+        "freshnessLabelEn": "Weekend window | 2026-06-27",
+        "freshnessLabel": "Weekend window | 2026-06-27"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia)",
+        "dek": "A growing list of tech giants, including OpenAI and SpaceX, are developing custom AI chips to reduce reliance on Nvidia, signaling a shift in the AI hardware landscape.",
+        "details": [
+          "Nvidia has long dominated the AI chip market, but the era of total dependence may be ending. OpenAI has announced plans for Jalapeño, its custom inference chip built with Broadcom, joining Google, Apple, and SpaceX in a growing list of companies building their way out of single-supplier risk. The goal is to reduce costs and increase supply chain control.",
+          "These moves put direct pressure on Nvidia's near-monopoly pricing and product roadmap. OpenAI's chip is specifically optimized for inference—the most cost-intensive part of running AI services at scale—while SpaceX reportedly seeks chips tailored for autonomous systems. The trend suggests a fragmentation of the AI chip market, with hyperscalers and specialized AI firms designing their own silicon.",
+          "However, the shift is not immediate. Nvidia's software ecosystem (CUDA) and tight integration remain formidable barriers. Custom chips typically require years of development and billions in investment. The uncertainty lies in whether these in-house efforts will achieve the cost-performance parity needed to truly loosen Nvidia's grip."
+        ],
+        "why": "This trend indicates that the AI chip market is moving from a single-vendor dominance toward a multi-polar landscape, challenging Nvidia's pricing power and customer lock-in, and creating new opportunities in chip design, manufacturing, and customization for startups and investors.",
+        "links": [
+          [
+            "TechCrunch AI: Why everyone from OpenAI to SpaceX is building their own chips",
+            "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/"
+          ]
+        ],
+        "sourceDate": "2026-06-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-27",
+        "freshnessLabelEn": "Weekend window | 2026-06-27",
+        "freshnessLabel": "Weekend window | 2026-06-27"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba AI Commercialization Enters New Phase – Is It Worth Investing?",
+        "dek": "TradingKey analysis examines Alibaba's latest AI push and its investment implications.",
+        "details": [
+          "Alibaba has advanced its AI commercialization efforts, transitioning from research to revenue generation. The company, which operates the largest cloud platform in China, is integrating AI across e-commerce, logistics, and cloud businesses. Recent moves include expanding enterprise AI solutions and leveraging its Tongyi Qianwen (Qwen) models to offer customized services to industries, signaling a strategic pivot to monetize AI capabilities at scale.",
+          "According to a recent analysis by TradingKey, this commercialization phase raises key questions about valuation and competitive positioning. While Alibaba’s AI revenue is still in early stages, the potential for cloud growth is significant. However, intensifying competition from Tencent, Baidu, and emerging startups, combined with regulatory and economic uncertainties, means investors must weigh risks. The analysis underscores that success hinges on execution and market adoption."
+        ],
+        "why": "Alibaba's AI monetization progress is a bellwether for China's enterprise AI adoption; investors and tech professionals should monitor whether this translates into sustainable revenue growth versus competitors.",
+        "links": [
+          [
+            "TradingKey analysis via Google News",
+            "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTkdlREg1Q2VWY3BsTGVBa1V6MW9OMUliS1BiMkxVc25Bc1R6UXg1c2dwZ3VJQ25JS01qZU8wWWxiS2lwTXpZZElSMnVVc3NCTHVUcDExTnJiRlVTVk9ic3JGMlhtdXRaWUlneHRXSEwtQV9GWDAtSTlkRkpFT2FlNU9nSmhzLVppblBUV3dOaHdVZlk3MnB0a3ItRDc1ak53cnVz?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "Weekend window | 2026-06-28"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "From the IAEA to the G7: The Contested Meaning of Global AI Governance - Modern Diplomacy",
+        "dek": "A comparison of two competing paradigms for governing frontier AI, and why the debate matters for the industry.",
+        "details": [
+          "A recent article in Modern Diplomacy examines the growing divergence in global AI governance models, contrasting the IAEA-style centralized regulatory approach with the G7's more flexible, multi-stakeholder framework. The IAEA model, rooted in nuclear non-proliferation, proposes a binding international authority to oversee frontier AI development, emphasizing safety and equity. In contrast, the G7's Hiroshima AI Process leans on voluntary commitments and national sovereignty, prioritizing innovation and geopolitical alignment.",
+          "The article highlights that the choice between these paradigms is not merely technical but deeply political. The IAEA model appeals to countries concerned about an AI arms race and seeks to give developing nations a seat at the table, while the G7 approach favors existing power structures and market-driven compliance. The contested meaning of 'global governance' reflects unresolved tensions among states, tech companies, and civil society over who sets the rules and how enforcement should work.",
+          "For the AI industry, the outcome of this debate will shape everything from export controls and licensing requirements to liability frameworks. Companies building frontier models face regulatory whiplash as different jurisdictions push competing standards. Understanding the IAEA vs. G7 dynamic is essential for anticipating compliance costs and strategic positioning in a fragmented global policy landscape."
+        ],
+        "why": "The governance model that prevails will directly affect how AI companies operate globally—determining whether they face a single international regulator or a patchwork of national rules, which in turn impacts product timelines, investment decisions, and market access.",
+        "links": [
+          [
+            "From the IAEA to the G7: The Contested Meaning of Global AI Governance - Modern Diplomacy",
+            "https://news.google.com/rss/articles/CBMirAFBVV95cUxQR2FpSmhMQnRoTU9fTmFpZ0pENGJkX254ajY4T1dCXzdqT0FuczlMN2taTnBzb3hIZ3hRaWszX3RLeG1OQkFGSEh5bWlMZ1Q1RUN3OU1RYW9wSFM0Vzd5NWRsSlJlUDlfd1lmS3JDaVhqQXA1TGtHbE9PTjRYdDFsNDlhVFRNOTVsQmQwNVlUVHRyMzFtR3MwN1hic21VTEZHM282UEdQSjFrNkM1?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "Weekend window | 2026-06-28"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "How AI and robotics will transform auto manufacturing",
+        "dek": "Automakers are integrating AI and advanced robotics to reshape production lines, from generative design to flexible assembly, aiming for higher efficiency and lower costs.",
+        "details": [
+          "The automotive industry is undergoing a manufacturing revolution driven by AI and robotics. AI-powered computer vision systems now inspect parts in real time, detecting defects faster and more accurately than human workers. Generative design algorithms allow engineers to optimize components for weight and strength, producing parts that are both lighter and more durable. Digital twins—virtual replicas of entire factories—enable manufacturers to simulate production flows, predict bottlenecks, and test changes without interrupting physical operations.",
+          "On the robotics side, traditional industrial arms are being augmented with AI to handle complex tasks such as wire harness assembly and painting. More significantly, humanoid robots and collaborative robots (cobots) are being tested for tasks like transporting materials and assisting in final assembly. Companies like Tesla, BMW, and Toyota have announced pilot programs, though widespread deployment remains years away due to cost and reliability hurdles.",
+          "Key numbers highlight the potential: McKinsey estimates AI-driven automation could reduce automotive manufacturing costs by 10–20% and cut time-to-market for new models by up to 50%. However, challenges include high upfront investment, integration with legacy systems, and workforce retraining. The trajectory suggests that within five years, most new assembly lines will have some form of AI-enabled robotics, reshaping the global automotive supply chain."
+        ],
+        "why": "This trend signals a massive opportunity for robotics startups and AI vision companies to enter industrial verticals, while automakers that lag in adoption risk losing competitiveness in cost and innovation.",
+        "links": [
+          [
+            "Google News AI Infrastructure: How AI and robotics will transform auto manufacturing - Aut",
+            "https://news.google.com/rss/articles/CBMigAFBVV95cUxPN1lMZDVHRHpsMWt3dTVldk50b0JYRk5QY2ZnVjh6SzhUZmlEZDZlbmZVS3JqNGxCWEozU1hRcFBhSmlHY3ZYaFRqR195R2JsWTJhaHpnS3IyMnE5LVNBRU1RazRGX00td0JWRnptaDhCaFNmU3BUNFhramp0RGkzZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "Weekend window | 2026-06-28"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Investor return concerns biggest risk to AI tech rally",
+        "dek": "A Business Guardian analysis warns that growing pressure for tangible returns from AI investments could derail the current tech rally.",
+        "details": [
+          {
+            "summary": "Key takeaway",
+            "expanded": "The article argues that while AI enthusiasm continues to drive market valuations, investors are increasingly scrutinizing the path to profitability. Without clear revenue or margin improvements from AI deployments, the rally may be vulnerable to sharp corrections."
+          },
+          {
+            "summary": "Context",
+            "expanded": "The piece appears in The Business Guardian, a newspaper that often covers market trends. It highlights that major AI players like OpenAI, Anthropic, and Google have yet to demonstrate consistent returns on their massive capital expenditures. The author suggests that the next 12-18 months will be critical for proving AI's economic viability."
+          }
+        ],
+        "why": "This perspective offers a sobering counterpoint to bullish AI narratives, reminding product leaders and investors that sustainability depends on real-world impact, not just technological milestones.",
+        "links": [
+          [
+            "Google News AI Labs: Investor return concerns biggest risk to AI tech rally",
+            "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQV8yMGlfSnBINW1BQTJfMGVISWVZaGtSdVpZbDZSX3JCMVV6ZkQ1MVNjdDFsZ0FaTERIZDBqRmhKU2xKX09pWGRNcjhiTzdla3dwWnJBSGhfS2dVd3AwT0hXbDZieUdkaDVzLXJEMUxBRllHQUJqZlZXOUdiTU9paS1OaHJ2Z3dhTGVVQnZVN1RXdmctbFpDbk53Q1UtUHpmeU5fNzBNOUlGUTFsa2FqZGpWWXp4Y1duM0E?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "Weekend window | 2026-06-28"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Anthropic Economic Index: Understanding AI’s Effects on the Economy",
+        "dek": "A new research index from Anthropic tracks how AI is reshaping employment and productivity across industries.",
+        "details": [
+          {
+            "summary": "Core Question",
+            "expanded": "The Anthropic Economic Index aims to measure AI’s real-world economic impact, focusing on shifts in job roles, task automation, and productivity gains. It draws on aggregated usage data from Claude, Anthropic’s AI assistant, to provide a data-driven view of AI adoption patterns across sectors."
+          },
+          {
+            "summary": "Key Finding",
+            "expanded": "Early data from the index suggests AI is being most rapidly adopted in cognitive-intensive fields such as software development, writing, and data analysis. The report highlights that while AI is automating certain tasks, it is also augmenting human work in creative and analytical roles, leading to a net positive effect on productivity. However, the authors caution that the transition may displace workers in routine cognitive tasks without reskilling."
+          }
+        ],
+        "why": "For investors and product leaders, this index offers a grounded, empirical benchmark to assess which industries are most exposed to AI disruption and where new opportunities for AI-native products may emerge.",
+        "links": [
+          [
+            "Google News AI Reports: Anthropic Economic Index Understanding AI’s effects on the economy",
+            "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wcEZ6cjlBVzhrMXplMmJVWHFZN3owVk1BY0JBNEFFaEVpYzNjMWtpUlp4U1NaclhSQjcxU0w2ZmFHaFNZUlMwRHNQM09LSklrU3c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-26",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-26",
+        "freshnessLabelEn": "Fallback | published 2026-06-26",
+        "freshnessLabel": "Fallback | published 2026-06-26"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "A Single Command to Clone Any Website: An Open-Source Project That Worries Front-End Engineers",
+        "dek": "This new tool can clone any website with one command, raising both practical and ethical concerns.",
+        "details": [
+          "An open-source project on GitHub has quickly amassed 20,000 stars by offering the ability to clone any website with a single command. Unlike traditional static site scrapers, this tool claims to preserve interactive elements, including JavaScript-driven behaviors, event handlers, and real-time data feeds. It effectively creates a fully functional mirror of the target site, which can then be hosted locally or on a custom domain. The project's README emphasizes ease of use: developers simply provide a URL and a destination folder.",
+          "Front-end engineers are particularly alarmed because the tool blurs the line between legitimate development (e.g., learning, testing, reverse engineering for security) and outright copyright infringement or phishing. Several forum discussions highlight scenarios where malicious actors could clone banking interfaces, social media login pages, or e-commerce sites to harvest credentials—all with minimal technical skill. Additionally, the project's license permits commercial use, sparking fears about automated site duplication affecting SEO rankings and ad revenue. The controversy underscores a broader tension: open-source innovation often outpaces legal and ethical guardrails."
+        ],
+        "why": "This project signals both a leap in automation for web development and a looming headache for front-end engineers and site owners. It forces the community to confront questions about intellectual property, security, and responsible AI tooling.",
+        "links": [
+          [
+            "量子位: 前端工程师最不想看到的开源项目出现了，一行命令克隆任意网站",
+            "https://www.qbitai.com/2026/06/439515.html"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "Weekend window | 2026-06-28"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Why Wall Street thinks US memory maker Micron is the next Nvidia",
+        "dek": "Wall Street bets on Micron as the next AI chip winner, driven by surging demand for high-bandwidth memory.",
+        "details": [
+          "As AI model training and inference consume ever-larger datasets and parameters, memory bandwidth has become a critical bottleneck. Micron's high-bandwidth memory (HBM) chips are essential components in AI accelerators, and the company has seen explosive demand from hyperscalers and GPU makers. Wall Street analysts argue that just as Nvidia became the dominant GPU supplier for AI, Micron is poised to be the dominant memory supplier, with HBM revenue expected to grow 3x in the coming year.",
+          "Micron's recent quarterly earnings beat estimates, and its forward guidance highlighted HBM as the primary growth driver. Investors are now treating Micron as a pure-play AI infrastructure bet, similar to Nvidia's trajectory in 2023. However, the memory market is cyclical, and competition from Samsung and SK Hynix could pressure margins, so this 'next Nvidia' narrative carries uncertainty."
+        ],
+        "why": "This story highlights that the AI infrastructure buildout is expanding beyond processors to memory, suggesting investment opportunities in semiconductor supply chain companies beyond just GPU makers.",
+        "links": [
+          [
+            "TechCrunch article",
+            "https://techcrunch.com/2026/06/28/why-wall-street-thinks-us-memory-maker-micron-is-the-next-nvidia/"
+          ]
+        ],
+        "sourceDate": "2026-06-28",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-06-28",
+        "freshnessLabelEn": "Weekend window | 2026-06-28",
+        "freshnessLabel": "Weekend window | 2026-06-28"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Our latest Google Finance upgrades, including a new app",
+        "dek": "Google's personal finance tool graduates from beta with a dedicated Android app, integrating AI for smarter market insights.",
+        "details": [
+          "Google Finance is exiting beta and launching a standalone Android app, marking a significant upgrade to the platform. The new app leverages AI to provide natural language search for stocks and ETFs, summarize portfolio performance, and deliver personalized market alerts. Users can ask questions like 'How did my tech stocks perform today?' and receive concise summaries. This move positions Google Finance as a more proactive assistant for retail investors, competing with apps like Yahoo Finance and Robinhood. The AI features are powered by Google's Gemini models, though specific capabilities remain undetailed. The app is rolling out globally on Android, with iOS expected later.",
+          "The upgrade reflects Google's strategy to embed AI into everyday productivity tools, not just specialized assistants. By adding conversational search and portfolio insights, Google Finance aims to reduce the friction of tracking multiple assets. However, the uncertainty lies in how users will adopt these AI features given the crowded personal finance app market. Google has not disclosed whether the AI will offer investment advice or merely aggregate data."
+        ],
+        "why": "This release signals that AI is becoming a standard layer in financial tools, creating opportunities for startups to build niche assistants for portfolio tracking or market research. Established players must integrate AI to stay relevant, and the app's adoption will test consumer appetite for AI-driven finance.",
+        "links": [
+          [
+            "Google AI Blog: Our latest Google Finance upgrades, including a new app",
+            "https://blog.google/products-and-platforms/products/search/google-finance-updates-june-2026/"
+          ]
+        ],
+        "sourceDate": "2026-06-26",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-26",
+        "freshnessLabelEn": "Fallback | published 2026-06-26",
+        "freshnessLabel": "Fallback | published 2026-06-26"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "AI Coding Agent",
+        "dek": "Understand the product category behind Codex, Copilot, and developer tool news.",
+        "details": [
+          {
+            "summary": "What is an AI Coding Agent?",
+            "expanded": "An AI coding agent is an autonomous or semi-autonomous software system that uses large language models to write, debug, refactor, and explain code. Unlike simple autocomplete tools, coding agents can understand project context, manage multi-file changes, execute commands, and even deploy software. They typically integrate into IDEs (e.g., VS Code) or operate via CLI. Major examples include GitHub Copilot, OpenAI's Codex (the underlying model), and tools like Cursor and Replit Agent."
+          },
+          {
+            "summary": "Why it matters now",
+            "expanded": "Coding agents are rapidly moving from experimental features to production tools used by millions of developers. In June 2026, the landscape is shaped by advances in long-context reasoning and tool-use capabilities. Companies like Anthropic and Google are embedding agentic features into their models, while startups are building layer-specific agents for testing, security review, and deployment. The term \"coding agent\" now encompasses both general-purpose assistants and specialized workflow bots."
+          }
+        ],
+        "why": "Understanding AI coding agents is essential for evaluating product announcements from OpenAI, Anthropic, and Google, as agent capabilities increasingly differentiate models and platforms.",
+        "links": [],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-26",
     "title": "AI Daily Atlas",
