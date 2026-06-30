@@ -1,5 +1,333 @@
 const archiveZh = [
   {
+    "date": "2026-06-30",
+    "title": "AI Daily Atlas",
+    "meta": "2026年6月30日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek V4更新DSpark，推理速度提升80%",
+        "dek": "DeepSeek V4推出新推理优化技术DSpark，声称速度提升80%，有望降低部署门槛。",
+        "details": [
+          "DeepSeek V4 近期推出了名为 DSpark 的新型推理优化引擎，官方宣称其推理速度相比之前提升了 80%。目前技术细节尚未公开，业界推测 DSpark 可能结合了稀疏化计算和动态量化方法。如果数据属实，这将是开源大模型在推理效率上的又一里程碑。",
+          "推理速度的提升直接意味着更低的计算成本和更快的响应时间，对于需要高吞吐量的应用场景（如实时对话、代码生成）尤为关键。不过，由于缺乏第三方独立评测，实际效果仍需验证。"
+        ],
+        "why": "对于 AI 基础设施投资者，推理速度提升直接降低每 token 成本，可能加速 DeepSeek 在企业级市场的渗透；开源社区则期待 DSpark 的代码开源，这将进一步降低中小开发者部署大模型的门槛。",
+        "links": [
+          [
+            "Google News China AI: 刚刚，DeepSeek V4更新DSpark，推理速度提升80% - 投资界",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5lVmswS1k4ME56ZnpjSlZqSmRLZkI0aDNwcmY3ZU5OcC0xdDJGM2QxX2dSUW96MHVkRFFwcHh1YkllOS1vbUxNaHNDZTNQdzl6bUxGNUFR?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "从DeepSeek传闻看AI创业融资：创始团队的控制权防线",
+        "dek": "PANews以DeepSeek可能达成的交易结构为例，梳理了创始团队在融资中应坚守的几项核心控制权，为AI创业者提供了一份实操参考。",
+        "details": [
+          "PANews近日发表深度分析，以DeepSeek传闻中的融资交易结构为切入点，探讨AI创业公司在资本大举进入时，创始团队必须守住的控制权底线。文章指出，随着AI创业公司估值攀升，投资方往往要求特殊保护条款，创始团队需在董事会席位、一票否决权以及股权稀释比例等关键维度上保持警惕。",
+          "文章列举了常见的控制权陷阱：例如，A/B股架构虽能保留投票权，但在后续多轮融资中可能被削弱；反稀释条款若设计不当，可能在下一轮低估值融资时严重摊薄创始人股份。作者建议创始团队在初期就明确关键事项的否决权范围，并设定董事会组成的最低保障线。",
+          "虽然DeepSeek的具体融资条款尚未公开确认，但PANews的分析基于多家AI创业公司的真实案例，揭示了高融资额背后的控制权博弈。对于正处于融资窗口期的中国AI创业者来说，这篇文章提供了一个实用的风险清单：从投票权比例到清算优先权，每一项都可能决定创始团队的长期话语权。"
+        ],
+        "why": "对于AI创业者，这篇文章提供了一个实用的融资谈判框架。理解如何在引入资本的同时保留核心控制权，是公司长期战略安全的关键。投资者也应关注创始团队的治理结构，这通常影响创业公司的决策效率和长期价值。",
+        "links": [
+          [
+            "PANews原文",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBNX1RnOU5sWUlPVFY5LXdiZWJHbGt1aFp5RmNHQUdiWlBBSVJfSDVxMFF3LU5XdFFfVGpYeGZGLVlEOTk5SVpfS0stTWpYa19mekNGZWdWQThITG9aTGFtWXB2QkZjZ09fQ0kxT3RCVlE1YU5MRHAwVnNtb2xTb00?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "加州政府与Anthropic签署首个AI公私合作：用Claude优化公共服务",
+        "dek": "加州州长纽森宣布一项开创性合作，向州机构提供Anthropic的AI工具，旨在提升政府服务效率与可及性。",
+        "details": [
+          "加州州长加文·纽森（Gavin Newsom）于6月29日宣布，加州政府与AI公司Anthropic建立首次此类合作伙伴关系，将为州政府机构提供Anthropic的AI工具（包括Claude模型），以改善加州居民的服务体验。这项合作被视为政府采用前沿AI的里程碑，旨在通过自动化文档处理、智能问答和审批流程等方式，提升公共服务效率。",
+          "虽然具体部署范围和时间表尚未公布，但州政府官员表示，初期将聚焦于高需求领域，如社会福利申领、许可证审批和公共卫生信息查询。加州此举可能为其他州乃至联邦政府提供AI落地的参考模板，同时也凸显了Anthropic在安全AI领域的政策影响力。",
+          "值得注意的是，该合作正值加州立法机构审议多部AI监管法案的敏感期。纽森政府与Anthropic的合作，可能在一定程度上缓解公众对AI进入公共部门的安全担忧，但也引发了关于技术依赖和就业替代的讨论。"
+        ],
+        "why": "政府与AI公司的大规模合作将加速公共部门的智能化转型，同时为AI企业开辟新的B端收入来源，但数据隐私与监管合规问题将成为后续焦点。",
+        "links": [
+          [
+            "Google News AI Labs: Governor Newsom announces a first-of-its-kind partnership, providing Anthropic tools to state agencies",
+            "https://news.google.com/rss/articles/CBMihwJBVV95cUxNNVdrb0JtdWt6OU1tU2FicENIa0R3SFBPaHVPYjJHQThPX1ZQR0dZNndHeEI1Nlo1eDVJMDJNQlJUOEcxZldnUUtGQVUyWEhrV29SMGhFMmpubEt6MWxUai0zdmluM1k4YTBNUVBkUmsyZUFwVXRpWVhpcDJKRnpBR1ppNjBMZXhoX0RNUTlOUERKenlyQkc4Tjd3aXh1ZHpzSV9wWGdvWlRDNHpsWUEwVE1BVS1ZVHYwVnNackQ0ejl4NElKVHpXS1NkX2VaMDA3TFRjX3kzVEloS3Q2S1Yzc1phekx0UjE1clFzQVN1NkZRb3VfMGZETWV3cXV6ZnNMQWUwSzNkOA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Claude Mythos让梁文锋决定融资",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 量子位：Claude Mythos让梁文锋决定融资。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "量子位: Claude Mythos让梁文锋决定融资",
+            "https://www.qbitai.com/2026/06/439863.html"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里健康携手扬子江药业发布国产抗ED新药泰妥妥",
+        "dek": "新华网报道，国产抗ED新药泰妥妥正式发布，阿里健康与扬子江药业合作加速创新药可及性。",
+        "details": [
+          "国产抗ED新药泰妥妥于6月29日发布，由阿里健康与扬子江药业联合推动。该药为国产创新药，旨在提升勃起功能障碍治疗的可及性。阿里健康将利用其数字化渠道和医药供应链能力，加速新药从研发到患者端的覆盖。",
+          "此次合作标志着传统药企与互联网健康平台的深度融合。扬子江药业负责生产与临床数据，阿里健康则提供线上问诊、药品配送等一站式服务。新药定价与上市时间尚未公布，但双方强调将优先保障患者可负担性。"
+        ],
+        "why": "阿里健康通过数字化平台赋能传统药企，为创新药商业化提供新路径，这对医药电商和数字健康领域的投资与创业具有参考价值。",
+        "links": [
+          [
+            "Google News China AI Signals: 国产抗ED新药泰妥妥发布 阿里健康携手扬子江药业加速创新药可及 - 新华网",
+            "https://news.google.com/rss/articles/CBMifEFVX3lxTE9NbVJfS3gwWDRBU25TVjVsUC0tOVdCQUVVRFR1LTlwWkpxRW0wNE5KNzhBek5fcGtwZW8zSVFRZlVmSEFYdk54Y2Zmdlo1UGl6TzloTXQzczF0UlgwS3dHSUtZV2JGWjFGY25GS2FESm1zdmRCUVFva2hKeGo?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Google rationed Meta's access to Gemini amid an AI compute shortag",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News AI Models：Google rationed Meta's access to Gemini amid an AI compute shortage - qz.com。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Models: Google rationed Meta's access to Gemini amid an AI compute shortage",
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTE1jTWp2bDVMS1R2Wm5senJNQVFVbGo1bjJPMmVZTklGM2c2NE5XWkQ5a3lRV3k1RE1lMlRVNGdvRXlxdFdqM19wdHBWOTRjSWh6dzNZN2w4VVNxVXlGYk5Tc0l0QlRna0pGSVgteA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "物理AI与机器人成为Computex Taipei 2026半导体厂商的焦点",
+        "dek": "IDC指出，半导体供应商在Computex上集中展示物理AI和机器人解决方案，预示着AI从数据中心向物理世界延伸的趋势。",
+        "details": [
+          "Computex Taipei 2026上，NVIDIA、AMD、Intel等半导体巨头纷纷展示面向物理AI和机器人的芯片和平台。物理AI指的是能够感知、理解并与物理世界交互的AI系统，例如人形机器人、自动驾驶、工业自动化。半导体厂商推出专用芯片（如NVIDIA的Jetson Thor、Intel的Movidius等）和软件栈来支持实时感知和决策。",
+          "IDC分析认为，这标志着AI推理正在从云端向边缘端加速迁移。机器人对低延迟和高能效的要求推动了NPU和异构计算的发展。此外，人形机器人成为展会亮点，多家公司展示了原型机，旨在通过AI驱动更自然的交互和自主操作。",
+          "这一趋势对云计算、自动驾驶、制造业等领域产生深远影响：物理AI将AI能力从虚拟世界带入现实，为半导体厂商开辟了新的收入来源，同时推动整个产业链向更智能、更自动化的方向演进。"
+        ],
+        "why": "此信号表明半导体巨头正将物理AI视为下一个增长引擎，投资相关芯片和平台的公司有望受益。对于创业者和投资者，边缘AI和机器人软件栈存在巨大机会。",
+        "links": [
+          [
+            "IDC报道",
+            "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcmRBSjdQeXV1eWFOZkZsQnhrQzlOZkxvUmNHcVNadDl4ZDB1a1hIZEFCOXdfdlNHMW5iQ0hEclVGX2V2b1JXX1BKYjVyUEs0RHZaaEdnSl96cFVUMEpRNmI4VzFKbGJ1M0pOX3dvaTdrcTdEeEU0by1HMUpVOV9jd3NkdUhZQmNIblJFMjRIcGpmSF9SM1RPSHBvNV9jMHVS?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "ToE：面向假新闻验证的分层证据推理框架",
+        "dek": "新论文提出 Tree of Evidence 框架，用强化学习驱动的多源检索与论证树聚合，提升 AI 时代的事实核查可信度。",
+        "details": [
+          "随着生成式 AI 和 GEO（生成引擎优化）技术的滥用，虚假信息可以通过对抗性手段被检索系统优先呈现，进而污染大语言模型的推理结果。传统的单轮事实核查方法难以应对这种动态、多源的欺骗策略。",
+          "来自 arXiv 的预印本提出了 Tree of Evidence（ToE）框架，将每条待验证的声明建模为一棵动态扩展的论证树。框架包含三个核心模块：基于强化学习的多源检索智能体、证据评估智能体，以及论证树聚合算法。三者协同工作，能够迭代地分解声明、检索证据并聚合推理路径，最终给出可解释的核查结论。",
+          "ToE 的关键创新在于引入层次化推理——从根声明开始，逐步拆解出子主张并分别检索证据，再通过树结构汇总置信度。这种分层设计不仅提升了复杂虚假信息的检测准确率，还使每一步推理均可追溯，增强了结果的可信度。",
+          "目前该研究仍为学术预印本，尚未披露具体实验数据集与对比基线。但其所针对的 GEO 污染问题，正是当下 AI 内容生态面临的真实威胁，ToE 提供了一种从检索到推理的全链路防御思路。"
+        ],
+        "why": "ToE 框架将事实核查从简单的单次验证升级为可解释的层次化推理，对内容平台、搜索引擎和 LLM 应用的防滥用建设具有参考价值。",
+        "links": [
+          [
+            "arXiv: ToE 论文",
+            "https://arxiv.org/abs/2606.27736"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Databricks 联合创始人：前沿生态必须开放",
+        "dek": "在 Latent Space 播客中，Matei Zaharia 和 Reynold Xin 讨论每家公司如何构建自己的 Agent Cloud",
+        "details": [
+          "Databricks 两位技术领袖——Apache Spark 创始人 Matei Zaharia 和联合创始人 Reynold Xin——在 Latent Space 播客中罕见同台，畅谈“为什么前沿生态系统必须开放”。核心议题是：随着 AI 代理（Agent）走向生产，企业是否需要像构建数据云一样构建自己的“代理云”（Agent Cloud），以及开源在其中扮演的角色。",
+          "Zaharia 认为，未来每家公司都会拥有一个内部的 Agent 平台，用于编排、监控和治理 AI 代理，就像今天的数据平台一样。这个平台不能完全依赖闭源供应商，否则会产生锁定风险。Xin 则补充，开源模型和开放标准是确保互操作性和持续创新的基础，尤其是在多代理协作场景下。",
+          "访谈中两人还对比了 OpenAI、Google 的闭源策略与 Meta、Databricks 主张的开源路线。他们指出，虽然闭源模型在特定基准上可能领先，但企业级部署更看重定制、安全和对底层数据的控制，这些正是开源的优势所在。",
+          "这场对话对于理解当前 AI 生态的分歧具有参考价值。Zaharia 和 Xin 的观点代表了硅谷“开源派”的经典立场，即开放生态才能让更多企业参与前沿创新，而非将命运交给少数供应商。"
+        ],
+        "why": "当一个数据基础设施巨头的两位创始人同时为开源生态站台，这本身就是行业风向标。对于企业技术决策者，理解“代理云”的开放与封闭之争，将直接影响 AI 基础设施的投资路线。",
+        "links": [
+          [
+            "Latent Space 播客原文",
+            "https://www.latent.space/p/databricks"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-25",
+        "freshnessLabelEn": "Fallback | published 2026-06-25",
+        "freshnessLabel": "补位｜发布于 2026-06-25"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Anthropic 经济指数：AI 对就业与产业的量化影响",
+        "dek": "Anthropic 基于 Claude 使用数据发布首份宏观报告，从任务层面拆解 AI 的经济效应。",
+        "details": [
+          "Anthropic 于 6 月 26 日发布《Anthropic Economic Index》，这是该实验室首次公开的经济影响分析。报告使用 Claude 的实际交互数据，将工作任务划分为“可增强”“可替代”和“基本不受影响”三类，为评估 AI 对就业结构的影响提供了新的量化框架。",
+          "初步分析显示，AI 工具目前在软件开发、文案撰写和数据分析等认知密集型领域的渗透率最高，但影响更多表现为任务增强而非完全替代——即 AI 提升效率，而非直接取代人类岗位。报告强调，当前数据主要来自英语和高端技能用户，可能低估了 AI 对中低技能和全球南方国家的影响。",
+          "该研究与斯坦福 AI 指数、麦肯锡报告等宏观统计不同，聚焦于任务级别的微观变化，能更精确反映 AI 在具体工作中的实际渗透情况。报告呼吁政策制定者建立 AI 使用追踪机制，并提前布局技能再培训体系。"
+        ],
+        "why": "对于创业者和投资者，该报告提供了一种从任务粒度衡量 AI 机会与风险的视角：短期内增强型工具更值得关注，而政策与再培训需求可能催生新市场。",
+        "links": [
+          [
+            "Google News 报道",
+            "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wcEZ6cjlBVzhrMXplMmJVWHFZN3owVk1BY0JBNEFFaEVpYzNjMWtpUlp4U1NaclhSQjcxU0w2ZmFHaFNZUlMwRHNQM09LSklrU3c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-26",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-26",
+        "freshnessLabelEn": "Fallback | published 2026-06-26",
+        "freshnessLabel": "补位｜发布于 2026-06-26"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "EntMTP：用熵引导的多令牌预测加速LLM推理",
+        "dek": "新方法根据上下文不确定性动态调整推测深度，有望降低推理成本。",
+        "details": [
+          "多令牌预测已被广泛用于提升大语言模型的训练效率和生成质量，也是自推测解码的主流方案。但现有模型在推理时采用固定的树状注意力拓扑，无论当前上下文是清晰还是模糊，都使用相同的推测深度和计算量。EntMTP 的作者指出，这种做法与自然语言的熵模式相悖：在确定性高的低熵区域，模型可以安全地一次预测多个令牌；而在不确定性高的高熵区域，保守的单步预测更为合理。",
+          "EntMTP 引入熵引导机制，根据每步生成的置信度动态调整多令牌预测的深度。初步实验显示，该方法在不牺牲生成质量的前提下，可显著减少验证阶段的无效计算，从而加快推理速度。该工作由 arXiv 预印本发布，尚未公布开源代码，但其思路对 agent、工具链和基础设施的优化具有参考价值。"
+        ],
+        "why": "对于关注 LLM 推理效率的团队，EntMTP 提供了一种轻量级的动态推测方案，可能比静态 MTP 更适配真实场景，值得关注后续开源实现。",
+        "links": [
+          [
+            "arXiv cs.CL: EntMTP: Accelerating LLM Inference with Entropy Guided Multi Token Prediction",
+            "https://arxiv.org/abs/2606.27550"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Flowith：用画布组织多步思考的 AI 工作台",
+        "dek": "对习惯空间化思维的人来说，Flowith 把对话、研究和多步工作流可视化在一张画布上，让 AI 协作更像在整理一块白板，而不是聊天框。",
+        "details": [
+          "Flowith 的核心思路是用视觉画布替代传统聊天界面。用户可以在画布上自由放置提示词、来源链接和输出，用连线或分组明确步骤之间的逻辑关系。这种方式特别适合需要多轮推理或跨来源整合的任务，比如写研究综述、做竞品分析或拆解复杂问题。",
+          "和其他 AI 工作台不同，Flowith 不强行要求用户按线性对话推进。你可以先画一个中心问题，再逐步添加分支思路和参考资料，所有节点都保持可见和可编辑。这种设计降低了“AI 黑箱”感，让用户更清楚每一步的输入和输出。",
+          "产品目前支持接入多种主流模型（如 GPT-4o、Claude），但亮点不在模型本身，而是如何管理模型的产出。对于频繁做项目调研或内容策划的用户，Flowith 可能比传统笔记+AI 组合更顺畅，因为上下文和逻辑结构都留在画布上，不必来回切换工具。",
+          "Flowith 的定位是“生产力工具”，而非聊天玩具。它瞄准的是已经习惯用 Notion、Miro 或 Obsidian 管理知识的用户，试图成为这些工具在 AI 时代的升级版。不过，当前产品仍处于早期阶段，画布上的协作和导出功能有待完善，能否真正融入日常工作流还需更多用户验证。"
+        ],
+        "why": "Flowith 代表了 AI 产品从“对话界面”向“空间化工作流”演进的一个方向。对于关注生产力工具创业和 AI 用户体验设计的人来说，它提供了一种值得跟踪的产品思路：不是让 AI 更聪明，而是让人类更有序地与 AI 协作。",
+        "links": [
+          [
+            "Curated AI Products: Flowith: canvas-based AI workspace for multi-step thinking",
+            "https://flowith.io/"
+          ]
+        ],
+        "sourceDate": "2026-06-27",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "理解AI Agent与企业自动化背后的共同语言",
+        "details": [
+          "Agentic Workflow（代理工作流）是一种将AI模型嵌入到多步骤、自主决策任务中的架构模式。不同于简单的问答对话，Agentic Workflow让AI能够感知环境、拆解任务、调用工具、验证结果，并在循环中自我修正。这就像给AI装上了“执行引擎”，使它从“聊天机器人”进化为“数字员工”。",
+          "近期DeepSeek联合北大开源的DSpark正是为了加速这类工作流中的推理环节。据测试，DSpark可使单用户推理速度提升60%-85%，这对于需要实时响应的Agent场景（如客服、代码生成）至关重要。推理速度的提升直接决定了Agent能否在毫秒级完成多步思考，从而落地到实际业务中。",
+          "一个典型的Agentic Workflow包括：目标理解、子任务分解、工具调用（如搜索、计算、数据库查询）、结果整合与输出。例如，一个招聘助手Agent需要先理解职位要求，然后搜索候选人库，筛选简历，发送面试邀请，每一步都可能调用不同的API——而这些协调工作都由Workflow引擎负责。",
+          "当前，各大厂商都在构建自己的Agent框架：OpenAI的Assistants API、微软的Copilot Studio、百度的AppBuilder等。理解和设计Agentic Workflow，已成为企业AI落地中最核心的竞争力之一。"
+        ],
+        "why": "Agentic Workflow是连接大模型能力和业务自动化之间的桥梁。掌握这一概念，你就能看懂为什么DeepSeek要开源推理加速框架，也能判断哪家公司的AI产品更适合你的工作场景——本质的差异往往不在模型参数上，而在工作流的设计质量上。",
+        "links": [
+          [
+            "DeepSeek联手北大开源DSpark，推理速度提升60%-85%",
+            "https://news.google.com/rss/articles/CBMiakFVX3lxTFAxdWcwUWlqdms4dUc0SjgwRHFFaHVfaW5qZTJFamt2YkNXZ01VU3lwdXdMSEE2VnVJZXRGci12Wm1tN1MwSE12YWJKd2JIU0VjY0FwOWFMUE9wMDByS3UwWmlvOXBUaTZVdVE?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-29",
     "title": "AI Daily Atlas",
     "meta": "2026年6月29日",
@@ -9622,6 +9950,335 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-06-30",
+    "title": "AI Daily Atlas",
+    "meta": "June 30, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek V4 Gets DSpark Update: Claims 80% Faster Inference",
+        "dek": "Chinese AI startup DeepSeek announces a major inference optimization for its V4 model, branding it DSpark, aiming to cut costs and improve real-time performance.",
+        "details": [
+          "On June 29, 2026, China's DeepSeek (a top-tier AI startup) released an update for its V4 model under the name 'DSpark,' claiming an 80% boost in inference speed. The news broke via Chinese investment outlet 投资界, though no technical whitepaper or benchmark details have been published yet.",
+          "The speed leap—if confirmed—would make DeepSeek V4 one of the fastest large models for production inference, potentially reducing per-token costs significantly. This could pressure rivals like Qwen, Ernie, and even foreign models to respond with similar optimization claims.",
+          "However, the lack of independent validation or performance metrics introduces uncertainty. The company has not disclosed whether DSpark involves new hardware support, architectural changes, or purely software-level kernel fusion. Real-world latency gains in complex tasks may vary.",
+          "For enterprises deploying Chinese LLMs, an 80% faster inference directly translates to lower cloud bills and better user experience in chatbots, coding assistants, and real-time AI agents. It also signals that model efficiency—not just raw accuracy—is becoming a key competitive battlefield."
+        ],
+        "why": "This update shifts the AI arms race from model size to inference efficiency. If DeepSeek delivers on its promise, it will lower the barrier for deploying powerful models in latency-sensitive applications, challenging established providers to accelerate their own optimization efforts.",
+        "links": [
+          [
+            "Google News China AI: 刚刚，DeepSeek V4更新DSpark，推理速度提升80% - 投资界",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5lVmswS1k4ME56ZnpjSlZqSmRLZkI0aDNwcmY3ZU5OcC0xdDJGM2QxX2dSUW96MHVkRFFwcHh1YkllOS1vbUxNaHNDZTNQdzl6bUxGNUFR?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Analyzing DeepSeek’s Reported Financing Structure: What Control Rights Should AI Startup Founders Never Give Up?",
+        "dek": "A PANews analysis of the rumored DeepSeek deal sheds light on key governance provisions that founders must preserve during fundraising.",
+        "details": [
+          "DeepSeek, the Chinese AI lab behind the popular open-weight models, is reportedly in the process of raising capital with a complex transaction structure. While the details remain unconfirmed, the rumored terms have sparked a broader discussion among AI entrepreneurs about how to protect founder control. According to a PANews analysis, the core tension lies between attracting large strategic investors and maintaining long-term strategic autonomy.",
+          "The article highlights several critical control levers that founders should not surrender. These include board seat composition (ensuring founders retain a majority or key veto rights), protective provisions on major decisions (such as M&A or IP licensing), and anti-dilution clauses that prevent excessive equity erosion in future rounds. In particular, the piece warns against granting investors veto power over technical direction or hiring of core research personnel, as these can paralyze the startup’s execution.",
+          "For other AI startups facing similar fundraising pressures, the DeepSeek case—even if still rumor—serves as a timely reminder. The market is flooded with capital, but not all money is equal. Founders must carefully weigh valuation against governance carve-outs, especially when dealing with tycoons or state-backed funds that may have strategic agendas beyond pure financial return."
+        ],
+        "why": "This analysis is a must-read for AI startup founders and investors alike, as it provides a practical framework for preserving founder control while raising large rounds—a critical factor in determining long-term company direction and survival.",
+        "links": [
+          [
+            "PANews Analysis",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBNX1RnOU5sWUlPVFY5LXdiZWJHbGt1aFp5RmNHQUdiWlBBSVJfSDVxMFF3LU5XdFFfVGpYeGZGLVlEOTk5SVpfS0stTWpYa19mekNGZWdWQThITG9aTGFtWXB2QkZjZ09fQ0kxT3RCVlE1YU5MRHAwVnNtb2xTb00?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Governor Newsom announces first-of-its-kind partnership with Anthropic for California state agencies",
+        "dek": "California becomes the first U.S. state to integrate Anthropic's AI tools across government services, signaling a new frontier for public-sector AI adoption.",
+        "details": [
+          "California Governor Gavin Newsom announced on June 29 a landmark partnership with AI company Anthropic, making its tools available to state agencies to streamline operations and improve services for residents. The initiative marks the first statewide deployment of generative AI in U.S. government, setting a precedent for public-sector AI adoption.",
+          "Under the agreement, state workers will gain access to Anthropic's Claude models for tasks such as drafting documents, analyzing data, and answering citizen inquiries, with strict privacy and security guardrails. The partnership aims to reduce bureaucratic delays and enhance accessibility, though details on funding and rollout timeline remain undisclosed.",
+          "This move positions Anthropic as a key player in the government AI market, competing with Microsoft-backed OpenAI and Google's DeepMind. It also reflects California's ambition to lead in responsible AI deployment, as the state grapples with both economic opportunities and regulatory challenges around the technology."
+        ],
+        "why": "For AI companies, government contracts represent a high-stakes growth avenue that requires both technical reliability and public trust. Anthropic's early win in California could set a template for other states and countries, accelerating public-sector AI adoption while intensifying competition among leading AI labs.",
+        "links": [
+          [
+            "California State Portal announcement",
+            "https://news.google.com/rss/articles/CBMihwJBVV95cUxNNVdrb0JtdWt6OU1tU2FicENIa0R3SFBPaHVPYjJHQThPX1ZQR0dZNndHeEI1Nlo1eDVJMDJNQlJUOEcxZldnUUtGQVUyWEhrV29SMGhFMmpubEt6MWxUai0zdmluM1k4YTBNUVBkUmsyZUFwVXRpWVhpcDJKRnpBR1ppNjBMZXhoX0RNUTlOUERKenlyQkc4Tjd3aXh1ZHpzSV9wWGdvWlRDNHpsWUEwVE1BVS1ZVHYwVnNackQ0ejl4NElKVHpXS1NkX2VaMDA3TFRjX3kzVEloS3Q2S1Yzc1phekx0UjE1clFzQVN1NkZRb3VfMGZETWV3cXV6ZnNMQWUwSzNkOA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Claude Mythos让梁文锋决定融资",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from 量子位：Claude Mythos让梁文锋决定融资. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "量子位: Claude Mythos让梁文锋决定融资",
+            "https://www.qbitai.com/2026/06/439863.html"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Chinese ED Drug 'Taituo' Launched; Alibaba Health Partners with Yangtze River Pharma to Accelerate Access",
+        "dek": "Alibaba Health and Yangtze River Pharmaceutical Group join forces to speed up the delivery of a new domestic erectile dysfunction drug, marking a push for innovative drug accessibility in China.",
+        "details": [
+          "A new Chinese-developed erectile dysfunction drug, Taituo, has been officially launched, with Alibaba Health partnering with Yangtze River Pharmaceutical Group to enhance its market access. The collaboration leverages Alibaba Health's digital platform to accelerate distribution and patient reach, aiming to improve affordability and convenience for the innovative therapy.",
+          "The move comes as China's pharmaceutical industry increasingly adopts digital health channels to bypass traditional bottlenecks. While specific pricing and volume targets were not disclosed, the partnership signals a growing trend of tech-health alliances to expedite the rollout of domestically developed drugs.",
+          "Uncertainty remains over how quickly the drug will penetrate the market given existing competitors and regulatory hurdles. However, the combination of a large domestic manufacturer and a major digital health platform could set a precedent for future drug launches."
+        ],
+        "why": "This partnership exemplifies how Chinese tech giants are integrating into the pharmaceutical value chain, potentially reshaping drug distribution and patient access in China's evolving healthcare landscape.",
+        "links": [
+          [
+            "Xinhua News: Taituo launch and Alibaba Health partnership",
+            "https://news.google.com/rss/articles/CBMifEFVX3lxTE9NbVJfS3gwWDRBU25TVjVsUC0tOVdCQUVVRFR1LTlwWkpxRW0wNE5KNzhBek5fcGtwZW8zSVFRZlVmSEFYdk54Y2Zmdlo1UGl6TzloTXQzczF0UlgwS3dHSUtZV2JGWjFGY25GS2FESm1zdmRCUVFva2hKeGo?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google rationed Meta's access to Gemini amid an AI compute shortage - qz.com",
+        "dek": "Google has restricted Meta's usage of its Gemini model due to a shortage of AI compute resources, highlighting growing tensions over infrastructure capacity.",
+        "details": [
+          "According to a report by Quartz, Google has rationed Meta's access to the Gemini AI model as the company faces a shortage of computing power for its own AI workloads. The move underscores the intense competition for GPU and TPU capacity among major tech firms, even as they collaborate on certain AI initiatives.",
+          "The rationing reportedly affects Meta's ability to use Gemini for internal research and product development projects that rely on Google's cloud infrastructure. Neither company has officially commented on the specifics of the arrangement, but the situation reflects the broader industry challenge of scaling AI compute to meet surging demand.",
+          "This incident adds to a pattern of infrastructure constraints shaping AI partnerships: earlier this year, OpenAI also adjusted access policies for its models due to capacity limitations. For Meta, the restriction could slow its timeline for integrating Gemini-based features into its own AI offerings."
+        ],
+        "why": "This news reveals that AI compute capacity has become a strategic bottleneck, even between tech giants. For startups and enterprises relying on cloud AI services, it signals potential supply risks and may accelerate investments in alternative compute sources or on-premise solutions.",
+        "links": [
+          [
+            "Google News AI Models: Google rationed Meta's access to Gemini amid an AI compute shortage",
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTE1jTWp2bDVMS1R2Wm5senJNQVFVbGo1bjJPMmVZTklGM2c2NE5XWkQ5a3lRV3k1RE1lMlRVNGdvRXlxdFdqM19wdHBWOTRjSWh6dzNZN2w4VVNxVXlGYk5Tc0l0QlRna0pGSVgteA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Physical AI and Robotics Take Center Stage at Computex Taipei 2026 for Semiconductor Vendors - International Data Corporation",
+        "dek": "IDC report highlights shift from pure data center AI to physical-world AI applications at Computex 2026.",
+        "details": [
+          "At Computex Taipei 2026, major semiconductor vendors showcased a strong push into Physical AI and robotics, according to a new report from International Data Corporation (IDC). The event, traditionally focused on PC and server hardware, saw an unprecedented number of chipmakers demonstrating AI-powered robotic systems, including humanoid robots, autonomous mobile robots, and industrial manipulators. IDC analysts noted that the convergence of edge AI, sensor fusion, and real-time inference is driving semiconductor design toward lower-latency, higher-efficiency architectures tailored for physical interaction.",
+          "Key players such as NVIDIA, AMD, and Intel unveiled reference platforms combining vision processors, neural accelerators, and motor control units, targeting both cloud-connected and on-device robot brains. Startups also gained traction, with several presenting novel chip designs for energy-efficient robot perception and control. The IDC report emphasizes that the shift is not merely about adding AI to robots—it represents a fundamental rethinking of chip architecture to handle simultaneous sensing, planning, and actuation in unstructured environments, a challenge far beyond traditional data center workloads."
+        ],
+        "why": "This trend signals a new growth vector for semiconductor companies and investors: the demand for specialized chips powering physical AI applications. For startups, opportunities lie in developing integrated sensor-processor solutions for humanoid robots and autonomous systems, while incumbents must adapt their roadmaps to capture this emerging market.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Physical AI and Robotics Take Center Stage at Computex Taipei 2026 for Semiconductor Vendors",
+            "https://news.google.com/rss/articles/CBMioAFBVV95cUxQcmRBSjdQeXV1eWFOZkZsQnhrQzlOZkxvUmNHcVNadDl4ZDB1a1hIZEFCOXdfdlNHMW5iQ0hEclVGX2V2b1JXX1BKYjVyUEs0RHZaaEdnSl96cFVUMEpRNmI4VzFKbGJ1M0pOX3dvaTdrcTdEeEU0by1HMUpVOV9jd3NkdUhZQmNIblJFMjRIcGpmSF9SM1RPSHBvNV9jMHVS?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "ToE: A Hierarchical and Explainable Claim Verification Framework with Dynamic Multi-source Evidence Retrieval and Aggregation",
+        "dek": "A new framework from arXiv that combats AI-generated misinformation by modeling claims as dynamic argument trees, integrating reinforcement learning for multi-source retrieval.",
+        "details": [
+          "As generative AI accelerates the spread of fake news—especially through Generative Engine Optimization (GEO) that poisons retrieval systems—automated fact-checking becomes critical. The Tree of Evidence (ToE) framework addresses this by treating each claim as an evolving argument tree. It uses a reinforcement learning-driven agent to retrieve evidence from multiple sources, an evaluation agent to assess credibility, and an aggregation algorithm to build a hierarchical proof structure.",
+          "Unlike black-box verification, ToE produces explainable chains of evidence, making it suitable for auditing LLM outputs and content moderation pipelines. The dynamic expansion allows the system to uncover adversarial manipulations that static approaches miss. While still a research paper (arXiv:2606.27736), the approach signals a shift toward more robust, transparent verification methods that could be integrated into search engines, social platforms, and enterprise AI systems."
+        ],
+        "why": "ToE offers a blueprint for building trust in AI-generated content—a key challenge for platforms, regulators, and enterprises deploying LLMs in high-stakes environments like news, finance, and healthcare.",
+        "links": [
+          [
+            "arXiv paper",
+            "https://arxiv.org/abs/2606.27736"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks",
+        "dek": "In a rare double-interview on Latent Space, the Databricks co-founders argue that openness is the only path to scalable enterprise AI.",
+        "details": [
+          "Databricks co-founders Matei Zaharia and Reynold Xin sat down for a rare joint interview on the Latent Space podcast to discuss why the frontier AI ecosystem must remain open. They argue that as enterprises rush to build 'Agent Clouds' — internal platforms for deploying and managing AI agents — the risk of vendor lock-in becomes acute. Proprietary stacks may offer short-term convenience but ultimately strangle innovation and create brittle systems. Instead, they advocate for open standards, open data formats (like Delta Lake), and open-source models as the foundation for durable AI infrastructure.",
+          "Key takeaways include: (1) Open ecosystems allow companies to compose best-of-breed components rather than being tied to a single provider. (2) The Lakehouse architecture provides a unified data and AI platform that avoids fragmentation. (3) Open-source models like those from Meta and Mistral are critical for enterprises to customize and control their AI without dependency on API price hikes or policy changes. The interview underscores that openness is not just a philosophical stance but a practical necessity for long-term AI strategy."
+        ],
+        "why": "This interview offers a strategic lens for CTOs and AI leaders evaluating platform choices: prioritizing open ecosystems can reduce lock-in risk and accelerate agent development. It also signals Databricks' continued bet on open infrastructure as a competitive moat.",
+        "links": [
+          [
+            "Latent Space: Why the Frontier Ecosystem must be Open — Matei Zaharia and Reynold Xin, Databricks",
+            "https://www.latent.space/p/databricks"
+          ]
+        ],
+        "sourceDate": "2026-06-25",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-25",
+        "freshnessLabelEn": "Fallback | published 2026-06-25",
+        "freshnessLabel": "Fallback | published 2026-06-25"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Anthropic Economic Index Understanding AI’s effects on the economy - Anthropic",
+        "dek": "Anthropic releases an economic index analyzing AI's real-world economic impact based on Claude usage data.",
+        "details": [
+          {
+            "summary": "Report overview",
+            "expanded": "Anthropic’s Economic Index examines how AI affects the economy by analyzing millions of anonymized interactions with Claude. It categorizes tasks by AI involvement—automation, augmentation, and new task creation—and maps these across industries. Early findings suggest AI is currently more complementary than substitutive, with highest adoption in software development, writing, and analytical roles."
+          },
+          {
+            "summary": "Key implications",
+            "expanded": "The index provides a data-driven baseline for policymakers and businesses to assess AI’s labor market effects. It highlights that while AI boosts productivity in specific tasks, its impact on employment remains uneven. The report underscores the need for adaptive workforce strategies as AI capabilities expand."
+          }
+        ],
+        "why": "This report offers an empirical foundation for understanding AI’s economic footprint, useful for investors gauging sector disruption and companies planning AI adoption strategies.",
+        "links": [
+          [
+            "Google News AI Reports: Anthropic Economic Index Understanding AI’s effects on the economy",
+            "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4wcEZ6cjlBVzhrMXplMmJVWHFZN3owVk1BY0JBNEFFaEVpYzNjMWtpUlp4U1NaclhSQjcxU0w2ZmFHaFNZUlMwRHNQM09LSklrU3c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-06-26",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-06-26",
+        "freshnessLabelEn": "Fallback | published 2026-06-26",
+        "freshnessLabel": "Fallback | published 2026-06-26"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "EntMTP: Accelerating LLM Inference with Entropy Guided Multi Token Prediction",
+        "dek": "A new paper proposes EntMTP, an entropy-guided multi-token prediction method that dynamically adjusts speculation depth to speed up LLM inference.",
+        "details": [
+          "Multi-token prediction (MTP) has become a popular technique for improving LLM training efficiency and enabling self-speculative decoding. However, existing MTP implementations typically use a static tree-based attention topology that keeps speculation depth constant throughout generation, ignoring the varying predictability of natural language.",
+          "EntMTP introduces an entropy-guided approach that adapts the speculation depth based on the uncertainty of the current context. In low-entropy regions (e.g., predictable patterns), the model drafts more tokens ahead, while in high-entropy regions, it speculates conservatively. This alignment with language entropy patterns reduces unnecessary compute during verification.",
+          "The paper demonstrates that EntMTP can accelerate inference without sacrificing quality, making it particularly relevant for open-source models deployed in latency-sensitive or resource-constrained environments. The technique is model-agnostic and could be integrated into existing inference frameworks."
+        ],
+        "why": "This work offers a practical, entropy-aware optimization for self-speculative decoding that can reduce inference costs for open-source LLMs, especially in agent and real-time applications where latency matters.",
+        "links": [
+          [
+            "arXiv cs.CL: EntMTP: Accelerating LLM Inference with Entropy Guided Multi Token Prediction",
+            "https://arxiv.org/abs/2606.27550"
+          ]
+        ],
+        "sourceDate": "2026-06-29",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Flowith: canvas-based AI workspace for multi-step thinking",
+        "dek": "A visual workspace for connecting AI prompts, sources, and outputs into multi-step workflows.",
+        "details": [
+          "Flowith uses a visual canvas to organize AI conversations, research threads, and multi-step workflows. It is designed for users who think spatially and need to link prompts, sources, and outputs across a project. The interface allows drag-and-drop arrangement of nodes, enabling complex tasks to be broken down into manageable steps while maintaining context.",
+          "As an editor pick, Flowith exemplifies the shift from single-turn chat to structured, multi-step AI collaboration. It is particularly useful for knowledge workers, researchers, and product teams who need to iterate on ideas or synthesize information from multiple AI models. The canvas approach reduces cognitive load by keeping the reasoning chain visible and editable."
+        ],
+        "why": "Flowith's canvas-based approach represents a growing trend in AI productivity tools, offering a more structured alternative to linear chat. It highlights product opportunities for building spatial workspaces that integrate multiple AI capabilities into coherent workflows.",
+        "links": [
+          [
+            "Curated AI Products: Flowith: canvas-based AI workspace for multi-step thinking",
+            "https://flowith.io/"
+          ]
+        ],
+        "sourceDate": "2026-06-27",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "A system where AI models autonomously plan and execute multi-step tasks, rather than responding to a single prompt in isolation.",
+        "details": [
+          "An agentic workflow refers to a process in which an AI agent breaks down a complex goal into sub-tasks, decides which tools or APIs to call, evaluates intermediate results, and iterates until completion. Unlike standard LLM calls that are stateless and one-shot, agentic workflows maintain state, use memory, and can self-correct.",
+          "Key components include task decomposition, tool use (web search, code execution, database queries), memory management, and a loop for planning and reflection. Frameworks like LangGraph, CrewAI, and AutoGen provide scaffolding to build these workflows. DeepSeek’s DSpark, recently open-sourced, is an example of a framework designed to accelerate inference in such multi-step setups.",
+          "Agentic workflows are behind many current AI trends: autonomous coding agents, AI-powered research assistants, and complex business process automation. They represent a shift from 'query-response' to 'goal-execution', enabling AI to act more like a digital employee than a simple chatbot."
+        ],
+        "why": "Understanding agentic workflow is essential for evaluating the capabilities and limitations of new AI products—many headline-grabbing demos (e.g., autonomous coding, self-driving research) rely on this architecture, not just a smarter model.",
+        "links": [
+          [
+            "OpenAI report on AI workforce transition",
+            "https://openai.com/index/mapping-ai-jobs-transition-eu"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-29",
     "title": "AI Daily Atlas",
