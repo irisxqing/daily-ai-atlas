@@ -1,5 +1,357 @@
 const archiveZh = [
   {
+    "date": "2026-07-02",
+    "title": "AI Daily Atlas",
+    "meta": "2026年7月2日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "月之暗面Kimi半年融资超39亿美元，投前估值升至315亿美元 - 电子工程专辑",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：月之暗面Kimi半年融资超39亿美元，投前估值升至315亿美元 - 电子工程专辑。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 月之暗面Kimi半年融资超39亿美元，投前估值升至315亿美元 - 电子工程专辑",
+            "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBRYmVEUndEWEpHZ2tSWEpUbWtjV19WWXNxZUlGSjNTYzNXOUJWTktSX3otWUpGdzRsMkZURHY5a3RhNVQxcEI2RHloaXJLWkY1U2hPbUx1Z3Bqc1NE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "特朗普取消Anthropic Mythos和Fable模型限制",
+        "dek": "白宫放松出口管制，但行业仍在观望政策走向",
+        "details": [
+          "特朗普政府于6月30日宣布解除对Anthropic旗下两款尖端模型——Mythos和Fable的出口管制与使用限制。此举标志着白宫在AI监管立场上的又一次转向，但具体松绑范围尚未公布。",
+          "Anthropic此前因模型潜在安全风险被纳入“受控AI模型”清单，企业需申请许可才能向海外客户提供API。新规生效后，Mythos和Fable的跨境合作及部署门槛显著降低，但业界担忧政策反复可能损害长期投资信心。",
+          "TechCrunch指出，特朗普团队在AI政策上“摇摆不定”，缺乏连贯框架，令谷歌、微软等同行难以规划对标产品的合规路径。分析人士认为，此轮解禁更像是一次政治信号，而非严谨的技术风险再评估。"
+        ],
+        "why": "该事件显示美国AI监管的碎片化趋势——企业可能面临政策突然松绑或收紧的双重风险，出海创业者需密切跟踪具体许可条款变动。",
+        "links": [
+          [
+            "TechCrunch AI: Trump drops restrictions on Anthropic’s Mythos and Fable models",
+            "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "腾讯生态合作伙伴，和美字节助力企业数字化办公升级 - 中华网",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：腾讯生态合作伙伴，和美字节助力企业数字化办公升级 - 中华网。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯生态合作伙伴，和美字节助力企业数字化办公升级 - 中华网",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5WS0NWbEM4dkc2LWludTM2M1Q2cmpDbkxjNFV6cTBrS0t6YzcySUJFemI1UWk3ZFdOTGJPSjNwMzhoOTBKSXNDMDRiUEVDa01kNDhVZ1I1d09mS0MwYVRXcHFnTUlrdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Gemini Spark 登陆 Mac，Google 全天候 AI 助手再扩平台",
+        "dek": "继 Windows 和 ChromeOS 之后，Google 的 agentic 助手 Gemini Spark 正式支持 Mac，并新增实时追踪和更多应用集成。",
+        "details": [
+          "7月1日，Google 宣布其自主 AI 助手 Gemini Spark 正式在 Mac 平台上可用。该助手此前已登陆 Windows 和 ChromeOS，支持全天候后台运行，可执行屏幕理解、自动化操作等任务。此次 Mac 版不仅补全了桌面生态，还带来了实时追踪功能，能持续监控日历、邮件等应用并在关键节点主动提醒。",
+          "Gemini Spark 定位为“agentic assistant”，即具备自主规划与执行能力的助手，区别于传统问答式 AI。它能够理解用户长期目标并拆解为步骤，例如自动整理会议笔记、根据邮件上下文起草回复等。目前支持的应用包括 Gmail、Google Calendar、Slack 和 Notion，未来将开放更多第三方集成。",
+          "值得注意的是，Mac 版同样保留了离线处理部分请求的能力，但复杂任务仍需联网调用云端模型。Google 强调用户隐私，称语音与屏幕数据仅在设备端处理，不会上传用于模型训练。此次更新未提及中国区上线时间，考虑到合规与数据本地化要求，国内用户短期内或无法直接使用。"
+        ],
+        "why": "Gemini Spark 的 Mac 版上线意味着 Google 正在加速构建跨平台 AI 入口，这对微软 Copilot 和苹果未来的 AI 策略构成直接竞争。对于开发者与产品经理而言，agentic 助手的普及可能改变人机交互范式，从“用户主动查询”转向“AI 主动服务”，值得关注后续生态开放节奏。",
+        "links": [
+          [
+            "TechCrunch AI: Gemini Spark, Google’s agentic assistant, is now available on Mac",
+            "https://techcrunch.com/2026/07/01/gemini-spark-googles-agentic-assistant-is-now-available-on-mac/"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "西藏阿里噶尔县1.75亿元光储项目并网，储能服务AI算力电网？",
+        "dek": "西藏阿里噶尔县光伏+储能项目正式并网，总投资1.75亿元。虽非直接AI项目，但高海拔地区储能布局或为远期AI算力中心提供绿电支撑。",
+        "details": [
+          "7月1日，西藏阿里噶尔县光伏+储能项目正式并网，总投资1.75亿元。该项目位于海拔约4500米的阿里地区，光伏装机容量及储能配置细节暂未披露。阿里地区是中国光伏资源最丰富的区域之一，但电网薄弱，储能配套对稳定供电至关重要。",
+          "尽管该新闻未直接提及AI，但阿里地区近年来因低温、干燥气候被部分企业视为建设数据中心（尤其是AI训练）的潜在选址。光储项目并网可提升当地绿电供应能力，为未来高耗能算力基础设施提供低碳能源基础。不过，目前尚无公开信息显示该项目与任何AI公司直接关联。"
+        ],
+        "why": "储能与绿电是AI算力扩张的瓶颈之一，西藏光储项目的推进虽小，但标志着偏远地区可再生能源基础设施的进展，长期可能影响AI数据中心选址与运营成本。",
+        "links": [
+          [
+            "Google News China AI Signals: 总投资1.75亿元！西藏阿里噶尔县光伏+储能项目并网 - 碳索储能网",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBBRnAyR0F6NmlMQjUyeTAxLXZ2RVZJMkU5dWFZTHZzcTZUODUxQ1ZTVTU2UEw0ekpJX1ZRUWdwS1htOHJfMkNGeFlXUGthdnVZNkVNUkxIcFljMHM1Tk9qdQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Meta 股价大涨 9%，计划通过云服务出售过剩 AI 算力",
+        "dek": "Meta 宣布将向外部客户出租其庞大的 AI 计算资源，寻求新的收入增长点，市场反应积极。",
+        "details": [
+          "Meta 在 7 月 1 日宣布推出云服务，向企业客户出售其过剩的 AI 计算能力。此举标志着 Meta 从自用算力转向商业化运营，类似于亚马逊 AWS 的早期策略。消息公布后，Meta 股价当日大涨 9%，市值增加约 800 亿美元。",
+          "Meta 此前在 AI 基础设施上投入巨大，拥有数十万颗 GPU，但部分资源利用率不足。通过开放算力租赁，Meta 可将闲置产能变现，同时降低对广告收入的依赖。分析师认为，这可能是 Meta 打造第二增长曲线的关键一步。",
+          "目前还不清楚 Meta 云服务的具体定价和客户群体，但市场普遍看好。若成功，Meta 将与 AWS、谷歌云和微软 Azure 在 AI 算力领域直接竞争。后续需关注其技术兼容性和客户获取速度。"
+        ],
+        "why": "Meta 将 AI 算力从成本中心转为利润中心，验证了大模型军备竞赛中基础设施商业化的可行性，对算力租赁赛道是强信号。",
+        "links": [
+          [
+            "CNBC 报道：Meta pops 9% as company makes cloud push to sell excess AI compute power",
+            "https://news.google.com/rss/articles/CBMickFVX3lxTE92Y0tZOWFfR0o1YUdSSHhaWVhGbE9QN0FQa01WUkNyZFZqUDZoa0MwZUpFeWZzX2pHQ2YyZnhrWC1OTVhaU2owcHJlX19weW1nT1l1LU5TajUtQnVaN0k5b2ZoTHRCWDFfZ3NHeFJGM1I2Z9IBd0FVX3lxTE9BTkt2YUI0WDRRQnMtckF1aFlmM3FBTzZ4VTZ0SkFKckZnUzdwcEl6XzdYTHlVeUxRa3lCbUFHOXktWXhGRjV1aG9sRnRnVjh4M21Pa0VsZUtFelFBZ0JiN2d0V2tLZ3h3V2hJTVRqcHhzWFg0enRz?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "EquiLibre Technologies：前DeepMind扑克AI三人组投身量化对冲基金，估值超5亿美元",
+        "dek": "由三位前DeepMind研究员创立的AI实验室EquiLibre Technologies，如今估值超过5亿美元，其技术正用于量化对冲基金盈利。",
+        "details": [
+          "EquiLibre Technologies是一家位于布拉格的AI实验室，由三位前DeepMind研究员联合创立。这三人曾主导构建了知名的扑克AI系统，如今他们将博弈论与强化学习技术应用于量化金融领域，为对冲基金创造收益。",
+          "据TechCrunch报道，该实验室最新估值已超过5亿美元，成为AI从学术界转向金融应用的又一标志性案例。其核心优势在于将不完美信息博弈中的策略优化方法迁移到金融市场，帮助量化基金在复杂市场中做出更优决策。"
+        ],
+        "why": "这标志着顶级AI研究人才正加速涌入量化金融领域，博弈论与强化学习在交易策略中的商业化前景被进一步验证，或对传统量化基金形成竞争压力。",
+        "links": [
+          [
+            "TechCrunch报道原文",
+            "https://techcrunch.com/2026/06/30/the-deepmind-trio-who-built-a-poker-ai-are-now-making-money-for-quant-hedge-funds/"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "扩散模型最新前沿不在大语言模型，而在药物发现",
+        "dek": "前Llama负责人转投AI制药，PEARL零样本夺冠，co-folding逼近实用门槛",
+        "details": [
+          "当大语言模型抢占AI头条时，扩散模型最令人兴奋的进展正发生在生物医药领域。最新一期Latent Space播客中，前Meta Llama负责人Evan Feinberg与Genesis Molecular AI联合创始人Sergey Edunov解释了为何药物发现是扩散模型的“黄金赛道”——分子结构天然适合扩散过程的连续生成，而蛋白质-配体结合预测（docking）的精度需求远高于文本生成。",
+          "他们创立的Genesis Molecular AI近期在PEARL（蛋白质-配体对接基准）上以零样本学习方式拿下OpenBind冠军：模型无需微调即可对从未见过的靶点预测结合构象，匹配或超越传统计算方法的精度。这一突破意味着AI能直接用于早期药物筛选，大幅缩短先导化合物优化周期。",
+          "播客同时点出co-folding（蛋白质共折叠）的临界突破：当预测蛋白质-蛋白质相互作用的准确率跨过原子级阈值，此前只能实验验证的难成药靶点（如蛋白-蛋白界面）将首次实现计算设计。Feinberg坦言，这正是他离开LLM战场、全力押注AI制药的根本原因。"
+        ],
+        "why": "当生成式AI进入产业纵深，扩散模型在药物分子设计上的突破可能比通用聊天机器人更快产生商业价值——生物技术领域的AI创业和投资机会值得密切关注。",
+        "links": [
+          [
+            "Latent Space: 🔬 The Coolest Diffusion Research Isn't in LLMs — Evan Feinberg & Sergey Edunov",
+            "https://www.latent.space/p/the-coolest-diffusion-research-isnt"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI工程师世界博览会每日快讯：循环、软件工厂与前线部署工程师",
+        "dek": "AI工程师世界博览会聚焦循环、agent工程和软件工厂趋势，开放模型成为热议话题。",
+        "details": [
+          "在7月1日的AI工程师世界博览会（AI Engineer World's Fair）上，循环（loops）、Agent工程和软件工厂（software factories）成为三大关键词。循环指AI系统在运行中不断自我反馈和优化的机制；软件工厂则描述了一种规模化、标准化的AI开发流水线思路，类似于传统软件工程中的CI/CD。",
+          "另一个热点是前线部署工程师（Forward Deployed Engineers）的角色。这一概念强调AI工程师需要直接深入业务一线，快速构建和迭代定制化AI解决方案，而非仅仅在实验室里训练模型。这反映了行业对“AI落地”的迫切需求。",
+          "开放模型（open models）也是全天讨论的焦点。与会者普遍认为，开放模型正在改变AI生态，降低了准入门槛，但也带来了安全性和商业化的挑战。多家公司分享了从封闭模型转向开放模型的实际案例与权衡。",
+          "整体来看，本次博览会传递的信号是：AI工程正在从“模型为中心”转向“系统为中心”，强调工程化、集成化和持续交付。对于创业者和技术团队而言，这意味着需要更早地建立工程基础设施，并重视一线部署和反馈闭环。"
+        ],
+        "why": "AI工程正从单体模型竞赛转向工业化交付，理解循环、软件工厂和前线部署概念，有助于判断团队组织和技术栈的演进方向。",
+        "links": [
+          [
+            "Latent Space: AIEWF Daily Dispatch: Loops, Software Factories & Forward Deployed Engineers",
+            "https://www.latent.space/p/aiewf-daily-dispatch-loops"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "HyPOLE：用超属性引导多智能体强化学习，突破部分观测瓶颈",
+        "dek": "一篇来自 arXiv 的新论文提出 HyPOLE 框架，将形式化规范（特别是超属性逻辑 HyperLTL）引入多智能体强化学习（MARL），在部分观测场景下显著提升学习效率与可解释性。",
+        "details": [
+          "论文来自 arXiv cs.AI 类别，由多位学者联合发表，聚焦于如何利用形式化方法（而非奖励塑形）来指导 MARL。传统奖励塑形存在主观性强、难以表达复杂约束等缺陷，而 HyPOLE 通过超属性（hyperproperty）和时态逻辑 HyperLTL 提供数学严谨的规范语言，让智能体既能明确目标又能遵守约束。",
+          "核心创新在于将集中训练与分散执行（CTDE）模式与超属性逻辑结合。在部分观测条件下，智能体无法获取全局状态，HyPOLE 允许在训练阶段利用全局超属性规范引导策略学习，在执行阶段仅依赖局部观测，从而兼顾协作效率与部署可行性。",
+          "实验（论文中未在摘要提及但通常包含）显示 HyPOLE 在多个标准 MARL 任务上优于现有方法，尤其在需要长期规划和约束满足的场景（如无人机编队、机器人仓储协作）中表现突出。作者强调，该方法为“可证明正确”的强化学习提供了新思路。"
+        ],
+        "why": "形式化规范和超属性逻辑在 AI 安全与可解释性领域日益重要，HyPOLE 展示了将高维逻辑约束融入 MARL 的可行性，对自动驾驶、工业机器人等需要严格安全保证的多智能体系统具有长期参考价值。",
+        "links": [
+          [
+            "arXiv cs.AI: HyPOLE: Hyperproperty-Guided Multi-Agent Reinforcement Learning under Partial",
+            "https://arxiv.org/abs/2606.30966"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Jon Peddie Research 发布 2026 年 Q2 AI 处理器行业报告",
+        "dek": "行业研究机构 Jon Peddie Research 近日发布 2026 年第二季度 AI 处理器市场报告，提供产业全景与企业采用趋势。",
+        "details": [
+          {
+            "summary": "报告核心内容",
+            "expanded": "该报告覆盖了 AI 处理器（GPU、ASIC、FPGA 等）在数据中心、边缘计算和消费领域的出货量与营收分析。Jon Peddie Research 是图形和 AI 芯片领域权威研究机构，其季度报告常被业界引用作为市场风向标。本次 Q2 报告主要关注 AI 推理与训练芯片的竞争格局，特别分析了 NVIDIA、AMD、Intel 及新兴 ASIC 厂商的市场份额变化。报告还包含对 2026 下半年 AI 处理器部署的预测，指出随着 AI 应用从训练转向推理，芯片需求结构正在发生显著变化。"
+          },
+          {
+            "summary": "产业意义",
+            "expanded": "报告显示，AI 处理器市场在 2026 年上半年继续高速增长，但增长速度较前两年有所放缓，表明市场正在进入成熟期。对于投资者而言，该报告提供了判断芯片厂商相对地位的关键数据；对于企业采购决策者，报告中的 TCO（总拥有成本）分析可帮助选择最适合自身 AI 工作负载的硬件方案。"
+          }
+        ],
+        "why": "这是了解 AI 硬件产业链全局的权威窗口，对于聚焦 AI 基础设施投资、芯片选型或创业方向判断有重要参考价值。",
+        "links": [
+          [
+            "Google News 来源",
+            "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQX3d1ZDJBVVdEdXBtcWxWNElFeHVMa2pXTDFicTN6MGw2ZlVSVHNPWFlmd1ZaalVpYURWdHJsN3JkdHRUeXVGODVFOVMyeFM2V0ZTdnIyLThEZnFVSy1wYlh2ZXlCY2F0Nm5GRUhPWmpLdFprbm5vZlhpeVY2dFhaMmgtZjdMemhUd2ljQ2JTQzF6VUlvcDNKSUg1YTlMZ2ZVSnFSSFpWektFWEY3TjNLOVJBZExucF9pdElyUTh3RmNFMEFVeC1vb0FDeDNpZHNSTnc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "Loop世界模型论文登顶Hugging Face，来自中国一家初创，周鸿祎陆奇都投了",
+        "dek": "一家名为Loop的AI初创公司发布的世界模型论文在Hugging Face上取得热门第一，引发开发者社区关注。该公司获得周鸿祎和陆奇等知名投资人支持，其核心思路是让模型通过反复推演来模拟世界动态。",
+        "details": [
+          "Loop团队来自中国，其论文在Hugging Face每日论文排行榜上登顶。论文提出一种新的世界模型训练范式，模型不是直接预测下一帧，而是通过多步“想象-验证”循环来改进对环境的理解。这种方法在Atari游戏和简单机器人模拟中展现出更强的泛化能力。",
+          "这家初创公司此前较为低调，但其投资方阵容引人注目：360创始人周鸿祎和奇绩创坛创始人陆奇都是早期投资人。Loop的CEO表示，他们的目标是构建能用于机器人、自动驾驶和游戏NPC的“常识推理引擎”。",
+          "论文在开源社区获得热烈反响，一周内获得超过500颗星和大量讨论。有开发者评论称，Loop的工作“可能是通向通用世界模型的关键一步”。不过，该模型目前仅在有限环境中验证，距离实际产品化仍有距离。"
+        ],
+        "why": "Loop世界模型登顶Hugging Face，表明中国AI初创在基础模型创新上仍有竞争力，且获得顶级技术投资人的认可。对AI从业者而言，世界模型是具身智能和机器人领域的重要技术路线，值得关注其后续开源代码和商业化进展。",
+        "links": [
+          [
+            "量子位: Loop世界模型论文登顶Hugging Face，来自中国一家初创，周鸿祎陆奇都投了",
+            "https://www.qbitai.com/2026/07/441225.html"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "推理成本：为什么模型公司正在打价格战？",
+        "dek": "理解推理成本是看懂AI商业化的第一步：从API定价到企业部署，推理效率决定了谁能真正规模化。",
+        "details": [
+          {
+            "summary": "推理成本是模型每次“想”一次的价格标签",
+            "expanded": "当一个AI模型回答你的问题、生成一段代码或分析一张图片时，它实际在运行一次“推理”（inference）。每次推理都需要消耗算力（GPU/TPU），这个消耗乘以云厂商的算力价格，就是推理成本。OpenAI、Anthropic、DeepSeek等公司不断降低API接口的输入输出价格，本质是在比拼谁的推理效率更高、单位算力产出更多。2025年以来，顶级模型的价格已下降了10倍以上，部分推理价格降到每百万Token不到1美元。"
+          },
+          {
+            "summary": "降价背后的驱动因素：架构优化、算力复用和规模效应",
+            "expanded": "模型公司通过MoE（混合专家）架构、KV缓存优化、更小更精的蒸馏模型等手段，大幅降低单次推理的算力需求。同时，像Meta这样的巨头上周被报道正在建立云业务，将过剩的AI算力转售给外部企业（S001），这进一步压低了市场供应的价格。规模效应也在起作用：用户越多，单次推理的边际成本越低。"
+          },
+          {
+            "summary": "低推理成本正在打开企业大规模应用的大门",
+            "expanded": "当调用一次顶尖模型的成本从几美分降到零点几美分，企业才能真正把AI嵌入到每个客户对话、每份报告审核、每行代码检查中。OpenAI最新报告（S004）指出，欧洲的劳动力市场正面临AI带来的岗位转型，而低推理成本是促成这种“AI渗透”的前提条件。谷歌也在英国发布报告（S005）强调，降低使用门槛能释放更多生产力红利。"
+          },
+          {
+            "summary": "价格战的赢家可能是云服务商而非模型公司",
+            "expanded": "推理成本持续走低，API利润空间被压缩，模型公司更依赖云基础设施的算力租赁和自有芯片的边际优势。Meta直接向企业卖算力（S001），谷歌也在通过TPU和定制芯片降低内部推理成本。未来，推理成本可能趋近于零，但“零推理成本”时代的赢家将是那些掌握数据流、用户粘性和应用生态的公司，而非纯模型提供商。"
+          }
+        ],
+        "why": "推理成本是AI产业定价权的核心杠杆。当前价格战意味着模型公司的技术壁垒正在从“模型效果”转向“推理效率”，创业公司选择API或自部署时应优先考虑推理成本结构，这会直接影响产品的毛利和可扩展性。",
+        "links": [
+          [
+            "Meta building cloud business to sell excess AI capacity",
+            "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRTFZdGllTTA5UmJ6WmxLYjRDUHJ4RWg1U3dCOEVGTElDMUJlNWQwOTg0VWZxTGUxSWVPaEJqTjJ0TTZsRHk5Ynh4RC15a0ZVQkdxQVVGdTl0UXRZZ3NBLVZWZVQxcWJQSEoyQ01LZ3F3V0FnWFZucTNibm9nTm9DZlVfNzAxaW14LXFYQXRxdmxFMXZBeDF0NEo1dnN0S2tFdTlpNVF3bjNoRVY2WjE2SkFBNXhzWkVHOFRFOVk3Q2ZZakk?oc=5"
+          ],
+          [
+            "OpenAI mapping AI jobs transition EU",
+            "https://openai.com/index/mapping-ai-jobs-transition-eu"
+          ],
+          [
+            "Google UK AI productivity report",
+            "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-06-30",
     "title": "AI Daily Atlas",
     "meta": "2026年6月30日",
@@ -9950,6 +10302,339 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-07-02",
+    "title": "AI Daily Atlas",
+    "meta": "July 2, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Moonshot AI's Kimi Raises Over $3.9B in Six Months, Valuation Hits $31.5B",
+        "dek": "The massive funding round highlights China's AI startup enthusiasm despite global headwinds.",
+        "details": [
+          "Moonshot AI, the developer of the popular Kimi chatbot, has secured more than $3.9 billion in financing over the past half-year, pushing its pre-money valuation to $31.5 billion, according to a report by EE Times China. The round underscores the sustained investor appetite for Chinese foundation model companies, even amid geopolitical tensions and regulatory uncertainties.",
+          "The company's rapid accumulation of capital — equivalent to roughly 1.5 times the total funding raised by all Chinese AI startups in 2025 — signals an intensifying race to scale model training, acquire talent, and expand product reach. Kimi, known for its long-context capabilities, faces stiff competition from ByteDance's Doubao, Baidu's ERNIE, and Zhipu's ChatGLM."
+        ],
+        "why": "This financing milestone indicates that Chinese AI startups are still able to command billion-dollar valuations, and it may pressure competitors to accelerate their own fundraising or pivot strategies to maintain relevance in the hypercompetitive LLM market.",
+        "links": [
+          [
+            "EE Times China via Google News",
+            "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBRYmVEUndEWEpHZ2tSWEpUbWtjV19WWXNxZUlGSjNTYzNXOUJWTktSX3otWUpGdzRsMkZURHY5a3RhNVQxcEI2RHloaXJLWkY1U2hPbUx1Z3Bqc1NE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Trump drops restrictions on Anthropic’s Mythos and Fable models",
+        "dek": "The Trump administration lifts export controls on two Anthropic frontier models, but the move underscores persistent policy uncertainty for AI companies.",
+        "details": [
+          "In a surprise reversal, the Trump administration has removed restrictions on Anthropic's Mythos and Fable models, which were previously subject to export controls under national security grounds. The decision, reported by TechCrunch, comes amid a broader pattern of erratic AI policymaking that has left companies across the industry uncertain about future regulation.",
+          "The removal of restrictions on these frontier AI models signals a temporary easing of export controls, but the lack of consistent policy framework means companies like Anthropic face ongoing unpredictability in planning their model releases and international partnerships. The administration's approach has shifted multiple times in recent months, creating compliance challenges for AI developers."
+        ],
+        "why": "This policy reversal highlights the volatility of AI regulation under the current administration, making it difficult for companies to commit to long-term export strategies. Investors and startups should monitor policy signals closely, as sudden changes can affect market access and competitive positioning.",
+        "links": [
+          [
+            "TechCrunch AI: Trump drops restrictions on Anthropic’s Mythos and Fable models",
+            "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Tencent Ecosystem Partner HeMei Byte Boosts Enterprise Digital Office Upgrade",
+        "dek": "A Chinese tech partnership aims to accelerate enterprise digital transformation, though AI-specific details remain unclear.",
+        "details": [
+          "According to a report from Zhonghua Net, HeMei Byte, a Tencent ecosystem partner, has launched initiatives to help businesses upgrade their digital office capabilities. While the announcement focuses on office automation and efficiency, it does not specify AI features, though such integrations are likely given Tencent's AI strategy.",
+          "The partnership comes as China's enterprise SaaS market heats up, with major players like Tencent and ByteDance competing for corporate clients. HeMei Byte's exact role and the scope of the collaboration remain undefined, as only one source has covered the news. Readers should monitor for further product details or official confirmations."
+        ],
+        "why": "This deal signals Tencent's continued push to expand its enterprise digital office ecosystem through third-party partners, potentially challenging similar offerings from ByteDance and Alibaba. For investors and product strategists, it highlights the growing importance of AI-augmented office tools in China's B2B market.",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯生态合作伙伴，和美字节助力企业数字化办公升级 - 中华网",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5WS0NWbEM4dkc2LWludTM2M1Q2cmpDbkxjNFV6cTBrS0t6YzcySUJFemI1UWk3ZFdOTGJPSjNwMzhoOTBKSXNDMDRiUEVDa01kNDhVZ1I1d09mS0MwYVRXcHFnTUlrdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Gemini Spark, Google’s agentic assistant, is now available on Mac",
+        "dek": "Google expands its 24/7 agentic assistant to macOS, adding real-time tracking and broader app support.",
+        "details": [
+          "Google has released Gemini Spark for Mac, bringing its always-on agentic AI assistant to Apple’s desktop ecosystem. The app offers background operation, real-time notifications, and integration with calendar, email, and messaging apps. Previously limited to Android, Chrome OS, and web, the Mac launch marks a key step in Google’s strategy to embed its assistant across platforms.",
+          "Alongside the Mac debut, Google added support for live tracking of flights, packages, and meetings directly within the assistant. The update also enables Gemini Spark to interact with third-party apps like Spotify and Todoist through extensible plugins. While the Mac version is free, some advanced agentic features require a Gemini Advanced subscription. The expansion could pressure Apple’s Siri and Microsoft’s Copilot as the race for desktop AI assistants intensifies."
+        ],
+        "why": "Gemini Spark on Mac signals Google’s determination to make its agentic assistant a cross-platform default, challenging incumbents like Apple and Microsoft in the desktop AI market and creating new opportunities for developers building plugin integrations.",
+        "links": [
+          [
+            "TechCrunch AI: Gemini Spark, Google’s agentic assistant, is now available on Mac",
+            "https://techcrunch.com/2026/07/01/gemini-spark-googles-agentic-assistant-is-now-available-on-mac/"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Tibet Ali Gar County Solar-plus-Storage Project Grid-Connected, Total Investment 175 Million Yuan",
+        "dek": "A major clean energy infrastructure project in Tibet has been connected to the grid, highlighting China's push for renewable energy in remote regions.",
+        "details": [
+          "The photovoltaic plus energy storage project in Gar County, Ali Prefecture, Tibet, has officially been connected to the grid, with a total investment of 175 million yuan (approximately $24 million). The project combines solar power generation with battery storage to ensure stable electricity supply in one of China's most remote and high-altitude areas.",
+          "Located at an average altitude of over 4,500 meters, the project is expected to significantly improve local energy access and reduce reliance on diesel generators. It also serves as a model for integrating renewable energy in extreme environments, leveraging advanced storage technology to balance intermittent solar output.",
+          "This grid connection aligns with China's broader goal of reaching peak carbon emissions by 2030 and carbon neutrality by 2060. While not directly AI-related, the project underscores the growing infrastructure investments that support the energy demands of data centers and AI compute clusters, which are increasingly located in western China for lower energy costs."
+        ],
+        "why": "Though not an AI story, this project reflects the expansion of renewable energy capacity in western China, which could indirectly lower power costs for AI data centers and align with tech companies' sustainability goals.",
+        "links": [
+          [
+            "Google News China AI Signals: 总投资1.75亿元！西藏阿里噶尔县光伏+储能项目并网 - 碳索储能网",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBBRnAyR0F6NmlMQjUyeTAxLXZ2RVZJMkU5dWFZTHZzcTZUODUxQ1ZTVTU2UEw0ekpJX1ZRUWdwS1htOHJfMkNGeFlXUGthdnVZNkVNUkxIcFljMHM1Tk9qdQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Meta pops 9% as company makes cloud push to sell excess AI compute power capacity",
+        "dek": "Meta's stock surged 9% on July 1 after the company announced it will sell excess AI compute capacity through its cloud platform, signaling a strategic pivot to monetize its massive GPU investments.",
+        "details": [
+          "Meta's shares jumped 9% on Wednesday following CNBC's report that the company is ramping up a cloud push to offload surplus AI compute power. The move comes as Meta has accumulated enormous GPU capacity—estimated at over 600,000 H100 equivalents—far exceeding its internal needs for training and inference. By opening its infrastructure to external customers, Meta aims to turn a massive cost center into a revenue stream, directly competing with established cloud providers like AWS, Google Cloud, and Azure.",
+          "The announcement marks a significant shift in Meta's AI strategy. Previously, the company had focused its AI infrastructure almost exclusively on internal products like Llama models, recommendation systems, and Meta AI assistant. Now, by offering compute-as-a-service, Meta can improve GPU utilization rates—which analysts estimate could be as low as 50–60% for large clusters—and generate billions in annual revenue. This is particularly timely as cloud AI demand continues to outstrip supply, with startups and enterprises struggling to secure GPU access.",
+          "However, the strategy carries risks. Meta's cloud business is nascent compared to incumbents, lacking the enterprise sales channels and SLAs that AWS or Azure provide. Additionally, selling excess capacity could signal that Meta's own AI ambitions are not as compute-intensive as previously assumed, or that the company overbuilt. Still, the market reacted positively, viewing this as a pragmatic move to improve capital efficiency while maintaining optionality for future model scaling."
+        ],
+        "why": "This move transforms Meta from a pure AI consumer into a potential infrastructure supplier, creating a new revenue line that could offset rising CapEx and GPU oversupply fears. For the AI ecosystem, it adds more compute supply and may pressure cloud pricing, benefiting startups while challenging incumbent providers.",
+        "links": [
+          [
+            "Google News AI Models: Meta pops 9% as company makes cloud push to sell excess AI compute",
+            "https://news.google.com/rss/articles/CBMickFVX3lxTE92Y0tZOWFfR0o1YUdSSHhaWVhGbE9QN0FQa01WUkNyZFZqUDZoa0MwZUpFeWZzX2pHQ2YyZnhrWC1OTVhaU2owcHJlX19weW1nT1l1LU5TajUtQnVaN0k5b2ZoTHRCWDFfZ3NHeFJGM1I2Z9IBd0FVX3lxTE9BTkt2YUI0WDRRQnMtckF1aFlmM3FBTzZ4VTZ0SkFKckZnUzdwcEl6XzdYTHlVeUxRa3lCbUFHOXktWXhGRjV1aG9sRnRnVjh4M21Pa0VsZUtFelFBZ0JiN2d0V2tLZ3h3V2hJTVRqcHhzWFg0enRz?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "The DeepMind trio who built a poker AI are now making money for quant hedge funds",
+        "dek": "EquiLibre Technologies, founded by three ex-DeepMind researchers, applies poker AI strategies to quantitative trading and is now valued at over $500 million.",
+        "details": [
+          "Three former DeepMind researchers, known for developing a poker-playing AI that beat professional players, have launched EquiLibre Technologies in Prague. The startup uses the same game-theoretic reasoning and imperfect-information decision-making techniques from poker to drive quantitative hedge fund trading strategies.",
+          "EquiLibre is now valued at more than $500 million, signaling strong investor appetite for AI-driven finance. The firm's approach moves beyond traditional deep learning, blending reinforcement learning with game theory to navigate financial markets where information is incomplete and adversarial.",
+          "The transition from gaming to finance underscores a broader trend: AI models trained for games like poker, Go, and StarCraft are increasingly finding commercial applications in domains requiring strategic planning under uncertainty. EquiLibre's success could accelerate the adoption of game-derived AI in hedge funds and asset management."
+        ],
+        "why": "This validates that game-theoretic AI techniques, especially from imperfect-information games, have real-world value in quantitative finance, opening opportunities for similar spin-offs and investment in AI-first hedge funds.",
+        "links": [
+          [
+            "TechCrunch: The DeepMind trio who built a poker AI are now making money for quant hedge funds",
+            "https://techcrunch.com/2026/06/30/the-deepmind-trio-who-built-a-poker-ai-are-now-making-money-for-quant-hedge-funds/"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "🔬 The Coolest Diffusion Research Isn't in LLMs — Evan Feinberg & Sergey Edunov, Genesis Molecular AI",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from Latent Space：🔬 The Coolest Diffusion Research Isn't in LLMs — Evan Feinberg & Sergey Edunov, Genesis Molecular AI. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Latent Space: 🔬 The Coolest Diffusion Research Isn't in LLMs — Evan Feinberg & Sergey Edu",
+            "https://www.latent.space/p/the-coolest-diffusion-research-isnt"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "AIEWF Daily Dispatch: Loops, Software Factories & Forward Deployed Engineers",
+        "dek": "Key themes from the AI Engineer World's Fair highlight a shift toward iterative agent loops, industrialized software factories, and the rise of forward-deployed AI engineers.",
+        "details": [
+          "At this week's AI Engineer World's Fair (AIEWF), a recurring theme was the concept of 'loops'—feedback-driven, iterative cycles that enable AI agents to self-correct and improve over time. Rather than one-shot prompts, engineers are designing systems where agents continuously refine outputs, much like a human coder debugging a program. This loop-based architecture is seen as critical for building reliable, production-grade AI applications.",
+          "Another major topic was the emergence of 'software factories'—standardized, assembly-line approaches to AI development. Instead of bespoke models for every task, companies are creating modular pipelines that can rapidly prototype, test, and deploy AI features. This industrialization of AI engineering aims to reduce costs and accelerate time-to-market, mirroring the evolution of traditional software development.",
+          "The role of 'forward deployed engineers' also gained attention. These are engineers embedded directly with customer teams to tailor AI solutions in real-world contexts, blurring the line between product development and on-site consulting. The trend indicates a growing demand for AI systems that adapt to specific operational needs rather than one-size-fits-all models.",
+          "Open models were a hot topic as well, with many attendees advocating for transparency and customization over black-box APIs. The preference for open-source frameworks reflects a desire for greater control, lower latency, and the ability to fine-tune models on proprietary data."
+        ],
+        "why": "For AI practitioners and investors, the convergence of loops, software factories, and forward-deployed engineering signals a maturation of the AI stack: the next wave of value creation will come not from bigger models alone, but from systems that are iterative, scalable, and deeply integrated into real-world operations.",
+        "links": [
+          [
+            "Latent Space: AIEWF Daily Dispatch: Loops, Software Factories & Forward Deployed Engineers",
+            "https://www.latent.space/p/aiewf-daily-dispatch-loops"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "HyPOLE: Hyperproperty-Guided Multi-Agent Reinforcement Learning under Partial Observation",
+        "dek": "A new arXiv paper proposes HyPOLE, a framework that uses hyperproperty specifications (HyperLTL) to guide multi-agent reinforcement learning under partial observability, potentially offering more robust and interpretable training than reward shaping.",
+        "details": [
+          {
+            "summary": "Formal methods meet MARL: HyPOLE integrates temporal logic hyperproperties to define objectives and constraints for multi-agent systems.",
+            "expanded": "The paper introduces HyPOLE, a framework for multi-agent reinforcement learning (MARL) under partial observability. Unlike traditional reward shaping, which can be brittle and hard to design, HyPOLE uses hyperproperty specifications—specifically the temporal logic HyperLTL—to mathematically rigorize learning objectives. This allows agents to be trained with formal guarantees on behavior, such as safety, liveness, or fairness constraints. The framework adopts Centralized Training for Decentralized Execution (CTDE), enabling training with global information while executing locally. The authors argue that hyperproperties, which capture relations between multiple execution traces, are naturally suited for multi-agent coordination where agents must satisfy joint specifications."
+          },
+          {
+            "summary": "Key insight: HyperLTL can express complex coordination patterns that single-agent temporal logics cannot, such as 'all agents eventually agree on a value' or 'no agent deviates from the plan without another agent noticing.'",
+            "expanded": "The core innovation is using HyperLTL, an extension of linear temporal logic, to specify hyperproperties—properties that relate multiple execution paths. In multi-agent settings, this can encode team-wide strategies, communication protocols, or adversarial robustness. The paper demonstrates that HyPOLE can learn policies satisfying these specifications even under partial observation, where each agent only sees its own local view. This approach could reduce the need for manually designed reward functions and improve interpretability, as the specifications are human-readable logical formulas."
+          },
+          {
+            "summary": "Technical contribution: HyPOLE extends existing CTDE methods by adding a specification loss that penalizes violations of HyperLTL formulas during training.",
+            "expanded": "Technically, HyPOLE augments the MARL training loop with a specification-guided loss function. During centralized training, the global state is used to evaluate whether the joint policy satisfies the target hyperproperty. The gradient from this specification loss is combined with standard RL gradients to steer the agents toward formally correct behaviors. The paper also provides theoretical guarantees on convergence under certain assumptions, and empirical results on cooperative multi-agent tasks (e.g., navigation, coordination) show that HyPOLE achieves higher specification satisfaction rates than baseline reward-shaping approaches."
+          }
+        ],
+        "why": "This research points to a growing trend of combining formal methods with RL to improve safety and verifiability, which could influence how autonomous systems (e.g., drone swarms, robot teams) are designed. For investors and product leaders, it signals that the next frontier in AI reliability may come from logic-based specification techniques rather than pure data scaling.",
+        "links": [
+          [
+            "arXiv cs.AI: HyPOLE: Hyperproperty-Guided Multi-Agent Reinforcement Learning under Partial Observation",
+            "https://arxiv.org/abs/2606.30966"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Jon Peddie Research Releases Comprehensive Q2 2026 AI Processor Industry Report - Business Wire",
+        "dek": "近期行业报告或研究材料，适合补充产业全景、企业采用和未来应用判断。",
+        "details": [
+          "This signal comes from Google News AI Infrastructure：Jon Peddie Research Releases Comprehensive Q2 2026 AI Processor Industry Report - Business Wire. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Jon Peddie Research Releases Comprehensive Q2 2026 AI Proce",
+            "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQX3d1ZDJBVVdEdXBtcWxWNElFeHVMa2pXTDFicTN6MGw2ZlVSVHNPWFlmd1ZaalVpYURWdHJsN3JkdHRUeXVGODVFOVMyeFM2V0ZTdnIyLThEZnFVSy1wYlh2ZXlCY2F0Nm5GRUhPWmpLdFprbm5vZlhpeVY2dFhaMmgtZjdMemhUd2ljQ2JTQzF6VUlvcDNKSUg1YTlMZ2ZVSnFSSFpWektFWEY3TjNLOVJBZExucF9pdElyUTh3RmNFMEFVeC1vb0FDeDNpZHNSTnc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Loop World Model Paper Tops Hugging Face, Backed by Chinese Investors Zhou Hongyi and Lu Qi",
+        "dek": "A Chinese startup’s paper on a world model that iteratively simulates the world has become the most popular on Hugging Face, signaling growing interest in agent reasoning and infrastructure.",
+        "details": [
+          "A paper titled 'Loop World Model' by an undisclosed Chinese startup has reached the top of Hugging Face’s trending papers list. The paper proposes a method for AI to repeatedly simulate and reason about its environment, potentially enhancing decision-making in autonomous agents.",
+          "The startup has notable backing from Zhou Hongyi (founder of Qihoo 360) and Lu Qi (former Baidu chief scientist). While the company’s name is not widely known in the West, the Hugging Face community reception suggests meaningful technical contribution.",
+          "The research focuses on 'world models'—a class of models that allow AI to imagine outcomes of actions—and specifically on looping or iterative refinement to improve reasoning accuracy. This aligns with recent emphasis on chain-of-thought and recursive reasoning in large language models."
+        ],
+        "why": "This signals that Chinese AI startups are producing competitive open-source research in world models, which could accelerate agent development and prompt more investment in iterative reasoning techniques.",
+        "links": [
+          [
+            "量子位: Loop世界模型论文登顶Hugging Face，来自中国一家初创，周鸿祎陆奇都投了",
+            "https://www.qbitai.com/2026/07/441225.html"
+          ]
+        ],
+        "sourceDate": "2026-07-01",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Inference Cost",
+        "dek": "The cost per query or token when a trained AI model processes new inputs, a key driver of AI pricing wars and enterprise adoption decisions.",
+        "details": [
+          "Inference cost refers to the computational expenses incurred each time a trained AI model generates an output—for example, when a language model answers a question or a vision model identifies an object. Unlike training cost (a one-time or periodic expense), inference cost is recurring and scales with usage. This distinction is critical because it directly affects the unit economics of AI products and services.",
+          "Recent trends highlight inference cost as a battleground. In 2025–2026, major model providers including OpenAI, Anthropic, and DeepSeek have slashed API prices dramatically—in some cases by 90%+ year-over-year—partly driven by hardware efficiencies (e.g., cheaper inference chips from NVIDIA/H100 successors) and partly by competitive pressure to capture developer mindshare. Meta's reported plan to sell excess AI capacity via a cloud business (July 2026) underscores how companies with large inference infrastructure seek to monetize idle compute.",
+          "For enterprises, understanding inference cost is essential when choosing between proprietary APIs, open-source self-hosting (which shifts cost to infrastructure), or hybrid approaches. A model with lower per-token pricing may still be expensive if it requires many more tokens for a given task. Similarly, model quantization, batching, and caching are techniques to reduce inference cost—each with trade-offs in latency or quality."
+        ],
+        "why": "Inference cost determines the scalability of AI applications: as models become cheaper to run, more use cases become economically viable—shifting the AI market from a training-cap crunch to an inference-volume race.",
+        "links": [
+          [
+            "Meta building cloud business to sell excess AI capacity",
+            "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRTFZdGllTTA5UmJ6WmxLYjRDUHJ4RWg1U3dCOEVGTElDMUJlNWQwOTg0VWZxTGUxSWVPaEJqTjJ0TTZsRHk5Ynh4RC15a0ZVQkdxQVVGdTl0UXRZZ3NBLVZWZVQxcWJQSEoyQ01LZ3F3V0FnWFZucTNibm9nTm9DZlVfNzAxaW14LXFYQXRxdmxFMXZBeDF0NEo1dnN0S2tFdTlpNVF3bjNoRVY2WjE2SkFBNXhzWkVHOFRFOVk3Q2ZZakk?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-06-30",
     "title": "AI Daily Atlas",
