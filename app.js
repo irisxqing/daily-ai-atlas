@@ -1,5 +1,346 @@
 const archiveZh = [
   {
+    "date": "2026-07-06",
+    "title": "AI Daily Atlas",
+    "meta": "2026年7月6日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "MiniMax高盛电话会：对今年10亿美元ARR充满信心，模型优势在“组织敏捷性”，与国产芯片高度集成",
+        "dek": "MiniMax在7月4日的高盛电话会上自信喊出10亿美元ARR目标，强调组织敏捷性和国产芯片深度适配是其核心竞争力。",
+        "details": [
+          "MiniMax 在近日的高盛电话会上表示，对2026年实现10亿美元年度经常性收入（ARR）充满信心。这一目标意味着公司年化收入将跻身国内AI公司第一梯队，也反映出其在B端和C端商业化上的激进扩张策略。",
+          "公司高管将模型竞争力归结为“组织敏捷性”——相比大厂，MiniMax 决策链条更短，能快速迭代模型和产品。同时透露模型已与国产芯片高度集成，在推理成本和自主可控上形成差异化优势，尤其迎合政企客户需求。",
+          "结合当前国产大模型融资热潮，MiniMax 的信心表态给投资人注入了一针强心剂。但10亿美元ARR的达成仍依赖市场拓展节奏和模型持续领先，不确定性不容忽视。"
+        ],
+        "why": "MiniMax 首次公开披露ARR目标并强调国产芯片适配，既展示了对商业化的自信，也暗示国产AI生态正从模型竞赛转向落地能力比拼，对投资判断和产业链布局有参考价值。",
+        "links": [
+          [
+            "Google News China AI Signals: MiniMax高盛电话会：对今年10亿美元ARR充满信心，模型优势在“组织敏捷性”，与国产芯片高度集成 - 华尔街见闻",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE85cmREMnlrNTJVYnRpdzJXT3ppeXd1NWk0WU5UYXlJVGptLWdVMTlnWXlVUTFBOS0tS1llN1FOeHZUTmd6QzhPZ1U1Smk4RFo4M2kw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-04",
+        "freshnessLabelEn": "Weekend window | 2026-07-04",
+        "freshnessLabel": "周末窗口｜2026-07-04"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Meta也来卖铲子了！小扎：模型可以慢，GPU必须赚",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 量子位：Meta也来卖铲子了！小扎：模型可以慢，GPU必须赚。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "量子位: Meta也来卖铲子了！小扎：模型可以慢，GPU必须赚",
+            "https://www.qbitai.com/2026/07/443339.html"
+          ]
+        ],
+        "sourceDate": "2026-07-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-05",
+        "freshnessLabelEn": "Weekend window | 2026-07-05",
+        "freshnessLabel": "周末窗口｜2026-07-05"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek融资传闻背后：中国大模型开始按战略资产重新定价 - 风闻",
+        "dek": "市场传闻DeepSeek正推进新一轮融资，分析认为中国大模型公司的估值逻辑正从技术公司转向国家级战略资产。",
+        "details": [
+          "据风闻7月5日报道，DeepSeek近期被传出正在推进新一轮融资，具体金额和估值尚未得到官方确认。这一传闻正值中国AI大模型行业加速整合、政策扶持力度加大的背景之下。",
+          "分析指出，若融资落地，DeepSeek的估值可能不再单纯以技术或营收为锚点，而是更多考虑其作为‘自主可控’基础设施的战略价值。类似信号在过去半年已出现在智谱、月之暗面等公司身上，国产大模型正在被重新定价。",
+          "不确定性在于，该传闻尚未有投资方或公司方证实，且当前一级市场整体偏冷，战略资产定价能否转化为实际融资规模仍需观察。但趋势本身已对中外AI投资逻辑产生微妙影响。"
+        ],
+        "why": "这条新闻提示投资者和创业者：中国大模型公司的竞争维度正从技术指标转向政策与战略价值，未来融资和估值可能更多依赖地缘政治叙事而非纯商业模型。",
+        "links": [
+          [
+            "风闻：DeepSeek融资传闻背后",
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5OR3l2bEY1RV8tcFRjRVpHcEJubWlSSmhKVTJJUlpBVTZSZ2JicWhtdFkwM0xzeGswMkl0YmR1Q0xkamwxcGltc1lMMjFtcEM5aXBzVjFvWHpYLUk?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-05",
+        "freshnessLabelEn": "Weekend window | 2026-07-05",
+        "freshnessLabel": "周末窗口｜2026-07-05"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里云发布Qoder企业版，支持企业知识库",
+        "dek": "阿里云推出Qoder企业版，主打企业知识库场景，帮助企业将内部文档与AI结合，提升信息检索与问答效率。",
+        "details": [
+          "7月5日，阿里云正式发布Qoder企业版，这是一款面向企业的AI知识库产品。与个人版不同，企业版支持企业上传内部文档、构建私有知识库，员工可通过自然语言查询企业级答案，降低信息查找门槛。",
+          "Qoder企业版的推出意味着阿里云在AI落地场景上进一步向B端渗透。当前，企业知识管理是AI最成熟的商用方向之一，但与Notion AI、微软Copilot等竞品相比，Qoder的优势在于与阿里云生态的深度整合，尤其是对涉及中文复杂场景的优化。"
+        ],
+        "why": "企业知识库是AI在B端最直接的落地场景之一，阿里云Qoder企业版的发布表明大厂正加速从模型能力向产品化解决方案转型，对中小企业而言，意味着更低的AI应用门槛。",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里云发布Qoder企业版，可支持企业知识库 - 三易生活",
+            "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1wcXlOV1Bfenp6UFlzUlR4QzhRd2JRN01WaHFCVjlzRXRyejU4RlVrU19tZ1dhbGU2VndfWFB3R3BlZVhWendVVkU5NVk0bGd0N3FvOEtEc0dsUGhxcUpDNDZRVnZnd011?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-05",
+        "freshnessLabelEn": "Weekend window | 2026-07-05",
+        "freshnessLabel": "周末窗口｜2026-07-05"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里达摩院发布首个超导材料发现AI智能体",
+        "dek": "AI 加速超导材料发现，达摩院发布首个专用智能体",
+        "details": [
+          "阿里达摩院发布首个专用于超导材料发现的 AI 智能体，该智能体能够自主完成从文献挖掘、结构预测到实验验证建议的全流程。这是国内将 AI 智能体技术应用于基础材料科学的重要尝试。",
+          "超导材料是实现零电阻输电、磁悬浮等尖端技术的关键，但传统发现方式依赖大量试错，周期长、成本高。该智能体整合了多个预训练模型和数据库，有望将超导材料的筛选效率提升数倍。",
+          "目前尚不清楚该智能体是否已直接产出可实验验证的超导候选材料，但这一方向标志着 AI 从“辅助分析”迈向“自主发现”，对材料基因组和量子计算等下游领域可能产生长远影响。"
+        ],
+        "why": "AI 智能体切入硬科学发现，标志着 AI 应用从语言、视觉等通用场景向垂直科研场景的深化，对材料科学领域的研发范式具有标杆意义，值得关注相关产业链投资机会。",
+        "links": [
+          [
+            "21 财经报道：阿里达摩院发布首个超导材料发现AI智能体",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVGVEdDZCdFpHNXhFRVJmQkNvbFgzYjBnUXhEbmZxWnV2WFZGOXVPdGJKWEVQcUFrU1lPd2UxVnFFWE9xU3BxUUV6NVlHZ0xWaDctQ0JDd2xzN19rTjNMM2R0MnZ5eS1Sbkl1c2prLVBKV0lOSnV5UDFUOGtuelZ2ZDIzU0cxN2lRS082dA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-05",
+        "freshnessLabelEn": "Weekend window | 2026-07-05",
+        "freshnessLabel": "周末窗口｜2026-07-05"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Mistral AI：全面了解这位OpenAI的欧洲挑战者",
+        "dek": "巴黎AI初创公司凭借开源策略和巨额融资，成为全球AI格局的关键玩家",
+        "details": [
+          "Mistral AI于2023年由前DeepMind和Meta研究人员在巴黎创立，目标是“让前沿AI进入每个人的手中”。短短两年内，它已成为欧洲最具代表性的AI公司之一，直接对标OpenAI。",
+          "尽管未披露具体数字，Mistral已获得多轮大额融资，估值跻身独角兽行列，投资者包括Lightspeed、Andreessen Horowitz等顶级风投。其资金主要用于研发和扩大开源模型生态。",
+          "与OpenAI的封闭路线不同，Mistral坚持开源部分模型，同时提供商业API。这种策略吸引了大量开发者，并在多项基准测试中展现出与GPT-4相当的性能，降低了企业使用AI的门槛。",
+          "Mistral的崛起标志着欧洲在AI竞赛中找到了差异化路径——开源、注重隐私和本地化。其成功可能影响全球AI监管方向，并催生更多欧洲AI创业公司，挑战美国科技巨头的垄断地位。"
+        ],
+        "why": "Mistral的成长印证了开源AI的商业可行性，为投资者提供了OpenAI之外的高潜力标的；对创业公司而言，其策略启示了如何在巨头夹缝中通过开放生态建立壁垒。",
+        "links": [
+          [
+            "TechCrunch：What is Mistral AI? Everything to know about the OpenAI competitor",
+            "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/"
+          ]
+        ],
+        "sourceDate": "2026-07-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-04",
+        "freshnessLabelEn": "Weekend window | 2026-07-04",
+        "freshnessLabel": "周末窗口｜2026-07-04"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "Jesse Eisenberg 批评 AI 的背后：名人效应如何影响公众认知",
+        "dek": "演员兼导演 Jesse Eisenberg 公开表达对 AI 的担忧，并选择留在美国，这再度引发对技术伦理和创意产业未来的讨论。",
+        "details": [
+          "Jesse Eisenberg（《社交网络》主演）在近期访谈中表示对 AI 发展的警惕，并强调他选择留在美国而非离开，因为他认为“留在战场”比逃避更重要。尽管他没有给出具体的技术批评，但作为文化界代表，他的言论反映了创意行业对 AI 替代原创工作的深层焦虑。",
+          "名人公开批评 AI 并不罕见——从斯嘉丽·约翰逊与 OpenAI 的声纹纠纷到《黑镜》编剧对生成式叙事的担忧——但这些声音往往能比技术报告更快地进入公众讨论。Eisenberg 的立场尤其值得注意：他选择留在美国，暗示即使批评 AI，他仍相信美国是塑造 AI 规则的最佳阵地。这为“AI 人才与创意阶层是否外流”的辩论增添了新注脚。"
+        ],
+        "why": "Eisenberg 的言论虽非技术性分析，但能放大公众对 AI 伦理和就业影响的关注，间接影响监管情绪和人才流动决策。",
+        "links": [
+          [
+            "Google News AI Models: Jesse Eisenberg Defends Staying in US, Critiques AI - Let's Data Science",
+            "https://news.google.com/rss/articles/CBMilwFBVV95cUxOV1ROYzhWVThvQ1lPWTB1ekFCQWhLYUpUQ240ZGtqVWRGb3FIQ01VanQ0UUdrUnM4S0lHZVZqZ05Cd19HVVBYTHd0Q3pKMzZtWFlPZ1AwTGlmOUxhRHltYS04WWl3aG5KNElkOXhfaG9sRWQyQnctQWstWVNXSXpGT0wzckxmUkJJSGxNSzVQak5PdEYwZUJn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-05",
+        "freshnessLabelEn": "Weekend window | 2026-07-05",
+        "freshnessLabel": "周末窗口｜2026-07-05"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "Techman Robot 发布 Physical AI 开发套件：机器人迈向具身智能的“加速器”",
+        "dek": "一套面向机器人的软硬件开发包，试图降低从传统编程到物理 AI 的门槛，协作机器人或迎来新范式。",
+        "details": [
+          "台湾协作机器人厂商 Techman Robot 近日发布了 Physical AI Development Package（物理人工智能开发套件），目标是为开发者提供一套标准化的工具链，用于构建具备环境感知、实时决策和自主操控能力的机器人应用。该套件尚未披露详细技术规格，但据官方描述，它整合了仿真环境、预训练感知模型及硬件接口，旨在加速机器人在复杂动态场景中的部署。",
+          "Physical AI（物理 AI）是当下机器人领域的重要趋势，区别于传统工业机器人依赖预设轨迹和离线编程，物理 AI 强调机器人通过视觉、触觉等多模态传感器动态理解物理世界，并利用强化学习或端到端模型自主规划动作。这一转变使得机器人从“固定执行者”进化为“环境适应者”，尤其适合医疗辅助、仓储拣选、精密组装等场景。",
+          "Techman Robot 的这套开发包若能降低仿真到真实（sim-to-real）的迁移难度，可能显著缩短机器人的开发周期。不过，当前信息有限，实际效果和生态支持仍待验证。该公司的竞争对手如 Universal Robots 和 Fanuc 也在探索类似的 AI 集成方案，这场“具身智能”工具化竞争才刚刚开始。"
+        ],
+        "why": "这标志着协作机器人厂商正主动提供 AI 基础设施层工具，而非仅卖硬件；对于系统集成商和开发者来说，关注其仿真精度与模型适配性，比等待通用机器人操作系统更适合当前阶段。",
+        "links": [
+          [
+            "Google News 报道：Techman Robot introduces Physical AI Development Package",
+            "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTmxCTTdIUVVpN3YzcjZLMkNiZWpOQndMd1RRX0ZFeWx6VGU2cmNUV0xjZEsyTlk4T1pzSDlMUzFkQ25NaHZ6UW4xRWF3VWJ2SmhvZ0xoM3A5Tl9wcHJFdUlpTzhjb0VaN3JTTG8teDA0Y3o4eG5rLXRIOGdFUjAzUTdkOTZmbTBSQ3ZWa0tDM2dIY3RWekF5c2xQUV91Vmc4blozWUNuQVg4YUU?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-05",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-07-05",
+        "freshnessLabelEn": "Weekend window | 2026-07-05",
+        "freshnessLabel": "周末窗口｜2026-07-05"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "十大券商策略：非AI板块基本面扎实，反弹在即？",
+        "dek": "Moomoo 汇总十大券商观点，认为非AI板块在强劲基本面支撑下可能迎来反弹，但市场仍需关注AI主题的虹吸效应。",
+        "details": [
+          {
+            "summary": "十大券商普遍认为，非AI板块估值已具吸引力，基本面改善或触发资金回流。",
+            "expanded": "该文汇集了包括高盛、摩根士丹利在内的十家主要券商的观点，核心结论是：尽管AI仍是市场主导叙事，但不少非AI板块（如消费、医疗、工业）的盈利预期已企稳，估值处于历史低位。券商建议投资者关注“AI溢出效应”受益的细分领域，以及基本面独立于AI周期的价值股。例如，部分券商指出，工业自动化和医疗设备板块的订单数据已连续两季度改善，但市场并未充分定价。文中还提及，若美联储在下半年转向鸽派，非AI板块的反弹力度可能更强。"
+          },
+          {
+            "summary": "分歧在于反弹时机和幅度：保守派认为AI资金流出仍需时间，乐观派认为三季度是布局窗口。",
+            "expanded": "具体策略上，摩根大通建议超配必需消费和公用事业，认为这些板块的防御性叠加基本面复苏能提供安全边际；而瑞银则看好中小盘成长股，认为AI主题已过度集中，资金轮动将利好估值合理的中小公司。另外，花旗提示，若AI领域出现黑天鹅事件（如监管收紧或巨头资本开支低于预期），非AI板块可能获得更快反弹。整体来看，多数观点认为非AI板块的“基本面底”已现，但需要催化剂触发。"
+          }
+        ],
+        "why": "该观点帮助投资者跳出AI叙事，重新评估非AI板块的配置价值，尤其适合关注市场轮动和风格切换的从业者。",
+        "links": [
+          [
+            "Moomoo原文：十大券商策略",
+            "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdVA2azZqeFg3MHVrU2ZQRG1weGZOVFlPZ25ua1lSeDd4czh4OHZJWi1SRjE0SHdnaU1ueHp4UGc2WXoxT0NSaDNCUUJveFNEZl9aT3N6VG5qdEhWNElOOVl1akdxWTkxLW8xRXNpWUdpaHRqTFlBV05Hdk9nT0h1Ul8xV3VmSHZWVmh1VmxGM29nR3RnaGE0?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-04",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-07-04",
+        "freshnessLabelEn": "Weekend window | 2026-07-04",
+        "freshnessLabel": "周末窗口｜2026-07-04"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 工程世界博览会闭幕：大循环辩论与工程现状",
+        "dek": "Latent Space 的每日快报总结了 AI 工程师世界博览会上的核心讨论，包括关于“循环”的辩论和一份 AI 工程现状报告，探讨了下一步该构建什么。",
+        "details": [
+          {
+            "summary": "核心问题：关于“循环”的辩论",
+            "expanded": "在 AIEWF 上，一场关于“循环”（loops）的辩论成为焦点。一方认为，AI 系统应设计为对人类反馈进行循环，以持续改进；另一方则主张更自动化的、无需频繁人类干预的循环。这场辩论折射出 AI 工程中关于人机协作深度的根本分歧，直接影响到产品设计哲学和开发资源分配。"
+          },
+          {
+            "summary": "AI 工程现状报告",
+            "expanded": "大会发布的 AI 工程现状报告提供了关键数据：企业 AI 采用率持续上升，但超过 60% 的项目仍处于实验或试点阶段；工具链碎片化是最大痛点，开发者急需标准化的评估和监控方案。报告还指出，多智能体系统（multi-agent systems）是增长最快的方向之一，但工程化成熟度较低。"
+          },
+          {
+            "summary": "闭幕主题：下一步构建什么",
+            "expanded": "多位主题演讲者一致认为，下一波机会在于“垂直 AI 应用”和“AI 原生基础设施”。具体而言，针对特定行业（如医疗、法律）的端到端 AI 解决方案，以及用于管理复杂 AI 工作流的编排平台，被视为尚未被充分开发的市场。创业者应关注现有模型能力与行业知识之间的落地鸿沟。"
+          }
+        ],
+        "why": "这篇文章提炼了 AI 工程社区的最新共识与分歧，对于 AI 产品经理、创业者以及投资人都提供了关于技术趋势和市场机会的直接参考，尤其是“循环”辩论深刻影响了人机交互产品的设计选择。",
+        "links": [
+          [
+            "Latent Space: AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
+            "https://www.latent.space/p/aiewf-daily-dispatch-locomotives"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-03",
+        "freshnessLabelEn": "Fallback | published 2026-07-03",
+        "freshnessLabel": "补位｜发布于 2026-07-03"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Liminary：为咨询顾问和研究者打造的AI研究工作空间",
+        "dek": "一个强调源追溯和跨项目复用的AI研究工具，正在悄悄吸引专业人士。",
+        "details": [
+          "Liminary 不是另一个聊天机器人，而是一个面向高 stakes 决策场景的研究型工作空间。用户可以在其中保存文章、报告、PDF、AI 对话和视频，并添加注释，所有内容保持源链接可追溯。它的核心价值在于跨项目复用：当你在一个项目中积累的见解，可以无缝迁移到下一个项目，避免“研究沉没”。这种设计特别适合需要频繁产出深度分析的咨询顾问、策略师和研究者。",
+          "产品界面简洁，强调“研究→推荐”的端到端闭环。它并不是要取代现有的笔记工具，而是作为 AI 时代的“研究操作系统”——把分散在 ChatGPT、浏览器、PDF 阅读器和笔记应用中的信息碎片整合到一个有结构的工作流中。目前 Liminary 处于早期阶段，但已吸引一批知识工作者的关注。"
+        ],
+        "why": "Liminary切入的是AI产品中一个高价值但容易被忽视的环节：专业研究工作流的完整性和可复用性。对于关注生产力工具赛道的人来说，它代表了一种“从对话到决策”的产品思路，值得观察其用户增长和付费转化。",
+        "links": [
+          [
+            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and researchers",
+            "https://liminary.io/"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Recall：把文章、视频和 PDF 变成可搜索的个人知识库",
+        "dek": "不再让每日 AI 资讯变成“读过即忘”的列表，Recall 帮你收集、摘要、标记和连接网页、YouTube、播客、PDF、书籍和笔记，并支持自然语言对话查询。",
+        "details": [
+          "每天刷到的 AI 产品文章、论文解读和视频教程，往往读完就沉入收藏夹。Recall 把零散信息整合成可搜索、可对话的个人知识库，用户可以直接问“上个月关于多模态模型的文章有哪些”并得到精准引用回复。",
+          "它自动抓取用户标注的网页、YouTube 视频、播客音频、PDF、电子书和文本笔记，用 AI 生成摘要并提取关键词和实体，建立跨来源的语义连接，让一条笔记能关联到所有相关材料。",
+          "不同于传统的书签工具或笔记应用，Recall 强调“可复用性”——它支持双向链接和标签体系，还能通过对话界面回答基于知识库的问题，例如“总结一下 Anthropic 最近发布的 Agent 策略”会综合多个来源给出答案。",
+          "对于关注 AI 动态的读者和从业者，Recall 解决了信息过载下的系统性召回问题：不再是碎片化阅读，而是把每日输入沉淀为可检索、可关联的长期资产。目前它仍处于早期版本，但已支持主流内容类型和浏览器插件。",
+          "需要留意的是，Recall 依赖于用户主动投放内容（通过浏览器扩展或手动导入），并非实时全网监控；其长期价值取决于用户是否持续维护知识库的结构化程度。"
+        ],
+        "why": "AI 产品推荐的核心不是工具本身，而是它试图解决的真实问题——信息消费的“输出端”常被忽略。Recall 提示我们：比起更快地获取信息，如何让信息留存并产生复利，才是生产力工具的下一个战场。",
+        "links": [
+          [
+            "Curated AI Products: Recall: personal AI knowledge base for articles, videos, PDFs, and no",
+            "https://www.recall.it/"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "检索增强生成，让大模型学会查资料再回答",
+        "details": [
+          "RAG 全称 Retrieval-Augmented Generation，即检索增强生成。它并非一个新模型，而是一种将信息检索与大语言模型结合的架构。简单来说，当用户提问时，系统会先从企业知识库、文档或网页中检索出相关片段，再连同问题一起送给大模型生成回答。这使得模型能引用最新、最准确的外部信息，而不仅依赖训练数据中的记忆。",
+          "RAG 的核心价值在于解决大模型的两大痛点：知识截止日期（无法回答训练后新信息）和幻觉（编造事实）。通过引入检索环节，模型回答可以做到“有据可查”。目前主流实现方式包括：文档切块、向量嵌入存储、相似度检索，以及结合大模型进行答案合成。OpenAI 的 GPTs 中的“知识”功能、Google 的搜索增强对话等，底层都使用了 RAG 思路。",
+          "对于企业来说，RAG 是落地大模型最务实的技术路径之一。它不需要重新训练模型，只需将内部文档、产品手册、客服对话记录等非结构化数据向量化，就能搭建起私域知识问答系统。典型产品如 Notion AI、Obsidian Copilot 都是 RAG 应用的例子。不过，RAG 也面临检索质量、上下文窗口限制和答案保真度等挑战，检索到的信息可能不完整或矛盾，需要进一步优化。"
+        ],
+        "why": "理解 RAG 是理解当前 AI 产品如何实现“知识密集型”任务的基础。无论是企业内部知识库、AI 搜索还是智能客服，RAG 都是背后的核心技术，对产品经理、开发者和决策者都有实际参考价值。",
+        "links": [
+          [
+            "Mistral AI 简介：开源模型的玩家",
+            "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-07-02",
     "title": "AI Daily Atlas",
     "meta": "2026年7月2日",
@@ -10302,6 +10643,341 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-07-06",
+    "title": "AI Daily Atlas",
+    "meta": "July 6, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "MiniMax Goldman Sachs Call: Confident in $1B ARR This Year, Organizational Agility, Deep Integration with Domestic Chips",
+        "dek": "MiniMax told Goldman Sachs investors it is on track to hit $1 billion in annual recurring revenue in 2026, citing organizational agility and tight integration with domestic chipmakers as key advantages.",
+        "details": [
+          "In a Goldman Sachs investor call over the weekend, MiniMax expressed strong confidence in reaching $1 billion in annual recurring revenue (ARR) this year, signaling robust growth momentum. The Chinese AI startup attributed its competitive edge to organizational agility—fast decision-making and iteration cycles—and deep integration with domestic chip suppliers, which reduces reliance on imported hardware and optimizes cost.",
+          "The call underscores MiniMax's strategic focus on efficiency and localization as China's AI sector accelerates adoption of homegrown chips amid export restrictions. The company's ability to combine software flexibility with chip-level optimization could set a benchmark for other Chinese AI firms seeking both performance and resilience."
+        ],
+        "why": "This signals that Chinese AI startups are shifting focus from raw model size to operational efficiency and supply chain resilience—a strategy that could reshape competitive dynamics and attract investors prioritizing pragmatic growth.",
+        "links": [
+          [
+            "MiniMax Goldman Sachs Call - Google News",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE85cmREMnlrNTJVYnRpdzJXT3ppeXd1NWk0WU5UYXlJVGptLWdVMTlnWWlVUTFBOS0tS1llN1FOeHZUTmd6QzhPZ1U1Smk4RFo4M2kw?oc=5"
+          ],
+          [
+            "Google News China AI Signals: MiniMax高盛电话会：对今年10亿美元ARR充满信心，模型优势在“组织敏捷性”，与国产芯片高度集成 - 华尔街见闻",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE85cmREMnlrNTJVYnRpdzJXT3ppeXd1NWk0WU5UYXlJVGptLWdVMTlnWXlVUTFBOS0tS1llN1FOeHZUTmd6QzhPZ1U1Smk4RFo4M2kw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-04",
+        "freshnessLabelEn": "Weekend window | 2026-07-04",
+        "freshnessLabel": "Weekend window | 2026-07-04"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Meta也来卖铲子了！小扎：模型可以慢，GPU必须赚",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from 量子位：Meta也来卖铲子了！小扎：模型可以慢，GPU必须赚. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "量子位: Meta也来卖铲子了！小扎：模型可以慢，GPU必须赚",
+            "https://www.qbitai.com/2026/07/443339.html"
+          ]
+        ],
+        "sourceDate": "2026-07-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-05",
+        "freshnessLabelEn": "Weekend window | 2026-07-05",
+        "freshnessLabel": "Weekend window | 2026-07-05"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Behind DeepSeek Funding Rumors: Chinese LLMs Are Being Repriced as Strategic Assets",
+        "dek": "A Chinese media commentary argues that the valuation of domestic LLM startups is shifting from pure technical metrics to national strategic importance.",
+        "details": [
+          "Rumors of a new funding round for DeepSeek have reignited debate about how Chinese large language model companies should be valued. The commentary from Guancha notes that investors are increasingly considering national AI sovereignty and supply chain security, not just model benchmarks, when pricing these startups.",
+          "The article suggests that as US export controls tighten and competition in foundational models intensifies, Chinese AI firms—especially those with unique architectures or training advantages—are being viewed as strategic assets akin to semiconductor fabs. This could lead to higher valuations and more state-aligned investment, but also greater regulatory scrutiny."
+        ],
+        "why": "This signals a fundamental shift in the valuation logic for Chinese AI startups: from product-market fit to geopolitical relevance, which impacts investment strategy and founder positioning.",
+        "links": [
+          [
+            "Google News China AI Signals: DeepSeek融资传闻背后：中国大模型开始按战略资产重新定价 - 风闻",
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5OR3l2bEY1RV8tcFRjRVpHcEJubWlSSmhKVTJJUlpBVTZSZ2JicWhtdFkwM0xzeGswMkl0YmR1Q0xkamwxcGltc1lMMjFtcEM5aXBzVjFvWHpYLUk?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-05",
+        "freshnessLabelEn": "Weekend window | 2026-07-05",
+        "freshnessLabel": "Weekend window | 2026-07-05"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba Cloud Launches Qoder Enterprise Edition with Knowledge Base Support",
+        "dek": "Alibaba Cloud introduces an enterprise-tier version of its code generation assistant Qoder, enabling custom knowledge base integration for teams.",
+        "details": [
+          "Alibaba Cloud has released Qoder Enterprise Edition, an upgraded version of its AI-powered code generation and development assistant. The new edition allows organizations to connect their internal knowledge bases, enabling the model to generate code that aligns with proprietary libraries, APIs, and best practices. This move targets enterprise developers who need customized AI coding support beyond generic open-source models.",
+          "The enterprise version comes as Alibaba Cloud competes with other major cloud providers offering AI code assistants, such as Amazon CodeWhisperer and Google's Gemini-based tools. By adding knowledge base support, Alibaba aims to differentiate Qoder for large-scale development teams that require context-aware assistance tailored to their specific tech stacks.",
+          "No pricing details were disclosed, but the product is currently available, with integration options for common knowledge management platforms. This launch signals Alibaba Cloud's push to monetize its AI models through enterprise SaaS offerings, following the trend seen with other Chinese AI firms."
+        ],
+        "why": "This release strengthens Alibaba Cloud's position in the enterprise AI market, offering a direct alternative to Western code assistants with better customization for Chinese enterprises. It also validates the growing demand for domain-specific AI tools that can incorporate private organizational knowledge.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里云发布Qoder企业版，可支持企业知识库 - 三易生活",
+            "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1wcXlOV1Bfenp6UFlzUlR4QzhRd2JRN01WaHFCVjlzRXRyejU4RlVrU19tZ1dhbGU2VndfWFB3R3BlZVhWendVVkU5NVk0bGd0N3FvOEtEc0dsUGhxcUpDNDZRVnZnd011?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-05",
+        "freshnessLabelEn": "Weekend window | 2026-07-05",
+        "freshnessLabel": "Weekend window | 2026-07-05"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba DAMO Academy Releases First AI Agent for Superconducting Material Discovery",
+        "dek": "The AI agent aims to accelerate the discovery of new superconducting materials, a critical area for energy and quantum computing.",
+        "details": [
+          "On July 5, Alibaba's DAMO Academy released what it calls the first AI agent specifically designed for discovering superconducting materials. The agent uses machine learning to predict and screen potential material candidates, drastically reducing the time and cost of traditional experimental methods.",
+          "Superconducting materials — which conduct electricity with zero resistance — are essential for energy transmission, magnetic levitation, and quantum computing. Yet their discovery has historically been slow and labor-intensive. DAMO Academy's AI agent could speed up the identification of promising compounds, potentially unlocking breakthroughs in energy efficiency and quantum hardware."
+        ],
+        "why": "This move positions Alibaba at the forefront of AI-driven scientific discovery, signaling a strategic bet on AI for deep tech. For investors and product leaders, it highlights the growing role of AI in materials science, where models can become indispensable R&D tools, potentially reshaping industries from energy to computing.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里达摩院发布首个超导材料发现AI智能体 - 21财经",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxNVGVEdDZCdFpHNXhFRVJmQkNvbFgzYjBnUXhEbmZxWnV2WFZGOXVPdGJKWEVQcUFrU1lPd2UxVnFFWE9xU3BxUUV6NVlHZ0xWaDctQ0JDd2xzN19rTjNMM2R0MnZ5eS1Sbkl1c2prLVBKV0lOSnV5UDFUOGtuelZ2ZDIzU0cxN2lRS082dA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-05",
+        "freshnessLabelEn": "Weekend window | 2026-07-05",
+        "freshnessLabel": "Weekend window | 2026-07-05"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "What is Mistral AI? Everything to know about the OpenAI competitor",
+        "dek": "The French AI startup has quickly become a leading open-source challenger to OpenAI, backed by massive funding and a mission to democratize frontier AI.",
+        "details": [
+          "Founded in 2023, Mistral AI has rapidly emerged as Europe's most formidable rival to OpenAI. The company develops both open-source and proprietary large language models, distinguishing itself with a commitment to transparency and accessibility. Its models, such as Mistral 7B and the more recent Mixtral of Experts family, have gained traction for their competitive performance against GPT-4-class models while being freely available under permissive licenses.",
+          "Mistral has raised substantial venture capital funding, reportedly exceeding €1 billion as of early 2026, with investors including Andreessen Horowitz, Lightspeed Venture Partners, and Salesforce. The company has also secured strategic partnerships with cloud providers like Microsoft Azure and Amazon Web Services to distribute its models. Despite its rapid growth, Mistral faces challenges in scaling enterprise adoption and maintaining its open-source edge as competitors like Meta's Llama and Google's Gemma push into the same space."
+        ],
+        "why": "Mistral AI's rise signals that the open-source AI movement is a serious contender to closed-source leaders like OpenAI and Google, forcing companies to reconsider their AI procurement strategies and creating opportunities for startups built on transparent, customizable models.",
+        "links": [
+          [
+            "TechCrunch AI: What is Mistral AI? Everything to know about the OpenAI competitor",
+            "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/"
+          ]
+        ],
+        "sourceDate": "2026-07-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-04",
+        "freshnessLabelEn": "Weekend window | 2026-07-04",
+        "freshnessLabel": "Weekend window | 2026-07-04"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Jesse Eisenberg Defends Staying in US, Critiques AI - Let's Data Science",
+        "dek": "Actor Jesse Eisenberg's critique of AI highlights growing public skepticism and the need for responsible AI development.",
+        "details": [
+          "Jesse Eisenberg, best known for portraying Mark Zuckerberg in 'The Social Network,' has publicly defended his decision to remain in the United States while simultaneously voicing critical views on artificial intelligence. In a recent interview or article covered by Let's Data Science, Eisenberg reportedly questions the direction of AI development, likely focusing on issues such as job automation, loss of human creativity, and ethical risks. His comments add a celebrity voice to the broader societal debate about AI's impact, reflecting how non-technical figures are shaping public perception.",
+          "Eisenberg's critique is significant because it signals that concerns about AI are not limited to tech insiders or academics. As a prominent cultural figure, his remarks can influence public opinion and policy discussions. The timing is particularly relevant as governments worldwide grapple with AI regulation, and companies face pressure to address ethical AI practices. While Eisenberg's specific arguments are not detailed in the available source, his general stance aligns with a growing chorus calling for caution and transparency in AI deployment.",
+          "The article also notes that Eisenberg defends his choice to stay in the US, possibly linking it to his desire to engage with and critique the tech industry from within. This underscores a broader theme: even those who benefit from or are immersed in the tech ecosystem are raising alarms about its direction. For AI practitioners and investors, such signals from influential public figures should not be dismissed as mere celebrity opinion, as they can catalyze regulatory momentum and shift consumer sentiment."
+        ],
+        "why": "Jesse Eisenberg's critique, while not technically detailed, amplifies mainstream skepticism about AI. This may increase public pressure for ethical AI guidelines and impact how AI companies communicate their societal benefits. Investors and product leaders should monitor cultural sentiment as a factor in AI adoption and regulation.",
+        "links": [
+          [
+            "Jesse Eisenberg Defends Staying in US, Critiques AI - Let's Data Science",
+            "https://news.google.com/rss/articles/CBMilwFBVV95cUxOV1ROYzhWVThvQ1lPWTB1ekFCQWhLYUpUQ240ZGtqVWRGb3FIQ01VanQ0UUdrUnM4S0lHZVZqZ05Cd19HVVBYTHd0Q3pKMzZtWFlPZ1AwTGlmOUxhRHltYS04WWl3aG5KNElkOXhfaG9sRWQyQnctQWstWVNXSXpGT0wzckxmUkJJSGxNSzVQak5PdEYwZUJn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-07-05",
+        "freshnessLabelEn": "Weekend window | 2026-07-05",
+        "freshnessLabel": "Weekend window | 2026-07-05"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Techman Robot introduces Physical AI Development Package",
+        "dek": "A new development kit aims to bridge the gap between AI software and physical robotics, particularly in medical applications.",
+        "details": [
+          "Physical AI refers to AI systems that can perceive, reason, and act in the real world through embodied agents like robots. Techman Robot's new Physical AI Development Package provides a set of tools, software libraries, and hardware integrations to help developers build and train robotic systems that can operate in dynamic environments. The package is tailored for industries such as healthcare, where robots may assist in surgeries, rehabilitation, or patient care.",
+          "While specific technical details are limited, the announcement signals a growing trend: major robotics companies are moving beyond traditional industrial automation toward AI-native platforms. By packaging computer vision, reinforcement learning, and real-time control into a single developer kit, Techman aims to lower the barrier for creating intelligent machines that can adapt to unstructured settings.",
+          "The focus on medical applications also highlights a key vertical for physical AI. Regulations, safety requirements, and the need for precision make healthcare a challenging but high-value market. If the development package gains traction, it could accelerate the deployment of collaborative robots in hospitals and clinics, potentially reducing human error and improving patient outcomes."
+        ],
+        "why": "This development underscores the maturation of physical AI from research to deployable platforms, opening opportunities for startups and enterprise teams to build healthcare robotics solutions. For investors, it signals a shift toward application-specific AI hardware-software stacks that could dominate the next wave of automation.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Techman Robot introduces Physical AI Development Package",
+            "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQTmxCTTdIUVVpN3YzcjZLMkNiZWpOQndMd1RRX0ZFeWx6VGU2cmNUV0xjZEsyTlk4T1pzSDlMUzFkQ25NaHZ6UW4xRWF3VWJ2SmhvZ0xoM3A5Tl9wcHJFdUlpTzhjb0VaN3JTTG8teDA0Y3o4eG5rLXRIOGdFUjAzUTdkOTZmbTBSQ3ZWa0tDM2dIY3RWekF5c2xQUV91Vmc4blozWUNuQVg4YUU?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-05",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-07-05",
+        "freshnessLabelEn": "Weekend window | 2026-07-05",
+        "freshnessLabel": "Weekend window | 2026-07-05"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Is a rebound imminent for non-AI sectors backed by solid fundamentals? Strategies from ten major brokerages - Moomoo",
+        "dek": "A roundup of analyst views on whether sectors outside AI are poised for a recovery based on fundamental strength.",
+        "details": [
+          {
+            "summary": "Ten major brokerages weigh in on non-AI sector rebound potential amid AI dominance.",
+            "expanded": "This article from Moomoo compiles strategies from ten prominent brokerages, analyzing whether non-AI sectors—such as consumer, industrials, and healthcare—can stage a rebound supported by solid fundamentals. The consensus leans toward selective opportunities, with several firms highlighting valuation gaps and earnings resilience outside the AI hype. Key points include: (1) some brokerages argue that non-AI sectors are undervalued relative to their earnings growth, making them attractive for value investors; (2) others caution that without AI tailwinds, these sectors may lag until clear catalysts emerge; (3) the article also notes that dividend-paying stocks and defensive plays are favored by risk-averse institutions as a hedge against AI volatility."
+          },
+          {
+            "summary": "The article serves as a curated view, not original research, and reflects varying conviction levels among the brokerages.",
+            "expanded": "As a curated synthesis, the piece does not introduce new data but aggregates existing brokerage reports and commentaries. It represents the views of market analysts rather than a single authoritative study. Readers should note that the recommendations vary from bullish (e.g., 'overweight') to cautious (e.g., 'market weight') and depend on individual risk tolerance and investment horizon. The article is best used as a starting point for further investigation into specific non-AI sectors."
+          }
+        ],
+        "why": "For investors and product strategists, this view piece provides a timely perspective on capital rotation trends. Understanding how brokerages assess non-AI sectors can help anticipate shifts in market focus and inform portfolio diversification away from overheated AI themes.",
+        "links": [
+          [
+            "Google News AI Views: Is a rebound imminent for non-AI sectors backed by solid fundamentals? Strategies from ten major brokerages - Moomoo",
+            "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdVA2azZqeFg3MHVrU2ZQRG1weGZOVFlPZ25ua1lSeDd4czh4OHZJWi1SRjE0SHdnaU1ueHp4UGc2WXoxT0NSaDNCUUJveFNEZl9aT3N6VG5qdEhWNElOOVl1akdxWTkxLW8xRXNpWUdpaHRqTFlBV05Hdk9nT0h1Ul8xV3VmSHZWVmh1VmxGM29nR3RnaGE0?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-04",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "周末窗口｜2026-07-04",
+        "freshnessLabelEn": "Weekend window | 2026-07-04",
+        "freshnessLabel": "Weekend window | 2026-07-04"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
+        "dek": "A recap of the AI Engineer World's Fair closing day, featuring a heated debate on AI loops and a comprehensive report on the state of AI engineering.",
+        "details": [
+          {
+            "summary": "The 'great loops debate' questions whether agentic loops or simpler patterns dominate future AI workflows.",
+            "expanded": "At the AI Engineer World's Fair, a panel debated the prominence of different AI interaction loops—ranging from simple retrieval-augmented generation to complex multi-agent loops. The discussion highlighted a divide between those advocating for autonomous, looping agents and those favoring deterministic, stateless pipelines. No clear winner emerged, but the tension reflects a foundational choice for builders: how much autonomy to grant AI systems in production."
+          },
+          {
+            "summary": "The state of AI engineering report reveals rapid tooling maturation and a shift toward observability and safety.",
+            "expanded": "Presented alongside the debate, the report on the state of AI engineering documented how the field is moving from experimental prototypes to production-grade systems. Key findings include rising adoption of prompt management platforms, increased investment in LLM observability, and a growing emphasis on safety guardrails. The report also noted that while foundation model providers consolidate, the engineering layer is fragmenting into specialized tooling for evaluation, routing, and feedback loops."
+          }
+        ],
+        "why": "The loops debate and engineering report offer practical insights for anyone building AI products: the architecture choices made today will shape performance, cost, and maintainability. Investors should watch for tooling startups that address evaluation and observability gaps.",
+        "links": [
+          [
+            "Latent Space: AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
+            "https://www.latent.space/p/aiewf-daily-dispatch-locomotives"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-03",
+        "freshnessLabelEn": "Fallback | published 2026-07-03",
+        "freshnessLabel": "Fallback | published 2026-07-03"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Liminary: AI research workspace for consultants, strategists, and researchers",
+        "dek": "An AI-powered workspace designed for high-stakes research and recommendations, with source traceability and insight reuse.",
+        "details": [
+          "Liminary is an AI research workspace targeting consultants, strategists, and researchers who need to produce recommendations grounded in thorough analysis. It allows users to save and organize a wide range of materials—articles, reports, PDFs, AI chats, and videos—then annotate them while preserving source traceability. A key feature is the ability to reuse insights across different projects, preventing duplication of effort and ensuring consistency in high-stakes environments.",
+          "Unlike generic note-taking tools, Liminary focuses on the workflow of professionals who synthesize large volumes of information into actionable advice. By combining AI chat history with traditional research sources, it bridges the gap between generative AI outputs and rigorous research processes. This is particularly relevant for consulting firms and strategy teams that must defend their recommendations with clear evidence."
+        ],
+        "why": "Liminary addresses a real pain point: connecting AI-generated insights with verifiable sources in professional workflows. For product builders, it signals a growing demand for AI tools that prioritize accountability and research integrity over speed alone.",
+        "links": [
+          [
+            "Curated AI Products: Liminary: AI research workspace for consultants, strategists, and researchers",
+            "https://liminary.io/"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Recall: personal AI knowledge base for articles, videos, PDFs, and notes",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Curated AI Products：Recall: personal AI knowledge base for articles, videos, PDFs, and notes. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Curated AI Products: Recall: personal AI knowledge base for articles, videos, PDFs, and no",
+            "https://www.recall.it/"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "Retrieval-Augmented Generation: How AI combines search and generation to ground answers in real data.",
+        "details": [
+          "RAG stands for Retrieval-Augmented Generation. It is a technique that enhances large language models (LLMs) by connecting them to external knowledge sources. Instead of relying solely on the model's internal parameters, RAG first retrieves relevant documents or data from a vector database or search index, then feeds that information into the LLM to generate a grounded response. This approach reduces hallucinations, supports up-to-date facts, and enables enterprises to build private knowledge Q&A products without fine-tuning the entire model.",
+          "RAG is foundational for enterprise AI applications such as customer support chatbots, internal knowledge bases, and research assistants. By combining a retriever (e.g., a vector search engine) and a generator (an LLM), RAG allows non-technical users to get accurate answers from their own documents. Tools like LangChain, LlamaIndex, and frameworks from OpenAI and major cloud providers have made RAG increasingly accessible."
+        ],
+        "why": "Understanding RAG is essential for anyone building AI products that need to answer questions from proprietary or ever-changing data, as it offers a practical path to balance accuracy, cost, and customization.",
+        "links": [
+          [
+            "TechCrunch article on Mistral AI",
+            "https://techcrunch.com/2026/07/04/what-is-mistral-ai-everything-to-know-about-the-openai-competitor/"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-07-02",
     "title": "AI Daily Atlas",
