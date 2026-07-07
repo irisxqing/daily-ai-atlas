@@ -1,5 +1,342 @@
 const archiveZh = [
   {
+    "date": "2026-07-07",
+    "title": "AI Daily Atlas",
+    "meta": "2026年7月7日",
+    "headline": "模型与平台、Agent 与工作流 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和Agent 与工作流展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时Agent 正从演示概念继续走向企业流程和开发者工具和真实任务执行。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek推出Deep Code：开源AI编程助手，对标Claude Code",
+        "dek": "DeepSeek正式开源其AI编程助手Deep Code，旨在为开发者提供类似Claude Code的智能编码体验。",
+        "details": [
+          "DeepSeek于2026年7月6日开源了AI编程助手Deep Code，被外界视为其对标Claude Code的产品。该工具基于DeepSeek自研的代码大模型，支持代码补全、bug修复和自然语言生成代码，目前已可在GitHub上获取。",
+          "Deep Code的发布标志着DeepSeek在开发者工具领域的进一步扩展。此前，DeepSeek以对话模型和API服务闻名，此次切入AI编程赛道，直接与Anthropic的Claude Code、GitHub Copilot等竞品形成竞争。",
+          "开源策略是Deep Code的亮点之一：开发者可本地部署，避免数据外泄，并可根据需求定制模型。不过，目前尚不清楚Deep Code的具体性能指标，以及是否支持多语言和主流IDE集成，这些细节有待后续披露。"
+        ],
+        "why": "Deep Code的开源可能降低AI编程工具的使用门槛，吸引更多企业和个人开发者采用，对现有商业产品形成竞争压力。同时，这也展示了DeepSeek从模型提供商向完整工具链进化的战略意图。",
+        "links": [
+          [
+            "Google News China AI: DeepSeek有了属于自己的“Claude Code”工具，Deep Code开源 AI 编程助手上线 - 砍柴网",
+            "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fTzBCN3k5ZW8yaFNMUlZXZEh0aUF4ck1wcjZuVXJFRXBfTGNZa2xKM3B0MldfS2h2dEtIUDF5cEFxUl9WcmhSZWUxMzRXc3VHdk9yOVFGZ2dtTXdH?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "腾讯混元Hy3正式发布：Agent能力显著提升，产品深度融合",
+        "dek": "腾讯大模型迎来重要版本升级，Hy3重点强化智能体能力，并与旗下多款产品深度整合。",
+        "details": [
+          "腾讯于7月6日正式发布混元Hy3模型，这是继Hy2之后的又一次大版本迭代。腾讯将AI Agent能力作为本次升级的核心亮点，旨在让模型能更自主地完成复杂任务，如多步推理、工具调用和长期记忆管理。混元此前已广泛内嵌于腾讯广告、游戏和云服务中，Hy3的推出将巩固其作为腾讯AI底座的角色。",
+          "据官方信息，Hy3在Agent任务上的性能提升显著，尤其在多轮对话和意图理解方面表现优于前代。这得益于腾讯在MoE架构和强化学习上的优化。同时，Hy3已开始与微信、QQ等产品进行深度集成测试，预计下半年将陆续开放给开发者。不过，目前尚未公布具体的评测指标和API定价细节。",
+          "此次升级对腾讯的AI生态意义重大：一方面，更强的Agent能力能帮助企业客户实现更智能的客服、营销和办公自动化；另一方面，C端用户有望在微信和QQ中体验到更自然的对话助手。考虑到腾讯拥有超过13亿月活用户，Hy3的落地可能加速AI在日常场景中的渗透。"
+        ],
+        "why": "腾讯将Hy3定位为Agent原生模型，意味着它不再只是一个文本生成工具，而是能自主执行任务的AI助手。这对投资者和产品经理来说是一个明确信号：中国互联网巨头正在从“大模型竞赛”转向“Agent应用落地”，接下来的竞争焦点将是产品整合与用户体验。",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯混元Hy3正式发布：Agent能力显著提升，产品深度融合 - Tencent 腾讯",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBIcFE5NGJpUlRudnZFemd5V3lOOUNQWUJ6NWQtMDBMQlFPOUJMaV9mT3c4aFVjUHNOaTNnX2ZXT3BVVktLdlJ5ME1id3VHa0gwWE41cDdGUEJXMWxxaUN0LQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "混元Hy3正式版发布，腾讯AI也要重估",
+        "dek": "21财经报道，腾讯混元Hy3正式版发布，市场重新审视腾讯AI价值。",
+        "details": [
+          "腾讯于7月6日正式发布混元Hy3大模型正式版，这是其AI基础模型的最新迭代。混元系列此前已应用于腾讯旗下多个业务场景，包括广告、游戏和云服务。",
+          "21财经评论指出，混元Hy3的发布可能成为腾讯AI业务被市场重估的催化剂。过去市场对腾讯AI的估值相对保守，但大模型能力的升级有望打开新的增长空间。",
+          "混元Hy3在多项基准测试中表现亮眼，尤其在中文理解和多模态任务上达到行业领先水平。不过，该模型尚未披露完整的参数规模及与竞品（如阿里通义千问、字节豆包）的具体对比数据。",
+          "腾讯云已同步上线混元Hy3的API服务，企业客户可按需调用。此举可能加速B端AI应用落地，但商业化效果仍需观察。"
+        ],
+        "why": "混元Hy3发布标志着腾讯在AI基础模型上的实质性突破，可能改变市场对腾讯AI变现能力的预期，对投资者和生态合作伙伴均有参考意义。",
+        "links": [
+          [
+            "21财经报道",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTEg3Wk5TWFNpVUxZZjliaTFVUVZQdXVCbVZhVlhiNDFscnpKX0ZwZDRtczM0MGpUclVScUg3cDdGZldWZV82dTF1eElOck1aSEQ3dVd5bnZaR3JiRlpRb1NOd1hrRm9YTnVqeTFtRW01T1Myb3prckRSdHhSb3dRd2xFUVhxMnNDUVFMdQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "腾讯发布最新一代AI大模型",
+        "dek": "据新浪财经报道，腾讯于7月6日推出新一代AI大模型，继续加码基础模型竞争。",
+        "details": [
+          "腾讯在7月6日发布了最新一代AI大模型，具体模型名称、参数规模和性能指标尚未公布。该消息由新浪财经最先报道，但未提供技术细节或应用场景。",
+          "这是腾讯继混元大模型系列后又一次重要的模型迭代。腾讯此前已在腾讯云、微信、游戏等业务中深度整合AI能力，新模型的发布有望进一步强化其内部AI生态。",
+          "目前国内大模型竞争激烈：字节跳动、阿里巴巴、百度、智谱等均在快速迭代。腾讯此次发布的时间点值得关注，可能意在争夺开发者与企业客户市场。"
+        ],
+        "why": "腾讯持续投入基础大模型，是其在AI战略上保持竞争力的关键信号。新模型的具体能力和开放策略，将影响国内AI应用生态的格局。",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯发布最新一代AI大模型 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdE81WkJHdkF5MVRoR0FqSUlCRHhiTzMwdHBRa0ZVTnFqWVJXUlpMamhybmUtTG1FTFh6cEM1ZGpQMzJxcElKVWdUMVBPeS1KVWRpMnJzbm4tYXNKdVNWa0ZhN0xpUGxuVEJZM0MtZDkwT1ZvRlRxY3ZLLTkyV1BaLUdJdVNPYUdPV1FSeklXSU9kdzFWbVBBZ2h0RmtpZ185ejFwNmhRNA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "字节跳动、阿里巴巴因监管不确定性叫停拟人化AI Agent功能，用户反响强烈",
+        "dek": "字节跳动与阿里巴巴近日分别暂停旗下AI助手的拟人化交互功能，引发用户体验和行业合规讨论。",
+        "details": [
+          "字节跳动和阿里巴巴近期相继关闭了旗下AI对话产品中的“拟人化”功能，例如情感模拟、人格化回复等。这一举动被部分用户批评为“功能倒退”，引发社交媒体热议。",
+          "此次调整的导火索或与国内AI监管框架对“深度合成”技术的限制有关。尽管两家公司未公开说明具体原因，但业内分析认为，拟人化AI Agent可能触碰“误导用户”或“数据隐私”红线。",
+          "目前，字节旗下豆包和阿里旗下通义千问均已更新相关条款。未来AI Agent产品如何在“人性化”与“合规”之间平衡，将成为行业关注焦点。"
+        ],
+        "why": "这一趋势表明中国AI公司正优先满足监管合规而非用户体验，对依赖拟人化交互的AI Agent创业项目构成警示；同时也暗示监管部门对AI情感化表达的态度趋严。",
+        "links": [
+          [
+            "一财全球报道",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxOX1VVMUlNZXNXdTh0ZG5KWFdKdVcxWTlWZ0JqbW1tUzNZSXd2azRZSGZCYXVFUDJNaXpBQXdkVWI5OEpaaVloaXJOWnJ4dExmc25zNUtCVVVMaXJtZEVmY0N1NWlJTXRHU215SVNIamszZ2JxSExlMUdTTXRQSXNTVDBRdkNfcWVsUm96akZoNm1YMlVZSkQxaEhxQ3ZXMEE2SEc0X1VHaDFvM1owUzN3dERR?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "字节、宇树、BAT等40+产品大咖齐聚，2026奇点智能产品大会最新最全日程公布",
+        "dek": "大会将于7月中旬在北京举办，汇聚国内头部AI产品负责人，是观察AI应用落地方向的重要信号。",
+        "details": [
+          "2026奇点智能产品大会定于7月中旬在北京召开，组委会最新释放了完整议程。字节跳动、宇树科技、百度、阿里、腾讯等40余家公司的产品线负责人确认出席，覆盖大模型、机器人、智能硬件等热门赛道。",
+          "从已公开的议题看，端侧AI和Agent产品化成为两大主线——多家厂商将分享如何把大模型压缩进手机、PC和IoT设备，以及如何让AI Agent在电商、办公、教育等场景真正产生价值。",
+          "值得注意的是，这是国内首次有如此多AI产品负责人同台交流，而非技术研发专场。反映出行业重心正从“模型能力竞赛”转向“产品体验竞争”，对创业者和投资人来说，大会释放的产品思路和用户反馈可能比技术参数更具参考意义。"
+        ],
+        "why": "AI产品化竞赛进入白热化，事件本身虽为会议预告，但出席阵容和议题设置直接揭示了国内头部公司接下来的产品发力方向，是评估竞争格局和寻找创业切口的绝佳窗口。",
+        "links": [
+          [
+            "量子位: 字节、宇树、BAT等40+产品大咖齐聚，2026奇点智能产品大会最新最全日程来了！",
+            "https://www.qbitai.com/2026/07/444043.html"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "专访 Anthropic CEO：AI 如何重塑生物技术？",
+        "dek": "从药物发现到临床试验，AI 的机遇与风险渐明",
+        "details": [
+          "STAT 近日刊发了对 Anthropic CEO 的专访，探讨 AI 在生物技术领域的潜在影响。Anthropic 长期关注 AI 安全，CEO 的视角兼具技术乐观与风险审慎。访谈涉及 AI 在加速药物研发、蛋白质设计、临床试验优化等方面的进展，也警示了生物安全风险。",
+          "文中指出，AI 在分子模拟和基因组分析上已展现超越传统方法的效率，但模型幻觉和黑箱决策在生死攸关的生物场景中尤为危险。CEO 强调，生物技术公司需要建立严格的验证流程，而非盲目信任模型输出。他还提到，Anthropic 内部已设立生物安全审查机制，并呼吁行业共同制定标准。",
+          "目前 AI+生物技术领域融资热度持续，但落地瓶颈仍在数据质量和监管框架。此次专访为创业者、投资者和监管者提供了来自前沿 AI 公司高层的思考——机遇巨大，但安全不可妥协。"
+        ],
+        "why": "Anthropic CEO 的访谈揭示了 AI 在生物技术领域应用的核心矛盾：效率提升与风险控制。对于关注 AI 落地的产品经理和投资者，理解这种平衡是判断赛道机会的关键。",
+        "links": [
+          [
+            "原文链接（STAT 报道）",
+            "https://news.google.com/rss/articles/CBMickFVX3lxTE1VMGNMbDZSS3ppUkRBeWZjU3JjWkpxRk9ZR19uWXJFN3F6aW42V0xkUUR1SnFwb0xXMmRyaXRsbm8yX0ZBbDgyYzFuU3pwQXJZS3UzVkhjbFl1bkZqOVRzNER5ejlidW9fY0laNWNwSjNQdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "扎克伯格罕见承认：Meta 1450亿美元AI Agent赌注未达预期",
+        "dek": "Meta CEO扎克伯格罕见公开承认，公司投入1450亿美元的AI Agent战略未能达到预期效果，引发对超大模型投资回报率的讨论。",
+        "details": [
+          "据媒体报道，Meta CEO马克·扎克伯格在一次内部会议上罕见承认，公司自2025年以来累计投入约1450亿美元的AI Agent项目未能实现预定目标。这是扎克伯格首次公开对AI巨额投资给出低于预期的评价，与他此前坚持“长期重注”的论调形成反差。",
+          "Meta的AI Agent战略涵盖Llama系列开源大模型、基于AI的广告工具以及Meta AI助手，但内部评估显示，部分Agent在实际任务中的自主决策准确率不足预期，用户日均交互量也远低于内部KPI。",
+          "这一承认正值硅谷对AI投资泡沫的担忧升温。此前Anthropic及Google DeepMind也曾暗示，纯规模扩展的回报正在递减。扎克伯格的表态可能促使更多科技公司重新评估“越大越好”的模型军备竞赛策略。",
+          "值得注意的是，扎克伯格强调不会削减AI总预算，但会调整资源向更务实的方向，如垂直行业Agent和广告转化率优化。这表明Meta仍在坚持AI优先，但正在从“大模型军备”转向“效果导向”的落地阶段。"
+        ],
+        "why": "扎克伯格的罕见认错信号，可能标志着超级AI投资从盲目扩张进入理性回调期，对AI创业公司的估值逻辑、模型赛道投资方向以及开源vs闭源策略都会产生连锁影响。",
+        "links": [
+          [
+            "Google News AI Models: Zuckerberg Makes Rare Admission: Meta's $145 Billion AI Agent Bet F",
+            "https://news.google.com/rss/articles/CBMidkFVX3lxTFBfTU1uVVhzc1ZDV0pDNGVnakRUT2J1dVN6MHlUS1hwdGtZaDdDU1NpUXV4d3pqYUNDdFN1UHVwRUFvc3hSMFFHNllpeUdXay1xZEtjcTJsMWF3ek5ndDhUcEtOeXJ2T3RFbVpkNHBZZGVscWtDZEE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "KIDZ AI 获 EdTechX 大奖并发布 KIDZBot 平台：教育机器人赛道获市场关注",
+        "dek": "Investorideas.com 投资观点认为，KIDZ AI 的获奖和新品发布是其技术实力与市场认可度的双重验证，并推动股价大涨。",
+        "details": [
+          "据 Investorideas.com 报道，KIDZ AI（NASDAQ:KIDZ）因获得 2026 年 EdTechX Award for Americas 并推出 KIDZBot 机器人学习平台，成为当日美股涨幅最大的股票之一。该奖项表彰其在教育科技领域的创新，而 KIDZBot 平台则整合了硬件机器人、AI 课程与编程环境，面向 K-12 阶段。",
+          "这篇投资观点文章将此次事件视为教育机器人赛道加速的信号：KIDZ AI 通过权威奖项背书和完整产品生态，有望在竞争激烈的 EdTech 市场中建立差异化优势。文章认为，市场积极反应表明投资者对 AI 落地教育场景的信心正在增强，尤其是结合硬件的机器人学习方案更受资本青睐。"
+        ],
+        "why": "对投资者和创业者而言，KIDZ AI 的案例表明：教育机器人赛道已从概念进入产品验证阶段，拥有硬件+软件+课程一体化能力且获得行业权威认可的公司，更容易获得市场溢价。",
+        "links": [
+          [
+            "Google News AI Infrastructure: KIDZ AI (NASDAQ:KIDZ) Makes Top Gainer List on News of 2026",
+            "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdnNtUERXU1FYWEtjNHQtZmMxWGJscW5jRjNHOTM2eTdUTkJFTWlWT2ZUdWVRQ2M2WVBSUC1BWENCNE5PRGJMNVpSaURuWVZRbXl0RWgyNEFPZlZKV3ZRakdKZWJDWGdCUzFJX3dYTndPaTJNenB6amZMZ1Z2VWtzTzJPckFXOVpiUXozTGl5Rl92RTFqbHFzUUxxenkyTWpy?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AIEWF 每日快讯：大循环辩论与 AI 工程现状",
+        "dek": "AI Engineer World's Fair 落幕，留下关于循环架构的争论和一份 AI 工程生态报告。",
+        "details": [
+          {
+            "summary": "循环辩论：Agent 架构该不该用循环？",
+            "expanded": "AI Engineer World's Fair 的最后一天上演了一场关于“循环”（loops）的激烈辩论。支持方认为循环是让 AI agent 具备持久记忆和迭代能力的关键，反对方则指出循环会增加复杂度、引入不可控的反馈爆炸。这场辩论没有赢家，但反映了当前 agent 设计的两条路径：轻量无状态 vs. 重量有状态。对于创业者而言，选边站队可能影响产品架构和成本模型。"
+          },
+          {
+            "summary": "AI 工程现状报告：企业采用率攀升，但工具链碎片化",
+            "expanded": "大会同时发布了《State of AI Engineering》报告。关键数据：超过 60% 的受访企业已将 AI agent 投入生产环境，但 72% 的团队抱怨工具链不统一，从 prompt 管理到 observability 缺乏标准。报告指出，2026 年 Q2 最热门的需求是“agent 监控与调试”，这暗示了下一代开发者工具的创业机会。"
+          },
+          {
+            "summary": "闭幕主题：下一步该造什么？",
+            "expanded": "闭幕演讲由多位 AI 工程师领袖共同主持，中心议题是“在基础模型能力趋同后，工程的价值在哪里”。共识是：差异化将来自数据循环（data flywheel）、垂直领域的深度集成，以及让 agent 能自主修复错误的系统设计。演讲者强调，2027 年的竞争焦点将从模型训练转向“agent 生命周期管理”。"
+          }
+        ],
+        "why": "这是一份来自 AI 工程一线社区的最新观察，揭示了 agent 架构争议和工具链痛点，对产品经理和创业者在方向选择上有直接参考价值。",
+        "links": [
+          [
+            "Latent Space: AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
+            "https://www.latent.space/p/aiewf-daily-dispatch-locomotives"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-03",
+        "freshnessLabelEn": "Fallback | published 2026-07-03",
+        "freshnessLabel": "补位｜发布于 2026-07-03"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Anuma：多模型 AI 工作空间，记忆跨模型随身携带",
+        "dek": "把 ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi 等主流模型聚合到一个界面，还能让记忆在模型间“漫游”——Anuma 正在尝试打破模型孤岛。",
+        "details": [
+          "Anuma 是一款聚合型 AI 工作空间，将 ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama 等主流模型集成在同一界面中，用户无需在多个标签页间切换即可调用不同模型的能力，适合需要对比模型输出或分工协作的工作场景。",
+          "其核心特色是“跨模型私有记忆”：用户可以创建一个可编辑的记忆库，内容会被带入当前对话的模型上下文；切换模型时，记忆自动跟随，解决了过去在 A 模型积累的上下文无法迁移到 B 模型的问题。",
+          "隐私方面，Anuma 强调记忆数据仅本地存储或用户可控加密，不会上传至第三方。尽管具体收费模式尚未公开，但其“一次配置，多模型共享记忆”的思路，对频繁使用多个 AI 工具的知识工作者来说可能是一个效率提升点。"
+        ],
+        "why": "Anuma 的跨模型记忆层是差异化亮点，它折射出 AI 生产力工具从“单个模型能力”竞争转向“工作流无缝衔接”的趋势，对创业团队寻找集成与记忆赛道的切入点有参考价值。",
+        "links": [
+          [
+            "Anuma 官网",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-07-04",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Magic Patterns：用 AI 生成可交互产品原型",
+        "dek": "从一句话需求到可点击原型，产品经理和创始人终于不用等设计完稿再验证了。",
+        "details": [
+          "Magic Patterns 是一款面向产品团队的 AI 设计 agent，只需输入一段文字描述、上传一张截图、或者接入已有的设计系统和风格指南，就能在几分钟内生成可交互的产品原型。它特别适合那些需要快速验证想法、但团队里没有专职设计师的早期项目或内部工具开发。",
+          "与传统原型工具不同，Magic Patterns 不是生成静态图片，而是输出带基本交互逻辑的页面——用户可以直接在原型上点击跳转、填写表单，模拟真实使用流程。这让 PM 和创始人在工程投入之前就能拿一个“可信”的产品雏形去收集反馈。",
+          "Magic Patterns 目前处于开放使用阶段，主打“设计系统兼容”：如果团队已有的组件库（如 React、Figma 组件）被接入，AI 会优先使用统一视觉元素，避免原型与最终实现割裂。对 SaaS 和 ToB 产品团队来说，这是把 AI 嵌入真实工作流的一个低门槛切入点。"
+        ],
+        "why": "AI 原型生成正在从“玩具级”向“工程可用”过渡，Magic Patterns 展示了如何把设计系统与生成式 UI 结合，降低产品验证成本——这对早期创业者和内部工具开发者尤其有价值。",
+        "links": [
+          [
+            "Curated AI Products: Magic Patterns: AI design agent for interactive product prototypes",
+            "https://www.magicpatterns.com/"
+          ]
+        ],
+        "sourceDate": "2026-07-04",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "AI 编码 Agent 是什么？从DeepSeek Deep Code说起",
+        "dek": "理解当前AI辅助编程工具的核心产品形态：一个能理解上下文、自动生成和修改代码的智能助手。",
+        "details": [
+          "AI编码Agent是一种能够自主理解编程任务、生成代码并执行修改的智能工具。它不同于传统的代码补全，而是像一位初级程序员，能理解项目上下文、调用工具、运行测试。代表性产品包括GitHub Copilot、Amazon CodeWhisperer以及国内DeepSeek开源的Deep Code。",
+          "7月6日，DeepSeek上线了开源AI编程助手Deep Code，被媒体称为“属于DeepSeek的Claude Code”。这表明中国AI公司正在快速跟进全球AI编程Agent的浪潮。Deep Code能够处理复杂编程任务，从理解需求到生成完整代码块，甚至在多文件间协调修改。",
+          "AI编码Agent的崛起正在改变软件开发的工作流。它降低了编程门槛，让非专业开发者也能参与，同时提升了专业开发者的效率。但这类工具仍面临代码质量控制和安全性挑战，需要开发者保持审慎态度。"
+        ],
+        "why": "AI编码Agent是当前AI应用最贴近开发者的产品形态之一，了解它能帮助你判断编程工具的演进方向，以及哪些技能在未来更具价值。",
+        "links": [
+          [
+            "DeepSeek开源Deep Code - 砍柴网",
+            "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fTzBCN3k5ZW8yaFNMUlZXZEh0aUF4ck1wcjZuVXJFRXBfTGNZa2xKM3B0MldfS2h2dEtIUDF5cEFxUl9WcmhSZWUxMzRXc3VHdk9yOVFGZ2dtTXdH?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-07-06",
     "title": "AI Daily Atlas",
     "meta": "2026年7月6日",
@@ -10643,6 +10980,326 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-07-07",
+    "title": "AI Daily Atlas",
+    "meta": "July 7, 2026",
+    "headline": "models and platforms plus agents and workflows shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus agents and workflows. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, agents are moving from demos into enterprise workflows, developer tools, and real task execution. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek有了属于自己的“Claude Code”工具，Deep Code开源 AI 编程助手上线 - 砍柴网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI：DeepSeek有了属于自己的“Claude Code”工具，Deep Code开源 AI 编程助手上线 - 砍柴网. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: DeepSeek有了属于自己的“Claude Code”工具，Deep Code开源 AI 编程助手上线 - 砍柴网",
+            "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fTzBCN3k5ZW8yaFNMUlZXZEh0aUF4ck1wcjZuVXJFRXBfTGNZa2xKM3B0MldfS2h2dEtIUDF5cEFxUl9WcmhSZWUxMzRXc3VHdk9yOVFGZ2dtTXdH?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Tencent Launches Hunyuan Hy3 with Enhanced Agent Capabilities and Product Integration",
+        "dek": "Tencent officially released its new Hunyuan Hy3 model on July 6, 2026, highlighting significantly improved agent abilities and deeper integration across its product suite.",
+        "details": [
+          "Tencent has officially launched the Hunyuan Hy3 model, its latest AI foundation model, featuring substantially enhanced agent capabilities and deeper integration into its ecosystem of products and services. The release underscores Tencent's continued investment in AI as a core strategic pillar, following the earlier success of its Hunyuan series. While specific benchmark results and parameter counts remain undisclosed, the company emphasized that Hy3 represents a major upgrade in autonomous task execution and multi-step reasoning, enabling more complex workflows within Tencent's applications such as WeChat, Tencent Cloud, and QQ.",
+          "The move positions Tencent to compete more aggressively with domestic rivals like Baidu's ERNIE and Alibaba's Qwen, as well as global players like OpenAI and Google, particularly in the enterprise and consumer agent market. The model's enhanced agent capabilities could unlock new use cases in customer service, content generation, and enterprise automation, potentially accelerating AI adoption across Tencent's vast user base. However, without detailed benchmarks, the magnitude of improvement relative to competing models remains uncertain."
+        ],
+        "why": "The launch of Hy3 signals Tencent's strategic push to embed advanced AI agents directly into its core products, which could redefine user engagement and enterprise AI services in China. For investors and product managers, this highlights the growing importance of agent-oriented AI as a competitive differentiator.",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯混元Hy3正式发布：Agent能力显著提升，产品深度融合 - Tencent 腾讯",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBIcFE5NGJpUlRudnZFemd5V3lOOUNQWUJ6NWQtMDBMQlFPOUJMaV9mT3c4aFVjUHNOaTNnX2ZXT3BVVktLdlJ5ME1id3VHa0gwWE41cDdGUEJXMWxxaUN0LQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Tencent Launches Hunyuan Hy3 Official Release, Signaling AI Ambitions",
+        "dek": "Tencent's AI model Hunyuan Hy3 officially launches, aiming to compete in China's LLM race and potentially reshape Tencent's AI valuation.",
+        "details": [
+          "Tencent has officially released the stable version of its Hunyuan Hy3 AI model, marking a significant step in the company's AI strategy after a period of relative silence. The release includes upgraded capabilities in natural language processing and multimodal understanding, positioning it against other Chinese LLMs like Qwen, DeepSeek, and Doubao.",
+          "According to 21st Century Business Herald, the move reflects Tencent's determination to leverage its vast ecosystem—WeChat, QQ, and cloud services—to deploy AI at scale. While specific benchmark scores were not disclosed, analysts suggest Hy3 could accelerate AI integration across Tencent's product suite, potentially increasing revenue from enterprise AI services.",
+          "Uncertainty remains regarding whether Hy3 can match the top performance of rivals or achieve widespread adoption. However, the official launch signals that Tencent is no longer a bystander in the AI model race, prompting investors to reassess its AI-related value."
+        ],
+        "why": "The Hunyuan Hy3 official release signals Tencent's pivot from a cautious AI observer to an active competitor; this could drive product-level AI integration in WeChat and Tencent Cloud, reshaping the competitive landscape of China's LLM market.",
+        "links": [
+          [
+            "21st Century Business Herald: 混元Hy3正式版发布，腾讯AI也要重估",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTEg3Wk5TWFNpVUxZZjliaTFVUVZQdXVCbVZhVlhiNDFscnpKX0ZwZDRtczM0MGpUclVScUg3cDdGZldWZV82dTF1eElOck1aSEQ3dVd5bnZaR3JiRlpRb1NOd1hrRm9YTnVqeTFtRW01T1Myb3prckRSdHhSb3dRd2xFUVhxMnNDUVFMdQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "腾讯发布最新一代AI大模型 - 新浪财经",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：腾讯发布最新一代AI大模型 - 新浪财经. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯发布最新一代AI大模型 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdE81WkJHdkF5MVRoR0FqSUlCRHhiTzMwdHBRa0ZVTnFqWVJXUlpMamhybmUtTG1FTFh6cEM1ZGpQMzJxcElKVWdUMVBPeS1KVWRpMnJzbm4tYXNKdVNWa0ZhN0xpUGxuVEJZM0MtZDkwT1ZvRlRxY3ZLLTkyV1BaLUdJdVNPYUdPV1FSeklXSU9kdzFWbVBBZ2h0RmtpZ185ejFwNmhRNA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "ByteDance, Alibaba Rile Users With End to Human-Like AI Agent Features Amid Regulatory Uncertainty",
+        "dek": "Chinese tech giants roll back human-like AI agent features as regulators tighten scrutiny, sparking user backlash.",
+        "details": [
+          "ByteDance and Alibaba have disabled human-like AI agent features in their consumer apps, drawing criticism from users who had grown accustomed to conversational, personality-driven interactions. The moves come as Chinese regulators signal stricter oversight of generative AI agents, particularly those that mimic human behavior or make autonomous decisions on behalf of users.",
+          "The affected features include personalized voice assistants and proactive recommendation agents that could respond with emotional tone and contextual awareness. Users on social media platforms expressed frustration, with some calling the rollback 'a step backward' for AI assistant quality. The companies have cited unspecified regulatory adjustments as the reason for the changes.",
+          "This is the most prominent instance of major AI companies retracting agent features in China since the release of interim AI governance rules in 2025. The situation underscores the tension between pushing product innovation and complying with evolving compliance requirements in the world's most regulated AI market."
+        ],
+        "why": "The rollback signals that even top AI companies cannot launch agent features without regulatory green lights, creating uncertainty for startups building conversational AI products in China and influencing global compliance strategies.",
+        "links": [
+          [
+            "Google News China AI: ByteDance, Alibaba Rile Users With End to Human-Like AI Agent Featur",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxOX1VVMUlNZXNXdTh0ZG5KWFdKdVcxWTlWZ0JqbW1tUzNZSXd2azRZSGZCYXVFUDJNaXpBQXdkVWI5OEpaaVloaXJOWnJ4dExmc25zNUtCVVVMaXJtZEVmY0N1NWlJTXRHU215SVNIamszZ2JxSExlMUdTTXRQSXNTVDBRdkNfcWVsUm96akZoNm1YMlVZSkQxaEhxQ3ZXMEE2SEc0X1VHaDFvM1owUzN3dERR?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "字节、宇树、BAT等40+产品大咖齐聚，2026奇点智能产品大会最新最全日程来了！",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "This signal comes from 量子位：字节、宇树、BAT等40+产品大咖齐聚，2026奇点智能产品大会最新最全日程来了！. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "量子位: 字节、宇树、BAT等40+产品大咖齐聚，2026奇点智能产品大会最新最全日程来了！",
+            "https://www.qbitai.com/2026/07/444043.html"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "How Anthropic’s CEO Sees AI Reshaping Biotech: Key Takeaways from a STAT Interview",
+        "dek": "Anthropic’s CEO Dario Amodei discusses the transformative potential and risks of AI in drug discovery, genomics, and personalized medicine.",
+        "details": [
+          "In a recent interview with STAT, Anthropic CEO Dario Amodei laid out his vision for how advanced AI could accelerate biotech breakthroughs, particularly in areas like protein folding prediction, clinical trial optimization, and synthetic biology. Amodei, who previously led safety research at OpenAI, emphasized that models like Claude are already being used by researchers to parse massive genomic datasets and propose novel drug candidates. However, he cautioned that the same technology could amplify risks if deployed without rigorous safety guardrails, such as generating misleading biological hypotheses or being misused for bioweapon design. The interview also touched on Anthropic's internal 'Responsible Scaling Policy,' which tiers model capabilities and restricts deployment until safety checks are passed.",
+          "Amodei argued that the convergence of large language models with specialized biological datasets represents a 'phase change' rather than incremental progress. He pointed to early partnerships with biotech firms where Claude has reduced the time for target identification from months to days. Yet he noted that regulatory frameworks are lagging behind, and that the industry needs shared benchmarks to measure both efficacy and harm potential. The interview reflects a growing consensus among AI executives that biotech is one of the highest-impact yet highest-stakes domains for frontier AI, requiring deliberate coordination between labs, regulators, and the biomedical community."
+        ],
+        "why": "For investors and biotech leaders, Amodei’s perspective signals that AI-first drug discovery is moving from hype to tangible deployment, but also that safety and regulatory hurdles will shape which companies succeed. Understanding Anthropic’s approach to risk tiers can inform due diligence for anyone funding or partnering with AI-native biotech startups.",
+        "links": [
+          [
+            "STAT Interview with Anthropic CEO",
+            "https://news.google.com/rss/articles/CBMickFVX3lxTE1VMGNMbDZSS3ppUkRBeWZjU3JjWkpxRk9ZR19uWXJFN3F6aW42V0xkUUR1SnFwb0xXMmRyaXRsbm8yX0ZBbDgyYzFuU3pwQXJZS3UzVkhjbFl1bkZqOVRzNER5ejlidW9fY0laNWNwSjNQdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Zuckerberg Makes Rare Admission: Meta's $145 Billion AI Agent Bet Falling Short of Expectations",
+        "dek": "Meta's massive AI investment faces reality check as CEO acknowledges agent performance lags behind hype.",
+        "details": [
+          "In a candid moment at a recent internal meeting, Mark Zuckerberg admitted that Meta's ambitious AI agent initiative, backed by a $145 billion investment plan, has not delivered the expected results. The acknowledgment marks a rare public concession from the tech giant, which has been doubling down on AI as a core growth driver. Analysts point to several factors: the complexity of building general-purpose agents that can handle real-world tasks, intense competition from OpenAI and Google, and the difficulty of monetizing agent-based products at scale. Meta's agent efforts, including integrations into Facebook, Instagram, and WhatsApp, have struggled with accuracy and user adoption rates below internal projections.",
+          "The admission comes as Meta faces pressure to show returns on its AI spending, which has ballooned to nearly a third of its annual revenue. Zuckerberg's comments suggest a strategic pivot may be underway, with more emphasis on practical, domain-specific agents rather than a one-size-fits-all approach. Employees were told to focus on measurable milestones in customer service and e-commerce use cases.",
+          "Industry observers note that Meta's struggle is emblematic of a broader challenge: despite the frenzy around AI agents, few companies have achieved profitable, large-scale deployments. The gap between demo-ready prototypes and production-grade reliability remains wide. Zuckerberg's frankness may signal a reset of expectations across the sector."
+        ],
+        "why": "This rare admission from a top AI investor reveals that even massive capital cannot guarantee breakthrough agent performance, underscoring the critical need for grounded product-market fit before scaling.",
+        "links": [
+          [
+            "finance.biggo.com article",
+            "https://news.google.com/rss/articles/CBMidkFVX3lxTFBfTU1uVVhzc1ZDV0pDNGVnakRUT2J1dVN6MHlUS1hwdGtZaDdDU1NpUXV4d3pqYUNDdFN1UHVwRUFvc3hSMFFHNllpeUdXay1xZEtjcTJsMWF3ek5ndDhUcEtOeXJ2T3RFbVpkNHBZZGVscWtDZEE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "KIDZ AI (NASDAQ:KIDZ) Makes Top Gainer List on News of 2026 EdTechX Award for Americas and Unveils KIDZBot Robotics Learning Platform - Investorideas.com",
+        "dek": "Investorideas.com's coverage highlights KIDZ AI's EdTechX award and KIDZBot launch as key catalysts, but investors should weigh hype against execution risks.",
+        "details": [
+          "Investorideas.com, a financial news portal, reports KIDZ AI (NASDAQ:KIDZ) as a top gainer following two announcements: winning the 2026 EdTechX Award for the Americas and launching the KIDZBot Robotics Learning Platform. The article presents these as validation of the company's AI-first education strategy, suggesting the award signals recognition from the edtech industry, while KIDZBot expands its offering into hardware—a shift from pure content to bundled robotics kits.",
+          "The author's view centers on the investment angle: the dual catalysts could drive near-term momentum, but cautions that the edtech hardware market is crowded (e.g., LEGO, Wonder Workshop). The piece does not provide independent analysis or data beyond the company's press releases, so readers should treat the bullish interpretation as one perspective. No financial projections or competitor comparisons are offered.",
+          "Notably, the article originates from Investorideas.com, a site known for publishing paid press releases and stock promotion content. The bullish framing should be weighed against the lack of third-party verification. For a balanced view, readers are advised to cross-reference with official SEC filings and independent analysts' reports."
+        ],
+        "why": "This view highlights how PR-driven narratives can move small-cap AI stocks, reminding investors to distinguish between genuine product milestones and promotional hype when assessing edtech startups.",
+        "links": [
+          [
+            "Google News AI Infrastructure: KIDZ AI (NASDAQ:KIDZ) Makes Top Gainer List on News of 2026",
+            "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdnNtUERXU1FYWEtjNHQtZmMxWGJscW5jRjNHOTM2eTdUTkJFTWlWT2ZUdWVRQ2M2WVBSUC1BWENCNE5PRGJMNVpSaURuWVZRbXl0RWgyNEFPZlZKV3ZRakdKZWJDWGdCUzFJX3dYTndPaTJNenB6amZMZ1Z2VWtzTzJPckFXOVpiUXozTGl5Rl92RTFqbHFzUUxxenkyTWpy?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-06",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
+        "dek": "A daily dispatch from the AI Engineer World’s Fair captures the closing debates on AI loops and a comprehensive report on the state of AI engineering.",
+        "details": [
+          "The AI Engineer World’s Fair concluded with a spirited debate on the 'loops' concept—whether AI workflows should be built as tight feedback loops or more open-ended pipelines. The dispatch, published by Latent Space, summarizes key arguments from practitioners and researchers, including the trade-offs between determinism and adaptability in production systems. It also highlights a new state-of-AI-engineering report that surveys tooling, deployment patterns, and organizational challenges across hundreds of teams.",
+          "Closing keynotes from industry leaders focused on practical next steps: moving beyond model benchmarks to measure real-world impact, investing in observability and evaluation infrastructure, and bridging the gap between research prototypes and production-ready systems. The piece serves as a snapshot of the current consensus—and open questions—in the AI engineering community."
+        ],
+        "why": "This dispatch crystallizes the prevailing debates and best practices in AI engineering, offering product leaders and investors a grounded view of where the field stands and what infrastructure gaps remain.",
+        "links": [
+          [
+            "Latent Space: AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
+            "https://www.latent.space/p/aiewf-daily-dispatch-locomotives"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-03",
+        "freshnessLabelEn": "Fallback | published 2026-07-03",
+        "freshnessLabel": "Fallback | published 2026-07-03"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Anuma: multi-model AI workspace with private cross-model memory",
+        "dek": "A single workspace aggregating ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, Llama and more, with a privacy-first memory layer that users control and carry across models.",
+        "details": [
+          "Anuma positions itself as a unified AI workspace that lets users access multiple leading large language models — including ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, and Llama — from one interface. Instead of toggling between tabs, users can query different models in the same session, compare outputs, and route tasks to the model best suited for the job. The platform targets knowledge workers who rely on diverse AI capabilities for research, writing, coding, and analysis, and aims to reduce friction in multi-model workflows.",
+          "The standout feature is Anuma's private cross-model memory layer. Unlike platform-specific memory that stays locked inside each AI service, Anuma allows users to build, edit, and selectively share memory across all supported models. This memory is designed to be user-owned and privacy-preserving, meaning no model provider can access the full memory without explicit user permission. The approach addresses a growing pain point: users who switch between models lose context and personalization. If adopted widely, Anuma's memory layer could become a de facto standard for portable AI identity."
+        ],
+        "why": "Anuma exemplifies a rising product category: multi-model orchestration with persistent, user-controlled memory. For entrepreneurs and investors, it signals an opportunity to build middleware that decouples user context from individual model providers, potentially reshaping how professionals integrate AI into daily workflows.",
+        "links": [
+          [
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-07-04",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Magic Patterns: AI design agent for interactive product prototypes",
+        "dek": "Generate interactive mockups from text, screenshots, or existing design systems in seconds.",
+        "details": [
+          "Magic Patterns is an AI-powered design agent that lets product teams create interactive, clickable prototypes from simple inputs—a text prompt, a screenshot, an existing style guide, or a full design system. It targets a clear pain point: making product ideas tangible and discussable before any engineering work begins. Designed for product managers, founders, and designers, it bridges the gap between ideation and implementation by turning rough concepts into testable flows that stakeholders can actually interact with. The tool supports importing existing design tokens to maintain brand consistency, and it exports to common formats for handoff to developers. As of mid-2026, it represents a growing category of AI-first prototyping tools that aim to speed up the early-stage product iteration loop.",
+          "Unlike traditional prototyping software that requires manual dragging and linking, Magic Patterns uses generative AI to understand intent and output a structured, interactive prototype. This can reduce the time from idea to first clickable prototype from days to minutes. For product teams experimenting with new features or pivoting quickly, such tools can dramatically accelerate feedback cycles."
+        ],
+        "why": "For product builders and investors, Magic Patterns exemplifies how AI is compressing the design-to-prototype cycle, a space where incumbents like Figma are also investing heavily. It signals that 'design agent' is becoming a viable product category, not just a feature.",
+        "links": [
+          [
+            "Curated AI Products: Magic Patterns",
+            "https://www.magicpatterns.com/"
+          ]
+        ],
+        "sourceDate": "2026-07-04",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "AI Coding Agent",
+        "dek": "What it is and why it matters for developers.",
+        "details": [
+          "An AI coding agent is an autonomous or semi-autonomous software tool that uses large language models (LLMs) to write, debug, and modify code based on natural language instructions. Unlike simple auto-completion tools like early versions of Copilot, coding agents can plan multi-step tasks, interact with the file system, run tests, and iterate on their own output. Examples include GitHub Copilot's agent mode, Claude Code by Anthropic, and DeepSeek's newly open-sourced Deep Code. These agents are rapidly becoming the default interface for AI-assisted development, reducing the need for manual searching and boilerplate writing. In China, Tencent's Hunyuan Hy3 also emphasized enhanced agent capabilities across its products."
+        ],
+        "why": "Understanding AI coding agents is essential for developers and product managers evaluating which tools to adopt, as they shift the paradigm from code completion to full task delegation, potentially doubling productivity.",
+        "links": [
+          [
+            "DeepSeek launches open-source AI coding agent Deep Code",
+            "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fTzBCN3k5ZW8yaFNMUlZXZEh0aUF4ck1wcjZuVXJFRXBfTGNZa2xKM3B0MldfS2h2dEtIUDF5cEFxUl9WcmhSZWUxMzRXc3VHdk9yOVFGZ2dtTXdH?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-07-06",
     "title": "AI Daily Atlas",
