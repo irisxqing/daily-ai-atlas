@@ -1,5 +1,366 @@
 const archiveZh = [
   {
+    "date": "2026-07-09",
+    "title": "AI Daily Atlas",
+    "meta": "2026年7月9日",
+    "headline": "资本与并购、模型与平台 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕资本与并购和模型与平台展开。融资投资和并购信号继续反映资本对 AI 方向的取舍，同时模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "国产大模型下半场，Kimi摸着Anthropic过河",
+        "dek": "月之暗面借鉴Anthropic策略，国产大模型差异化竞争进入新阶段",
+        "details": [
+          "国产大模型竞争进入下半场，Kimi（月之暗面）被指正在“摸着Anthropic过河”——在产品策略、安全对齐和长上下文能力等方面借鉴Anthropic的思路，以应对日益激烈的市场环境。",
+          "Kimi凭借超长上下文窗口先发制人，但面临阿里、字节等巨头的围堵。通过模仿Anthropic的“安全优先”路线，Kimi希望建立差异化优势，在模型可信度和企业级应用上争取更大空间。",
+          "投资界分析认为，借鉴Anthropic有助于Kimi在模型能力和品牌定位上对标国际一线，但国产大模型仍面临算力成本高企、商业落地艰难等共同挑战，能否复制Anthropic的成功尚有不确定性。"
+        ],
+        "why": "这表明国产大模型创业公司正从单纯卷参数转向学习海外领先者的产品哲学，安全对齐和长上下文能力可能成为下一阶段竞争焦点，值得关注相关投资和产品布局。",
+        "links": [
+          [
+            "国产大模型下半场，Kimi摸着Anthropic过河 - 投资界",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjX0VleU1ZQWxrdnFkWkVfbC1GOFJOc2NCeTJkbFlHU0lRb0RIM0thenZXekVWWjJYWjBabEozcFBvM2RBRWxtMFBTZmFRbjRBZkdVTGRB?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "OpenAI 新分析：SWE-Bench Pro 基准测试存在信号噪声问题",
+        "dek": "揭示编码评估中的可靠性隐患，影响 AI 模型能力排名的可信度",
+        "details": [
+          "OpenAI 近日发布一项分析报告，指出主流编码能力评测基准 SWE-Bench Pro 存在信号噪声问题，部分测试用例可能无法真实反映模型的编码水平。这项发现引发了开发者社区对 AI 模型排名可靠性的广泛讨论。",
+          "SWE-Bench Pro 是业界用于评估大模型在真实软件工程任务上表现的关键基准，尤其在对比 GPT-4o、Claude 等模型时被频繁引用。OpenAI 团队发现，该基准中某些测试任务存在数据泄露、题目模糊或验证标准不一致的情况，可能导致模型得分虚高或偏低。",
+          "分析还建议社区采用更严格的评估方法，例如增加对抗性测试、引入人工复查等。OpenAI 同时公开了部分内部评估数据和改进建议，希望推动行业建立更透明、可复现的编码评测体系。"
+        ],
+        "why": "基准测试的可靠性直接影响模型选型与投资决策，开发者应警惕单一基准排名，结合多维度评估判断模型真实编码能力。",
+        "links": [
+          [
+            "OpenAI News: Separating signal from noise in coding evaluations",
+            "https://openai.com/index/separating-signal-from-noise-coding-evaluations"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek被曝布局自研AI推理芯片，为摆脱英伟达算力限制，正对接设计、代工、存储多方伙伴 - 搜狐网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI：DeepSeek被曝布局自研AI推理芯片，为摆脱英伟达算力限制，正对接设计、代工、存储多方伙伴 - 搜狐网。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: DeepSeek被曝布局自研AI推理芯片，为摆脱英伟达算力限制，正对接设计、代工、存储多方伙伴 - 搜狐网",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdzNwdEJlM2VkZTlxOFFYSFRhMUVVdVVDV3RNZVhzaWsxb2JXemdKclVTdldveGRmNm5ZNjJDSUFZSzlxT1FQMDJ2SDk1X0tjVmo3SmJySHo4OXdTbFF1NXJGUENJT0tIUGx6cU9XMVF2aDNZWDNMZFpxT2VmdWNVaHVvdTk4V3pJOGVnLQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "OpenAI 公布政府与国家安全合作原则",
+        "dek": "如何在不违背民主价值观的前提下与政府合作？OpenAI 首次系统披露合作框架。",
+        "details": [
+          "OpenAI 于 7 月 8 日发布长篇政策文章，系统阐述其与政府及国家安全机构合作的原则与边界，这也是该公司首次就该敏感议题公开表态。文中提出三大支柱：负责任使用、民主问责和公共安全。",
+          "在原则层面，OpenAI 明确其合作将只面向“强化民主体制、增进人类安全”的场景，例如网络安全防御、公共卫生应对、核不扩散监控等；同时禁止用于“不民主的监控、大规模杀伤性武器开发或压制人权”。",
+          "值得注意的是，OpenAI 强调所有合作都将保持“可审计的透明度”——向公众披露合作范围、技术使用方式及效果评估，并邀请独立第三方参与监督。这一做法或将成为行业参照。",
+          "虽然没有透露具体合作客户或金额，但 OpenAI 表示已开始与美国联邦及州级机构就“关键基础设施保护”与“公共服务优化”展开试点项目。此举说明 AI 公司与政府的关系正从“极力避免”转向“有条件的制度性嵌入”。"
+        ],
+        "why": "这是 OpenAI 首次为政府合作建立明确规范，既为内部划清了红线，也向行业释放了信号——在 AI 安全议题持续升温的背景下，主动定义合作边界比被动接受监管更有利于掌握话语权。",
+        "links": [
+          [
+            "OpenAI News: Our approach to government and national security partnerships",
+            "https://openai.com/index/government-national-security-partnerships"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "腾讯投资大换仓：减持老登，拥抱小登",
+        "dek": "据21财经报道，腾讯近期调整投资组合，减持传统互联网公司股权，加大对AI初创企业的投入，显示出资本向前沿技术转移的趋势。",
+        "details": [
+          "据21财经报道，腾讯正进行大规模投资组合调整，减持部分成熟互联网公司股权，将资本重新配置到AI及新兴科技领域。这一动作被视为腾讯应对产业周期变化的战略选择。",
+          "被减持的公司多为消费互联网时代的“老登”企业，而新资金流向了以AI为核心的“小登”创业公司，包括大模型、AI应用和机器人等赛道。腾讯不再满足于财务投资，更强调战略协同。",
+          "分析人士指出，腾讯此次“大换仓”反映了其对AI赛道的高度重视，同时也意味着腾讯将更深度参与初创公司的技术路线选择。此举可能影响中国AI创投生态，其他大厂或跟进调整投资策略。"
+        ],
+        "why": "腾讯的投资方向历来是行业风向标，此次转向AI前沿领域，不仅为初创公司带来资金和生态支持，也意味着传统互联网公司在AI时代的战略重心全面迁移。创业者应关注腾讯的偏好变化，调整融资策略。",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯投资大换仓：减持老登，拥抱小登 - 21财经",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcTZiT0VZQ0VrNkthQlkxNjJMemFsR25udndZdUdjVmVIOXE1UmozU2lVWUFDZ2NSLXhoSWI3aHVvWnRyWjR5cXVYd1R6NzJiT0JtUGliRVhVYVltODFsYUV4bXZrSkpwMGR3c2lLXzJkV2JfMjV4SkoweDF4OS1LajY0ckNYZC1jM2dtLQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Google 搜索框 25 年来首次重设计，转向 AI 多模态交互",
+        "dek": "前 DeepMind 研究员创立的机器人 AI 实验室声称在‘AI 大脑’上取得突破",
+        "details": [
+          "据 Fortune 报道，由前 Google DeepMind 研究员领导的 Nomagic AI 实验室宣布在机器人‘AI 大脑’领域取得进展。该团队声称其系统能让机器人更灵活地理解和执行复杂任务，不过目前尚未公开完整技术细节或第三方验证。",
+          "Nomagic 的突破被视为具身智能赛道的重要信号——如果‘AI 大脑’真能泛化到不同机器人形态，可能加速仓储、制造等场景的自动化进程。但距离规模化商用仍有不确定性，行业内类似尝试（如 Google 的 RT-2）尚未达到广泛部署阶段。"
+        ],
+        "why": "机器人‘AI 大脑’的进展直接关系到具身智能的商业化落地，值得关注前 DeepMind 团队的后续验证和融资动向。",
+        "links": [
+          [
+            "Fortune: Nomagic AI lab led by former Google DeepMind researcher claims success with 'AI brain' for robots",
+            "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQdHFQc3BRUEVzVnpudmRFajFJeUpCQU12MXBFR3dfWURHMU5oRm16TVhQYVN6ZDVFajVXbHVfZVp3TjNodjFMLWphaHQ0eVRBcFRsbF9GcF84TDBYd3JpcUpDb0piZ29raWo5alR2dEtfOEtJZkVySmFwYVVLdmFhWFY5NncyVC1FZXEwOGk5QmNJZms5WVpFRjZpYXduaGxjQlJkdTIyUW9PcU1TR2pJcW1RZHZteDk1cmxDeGFYeXFVdmFFVEZpYmJKa2VWSE5XUGozU0d4bE9mVlVHcWx3SExoNjVnQlZrbHBTS2ZwaGxBbGpaTXc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "NAVER LABS 复现 IWSLT 2026 指令跟随系统：用开源模型打通语音-语言多模态",
+        "dek": "韩国 NAVER LABS 发布 IWSLT 2026 指令跟随任务的复现系统，采用 SeamlessM4T-v2 和 Qwen3-4B 构建三阶段流水线，并合成 10 万条训练数据，为语音交互指令理解提供低成本方案。",
+        "details": [
+          "IWSLT 2026 的指令跟随共享任务要求模型在执行语音翻译时理解并遵循用户指令，例如“把这句话翻译成更正式的中文”。NAVER LABS 的复现系统保留了 2025 年版的三阶段设计：先对齐语音编码器与语言模型的投影层，再通过纯文本数据对 LLM 进行 LoRA 预训练，最后将语音与文本模态融合进行微调。这种模块化方案降低了从头训练多模态模型的门槛。",
+          "系统强制使用了大赛规定的组件：SeamlessM4T-v2-large 作为语音编码器，Qwen3-4B-Instruct 作为 LLM 骨干——两者都是公开可用的开源模型。NAVER LABS 还从比赛提供的语料库中自动生成了 10 万条合成指令跟随样例，覆盖十个语音中心任务类型（每类 1 万条），包括翻译、改写、摘要等，可用于第三阶段的有监督微调。最终模型在英文到中文的语音翻译任务上取得了 COMET 0.781 的评分，表明开源方案也能达到竞争力水平。",
+          "这项工作的意义在于验证了“预训练语音编码器 + 指令调优 LLM”的通用范式在语音指令跟随场景下的有效性。与闭源方案相比，NAVER LABS 的复现全程基于开源模型和公开数据，任何团队都能低成本复现并改进。对于需要中文语音交互功能的产品团队，这套流水线可以直接作为基线，或通过增加特定领域数据进一步优化。"
+        ],
+        "why": "语音指令跟随是下一代智能助手和语音交互产品的核心能力。NAVER LABS 的开源复现方案降低了技术门槛，让中小团队也能基于社区模型构建带指令理解的多模态系统，加速了语音 AI 应用的民主化。",
+        "links": [
+          [
+            "arXiv cs.CL: NAVER LABS System Re-implementation for the IWSLT 2026 Instruction-Following Task",
+            "https://arxiv.org/abs/2607.05623"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 公司集体撤退安全承诺，能力增长却加速",
+        "dek": "Axios 报告揭示：随着 AI 模型能力持续突破，科技巨头正在悄悄放宽此前签署的安全承诺，监管真空与商业化压力正在重塑行业规则。",
+        "details": [
+          "据 Axios 报道，多家头部 AI 公司近期在公开场合淡化或撤回此前承诺的安全措施，包括模型发布前的红队测试、训练暂停协议以及透明度报告制度。这种转向正发生在模型能力呈指数级增长的背景下，GPT-5 级系统已在多模态推理上接近人类专家水平。",
+          "2024 年白宫召集的 AI 安全承诺签署方中，已有超过三分之一不再主动更新安全透明度页面；部分公司将安全部门并入产品团队，或将安全测试从发布前移至发布后补丁阶段。Axios 引用知情人士称，核心原因是“安全投入无法直接转化为营收，而竞争对手正在加速推出新功能”。",
+          "政策制定者对此反应不一。欧盟 AI 法案执行机构已宣布将启动针对“承诺兑现”的调查；美国商务部则持观望态度，其 AI 安全研究所尚未发布任何强制指引。Axios 分析指出，若缺乏外部强制力，企业自发安全治理可能让位于“够用就好”的最低合规标准。"
+        ],
+        "why": "这条趋势对 AI 投资和创业有直接警示：安全不再是加分项而是隐性风险，押注合规能力强的公司或监管技术（如模型审计工具）可能成为下一波机会。对开发者而言，依赖未经过充分安全验证的 API 层的商业风险正在累积。",
+        "links": [
+          [
+            "Google News AI Reports: AI companies retreat from safety pledges even as capabilities grow",
+            "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB5Qk02VjM4UVRFZTA3M0d2ckYwaUdVc1hFWlRXZy1YMldiOXd0YW43WjYzRk1pdHA2YUFlVjdXOXU0XzY3eDFBS2tmdVN6cjdwZGNvZ3llemtnRllYekM2TzhEdWdLUWxv?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "超越静态评估：为可扩展的智能体强化学习构建仿真环境",
+        "dek": "一篇 arXiv 新论文指出，传统静态基准已无法衡量 LLM Agent 的多步决策能力，提出 AgenticAI-Supervisor 平台，通过仿真环境实现可扩展的强化学习训练与评估。",
+        "details": [
+          "随着大型语言模型向自主 Agent 演进，静态评估（如单轮问答）的局限性日益明显——它无法捕捉多步决策中的长期依赖和错误传播。一篇 2026 年 7 月 8 日发布的 arXiv 论文提出 AgenticAI-Supervisor，这是一个基于 API 和 UI 的强化学习 Gym 环境，核心思路是将环境创建与执行解耦，开发者可快速构建仿真场景。",
+          "该平台不依赖人工标注的“理想轨迹”，而是通过可验证的执行结果（如客服工单是否解决）生成高保真轨迹，并采用多维奖励塑造。关键创新在于内部状态验证机制：通过在虚拟环境中植入“攻击探测器”，阻止 Agent 通过取巧手段（如发送空回复或重复点击）获得高分——这一机制被称为“奖励黑客防御”，确保训练信号真实反映能力提升。",
+          "论文以“客户支持 Agent”为案例展示了闭环反馈效果：Agent 需在多轮对话中理解问题、查询知识库、操作 CRM 并最终关闭工单。训练后的 Agent 在任务完成率和用户满意度模拟指标上均显著优于基线。研究团队计划未来开放该平台，用于更复杂的浏览器导航、代码执行等场景。"
+        ],
+        "why": "这篇论文指向 Agent 评估基础设施的范式转变——从静态基准转向可扩展、可验证的动态仿真。对于正在构建自主 Agent 产品的团队，类似平台可能成为下一代训练与评估的标准工具，值得关注其在开源社区的应用潜力。",
+        "links": [
+          [
+            "arXiv cs.AI: Beyond Static Evaluation...",
+            "https://arxiv.org/abs/2607.05773"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AIEWF Daily Dispatch：大循环辩论与AI工程现状",
+        "dek": "AI工程师世界博览会闭幕日聚焦循环辩论、工程状态报告与未来构建方向",
+        "details": [
+          {
+            "summary": "大循环辩论",
+            "expanded": "在AIEWF闭幕日，与会者就AI工程中“循环”的作用展开辩论，包括Agent自主循环、人类在环等模式，探讨对系统可靠性与效率的影响。"
+          },
+          {
+            "summary": "AI工程现状报告",
+            "expanded": "新发布的报告追踪企业采用AI工程实践的进展，涵盖工具链成熟度、团队结构变化等关键指标，反映行业从实验走向规模化的阶段。"
+          },
+          {
+            "summary": "闭幕主题：接下来构建什么",
+            "expanded": "多位主讲人提出未来一年AI应用方向，包括基础设施优化、垂直领域Agent等，强调从模型能力转向工程落地的优先级。"
+          }
+        ],
+        "why": "这场博览会浓缩了AI工程领域当前的核心争论和趋势，关注循环辩论与现状报告有助于理解下一波产品化和投资机会。",
+        "links": [
+          [
+            "Latent Space: AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
+            "https://www.latent.space/p/aiewf-daily-dispatch-locomotives"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-03",
+        "freshnessLabelEn": "Fallback | published 2026-07-03",
+        "freshnessLabel": "补位｜发布于 2026-07-03"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "别让AI一上来就“进厂打螺丝”：智源悟界·Orca要先教模型理解世界如何变化",
+        "dek": "智源研究院推出悟界·Orca，强调先构建世界模型再执行任务，该工作登顶Hugging Face论文月榜。",
+        "details": [
+          "北京智源人工智能研究院最新开源研究“悟界·Orca”提出了一种新的训练范式：在让AI Agent执行具体任务之前，先教会它理解世界运转的底层逻辑——比如物理规律、因果链条和时空变化。这种做法旨在解决当前大模型“只管局部、不懂全局”的局限。",
+          "与传统Agent直接对接API或工具不同，Orca的核心是一个可交互的世界模型，AI可以在“模拟环境”中试错和学习，再迁移到真实场景。研究团队在多项物理推理和任务规划基准上取得了超过GPT-4o及Claude 3.5 Sonnet的成绩。",
+          "该项目在Hugging Face月度热门论文榜上排名第一，获得大量开发者关注。开源代码和模型权重均已发布，社区可以复现和二次开发。对于关注AI Agent和世界模型方向的研究者与工程师来说，这是近期值得跟进的重要工作。"
+        ],
+        "why": "悟界·Orca代表了AI训练从“任务驱动”向“理解驱动”的转向，对Agent产品、机器人控制和仿真训练都有启发价值，值得开发者和投资者跟踪其后续工程化进展。",
+        "links": [
+          [
+            "量子位文章",
+            "https://www.qbitai.com/2026/07/446075.html"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Humalike：给AI Agent装上社交智能",
+        "dek": "一款在Product Hunt上发布的新工具，旨在为AI Agent注入社交能力，让它们更懂人情世故。",
+        "details": [
+          "Humalike 是一套为AI Agent提供社交智能的中间件。它通过分析对话中的语气、语境和社交线索，让Agent不仅仅是完成任务，还能表现出同理心和适当的互动风格。",
+          "该产品面向客服、销售、教练等需要与人类深度交互的AI Agent开发者。用户可以通过API将Humalike集成到现有Agent中，无需从零训练模型。",
+          "Humalike 在Product Hunt上架首日获得较高关注。对于AI产品创业者来说，这暗示了一个新的方向：当基础模型能力趋同时，社交智能可能成为差异化优势。"
+        ],
+        "why": "Humalike 将社交智能从人设工程中独立出来，提示AI产品团队：在真实工作流中，AI Agent的竞争力正从准确性转向互动体验。",
+        "links": [
+          [
+            "Product Hunt 页面",
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1hRG9tcXgtaDRZNWFKMTRlb21SWFg2OVBQZWlRUkc5bE15bWpVcVBlekRxOTNkWmN2b201MkRnN1pIM3JwZ1BtTktOUGc2dGgxN3NOcVgyWnNhSkE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "AnySearch：为 Agent 和开发者打造的实时结构化搜索",
+        "dek": "AI Agent 需要实时、可靠且结构化的数据源来完成自主任务，AnySearch 试图填补这一空白。",
+        "details": [
+          "AnySearch 是一款面向 AI Agent 和开发者的实时结构化搜索引擎。与传统的通用搜索引擎不同，AnySearch 专注于提供机器可读的结构化数据，使得 AI Agent 能够直接提取关键信息并用于决策。",
+          "该产品在 Product Hunt 上发布，强调“被 Agent 和开发者信任”的实时搜索能力。它可能支持 API 接入，允许开发者在自己的工作流中集成实时数据，例如自动化报告生成、监控警报或金融分析。",
+          "随着 Agentic AI 的兴起，对可靠、低延迟的结构化数据的需求正在增长。AnySearch 的出现反映了市场从“提供信息”向“为机器优化信息”的转变，目前仍处于早期产品验证阶段。"
+        ],
+        "why": "对于关注 AI 应用层的创业者和开发者来说，AnySearch 代表了一个信号：围绕 AI Agent 的基础设施工具（如结构化搜索）可能成为下一个增长点。",
+        "links": [
+          [
+            "Product Hunt 页面",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAyaVE3ZDhva0tvb29ZYWIzRGQ2dEhtTTQ5aXRsbUg2WkQ3MDlobFROOEFtUDFMRDBGeVZwaHN1LWhxNzNvenhqRFNrUWg0Qk1BSDdwNzYtRC1ZQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "世界模型",
+        "dek": "AI 如何像人类一样在脑中模拟物理世界？世界模型是连接感知、预测与行动的核心概念。",
+        "details": [
+          "世界模型（World Model）是 AI 对环境的内部抽象表示，它允许系统通过想象来预测行动后果，而无需在真实世界中反复尝试。这个概念在机器人、自动驾驶和仿真训练中尤为重要，因为它让 AI 能够进行“心智模拟”，从而在复杂环境中做出更安全的决策。",
+          "最新研究显示，当前的大语言模型（LLM）代理在工具使用、多步规划和长期推理中频繁失败，根源之一正是缺乏有效的世界模型。一篇 2026 年的综述论文（arXiv:2607.05775）综合了 27 篇相关研究，指出 LLM 代理往往只依赖统计模式匹配，而非因果推理，导致在动态环境中表现脆弱。",
+          "世界模型的核心挑战在于：既要压缩高维感官输入（如视觉、触觉），又要保留对物理规律（如重力、碰撞）的预测能力。特斯拉、Waymo 和 DeepMind 等团队正投入资源研发基于世界模型的端到端驾驶和机器人控制，但距离通用物理理解仍有距离。",
+          "如果世界模型取得突破，AI 将从“反应式执行”跃升至“主动规划”——这不仅是技术演进，还可能重塑具身智能、虚拟现实和工业仿真的底层逻辑。"
+        ],
+        "why": "理解世界模型有助于判断机器人、自动驾驶和仿真领域的投资与技术路线，避免被表面跑分误导。",
+        "links": [
+          [
+            "arxiv 论文：Beyond the Leaderboard",
+            "https://arxiv.org/abs/2607.05775"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-07-08",
     "title": "AI Daily Atlas",
     "meta": "2026年7月8日",
@@ -11314,6 +11675,358 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-07-09",
+    "title": "AI Daily Atlas",
+    "meta": "July 9, 2026",
+    "headline": "capital and M&A plus models and platforms shape today’s AI map",
+    "summary": "The main signal today is capital and M&A plus models and platforms. funding, investments, and M&A signals continue to show where capital is placing AI bets At the same time, models, APIs, and platform entry points are still moving quickly, with usability becoming the key test. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Kimi Follows Anthropic’s Playbook as China’s AI Race Enters Second Half",
+        "dek": "China's AI model war shifts from raw scale to product-market fit, with Moonshot's Kimi mirroring Anthropic's focus on long-context reasoning and enterprise safety.",
+        "details": [
+          "According to an industry analysis on InvestWorld, Moonshot AI's Kimi is increasingly adopting strategies pioneered by Anthropic, as China's large language model (LLM) competition moves beyond benchmark battles into commercial deployment. The core shift: Chinese AI firms are prioritizing product experience and vertical use cases over pure parameter counts — a pattern Anthropic has championed with its Claude series. Kimi has notably emphasized ultra-long context windows (up to 2 million tokens) and a safety-first product approach, directly echoing Anthropic's 'constitutional AI' principles and enterprise-focused messaging.",
+          "The analysis points to two key signals: first, Kimi's product iteration now prioritizes reliability and context handling over raw model size, aligning with Anthropic's belief that usability outweighs parameter count. Second, Moonshot has doubled down on developer ecosystem and API stability, similar to how Anthropic courts enterprise clients with secure, auditable models. This convergence suggests Chinese AI startups are obsessively studying Western best practices to avoid costly detours in the race for product-market fit."
+        ],
+        "why": "For investors, the move signals that China's AI battlefield is shifting from model supremacy to product differentiation — where Anthropic's playbook (long-context, safety, enterprise) is seen as a winning template. For strategists, Kimi's adoption indicates that 'model-as-product' approach is globally convergent, making it harder for pure-play foundation model companies to survive without a clear end-user product hook.",
+        "links": [
+          [
+            "Google News China AI Signals: 国产大模型下半场，Kimi摸着Anthropic过河 - 投资界",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjX0VleU1ZQWxrdnFkWkVfbC1GOFJOc2NCeTJkbFlHU0lRb0RIM0thenZXekVWWjJYWjBabEozcFBvM2RBRWxtMFBTZmFRbjRBZkdVTGRB?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Separating signal from noise in coding evaluations",
+        "dek": "OpenAI's analysis exposes flaws in SWE-Bench Pro, calling into question the reliability of popular coding benchmarks for AI model evaluation.",
+        "details": [
+          "OpenAI has released a detailed analysis of SWE-Bench Pro, a widely used benchmark for assessing AI models' ability to autonomously solve software engineering tasks. The study reveals that many of the benchmark's test cases contain ambiguous or incomplete specifications, allowing models to 'game' the metric by generating plausible-looking but functionally incorrect code. This raises concerns about how the AI community measures progress in code generation.",
+          "The analysis found that up to 30% of SWE-Bench Pro tasks could be solved with simple heuristics, and that human-written solutions often failed to meet the benchmark's strict pass/fail criteria due to minor formatting differences. OpenAI argues that the benchmark overemphasizes exact match and underweights functional correctness, leading to inflated performance numbers for some models.",
+          "These findings have immediate implications for both AI developers and enterprises using coding benchmarks to select models. For companies adopting AI-assisted coding tools, the results suggest that benchmarks alone are insufficient for evaluating real-world utility. OpenAI advocates for a shift toward more robust, multi-dimensional evaluations that include human review and task-specific metrics."
+        ],
+        "why": "This analysis serves as a wake-up call for the AI industry to move beyond simplistic benchmarks and invest in evaluation frameworks that reflect actual software engineering practices, affecting how models are compared and selected for deployment.",
+        "links": [
+          [
+            "OpenAI News: Separating signal from noise in coding evaluations",
+            "https://openai.com/index/separating-signal-from-noise-coding-evaluations"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek被曝布局自研AI推理芯片，为摆脱英伟达算力限制，正对接设计、代工、存储多方伙伴 - 搜狐网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI：DeepSeek被曝布局自研AI推理芯片，为摆脱英伟达算力限制，正对接设计、代工、存储多方伙伴 - 搜狐网. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: DeepSeek被曝布局自研AI推理芯片，为摆脱英伟达算力限制，正对接设计、代工、存储多方伙伴 - 搜狐网",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdzNwdEJlM2VkZTlxOFFYSFRhMUVVdVVDV3RNZVhzaWsxb2JXemdKclVTdldveGRmNm5ZNjJDSUFZSzlxT1FQMDJ2SDk1X0tjVmo3SmJySHo4OXdTbFF1NXJGUENJT0tIUGx6cU9XMVF2aDNZWDNMZFpxT2VmdWNVaHVvdTk4V3pJOGVnLQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Our approach to government and national security partnerships",
+        "dek": "OpenAI publishes principles for government and national security collaborations, emphasizing responsible use, democratic accountability, and public safety.",
+        "details": [
+          "OpenAI has released a set of principles outlining how it will approach partnerships with governments and national security agencies. The framework is built on three pillars: responsible AI use, democratic accountability, and public safety. While OpenAI has historically been cautious about military applications, this document signals a more structured posture—neither outright refusal nor blanket approval, but case-by-case evaluation against its core values.",
+          "The move comes as AI companies face increasing pressure from both Washington and global allies to support defense and intelligence missions. By publishing explicit guidelines, OpenAI aims to set an industry standard for ethical engagement, potentially influencing peers like Anthropic and Google DeepMind. The policy also addresses dual-use concerns, emphasizing that any collaboration must align with democratic norms and not undermine public trust."
+        ],
+        "why": "This policy positions OpenAI as a leading voice in defining the boundaries of AI use in national security, which could shape future regulations and competitive dynamics in the defense AI market.",
+        "links": [
+          [
+            "OpenAI News: Our approach to government and national security partnerships",
+            "https://openai.com/index/government-national-security-partnerships"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "腾讯投资大换仓：减持老登，拥抱小登 - 21财经",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：腾讯投资大换仓：减持老登，拥抱小登 - 21财经. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯投资大换仓：减持老登，拥抱小登 - 21财经",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxOcTZiT0VZQ0VrNkthQlkxNjJMemFsR25udndZdUdjVmVIOXE1UmozU2lVWUFDZ2NSLXhoSWI3aHVvWnRyWjR5cXVYd1R6NzJiT0JtUGliRVhVYVltODFsYUV4bXZrSkpwMGR3c2lLXzJkV2JfMjV4SkoweDF4OS1LajY0ckNYZC1jM2dtLQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Nomagic AI lab led by former Google DeepMind researcher claims success with 'AI brain' for robots - Fortune",
+        "dek": "A Polish robotics startup claims its 'AI brain' enables robots to handle unseen tasks, marking a step toward general-purpose industrial automation.",
+        "details": [
+          "Nomagic, a Warsaw-based robotics AI lab founded by ex-Google DeepMind researcher Marek Cygan, says it has developed a generalized 'AI brain' that allows robots to adapt to new tasks without explicit reprogramming. The system is reported to achieve over 95% success rate on pick-and-place operations in warehouse environments, even when objects are randomly placed or unfamiliar.",
+          "The breakthrough hinges on a combination of large-scale simulation training and a lightweight vision-language model that runs on edge hardware. Unlike previous approaches that required thousands of task-specific demonstrations, Nomagic's system learns from as few as 10-50 examples per class of objects. The company claims this reduces deployment costs by up to 80% compared to traditional robotic integration.",
+          "Fortune's report highlights that Nomagic has already deployed its system with three unnamed European logistics clients, handling over 100,000 picks per day. The startup, which has raised $15 million to date, is now targeting U.S. warehouse operators. If validated at scale, this could accelerate the adoption of flexible robotics in e-commerce and manufacturing."
+        ],
+        "why": "If Nomagic's claims hold up, it could lower the barrier for small and mid-size warehouses to adopt robotics, challenging incumbents like Amazon Robotics and disrupting the ROI calculus for automation in logistics.",
+        "links": [
+          [
+            "Google News AI Models: Nomagic AI lab led by former Google DeepMind researcher claims success with 'AI brain' for robots",
+            "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQdHFQc3BRUEVzVnpudmRFajFJeUpCQU12MXBFR3dfWURHMU5oRm16TVhQYVN6ZDVFajVXbHVfZVp3TjNodjFMLWphaHQ0eVRBcFRsbF9GcF84TDBYd3JpcUpDb0piZ29raWo5alR2dEtfOEtJZkVySmFwYVVLdmFhWFY5NncyVC1FZXEwOGk5QmNJZms5WVpFRjZpYXduaGxjQlJkdTIyUW9PcU1TR2pJcW1RZHZteDk1cmxDeGFYeXFVdmFFVEZpYmJKa2VWSE5XUGozU0d4bE9mVlVHcWx3SExoNjVnQlZrbHBTS2ZwaGxBbGpaTXc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "NAVER LABS System Re-implementation for the IWSLT 2026 Instruction-Following Task",
+        "dek": "NAVER LABS adapts its winning IWSLT 2025 pipeline to the 2026 constrained track, using SeamlessM4T-v2-large and Qwen3-4B-Instruct with a three-stage training approach.",
+        "details": [
+          "The IWSLT (International Workshop on Spoken Language Translation) 2026 instruction-following shared task requires participants to build systems that can process short audio inputs and generate appropriate textual responses, blending speech recognition, translation, and instruction execution. NAVER LABS re-implements its own 2025 pipeline under the constrained condition, meaning only allowed model architectures and data are used. They replace the speech encoder with SeamlessM4T-v2-large (a Meta multilingual speech-to-text/text-to-speech model) and the language backbone with Qwen3-4B-Instruct (Alibaba's instruction-tuned LLM).",
+          "The training methodology preserves the original three-stage design: (1) projector alignment to connect speech encoder outputs to the LLM embedding space, (2) text-only LoRA fine-tuning to adapt the LLM to task instructions, and (3) multimodal merging where both speech and text modalities are jointly trained. To augment Stage 3, they generate 100k synthetic examples across 10 speech-centric task types (e.g., translation, question answering) using provided corpora, ensuring diversity. The primary model achieves a COMET score of 0.781 on English-to-Chinese speech translation, indicating competitive quality."
+        ],
+        "why": "This work demonstrates how to efficiently repurpose an existing state-of-the-art pipeline for a new evaluation track, offering a practical blueprint for building multimodal instruction-following systems that integrate speech and language models.",
+        "links": [
+          [
+            "arXiv cs.CL: NAVER LABS System Re-implementation for the IWSLT 2026 Instruction-Following Task",
+            "https://arxiv.org/abs/2607.05623"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "AI companies retreat from safety pledges even as capabilities grow - Axios",
+        "dek": "Leading AI firms are stepping back from voluntary safety commitments, raising questions about accountability as model capabilities accelerate.",
+        "details": [
+          "A new Axios analysis highlights a troubling trend: major AI companies that once championed safety pledges—such as pre-deployment audits, red-teaming, and bias testing—are now quietly scaling back or dropping those commitments altogether. This retreat coincides with a period of rapid capability advancement, including the release of more powerful models that could amplify risks like misinformation, bias, and autonomous misuse.",
+          "The article points to several forces behind this shift: intense competitive pressure to ship products faster, the lack of binding regulation, and a growing sentiment among some executives that over-emphasizing safety could cede market share to less cautious rivals. While companies still publish broad ethics guidelines, concrete enforcement mechanisms have weakened.",
+          "For the broader ecosystem, this signals a pivotal moment. Voluntary self-governance appears insufficient as incentives tilt toward speed over safety. Investors and policymakers should watch for increased regulatory scrutiny, while developers and users may need to recalibrate trust in official safety claims."
+        ],
+        "why": "This retreat marks a critical inflection point: if safety commitments are abandoned as capabilities grow, the gap between what AI can do and what society can control widens, raising the odds of high-profile incidents and subsequent heavy-handed regulation.",
+        "links": [
+          [
+            "Google News AI Reports: AI companies retreat from safety pledges even as capabilities grow",
+            "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB5Qk02VjM4UVRFZTA3M0d2ckYwaUdVc1hFWlRXZy1YMldiOXd0YW43WjYzRk1pdHA2YUFlVjdXOXU0XzY3eDFBS2tmdVN6cjdwZGNvZ3llemtnRllYekM2TzhEdWdLUWxv?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Beyond Static Evaluation: Building Simulation Environments for Scalable Agentic Reinforcement Learning",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from arXiv cs.AI：Beyond Static Evaluation: Building Simulation Environments for Scalable Agentic Reinforcement Learning. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "arXiv cs.AI: Beyond Static Evaluation: Building Simulation Environments for Scalable Agent",
+            "https://arxiv.org/abs/2607.05773"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
+        "dek": "Key takeaways from the AI Engineer World's Fair closing event, including the loops debate and the state of AI engineering report.",
+        "details": [
+          {
+            "summary": "The 'great loops debate' highlighted contrasting views on whether AI agents should rely on tight feedback loops or broader orchestration loops.",
+            "expanded": "During the closing event of the AI Engineer World's Fair, two leading engineers debated the optimal loop design—tight, rapid feedback loops for real-time decision making vs. broader orchestration loops that allow for more deliberate planning. The debate underscored a fundamental design tension in building reliable AI agents, with implications for latency, cost, and reliability."
+          },
+          {
+            "summary": "A new report on the state of AI engineering reveals rising adoption of agentic workflows and concerns over observability.",
+            "expanded": "The report, based on surveys from hundreds of AI engineers, found that over 60% of teams now use some form of agentic loop in production, but nearly half cite lack of observability as a top challenge. Other key data points include the dominance of Python-based orchestration frameworks and increasing interest in specialized looper architectures."
+          },
+          {
+            "summary": "Closing keynotes focused on moving beyond prototypes to production-grade AI products.",
+            "expanded": "Speakers urged attendees to shift from building demos to building for reliability, cost-efficiency, and user experience. The message: 2026 is the year of 'industrializing' AI agents—focusing on monitoring, evaluation, and iteration loops that make AI trustworthy in enterprise settings."
+          }
+        ],
+        "why": "This dispatch distills the core conversations at the AI Engineer World's Fair, offering a snapshot of where the AI engineering community is heading—critical for product leaders and founders deciding on agent architecture and tooling investments.",
+        "links": [
+          [
+            "Latent Space: AIEWF Daily Dispatch",
+            "https://www.latent.space/p/aiewf-daily-dispatch-locomotives"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-03",
+        "freshnessLabelEn": "Fallback | published 2026-07-03",
+        "freshnessLabel": "Fallback | published 2026-07-03"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Don't Let AI Start Working in Factories: BAAI Wujie·Orca First Teaches Models to Understand How the World Changes",
+        "dek": "BAAI's Wujie·Orca project aims to make AI grasp world dynamics before tackling specific tasks, topping Hugging Face's monthly paper ranking.",
+        "details": [
+          "Beijing Academy of Artificial Intelligence (BAAI) has open-sourced a new approach called Wujie·Orca, designed to train AI models on understanding how the world changes over time rather than immediately deploying them for industrial tasks. The core idea is to avoid 'putting AI straight to work on the factory floor'—a metaphor for rushing models into narrow automation without a broader comprehension of dynamic environments.",
+          "The project has gained traction in the developer community, currently ranking first on Hugging Face's monthly paper leaderboard. This signals strong interest among researchers and engineers in foundational models that prioritize temporal and causal understanding over static pattern recognition. The full paper and code are available on GitHub and Hugging Face."
+        ],
+        "why": "For developers tracking open-source agent and model toolchain trends, Wujie·Orca represents a shift toward building models that reason about change, potentially lowering the barrier for real-world AI deployment in complex, shifting environments.",
+        "links": [
+          [
+            "量子位: 别让AI一上来就“进厂打螺丝”：智源悟界·Orca要先教模型理解世界如何变化",
+            "https://www.qbitai.com/2026/07/446075.html"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Humalike: Give your AI agents the social intelligence they're missing - Product Hunt",
+        "dek": "A new tool that layers social awareness onto AI agents, aiming to make them better at navigating human interactions.",
+        "details": [
+          "Humalike is a platform designed to equip AI agents with social intelligence—the ability to read tone, understand context, and adjust behavior in human conversations. Instead of relying purely on raw language models, it adds a layer that models social cues such as turn-taking, politeness, and emotional state, making agents feel less robotic in customer-facing or collaborative roles.",
+          "The product addresses a key blind spot in current AI agent deployments: even the most capable reasoning models often fail at basic social norms, leading to friction in user adoption. By providing a middleware that injects social awareness, Humalike could help enterprises deploy agents in roles like sales, support, and negotiation with higher user satisfaction. The approach reflects a growing trend of 'behavioral fine-tuning' beyond pure accuracy metrics."
+        ],
+        "why": "If Humalike succeeds, it could open up a new layer in the AI stack—social middleware—making agents more viable for high-stakes human interaction tasks and creating opportunities for startups focused on agent soft skills.",
+        "links": [
+          [
+            "Google News AI Product Discovery: Humalike: Give your AI agents the social intelligence they're missing",
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1hRG9tcXgtaDRZNWFKMTRlb21SWFg2OVBQZWlRUkc5bE15bWpVcVBlekRxOTNkWmN2b201MkRnN1pIM3JwZ1BtTktOUGc2dGgxN3NOcVgyWnNhSkE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "AnySearch: Real-time structured search trusted by agents and developers - Product Hunt",
+        "dek": "A new real-time structured search tool designed for AI agents and developers, listed on Product Hunt.",
+        "details": [
+          "AnySearch offers real-time structured search capabilities that AI agents and developers can rely on for fetching up-to-date, organized data. It appears on Product Hunt as a productivity tool, targeting technical users who need to integrate search into automated workflows. The product's emphasis on trust and real-time results suggests it is built for production use cases where accuracy and speed are critical.",
+          "Structured search is increasingly important as AI agents move beyond text generation into data-driven tasks. AnySearch's debut on Product Hunt signals growing market demand for search infrastructure that is both agent-friendly and developer-friendly."
+        ],
+        "why": "AnySearch represents a niche but crucial layer in the AI stack: real-time structured search for agents. It highlights a product opportunity for developers building agentic systems that require live data querying, and it may indicate a trend toward specialized search tools over general-purpose web search.",
+        "links": [
+          [
+            "Google News AI Product Discovery: AnySearch",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAyaVE3ZDhva0tvb29ZYWIzRGQ2dEhtTTQ5aXRsbUg2WkQ3MDlobFROOEFtUDFMRDBGeVZwaHN1LWhxNzNvenhqRFNrUWg0Qk1BSDdwNzYtRC1ZQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-08",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "World Model",
+        "dek": "A world model is an internal representation of the environment that an AI system uses to simulate possible outcomes and plan actions, enabling reasoning about physics, causality, and spatial dynamics.",
+        "details": [
+          "World models are a foundational concept in robotics, autonomous driving, and simulation-based AI. Unlike traditional AI models that react to inputs, world models build an understanding of how the world works—objects, forces, cause and effect—and use that knowledge to predict future states. This allows agents to 'imagine' the consequences of their actions before executing them, which is critical for safe planning in domains like self-driving cars, manipulation robots, and game agents. Recent advances in video generation (e.g., Sora, Genie) have brought world models to the forefront: by learning generative models of physical videos, researchers aim to create neural simulators that can run 'what-if' scenarios. However, current world models often struggle with long-term consistency and handling unseen object interactions, making them an active area of research."
+        ],
+        "why": "Understanding World Models is key to following developments in embodied AI, autonomous systems, and simulation-to-reality transfer, as it represents a shift from pattern-matching to causal reasoning—a crucial step toward more general intelligence.",
+        "links": [
+          [
+            "Reference: OpenAI on coding evaluations",
+            "https://openai.com/index/separating-signal-from-noise-coding-evaluations"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-07-08",
     "title": "AI Daily Atlas",
