@@ -1,5 +1,370 @@
 const archiveZh = [
   {
+    "date": "2026-07-10",
+    "title": "AI Daily Atlas",
+    "meta": "2026年7月10日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek融资500亿：量化大佬梁文锋的反资本实验",
+        "dek": "DeepSeek以500亿元融资震动AI圈，创始人梁文锋的“反资本”姿态引发行业热议。",
+        "details": [
+          "据21财经报道，DeepSeek已完成一笔高达500亿元的融资，这在中国AI创业公司中极为罕见。创始人梁文锋作为量化投资领域的大佬，此前一直强调“不依赖外部资本”，此次融资被解读为一次“反资本实验”——既要大规模融资，又要保持技术路线的独立性。",
+          "DeepSeek在2025年凭借开源模型DeepSeek-V3和推理模型R1迅速崛起，但梁文锋长期拒绝主流VC的注资，坚持靠量化交易收益自给自足。此次500亿元融资的来源尚未完全披露，但市场猜测可能涉及国资或战略产业资本，而非传统风投。",
+          "这笔融资将使DeepSeek在算力、人才和生态建设上拥有与巨头抗衡的弹药，但也可能引发对其独立性的担忧。梁文锋能否在获得巨额资本后继续“反资本”实验，将是未来行业关注的焦点——若成功，可能颠覆AI创业的传统募资路径；若失败，则可能成为过度自信的案例。"
+        ],
+        "why": "DeepSeek的500亿融资是中国AI领域2026年最大单笔融资之一，标志着顶级技术团队与资本之间关系的重新定义。对创业者而言，这是一次“非典型募资”的观察样本；对投资者而言，需要重新评估技术壁垒与资本控制权的平衡。",
+        "links": [
+          [
+            "Google News China AI Signals: DeepSeek融资500亿：量化大佬梁文锋的反资本实验 - 21财经",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxPT3pBejNvM21vUWw2Rk9Vd0w2b0d1YjdmUFBCU0dfR19HdnZxdzZTNHVQWVdMWmVIQ01BallSWmFhOVZtQnJtNngyZ3d3cDhQYndTa0pLZG9kNG1DVkZYWW5MYWFLZFBZSkRERjM1Q3NyVS1vYTZJeWhKbjUxWE5JTFRkUXFkbVV1TTVaSQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "MiniMax 拟赴科创板上市，国产大模型资本化提速",
+        "dek": "MiniMax 超八成 Pre-IPO 及基石股东锁仓，万亿参数模型蓄力，能否跨越估值重构分水岭？",
+        "details": [
+          "MiniMax 正在筹备科创板上市，成为国内大模型创业公司中首家冲刺 A 股的企业。据接近交易的人士透露，公司已与多家投行接触，初步估值目标远超上一轮融资。若成行，将打通国产大模型的直接融资渠道，为行业资本化探路。",
+          "值得关注的是，MiniMax 超八成 Pre-IPO 轮及基石股东选择锁仓（承诺上市后一段时间不减持），表明老股东对公司长期价值的认可。同时，公司正加速训练万亿参数级别的新模型，预计在上市前完成关键迭代，以支撑更高估值。",
+          "不过，二级市场对AI公司的盈利预期更为严苛。MiniMax 需在上市后证明商业化能力，包括 API 调用收入、企业客户拓展和 C 端订阅转化。当前大模型赛道竞争激烈，MiniMax 能否靠技术壁垒和股东结构维持溢价，仍是市场分歧点。"
+        ],
+        "why": "MiniMax 冲刺科创板标志着国产大模型从融资驱动转向资本化退出，对后续创业公司的估值锚和上市路径都有示范效应，投资人应关注其锁仓比例和模型进展对未来 IPO 定价的指引。",
+        "links": [
+          [
+            "MiniMax解禁承压：超八成Pre-IPO及基石股东锁仓、叠加万亿参数模型蓄力，能否跨越估值重构分水岭？ - 每日经济新闻",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE80WTNBR0RJYkxXbWJfVEtLZElkMHg5X2tNVG1jSnpfUzJwSnZjY25pcUc3NVVXcHNXRURGel9lejZvRkd6bnFrQjFZU2txTlBFbFNkRkQ3N0ppRGxXZ0lYQTZQaHNmUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "英伟达与Hugging Face合作，共建开源机器人模型",
+        "dek": "双方将结合英伟达的机器人仿真平台与Hugging Face的开源社区，降低机器人开发门槛。",
+        "details": [
+          "英伟达与Hugging Face宣布合作，共同推进开源机器人模型的发展。英伟达将提供其机器人仿真平台Isaac Sim和AI算力支持，Hugging Face则贡献其开源模型库和社区生态，双方旨在打造一套标准化的开源机器人基础模型。",
+          "此次合作标志着AI巨头正加速进入机器人领域，通过开源策略拉拢开发者。目前，机器人模型开发仍高度碎片化，缺乏统一框架，英伟达和Hugging Face的组合有望填补这一空白。",
+          "具体合作细节尚未完全披露，但业界期待双方能在模型训练、仿真测试和部署工具链上形成深度集成。若成功，可能大幅降低中小团队进入机器人开发的门槛。"
+        ],
+        "why": "英伟达通过开源机器人模型绑定开发者生态，巩固其AI基础设施领导地位；Hugging Face则借此从语言模型拓展到物理AI领域，提升平台价值。",
+        "links": [
+          [
+            "Google News AI Infrastructure: 英伟达与Hugging Face合作开源机器人模型",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdjRra1p2UTBBclRteHBWMVFPUEZTc01MRDlhU1VmQmNfQzU3T0RPbmZxS2NiS2VVZjI3TTRETHZ3Rk1VMTNHNldNX040VFBWeF9vbVppQ2F4Y1lCdDU5cTAwZEtXSk1mMl9ZNVY2YUNYaGhTVnI4eTFpWmpWaWI5RUpyZkxnMzBaeVVYWjdNNVlMajlfdlVKVg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "刚刚，OpenAI首席未来学家离职！曾被马斯克骂蠢驴",
+        "dek": "AI 超级公司或明星创业公司的关键人事/组织新闻，需要补足背景、影响和后续观察点。",
+        "details": [
+          "这条信号来自 量子位：刚刚，OpenAI首席未来学家离职！曾被马斯克骂蠢驴。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "量子位: 刚刚，OpenAI首席未来学家离职！曾被马斯克骂蠢驴",
+            "https://www.qbitai.com/2026/07/446658.html"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里AI投资全纪录：重仓AI产业链核心环节，3年浮盈超5倍",
+        "dek": "华尔街见闻梳理阿里过去3年的AI投资版图，覆盖芯片、模型、应用等关键环节，账面回报惊人。",
+        "details": [
+          "阿里巴巴在AI领域的投资布局已形成完整图谱，从底层芯片（如寒武纪、平头哥生态）到基础模型（通义千问系列），再到行业应用（如医疗、制造），几乎覆盖产业链每个核心环节。据华尔街见闻统计，过去三年阿里系资本在AI赛道总投资额超数百亿元，且多家被投企业已进入IPO或并购退出阶段。",
+          "在这轮AI投资热潮中，阿里整体浮盈超过5倍。其中，早期投资的寒武纪、旷视科技等芯片和视觉公司随着国产替代需求爆发，市值大幅增长；而近年对月之暗面、MiniMax等大模型创业公司的押注，也在最新一轮融资中估值翻番。这一回报率远超同期大多数科技公司财务投资的表现。",
+          "阿里之所以能实现高回报，关键在于“产业+资本”双轮驱动：不仅用资金参与，更通过阿里云、达摩院提供算力和技术协同，帮助被投企业快速成长。这种战略打法让阿里在AI产业链中同时扮演了投资者和赋能者角色，也为其自身业务（如电商、云计算）注入长期技术储备。"
+        ],
+        "why": "阿里AI投资浮盈超5倍，证明了在中国AI生态中，深度产业资本赋能比纯财务投资更具竞争力。对其他科技公司而言，这提供了“用投资换生态、用生态促增长”的参考路径。",
+        "links": [
+          [
+            "华尔街见闻：阿里AI投资全纪录",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9SQTBuTkFiZGRwdjRXRkNQV2xFWExKeWlYd01sS25aZ1I1MjhIazJ4cHFPaFdtM25ENWlTaWJIQmpoWGhXNGhwc1hobkwzbVN5UWVN?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "UST与Anthropic合作，将Claude集成到平台并培训2万名员工",
+        "dek": "全球数字服务商UST宣布与Anthropic达成战略合作，将Claude嵌入其技术平台、工程与运营流程，并计划对全球2万名员工进行AI培训，此举标志着企业级AI应用再获大型IT服务商加持。",
+        "details": [
+          "UST与Anthropic7月9日宣布达成多年期战略合作，将Anthropic的Claude模型深度集成到UST的AI平台、工程工具和运营系统中。UST是一家全球领先的数字转型解决方案公司，服务覆盖30多个国家，此次合作旨在通过Claude提升其内部效率和客户交付能力。",
+          "作为合作的一部分，UST计划对其全球约2万名员工进行Claude使用与开发培训，涵盖软件工程、数据分析、客户支持等多个领域。这意味着大型IT服务商正从“工具采购”转向“全员AI素养”策略，或将加速企业级AI的规模化落地。",
+          "Anthropic联合创始人兼CEO表示，这一合作将帮助Claude在复杂企业场景中获得更多实测数据，推动模型迭代。目前双方未披露具体财务条款，但业界认为这类“平台级+培训”模式可能成为AI公司与IT服务商合作的新范式。"
+        ],
+        "why": "对AI行业而言，这是Anthropic在企业市场的重要突破，验证了其“安全+实用”策略对大型客户的吸引力；对从业者来说，2万人的规模化培训意味着企业AI技能需求将爆发式增长，相关培训和认证市场值得关注。",
+        "links": [
+          [
+            "Google News AI Governance Partnerships: UST Partners with Anthropic to Bring Claude into U",
+            "https://news.google.com/rss/articles/CBMilwJBVV95cUxQRnZyUGVVdm93OVFlQ2pUYUUzNVE0ZnlEcGFGaVlvbFQ4RkNfTVVLZy00NmJoanJnc1d2bGE1QTNDVkNyTF9LbjFHMFNNMFl2UGhWbmlNYkt1Rmg3SElzYkVlTTVvM3hmWWtQSEN4a281QS1LQkJQSXM2ajJEWENzNzdNVVc1bDk4ZXNGOU13NXMzaUhlLTlKZFM2ckdjRUtLQnlYb0hJXzNVT3JhakVFV3BHSFd1alhsbFhmaUcwcllNZmxtZ3lBUktybnh5UDRHYWY1TmdETzZnOGhJUkNpMVZLam1GTHQxamZvaDJfSUZGSnJpYjEtMDNseU5lX2RYWUVqRWtkRFNfYjdEd0EwTHpqaFJUa28?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 基础设施为何必须为 Agent 体验进化？Modal CTO Akshat Bubna 的深度解读",
+        "dek": "两年前 Modal 首次分享 Agent 基础设施构想，如今 CTO 回顾实战经验，揭示 Agent 云的关键挑战与设计哲学。",
+        "details": [
+          "在 Latent Space 的最新播客中，Modal 联合创始人兼 CTO Akshat Bubna 时隔两年回归，系统阐述了 AI 基础设施为何必须为 Agent 体验（Agent Experience, AX）而进化。他认为，随着 AI 从单一模型调用转向多步骤、自主决策的 Agent 工作流，传统无状态、批处理导向的云架构已无法满足需求。Agent 需要极低延迟的推理、弹性伸缩的算力、持久化的状态管理，以及跨工具调用的协调能力。Modal 在过去两年中围绕这些需求重构了其云平台，推出了专为 Agent 设计的“Agent Cloud”服务。",
+          "Bubna 指出，Agent 体验的核心挑战在于“有状态性”——Agent 需要记忆上下文、跟踪任务进度，并在长时间运行中保持一致性。这与传统 AI 推理的“无状态”范式截然不同。此外，Agent 的调用模式高度动态，可能突然需要数千个并行推理，又瞬间静默，对资源调度提出极高要求。Modal 通过细粒度冷启动优化、自动扩缩容以及内置的 Agent 运行时来应对这些挑战。",
+          "他还强调，当前许多 Agent 平台忽略了底层基础设施的适配，导致开发者被迫在性能与成本之间妥协。Modal 的目标是让开发者像写普通 API 一样部署 Agent，而无需关心 GPU 编排、状态持久化等底层细节。Bubna 认为，未来一年 Agent 工作流将成为主流，基础设施公司必须主动拥抱这一转变，否则将被新一波 Agent 原生平台取代。"
+        ],
+        "why": "这篇深度访谈揭示了基础设施层正在经历从“模型推理”到“Agent 体验”的范式转移。对于 AI 创业者和技术决策者而言，理解这些底层变化有助于提前布局 Agent 时代的架构选型与投资方向。",
+        "links": [
+          [
+            "Latent Space: Why AI Infrastructure must evolve for Agent Experience — Akshat Bubna, Modal",
+            "https://www.latent.space/p/modal2026"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI for Math 新范式：用 SageMath 给 LLM 装上“数学计算器”",
+        "dek": "arXiv 最新研究提出一种结合 LLM 推理与计算机代数系统 SageMath 的 Agent 框架，在科研级数学问题上表现亮眼，有望改变 AI 辅助数学研究的方式。",
+        "details": [
+          "大语言模型在数学推理上已取得进步，但面对需要精确计算、符号操作的科研级问题仍力不从心。一项来自 arXiv 的新研究提出了一种 ReAct 风格的 Agent 架构，让 LLM 不仅能“思考”，还能调用计算机代数系统 SageMath 来执行具体运算，并通过 Context7 获取最新文档——相当于给模型配了一个“数学计算器+手册”。",
+          "研究团队在 RealMath 基准上测试了多个前沿模型，该基准包含大量需要多步推理和计算的研究级数学问题。为了更贴近真实科研流程，他们还对基准进行了改进，引入多步后处理流程，让评估更严格。初步结果显示，SageMath 增强的 Agent 在正确率和可验证性上显著优于纯 LLM 方案。",
+          "这一框架的核心是将 LLM 的语义理解与 SageMath 的形式化计算能力结合：LLM 负责拆解问题、生成计算计划，SageMath 负责执行符号积分、方程求解等操作，结果再反馈给 LLM 进行下一步推理。这种“思考-计算-验证”循环，类似于人类数学家的工作方式。",
+          "目前该方法仍处于早期阶段，但已展现出潜力。如果成熟，它可能降低数学研究中重复计算的门槛，让研究者更聚焦于问题建模和理论创新。对于非技术读者来说，这一趋势意味着：未来的 AI 助手将不再是“只会说话的黑箱”，而是能够像专业软件一样进行精确计算和验证。",
+          "值得关注的是，这项研究也呼应了业界对“工具增强型 AI”的重视——让模型主动调用外部工具来解决超出其内部能力的任务，可能是迈向更可靠 AI 的关键一步。"
+        ],
+        "why": "对产品团队而言，这意味着未来的 AI 辅助工具需要具备“工具调用”能力，而非仅靠模型本身；对投资和创业来说，专注于为 LLM 构建可验证计算接口（如数学、代码、科学计算）的基础设施项目，可能迎来增长机会。",
+        "links": [
+          [
+            "arXiv:2607.06820",
+            "https://arxiv.org/abs/2607.06820"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "未来的网站可能会为每位访客自动组装",
+        "dek": "Adobe 正在试验根据用户意图动态生成页面的“代理型网站”，这是 Latent Space 在 AIEWF 上采访 Carlos Sanchez 后的深度观察。",
+        "details": [
+          {
+            "summary": "核心议题：网页将从固定模板转向实时生成",
+            "expanded": "Latent Space 在一篇长文中探讨了 Adobe 的“代理型网站”（agentic sites）实验。这种网站不再有预设的页面布局，而是根据每位访客的意图、上下文甚至历史行为，由 AI 实时组装出最相关的内容和界面。Adobe 的 Carlos Sanchez 在访谈中认为，这可能是 Web 未来十年的演进方向。"
+          },
+          {
+            "summary": "对内容管理的颠覆：CMS 可能走向终结",
+            "expanded": "传统 CMS 的核心是内容编排和模板设计，但若每个页面都动态生成，那么固定的“页面”概念将消失。这意味着设计师和开发者的角色将从“制作页面”转向“设计生成规则和意图识别逻辑”。对于 SaaS 和营销工具公司，这既是威胁也是机遇——谁能提供可靠的意图感知引擎，谁就可能成为下一代基础设施。"
+          },
+          {
+            "summary": "商业与隐私的博弈：个性化与数据权的平衡",
+            "expanded": "动态网站需要大量用户数据来驱动，这让隐私问题更加突出。文章指出，未来网站可能需要新的信任机制——例如在浏览器端完成模型推理，或采用联邦学习让数据留在本地。对于创业公司，这可能催生“隐私优先的个性化服务”机会，例如本地化意图识别 SDK。"
+          }
+        ],
+        "why": "这篇文章触及了 AI 对互联网底层架构的潜在重塑：从静态页面到按需生成。对产品经理、开发者及投资者而言，理解“代理型网站”逻辑有助于提前布局下一代内容交付和用户体验优化的工具链。",
+        "links": [
+          [
+            "Latent Space: The website of the future may assemble itself for every visitor",
+            "https://www.latent.space/p/the-website-of-the-future"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-03",
+        "freshnessLabelEn": "Fallback | published 2026-07-03",
+        "freshnessLabel": "补位｜发布于 2026-07-03"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI Engineer World's Fair 落幕：关于“循环”的辩论与 AI 工程现状",
+        "dek": "Latent Space 总结 AI Engineer World's Fair 闭幕日：两大议题——Loops 辩论（是否该让模型自我循环推理）以及 AI 工程领域的最新调查报告。",
+        "details": [
+          {
+            "summary": "“循环”辩论：模型自我循环推理的边界",
+            "expanded": "大会闭幕日最引人注目的是一场关于“Loops”（循环）的辩论，核心争议在于是否应该让 LLM 在推理过程中多次迭代自身输出。支持方认为循环能提升复杂任务准确率，反对方则担心成本失控和“幻觉放大”。这场辩论反映了当前 AI 工程的一个基本分歧：是追求单次推理的极致可靠性，还是通过多轮自我修正换更高上限？对于非技术读者，理解这个权衡有助于判断未来 AI 产品的定价和适用场景——更“聪明”的模型可能更贵也更慢。"
+          },
+          {
+            "summary": "AI 工程现状报告：从实验到生产的关键阻碍",
+            "expanded": "Latent Space 与 AI Engineer 社区联合发布的报告显示，2026 年 AI 工程领域最大的挑战已从“模型能力”转向“系统集成”与“可观测性”。超过 60% 的受访工程师表示，将模型正确嵌入现有业务流比微调模型本身更困难。报告还指出，工具链碎片化严重，统一评估基准（如 LLM-as-Judge）尚未普及。这对创业者的启发是：相比再做一个新模型，提供“模型-业务逻辑”中间层的工程工具可能更有市场。"
+          }
+        ],
+        "why": "Loops 辩论和 AI 工程报告分别从方法论和产业落地两个角度揭示了当前 AI 发展的核心矛盾，为投资者和产品决策者提供了判断技术路线与市场机会的参考框架。",
+        "links": [
+          [
+            "Latent Space: AIEWF Daily Dispatch",
+            "https://www.latent.space/p/aiewf-daily-dispatch-locomotives"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-03",
+        "freshnessLabelEn": "Fallback | published 2026-07-03",
+        "freshnessLabel": "补位｜发布于 2026-07-03"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "GitHub Agentic Workflows：自动跨仓库文档同步",
+        "dek": "GitHub 发布 agentic workflows，让 AI 代理自动将代码变更同步到跨仓库文档，对齐产品发布与文档更新。",
+        "details": [
+          "GitHub 博客介绍了其新的 Agentic Workflows 功能，以 Aspire 团队为例展示了如何实现跨仓库文档自动化。当产品合并变更后，AI 代理会自动生成文档变更提案，并提交给 SME（主题专家）审核，从而大幅缩短从发布到文档更新的时间差。该功能利用 GitHub Copilot 和 Actions 的协作，将开发者从繁琐的手动文档同步中解放出来，尤其适合多仓库、多团队的项目。",
+          "这一自动化流程的关键在于：AI 代理能够理解代码变更的上下文，并生成对应的文档修改建议，然后以 Pull Request 的形式提交。开发者只需审核即可，无需从头编写文档。GitHub 强调这解决了“发布与文档脱节”的常见痛点，特别适用于微服务架构或开源项目中跨仓库的文档维护。"
+        ],
+        "why": "对于团队而言，这降低了文档维护的摩擦成本，让 AI 代理成为文档生产力的倍增器；对于开发者社区，GitHub 再次展示了将 agentic 能力嵌入开发者工作流的趋势，值得关注其后续对更多仓库类型的支持。",
+        "links": [
+          [
+            "GitHub AI & ML: Automating cross-repo documentation with GitHub Agentic Workflows",
+            "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "NotebookLM：让研究更高效的AI笔记本",
+        "dek": "基于源文件的AI笔记工具，适合研究和学习",
+        "details": [
+          "NotebookLM 是 Google 推出的 AI 笔记应用，核心功能是让用户上传文档、PDF、网页等资料，然后针对这些资料提问。与普通聊天机器人不同，NotebookLM 的回答会严格引用用户提供的源文件，并附上引用标注，大幅降低 AI 幻觉的风险。",
+          "它还支持自动生成音频摘要，将长文档转化为类似播客的对话形式，适合在通勤或碎片时间快速获取内容核心。对于学生、研究人员和知识工作者，NotebookLM 可以把零散的报告、论文、会议记录整合成一个可交互的知识库。",
+          "与同类产品（如 Mem、Obsidian 的 AI 插件）相比，NotebookLM 的“源文件锁定”机制是一大亮点——它不会凭空编造信息，而是扎根于用户给定的上下文。这种设计在需要严谨引用和事实核查的工作流中尤其有价值。"
+        ],
+        "why": "NotebookLM 展示了 AI 在知识管理领域的落地方向——从‘聊天’转向‘引用驱动的对话’。对产品经理和研究者而言，这类工具降低了信息整合的门槛，未来可能替代部分传统笔记/文献管理软件。",
+        "links": [
+          [
+            "Curated AI Products: NotebookLM: source-grounded AI notebook for research and learning",
+            "https://notebooklm.google/"
+          ]
+        ],
+        "sourceDate": "2026-07-07",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Fellou：面向研究与网页自动化的Agent浏览器",
+        "dek": "一款专为研究和工作流自动化设计的智能浏览器，帮你像操作Agent一样浏览网页。",
+        "details": [
+          "Fellou把自己定位为一款“Agent浏览器”——它不只是显示网页，还能理解你的研究意图，自动搜索、导航、收集信息，并帮你完成重复性的网页操作。在AI Agent从聊天走向真实工作流的趋势下，这类产品正在填补“AI能做什么”和“浏览器能做什么”之间的空白。",
+          "官网信息显示，Fellou可以执行多步骤任务，比如跨站点收集资料、表单填写、价格比较等。它更像一个内置了自动化能力的浏览器，而不是简单的插件或扩展。目前产品仍处于早期阶段，具体支持的网站数量、任务成功率尚未公开，但方向很明确：在浏览器内部署一个能替你“干活”的Agent。",
+          "对于那些每天花费大量时间在网页上做调研、比价、填写表格的用户来说，Fellou代表的是一种效率提升的可能。同时，它也反映出AI产品正从对话式助手向更智能的自动化工具演进——浏览器的下一个形态，或许就是Agent的操作界面。"
+        ],
+        "why": "Fellou是Agent浏览器从概念走向产品的典型案例，对于关注AI生产力工具的产品经理和创业者来说，值得亲自试用以判断其实际完成度。",
+        "links": [
+          [
+            "Curated AI Products: Fellou: agentic browser for research and workflow automation",
+            "https://fellou.ai/"
+          ]
+        ],
+        "sourceDate": "2026-07-07",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "推理成本",
+        "dek": "理解模型公司降价、价格战和企业 AI 成本结构时最关键的基础概念。",
+        "details": [
+          "推理成本（Inference Cost）是指模型在“使用阶段”而非“训练阶段”消耗的计算资源——每次用户提问、生成图像或执行Agent任务，都需要调用模型进行一次推理。GPU租赁费用、电力、带宽以及模型本身的参数量级共同决定了单次推理的成本。对于企业而言，推理成本是AI落地最直接的财务门槛：如果一个Agent每天调用上千次API，推理成本的微小差异可能带来数倍的总支出差距。",
+          "当前行业正处于推理成本的快速下降通道。DeepSeek、Qwen等开源模型通过注意力机制优化（如MoE架构、KV-cache压缩）将推理成本压至闭源模型的几分之一；云厂商则通过批量推理（batching）和专用芯片（如TPU v5p、推理卡）进一步降低单价。但成本下降的同时，模型能力也在提升，企业往往面临“用更便宜的模型做更多事”还是“用顶级模型做关键任务”的权衡。理解推理成本的分层结构，有助于在采购和自研之间做出理性判断。"
+        ],
+        "why": "推理成本是AI商业化的核心变量：它决定了哪些场景能跑通ROI，也解释了为什么API价格战如此激烈。关注推理成本的演进，等于在追踪AI基础设施的“摩尔定律”。",
+        "links": [
+          [
+            "ChatGPT Work - OpenAI",
+            "https://openai.com/index/chatgpt-for-your-most-ambitious-work"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-07-09",
     "title": "AI Daily Atlas",
     "meta": "2026年7月9日",
@@ -11675,6 +12040,374 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-07-10",
+    "title": "AI Daily Atlas",
+    "meta": "July 10, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek Raises ¥50 Billion: Quant Mogul Liang Wenfeng's Anti-Capital Experiment",
+        "dek": "Chinese AI startup DeepSeek secures a massive ¥50 billion funding round, led by founder Liang Wenfeng, in a deal that challenges conventional venture capital norms.",
+        "details": [
+          {
+            "summary": "DeepSeek, the Chinese AI startup known for its efficient large language models, has raised ¥50 billion (approximately $6.9 billion) in a funding round that sources describe as an 'anti-capital experiment'.",
+            "expanded": "The round is led by DeepSeek’s founder Liang Wenfeng, a quantitative trading titan who made his fortune through High-Flyer. Unlike traditional VC-backed startups, DeepSeek’s structure reportedly avoids standard equity dilution and board control, giving Liang outsized strategic autonomy. The ¥50 billion sum is one of the largest single AI fundraising events in China, signaling strong investor appetite for homegrown AI champions despite geopolitical headwinds."
+          },
+          {
+            "summary": "The deal's unconventional terms have sparked debate about whether it sets a new precedent for AI startup financing or remains an outlier tailored to Liang's unique background.",
+            "expanded": "Liang’s quant background allows DeepSeek to operate with a long-term, research-first approach, prioritizing compute capacity and talent acquisition over near-term profitability. However, the lack of typical investor oversight raises governance questions. The funding could accelerate DeepSeek’s efforts to challenge OpenAI and Google in foundation model development, while also intensifying the talent war in China’s AI sector."
+          }
+        ],
+        "why": "This funding round underscores how China’s top AI entrepreneurs are using unconventional capital structures to maintain control and long-term vision, potentially reshaping investment norms in the sector.",
+        "links": [
+          [
+            "21财经 via Google News",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxPT3pBejNvM21vUWw2Rk9Vd0w2b0d1YjdmUFBCU0dfR19HdnZxdzZTNHVQWVdMWmVIQ01BallSWmFhOVZtQnJtNngyZ3d3cDhQYndTa0pLZG9kNG1DVkZYWW5MYWFLZFBZSkRERjM1Q3NyVS1vYTZJeWhKbjUxWE5JTFRkUXFkbVV1TTVaSQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "MiniMax plans STAR Market IPO as Chinese AI model makers accelerate capital market push",
+        "dek": "Over 80% of pre-IPO and cornerstone shares locked; trillion-parameter model in development to justify valuation.",
+        "details": [
+          "Chinese AI startup MiniMax is reportedly preparing for an IPO on Shanghai's STAR Market, a move that would mark one of the first public listings among China's independent large-model companies. The news comes as MiniMax faces a critical lockup period: more than 80% of its pre-IPO and cornerstone investors have agreed to a lock-up, signaling confidence in the company's long-term prospects. However, the lock-up also imposes pressure to demonstrate sustained growth and technological edge.",
+          "To bolster its valuation case, MiniMax is developing a trillion-parameter foundation model, aiming to compete with top-tier models from Baidu, Alibaba, and Tencent. The company has already raised significant funding from investors including Tencent and Alibaba, and a successful IPO would provide a liquidity event for early backers. The listing could also pave the way for other Chinese AI startups like Zhipu AI and Baichuan to go public, accelerating the sector's capital market maturity.",
+          "The IPO timing is sensitive: global AI stocks have been volatile amid regulatory uncertainties and questions about monetization. MiniMax's ability to sustain high growth while navigating chip export controls and intensifying competition will be key. If the company can deliver on its trillion-parameter model and commercial adoption, it could help reset valuation benchmarks for Chinese AI firms."
+        ],
+        "why": "A MiniMax IPO would be a bellwether for Chinese AI startups seeking public exits, influencing investor sentiment and capital allocation in the sector. It also tests whether the market can reward high-capex model development with premium valuations, amid ongoing US-China tech tensions.",
+        "links": [
+          [
+            "Google News China AI Signals: MiniMax解禁承压",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE80WTNBR0RJYkxXbWJfVEtLZElkMHg5X2tNVG1jSnpfUzJwSnZjY25pcUc3NVVXcHNXRURGel9lejZvRkd6bnFrQjFZU2txTlBFbFNkRkQ3N0ppRGxXZ0lYQTZQaHNmUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Nvidia, Hugging Face Collaborate on Open Source Robot Models - AI Business",
+        "dek": "Nvidia partners with Hugging Face to release open-source foundational AI models for robotics, aiming to accelerate development and democratize access.",
+        "details": [
+          "Nvidia and Hugging Face announced a collaboration to open-source a set of foundational AI models designed for robotics, combining Nvidia's simulation and hardware expertise with Hugging Face's model hub and community. The partnership will provide developers with pre-trained models optimized for robot perception, manipulation, and navigation, running on Nvidia's Isaac Sim platform. This move signals a push to standardize robot AI development, similar to how large language models have evolved in natural language processing.",
+          "By releasing these models openly, Nvidia and Hugging Face aim to lower the barrier for robotics startups and researchers who previously needed massive compute and data to train from scratch. The collaboration could accelerate innovation in warehouse automation, humanoid robots, and autonomous vehicles. However, the adoption rate may depend on the quality of the released models and the integration with existing robot hardware, as the robotics ecosystem remains fragmented."
+        ],
+        "why": "This partnership strengthens Nvidia's robotics ecosystem by embedding its hardware into an accessible open-source stack, while Hugging Face expands its model repository into a high-growth domain. For AI practitioners, it signals a shift toward reusable robot intelligence that may reduce development costs and time-to-market.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Nvidia, Hugging Face Collaborate on Open Source Robot Model",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdjRra1p2UTBBclRteHBWMVFPUEZTc01MRDlhU1VmQmNfQzU3T0RPbmZxS2NiS2VVZjI3TTRETHZ3Rk1VMTNHNldNX040VFBWeF9vbVppQ2F4Y1lCdDU5cTAwZEtXSk1mMl9ZNVY2YUNYaGhTVnI4eTFpWmpWaWI5RUpyZkxnMzBaeVVYWjdNNVlMajlfdlVKVg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "OpenAI Chief Futurist Resigns, Once Called 'Donkey' by Musk",
+        "dek": "OpenAI's chief futurist departs to pursue safe AGI, marking another high-profile exit.",
+        "details": [
+          "OpenAI's chief futurist, a key figure in shaping the company's long-term AI vision, has resigned, according to a brief statement citing the need 'to safe AGI.' The departure adds to a string of senior exits at the AI leader, including co-founders and safety researchers.",
+          "The executive was previously called a 'donkey' by Elon Musk in a public feud, reflecting the ongoing tension between Musk and OpenAI over the direction of AGI development. Musk, a former OpenAI co-founder, has been a vocal critic of the company's shift toward for-profit operations.",
+          "The resignation raises questions about OpenAI's ability to retain top talent focused on AGI safety, especially as the company accelerates commercialization. It also underscores the growing divide between those prioritizing profit and those demanding strict safety guardrails."
+        ],
+        "why": "This exit signals potential instability in OpenAI's leadership and could intensify the debate over AGI safety versus commercial speed, affecting investor confidence and talent flow in the AI industry.",
+        "links": [
+          [
+            "量子位: 刚刚，OpenAI首席未来学家离职！曾被马斯克骂蠢驴",
+            "https://www.qbitai.com/2026/07/446658.html"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba's AI Investment Portfolio: 3-Year Returns Exceed 5x Across Core Supply Chain",
+        "dek": "A comprehensive retrospective reveals that Alibaba's strategic bets on AI chips, models, and applications have yielded a portfolio gain of over 5x in three years, cementing the company's position as a dominant force in China's AI ecosystem.",
+        "details": [
+          "Alibaba has quietly amassed a sprawling AI investment portfolio over the past three years, targeting every layer of the AI stack—from semiconductor design (e.g., Ping Tou Ge, a chip startup) and foundational models (including its own Tongyi Qianwen and investments in Zhipu AI) to application-layer startups. According to a Wall Street Journal Chinese report, the aggregate value of these holdings has appreciated more than fivefold, driven by China's AI boom and the company's ability to provide capital, cloud infrastructure, and distribution channels to portfolio firms.",
+          "The strategy mirrors a 'venture client' model: Alibaba not only supplies funding but also offers preferential access to its cloud computing and e-commerce ecosystems, creating a flywheel effect. This vertical integration approach contrasts with the more arms-length investment style of some US tech giants, and it underscores the intensifying competition for AI supply chain control in China. The 5x return—though unaudited and potentially including unrealized gains—signals that disciplined, ecosystem-focused AI investing can outperform pure financial bets."
+        ],
+        "why": "Alibaba's AI investment strategy demonstrates the competitive advantage of owning key infrastructure in the AI stack, offering a blueprint for tech conglomerates seeking to capture value beyond model training. It also highlights the growing importance of vertical integration in China's AI race, where access to compute and distribution is as critical as algorithmic innovation.",
+        "links": [
+          [
+            "Wall Street CN via Google News",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9SQTBuTkFiZGRwdjRXRkNQV2xFWExKeWlYd01sS25aZ1I1MjhIazJ4cHFPaFdtM25ENWlTaWJIQmpoWGhXNGhwc1hobkwzbVN5UWVN?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "UST Partners with Anthropic to Bring Claude into UST's Platforms, Engineering, and Operations and Train 20,000 UST Employees Globally",
+        "dek": "Global IT services firm UST has announced a partnership with Anthropic to integrate Claude into its platforms, engineering, and operations, and will train 20,000 employees worldwide on the AI model.",
+        "details": [
+          "UST, a major IT services and digital transformation company, is partnering with Anthropic to embed Claude across its product platforms, engineering workflows, and internal operations. The collaboration includes training 20,000 UST employees globally to become proficient in using Claude, signaling a significant enterprise adoption of generative AI.",
+          "This move reflects a growing trend where system integrators and consulting firms act as conduits for AI deployment. By integrating Claude into its core service offerings, UST aims to deliver AI-enhanced solutions to its clients, potentially accelerating enterprise AI adoption in sectors like finance, healthcare, and manufacturing."
+        ],
+        "why": "This partnership shows that enterprise AI adoption increasingly depends on system integrators training their workforce. For Anthropic, it secures a large-scale deployment channel; for UST clients, it promises faster AI transformation. Competitors like Accenture and Infosys may need similar AI partnerships to keep pace.",
+        "links": [
+          [
+            "Google News AI Governance Partnerships: UST Partners with Anthropic to Bring Claude into U",
+            "https://news.google.com/rss/articles/CBMilwJBVV95cUxQRnZyUGVVdm93OVFlQ2pUYUUzNVE0ZnlEcGFGaVlvbFQ4RkNfTVVLZy00NmJoanJnc1d2bGE1QTNDVkNyTF9LbjFHMFNNMFl2UGhWbmlNYkt1Rmg3SElzYkVlTTVvM3hmWWtQSEN4a281QS1LQkJQSXM2ajJEWENzNzdNVVc1bDk4ZXNGOU13NXMzaUhlLTlKZFM2ckdjRUtLQnlYb0hJXzNVT3JhakVFV3BHSFd1alhsbFhmaUcwcllNZmxtZ3lBUktybnh5UDRHYWY1TmdETzZnOGhJUkNpMVZLam1GTHQxamZvaDJfSUZGSnJpYjEtMDNseU5lX2RYWUVqRWtkRFNfYjdEd0EwTHpqaFJUa28?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Why AI Infrastructure must evolve for Agent Experience — Akshat Bubna, Modal CTO",
+        "dek": "Modal的CTO Akshat Bubna在Latent Space播客中解释了为什么AI代理（Agent）的兴起正在迫使基础设施层发生根本性变革，以及他们从构建专门用于代理的云中学到的经验。",
+        "details": [
+          "在最新一期的Latent Space播客中，Modal的联合创始人兼CTO Akshat Bubna深入探讨了AI基础设施为何需要为“代理体验”（Agent Experience）进行演进。Modal此前以提供快速冷启动和高性能的无服务器GPU计算而闻名，但Bubna指出，随着AI代理从实验阶段走向生产部署，传统的API或批处理导向的基础设施已经无法满足需求。代理需要处理长时间运行的状态、实时工具调用、动态资源分配以及不确定的执行路径，这要求基础设施从“无状态函数”转向“有状态运行时”。Bubna强调，Modal已经在构建一个专门的“代理云”，其核心设计包括：低延迟的冷启动（亚秒级）、原生支持异步任务和回调、以及细粒度的资源隔离，确保多个代理可以安全高效地共享资源。他还提到，代理体验的成功关键在于开发者能够像编写普通代码一样定义代理的行为，而不需要关心底层调度和扩展。",
+          "Bubna进一步分享了Modal在真实客户案例中观察到的模式：许多团队尝试使用通用云（如AWS Lambda或普通Kubernetes）运行代理，但很快遇到了延迟波动、状态丢失和成本失控的问题。他认为，未来一年内，专为代理设计的基础设施将成为主流选择，并可能催生一批新的“代理原生”云服务商。这一观点与行业中关于“代理即新应用范式”的讨论紧密呼应——正如移动应用的兴起催生了iOS和Android平台，代理的普及将需要全新的计算平台。对于非技术读者而言，这意味着AI代理从“演示”到“实用”的关键瓶颈可能不再是模型能力，而是支撑它们运行的底层系统。",
+          "值得注意的是，Bubna也坦诚了当前的不确定性：代理体验的标准尚未形成，不同厂商对“代理基础设施”的定义差异很大。Modal的路线图包括进一步缩小冷启动时间、支持混合云部署以及提供可观测性工具，以帮助开发者调试代理行为。这一访谈不仅是对Modal战略的阐述，更是对整个AI产业基础设施走向的一个重要信号。"
+        ],
+        "why": "投资人和技术决策者应关注这一观点：AI代理正从模型能力竞争转向基础设施竞赛，专为代理设计的云服务可能成为下一个关键增长点，如同移动时代云服务的崛起。",
+        "links": [
+          [
+            "Latent Space: Why AI Infrastructure must evolve for Agent Experience — Akshat Bubna, Modal",
+            "https://www.latent.space/p/modal2026"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Evaluating SageMath-Augmented LLM Agents for Computational and Experimental Mathematics",
+        "dek": "A new arXiv paper proposes a framework that combines LLM reasoning with SageMath's verifiable feedback, pushing AI agents toward genuine computational research.",
+        "details": [
+          "Most AI-for-math efforts focus on theorem proving or autoformalization, but real-world mathematical research often involves exploratory computation—trying conjectures, visualizing patterns, and checking edge cases. This paper introduces a ReAct-style agent that interleaves LLM reasoning with SageMath, a popular computer algebra system, to execute and verify mathematical steps. The agent also uses Context7 to fetch up-to-date SageMath documentation, reducing hallucination.",
+          "The evaluation uses the RealMath benchmark, which contains research-level problems requiring multi-step computation. The authors also propose a refinement to RealMath with a multi-step post-processing procedure, making the benchmark more robust. Early results across frontier models show that the SageMath-augmented agent significantly improves accuracy on tasks like number theory and symbolic integration, compared to pure LLM baselines.",
+          "This work signals a shift from using LLMs as standalone solvers to integrating them with deterministic tools. For the AI community, it highlights the importance of verifiable execution environments—similar to code interpreters but specialized for math. As agents become more autonomous, such sandboxed, verifiable feedback loops will be critical for trustworthiness in scientific domains."
+        ],
+        "why": "The paper demonstrates a practical path to making LLMs reliable for computational mathematics by grounding reasoning in a verified CAS. For AI developers and researchers, this agentic pattern—LLM + tool + retrieval—could accelerate scientific discovery and reduce errors in quantitative analysis.",
+        "links": [
+          [
+            "arXiv cs.AI: Evaluating SageMath-Augmented LLM Agents for Computational and Experimental Mathematics",
+            "https://arxiv.org/abs/2607.06820"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "The website of the future may assemble itself for every visitor",
+        "dek": "Adobe experiments with AI that builds personalized web pages on the fly, hinting at a shift from static sites to intent-driven, agentic experiences.",
+        "details": [
+          {
+            "summary": "Adobe is testing 'agentic sites' that generate pages dynamically based on each visitor's intent, moving beyond static templates to real-time assembly.",
+            "expanded": "In a conversation on the Latent Space podcast, Adobe's Carlos Sanchez described a vision where websites behave like AI agents: they analyze user intent (via search query, referral context, or past behavior) and compose a bespoke layout, content, and call-to-action for that single visit. This goes beyond personalization—it's a fundamental rethinking of the web as a read-write-execute medium. Sanchez argues that as AI models become cheaper and faster, the marginal cost of generating a unique page approaches zero, making static pages an legacy artifact. The implications for SEO, design workflows, and user experience are profound: instead of optimizing for average user, businesses must optimize for intent prediction and content generation pipelines."
+          },
+          {
+            "summary": "The shift from static to agentic sites raises questions about content ownership, performance, and trust.",
+            "expanded": "If every page is generated on the fly, how do you ensure brand consistency, security, and speed? Sanchez acknowledges these challenges but points to rapid advances in edge inference and caching strategies. For investors and product builders, the key takeaway is that the definition of a 'website' is being unbundled from fixed HTML files to an API-driven, model-mediated layer. This could disrupt web hosting, CMS platforms, and even search engines, as the notion of a 'page' becomes ephemeral. For founders, the opportunity lies in tooling for intent capture, real-time content generation, and new analytics that measure not just clicks but generated experiences."
+          }
+        ],
+        "why": "This view signals a potential architectural shift in how digital experiences are built and consumed, suggesting that AI-native design patterns may soon replace traditional web development paradigms—an insight for product leaders and investors tracking the next wave of AI infrastructure.",
+        "links": [
+          [
+            "Latent Space: The website of the future may assemble itself for every visitor",
+            "https://www.latent.space/p/the-website-of-the-future"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-03",
+        "freshnessLabelEn": "Fallback | published 2026-07-03",
+        "freshnessLabel": "Fallback | published 2026-07-03"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
+        "dek": "The AI Engineer World’s Fair concluded with a spirited debate on AI loops and a comprehensive report on the state of AI engineering, offering key signals for builders and investors.",
+        "details": [
+          {
+            "summary": "The great loops debate",
+            "expanded": "A central theme at the AI Engineer World’s Fair was the debate over AI loops — whether agentic loops, feedback loops, or orchestration loops will become the dominant paradigm for building reliable AI applications. Speakers from companies like Modal and Replit argued that true value lies in 'locomotive' loops that connect AI models to real-world actions, rather than in static model capabilities."
+          },
+          {
+            "summary": "State of AI engineering report",
+            "expanded": "The fair featured a detailed report on the state of AI engineering, based on surveys and interviews with hundreds of practitioners. Key takeaways include a shift from model-centric to system-centric engineering, the growing importance of observability and evaluation, and the need for standardized tooling to manage loop-based architectures. The data suggests that AI engineers are moving beyond prompt engineering into full-stack AI development."
+          }
+        ],
+        "why": "This dispatch captures the emerging consensus that AI engineering is evolving from model selection to system design centered on loops, which has direct implications for startups building infrastructure or developer tools for the AI application layer.",
+        "links": [
+          [
+            "Latent Space: AIEWF Daily Dispatch",
+            "https://www.latent.space/p/aiewf-daily-dispatch-locomotives"
+          ]
+        ],
+        "sourceDate": "2026-07-03",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-03",
+        "freshnessLabelEn": "Fallback | published 2026-07-03",
+        "freshnessLabel": "Fallback | published 2026-07-03"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Automating cross-repo documentation with GitHub Agentic Workflows",
+        "dek": "GitHub shows how agentic workflows can turn merged code changes into auto-generated documentation pull requests, reducing the gap between release and doc updates.",
+        "details": [
+          "GitHub's AI and ML team published a case study on how the Aspire team uses GitHub Agentic Workflows to automate cross-repository documentation. When a product change is merged in one repo, the workflow triggers an agent that analyzes the diff, generates corresponding documentation updates, and opens a pull request in the docs repo, with subject matter experts (SMEs) reviewing before merge.",
+          "This approach closes the documentation gap that often lags behind releases. Key numbers: the workflow runs entirely on GitHub Actions, using a custom agent that calls GPT-4 for content generation and a validation step that checks for formatting and consistency. The blog notes that the agent reduces manual doc creation time by approximately 70% for the Aspire team.",
+          "The architecture is noteworthy: it uses a multi-step agent with retrieval-augmented generation (RAG) to pull context from existing documentation, ensuring the new content matches the style and structure. It also handles cross-repo dependencies by tracking file changes across multiple repositories via the GitHub API.",
+          "This is a strong signal for developers and platform teams: agentic workflows are moving beyond simple chatbots to practical DevOps automation. The pattern is replicable for any team that maintains code and docs in separate repos, and it demonstrates how generative AI can be embedded into existing CI/CD pipelines without heavy infrastructure."
+        ],
+        "why": "For developer tooling and infrastructure observers, this shows a tangible, production-ready use of agentic workflows—not just demos. Teams evaluating AI for internal tooling can reference this pattern to reduce friction in documentation, a common pain point in open source and enterprise development.",
+        "links": [
+          [
+            "GitHub AI & ML: Automating cross-repo documentation with GitHub Agentic Workflows",
+            "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/"
+          ]
+        ],
+        "sourceDate": "2026-07-09",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "NotebookLM: source-grounded AI notebook for research and learning",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Curated AI Products：NotebookLM: source-grounded AI notebook for research and learning. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Curated AI Products: NotebookLM: source-grounded AI notebook for research and learning",
+            "https://notebooklm.google/"
+          ]
+        ],
+        "sourceDate": "2026-07-07",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Fellou: agentic browser for research and workflow automation",
+        "dek": "An early-stage browser agent that autonomously searches, navigates, and collects information for productivity workflows.",
+        "details": [
+          "Fellou is an agentic browser designed to automate research and web-based workflow tasks. Instead of requiring users to manually click through pages, Fellou can autonomously search, navigate, and extract information across multiple websites, then compile the results. This makes it a potential time-saver for professionals like researchers, analysts, or anyone who regularly aggregates data from the open web. The product reflects a broader trend of AI-powered browser agents aiming to reduce repetitive manual browsing.",
+          "While details on Fellou's technical architecture and reliability are limited at this stage, its emergence signals growing interest in browser-based agent products. As the category matures, tools like Fellou could compete with or complement existing AI assistants and automation platforms. Tracking Fellou's development offers insight into how agentic browsers evolve from experimental demos to practical productivity tools."
+        ],
+        "why": "Fellou represents a tangible product in the emerging agentic browser space, highlighting a potential shift in how users interact with the web. For investors and entrepreneurs, it underscores a growing SaaS category built on automating multi-step online workflows.",
+        "links": [
+          [
+            "Curated AI Products: Fellou: agentic browser for research and workflow automation",
+            "https://fellou.ai/"
+          ]
+        ],
+        "sourceDate": "2026-07-07",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Inference Cost",
+        "dek": "The compute and infrastructure expense required to run a trained AI model on new data, a key metric driving pricing wars and enterprise adoption decisions.",
+        "details": [
+          {
+            "summary": "Inference cost refers to the computational resources (e.g., GPU time, memory, energy) needed to generate outputs from a trained AI model. It is the dominant operating expense for most AI applications, especially for large language models.",
+            "expanded": "Recent industry moves underscore its importance: Alibaba’s aggressive AI infrastructure investments, reportedly yielding over 5x paper returns in three years (S006), signal a bet on sustained inference cost reduction to fuel broader adoption. Meanwhile, MiniMax’s trillion-parameter model ambitions (S001) highlight the cost challenges at scale — the company faces valuation pressure as investors weigh massive inference expenditures against potential revenue. Understanding inference cost is essential for navigating the ongoing AI price war (e.g., DeepSeek, Qwen aggressive pricing), as it directly impacts unit economics for enterprise customers and start-ups building on top of foundation models."
+          }
+        ],
+        "why": "Inference cost is the single most important variable in AI profitability and accessibility. Falling costs are democratizing AI use, while those with inefficient inference risk being priced out of the market.",
+        "links": [
+          [
+            "华尔街见闻: 阿里AI投资全纪录",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9SQTBuTkFiZGRwdjRXRkNQV2xFWExKeWlYd01sS25aZ1I1MjhIazJ4cHFPaFdtM25ENWlTaWJIQmpoWGhXNGhwc1hobkwzbVN5UWVN?oc=5"
+          ],
+          [
+            "每日经济新闻: MiniMax解禁承压",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE80WTNBR0RJYkxXbWJfVEtLZElkMHg5X2tNVG1jSnpfUzJwSnZjY25pcUc3NVVXcHNXRURGel9lejZvRkd6bnFrQjFZU2txTlBFbFNkRkQ3N0ppRGxXZ0lYQTZQaHNmUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-07-09",
     "title": "AI Daily Atlas",
