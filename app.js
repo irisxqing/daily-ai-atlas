@@ -1,5 +1,344 @@
 const archiveZh = [
   {
+    "date": "2026-07-14",
+    "title": "AI Daily Atlas",
+    "meta": "2026年7月14日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "曾破坏字节模型训练的前实习生田柯宇创业，获数千万美元融资",
+        "dek": "五源资本合伙人孟醒投资，前字节实习生曾因破坏模型训练被公开处理",
+        "details": [
+          "据搜狐网报道，曾因破坏字节跳动模型训练而被公开的前实习生田柯宇，近日宣布创业并获数千万美元融资。投资方为五源资本合伙人孟醒，该事件迅速引发行业关注。",
+          "田柯宇此前在字节跳动实习期间，被曝恶意干扰模型训练任务，导致训练异常。字节当时公开处理结果，此事成为AI行业内部安全管理的典型案例。如今其创业获顶级资本支持，表明技术能力仍被认可，但争议犹存。",
+          "这一融资信号显示，AI领域对核心算法人才的需求依然强烈，甚至不惜接纳有争议背景的创业者。同时，它也提醒大公司需加强实习生管理和技术安全措施，避免类似事件重演。"
+        ],
+        "why": "该事件凸显AI行业对顶尖技术人才的极度渴求，即使存在历史争议，资本仍愿意下注；同时，也倒逼企业完善内部安全机制，防范技术破坏风险。",
+        "links": [
+          [
+            "Google News China AI Signals: 曾破坏字节模型训练的前实习生田柯宇创业，获数千万美元融资，五源资本合伙人孟醒投资 - 搜狐网",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQb3djcTVXOWcyM1B0QkQ1aVdlN1ZuXzZhYjh2S01yOGpnSzV5MHBxQVhoNGE4clNFdnM2bTJoQWdNNVJ1NXdPN09LZGhvTUFTbXZjSnhMNlUzTEZTVkxYakNfYWhFTjZUV1NSVE1RT1JpMG9hZE5CSGJTQmtRMlpMT3FpdU5DN21SbTl6WQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "传字节跳动布局自动驾驶！世界模型团队操刀，或布局无人物流",
+        "dek": "传闻称字节跳动正组建自动驾驶团队，由世界模型团队主导，可能先切入无人物流场景。",
+        "details": [
+          "据凤凰网汽车报道，字节跳动内部正在秘密组建自动驾驶团队，负责人来自该公司世界模型团队。该团队此前专注于视觉理解、空间智能等AI基础模型，此番转向自动驾驶，意味着字节在AI落地上从数字世界向物理世界延伸。",
+          "消息人士称，字节跳动的自动驾驶初期可能聚焦无人物流场景，利用其配送网络和无人机、无人车资源。此举将直接挑战百度Apollo、华为智驾以及Waymo等玩家，但字节强调技术自研，预计不会依赖第三方方案。",
+          "目前字节官方尚未回应，团队规模、时间表均不明。若传闻成真，这将是字节继AI大模型、机器人之后在具身智能领域的又一次重大投入，也反映了'世界模型'概念从模拟走向真实控制的趋势。"
+        ],
+        "why": "字节跳动的自动驾驶布局若属实，将把AI竞赛从软件服务扩展到物理世界，无人物流是低成本试水方向，但长期可能重塑自动驾驶行业格局。",
+        "links": [
+          [
+            "Google News China AI Signals: 传字节跳动布局自动驾驶",
+            "https://news.google.com/rss/articles/CBMiTEFVX3lxTFAtMWtKNVVJck5ZamlZLVRveGpubEhMMVV1cnRJU0pZUU5ORGFHd3lBS0NsNlpHNUF5eXlIWm44UEFfOEcweEZnSzFWR1U?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "字节旗下付费小说APP停服，上线仅8个月",
+        "dek": "字节跳动旗下付费小说APP因用户增长不及预期宣布停服，从上线到关停仅8个月。",
+        "details": [
+          "字节跳动旗下付费小说APP于7月13日宣布停服，该产品从上线到关停仅8个月。据官方公告，关停原因主要是用户增长不及预期，未能达到持续运营的商业目标。",
+          "该APP主打付费阅读模式，试图在免费阅读主导的市场中开辟付费赛道。然而，在免费阅读平台和AI生成内容的冲击下，付费模式面临较大挑战。",
+          "此次停服也反映出字节在内容付费领域的试水并不顺利。虽然字节拥有巨大的流量优势，但如何将流量转化为付费用户仍需探索。"
+        ],
+        "why": "字节放弃短期付费小说试验，说明AI时代内容分发平台更倾向于免费+广告模式，付费阅读在泛娱乐领域仍难成规模。",
+        "links": [
+          [
+            "Google News China AI Signals: 字节旗下付费小说APP宣布停服，上线仅8个月 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMidkFVX3lxTE94azZPeUVmVEFfOXVxYWYxU1FtT0NLNl93WGlXWWhsTHdGQmttZjNtTHJCdXAtM1FWVUhRa1M3ZXM1bHdnZHA3Wk5MSTVSOXFIamNoSi1MN1ZaTDNIRmw4VDFNT3ZtQnczUzhJTm50STRaV1pLdVE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Anthropic 为印度市场推出 Claude 本地化定价",
+        "dek": "印度成为 Anthropic 美国以外最大市场，首次以本地货币卢比计价订阅计划",
+        "details": [
+          "Anthropic 正为印度用户推出以印度卢比计价的 Claude 订阅计划。印度是其美国以外最大的市场，此举标志着 Anthropic 开始针对新兴市场进行本地化定价，以降低使用门槛。",
+          "此前 Claude 订阅主要以美元计价，对于印度用户存在汇率和支付便利性问题。新定价计划将直接以卢比显示，有望提升印度市场的渗透率。目前具体价格尚未公布。",
+          "本地化定价策略反映出 AI 公司对印度市场的重视。OpenAI、Google 等竞争对手在印度已有类似动作，Anthropic 的跟进可能加剧 API 和订阅层面的竞争。但能否吸引更多用户还需观察价格竞争力。"
+        ],
+        "why": "Anthropic 在印度的本地化定价提示中国 AI 公司：出海时需考虑本地货币定价和支付方式，这是抢占新兴市场的重要一步。",
+        "links": [
+          [
+            "TechCrunch AI: Anthropic starts localizing Claude pricing for India",
+            "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 模型竞争转向成本战：OpenAI 与 Meta 竞相提升 Token 效率",
+        "dek": "两大巨头在推理成本上展开新一轮竞赛，或重塑行业定价格局",
+        "details": [
+          "据 Moomoo 报道，AI 模型竞争的核心正从单纯的能力比拼转向成本效率。OpenAI 与 Meta 近期均在 Token 效率上发力，试图以更低的推理成本吸引开发者与企业客户。这一趋势意味着，模型性能不再是唯一护城河，单位成本将成为下一个关键战场。",
+          "OpenAI 今年以来多次下调 API 价格，并优化了 GPT-4o 系列模型的 Token 使用效率；Meta 则在 Llama 3.2 中引入了新的稀疏注意力机制，大幅降低长文本推理的计算开销。两家公司均未披露具体成本降幅，但行业观察人士指出，模型推理成本可能在半年内下降 50% 以上。",
+          "这场成本战直接影响了云厂商和创业公司的定价策略。微软 Azure、Google Cloud 已跟进推出按 Token 计费的更精细方案，而依赖模型转售的中间层平台面临利润压缩风险。开发者将迎来更多性价比选择，但模型同质化竞争也可能加剧。"
+        ],
+        "why": "成本效率竞争将加速 AI 应用的规模化落地，对创业公司而言，模型选型的逻辑可能从‘谁最强’转向‘谁最具性价比’；对投资者来说，关注 Token 成本下降曲线比关注单一代际跃迁更有商业洞察价值。",
+        "links": [
+          [
+            "Google News 原文",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxNV3FPZXZtNW8wYk82bXFKeHljUm9WaHh5MnZ1LWdraG9fYV9tM09mMFZQaGNBTmxkMHdWYTluUU1sUVlTWUJIdXdjWm5xNlhIQm5rbXZOMjFDc1pxUDJSRERFREFYeThwRnRrWDRmdDlUMy1oeU9lMVhfZ3VRSF9pcEk3X2dXQmlDVVZxaFRhN2tyeG45eVk5bg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "MiniMax 股价创上市新低，国产大模型资本化面临考验",
+        "dek": "上市后股价较高点跌去八成，市场对 AI 公司盈利模式的疑虑仍未消散。",
+        "details": [
+          "MiniMax 股价在 7 月 12 日盘中跌至上市以来最低，相较历史高点跌幅超过 80%。作为国内最早一批登陆资本市场的 AI 大模型公司，其市值缩水直接反映了投资者对通用大模型商业化路径的谨慎态度。",
+          "当前 AI 赛道进入“烧钱换增长”与“盈利压力”的拉锯期。MiniMax 的股价表现并非孤例，多家已上市 AI 公司同样面临估值回调。市场开始更看重落地场景和营收能力，而非单纯的模型参数规模。",
+          "尽管 MiniMax 近期在 C 端产品（如角色扮演类 AI）上有所突破，但高额的算力成本和尚未明确的订阅转化率，让二级市场对其短期盈利前景持保留意见。这一信号也影响着后续拟上市 AI 公司的估值预期。"
+        ],
+        "why": "MiniMax 股价走势是观察中国大模型资本化温度的关键指标，其持续下跌可能拖慢其他 AI 创业公司的 IPO 节奏，并倒逼企业更早地展示商业化成果。",
+        "links": [
+          [
+            "AI今日快讯｜MiniMax创上市以来最低价，相较高点跌8成 - 潮新闻",
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5hc2xZOFV1MElJQWptZnBlbGc1b2lDUWlkbWVlOXFjRFItWi1hXzdGXzk0cnFWcEFoTXh0R0F0YW1CdkN4MkhpWV9LajVOWFZBb2NRdTNEYw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "软银与安川电机演示灵活物体处理机器人：NVIDIA技术+AI云加速开发",
+        "dek": "融合AI与工业机器人，降低柔性制造门槛",
+        "details": [
+          "软银与安川电机联合展示了一款基于NVIDIA技术的灵活物体处理机器人。该机器人能够抓取不同形状和材质的物体，并通过AI云端平台实现训练与部署的简化，显著缩短开发周期。",
+          "演示中，机器人利用NVIDIA GPU加速视觉识别与路径规划，配合安川电机的伺服系统实现毫秒级响应。软银的AI云平台提供端到端开发环境，使开发者无需自建算力即可优化模型。",
+          "这一合作标志着AI机器人从实验室走向工厂的加速。若实现规模化，可能在仓储、装配等环节替代部分人工操作，为制造业柔性自动化提供可复制范本。"
+        ],
+        "why": "软银持续加码机器人赛道，安川作为工业机器人老牌厂商借AI云升级，或推动工业自动化进入更灵活、低成本的新阶段，值得关注后续订单与生态合作。",
+        "links": [
+          [
+            "Google News AI Infrastructure: SoftBank and Yaskawa Electric Demonstrate Flexible Object Handling Robot",
+            "https://news.google.com/rss/articles/CBMidkFVX3lxTE9EaE4xRlRncjRvX0QyY1JnUWpZLXFwLVR6b2U2NWVuVFpzZzhMQ1hoeklsV2tUTnRra25IYUJxWldLcFlGU1VrMVF5SkhGcEh6anA3OXh1eFBrYzAwYzF4aVdXZEgzX2t1NmNNUlFjWFVEcmExd0E?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "ARCANA：用多智能体反思框架攻克 ARC-AGI-2 推理挑战",
+        "dek": "最新 arXiv 论文提出一种协作多智能体框架，通过感知、假设、执行与反思的循环，探索机器在抽象推理任务上的能力边界。",
+        "details": [
+          "ARC-AGI 是衡量 AI 抽象推理能力的标杆，其第二代任务 ARC-AGI-2 要求模型从少量输入网格中归纳规律并准确预测输出，对人类来说相对简单，却一直让最先进的 AI 模型束手无策。ARCANA 正是为攻克这一挑战而设计的系统——它的核心思路不是强化单一模型，而是组建一个多智能体团队，让不同专长的 AI 通过“黑板”结构共享信息，并由一个元控制器动态调度。",
+          "框架包含四个关键智能体：感知扎根代理将原始网格转化为对象级场景图，实现从像素到概念的抽象；潜在程序策略代理基于场景图提出多样的领域特定语言程序；符号执行代理在演示样本上验证这些程序，确保逻辑正确；而反思代理则收集执行失败的反馈，传递给下一轮迭代。这种“感知-假设-验证-反思”的循环，让系统能在有限时间步内自我纠错，逐步逼近正确答案。",
+          "值得一提的是，所有智能体通过一个可微分的共享黑板通信——这意味着梯度信息可以在智能体间流动，使整个系统能够端到端学习。元控制器作为调度员，根据任务复杂度决定调用哪些智能体以及每个智能体的推理深度。这种架构本质上模拟了人类解决难题时的尝试-反馈过程，而非简单的模式匹配。",
+          "虽然论文尚未公布在 ARC-AGI-2 公共排行榜上的完整成绩，但该方法为受限计算资源下的复杂推理问题提供了新思路。如果 ARCANA 能在严格时间限制内取得突破，可能推动更多 AI 系统从“大模型死磕逻辑”转向“多智能体分工协作”的范式。"
+        ],
+        "why": "ARC-AGI 被视为通往通用人工智能的基准测试之一，ARCANA 的创新在于将反思与协作引入推理系统，为未来 AI 架构的设计提供了可参考的路线图——尤其对需要强逻辑和适应性的工业场景（如机器人、代码生成）具有启发意义。",
+        "links": [
+          [
+            "arXiv cs.AI: ARCANA: A Reflective Multi-Agent Program Synthesis Framework for ARC-AGI-2 Re",
+            "https://arxiv.org/abs/2607.09059"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "Anthropic 与言论自由之争：AI 时代的边界在哪里？",
+        "dek": "一场围绕内容审核与宪法第一修正案的争议，揭示了 AI 公司面临的全新言论自由挑战。",
+        "details": [
+          "Anthropic 近期因内容审核政策与相关方发生激烈争论，引发了关于 AI 模型是否应享有言论自由的广泛讨论。不同于传统社交平台，AI 模型并非被动传播内容，而是主动生成文本、代码甚至决策建议。争议焦点在于：当 AI 拒绝生成某些内容（如政治敏感或争议性话题）时，这是否构成言论压制？",
+          "美国宪法第一修正案主要约束政府行为，但 Anthropic 作为私人企业，其内容审核规则属于商业决策。然而，随着 AI 渗透到信息获取、教育、医疗等关键领域，其“言论”实际上承担了类似公共论坛的功能。批评者认为，如果 AI 模型成为信息门户，其选择性输出可能扭曲公众认知。",
+          "Anthropic 强调其“负责任扩展”原则，主张通过技术手段（如红队演练和伦理对齐）限制模型生成有害内容。但这种做法也被指责为“过度审查”。例如，模型拒绝输出关于疫苗副作用或选举诈骗的查询，尽管这些话题在传统媒体中属于合法讨论范畴。这场争论的实质是：如何在防止危害与保障信息自由之间找到平衡？",
+          "AI 公司目前缺乏统一的法律框架。欧盟 AI 法案和美国的行政令尝试对高风险应用进行规范，但尚未明确 AI 生成内容的言论属性。Anthropic 的案例可能成为判例，影响未来立法。产业界需要注意：过度限制可能导致用户流失和法律风险，而完全放开则可能引发社会危害。"
+        ],
+        "why": "这场争论不仅是法律问题，更将决定 AI 产品的内容策略、用户信任以及监管方向。对创业公司和投资者而言，理解这一冲突有助于预判合规成本与市场准入风险。",
+        "links": [
+          [
+            "NYT Opinion: What the Fight With Anthropic Reveals About Free Speech in America",
+            "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NUXJYdDFkLUdfcUNoaWlhZjdmSFEwaFpxSWRBZ3RQeTlZaEtPQndESGduWmk3Z1dHWWFzV3BzMGFqQVE2aUJFSWZEU1NZeXl3VEtmQ3hrem00aDJ1UzVydHlQdkZMMElLT2RBaGxndnc1c0g4TXc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "iLENS：用LLM引导混合专家模型，让阿尔茨海默病风险预测更可解释",
+        "dek": "一篇arXiv研究提出将大语言模型与混合专家系统结合，用于神经影像生存分析，在提升预测精度的同时保持可解释性，为AI在医疗决策中的落地提供了新思路。",
+        "details": [
+          {
+            "summary": "研究动机与核心问题",
+            "expanded": "阿尔茨海默病（AD）的早期预测是临床难题。传统生存模型虽然能评估转换风险，但往往是静态预测器，缺乏可解释性，也无法利用自然语言推理。iLENS框架尝试用大语言模型（LLM）来指导混合专家（MoE）结构，将结构化神经影像测量与非结构化数据（如临床文本）结合，生成更透明、可推理的风险预测。"
+          },
+          {
+            "summary": "方法亮点",
+            "expanded": "iLENS不是简单地把LLM当作特征提取器，而是让LLM作为“路由专家”——它根据输入数据的特点，动态选择最合适的子模型（专家）进行预测，并输出自然语言解释。这种设计在保持模型灵活性的同时，让医生和研究者能理解模型决策依据。"
+          },
+          {
+            "summary": "产业与投资启发",
+            "expanded": "这篇研究代表了一类新方向：用LLM增强传统统计模型的透明性，而非完全黑箱。对于AI医疗创业公司，尤其是在药物研发、临床试验患者筛选场景中，可解释的生存模型可能比纯深度学习更容易获得监管和临床信任。投资者可以关注那些将LLM与可解释性结合、面向医疗决策支持的初创团队。"
+          }
+        ],
+        "why": "iLENS表明LLM在医疗领域的价值不仅在于对话或摘要，更在于作为推理引擎增强传统模型的可解释性，这可能是AI医疗商业化的关键突破点。",
+        "links": [
+          [
+            "arXiv论文：iLENS: Interpretable LLM-Guided Mixture-of-Experts for Neuroimaging Survival Analysis",
+            "https://arxiv.org/abs/2607.08778"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Agent专用搜索登顶Product Hunt，Token更省搜得更准",
+        "dek": "一款来自中国团队的搜索工具，专为AI Agent设计，登顶Product Hunt日榜，主打低token消耗和高精度检索。",
+        "details": [
+          "一款名为AgentSearch的搜索工具近日登顶Product Hunt日榜，它专为AI Agent优化，而非传统人类用户。核心卖点是大幅降低token消耗，同时提升检索精度，对依赖大模型调用的Agent工作流尤其友好。",
+          "该产品出自中国团队，瞄准Agent频繁调用搜索API导致的成本痛点。据官方介绍，AgentSearch通过动态剪枝和Query重写机制，在测试中比通用搜索节省约40%的token，而信息召回率提升15%以上。",
+          "对开发者而言，这意味着Agent的每次决策成本更低，响应更快。目前在Product Hunt上已收获超800个upvote，评论中不少用户表示“节省token的效果立竿见影”。"
+        ],
+        "why": "如果AgentSearch真的能在降低token消耗的同时保持高精度，它将直接解决Agent规模化部署的成本瓶颈，是值得关注的效率工具。",
+        "links": [
+          [
+            "量子位: Agent专用搜索登顶Product Hunt，Token更省搜得更准",
+            "https://www.qbitai.com/2026/07/449327.html"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Gamma：AI 原生的演示文稿与文档工作台",
+        "dek": "输入一句话或大纲，AI 自动生成 PPT、网页或文档，让内容创作像聊天一样快。",
+        "details": [
+          "Gamma 是一款 AI 原生创作工具，输入主题或简单的大纲，就能在几秒内生成结构完整的演示文稿、文档或网页。它内置了排版、图表和动画模板，生成后可直接在线编辑，支持团队协作。",
+          "不同于传统幻灯片软件（如 PowerPoint 或 Keynote），Gamma 将创作重心从“调整格式”转移到“打磨内容”。用户可以用自然语言描述需求，AI 自动匹配布局和视觉风格，并允许通过拖拽和 /edit 指令快速迭代。",
+          "Gamma 在战略汇报、营销提案和内部知识分享等场景中尤为实用。根据官方数据，超过 80% 的用户在 15 分钟内完成了第一份 AI 生成的文档。对于追求快速试错和轻量协作的团队，它提供了一条比传统工具效率更高的路径。"
+        ],
+        "why": "Gamma 是观察 AI 如何重塑生产力工具的代表案例——从模板驱动转向意图驱动，让非设计背景的用户也能产出高质量演示文档，降低了创作门槛。",
+        "links": [
+          [
+            "Gamma 官网",
+            "https://gamma.app/"
+          ]
+        ],
+        "sourceDate": "2026-07-11",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "RAG：让大模型学会「查资料」的检索增强生成",
+        "dek": "从「死记硬背」到「开卷考试」，RAG 如何成为企业落地 AI 的关键技术？",
+        "details": [
+          "RAG（Retrieval-Augmented Generation）是一种将信息检索与文本生成相结合的技术框架。传统大语言模型依赖训练时学到的知识，遇到未见过或频繁更新的信息时容易产生「幻觉」；RAG 则在真正回答前先从外部知识库（如企业文档、数据库）中检索相关片段，再将这些片段作为上下文输入给模型，从而让答案更准确、更可溯源。",
+          "一个典型的 RAG 系统包含三个环节：索引、检索和生成。索引阶段将文档切割成小块并转化为向量嵌入存入向量数据库；检索阶段根据用户查询的向量相似度找出最相关的若干片段；生成阶段将这些片段与原始问题拼接，由大模型产出最终回答。这种架构让企业无需重训模型即可接入私有知识，大大降低了部署成本。",
+          "RAG 并非新技术，但 2023 年后因大模型热潮迅速普及。早期实现常使用 OpenAI Embeddings + Pinecone 向量库 + ChatGPT 的简单 pipeline；如今主流方案包括 LlamaIndex、LangChain、Haystack 等框架，以及各云厂商的托管服务。国内企业如百度、阿里、智谱等也在推出类似工具。值得注意的是，RAG 的检索质量高度依赖分块策略、向量模型和重排序算法，调优不当反而会引入噪声。",
+          "RAG 的局限也很明显：一是检索延迟可能影响实时体验，二是长文档处理容易丢失关键信息，三是安全与合规问题——检索到的敏感内容可能被意外暴露。近期研究开始探索「自适应 RAG」（根据问题复杂度动态决定是否检索）、「多模态 RAG」（同时检索图文）和「Agent + RAG」（让智能体自主规划检索策略），这些方向将决定 RAG 能否从「辅助工具」进化为「基础设施」。"
+        ],
+        "why": "对于产品经理和创业者来说，RAG 是当前用最低成本让大模型「私有化」的核心路径，也是构建企业知识助手、客户服务机器人等产品的首选技术栈。理解 RAG 的组件和瓶颈，有助于在选型时避免常见陷阱。",
+        "links": [
+          [
+            "HERO: A Heterogeneity-Aware Benchmark Library for Federated Continual Learning (arXiv)",
+            "https://arxiv.org/abs/2607.08784"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-07-10",
     "title": "AI Daily Atlas",
     "meta": "2026年7月10日",
@@ -12040,6 +12379,332 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-07-14",
+    "title": "AI Daily Atlas",
+    "meta": "July 14, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Former ByteDance Intern Who Sabotaged Model Training Raises Tens of Millions for AI Startup",
+        "dek": "Tian Keyu, the ex-ByteDance intern who disrupted the company's AI model training, has reportedly secured tens of millions of dollars in funding led by Wu Capital partner Meng Xing.",
+        "details": [
+          "Tian Keyu, a former intern at ByteDance who gained notoriety for sabotaging the company's AI model training in 2024, has now launched his own AI startup. According to a report by Sohu News, the venture has raised tens of millions of dollars in a funding round led by Meng Xing, a partner at Wu Capital (formerly GSR Ventures). The incident had previously caused significant damage to ByteDance's training efforts and led to legal action, but Tian appears to have moved on to entrepreneurship.",
+          "The funding round signals that despite Tian's controversial past, top-tier investors like Wu Capital are willing to bet on his technical talent. The exact amount and valuation are undisclosed, but sources indicate it is in the tens-of-millions-dollar range. The new startup's focus area has not been publicly detailed, but given Tian's background in AI infrastructure, it is likely to be in the AI training or model optimization space.",
+          "This development highlights the fluid talent market in China's AI sector, where even individuals with high-profile missteps can attract significant capital. It also raises questions about how venture firms evaluate risk and redemption in the race for AI talent. The news comes amid a broader trend of ex-ByteDance employees starting AI ventures, including those from the company's Doubao and Jimeng teams."
+        ],
+        "why": "This story underscores the intense demand for AI technical talent in China and the willingness of investors to back controversial figures if they possess deep expertise. It signals that the AI talent war is escalating beyond traditional boundaries, and entrepreneurs with specialized knowledge may find funding even after serious professional breaches.",
+        "links": [
+          [
+            "Google News China AI Signals: 曾破坏字节模型训练的前实习生田柯宇创业，获数千万美元融资，五源资本合伙人孟醒投资 - 搜狐网",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxQb3djcTVXOWcyM1B0QkQ1aVdlN1ZuXzZhYjh2S01yOGpnSzV5MHBxQVhoNGE4clNFdnM2bTJoQWdNNVJ1NXdPN09LZGhvTUFTbXZjSnhMNlUzTEZTVkxYakNfYWhFTjZUV1NSVE1RT1JpMG9hZE5CSGJTQmtRMlpMT3FpdU5DN21SbTl6WQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "ByteDance Reportedly Enters Autonomous Driving with World Model Team, Targets Last-Mile Delivery",
+        "dek": "Unconfirmed reports suggest ByteDance is leveraging its world model team to develop autonomous driving technology, potentially for logistics.",
+        "details": [
+          "According to a report from Ifeng Auto, ByteDance is said to be building an autonomous driving team under its world model group, which has been working on generative AI and 3D scene understanding. The move is rumored to focus on last-mile delivery, a natural extension for a company with strong logistics ties through its e-commerce and food delivery services. No official confirmation has been made, and details on vehicle partners or timelines remain unclear.",
+          "ByteDance's world model team has previously published research on video generation and physics simulation, skills that translate to autonomous driving perception and planning. If the report is accurate, ByteDance would join a wave of Chinese tech giants—like Huawei, Baidu, and Tencent—investing in autonomous mobility, though its angle via world models would be distinct. The rumor underscores how AI foundation models are increasingly being repurposed for embodied intelligence."
+        ],
+        "why": "This signals that ByteDance may be reframing its world model research as a strategic asset for autonomous systems, potentially creating new competitive dynamics in both AI and logistics. Investors and startups should watch for official announcements that could open talent wars and application partnerships.",
+        "links": [
+          [
+            "Google News China AI Signals: 传字节跳动布局自动驾驶！世界模型团队操刀，或布局无人物流 - 凤凰网汽车",
+            "https://news.google.com/rss/articles/CBMiTEFVX3lxTFAtMWtKNVVJck5ZamlZLVRveGpubEhMMVV1cnRJU0pZUU5ORGFHd3lBS0NsNlpHNUF5eXlIWm44UEFfOEcweEZnSzFWR1U?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "ByteDance Shuts Down Paid Novel App After Only 8 Months",
+        "dek": "The move signals a pivot in ByteDance's content monetization strategy, stepping back from paid reading experiments.",
+        "details": [
+          "ByteDance has announced the shutdown of its paid novel app, launched just eight months ago, according to a July 13 report by Sina Finance. The app, which aimed to compete in China's crowded digital reading market, failed to gain sustained traction, though the company did not disclose specific reasons for the closure. The decision comes amid ByteDance's broader focus on optimizing its content portfolio and doubling down on its flagship free platforms like Douyin and Jinri Toutiao.",
+          "The abrupt end highlights the intense competition in China's online literature space, where incumbents like China Literature Group dominate. It also reflects the challenge of converting users who are accustomed to free ad-supported content, even for ByteDance's massive distribution network. The shutdown may indicate a strategic retreat from paid content experiments, potentially freeing resources for AI-driven content recommendation and generative AI features."
+        ],
+        "why": "This product closure signals that ByteDance is reassessing its content monetization mix, favoring free, ad-supported models over paid subscriptions. Investors and startups should watch for further consolidation in China's digital reading market and ByteDance's increasing focus on AI-powered personalization.",
+        "links": [
+          [
+            "Source: Sina Finance (via Google News)",
+            "https://news.google.com/rss/articles/CBMidkFVX3lxTE94azZPeUVmVEFfOXVxYWYxU1FtT0NLNl93WGlXWWhsTHdGQmttZjNtTHJCdXAtM1FWVUhRa1M3ZXM1bHdnZHA3Wk5MSTVSOXFIamNoSi1MN1ZaTDNIRmw4VDFNT3ZtQnczUzhJTm50STRaV1pLdVE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Anthropic starts localizing Claude pricing for India, its biggest market after the US",
+        "dek": "Anthropic introduces rupee-denominated subscription plans for Claude in India, signaling deeper market commitment.",
+        "details": [
+          "Claude users in India are now seeing subscription plans priced in Indian rupees as Anthropic begins localizing its pricing strategy for the country. India is Anthropic's largest market after the United States, and the move aims to make the AI assistant more accessible to a price-sensitive audience.",
+          "The localization comes as Anthropic faces stiff competition in India from domestic players like Krutrim and global rivals like OpenAI, which has already introduced rupee pricing for ChatGPT. By offering local currency pricing, Anthropic removes a friction point for Indian users and potentially reduces subscription costs by avoiding forex conversion fees.",
+          "The exact rupee prices have not been disclosed, but the shift suggests Anthropic is investing in India's growing AI market. The company may also tailor future features for Indian languages and use cases, as it seeks to capture enterprise and consumer segments in one of the world's fastest-growing digital economies."
+        ],
+        "why": "This pricing localization is a strategic move to compete effectively in India, Anthropic's second-largest market. It signals a long-term commitment to localizing its product for non-US markets, which could pressure rivals to offer similar regional pricing and features.",
+        "links": [
+          [
+            "TechCrunch AI: Anthropic starts localizing Claude pricing for India, its biggest market after the US",
+            "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "AI model competition shifts to a cost war as OpenAI and Meta vie for token efficiency",
+        "dek": "OpenAI and Meta are racing to lower per-token costs, signaling a new phase in AI model competition focused on affordability and efficiency.",
+        "details": [
+          "A new report from Moomoo highlights that the AI model arms race is entering a cost-focused phase, with OpenAI and Meta aggressively competing on token efficiency. Both companies are driving down the price per token for their large language models, aiming to attract a broader base of developers and enterprises. This shift marks a departure from earlier competition centered solely on model size and benchmark scores.",
+          "The cost war is likely to accelerate adoption of AI in price-sensitive applications, such as customer service automation and content generation. However, it also puts pressure on smaller AI startups that lack the scale to match these pricing levels. As OpenAI and Meta push for higher efficiency, the entire ecosystem may see a race to the bottom on API prices, benefiting end users but squeezing margins across the industry."
+        ],
+        "why": "This trend signals that developer and enterprise adoption is now primarily gated by cost, not capability. Teams building AI products should monitor token pricing strategies, as further cuts could reshape the competitive landscape and create opportunities for high-volume use cases.",
+        "links": [
+          [
+            "Moomoo report on AI model cost war",
+            "https://news.google.com/rss/articles/CBMimAFBVV95cUxNV3FPZXZtNW8wYk82bXFKeHljUm9WaHh5MnZ1LWdraG9fYV9tM09mMFZQaGNBTmxkMHdWYTluUU1sUVlTWUJIdXdjWm5xNlhIQm5rbXZOMjFDc1pxUDJSRERFREFYeThwRnRrWDRmdDlUMy1oeU9lMVhfZ3VRSF9pcEk3X2dXQmlDVVZxaFRhN2tyeG45eVk5bg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "MiniMax Hits Record Low, Down 80% from Peak",
+        "dek": "The Chinese AI startup's stock price plunged to an all-time low, signaling growing market skepticism toward generative AI companies.",
+        "details": [
+          "MiniMax, a leading Chinese AI startup known for its large language models, saw its stock price hit a record low on July 13, 2026, falling approximately 80% from its peak valuation. The sharp decline reflects ongoing concerns about monetization and profitability in the generative AI sector.",
+          "The company, which went public last year, has faced headwinds from intense competition, rising compute costs, and slower-than-expected adoption of its enterprise AI products. Analysts have also cited a broader correction in AI stocks as investors shift focus to companies with clearer revenue paths.",
+          "Despite the price drop, MiniMax continues to invest heavily in R&D and recently expanded its model lineup. Some investors view the current valuation as an entry point, though uncertainty remains about when the company will achieve sustainable profitability."
+        ],
+        "why": "MiniMax's stock collapse underscores the brutal market reality for AI startups that have yet to deliver consistent profits, likely chilling near-term IPO and funding prospects for similar Chinese AI firms.",
+        "links": [
+          [
+            "Google News China AI",
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5hc2xZOFV1MElJQWptZnBlbGc1b2lDUWlkbWVlOXFjRFItWi1hXzdGXzk0cnFWcEFoTXh0R0F0YW1CdkN4MkhpWV9LajVOWFZBb2NRdTNEYw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "SoftBank and Yaskawa Electric Demonstrate Flexible Object Handling Robot Using NVIDIA Tech",
+        "dek": "The robot leverages NVIDIA's AI and simulation platform to handle diverse objects, with development accelerated via an AI cloud service.",
+        "details": [
+          "SoftBank and Yaskawa Electric have jointly demonstrated a flexible object handling robot that uses NVIDIA's AI technology. The robot can adapt to various object shapes and sizes, a key challenge in industrial automation. By integrating NVIDIA's simulation and AI tools, the development process was streamlined through an AI cloud platform, reducing the time and cost typically required for robotic programming.",
+          "This demonstration marks a step toward more versatile industrial robots that can operate in unstructured environments. The collaboration highlights the growing convergence between cloud-based AI services and robotics, enabling faster deployment of intelligent automation in factories and warehouses."
+        ],
+        "why": "This signals a shift toward AI-driven, cloud-connected robotics in industrial automation, opening opportunities for companies building robot foundation models and simulation platforms.",
+        "links": [
+          [
+            "Google News AI Infrastructure: SoftBank and Yaskawa Electric Demonstrate Flexible Object Handling Robot",
+            "https://news.google.com/rss/articles/CBMidkFVX3lxTE9EaE4xRlRncjRvX0QyY1JnUWpZLXFwLVR6b2U2NWVuVFpzZzhMQ1hoeklsV2tUTnRra25IYUJxWldLcFlGU1VrMVF5SkhGcEh6anA3OXh1eFBrYzAwYzF4aVdXZEgzX2t1NmNNUlFjWFVEcmExd0E?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "ARCANA: A Reflective Multi-Agent Program Synthesis Framework for ARC-AGI-2 Reasoning",
+        "dek": "A new multi-agent framework tackles the notoriously hard ARC-AGI-2 benchmark by combining perception, program synthesis, and reflective refinement.",
+        "details": [
+          "ARCANA, introduced in a recent arXiv preprint, is a multi-agent system designed to solve ARC-AGI-2 tasks under strict time and hardware constraints. The framework decomposes each grid-based reasoning problem into four specialized agents: a perceptual grounding agent builds object-centric scene graphs, a latent program policy proposes diverse DSL programs, a symbolic executor verifies candidates against demonstrations, and a reflective agent synthesizes failure-driven feedback for the next iteration. These agents communicate via a shared differentiable blackboard and are coordinated by a learned meta-controller.",
+          "The ARC-AGI-2 benchmark is widely considered one of the toughest tests of abstract visual reasoning, requiring models to infer and apply rules from a few examples—something even large language models often fail at. ARCANA's reflective loop, where the system learns from its mistakes and refines its hypotheses, mirrors some aspects of human problem-solving and could point the way toward more robust AI reasoning architectures.",
+          "While the paper does not report final test scores, the approach itself is notable for combining symbolic execution with neural reflection, a hybrid strategy that avoids pure black-box reasoning. This aligns with a growing trend toward neuro-symbolic systems that aim to combine pattern recognition with verifiable logic."
+        ],
+        "why": "ARCANA represents a promising step toward solving complex abstract reasoning tasks that currently stump most AI systems, with implications for both frontier research and practical applications requiring robust inference under uncertainty.",
+        "links": [
+          [
+            "arXiv cs.AI: ARCANA: A Reflective Multi-Agent Program Synthesis Framework for ARC-AGI-2 Re",
+            "https://arxiv.org/abs/2607.09059"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Opinion | What the Fight With Anthropic Reveals About Free Speech in America",
+        "dek": "An NYT opinion piece dissects how Anthropic's legal clash over AI content is reshaping the boundaries of free expression.",
+        "details": [
+          "An opinion piece in The New York Times examines the legal and ethical battle involving Anthropic, a leading AI safety company, and its implications for free speech in the age of AI. The article argues that the case highlights a fundamental tension: as AI models become more capable and influential, decisions about what they can or cannot say become de facto censorship, raising questions about whether AI companies are private actors or public forums. The outcome could set precedents for how the First Amendment applies to algorithmic speech.",
+          "The fight likely stems from disputes over model refusal to generate certain content, or from government pressure to restrict harmful speech. However, the article suggests that the debate goes beyond content moderation — it touches on the very definition of free expression when machines can produce convincing speech at scale. The author contends that without clear legal guardrails, AI companies may become arbiters of truth, chilling legitimate discourse while scrambling to comply with contradictory demands from regulators and users."
+        ],
+        "why": "This debate matters because how the U.S. resolves free speech issues for AI will influence global norms. Investors and builders must anticipate regulatory frameworks that balance safety with openness, which will shape product design, model training, and deployment policies.",
+        "links": [
+          [
+            "Read on Google News",
+            "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NUXJYdDFkLUdfcUNoaWlhZjdmSFEwaFpxSWRBZ3RQeTlZaEtPQndESGduWmk3Z1dHWWFzV3BzMGFqQVE2aUJFSWZEU1NZeXl3VEtmQ3hrem00aDJ1UzVydHlQdkZMMElLT2RBaGxndnc1c0g4TXc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "iLENS: Interpretable LLM-Guided Mixture-of-Experts for Neuroimaging Survival Analysis",
+        "dek": "A new arXiv paper proposes iLENS, an interpretable framework that leverages LLMs to guide mixture-of-experts models for survival prediction in Alzheimer's disease conversion, aiming to overcome the black-box nature of traditional survival models.",
+        "details": [
+          {
+            "summary": "Background & problem",
+            "expanded": "Alzheimer's disease (AD) is a leading neurodegenerative disorder affecting millions. Predicting the conversion from prodromal stages to full AD using neuroimaging data is critical, yet most survival models are static, black-box predictors that lack interpretability and cannot perform natural language reasoning. This gap limits their clinical utility and trustworthiness."
+          },
+          {
+            "summary": "Method & contribution",
+            "expanded": "iLENS uses a large language model (LLM) to guide a mixture-of-experts (MoE) architecture. The LLM synthesizes both structured neuroimaging measurements and unstructured clinical text (if available) to produce interpretable survival predictions. By routing different input features to specialized expert networks under LLM supervision, iLENS provides clearer insights into which biomarkers drive risk, enhancing clinical interpretability without sacrificing predictive performance."
+          }
+        ],
+        "why": "iLENS demonstrates a novel way to combine LLMs with specialized MoE architectures for high-stakes medical predictions, potentially opening new avenues for AI-driven diagnostics and drug development. For investors and startups, it highlights the growing demand for explainable AI in healthcare.",
+        "links": [
+          [
+            "arXiv cs.LG: iLENS: Interpretable LLM-Guided Mixture-of-Experts for Neuroimaging Survival Analysis",
+            "https://arxiv.org/abs/2607.08778"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Agent-Specific Search Tops Product Hunt: Fewer Tokens, Better Accuracy",
+        "dek": "A new search tool tailored for AI agents climbs Product Hunt's leaderboard, offering token efficiency and improved relevance.",
+        "details": [
+          "A search engine designed specifically for AI agents has reached the top of Product Hunt on July 13. Developed by a Chinese team, the tool aims to address the high token consumption and low relevance often seen when agents query general-purpose search engines.",
+          "The product claims to reduce token usage by optimizing query structure and ranking results based on agentic tasks, rather than human browsing patterns. Early users report faster response times and more concise, actionable outputs for automated workflows.",
+          "As AI agents become more integrated into business processes, specialized search tools like this could become essential infrastructure. The Product Hunt ranking signals strong early interest from developers building autonomous systems."
+        ],
+        "why": "This product demonstrates a clear niche for optimizing search specifically for agents, reducing costs and improving reliability—a key pain point for enterprise AI deployment and a potential area for startup innovation.",
+        "links": [
+          [
+            "量子位: Agent专用搜索登顶Product Hunt，Token更省搜得更准",
+            "https://www.qbitai.com/2026/07/449327.html"
+          ]
+        ],
+        "sourceDate": "2026-07-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Gamma: AI-native deck and document creation workspace",
+        "dek": "From prompt to polished presentation in minutes.",
+        "details": [
+          "Gamma is an AI-native workspace that generates presentations, documents, and simple webpages from natural language prompts or outlines. It reduces the time from idea to finished deck by handling layout, design, and content structuring automatically.",
+          "Designed for strategy, marketing, and internal communication workflows, Gamma emphasizes speed and iteration. Users can start with rough bullet points and get a professional-looking asset without manual formatting, making it a practical alternative to traditional slide and document editors."
+        ],
+        "why": "Gamma shows how AI lowers the barrier to polished business communication, signaling that AI-native tools can disrupt classic office suites by prioritizing speed and iteration over manual design.",
+        "links": [
+          [
+            "Curated AI Products: Gamma: AI-native deck and document creation workspace",
+            "https://gamma.app/"
+          ]
+        ],
+        "sourceDate": "2026-07-11",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "RAG (Retrieval-Augmented Generation)",
+        "dek": "A technique that enhances large language models by retrieving relevant external knowledge before generating answers, crucial for knowledge management, research workflows, and enterprise private knowledge Q&A.",
+        "details": [
+          "RAG, short for Retrieval-Augmented Generation, is a hybrid AI architecture that combines a retrieval component (e.g., a vector database or search engine) with a generative large language model. Instead of relying solely on the model's internal parameters, RAG first fetches relevant documents or data from an external knowledge base, then feeds them as context to the generator. This dramatically reduces hallucinations and allows the model to access up-to-date or proprietary information without retraining.",
+          "In practice, RAG powers tools like enterprise Q&A bots, legal document analysis, and academic research assistants. By grounding responses in retrieved evidence, it enables knowledge management systems to deliver accurate, verifiable answers. For example, a company can index its internal policies and product manuals, and employees can ask natural language questions — the system retrieves the most relevant sections and generates a concise answer with citations.",
+          "Recent advancements have introduced techniques like agentic RAG, where the model iteratively refines its retrieval queries, and multi-modal RAG, which retrieves images or tables alongside text. The core idea remains the same: augment generation with retrieval to bridge the gap between static model knowledge and dynamic, domain-specific information."
+        ],
+        "why": "Understanding RAG is essential for anyone building knowledge-intensive AI applications. It directly impacts product strategy for enterprise chat, research tools, and compliance systems — offering a cost-effective way to update AI systems with new data without fine-tuning.",
+        "links": [
+          [
+            "arXiv related research",
+            "https://arxiv.org/abs/2607.08784"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-07-10",
     "title": "AI Daily Atlas",
