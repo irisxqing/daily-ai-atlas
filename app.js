@@ -1,5 +1,291 @@
 const archiveZh = [
   {
+    "date": "2026-07-15",
+    "title": "AI Daily Atlas",
+    "meta": "2026年7月15日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "传 DeepSeek 考虑新一轮融资，估值已达约 710 亿美元",
+        "dek": "若融资完成，DeepSeek 估值将跃居全球 AI 初创前列，但交易细节尚未确认。",
+        "details": [
+          "据观点网今日引用知情人士消息，中国 AI 公司 DeepSeek 正考虑启动新一轮融资，估值已升至约 710 亿美元。若属实，这一数字较其上一轮估值大幅提升，使 DeepSeek 成为仅次于 OpenAI 和 Anthropic 的全球估值最高的 AI 初创公司之一。",
+          "报道指出，DeepSeek 近期在大型语言模型和垂直应用上的快速迭代，以及其开源策略积累的开发者生态，是资本对其重新定价的核心驱动力。不过，目前该融资仍处于内部讨论阶段，具体规模、投资方及时间表均未敲定。",
+          "这一潜在融资动作发生在中美 AI 军备竞赛持续升温的背景下。DeepSeek 若成功募资，将为其在基础模型研发、算力储备及海外市场拓展提供关键弹药。业内分析认为，投资人对中国 AI 赛道的热情正在回暖，但宏观监管环境仍是变量。"
+        ],
+        "why": "DeepSeek 作为中国 AI 的代表性公司，其融资动态直接反映资本对本土模型的信心和定价逻辑。710 亿美元估值若落地，将重塑全球 AI 创投格局，并为其他中国 AI 公司融资提供参照。",
+        "links": [
+          [
+            "观点网原文",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBZYWE4VGkxdl9vWEhUUGVrekI2WkxZSFFmRGp2MUZzYUhqTU9iMnJWbXhYVzE1N0hLNzQ2b3FJSFg4cmo5X3RDQ3NacC1EUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Booster T2 人形机器人发布：内置英伟达板载计算，本地智能成亮点",
+        "dek": "这是一款主打机载算力的人形机器人，无需云端即可运行复杂AI任务，可能加速机器人走向独立决策。",
+        "details": [
+          "据 Interesting Engineering 报道，Booster T2 是一款新型人形机器人，其最大特色是搭载了英伟达的板载计算平台，能够在机器人本体上完成高强度的AI推理任务，减少对云端的依赖。这使其在响应速度、数据隐私和离线工作能力上具备优势。",
+          "该机器人瞄准工业巡检、物流搬运和科研教育等场景。板载英伟达GPU可实时处理视觉、导航和交互任务，配合关节电机与传感器阵列，实现动态环境下的自主操作。目前尚未公布价格及量产时间。",
+          "人形机器人赛道正从遥控式向自主式进化。Booster T2 的推出表明，将数据中心级算力压缩到机器人本体已成为可能，这可能会推动更多厂商采用类似方案，加速人形机器人在复杂场景中的落地。"
+        ],
+        "why": "Booster T2 是“端侧大模型”在机器人领域的典型应用：把英伟达算力塞进人形机器人，意味着机器人可以脱离云端、实时决策。这对工业自动化和服务机器人创业方向是个信号——本地智能或将取代“遥控+云端”成为下一代标配。",
+        "links": [
+          [
+            "Interesting Engineering 报道",
+            "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVm8zbzV6dXdEWjRQS0dpZGdDclBhY2IyZEFCQUdOc0hSZzR5TmZhX2lmb1pGSUV3d1VBa3FINmxINTluZUFld24zcGRIRWJKeEdfTUZvNkgxNHdPa1pjRVZYVzVJaVlBVU83ZW5oRXlqeVhSeENGNFpVd1J1QTh5VW13Y0lhTldoNzR6U01TamlybDBVSnc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "百年德国「战车」征服欧陆，驾驶位上是中国AI司机",
+        "dek": "中国AI自动驾驶模型落地德国百年车企，一套模型覆盖三大场景",
+        "details": [
+          "一家中国AI公司的自动驾驶方案被德国老牌车企采纳，即将搭载于其主力车型。该方案宣称“一套模型，三个世界”，即用单一模型同时处理高速、城区和泊车场景，降低系统复杂度。",
+          "这套系统已在德国本土完成多轮路测，正进入量产前冲刺阶段。传统车企在智能化转型中转向中国技术供应商，已成趋势——此前已有大众与地平线、宝马与纵目科技的合作先例。",
+          "目前尚未公布具体车型和交付时间表，但消息称双方计划在2027年款车型上实现L2+级辅助驾驶，并保留向L3升级的硬件冗余。欧标认证和本地化路况适配是落地过程中的关键变量。"
+        ],
+        "why": "中国AI公司首次以“模型级”方案进入德国汽车供应链，意味着技术出海从单点合作走向系统化输出，对智能驾驶行业的技术路线和跨国合作模式具有标杆意义。",
+        "links": [
+          [
+            "量子位: 百年德国「战车」征服欧陆，驾驶位上是中国AI司机",
+            "https://www.qbitai.com/2026/07/449850.html"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "非英语推理的成本：以日语为例",
+        "dek": "研究发现，当前最先进的推理模型在处理非英语语言时性能显著下降。一篇新论文尝试用日语训练推理模型，揭示了多语言 AI 的重要挑战。",
+        "details": [
+          "当前最强的推理语言模型（如 OpenAI o1、DeepSeek R1 等）几乎全部基于英语训练推理链。因为英语的推理训练数据最丰富，模型在英语环境下能调用最多“思考模板”，达成最佳成绩。但一旦切换到日语、中文等非英语语言，逻辑连贯性和答案准确度明显下滑。",
+          "来自东京大学和国立情报学研究所的研究团队，以 Qwen-3-Swallow-8B 为基础——一个从 Qwen 持续预训练而来的日语 LLM——尝试为其注入日语推理能力。他们通过构造日语推理轨迹数据集，对模型进行指令微调，目标是让模型在用日语思考时同样保持高水平表现。",
+          "初步结果表明，专用日语推理训练能大幅缩小与英语推理的性能差距，但尚未完全抹平。这暗示推理链的语言依赖问题不仅仅来自训练数据不足，还可能与模型内部表征的语言脱节有关。",
+          "该研究对多语言 AI 产品有直接影响。如果推理能力无法无缝迁移，日韩、中东、拉美等非英语市场的用户将体验到“次等”的智能服务。对开发者而言，未来可能需要为每种目标语言单独训练推理适配器，大幅增加成本。"
+        ],
+        "why": "这项研究提醒我们，AI 的“思考语言”可能成为公平性的瓶颈——英语之外的数亿用户可能无法平等享受推理模型的进步。对产品开发者而言，多语言推理的额外成本必须提前纳入规划。",
+        "links": [
+          [
+            "arXiv 论文",
+            "https://arxiv.org/abs/2607.10114"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "基于图尔敏论证模型的诊断辅助：从 ML 预测到知情决策",
+        "dek": "一项新研究将哲学论证框架引入 AI 诊断，让黑箱预测变得可解释、可辩论。",
+        "details": [
+          "医疗 AI 的“黑箱”问题长期困扰临床信任。一篇发表于 arXiv 的论文提出，不必只依赖可解释 AI（XAI）方法，而是借用图尔敏论证模型（Toulmin model）为眼底图像诊断构建结构化论证框架。该模型包含主张、依据、保证、限定、反驳和支持六个组件。",
+          "具体流程是：ML 模型对视网膜图像生成诊断主张，同时一个专门的 biomarker 提取模型提供“依据”；随后，一个具备医学知识的智能体分析“保证”——即如何从依据推导出主张。系统还允许“反驳”和“限定”，使医生能像审阅一篇论文的论证结构一样审查 AI 结论。",
+          "该方法的目标并非取代医生，而是将 ML 输出转化为有逻辑链条的医疗建议。与直接输出概率的 XAI 不同，它保留了可辩论空间，让临床决策更接近人类论证习惯。研究尚未在真实临床环境中验证，但为建立“可对话的 AI 诊断助手”提供了新思路。"
+        ],
+        "why": "当医疗 AI 从“预测”走向“辅助诊断”，如何让模型输出被医生信任和采纳是商业化关键。图尔敏模型提供了一种结构化的可解释框架，可能成为下一代 AI 诊断产品差异化的重要路径。",
+        "links": [
+          [
+            "arXiv cs.AI: From ML Predictions to Informed Diagnostic Assistance Using the Toulmin Model",
+            "https://arxiv.org/abs/2607.09664"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Google DeepMind CEO 呼吁美国主导 AI 监管",
+        "dek": "在 AI 安全成为全球焦点的当下，DeepMind 掌门人主张建立以华盛顿为核心的监管框架，引发业界对监管路径的讨论。",
+        "details": [
+          "据 MediaPost 报道，Google DeepMind CEO 在 2026 年 7 月 14 日公开呼吁建立由美国领导的 AI 监管体系。这一表态与当前欧盟 AI Act 领跑全球监管的趋势形成鲜明对比，反映了硅谷对“监管碎片化”的担忧。",
+          "CEO 认为，美国应借鉴核能、航空等领域的监管经验，成立独立的联邦 AI 安全机构，负责制定测试标准、审批高风险模型发布，并建立跨国协调机制。此举旨在避免各州或国家各自为政，增加企业合规成本。",
+          "值得注意的是，DeepMind 的立场并非完全反对监管，而是希望“主动参与规则制定”。这与部分呼吁“暂停开发”的激进观点不同，更接近务实路线。背景是 2026 年初以来，多起 AI 引发的事故（如自动驾驶误判、生成虚假金融数据）推动了立法加速。",
+          "然而，批评者认为“美国主导”可能将监管政治化，削弱全球合作。欧盟官员已表示，AI 安全应是多边议题，不应由单一国家把控。该观点短期内可能加剧美欧监管路线之争。"
+        ],
+        "why": "此观点代表了顶级 AI 实验室对监管博弈的最新策略——从对抗转向引导，值得关注后续各方反应及其对合规成本的长期影响。",
+        "links": [
+          [
+            "MediaPost 报道",
+            "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOFVXYWR4VWN4YWwyTk5jZHdEaWlaSWhSdXpudXl5QzlOekd2cmpkMmFZNU5KaTVYRzlLUWpiYnZpLVh1d1hhaEx0c1MtU25OQlFYcDY4TzJTcEN3NlRUdmd2dGdTbVZVUlg0NVVyWjFCam9WNWp3LUdmVmtfQ2F2blRUUmxLeEVOYUltMTEyeEppbDlSTGNpenl0SXVaTS1rYXNSVGhpaEJ6ZjA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Demis Hassabis：用 AI 裁员是短视做法",
+        "dek": "Google DeepMind CEO 呼吁美国牵头建立 AI 标准机构，并批评企业以 AI 替代岗位是短视行为。",
+        "details": [
+          {
+            "summary": "裁员短视",
+            "expanded": "Demis Hassabis 在接受 CNBC 采访时表示，企业如果只想着用 AI 替代人类员工来削减成本，是短视的做法。他认为，AI 的真正价值在于增强人类能力、推动创新，而非简单替换岗位。他警告称，过早裁员可能导致企业失去长期竞争力，因为 AI 需要人类协作才能真正释放潜力。"
+          },
+          {
+            "summary": "美国应主导 AI 标准机构",
+            "expanded": "Hassabis 呼吁美国牵头建立全球 AI 标准机构，以确保 AI 安全与负责任发展。他指出，当前缺乏统一的国际标准，可能导致碎片化监管和安全隐患。作为 AI 领域的领军者，美国有责任在制定规则上发挥领导作用，避免其他国家或组织主导标准制定。这一观点反映了科技界对 AI 治理日益增长的关注。"
+          }
+        ],
+        "why": "Hassabis 的观点为 AI 领域的企业高管和政策制定者提供了重要参考：AI 部署应聚焦于人机协作而非简单替代，同时全球标准机构可能重塑行业规则，影响投资和产品方向。",
+        "links": [
+          [
+            "Google News AI Models: Google DeepMind chief Demis Hassabis calls for U.S. to spearhead AI",
+            "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUlhieFpkR0hOQWczb08yTWZwbXg0RlBVVFA1LTJrSURrUy1hNU9fbVlVLWYtOWZPQVRnVU8tcVM3LWVxSmxXdnY0T1pnUUJ0LUdhekZxSWhmSkoyWkFLeENsTzFDeW42QS1QM2hLSmw5M3gyWXRDbk5HN1FXWVR2MEdfUkZWcy1nYnAzdlQ2NXpweGFaSVlZ0gGcAUFVX3lxTFA3QmRHTU92cHlMUmt1bVlTZmFtOEczOWdXeXM2VG04TEdidmxEYTk3b2ZJSmRzc1VucFFTVnNhY1R3VjFWbi12TXBVcjlGSDhSbFVaVm1wR01FaWpWekwwQXJ1Y1IwS01PRTBOXzlTYXFYdVVfeGUzSXQ0WFRjc3h6amItTGVEUUlwM3REWVp0VnNrekR4RHVYX0dIWg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "FindMyText：开源文本包含检测工具，专治大语料中的版权“撞车”",
+        "dek": "基于指纹链匹配，可在海量网络爬取数据中高效检测文本是否被完整或部分包含，适用于版权验证。",
+        "details": [
+          "FindMyText 是一个全新的开源 Python 包，旨在高效判断给定文本是否出现在大规模文本语料库中。它基于文档指纹技术，但引入了一种新颖的机制来显式捕获匹配指纹的连续序列（即“链”），从而能够更可靠地检测近逐字复制，而非仅文本相似度。",
+          "工具采用分布式、基于磁盘的索引框架，可扩展到大型网络爬取数据集。这对于验证大模型训练数据中是否包含受版权保护的材料尤其有价值——在近期多起 AI 版权诉讼背景下，该工具提供了一种可操作的检查手段。",
+          "FindMyText 的发布回应了业界对数据合规的迫切需求。尽管现有去重工具（如 MinHash）能识别近似重复，但难以精确定位部分包含的版权内容。该工具通过指纹链匹配，提升了检测精度。"
+        ],
+        "why": "对于 AI 公司而言，数据合规是日益紧迫的议题。FindMyText 提供了一种低成本、可扩展的版权内容回查方案，有望成为模型训练和数据集审核的标准组件。",
+        "links": [
+          [
+            "arXiv cs.CL: Robust, Scalable Detection of Text Containment in Large Web-Crawled Corpora",
+            "https://arxiv.org/abs/2607.10020"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Flowith：用画布组织多步思考的 AI 工作台",
+        "dek": "一个将AI对话与研究流程可视化的画布工作台",
+        "details": [
+          "Flowith 是一款以视觉画布为核心的 AI 工作台，它摒弃了传统的线性聊天界面，将每次交互变成画布上的节点。用户可以在同一块画布上发起多个 AI 对话，连接不同的提示、来源和输出，形成网络化的思考流程。",
+          "这种设计非常适合需要空间思维的用户，比如研究人员在文献综述中同时查询多个假设，或者产品经理需要整合市场分析、用户反馈和技术方案。画布让每一步思考都可见、可追溯，避免了上下文断裂。",
+          "与大多数 AI 聊天工具相比，Flowith 更像一个“白板 + AI 助手”的组合。它支持多模型切换，用户可以在同一个项目中比较不同 AI 的回答，并将结果拖拽、连线，组织成完整的报告或方案。对于频繁进行复杂推理的用户来说，这种工作流可能是效率提升的关键。"
+        ],
+        "why": "Flowith 代表了 AI 产品从“单轮对话”向“多步工作流”的演进方向。对于希望将 AI 深度整合进日常工作的团队或个人，这类画布式工具可能成为新型生产力平台，值得早期体验和观察。",
+        "links": [
+          [
+            "Curated AI Products: Flowith: canvas-based AI workspace for multi-step thinking",
+            "https://flowith.io/"
+          ]
+        ],
+        "sourceDate": "2026-07-12",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Granola：适合真实工作对话的 AI 会议笔记",
+        "dek": "把会议变成可搜索的结构化笔记，而不像一个笨重的会议机器人。",
+        "details": [
+          "Granola 的核心差异化在于“轻”——它不会像传统会议机器人那样在聊天窗口刷屏或发通知，而是静静聆听并自动生成结构化笔记。用户事后可以搜索、回顾，无需手动整理。",
+          "目标用户是运营、产品团队、投资人和顾问等需要频繁开会且重视会议记忆的群体。Granola 的笔记设计强调可搜索性和后续行动项，让会议产出更干净。",
+          "在 AI 会议笔记赛道已经拥挤的背景下（如 Otter、Fireflies 等），Granola 选择避开“机器人感”，专注于真实工作流中的自然整合，这可能是它被编辑推荐的原因。"
+        ],
+        "why": "Granola 代表了一种“轻量+实用”的产品哲学，对于观察 productivity AI 应用如何降低侵入感、提升用户粘性有参考价值。",
+        "links": [
+          [
+            "Curated AI Products: Granola: AI meeting notes built for real work conversations",
+            "https://www.granola.ai/"
+          ]
+        ],
+        "sourceDate": "2026-07-12",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "AI 编码 Agent",
+        "dek": "从代码补全到自主编程，理解当前最热门的开发者工具形态",
+        "details": [
+          "AI 编码 Agent 是能够理解、生成和调试代码的智能助手。与传统的代码补全工具不同，Agent 可以理解整个项目上下文，自主规划开发步骤，甚至执行终端命令。典型代表包括 GitHub Copilot（已进化至 Agent 模式）、Cursor 的 AI Editor、以及国内的通义灵码等。它们不再是简单的“自动补全”，而是像一位初级程序员一样工作。",
+          "核心能力上，编码 Agent 具备多步骤推理、文件编辑、运行测试和修复错误的能力。例如，用户只需描述“添加一个用户登录功能”，Agent 就能创建路由、数据库模型、前端表单和验证逻辑。这极大降低了编程门槛，但同时也带来代码质量和安全性的新挑战。",
+          "当前，编码 Agent 的竞争集中在模型专长与工程整合上。OpenAI 的 Codex 系列、Anthropic 的 Claude 以及国内的 DeepSeek Coder 都专门针对代码场景优化。同时，IDE 插件层和独立编辑器也在争夺开发者入口。订阅价格通常为每月 10-20 美元，但企业级授权可达更高。"
+        ],
+        "why": "理解 AI 编码 Agent 有助于开发者选择合适的工具提升效率，也让非技术决策者看清 AI 如何重塑软件工程——从辅助提效到逐步实现自主开发，未来每一位知识工作者都可能需要与这类 Agent 协作。",
+        "links": [
+          [
+            "OpenAI: Managing AI investments in the agentic era",
+            "https://openai.com/index/managing-ai-investments-in-agentic-era"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-07-14",
     "title": "AI Daily Atlas",
     "meta": "2026年7月14日",
@@ -12379,6 +12665,279 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-07-15",
+    "title": "AI Daily Atlas",
+    "meta": "July 15, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "据报DeepSeek考虑启动新一轮融资 估值已升至约710亿美元 - 观点网",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：据报DeepSeek考虑启动新一轮融资 估值已升至约710亿美元 - 观点网. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 据报DeepSeek考虑启动新一轮融资 估值已升至约710亿美元 - 观点网",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBZYWE4VGkxdl9vWEhUUGVrekI2WkxZSFFmRGp2MUZzYUhqTU9iMnJWbXhYVzE1N0hLNzQ2b3FJSFg4cmo5X3RDQ3NacC1EUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Booster T2: A humanoid robot with powerful onboard Nvidia compute",
+        "dek": "A new humanoid robot equipped with high-performance Nvidia compute hardware signals the growing importance of on-device AI in robotics.",
+        "details": [
+          "Chinese robotics company Booster has unveiled the T2 humanoid robot, which features powerful onboard Nvidia compute capabilities. Unlike many humanoid robots that rely on cloud or tethered computing, the T2 processes AI workloads locally, enabling faster reaction times and offline operation. The robot is designed for industrial and service applications, leveraging Nvidia's platform for real-time perception and decision-making.",
+          "The use of onboard Nvidia compute underscores a broader industry shift toward edge AI in robotics, reducing latency and dependency on network connectivity. This could accelerate the deployment of humanoid robots in warehouses, factories, and public spaces where reliable cloud access is not guaranteed. The Booster T2's integration with Nvidia's ecosystem also gives it access to a robust suite of AI development tools, potentially shortening the path from prototype to production."
+        ],
+        "why": "The Booster T2 highlights a critical trend: humanoid robots are moving toward fully autonomous, on-device intelligence. For investors and product strategists, this signals growing demand for high-performance edge compute and Nvidia's deepening role in the robotics supply chain.",
+        "links": [
+          [
+            "Interesting Engineering: Booster T2 humanoid robot",
+            "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVm8zbzV6dXdEWjRQS0dpZGdDclBhY2IyZEFCQUdOc0hSZzR5TmZhX2lmb1pGSUV3d1VBa3FINmxINTluZUFld24zcGRIRWJKeEdfTUZvNkgxNHdPa1pjRVZYVzVJaVlBVU83ZW5oRXlqeVhSeENGNFpVd1J1QTh5VW13Y0lhTldoNzR6U01TamlybDBVSnc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Chinese AI Drives German Auto Giant's Autonomous Ambitions",
+        "dek": "A century-old German automaker adopts Chinese AI for next-generation autonomous driving, signaling deepening cross-border collaboration.",
+        "details": [
+          "A top German automotive brand has partnered with a leading Chinese AI company to power its latest autonomous driving system, marking one of the most significant integrations of Chinese AI into traditional European manufacturing. The system, described as 'one model, three worlds,' covers highway, urban, and parking scenarios with a unified end-to-end neural network. This move underscores the growing reliance of legacy automakers on Chinese AI expertise for advanced driver-assistance features, as cost pressure and development speed become critical. The identity of the specific Chinese AI provider remains unconfirmed, but the deal highlights a trend where Chinese AI firms are increasingly becoming Tier-1 suppliers to global carmakers.",
+          "In contrast to earlier partnerships focused on infotainment, this integration targets the core driving function, suggesting a shift in trust and technological capability. European regulators are closely watching such collaborations due to data sovereignty and safety concerns, but the immediate commercial benefit for the German manufacturer is clear: faster time-to-market for Level 2+ and Level 3 features at a competitive cost. The partnership could serve as a blueprint for similar alliances between Western automakers and Chinese AI firms."
+        ],
+        "why": "This signals that Chinese AI is moving beyond domestic markets to become a critical enabler for traditional automotive giants, creating new investment opportunities in cross-border AI-as-a-Supplier models and posing strategic questions for Western AI companies about competitive positioning.",
+        "links": [
+          [
+            "量子位: 百年德国「战车」征服欧陆，驾驶位上是中国AI司机",
+            "https://www.qbitai.com/2026/07/449850.html"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Cost of Reasoning in non-English Languages: A Case Study on Japanese",
+        "dek": "Why Japanese reasoning costs more and what it means for global AI deployment.",
+        "details": [
+          "A new arXiv study (2607.10114) investigates the feasibility and cost of training reasoning language models (RLMs) to reason in non-English languages, using Japanese as a case study. RLMs typically achieve peak performance when reasoning in English, the language with the most reasoning-oriented training data. The research develops a Japanese-reasoning variant of Qwen-3-Swallow-8B, a Japanese LLM. Initial findings suggest that adapting RLMs to non-English reasoning can introduce significant overhead—both in training data requirements and computational cost—without matching English-level performance. The study emphasizes that enabling reasoning in user-chosen languages is valuable for model interpretability, safety, and practical deployment, but the trade-offs are non-trivial.",
+          "For context, as AI assistants become ubiquitous across Japan and other non-English markets, the ability to reason natively in local languages is increasingly demanded. However, this paper indicates that simply fine-tuning existing English-centric models may not be sufficient; dedicated training pipelines and possibly larger models are needed to close the gap. The cost of reasoning in Japanese serves as a proxy for challenges in many other languages, highlighting a potential hidden expense in global AI adoption."
+        ],
+        "why": "This research reveals a critical overlooked bottleneck in deploying advanced reasoning models globally: non-English languages incur hidden computational and performance costs. For companies building multilingual AI products, investing in language-specific reasoning optimization will become a key competitive differentiator—and a necessary cost of doing business outside the English-speaking world.",
+        "links": [
+          [
+            "arXiv cs.CL: Cost of Reasoning in non-English Languages: A Case Study on Japanese",
+            "https://arxiv.org/abs/2607.10114"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "From ML Predictions to Informed Diagnostic Assistance Using the Toulmin Model of Argumentation",
+        "dek": "A new framework applies the Toulmin argumentation model to transform black-box ML diagnosis into structured, interpretable reasoning, promising more trustworthy AI in healthcare.",
+        "details": [
+          "As AI systems increasingly assist in medical diagnosis, a key challenge remains: how to make their predictions not just accurate but interpretable and trustworthy. A recent preprint (arXiv:2607.09664) proposes a novel approach that treats ML outputs as claims in an argumentation framework, using the Toulmin model to structure the reasoning behind each diagnosis. The model decomposes a diagnosis into six components: claim (the ML prediction), grounds (biomarker features extracted from images), warrant (medical knowledge linking features to claim), qualifier (degree of certainty), rebuttal (contradicting evidence), and backing (supporting evidence).",
+          "For example, in retinal image diagnosis, an ML model may output a claim of diabetic retinopathy. Instead of blindly accepting it, the framework first identifies the grounds—specific biomarkers such as microaneurysms or hemorrhages. An agent with medical knowledge then evaluates the warrant: are these biomarkers sufficient for the claim? It also considers potential rebuttals, like image artifacts or confounding conditions. The final output includes a qualifier (e.g., 'high confidence') and backing (literature or clinical guidelines), producing a transparent argument rather than a mere probability score.",
+          "This approach contrasts with conventional explainable AI (XAI) methods, which often produce saliency maps or feature importance scores that can be ambiguous. By grounding predictions in a structured argument, the system can engage clinicians in a dialogue, accepting or challenging each reasoning step. The authors demonstrate that this framework not only improves interpretability but also maintains diagnostic accuracy, suggesting a path toward AI-assisted decision support that aligns with clinical reasoning workflows."
+        ],
+        "why": "The Toulmin argumentation framework directly addresses the 'black box' trust barrier in medical AI, offering a template for building transparent diagnostic assistants that clinicians can scrutinize and rely upon, which could accelerate adoption in regulated healthcare environments.",
+        "links": [
+          [
+            "arXiv cs.AI: From ML Predictions to Informed Diagnostic Assistance Using the Toulmin Model",
+            "https://arxiv.org/abs/2607.09664"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Google DeepMind CEO Calls For U.S.-Led AI Oversight",
+        "dek": "In a recent interview with MediaPost, Google DeepMind CEO Demis Hassabis argued that the United States should take the lead in setting global AI governance standards, warning that fragmented regulation could hinder innovation and safety.",
+        "details": [
+          "The article, published on July 14, 2026, captures Hassabis's perspective on the need for coordinated international AI oversight. He emphasizes that the U.S., given its concentration of leading AI labs and policy influence, is best positioned to drive the creation of safety benchmarks and transparency requirements. Hassabis draws parallels to nuclear non-proliferation frameworks, suggesting that AI governance must be similarly binding to prevent misuse.",
+          "Notably, Hassabis stops short of endorsing any specific legislation, instead calling for a multi-stakeholder approach that includes industry, academia, and civil society. He also acknowledges the tension between rapid deployment and thorough safety testing, urging regulators to avoid overly prescriptive rules that could stifle open research—a point that resonates with ongoing debates around open-source models.",
+          "For readers tracking AI policy, this signals that major players like Google DeepMind are actively lobbying for a U.S.-centered governance model, which could influence upcoming bills in Congress. It also hints at potential friction with European or Chinese regulatory approaches, making this a key piece for understanding the geopolitical dimension of AI."
+        ],
+        "why": "This development matters because it reveals the strategic positioning of a leading AI lab on regulatory design, which could shape the direction of global AI safety standards and affect how startups and competitors navigate compliance.",
+        "links": [
+          [
+            "Google News AI Models: Google DeepMind CEO Calls For U.S.-Led AI Oversight 07/14/2026 - MediaPost",
+            "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOFVXYWR4VWN4YWwyTk5jZHdEaWlaSWhSdXpudXl5QzlOekd2cmpkMmFZNU5KaTVYRzlLUWpiYnZpLVh1d1hhaEx0c1MtU25OQlFYcDY4TzJTcEN3NlRUdmd2dGdTbVZVUlg0NVVyWjFCam9WNWp3LUdmVmtfQ2F2blRUUmxLeEVOYUltMTEyeEppbDlSTGNpenl0SXVaTS1rYXNSVGhpaEJ6ZjA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Google DeepMind chief Demis Hassabis calls for U.S. to spearhead AI standards body",
+        "dek": "In a CNBC interview, Hassabis argues that the U.S. should lead global AI standards to ensure safety and interoperability, while warning that using AI solely to replace workers is a shortsighted strategy.",
+        "details": [
+          "Demis Hassabis, CEO of Google DeepMind, made the case for the United States to take the lead in establishing an international AI standards body. He emphasized that without a unified framework, nations risk fragmented regulations that could hinder innovation and compromise safety. Hassabis believes that American leadership is essential to set benchmarks in areas like model evaluation, transparency, and ethical deployment.",
+          "Separately, Hassabis criticized companies that view AI primarily as a tool for cost-cutting through layoffs. He called this approach 'short-sighted,' arguing that the true value of AI lies in augmenting human capabilities and creating new opportunities. He urged business leaders to invest in upskilling and human-AI collaboration instead of simply replacing workers.",
+          "As one of the most influential voices in AI, Hassabis's remarks carry weight in both policy and corporate circles. His dual message—championing proactive U.S. leadership in standards while cautioning against narrow efficiency-driven AI adoption—provides a strategic framework for stakeholders navigating the current AI landscape."
+        ],
+        "why": "Hassabis's call for U.S.-led AI standards signals a potential shift in global governance dynamics, which could affect how startups comply with future regulations. His warning against AI-driven layoffs serves as a counterpoint to current industry trends, reminding investors and founders to focus on long-term value creation over short-term cost savings.",
+        "links": [
+          [
+            "Google News AI Models: Google DeepMind chief Demis Hassabis calls for U.S. to spearhead AI",
+            "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUlhieFpkR0hOQWczb08yTWZwbXg0RlBVVFA1LTJrSURrUy1hNU9fbVlVLWYtOWZPQVRnVU8tcVM3LWVxSmxXdnY0T1pnUUJ0LUdhekZxSWhmSkoyWkFLeENsTzFDeW42QS1QM2hLSmw5M3gyWXRDbk5HN1FXWVR2MEdfUkZWcy1nYnAzdlQ2NXpweGFaSVlZ0gGcAUFVX3lxTFA3QmRHTU92cHlMUmt1bVlTZmFtOEczOWdXeXM2VG04TEdidmxEYTk3b2ZJSmRzc1VucFFTVnNhY1R3VjFWbi12TXBVcjlGSDhSbFVaVm1wR01FaWpWekwwQXJ1Y1IwS01PRTBOXzlTYXFYdVVfeGUzSXQ0WFRjc3h6amItTGVEUUlwM3REWVp0VnNrekR4RHVYX0dIWg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Robust, Scalable Detection of Text Containment in Large Web-Crawled Corpora",
+        "dek": "FindMyText, an open-source Python package, efficiently detects if text appears in large corpora, with a focus on near-verbatim copies for copyright verification.",
+        "details": [
+          "A new open-source tool, FindMyText, addresses the challenge of detecting text containment in massive web-crawled datasets. Unlike traditional fingerprinting methods that only measure textual similarity, FindMyText introduces a mechanism to explicitly capture sequences of matching fingerprints. This enables it to reliably identify near-verbatim copies—meaning a text is contained almost exactly within a corpus—rather than just loosely related passages. The tool uses a distributed, disk-based indexing framework to scale to datasets with billions of documents, making it practical for real-world applications like verifying whether copyrighted material appears in training data.",
+          "The approach builds on prior document fingerprinting techniques but extends them by tracking chains of matching fingerprints. For example, if a sentence from a book appears in a web crawl, FindMyText can confirm its presence by linking consecutive matching segments. This chain-based method sharply reduces false positives from accidental similarity. The package is available on GitHub and works with common data formats, lowering the barrier for developers and researchers who need to audit large-scale AI training corpora for data contamination or copyright compliance."
+        ],
+        "why": "For developers and AI teams building or auditing large training datasets, FindMyText provides a scalable, open-source method to detect text containment, which is crucial for ensuring data quality and avoiding legal risks from inadvertent use of copyrighted material. It signals a growing toolchain for responsible AI data management.",
+        "links": [
+          [
+            "arXiv cs.CL: Robust, Scalable Detection of Text Containment in Large Web-Crawled Corpora",
+            "https://arxiv.org/abs/2607.10020"
+          ]
+        ],
+        "sourceDate": "2026-07-14",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Flowith: canvas-based AI workspace for multi-step thinking",
+        "dek": "An emerging AI workspace that leverages a visual canvas to organize complex, multi-step thinking tasks.",
+        "details": [
+          "Flowith offers a canvas-based interface where users can visually arrange prompts, responses, research fragments, and intermediate outputs into a connected workflow. Unlike traditional chat interfaces, the spatial canvas allows for nonlinear exploration: users can branch off from a thought, revisit earlier nodes, and rearrange content as understanding evolves. This design is particularly suited for knowledge workers, researchers, and product managers who need to synthesize information across multiple sources or break down a complex problem into manageable steps.",
+          "The product positions itself as an alternative to linear AI chat tools like ChatGPT or Claude, aiming to reduce context loss and support persistent projects. Early adopters highlight its utility for writing long-form analysis, debugging code across multiple files, and conducting literature reviews. However, it remains a niche tool with limited integrations and no mobile app, which constrains its appeal for team collaboration or on-the-go use."
+        ],
+        "why": "Flowith represents a growing category of 'AI-native workspaces' that move beyond chat to support structured, multi-step reasoning—an area likely to see more investment as knowledge workers seek tools that mirror human thought processes.",
+        "links": [
+          [
+            "Curated AI Products: Flowith: canvas-based AI workspace for multi-step thinking",
+            "https://flowith.io/"
+          ]
+        ],
+        "sourceDate": "2026-07-12",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Granola: AI meeting notes built for real work conversations",
+        "dek": "Granola turns meetings into structured notes without behaving like a heavy meeting bot.",
+        "details": [
+          "Granola is a macOS app that runs locally on your device, silently recording and transcribing meetings. Unlike many meeting bots that require joining as a participant, Granola works in the background and never interrupts the flow. It then uses AI to generate structured notes highlighting action items, decisions, and key discussion points. This local-first approach also enhances privacy, as audio and transcription data stay on the device.",
+          "The product is designed for professionals who have high meeting loads — operators, product teams, investors, and consultants. It offers searchable meeting memory and cleaner follow-ups, reducing the cognitive overhead of keeping track of conversations. By making meeting notes automatically searchable and organized, Granola helps users focus on the actual work rather than note-taking."
+        ],
+        "why": "Granola’s local-first, no-bot approach lowers adoption friction and could challenge incumbents like Otter.ai or Fireflies.ai by addressing privacy concerns and meeting fatigue.",
+        "links": [
+          [
+            "Curated AI Products: Granola: AI meeting notes built for real work conversations",
+            "https://www.granola.ai/"
+          ]
+        ],
+        "sourceDate": "2026-07-12",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "AI Coding Agent",
+        "dek": "An autonomous AI system that writes, tests, and deploys code, moving beyond suggestion-based tools to operate as an active developer participant.",
+        "details": [
+          "An AI Coding Agent is a software program powered by large language models that can independently interpret human requirements, generate code, execute tests, and iteratively improve the output. Unlike traditional code completion tools, it assumes ownership of a coding task from specification to deployment, using tools like shell commands and debuggers to verify its work.",
+          "This term has gained prominence as part of the 'agentic era' in AI—a theme central to OpenAI's recent guidance on managing AI investments. In that context, coding agents are a prime example of how AI can move from passive assistance to proactive execution, enabling developers to focus on higher-level design and review.",
+          "For enterprises, the adoption of coding agents promises to accelerate development cycles and reduce manual debugging. However, it also raises new questions about code quality, security, and the changing role of human engineers."
+        ],
+        "why": "Understanding AI Coding Agents is crucial for developers and tech leaders as they redefine productivity benchmarks and shift software engineering toward a human-agent collaboration model.",
+        "links": [
+          [
+            "OpenAI: Managing AI investments in the agentic era",
+            "https://openai.com/index/managing-ai-investments-in-agentic-era"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-07-14",
     "title": "AI Daily Atlas",
