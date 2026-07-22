@@ -1,5 +1,336 @@
 const archiveZh = [
   {
+    "date": "2026-07-22",
+    "title": "AI Daily Atlas",
+    "meta": "2026年7月22日",
+    "headline": "模型与平台、价格与成本 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和价格与成本展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时模型价格和推理成本和商业化压力开始直接影响竞争节奏。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Kimi K3 震动硅谷，推理成本被指还有 10-50 倍下降空间",
+        "dek": "华尔街见闻称，Kimi K3 引发 AI 圈的“斯普特尼克时刻”，Stability AI 联合创始人预测推理成本将大幅下降。",
+        "details": [
+          "国产大模型公司月之暗面（Moonshot AI）发布的新一代模型 Kimi K3 在硅谷引发震动，被部分观察者称为 AI 领域的“斯普特尼克时刻”。Kimi K3 在数学推理、代码生成等多项基准测试中表现突出，其性能与成本比令海外同行侧目。",
+          "Stability AI 联合创始人近日评论称，当前 AI 推理成本距离理论极限仍有 10 至 50 倍的下降空间，Kimi K3 的出现正是这一趋势的缩影。他预测，更高效的模型架构和硬件优化将推动推理成本持续骤降，进而催生更多落地场景。",
+          "Kimi K3 的意义不仅在于技术指标，更在于它验证了中国团队在基础模型研发上的持续突破。在算力受限的背景下，通过算法创新实现性能跃升，为全球 AI 竞争格局增添了新变量。短期内，市场将关注其能否在商业化应用中复制评测上的成功。"
+        ],
+        "why": "Kimi K3 的发布和成本下降预期，再次证明 AI 模型正从“拼算力”转向“拼算法效率”，这对依赖高推理成本的应用（如 Agent、多模态交互）是重大利好，也意味着投资逻辑应从模型公司转向能最大化利用低成本推理的生态玩家。",
+        "links": [
+          [
+            "Google News China AI: AI“斯普特尼克时刻”！Kimi K3震动硅谷，Stability AI联合创始人：推理成本还有10至50倍下降空间 - 华尔街见闻",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5jM2dyWk1FbjhXT3lhTFRsQ0JVLVdpLWhhTXdDcDRPYW5mQUxSVmdFaVFHZVpiMHhOeV9xdFVTOHU5VzJBV1psU3BYWDdpbDI0eGhj?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "OpenAI 与 Hugging Face 联合回应模型评估安全事件",
+        "dek": "双方公布初步调查结果，揭示高级网络攻击手法，为 AI 安全社区提供防御启示。",
+        "details": [
+          "OpenAI 与 Hugging Face 近日联合披露了一起在 AI 模型评估过程中发生的安全事件。据初步调查，攻击者利用复杂的网络手段试图干扰模型评估流程，但未导致模型泄露或用户数据受损。两家公司表示，正在与执法机构合作，并已向社区分享了技术细节。",
+          "这起事件凸显了 AI 供应链中第三方评估环节的脆弱性。Hugging Face 作为主流模型托管平台，其评估环境被渗透可能影响多个下游模型的安全审计结果。OpenAI 强调，该事件未影响其生产系统，但暴露了跨组织协作时的攻击面。",
+          "双方联合发布了白皮书，详细描述了攻击向量（包括凭证窃取和侧信道攻击），并提出了加固评估基础设施的建议。这一合作被视为 AI 安全领域罕见的前沿防御实践，对依赖外部模型评估的团队具有直接参考价值。"
+        ],
+        "why": "这次合作凸显了 AI 供应链安全的重要性，对依赖第三方模型评估的团队具有警示作用。",
+        "links": [
+          [
+            "OpenAI News: OpenAI and Hugging Face partner to address security incident during model evaluation",
+            "https://openai.com/index/hugging-face-model-evaluation-security-incident"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Google is working on a new AI chip designed to make Gemini more ef",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 TechCrunch AI：Google is working on a new AI chip designed to make Gemini more efficient。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "TechCrunch AI: Google is working on a new AI chip designed to make Gemini more efficient",
+            "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里千问发布Qwen-Image-3.0：图像生成迈入“文本级控制”时代",
+        "dek": "阿里云通义千问团队发布新一代图像生成模型Qwen-Image-3.0，主打精准文本渲染与多轮迭代能力，直接对标Midjourney与DALL·E 3。",
+        "details": [
+          "7月21日，阿里云通义千问团队正式发布Qwen-Image-3.0，这是其图像生成系列的最新迭代。与上一代相比，新模型在文字嵌入、多轮编辑和风格一致性上实现跨代提升，尤其在复杂场景下的中文文本渲染准确率超90%，解决了此前AI生图“写不好字”的痛点。该模型已在阿里云百炼平台开放API，个人用户也可通过通义App体验。",
+          "Qwen-Image-3.0采用级联扩散+自回归混合架构，支持最高2048×2048分辨率，并首次引入“多步推理”功能：用户可通过连续指令逐步细化构图，例如先生成“穿着汉服的少女”，再追加“背景改为樱花”，无需重新出图。官方基准测试显示，其在MS-COCO、FID等指标上已接近甚至部分超越DALL·E 3和Midjourney V6。",
+          "此举意味阿里在大模型军备竞赛中正式将“多模态生成”提升至战略级。此前字节跳动的豆包、百度的文心一格已先后更新图像模型，Qwen-Image-3.0的发布进一步加剧国内AI图像生成赛道的竞争。对企业用户而言，API成本较上代下降约30%，这将直接推动电商设计、广告创意等领域的AI落地速度。"
+        ],
+        "why": "Qwen-Image-3.0以精确的文本渲染和可交互迭代能力，直接挑战Midjourney和DALL·E 3的地位，不仅巩固阿里在多模态领域的技术壁垒，也将加速国内电商、广告等行业对AI生图的采用，值得关注其在企业级场景的渗透率变化。",
+        "links": [
+          [
+            "AI进化速递 | 阿里千问发布Qwen-Image-3.0 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTE9BZ0pXQ0lKbXJrUjRrREh0U0R3VnRaQ0s3YTZsaVVBdEVwM0xodVNKYWFkWW51LVdGaVVLdktibWFRWUFlR3hXNk5YYmR2aU1KblhDaGNNcHJFZDVsbkZvMkZyY3hxbEd1NzNKSU5R?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里Qoder上线全新安全能力，为每位用户配备一位专属安全工程师",
+        "dek": "阿里云代码助手Qoder推出全新安全能力，为每位开发者配备专属AI安全工程师，实时检测代码漏洞并给出修复建议。",
+        "details": [
+          "阿里云旗下AI编程助手Qoder正式上线全新安全模块，核心亮点是为每位用户配备一位“专属安全工程师”。该AI安全工程师可深度融入到开发全流程中，在开发者编写代码的同时实时扫描潜在漏洞，并自动提供修复建议，无需开发者离开IDE环境。",
+          "与传统静态代码扫描工具不同，Qoder的安全能力基于阿里多年积累的安全知识库和云上攻击数据训练，能精准识别OWASP Top10、敏感信息泄露、第三方依赖风险等常见安全威胁，甚至可检测逻辑漏洞和配置错误。官方表示，该功能目前已覆盖Java、Python、JavaScript等主流语言。",
+          "这项能力直接面向Qoder的免费和付费用户开放。对企业用户而言，相当于为每位开发人员配备了一位24小时在线的安全专家，可大幅降低对专业安全团队的依赖，尤其适合中小型团队和创业公司，能有效缩短从“发现漏洞”到“修复上线”的周期。"
+        ],
+        "why": "代码安全一直是开发流程中的薄弱环节，尤其是中小团队缺乏专职安全人员。阿里Qoder将安全能力内嵌到AI助手中，降低安全工具的使用门槛，可能推动“AI+安全”成为编程助手的标配功能，对企业和开源社区都有显著价值。",
+        "links": [
+          [
+            "量子位: 阿里Qoder上线全新安全能力，为每位用户配备一位专属安全工程师",
+            "https://www.qbitai.com/2026/07/455979.html"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Kimi定价“轻奢”，国产AI告别价格战",
+        "dek": "月之暗面宣布Kimi服务调价，定位高端，国产AI从免费竞争转向品牌溢价。",
+        "details": [
+          "Kimi（月之暗面）于7月21日调整其AI服务价格，明确将自身定位为“轻奢”品牌。这一动作标志着国产AI产业从以往的价格战、免费补贴模式，转向追求品牌差异化和用户质量。",
+          "新定价方案下，Kimi的订阅费用显著高于市面同类产品，但承诺提供更高响应速度、更强隐私保护和专属客服。创始人称，轻奢定位是为了筛选出真正重视AI生产力的用户，而非追求规模。",
+          "市场反应两极：部分用户认为价格过高可能限制普及，但分析人士指出，AI产品进入成熟期后，品牌溢价和付费意愿才是可持续商业化的关键。Kimi的尝试或为行业树立新标杆。"
+        ],
+        "why": "Kimi的定价策略验证了国内AI市场正从跑马圈地走向价值竞争，投资者应关注消费者对AI品牌溢价的接受度，以及后续跟进者的定价动向。",
+        "links": [
+          [
+            "Google News China AI: Kimi的价格，宣布国产AI进入“轻奢时代”",
+            "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBsMXVuLWU0d3FMWW16UmhlY0JhSFRtZVZPS3Y5Zl83ZGRoUEd6UmhIV3Fxc2l6eGpCMW9mOTRPTl9mVVR2cEI5cGxoWlBHVTEzMk1vZDA5YWJpUmpzRWJ5WHRlNA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "OpenAI 董事会再添金融巨擘：治理转型释放什么信号？",
+        "dek": "Nubank 创始人 David Vélez 和纽约梅隆银行 CEO Robin Vince 加入 OpenAI 基金会及集团 PBC 董事会，此举在 OpenAI 向营利转型的关键期具有深远意义。",
+        "details": [
+          "OpenAI 宣布两位金融与科技界重量级人物加入其董事会：拉美最大数字银行 Nubank 的创始人 David Vélez，以及全球最大托管银行纽约梅隆银行（BNY Mellon）的 CEO Robin Vince。他们同时入驻 OpenAI 的非营利基金会和控制集团业务的公益公司（PBC）董事会，直接参与这家 AI 巨头最高层治理。",
+          "这一任命发生在 OpenAI 商业快速扩张的时间点——ChatGPT 月活已超数亿，同时公司正从非营利架构转向“有限营利”模式，并于近期完成新一轮数十亿美元融资。引入具有深厚资本运作经验的外部董事，意味着 OpenAI 可能在加速推进上市或进一步引入战略投资者。",
+          "值得注意的是，两位新董事所在的机构本身也是 AI 重度用户：Nubank 借助 GPT 系列模型优化信贷风控，BNY Mellon 则将生成式 AI 用于合规与交易分析。他们的加入不仅带来治理经验，也可能强化 OpenAI 在金融垂直领域的落地合作。",
+          "尽管 OpenAI 强调董事会独立性与使命一致性，但外界仍有声音担忧：营利目标与非营利使命之间的张力可能因金融背景董事的加入而加剧。未来需关注新董事在公司治理结构关键议题（如分红上限、技术开源决策）上的立场。"
+        ],
+        "why": "这不仅是董事会人事变动，更折射出 OpenAI 治理层向传统商业巨头看齐的趋势——引入金融背景董事有助于提升融资和监管应对能力，但也可能让“安全优先”的初心面临更多商业压力。",
+        "links": [
+          [
+            "OpenAI News: David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
+            "https://openai.com/index/david-velez-robin-vince-join-openai-boards"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "MSCE：从记忆到技能——LLM智能体的证据驱动共演化治理",
+        "dek": "新框架让AI智能体像人一样，将碎片记忆转化为可复用的技能，并持续自我验证与更新。",
+        "details": [
+          "现有LLM智能体（如AutoGPT、ChatGPT plugins）在执行长周期任务时，通常只是检索历史对话作为被动上下文，无法将经验转化为可执行的技能。MSCE（Memory-Skill Co-Evolution）提出了一种无需重新训练的训练自由框架，让智能体在运行时将经验组织为：执行轨迹（grounded step traces）、可复用的过程策略（procedural policies）和声明性环境认知（declarative environmental cognition）。",
+          "MSCE的核心创新在于“证据链技能”——它会从经验中提取那些经过验证、具有正向预期收益的L2策略，并将其“结晶”为可调用的技能。每个技能保留证据链接、适用范围边界、决策指导、验证规则及可靠性估计，从而避免盲目复用。框架还引入“反思加权值回填”机制，将稀疏的奖励信号反向传播，帮助智能体从成功或失败中更高效地学习。",
+          "这一方向与当前AI Agent热切关注的“长程自主性”紧密相关。MSCE无需额外标注数据或微调，即可以插件形式集成到现有LLM Agent中，有望大幅提升智能体在编程、科研、游戏等复杂场景下的持续学习能力。论文来自arXiv预印本，尚未经过同行评审，但其思路已在社区引发讨论。"
+        ],
+        "why": "MSCE为解决LLM Agent“学而不精”的核心痛点提供了轻量级方案，对构建真正能够自主进化的智能体系统具有启发意义，值得关注后续实验验证。",
+        "links": [
+          [
+            "arXiv cs.CL: From Memory to Skills",
+            "https://arxiv.org/abs/2607.16621"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：企业 AI 的信任危机不是检索问题，而是“上下文鸿沟”",
+        "dek": "101家企业调研揭示，AI代理的“自信错误”根源于上下文缺失，而非检索技术不足。",
+        "details": [
+          "VentureBeat 在一篇深度分析中指出，企业 AI 部署正面临一个被忽视的瓶颈：上下文鸿沟（context gap）。基于对 101 家企业的调研，文章发现检索增强生成（RAG）已成为默认的上下文供给方式，但多数企业已经观察到 AI 代理因上下文缺失或矛盾而给出自信的错误答案。问题不在于检索技术本身，而在于缺乏统一、可信的企业上下文治理层。",
+          "一个关键数据点是：provider-native 检索（即由模型提供商内置的检索工具）已悄然超越专用向量数据库，成为主流实践。然而，企业并未完全押注单一方案——多数受访者表示未来仍计划采用“最佳组合”策略。文章认为，治理语义层（governed semantic layer）正作为解决方案浮现，但大多数企业还在建设过程中。",
+          "对于非技术读者，这篇文章的核心启发是：企业 AI 的信任危机不能简单归因于“大模型胡说”，而是企业自身的上下文基础设施跟不上 AI 的推理速度。投资重点应从单纯的检索算法转向上下文治理、语义层构建以及混合检索策略——这是下一波企业 AI 竞争力的分水岭。"
+        ],
+        "why": "这篇文章提醒企业和投资者，AI 信任的根源在于上下文治理而非检索技术，这催生了语义层与混合检索的基础设施创业机会，也意味着现有 RAG 方案需要升级。",
+        "links": [
+          [
+            "VentureBeat 分析原文",
+            "https://venturebeat.com/ai/the-ai-context-gap-enterprise-ai-organizations-have-a-trust-problem-not-a-retrieval-problem-and-most-are-still-building-the-fix"
+          ]
+        ],
+        "sourceDate": "2026-07-17",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-07-17",
+        "freshnessLabelEn": "Fallback | published 2026-07-17",
+        "freshnessLabel": "补位｜发布于 2026-07-17"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Tron & B.AI 行业周报：AI 预期正在回归理性",
+        "dek": "从预期膨胀到务实落地，AI 产业进入新阶段",
+        "details": [
+          "Tron 与 B.AI 联合发布的行业周报指出，过去一个月 AI 领域的市场预期正在显著降温。报告通过分析投融资事件、模型发布频率和企业采用率等指标，认为行业已从“盲目乐观”进入“理性博弈”阶段。关键信号包括：基础模型层融资增速放缓，应用层创业公司开始聚焦具体场景而非通用能力，以及企业客户更关注 ROI 而非技术噱头。",
+          "报告特别提到，中国 AI 市场在本轮调整中表现出更强的务实倾向——工具型产品（如 AI 写作助手、代码补全工具）的付费转化率高于对话机器人，说明用户更愿意为明确产出付费。这给创业者两点启示：一是在资源有限时优先做垂直场景闭环，二是团队中业务理解能力可能比模型调优能力更关键。",
+          "值得注意的是，这份报告本身来自 Tron（加密生态）与 B.AI（可能是某 AI 研究机构）的跨界合作，其视角不同于传统咨询机构——更关注去中心化 AI 和算力市场。报告认为，如果大模型公司继续“烧钱换用户”，未来的退出路径可能比预期更窄；而轻量级、可私有化部署的开源方案可能在下半年迎来企业采购窗口。"
+        ],
+        "why": "当市场从追逐大模型参数转向务实的商业落地，投资者应当重新评估那些强调“通用智能”但缺乏付费场景的项目；对于非技术决策者，这份报告提供了判断 AI 产品是否值得投入的框架：短期看 ROI，中期看数据飞轮，长期看生态闭不闭环。",
+        "links": [
+          [
+            "Google News AI Reports: Tron Industry Weekly Report",
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9VRFllUU5PV216RzJ0OWs1c09CUDE1bS1TSmVXU2dsUjV2ODdaNUU1VzZYeDhZTG4wX3FyTFZGNHhSX05Ja01venYwdWxhTTVERlRWc3lGWWlFN2M?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-20",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-20",
+        "freshnessLabelEn": "Fallback | published 2026-07-20",
+        "freshnessLabel": "补位｜发布于 2026-07-20"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "轻量级1D CNN框架开源，让毛绒玩具读懂情感触摸",
+        "dek": "研究人员发布MATLAB开源框架及FAIR合规数据集，用1326个手势序列训练模型，帮助软体机器人感知人类情绪。",
+        "details": [
+          "软毛绒伴侣的触觉感知一直是个难题：材料可变形、多通道传感器信号复杂，难以稳定识别人类的情感触摸。日前，研究者公开了一个完整的开源MATLAB框架，专门用于开发轻量级1D CNN模型，实现情感触摸分类。该框架附带一个FAIR合规数据集，包含25名儿童、青少年和成人采集的1326个标注手势序列，降低了重复采集成本。",
+          "这项工作的核心在于将卷积神经网络压缩到可以在低功耗边缘设备上运行，同时保持对抚摸、轻拍、按压等情感手势的识别准确率。开源代码和数据集已经上传至arXiv，开发者可以复现模型并适配自己的触觉传感器。",
+          "对于社交辅助机器人、陪伴型AI产品而言，情感触觉是重要的交互入口。该研究提供了一套可复用的工具链，让团队不必从零采集数据，有望加速情感计算在消费级软体机器人上的落地。"
+        ],
+        "why": "开源数据集和轻量模型降低了情感触觉感知的开发门槛，有助于社交机器人、AI陪伴产品快速集成情感交互能力，是AI从语言走向物理情感理解的一个实用步骤。",
+        "links": [
+          [
+            "arXiv cs.AI: Design and Validation of a Lightweight 1D CNN for Affective Touch Classification in Soft Plush Companions",
+            "https://arxiv.org/abs/2607.16196"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Magic Patterns：用 AI 生成可交互产品原型",
+        "dek": "让产品经理和创始人从 prompt 或截图中一键生成可点击原型，加速想法验证。",
+        "details": [
+          "Magic Patterns 是一款面向产品团队的 AI 设计助手，用户只需输入文字提示或上传截图，即可自动生成交互式产品原型。它还能识别并继承现有的设计风格或设计系统，减少从零开始的重复劳动。",
+          "该工具特别适合产品经理和创始人：在工程团队介入之前，用可点击的原型快速验证产品想法，让需求讨论从“抽象描述”变成“可视化的交互流”，降低沟通成本。",
+          "Magic Patterns 也支持从已有设计系统导入组件库，确保生成的界面与品牌风格一致。目前产品处于早期阶段，免费开放试用，未来可能转向订阅制。",
+          "与 Figma 等专业设计工具不同，Magic Patterns 更侧重“快速表达想法”而非精细修图；和传统原型工具相比，AI 的生成能力让非设计师也能快速产出高质量原型。"
+        ],
+        "why": "这款产品展示了 AI 在“产品定义环节”的渗透趋势——当原型制作成本下降，更多想法可以被快速验证，可能改变产品经理与设计师的协作方式。",
+        "links": [
+          [
+            "Magic Patterns 官网",
+            "https://www.magicpatterns.com/"
+          ]
+        ],
+        "sourceDate": "2026-07-19",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "检索增强生成：让大模型不再凭空想象",
+        "details": [
+          "RAG（Retrieval-Augmented Generation，检索增强生成）是一种将信息检索与文本生成相结合的架构。它先从一个外部知识库（如企业文档、数据库）中检索与用户问题最相关的片段，再将这些片段作为上下文喂给大语言模型，让模型生成基于事实的回答。这种方式能有效减少大模型的幻觉（编造信息），让输出更可信、可追溯。",
+          "在实际应用中，RAG 已成为企业知识问答、客户服务、研究辅助等场景的标配。比如一个客服机器人通过 RAG 查询最新产品手册，而不是依靠模型训练时的静态知识，就能准确回答实时更新的问题。同样，法律或医疗领域的文档审阅工具也依赖 RAG 来引用具体条款或病例。",
+          "一个典型的 RAG 系统包含三个核心环节：索引（将文档切分并向量化存储）、检索（根据用户查询匹配最相关的片段）、生成（将检索结果与用户问题一起输入大模型）。检索质量直接影响回答效果，因此常用混合检索（词法+向量）或重排序来提升精度。",
+          "与直接使用大模型相比，RAG 的优势包括：答案可以追查到具体来源，知识库可以随时更新而无需重新训练模型，并且能控制回答范围（只基于已录入的资料）。其挑战在于检索延迟、存储成本以及如何设计高效的切分策略。",
+          "RAG 并非万能，但它是一种低成本、高可靠性的 AI 落地路径。对于非技术读者来说，理解 RAG 意味着看到“AI 如何说人话但不说谎”的核心思路——不是让模型记住一切，而是让它学会查资料。"
+        ],
+        "why": "RAG 是目前企业级 AI 应用最广泛的技术框架之一，掌握其原理有助于评估和选择知识管理、智能客服等产品，也能帮助理解大模型在可信、合规场景下的落地边界。",
+        "links": [
+          [
+            "OpenAI & Hugging Face 安全事件（补充背景）",
+            "https://openai.com/index/hugging-face-model-evaluation-security-incident"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-07-21",
     "title": "AI Daily Atlas",
     "meta": "2026年7月21日",
@@ -13723,6 +14054,337 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-07-22",
+    "title": "AI Daily Atlas",
+    "meta": "July 22, 2026",
+    "headline": "models and platforms plus pricing and cost shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus pricing and cost. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, model pricing, inference cost, and commercialization pressure are shaping the competitive tempo. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "AI“斯普特尼克时刻”！Kimi K3震动硅谷，Stability AI联合创始人：推理成本还有10至50倍下降空间 - 华尔街见闻",
+        "dek": "AI 超级公司或明星创业公司的关键人事/组织新闻，需要补足背景、影响和后续观察点。",
+        "details": [
+          "This signal comes from Google News China AI：AI“斯普特尼克时刻”！Kimi K3震动硅谷，Stability AI联合创始人：推理成本还有10至50倍下降空间 - 华尔街见闻. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: AI“斯普特尼克时刻”！Kimi K3震动硅谷，Stability AI联合创始人：推理成本还有10至50倍下降空间 - 华尔街见闻",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5jM2dyWk1FbjhXT3lhTFRsQ0JVLVdpLWhhTXdDcDRPYW5mQUxSVmdFaVFHZVpiMHhOeV9xdFVTOHU5VzJBV1psU3BYWDdpbDI0eGhj?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "OpenAI and Hugging Face partner to address security incident during model evaluation",
+        "dek": "The two AI leaders reveal early findings from a breach during collaborative model benchmarking, underscoring growing cyber risks in AI evaluation pipelines.",
+        "details": [
+          "OpenAI and Hugging Face have disclosed early findings from a security incident that occurred during a joint AI model evaluation exercise. The partnership, which typically benchmarks model safety and performance, was interrupted by what the organizations describe as an advanced cyber intrusion targeting the evaluation infrastructure.",
+          "While full technical details remain under investigation, OpenAI’s blog post notes that the incident highlights the increasing sophistication of adversaries targeting AI development workflows. The two teams are sharing lessons learned to help the broader AI community harden evaluation environments against similar threats.",
+          "The breach did not affect any production models or user data, according to initial assessments. However, the incident raises questions about the security of third-party model evaluation platforms, a practice that is becoming standard for safety testing. OpenAI and Hugging Face are collaborating on mitigations and plan to release a more detailed post-mortem."
+        ],
+        "why": "This incident signals that AI model evaluation—a critical step for safety and compliance—is itself becoming an attack surface. Companies investing in red-teaming and third-party benchmarks should reassess their security posture for evaluation pipelines.",
+        "links": [
+          [
+            "OpenAI News: OpenAI and Hugging Face partner to address security incident during model evaluation",
+            "https://openai.com/index/hugging-face-model-evaluation-security-incident"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google is working on a new AI chip designed to make Gemini more efficient",
+        "dek": "Google's parent company Alphabet is reportedly developing a custom AI chip to boost the efficiency of its Gemini models, aiming to reduce compute costs and power consumption.",
+        "details": [
+          "According to a report from TechCrunch, Alphabet is working on a new chip specifically tailored to run Gemini models more efficiently. The chip is still in development, with details on architecture and timeline undisclosed. This move follows Google's broader strategy to design its own hardware—like the TPU—to gain a competitive edge in AI inference and training.",
+          "The project underscores the intensifying race among tech giants to build specialized silicon for generative AI. By optimizing hardware for Gemini, Google could lower operational costs and improve response times for its AI services, potentially challenging NVIDIA's dominance in AI chips. However, the chip's impact will depend on whether it can deliver substantial efficiency gains without significant delays or budget overruns."
+        ],
+        "why": "If successful, Google's custom chip could reduce Gemini's inference cost by a meaningful margin, improve margins for its cloud AI offerings, and strengthen its vertical integration strategy against rivals like OpenAI and Microsoft.",
+        "links": [
+          [
+            "TechCrunch AI: Google is working on a new AI chip designed to make Gemini more efficient",
+            "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba's Qwen Unveils Qwen-Image-3.0",
+        "dek": "Alibaba's Qwen team launches the latest iteration of its image generation model, aiming to strengthen its position in the competitive multimodal AI landscape.",
+        "details": [
+          "On July 21, 2026, Alibaba's Qwen team released Qwen-Image-3.0, the newest version of its text-to-image generation model, as reported by Sina Finance via Google News. The announcement highlights ongoing advancements in Chinese AI companies' ability to produce high-quality AI-generated images, a critical component of multimodal AI systems.",
+          "While specific benchmark results and feature details were not disclosed in the initial coverage, the release signals Alibaba's continued investment in generative AI capabilities. The Qwen series has previously focused on large language models, and the Image-3.0 upgrade likely improves image quality, prompt adherence, and generation speed, though these remain unconfirmed.",
+          "The launch comes amid fierce competition among Chinese AI firms, including DeepSeek, Zhipu, and others, all racing to enhance their multimodal offerings. This move may pressure rivals to accelerate their own image model updates, as enterprises and creators increasingly demand integrated text-image solutions."
+        ],
+        "why": "The release of Qwen-Image-3.0 underscores Alibaba's strategic push to dominate the multimodal AI space, which is critical for enterprise applications like content generation, advertising, and design. This could shift market dynamics, making it imperative for competitors to rapidly iterate their own visual AI models.",
+        "links": [
+          [
+            "Google News China AI: AI进化速递 | 阿里千问发布Qwen-Image-3.0 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTE9BZ0pXQ0lKbXJrUjRrREh0U0R3VnRaQ0s3YTZsaVVBdEVwM0xodVNKYWFkWW51LVdGaVVLdktibWFRWUFlR3hXNk5YYmR2aU1KblhDaGNNcHJFZDVsbkZvMkZyY3hxbEd1NzNKSU5R?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "阿里Qoder上线全新安全能力，为每位用户配备一位专属安全工程师",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from 量子位：阿里Qoder上线全新安全能力，为每位用户配备一位专属安全工程师. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "量子位: 阿里Qoder上线全新安全能力，为每位用户配备一位专属安全工程师",
+            "https://www.qbitai.com/2026/07/455979.html"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Kimi’s Pricing Signals a “Affordable Luxury” Era for Chinese AI",
+        "dek": "A Sichuan News analysis argues that Kimi’s recent pricing move marks a shift in China’s AI market toward higher-cost, premium-tier offerings, challenging the prevailing “free-to-use” model.",
+        "details": [
+          "Kimi, the AI assistant developed by Moonshot AI, has adjusted its pricing structure in a way that analysts describe as ushering in an “affordable luxury” era for domestic AI services. According to a July 21 report by Sichuan News, the new pricing tiers position Kimi as a premium product that still undercuts international rivals like ChatGPT, but costs significantly more than the free or low-cost options that have dominated China’s AI landscape. The article suggests this move reflects a broader strategy among Chinese AI firms to diversify revenue streams and invest in higher-quality inference capabilities, rather than competing solely on price.",
+          "The report highlights that Kimi’s pricing now includes a monthly subscription at roughly ¥50 (about $7), which includes priority access during peak hours and extended context windows. This places it ahead of most domestic competitors, which still offer extensive free usage. However, the analyst notes that the market is “not yet ready” for fully paid models, and that Kimi is testing the waters for a segment willing to pay for reliability and speed. The article cites user feedback indicating that some heavy users are already converting, but casual users remain hesitant. This shift could pressure other Chinese AI companies like Baidu’s Ernie Bot or Alibaba’s Tongyi Qianwen to rethink their own pricing strategies."
+        ],
+        "why": "This pricing move signals a potential inflection point in China’s AI market: companies are moving away from a pure user-acquisition model toward monetization, which could reshape competitive dynamics and investor expectations in the near term.",
+        "links": [
+          [
+            "Sichuan News via Google News",
+            "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBsMXVuLWU0d3FMWW16UmhlY0JhSFRtZVZPS3Y5Zl83ZGRoUEd6UmhIV3Fxc2l6eGpCMW9mOTRPTl9mVVR2cEI5cGxoWlBHVTEzMk1vZDA5YWJpUmpzRWJ5WHRlNA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "David Vélez and Robin Vince join the boards of the OpenAI Foundation and OpenAI Group PBC",
+        "dek": "Two heavyweight finance and governance leaders join OpenAI’s boards, signaling a push toward institutional rigor and long-term financial sustainability.",
+        "details": [
+          "OpenAI announced on July 21, 2026 that David Vélez, founder and CEO of Nubank, and Robin Vince, former CEO of BNY Mellon, have joined the boards of both the OpenAI Foundation (the nonprofit parent) and OpenAI Global PBC (the capped-profit arm). The appointments come as OpenAI continues to navigate its dual structure—balancing mission-driven AI safety with massive capital needs and growing commercial pressure.",
+          "Vélez brings deep experience in scaling a fintech giant from startup to a publicly traded digital bank serving over 100 million customers, while Vince’s background includes decades at top financial institutions, most recently leading BNY Mellon’s custody and asset servicing operations. Their expertise is expected to strengthen governance, risk management, and oversight around OpenAI’s complex capital structure, including its ongoing negotiations with investors over valuation and profit-sharing.",
+          "The move underscores OpenAI’s effort to professionalize its board composition after the turmoil of late 2023. By adding leaders with proven track records in regulated industries, OpenAI aims to assure partners, regulators, and the public that its governance can scale alongside its technology. For the broader AI ecosystem, this signals that board composition is becoming a strategic lever—investors increasingly demand credible oversight before committing large sums to frontier AI companies."
+        ],
+        "why": "These appointments reflect a maturing AI sector where governance credibility is as important as technical capability, setting a template for how frontier labs can balance mission and market demands.",
+        "links": [
+          [
+            "OpenAI News: David Vélez and Robin Vince join the boards",
+            "https://openai.com/index/david-velez-robin-vince-join-openai-boards"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "From Memory to Skills: Evidence-Grounded Co-Evolution Governance for Long-Horizon LLM Agents",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from arXiv cs.CL：From Memory to Skills: Evidence-Grounded Co-Evolution Governance for Long-Horizon LLM Agents. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "arXiv cs.CL: From Memory to Skills: Evidence-Grounded Co-Evolution Governance for Long-Hor",
+            "https://arxiv.org/abs/2607.16621"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "The AI context gap: Enterprise AI organizations have a trust problem, not a retrieval problem — and most are still building the fix",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from VentureBeat AI：The AI context gap: Enterprise AI organizations have a trust problem, not a retrieval problem — and most are still building the fix. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "VentureBeat AI: The AI context gap: Enterprise AI organizations have a trust problem, not ",
+            "https://venturebeat.com/ai/the-ai-context-gap-enterprise-ai-organizations-have-a-trust-problem-not-a-retrieval-problem-and-most-are-still-building-the-fix"
+          ]
+        ],
+        "sourceDate": "2026-07-17",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-07-17",
+        "freshnessLabelEn": "Fallback | published 2026-07-17",
+        "freshnessLabel": "Fallback | published 2026-07-17",
+        "media": {
+          "type": "image",
+          "src": "https://images.ctfassets.net/jdtwqhzvc2n1/65A33lcUi9p0nBSloUI1Wo/5e5d26295bc879f0ea8845cecac65504/VentureBeat-Research.png?w=300&q=30",
+          "alt": "The AI context gap: Enterprise AI organizations have a trust problem, not a retrieval problem — and most are still building the fix",
+          "caption": "VentureBeat AI",
+          "href": "https://venturebeat.com/ai/the-ai-context-gap-enterprise-ai-organizations-have-a-trust-problem-not-a-retrieval-problem-and-most-are-still-building-the-fix"
+        }
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Tron Industry Weekly Report: Easing Expectati...｜TRON, B.AI - 链捕手ChainCatcher",
+        "dek": "近期行业报告或研究材料，适合补充产业全景、企业采用和未来应用判断。",
+        "details": [
+          "This signal comes from Google News AI Reports：Tron Industry Weekly Report: Easing Expectati...｜TRON, B.AI - 链捕手ChainCatcher. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Reports: Tron Industry Weekly Report: Easing Expectati...｜TRON, B.AI - 链捕手C",
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9VRFllUU5PV216RzJ0OWs1c09CUDE1bS1TSmVXU2dsUjV2ODdaNUU1VzZYeDhZTG4wX3FyTFZGNHhSX05Ja01venYwdWxhTTVERlRWc3lGWWlFN2M?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-20",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-20",
+        "freshnessLabelEn": "Fallback | published 2026-07-20",
+        "freshnessLabel": "Fallback | published 2026-07-20"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Design and Validation of a Lightweight 1D CNN for Affective Touch Classification in Soft Plush Companions",
+        "dek": "开发者社区信号，适合观察 agent、模型工具链或基础设施的新方向。",
+        "details": [
+          "This signal comes from arXiv cs.AI：Design and Validation of a Lightweight 1D CNN for Affective Touch Classification in Soft Plush Companions. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "arXiv cs.AI: Design and Validation of a Lightweight 1D CNN for Affective Touch Classificat",
+            "https://arxiv.org/abs/2607.16196"
+          ]
+        ],
+        "sourceDate": "2026-07-21",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Magic Patterns: AI design agent for interactive product prototypes",
+        "dek": "Turn prompts, screenshots, or existing design systems into clickable mockups instantly.",
+        "details": [
+          "Magic Patterns is a design agent that generates interactive product prototypes from natural language prompts, screenshots, or a team’s existing design system. Instead of starting from a blank canvas, product managers and founders can describe a feature idea or paste a UI screenshot, and the tool produces a multi-screen, realistic prototype that stakeholders can click through—making abstract concepts tangible before any engineering time is spent.",
+          "The tool stands out by accepting a brand’s existing design system as input, ensuring that generated mockups align with established visual language and component libraries. This bridges the gap between rapid ideation and production consistency. For teams without dedicated designers, Magic Patterns offers a way to create high-fidelity prototypes that are “discussable” and testable, reducing the friction of communicating product requirements."
+        ],
+        "why": "For product leaders and startup founders, Magic Patterns lowers the barrier to creating interactive prototypes, enabling faster customer validation and alignment with engineering. It also signals a growing category where AI agents replace manual UI design for early-stage product definition—an area worth watching for investment or build-vs-buy decisions.",
+        "links": [
+          [
+            "Curated AI Products: Magic Patterns: AI design agent for interactive product prototypes",
+            "https://www.magicpatterns.com/"
+          ]
+        ],
+        "sourceDate": "2026-07-19",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "Retrieval-Augmented Generation: how it works and why it matters for knowledge management, research workflows, and enterprise Q&A products.",
+        "details": [
+          "RAG (Retrieval-Augmented Generation) is an AI framework that combines a retrieval system with a generative language model. Instead of relying solely on the model's internal knowledge, RAG first queries an external knowledge base—such as a company's internal documents, a vector database, or the open web—to fetch relevant information, then feeds that context to the LLM to produce a grounded answer. This approach dramatically reduces hallucinations, enables up-to-date answers without retraining the model, and allows organizations to use their own proprietary data securely.",
+          "In practice, RAG powers enterprise chatbots, legal document analysis, customer support systems, and research assistants. For example, a law firm can index thousands of case files and let lawyers ask natural-language questions; the RAG system retrieves the most relevant precedents and synthesizes a concise response. The same architecture underlies many popular AI tools like Notion AI, Glean, and internal knowledge-base products.",
+          "Key components include: embedding models to convert text into vectors, a vector database (e.g., Pinecone, Weaviate, or Chroma) for efficient similarity search, and a generation model (like GPT-4 or Claude) that reads the retrieved chunks. Recent advances include self-RAG (letting the model decide when to retrieve), multi-hop RAG (chaining multiple retrievals for complex queries), and hybrid search combining keyword and semantic retrieval."
+        ],
+        "why": "RAG has become the de facto architecture for enterprise AI applications because it balances accuracy with cost and latency. For anyone building a knowledge product, investing in a robust RAG pipeline—good chunking, retrieval quality, and reranking—is often more impactful than chasing the latest LLM. For investors, startups that offer RAG-as-a-service or specialized vector databases continue to attract funding.",
+        "links": [
+          [
+            "OpenAI and Hugging Face security incident",
+            "https://openai.com/index/hugging-face-model-evaluation-security-incident"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-07-21",
     "title": "AI Daily Atlas",
