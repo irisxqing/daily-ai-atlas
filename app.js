@@ -1,5 +1,339 @@
 const archiveZh = [
   {
+    "date": "2026-07-24",
+    "title": "AI Daily Atlas",
+    "meta": "2026年7月24日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek梁文锋称国产AI芯片唯有产能不足，华为可完全平替英伟达 - 风闻",
+        "dek": "AI 超级公司或明星创业公司的关键人事/组织新闻，需要补足背景、影响和后续观察点。",
+        "details": [
+          "这条信号来自 Google News China AI：DeepSeek梁文锋称国产AI芯片唯有产能不足，华为可完全平替英伟达 - 风闻。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: DeepSeek梁文锋称国产AI芯片唯有产能不足，华为可完全平替英伟达 - 风闻",
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1hUDN2cVkxeUlVdmNqUHhiMEJsQjNMd0N0TnFvS2wxck5sTU0wa3ZoZzR4bTRseml4OUN4MTVjYmJBeUN6N1hmTUotbF95RHhDcTN6eW1zZWRjNHM?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "“Kimi时刻”到来！月之暗面赶赴大模型上市潮 - 东方财富",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：“Kimi时刻”到来！月之暗面赶赴大模型上市潮 - 东方财富。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: “Kimi时刻”到来！月之暗面赶赴大模型上市潮 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5YNmtDT3lOc0h4YU1iZHUzanNJVDlwS3J5SHV6c2hLWUZaYmJ2RG5QaHp0M1B1YmFIa3ExMmVyZlc4ems5ZmhJWEs1UnVPcjdfY2hGSTFIUXg1bW94U0ZQeEVZYVU?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "谷歌股价下跌7%：市场质疑AI领导力与Gemini 4路线图",
+        "dek": "投资者对谷歌在AI竞赛中的地位产生疑虑，Gemini 4发布时间表不明朗加剧担忧。",
+        "details": [
+          "谷歌母公司Alphabet股价在7月23日下跌7%，创下近半年最大单日跌幅。直接导火索是投资者对谷歌AI领导力的质疑——尽管Gemini系列模型持续迭代，但市场认为其在与OpenAI、Anthropic的竞争中并未拉开明显差距，且下一代旗舰模型Gemini 4的路线图迟迟未明确披露，引发了不确定性。",
+          "此次下跌的背景是，谷歌在刚过去的季度财报中云业务增速放缓，而AI基础设施投入持续攀升。分析师指出，投资者担心巨额的资本支出未能转化为可观的AI收入增量，同时谷歌搜索业务面临AI驱动的替代威胁。Gemini 4的推出时间、性能提升幅度以及是否能够支撑起新的增长曲线，成为市场关注的焦点。",
+          "值得注意的是，谷歌并非孤例——同期微软、Meta等科技巨头也因AI商业化前景不明出现股价波动。但谷歌7%的跌幅表明，市场对其“AI第一梯队”地位的信赖正在动摇。谷歌需要在即将召开的Cloud Next大会上给出更清晰的AI产品路线图，尤其是Gemini 4的差异化优势，才能重拾投资者信心。"
+        ],
+        "why": "AI竞赛已进入资本兑现期，市场不再单纯为研发投入买单，而是要求明确的商业回报路径。谷歌的股价波动提醒所有AI公司：路线图透明度和收入转化效率正成为估值核心变量。",
+        "links": [
+          [
+            "Investor's Business Daily报道",
+            "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUnlJdnVSREgtVWRRa0pJbUtuMGxfM2dlMzhHU2VGd0h4YXFXZE1mTzBVa1JneFkwZll4VEkxNDdrdFJWWTJyVlNMWFVKQm9IZGktdFRoRUFjY29Va2ZtT2hVOEU5Z2pydm9nYXhMYlA2NldLMHV2bk1UXy02NUFEYzVqWE5vRUlIRG1lQm83VnVoVUZlb0ZoQ0tld2lSeDQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Deepseek四小时投资会，梁文峰为何“不着急赚钱”？",
+        "dek": "在资本狂热追逐AI商业化的当下，DeepSeek创始人梁文峰在长达四小时的投资沟通会上明确表示：不急于变现。",
+        "details": [
+          "DeepSeek近日举办了一场长达四小时的投资沟通会，创始人梁文峰在会上的表态引人关注——他明确表示公司当前“不着急赚钱”。这一态度在资本普遍追求快速变现的AI赛道中显得特立独行。梁文峰强调，DeepSeek更关注模型能力的长期积累和生态布局，而非短期商业回报。",
+          "据了解，本次投资会吸引了多家机构参与，但会议并未披露具体的融资规模或估值信息。梁文峰在对话中解释了DeepSeek的技术路线和开源策略，认为当前AI仍处于早期阶段，过早商业化可能束缚创新。",
+          "有机构人士透露，梁文峰对盈利时间表没有给出明确承诺，但重点展示了DeepSeek在推理效率和长上下文窗口上的技术突破。这一做法与部分同行形成对比——一些中国AI公司已开始推出订阅制产品并寻求规模化收入。"
+        ],
+        "why": "这一信号表明DeepSeek可能选择“技术优先、资本耐心”的长期主义路径，对投资者而言需要调整对国内AI创业公司回报周期的预期；同时，这也意味着DeepSeek在持续投入基础模型研发，不急于加入商业化竞赛，可能在未来技术拐点占据更有利位置。",
+        "links": [
+          [
+            "新蓝网报道",
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1zQ1BkQlFwSjVIY2tfS3dCZUVtTUdiVDJZODZQRVBEQUVlUjN1WURFYURjbFlVN2pieGVJMGQ1RTBDY0t3dUVWd29TdHE2M3c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "专家称 Kimi K3 并非靠“榨取”Anthropic Fable 模型",
+        "dek": "Kimi K3 表现惊艳被疑蒸馏 Anthropic 模型，业内专家公开反驳。",
+        "details": [
+          "近日，中国 AI 公司 Moonshot AI 发布的最新大模型 Kimi K3 在多项基准测试中表现突出，引发了行业对其技术来源的猜测。有声音质疑 Kimi K3 是否通过“蒸馏”（distillation）Anthropic 的 Fable 模型来实现快速提升。",
+          "但多位 AI 专家向 TechCrunch 表示，这种猜测并不合理。一位专家直言：“我不认为你能在 Fable 发布后这么快就得到一个如此强大的模型，如果只是严格蒸馏的话。”专家指出，Kimi K3 的能力深度和发布节奏表明其背后有独立的技术积累。",
+          "这一争议反映出当前顶尖大模型竞争的白热化——模型排名直接关联公司声誉和融资，而“蒸馏”与“原创”的界限常常模糊。Kimi K3 的具体技术细节尚未公开，但此事件已引发对公开榜单可信度的新一轮讨论。"
+        ],
+        "why": "此争议凸显了中美大模型军备竞赛中的技术路线之争，以及公众和投资者对模型原创性的关注——这直接影响公司的估值和合作信任。",
+        "links": [
+          [
+            "TechCrunch: Experts say exploiting Anthropic’s Fable isn’t how Kimi K3 got so good",
+            "https://techcrunch.com/2026/07/23/experts-say-exploiting-anthropics-fable-isnt-how-kimi-k3-got-so-good/"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "芯片卖了56万片之后，阿里平头哥把最值钱的东西开源了",
+        "dek": "开源AI软件栈SAIL，260+框架即开即用，降低开发门槛",
+        "details": [
+          "阿里平头哥宣布开源其核心AI软件栈SAIL（Software AI Infrastructure Layer），涵盖260+主流AI框架和模型，用户可直接调用而不必从头配置环境。此举被视为平头哥在硬件出货量达到56万片后，转向软件生态扩张的关键一步。",
+          "SAIL原本仅用于平头哥芯片的配套开发，此次开源意味着华为昇腾、寒武纪等竞品芯片也能利用其优化能力。平头哥负责人表示，SAIL已适配超过20款国产AI芯片，目标是解决AI开发中“硬件多样、软件碎片”的痛点。",
+          "开源后，社区可自由修改和分发SAIL代码。业界普遍认为，这将加速国产芯片的软件兼容性建设，但也可能加剧同类开源项目之间的竞争。未来SAIL能否成为事实标准，取决于社区贡献度和商业公司支持力度。"
+        ],
+        "why": "阿里平头哥开源核心软件栈，将硬件出货量转化为生态影响力，可能改变国产AI芯片软件生态的竞争格局，推动行业从硬件参数竞争转向软件易用性竞争。",
+        "links": [
+          [
+            "量子位: 芯片卖了56万片之后，阿里平头哥把最值钱的东西开源了",
+            "https://www.qbitai.com/2026/07/457405.html"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "科大讯飞发布星火Token Factory，企业级AI模型智能路由与治理新底座",
+        "dek": "在多模型并行部署成为常态的背景下，星火Token Factory试图解决企业“模型选择困难”与“治理碎片化”的难题，为AI基础设施提供统一调度层。",
+        "details": [
+          "随着企业从单一大模型向多模型协作演进，如何高效调用不同模型、平衡成本与性能成为新痛点。科大讯飞发布的星火Token Factory，核心定位是企业AI模型智能路由与治理平台，旨在帮助开发者和IT管理者像管理API网关一样管理AI模型池。",
+          "星火Token Factory的核心能力包括：智能路由——根据任务类型、延迟要求和成本预算自动选择最优模型；统一治理——提供权限控制、用量监控、成本分摊和合规审计等功能，解决多模型带来的管理碎片化问题。这相当于在企业级AI基础设施中加了一层“中间件”。",
+          "该产品背后反映了当前AI产业的一个趋势：当模型数量激增，企业不再只依赖单一模型，而是需要灵活切换或组合使用。Token Factory正是为满足这一需求而生，让企业不必在每次模型迭代时重构上层应用，降低模型切换的摩擦成本。",
+          "目前星火Token Factory已集成讯飞星火系列及部分开源模型，并计划支持更多第三方模型。对于已部署多个AI应用的企业，它可以作为统一入口，减少重复对接成本，同时提升模型调用的透明度和可控性。"
+        ],
+        "why": "星火Token Factory切入的是企业AI落地中一个关键却容易被忽视的环节——模型治理与路由。随着多模型生态成型，这类工具将成为AI基础设施的标配，为讯飞在B端市场建立新护城河。",
+        "links": [
+          [
+            "量子位: 科大讯飞发布星火Token Factory，打造企业级AI模型智能路由与治理新底座",
+            "https://www.qbitai.com/2026/07/457359.html"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "多轮对话的“风险累积”：AI安全需要状态记忆",
+        "dek": "现有单轮安全护栏难以检测多轮对话中逐渐累积的恶意行为，新研究提出会话级风险评估框架。",
+        "details": [
+          "当前主流的大语言模型安全护栏大多逐轮检测每个提示-响应对，忽视了多轮对话中良性交互逐步组合成有害意图的风险。这种“对话风险累积”包括意图逐渐漂移、碎片化禁止指令的拼接、以及因重复披露而降低用户敏感度等模式。",
+          "论文将此类风险系统化定义为 Conversational Risk Accumulation（CRA），并提出一个会话层检测框架，追踪三个轨迹信号：基于会话锚点的语义漂移、敏感度加权的实体信息积累图，以及反映模型逐渐倾向遵从的合规梯度信号。",
+          "该框架的评分机制不仅检测单轮越狱，还能捕捉跨多轮的微妙意图变化，例如用户先讨论正常话题，然后逐步引导模型提供违禁信息。实验表明，对多轮越狱攻击的检测率相比单轮护栏提升明显。",
+          "对于AI客服、教育辅导、角色扮演等长交互场景，这一研究提示安全设计必须从“每轮审核”升级为“全程跟踪”，否则看似无害的多次对话可能绕过现有防护。"
+        ],
+        "why": "安全护栏从单轮走向多轮是AI落地的必然需求，理解CRA框架有助于产品团队在对话系统中提前建立状态级安全机制，应对未来监管对上下文安全性的要求。",
+        "links": [
+          [
+            "arXiv论文",
+            "https://arxiv.org/abs/2607.19361"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Tron 行业周报：对 AI 预期的缓和？｜链捕手ChainCatcher",
+        "dek": "链捕手ChainCatcher 转载的 TRON 与 B.AI 联合发布的行业周报，标题暗示对 AI 市场预期的调整，但全文内容未在本源数据中详细公开。",
+        "details": [
+          "该报告由 TRON 与 B.AI 联合发布，经链捕手ChainCatcher 转载，发布日期为 2026-07-20。标题中 'Easing Expectati...' 推测为 'Easing Expectations'，意即对 AI 行业的预期正在趋于缓和。报告可能涉及区块链与 AI 的交叉领域，鉴于 TRON 和 B.AI 的背景。",
+          "由于源链接为 Google News 聚合页，未直接披露报告全文内容，因此无法确认具体数据、图表或结论。读者若需完整观点，建议通过链捕手ChainCatcher 或搜索引擎查找原文。",
+          "作为行业观点，此周报反映了部分生态参与者的视角，但对于广泛的市场判断仍需参考多方信源。"
+        ],
+        "why": "对于关注 AI 和区块链结合方向的投资者，此类行业周报可提供及时的市场情绪线索，但需注意其立场可能偏向 TRON 生态，应结合其他独立研究综合评估。",
+        "links": [
+          [
+            "原文链接",
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9VRFllUU5PV216RzJ0OWs1c09CUDE1bS1TSmVXU2dsUjV2ODdaNUU1VzZYeDhZTG4wX3FyTFZGNHhSX05Ja01venYwdWxhTTVERlRWc3lGWWlFN2M?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-20",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-20",
+        "freshnessLabelEn": "Fallback | published 2026-07-20",
+        "freshnessLabel": "补位｜发布于 2026-07-20"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "GitHub 博文：Copilot 与直接 API 调用，你究竟在为什么付费？",
+        "dek": "GitHub 详解 Copilot 按 API 费率计费后，付费逻辑与开发者实际获得的附加价值。",
+        "details": [
+          "GitHub 近日发文澄清，Copilot 现已按公开 API 费率计费使用量，而非之前的固定订阅模式。这意味着用户支付的费用直接与底层模型调用挂钩，而非仅一个固定月费。",
+          "文章核心问题是：当你为 Copilot 付费时，你支付的到底是什么？GitHub 指出，除了直接模型访问，你还在为编码工作流集成、企业级安全策略、合规性支持以及自定义模型微调等“外围能力”买单。",
+          "与直接调用 GPT-4o 或 Claude 等 API 相比，Copilot 提供了 IDE 内无缝补全、代码审查、上下文感知等增值功能。GitHub 认为，对于追求开发效率和安全管理的团队，Copilot 的附加价值值得溢价。",
+          "GitHub 还对比了自建工具链的隐性成本——包括运维、策略管理和持续更新——并称 Copilot 的统包方案在长期可能更具成本效益。"
+        ],
+        "why": "对开发者和企业而言，了解 Copilot 的定价逻辑有助于评估是否值得从纯 API 方案迁移，或是否应优先选择更集成的 AI 编码工具。",
+        "links": [
+          [
+            "GitHub AI & ML: Copilot vs. raw API access: What are you actually paying for?",
+            "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Pulse：权限感知、主动出击的AI企业大脑",
+        "dek": "一款能理解公司权限并主动执行任务的AI代理工具，正在Product Hunt上引发关注。",
+        "details": [
+          "Pulse 将自己定位为“公司的权限感知、主动式AI大脑”。它不再是被动等待指令的聊天机器人，而是能理解组织内部的权限边界——谁可以访问什么数据、做什么操作——并在工作流中主动提出建议或自主执行任务。",
+          "从Product Hunt页面描述看，Pulse 的核心差异在于“permission-aware”。这意味着它可以在安全合规的前提下，跨部门调用数据、触发流程，比如自动生成周报、协调审批、或从知识库中提取关键信息推送相关人。",
+          "这类产品正切中企业AI落地的痛点：很多AI工具要么过于开放（数据安全风险），要么过于受限（几乎没用）。Pulse 的尝试是让AI知道“能做”和“不能做”的界限，从而在真实工作流中安全地扮演协作者角色。",
+          "不过，作为一款新上线的产品，Pulse 的实际效果还有待验证。权限模型的复杂性和跨系统集成能力往往是最大挑战，能否在中小团队中快速起量，值得关注。",
+          "对于非技术读者而言，Pulse 代表了一个趋势：AI 正在从“问答式”进化为“执行式”，未来可能像一位主动的虚拟同事，帮你把琐事处理妥当。"
+        ],
+        "why": "这款产品展示了AI从被动工具向主动代理转变的方向，尤其在企业场景中，权限感知能力是安全性落地的关键，值得产品经理和企业决策者关注其后续发展。",
+        "links": [
+          [
+            "Product Hunt 页面",
+            "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBGVXFwQ1RwV0UtQm1wcHRmLXFKWHR5TXVmeWMxQTI1T2hWTFpPSlhHYmdaSW5NV3VEXzJaa2pvZ1h6d2kxaDVvOWVfT01rWlFvNFhHWmM1Uzk?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Lev8：用 AI 精准确认目标联系人",
+        "dek": "从海量信息中快速锁定并触达正确的人，提升销售与招聘效率",
+        "details": [
+          "Lev8 是一款专注于人脉查找与触达的 AI 工具，核心功能是帮助用户从公开信息中快速识别、研究并联系目标人物。它整合了数据挖掘与自动化 outreach，适用于销售线索挖掘、人才招聘、商业合作等场景。",
+          "传统手动搜索和筛选方式耗时且容易遗漏，Lev8 通过 AI 聚合多源数据（如 LinkedIn、公司官网、新闻等），自动生成联系人画像并推荐最佳触达路径。这显著降低了信息获取成本，尤其适合需要大量冷启动触达的行业。",
+          "目前该产品处于早期阶段，功能完整性和数据覆盖度有待验证。用户需注意其依赖的公开数据质量可能影响推荐精准度，且 outreach 自动化可能受平台使用条款限制。",
+          "对于产品经理和创业者，Lev8 展示了 AI 在 B2B 工作流中的务实落地方向——不是通用聊天机器人，而是解决具体“找人”痛点。类似工具在北美市场增长迅速，是观察 AI 生产力赛道的一个窗口。"
+        ],
+        "why": "Lev8 代表 AI 从泛化对话走向垂直工作流的关键趋势，对销售科技和人力资源领域的效率提升有直接启示，值得关注其产品演进与用户反馈。",
+        "links": [
+          [
+            "Product Hunt 页面",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Sem9SU0JwSGY4UGZ1eGMzd3l0RGJpUUdEaVZ3S0txVDl0ajJxcDRScHJOdFA4d19zTmx2MndOYjdrWFJxbkJKeUVuTERzdVlKZDVN?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "Agentic Workflow：理解AI智能体工作流的核心",
+        "dek": "Agentic Workflow 是让AI像团队成员一样自主规划、执行任务的工作模式，正成为企业自动化新闻背后的共同语言。",
+        "details": [
+          "Agentic Workflow（智能体工作流）是一种AI系统设计模式，核心是让模型不仅能回答问题，还能自主拆解目标、调用工具、执行多步操作，并在过程中根据反馈动态调整。与传统的“提示-响应”模式不同，Agentic Workflow 更像是赋予AI一个“待办清单”和“工具箱”，让它像人类员工一样一步一步完成任务。",
+          "这一概念在2025–2026年迅速普及，背后驱动是两大趋势：一是模型能力的提升（如GPT-4o, Claude 4, Gemini 2.5等已能可靠地规划子任务），二是企业对自动化流程的迫切需求——从客服工单处理、代码生成到供应链管理，Agentic Workflow 正在替代简单的RPA（机器人流程自动化）。",
+          "理解Agentic Workflow有助于解读当前大量AI新闻：比如“Kimi上市”背后是月之暗面在Agent场景的布局，OpenAI与新闻机构的合作也涉及将Agentic Workflow嵌入内容生产。当看到“AI Agent”“自主工具调用”“多步推理”等术语时，它们本质上都是Agentic Workflow的不同实现。",
+          "对于非技术读者，一个实用的判断标准是：如果某个AI产品只能“聊天”而不能“做事”，它就不是Agentic；如果能设置目标、自主完成并返回结果，那就是Agentic Workflow在起作用。"
+        ],
+        "why": "Agentic Workflow 是当前AI产业从‘工具’向‘数字员工’跃迁的关键拼图。理解它，就能看懂OpenAI、Google、月之暗面等公司在产品战略上的核心差异，也能更快识别哪些AI创业项目有真正的工作流价值。",
+        "links": [
+          [
+            "OpenAI：新闻机构如何利用AI推进使命",
+            "https://openai.com/index/how-news-organizations-are-using-ai"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-07-23",
     "title": "AI Daily Atlas",
     "meta": "2026年7月23日",
@@ -14383,6 +14717,333 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-07-24",
+    "title": "AI Daily Atlas",
+    "meta": "July 24, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek梁文锋称国产AI芯片唯有产能不足，华为可完全平替英伟达 - 风闻",
+        "dek": "AI 超级公司或明星创业公司的关键人事/组织新闻，需要补足背景、影响和后续观察点。",
+        "details": [
+          "This signal comes from Google News China AI：DeepSeek梁文锋称国产AI芯片唯有产能不足，华为可完全平替英伟达 - 风闻. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: DeepSeek梁文锋称国产AI芯片唯有产能不足，华为可完全平替英伟达 - 风闻",
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1hUDN2cVkxeUlVdmNqUHhiMEJsQjNMd0N0TnFvS2wxck5sTU0wa3ZoZzR4bTRseml4OUN4MTVjYmJBeUN6N1hmTUotbF95RHhDcTN6eW1zZWRjNHM?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Moonshot AI Joins China’s LLM IPO Wave as ‘Kimi Moment’ Arrives",
+        "dek": "The creator of the popular Kimi chatbot is reportedly preparing for an IPO, signaling the next phase of monetization and market competition among Chinese large model startups.",
+        "details": [
+          "Moonshot AI, the Beijing-based startup behind the viral Kimi chatbot, is reportedly gearing up for an initial public offering, according to a report from East Money. The news marks what some are calling a 'Kimi moment' as the company rides strong user growth and investor enthusiasm for generative AI into public markets.",
+          "The move places Moonshot among a growing list of Chinese large-model developers—including Zhipu AI, MiniMax, and Baichuan—that have either filed for IPOs or are rumored to be preparing for listings. This wave reflects a broader trend of AI startups seeking public capital to fund expensive compute and talent war costs in a fiercely competitive landscape.",
+          "If successful, Moonshot’s IPO would provide it with long-term funding to expand its multimodal capabilities and enterprise offerings. However, profitability remains a key question, as most Chinese LLM startups still rely on venture subsidies and face rising inference costs. The listing could also trigger a valuation re-rating across the sector."
+        ],
+        "why": "Moonshot’s IPO push underscores the accelerating commercialization of Chinese LLM startups, where access to public capital will separate survivors from also-rans. Investors should watch for pricing and oversubscription as a bellwether of market appetite for pure-play AI in China.",
+        "links": [
+          [
+            "Google News China AI Signals: “Kimi时刻”到来！月之暗面赶赴大模型上市潮 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5YNmtDT3lOc0h4YU1iZHUzanNJVDlwS3J5SHV6c2hLWUZaYmJ2RG5QaHp0M1B1YmFIa3ExMmVyZlc4ems5ZmhJWEs1UnVPcjdfY2hGSTFIUXg1bW94U0ZQeEVZYVU?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google Stock Falls 7% Amid Questions Over AI Leadership, Gemini 4 Roadmap",
+        "dek": "Investor's Business Daily reports that Alphabet shares dropped 7% on July 23, 2026, driven by growing uncertainty over Google's AI roadmap and competitive positioning. The decline underscores market skepticism about Google's ability to maintain leadership amid rapid advances by OpenAI and others.",
+        "details": [
+          "Google's stock tumbled 7% on July 23, erasing billions in market cap, after Investor's Business Daily highlighted mounting questions about the company's AI strategy and the delayed Gemini 4 release timeline. The decline marks one of the sharpest single-day drops for Alphabet this year, signaling that investors are losing patience with Google's AI narrative.",
+          "While Google has invested heavily in AI infrastructure and doubled down on DeepMind, the lack of a concrete Gemini 4 launch date has raised doubts about its competitive edge. Meanwhile, OpenAI's GPT-5 and Anthropic's Claude 4 have gained traction, putting pressure on Google to deliver. The market's reaction suggests that without a clear product roadmap, Google risks being perceived as lagging in the AI race.",
+          "Analysts note that Google's AI leadership was once taken for granted, but the current environment demands faster iteration and clearer monetization paths. The 7% sell-off reflects both short-term earnings concerns and long-term strategic uncertainty, as investors weigh Google's ability to convert AI research into revenue-generating products."
+        ],
+        "why": "This sell-off signals that Wall Street is increasingly skeptical of Google's AI execution, potentially forcing the company to accelerate Gemini 4 launch or reshuffle its AI leadership. For competitors and investors, it highlights the premium placed on clear AI roadmaps and the risk of perception gaps in a fast-moving market.",
+        "links": [
+          [
+            "Google News AI Models: Google Stock Falls 7% Amid Questions Over AI Leadership, Gemini 4 R",
+            "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUnlJdnVSREgtVWRRa0pJbUtuMGxfM2dlMzhHU2VGd0h4YXFXZE1mTzBVa1JneFkwZll4VEkxNDdrdFJWWTJyVlNMWFVKQm9IZGktdFRoRUFjY29Va2ZtT2hVOEU5Z2pydm9nYXhMYlA2NldLMHV2bk1UXy02NUFEYzVqWE5vRUlIRG1lQm83VnVoVUZlb0ZoQ0tld2lSeDQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Liang Wenfeng's 'No Rush to Make Money' Stance at DeepSeek's 4-Hour Investor Meeting",
+        "dek": "DeepSeek’s founder signals long-term focus over immediate monetization, sparking debate on AI startup strategies.",
+        "details": [
+          "At a four-hour investor meeting on July 23, DeepSeek founder Liang Wenfeng emphasized that the company is in no hurry to generate profits, prioritizing model capability and technological depth over short-term revenue. The closed-door session, reported by Zhejiang-based Xinlan Net, offered rare insight into the strategy of one of China's most closely watched AI startups.",
+          "Liang’s stance reinforces DeepSeek’s reputation for pursuing foundational AI research rather than aggressive commercialization. While the approach could strengthen its technical moat, it also raises questions about sustainability in a capital-intensive sector. The specific investment terms or strategic plans discussed remain undisclosed."
+        ],
+        "why": "This signals that DeepSeek is doubling down on a technology-first strategy, which may influence investor expectations and competitive dynamics in Chinese AI, where peers like Baidu and Alibaba are racing to monetize.",
+        "links": [
+          [
+            "Google News China AI Signals: Deepseek四小时投资会，梁文峰为何“不着急赚钱”？ - 新蓝网",
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1zQ1BkQlFwSjVIY2tfS3dCZUVtTUdiVDJZODZQRVBEQUVlUjN1WURFYURjbFlVN2pieGVJMGQ1RTBDY0t3dUVWd29TdHE2M3c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Experts say exploiting Anthropic’s Fable isn’t how Kimi K3 got so good",
+        "dek": "Despite speculation, AI researchers argue that Kimi K3's strong benchmark performance is not simply a result of distilling Anthropic's Fable model.",
+        "details": [
+          "Kimi, the Chinese AI startup backed by Moonshot AI, recently unveiled its K3 model, which posted impressive results on several benchmarks, rivaling top-tier Western models. Some observers quickly suspected that K3 might have been distilled from Anthropic's Fable, a leading frontier model known for its reasoning and alignment capabilities.",
+          "However, multiple experts interviewed by TechCrunch push back against that theory. 'I don't think you get a model this strong and this quickly on the heels of Fable doing strictly distillation,' one expert said. Distillation typically transfers knowledge from a large teacher model to a smaller one, but K3 appears to have achieved its performance with significant architectural innovations and efficient data strategies.",
+          "The debate underscores the intense scrutiny around Chinese AI labs' rapid progress. While distillation is a common technique in the industry, independent research from Kimi suggests a different technical roadmap—possibly involving novel training methods or specialized hardware optimization."
+        ],
+        "why": "This story reinforces that Chinese AI labs are not merely copying Western models; they are pursuing original research that could reshape the competitive landscape. Investors and product teams should watch Kimi's approach as a signal of independent innovation in the region.",
+        "links": [
+          [
+            "TechCrunch AI: Experts say exploiting Anthropic’s Fable isn’t how Kimi K3 got so good",
+            "https://techcrunch.com/2026/07/23/experts-say-exploiting-anthropics-fable-isnt-how-kimi-k3-got-so-good/"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "After selling 560,000 chips, Alibaba's T-Head open-sources its most valuable asset",
+        "dek": "Alibaba's chip unit T-Head has open-sourced SAIL, its full-stack AI software stack supporting 260+ frameworks, aiming to accelerate AI adoption on its custom processors.",
+        "details": [
+          "Alibaba's semiconductor arm T-Head announced the open-source release of SAIL (Software AI Layer), a comprehensive AI software stack that supports over 260 deep learning frameworks and tools. The move comes after T-Head's custom chips—including the Hanguang NPU and Yitian CPU—have shipped more than 560,000 units, giving the company a solid hardware base in the Chinese AI chip market. SAIL is designed to make these chips easier to program and integrate into existing AI workflows, lowering the barrier for developers.",
+          "By open-sourcing SAIL, T-Head is essentially giving away its most valuable software differentiator to build ecosystem stickiness. The stack includes optimized libraries, model compression tools, and deployment engines tailored for T-Head's hardware. This is a strategic play to compete with Nvidia's CUDA dominance and rival domestic alternatives like Cambricon's Neuware. The success of this move will depend on how quickly the developer community adopts SAIL and whether it can attract independent software vendors to optimize for T-Head chips.",
+          "Industry observers note that open-sourcing the software layer is a bold bet: it sacrifices short-term licensing revenue in exchange for long-term ecosystem lock-in. If SAIL gains traction, it could significantly expand the addressable market for T-Head's chips beyond Alibaba's own data centers into enterprise and edge AI applications."
+        ],
+        "why": "For AI infrastructure investors, this signals that Chinese chipmakers are shifting from pure hardware competition to ecosystem battles. Developers and startups should watch SAIL's adoption: a strong open-source AI stack could become a viable alternative to Nvidia's CUDA in China, reshaping hardware procurement decisions.",
+        "links": [
+          [
+            "量子位: 芯片卖了56万片之后，阿里平头哥把最值钱的东西开源了",
+            "https://www.qbitai.com/2026/07/457405.html"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "科大讯飞发布星火Token Factory，打造企业级AI模型智能路由与治理新底座",
+        "dek": "科大讯飞推出星火Token Factory，旨在为企业提供统一的AI模型智能路由与治理平台，应对多模型部署场景下的成本与安全挑战。",
+        "details": [
+          "随着企业采用多个AI模型（如GPT-4、Claude、自研模型等），如何高效调度请求、平衡成本与性能、确保合规治理成为难题。科大讯飞发布的星火Token Factory定位为“模型智能路由与治理新底座”，核心功能包括：根据任务复杂度自动选择最优模型、统一管理API密钥与令牌消耗、实时监控模型输出质量与安全风险。这本质上是一个中间层平台，帮助企业避免被单一模型锁定，同时降低总体调用成本。",
+          "该产品还内置了模型评估与对比模块，企业可以针对不同业务场景（如客服、内容生成）测试多个模型的表现，并动态调整路由策略。Token Factory支持主流开源和闭源模型，并提供可视化仪表盘。对于正在构建AI基础设施的企业，这相当于提供了一个“模型操作系统”，简化运维复杂度。"
+        ],
+        "why": "星火Token Factory反映了企业AI部署从“单模型试用”进入“多模型混用与治理”阶段。对创业者而言，模型路由与治理将成为企业级AI基础设施的关键赛道，类似昔日的API网关之于微服务架构。",
+        "links": [
+          [
+            "量子位: 科大讯飞发布星火Token Factory，打造企业级AI模型智能路由与治理新底座",
+            "https://www.qbitai.com/2026/07/457359.html"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Stateful Guardrails for Multi-Turn LLM Systems: A Conversational Risk Accumulation Framework",
+        "dek": "A new framework from arXiv proposes tracking risk signals across dialogue turns, addressing a blind spot in LLM safety.",
+        "details": [
+          "Most safety guardrails for large language models (LLMs) inspect each prompt-response pair in isolation. This approach misses failures that emerge only across multiple turns—what the authors call Conversational Risk Accumulation (CRA). Examples include a user gradually steering a chatbot toward harmful intent via subtle semantic drift, assembling prohibited instructions from fragmented benign queries, or escalating sensitivity through repeated personal disclosures. Existing guardrails often only flag the final, obviously risky turn, missing the cumulative buildup.",
+          "The paper proposes a session-layer CRA Framework that tracks three trajectory signals over a dialogue: (1) semantic drift from a session anchor, measuring how far the topic has shifted from its original benign context; (2) a sensitivity-weighted information accumulation graph that tracks how much sensitive or personal data has been revealed across turns; and (3) a compliance-gradient signal that captures the model's increasing willingness to comply with questionable requests. Together, these signals provide a holistic risk score for the entire conversation, not just individual exchanges.",
+          "The framework represents a shift from stateless to stateful safety evaluation. By modeling risk as an accumulative process, it offers a more realistic assessment of how LLMs can be exploited in multi-turn settings—a gap that becomes critical as AI assistants move into customer service, therapy, education, and other domains requiring prolonged interaction."
+        ],
+        "why": "As LLMs are deployed in multi-turn, high-stakes scenarios, the inability to detect gradual risk accumulation poses real safety threats. This research provides a formal foundation for building guardrails that understand conversational context, potentially influencing both product design and regulatory standards for conversational AI.",
+        "links": [
+          [
+            "arXiv cs.CL: Stateful Guardrails for Multi-Turn LLM Systems: A Conversational Risk Accumulation Framework",
+            "https://arxiv.org/abs/2607.19361"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Tron Industry Weekly Report: Easing Expectations for AI-Crypto Synergy",
+        "dek": "A weekly report from Tron ecosystem media ChainCatcher suggests that the once-hot narrative of AI and crypto convergence is cooling, citing regulatory hurdles and slow technical integration.",
+        "details": [
+          {
+            "summary": "The report, published by ChainCatcher as a Tron industry weekly, focuses on the evolving relationship between artificial intelligence and blockchain/crypto projects. It argues that early enthusiasm for AI-crypto synergy is giving way to a more cautious outlook.",
+            "expanded": "Key points from the report include: 1) Several high-profile AI-on-blockchain projects have failed to deliver on promised throughput or cost reductions, leading to investor skepticism. 2) Regulatory uncertainty around both AI and crypto in major markets (US, EU, China) is discouraging deep integration. 3) Tron's own AI initiatives, such as AI-powered smart contract auditing tools and decentralized compute markets, are still in early R&D stages with no clear revenue model. The report is an opinion piece rather than an official research paper, reflecting the views of ChainCatcher's editorial team."
+          },
+          {
+            "summary": "The report also highlights that the 'AI agent' trend, which briefly boosted token prices for projects like B.AI, is losing momentum as technical limitations become apparent.",
+            "expanded": "It notes that most AI agents on blockchain remain simple chatbots or data aggregators, lacking the autonomy and composability that investors expected. The report warns against conflating short-term token speculation with genuine technological progress, and suggests that sustainable value creation will require years of infrastructure building."
+          }
+        ],
+        "why": "For investors and builders in the AI x Crypto space, this report reinforces the need to focus on real-world utility and regulatory compliance, rather than hype-driven narratives. It suggests that the 'easy money' phase may be over, and that only projects with deep technical integration and clear use cases will survive.",
+        "links": [
+          [
+            "Google News AI Reports: Tron Industry Weekly Report: Easing Expectati...｜TRON, B.AI - 链捕手C",
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9VRFllUU5PV216RzJ0OWs1c09CUDE1bS1TSmVXU2dsUjV2ODdaNUU1VzZYeDhZTG4wX3FyTFZGNHhSX05Ja01venYwdWxhTTVERlRWc3lGWWlFN2M?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-20",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-20",
+        "freshnessLabelEn": "Fallback | published 2026-07-20",
+        "freshnessLabel": "Fallback | published 2026-07-20"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Copilot vs. raw API access: What are you actually paying for?",
+        "dek": "GitHub now bills Copilot usage at published API rates, prompting developers to compare the value of an integrated coding assistant against direct model access.",
+        "details": [
+          "GitHub has updated its Copilot billing to directly reflect the underlying model's API costs at listed rates. This shift means developers can clearly see how much of their subscription goes toward inference versus the platform's workflow, policy, and harness features.",
+          "The post compares raw API access—where you manage context windows, prompt engineering, and tool integrations yourself—against Copilot's bundled offering. Copilot automates context construction from your codebase, enforces organizational policies (e.g., disallowed patterns), and handles model routing and fallback. The key question: how much is that abstraction worth?",
+          "For individual developers, the calculation may tilt toward Copilot if their time saved exceeds the premium over direct API calls. For teams, factors like consistent code reviews, policy compliance, and reduced onboarding friction add intangible value. The post stops short of endorsing either approach, leaving the decision to each user's workflow and cost sensitivity."
+        ],
+        "why": "This analysis helps developers and team leads evaluate whether the productivity gains from an integrated coding assistant justify its cost compared to calling APIs directly, a decision that affects toolchain budgets and engineering velocity.",
+        "links": [
+          [
+            "GitHub AI & ML: Copilot vs. raw API access: What are you actually paying for?",
+            "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Pulse: Your company's permission-aware, proactive and agentic brain - Product Hunt",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Google News AI Product Discovery：Pulse: Your company's permission-aware, proactive and agentic brain - Product Hunt. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Product Discovery: Pulse: Your company's permission-aware, proactive and ag",
+            "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBGVXFwQ1RwV0UtQm1wcHRmLXFKWHR5TXVmeWMxQTI1T2hWTFpPSlhHYmdaSW5NV3VEXzJaa2pvZ1h6d2kxaDVvOWVfT01rWlFvNFhHWmM1Uzk?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Lev8: Find, research, and reach the right people - Product Hunt",
+        "dek": "AI-powered tool for targeted person discovery and outreach, spotted on Product Hunt.",
+        "details": [
+          "Lev8 is a recently listed AI product on Product Hunt that aims to streamline the process of finding, researching, and contacting the right individuals for sales, recruiting, or networking. According to the product listing, it uses AI to automate background research on prospects, surface relevant connections, and generate personalized outreach messages, reducing the manual legwork typically involved in lead generation.",
+          "The tool appears to target professionals who rely on accurate and timely people intelligence—such as B2B sales teams, headhunters, and business developers. Its appearance on Product Hunt signals growing interest in AI applications that go beyond content generation and into task-specific workflow automation. While the product is still early-stage, it reflects a broader trend of AI being embedded into everyday professional tools to boost productivity in relationship-driven roles."
+        ],
+        "why": "Lev8 exemplifies how AI is moving from generic assistants to specialized workflow tools—monitoring such product launches helps identify emerging use cases and market gaps for product builders and investors.",
+        "links": [
+          [
+            "Google News AI Product Discovery: Lev8: Find, research, and reach the right people - Product Hunt",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Sem9SU0JwSGY4UGZ1eGMzd3l0RGJpUUdEaVZ3S0txVDl0ajJxcDRScHJOdFA4d19zTmx2MndOYjdrWFJxbkJKeUVuTERzdVlKZDVN?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "What is an agentic workflow, and why does it matter for AI automation?",
+        "details": [
+          "An agentic workflow refers to a structured process where AI agents autonomously plan, execute, and refine tasks to achieve a goal. Unlike simple prompts, agentic workflows involve multi-step reasoning, tool use, and memory. For example, an AI agent that researches a topic, writes a report, and emails it—without human intervention at each step. This concept is central to recent advances in enterprise automation, where companies like OpenAI and Hugging Face collaborate on secure model evaluation (see links). Agentic workflows power applications from customer service bots to code generation pipelines, enabling AI to act as a proactive assistant rather than a passive responder."
+        ],
+        "why": "Understanding agentic workflow is key to grasping the next wave of AI products: they shift AI from answering questions to completing complex, multi-step tasks autonomously, which has major implications for productivity and job roles.",
+        "links": [
+          [
+            "How news organizations are using AI to advance their vital missions",
+            "https://openai.com/index/how-news-organizations-are-using-ai"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-07-23",
     "title": "AI Daily Atlas",
