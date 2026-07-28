@@ -1,5 +1,355 @@
 const archiveZh = [
   {
+    "date": "2026-07-28",
+    "title": "AI Daily Atlas",
+    "meta": "2026年7月28日",
+    "headline": "算力与产业链、模型与平台 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕算力与产业链和模型与平台展开。算力基础设施和供应链仍是大模型竞争的底层变量，同时模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Ilya Sutskever的Safe Superintelligence与Nvidia合作，扩大AI研究规模",
+        "dek": "隐身两年后，SSI宣布与Nvidia建立长期合作，为下一阶段扩张做准备",
+        "details": [
+          "Safe Superintelligence（SSI）由OpenAI前首席科学家Ilya Sutskever于2024年创立，专注构建安全超级智能。经过两年隐身研发，该公司于7月27日宣布与Nvidia达成长期合作伙伴关系。双方未披露具体合作金额或技术细节，但外界普遍认为Nvidia将为SSI提供大规模算力支持，以加速其安全AI系统的训练与部署。",
+          "Sutskever在声明中强调，此次合作将使SSI能够“以前所未有的规模”进行AI研究，同时保持对安全性的最高关注。Nvidia方面则表示，将与SSI共同开发针对安全超级智能场景优化的计算基础设施。此前，SSI已从多家顶级风投获得超过10亿美元资金，但始终未公开其技术路线图。",
+          "分析师指出，此举是Nvidia在AI前沿研究领域布局的又一重要棋子。通过绑定Sutskever这样具有影响力的科学家，Nvidia不仅巩固了其算力生态，还可能影响未来AI安全标准的制定。不过，SSI能否在“安全”与“性能”之间找到平衡，仍是市场长期关注的悬念。"
+        ],
+        "why": "这一合作标志着AI安全赛道获得顶级算力支持，可能加速安全超级智能的落地，同时强化Nvidia在AI基础设施中的话语权。",
+        "links": [
+          [
+            "TechCrunch AI: Ilya Sutskever’s Safe Superintelligence partners with Nvidia to scale its A",
+            "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "月之暗面发布Kimi K3模型权重与技术报告",
+        "dek": "月之暗面正式开源Kimi K3模型权重并公开技术报告，进一步推动国产大模型透明度与社区生态建设。",
+        "details": [
+          "月之暗面（Moonshot AI）于7月27日发布了其最新大模型Kimi K3的完整权重文件及详细技术报告。此次开源涵盖模型架构、训练数据、评估结果等核心信息，是继K2之后又一次关键技术披露。开源权重意味着开发者可直接下载并本地化部署或微调Kimi K3，降低了企业级应用门槛。",
+          "Kimi K3在多项基准测试中表现亮眼，尤其在长文本理解和代码生成任务上较前代K2有显著提升。月之暗面此次选择同时发布技术报告，旨在提升模型透明度，并吸引全球研究社区参与改进。这一动作也反映了中国AI公司在开源生态建设上的持续投入，与Meta Llama系列开源策略形成对照。"
+        ],
+        "why": "月之暗面通过开源Kimi K3权重和技术报告，不仅巩固了其在长文本模型领域的领先地位，也向开发者社区释放了技术合作信号，可能推动更多企业基于Kimi K3构建应用，加速国产大模型的生态落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 月之暗面发布Kimi K3模型权重、技术报告 - Sohu",
+            "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNN2pHZ3RQZUU4UzAwYXBQdWt1dEltdEY0bjFxblhVUXpHNGtPMWlURzBiRXpLTDItQmt3MVNlOUgwSWxnZ1ZDX2I5V3RrNnEza05za2ZFNUNqeXJldFJqcTl5dFZkbUk5aExFUzJNZDhyTnc5VmE0T2RvTHhzcTJBQ3o4YVo2VzJ6?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek 据报暂停第二轮融资，首轮70亿美元后市场观望",
+        "dek": "中国AI明星创业公司DeepSeek被指叫停新一轮融资计划，市场关注其估值与战略走向。",
+        "details": [
+          "据观点网报道，DeepSeek 已暂停其第二轮融资进程。这家中国AI大模型公司在首轮融资中筹集了约70亿美元，估值一度飙升。暂停融资的消息传出后，市场对其资金需求和后续策略产生猜测。",
+          "目前该消息尚未得到DeepSeek官方确认。若属实，这或意味着公司选择在当前市场环境下暂缓资本动作，专注技术研发与产品落地。此前有传其第二轮融资目标高达百亿美元，但如今搁置可能反映了投资者对AI赛道估值回归理性的态度。",
+          "DeepSeek 是中国大模型领域的重要玩家，其融资动态被视为行业风向标。此次暂停是否预示着创业公司从“烧钱抢份额”转向“精细化运营”，值得关注。"
+        ],
+        "why": "这条信号对美国与中国AI创业公司的融资环境具有参考意义：若DeepSeek主动暂停融资，可能暗示顶级创业公司开始调整资本策略，而非一味追求高估值；同时提醒投资者，大模型赛道的泡沫风险正在被市场主动消化。",
+        "links": [
+          [
+            "Google News China AI Signals: DeepSeek据报暂停第二轮融资 首轮筹70亿美元后再谋百亿 - 观点网",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBodlNUQ2JSVzNOVE5PTWE3ekxFbWpETVprQjRWakY1b1ZENjRMaG84OW03UTg5WGpOMnk1VWs5UThnMUVTdUxVcG5KTURtdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "NVIDIA Cosmos-H-Dreams：让外科手术机器人拥有实时生成式仿真",
+        "dek": "NVIDIA发布Cosmos-H-Dreams模型，将实时生成式仿真带入手术机器人领域，有望大幅降低训练成本并提升安全性。",
+        "details": [
+          "NVIDIA于7月27日发布Cosmos-H-Dreams模型，这是一个专门为外科手术机器人设计的实时生成式仿真引擎。它能够根据有限的真实手术数据，生成高保真的手术场景和操作路径，帮助机器人在虚拟环境中进行数百万次练习，从而加速学习过程。",
+          "传统手术机器人的训练依赖真实手术录像或人工搭建的仿真环境，成本高昂且难以覆盖所有罕见病例。Cosmos-H-Dreams通过生成式AI自动创建多样化的手术场景（包括出血、组织粘连等紧急情况），让机器人遇到类似真实世界中的复杂状况。",
+          "该模型基于NVIDIA Cosmos平台，利用多模态Transformer架构，能够以亚毫秒级速度生成实时仿真帧。这意味着手术机器人可以在实际操作中即时调整策略，甚至用于术中决策支持，为微创手术带来更高精度和安全边际。",
+          "值得注意的是，Cosmos-H-Dreams目前仍处于研究预览阶段，尚未集成到商用手术系统中。NVIDIA计划在2026年底前与多家医疗设备厂商合作开展临床前验证，其实际效果和监管审批进度将是后续关注焦点。"
+        ],
+        "why": "生成式仿真正在从娱乐走向严肃行业应用。Cosmos-H-Dreams标志着AI在医疗机器人模拟训练上的关键突破，可能改写手术机器人开发和上市周期。对于投资临床AI和医疗机器人方向的人来说，这是一条必须追踪的技术信号。",
+        "links": [
+          [
+            "Hugging Face Blog: NVIDIA Cosmos-H-Dreams",
+            "https://huggingface.co/blog/nvidia/cosmos-h-dreams"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 如何拓展工作边界？OpenAI 新研究揭示 ChatGPT 正在重塑岗位职责",
+        "dek": "OpenAI 最新研究显示，ChatGPT 用户正在跨越传统岗位分工，承担更多元的工作任务，企业的角色边界正变得模糊。",
+        "details": [
+          "OpenAI 于 7 月 27 日发布一项新研究，考察 AI 对工作内容的影响。结果显示，ChatGPT 用户普遍在执行超出自身岗位描述的任务——软件工程师写文案，市场人员做数据分析，岗位边界正在消融。",
+          "研究指出，AI 不再只是“替代”工具，而是“扩展”能力。员工能在更少监督下完成跨职能工作，甚至进入新领域。这暗示着未来企业组织形态可能更扁平、更灵活。",
+          "不过，该研究也指出，这种扩展并非无代价：员工需要快速学习新技能，企业也需要重新设计考核与协作机制。AI 的普及或许会加速“全栈型人才”的兴起，同时挑战传统的岗位定义。"
+        ],
+        "why": "对企业 HR 和创业者来说，这意味着需要重新思考职位描述和团队结构：AI 能让一个人干多个人的活，但也要求更快的技能迭代和管理创新。",
+        "links": [
+          [
+            "OpenAI News: How AI is expanding what people do at work",
+            "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "行业领导者联合成立开放安全AI联盟",
+        "dek": "NVIDIA 等公司发起开放安全 AI 联盟，聚焦 AI 安全与防护",
+        "details": [
+          "7 月 27 日，NVIDIA 联合多家行业领导者正式宣布成立开放安全 AI 联盟（Open Secure AI Alliance）。该联盟旨在通过开放协作的方式，制定 AI 安全与防护的技术标准和最佳实践，覆盖模型安全、数据隐私、攻击防御等关键领域。",
+          "联盟初始成员涵盖芯片厂商、云服务商和 AI 研究机构，但具体名单尚未完全公开。此举正值全球对 AI 系统安全性关注度急剧上升之际，此前多起 AI 模型泄露和对抗性攻击事件引发广泛担忧。",
+          "据知情人士透露，联盟将首先发布一套基础安全基准测试工具，用于评估大语言模型在对抗性输入下的鲁棒性。未来计划还包括推出开源安全库和威胁情报共享机制。",
+          "这一联盟的成立标志着 AI 安全从单打独斗走向行业联合。与已有的 MLCommons 或 Frontier Model Forum 不同，Open Secure AI Alliance 更侧重底层安全基础设施和开放标准，可能对中小企业和初创公司参与 AI 安全建设产生直接帮助。"
+        ],
+        "why": "AI 安全问题正在从学术讨论走向产业落地，开放安全联盟的出现意味着安全能力将成为 AI 产品的核心竞争要素，同时也为安全创业公司提供了新的生态合作机会。",
+        "links": [
+          [
+            "Google News AI Labs",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1jbERSYTYzMDlvaExvNHBYWTZrU2Zfd210S2U0NHAyMDBqWG5DS0hkenZPaUgxVDcxcEtPUUhrbVhObUpvQzV2b0VKSzRjOF9sMW9WdW03ZVhyUC1TaG5XVGdHS3Q?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "英伟达、SpaceX、微软联合发起AI安全倡议，OpenAI网络攻击余波未平",
+        "dek": "三大巨头联手推动AI安全标准，应对日益升级的攻击威胁。",
+        "details": [
+          "7月27日，英伟达、SpaceX和微软联合宣布启动一项AI安全倡议，旨在应对日益严峻的AI系统安全威胁。该倡议正值OpenAI网络攻击事件持续发酵，凸显行业对AI安全防护的紧迫需求。",
+          "据悉，该倡议将聚焦制定AI安全行业标准、共享威胁情报以及开发开源安全工具，避免类似OpenAI的数据泄露和模型篡改事件再次发生。参与方希望通过跨企业协作，建立从模型训练到部署的全链路安全基线。",
+          "目前具体倡议名称和参与机制尚未完全公开，但三家公司的加入预示着AI安全正从单打独斗转向行业联盟。分析人士认为，这可能是应对未来国家级AI攻击的前奏。"
+        ],
+        "why": "AI安全正从企业级议题上升为国家战略，跨行业联盟的出现意味着安全投入将加速标准化，相关安全工具和咨询服务可能迎来爆发。",
+        "links": [
+          [
+            "Google News AI Labs: Nvidia, SpaceX, Microsoft launch AI safety initiative as OpenAI cyber",
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxOR3VYRDgzbDNGN1hfYnpXRXhqY1dfU2h4M1VsR2FSVjE0SDJsb1V6cENtclZYdkxEaUxSa0JmTTNTa0Z0OExhR2Y2ck9LVnVpNTFBVXJYeXNRdW94cmEzbE1ueFVYTXExN0VqUmZ4V1dVSTdRUlNrN1lPVVZET1plSU1pMNIBiAFBVV95cUxQZnhoenA3SDZieTZNTy1SbEZndXZRMjFmN1ZJemI2SHFkdF90Zmt1T013cUM5bWZObzVYMVpNVXd3Zk9MS1Ywa2xrdUpOT1VTYUt4aW5qVHRfX0Q2UlM5ME1VX0RnOGY1RUxqZkJBODhjUW9hU0JzemZEWnNDWlk2OVNlN0FFQU5o?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 评估新范式：个人LLM代理需在时间干预下进行用户条件测试",
+        "dek": "一篇新论文指出，现有AI代理评估孤立测试工具调用、记忆和安全，无法反映真实用户场景。研究者提出须在同一时间干预下，跨不同用户状态重放测试，以衡量故障如何跨组件传播。",
+        "details": [
+          "随着AI代理越来越多地承担个人助理角色——记录日程、调用工具、遵循偏好——它们的性能评估却仍停留在“静态”阶段。现有基准要么只测工具调用（不变API），要么只测记忆（回忆或遗忘），要么只测安全（固定策略）。但这些测试忽略了代理的核心特征：它的状态会随着每个用户的使用而演化，包括记忆、习得的技能、工具配置和策略状态。一篇来自 arXiv 的论文（2607.21635）系统性地指出，我们需要一种新的评估协议。",
+          "该论文提出的核心思想是：在同一时间干预下，针对不同的持续用户条件状态进行重放测试，并测量故障如何在代理组件间传播。例如，一个代理在用户A那里学到了“习惯性推迟会议提醒”，那么在用户B那里，当出现类似的时间冲突时，代理是否还能正确行事？研究者形式化地定义了四个必要条件：显式的时间干预、跨不同用户状态的持续状态、故障传播的测量，以及重放协议的标准化。",
+          "这项工作的意义在于，它打破了“评估孤岛”，将个人AI代理的真正挑战暴露出来。对于产品开发者而言，这意味着不能只优化单个能力模块，而需要考虑整个体验的时间连续性；对于投资者而言，那些能够建立“用户条件评估”框架的团队，可能更有机会构建出真正可靠的个人AI助手。"
+        ],
+        "why": "这篇论文为个人AI代理的评估设立了新标准，预示着行业将从“孤立的单点测试”转向“用户条件的时间序列测试”，对产品设计、研发投入和风险评估都具有指导意义。",
+        "links": [
+          [
+            "arXiv cs.LG: Toward User-Conditioned Evaluation of Personal LLM Agents under Temporal Interventions",
+            "https://arxiv.org/abs/2607.21635"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：Inside the Model Factory — Poolside AI 联合CEO Eiso Kant",
+        "dek": "Poolside AI 小团队如何用“模型工厂”训练出 118B MoE 模型 Laguna S，击败 Thinky 的万亿参数开源模型。",
+        "details": [
+          "在 Latent Space 最新一期播客中，Poolside AI 联合CEO Eiso Kant 详细介绍了他们如何以一支小型顶尖研究团队，搭建出高效的“模型工厂”（Model Factory），训练出仅 118B 参数的混合专家模型（MoE）Laguna S，并在多项基准上超越了 Thinky 规模接近 1T 参数的开放权重模型。",
+          "Kant 认为，模型性能的关键不在于参数数量，而在于数据质量、训练架构和工程效率。Poolside 专注于为软件工程领域定制模型，通过垂直深耕实现了‘以小博大’的效果。",
+          "他还透露，这仅仅是开始，Poolside 正在迭代更强版本，并计划将模型工厂能力开放给企业客户。这意味着未来更多公司可能无需从头训练大模型，而是利用类似工厂的模式快速定制领域模型。"
+        ],
+        "why": "这个观点挑战了‘参数越大越好’的主流叙事，为资金有限的创业公司提供了新路径：通过聚焦垂直场景和高效的训练基础设施，小团队也能产出世界级模型。对投资者而言，应关注模型架构创新和工程效率，而非单纯堆算力。",
+        "links": [
+          [
+            "Latent Space: Inside the Model Factory — Eiso Kant, Poolside AI",
+            "https://www.latent.space/p/poolside"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-07-23",
+        "freshnessLabelEn": "Fallback | published 2026-07-23",
+        "freshnessLabel": "补位｜发布于 2026-07-23"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI信号：AI网络安全上升为行业首要议题",
+        "dek": "Latent Space 指出，近期多条网络安全头条共同指向一个趋势——AI安全正从技术问题演变为行业共识的优先项。",
+        "details": [
+          "知名AI社区Latent Space在其7月22日的AI新闻简报中观察到，近期出现多条与网络安全相关的重磅头条，这些事件叠加在一起，使AI安全成为行业“最受关注的议题”。报道虽然没有逐一列举具体事件，但指出从政策收紧、企业安全事件到研究突破，多个维度都在指向同一个方向：AI系统的防护能力已不再是锦上添花，而是决定产品能否大规模落地的关键。",
+          "从宏观视角看，当AI开始嵌入金融、医疗、基础设施等核心领域，攻击面的扩大不可避免。Latent Space的观察呼应了近期硅谷和华盛顿的普遍论调：安全不是成本，是准入门槛。对于创业者而言，忽视安全设计的AI产品可能在监管和用户信任上双重失分。"
+        ],
+        "why": "Latent Space是AI行业高信噪比的信息源，其“风向观察”往往比官方报告更早反映业界集体判断。AI安全成为头条议题意味着产品团队和投资人需要优先考虑安全架构，安全工具和合规方案也将成为新的创业机会。",
+        "links": [
+          [
+            "Latent Space: [AINews] AI Cybersecurity becomes top of mind",
+            "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top"
+          ]
+        ],
+        "sourceDate": "2026-07-22",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-22",
+        "freshnessLabelEn": "Fallback | published 2026-07-22",
+        "freshnessLabel": "补位｜发布于 2026-07-22"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "Nvidia 牵头开发开源 AI 网络安全工具，应对 Hugging Face 黑客事件",
+        "dek": "在 Hugging Face 遭黑客攻击后，Nvidia 领衔推出开源 AI 安全工具，旨在保护模型供应链。",
+        "details": [
+          "继 Hugging Face 近期遭遇黑客攻击后，Nvidia 正牵头推动开源 AI 网络安全工具的开发。该事件暴露了 AI 模型托管和分发环节的脆弱性，引发了行业对供应链安全的广泛关注。Nvidia 此举旨在为开发者提供可审计、可定制的安全方案，降低类似攻击风险。",
+          "新工具将聚焦于 AI 模型的完整性验证、依赖扫描和运行时防护，覆盖从训练到部署的全流程。Nvidia 计划将其作为开源项目托管，鼓励社区贡献，以期形成行业通用标准。目前已有多个 AI 基础设施公司表示支持，但具体代码仓库和发布时间尚未公布。"
+        ],
+        "why": "此项目标志着业界对 AI 供应链安全的高度重视，开源工具可能成为未来模型部署的安全基石，值得开发者和安全团队密切关注。",
+        "links": [
+          [
+            "Google News: Nvidia leads push for open AI cyber tools after Hugging Face hack",
+            "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSlZnR1FJcERFekN3OTk3Qk1jbUlYUmxrcE9mZkdBVTJzR1lEX3FFWU84RG9SWWo1cXJjelBVZWxKS2hJWHJJdzJiUGMyRmoxV2ZMNDl3SkxmbUJVcXlWNHlxTFoyaHNhTUNlMnZNdml1S1A3a29UUHhwSGZwalh4cXd6enV0TGNoMU9xV0gyQlh5OXkydmdSajFmaFVMdEktMGxZ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "NotebookLM：用真实资料构建的 AI 研究笔记本",
+        "dek": "上传文档，AI 帮你问答并自动引用来源，还能生成音频摘要。",
+        "details": [
+          "Google 的 NotebookLM 是一款面向研究和学习的 AI 工具，核心思路是“source-grounded”——你上传 PDF、网页、笔记等资料后，AI 只基于这些资料回答问题，并自动生成引用标注，避免大模型常见的幻觉。它特别适合需要处理大量长文档的场景，比如学术论文、行业报告、法律文件等。",
+          "除了文字问答，NotebookLM 还能生成“音频摘要”，将多篇文档内容浓缩成一段类似播客的对话，方便通勤或碎片时间回顾。这一功能在用户中反响不错，被认为比单纯听文字转语音更有沉浸感。",
+          "目前 NotebookLM 免费开放，支持 Google 账号登录。它不依赖通用知识，而是忠实于用户提供的资料，因此在企业知识管理、学生备考、研究助理等场景有潜力。不过它仍处于早期阶段，对非英语文档的支持和长文档的上下文长度还有待观察。"
+        ],
+        "why": "NotebookLM 代表了一种“可信赖 AI”的产品方向——将 LLM 的生成能力约束在用户指定的资料范围内。对于关注 AI 应用落地的人，它提供了一个观察“如何用 AI 增强而非替代人类思考”的窗口。",
+        "links": [
+          [
+            "Curated AI Products: NotebookLM",
+            "https://notebooklm.google/"
+          ]
+        ],
+        "sourceDate": "2026-07-25",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Fellou：面向研究与网页自动化的 Agent 浏览器",
+        "dek": "Fellou 将自己定位为“代理型浏览器”，可搜索、导航、收集信息并自动化网页工作流，适合观察浏览器即 Agent 的全新产品形态。",
+        "details": [
+          "Fellou 是一款以 AI Agent 为核心的浏览器，能够理解用户的研究意图，自动在多个网页间搜索、提取和整理信息。不同于传统浏览器需要手动操作，Fellou 更像一个智能助手，用户只需描述任务目标，它就能规划步骤并执行网页上的点击、填写、抓取等操作。",
+          "该产品瞄准的是知识工作者和研究人员常见的重复性网页操作场景，比如竞品信息收集、数据聚合、表单填写等。Fellou 的价值在于将浏览器从被动展示工具转变为主动执行工具，有望显著提升工作效率。",
+          "当前，浏览器作为 Agent 的载体正在成为一个活跃的产品品类，OpenAI、Google 等大公司也在探索类似功能。Fellou 以独立产品的形式切入，说明创业团队仍有机会在细分场景做出差异化。"
+        ],
+        "why": "浏览器是 AI Agent 最自然的人机交互入口之一，Fellou 将 Agent 能力直接嵌入浏览器，是对现有工作流效率瓶颈的直接回应，值得关注同类产品的演进和用户接受度。",
+        "links": [
+          [
+            "Curated AI Products: Fellou: agentic browser for research and workflow automation",
+            "https://fellou.ai/"
+          ]
+        ],
+        "sourceDate": "2026-07-25",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "MCP：AI Agent 的“USB-C”接口",
+        "dek": "理解 AI Agent 如何连接外部工具、数据和企业系统。",
+        "details": [
+          "MCP（Model Context Protocol，模型上下文协议）是近期 AI 领域最受关注的基础设施标准之一。它的核心理念是为大语言模型提供一套统一、安全的方式去调用外部工具、访问数据库、读写文件或与企业系统交互——就像 USB-C 让不同设备用同一接口充电和传输数据一样。",
+          "在过去，开发者需要为每个模型单独编写工具调用代码，安全性和兼容性都是痛点。MCP 通过定义客户端-服务器架构，使模型可以通过标准化的“工具清单”发现并调用外部能力，同时将敏感权限控制在用户侧。",
+          "这一协议的兴起，意味着 AI Agent 不再只是“聊天机器人”，而是能真正执行任务的数字员工。无论你是让 Agent 查询 CRM 系统、生成报表，还是控制智能家居，MCP 都在底层降低集成成本，推动 Agent 从演示走向规模化部署。"
+        ],
+        "why": "对于产品经理和创业者，理解 MCP 有助于判断未来 AI 应用的架构方向——它可能成为企业级 Agent 的标配，就像 REST API 之于 Web 服务。",
+        "links": [
+          [
+            "OpenAI：AI 如何扩展人们的工作范围",
+            "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-07-24",
     "title": "AI Daily Atlas",
     "meta": "2026年7月24日",
@@ -14717,6 +15067,362 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-07-28",
+    "title": "AI Daily Atlas",
+    "meta": "July 28, 2026",
+    "headline": "compute and infrastructure plus models and platforms shape today’s AI map",
+    "summary": "The main signal today is compute and infrastructure plus models and platforms. compute, chips, data centers, and supply chains remain the base layer of AI competition At the same time, models, APIs, and platform entry points are still moving quickly, with usability becoming the key test. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Ilya Sutskever’s Safe Superintelligence partners with Nvidia to scale its AI research",
+        "dek": "AI 超级公司或明星创业公司的关键人事/组织新闻，需要补足背景、影响和后续观察点。",
+        "details": [
+          "This signal comes from TechCrunch AI：Ilya Sutskever’s Safe Superintelligence partners with Nvidia to scale its AI research. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "TechCrunch AI: Ilya Sutskever’s Safe Superintelligence partners with Nvidia to scale its A",
+            "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Moonshot AI Releases Kimi K3 Model Weights and Technical Report",
+        "dek": "The Chinese AI startup behind Kimi chatbot open-sources its latest model, signaling intensifying competition in open-weight foundation models.",
+        "details": [
+          "Moonshot AI, the Beijing-based startup behind the popular Kimi chatbot, has published the model weights and a technical report for its latest large language model, Kimi K3. The move follows a growing trend among Chinese AI labs to release open-weight models, often with permissive licenses, to attract developers and build ecosystem credibility.",
+          "The release comes as the open-weight model space heats up, with rivals like DeepSeek, Alibaba’s Qwen, and Zhipu AI also offering openly accessible models. By sharing K3’s weights and technical details, Moonshot aims to position itself as a transparent and community-friendly player, although the model’s performance benchmarks relative to peers (e.g., on MMLU or coding tasks) have not been independently verified from this announcement."
+        ],
+        "why": "This release underscores the strategic shift among Chinese AI labs toward open-weight models to compete for developer mindshare and accelerate real-world adoption, while also putting pressure on US open-weight leaders like Meta’s Llama.",
+        "links": [
+          [
+            "Google News China AI Signals: 月之暗面发布Kimi K3模型权重、技术报告 - Sohu",
+            "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNN2pHZ3RQZUU4UzAwYXBQdWt1dEltdEY0bjFxblhVUXpHNGtPMWlURzBiRXpLTDItQmt3MVNlOUgwSWxnZ1ZDX2I5V3RrNnEza05za2ZFNUNqeXJldFJqcTl5dFZkbUk5aExFUzJNZDhyTnc5VmE0T2RvTHhzcTJBQ3o4YVo2VzJ6?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek Pauses Second Funding Round After $7B Raise, Report Says",
+        "dek": "The Chinese AI star is reportedly halting its next financing as it eyes a potential $10 billion round, raising questions about market appetite.",
+        "details": [
+          "DeepSeek has reportedly paused its second funding round, according to a report from Chinese media outlet Guancha.cn. The startup raised $7 billion in its first round and is now planning another round of up to $10 billion, though the timing remains uncertain.",
+          "The pause comes amid escalating competition in China’s AI race, where firms like Baidu, Alibaba, and Moonshot AI are aggressively raising capital and launching new models. DeepSeek’s decision may reflect strategic recalibration or shifting investor sentiment in a volatile funding environment.",
+          "If the delay extends, it could slow DeepSeek’s ability to scale compute resources and compete on frontier model development, while giving rivals an opening to capture market share."
+        ],
+        "why": "The pause signals a potential cooling in China’s AI fundraising frenzy and may force DeepSeek to prioritize efficiency over scale, reshaping near-term competitive dynamics.",
+        "links": [
+          [
+            "Google News China AI Signals: DeepSeek据报暂停第二轮融资 首轮筹70亿美元后再谋百亿 - 观点网",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBodlNUQ2JSVzNOVE5PTWE3ekxFbWpETVprQjRWakY1b1ZENjRMaG84OW03UTg5WGpOMnk1VWs5UThnMUVTdUxVcG5KTURtdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "NVIDIA Cosmos-H-Dreams: Bringing Real-Time Generative Simulation to Surgical Robotics",
+        "dek": "NVIDIA unveils Cosmos-H-Dreams, a generative simulation model for surgical robotics, enabling real-time, photorealistic training environments.",
+        "details": [
+          "NVIDIA has released Cosmos-H-Dreams, a new generative simulation model designed specifically for surgical robotics. The model can create real-time, photorealistic surgical scenes, allowing robots to train in diverse and realistic scenarios without the need for physical data collection. This builds on NVIDIA's broader Cosmos platform for physical AI simulation.",
+          "The key innovation is the integration of real-time generation with surgical domain-specific knowledge, potentially reducing the time and cost of training robotic systems for delicate procedures. While the initial focus is on simulation, the technology could eventually bridge the sim-to-real gap in medical robotics, accelerating regulatory approval and clinical adoption.",
+          "Observers note that this positions NVIDIA deeper into healthcare AI infrastructure, competing with specialized medical simulation providers. The Hugging Face blog post includes model weights and inference code, lowering the barrier for researchers and startups to experiment with generative simulation in surgery."
+        ],
+        "why": "This marks a significant step for generative AI in medical robotics, offering a scalable way to train surgical robots safely and efficiently. For AI practitioners, it opens up new opportunities in simulation-based reinforcement learning and domain adaptation.",
+        "links": [
+          [
+            "Hugging Face Blog: NVIDIA Cosmos-H-Dreams",
+            "https://huggingface.co/blog/nvidia/cosmos-h-dreams"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "How AI is expanding what people do at work",
+        "dek": "OpenAI study reveals ChatGPT users are taking on broader task sets, blurring traditional job boundaries.",
+        "details": [
+          "OpenAI released new research examining how ChatGPT is changing the nature of work. The study finds that users are not simply automating existing tasks — they are expanding into new activities across roles, effectively reshaping job descriptions from within.",
+          "Key patterns show professionals adopting tasks from adjacent functions, such as marketers writing code or engineers drafting policy. This cross-role expansion suggests AI is enabling a more fluid division of labor, where skills matter more than titles.",
+          "The implications are significant for workforce planning: companies may need to redesign career paths around augmented capabilities rather than fixed job slots. However, the research draws on early adopter behavior, and it remains unclear how this will scale across industries and less tech-savvy workforces."
+        ],
+        "why": "This research challenges the narrative that AI primarily automates jobs — instead, it empowers workers to redefine their roles, which has direct implications for product design, HR tech, and corporate strategy.",
+        "links": [
+          [
+            "OpenAI News: How AI is expanding what people do at work",
+            "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Industry Leaders Unite in Open Secure AI Alliance for AI Safety and Security",
+        "dek": "NVIDIA and other major AI players form an open consortium focused on AI safety and security, aiming to establish shared best practices and open-source tools.",
+        "details": [
+          "NVIDIA announced the formation of the Open Secure AI Alliance, bringing together leading AI companies to address growing concerns around AI system safety and security. The alliance aims to develop open standards, share threat intelligence, and create open-source security tools that can be adopted across the industry.",
+          "The initiative comes as regulators worldwide push for stronger AI governance, and high-profile incidents of AI misuse have heightened the urgency. While specific members were not fully disclosed, the alliance is expected to include major cloud providers, AI labs, and cybersecurity firms.",
+          "By pooling resources and expertise, the alliance hopes to reduce fragmentation in AI security practices and accelerate the deployment of safer AI systems. This marks a significant step toward industry self-regulation, though questions remain about participation scope and enforcement mechanisms."
+        ],
+        "why": "This alliance signals a shift toward collective responsibility for AI safety, which could shape future regulatory frameworks and create new market opportunities for security-focused AI startups.",
+        "links": [
+          [
+            "NVIDIA Blog via Google News AI Labs",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1jbERSYTYzMDlvaExvNHBYWTZrU2Zfd210S2U0NHAyMDBqWG5DS0hkenZPaUgxVDcxcEtPUUhrbVhObUpvQzV2b0VKSzRjOF9sMW9WdW03ZVhyUC1TaG5XVGdHS3Q?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Nvidia, SpaceX, Microsoft launch AI safety initiative as OpenAI cyberattack fallout continues",
+        "dek": "A new coalition on AI safety emerges as the industry grapples with the implications of the recent OpenAI security breach.",
+        "details": [
+          "On July 27, Nvidia, SpaceX, and Microsoft announced a joint AI safety initiative, signaling a cross-sector push to establish guardrails for advanced AI development. The timing is notable: the announcement comes amid ongoing fallout from a cyberattack on OpenAI, which has raised urgent questions about the security of frontier AI models.",
+          "The initiative brings together three companies with distinct AI stakes: Nvidia supplies the compute infrastructure, Microsoft is a major AI platform operator and OpenAI investor, and SpaceX brings a perspective on AI in autonomous systems and aerospace. Their collaboration suggests that AI safety is no longer just a research topic but a strategic imperative for critical infrastructure.",
+          "While details of the initiative remain scarce, the involvement of SpaceX indicates a focus on real-world, high-stakes deployments—such as autonomous drones or space-based AI—where safety failures could have catastrophic consequences. The cyberattack on OpenAI serves as a catalyst, demonstrating that even well-funded AI labs are vulnerable, and that safety protocols must extend beyond technical alignment to include cybersecurity."
+        ],
+        "why": "This coalition marks a shift from isolated safety research to industry-wide governance, potentially influencing future AI regulation and investment priorities. For startups and developers, it signals that safety and security features will become a competitive differentiator, especially for enterprise and defense contracts.",
+        "links": [
+          [
+            "Google News AI Labs: Nvidia, SpaceX, Microsoft launch AI safety initiative as OpenAI cyber",
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxOR3VYRDgzbDNGN1hfYnpXRXhqY1dfU2h4M1VsR2FSVjE0SDJsb1V6cENtclZYdkxEaUxSa0JmTTNTa0Z0OExhR2Y2ck9LVnVpNTFBVXJYeXNRdW94cmEzbE1ueFVYTXExN0VqUmZ4V1dVSTdRUlNrN1lPVVZET1plSU1pMNIBiAFBVV95cUxQZnhoenA3SDZieTZNTy1SbEZndXZRMjFmN1ZJemI2SHFkdF90Zmt1T013cUM5bWZObzVYMVpNVXd3Zk9MS1Ywa2xrdUpOT1VTYUt4aW5qVHRfX0Q2UlM5ME1VX0RnOGY1RUxqZkJBODhjUW9hU0JzemZEWnNDWlk2OVNlN0FFQU5o?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Toward User-Conditioned Evaluation of Personal LLM Agents under Temporal Interventions",
+        "dek": "A new arXiv paper proposes a unified framework for evaluating personal LLM agents that accounts for temporal interventions and persistent user-specific state.",
+        "details": [
+          "Personal LLM agents—from memory-augmented chatbots to tool-using assistants—are increasingly expected to adapt to individual users over time. Yet current benchmarks fragment evaluation: tool-use tests check API calls, memory tests measure recall, and safety tests enforce static rules. This paper argues that real-world failures often occur at the intersection of these capabilities.",
+          "The authors formalize four conditions for evaluating personal agents: (1) explicit temporal interventions (e.g., changing a user preference mid-conversation), (2) persistent state across interventions, (3) user-conditioned agent behavior, and (4) cross-component error propagation. They propose a testing protocol that replays the same temporal intervention across different user states to reveal how an agent's memory, tool use, and policy interact.",
+          "For example, an agent that correctly recalls a user's calendar but fails to update a recurring event after a time-zone change exposes a gap between memory retrieval and policy execution. The paper provides a concrete taxonomy of such failure modes and suggests designing evaluation suites around user-conditioned scenarios rather than isolated capability checks.",
+          "This framework arrives as major labs race to release 'personal AI' features—Apple Intelligence, Google's Project Tailor, and various memory-enabled chatbots. Without standardized evaluation, product claims around personalization remain hard to verify."
+        ],
+        "why": "For product leaders and investors, this paper highlights that current benchmarks under-test the critical seam between memory, reasoning, and policy in personal AI agents. Adopting such a framework could become a new standard for trust and safety in consumer AI products.",
+        "links": [
+          [
+            "arXiv cs.LG: Toward User-Conditioned Evaluation of Personal LLM Agents under Temporal Interventions",
+            "https://arxiv.org/abs/2607.21635"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Inside the Model Factory — Eiso Kant, Poolside AI",
+        "dek": "Poolside co-CEO reveals how a small team built a 118B MoE model that outperforms massive open-weight systems, challenging assumptions about scale and resources.",
+        "details": [
+          "In a Latent Space interview, Poolside AI co-CEO Eiso Kant shares the philosophy behind their 'model factory' — a highly efficient training pipeline that produced Laguna S, a 118B parameter mixture-of-experts model. According to Kant, this model beats Thinky's roughly 1 trillion parameter open-weight model on key coding benchmarks, despite being nearly 10x smaller. The key insight: a focused, small team of top researchers can achieve outsized results by obsessive attention to data quality and training dynamics, rather than brute-force scaling.",
+          "Kant emphasizes two critical points: first, that the model factory approach is 'just the beginning' — they plan to iterate rapidly with smaller, targeted experiments rather than monolithic giant models. Second, he argues that most AI labs over-invest in compute and under-invest in data curation and engineering infrastructure. Poolside’s success suggests that strategic efficiency, not just raw budget, determines performance. This viewpoint directly challenges the prevailing narrative that frontier models require massive teams and capital, offering an alternative blueprint for AI startups."
+        ],
+        "why": "For startup founders and AI investors, this interview provides a counter-narrative to the 'bigger is better' dogma, highlighting how specialized talent and data discipline can create competitive advantages without matching Big Tech's compute budgets.",
+        "links": [
+          [
+            "Latent Space: Inside the Model Factory — Eiso Kant, Poolside AI",
+            "https://www.latent.space/p/poolside"
+          ]
+        ],
+        "sourceDate": "2026-07-23",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-07-23",
+        "freshnessLabelEn": "Fallback | published 2026-07-23",
+        "freshnessLabel": "Fallback | published 2026-07-23"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "[AINews] AI Cybersecurity becomes top of mind",
+        "dek": "Latent Space highlights a growing trend: AI-driven cyber threats and defenses are escalating, making cybersecurity a critical priority for AI companies and enterprises.",
+        "details": [
+          {
+            "summary": "AI-powered cyber attacks are rising in sophistication, with tools like automated phishing and deepfake social engineering becoming more common.",
+            "expanded": "The article aggregates recent headlines showing that attackers are using generative AI to create convincing phishing emails and deepfake audio/video for impersonation. Defenders are responding with AI-based detection systems that analyze behavioral patterns and anomaly signatures. The result is an arms race where both sides leverage similar AI techniques."
+          },
+          {
+            "summary": "Security firms and cloud providers are racing to integrate AI into their products, from Microsoft's Security Copilot to startups offering AI-driven XDR.",
+            "expanded": "Major vendors are embedding LLM-based assistants into security operations centers (SOCs) to reduce response times. Meanwhile, startups raised significant funding for AI-native security platforms. The article notes that enterprises should evaluate these tools carefully, as false positives and adversarial attacks remain challenges."
+          },
+          {
+            "summary": "The trend underscores the need for dedicated AI security teams and standard frameworks to audit AI models for vulnerabilities.",
+            "expanded": "Beyond traditional cybersecurity, AI-specific risks like model poisoning, data leakage, and adversarial examples require new governance. The article calls for companies to invest in red-teaming and adopt emerging standards such as the OWASP Top 10 for LLMs."
+          }
+        ],
+        "why": "AI cybersecurity is a rapidly growing sector that will shape investment decisions and product roadmaps. Understanding the key trends and pain points helps founders and VCs identify where the next breakthrough – or crisis – may emerge.",
+        "links": [
+          [
+            "Latent Space: [AINews] AI Cybersecurity becomes top of mind",
+            "https://www.latent.space/p/ainews-ai-cybersecurity-becomes-top"
+          ]
+        ],
+        "sourceDate": "2026-07-22",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-07-22",
+        "freshnessLabelEn": "Fallback | published 2026-07-22",
+        "freshnessLabel": "Fallback | published 2026-07-22"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Nvidia leads push for open AI cyber tools after Hugging Face hack",
+        "dek": "After a breach of Hugging Face, Nvidia is spearheading an effort to develop open-source cybersecurity tools for AI pipelines, signaling a shift toward community-driven defenses.",
+        "details": [
+          "Following the Hugging Face security incident, Nvidia has taken the lead in advocating for open-source cybersecurity tools tailored to AI development workflows. The company argues that proprietary solutions are too slow to adapt to emerging threats in the fast-moving AI ecosystem.",
+          "The initiative aims to create a shared library of defensive tools—such as model integrity checkers and supply-chain scanners—that can be audited and improved by the community. This model mirrors the open-source ethos that already dominates AI model development.",
+          "Major AI infrastructure providers are expected to join the effort, which could accelerate the adoption of standardized security practices across the industry. The move also positions Nvidia as a steward of AI safety beyond hardware."
+        ],
+        "why": "For developers and startups building on open-source models, this push signals that AI supply-chain security will become a non-negotiable layer of the stack, creating opportunities for tools that integrate with existing CI/CD pipelines.",
+        "links": [
+          [
+            "Google News AI Models: Nvidia leads push for open AI cyber tools after Hugging Face hack",
+            "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSlZnR1FJcERFekN3OTk3Qk1jbUlYUmxrcE9mZkdBVTJzR1lEX3FFWU84RG9SWWo1cXJjelBVZWxKS2hJWHJJdzJiUGMyRmoxV2ZMNDl3SkxmbUJVcXlWNHlxTFoyaHNhTUNlMnZNdml1S1A3a29UUHhwSGZwalh4cXd6enV0TGNoMU9xV0gyQlh5OXkydmdSajFmaFVMdEktMGxZ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "NotebookLM: source-grounded AI notebook for research and learning",
+        "dek": "Google's NotebookLM transforms uploaded documents into an interactive, citation-backed research assistant.",
+        "details": [
+          "NotebookLM is a source-grounded AI notebook that lets users upload documents, PDFs, web pages, and other sources, then ask questions against them. It generates responses with citations directly pointing to the original materials, reducing hallucination risks common in general-purpose chatbots. The tool also offers audio summaries, turning long reports into digestible podcast-style overviews.",
+          "Ideal for students, researchers, and professionals, it converts dense papers, reports, or meeting notes into a structured workspace. Users can create notebooks for different projects, each with its own source set, and the AI answers only from those sources. This makes it a reliable companion for synthesis tasks—comparing multiple documents, extracting key findings, or building study guides.",
+          "As a curated fallback pick, NotebookLM highlights the growing demand for productivity-focused AI that respects context and provenance. Unlike general assistants, it prioritizes accuracy and traceability, appealing to anyone who needs verified insights from their own materials."
+        ],
+        "why": "NotebookLM exemplifies a pragmatic AI use case: turning personal documents into interactive knowledge bases. It signals an opportunity for startups to build domain-specific, source-grounded assistants for research, education, or enterprise knowledge management.",
+        "links": [
+          [
+            "Curated AI Products: NotebookLM: source-grounded AI notebook for research and learning",
+            "https://notebooklm.google/"
+          ]
+        ],
+        "sourceDate": "2026-07-25",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Fellou: agentic browser for research and workflow automation",
+        "dek": "A browser that acts as an autonomous agent for web research and routine tasks.",
+        "details": [
+          "Fellou is an agentic browser designed to automate complex web workflows. It can search, navigate, collect information, and execute multi-step tasks on behalf of the user, such as scraping data, filling forms, or monitoring changes on websites. This positions it in the growing category of browser-based AI agents that promise to offload repetitive online work.",
+          "Unlike traditional browser extensions or scripts, Fellou leverages a large language model to understand natural language instructions and adapt to dynamic web pages. For knowledge workers, researchers, and operations teams, this could mean significant time savings on tasks like competitor analysis, price tracking, or literature review. The product reflects a broader trend where AI shifts from chat interfaces to embedded agents that perform actions."
+        ],
+        "why": "Fellou exemplifies the next wave of productivity tools: agentic browsers that turn the web into a programmable environment. For product teams and investors, tracking its adoption and user feedback can reveal how real-world workflows are being automated and where the market is heading.",
+        "links": [
+          [
+            "Curated AI Products: Fellou: agentic browser for research and workflow automation",
+            "https://fellou.ai/"
+          ]
+        ],
+        "sourceDate": "2026-07-25",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "MCP (Model Context Protocol)",
+        "dek": "An open protocol that standardizes how AI agents connect to external tools, data sources, and enterprise systems.",
+        "details": [
+          "MCP, or Model Context Protocol, is an emerging standard first proposed by Anthropic to give AI models a consistent way to access external resources—think of it as a 'USB-C for AI agents.' Instead of each agent or tool requiring custom integrations, MCP provides a universal interface where models can request data, invoke functions, and interact with databases, APIs, and even real-time streams. This reduces fragmentation and makes it easier for developers to build agents that work across different environments, from cloud services to on-premise systems. The protocol is designed to be lightweight, secure, and language-agnostic, enabling everything from simple lookups to complex multi-step workflows."
+        ],
+        "why": "Understanding MCP is essential for anyone building or investing in AI agent infrastructure: it lowers integration costs, improves interoperability, and could become the default way agents interact with the outside world, similar to how HTTP standardized web communication.",
+        "links": [
+          [
+            "OpenAI and Hugging Face partnership announcement",
+            "https://news.google.com/rss/articles/CBMifkFVX3lxTE5QM0NxYjlpZlBQVHNUaVZta3E1aGJ5LTZHcTg5bEU5T3JCbVdIc19BUk5pcFBlR0RNaDhoYVhGRm95TjVTMVZMLU9XOE1MeEhNQS02VGI3TDh6bWktZ2VoYU82eWFVcVJTM0NKbkUtWU83a2IzNUdvZFVCeDVzdw?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-07-24",
     "title": "AI Daily Atlas",
