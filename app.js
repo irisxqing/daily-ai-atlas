@@ -1,5 +1,352 @@
 const archiveZh = [
   {
+    "date": "2026-07-30",
+    "title": "AI Daily Atlas",
+    "meta": "2026年7月30日",
+    "headline": "Agent 与工作流、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕Agent 与工作流和资本与并购展开。Agent 正从演示概念继续走向企业流程和开发者工具和真实任务执行，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "K3发布后，月之暗面Kimi将完成新轮融资",
+        "dek": "模型迭代加速资本动作，Kimi背后的月之暗面再获资金加持",
+        "details": [
+          "月之暗面（Moonshot AI）在发布新一代大模型K3后，正推进新一轮融资。据搜狐科技报道，该轮融资有望在近期完成，具体金额与估值暂未披露。K3于2026年7月下旬发布，在长文本理解与推理能力上对标GPT-4o，此次融资或为下一阶段产品扩张储备弹药。",
+          "这已是Kimi上线以来月之暗面完成的至少第4轮融资。此前，该公司曾获得阿里、红杉等机构数亿美元投资，估值一度突破30亿美元。K3的发布被视为对DeepSeek、Qwen等国产模型的正面回应，新融资将加剧国内大模型创业公司的军备竞赛。",
+          "值得注意的是，月之暗面尚未公开确认该消息。若融资落地，资金可能用于模型训练、Kimi用户增长以及商业化探索。当前Kimi已积累超千万月活用户，但付费转化率仍在初期阶段。"
+        ],
+        "why": "大模型创业公司进入“发布即融资”模式，模型能力成为估值核心锚点。Kimi的持续融资信号表明，资本对头部国产模型仍持乐观态度，但下一阶段竞争将从技术转向生态与商业闭环。",
+        "links": [
+          [
+            "Google News China AI Signals: K3发布后，月之暗面Kimi将完成新轮融资 - Sohu",
+            "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSllacl96R3NKTGlhbUoyWXBVOWR3X1FNSnFDX1VfODBDUGZkMFlzNVpTT3EzMzVmc1M4Rms5X2xlTDJNU1FSOFR1eG91VXVfdDFyNTdaWUNheXFxNHJ4Ri05R2dYUW9wc2E5N2ZURjVsalV3cE1hUlpIbWc4VEk1ZE5aQTA1anZW?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "OpenAI 向10万名学术研究者免费开放 ChatGPT 先进模型",
+        "dek": "旨在加速科学发现，但安全性与学术独立性仍待观察。",
+        "details": [
+          "7月29日，OpenAI宣布向全球10万名学术研究人员免费提供ChatGPT最新最先进的AI模型访问权限，覆盖GPT-4o及后续升级版本。研究人员可通过标准API或专属界面调用模型，用于论文写作、数据分析、实验模拟和跨学科协作。",
+          "这一举措的背景是AI在科研领域潜力巨大，但高昂的API成本限制了高校和非营利机构的参与。OpenAI希望通过降低门槛，推动科学发现的速度，同时收集学术场景下的模型表现反馈，为后续迭代提供数据。",
+          "目前尚不清楚该计划的具体限制条件（如使用时长、数据隐私保护等），且免费访问是否仅限特定学科或机构级别尚未明确。有观察者担心，过度依赖商业AI模型可能影响研究的独立性和可重复性。"
+        ],
+        "why": "此举可能大幅降低AI在学术研究中的使用门槛，催生新的协作范式，但也引发关于数据安全、学术自主性和商业依赖的讨论，值得AI行业和科研资助机构关注。",
+        "links": [
+          [
+            "OpenAI News: Accelerating scientific discovery with ChatGPT for Academic Researchers",
+            "https://openai.com/index/chatgpt-for-academic-researchers"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "汤臣倍健追加投资月之暗面 主业增长承压下布局AI能否成新解？",
+        "dek": "保健品龙头跨界押注AI，月之暗面获新一轮资本加持，传统企业转型信号值得关注。",
+        "details": [
+          "汤臣倍健近日公告追加投资AI初创公司月之暗面，后者是明星产品Kimi智能助手的开发商。此举意味着保健品主业增长放缓后，公司正试图通过AI投资寻找新增长曲线。",
+          "月之暗面此前已获阿里、红杉等机构投资，估值不菲。汤臣倍健的加入，进一步印证AI创业公司正在吸引传统行业资本，投资逻辑从“技术焦虑”转向“产业协同”。",
+          "不过，AI研发回报周期长，且保健品与AI的直接协同场景尚不明确，该笔投资能否有效对冲主业下滑，仍存较大不确定性。"
+        ],
+        "why": "传统企业跨界AI投资已成为新趋势，但需警惕短期估值溢价与长期协同落地之间的落差。这对关注AI应用落地的投资者和创业者而言，既是机会也是警示。",
+        "links": [
+          [
+            "东方财富：汤臣倍健追加投资月之暗面",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5vTk05bFNiN0VVN3F4dFpJQkVqVndxeDhtd0N1aVFJdjNfQS02YjZvVHd3cHZRTEJ3MW4yZWswZWlsVVlhdEttUGFvWDdQQ1FqT2E2REU2dGJ0LXJxQU1tRw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "超越OpenAI、Anthropic！国产AI安全智能体杀进全球前四、国内第一",
+        "dek": "在AI安全领域，一款国产智能体在最新全球排名中一举超越OpenAI和Anthropic，位列第四、国内第一，标志着中国厂商在AI安全攻防赛道取得突破性进展。",
+        "details": [
+          "据7月29日发布的最新AI安全智能体排行榜，一款国产安全智能体进入全球前四，超越OpenAI和Anthropic的对应产品，成为国内排名最高的AI安全系统。该评测主要考察智能体在自主发现漏洞、模拟攻击与防御等任务中的表现。",
+          "该智能体采用了多Agent协作架构，能够像“组团挖漏洞”一样分工配合，在漏洞挖掘效率上显著提升。这反映出国产AI不再仅依赖大模型参数竞赛，而是开始在安全等垂直领域构建实际应用壁垒。",
+          "值得关注的是，OpenAI和Anthropic一直将安全作为核心卖点，此次被国产智能体超越，可能促使它们加速更新安全策略。同时，该排名也为国内政企客户选择AI安全方案提供了新的参考标尺。"
+        ],
+        "why": "这一排名信号表明，国内AI安全能力已跻身全球第一梯队，对网络安全创业公司、大厂安全部门以及依赖AI安全服务的政企客户都具有战略参考价值。",
+        "links": [
+          [
+            "量子位: 超越OpenAI、Anthropic！国产AI安全智能体杀进全球前四、国内第一",
+            "https://www.qbitai.com/2026/07/462447.html"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "ustwo任命Google DeepMind高管Simon Bouton加入董事会，强化AI治理",
+        "dek": "设计工作室ustwo首次在董事会层面设立AI治理职能，任命Google DeepMind资深高管Simon Bouton为新董事。",
+        "details": [
+          "著名设计工作室ustwo宣布，任命Google DeepMind前高管Simon Bouton为非执行董事，专门负责AI治理事务。这是ustwo首次在董事会层面设立AI相关职位，标志着这家以用户体验设计闻名的企业开始从战略高度审视AI伦理与合规。",
+          "Simon Bouton在Google DeepMind期间主导了多项AI安全与治理框架的制定，拥有丰富的技术-商业跨界经验。ustwo的客户包括Google、Uber等科技巨头，其设计决策直接影响大量终端用户，因此AI治理需求尤为迫切。",
+          "此次任命正值全球企业加速AI治理布局之际。ustwo作为设计行业标杆，此举或将引发更多创意和技术咨询公司效仿，将AI伦理纳入董事会议程。同时，也反映出AI治理正在从技术部门转向企业核心决策层。",
+          "后续值得关注的是，Bouton是否会推动ustwo发布公开的AI治理原则，以及该公司如何在其设计流程中嵌入可审计的道德检查机制。对于关注AI伦理投资者而言，这是一次观察企业级AI治理落地的窗口。"
+        ],
+        "why": "此任命将AI治理从技术执行层面提升至董事会战略层面，对整个设计咨询行业的AI伦理实践具有示范效应，同时也为AI治理人才走向企业高层提供了新案例。",
+        "links": [
+          [
+            "Morningstar报道：ustwo brings AI governance to the boardroom with appointment of Google DeepMind executive Simon Bouton",
+            "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcnZzci1DU1FsYmF4WE14NXFkSmVmczRLdDJNQWgwNzE4S2dGZEs3eVloQi1lM3Fka3lKV1JDQzJjY0pfa1doLXR2alFyYXRPSktyVllzSU82ZzVQVG16TkdSWHpBaFIzUzduZW1RVUJjYzdvTmRydFNENVhZdGg0dENQZTdsN29kLXJ2V29TdWt2UmI3aWJXUjYxOGo1cmp1VEljeXVyU200WTJGNWphOUlCdngyUUJPVjIxZ0FfYXhoNHIyZlJackZvZnR5bkx5bVhrUC1EckJfMDA2b2t2Y0VvR29tM0ItdkxCSGRyWTczTUNCSkEw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "ProcAgent：让AI在本地指导你组装家具",
+        "dek": "边缘设备上的智能助手，实时、隐私、可纠错",
+        "details": [
+          "组装家具、维修家电这类“程序性任务”对普通人来说认知负担很重：你得看懂说明书、记住步骤、检查部件状态，一旦犯错还得从头来。传统的AI助手要么依赖云端推理（延迟高、隐私风险大），要么只能提供静态指导，无法感知用户当前的操作进度。",
+          "ProcAgent 是一篇来自arXiv的新研究，它提出了一个完全在边缘设备本地运行的视觉助手框架，专门用来做程序性任务的实时指导。它运行在一块NVIDIA Jetson AGX Orin开发板上（算力相当于一台小型游戏本），利用摄像头观察用户的操作，然后通过“提出-验证”架构（propose-and-verify）来推理当前进度、推断下一步动作，并在用户出错时主动提醒。关键设计是“人机回环”（human-in-the-loop）：系统不会替用户做决定，而是给出建议和确认选项，用户需要确认后再继续。",
+          "相比云端方案，ProcAgent 的最大优势是隐私——所有图像和推理都在本地完成，不上传任何数据；同时延迟极低，适合需要实时反馈的场景。研究团队在多个家具组装和简单维修任务上测试，成功率显著优于纯视觉或纯云端方案。",
+          "这项工作的意义不仅在于这一具体框架，更在于它展示了一种趋势：AI助手正在从“云端对话”走向“边缘智能”，能感知物理世界、在本地实时决策。未来，类似的技术可能嵌入智能家居设备、AR眼镜或机器人，让AI真正成为你的“动手教练”。"
+        ],
+        "why": "ProcAgent 是隐私优先、低延迟的边缘AI典型案例，预示了AI从对话助手向物理世界“操作教练”演进的路径，对智能家居、工业维修、AR辅助等场景有直接启发。",
+        "links": [
+          [
+            "arXiv:2607.24770",
+            "https://arxiv.org/abs/2607.24770"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "超越记忆：一种模板化基板，让LLM Agent实现异构协作知识工作",
+        "dek": "一篇新论文提出“llm-wiki”模式，通过LLM自动维护的互联Wiki，解决AI Agent跨会话记忆缺失与知识碎片化问题，或将重塑研究协作方式。",
+        "details": [
+          "研究项目、教育任务等知识工作中，大量的中间发现、失败路径和被撤回的主张，通常不会出现在论文或共享代码中。后继研究者往往重复前人的错误，因为根本没有记录留存。LLM编码Agent虽已普遍参与，但每次会话都是全新开始，缺乏持久记忆；而基于检索增强生成（RAG）也无法累积组合知识。",
+          "一篇7月29日上传的arXiv论文提出了“llm-wiki”模式：在原始资料与Agent之间插入一个由LLM自主维护的互联Wiki。该Wiki不仅记录最终成果，还捕获决策过程、未走通的方向和修正的逻辑，形成可查询、可继承的知识基板。论文将此称为“模板化基板”（Templated Substrate），旨在让异构的Agent群体能在同一知识体上协作。",
+          "这一思路的价值在于：它把AI Agent从“一次性工具”升级为“持续学习的研究伙伴”。未来，多个Agent可以共享同一Wiki，每次工作都能在前人的基础上推进，而不会遗忘教训。对于AI编程、科学研究和教育场景，这种机制可能大幅降低重复劳动，加速知识积累。",
+          "不过，论文目前仍是概念提出阶段，未披露大规模实验验证。Wiki的维护质量、不同LLM之间的一致性以及存储成本，仍是待解问题。但“llm-wiki”模式已在小范围社区引发讨论，被认为是对RAG和记忆网络的有益补充。"
+        ],
+        "why": "llm-wiki模式为AI Agent的长期记忆与协作提供了一种轻量、可扩展的框架，可能成为AI知识管理的基础设施，对学术研究、企业知识库和AI编程工具的产品设计具有启发意义。",
+        "links": [
+          [
+            "arXiv cs.AI: Beyond Memory: A Templated Substrate for Heterogeneous Collaborative Knowledge",
+            "https://arxiv.org/abs/2607.24759"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "中科院院士对话北电数智AI专家：以 AI 与数学 “乘法效应” 开辟产业落地新路径",
+        "dek": "数学与AI的相互赋能成为产业落地的关键议题",
+        "details": [
+          "中科院院士与北电数智AI专家在对话中提出，数学和AI之间存在“乘法效应”：数学为AI提供理论基础和可解释性支撑，而AI则能反哺数学研究，加速定理发现和猜想验证。这一观点打破了单纯将数学视为AI工具的认知，强调两者协同进化。",
+          "院士指出，当前AI在工业落地中面临鲁棒性和泛化能力不足的瓶颈，根源在于缺少严格数学框架的约束。例如，深度学习模型的“黑箱”特性在金融、医疗等高可靠性场景难以被接受，而数学理论可以给出误差边界和置信区间，降低应用风险。",
+          "北电数智专家分享了实际案例：通过将代数拓扑方法引入图像识别模型，在保留精度的同时将参数规模压缩40%，推理速度提升3倍。这印证了数学工具直接提升 AI 产品经济性的可行性，尤其对边缘端部署有显著价值。",
+          "双方还讨论了AI for Math的突破方向：大模型在符号推理和辅助证明上已展现出潜力，但尚未形成闭环。院士认为，未来3-5年AI有望在组合数学和数论领域产出可验证的原创成果，而数学进步将进一步推动下一代AI架构（如非欧几里得空间表征）的诞生。"
+        ],
+        "why": "这场对话揭示了数学与AI深度融合的产业价值：企业若能在基础理论层面投入研发，有望在模型效率、安全性和可解释性上建立长期壁垒；同时，AI for Math方向的进展可能催生新的科学计算创业机会。",
+        "links": [
+          [
+            "量子位: 中科院院士对话北电数智AI专家：以 AI 与数学 “乘法效应” 开辟产业落地新路径",
+            "https://www.qbitai.com/2026/07/462943.html"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "RSMeM：面向遥感智能体的知识增强记忆演化机制",
+        "dek": "一项来自 arXiv 的研究提出 RSMeM，通过预蒸馏领域知识和在线经验迭代，让遥感 AI Agent 学会从错误中积累经验，提升多步工具调用的鲁棒性。",
+        "details": [
+          {
+            "summary": "核心问题：当前基于大语言模型的遥感智能体缺乏领域认知，且无法将失败经验复用。",
+            "expanded": "遥感分析涉及复杂的多步骤推理和工具调用，但现有 Agent 多数只是通用 LLM 的简单封装，对遥感专业概念和空间关系理解薄弱，导致流程脆弱、易出错。更关键的是，这些错误通常被丢弃，没有形成可复用的经验知识。"
+          },
+          {
+            "summary": "RSMeM 机制：分两层解决——预蒸馏领域知识库 + 在线经验记忆演化。",
+            "expanded": "第一层是层次化知识基础，将遥感领域知识（如地物分类规则、传感器特性）预先蒸馏到 Agent 的记忆中；第二层是记忆演化模块，Agent 在每次任务执行后会将成功的工具调用链和失败的教训压缩成结构化记忆，并在后续任务中按需检索和调整。论文在多个遥感基准集上进行了系统评估，证明该方法在任务完成率和错误恢复率上显著优于基线。"
+          },
+          {
+            "summary": "研究启发：记忆机制可能是 AI Agent 从“工具人”走向“经验式专家”的关键。",
+            "expanded": "RSMeM 不仅仅是一套遥感解决方案，它暗示了 Agent 架构的一个重要方向：把执行过程本身变成可积累的资产。对于任何需要多步骤操作的专业领域（如医疗影像分析、工业质检），该方法都提供了可复制的设计范式。"
+          }
+        ],
+        "why": "该研究展示了如何将领域知识与在线学习结合，提升专业 AI Agent 的可靠性。对于投资和产品团队，这意味着未来定制化 Agent 的核心竞争力可能不再是基础模型大小，而是知识管理和经验复用能力。",
+        "links": [
+          [
+            "arXiv 论文: RSMeM: Knowledge-Enhanced Memory Evolution for Remote Sensing Agents with Systematic Evaluation",
+            "https://arxiv.org/abs/2607.24772"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "微软拟推出开源AI模型，与中国产品竞争",
+        "dek": "据日经中文网报道，微软正计划发布一款开源AI模型，直接对标DeepSeek、Qwen等中国开源模型。",
+        "details": [
+          "微软正在酝酿一个开源AI模型，目的是在开源社区与中国模型抗衡。据日经中文网援引知情人士消息，该项目尚处于早期规划阶段，但战略意图明确：面对DeepSeek、阿里Qwen、智谱GLM等中国模型在开源生态中的快速渗透，微软希望拿出自己的开源方案，避免开发者全面倒向中国阵营。",
+          "目前中国开源模型在Hugging Face下载量、微调生态和性价比上已形成明显优势，微软若推开源模型，可能选择较小参数规模（如7B-13B）以降低门槛，并整合Azure工具链吸引企业用户。不过消息称微软内部对开源策略仍有争议，担心削弱Copilot等商业产品的竞争力。",
+          "如果成行，这将改变微软过去以闭源（GPT系列）和API主导的AI战略，标志其正式进入开源模型军备竞赛。对开发者社区而言，意味着更多高质量基础模型选择，但也可能导致生态进一步碎片化。"
+        ],
+        "why": "这是微软开源策略的重大转折点，说明中国开源模型的影响力已迫使巨头转向防守。开发者可关注微软潜在的开源模型能否在工具链集成和合规性上提供差异化价值。",
+        "links": [
+          [
+            "Google News China AI: 微软拟推出开源AI模型，与中国产品竞争 - 日经中文网",
+            "https://news.google.com/rss/articles/CBMiigFBVV95cUxOeFVTc2x5MkY5MkVLS3ExMUZLWHBEblQ5cWxnZkhMQ2dDLXlDQ1puVUlWSmdqcVlwSWlZYXQ5eDNHdDZudVVXcVc0Wng5TWFQeUhNWE9nXzJUZTVZTUNJZzVrQVRhTE01MW1YWlB3Yk9TNndTQmUxYU1KS0tzcFNFcUQwZ3NxT1dPVXc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Granola：适合真实工作对话的 AI 会议笔记",
+        "dek": "Granola 将会议转化为结构化笔记，无需像笨重的会议机器人一样入侵对话，让团队拥有可搜索的会议记忆和更干净的跟进流程。",
+        "details": [
+          "Granola 是一款面向运营者、产品团队、投资人和顾问的 AI 会议笔记工具。它不打断正常对话，而是在会议结束后自动输出结构清晰的摘要、行动项和标签，帮助用户快速检索过往讨论。",
+          "与 Otter.ai 或 Fireflies 等“实时转录+机器人”模式不同，Granola 强调“对话友好”——它不主动发言、不发送弹窗，只是安静地在后台捕捉关键信息。这种设计适合对会议礼仪敏感的团队。",
+          "Granola 的搜索功能支持按日期、参会人、关键词筛选，甚至可以跨会议关联话题。对于每周十场以上会议的深度用户，这显著降低了信息查找成本。",
+          "产品目前仍处于早期，采取邀请制使用，但已积累了一批来自科技公司和咨询机构的内测用户。它代表了一类“轻量但聪明”的 AI 助手方向——隐藏在工具里，而非占据前台。"
+        ],
+        "why": "Granola 展示了 AI 会议工具从“记录”向“理解”演进的趋势，其轻量设计更可能成为日常工作的自然组成部分，值得关注产品化思路的创业者参考。",
+        "links": [
+          [
+            "Curated AI Products: Granola: AI meeting notes built for real work conversations",
+            "https://www.granola.ai/"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Gamma：AI 原生的演示文稿与文档工作台",
+        "dek": "从一句话到完整 deck，Gamma 用 AI 让内容创作像迭代一样快。",
+        "details": [
+          "Gamma 是一款 AI 原生的内容创作工具，用户只需输入提示或大纲，就能自动生成演示文稿、文档甚至网页。它特别适合战略、营销和内部沟通等需要频繁迭代的工作流。",
+          "与传统 PPT 或文档工具不同，Gamma 把 AI 置于创作起点——你不需要预设模板或手动排版，AI 会根据内容结构自动匹配布局和视觉风格，生成后仍可逐元素编辑。",
+          "速度和迭代是 Gamma 的核心设计哲学。从大纲到完整 deck 仅需几十秒，修改时只需调整文字，AI 会重新适配版式。这对需要快速输出多版方案的市场和产品团队尤其友好。",
+          "Gamma 也支持团队协作与分享，生成的内容直出为链接或网页，无需导出 PDF 或下载文件。在工作流中，它试图替代 Figma 的轻量展示层，让非设计背景的人也能做出专业感内容。"
+        ],
+        "why": "Gamma 印证了 AI 原生产品在办公文档方向的机会：当创作门槛被拉低，迭代成本趋近于零，原有的工具壁垒和付费模式都可能被重构。对创业者而言，垂类场景的 AI 内容工作台仍是蓝海。",
+        "links": [
+          [
+            "Gamma 官网",
+            "https://gamma.app/"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "RAG（检索增强生成）",
+        "dek": "让大模型不再“凭空回答”，而是先查知识库再生成，成为企业知识管理的核心技术。",
+        "details": [
+          "RAG（Retrieval-Augmented Generation）是一种混合架构：当用户提问时，系统先从外部知识库（如企业文档、数据库、网页）中检索相关片段，再将这些片段作为上下文提供给大语言模型生成答案。这种方法有效解决了大模型“幻觉”和知识滞后问题。",
+          "典型的RAG流程包括：文档分块→向量化嵌入→存储到向量数据库→用户问题嵌入→相似度检索→将检索结果与问题一起送入LLM→生成答案。目前主流实现常采用LlamaIndex、LangChain等框架，配合OpenAI Embedding或开源模型。",
+          "RAG已成为企业私有知识问答产品的标配。例如，OpenAI在2026年7月推出ChatGPT for Academic Researchers，为10万名学术研究者免费提供高级模型访问，其中RAG被用于从论文库中检索相关研究，辅助科学发现。类似的应用还包括客服知识库、法律文书分析、医疗文献查询等。",
+          "RAG与Agentic AI的结合是近期趋势——智能体可以自主决定何时检索、检索什么，甚至迭代改进检索策略。OpenAI的田野报告显示，科学家正在使用AI编码代理来现代化科学计算，RAG为这些代理提供了访问领域文献的能力。"
+        ],
+        "why": "RAG是当前AI落地企业场景最务实的技术路径之一，它让大模型在不重新训练的前提下获得最新、最相关的知识，大幅降低AI应用的门槛和风险，值得所有产品经理和决策者关注。",
+        "links": [
+          [
+            "OpenAI：科学计算与Agentic AI",
+            "https://openai.com/index/scientific-computing-agentic-ai"
+          ],
+          [
+            "OpenAI：ChatGPT for Academic Researchers",
+            "https://openai.com/index/chatgpt-for-academic-researchers"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-07-28",
     "title": "AI Daily Atlas",
     "meta": "2026年7月28日",
@@ -15067,6 +15414,343 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-07-30",
+    "title": "AI Daily Atlas",
+    "meta": "July 30, 2026",
+    "headline": "agents and workflows plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is agents and workflows plus capital and M&A. agents are moving from demos into enterprise workflows, developer tools, and real task execution At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "K3发布后，月之暗面Kimi将完成新轮融资 - Sohu",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：K3发布后，月之暗面Kimi将完成新轮融资 - Sohu. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: K3发布后，月之暗面Kimi将完成新轮融资 - Sohu",
+            "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSllacl96R3NKTGlhbUoyWXBVOWR3X1FNSnFDX1VfODBDUGZkMFlzNVpTT3EzMzVmc1M4Rms5X2xlTDJNU1FSOFR1eG91VXVfdDFyNTdaWUNheXFxNHJ4Ri05R2dYUW9wc2E5N2ZURjVsalV3cE1hUlpIbWc4VEk1ZE5aQTA1anZW?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Accelerating scientific discovery with ChatGPT for Academic Researchers",
+        "dek": "OpenAI provides 100,000 academic researchers free access to advanced AI models, aiming to speed up scientific breakthroughs.",
+        "details": [
+          "On July 29, 2026, OpenAI announced it is giving 100,000 academic researchers free access to its most advanced ChatGPT models, including GPT-5 and enhanced reasoning tools. The initiative is designed to remove cost barriers and accelerate scientific discovery across fields like biology, materials science, and climate research.",
+          "Qualifying researchers will gain priority API access and collaborative features, enabling them to analyze large datasets, generate hypotheses, and draft papers more efficiently. This move follows earlier OpenAI programs for nonprofits and educators, signaling a strategic push to embed AI into the academic research workflow.",
+          "While the program is a major step, details on eligibility criteria and model usage limits remain unspecified. The impact could be significant: if widely adopted, it may reduce the time from idea to publication, but concerns about reproducibility and over-reliance on AI-generated results persist."
+        ],
+        "why": "This initiative could reshape how academic institutions allocate research budgets and accelerate the integration of AI into scientific workflows, presenting opportunities for AI startups focusing on research tools and reproducibility verification.",
+        "links": [
+          [
+            "OpenAI News: Accelerating scientific discovery with ChatGPT for Academic Researchers",
+            "https://openai.com/index/chatgpt-for-academic-researchers"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "By-Health Doubles Down on Moonshot AI as Core Business Growth Slows",
+        "dek": "Chinese dietary supplement maker By-Health invests further in Moonshot AI (Kimi), seeking new growth amid stagnant core business.",
+        "details": [
+          "By-Health, a leading Chinese dietary supplement company, has made an additional investment in Moonshot AI, the startup behind the popular Kimi chatbot. The move comes as By-Health's core business faces slowing growth, pressured by market saturation and changing consumer preferences. The company previously invested in Moonshot AI's earlier funding rounds, indicating a deepening commitment to AI as a strategic pivot.",
+          "While the exact investment amount was not disclosed, the timing underscores a trend of non-tech Chinese enterprises rushing to back AI startups in hopes of finding a second growth engine. However, By-Health lacks AI expertise, raising questions about how it plans to integrate or monetize the technology. The partnership could offer Moonshot AI more industry-specific data for vertical applications, but execution risks remain high."
+        ],
+        "why": "This cross-industry signal suggests that even traditional consumer companies see AI as a necessary hedge against stagnation, but the lack of synergy reveals a gap between investment and operational integration.",
+        "links": [
+          [
+            "Google News China AI Signals: 汤臣倍健追加投资月之暗面 主业增长承压下布局AI能否成新解？|速读公告 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5vTk05bFNiN0VVN3F4dFpJQkVqVndxeDhtd0N1aVFJdjNfQS02YjZvVHd3cHZRTEJ3MW4yZWswZWlsVVlhdEttUGFvWDdQQ1FqT2E2REU2dGJ0LXJxQU1tRw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Chinese AI Security Agent Surpasses OpenAI and Anthropic to Rank Top 4 Globally, No.1 in China",
+        "dek": "A domestic AI security agent has overtaken Western leaders in a key cybersecurity benchmark, signaling China's rapid progress in autonomous vulnerability discovery.",
+        "details": [
+          "A Chinese-developed AI security agent has achieved a top-4 global ranking in a prominent cybersecurity benchmark for autonomous vulnerability discovery, outperforming models from OpenAI and Anthropic. The agent also secured the first position among domestic competitors, marking a significant milestone for China's AI security capabilities.",
+          "The benchmark evaluates AI systems on their ability to autonomously identify and exploit software vulnerabilities, a critical task for enterprise and government cybersecurity. The Chinese agent's strong performance highlights the narrowing gap between domestic and Western AI in specialized technical domains, particularly in security-critical applications."
+        ],
+        "why": "This ranking indicates that Chinese AI is rapidly advancing in niche but strategically important areas like cybersecurity, potentially shifting market dynamics and investment priorities toward domestic security AI solutions.",
+        "links": [
+          [
+            "量子位: 超越OpenAI、Anthropic！国产AI安全智能体杀进全球前四、国内第一",
+            "https://www.qbitai.com/2026/07/462447.html"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "ustwo brings AI governance to the boardroom with appointment of Google DeepMind executive Simon Bouton",
+        "dek": "Digital product studio ustwo appoints Simon Bouton, a Google DeepMind executive, to its board to strengthen AI governance and strategic oversight.",
+        "details": [
+          "London-based design and innovation studio ustwo has appointed Simon Bouton, a senior executive from Google DeepMind, to its board of directors. Bouton brings deep expertise in AI strategy and responsible development, signaling that even design-led firms now prioritize formal AI governance structures. The move reflects a broader trend where companies across industries are embedding AI-savvy leaders into governance roles to navigate regulatory, ethical, and product risks.",
+          "ustwo, known for its work with major tech clients, is positioning itself to advise organizations on AI adoption while ensuring its own operations follow best practices. Bouton’s appointment comes as global regulators increase scrutiny on AI accountability, making governance expertise a competitive differentiator. The firm did not disclose specific terms or his exact role, but the decision underscores the growing demand for board-level AI literacy."
+        ],
+        "why": "This appointment signals that AI governance is moving from an operational concern to a boardroom priority, creating opportunities for consulting firms and executives with dual expertise in AI and corporate governance.",
+        "links": [
+          [
+            "Google News AI Models: ustwo brings AI governance to the boardroom with appointment of Google DeepMind executive Simon Bouton - Morningstar",
+            "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOcnZzci1DU1FsYmF4WE14NXFkSmVmczRLdDJNQWgwNzE4S2dGZEs3eVloQi1lM3Fka3lKV1JDQzJjY0pfa1doLXR2alFyYXRPSktyVllzSU82ZzVQVG16TkdSWHpBaFIzUzduZW1RVUJjYzdvTmRydFNENVhZdGg0dENQZTdsN29kLXJ2V29TdWt2UmI3aWJXUjYxOGo1cmp1VEljeXVyU200WTJGNWphOUlCdngyUUJPVjIxZ0FfYXhoNHIyZlJackZvZnR5bkx5bVhrUC1EckJfMDA2b2t2Y0VvR29tM0ItdkxCSGRyWTczTUNCSkEw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "ProcAgent: An Agentic Framework for Procedural Task Guidance on Edge with Human-in-the-Loop",
+        "dek": "A new on-device AI assistant for step-by-step procedural tasks like furniture assembly, designed for privacy and low latency.",
+        "details": [
+          "ProcAgent is a fully on-device, agentic, vision-based assistant that runs on a single NVIDIA Jetson AGX Orin. It addresses the cognitive burden of procedural tasks (e.g., assembly, home repair) by providing real-time, adaptive guidance without relying on cloud inference.",
+          "The system uses a propose-and-verify architecture: it continuously interprets visual input, tracks task progress, reasons about spatial state, and recovers from errors. A human-in-the-loop mechanism allows users to confirm or correct the agent's suggestions, ensuring reliability.",
+          "By operating entirely on edge hardware, ProcAgent avoids the privacy and latency issues of cloud-dependent assistants. This makes it suitable for domestic settings where users are sensitive about camera data and need instant feedback."
+        ],
+        "why": "ProcAgent highlights a trend toward privacy-preserving, real-time AI assistants that can handle complex physical tasks. It opens opportunities for smart home devices, AR glasses, and industrial maintenance tools that require on-device intelligence.",
+        "links": [
+          [
+            "arXiv cs.AI: ProcAgent",
+            "https://arxiv.org/abs/2607.24770"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Beyond Memory: A Templated Substrate for Heterogeneous Collaborative Knowledge Work with LLM Agents",
+        "dek": "A new arXiv paper proposes llm-wiki, a persistent, interlinked wiki maintained by LLM agents to capture and compound knowledge across sessions, solving the memory loss problem in collaborative AI workflows.",
+        "details": [
+          "Current LLM coding agents and knowledge work tools suffer from a critical flaw: they have no persistent memory across sessions. Findings, dead ends, and walked-back claims are lost after each interaction, leading future researchers and agents to repeat the same mistakes. A new arXiv paper (2607.24759) identifies this as a structural gap in how AI agents collaborate on research and education projects.",
+          "The paper introduces the \"llm-wiki\" pattern, originally popularized by Karpathy and others, which inserts an LLM-maintained, interlinked wiki between raw sources and the agent's context. This substrate allows agents to continuously update a shared knowledge base, capturing reasoning and decisions that are routinely excluded from publications and code. The approach offers a path toward compounding knowledge work where each session builds on prior discoveries."
+        ],
+        "why": "If adopted, llm-wiki could become a standard infrastructure layer for LLM-based collaborative agents, transforming how research teams, educators, and developers accumulate and reuse knowledge across projects and organizations.",
+        "links": [
+          [
+            "arXiv cs.AI: Beyond Memory: A Templated Substrate for Heterogeneous Collaborative Knowledg",
+            "https://arxiv.org/abs/2607.24759"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "CAS Academician and BDSP AI Experts Discuss 'Multiplication Effect' of AI and Mathematics for Industrial Applications",
+        "dek": "A panel featuring a Chinese Academy of Sciences academician and AI experts from BDSP explores how mathematics amplifies AI's industrial impact, offering strategic insights for R&D and deployment.",
+        "details": [
+          {
+            "summary": "Core question: How can mathematical theory accelerate AI's transition from lab to factory?",
+            "expanded": "The discussion centered on the 'multiplication effect' where advances in mathematics—such as optimization algorithms, topological analysis, and probabilistic modeling—can dramatically improve AI model efficiency, interpretability, and robustness. The CAS academician emphasized that foundational math breakthroughs are often the bottleneck for next-generation AI, urging more cross-disciplinary collaboration."
+          },
+          {
+            "summary": "Key takeaways from the panel (academician and BDSP experts):",
+            "expanded": "First, integrating domain-specific mathematical frameworks (e.g., symbolic reasoning with neural nets) can reduce data dependency and boost generalization in industrial settings like manufacturing and energy. Second, BDSP shared practical cases where mathematical modeling cut inference costs by an order of magnitude without accuracy loss. Third, both sides called for new curricula that blend math and AI to cultivate talent capable of bridging theory and deployment."
+          }
+        ],
+        "why": "This dialogue underscores a strategic pivot: as AI matures, competitive advantage shifts from pure scale to mathematical rigor. For product and investment decisions, backing teams with deep math expertise may yield outsized returns in reliability and cost.",
+        "links": [
+          [
+            "量子位: 中科院院士对话北电数智AI专家：以 AI 与数学 “乘法效应” 开辟产业落地新路径",
+            "https://www.qbitai.com/2026/07/462943.html"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "RSMeM: Knowledge-Enhanced Memory Evolution for Remote Sensing Agents with Systematic Evaluation",
+        "dek": "A new arXiv paper proposes RSMeM, a mechanism that equips remote sensing AI agents with pre-distilled domain knowledge and online memory evolution to improve multi-step tool execution.",
+        "details": [
+          {
+            "summary": "Problem: current RS agents are domain-agnostic and error-prone",
+            "expanded": "Geoscience research relies on complex analysis of remote sensing (RS) observations, but existing agents built on general-purpose LLMs lack specialized domain knowledge, leading to brittle workflows. Errors from previous tasks are rarely reused, wasting valuable experience."
+          },
+          {
+            "summary": "RSMeM solution: hierarchical knowledge grounding + memory evolution",
+            "expanded": "RSMeM bootstraps agents with pre-distilled domain knowledge (Hierarchical Knowledge Ground) and iteratively integrates online experience (Memory Evolution) for robust multi-step tool execution. The framework includes two components: (i) a structured knowledge base, and (ii) a dynamic memory that evolves with each task, enabling the agent to learn from past failures and successes."
+          },
+          {
+            "summary": "Evaluation: systematic benchmarks show improvement",
+            "expanded": "The authors evaluate RSMeM on multiple remote sensing tasks, demonstrating significant gains in task success rate and execution efficiency compared to baseline LLM-based agents. The systematic evaluation framework itself is a contribution, allowing reproducible assessment of RS agent capabilities."
+          }
+        ],
+        "why": "This paper highlights a critical trend: vertical AI agents require domain-specific memory and knowledge structures to go beyond generic LLM capabilities. For product and investment strategy, it suggests that AI agents in specialized fields (geospatial, healthcare, legal) will increasingly incorporate structured knowledge and experience replay, creating opportunities for startups building domain-adapted agent frameworks.",
+        "links": [
+          [
+            "arXiv cs.AI: RSMeM paper",
+            "https://arxiv.org/abs/2607.24772"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Microsoft reportedly plans to release open-source AI models to rival Chinese offerings",
+        "dek": "The move would mark a strategic shift for Microsoft, which has primarily focused on proprietary models and partnerships.",
+        "details": [
+          "According to a Nikkei report, Microsoft is preparing to launch open-source AI models to better compete with Chinese players like DeepSeek, Qwen, and others that have gained traction through open-weight releases. The report cites unnamed sources familiar with the plans, though Microsoft has not officially confirmed the initiative.",
+          "If true, the strategy would represent a notable departure for Microsoft, which has largely relied on proprietary models (e.g., GPT-4 via OpenAI) and Azure AI services. The company has previously expressed concerns about the rapid adoption of open-source models in China, which could erode its market share in enterprise AI. By releasing open-source alternatives, Microsoft could lower barriers for developers and enterprise customers, especially in price-sensitive regions.",
+          "The specific models or timelines remain unclear. It is also uncertain whether Microsoft would open-source existing models or develop new ones. The move would align with broader industry trends, as major players like Meta (with Llama) and Google (with Gemma) have already embraced open-source releases to drive ecosystem growth."
+        ],
+        "why": "This signals a potential shift in Microsoft's AI strategy, which could reshape the competitive landscape for developer tools and enterprise AI platforms. For startups and developers, it may expand access to capable open-source models, while enterprises should watch for pricing and licensing implications.",
+        "links": [
+          [
+            "Google News China AI: 微软拟推出开源AI模型，与中国产品竞争 - 日经中文网",
+            "https://news.google.com/rss/articles/CBMiigFBVV95cUxOeFVTc2x5MkY5MkVLS3ExMUZLWHBEblQ5cWxnZkhMQ2dDLXlDQ1puVUlWSmdqcVlwSWlZYXQ5eDNHdDZudVVXcVc0Wng5TWFQeUhNWE9nXzJUZTVZTUNJZzVrQVRhTE01MW1YWlB3Yk9TNndTQmUxYU1KS0tzcFNFcUQwZ3NxT1dPVXc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-29",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Granola: AI meeting notes built for real work conversations",
+        "dek": "A lightweight AI note-taker that turns meeting audio into structured, searchable notes without being intrusive.",
+        "details": [
+          "Granola is an AI-powered meeting notes app designed for professionals who want to capture key decisions and action items without the overhead of a full-fledged meeting bot. Unlike many solutions that require explicit bot invitations or integrations with calendar systems, Granola runs locally on the user's Mac and automatically transcribes and structures conversations in real time. The output is a clean, organized summary that highlights decisions, tasks, and next steps, making it easy to search past meetings.",
+          "The product targets operators, product teams, investors, and consultants who deal with a high volume of meetings and need reliable, searchable memory. Granola emphasizes being 'lightweight'—it does not announce itself in meetings, does not require a separate bot account, and works with any conferencing tool (Zoom, Teams, Google Meet, etc.) by capturing system audio. This approach reduces friction and privacy concerns, as all processing happens on-device.",
+          "Key features include automatic speaker labeling, smart summarization that focuses on actionable content, and a timeline view that lets users jump to specific moments in a meeting. The app also supports collaborative editing, allowing team members to refine notes together. While still in early access, Granola has gained attention for its practical design and focus on real-world workflows rather than feature bloat."
+        ],
+        "why": "Granola represents a shift from intrusive meeting bots to passive, privacy-respecting tools that integrate seamlessly into existing workflows. For product builders and investors, it highlights the opportunity in niche productivity verticals where AI can reduce friction without adding complexity.",
+        "links": [
+          [
+            "Granola Official Website",
+            "https://www.granola.ai/"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Gamma: AI-native deck and document creation workspace",
+        "dek": "Turn prompts and outlines into polished presentations, documents, and webpages in minutes.",
+        "details": [
+          "Gamma is an AI-native workspace for creating decks, documents, and webpages. Users start with a prompt or an outline, and Gamma generates a full draft with layouts, images, and styling. It supports real-time collaboration and exports to PDF, PPTX, or shareable links. The tool is designed for strategy decks, marketing materials, and internal communications—essentially any workflow where speed and iteration are critical.",
+          "Unlike traditional slide tools, Gamma abstracts away formatting so teams can focus on content. It offers AI-powered suggestions for structure and visuals, and allows inline editing. For product managers and marketers, Gamma reduces the time from idea to polished output from hours to minutes. The platform has been adopted by startups and enterprises alike, with a free tier and paid plans starting at $10/month."
+        ],
+        "why": "Gamma exemplifies how AI can compress the creation-to-presentation loop in knowledge work. For product builders, it signals a shift toward vertical AI tools that replace general-purpose office suites in specific workflows.",
+        "links": [
+          [
+            "Curated AI Products: Gamma: AI-native deck and document creation workspace",
+            "https://gamma.app/"
+          ]
+        ],
+        "sourceDate": "2026-07-27",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "RAG: Retrieval-Augmented Generation",
+        "dek": "Combine knowledge retrieval with generative AI to ground responses in trusted data.",
+        "details": [
+          "Retrieval-Augmented Generation (RAG) is an AI architecture that connects a large language model (LLM) to an external knowledge base. Instead of relying solely on the model's training data, RAG first retrieves relevant documents or snippets from a vector database, then feeds that context to the LLM to generate a grounded answer. This approach significantly reduces hallucinations and keeps responses up-to-date without retraining.",
+          "RAG is essential for knowledge management and research workflows. Enterprises use it to power internal Q&A bots that answer based on proprietary manuals, research papers, or compliance documents. In science, RAG enables researchers to query thousands of papers instantaneously, citing sources directly. For product builders, integrating RAG is the fastest path to a trustworthy, domain-specific chatbot.",
+          "The core components of RAG are: (1) an embedding model to convert documents into vectors, (2) a vector database (e.g., Pinecone, Weaviate) for fast similarity search, and (3) a generator LLM. Variants like Self-RAG and CRAG improve retrieval quality by adding relevance judgments. As of mid-2026, RAG is the default pattern for enterprise AI—not a luxury.",
+          "RAG is reshaping how organizations deploy AI. Platforms like OpenAI's ChatGPT for Academic Researchers (providing free access to advanced models) and scientific computing agents increasingly rely on retrieval-augmented pipelines. Understanding RAG is critical for anyone building or evaluating AI tools for knowledge work."
+        ],
+        "why": "RAG is the backbone of enterprise AI knowledge products—it reduces hallucinations, enables domain-specific Q&A without retraining, and makes LLMs auditable by grounding outputs in retrieved sources. Mastery of RAG concepts directly informs product design and deployment strategy.",
+        "links": [
+          [
+            "Scientific computing in the age of agentic AI (OpenAI)",
+            "https://openai.com/index/scientific-computing-agentic-ai"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-07-28",
     "title": "AI Daily Atlas",
