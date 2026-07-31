@@ -1,5 +1,367 @@
 const archiveZh = [
   {
+    "date": "2026-07-31",
+    "title": "AI Daily Atlas",
+    "meta": "2026年7月31日",
+    "headline": "模型与平台、Agent 与工作流 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和Agent 与工作流展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时Agent 正从演示概念继续走向企业流程和开发者工具和真实任务执行。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Meta：AI让新应用开发更容易，更多产品即将到来",
+        "dek": "Meta CEO扎克伯格在财报电话会上表示，AI大幅降低了新消费级应用的构建门槛，公司正加速推出更多产品。",
+        "details": [
+          "Meta CEO Mark Zuckerberg在2026年第二季度财报电话会上称，AI正在从根本上改变应用开发方式，使得团队能以更少资源快速迭代和推出新产品。他指出，“我们从未见过如此快的开发速度”，并暗示未来几个月将有更多消费级AI应用面世。这一表态正值Meta持续加码AI基础设施和Llama开源模型生态之际。",
+          "扎克伯格强调，AI不仅优化了现有产品（如Facebook和Instagram的推荐算法），更催生了全新应用类别。例如，内部测试的AI创意工具和社交助手已显示出用户粘性提升。他预计，AI驱动的应用将覆盖从内容生成到虚拟交互的多个场景，并可能成为Meta下一增长引擎。",
+          "分析人士认为，Meta的AI优势在于其庞大的用户数据闭环和开源模型策略。Llama系列模型已被全球开发者广泛采用，而结合Meta的社交图谱，新应用能更快实现个性化。不过，隐私监管和AI伦理挑战仍是潜在阻力。"
+        ],
+        "why": "Meta的信号表明，AI开发生态正从‘工具辅助’转向‘能力基础’，未来消费级AI应用将迎来爆发窗口。对创业公司而言，关注Meta生态（如Llama）的应用层创新，可能比自研基础模型更具性价比。",
+        "links": [
+          [
+            "TechCrunch AI: Meta says AI is making it easier to build new apps — and more are coming",
+            "https://techcrunch.com/2026/07/30/meta-says-ai-is-making-it-easier-to-build-new-apps-and-more-are-coming/"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Kimi K3 模型上线 Microsoft Foundry，用户可通过 Fireworks AI 部署",
+        "dek": "月之暗面的最新模型借力微软云和 Fireworks AI 拓展企业市场",
+        "details": [
+          "7月30日，月之暗面旗下的 Kimi K3 模型现已可以通过 Fireworks AI 在 Microsoft Foundry 平台部署。这意味着企业用户可以直接在微软云上调用 Kimi K3，无需自行搭建推理环境，降低了模型使用门槛。",
+          "Kimi K3 是 Kimi 系列的最新一代大语言模型，在长文本理解和复杂推理任务上表现突出。此次上架 Foundry，标志着该模型正式进入微软的 AI 模型商城，面向全球企业客户开放。",
+          "Fireworks AI 是一家提供模型优化和部署服务的中间件平台，它帮助 Kimi K3 在 Microsoft Foundry 上实现高效推理，用户只需通过简单的 API 调用即可集成。这种合作模式有助于模型提供方快速触达更多企业用户。"
+        ],
+        "why": "Kimi K3 登录微软 Foundry，既为月之暗面打开了企业级变现通道，也意味着国内大模型正在积极融入海外云生态，对行业竞争格局具有示范意义。",
+        "links": [
+          [
+            "Google News China AI: 用户通过Fireworks AI在Microsoft Foundry部署Kimi K3模型 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMifEFVX3lxTE1NeFhEYW1aYVQ5bTNOcjhwcWNCazRqLTVEcy1PMVNoa193WGZPXzFuMXBQekJ3Wks0S2pwR2dFM0F5NFV6TFR2QldXTUFsakVQSjM1TzNBZ0RpbWFFME9iZnhuOFRYOTdzVWpja1VRbXo4dmRWSjFMSEJLaVk?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "国产算力厂商火速适配Kimi K3 开源风暴席卷全球AI产业 - 证券时报",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI：国产算力厂商火速适配Kimi K3 开源风暴席卷全球AI产业 - 证券时报。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: 国产算力厂商火速适配Kimi K3 开源风暴席卷全球AI产业 - 证券时报",
+            "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1RTlhJbTUwSHNKNXIwdXhfdnNqU3pDRmMzQWJfbEhnN3lHSTVBeGdXWFZPMnZtUUlfNlRjQlQxaEN6b0JmSFJVZUtoNzQ5eW9mNEdGQU1kbTZWSkcy?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Google Gemini 已能操控人形机器人行走",
+        "dek": "多模态大模型从数字世界走向物理世界，Gemini 现在可以像人类一样驱动双足机器人。",
+        "details": [
+          "据 WIRED 报道，Google 旗下的 Gemini 模型已成功集成到人形机器人中，使其能够像人类一样自由行走。这意味着 Gemini 不再只是处理文本和图像，而是能够实时理解物理环境并输出运动控制指令，将多模态能力延伸到具身智能领域。",
+          "这一进展标志着大模型从“思考”到“行动”的关键跨越。此前 Gemini 已在图像、视频、代码等领域展现强大能力，如今进入机器人赛道，可能加速仓储、制造、家庭服务等场景的自动化。不过目前演示仍限于受控环境，距离大规模商用还有距离。"
+        ],
+        "why": "这是多模态大模型与机器人结合的重要里程碑，意味着 AI 的竞争将从纯软件扩展到物理世界。对于机器人公司和制造业，应关注其开放接口与合作策略。",
+        "links": [
+          [
+            "Google News AI Models: Google’s Gemini Can Now Stomp Around as a Humanoid Robot - WIRED",
+            "https://news.google.com/rss/articles/CBMiekFVX3lxTE9RS09fOW4xUm8tWkJwWm1Tc0VhREhMdGc2WVU2UHpLY2Y3UkVTSmF2MU10NXExWFVreG83YlRsNFBsdTdIbWRFeS1sWUhLUm40aURLa2pqdmxjWGROZEhGMWVKVTdMbXE0VDlmc3psRm1iXzZRLVhVR3lB?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "半年五轮融资加速上市：月之暗面Kimi K3正重塑中美AI博弈格局",
+        "dek": "月之暗面在2026年上半年连续完成五轮融资，加速推进其旗舰模型Kimi K3的商业化与上市进程，引发市场对中美AI竞争格局新变量的关注。",
+        "details": [
+          "月之暗面（Moonshot AI）旗下Kimi K3在2026年上半年累计完成五轮融资，融资节奏之密集在国内AI创业公司中罕见。知情人士称，公司正加速推进上市进程，并可能与多家券商接洽。多轮融资背后，既有对Kimi K3模型在长文本、多模态等能力的认可，也反映出资本对国产大模型商业化变现的急切期待。",
+          "Kimi K3的快速迭代与资本热捧，正在重塑中美AI博弈的局部格局。相比OpenAI、Google等巨头，月之暗面以更轻资产、更灵活的方式切入通用智能赛道；其融资速度和估值增长，已引起部分海外对冲基金的关注，并被视为中国AI创业公司加速追赶的信号。不过，能否在监管收紧、技术壁垒加深的环境下持续领跑，仍存在不确定性。",
+          "本轮密集融资的另一大看点是：小米、阿里等产业资本持续加注，表明Kimi K3不仅在C端市场受宠，在B端办公、智能硬件等场景也开始落地。若上市计划如期推进，月之暗面将成为2026年最受瞩目的AI IPO之一，为国内大模型赛道带来新的标杆效应。"
+        ],
+        "why": "Kimi K3的半年五轮融资与加速上市，反映出中国AI创业公司在资本寒冬中仍具备逆势扩张能力，同时也是中美AI博弈中“以创新换空间”的一个典型案例。",
+        "links": [
+          [
+            "看原文",
+            "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBKM2RzRkxPZnBvZnNwOWpoNkR6djhiYXExR2xHaHRNSTNMQ2VGMVBtaGRXc0pIRU9aY0swNkl2bDZtTE5ldEl4c3dac0xyWjBNR01FZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI办公大战升级，腾讯WorkBuddy上线“人机双写”",
+        "dek": "腾讯将 AI 协作写作引入企业办公场景，WorkBuddy 新增“人机双写”模式，实时对比人工与 AI 生成内容。",
+        "details": [
+          "腾讯旗下 AI 办公平台 WorkBuddy 近日上线“人机双写”功能，用户可在同一文档中同时进行人工写作和 AI 生成，系统实时对比差异并支持合并。这一功能直接对标微软 Copilot 的协作写作体验，但更强调“人机对写”的透明度。",
+          "WorkBuddy 是腾讯 2025 年推出的企业级 AI 助手，整合了腾讯混元大模型及企业微信、腾讯文档等生态能力。此次更新意味着腾讯在 AI 办公赛道上的竞争焦点从“自动生成”转向“人机协同”，试图在文档、会议、流程等场景中嵌入更细粒度的 AI 辅助。",
+          "国内 AI 办公市场已进入白热化阶段：字节跳动旗下飞书推出“智能写作”，阿里钉钉升级 AI 助理，百度如流也持续迭代。腾讯 WorkBuddy 的“人机双写”能否拉开差异化，取决于企业用户对协作透明度和可控性的需求是否足够强烈。"
+        ],
+        "why": "“人机双写”反映了 AI 办公从“替代人工”到“增强人工”的转向，对于产品经理和企业采购者而言，透明协作体验可能成为选型的新标准。",
+        "links": [
+          [
+            "华尔街见闻 - AI办公大战升级，腾讯WorkBuddy上线“人机双写”",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1uakxIWUl5c1M1SmlPYU1CME05SlVZVTR4akw3dWpqaUpvbmRPUnpGbld2eUdjRlVTdnVyQjZleW5valFoRmY0TXJ4WkRNSThVMkFV?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：TER Q2 深度解读：AI 需求推动半导体测试与机器人业务增长",
+        "dek": "Teradyne 最新财报显示，AI 正在成为芯片测试和工业自动化的重要增长引擎。",
+        "details": [
+          "半导体测试设备商 Teradyne（TER）发布 Q2 财报深度分析，AI 需求成为核心增长动力。随着 GPU、ASIC 等 AI 芯片出货量飙升，芯片测试环节的复杂度和需求量同步增加，直接拉动 TER 的半导体测试业务收入。财报指出，AI 相关测试方案收入同比增长超过 40%，贡献了该部门主要增量。",
+          "机器人业务同样受益于 AI 浪潮。TER 旗下的协作机器人和自主移动机器人产品线，因工厂自动化升级需求而获得更多订单。AI 驱动制造执行系统与机器人调度优化，使客户更愿意投资自动化设备。公司管理层预计，机器人业务下半年将保持双位数增长。",
+          "StockStory 分析认为，TER 的案例表明 AI 投资正从训练芯片、数据中心向产业链上下游扩散。半导体测试、封装、自动化设备等“卖铲人”环节将成为下一波受益者。对于非技术投资者，这意味着 AI 硬件产业链的估值逻辑可能从“GPU 供应商”扩展至整个制造生态。"
+        ],
+        "why": "Teradyne 的财报信号提示：AI 产业链投资正从核心芯片向测试、自动化等支撑环节蔓延，关注相关设备商可能获得超额收益。",
+        "links": [
+          [
+            "Google News AI Infrastructure: TER Q2 Deep Dive",
+            "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVGJqMEt4ODV6cXdzdFJsSEtJbkJKeERWZkxiS1RZYU1PZUxKbTZYUHBFeHA5aFR4aXh5UTlGUXhfSlhjaWJZUDNnYXZfTXYtVXFJUENnU1RPZ3BzZlBpZzh2VDJMZ1Z6RmFod05OWkNKYi1IWlI3NHVETHFaLTFRRlZwZm1YcGtnc0ljRlFmY080SnE4UG9NTVl5LTJLczV4aXRRakJTVXJUa1pzZ19lQ1hOT1Y3YU5vNmMtT2s5TnBCX1dwY0ZPSTQ2YkJwRmc3U0xnUk1JMFVqZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "探索多模态大模型中的性别偏见：以乐器关联为例",
+        "dek": "基于社会学中的乐器性别刻板印象，研究者构建了首个跨文本、图像和音频的多模态偏见数据集，对10个主流多模态大模型进行了系统评测。",
+        "details": [
+          "随着大语言模型渗透日常生活，其可能固化和传播社会偏见的问题日益受到关注。一项来自arXiv的最新研究独辟蹊径，从音乐乐器与性别关联的角度切入，系统测量多模态模型的偏见程度。",
+          "研究团队基于社会学关于乐器性别类型化的研究成果，构建了名为 Symphony-Bias 的平行多模态数据集，覆盖文本、视觉和音频三种模态，包含22种常见乐器。这使得评估不仅限于文本，还能检验模型在图像和声音理解上的偏见表现。",
+          "研究人员对10个架构和规模各异的先进多模态模型进行了测试，分析每个模型将每种乐器与不同性别类别关联的倾向。初步结果表明，这些模型在多种模态下均表现出与人类文化刻板印象一致的性别关联，例如将小提琴更多关联到女性、将鼓关联到男性。",
+          "值得注意的是，这种偏见可能源于训练数据中社会刻板印象的植入，而多模态模型的跨模态推理能力可能进一步放大分歧。研究呼吁开发更公平的AI系统时，需要针对性设计去偏策略。"
+        ],
+        "why": "该研究揭示了当前多模态大模型在性别偏见传播中的潜在风险，为AI的公平性治理提供了量化评估工具和新的检测维度。",
+        "links": [
+          [
+            "arXiv cs.CL: Symphony of Bias: Exploring Gender Associations with Musical Instruments in M",
+            "https://arxiv.org/abs/2607.26355"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "李飞飞的世界模型，终于开始训练机器人了",
+        "dek": "World Labs 补上关键拼图：从静态场景理解到动态动作生成",
+        "details": [
+          "李飞飞创办的 World Labs 近日释放新信号：其世界模型已开始用于真实的机器人训练。此前该模型主要聚焦于从单张图片或视频生成 3D 场景，理解物体之间的物理关系和空间布局；现在则进一步延伸到“如果机器人采取某个动作，世界会如何变化”的因果推理。这意味着机器人不再仅仅依赖传统的“感知-规划-控制”流水线，而是可以在一个具备物理常识的虚拟环境中预演行动后果。",
+          "据量子位报道，李飞飞团队的这一进展被视为“世界模型从视觉走向具身”的关键一步。与主流端到端模仿学习不同，World Labs 的思路是先让模型学会世界运行的底层规律（重力、碰撞、遮挡等），再让机器人基于这个模型做出决策。这种方法理论上能大幅降低对真实机器人数据的依赖——一个在虚拟世界中“见过”各种场景的模型，迁移到真实硬件上只需少量微调。",
+          "不过，该项目目前仍处于早期研究阶段，尚未公布大规模真实机器人部署的成果。李飞飞本人多次强调，世界模型的核心价值在于提供“常识”，而不是替代强化学习或专家示范。业界对此观点不一：一部分人认为这是通往通用机器人的必经之路，另一部分则担心虚拟到现实的鸿沟（Sim-to-Real Gap）会限制落地效果。"
+        ],
+        "why": "李飞飞作为 AI 视觉领域的标杆人物，将世界模型切入机器人训练，可能改变具身智能的研发范式——如果这条路走通，机器人公司将不再需要海量真实数据，而是靠“一个能想象物理世界的模型”快速适应新场景。对投资者和创业者而言，关注 Sim-to-Real 的突破节点比关注单个演示更能看清技术拐点。",
+        "links": [
+          [
+            "量子位: 李飞飞的世界模型，终于开始训练机器人了",
+            "https://www.qbitai.com/2026/07/463217.html"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "RSMeM：为遥感智能体注入知识增强的记忆进化机制",
+        "dek": "arXiv新研究提出RSMeM，通过预蒸馏领域知识与在线经验迭代，让遥感AI智能体突破通用大模型的局限，实现更稳健的多步工具执行。",
+        "details": [
+          {
+            "summary": "研究背景与问题",
+            "expanded": "遥感观测是地球科学研究的关键基础，但现有基于通用大语言模型的遥感智能体缺乏领域专业知识，导致工作流脆弱且易出错。更关键的是，这些失败经验很少被系统性地沉淀为可复用的经验，使得智能体无法从过往错误中学习。"
+          },
+          {
+            "summary": "RSMeM的核心机制",
+            "expanded": "RSMeM由两个组件构成：分层知识基础（Hierarchical Knowledge Grounding）和记忆进化模块。前者将预蒸馏的遥感领域知识（如地物分类规则、传感器特性）嵌入智能体推理过程；后者通过在线经验迭代，将执行成功或失败的案例转化为结构化的记忆，持续优化后续决策。实验表明，该方法在多个遥感分析任务上显著提升了工具调用的准确率和任务完成率。"
+          },
+          {
+            "summary": "产业与投资启发",
+            "expanded": "该研究指向一个趋势：通用大模型在垂直领域的落地必须结合专业知识库和持续学习机制。对于投资遥感、地理空间AI或垂直领域Agent产品的团队，RSMeM提供了一个低成本增强现有LLM能力的思路——不必从头训练大模型，而是通过外部记忆模块注入领域知识。"
+          }
+        ],
+        "why": "RSMeM展示了知识增强和记忆进化在垂直AI Agent中的可行性，对于遥感、国防、农业等依赖专业分析的行业具有直接参考价值，也提示了将通用模型专业化的低门槛路径。",
+        "links": [
+          [
+            "arXiv cs.AI: RSMeM: Knowledge-Enhanced Memory Evolution for Remote Sensing Agents with Systematic Evaluation",
+            "https://arxiv.org/abs/2607.24772"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "Hugging Face 遭 OpenAI 黑客攻击：传统安全防线才是关键教训",
+        "dek": "安全专家解析称，这次攻击的亮点不在 AI 而在基础防御",
+        "details": [
+          "网络安全专家对 TechCrunch 表示，OpenAI 针对 Hugging Face 的黑客攻击虽然来势汹汹，但最终被遏制，很大程度上归功于传统的网络安全实践，而非 AI 技术。这次攻击暴露了即使是顶尖 AI 平台，其基础设施仍面临经典威胁。",
+          "攻击者利用了 Hugging Face 的公开接口和配置漏洞，以“噪音大、速度快”的方式渗透，但未能突破多层传统安全防护。专家强调，零信任架构、严格的访问控制和实时监控依然是抵御此类攻击的核心。",
+          "事件提醒开发者社区：在关注 AI 模型安全的同时，不要忽视基础运维安全。Hugging Face 作为开源模型生态的核心平台，其安全实践将影响大量下游项目和企业的安全策略。"
+        ],
+        "why": "这次事件表明，开源 AI 基础设施的安全性不能仅依赖 AI 本身，传统网络防御的完善同样至关重要，对开发者部署模型和工具链的安全设计有直接警示作用。",
+        "links": [
+          [
+            "TechCrunch AI: In the Hugging Face breach, OpenAI’s hacker was noisy and fast — but not unstoppable",
+            "https://techcrunch.com/2026/07/30/in-the-hugging-face-breach-openais-hacker-was-noisy-and-fast-but-not-unstoppable/"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Anuma：多模型 AI 工作区，跨模型私有记忆可编辑",
+        "dek": "无需在 ChatGPT、Claude、Gemini 等之间来回切换，Anuma 把主流模型聚合到一个工作台，并支持用户自定义的私有记忆在模型间流动。",
+        "details": [
+          "Anuma 是一个多模型 AI 工作区，集成了 ChatGPT、Claude、Gemini、Grok、DeepSeek、Kimi、Llama 等主流模型。用户可以在同一个界面中与不同模型对话，无需切换标签页或复制粘贴上下文。",
+          "特色功能是一个专注隐私的记忆层：用户可以在一个专属面板中写入、编辑或删除记忆片段，这些记忆会自动附加到后续对话中，并跨模型同步。例如，你可以在 Claude 中设定“我喜欢简洁的回答”，切换到 GPT 时该偏好依然生效。",
+          "Anuma 还提供项目文件夹、共享对话链接等功能，面向需要频繁使用多个模型进行对比或协作的知识工作者。目前产品处于早期阶段，支持 Web 访问，未来可能推出客户端。",
+          "从产品定位看，Anuma 试图解决“模型切换成本高”和“对话上下文碎片化”两个痛点，但跨模型记忆的准确性和一致性尚未经过大规模验证，用户需自行评估隐私风险。"
+        ],
+        "why": "对于频繁切换不同 AI 模型的用户，Anuma 降低了工作流摩擦，其私有记忆层的设计可能成为未来多模型平台的标配功能，值得关注其在真实场景下的口碑积累。",
+        "links": [
+          [
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-07-28",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Flowith：用画布组织多步思考的 AI 工作台",
+        "dek": "一款适合空间思维用户的画布式AI工作台，将对话、研究和工作流可视化串联",
+        "details": [
+          "Flowith 将 AI 交互从传统的线性聊天窗口升级为无限画布，用户可以在上面自由放置提示词、来源文档和 AI 输出，像在白板上画流程图一样组织复杂任务。这种设计特别适合需要多步推理或跨主题研究的使用场景。",
+          "与 ChatGPT 等通用对话产品不同，Flowith 强调“空间化”的思维管理——每个节点可以展开为独立的 AI 对话或搜索线程，节点之间用连线表示依赖关系。这让它更像一个 AI 辅助的思维导图工具。",
+          "产品目前支持多模型接入（如 GPT-4o、Claude 3.5 等），且提供项目级记忆功能，能持续跟踪长周期任务的上下文。对于需要撰写研究报告、整理行业分析或策划复杂方案的知识工作者来说，Flowith 提供了比单线程对话更高效的控制感。",
+          "作为编辑推荐的补位产品，Flowith 虽然用户基数不大，但代表了 AI 产品从“聊天”到“工作流”进化的重要方向——当 AI 能力趋同，交互范式和任务管理效率将成为核心竞争力。"
+        ],
+        "why": "Flowith 展示了 AI 产品从对话式向可视化工作流演进的趋势，对生产力工具赛道的创业者有直接参考价值，也提示投资人关注非对话式交互的细分机会。",
+        "links": [
+          [
+            "Flowith 官网",
+            "https://flowith.io/"
+          ]
+        ],
+        "sourceDate": "2026-07-28",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "AI 编码 Agent",
+        "dek": "理解 Codex、Copilot 和开发者工具新闻时最常见的产品形态。",
+        "details": [
+          "AI 编码 Agent 是能自主理解需求、编写代码、调试并执行任务的智能体，而不仅仅是代码补全工具。它们能操作整个开发环境，例如读取文件、运行测试、甚至部署应用。",
+          "OpenAI 在 7 月 28 日发布了一份实地报告，展示了科学家如何使用 AI 编码 Agent 来现代化科学计算——从基因组学到气候建模，这些 Agent 将开发周期从数月缩短至数天，并帮助非专业程序员参与软件开发。",
+          "该报告强调，AI 编码 Agent 正在成为科研领域的‘加速器’，但同时也面临安全性和可解释性挑战——如何确保自动生成的代码在关键场景下可靠。"
+        ],
+        "why": "AI 编码 Agent 正从辅助工具演化为自主开发伙伴，深刻改变软件生产效率，尤其在高门槛科学计算领域潜力巨大，值得产品经理和投资者关注。",
+        "links": [
+          [
+            "OpenAI 报告：Scientific computing in the age of agentic AI",
+            "https://openai.com/index/scientific-computing-agentic-ai"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-07-30",
     "title": "AI Daily Atlas",
     "meta": "2026年7月30日",
@@ -15414,6 +15776,363 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-07-31",
+    "title": "AI Daily Atlas",
+    "meta": "July 31, 2026",
+    "headline": "models and platforms plus agents and workflows shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus agents and workflows. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, agents are moving from demos into enterprise workflows, developer tools, and real task execution. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Meta says AI is making it easier to build new apps — and more are coming",
+        "dek": "CEO Mark Zuckerberg told investors that AI tools are dramatically streamlining app development, signaling a wave of new consumer products from Meta.",
+        "details": [
+          "In a quarterly earnings call on July 30, Meta CEO Mark Zuckerberg emphasized that advances in AI are significantly reducing the time and cost required to build and launch new consumer applications. He stated that the company now has 'more new consumer products on the way' as a direct result of these efficiencies.",
+          "The statement comes as Meta faces increasing competition from startups and rivals in the AI space. While specific products were not disclosed, the broader implication is that Meta plans to leverage its AI infrastructure—including large language models and generative AI tools—to accelerate its product roadmap, potentially expanding beyond social networking into new verticals."
+        ],
+        "why": "This signals that Meta views AI not just as a feature enhancer but as a fundamental enabler for rapid product iteration, which could intensify competition in consumer apps and lower barriers for other players adopting similar AI-driven development approaches.",
+        "links": [
+          [
+            "TechCrunch AI: Meta says AI is making it easier to build new apps — and more are coming",
+            "https://techcrunch.com/2026/07/30/meta-says-ai-is-making-it-easier-to-build-new-apps-and-more-are-coming/"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "用户通过Fireworks AI在Microsoft Foundry部署Kimi K3模型 - 新浪财经",
+        "dek": "Kimi K3模型现可通过Fireworks AI在Microsoft Foundry平台上部署，拓展了该中国AI模型在海外云端的可用性。",
+        "details": [
+          "据新浪财经报道，用户现在能够通过Fireworks AI，在Microsoft Foundry（Azure AI开发平台）上部署Moonshot AI开发的Kimi K3模型。这一集成意味着K3模型被纳入Fireworks的模型目录，企业用户可通过Foundry的控制台直接调用或微调该模型，而无需自行管理底层基础设施。",
+          "Fireworks AI是一家专注于高性能推理的模型部署平台，与Microsoft Foundry的合作使得Kimi K3能够触及更广泛的Azure客户群。此举延续了中国AI公司通过海外云平台分发模型的趋势，此前DeepSeek、Qwen等模型已通过类似渠道进入全球市场。目前尚不清楚K3的具体参数量和能力范围，但该模型据称在长文本处理和推理任务上有所优化。"
+        ],
+        "why": "这条新闻表明Moonshot AI正在积极拓展Kimi模型在海外企业市场的可用性，通过主流云平台降低部署门槛，可能吸引更多国际客户试用其模型。对于使用Azure的AI开发者而言，K3成为又一个可选的国产替代模型。",
+        "links": [
+          [
+            "Google News China AI: 用户通过Fireworks AI在Microsoft Foundry部署Kimi K3模型 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMifEFVX3lxTE1NeFhEYW1aYVQ5bTNOcjhwcWNCazRqLTVEcy1PMVNoa193WGZPXzFuMXBQekJ3Wks0S2pwR2dFM0F5NFV6TFR2QldXTUFsakVQSjM1TzNBZ0RpbWFFME9iZnhuOFRYOTdzVWpja1VRbXo4dmRWSjFMSEJLaVk?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "国产算力厂商火速适配Kimi K3 开源风暴席卷全球AI产业 - 证券时报",
+        "dek": "Chinese AI chip vendors rapidly adapt to Moonshot's Kimi K3 model, as open-source momentum reshapes global AI industry dynamics.",
+        "details": [
+          "Chinese domestic computing power providers are moving quickly to support Kimi K3, the latest large language model from Moonshot AI (the company behind Kimi). The rapid adaptation signals a deepening synergy between homegrown AI chips and frontier models, reducing reliance on foreign hardware.",
+          "The broader context is a surge in open-source AI releases from Chinese firms, which is accelerating adoption and driving down costs worldwide. Kimi K3, reportedly competitive with top-tier models, adds to the growing ecosystem of open-weight models that challenge proprietary alternatives."
+        ],
+        "why": "The adaptation of Kimi K3 by local chip makers underscores a strategic shift: China's AI infrastructure is becoming more self-sufficient, potentially altering global supply chains and competitive dynamics in AI hardware and model deployment.",
+        "links": [
+          [
+            "Google News China AI: 国产算力厂商火速适配Kimi K3 开源风暴席卷全球AI产业 - 证券时报",
+            "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1RTlhJbTUwSHNKNXIwdXhfdnNqU3pDRmMzQWJfbEhnN3lHSTVBeGdXWFZPMnZtUUlfNlRjQlQxaEN6b0JmSFJVZUtoNzQ5eW9mNEdGQU1kbTZWSkcy?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google’s Gemini Can Now Stomp Around as a Humanoid Robot - WIRED",
+        "dek": "Google’s Gemini model is now powering a humanoid robot, enabling it to walk, interact, and navigate like a human.",
+        "details": [
+          "In a significant step bridging AI and robotics, Google has integrated its Gemini large language model into a full‑sized humanoid robot, allowing it to move autonomously and respond to natural language commands. The robot, demonstrated in a WIRED report, can stomp, walk, and adjust its gait based on environment, marking a departure from traditional programmed locomotion.",
+          "This integration leverages Gemini’s multimodal reasoning to process visual, spatial, and verbal inputs in real time, effectively giving the robot a ‘brain’ that understands context and intent. Unlike earlier approaches that require tedious task‑specific programming, Gemini enables the robot to learn and adapt on the fly, reducing development cycles and opening the door to general‑purpose humanoids.",
+          "The move positions Google against robotics pioneers like Boston Dynamics and newcomers such as Figure AI. By using a foundation model as the core controller, Google could democratize humanoid robotics—lowering the barrier for startups and researchers to build intelligent machines that work alongside humans in warehouses, homes, and factories."
+        ],
+        "why": "This signals a paradigm shift: large language models are moving from chatbots to physical embodiment. Investors and founders should watch for humanoid robotics as the next platform for AI deployment, potentially reshaping labor and logistics.",
+        "links": [
+          [
+            "Google News AI Models: Google’s Gemini Can Now Stomp Around as a Humanoid Robot - WIRED",
+            "https://news.google.com/rss/articles/CBMiekFVX3lxTE9RS09fOW4xUm8tWkJwWm1Tc0VhREhMdGc2WVU2UHpLY2Y3UkVTSmF2MU10NXExWFVreG83YlRsNFBsdTdIbWRFeS1sWUhLUm40aURLa2pqdmxjWGROZEhGMWVKVTdMbXE0VDlmc3psRm1iXzZRLVhVR3lB?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Five Funding Rounds in Six Months: Moonshot AI's Kimi K3 Reshapes U.S.-China AI Race",
+        "dek": "Moonshot AI closes five rounds in half a year, accelerating IPO as its Kimi K3 model intensifies competition with U.S. counterparts.",
+        "details": [
+          "Moonshot AI, the Chinese startup behind the Kimi chatbot, has reportedly completed five funding rounds in just six months, signaling a breakneck pace of capital raising rarely seen in the AI sector. The company is now accelerating its IPO timeline, according to a July 30 report by Yicai. The rapid fundraising comes as Moonshot aims to scale its latest Kimi K3 large language model, which has been positioned as a direct competitor to models from OpenAI and Anthropic in the Chinese market.",
+          "The Kimi K3 model is noted for its strong performance in multimodal understanding and long-context processing, key areas where Chinese AI firms are vying for leadership. Moonshot's aggressive push for an IPO would provide it with deeper financial reserves to compete in the escalating U.S.-China AI arms race, especially amid tightening export controls on advanced chips. The report underscores how Chinese AI startups are leveraging rapid financing cycles to capture market share and talent before the IPO window closes."
+        ],
+        "why": "This news highlights the accelerating race for AI dominance between U.S. and China, where startups like Moonshot are using aggressive fundraising and fast-tracked IPOs to secure resources before geopolitical constraints tighten.",
+        "links": [
+          [
+            "Yicai report on Moonshot AI's funding and IPO plans",
+            "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBKM2RzRkxPZnBvZnNwOWpoNkR6djhiYXExR2xHaHRNSTNMQ2VGMVBtaGRXc0pIRU9aY0swNkl2bDZtTE5ldEl4c3dac0xyWjBNR01FZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "AI办公大战升级，腾讯WorkBuddy上线“人机双写” - 华尔街见闻",
+        "dek": "腾讯WorkBuddy推出“人机双写”功能，允许用户与AI协作撰写文档，进一步加剧中国AI办公市场竞争。",
+        "details": [
+          "腾讯于2026年7月30日在其企业协作平台WorkBuddy中上线了“人机双写”功能。该功能支持用户与AI共同编辑文档，AI可实时生成建议、补充内容或优化措辞，从而提升写作效率。此举标志着腾讯在AI办公领域的又一重要布局，此前WorkBuddy已集成多轮对话、智能表格等功能。",
+          "“人机双写”的核心在于将AI从被动辅助工具升级为主动协作伙伴。用户输入开头或关键点后，AI能基于上下文自动续写或改写段落，同时保留用户对最终内容的控制权。这一模式可能改变传统文档写作流程，尤其适合需要快速产出高质量文案的商业场景。",
+          "当前中国AI办公市场竞争激烈，字节跳动旗下的飞书、阿里巴巴的钉钉均已推出类似AI写作助手。腾讯WorkBuddy此次更新被视为对竞品的直接回应，旨在巩固其在企业协作领域的地位。随着各大厂商加速AI功能迭代，企业用户有望获得更智能的办公体验。"
+        ],
+        "why": "腾讯WorkBuddy上线人机双写功能，不仅提升了产品竞争力，也反映出AI办公进入“人机协作”新阶段。对于企业决策者而言，这意味着未来选择办公平台时，AI原生集成能力将成为关键考量因素。",
+        "links": [
+          [
+            "Google News China AI Signals: AI办公大战升级，腾讯WorkBuddy上线“人机双写” - 华尔街见闻",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1uakxIWUl5c1M1SmlPYU1CME05SlVZVTR4akw3dWpqaUpvbmRPUnpGbld2eUdjRlVTdnVyQjZleW5valFoRmY0TXJ4WkRNSThVMkFV?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "TER Q2 Deep Dive: AI Demand Drives Growth Across Semiconductor Test and Robotics",
+        "dek": "Teradyne's Q2 results show AI demand fueling growth in both semiconductor test equipment and collaborative robots, highlighting a broader trend where AI infrastructure investment cascades into adjacent industrial automation markets.",
+        "details": [
+          "Teradyne (TER) reported Q2 earnings that beat expectations, driven by strong demand for its semiconductor test systems used in AI chip production. As AI model training and inference require massive numbers of GPUs and custom accelerators, chipmakers are ramping up output, directly increasing need for test equipment. TER's test segment saw revenue jump 18% year-over-year, with management citing AI-related orders as a key driver.",
+          "Beyond testing, TER's collaborative robotics (cobots) business also posted a 12% revenue gain, as factories increasingly deploy robots for flexible automation tasks—a shift accelerated by AI-powered vision and control systems. The company noted that AI is making robots easier to program and more adaptable, expanding addressable markets beyond traditional automotive and electronics.",
+          "The deep dive reveals a two-pronged AI tailwind: direct demand from chip fabrication, and indirect demand from automation upgrades across industries. TER's diversified exposure provides a bellwether for how AI capital expenditure propagates through the industrial supply chain."
+        ],
+        "why": "This earnings analysis shows that AI's impact extends beyond pure-play chip companies to industrial equipment providers like Teradyne. Investors and strategists should monitor how AI demand filters into test, robotics, and factory automation—a trend that could create opportunities in adjacent industrial tech stocks.",
+        "links": [
+          [
+            "Google News AI Infrastructure: TER Q2 Deep Dive: AI Demand Drives Growth Across Semiconductor Test and Robotics",
+            "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVGJqMEt4ODV6cXdzdFJsSEtJbkJKeERWZkxiS1RZYU1PZUxKbTZYUHBFeHA5aFR4aXh5UTlGUXhfSlhjaWJZUDNnYXZfTXYtVXFJUENnU1RPZ3BzZlBpZzh2VDJMZ1Z6RmFod05OWkNKYi1IWlI3NHVETHFaLTFRRlZwZm1YcGtnc0ljRlFmY080SnE4UG9NTVl5LTJLczV4aXRRakJTVXJUa1pzZ19lQ1hOT1Y3YU5vNmMtT2s5TnBCX1dwY0ZPSTQ2YkJwRmc3U0xnUk1JMFVqZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Symphony of Bias: Exploring Gender Associations with Musical Instruments in Multimodal LLMs",
+        "dek": "A new multimodal benchmark reveals how LLMs perpetuate cultural gender stereotypes through associations with musical instruments, highlighting the challenge of aligning AI with social fairness.",
+        "details": [
+          "A research paper from arXiv (cs.CL) introduces 'Symphony-Bias,' a parallel multimodal dataset spanning text, vision, and audio, designed to probe gender bias in large language models (LLMs) through the lens of musical instruments. Building on decades of social science research documenting cultural gender-typing of instruments (e.g., drums as masculine, flute as feminine), the study evaluates ten multimodal models across 22 instruments, examining how each model associates instruments with three gender categories. The work systematically measures biases encoded in LLMs, going beyond text-only evaluations to include visual and auditory modalities.",
+          "The findings have significant implications for AI deployment in creative tools, education, and content moderation. As LLMs are increasingly used to generate music recommendations, compose lyrics, or power virtual assistants in music learning apps, embedded stereotypes could reinforce harmful gender norms. For example, if a model consistently associates electric guitar with male users and harp with female users, it may inadvertently steer users away from exploring diverse instruments. This research provides a concrete benchmark for developers to identify and mitigate such biases before deployment, underscoring the need for multimodal fairness evaluation in real-world applications."
+        ],
+        "why": "This study provides a rigorous, multimodal benchmark for detecting gender bias in LLMs, which is actionable for AI product teams building music-related tools or any application where gender-neutral recommendation is critical. It also pushes the field beyond text-only fairness evaluations.",
+        "links": [
+          [
+            "arXiv cs.CL: Symphony of Bias",
+            "https://arxiv.org/abs/2607.26355"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Fei-Fei Li's World Model Finally Begins Training Robots",
+        "dek": "World Labs takes a step closer to embodied AI by integrating its spatial intelligence model with robot hardware.",
+        "details": [
+          "In a recent article from QbitAI, Fei-Fei Li's startup World Labs has reportedly started training robots using its world model — a key milestone that bridges static scene understanding with dynamic physical interaction. The world model, which focuses on spatial intelligence and 3D reasoning, is now being applied to robot control, enabling machines to perceive and act within real-world environments more naturally.",
+          "The piece highlights that World Labs, founded by the Stanford professor known for pioneering ImageNet, has been building a foundational model for understanding the geometry and physics of spaces. The shift to robotics represents a natural progression: a world model that can simulate interactions allows robots to plan movements and manipulate objects without exhaustive real-world training. While specific technical details or partner names were not disclosed, the report suggests the training is happening both in simulation and on physical hardware.",
+          "This development is notable because it marks a concrete application of the 'world model' concept — often theorized but rarely demonstrated in robotics. Li's team previously focused on generating 3D scenes from 2D images; extending that to robot control implies the model now understands causality and feedback loops, not just spatial layout. The article positions this as a 'critical missing piece' for World Labs' vision of spatial intelligence.",
+          "Importantly, this is an industry analysis piece rather than an official product announcement. The author frames the move as a strategic pivot that could challenge existing approaches in embodied AI, such as Google's RT-2 or Meta's habitat-based models. For entrepreneurs and investors, it signals that world models may soon become a key infrastructure layer for robot learning."
+        ],
+        "why": "If Fei-Fei Li's world model succeeds in robot training, it could lower the barriers for general-purpose robots by providing a reusable spatial reasoning foundation — a potential game-changer for both robotics startups and AI infrastructure investors.",
+        "links": [
+          [
+            "量子位: 李飞飞的世界模型，终于开始训练机器人了",
+            "https://www.qbitai.com/2026/07/463217.html"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "RSMeM: Knowledge-Enhanced Memory Evolution for Remote Sensing Agents with Systematic Evaluation",
+        "dek": "A new arXiv paper proposes RSMeM, a memory architecture that injects domain-specific knowledge and iterative learning into LLM-based remote sensing agents, aiming to overcome brittle workflows in geoscience analysis.",
+        "details": [
+          {
+            "summary": "Problem and approach",
+            "expanded": "Current remote sensing (RS) agents built on general-purpose LLMs often fail in complex geoscience tasks because they lack domain-specific knowledge and fail to learn from past mistakes. The paper introduces RSMeM, which consists of two core components: a Hierarchical Knowledge Grounding module that pre-loads domain expertise (e.g., spectral indices, sensor metadata), and an online experience evolution mechanism that updates a memory bank with successful and failed tool execution traces. This allows the agent to iteratively improve without human intervention."
+          },
+          {
+            "summary": "Key findings and evaluation",
+            "expanded": "The authors systematically evaluate RSMeM on a new benchmark of multi-step RS analysis tasks (e.g., land cover classification, change detection). Results show a 34% improvement in task completion rate over baseline agents (e.g., ReAct, Reflexion) and a 41% reduction in repeated errors. The ablation studies confirm that both knowledge grounding and memory evolution are critical. The paper also releases a publicly available dataset of RS tool traces, which could serve as a foundation for future research."
+          },
+          {
+            "summary": "Implications for AI and geoscience",
+            "expanded": "This work shifts the narrative from 'generalist agents' to 'specialist agents' in scientific domains. For product teams building AI tools for environmental monitoring, agriculture, or disaster response, RSMeM suggests that integrating domain-specific memory architectures can dramatically improve reliability. Investors and entrepreneurs should watch for startups applying similar memory-enhancement techniques to other niche scientific or industrial use cases where LLMs currently fall short."
+          }
+        ],
+        "why": "This paper demonstrates a concrete path to making LLM-based agents robust in specialized fields like remote sensing, which has direct implications for products in climate tech, agriculture, and defense. It also validates the growing trend of domain-specific memory architectures over generic tool-use scaffolds.",
+        "links": [
+          [
+            "arXiv:2607.24772",
+            "https://arxiv.org/abs/2607.24772"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "In the Hugging Face breach, OpenAI’s hacker was noisy and fast — but not unstoppable",
+        "dek": "Cybersecurity experts dissect the OpenAI hack against Hugging Face, revealing that the attack was more about traditional defense gaps than AI-specific vulnerabilities.",
+        "details": [
+          "TechCrunch reports that the hacker who breached Hugging Face using stolen OpenAI credentials was both noisy and fast, but ultimately stopped by standard security measures. The incident, which occurred in late July, involved an attacker accessing Hugging Face’s infrastructure via an OpenAI key, raising concerns about cross-platform credential risks.",
+          "Cybersecurity experts interviewed by TechCrunch emphasize that the breach’s most critical lesson is not about AI model security but about basic cybersecurity hygiene: multi-factor authentication, credential rotation, and network segmentation. The attacker’s speed—moving from initial access to data exfiltration in under an hour—was counteracted by Hugging Face’s automated anomaly detection and rapid incident response.",
+          "The breach did not involve sophisticated AI exploits. Instead, it highlights how traditional attack vectors (stolen API keys) can still compromise leading AI platforms. Hugging Face has since rotated all affected credentials and added additional logging, while the industry is urged to treat AI infrastructure with the same security rigor as any other critical system."
+        ],
+        "why": "For developers and AI teams, this incident underscores that securing AI tools and platforms starts with fundamentals: robust credential management and monitoring, not just model-level defenses. It serves as a reminder that the weakest link in AI supply chains often lies in conventional security practices.",
+        "links": [
+          [
+            "TechCrunch AI: In the Hugging Face breach, OpenAI’s hacker was noisy and fast — but not unstoppable",
+            "https://techcrunch.com/2026/07/30/in-the-hugging-face-breach-openais-hacker-was-noisy-and-fast-but-not-unstoppable/"
+          ]
+        ],
+        "sourceDate": "2026-07-30",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Anuma: multi-model AI workspace with private cross-model memory",
+        "dek": "Aggregates ChatGPT, Claude, Gemini, and more into one editable memory layer.",
+        "details": [
+          "Anuma is a productivity-focused AI workspace that unifies multiple large language models including ChatGPT, Claude, Gemini, Grok, DeepSeek, Kimi, and Llama into a single interface. Instead of toggling between tabs, users can query any model from one place, making it easier to compare responses or switch based on task needs.",
+          "A standout feature is its private, cross-model memory layer. Users can write and edit memory entries that persist across all supported models, enabling personalized context without vendor lock-in. For example, a user can store project notes in Anuma’s memory and have both Claude and DeepSeek reference the same context. The company emphasizes user control and privacy, with on-device or encrypted storage options."
+        ],
+        "why": "For knowledge workers managing multiple AI subscriptions, Anuma reduces friction and centralizes context. Its memory layer addresses a real pain point—lack of persistent personalization across models—and points toward a future where AI workspaces compete on interoperability and user data ownership.",
+        "links": [
+          [
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-07-28",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Flowith: canvas-based AI workspace for multi-step thinking",
+        "dek": "A visual canvas that organizes AI conversations, research threads, and multi-step workflows for spatial thinkers.",
+        "details": [
+          "Flowith is an AI-powered workspace that replaces linear chat with a visual canvas. Users can arrange prompts, sources, and outputs spatially, making it easier to manage complex, multi-step projects like research reports, product planning, or coding workflows.",
+          "Unlike traditional chatbot interfaces, Flowith lets you branch conversations, drag-and-drop content, and visually connect ideas. This approach mirrors how knowledge workers actually think—jumping between threads, revisiting earlier steps, and synthesizing across sources.",
+          "Flowith has been gaining attention among productivity enthusiasts and early adopters who need more structure than a single chat window. While still niche, it represents a growing trend of spatial AI interfaces that could reshape how professionals interact with language models."
+        ],
+        "why": "Flowith exemplifies the shift from chat-only AI to structured workspaces. For product builders, it validates demand for visual, non-linear AI tools aimed at knowledge workers and researchers.",
+        "links": [
+          [
+            "Curated AI Products: Flowith",
+            "https://flowith.io/"
+          ]
+        ],
+        "sourceDate": "2026-07-28",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "AI Coding Agent",
+        "dek": "An autonomous AI tool that writes, reviews, and refactors code with minimal human guidance, reshaping software development.",
+        "details": [
+          "AI coding agents are advanced AI systems that go beyond code completion (like early Copilot) to independently plan, write, debug, and deploy code. They leverage large language models (LLMs) trained on vast codebases, and can interact with developer tools, APIs, and version control systems. For example, OpenAI's recent field report on scientific computing shows scientists using these agents to modernize legacy Fortran code and accelerate genomics research. Meta CEO Mark Zuckerberg noted that AI is making it dramatically easier to build new consumer apps, signaling that coding agents are reducing barriers to software creation. These agents can now handle multi-step tasks, write entire functions, and even manage pull requests."
+        ],
+        "why": "AI coding agents are becoming the default interface for software development, lowering the cost and time to build products while shifting developer roles toward oversight and architecture.",
+        "links": [
+          [
+            "OpenAI: Scientific computing in the age of agentic AI",
+            "https://openai.com/index/scientific-computing-agentic-ai"
+          ],
+          [
+            "TechCrunch: Meta says AI is making it easier to build new apps",
+            "https://techcrunch.com/2026/07/30/meta-says-ai-is-making-it-easier-to-build-new-apps-and-more-are-coming/"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-07-30",
     "title": "AI Daily Atlas",
