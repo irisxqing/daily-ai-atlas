@@ -1,5 +1,336 @@
 const archiveZh = [
   {
+    "date": "2026-08-05",
+    "title": "AI Daily Atlas",
+    "meta": "2026年8月5日",
+    "headline": "模型与平台、算力与产业链 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和算力与产业链展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时算力基础设施和供应链仍是大模型竞争的底层变量。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里云 Qwen-Image-3.0 上线千问 AI 平台，争夺文生图第一梯队",
+        "dek": "阿里云正式发布新一代图像生成模型 Qwen-Image-3.0，并宣称在国内权威榜单中登顶。",
+        "details": [
+          "8月4日，据东方财富转引阿里云官方消息，Qwen-Image-3.0 已正式上线千问 AI 平台。这是继 Qwen 系列文本模型之后，阿里在图像生成赛道再次更新主力产品。",
+          "阿里云表示，该模型在权威榜单中位列国内第一。不过，摘要中尚未披露具体榜单名称与评测口径，实际表现仍应以官方演示和独立第三方评测为准。",
+          "对国内文生图应用和开发者而言，Qwen-Image-3.0 意味着又多了一个阿里系底座选项。后续 API 定价、是否开源以及与通义生态的协同，是值得继续观察的关键变量。"
+        ],
+        "why": "这是阿里云在视觉生成领域的一次重要卡位，说明大厂正在将竞赛从文本大模型扩展到图像模型；对产品和投资而言，需要关注榜单之外的实测效果和商业化节奏。",
+        "links": [
+          [
+            "Google News 报道：阿里云：Qwen-Image-3.0正式上线千问AI平台 权威榜单国内第一 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWMjJUZmRpZ1JLSUVBekYyQjQteE1PcXJnMWdocnlvaGVsdDVTOVc4XzVMNXRrT0J6UVFIUWxzQUNCb0ZiTlJkQU4yVnN5cW5scUdSMVkwOUhrcHhYVEJ5Mg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Google 发布 7 月 AI 月度总览：一场面向公众的更新盘点",
+        "dek": "官方博客回顾过去一个月在 AI 方向的密集动作，适合快速了解 Google 版图上的最新落点。",
+        "details": [
+          "8 月 4 日，Google 官方博客发布了一篇 7 月 AI 更新汇总，集中回顾过去一个月在 AI 方向的进展。作为官方月度盘点，它把分散在不同产品线的消息收拢到同一页面，方便开发者、媒体和普通用户快速掌握整体节奏。",
+          "从发布位置看，这篇内容被放在 Innovation and AI 频道下，而不是某个具体产品博客，意味着 Google 更希望外界把这些更新放在公司整体 AI 战略中理解。汇总本身没有披露具体技术参数，只提供了入口式概览。",
+          "对观察中美 AI 竞争的人来说，Google 用月度固定栏目沉淀大量更新，和 OpenAI、Anthropic 等公司的高频实时发布形成了不同节奏。在官方逐条详细公告出来前，不应把总览视为全部细节，更适合作为追踪线索。"
+        ],
+        "why": "这条汇总新闻的真正价值不是任何单一产品，而是 Google 把 AI 更新做成常态化公共沟通节奏；创业者和投资人可把它当作低成本跟踪大厂产品策略的信号源。",
+        "links": [
+          [
+            "Google AI Blog：7 月 AI 更新总览",
+            "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里重磅发布引围观，具体内容待官方揭晓",
+        "dek": "8月4日，阿里巴巴被东方财富标记为'重磅发布'，但截至发稿，官方尚未公布细节，市场处于猜测阶段。",
+        "details": [
+          "8月4日，阿里巴巴的'重磅发布'出现在东方财富等财经媒体的AI信号流中。但截至目前，搜索标题只有简短几个字，没有产品名、模型名或具体时间表，官方渠道也未同步公告。",
+          "从行业背景看，阿里近期在AI领域的动作频繁，因此市场普遍猜测这次发布可能与大模型或云服务有关，但这些都是基于趋势的推测，并非确认消息。",
+          "在官方信息出来前，建议开发者和投资者先关注阿里云、通义千问的官方账号，以免被不完整的标题误导。我们也会在第一时间跟进解读。"
+        ],
+        "why": "这条新闻的价值不在事件本身，而在于提醒我们：AI产业信息传播中，标题往往先于事实，重大发布需要以官方口径为准，避免对未证实的信号过度反应。",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里重磅发布 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8ySl9vX2ZCVXBPY1hRVzVqbVBUTDJvQklDcEVGaE9CSG1WY3dnVzdJRTVPTzVKZnEtTGNkeDlUSnhGRzBGbGlkYklXVFJkTHQyR3RDWUctT0ZUQ2pPRVQwUg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "中国版「生物DeepSeek」：4位牛津学霸让AI挑战生命科学",
+        "dek": "一家由4位牛津大学背景创业者组成的中国团队，宣称推出“生物DeepSeek”AI系统，要把大模型引入生命科学场景。目前消息仅见搜狐网，细节待官方披露。",
+        "details": [
+          "据搜狐网报道，一支由4位牛津大学背景创业者组成的中国团队，发布了被称为“生物DeepSeek”的AI系统，目标是让AI接管生命科学研究。报道未透露具体公司名称、模型参数或发布时间，信息较为有限。",
+          "从命名看，团队显然想复制DeepSeek的路线：以低成本、高效率的方式推动垂直领域突破。如果落地，这类系统可能用于药物靶点发现、基因序列分析和实验设计，降低生物研究的试错成本。",
+          "需要注意的是，目前该消息仅见诸搜狐网，未见官方公告或更多媒体交叉印证。“AI接管生命科学”更像愿景而非现状，能否真正形成产品力，还需要等待更多技术细节和验证数据。"
+        ],
+        "why": "生物医药垂直模型可能借鉴DeepSeek的性价比打法，对AI+制药创业和产业落地有风向标意义；但消息源单一，建议先观望，待官方信息确认后再评估投资或合作机会。",
+        "links": [
+          [
+            "搜狐网报道（via Google News）",
+            "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQX0syYTFXRXZlUTZpeUExSjVtcGxjZGpEUkRyLUh2RHZoTVpXdnROU0Y3cmtaelRJN181bGgzcGZWbGdIbDF6SVRsZU14cTRjdGNCdWtzaUJ5ZU5mbmo2OGppQjZOYW9wbUxlMkI5NGVpSmFVTEY0bXZFRHpwMURmRTZzV1ZncHFN?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "前微软研究员创业做数据中心机器人：AI 基础设施的下一块拼图？",
+        "dek": "据 Data Center Dynamics 报道，一位前微软研究员正入局数据中心机器人赛道；具体产品和融资尚未公开。",
+        "details": [
+          "据 Data Center Dynamics 报道，一位前微软研究员近日创办了一家数据中心机器人初创公司。消息目前还停留在非常早期的阶段，官方尚未公布公司名称、创始人姓名、融资额和首批产品信息。",
+          "这家公司瞄准的方向，是把机器人引入数据中心场景。过去两年，AI 算力扩张带来大量新建和改造项目，同时数据中心运维、巡检、设备搬运等工作仍高度依赖人工作业；机器人如果能在这个场景落地，可能直接改善效率和安全性。这也是为什么“数据中心+机器人”开始成为产业链上的新故事。",
+          "从行业位置看，这属于 AI 基础设施的下游服务与物理自动化：不直接做大模型，而是为算力中心提供更聪明的“体力活”。接下来值得观察的是创始人在微软期间的具体研究背景，以及第一批客户是否会出现在大型数据中心运营商中间。在更多细节披露前，应把它视为一个早期信号，而不是已经跑通的商业验证。"
+        ],
+        "why": "数据中心机器人是 AI 基础设施从“建算力”向“管算力”延伸的信号。对创业者和投资人来说，模型之外，围绕数据中心运维、安全、自动化的机器人应用，可能是切入 AI 物理世界的低门槛机会；但现阶段更需要验证落地场景和付费意愿。",
+        "links": [
+          [
+            "来源：Data Center Dynamics（Google News 聚合）",
+            "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ1BGWUtoUk9UbWtEb19pVWtNUHZsUWltNXlSZUNPRWo3Q0g2S1IzQ0V4ck4tUGY0Wk1EZ25GM05rQzR3bFZ2ZHU2RGNvYTdiTWN6MmFhQkNRbHVRVU1MV0F5WWFNS0RwNFBpOXhkVjhvUkRvVzlCWXpZdXIzNmIxU3E5TEplalR5RVE3bFFnZUItZmVXUnJKdjB1MHRoME43SGR2bW9UZUlTbVJnZGc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里 Max 级模型将首次开源，最强模型就得闭源的规则变了",
+        "dek": "据东方财富报道，阿里或将开源其最强模型，行业“最强模型必闭源”的惯例可能因此松动。",
+        "details": [
+          "据报道，阿里巴巴将首次开源其 Max 级模型，这意味着阿里最强的模型将不再只以 API 形式提供，而是可能开放权重。过去行业默认“最强模型闭源”，OpenAI 的 GPT-4、谷歌的 Gemini 都未开放权重，而开源阵营通常只能追赶。阿里的这一步可能改写这一规则。",
+          "阿里此前已开源多代 Qwen 模型，但 Max 级始终是“旗舰中的旗舰”，主要用于对外 API 服务。若此次开源成真，开发者将能下载、微调甚至本地部署这一级别的模型，对私有化部署和行业定制意义重大。",
+          "目前该消息来自东方财富报道，尚未见阿里官方正式公告。如果属实，它将加剧开源与闭源阵营的竞争，也可能让更多企业重新评估“自研 vs 采购”的模型策略。行业内都在等待官方确认。"
+        ],
+        "why": "若阿里 Max 级模型真的开源，意味着开源模型的能力天花板将被抬高，企业级用户能以更低成本获得接近闭源的性能，或将重塑大模型市场的竞争格局。",
+        "links": [
+          [
+            "东方财富：阿里Max级模型将首次开源，最强模型就得闭源的规则变了",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5XMkY2YV9xdE1NZlI4enp3Z3l0NE83VjBlY3I0MzJ5R1FwdFlXOU1FR3JHcklUX2lZamFtV19oQWRmQ3hiT2V4dVU2UVY2ZWM4RS1YeFY0TDBGUTk5Y0Z5ZDRIU0lHdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "DeepMind 报告：前沿 AI 的安全风险，正在从概念变成清单",
+        "dek": "风险不是笼统的‘AI 失控’，而是能力跃迁后，被更快地用在网络攻击和生物制造上。",
+        "details": [
+          "Google DeepMind 的一份新报告被 Quantum Zeitgeist 报道为：前沿 AI 会带来新的网络安全和生物安全风险。这句话值得拆开看：它说的不是 AI 突然‘觉醒’或失控，而是模型能力越强，被恶意使用的方式也会变得更具体、更可操作。",
+          "在网络安全方向，这类风险通常聚焦于攻击效率的质变：自动生成钓鱼话术、辅助编写漏洞利用代码、加速发现系统弱点。这些能力过去需要专业黑客，如今可能被低门槛工具化。对防御方而言，这意味着安全团队必须把大模型同时当作‘助手’和‘对手’来测试。",
+          "在生物安全方向，值得警惕的并不是模型给出‘怎么做’的答案，而是它降低了获取有害生物知识的技术门槛。更现实的场景是：大语言模型在辅助科研时，也可能被用于设计危险的生物实验。监管难点在于，合法科研和恶意使用使用的是同一套能力。",
+          "这类报告的价值不在于预测末日，而在于把‘双用途风险’从概念拆成可评估、可测试的清单。对于做 AI 产品或安全工具的人来说，这其实是一个信号：安全评估正在成为模型发布的基础设施，就像 API 文档和开发者工具一样。"
+        ],
+        "why": "读懂这份报告，不只是为了跟踪风险讨论，而是理解下一代模型释放时，监管与评测会怎么收紧——安全能力将变成产品竞争力的一部分，而非发布后补丁。",
+        "links": [
+          [
+            "Google News AI Models 报道入口",
+            "https://news.google.com/rss/articles/CBMicEFVX3lxTE1yakRrVGJlT3k1dkhCdzd4OG9pNGF1Q2RibXNfZG82elBiY1ZrcmlSbnJOczJldktSYUlLQ3JIc0Ftejdsa3Z4QzNZU2NfbGhSNkotMkN4TnkyaUNnNzFqWEszbGQ3VWtMa1VpZndmTEk?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "特朗普将约见 Meta、Anthropic、Google、OpenAI，聚焦 AI Agent 失控风险",
+        "dek": "白宫召集美国四大 AI 实验室，讨论自主智能体的安全边界，AI 竞赛正从“能力”转向“可控”。",
+        "details": [
+          "据 The News International 报道，美国总统特朗普计划与 Meta、Anthropic、Google 和 OpenAI 会面，讨论当前业界热议的“失控 AI Agent”风险。这四家公司是美国生成式 AI 和智能体（agent）研发的核心力量，白宫主动召集，意味着 AI Agent 的安全问题已从技术圈升级到政治议题。",
+          "所谓“失控 AI Agent”，指的是具备自主决策和执行能力的智能体在目标设定不清、权限过大或对抗性输入下，可能做出错误或越界的操作。随着 agentic AI 进入办公、金融、医疗等真实场景，行业里已有不少关于 agent 误操作、绕过安全护栏的公开讨论，这轮担忧也成为全球监管的新焦点。",
+          "这次会面可能围绕几个方向展开：如何为 agent 建立可验证的安全规范，是否需要引入事前评估和事后审计，以及政府在采购和公共场景中如何约束其使用。对创业公司和开发者而言，未来产品或服务的准入门槛可能从“功能够强”转向“安全可解释”，安全团队与红队测试将成为标配。",
+          "不过，会议的具体时间、参会的负责人级别和正式议程目前均未公开，报道也仅援引匿名信源。此前特朗普政府对 AI 监管总体放松，这次会面最终是姿态性沟通还是会推动具体政策，仍有很大不确定性。"
+        ],
+        "why": "白宫首次把 AI Agent 安全摆在台面上，意味着 agent 竞争将在“能力+安全”双线展开；任何做 agent 产品的团队，都应把安全解释与合规准备当作产品力的一部分。",
+        "links": [
+          [
+            "The News International 报道（经 Google News）",
+            "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTmUtdEFzalJxMFRoRjlDdTFWTjNIVDFhQTZMVWd5Qy1yLWZUcjJ3WU1QZmdPQ2hTdVNlUHpEc2VZemFKYTNuUElfUXhmTDc1Y21ON2RhWVNiT2tKMThHVEllOFlRajE5ZkRvSks4b2pVLVpIWFhUMXQ5UDZuZEpYVHNqME1iWmtaeTEwS3diQk01SWlFYzVPbUJHZVFjX3A1RlZrQzBjNzF4Y1dIOURmQUdTbw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "Palantir CEO Alex Karp 直言：AI 行业是“马克思主义”的",
+        "dek": "在交出强劲季度业绩后，Karp 却给 AI 行业扣上“马克思主义”的帽子。这不仅是口舌之争，更折射出硅谷关于开源、商业与治理的深层裂痕。",
+        "details": [
+          "TechCrunch 报道，Palantir 在交出强劲季度业绩后，CEO Alex Karp 公开称 AI 行业“马克思主义”。报道没有给出完整引语，但这一措辞本身信息量很大——Karp 是硅谷少数敢对主流文化开炮的 CEO，Palantir 也是 AI 商业化的主要玩家之一。",
+          "从字面看，“马克思主义”在这里大概率不是政治立场，而是指 AI 行业盛行的“开源”“共享”“去中心化”风气。Karp 可能想表达：当所有人都把模型免费开放、把数据当作公共财产，谁来维持投资回报？这种集体主义倾向会扼杀创新的商业动机。这种解读目前仍是分析，并非 Karp 原话，读者应区分事实与观点。",
+          "更有趣的是时机。Palantir 刚刚交出一份强劲季报，说明它的商业模式跑得通。Karp 此时批评行业，可能是在为“闭源+商业授权”路线正名，也是在提醒资本市场：AI 不只有 OpenAI 的“非营利”叙事，也有纯粹的资本化路径。对投资者来说，这是一次难得的价值观对冲。",
+          "对创业者和产品团队的启发：AI 行业的成败不只靠技术，更靠“分配逻辑”。开源也罢、闭源也好，都需要清晰的商业闭环。Karp 这番争议言论的真正价值，是逼着每一个 AI 创业者思考——我的产品到底在创造稀缺，还是在稀释稀缺？"
+        ],
+        "why": "Karp 的言论把 AI 行业价值观撕裂摆上台面，说明纯粹的“技术乐观主义”已不够用。投资人应该把“商业模式信仰”纳入风险评估，创业者也要在开源与商业化之间做出主动选择。",
+        "links": [
+          [
+            "查看原文（TechCrunch via Google News）",
+            "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZkRYSUFRdWJiWW1JQnRmOG5zVTlQeUJSMWpyTVAxSUctR3h1S0RXM2d6RzU2Z0hWZXVjQkZHcGpZNkNOYnRGb2dtSElfeEI4cDNySjhndS12WTNwMWxxQ3poa1l4aFNVNlR4TnpzVUV4NWMtZ3gxT2tpVWRCaFBVZzBGSmNaN0I3UWtMWjhKa1pYSENPMWN0Y20wbE1iVTJuSjhjQnlQZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "开源版Claude Science来了！零依赖、MIT协议，内置30+项科研Skills",
+        "dek": "北大与元空AI Agent联合实验室发布开源科研Agent套件，主打轻量、自由使用。",
+        "details": [
+          "这个的开源项目来自北京大学和元空AI Agent联合实验室，定位是Claude Science的开源替代版。虽然官方资料还没完全公开，但核心卖点已经写得很清楚：零依赖、MIT协议、内置30+项科研Skills。",
+          "零依赖意味着开发者不用在环境配置上花太多时间，拿下来就能跑；MIT协议则代表可以自由商用和修改。对于科研团队来说，这种授权方式比很多只供个人学习用的开源项目友好得多，也更容易集成到自己的工具链里。",
+          "30+项科研Skills相当于预置了常见的科研操作能力，比如文献处理、数据分析、实验设计等。不过目前还没有细节说明这些Skill具体覆盖哪些学科、效果如何，需要等代码仓库放出来后实际验证。",
+          "这个信号值得注意：科研AI助手正在从大厂专属走向社区化。Claude Science这类产品证明了需求，而开源版本的出现会降低门槛，让更多课题组能基于自己的数据和工作流定制助手。"
+        ],
+        "why": "科研场景的AI Agent工具开始从商业化封闭产品转向开源生态，对科研效率工具赛道和开源社区都是值得跟踪的新变量。",
+        "links": [
+          [
+            "量子位: 开源版Claude Science来了！零依赖、MIT协议，内置30+项科研Skills",
+            "https://www.qbitai.com/2026/08/466386.html"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "亿级日活App的“算力生死劫”：推理成本倒挂，他们靠跨云架构砍掉75% GPU集群",
+        "dek": "出海AI应用遭遇推理成本倒挂，靠跨云架构砍掉75% GPU集群，揭示规模化推理的算力困局。",
+        "details": [
+          "据量子位8月4日报道，一个拥有亿级日活用户的出海AI应用，正面临“推理成本倒挂”——推理成本已超过其收益或投入产出比失衡。该团队通过跨云架构调整，将GPU集群规模砍掉了75%。但报道未披露具体App名称和实施细节。",
+          "报道摘要中提到的“三重算力锁链”，是指出海AI在海外部署时可能面临的GPU供给限制、云厂商区域定价差异以及合规与网络成本等多重压力。具体是哪三重，原文没有展开，这里只能作为概念性提示。",
+          "这个案例对AI产品团队有直接启发：当用户规模增大时，推理成本会迅速侵蚀利润，通过跨云调度和弹性资源利用区域价格差，可能比单纯优化单云更有效。但75%的缩减比例依赖具体业务形态，不宜盲目复制。"
+        ],
+        "why": "推理成本倒挂是AI应用规模化的常见陷阱，跨云降本提供了新的架构思路，提醒产品团队将成本设计纳入早期决策。",
+        "links": [
+          [
+            "量子位: 亿级日活App的“算力生死劫”：推理成本倒挂，他们靠跨云架构砍掉75% GPU集群",
+            "https://www.qbitai.com/2026/08/465732.html"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Liminary：把 AI 研究资料变成可追溯的决策依据",
+        "dek": "面向咨询顾问与研究者的 AI 工作空间，统一收纳 PDF、AI 对话和视频，让每个结论都有源可查。",
+        "details": [
+          "Liminary 是一款面向咨询顾问、策略师和研究者的 AI 研究工作台，主打“高风险的推荐必须建立在真实研究之上”。它不是又一个 AI 摘要工具，而是把研究过程中的原始素材、AI 对话和个人笔记放在同一个空间里管理。",
+          "在功能上，用户可以把文章、报告、PDF、AI 聊天记录甚至视频统一保存，并直接在上面做批注。每个想法都会保留来源，方便回溯哪句话出自哪份材料——这对需要向客户或管理层负责的岗位尤其重要。",
+          "它还支持跨项目复用研究洞察。做过一轮深度调研后，这些笔记和来源可以沉淀为内部知识，下次做类似主题时直接调用，节省重复搜索和阅读的时间。",
+          "目前公开信息主要来自官网产品介绍，关于融资和客户情况暂未看到更多披露。这类生产力工具的成熟度往往取决于真实工作流中的体验，值得关注的是它能否在 Notion、ChatGPT 等通用工具之外找到自己的生态位。"
+        ],
+        "why": "对创业者和产品经理的启发：AI 辅助研究的痛点不在生成，而在整理和溯源。谁能把 AI 的产出与真实材料绑定，谁就能在知识工作流里占据更稳固的位置。",
+        "links": [
+          [
+            "Liminary 官网",
+            "https://liminary.io/"
+          ]
+        ],
+        "sourceDate": "2026-08-02",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "多模态 AI",
+        "dek": "能同时理解或生成文本、图像、语音、视频等多种信息形态的 AI。",
+        "details": [
+          "多模态 AI 指模型不只处理文字，还能理解图片、声音、视频、屏幕内容等信息。它让 AI 从“输入文本框”变成更自然的人机入口，例如实时语音助手、看图问答、视频理解和屏幕操作。",
+          "这类能力的商业价值在于降低使用门槛，并进入更多场景：客服、教育、设计、医疗、工业巡检都可能受影响。判断新闻价值时，要看它是否真正能跨模态完成任务，而不是只做演示。"
+        ],
+        "why": "它解释了为什么大公司都在争夺语音、视频和浏览器入口，因为入口形态本身正在变化。",
+        "links": [
+          [
+            "Google News AI Reports: DeepSeek's V4-Flash undercut rival AI models on operating costs, r",
+            "https://news.google.com/rss/articles/CBMiswFBVV95cUxOb1R3eXlTOExqa1VqdUtWTjhpdjdrMFhiQmFlTDB0NVd0TFJ3Q19BbnJwRnhYN1l3R1hFbnJWUGVIV25HbC1HZ1E1eVBTRTd4c29tZVhIUGM2NUVIM3M3MVJZbnJlV2pEUG9TSWZJYllBNTdTdnluTVViYUJmUzhiYjFsc0x5eno1QnAyRWRaVjExamk5cnRET3ZmclhmVDV3OFhfVTVEZF82U3JzQXF4X0VSOA?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-08-04",
     "title": "AI Daily Atlas",
     "meta": "2026年8月4日",
@@ -16475,6 +16806,334 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-08-05",
+    "title": "AI Daily Atlas",
+    "meta": "August 5, 2026",
+    "headline": "models and platforms plus compute and infrastructure shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus compute and infrastructure. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, compute, chips, data centers, and supply chains remain the base layer of AI competition. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "阿里云：Qwen-Image-3.0正式上线千问AI平台 权威榜单国内第一 - 东方财富",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI：阿里云：Qwen-Image-3.0正式上线千问AI平台 权威榜单国内第一 - 东方财富. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: 阿里云：Qwen-Image-3.0正式上线千问AI平台 权威榜单国内第一 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWMjJUZmRpZ1JLSUVBekYyQjQteE1PcXJnMWdocnlvaGVsdDVTOVc4XzVMNXRrT0J6UVFIUWxzQUNCb0ZiTlJkQU4yVnN5cW5scUdSMVkwOUhrcHhYVEJ5Mg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google publishes July 2026 AI recap, a monthly digest of its latest updates",
+        "dek": "An official roundup on the Google AI Blog offers a quick view of Google's AI progress, without deep technical detail.",
+        "details": [
+          "Google has posted a new entry on its AI Blog that collects the AI news it announced during July 2026 into a single official recap. The post is designed as a timeline-style digest of the company's AI work, letting readers scan the month's releases and updates without searching through multiple separate announcements.",
+          "Because this is a monthly summary rather than a product launch, it does not go into granular technical specifications or benchmark numbers. For non-technical readers, the value is in seeing the breadth of Google's AI activity in one place; for practitioners, the recap can serve as a reference point for tracking official updates as they continue to roll out."
+        ],
+        "why": "An official monthly recap like this is a useful signal for anyone tracking Google's AI roadmap: it reveals the areas the company chooses to highlight and provides a quick checklist of updates worth investigating for integration, competitive analysis, or career decisions.",
+        "links": [
+          [
+            "Google AI Blog: The latest AI news we announced in July 2026",
+            "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba's 'Major Release' Sets Off China AI Alerts — But Details Are Scarce",
+        "dek": "East Money flagged a major Alibaba announcement on Aug 4 via a China AI signals feed, but specifics remain unconfirmed.",
+        "details": [
+          "On August 4, 2026, Chinese financial outlet East Money published a terse headline about a 'major release' from Alibaba. The item, circulating in Google News's China AI signals feed, carried no additional description or link to an official announcement.",
+          "The sparse format leaves three key questions open: What product or service is involved? Which business unit is behind it? And does it target consumers, enterprises, or developers? Until Alibaba or a credible secondary source provides details, the news should be treated as an unconfirmed lead.",
+          "Given Alibaba's scale, any follow-up could influence AI market sentiment in China and beyond, but the current headline alone does not support further interpretation."
+        ],
+        "why": "This headline is an early indicator that Alibaba may have a significant AI product or update in the works. Because the company's releases can affect the entire Chinese AI ecosystem, teams should monitor official channels for confirmation before acting.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里重磅发布 - 东方财富",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8ySl9vX2ZCVXBPY1hRVzVqbVBUTDJvQklDcEVGaE9CSG1WY3dnVzdJRTVPTzVKZnEtTGNkeDlUSnhGRzBGbGlkYklXVFJkTHQyR3RDWUctT0ZUQ2pPRVQwUg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "China’s “Bio DeepSeek” Emerges: Four Oxford Grads Aim to Put AI in Charge of Life Sciences",
+        "dek": "A Sohu headline describes a Chinese startup modeled on DeepSeek, founded by four Oxford graduates, that wants AI to drive life-science discovery.",
+        "details": [
+          "A Sohu article circulating via Google News claims a Chinese \"Bio DeepSeek\" has arrived: a startup founded by four Oxford graduates that aims to let AI run life-science discovery. The label deliberately echoes DeepSeek, China's breakout AI lab, but shifts the focus from chatbots to biology.",
+          "The headline offers no company name, funding amount, or product details, so the exact venture remains unverified. Still, if true, it signals China's AI push extending into drug discovery and genomics, a high-stakes vertical that investors and pharma players are watching."
+        ],
+        "why": "This headline is less about the startup itself and more about a pattern: Chinese AI teams are aggressively staking claims in AI-for-science. If the technology proves real, expect biotech investors to start treating \"Bio DeepSeek\"-style startups as a distinct asset class.",
+        "links": [
+          [
+            "Google News China AI (Sohu)",
+            "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQX0syYTFXRXZlUTZpeUExSjVtcGxjZGpEUkRyLUh2RHZoTVpXdnROU0Y3cmtaelRJN181bGgzcGZWbGdIbDF6SVRsZU14cTRjdGNCdWtzaUJ5ZU5mbmo2OGppQjZOYW9wbUxlMkI5NGVpSmFVTEY0bXZFRHpwMURmRTZzV1ZncHFN?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Former Microsoft researcher launches data center robotics startup",
+        "dek": "A former Microsoft researcher is entering the data center robotics space, adding to the wave of startups automating physical AI infrastructure.",
+        "details": [
+          "A former Microsoft researcher has launched a data center robotics startup, according to Data Center Dynamics. The reporting is still thin, but the news fits a larger pattern: as hyperscale AI computation expands, companies are increasingly looking to robots for repetitive, high-stakes tasks inside data centers—cabling, inspection, security, and hardware lifecycle management.",
+          "The founding profile gives the venture credibility: a researcher with a Microsoft background stepping out to build automation for physical AI infrastructure. That reflects how AI's compute buildout is creating adjacent opportunities beyond chips and models—operations, maintenance, and physical labor at the edge of the data center.",
+          "Many details remain unconfirmed: no company name, funding amount, or technology stack has been published in the available coverage. The immediate watch item is whether the startup targets retrofit hardware for existing facilities or designs new automation for next-generation AI data centers."
+        ],
+        "why": "For investors and operators, this is another signal that data center robotics is becoming a credible startup category as AI capex pushes infrastructure complexity beyond human-scale operations.",
+        "links": [
+          [
+            "Data Center Dynamics via Google News",
+            "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZ1BGWUtoUk9UbWtEb19pVWtNUHZsUWltNXlSZUNPRWo3Q0g2S1IzQ0V4ck4tUGY0Wk1EZ25GM05rQzR3bFZ2ZHU2RGNvYTdiTWN6MmFhQkNRbHVRVU1MV0F5WWFNS0RwNFBpOXhkVjhvUkRvVzlCWXpZdXIzNmIxU3E5TEplalR5RVE3bFFnZUItZmVXUnJKdjB1MHRoME43SGR2bW9UZUlTbVJnZGc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Alibaba to open-source its Max-level model for the first time, upending the 'frontier models stay closed' rule",
+        "dek": "Alibaba is reportedly preparing to release its top-tier Max model as open source, a move that could reshape China's AI strategy.",
+        "details": [
+          "According to Eastmoney via Google News, Alibaba will open-source its Max-level model for the first time. The Max tier is Alibaba's top-performing line, so the move would break the long-standing rule that the strongest models stay proprietary.",
+          "If confirmed, external developers could build on Alibaba's most advanced weights, accelerating AI applications and intensifying competition with open-weight rivals. It would signal that Alibaba values ecosystem reach over protecting API revenue. No launch date, model name, or license terms were reported, and the company has not officially confirmed."
+        ],
+        "why": "This matters because open-sourcing its strongest model would be a strategic bet: Alibaba would trade some API revenue for developer mindshare and position open weights as a core competitive lever in China's fast-moving AI market.",
+        "links": [
+          [
+            "Google News China AI Signals",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5XMkY2YV9xdE1NZlI4enp3Z3l0NE83VjBlY3I0MzJ5R1FwdFlXOU1FR3JHcklUX2lZamFtV19oQWRmQ3hiT2V4dVU2UVY2ZWM4RS1YeFY0TDBGUTk5Y0Z5ZDRIU0lHdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Google DeepMind Report Finds Frontier AI Poses New Cybersecurity and Bio Risks",
+        "dek": "A new DeepMind assessment links frontier model advances to fresh dangers in cyber offense and biotechnology.",
+        "details": [
+          "According to a report covered by Quantum Zeitgeist on August 4, 2026, Google DeepMind has published an assessment warning that frontier AI introduces new risks in cybersecurity and biosecurity. The headline finding is that as models become more capable at coding, reasoning, and scientific assistance, they also lower the barrier for malicious use in areas like vulnerability discovery, cyberattacks, and biological misuse. While the original article provides limited detail, the framing suggests the report focuses on near-term, concrete failure modes rather than hypothetical long-term threats.",
+          "This matters because it comes from a leading AI lab itself, not just from external researchers or policy think tanks. DeepMind has a track record of publishing safety research, but a dedicated risk assessment tied to frontier models signals that AI safety concerns are moving from academic debate into internal engineering practice. For non-technical observers, the takeaway is that capability gains and risk often scale together: every new tool that accelerates science or software development can also be turned toward offensive ends.",
+          "The report also hints at a broader industry trend. Frontier AI developers are increasingly expected to conduct structured risk evaluations — covering cyber, bio, chemical, and autonomous capabilities — before deployment. This shift is reshaping how model releases are judged: safety documentation is becoming as important as benchmark scores. Regulators and enterprise buyers are starting to ask for these assessments, making AI risk a factor in procurement and investment decisions."
+        ],
+        "why": "This report is a reminder that frontier AI risk evaluation is becoming a standard part of model development, not just an academic exercise. For product teams and investors, understanding how labs assess misuse potential will be key to judging both their responsibility and their long-term resilience.",
+        "links": [
+          [
+            "Google News AI Models: Google DeepMind Report Finds Frontier AI Poses New Cybersecurity And Bio Risks",
+            "https://news.google.com/rss/articles/CBMicEFVX3lxTE1yakRrVGJlT3k1dkhCdzd4OG9pNGF1Q2RibXNfZG82elBiY1ZrcmlSbnJOczJldktSYUlLQ3JIc0Ftejdsa3Z4QzNZU2NfbGhSNkotMkN4TnkyaUNnNzFqWEszbGQ3VWtMa1VpZndmTEk?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Trump to meet Meta, Anthropic, Google, OpenAI amid rogue AI agent concerns - The News International",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from Google News AI Models：Trump to meet Meta, Anthropic, Google, OpenAI amid rogue AI agent concerns - The News International. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Models: Trump to meet Meta, Anthropic, Google, OpenAI amid rogue AI agent c",
+            "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTmUtdEFzalJxMFRoRjlDdTFWTjNIVDFhQTZMVWd5Qy1yLWZUcjJ3WU1QZmdPQ2hTdVNlUHpEc2VZemFKYTNuUElfUXhmTDc1Y21ON2RhWVNiT2tKMThHVEllOFlRajE5ZkRvSks4b2pVLVpIWFhUMXQ5UDZuZEpYVHNqME1iWmtaeTEwS3diQk01SWlFYzVPbUJHZVFjX3A1RlZrQzBjNzF4Y1dIOURmQUdTbw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "After killer quarter, Palantir CEO Alex Karp calls AI industry ‘Marxist’ - TechCrunch",
+        "dek": "Palantir's CEO uses a loaded political label to describe the AI sector just as his company posts strong results—an opinionated take worth parsing for what it says about AI's ideological fault lines.",
+        "details": [
+          "TechCrunch's report, circulated via Google News, quotes Alex Karp describing the AI industry as 'Marxist' on the back of a 'killer quarter' for Palantir. The headline alone frames the comment as a provocative turn from one of AI's most defense-oriented CEOs—language that mixes economics with ideology at a moment when Wall Street is rewarding AI companies with record valuations.",
+          "The core issue is not whether the AI industry is actually Marxist, but why a CEO would choose that charge now. Karp's Palantir built its business on government and institutional contracts, a model far from the venture-backed consumer AI boom. His remark reads as a critique of the collectivist, research-sharing ethos in parts of the AI field, and as a defense of proprietary, mission-driven deployment. The piece appears to be an interview or earnings-related commentary rather than a formal industry report, so it should be read as a personal opinion, not a market forecast.",
+          "Two takeaways stand out: first, the epithet signals a growing split between AI's 'open research' camp and 'closed deployment' camp; second, Karp's willingness to speak politically after a financial win suggests that AI company leaders will increasingly use ideological language to differentiate themselves. For readers, the piece is less about Marxism and more about how the industry's most commercial voices are framing their own exceptionalism."
+        ],
+        "why": "When a CEO like Karp reaches for ideological vocabulary during a strong quarter, it's a signal that AI's competitive narratives are shifting from pure technology to questions of ownership and governance—useful context for anyone allocating capital or positioning a product.",
+        "links": [
+          [
+            "Google News AI Views: After killer quarter, Palantir CEO Alex Karp calls AI industry ‘Marxist’ - TechCrunch",
+            "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZkRYSUFRdWJiWW1JQnRmOG5zVTlQeUJSMWpyTVAxSUctR3h1S0RXM2d6RzU2Z0hWZXVjQkZHcGpZNkNOYnRGb2dtSElfeEI4cDNySjhndS12WTNwMWxxQ3poa1l4aFNVNlR4TnpzVUV4NWMtZ3gxT2tpVWRCaFBVZzBGSmNaN0I3UWtMWjhKa1pYSENPMWN0Y20wbE1iVTJuSjhjQnlQZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Open-Source 'Claude Science' Emerges: MIT-Licensed, Zero-Dependency Research Agent",
+        "dek": "A Peking University and Yuan Kong AI joint lab released an open-source research agent with 30+ built-in scientific skills, aiming to make AI-driven lab work more accessible.",
+        "details": [
+          "A collaboration between Peking University and the Yuan Kong AI Agent Joint Lab has published an open-source project described as an open-source version of Claude Science. The code is released under the MIT license and claims zero dependencies, meaning developers can run it without heavy environment configuration. According to the report, it includes more than 30 built-in scientific research skills, though the exact capabilities are not detailed in the coverage.",
+          "The release is a notable signal for the open-source AI tooling ecosystem: research-oriented agents are moving from closed platforms to modular, locally runnable systems. The zero-dependency approach aligns with a broader community preference for lightweight, auditable tools. However, the source article is brief, and we have not independently verified the repository, its actual feature set, or its compatibility with existing research workflows."
+        ],
+        "why": "For developers and teams building AI-assisted research pipelines, this project offers a starting point for customizing scientific agents without vendor lock-in. It also highlights how Chinese academic and industry labs are releasing open-source AI tools that could influence global development.",
+        "links": [
+          [
+            "量子位: 开源版Claude Science来了！零依赖、MIT协议，内置30+项科研Skills",
+            "https://www.qbitai.com/2026/08/466386.html"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Hundreds-of-Millions DAU App's Compute Crisis: Cross-Cloud Architecture Cuts GPU Clusters by 75%",
+        "dek": "A report from Chinese tech outlet QbitAI shows how an overseas AI app with hundreds of millions of daily active users escaped an inference cost crunch by rearchitecting across cloud providers — slashing GPU capacity by three-quarters.",
+        "details": [
+          "For AI products with massive daily users, the cost of running inference can quickly become the heaviest line item — sometimes exceeding the revenue each interaction brings. The QbitAI article describes one such app, positioning its struggle as a 'triple shackle' of computing power: difficulty securing GPUs, spiraling inference demand, and a per-query cost that had inverted (meaning serving each request was no longer economically sustainable). The report frames this as a survival issue rather than just an infrastructure annoyance.",
+          "The reported fix was a cross-cloud architecture. Instead of relying on a single cloud provider's GPU pool, the team spread workloads across multiple clouds, using scheduling and traffic routing to take advantage of the cheapest or most available capacity at any moment. The result was a 75% reduction in the size of their GPU cluster, a dramatic gain in utilization. The article does not disclose which app was involved or the exact technical details, so the numbers should be treated as reported rather than independently verified.",
+          "The deeper lesson is that for consumer AI products, inference cost is a unit-economics problem, not just an engineering one. The 75% cut did not come from buying cheaper hardware alone, but from changing how workloads were placed and executed. That suggests forward-thinking teams should design for portability across clouds from day one — a strategic advantage when GPU access and pricing become volatile."
+        ],
+        "why": "This case is a reminder that GPU procurement is no longer the only bottleneck — how efficiently you use those GPUs, especially across clouds, can determine whether an AI product is viable at scale. It also signals a growing opportunity for tools that help teams manage multi-cloud inference cost and workload placement.",
+        "links": [
+          [
+            "量子位: 亿级日活App的“算力生死劫”：推理成本倒挂，他们靠跨云架构砍掉75% GPU集群",
+            "https://www.qbitai.com/2026/08/465732.html"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Liminary: AI research workspace for consultants, strategists, and researchers",
+        "dek": "A source-traceable research workspace that turns scattered articles, PDFs, and AI chats into reusable, citable insights for high-stakes decisions.",
+        "details": [
+          "Liminary is an AI research workspace aimed at consultants, strategists, and researchers whose work depends on grounded recommendations. Instead of treating AI as a chat-only assistant, it lets users save articles, reports, PDFs, AI chats, and videos into one place, then annotate and organize them while preserving source traceability. The emphasis is on connecting insights across projects rather than producing one-off answers.",
+          "The workflow is built around a simple insight: in professional research, the value of an AI-generated answer depends on being able to verify and reuse the underlying evidence. By keeping source provenance visible and allowing annotations to carry through to later work, Liminary targets the gap between generic AI summarization and rigorous, repeatable research. It is positioned as a productivity layer for people who need defensible analysis, not just speed.",
+          "As a curated editor pick (fallback item for August 2), Liminary reflects a broader shift in AI products: from chat interfaces to structured workspaces that manage knowledge across time and projects. The product is still early-stage, and its success will likely hinge on how well it integrates with existing tools like PDF readers, note-taking apps, and team workflows."
+        ],
+        "why": "For anyone tracking AI productivity tools, Liminary is a useful signal that 'AI + research workflow' is becoming a distinct category: the moat is not model access but source control, citation hygiene, and the ability to reuse insights across engagements. It also suggests an opportunity to build vertical research workflows for consulting and strategy teams.",
+        "links": [
+          [
+            "Liminary official site",
+            "https://liminary.io/"
+          ]
+        ],
+        "sourceDate": "2026-08-02",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Multimodal AI",
+        "dek": "A simple way to understand AI systems that see, hear, read, and speak.",
+        "details": [
+          "Multimodal AI refers to systems that process and generate content across multiple data types—such as text, images, audio, and video—rather than a single medium. For a non-technical reader, think of the difference between a chatbot that only types replies and an assistant that looks at a photo, reads a chart, and answers you with voice.",
+          "The term matters because frontier-model competition has moved well beyond pure text. Companies are packaging models with broader capabilities, and open-source decisions are now part of that story. For example, Alibaba said it will open-source its Qwen-Max-level flagship model for the first time—a reminder that how a model is released can be as important to builders as what the model can technically do.",
+          "When you encounter an AI product labeled 'multimodal,' check three things: which input types are supported, which output types are supported, and whether the model can actually reason across modalities together—such as listening to speech while analyzing a chart—or simply processes each type separately.",
+          "The underlying research and industry context are shifting quickly. Reports on model operating costs, frontier-AI safety risks, and data extraction from language models all shape how multimodal AI is built and deployed. Knowing the concept helps you parse these signals and evaluate whether a new release is genuinely multimodal or just adding a separate tool alongside a text model."
+        ],
+        "why": "Understanding multimodal AI is a foundational lens for judging AI products and roadmaps; it clarifies what a model can actually do beyond its headline benchmarks and where integration opportunities lie.",
+        "links": [
+          [
+            "Alibaba Will Make Max AI Model Open Source for First Time (Yicai Global)",
+            "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTVUzVDl3a05QdER6UTNjZXRzRzJrOUtZQklnWHhxRDA2QXMzYURJM3MxZ2xnVHVjTHNiVlZVZTc4ZTlXRmxSVk9KclZmMHdNaWlfNW5wc3dnckFMNWRlaV9uM0h4bS1pcjFWZHlSWHM1YnpMZDUzWDB3UWRVTTZsaG9POGR2S0Y4cmxpUEl4dzZLa0du?oc=5"
+          ],
+          [
+            "Google DeepMind Report Finds Frontier AI Poses New Cybersecurity And Bio Risks (Quantum Zeitgeist)",
+            "https://news.google.com/rss/articles/CBMicEFVX3lxTE1yakRrVGJlT3k1dkhCdzd4OG9pNGF1Q2RibXNfZG82elBiY1ZrcmlSbnJOczJldktSYUlLQ3JIc0Ftejdsa3Z4QzNZU2NfbGhSNkotMkN4TnkyaUNnNzFqWEszbGQ3VWtMa1VpZndmTEk?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-08-04",
     "title": "AI Daily Atlas",
