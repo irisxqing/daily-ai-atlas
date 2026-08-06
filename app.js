@@ -1,5 +1,365 @@
 const archiveZh = [
   {
+    "date": "2026-08-06",
+    "title": "AI Daily Atlas",
+    "meta": "2026年8月6日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "OpenAI 回应第三方网络安全评估，公布新保障措施",
+        "dek": "OpenAI 解释近期第三方模型评估事件，并推出新安全措施以规范测试流程。",
+        "details": [
+          "OpenAI 官方发布说明，回应近期涉及第三方网络安全评估的事件，并公布新的安全保障措施。公司强调，第三方评估是验证 AI 模型安全性的重要环节，但同时也可能暴露模型的潜在弱点。",
+          "背景是随着大模型在企业级场景加速落地，外部评测团队对模型的对抗性测试越来越严格。OpenAI 此次提出的新保障措施，旨在让模型测试和评估流程更规范，减少评估过程中可能引发的安全风险。",
+          "新措施的具体细节尚未完全公开，实际效果也有待后续评估验证。这一动作反映出行业对 AI 安全治理的重视，也为其他模型提供商和评测机构提供了可参考的治理思路。"
+        ],
+        "why": "OpenAI 的公开回应意味着 AI 评估的流程和标准可能更趋严格，企业在选择评测伙伴时需要更加关注其安全协议和透明度。",
+        "links": [
+          [
+            "OpenAI 官方说明",
+            "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "8GB 内存也能跑 Kimi K3？爱范儿发布 2026 本地部署大模型配置指南",
+        "dek": "本地部署大模型的门槛真的降下来了吗？爱范儿新指南给出了一种可能性：8GB 内存也能尝试运行 Kimi K3。",
+        "details": [
+          "爱范儿日前发布了一篇题为《8GB 内存也能跑 Kimi K3？》的实战指南，切入 2026 年本地部署大模型的门槛问题。文章以月之暗面旗下 Kimi K3 为对象，给出了一套面向 8GB 内存设备部署大模型的配置方案，意味着在入门级笔记本或迷你主机上运行大模型成为可能。",
+          "该指南的实用价值在于把“低配部署”从概念变成了可执行步骤。对于普通用户而言，8GB 内存的硬件条件并不算高，如果能顺利运行 Kimi K3，将大幅降低大模型的使用成本，极大推动 AI 应用的普及。不过，由于 Kimi K3 并非开源模型，实际部署可能涉及量化或推理框架的取舍，具体效果和性能还有待实测。",
+          "这也反映出 2026 年 AI 产业的一个趋势：本地小模型部署正在成为云 API 之外的又一重要路径。随着模型压缩和推理优化技术的进步，AI 开发者需要在“云上调用”和“本地运行”之间找到新的平衡点，而爱范儿这份指南出现的时机恰好踩在了这一需求上。"
+        ],
+        "why": "对开发者和小型企业来说，这是一次低成本拥抱大模型的破冰信号；但需谨慎看待宣传效果，实际部署体验仍需亲自验证。",
+        "links": [
+          [
+            "Google News China AI Signals: 8GB 内存也能跑 Kimi K3？2026 本地部署大模型配置全指南 - 爱范儿",
+            "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE8tSzNWcUl5NXN0MHZtNmJ5V213UkdwX3JXS2g1dnJXYUI2QXZBRmljdVU4dS03eUg5ajZ0Y05ERXhGR1E?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek 登顶全球大模型调用榜，估值最高5000亿",
+        "dek": "据21财经报道，DeepSeek 在全球大模型调用量榜单中位列第一，估值最高达到5000亿，成为国产大模型公司中的新龙头。",
+        "details": [
+          "8月5日，21财经援引行业数据称，DeepSeek 已在全球大模型调用榜上登顶，超越国内外主要对手。报道同时提到，其估值最高已达5000亿。不过，这组数字来自媒体口径，尚未看到公司官方确认，货币单位也未在标题中明确。",
+          "调用量登顶意味着 DeepSeek 在真实用户和开发者侧的渗透率已经不低。相比单纯刷测试集分数，API 调用和开源下载更能反映模型在生产力场景中的实际采用度。若这一趋势延续，DeepSeek 对智谱、月之暗面、MiniMax 等国内同行的商业化压力会继续加大。",
+          "估值5000亿（按目前市场环境推测可能是人民币）对应的是资本市场对 DeepSeek 路线的认可：用相对低的推理成本做出高性能模型，再通过开源和降价快速占领市场份额。但大模型估值波动大，后续融资和最新一轮定价才是关键信号。"
+        ],
+        "why": "这标志着 DeepSeek 从技术话题明星变成真正影响市场格局的头部玩家：调用量领先和估值跳升，会促使更多企业重新评估自建模型与调用第三方 API 的成本天平。",
+        "links": [
+          [
+            "Google News China AI Signals: 最高估值5000亿，DeepSeek登顶全球大模型调用榜 - 21财经",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc1JqSHNTLXJCT3pxOGc0X3RnQjNPa0hsU2E3azNFMmw4aWxwQjVKdjBqemZud2g1bFhMd0JtUVV5QlhZeEdFQlo3MHJSMWl3QzNqX0k5YnRSa3pBY3BBandmWE1LWGFtSEMwN2lvR3lmeFE2eGNwZG9yOERVMEN3WUZaZkFhMUF3eDRPLQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "MiniMax H3 视频模型登顶开源社区，定义视频模型“斩杀线”",
+        "dek": "上观新闻称其登顶开源社区，视频生成进入新基准？",
+        "details": [
+          "上观新闻 8 月 5 日报道，MiniMax 的 H3 视频模型登顶开源社区，被评价为“定义了视频模型领域的斩杀线”。这是 MiniMax 在视频生成赛道的一次高调亮相，但目前还没有官方公告或完整评测数据。",
+          "所谓“斩杀线”，可以理解为新模型能力已经高到让此前的方案显得过时。报道没有给出具体对比对象、榜单名称或量化指标，所以这句话更像行业口碑，而不是可验证的事实。",
+          "如果 H3 确实登顶，将延续中国视频模型在开源社区的高存在感，也会让开发者生态的争夺更加激烈。真正的产品力还要看生成质量、训练和推理成本，以及 MiniMax 后续是否开放权重。"
+        ],
+        "why": "这则新闻的价值不在单点指标，而在信号意义：中国视频模型正把开源社区当作主战场，用社区口碑和开发者影响力来建立壁垒。对创业者来说，与其追着参数跑，不如想想怎么在生态中找到不可替代的位置。",
+        "links": [
+          [
+            "上观新闻：MiniMax H3 视频模型登顶开源社区",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KQWJUSkdTMHladmJtSjlpZVo3NGxoc0lIaVhoVU01WTZyMFFtMkRqRm5abThIOEFjNEJIdVplQnZ6TWRXeVRRMWRjYUNRdm45c2xVZjJ2ME1TUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Qwen-Image-3.0 上线千问 AI 平台，面向所有用户开放",
+        "dek": "图像生成模型迭代到 3.0，普通用户可在千问平台直接体验，生成式 AI 的应用门槛再次降低。",
+        "details": [
+          "千问 AI 平台上线了 Qwen-Image-3.0，并宣布面向所有用户开放。据搜狐网报道，这场更新把第三代图像生成模型直接送到大众入口，用户无需排队或申请，就能体验最新的图像生成能力。",
+          "对内容创作者和产品团队来说，模型的开放意味着“画图”这一环节的供应链变得更平民化。图像生成从过去少数人可用的内测工具，变成随手能用的标准能力；接下来更值得关注的是它在中文指令、版式和一致性上的表现。",
+          "不过，目前公开信息主要集中在开放动作本身，模型的参数规模、生成分辨率、收费方式等细节尚未披露。如果你计划拿它做工作流，建议先以官方后续说明为准。"
+        ],
+        "why": "Qwen-Image-3.0 直接全量开放，说明模型竞争已从“证明能力”转向“争取用户”。对内容工具和营销应用来说，可优先评估接入；对独立开发者，留意它能否在中文场景比海外模型更顺手。",
+        "links": [
+          [
+            "搜狐网：Qwen-Image-3.0 上线千问 AI 平台 面向所有用户开放",
+            "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1BUDBldGtTbk5DOXBWSFF4aXpQTzZzZUFCWFZuYVg5YldOc3BWZnZCemxuUkNwRGlSYU91LUlrbEVSamE2WV9EWV9wZGxjTHRwV1E?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Anthropic 组建芯片设计团队，自研定制 AI 芯片",
+        "dek": "Anthropic 将自主设计 AI 芯片，并与 Claude 模型协同优化，以提升训练和推理效率。",
+        "details": [
+          "Anthropic 正在组建一支芯片设计团队，目标是为自己的业务开发定制 AI 芯片。这家 Claude 背后公司本周证实，它将推动硬件与模型的共同设计（co-design），让技术跑得更快、更高效。相关招聘信息由 TechCrunch 于 8 月 5 日报道。",
+          "背景是，大型 AI 实验室对算力的需求仍在快速膨胀，而英伟达等供应商的芯片供不应求、成本不菲。自研芯片意味着 Anthropic 希望在关键基础设施上拥有更多主动权，并针对自身模型架构做专项优化。",
+          "目前 Anthropic 尚未公布芯片的具体流片时间或性能目标。从招聘一个完整硬件团队来看，这会是长期投入，短期内更可能影响其资本开支和供应链策略，而非立刻在端侧或云产品上带来变化。"
+        ],
+        "why": "对 AI 行业来说，这是一个信号：头部大模型公司正在从“租算力”转向“造算力”。对创业公司和个人开发者而言，意味着未来云厂商和芯片玩家的竞争会更激烈，也可能带来新的工具链和成本下降机会。",
+        "links": [
+          [
+            "TechCrunch AI: Anthropic is hiring an AI chip design team",
+            "https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "TechCrunch Disrupt 2026 增设 Real World AI 舞台：AI 走进物理世界",
+        "dek": "从机器人到自动化工厂，再到灭绝动物议题，这场大会将数字与物理的交汇点摆上台面",
+        "details": [
+          "2026年8月5日，TechCrunch 宣布在 Disrupt 2026 大会上新增“Real World AI”舞台，核心议题是数字世界与物理世界的融合。根据官方介绍，这个舞台将重点展示机器人和自动化工厂等落地场景，同时还包括一个略显意外的议题：灭绝动物。这意味着本届大会不仅关注 AI 算法本身，更关注 AI 如何改变真实世界的生产与生活。",
+          "这个舞台的设立是 AI 产业风向的一个缩影。过去一年，大模型竞赛逐渐进入平台期，资本和创业者的注意力开始转向物理世界：机器人、智能制造、无人系统。而“灭绝动物”出现在议程中，或许暗示生成式 AI 在生物模拟、生态修复等领域的应用潜力——尽管具体展示内容尚未公布。对非技术读者来说，这是一个信号：AI 的下一轮机会，可能不在屏幕里，而在工厂、农田和实验室中。"
+        ],
+        "why": "对产业观察者而言，这条新闻提醒我们：AI 的竞争正从模型参数转向实际部署。机器人、自动化工厂这类重场景将成为下一阶段创业和投资的高地，而主流科技会议为此单设舞台，说明趋势已进入共识期。",
+        "links": [
+          [
+            "TechCrunch 原文",
+            "https://techcrunch.com/2026/08/05/techcrunch-disrupt-2026s-real-world-ai-stage-features-robots-automated-factories-and-extinct-animals/"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "偏好不等于安全：成对偏好难以衡量临床安全性",
+        "dek": "736 名临床医生、13 个模型、2.6 万次判断的研究显示，“哪个回答更好”并不能可靠推断“哪个回答更安全”。",
+        "details": [
+          "AI 医疗助手和临床决策支持越来越热，但如何把关“安全性”始终是难题。一个常见的做法是让临床医生对两个模型输出做对比，选出更偏好的那个，默认它就是更安全、更合适的答案。这篇论文质疑了这种假设，并提供了大规模实证。",
+          "研究基于 MOOVE 平台——一个由临床医生主导的在线评估平台，收集盲法成对偏好和分维度评分。26,804 条成对判断来自 13 个大语言模型，覆盖 736 多名临床医生、28 个以上国家和地区。评分采用 [-2, +2] 的离散量表，负值表示内容在临床上不安全或有误导性。",
+          "核心发现：偏好是安全关键性能的糟糕代理。在 2.6 万条判断中，临床医生的偏好选择与基于 [-2,+2] 量表的安全评分之间没有可靠的相关性。换句话说，一个模型即便在偏好对比中胜出，也不能因此认为它的输出更安全。",
+          "这项研究提醒：以偏好为核心的评估流程可能带来虚假安全感。若将 LLM 部署到真实临床环境，需要使用更细粒度的安全指标、明确的错误分类和标准化的临床校验，而不是只依赖“谁赢了对比”。"
+        ],
+        "why": "对 AI 医疗产品团队，安全评估必须超越偏好比较，引入独立的安全标注和临床审核；对创业者，开发面向医疗 LLM 的标准化安全评估工具，可能是监管和市场共同需要的入口。",
+        "links": [
+          [
+            "arXiv 论文页",
+            "https://arxiv.org/abs/2608.02617"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：After killer quarter, Palantir CEO Alex Karp calls AI industry ‘Ma",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "这条信号来自 Google News AI Views：After killer quarter, Palantir CEO Alex Karp calls AI industry ‘Marxist’ - TechCrunch。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Views: After killer quarter, Palantir CEO Alex Karp calls AI industry ‘Marx",
+            "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZkRYSUFRdWJiWW1JQnRmOG5zVTlQeUJSMWpyTVAxSUctR3h1S0RXM2d6RzU2Z0hWZXVjQkZHcGpZNkNOYnRGb2dtSElfeEI4cDNySjhndS12WTNwMWxxQ3poa1l4aFNVNlR4TnpzVUV4NWMtZ3gxT2tpVWRCaFBVZzBGSmNaN0I3UWtMWjhKa1pYSENPMWN0Y20wbE1iVTJuSjhjQnlQZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-08-04",
+        "freshnessLabelEn": "Fallback | published 2026-08-04",
+        "freshnessLabel": "补位｜发布于 2026-08-04"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "新加坡公司董事AI治理指南：AI风险进入董事会议程",
+        "dek": "《海峡时报》关注一份面向新加坡公司董事的AI治理指南，提示AI不再是技术团队的事，而是董事会层面的风险与责任议题。",
+        "details": [
+          {
+            "summary": "核心问题：为什么董事需要AI治理指南？",
+            "expanded": "《海峡时报》这篇报道指向一份专门为新加坡公司董事编写的AI治理指南。它的前提是：AI正在进入财务、招聘、客服、合规等核心环节，董事很难再用“技术问题”回避责任。指南更接近一份“治理检查清单”，而不是技术教程，目的是帮非技术背景的董事建立风险直觉。"
+          },
+          {
+            "summary": "指南可能的取向：责任、透明与监督",
+            "expanded": "从标题和报道语境看，这份指南很可能要求董事关注：AI决策是否可解释、数据隐私与偏见是否可控、第三方AI供应商是否有持续责任条款，以及董事会层面是否有人对AI使用负总责。这类框架与全球AI治理从“伦理白皮书”走向“实务合规”的趋势一致，但具体条款仍需以原文为准。"
+          },
+          {
+            "summary": "对创业者和投资者的启示",
+            "expanded": "新加坡是重要的公司治理中心，这类指南一旦被资本市场采纳，AI风险会更快进入尽调和估值模型。创业团队应提前保存AI使用、数据来源和风险评估记录；投资机构未来可能会要求被投公司提供AI治理说明。对个人职业而言，同时懂AI产品和公司治理的顾问，可能会变得稀缺。"
+          }
+        ],
+        "why": "当新加坡这样的治理枢纽把AI风险放进董事责任，意味着AI治理正从技术合规变成公司治理的刚需。对创业者和投资人来说，尽早建立可审计的AI使用与风险评估记录，会在融资、并购和监管沟通中形成先发优势。",
+        "links": [
+          [
+            "Google News AI Governance Partnerships: AI governance guide for Singapore company director",
+            "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdEdwWENTZGh3MjUzelp2Q2NpSTVIeXJTUzVQWnc1Y0hxYUJrZWs5cnBTMmxxb1hRZGkxYkxudlNLQ0hSelBZbThDcXRyZEd2bDFZdEZLaVFmS3VEYm9uNFgwcHdtYVNhVW00RTBqNTBHa2JfYW43Wm9ZdW04VjhCX2UzNGM1TVVJeVRlRTlzWUl0OTUyV3c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-31",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-07-31",
+        "freshnessLabelEn": "Fallback | published 2026-07-31",
+        "freshnessLabel": "补位｜发布于 2026-07-31"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "JudgeArena：把 LLM 裁判评测统一成可复现的开源框架",
+        "dek": "一个框架接入 AlpacaEval、MT-Bench 等主流基准，让“谁来打分、怎么打分”不再各说各话。",
+        "details": [
+          "LLM-as-a-judge 已经成为评估语言模型的主流方式，但生态很碎片：每个基准几乎都自带一套代码，很多还硬编码了一个固定的闭源裁判模型，并且只支持一种评估流程。这意味着换一个裁判或换一个提示词，结论可能就变了，却很难系统地去比较这些差异。",
+          "JudgeArena 是 arXiv 上刚出现的一个开源框架，目标是把 AlpacaEval、Arena-Hard、MT-Bench 和 m-Arena-Hard 这些主流 LLM-judge 基准统一到一个接口下。它支持可替换的裁判模型，并记录完整的元数据，让“评测的评测”第一次有了标准化的实验平台。",
+          "对普通用户和开发者来说，这个项目的价值在于：以后想判断一个开源模型到底行不行，不用再被单一评测榜单牵着走，可以自己换裁判、换提示、换推理后端，看结论是否稳健。对基础设施和工具链来说，这也是一个值得关注的信号：模型评测正在从“跑分”走向“可复现的实验科学”。"
+        ],
+        "why": "当评测本身成为被评测的对象，开源框架能帮产业建立更可信的模型对比基线，也会影响未来模型选型和工具链投资。",
+        "links": [
+          [
+            "arXiv 论文页",
+            "https://arxiv.org/abs/2608.02620"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Hark 预览浏览器代理：让 AI 替你完成网页任务",
+        "dek": "一款自称更快更便宜的浏览器自动化代理进入视野，但尚未经过公开验证。",
+        "details": [
+          "Hark 在 8 月 5 日预告了它的浏览器使用代理，目标是让 AI 直接操作浏览器、完成用户交代的任务。Hark 自称这个代理比同类产品运行更快、成本更低，这也是一张竞争牌。",
+          "目前公开信息有限，预览并不等于正式上线，产品能力、适用场景和定价都还没披露。对于想用 AI 替代重复网页操作的用户来说，这类工具值得关注，但需要等真实评测。",
+          "浏览器代理赛道正在变挤，从大型模型公司到创业团队都在做。Hark 的差异化策略是“便宜、快”，意味着它瞄准的可能是高频、低客单的长尾任务，而不是一次完成复杂流程。"
+        ],
+        "why": "浏览器代理是 AI 进入真实工作流的最直接形态之一，速度和成本决定了用户是否愿意把日常操作交给它。Hark 的预告值得产品人留意，但要用独立测试来验证它的话。",
+        "links": [
+          [
+            "TechCrunch 报道原文",
+            "https://techcrunch.com/2026/08/05/hark-previews-its-browser-use-agent-for-completing-tasks/"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "MacPaw 牵手 Liquid AI：应用商店开发者迎来设备端推理选项",
+        "dek": "MacPaw 将 Liquid AI 模型引入其应用商店生态，让开发者无需云端即可在 Mac 上运行 AI 功能",
+        "details": [
+          "MacPaw 宣布与 Liquid AI 合作，为在其应用商店（如 Setapp）上构建应用的开发者提供设备端推理能力。这意味着第三方应用可以直接在用户设备上运行 AI 模型，而不必依赖云端 API，这对隐私敏感场景和离线工作流很有吸引力。",
+          "MacPaw 是 Mac 生态中知名的软件发行商，旗下拥有 Setapp 订阅服务。据报道，他们正在基于 Liquid AI 的模型打造本地版 AI 助手 Eney。这次合作可能意味着 Eney 将逐步转向端侧推理，让 AI 助手在无网络时也能响应用户。",
+          "对开发者而言，设备端推理能降低延迟、节省云端调用成本，并避免用户数据上传。在 Apple Silicon 芯片上，也能利用神经引擎加速模型，提升效率。MacPaw 希望借此增强其应用商店对生产力工具开发者的吸引力。",
+          "不过，目前官方并未透露具体将支持哪些模型、应用类别和上线时间。设备端推理仍受限于 Mac 的内存和算力，开发者需要根据任务复杂度在模型效果与性能之间做出平衡。"
+        ],
+        "why": "应用商店与模型厂商直接绑定，预示着 AI 应用的分发和盈利模式可能从云端 API 转向端侧能力，值得关注 Mac 生态里的新机会。",
+        "links": [
+          [
+            "TechCrunch AI 报道原文",
+            "https://techcrunch.com/2026/08/05/macpaw-taps-liquid-ai-to-offer-on-device-inference-to-devs-building-for-its-app-store/"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "让模型先检索可信资料，再基于资料回答问题的方法。",
+        "details": [
+          "RAG 是 Retrieval-Augmented Generation 的缩写，中文常叫“检索增强生成”。它的思路是：模型回答前先去指定资料库、文档或网页里找证据，再基于这些材料生成答案。",
+          "它适合企业知识库、研究助手、报告阅读和客服场景，因为用户不仅需要答案，还需要知道答案来自哪里。判断 RAG 产品时，要看检索质量、引用是否可靠、资料更新是否及时。"
+        ],
+        "why": "RAG 是很多企业 AI 项目的起点，因为它把“会聊天的模型”变成“能引用资料的工作工具”。",
+        "links": [
+          [
+            "Google News China AI: Alibaba-Backed AI Startup Vast Seeks Fresh Capital, Eyes IPO - 富途牛牛",
+            "https://news.google.com/rss/articles/CBMingFBVV95cUxNRDJsaDIyX1hpcnM2bWlWWk9KUkwyOXRxX1p0M3ZvdnlDSHlsOFM4MVlXMkJtWm9rQXdnSHNYZHVaTXUxeUlHT0h2bjM2WmlEd0M2aTdNZFU2bWxMOW9KeDltYjVMSG0tV0RUNnpLOURoX212eDBBUGxELWlEZWpxODlBcTZNR3FyY21sOHFsWnJmN1M2a1NvRXl3cWJTUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-08-05",
     "title": "AI Daily Atlas",
     "meta": "2026年8月5日",
@@ -16806,6 +17166,354 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-08-06",
+    "title": "AI Daily Atlas",
+    "meta": "August 6, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "OpenAI addresses third-party cyber evaluation incidents with new safeguards",
+        "dek": "OpenAI explains recent incidents tied to third-party cybersecurity evaluations of its models and lays out new safeguards.",
+        "details": [
+          "OpenAI has published an explanation addressing recent incidents involving third-party cybersecurity evaluations of its models. The announcement is part of a broader push to make external red-teaming and model evaluation more credible and transparent as pressure grows for independent security testing of frontier AI systems.",
+          "According to the post, OpenAI is outlining new safeguards designed to strengthen AI model testing and evaluation. The available summary does not disclose the specific incidents or how the safeguards will change existing evaluation processes, so the practical impact for API customers and security researchers is still unclear."
+        ],
+        "why": "This signals that OpenAI is treating third-party security testing as a governance issue, not just an engineering one. Startups building evaluation tooling or independent red-teaming services should watch how these safeguards reshape the AI security market.",
+        "links": [
+          [
+            "OpenAI News: Third-party cyber evaluations involving OpenAI models",
+            "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Can 8GB RAM Run Kimi K3? Ifanr's 2026 Guide to Local LLM Setup",
+        "dek": "A consumer-tech explainer weighs whether Moonshot's latest model can run on entry-level hardware without a cloud connection.",
+        "details": [
+          "Chinese tech outlet Ifanr has published a configuration guide asking whether Moonshot AI's Kimi K3 can run on machines with only 8GB of RAM. The headline question signals a shift from cloud-scale AI hype to the practical side of local deployment, where memory constraints often decide whether a model is usable on everyday laptops and desktops.",
+          "The guide arrives as local LLM adoption spreads beyond developer circles, with mainstream users evaluating privacy, cost, and offline access. Ifanr's framing suggests the answer depends less on raw GPU power than on thoughtful configuration — quantization, context-length limits, and workload selection — that can stretch modest hardware further than conventional specifications imply."
+        ],
+        "why": "Mainstream coverage of running LLMs on 8GB RAM is a sign that local inference is becoming a consumer battleground. Expect memory and efficiency, not just raw model quality, to shape hardware purchases and product design decisions in 2026.",
+        "links": [
+          [
+            "Read on Google News (Ifanr guide)",
+            "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE8tSzNWcUl5NXN0MHZtNmJ5V213UkdwX3JXS2g1dnJXYUI2QXZBRmljdVU4dS03eUg5ajZ0Y05ERXhGR1E?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek Tops Global LLM Ranking; Reportedly Valued at Up to 500B Yuan",
+        "dek": "Chinese AI lab leads in global LLM usage; valuation report hints at a re-rating for domestic model players.",
+        "details": [
+          "DeepSeek has taken the No. 1 spot in a global ranking of large language model usage, according to a report by Chinese financial outlet 21st Century Business Herald. The same report says the company could be valued at as much as 500 billion yuan, a figure that would place it among the world's most valuable AI startups if confirmed.",
+          "The report does not disclose the specific methodology behind the usage ranking or the basis for the valuation, so these numbers remain preliminary. Even so, the milestone signals that Chinese AI models are gaining strong momentum in adoption and market attention, which could accelerate shifts in competitive dynamics and valuation benchmarks."
+        ],
+        "why": "This headline suggests DeepSeek has moved from a research breakthrough to a globally adopted platform, re-calibrating valuation benchmarks for Chinese AI players and underscoring the strategic value of efficient model development.",
+        "links": [
+          [
+            "21st Century Business Herald report (via Google News)",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc1JqSHNTLXJCT3pxOGc0X3RnQjNPa0hsU2E3azNFMmw4aWxwQjVKdjBqemZud2g1bFhMd0JtUVV5QlhZeEdFQlo3MHJSMWl3QzNqX0k5YnRSa3pBY3BBandmWE1LWGFtSEMwN2lvR3lmeFE2eGNwZG9yOERVMEN3WUZaZkFhMUF3eDRPLQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "MiniMax H3 video model tops open-source community, sets a new 'cutoff line' for video AI",
+        "dek": "A report from Shangguan News says MiniMax's H3 has become the top open-source video model, signaling a new competitive benchmark.",
+        "details": [
+          "MiniMax's H3 video generation model has reportedly reached the top of the open-source community, according to Shangguan News. The report describes H3 as defining a 'cutoff line' for the video model field — a baseline performance threshold that rivals must now surpass. This places MiniMax at the forefront of China's fast-moving AI video race.",
+          "The 'top ranking' suggests strong results in areas like generation quality, speed, or community adoption, but the available report does not disclose specific benchmark scores or technical specs. Even without those details, the move signals that MiniMax is now a serious contender in video generation, competing with global efforts from OpenAI and Google."
+        ],
+        "why": "A new open-source performance ceiling in video models directly affects developer tooling choices and reshapes competitive positioning for AI labs.",
+        "links": [
+          [
+            "Google News China AI Signals: MiniMax H3视频模型登顶开源社区，定义视频模型领域“斩杀线” - 上观新闻",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1KQWJUSkdTMHladmJtSjlpZVo3NGxoc0lIaVhoVU01WTZyMFFtMkRqRm5abThIOEFjNEJIdVplQnZ6TWRXeVRRMWRjYUNRdm45c2xVZjJ2ME1TUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Qwen-Image-3.0 Launches on Qianwen AI Platform, Now Open to All Users",
+        "dek": "The Qwen-Image-3.0 model is now publicly available on the Qianwen AI platform, marking a new phase for the Qwen image generation lineup.",
+        "details": [
+          "Qwen-Image-3.0 has been released on the Qianwen AI platform and is now open to all users, according to a Sohu report picked up by Google News China AI. The launch makes the latest image-generation model in the Qwen series directly accessible via a consumer-facing interface, rather than being limited to developers or behind waitlists.",
+          "The brief announcement does not include technical specifications, performance benchmarks, or pricing information. It also leaves unclear whether the model will be offered through APIs or dedicated apps. For now, the key signal is that a leading Chinese AI lab is pushing another frontier model straight to the public, expanding who can experiment with high-quality image generation."
+        ],
+        "why": "The public availability of Qwen-Image-3.0 should push competitors to accelerate their own image-model rollouts, as Chinese consumers gain hands-on access to a fresh generation of AI image tools. For product teams, this is a reminder that model quality is quickly becoming table stakes, while distribution and ease of use are increasingly decisive.",
+        "links": [
+          [
+            "Source: Sohu via Google News China AI",
+            "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1BUDBldGtTbk5DOXBWSFF4aXpQTzZzZUFCWFZuYVg5YldOc3BWZnZCemxuUkNwRGlSYU91LUlrbEVSamE2WV9EWV9wZGxjTHRwV1E?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Anthropic is hiring an AI chip design team",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from TechCrunch AI：Anthropic is hiring an AI chip design team. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "TechCrunch AI: Anthropic is hiring an AI chip design team",
+            "https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "TechCrunch Disrupt 2026’s Real World AI Stage features robots, automated factories, and extinct animals",
+        "dek": "A new conference stage shows how AI's center of gravity is shifting from chatbots to robots, factories, and the physical world.",
+        "details": [
+          "TechCrunch Disrupt 2026 has announced a dedicated 'Real World AI' stage, which, according to TechCrunch's AI coverage, will focus on the intersection of digital and physical systems. The program covers robots, automated factories, and extinct animals—an unusually broad lineup that signals the AI conversation is moving beyond pure software into hardware, industry, and biology.",
+          "For non-technical readers, the shift is meaningful: AI is no longer just a tool for text and images; it is increasingly embedded in machines, production lines, and scientific research. The 'extinct animals' topic is attention-grabbing, though TechCrunch's announcement does not yet provide specific panel details. The stage's name and focus suggest event organizers see the next phase of AI as embodied and applied to real-world problems, not just model performance.",
+          "This is a conference programming choice, not a product release, but it reflects a broader industry trend. As funding and enterprise interest mature, the AI narrative is expanding from generative software to physical applications—robotics, industrial automation, and even conservation. The lack of concrete session details means readers should treat this as an early signal of where the market conversation is heading, rather than a definitive roadmap."
+        ],
+        "why": "For founders and investors, the Real World AI stage is a useful signal: embodied AI, industrial automation, and AI-for-science are gaining mainstream event attention, which often precedes more funding and enterprise adoption.",
+        "links": [
+          [
+            "TechCrunch: TechCrunch Disrupt 2026’s Real World AI Stage features robots, automated factories, and extinct animals",
+            "https://techcrunch.com/2026/08/05/techcrunch-disrupt-2026s-real-world-ai-stage-features-robots-automated-factories-and-extinct-animals/"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Preferred, Not Safer: Pairwise Preference Is a Poor Proxy for Clinical Safety",
+        "dek": "Why human preference alone may not be enough to measure medical AI safety",
+        "details": [
+          "As large language models (LLMs) edge toward clinical use, a key question is how to evaluate whether they are actually safe for patients. Many popular AI benchmarks rely on human pairwise preference: which answer is better or more helpful. But this new study argues that 'better' and 'safer' are not the same thing.",
+          "The paper, from the MOOVE (Massive Open Online Validation and Evaluation) clinician-led platform, compares pairwise preference judgments against multi-criterion safety ratings. Over 736 clinicians across 28+ countries produced 26,804 pairwise judgments on outputs from 13 LLMs, each scored on a -2 to +2 scale where negative values indicate clinically unsafe or misleading content. The key finding: clinician preference is a poor proxy for safety-critical performance. Models that humans prefer may still generate clinically dangerous or misleading advice.",
+          "This is part of a broader trend in AI evaluation: preference optimization (like RLHF) can make models sound more convincing, but not necessarily more factually safe. In healthcare, where a wrong answer can cause real harm, this gap is especially dangerous. The research adds a strong caution against using preference as the only or primary safety signal for medical AI.",
+          "It is worth noting that this is a preprint on arXiv, not peer-reviewed, and the abstract only sketches the findings. Still, the scale of data and the international clinician pool give the result weight. It points to a need for more domain-specific safety benchmarks that go beyond 'human likes it' in high-stakes fields."
+        ],
+        "why": "For product leaders and investors evaluating medical AI, this is a reminder that human preference is not the same as safety. Models optimized for satisfaction might still need rigorous clinical validation before deployment.",
+        "links": [
+          [
+            "arXiv cs.CL: Preferred, Not Safer: Pairwise Preference Is a Poor Proxy for Clinical Safety",
+            "https://arxiv.org/abs/2608.02617"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "After killer quarter, Palantir CEO Alex Karp calls AI industry ‘Marxist’ - TechCrunch",
+        "dek": "Palantir's outspoken chief uses a strong earnings backdrop to attack the AI sector's collective ethos, sparking a debate about value creation and capture.",
+        "details": [
+          "In a TechCrunch piece picked up by Google News AI Views, Palantir CEO Alex Karp — whose company just delivered what the headline calls a 'killer quarter' — is reported to have described the AI industry as 'Marxist.' The label sits uneasily on an industry that often celebrates open collaboration, but Karp has a history of contrarian takes on AI's political economy. From this angle, the criticism likely targets how much of AI's foundational work is being shared or distributed without clear commercial capture, a theme relevant to any founder or investor trying to figure out where value will accrue.",
+          "The report is best read as an opinionated intervention rather than a neutral market analysis. Karp is not saying the AI sector is socialist in the political sense; he is pointing at a business logic where companies collectively contribute to common models while only a few monetize. For product leaders, this sharpens the classic build-vs-buy and open-vs-closed model decisions. For investors, it highlights the tension between AI's community-driven heritage and the need for returns. Because the source is a headline summary, the precise remarks and context are not fully available; the interpretation here is based on the title and Karp's known public positions."
+        ],
+        "why": "Karp's provocation matters because it names a structural problem: if the AI industry behaves like a common pool, individual companies may struggle to justify proprietary investment. Decision-makers should watch whether this rhetoric pushes Palantir's partners and rivals to adopt more aggressive monetization and IP protection strategies, which would reshuffle competitive advantages.",
+        "links": [
+          [
+            "TechCrunch via Google News: After killer quarter, Palantir CEO Alex Karp calls AI industry ‘Marxist’",
+            "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZkRYSUFRdWJiWW1JQnRmOG5zVTlQeUJSMWpyTVAxSUctR3h1S0RXM2d6RzU2Z0hWZXVjQkZHcGpZNkNOYnRGb2dtSElfeEI4cDNySjhndS12WTNwMWxxQ3poa1l4aFNVNlR4TnpzVUV4NWMtZ3gxT2tpVWRCaFBVZzBGSmNaN0I3UWtMWjhKa1pYSENPMWN0Y20wbE1iVTJuSjhjQnlQZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-08-04",
+        "freshnessLabelEn": "Fallback | published 2026-08-04",
+        "freshnessLabel": "Fallback | published 2026-08-04"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "AI governance guide for Singapore company directors - The Straits Times",
+        "dek": "A governance roadmap from The Straits Times signals that AI oversight is now a board-level priority in Singapore.",
+        "details": [
+          {
+            "summary": "The guide, published by The Straits Times, targets company directors in Singapore and focuses on how boards should oversee AI use.",
+            "expanded": "The coverage appears to be an explainer or a governance roadmap rather than a single news event. It likely walks directors through core duties such as risk oversight, AI procurement, and incident response, while emphasizing that AI decisions are ultimately board-level responsibilities. Because the source is a Google News aggregation entry, the exact sections and recommendations are not fully visible, but the framing suggests a pragmatic, compliance-oriented approach tailored to Singapore’s regulatory environment."
+          },
+          {
+            "summary": "The guide signals that AI governance is moving from technical teams to the boardroom, with implications for investors and executives.",
+            "expanded": "For non-technical readers, the value is in recognizing the shift: regulators and stakeholders now expect directors to actively question AI strategy, not just delegate it to IT. This matters for product teams and investors because corporate governance standards around AI can affect licensing, market access, and liability. The guide’s existence in a mainstream broadsheet like The Straits Times also indicates that AI literacy is becoming a baseline expectation for senior leadership in Asia."
+          }
+        ],
+        "why": "For builders and investors in AI, this guide underscores that governance maturity is becoming a market differentiator in Asia; expect procurement and risk frameworks to shape product roadmaps.",
+        "links": [
+          [
+            "Google News AI Governance Partnerships: AI governance guide for Singapore company director",
+            "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdEdwWENTZGh3MjUzelp2Q2NpSTVIeXJTUzVQWnc1Y0hxYUJrZWs5cnBTMmxxb1hRZGkxYkxudlNLQ0hSelBZbThDcXRyZEd2bDFZdEZLaVFmS3VEYm9uNFgwcHdtYVNhVW00RTBqNTBHa2JfYW43Wm9ZdW04VjhCX2UzNGM1TVVJeVRlRTlzWUl0OTUyV3c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-07-31",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜发布于 2026-07-31",
+        "freshnessLabelEn": "Fallback | published 2026-07-31",
+        "freshnessLabel": "Fallback | published 2026-07-31"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "JudgeArena: A Unified Framework for Reproducible LLM-Judge Evaluation",
+        "dek": "An open-source framework unifying major LLM-judge benchmarks under a single interface with swappable judges and comprehensive metadata logging.",
+        "details": [
+          "LLM-as-a-judge has become the dominant way to rank language models, but the ecosystem is fragmented: most benchmarks ship their own codebase, hardcode a specific closed-model judge, and support a single evaluation protocol. This makes it hard to tell how design choices—such as the benchmark, the judge model, the prompt, or the inference backend—actually affect the conclusions drawn about model quality.",
+          "JudgeArena, a new arXiv preprint, proposes a unified framework that brings AlpacaEval, Arena-Hard, MT-Bench, and m-Arena-Hard under a single interface. It allows users to swap judge models and logs comprehensive metadata, enabling systematic, reproducible studies of how evaluation choices influence outcomes. For developers and researchers, this is a step toward making LLM comparisons more trustworthy and comparable across projects."
+        ],
+        "why": "This matters because standardized, reproducible evaluation is becoming a critical layer in the LLM toolchain; any framework that reduces fragmentation could become essential infrastructure for teams benchmarking models or building evaluation products.",
+        "links": [
+          [
+            "arXiv cs.CL: JudgeArena: A Unified Framework for Reproducible LLM-Judge Evaluation",
+            "https://arxiv.org/abs/2608.02620"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Hark previews its browser use agent for completing tasks",
+        "dek": "Hark claims its browser-use agent is faster and cheaper than rivals, previewing a new tool for automated web tasks.",
+        "details": [
+          "Hark, a startup focused on browser automation, today previewed its new browser use agent designed to complete tasks on the web. The company says the agent can carry out multi-step actions such as filling forms, navigating pages, and extracting information, aiming to reduce manual work.",
+          "Hark claims its agent is faster and cheaper than competing approaches, though the details remain a preview. The company did not provide full benchmarks or pricing in the announcement, so the performance and cost advantages are still unverified.",
+          "Browser-use agents are becoming a key battleground in AI productivity, as they promise to automate repetitive online workflows. Hark's entry adds another option for developers and businesses, but its real-world reliability and integration quality will determine whether it gains traction."
+        ],
+        "why": "This matters for AI product builders: browser agents are a hot category for workflow automation, and Hark's cost-performance claim could shift developer choices if proven. Watching its roadmap helps assess where the market is heading.",
+        "links": [
+          [
+            "TechCrunch AI: Hark previews its browser use agent for completing tasks",
+            "https://techcrunch.com/2026/08/05/hark-previews-its-browser-use-agent-for-completing-tasks/"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "MacPaw taps Liquid AI to offer on-device inference to devs building for its app store",
+        "dek": "MacPaw is building a local version of its AI assistant Eney using Liquid AI's models, opening on-device inference to developers in its ecosystem.",
+        "details": [
+          "MacPaw, the company behind Mac software services like Setapp, is integrating Liquid AI's models to power a local version of its AI assistant Eney. According to TechCrunch, this move is part of MacPaw's effort to give developers building for its app store access to on-device inference capabilities. That means AI features can run directly on a user's Mac, rather than relying on cloud servers, which can reduce latency, lower costs, and improve privacy.",
+          "For developers in MacPaw's ecosystem, this could lower the barrier to building AI-powered apps that keep sensitive data on the device. Liquid AI is known for its efficient model architectures, which are well-suited for edge deployment. The partnership suggests that platform owners are increasingly acting as distribution channels for AI capabilities, not just software. However, the announcement doesn't detail which specific Liquid AI models are available, pricing, or the rollout timeline, so developers should wait for concrete documentation before planning their integrations."
+        ],
+        "why": "This signals a shift toward on-device AI as a distribution advantage for app store ecosystems, and it opens a practical path for developers to create privacy-preserving AI products without building model infrastructure themselves.",
+        "links": [
+          [
+            "TechCrunch AI: MacPaw taps Liquid AI to offer on-device inference to devs building for its app store",
+            "https://techcrunch.com/2026/08/05/macpaw-taps-liquid-ai-to-offer-on-device-inference-to-devs-building-for-its-app-store/"
+          ]
+        ],
+        "sourceDate": "2026-08-05",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "How retrieval-augmented generation grounds AI in your own knowledge base",
+        "details": [
+          "RAG (Retrieval-Augmented Generation) is a framework that fuses a retrieval system with a generative model. When a user asks a question, the system first searches a trusted document store—such as internal wikis, PDFs, or SQL tables—then feeds the retrieved passages to a language model as context. This grounds the model's answer in verifiable sources, reducing hallucinations and enabling organizations to answer questions from private data without retraining or fine-tuning the model.",
+          "The need for RAG is becoming more visible as Chinese model vendors like DeepSeek reportedly top global usage rankings (see link below), pushing AI from demos into production workloads. For research teams, knowledge workers, and enterprises building private Q&A assistants, RAG is now the default architecture: it offers controllable citations, easier updates, and a practical path to keeping AI accountable to your own documents."
+        ],
+        "why": "Understanding RAG helps anyone building or evaluating enterprise AI products distinguish between a model that simply generates text and one that is genuinely grounded in an organization's knowledge base—a key quality signal for investable, reliable AI applications.",
+        "links": [
+          [
+            "DeepSeek tops global LLM usage charts (21st Century Business Herald)",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc1JqSHNTLXJCT3pxOGc0X3RnQjNPa0hsU2E3azNFMmw4aWxwQjVKdjBqemZud2g1bFhMd0JtUVV5QlhZeEdFQlo3MHJSMWl3QzNqX0k5YnRSa3pBY3BBandmWE1LWGFtSEMwN2lvR3lmeFE2eGNwZG9yOERVMEN3WUZaZkFhMUF3eDRPLQ?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-08-05",
     "title": "AI Daily Atlas",
