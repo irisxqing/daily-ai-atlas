@@ -1,5 +1,369 @@
 const archiveZh = [
   {
+    "date": "2026-08-07",
+    "title": "AI Daily Atlas",
+    "meta": "2026年8月7日",
+    "headline": "模型与平台、Agent 与工作流 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和Agent 与工作流展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时Agent 正从演示概念继续走向企业流程和开发者工具和真实任务执行。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek 认购宇树科技上海 IPO，人形 AI 资本握手",
+        "dek": "AI 大模型公司 DeepSeek 参与人形机器人公司 Unitree 的上海 IPO，具身智能产业链整合再进一步。",
+        "details": [
+          "据 Unite.AI 报道，DeepSeek 已参与宇树科技（Unitree）在上海的 IPO 认购，双方将围绕人形机器人展开 AI 合作。这一动作让大模型公司与机器人硬件公司的资本关系进一步绑定，也释放出中国 AI 赛道向具身智能倾斜的明确信号。",
+          "背景来看，宇树科技是人形机器人明星公司，DeepSeek 则是头部 AI 模型玩家。人形机器人被普遍视为 AI 从数字世界走向物理世界的接口，DeepSeek 的推理与规划能力恰好可以补足机器人的“大脑”，而宇树提供“身体”。两家公司走在一起，符合“大脑+身体”的产业逻辑。",
+          "影响方面，这类跨界投资显示中国 AI 产业链正从“模型竞赛”走向“模型+硬件”的落地整合。DeepSeek 的入股也可能为宇树 IPO 带来更高的市场关注度，但具体投资金额、持股比例和合作细节尚未披露，需等待官方进一步说明。",
+          "不确定性在于，目前公开信息有限，交易估值和战略协同的具体方式仍是未知数。后续双方是否会推出联名人形机器人或深度联合研发，值得持续关注。对从业者而言，这一信号意味着具身智能的资本窗口正在开启，AI 公司与机器人公司的跨界合作会越来越多。"
+        ],
+        "why": "这表明头部 AI 模型公司开始通过一级市场直接绑定机器人硬件厂商，具身智能的‘大脑+身体’整合路径已经从技术讨论进入资本操作阶段。",
+        "links": [
+          [
+            "Google News AI Infrastructure",
+            "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMHpONlRpV2Z4MW15dEo0cnRpcEFTa1VOeHI4QlM0aW5yMjFLSUxyMU9haHBKV1NnNVNWRElMRjNYeXdzbjlCblRuelFodFRMM2htZnJBY1Zwd1RYOVRRRURpbUJXZnIxSTJoYTNfb1lWcXh5bENjaXRpa0JXTHB1MkV1MnZ6dEl3eFE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Mirendil 与 Google Cloud 签下超 1 亿美元算力协议，押注自我改进 AI",
+        "dek": "前沿 AI 实验室正在用云巨头的算力，加速探索让模型自己改进自己的研究方向。",
+        "details": [
+          "据 TechCrunch 独家报道，AI 实验室 Mirendil 已与 Google Cloud 签署一份金额超过 1 亿美元的合作协议，用于扩展其计算基础设施。这笔投入将直接服务于 Mirendil 正在推进的“自我改进 AI”（self-improving AI）研究，目标是让模型在训练与推理过程中自动优化自身能力。",
+          "所谓“自我改进 AI”，目前仍属于前沿探索：它不是靠工程师反复调参，而是让模型基于自身运行数据不断迭代。Mirendil 称，这套体系有望加速科学发现和 AI 开发的整体流程。不过，研究界对这一方向的可行性、可控性和安全性仍有争议，实际效果还需后续验证。",
+          "对 Google Cloud 而言，这笔交易是其在 AI 算力竞赛中的又一次重要落子；对 Mirendil 来说，稳定的云资源是模型持续迭代的基础。接下来值得观察的是，合作会否从算力采购延伸到芯片或 DeepMind 等更深层的技术协同——以及“自我改进”路线能否真的拿出可复现的成果。"
+        ],
+        "why": "这笔交易显示，前沿 AI 实验室仍在大幅囤积算力，云巨头是这轮 AI 竞赛的核心基础设施提供方。对创业者和投资人来说，算力供应链的价值与议价能力依然值得长期关注。",
+        "links": [
+          [
+            "TechCrunch AI: Exclusive: Mirendil inks $100M+ Google Cloud deal to scale self-improving AI",
+            "https://techcrunch.com/2026/08/06/exclusive-mirendil-inks-100m-google-cloud-deal-to-scale-self-improving-ai/"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "MiniMax H3登顶开源社区第一，给视频模型赛道划出“斩杀线”",
+        "dek": "视频生成开源模型的新标杆出现，H3凭什么是这条“斩杀线”？它给开发者和闭源厂商各带来了什么信号？",
+        "details": [
+          "据量子位报道，MiniMax H3在开源社区登顶，成为视频模型领域新的“斩杀线”。所谓“斩杀线”，是指此后新出现的开源模型如果达不到这个水准，基本没有讨论价值。这个说法很直白，但也说明H3在开源视频模型里已经不只是“又一个选择”，而是被当作一条硬标准。",
+          "H3登顶的具体背景是：视频生成赛道从2025年起进入密集发布期，开源与闭源阵营的差距被快速拉平。H3的出现让开源侧第一次有了一个可以正面较量的通用视频模型基准，开发者可以直接拿来测自己的数据和场景，不需要再默认“开源=效果打折”。",
+          "影响层面：对于AI产品团队，H3意味着“用开源模型做视频生成”不再是一个妥协选项，而是一个默认起步点；对闭源API厂商，则必须用更强的效果、更低的成本或更好的工具链来证明溢价合理。换句话说，H3把视频生成的门槛整体抬高了。",
+          "需要留意的是，开源社区的榜首会随评测基准和社区热度波动，H3能否长期维持这一位置，要看后续迭代和生态配套。量子位的报道并未给出具体评测分数或榜单截图，以上判断均基于报道标题和公开信息，建议以官方与社区后续发布为准。"
+        ],
+        "why": "这条新闻的意义在于把“开源视频模型”从实验室玩具推到了生产可用级别——如果你在规划视频类产品，H3应该直接进入你的技术选型对比清单，而不是只看闭源API。",
+        "links": [
+          [
+            "量子位: MiniMax H3登顶开源社区第一，定义视频模型领域“斩杀线”",
+            "https://www.qbitai.com/2026/08/467270.html"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "Google Maps 变“跑腿助理”：新增点餐与酒店预订等 Agentic 功能",
+        "dek": "从导航工具转向能完成真实世界任务的 AI 助手，Google Maps 开始试水闭环交易。",
+        "details": [
+          "据 TechCrunch 报道，Google Maps 正在加入一系列 agentic（智能体式）功能，包括直接在应用内完成食物订购和酒店预订。这意味着地图不再只是查路线的工具，而开始承担“跑腿”和“决策”的角色。",
+          "这些功能背后的方向是：让地图成为能帮用户完成真实世界任务的助手。结合 Google 的搜索、商家数据和支付体系，Maps 有机会把“找店”和“消费”连成一条完整的闭环，而不是把用户导流到外部网站。",
+          "目前报道未披露具体上线城市和覆盖商家数量，因此实际体验和可用性还有待观察。但对本地生活、旅游预订和在线订餐赛道来说，Google Maps 的这一步意味着入口级流量正在发生迁移，竞品需要重新评估自己的防御策略。"
+        ],
+        "why": "地图是高频、强位置意图的场景，加上 agentic 能力后，Google 能把交易直接嵌进用户决策瞬间，这会直接冲击本地生活与 OTA 的流量成本和转化路径。",
+        "links": [
+          [
+            "TechCrunch AI: Google Maps adds agentic features, including food ordering and hotel bookin",
+            "https://techcrunch.com/2026/08/06/google-maps-adds-agentic-features-including-food-ordering-and-hotel-bookings/"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "LG与Nvidia高层下周面对面，谈AI基础设施与机器人合作",
+        "dek": "韩联社称，LG与Nvidia高层拟于下周会面，商讨AI基础设施与机器人合作，具体合作范围仍待观察。",
+        "details": [
+          "LG与Nvidia高层计划下周进行面对面会谈，重点讨论AI基础设施与机器人合作。据韩联社报道，这是双方深化战略合作的最新信号，显示AI算力竞争正从数据中心向物理世界延伸。",
+          "Nvidia在AI计算平台和GPU生态占据主导地位，LG则在消费电子、家电和机器人领域拥有广泛布局。此次会谈可能涉及Nvidia的AI芯片与软件栈如何应用于LG的机器人产品，以及面向未来的AI数据中心基础设施合作。",
+          "若合作落地，LG的机器人和智能设备有望获得更强AI算力支持，Nvidia也能扩展在消费电子与物理AI领域的生态版图。不过，目前双方均未披露具体议题，合作范围与投资规模仍是未知数。"
+        ],
+        "why": "这次会面显示AI基础设施的主导权争夺正走向机器人等物理场景，LG若能借助Nvidia生态补齐算力短板，可能加速其智能硬件升级；对投资者和从业者而言，后续合作细则是观察“AI+机器人”落地节奏的重要窗口。",
+        "links": [
+          [
+            "Google News AI Infrastructure: LG, Nvidia chiefs to discuss AI infrastructure, robotics partnership in person next week",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvSHpFZXM4aGhjWEVKMTczSEVKdHoyRVg0Wl9QYXRrMXRoeDBrTV82MzJxaTNCNjZneU9kZmZ0eGcwbnlQeW1xU1BxdFROOGNLTy1KdmhUZzdHUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "TechFlow 情报局：DeepSeek 宣布大幅涨价引发热议，Google DeepMind 重组 Demis 转任董事长",
+        "dek": "DeepSeek 调价与 DeepMind 领导层变动同日见诸报道，国产模型商业化和海外实验室治理同步进入新阶段。",
+        "details": [
+          "据深潮TechFlow 报道，DeepSeek 宣布大幅涨价，消息引发开发者社区热议。作为国产开源大模型的主要玩家之一，DeepSeek 此前以低价策略快速积累用户，如今调价可能意味着其转向商业化回报阶段。但具体涨幅、涉及模型范围和生效时间尚未在报道中披露，需以官方后续公告为准。",
+          "同一报道还提到，Google DeepMind 进行重组，联合创始人 Demis Hassabis 转任董事长。这一变动可能意味着他在研发管理上的角色进一步提升，日常运营可能交由其他高管负责。目前继任者及组织架构调整的具体方案并未公开，外界需等待 Google 官方说明，才能评估此次重组对技术路线和商业化方向的影响。"
+        ],
+        "why": "这两条消息分别指向中国大模型商业化定价策略的转向，以及全球顶级 AI 实验室在关键节点的人事布局，对模型服务采购方和行业观察者都有直接参考价值。",
+        "links": [
+          [
+            "谷歌新闻转载：深潮TechFlow 情报局",
+            "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5YWHFnR3JxbzZ2Z2lWUkd6MzR2dk9FOVBZNW1fUkJtYUxrcjU0Rkh5dEJWY2ZuOXZvWGNUVUFNbUZycDh6aGJCQVFSdkhqNXZkT1ZWWA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "卡纳塔克邦与Anthropic商谈AI合作：治理、技能与深度科技",
+        "dek": "印度科技重镇卡纳塔克邦与AI实验室Anthropic洽谈合作，透露出地方政府在AI治理和人才培养上寻求外部协作的动向。",
+        "details": [
+          "据The Economic Times报道，印度卡纳塔克邦（Karnataka）正在与Anthropic讨论AI合作伙伴关系，覆盖治理（governance）、技能培训（skilling）和深度科技（deeptech）等领域。卡纳塔克邦首府班加罗尔是印度信息技术产业中心，也是全球软件外包和AI初创公司的重要聚集地，因此这一合作探讨具有标杆意义。",
+          "目前双方讨论仍处于初步阶段，具体合作形式、投资规模尚未公开，因此不能确认是否会形成正式协议或落地具体项目。需要留意的是，Anthropic作为以AI安全和可解释性为核心主张的实验室，与地方政府在治理领域合作，可能意味着AI伦理和监管实践正从国家层面下沉到区域层面。",
+          "对产业而言，这类“地方性+AI实验室”的合作如果增多，可能会改变AI技术落地的路径：不再是企业单独开发产品，而是与政府共建基于AI的公共服务和数字基础设施。对于关注AI治理的创业者或从业者来说，也意味着新的岗位和需求可能在公共部门出现。"
+        ],
+        "why": "地方政府主动与头部AI实验室合作，预示着AI治理正成为全球公共部门的核心议题，也带来新的市场机会。",
+        "links": [
+          [
+            "The Economic Times报道",
+            "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNWEZUbThidFU1bFROdkkwVmQwQVlXdnlSRm8teTk2c2FBWjRUS3ZvUmNieS1JSWhoTEl2X1AtZnNmQjVZaW13eHZyX00xY1dJUDhyU2pHcHJ6Y2dtS0N4UmNRXzJDVldZbmpGVDF1MWFjOEE5bFBza1RYRjk1QURya0l6M2FyQUdXVjFVLThTV3Nvb3Q1YnV3Q2ZsZXNmTDNuMktiWW11bGFOVjFoaDJNY0RvY3VQQmpYWC1nMk80N1N4MmVSRGFLbHFvc2dPaEdvdmFHc1M0Q0hydXgyWEE1UVN4alUxSFZ2Y0pFOTRDRdIB9AFBVV95cUxPenFiNFJiUUIwZm5udkJ4Vkh3WHJ6S0g1QTlhelJsWjNCZkRya210eWJiTC1zSFE3R0t4OGxqNS00SDNZNm9STkttYkVaZmJ1aWtwcDVJVEZudkNhSnlOTGZ2bm1ObXZsbVhkb1V4cmQtSTJWVnEyaXFmU3lKdzZhR2dITkxtNXhkTV9XSXVyeEFqV3NXcGFITnJBaGhRbm95MUhlb1ZhRlJfSGJCZUhtaTNNNW9EZUd3emNwd2tWbTFTNFVGcWFzZzY4NkttMDAwbFFCQ2RVM3VQSlhVRE12cFNHcWlKNmNLa01qQ3VHbWM1MlNT?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 假设生成的黑箱被打开：用可视化追踪材料科学中的‘图到答案’机制",
+        "dek": "一篇新论文展示了如何可视化 AI 共同科学家从构建知识图谱到产出假设的推理路径，而不只是相信它‘说得流畅’。",
+        "details": [
+          "AI 共同科学家现在能生成流利的材料科学假说，但流利不等于正确。论文指出，一个看似合理的句子可能只是文字游戏，并没有保留真正有科学意义的机制。问题在于：我们怎么知道模型的答案不是‘编’出来的？这篇论文尝试回答的正是这个问题。",
+          "论文使用的模型叫 Graph-PRefLexOR-8B，是基于 Qwen3-8B 改编的版本。它把任务拆成四个显式阶段：头脑风暴、构建图、提取模式、综合答案。换句话说，模型不是一步直接给出结果，而是先画出概念之间的关系图，再从中抽取模式，最后合成假设——这让研究者有机会‘偷看’它的推理过程。",
+          "为了检查这条路径，论文设计了一套可视化诊断工作流：语义回溯、图污染、基于激活的恢复测量，以及层- token-区域网格。图污染的意思是故意破坏知识图的某些部分，看模型能否从中恢复正确的推理。这些工具组合起来，能直观展示模型到底是从哪一步开始偏离或保持正确的。",
+          "在 100 道开放材料科学问题上，实验发现最终答案最接近模型自己结构化阶段的输出，而不是来自外部记忆或随机拼凑。这暗示，只要让模型显式分步思考，它的‘套路’是可以被部分检验的。不过摘要在此处截断，完整结论还需细看全文。"
+        ],
+        "why": "当 AI 生成的不只是文案而是科学假设时，流利度不再是可信度的指标。可追踪的机制恢复将是 AI 科学助手能否被实验室采纳的关键，也为开发可视化诊断工具提供了创业和投资机会。",
+        "links": [
+          [
+            "arXiv 论文页（Graph-PRefLexOR-8B 机制追踪）",
+            "https://arxiv.org/abs/2608.04170"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "字节CEO梁汝波：坚持自研AI大语言模型并非因外部压力",
+        "dek": "在外部关注转向“被动应战”时，梁汝波给字节的AI自研路线定了个调。",
+        "details": [
+          "新京报报道，字节跳动CEO梁汝波明确表示，公司坚持自研AI大语言模型并非因为外部压力。这句话直接回应了市场上关于字节“被迫追赶”的叙事，把自研动机拉回到公司内部战略层面。",
+          "作为字节最高管理者，梁汝波的这次表态更像是在校准外界预期。自研大模型对字节意味着数据、产品和模型层的深度整合，而非简单应对竞争——但报道未披露具体语境，读者仍要注意公开表态与公司实际投入节奏之间的差异。",
+          "从这个立场看，中国头部AI公司的自研路线，正从“要不要做”进入“为什么做”的阶段。梁汝波给出的理由是战略选择，这提醒投资人：判断中国AI竞争格局时，与其看外部情绪，不如观察各家在底层模型上的持续投入和产品化能力。"
+        ],
+        "why": "这条表态的价值不在口号本身，而在于字节重新定义了自己在AI竞赛中的角色——自研是长期筹码，不是权宜之计。对同行和投资人来说，这意味着大模型竞争将更看重重资产投入和产品落地，而不是外部环境的风向。",
+        "links": [
+          [
+            "Google News China AI Signals: 字节CEO梁汝波：坚持自研AI大语言模型并非因外部压力 - 新京报",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HX3p3c3NLTzhaUWxtNTJiVm9RTlBaMnA0ekc4WlpfblJFZEZQXzZuanUxR2lUa1pKS2xrYldmT2piRDNqX1diRVpNRUdDdnpNV1dranBTTHptVEo1Y2hPQ2Q5aW4?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "机器人处理 + 物理信息 AI：半导体测试的新变量",
+        "dek": "半导体测试环节正尝试把机器人自动化与物理信息 AI 结合，这可能成为良率提升和降本的新方向。",
+        "details": [
+          "这篇来自材料科学媒体 AZoM 的行业观点文章，把焦点放在半导体测试环节：用机器人处理程序自动搬运晶圆和芯片，再引入物理信息 AI 来辅助判断。测试通常是芯片制造最后一道大关，也是成本和良率的敏感点，机器人加 AI 的组合瞄准的正是这里。",
+          "物理信息 AI（Physics Informed AI）不是简单让模型从数据里学规律，而是把已知的物理原理直接写进模型约束里。在半导体测试中，这意味着 AI 可以结合热、力、电信号等物理逻辑去做预测，而不是只依赖历史数据的相关性，理论上更稳、更可解释。",
+          "文章目前只提供了标题，具体提出的方案、实验数据或落地案例还没有在摘要中展开，因此文中细节、结论与效果都还不能确认。对读者来说，更重要的是理解这个信号：AI 在芯片产业链的渗透，正在从设计、制造走向后端测试和自动化设备。",
+          "对创业和投资而言，这个方向提示了几个潜在机会：测试设备智能化、机器人协作系统、以及把物理仿真与 AI 结合的工业软件。对非技术读者，可以把它看成 AI 进入硬核工业现场的一个样本——不是取代工人，而是提升设备和工艺的判断效率。"
+        ],
+        "why": "半导体测试是 AI 芯片大规模交付的瓶颈之一，机器人加物理信息 AI 的探索，为设备自动化和良率优化提供了可追踪的新方向，值得产品和投资判断参考。",
+        "links": [
+          [
+            "Google News AI Infrastructure: Leveraging Robotic Handlers and Physics Informed AI for Semiconductor Testing",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTE03eFZ6M2FaSmhhTjJoTUM4NTZNdjY2WTBYVXowRldFRXNGR3pOeDhxWHF3akpDWG1pZzlJMkMzb3JkMlZVMU5qWThhZEU0ZVFxRElYdTNn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "阿里巴巴开源 Qwen-Max，闭源 API 价格承压",
+        "dek": "阿里把旗舰模型 Qwen-Max 开源，开发者可自托管，闭源 API 定价体系或受冲击。",
+        "details": [
+          "据 VOI.ID 报道，阿里巴巴将旗舰模型 Qwen-Max 开源。这意味着开发者可以下载模型权重、自行部署，而不必只能通过付费 API 调用。",
+          "开源通常会给闭源 API 带来价格压力：当最强模型可以自托管时，商业 API 的定价权会被削弱。业内观察认为，这可能带动国内大模型 API 价格进一步下调。",
+          "目前尚不清楚开源版本与 API 版本的能力差距、许可证条款和具体发布时间，上述信息以阿里云官方公告为准。"
+        ],
+        "why": "阿里将旗舰模型开源，是继 DeepSeek 之后又一次对闭源 API 定价体系的冲击；开发者需要重新评估自托管与 API 的成本和运维复杂度。",
+        "links": [
+          [
+            "Google News China AI: 阿里巴巴将Qwen-Max开源，封闭AI模型API价格可能会受到干扰 - VOI.ID",
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTE00WTdZMUJiWDRRdVRDNkxqZldtSF95TDA4T0xVWnVXWVVBSm9JQ29OdGpUY0twZGFFa0VzQlFVeTZiZV91cFBoR0xubl95a2vSAUJBVV95cUxNcUhSMlBMRnFxeS1IM1RHV3A2S1Ezb2hoM0h1V0hxVjZEanNrYWE1VzlBR3h2Yl9CRHQ5bHh3Vkx4NFE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Magic Patterns：用 AI 生成可交互产品原型",
+        "dek": "给产品经理和创始人的 AI 设计工具，把想法变成可点击的界面。",
+        "details": [
+          "Magic Patterns 是一款面向产品团队的 AI 设计工具，可以根据文字提示、截图、现有风格或设计系统，一键生成可交互的产品原型。它把“想法”快速变成“能点击的界面”，降低早期沟通成本。",
+          "对产品经理和创业者来说，最大的价值是在写代码之前，就能把需求变成可演示、可讨论的交互稿，避免需求文档和实际体验脱节。Magic Patterns 支持从已有设计系统出发，保持品牌一致性。",
+          "这类工具的兴起，意味着 AI 正在进入产品设计的最前端。当原型生成变得像打字一样快，产品决策的试错成本会明显下降，设计工具的竞争也从画板转向“生成 + 协作”。"
+        ],
+        "why": "产品定义环节正在被 AI 重做，先发团队的机会在于把生成结果接入真实工作流，比如自动标注、设计系统同步。",
+        "links": [
+          [
+            "Curated AI Products: Magic Patterns: AI design agent for interactive product prototypes",
+            "https://www.magicpatterns.com/"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Recall：把文章、视频和 PDF 变成可搜索的个人知识库",
+        "dek": "一款把网页、YouTube、PDF 和笔记统一收拢的 AI 工具，让你边读边攒自己的知识库，而不是读完就忘。",
+        "details": [
+          "Recall 是一款面向知识工作者的 AI 知识库工具，核心思路是“收藏即整理”。它能把网页、YouTube 视频、播客、PDF、书籍和笔记自动保存，并生成摘要和标签，让零散阅读沉淀为可检索的个人材料。",
+          "它不只做存储，还会打通内容之间的联系。比如你读过的多篇 AI 文章，系统会按主题或观点自动关联，形成知识网络，后续找资料时不用靠记忆翻文件夹。",
+          "最有特色的功能是“和你的资料对话”。你可以像聊天一样提问，例如“我上周读的关于 RAG 的文章里，作者对向量数据库怎么看？”，Recall 会从已收藏内容中定位答案并给出出处。",
+          "对非技术用户来说，它降低了搭建“第二大脑”的门槛：不需要学 Notion 或 Obsidian 的复杂结构，只要平时把阅读链接丢进去，AI 会自动完成分类和提取。它的局限在于，处理中文资料和长文档的准确性还有待验证，目前更适合作为英文资料的辅助阅读工具。"
+        ],
+        "why": "AI 知识库是生产力工具里少见的刚需场景，Recall 用“收藏+对话”的方式降低了使用门槛，对做内容沉淀和个人效率产品的团队有参考价值。",
+        "links": [
+          [
+            "Recall 官网",
+            "https://www.recall.it/"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "Agentic Workflow：让 AI 从“给答案”变成“办成事”",
+        "dek": "AI 不再只是聊天框，而是开始像员工一样规划任务、调用工具、自我校验。",
+        "details": [
+          "Agentic Workflow 不是一个模型，而是一种把 AI 组织起来干活的方式：系统先接收一个目标，然后自主拆解成多个子任务，在循环中调用工具、读取反馈、修正步骤，直到目标完成。它和传统 prompt 的区别是，AI 不是“答完就停”，而是“做完为止”。",
+          "最近几条产业动态都能放在这个框架里看：阿里巴巴将 Qwen-Max 开源，让更多团队能拿强大的基座模型去搭自己的 agent 流程；AI 初创公司 Mirendil 与 Google Cloud 签下超过 1 亿美元的合作，扩建算力来研究“自我改进”的 AI 系统——这种系统正是 agent 具备持续学习和修正能力的理想形态。",
+          "与此同时，OpenAI 发布了关于第三方网络评估事件的说明，并明确了新的安全防护措施。随着 agent 从实验室走向真实业务，它被赋予的权限越大，评估和审计就越关键。MiniMax 的 H3 视频模型登顶开源社区，也说明 agent 的“执行环境”正在从文本扩展到音视频等多模态。",
+          "对普通读者来说，可以这样理解：过去 AI 是“问答工具”，你给它一个 prompt，它给你一段文字；Agentic Workflow 下的 AI 更像“数字员工”，你给它一个目标，它自己安排步骤、查资料、操作软件、汇报结果。这也意味着，未来的产品竞争会从“谁的模型更聪明”转向“谁能把模型组织得更好”。"
+        ],
+        "why": "Agentic Workflow 是 2026 年理解 AI 产品和投资的关键词：谁能让模型稳定地完成多步任务，谁就能占据企业自动化的入口。对个人来说，学会设计 agent 流程，可能比学会某个模型 API 更有长期价值。",
+        "links": [
+          [
+            "Mirendil 与 Google Cloud 超 1 亿美元合作（TechCrunch）",
+            "https://techcrunch.com/2026/08/06/exclusive-mirendil-inks-100m-google-cloud-deal-to-scale-self-improving-ai/"
+          ],
+          [
+            "阿里巴巴开源 Qwen-Max（VOI.ID）",
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTE00WTdZMUJiWDRRdVRDNkxqZldtSF95TDA4T0xVWnVXWVVBSm9JQ29OdGpUY0twZGFFa0VzQlFVeTZiZV91cFBoR0xubl95a2vSAUJBVV95cUxNcUhSMlBMRnFxeS1IM1RHV3A2S1Ezb2hoM0h1V0hxVjZEanNrYWE1WzlBR3h2Yl9CRHQ5bHh3Vkx4NFE?oc=5"
+          ],
+          [
+            "OpenAI 第三方网络评估说明",
+            "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-08-06",
     "title": "AI Daily Atlas",
     "meta": "2026年8月6日",
@@ -17166,6 +17530,358 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-08-07",
+    "title": "AI Daily Atlas",
+    "meta": "August 7, 2026",
+    "headline": "models and platforms plus agents and workflows shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus agents and workflows. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, agents are moving from demos into enterprise workflows, developer tools, and real task execution. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek Buys Into Unitree’s Shanghai IPO in Humanoid AI Pact - Unite.AI",
+        "dek": "AI lab DeepSeek invests in humanoid robot maker Unitree's Shanghai IPO, a sign that Chinese frontier-model players are anchoring to embodied AI.",
+        "details": [
+          "DeepSeek has bought into Unitree's Shanghai initial public offering, according to a report from Unite.AI, in what appears to be a strategic pact between China's AI model frontier and its humanoid robotics champion. The investment links DeepSeek's large language models with Unitree's physical hardware, positioning the duo to compete in embodied AI — systems that perceive, reason and act in the real world. For DeepSeek, this is a move beyond pure-model play into hardware-adjacent distribution; for Unitree, it brings a deep-pocketed AI partner ahead of its public listing. Financial terms, including stake size and valuation, have not been disclosed.",
+          "The move highlights a broader pattern among Chinese AI leaders: aligning with robotics to ground AI in physical applications and to secure real-world data and deployment channels. It also intensifies the competitive narrative with U.S. players, where foundation-model companies and humanoid startups are still largely separate. The fact that this happens at an IPO suggests capital markets are beginning to price AI-and-robotics convergence as a single story. Uncertainty remains over execution and regulatory approvals, but the strategic direction is clear."
+        ],
+        "why": "For investors and strategists, this is a signal that humanoid robotics and foundation models are converging in China's AI ecosystem — a trend to watch for cross-investments between model labs and hardware startups. It also hints that future model competition will be measured not just by benchmark scores but by real-world embodiment.",
+        "links": [
+          [
+            "Unite.AI via Google News",
+            "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMHpONlRpV2Z4MW15dEo0cnRpcEFTa1VOeHI4QlM0aW5yMjFLSUxyMU9haHBKV1NnNVNWRElMRjNYeXdzbjlCblRuelFodFRMM2htZnJBY1Zwd1RYOVRRRURpbUJXZnIxSTJoYTNfb1lWcXh5bENjaXRpa0JXTHB1MkV1MnZ6dEl3eFE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Exclusive: Mirendil inks $100M+ Google Cloud deal to scale self-improving AI",
+        "dek": "AI startup Mirendil locks in over $100 million in Google Cloud compute to push its self-improving AI research, according to an exclusive TechCrunch report.",
+        "details": [
+          "Mirendil, an AI research startup, has signed a partnership with Google Cloud valued at more than $100 million, according to an exclusive report from TechCrunch. The deal is designed to expand Mirendil's compute infrastructure, directly supporting its research into self-improving AI systems that aim to accelerate scientific discovery and AI development.",
+          "The agreement highlights how cloud capacity has become a strategic asset for frontier AI labs, especially those exploring recursive or self-improving model training, which is extremely compute-intensive. For Google Cloud, it represents a win in its aggressive competition with AWS and Azure to secure ambitious AI startups as anchor customers. For Mirendil, the infusion of cloud resources removes a major bottleneck, allowing the team to run larger-scale experiments without the heavy capital burden of building its own data centers.",
+          "Key details remain unclear, including the exact length of the contract, whether it includes any equity stake or performance milestones, and when the capacity goes live. The deal is reported exclusively and based on sources familiar with the matter, so neither Mirendil nor Google Cloud has publicly confirmed the figures."
+        ],
+        "why": "This deal signals that cloud credit is now a primary currency for frontier AI startups, not just a budget line item. Worth watching is whether competitors like AWS or Azure counter with similar anchor deals, and whether Mirendil's self-improving approach actually produces breakthroughs in scientific discovery.",
+        "links": [
+          [
+            "TechCrunch AI: Exclusive: Mirendil inks $100M+ Google Cloud deal to scale self-improving AI",
+            "https://techcrunch.com/2026/08/06/exclusive-mirendil-inks-100m-google-cloud-deal-to-scale-self-improving-ai/"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "MiniMax H3 Tops Open-Source Community, Sets a New 'Kill Line' for Video Models",
+        "dek": "A QbitAI report says MiniMax H3 has reached No.1 in the open-source community, defining a new competitive threshold for video generation models.",
+        "details": [
+          "Chinese AI company MiniMax's H3 model has reportedly reached the top of the open-source community leaderboard, according to a QbitAI report published on August 6. The article describes H3 as defining the 'kill line' in the video-model field — a baseline that competing models must now beat. This framing suggests H3 is not just another release but a reference point for the entire open-source video generation landscape.",
+          "The available source does not include specific benchmark scores or technical specifications, so the exact criteria for the No.1 ranking are not independently confirmed. What is clear from the report is that open-source video models have reached a point where a frontier model can set a sharp, community-recognized threshold for performance, and H3 is being positioned as that benchmark."
+        ],
+        "why": "For developers and startups building on open-source video models, H3's rise means the competitive baseline has just moved: new projects will now be judged against a model that defines the community's 'kill line', and teams relying on earlier open models may need to reassess their technical choices.",
+        "links": [
+          [
+            "QbitAI: MiniMax H3登顶开源社区第一，定义视频模型领域'斩杀线'",
+            "https://www.qbitai.com/2026/08/467270.html"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google Maps adds agentic features, including food ordering and hotel bookings",
+        "dek": "Google Maps is moving beyond navigation, adding AI agent capabilities that let users book hotels and order food directly inside the app.",
+        "details": [
+          "Google has begun rolling out agentic features in Google Maps that let users complete real-world tasks such as ordering food and booking hotels without leaving the app. According to a TechCrunch report, the update signals a strategic shift: Maps is no longer just a turn-by-turn navigation tool, but an assistant that can carry out multi-step actions on a user's behalf.",
+          "The move ties into a broader industry trend where major tech companies are embedding AI agents into their most-used consumer surfaces. By placing these capabilities inside a map app with billions of daily users, Google is effectively creating a new distribution channel for AI-powered commerce — potentially funneling restaurant orders and hotel reservations through its own ecosystem.",
+          "Specific details about how the ordering and booking flows work, which markets are supported, and whether they rely on Google's Gemini models have not yet been fully disclosed. The exact rollout scope and timing remain unclear as Google has not yet made an official public announcement beyond the report."
+        ],
+        "why": "For startups and investors, Google planting agentic commerce inside Maps is a reminder that the battle for AI-driven transactions will be won at the point of user intent — and that incumbents can leverage existing apps to bypass standalone chatbot assistants.",
+        "links": [
+          [
+            "TechCrunch AI: Google Maps adds agentic features, including food ordering and hotel bookings",
+            "https://techcrunch.com/2026/08/06/google-maps-adds-agentic-features-including-food-ordering-and-hotel-bookings/"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "LG, Nvidia chiefs to discuss AI infrastructure, robotics partnership in person next week",
+        "dek": "LG and Nvidia leaders are scheduled to meet face-to-face next week to discuss collaborations in AI infrastructure and robotics, according to Yonhap News Agency.",
+        "details": [
+          "Yonhap News Agency reported that the heads of LG and Nvidia will hold an in-person meeting next week to discuss AI infrastructure and robotics partnership. The meeting signals that the South Korean conglomerate is seeking to strengthen its AI and robotics initiatives with Nvidia's technology.",
+          "The exact agenda and expected outcomes have not been disclosed. The meeting follows ongoing collaboration between the two companies in AI computing and robotics, though specific investment or product plans remain unconfirmed."
+        ],
+        "why": "A direct in-person summit between LG and Nvidia leadership suggests a deepening strategic partnership rather than a one-off chip purchase. For investors and startups, it highlights how Nvidia is extending its AI stack into industrial and robotics applications, creating new integration opportunities.",
+        "links": [
+          [
+            "Yonhap News Agency via Google News",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBvSHpFZXM4aGhjWEVKMTczSEVKdHoyRVg0Wl9QYXRrMXRoeDBrTV82MzJxaTNCNjZneU9kZmZ0eGcwbnlQeW1xU1BxdFROOGNLTy1KdmhUZzdHUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "TechFlow 情报局：DeepSeek 宣布大幅涨价引发热议，Google DeepMind 重组 Demis 转任董事长 - 深潮TechFlow",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI：TechFlow 情报局：DeepSeek 宣布大幅涨价引发热议，Google DeepMind 重组 Demis 转任董事长 - 深潮TechFlow. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: TechFlow 情报局：DeepSeek 宣布大幅涨价引发热议，Google DeepMind 重组 Demis 转任董事长 - 深潮",
+            "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5YWHFnR3JxbzZ2Z2lWUkd6MzR2dk9FOVBZNW1fUkJtYUxrcjU0Rkh5dEJWY2ZuOXZvWGNUVUFNbUZycDh6aGJCQVFSdkhqNXZkT1ZWWA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Karnataka and Anthropic in early discussions on AI for governance, skilling, and deeptech",
+        "dek": "A reported state-level dialogue shows how subnational governments are exploring partnerships with frontier AI labs, but no concrete agreement is confirmed.",
+        "details": [
+          "India's Economic Times reported on August 6 that the Karnataka state government and Anthropic have discussed a potential AI partnership focused on governance, skilling, and deeptech. The report appears to be based on unnamed sources, and there is no official statement from either side confirming the scope, structure, or timeline of any collaboration. This should be treated as an early-stage discussion rather than a signed deal.",
+          "Why does this matter? Karnataka is India's technology powerhouse, hosting Bengaluru, a global hub for software engineering and startups. If a state government were to partner with a frontier AI lab, it could mean applying advanced models to public-service delivery, designing workforce retraining programs around AI skills, and backing deep-tech research with state-level policy support. It would also signal a shift from enterprise experimentation toward public-sector institutional adoption of frontier models.",
+          "Across the world, governments are weighing how to access AI capabilities without building their own foundation models from scratch. A state-level partnership with Anthropic—if it moves forward—would be one of the clearest examples yet of a subnational government treating an AI lab as an infrastructure provider for public governance. For now, the only confirmed fact is that discussions were reported; no funding, pilot scope, or implementation plan has been disclosed."
+        ],
+        "why": "This matters because subnational governments like Karnataka are emerging as direct partners for frontier AI labs, and a deal here could open a new public-sector procurement channel for AI services—but with no official agreement, the signal is still early and uncertain.",
+        "links": [
+          [
+            "Google News AI Governance Partnerships: Karnataka, Anthropic discuss AI partnership for governance, skilling, & deeptech - The Economic Times",
+            "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNWEZUbThidFU1bFROdkkwVmQwQVlXdnlSRm8teTk2c2FBWjRUS3ZvUmNieS1JSWhoTEl2X1AtZnNmQjVZaW13eHZyX00xY1dJUDhyU2pHcHJ6Y2dtS0N4UmNRXzJDVldZbmpGVDF1MWFjOEE5bFBza1RYRjk1QURya0l6M2FyQUdXVjFVLThTV3Nvb3Q1YnV3Q2ZsZXNmTDNuMktiWW11bGFOVjFoaDJNY0RvY3VQQmpYWC1nMk80N1N4MmVSRGFLbHFvc2dPaEdvdmFHc1M0Q0hydXgyWEE1UVN4alUxSFZ2Y0pFOTRDRdIB9AFBVV95cUxPenFiNFJiUUIwZm5udkJ4Vkh3WHJ6S0g1QTlhelJsWjNCZkRya210eWJiTC1zSFE3R0t4OGxqNS00SDNZNm9STkttYkVaZmJ1aWtwcDVJVEZudkNhSnlOTGZ2bm1ObXZsbVhkb1V4cmQtSTJWVnEyaXFmU3lKdzZhR2dITkxtNXhkTV9XSXVyeEFqV3NXcGFITnJBaGhRbm95MUhlb1ZhRlJfSGJCZUhtaTNNNW9EZUd3emNwd2tWbTFTNFVGcWFzZzY4NkttMDAwbFFCQ2RVM3VQSlhVRE12cFNHcWlKNmNLa01qQ3VHbWM1MlNT?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Visualizing Graph-to-Answer Mechanism Recovery in Materials-Science Hypothesis Generation",
+        "dek": "How a new diagnostic workflow reveals whether AI-generated hypotheses preserve meaningful mechanisms or just fluent patterns.",
+        "details": [
+          "AI co-scientists can now produce fluent hypotheses in materials science, but fluency alone does not prove that a model’s answer actually preserves a scientifically meaningful mechanism. A new arXiv study tackles this gap by tracing how a model moves from an input graph to a final answer, using a method called graph-to-answer mechanism recovery.",
+          "The study introduces Graph-PRefLexOR-8B, a Qwen3-8B model adapted to expose distinct processing stages: brainstorming, graph construction, pattern extraction, and synthesis. Researchers then built a visual diagnostic workflow that combines semantic backtracking, graph corruption, activation-based recovery measurements, and layer-by-token-region grids to inspect exactly where the model’s internal pathway diverges from known scientific structure.",
+          "When tested on 100 open-ended materials-science questions, the final answers turned out to be closest to the model’s own structured stages rather than to an externally defined scientific mechanism. That finding suggests current AI co-scientists may be optimizing for internal narrative consistency, not for genuine alignment with domain causality — a critical caveat for anyone relying on LLMs to generate new hypotheses.",
+          "The contribution is not just a new model, but a reusable inspection methodology. Scientists and AI developers can use this visual workflow to audit hypothesis generators before trusting their outputs, helping separate plausible-sounding text from mechanism-valid reasoning."
+        ],
+        "why": "This kind of mechanism tracing is a practical tool for validating AI-generated science, and it highlights a core risk: fluent outputs can mask missing causal reasoning. Teams investing in AI co-scientists should treat such visual diagnostics as a standard part of model evaluation.",
+        "links": [
+          [
+            "arXiv cs.CL: Visualizing Graph-to-Answer Mechanism Recovery in Materials-Science Hypothesi",
+            "https://arxiv.org/abs/2608.04170"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "ByteDance CEO Liang Rubo: In-House LLM Strategy Not Driven by External Pressure",
+        "dek": "ByteDance CEO Liang Rubo pushes back on the idea that the company's self-developed AI models are a defensive reaction, framing self-reliance as a long-term strategic bet.",
+        "details": [
+          "In a rare interview with Beijing News, ByteDance CEO Liang Rubo directly addressed the company's AI strategy, asserting that its commitment to building proprietary large language models is not a response to outside pressure. The interview comes as China's AI sector faces intense competition, with major tech firms racing to deploy models, applications, and cloud services. Liang's comment is a deliberate attempt to shape the narrative around ByteDance's AI roadmap, moving it away from a reactive posture and toward one of intentional investment.",
+          "Liang argued that in-house R&D gives ByteDance the flexibility to adapt models to its own product ecosystem and maintain control over the full technology stack, from pretraining to deployment. He did not announce specific technical milestones or product updates, but the framing emphasizes long-term value over short-term competitive alignment. The statement also implicitly rejects external interpretations that ByteDance has been forced into self-research by market dynamics or peer moves, instead presenting self-developed models as a core pillar of the company's identity.",
+          "For industry watchers, this is more than a defensive clarification. As CEO of one of China's largest AI application companies, Liang's words signal that ByteDance will continue to allocate significant resources to model development, even as open-source or third-party options become more accessible. Investors and partners should read this as a commitment to differentiation, though the real test will be whether these in-house models can deliver sustained product advantages or simply duplicate broader industry efforts."
+        ],
+        "why": "Liang's public framing removes ambiguity about ByteDance's AI strategy: the company sees proprietary LLMs as a core asset, not a fallback. This reduces uncertainty for partners and investors tracking China's AI race, and signals that model development will remain a major competitive battleground.",
+        "links": [
+          [
+            "Google News China AI Signals: 字节CEO梁汝波：坚持自研AI大语言模型并非因外部压力 - 新京报",
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1HX3p3c3NLTzhaUWxtNTJiVm9RTlBaMnA0ekc4WlpfblJFZEZQXzZuanUxR2lUa1pKS2xrYldmT2piRDNqX1diRVpNRUdDdnpNV1dranBTTHptVEo1Y2hPQ2Q5aW4?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Leveraging Robotic Handlers and Physics Informed AI for Semiconductor Testing",
+        "dek": "An AZoM feature argues that combining robotic handling with physics-informed AI can make semiconductor testing more accurate, faster, and less dependent on massive labeled datasets.",
+        "details": [
+          {
+            "summary": "This AZoM feature examines two converging technologies: robotic handlers and physics-informed AI.",
+            "expanded": "The piece frames semiconductor testing as a growing bottleneck as chip designs get more complex and defect detection becomes harder. It highlights robotic handlers for automating physical wafer and die movement, which can reduce contamination and handling errors while increasing throughput. Physics-informed AI, in turn, adds domain knowledge about device physics to detect anomalies without needing huge labeled training sets. The core argument is that the two technologies form a closed loop: robots enable faster, more repeatable testing, and physics-informed models interpret sensor data more reliably than purely data-driven approaches. This matters because testing is often a hidden cost and yield constraint in advanced packaging and high-performance computing chips."
+          },
+          {
+            "summary": "Why it matters for the AI hardware chain",
+            "expanded": "Semiconductor testing is becoming more strategic as AI demand increases chip complexity and packaging sizes. If testing remains manual and heuristic, time-to-market and yields suffer. Robotic handling plus physics-informed AI could shorten test cycles, improve defect detection, and help AI chipmakers and foundries scale production more predictably. The article is an industry viewpoint rather than a formal report, but it points investors and technologists toward an underserved segment of the AI ecosystem: test, inspection, and automation—beyond design and manufacturing."
+          }
+        ],
+        "why": "For product and strategy leaders, this points to a less visible but critical part of the AI hardware chain—semiconductor test automation—where physics-informed AI could reduce reliance on massive labeled data and unlock faster yield ramps.",
+        "links": [
+          [
+            "AZoM via Google News",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTE03eFZ6M2FaSmhhTjJoTUM4NTZNdjY2WTBYVXowRldFRXNGR3pOeDhxWHF3akpDWG1pZzlJMkMzb3JkMlZVMU5qWThhZEU0ZVFxRElYdTNn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "Alibaba Reportedly Open-Sources Qwen-Max, Threatening Closed AI API Pricing",
+        "dek": "A report says Alibaba has released its Qwen-Max model as open source, which could pressure pricing for paid AI model APIs.",
+        "details": [
+          "According to a report from VOI.ID aggregated by Google News, Alibaba has open-sourced its Qwen-Max large language model. The report contends this move could disrupt the pricing of closed AI model APIs, which charge per token for access to frontier models. There is no official confirmation from Alibaba yet, and key release details such as weight availability, license terms, and platform hosting remain unclear.",
+          "If confirmed, open-sourcing Qwen-Max — the flagship in Alibaba's Qwen model family — would hand developers and enterprises a high-capability model they can fine-tune and self-host at their own cost. That could pull demand away from paid API services and force providers to justify their per-token prices with extra features or superior reliability. However, because the actual model weights, performance benchmarks, and governance terms have not been disclosed, the immediate practical impact is still uncertain."
+        ],
+        "why": "For developers and startups, a genuinely open Qwen-Max would reinforce the shift to open-weight models, eroding the pricing power of closed APIs and changing how AI products budget for inference costs.",
+        "links": [
+          [
+            "Google News China AI: Alibaba open-sources Qwen-Max (VOI.ID)",
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTE00WTdZMUJiWDRRdVRDNkxqZldtSF95TDA4T0xVWnVXWVVBSm9JQ29OdGpUY0twZGFFa0VzQlFVeTZiZV91cFBoR0xubl95a2vSAUJBVV95cUxNcUhSMlBMRnFxeS1IM1RHV3A2S1Ezb2hoM0h1V0hxVjZEanNrYWE1VzlBR3h2Yl9CRHQ5bHh3Vkx4NFE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-06",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Magic Patterns: AI design agent for interactive product prototypes",
+        "dek": "Turn prompts, screenshots, or design systems into clickable mockups for faster product iteration.",
+        "details": [
+          "Magic Patterns is an AI design agent that helps product teams generate interactive mockups from a prompt, a screenshot, an existing style, or a design system. It is aimed at PMs and founders who need to make a product idea concrete and discussable before bringing in engineering or visual design resources.",
+          "Instead of starting from a blank canvas, users describe the intended workflow or upload a reference visual, and the agent produces a clickable prototype that can be shared for feedback. The connection to an existing design system is particularly useful for keeping generated output on-brand and reducing rework."
+        ],
+        "why": "Product management and founding teams are early beneficiaries of AI that can compress the time between idea and validation; this signals that AI design agents are becoming a distinct, practical category in the wider AI productivity stack.",
+        "links": [
+          [
+            "Magic Patterns: AI design agent for interactive product prototypes",
+            "https://www.magicpatterns.com/"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "fallback",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Recall: a personal AI knowledge base for articles, videos, PDFs, and notes",
+        "dek": "A productivity app that saves, summarizes, and connects your daily AI reading into a searchable, chat-enabled library.",
+        "details": [
+          "Recall is a personal knowledge base tool that collects web pages, YouTube videos, podcasts, PDFs, books, and notes into one place. It automatically summarizes each item, adds tags, and links related content, so users can retrieve ideas later instead of losing them in a disposable reading list.",
+          "The product also supports conversational search: users can chat with their saved materials to ask questions, compare perspectives, or pull out key details. This makes it useful for people who consume a high volume of AI-related articles and need to turn them into reusable knowledge for work or research."
+        ],
+        "why": "For founders and builders, Recall highlights a growing opportunity: tools that turn existing information assets into searchable, relational knowledge, rather than yet another chatbot. Products that organize the flow of daily reading into a durable knowledge graph are well positioned in the productivity layer.",
+        "links": [
+          [
+            "Curated AI Products: Recall",
+            "https://www.recall.it/"
+          ]
+        ],
+        "sourceDate": "2026-08-04",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Agentic Workflow",
+        "dek": "Agentic workflow is the shift from AI that answers questions to AI that completes multi-step tasks with minimal human oversight.",
+        "details": [
+          "An agentic workflow is a structured way for AI systems to achieve a goal by autonomously breaking it into steps, choosing tools, executing actions, and iterating based on results. Instead of producing a single answer, an agentic system can write code, query APIs, update spreadsheets, or even run experiments, adjusting its approach as it receives feedback.",
+          "The rise of agentic workflows is driven by advances in tool use and planning. Models no longer just respond to prompts; they can call functions, maintain memory across steps, and follow a plan. This makes them useful for enterprise automation, scientific research, and software development — areas where tasks involve many dependent stages.",
+          "A concrete signal came on August 6, 2026, when TechCrunch reported that Mirendil signed a Google Cloud deal worth over $100 million to expand compute for self-improving AI systems. Such systems likely rely on agentic workflows to autonomously run experiments and refine their own models, showing how compute demand scales when AI moves from answering to acting.",
+          "For non-technical readers, the term matters because it explains the difference between a chatbot and a digital worker. Products that advertise 'agents' or 'automation' often hinge on agentic workflows, so understanding the concept helps assess their real capabilities and limits."
+        ],
+        "why": "Agentic workflow is the key lens for evaluating which AI products can execute multi-step tasks autonomously, making it a core concept for product strategy, investment theses, and career planning in AI.",
+        "links": [
+          [
+            "TechCrunch: Mirendil inks $100M+ Google Cloud deal",
+            "https://techcrunch.com/2026/08/06/exclusive-mirendil-inks-100m-google-cloud-deal-to-scale-self-improving-ai/"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-08-06",
     "title": "AI Daily Atlas",
