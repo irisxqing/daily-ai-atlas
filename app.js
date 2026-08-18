@@ -1,5 +1,355 @@
 const archiveZh = [
   {
+    "date": "2026-08-19",
+    "title": "AI Daily Atlas",
+    "meta": "2026年8月19日",
+    "headline": "模型与平台、算力与产业链 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和算力与产业链展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时算力基础设施和供应链仍是大模型竞争的底层变量。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里巴巴投资的人形机器人公司逐际动力拟赴港IPO募资最高3亿美元 - TradingView",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：阿里巴巴投资的人形机器人公司逐际动力拟赴港IPO募资最高3亿美元 - TradingView。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里巴巴投资的人形机器人公司逐际动力拟赴港IPO募资最高3亿美元 - TradingView",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xaGFROGxidHZlRVlyLVlDV3lrRDd6a3BnYzJVZ1AtR0pDalpqWHE5d3ExWGhjVS10NzBYN0dteGxnQ3lOd2o1M29EWjdQSnc4NVRPVnJnbUNMbUJvelUzMWlSSWJLQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里云韩国第三座数据中心上线 同步推6项Agentic AI服务 - 观点网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：阿里云韩国第三座数据中心上线 同步推6项Agentic AI服务 - 观点网。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里云韩国第三座数据中心上线 同步推6项Agentic AI服务 - 观点网",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1JTTJvdmswdEkxX19TMURoNC0xc0xET0FDRUxjSkNJS09WdXVwMkdtOUQtbDFkSGxIVWdZNGVIX0wxcVd5d1h1TEJGTFlKdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里云扩建全球基础设施，韩国第三座数据中心上线 - 雷峰网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：阿里云扩建全球基础设施，韩国第三座数据中心上线 - 雷峰网。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里云扩建全球基础设施，韩国第三座数据中心上线 - 雷峰网",
+            "https://news.google.com/rss/articles/CBMid0FVX3lxTE9pNTl4YzNoQ3JXd29GTWVYdGlhYndRdWJ6M0FHSC00Mll2bDQzUzdCTmNkVUZDeUt3bHBjM094YnR2cHZib3JDcjYxM2ZKd1pVblh3UzZ4M291RGI2dkd2VF9FRHYwZjZpVF9WQ1V0U0dONDVpNUJn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：OpenAI announces massive data center in Ohio with Nvidia guarantee",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News AI Labs：OpenAI announces massive data center in Ohio with Nvidia guarantee - Axios。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Labs: OpenAI announces massive data center in Ohio with Nvidia guarantee - ",
+            "https://news.google.com/rss/articles/CBMifkFVX3lxTE1WTVZYTGFrandXeVZjWnV6TllsTjRzOEF3b0JLdy1QN2wzbFFFdC1TNXdWOU9LQ1lMbFFoQkUzY3RwU1dYbllrS2xSaE1hN1ZjOEd2ZVpuS2xvSDV2Q0pXRXFtMG43S0ZRWkZFdDRUZXJhRk54M2ZqQmFfMzl1QQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Pacing model development in an era of cyber-critical capabilities",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 OpenAI News：Pacing model development in an era of cyber-critical capabilities。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "OpenAI News: Pacing model development in an era of cyber-critical capabilities",
+            "https://openai.com/index/pacing-model-development-cyber-capabilities"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "B.AI 宣布 DeepSeek-V4-Flash 限时全免费开放，叠加多重福利激励生态 - CryptoRank",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI：B.AI 宣布 DeepSeek-V4-Flash 限时全免费开放，叠加多重福利激励生态 - CryptoRank。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: B.AI 宣布 DeepSeek-V4-Flash 限时全免费开放，叠加多重福利激励生态 - CryptoRank",
+            "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5aX1FaeW1WbjRzZGlFdlJrNEZxWVFWVjlEVXZDcU9TdktmOFM5UVU0bVp0ai1NYUQxdzh4WkFXbVhCZEx6SVAwLTFwUy16YmVVN3h1RkJsMFQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Position: AI Governance Needs ISO-like Interoperability Protocols,",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "这条信号来自 arXiv cs.AI：Position: AI Governance Needs ISO-like Interoperability Protocols, Not Just Laws。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "arXiv cs.AI: Position: AI Governance Needs ISO-like Interoperability Protocols, Not Just L",
+            "https://arxiv.org/abs/2608.14568"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：HarmProfile: Characterizing Harmful Distributions in Frontier LLMs",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "这条信号来自 arXiv cs.CL：HarmProfile: Characterizing Harmful Distributions in Frontier LLMs。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "arXiv cs.CL: HarmProfile: Characterizing Harmful Distributions in Frontier LLMs",
+            "https://arxiv.org/abs/2608.14577"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：VCs Pour Billions Into Physical AI As The Next Wave Of AI Investin",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "这条信号来自 Google News AI Infrastructure：VCs Pour Billions Into Physical AI As The Next Wave Of AI Investing Takes Shape - Crunchbase News。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Infrastructure: VCs Pour Billions Into Physical AI As The Next Wave Of AI I",
+            "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRGdjZzRxUElYQXVyMVVmeE41NFpIeDlMMGZXSHdnNW5xVlpsa1dxLTdpSVlQeTdmeHBzN3hLODRhWUVjdFVRZ1g1Q2xsNGhlWWFYOUdjN2lsX1NOeDgyNzZKM3hwR2hiMGZXdWlYTW01T2VEd1dYOTJxUkhHY3FLdGtwX3NjYkhRb21pYXpDbVpuSlYtX1dF?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Opinion: The FNTV 2026 Global AI Economy Index - fierce-network.co",
+        "dek": "近期行业报告或研究材料，适合补充产业全景、企业采用和未来应用判断。",
+        "details": [
+          "这条信号来自 Google News AI Infrastructure：Opinion: The FNTV 2026 Global AI Economy Index - fierce-network.com。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Infrastructure: Opinion: The FNTV 2026 Global AI Economy Index - fierce-net",
+            "https://news.google.com/rss/articles/CBMiekFVX3lxTFB4cW5hbzdQN016YmRCUmFVRXdRam42SnJnOTF3UFM0MnBjaVkybkl3Y0t2MVk2cmt5Zk9sNUJObTNDcjUyS0dWSWZXMkNKY1MtRHlLV2RlVGx5RDZ6aW9oRldPcUJIeXJfdTdINHBlR0d5emhIaDBqMDl3?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "从DeepSeek、Kimi到“黄仁勋联盟”：AI模型开源，到底“开”了什么？ - blog.csdn.net",
+        "dek": "开发者社区信号，适合观察 agent、模型工具链或基础设施的新方向。",
+        "details": [
+          "这条信号来自 Google News China AI：从DeepSeek、Kimi到“黄仁勋联盟”：AI模型开源，到底“开”了什么？ - blog.csdn.net。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: 从DeepSeek、Kimi到“黄仁勋联盟”：AI模型开源，到底“开”了什么？ - blog.csdn.net",
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTFBobXFTWFpvQmlBWllvUmIxcVhmU2w0RzV4aHZfXzYwcEpTaVpaR2tfajN2LTEzTmMxT3BydkRZQjZzMXZmRXBGaUUxeW5lRVJ0T0hXUktOaVVKZmZXcUtCZ0ZwMWZyWlp0U1I1dWFn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：How to bring your software delivery workflow into GitHub with agen",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "这条信号来自 GitHub AI & ML：How to bring your software delivery workflow into GitHub with agent apps。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "GitHub AI & ML: How to bring your software delivery workflow into GitHub with agent apps",
+            "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/"
+          ]
+        ],
+        "sourceDate": "2026-08-15",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-08-15",
+        "freshnessLabelEn": "Fallback | published 2026-08-15",
+        "freshnessLabel": "补位｜发布于 2026-08-15"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：GitHub Copilot app for Beginners: Write your first prompt",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "这条信号来自 GitHub AI & ML：GitHub Copilot app for Beginners: Write your first prompt。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "GitHub AI & ML: GitHub Copilot app for Beginners: Write your first prompt",
+            "https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app/"
+          ]
+        ],
+        "sourceDate": "2026-08-13",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-08-13",
+        "freshnessLabelEn": "Fallback | published 2026-08-13",
+        "freshnessLabel": "补位｜发布于 2026-08-13"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "推理成本",
+        "dek": "判断模型降价和 AI 价格战时，经常要看的核心成本项。",
+        "details": [
+          "推理成本指模型在回答用户请求时消耗的算力、显存、电力和工程运维成本。训练成本是一次性把模型做出来，推理成本则会随着每一次调用持续发生，所以它更直接决定 API 定价、产品毛利和大规模落地速度。",
+          "当 DeepSeek 或其他模型厂商宣布降价时，真正值得看的不只是价格本身，而是背后的推理效率是否提升、是否能承受更高调用量，以及降价会不会迫使其他模型公司跟进。对企业用户来说，推理成本下降意味着更多内部流程可以被 AI 化。"
+        ],
+        "why": "它能帮你判断一次模型降价到底是营销动作，还是会改变 AI 应用普及速度的产业信号。",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里巴巴投资的人形机器人公司逐际动力拟赴港IPO募资最高3亿美元 - TradingView",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xaGFROGxidHZlRVlyLVlDV3lrRDd6a3BnYzJVZ1AtR0pDalpqWHE5d3ExWGhjVS10NzBYN0dteGxnQ3lOd2o1M29EWjdQSnc4NVRPVnJnbUNMbUJvelUzMWlSSWJLQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-08-18",
     "title": "AI Daily Atlas",
     "meta": "2026年8月18日",
@@ -19589,6 +19939,356 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-08-19",
+    "title": "AI Daily Atlas",
+    "meta": "August 19, 2026",
+    "headline": "models and platforms plus compute and infrastructure shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus compute and infrastructure. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, compute, chips, data centers, and supply chains remain the base layer of AI competition. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "阿里巴巴投资的人形机器人公司逐际动力拟赴港IPO募资最高3亿美元 - TradingView",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：阿里巴巴投资的人形机器人公司逐际动力拟赴港IPO募资最高3亿美元 - TradingView. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里巴巴投资的人形机器人公司逐际动力拟赴港IPO募资最高3亿美元 - TradingView",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xaGFROGxidHZlRVlyLVlDV3lrRDd6a3BnYzJVZ1AtR0pDalpqWHE5d3ExWGhjVS10NzBYN0dteGxnQ3lOd2o1M29EWjdQSnc4NVRPVnJnbUNMbUJvelUzMWlSSWJLQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "阿里云韩国第三座数据中心上线 同步推6项Agentic AI服务 - 观点网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：阿里云韩国第三座数据中心上线 同步推6项Agentic AI服务 - 观点网. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里云韩国第三座数据中心上线 同步推6项Agentic AI服务 - 观点网",
+            "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1JTTJvdmswdEkxX19TMURoNC0xc0xET0FDRUxjSkNJS09WdXVwMkdtOUQtbDFkSGxIVWdZNGVIX0wxcVd5d1h1TEJGTFlKdw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "阿里云扩建全球基础设施，韩国第三座数据中心上线 - 雷峰网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：阿里云扩建全球基础设施，韩国第三座数据中心上线 - 雷峰网. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里云扩建全球基础设施，韩国第三座数据中心上线 - 雷峰网",
+            "https://news.google.com/rss/articles/CBMid0FVX3lxTE9pNTl4YzNoQ3JXd29GTWVYdGlhYndRdWJ6M0FHSC00Mll2bDQzUzdCTmNkVUZDeUt3bHBjM094YnR2cHZib3JDcjYxM2ZKd1pVblh3UzZ4M291RGI2dkd2VF9FRHYwZjZpVF9WQ1V0U0dONDVpNUJn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "OpenAI announces massive data center in Ohio with Nvidia guarantee - Axios",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News AI Labs：OpenAI announces massive data center in Ohio with Nvidia guarantee - Axios. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Labs: OpenAI announces massive data center in Ohio with Nvidia guarantee - ",
+            "https://news.google.com/rss/articles/CBMifkFVX3lxTE1WTVZYTGFrandXeVZjWnV6TllsTjRzOEF3b0JLdy1QN2wzbFFFdC1TNXdWOU9LQ1lMbFFoQkUzY3RwU1dYbllrS2xSaE1hN1ZjOEd2ZVpuS2xvSDV2Q0pXRXFtMG43S0ZRWkZFdDRUZXJhRk54M2ZqQmFfMzl1QQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Pacing model development in an era of cyber-critical capabilities",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from OpenAI News：Pacing model development in an era of cyber-critical capabilities. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "OpenAI News: Pacing model development in an era of cyber-critical capabilities",
+            "https://openai.com/index/pacing-model-development-cyber-capabilities"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "B.AI 宣布 DeepSeek-V4-Flash 限时全免费开放，叠加多重福利激励生态 - CryptoRank",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI：B.AI 宣布 DeepSeek-V4-Flash 限时全免费开放，叠加多重福利激励生态 - CryptoRank. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: B.AI 宣布 DeepSeek-V4-Flash 限时全免费开放，叠加多重福利激励生态 - CryptoRank",
+            "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5aX1FaeW1WbjRzZGlFdlJrNEZxWVFWVjlEVXZDcU9TdktmOFM5UVU0bVp0ai1NYUQxdzh4WkFXbVhCZEx6SVAwLTFwUy16YmVVN3h1RkJsMFQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Position: AI Governance Needs ISO-like Interoperability Protocols, Not Just Laws",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from arXiv cs.AI：Position: AI Governance Needs ISO-like Interoperability Protocols, Not Just Laws. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "arXiv cs.AI: Position: AI Governance Needs ISO-like Interoperability Protocols, Not Just L",
+            "https://arxiv.org/abs/2608.14568"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "HarmProfile: Characterizing Harmful Distributions in Frontier LLMs",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from arXiv cs.CL：HarmProfile: Characterizing Harmful Distributions in Frontier LLMs. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "arXiv cs.CL: HarmProfile: Characterizing Harmful Distributions in Frontier LLMs",
+            "https://arxiv.org/abs/2608.14577"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "VCs Pour Billions Into Physical AI As The Next Wave Of AI Investing Takes Shape - Crunchbase News",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Google News AI Infrastructure：VCs Pour Billions Into Physical AI As The Next Wave Of AI Investing Takes Shape - Crunchbase News. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Infrastructure: VCs Pour Billions Into Physical AI As The Next Wave Of AI I",
+            "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRGdjZzRxUElYQXVyMVVmeE41NFpIeDlMMGZXSHdnNW5xVlpsa1dxLTdpSVlQeTdmeHBzN3hLODRhWUVjdFVRZ1g1Q2xsNGhlWWFYOUdjN2lsX1NOeDgyNzZKM3hwR2hiMGZXdWlYTW01T2VEd1dYOTJxUkhHY3FLdGtwX3NjYkhRb21pYXpDbVpuSlYtX1dF?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Opinion: The FNTV 2026 Global AI Economy Index - fierce-network.com",
+        "dek": "近期行业报告或研究材料，适合补充产业全景、企业采用和未来应用判断。",
+        "details": [
+          "This signal comes from Google News AI Infrastructure：Opinion: The FNTV 2026 Global AI Economy Index - fierce-network.com. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Opinion: The FNTV 2026 Global AI Economy Index - fierce-net",
+            "https://news.google.com/rss/articles/CBMiekFVX3lxTFB4cW5hbzdQN016YmRCUmFVRXdRam42SnJnOTF3UFM0MnBjaVkybkl3Y0t2MVk2cmt5Zk9sNUJObTNDcjUyS0dWSWZXMkNKY1MtRHlLV2RlVGx5RDZ6aW9oRldPcUJIeXJfdTdINHBlR0d5emhIaDBqMDl3?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "从DeepSeek、Kimi到“黄仁勋联盟”：AI模型开源，到底“开”了什么？ - blog.csdn.net",
+        "dek": "开发者社区信号，适合观察 agent、模型工具链或基础设施的新方向。",
+        "details": [
+          "This signal comes from Google News China AI：从DeepSeek、Kimi到“黄仁勋联盟”：AI模型开源，到底“开”了什么？ - blog.csdn.net. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: 从DeepSeek、Kimi到“黄仁勋联盟”：AI模型开源，到底“开”了什么？ - blog.csdn.net",
+            "https://news.google.com/rss/articles/CBMibkFVX3lxTFBobXFTWFpvQmlBWllvUmIxcVhmU2w0RzV4aHZfXzYwcEpTaVpaR2tfajN2LTEzTmMxT3BydkRZQjZzMXZmRXBGaUUxeW5lRVJ0T0hXUktOaVVKZmZXcUtCZ0ZwMWZyWlp0U1I1dWFn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-08-18",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "How to bring your software delivery workflow into GitHub with agent apps",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from GitHub AI & ML：How to bring your software delivery workflow into GitHub with agent apps. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "GitHub AI & ML: How to bring your software delivery workflow into GitHub with agent apps",
+            "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/"
+          ]
+        ],
+        "sourceDate": "2026-08-15",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-08-15",
+        "freshnessLabelEn": "Fallback | published 2026-08-15",
+        "freshnessLabel": "Fallback | published 2026-08-15"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "GitHub Copilot app for Beginners: Write your first prompt",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from GitHub AI & ML：GitHub Copilot app for Beginners: Write your first prompt. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "GitHub AI & ML: GitHub Copilot app for Beginners: Write your first prompt",
+            "https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app/"
+          ]
+        ],
+        "sourceDate": "2026-08-13",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜发布于 2026-08-13",
+        "freshnessLabelEn": "Fallback | published 2026-08-13",
+        "freshnessLabel": "Fallback | published 2026-08-13"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "Inference Cost",
+        "dek": "A core cost concept behind model price cuts and AI price wars.",
+        "details": [
+          "Inference cost is the compute, memory, electricity, and operating cost incurred each time a model answers a request. Training is the upfront cost of building a model; inference is the recurring cost of serving it at scale.",
+          "When a model provider cuts prices, the useful question is whether efficiency truly improved and whether competitors must respond. Lower inference cost can make more enterprise workflows economically viable."
+        ],
+        "why": "It helps distinguish a marketing discount from a structural signal that could expand real AI adoption.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里巴巴投资的人形机器人公司逐际动力拟赴港IPO募资最高3亿美元 - TradingView",
+            "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xaGFROGxidHZlRVlyLVlDV3lrRDd6a3BnYzJVZ1AtR0pDalpqWHE5d3ExWGhjVS10NzBYN0dteGxnQ3lOd2o1M29EWjdQSnc4NVRPVnJnbUNMbUJvelUzMWlSSWJLQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-08-18",
     "title": "AI Daily Atlas",
