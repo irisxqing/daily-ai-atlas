@@ -1,5 +1,331 @@
 const archiveZh = [
   {
+    "date": "2026-09-14",
+    "title": "AI Daily Atlas",
+    "meta": "2026年9月14日",
+    "headline": "资本与并购、算力与产业链 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕资本与并购和算力与产业链展开。融资投资和并购信号继续反映资本对 AI 方向的取舍，同时算力基础设施和供应链仍是大模型竞争的底层变量。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "智谱以零息+溢价转股形式融资50亿美元，主要用于算力基础设施与模型研发 - 华尔街见闻",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：智谱以零息+溢价转股形式融资50亿美元，主要用于算力基础设施与模型研发 - 华尔街见闻。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 智谱以零息+溢价转股形式融资50亿美元，主要用于算力基础设施与模型研发 - 华尔街见闻",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9yWi04MTRxSWZSTDJ1OUV0UDAtSlNiX0xHbGtxRlpUWFk1NXhqQTNqUnVubE5WenpUZG1yS3hwWHFQNmYzelhnNXY0UEszdjZYNmhZ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "周末窗口｜2026-09-13"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "DeepSeek 开口说话了：灰度测试上线，支持四种音色- AI 人工智能 - cnBeta.COM",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI：DeepSeek 开口说话了：灰度测试上线，支持四种音色- AI 人工智能 - cnBeta.COM。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: DeepSeek 开口说话了：灰度测试上线，支持四种音色- AI 人工智能 - cnBeta.COM",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ZbGh5dXo5MGFTRmxIWHFISkphaUpEQ1J5Z21jRHFaWGtwbzBCRVJqVW1OWXc4a3NKOHFfRXVwYkhBSHd0TmItaUdVMnB5azhUaUx2cHdFREpJTlB4a3dUbw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-12",
+        "freshnessLabelEn": "Weekend window | 2026-09-12",
+        "freshnessLabel": "周末窗口｜2026-09-12"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Qualcomm Stock Forecast: Can QCOM Hit $200 After Amazon AI Chip Pa",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "这条信号来自 Google News AI Infrastructure：Qualcomm Stock Forecast: Can QCOM Hit $200 After Amazon AI Chip Partnership? - tradingkey.com。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Infrastructure: Qualcomm Stock Forecast: Can QCOM Hit $200 After Amazon AI ",
+            "https://news.google.com/rss/articles/CBMiyAFBVV95cUxON1YzM1Q4dUN3ck0yVnpkMkxjaFpFLXRreW1vRXRzODFQUWpUSWE4VURhb0MtRFRWV01RLXF3bEk1NlZIU1pEYndSN01jd2N3cnBnSllHTDMxWGFEYU5vUnYtZlRtS2RvZHBMSXFtSTRnd0N4SGVxUmNhUjJCbERrbDFZVmZxcjlwMTFERWJSMDI5Zkd3b3p3WW5RcGx3WGtXLVktbXZmb2xOZk5JNnFHaU4yMzRiVTZmb1hfRXZxQmpTelpHSG9DNA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "周末窗口｜2026-09-13"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：An Anthropic researcher’s doomsday warning comes at a very interes",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 TechCrunch AI：An Anthropic researcher’s doomsday warning comes at a very interesting time。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "TechCrunch AI: An Anthropic researcher’s doomsday warning comes at a very interesting time",
+            "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/"
+          ]
+        ],
+        "sourceDate": "2026-09-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-12",
+        "freshnessLabelEn": "Weekend window | 2026-09-12",
+        "freshnessLabel": "周末窗口｜2026-09-12"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 TechCrunch AI：OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "TechCrunch AI: OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026",
+            "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "周末窗口｜2026-09-13"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "335亿！智谱拿下新融资，押注RSI - 智东西",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：335亿！智谱拿下新融资，押注RSI - 智东西。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 335亿！智谱拿下新融资，押注RSI - 智东西",
+            "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1DbXVOY2RCLWdfUnhXbFFldjlPekd1Z0FTdmxjRWpsV0F0NTZDTXhfZ1NjWEdXa0hDQXk2ZVhuYXl0WmZKVkE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "周末窗口｜2026-09-13"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Google Completes Talent Acquisition Deal with AI Coding Startup Me",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 Google News AI Models：Google Completes Talent Acquisition Deal with AI Coding Startup Mechanize, Bolstering DeepMind's Reasoning Capabilities - finance.biggo.com。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Models: Google Completes Talent Acquisition Deal with AI Coding Startup Mec",
+            "https://news.google.com/rss/articles/CBMidkFVX3lxTE5OTVdkWkV2UkhVM3FOM0NNOEwtRk9LZERYZmIxQ2ZGUTZ0STExd0dJR2tMMmRtdzZEd0Q0NWtTRWtlSWVDUGVXSmdpWVFycE10YjRySUxFYVVXUGxxR3lFOFV1d2o4WGZLdndYOE9uZWJjNVNlVGc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "周末窗口｜2026-09-13"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Nvidia wants to pour up to $10 billion into Anthropic's record-bre",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 Google News AI Funding：Nvidia wants to pour up to $10 billion into Anthropic's record-breaking IPO - the-decoder.com。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Funding: Nvidia wants to pour up to $10 billion into Anthropic's record-bre",
+            "https://news.google.com/rss/articles/CBMinwFBVV95cUxPYWU3a3d5TlliRDZneGxNWXloNnEwc2UzdVVRZk9nbWhhVnZ4T2hnWkpBZTBTZGNRMlNOZnlJVGQ5UXNuRU1pc3EyY3M1SjE1bXdyVl9VNm10Qk42djZTQ0xKMnI3aVJ5X0FoYW1BMC1zTG41ZlJRZ1A2S2hHVVlsY2dqUlV0MURzVE5HUHZ0UGdCZVlrTV9IZklTUW83OGc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-12",
+        "freshnessLabelEn": "Weekend window | 2026-09-12",
+        "freshnessLabel": "周末窗口｜2026-09-12"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "Kimi、BAI、自然选择谈智能体新商业：AI支付增量来自硅基生命的支付 - 新浪财经",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "这条信号来自 Google News China AI：Kimi、BAI、自然选择谈智能体新商业：AI支付增量来自硅基生命的支付 - 新浪财经。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: Kimi、BAI、自然选择谈智能体新商业：AI支付增量来自硅基生命的支付 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMkZ3UUJSZW01bUtkYUljRGdrNXF6SkdhajhYSHV3WHlnVUozMlBKVWl2MjBYSmgwWjEyWC1kY3VIcTRtTkJlSWE4VUZzekJraU9zNGp2eEdJTEVmT3g0TlJLRkZKUTR0akQ5X2RiQTVsZ2VSX2ZLWGlXSTBXaWJGUXFYMUZoeHEydzNvT2tmcU5iWXc2V3NOSnV1T3hNLU5KVFBSZHE1WlY3dGdJQnRFQVhFWHIyYmtjcHhfbG1RYVd6SjlQMVJld0JjRFZucHl0b0M0aA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "周末窗口｜2026-09-13"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：How To Get Started With Meta's New AI Agent, Muse - Engadget",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "这条信号来自 Google News AI Models：How To Get Started With Meta's New AI Agent, Muse - Engadget。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Models: How To Get Started With Meta's New AI Agent, Muse - Engadget",
+            "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZ3lUVE9KRmtVQlEzWlNhWGJWYVl6U09RVnV2VmNaZkw4WXAwTDEwSFR2WTVZMDZzMEVQQTg2QktTcHZZX2NrcGJVWnotMWFqY2JKMnZQMkRlU2NTREZXbXN4cXlTaWVGVEN3NHRiMnZNdHZSMF9OZjFzZGVIRUZlbHRtV1N0cUtJYkE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-12",
+        "freshnessLabelEn": "Weekend window | 2026-09-12",
+        "freshnessLabel": "周末窗口｜2026-09-12"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Anthropic boss Dario Amodei calls for AI development to slow down ",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "这条信号来自 Google News AI Models：Anthropic boss Dario Amodei calls for AI development to slow down - BBC。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Models: Anthropic boss Dario Amodei calls for AI development to slow down -",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrRjBnT05YelZFQXM0ejVFa0VZUDdYWENTbHowbzJSVmxwZWFpWEw2NFh4NHpjU01Ubi1jM21FQjhfWl82Z3JsczNTQnFIVFpkOWQyTXhQVzlGZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "周末窗口｜2026-09-13"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Anthropic CEO urges AI companies to slow model development amid fe",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "这条信号来自 Google News AI Models：Anthropic CEO urges AI companies to slow model development amid fears over misuse - Reuters。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Models: Anthropic CEO urges AI companies to slow model development amid fea",
+            "https://news.google.com/rss/articles/CBMiogFBVV95cUxObV9NUVhESy1GWXRLaWhTYlM1UUNSU0kweVg1N2YxNTRXUVdORW5EWHQ2MXNpYlo3SHNlLWZVZ2N1ZEZYZlNnUDY4TUZBMVFvcU1BaDBIWm94TkhqQUVXVzRZQlBUX3JOZUJYNnVVcVV3dlhTMDRFMmVXVGpNOU1RUEhnV254NWV0clJhc0NEOVFPWGFYSEtiY2R3U0JqM0NVc3c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-12",
+        "freshnessLabelEn": "Weekend window | 2026-09-12",
+        "freshnessLabel": "周末窗口｜2026-09-12"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "MCP",
+        "dek": "一种让 AI 模型更标准化地连接工具和数据源的协议思路。",
+        "details": [
+          "MCP 是 Model Context Protocol 的缩写，可以把它理解成 AI Agent 连接外部工具和数据源的一种标准接口。没有这类协议时，每个产品都要单独适配日历、邮件、数据库、代码仓库等工具。",
+          "MCP 的价值在于让 Agent 更容易获得上下文并执行动作，但也带来权限、安全和审计问题。越多 Agent 进入真实工作流，这类连接协议就越重要。"
+        ],
+        "why": "它是 Agent 从演示走向真实工作流的基础设施之一。",
+        "links": [
+          [
+            "Google News China AI Signals: 智谱以零息+溢价转股形式融资50亿美元，主要用于算力基础设施与模型研发 - 华尔街见闻",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9yWi04MTRxSWZSTDJ1OUV0UDAtSlNiX0xHbGtxRlpUWFk1NXhqQTNqUnVubE5WenpUZG1yS3hwWHFQNmYzelhnNXY0UEszdjZYNmhZ?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-09-11",
     "title": "AI Daily Atlas",
     "meta": "2026年9月11日",
@@ -24339,6 +24665,332 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-09-14",
+    "title": "AI Daily Atlas",
+    "meta": "September 14, 2026",
+    "headline": "capital and M&A plus compute and infrastructure shape today’s AI map",
+    "summary": "The main signal today is capital and M&A plus compute and infrastructure. funding, investments, and M&A signals continue to show where capital is placing AI bets At the same time, compute, chips, data centers, and supply chains remain the base layer of AI competition. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "智谱以零息+溢价转股形式融资50亿美元，主要用于算力基础设施与模型研发 - 华尔街见闻",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：智谱以零息+溢价转股形式融资50亿美元，主要用于算力基础设施与模型研发 - 华尔街见闻. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 智谱以零息+溢价转股形式融资50亿美元，主要用于算力基础设施与模型研发 - 华尔街见闻",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9yWi04MTRxSWZSTDJ1OUV0UDAtSlNiX0xHbGtxRlpUWFk1NXhqQTNqUnVubE5WenpUZG1yS3hwWHFQNmYzelhnNXY0UEszdjZYNmhZ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "Weekend window | 2026-09-13"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek 开口说话了：灰度测试上线，支持四种音色- AI 人工智能 - cnBeta.COM",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI：DeepSeek 开口说话了：灰度测试上线，支持四种音色- AI 人工智能 - cnBeta.COM. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: DeepSeek 开口说话了：灰度测试上线，支持四种音色- AI 人工智能 - cnBeta.COM",
+            "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ZbGh5dXo5MGFTRmxIWHFISkphaUpEQ1J5Z21jRHFaWGtwbzBCRVJqVW1OWXc4a3NKOHFfRXVwYkhBSHd0TmItaUdVMnB5azhUaUx2cHdFREpJTlB4a3dUbw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-12",
+        "freshnessLabelEn": "Weekend window | 2026-09-12",
+        "freshnessLabel": "Weekend window | 2026-09-12"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Qualcomm Stock Forecast: Can QCOM Hit $200 After Amazon AI Chip Partnership? - tradingkey.com",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "This signal comes from Google News AI Infrastructure：Qualcomm Stock Forecast: Can QCOM Hit $200 After Amazon AI Chip Partnership? - tradingkey.com. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Qualcomm Stock Forecast: Can QCOM Hit $200 After Amazon AI ",
+            "https://news.google.com/rss/articles/CBMiyAFBVV95cUxON1YzM1Q4dUN3ck0yVnpkMkxjaFpFLXRreW1vRXRzODFQUWpUSWE4VURhb0MtRFRWV01RLXF3bEk1NlZIU1pEYndSN01jd2N3cnBnSllHTDMxWGFEYU5vUnYtZlRtS2RvZHBMSXFtSTRnd0N4SGVxUmNhUjJCbERrbDFZVmZxcjlwMTFERWJSMDI5Zkd3b3p3WW5RcGx3WGtXLVktbXZmb2xOZk5JNnFHaU4yMzRiVTZmb1hfRXZxQmpTelpHSG9DNA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "Weekend window | 2026-09-13"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "An Anthropic researcher’s doomsday warning comes at a very interesting time",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from TechCrunch AI：An Anthropic researcher’s doomsday warning comes at a very interesting time. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "TechCrunch AI: An Anthropic researcher’s doomsday warning comes at a very interesting time",
+            "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time/"
+          ]
+        ],
+        "sourceDate": "2026-09-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-12",
+        "freshnessLabelEn": "Weekend window | 2026-09-12",
+        "freshnessLabel": "Weekend window | 2026-09-12"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from TechCrunch AI：OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "TechCrunch AI: OpenAI’s Sam Altman says it would be ‘ill-advised’ to go public in 2026",
+            "https://techcrunch.com/2026/09/12/openais-sam-altman-says-it-would-be-ill-advised-to-go-public-in-2026/"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "Weekend window | 2026-09-13"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "335亿！智谱拿下新融资，押注RSI - 智东西",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：335亿！智谱拿下新融资，押注RSI - 智东西. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 335亿！智谱拿下新融资，押注RSI - 智东西",
+            "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1DbXVOY2RCLWdfUnhXbFFldjlPekd1Z0FTdmxjRWpsV0F0NTZDTXhfZ1NjWEdXa0hDQXk2ZVhuYXl0WmZKVkE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "Weekend window | 2026-09-13"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google Completes Talent Acquisition Deal with AI Coding Startup Mechanize, Bolstering DeepMind's Reasoning Capabilities - finance.biggo.com",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News AI Models：Google Completes Talent Acquisition Deal with AI Coding Startup Mechanize, Bolstering DeepMind's Reasoning Capabilities - finance.biggo.com. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Models: Google Completes Talent Acquisition Deal with AI Coding Startup Mec",
+            "https://news.google.com/rss/articles/CBMidkFVX3lxTE5OTVdkWkV2UkhVM3FOM0NNOEwtRk9LZERYZmIxQ2ZGUTZ0STExd0dJR2tMMmRtdzZEd0Q0NWtTRWtlSWVDUGVXSmdpWVFycE10YjRySUxFYVVXUGxxR3lFOFV1d2o4WGZLdndYOE9uZWJjNVNlVGc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "Weekend window | 2026-09-13"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Nvidia wants to pour up to $10 billion into Anthropic's record-breaking IPO - the-decoder.com",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News AI Funding：Nvidia wants to pour up to $10 billion into Anthropic's record-breaking IPO - the-decoder.com. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Funding: Nvidia wants to pour up to $10 billion into Anthropic's record-bre",
+            "https://news.google.com/rss/articles/CBMinwFBVV95cUxPYWU3a3d5TlliRDZneGxNWXloNnEwc2UzdVVRZk9nbWhhVnZ4T2hnWkpBZTBTZGNRMlNOZnlJVGQ5UXNuRU1pc3EyY3M1SjE1bXdyVl9VNm10Qk42djZTQ0xKMnI3aVJ5X0FoYW1BMC1zTG41ZlJRZ1A2S2hHVVlsY2dqUlV0MURzVE5HUHZ0UGdCZVlrTV9IZklTUW83OGc?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-12",
+        "freshnessLabelEn": "Weekend window | 2026-09-12",
+        "freshnessLabel": "Weekend window | 2026-09-12"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Kimi、BAI、自然选择谈智能体新商业：AI支付增量来自硅基生命的支付 - 新浪财经",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from Google News China AI：Kimi、BAI、自然选择谈智能体新商业：AI支付增量来自硅基生命的支付 - 新浪财经. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: Kimi、BAI、自然选择谈智能体新商业：AI支付增量来自硅基生命的支付 - 新浪财经",
+            "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQMkZ3UUJSZW01bUtkYUljRGdrNXF6SkdhajhYSHV3WHlnVUozMlBKVWl2MjBYSmgwWjEyWC1kY3VIcTRtTkJlSWE4VUZzekJraU9zNGp2eEdJTEVmT3g0TlJLRkZKUTR0akQ5X2RiQTVsZ2VSX2ZLWGlXSTBXaWJGUXFYMUZoeHEydzNvT2tmcU5iWXc2V3NOSnV1T3hNLU5KVFBSZHE1WlY3dGdJQnRFQVhFWHIyYmtjcHhfbG1RYVd6SjlQMVJld0JjRFZucHl0b0M0aA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "Weekend window | 2026-09-13"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "How To Get Started With Meta's New AI Agent, Muse - Engadget",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from Google News AI Models：How To Get Started With Meta's New AI Agent, Muse - Engadget. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Models: How To Get Started With Meta's New AI Agent, Muse - Engadget",
+            "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZ3lUVE9KRmtVQlEzWlNhWGJWYVl6U09RVnV2VmNaZkw4WXAwTDEwSFR2WTVZMDZzMEVQQTg2QktTcHZZX2NrcGJVWnotMWFqY2JKMnZQMkRlU2NTREZXbXN4cXlTaWVGVEN3NHRiMnZNdHZSMF9OZjFzZGVIRUZlbHRtV1N0cUtJYkE?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-12",
+        "freshnessLabelEn": "Weekend window | 2026-09-12",
+        "freshnessLabel": "Weekend window | 2026-09-12"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Anthropic boss Dario Amodei calls for AI development to slow down - BBC",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Google News AI Models：Anthropic boss Dario Amodei calls for AI development to slow down - BBC. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Models: Anthropic boss Dario Amodei calls for AI development to slow down -",
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrRjBnT05YelZFQXM0ejVFa0VZUDdYWENTbHowbzJSVmxwZWFpWEw2NFh4NHpjU01Ubi1jM21FQjhfWl82Z3JsczNTQnFIVFpkOWQyTXhQVzlGZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-13",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-13",
+        "freshnessLabelEn": "Weekend window | 2026-09-13",
+        "freshnessLabel": "Weekend window | 2026-09-13"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Anthropic CEO urges AI companies to slow model development amid fears over misuse - Reuters",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Google News AI Models：Anthropic CEO urges AI companies to slow model development amid fears over misuse - Reuters. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Models: Anthropic CEO urges AI companies to slow model development amid fea",
+            "https://news.google.com/rss/articles/CBMiogFBVV95cUxObV9NUVhESy1GWXRLaWhTYlM1UUNSU0kweVg1N2YxNTRXUVdORW5EWHQ2MXNpYlo3SHNlLWZVZ2N1ZEZYZlNnUDY4TUZBMVFvcU1BaDBIWm94TkhqQUVXVzRZQlBUX3JOZUJYNnVVcVV3dlhTMDRFMmVXVGpNOU1RUEhnV254NWV0clJhc0NEOVFPWGFYSEtiY2R3U0JqM0NVc3c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-09-12",
+        "freshnessLabelEn": "Weekend window | 2026-09-12",
+        "freshnessLabel": "Weekend window | 2026-09-12"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "MCP",
+        "dek": "A protocol idea for connecting AI models to tools and data sources in a standardized way.",
+        "details": [
+          "MCP stands for Model Context Protocol. It is a way to standardize how AI agents connect to tools and data sources such as calendars, email, databases, and code repositories.",
+          "Its value is easier context access and action-taking, but it also raises permission, security, and auditability questions."
+        ],
+        "why": "It is one infrastructure layer that helps agents move from demos into real workflows.",
+        "links": [
+          [
+            "Google News China AI Signals: 智谱以零息+溢价转股形式融资50亿美元，主要用于算力基础设施与模型研发 - 华尔街见闻",
+            "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9yWi04MTRxSWZSTDJ1OUV0UDAtSlNiX0xHbGtxRlpUWFk1NXhqQTNqUnVubE5WenpUZG1yS3hwWHFQNmYzelhnNXY0UEszdjZYNmhZ?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-09-11",
     "title": "AI Daily Atlas",
