@@ -1,5 +1,355 @@
 const archiveZh = [
   {
+    "date": "2026-09-25",
+    "title": "AI Daily Atlas",
+    "meta": "2026年9月25日",
+    "headline": "模型与平台、Agent 与工作流 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和Agent 与工作流展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时Agent 正从演示概念继续走向企业流程和开发者工具和真实任务执行。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里云百炼决策模型预览版上线，并支持Token Plan - 东方财富",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：阿里云百炼决策模型预览版上线，并支持Token Plan - 东方财富。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里云百炼决策模型预览版上线，并支持Token Plan - 东方财富",
+            "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1KTU1jQU14R1BVVHZsdkVTcHNfMWR1cGN1UURBdm15bHBvSGVNM3VkdFdsTlpZRVlsZG5XXzJmX3UyQ2VFbmJEamtNRDF6R1Y0c3cxakpUQmRsS1RxamVJWENFMA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "腾讯发布首个面向海外用户的来华支付应用TenPayGo - 搜狐网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：腾讯发布首个面向海外用户的来华支付应用TenPayGo - 搜狐网。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯发布首个面向海外用户的来华支付应用TenPayGo - 搜狐网",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWl93UWxER0VodWE2cUxISVVranJkczJKNFF0T095bm4wVXA4TF93ZjFoQk9nSWd1Sk1OaHJZVDBWUURCT2MwQ181V1ktMmVsNXEwOU53ZkFpTm5TWXRxVm5HYjg4a2ZzY3VDMkVqLUpuWGtiNElGVUk1M01mQXU2YzVaT1M4am1SR29KUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "投资界AI周报| DeepSeek又融资500亿 - 投资界",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 Google News China AI：投资界AI周报| DeepSeek又融资500亿 - 投资界。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: 投资界AI周报| DeepSeek又融资500亿 - 投资界",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JRmlDeGJXdkdua1YyVXZjTFlDbF9IQ3ZVQU41a3FZWjNOVDlmalZZeGxHNk85eTJsVk1Ka0tFcnRQM0ZBcURfOHhnSzZLOVZjaWdUYjFB?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Google DeepMind’s New Chief Signals Gemini 4 Launch Is Close - Nor",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News AI Models：Google DeepMind’s New Chief Signals Gemini 4 Launch Is Close - Northeast Times。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Models: Google DeepMind’s New Chief Signals Gemini 4 Launch Is Close - Nort",
+            "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWGtIc1BvVnNvejNEcDlpcGFBUmtZRjdtQ1JXcjVSTkItaHBSRnNuQnFvY0x4X0NQbU11X05yV2d5VkcyNDRvV2dqb3JVbmFxM0pYcVlSQVlaME5uU3c5RXhZcHZTcGg4WFFKaFozRVVyQUVjTmFiaW9zekJuTWVjQUtrMzltaHlJcXdmNy12UFpxWVdScjEyVEJ0WUFEUE5s?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Google’s Gemini 4 Could Launch 'Much Earlier’ Than Year-End, Says ",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News AI Models：Google’s Gemini 4 Could Launch 'Much Earlier’ Than Year-End, Says DeepMind Exec as AI Battle With OpenAI - Benzinga。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Models: Google’s Gemini 4 Could Launch 'Much Earlier’ Than Year-End, Says D",
+            "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQSTdXa2d0c2xmV0R0dm92TlhyTjROTEstWnEwMnZCeXM4YjRJdnhHNzZtaE52ekR6OVh6aW9iOVFnOUtVYTIwbTFyZlhJMkdpME00ckx6Z0VtU0daMXg5cU8teTN5Z3hjaC1PZGowX1BPbk44TjhDdWZHaUw5TFNWTWVaNU83c1JIclhKMWd6b3hVcTVDZm54M2VRVkRzSG51R3MxcVpfemtHRnVlWFRJUTQyVDdmdm51LVhQZldwYjNtdFVEU2toczdUSE5vYUZmSlVDQ0dKT3FJdGxQVTFST3BubTJrWnZ6Zzhtd1dqNGowU2V4NHFiU1MtYjh0TnFoMUZmQTdNbUI?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulatio",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "这条信号来自 Hugging Face Blog：How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Hugging Face Blog: How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and",
+            "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "联大期间，美国科技高管在安理会谈AI安全：竞争国家也要合作 - 美国之音",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "这条信号来自 Google News China AI：联大期间，美国科技高管在安理会谈AI安全：竞争国家也要合作 - 美国之音。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: 联大期间，美国科技高管在安理会谈AI安全：竞争国家也要合作 - 美国之音",
+            "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYTZtZ3M4MV9UZVF6SjVwcGZmR1MxZzBleGp4ZWpNdThseUVrNFl2RGRHX0VNOUREaVFFNWlfM0U1bXp3S3ZOV213OUlmSzRvZng2Tkk0a2h5OHZmVG4tY0tyR2ZmNjRNSWd1SFBqOEVmUTRSYkQ3QVByRUxWekFNdkhCSVQ4aUtD?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "DeepSeek最新智能体论文：梁文锋署名，单集群每天运行300万个沙盒，还要防AI“作弊” - thepaper.cn",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "这条信号来自 Google News China AI：DeepSeek最新智能体论文：梁文锋署名，单集群每天运行300万个沙盒，还要防AI“作弊” - thepaper.cn。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: DeepSeek最新智能体论文：梁文锋署名，单集群每天运行300万个沙盒，还要防AI“作弊” - thepaper.cn",
+            "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1mYzE0VUQ1ekZGbjV1R1FhRFZGeGFsSV80T2E5LUdUTEJVSm9VWDBUTXhpZDZjQ3E0QXY0akZveXAxQzNuQTczdUdxc0RSaVhjV0VoWW1pM3gybVN0b2c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Sam Altman’s remarks at the United Nations Security Council",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "这条信号来自 OpenAI News：Sam Altman’s remarks at the United Nations Security Council。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "OpenAI News: Sam Altman’s remarks at the United Nations Security Council",
+            "https://openai.com/index/sam-altman-un-security-council-remarks"
+          ]
+        ],
+        "sourceDate": "2026-09-23",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-09-23",
+        "freshnessLabelEn": "Fallback | published 2026-09-23",
+        "freshnessLabel": "补位｜发布于 2026-09-23"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：The continued state of global AI diffusion in 2026 - The Official ",
+        "dek": "近期行业报告或研究材料，适合补充产业全景、企业采用和未来应用判断。",
+        "details": [
+          "这条信号来自 Google News AI Reports：The continued state of global AI diffusion in 2026 - The Official Microsoft Blog。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Reports: The continued state of global AI diffusion in 2026 - The Official ",
+            "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWEZELV9VcjFHSng2bnNVUEZwVGUtS0ZQX3FWNFNSR3ozMTI1cURiYVpicWV3dkZKQk44NkFtcDJlQmVXMGFzU0gtS3FEb1lvNzBhYTRFc0JMeWUzMkc3MUxGTFZDVTk4Rlh3T3UxVHNHcS1qODlqUmdmS040dUFoS01sdWFicEhfd3l6SENPSmFpZ3RtU1FxYlh3N0ZlUThGdkFPQ0pwSQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-22",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-09-22",
+        "freshnessLabelEn": "Fallback | published 2026-09-22",
+        "freshnessLabel": "补位｜发布于 2026-09-22"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark",
+        "dek": "开发者社区信号，适合观察 agent、模型工具链或基础设施的新方向。",
+        "details": [
+          "这条信号来自 量子位：5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "量子位: 5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark",
+            "https://www.qbitai.com/2026/09/496767.html"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Toborlife AI launches full-body teleoperation system for Unitree G",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "这条信号来自 Google News AI Infrastructure：Toborlife AI launches full-body teleoperation system for Unitree G1 humanoid robot - Robotics & Automation News。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Infrastructure: Toborlife AI launches full-body teleoperation system for Un",
+            "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNaERJMUlhVS1ZZUhCeW1ZS1ZpQXRObUZwWkVPMjhVQTV1WDRXUXR3NlZVMTA0WTVjN2JVaHh6T214VE5WYVdxNXAtMHV0REFEQ2FRdW5sWVRpbE9LZllIWnBfZ2VCSHFYbzN0T0dZRVU4ZXdoM2Jja1NjbVRIT0txM3loWDBpS19INGJvQnBZcmpfRlgyeGk5Rm84WTRWUE1zaF9Da3J2UWVXREw5dW1hZjcwS1FLMnRiVkdIT1FPM1Bpb0JqV1VkUk5kN2pMMEZHcDBVRFBB?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Rendering huge pull requests in the GitHub Copilot app",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "这条信号来自 GitHub AI & ML：Rendering huge pull requests in the GitHub Copilot app。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "GitHub AI & ML: Rendering huge pull requests in the GitHub Copilot app",
+            "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "AI 编码 Agent",
+        "dek": "能读代码、改代码、跑测试，并参与软件工程流程的 AI Agent。",
+        "details": [
+          "AI 编码 Agent 不只是帮你补全一行代码，而是可以理解代码库上下文、拆解开发任务、修改多个文件、运行测试并根据报错继续修正。它更像一个能协作的初级工程师，而不是一个代码搜索框。",
+          "判断这类产品时，要看它能否接入真实代码仓库、是否有权限边界、能不能解释修改原因，以及企业是否愿意把它放进安全和审计要求更高的开发流程。"
+        ],
+        "why": "它是 AI 进入企业生产力最清晰的入口之一，也会影响软件团队的组织方式和成本结构。",
+        "links": [
+          [
+            "Hugging Face Blog: How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and",
+            "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-09-24",
     "title": "AI Daily Atlas",
     "meta": "2026年9月24日",
@@ -26381,6 +26731,356 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-09-25",
+    "title": "AI Daily Atlas",
+    "meta": "September 25, 2026",
+    "headline": "models and platforms plus agents and workflows shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus agents and workflows. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, agents are moving from demos into enterprise workflows, developer tools, and real task execution. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "阿里云百炼决策模型预览版上线，并支持Token Plan - 东方财富",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：阿里云百炼决策模型预览版上线，并支持Token Plan - 东方财富. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里云百炼决策模型预览版上线，并支持Token Plan - 东方财富",
+            "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1KTU1jQU14R1BVVHZsdkVTcHNfMWR1cGN1UURBdm15bHBvSGVNM3VkdFdsTlpZRVlsZG5XXzJmX3UyQ2VFbmJEamtNRDF6R1Y0c3cxakpUQmRsS1RxamVJWENFMA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "腾讯发布首个面向海外用户的来华支付应用TenPayGo - 搜狐网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：腾讯发布首个面向海外用户的来华支付应用TenPayGo - 搜狐网. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 腾讯发布首个面向海外用户的来华支付应用TenPayGo - 搜狐网",
+            "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWl93UWxER0VodWE2cUxISVVranJkczJKNFF0T095bm4wVXA4TF93ZjFoQk9nSWd1Sk1OaHJZVDBWUURCT2MwQ181V1ktMmVsNXEwOU53ZkFpTm5TWXRxVm5HYjg4a2ZzY3VDMkVqLUpuWGtiNElGVUk1M01mQXU2YzVaT1M4am1SR29KUQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "投资界AI周报| DeepSeek又融资500亿 - 投资界",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News China AI：投资界AI周报| DeepSeek又融资500亿 - 投资界. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: 投资界AI周报| DeepSeek又融资500亿 - 投资界",
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9JRmlDeGJXdkdua1YyVXZjTFlDbF9IQ3ZVQU41a3FZWjNOVDlmalZZeGxHNk85eTJsVk1Ka0tFcnRQM0ZBcURfOHhnSzZLOVZjaWdUYjFB?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google DeepMind’s New Chief Signals Gemini 4 Launch Is Close - Northeast Times",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News AI Models：Google DeepMind’s New Chief Signals Gemini 4 Launch Is Close - Northeast Times. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Models: Google DeepMind’s New Chief Signals Gemini 4 Launch Is Close - Nort",
+            "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWGtIc1BvVnNvejNEcDlpcGFBUmtZRjdtQ1JXcjVSTkItaHBSRnNuQnFvY0x4X0NQbU11X05yV2d5VkcyNDRvV2dqb3JVbmFxM0pYcVlSQVlaME5uU3c5RXhZcHZTcGg4WFFKaFozRVVyQUVjTmFiaW9zekJuTWVjQUtrMzltaHlJcXdmNy12UFpxWVdScjEyVEJ0WUFEUE5s?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google’s Gemini 4 Could Launch 'Much Earlier’ Than Year-End, Says DeepMind Exec as AI Battle With OpenAI - Benzinga",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News AI Models：Google’s Gemini 4 Could Launch 'Much Earlier’ Than Year-End, Says DeepMind Exec as AI Battle With OpenAI - Benzinga. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Models: Google’s Gemini 4 Could Launch 'Much Earlier’ Than Year-End, Says D",
+            "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQSTdXa2d0c2xmV0R0dm92TlhyTjROTEstWnEwMnZCeXM4YjRJdnhHNzZtaE52ekR6OVh6aW9iOVFnOUtVYTIwbTFyZlhJMkdpME00ckx6Z0VtU0daMXg5cU8teTN5Z3hjaC1PZGowX1BPbk44TjhDdWZHaUw5TFNWTWVaNU83c1JIclhKMWd6b3hVcTVDZm54M2VRVkRzSG51R3MxcVpfemtHRnVlWFRJUTQyVDdmdm51LVhQZldwYjNtdFVEU2toczdUSE5vYUZmSlVDQ0dKT3FJdGxQVTFST3BubTJrWnZ6Zzhtd1dqNGowU2V4NHFiU1MtYjh0TnFoMUZmQTdNbUI?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "This signal comes from Hugging Face Blog：How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and Learning Workflows. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Hugging Face Blog: How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and",
+            "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "联大期间，美国科技高管在安理会谈AI安全：竞争国家也要合作 - 美国之音",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from Google News China AI：联大期间，美国科技高管在安理会谈AI安全：竞争国家也要合作 - 美国之音. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: 联大期间，美国科技高管在安理会谈AI安全：竞争国家也要合作 - 美国之音",
+            "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYTZtZ3M4MV9UZVF6SjVwcGZmR1MxZzBleGp4ZWpNdThseUVrNFl2RGRHX0VNOUREaVFFNWlfM0U1bXp3S3ZOV213OUlmSzRvZng2Tkk0a2h5OHZmVG4tY0tyR2ZmNjRNSWd1SFBqOEVmUTRSYkQ3QVByRUxWekFNdkhCSVQ4aUtD?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "DeepSeek最新智能体论文：梁文锋署名，单集群每天运行300万个沙盒，还要防AI“作弊” - thepaper.cn",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from Google News China AI：DeepSeek最新智能体论文：梁文锋署名，单集群每天运行300万个沙盒，还要防AI“作弊” - thepaper.cn. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: DeepSeek最新智能体论文：梁文锋署名，单集群每天运行300万个沙盒，还要防AI“作弊” - thepaper.cn",
+            "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1mYzE0VUQ1ekZGbjV1R1FhRFZGeGFsSV80T2E5LUdUTEJVSm9VWDBUTXhpZDZjQ3E0QXY0akZveXAxQzNuQTczdUdxc0RSaVhjV0VoWW1pM3gybVN0b2c?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Sam Altman’s remarks at the United Nations Security Council",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from OpenAI News：Sam Altman’s remarks at the United Nations Security Council. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "OpenAI News: Sam Altman’s remarks at the United Nations Security Council",
+            "https://openai.com/index/sam-altman-un-security-council-remarks"
+          ]
+        ],
+        "sourceDate": "2026-09-23",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-09-23",
+        "freshnessLabelEn": "Fallback | published 2026-09-23",
+        "freshnessLabel": "Fallback | published 2026-09-23"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "The continued state of global AI diffusion in 2026 - The Official Microsoft Blog",
+        "dek": "近期行业报告或研究材料，适合补充产业全景、企业采用和未来应用判断。",
+        "details": [
+          "This signal comes from Google News AI Reports：The continued state of global AI diffusion in 2026 - The Official Microsoft Blog. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Reports: The continued state of global AI diffusion in 2026 - The Official ",
+            "https://news.google.com/rss/articles/CBMipwFBVV95cUxNWEZELV9VcjFHSng2bnNVUEZwVGUtS0ZQX3FWNFNSR3ozMTI1cURiYVpicWV3dkZKQk44NkFtcDJlQmVXMGFzU0gtS3FEb1lvNzBhYTRFc0JMeWUzMkc3MUxGTFZDVTk4Rlh3T3UxVHNHcS1qODlqUmdmS040dUFoS01sdWFicEhfd3l6SENPSmFpZ3RtU1FxYlh3N0ZlUThGdkFPQ0pwSQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-22",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-09-22",
+        "freshnessLabelEn": "Fallback | published 2026-09-22",
+        "freshnessLabel": "Fallback | published 2026-09-22"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark",
+        "dek": "开发者社区信号，适合观察 agent、模型工具链或基础设施的新方向。",
+        "details": [
+          "This signal comes from 量子位：5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "量子位: 5分钟完成机器人纳管、10秒启动跨集群任务，清华大学联合无问芯穹开源具身智能云原生平台RLark",
+            "https://www.qbitai.com/2026/09/496767.html"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Toborlife AI launches full-body teleoperation system for Unitree G1 humanoid robot - Robotics & Automation News",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Google News AI Infrastructure：Toborlife AI launches full-body teleoperation system for Unitree G1 humanoid robot - Robotics & Automation News. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Toborlife AI launches full-body teleoperation system for Un",
+            "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNaERJMUlhVS1ZZUhCeW1ZS1ZpQXRObUZwWkVPMjhVQTV1WDRXUXR3NlZVMTA0WTVjN2JVaHh6T214VE5WYVdxNXAtMHV0REFEQ2FRdW5sWVRpbE9LZllIWnBfZ2VCSHFYbzN0T0dZRVU4ZXdoM2Jja1NjbVRIT0txM3loWDBpS19INGJvQnBZcmpfRlgyeGk5Rm84WTRWUE1zaF9Da3J2UWVXREw5dW1hZjcwS1FLMnRiVkdIT1FPM1Bpb0JqV1VkUk5kN2pMMEZHcDBVRFBB?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Rendering huge pull requests in the GitHub Copilot app",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from GitHub AI & ML：Rendering huge pull requests in the GitHub Copilot app. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "GitHub AI & ML: Rendering huge pull requests in the GitHub Copilot app",
+            "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/"
+          ]
+        ],
+        "sourceDate": "2026-09-24",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "AI Coding Agent",
+        "dek": "An AI agent that can read code, modify code, run tests, and participate in software workflows.",
+        "details": [
+          "An AI coding agent goes beyond line completion. It can understand a codebase, break down tasks, edit multiple files, run tests, and iterate on failures.",
+          "The key adoption questions are repository access, permission boundaries, explainability, and whether enterprises trust it inside audited engineering workflows."
+        ],
+        "why": "It is one of the clearest entry points for AI productivity and may reshape software team structure and cost.",
+        "links": [
+          [
+            "Hugging Face Blog: How to Use NVIDIA Warp and MjWarp to Accelerate Robotics Simulation and",
+            "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-09-24",
     "title": "AI Daily Atlas",
