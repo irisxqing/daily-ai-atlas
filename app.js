@@ -1,5 +1,331 @@
 const archiveZh = [
   {
+    "date": "2026-10-05",
+    "title": "AI Daily Atlas",
+    "meta": "2026年10月5日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "阿里发布秒悟团队版，打造企业级AI应用创作平台 - content.foshanplus.com",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：阿里发布秒悟团队版，打造企业级AI应用创作平台 - content.foshanplus.com。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里发布秒悟团队版，打造企业级AI应用创作平台 - content.foshanplus.com",
+            "https://news.google.com/rss/articles/CBMiekFVX3lxTFBYVWJoWUZ4endXam9SRi1jWlJ5VmZlWnhsWmh4aTBFZVFGaEw2YUJWbXNIOFdrMDV1ZGN5OXlUMFpWN3JkU2pPc1ppdWd4S3BINTNObmtneXM2cHRnVWFubHBFUGxIMVkyQUJoUG9mZFBMNXNXdHRkMERR?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "周末窗口｜2026-10-04"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "OpenAI安全团队持续地震！负责人离职，三名员工因泄密被开",
+        "dek": "AI 超级公司或明星创业公司的关键人事/组织新闻，需要补足背景、影响和后续观察点。",
+        "details": [
+          "这条信号来自 量子位：OpenAI安全团队持续地震！负责人离职，三名员工因泄密被开。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "量子位: OpenAI安全团队持续地震！负责人离职，三名员工因泄密被开",
+            "https://www.qbitai.com/2026/10/501368.html"
+          ]
+        ],
+        "sourceDate": "2026-10-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-03",
+        "freshnessLabelEn": "Weekend window | 2026-10-03",
+        "freshnessLabel": "周末窗口｜2026-10-03"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Anthropic’s Daniela Amodei says entrepreneurs should go on vacatio",
+        "dek": "AI 超级公司或明星创业公司的关键人事/组织新闻，需要补足背景、影响和后续观察点。",
+        "details": [
+          "这条信号来自 Google News Anthropic Funding：Anthropic’s Daniela Amodei says entrepreneurs should go on vacation to test potential cofounders - Fortune。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News Anthropic Funding: Anthropic’s Daniela Amodei says entrepreneurs should go on ",
+            "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTmQySFJZMlVYdFJoNXhEVHQyZVhtVElZR1doTVF3XzNfSnE3OU45N2RPdlFzVmpNdlZMVFAxQjA5aWM3SGFkWVFKNEh2My1sbUx1dXlvcTM2Y0U5elNGazVkSTAyektVU0d2UndOSk0ydXFobVREQ0dzTkp4UXBJZkVTclFNRXVhVDM2Z0p1NDlqaGU2ZUhWYWdsLTZ5QkNLX3pkSjRiU3R1SmpBcFZBVVFKalZsM0poUGdacg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "周末窗口｜2026-10-04"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Anthropic’s Steve Corfield On Claude Frontier Academy, Adding 10,0",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News Anthropic Funding：Anthropic’s Steve Corfield On Claude Frontier Academy, Adding 10,000 AI Engineers - crn.com。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News Anthropic Funding: Anthropic’s Steve Corfield On Claude Frontier Academy, Addi",
+            "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOV25WaFN6UWY0RHVyM0I2MElUYTcwQjdtRHB4ZGJLUnFEemp5dmtWNk16Vk1VMmEwSmg1T3Jtc3JrMzJBbXZhV3RZX09aTENSalJiR0pKOVhuSllVcjJaWjVhRUtwZFphdEZOM01kRmdDZ2k2YnJXdVpVWm1NT2JGZmJ1Q0czNkV0Yzd1dU1oaDZrQ0w5ZXZQamgxVHJ1cGRwZHBHaDR1VER5dw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-03",
+        "freshnessLabelEn": "Weekend window | 2026-10-03",
+        "freshnessLabel": "周末窗口｜2026-10-03"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "【早报】事关AI，阿里巴巴、英伟达大动作来了；长存控股IPO获受理 - 财联社",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 Google News China AI：【早报】事关AI，阿里巴巴、英伟达大动作来了；长存控股IPO获受理 - 财联社。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: 【早报】事关AI，阿里巴巴、英伟达大动作来了；长存控股IPO获受理 - 财联社",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5IV2lUNGJER0RrZDVhX1BaMWJLMlRhMGUyNnJZUmgxcDN0anJHMFY2T29STzlfcWlQWGxST1ktUExZRnlKOFVrSw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "周末窗口｜2026-10-04"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：OpenAI Teases Over 20 Launches At Developer Event As Meta’s Alexan",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "这条信号来自 Google News AI Models：OpenAI Teases Over 20 Launches At Developer Event As Meta’s Alexandr Wang Fires ‘Star Wars’-Inspired Jab - Stocktwits。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Models: OpenAI Teases Over 20 Launches At Developer Event As Meta’s Alexand",
+            "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPREFqZEZiVmJ2Zk1ucHRWNUVNRVpZc0t6VUNKZk5EdWlxcDZQVmFUZ0t1dWV1Zl9fUnhNbmVoOFRadGdFTzROX0JjTVM0TjZBQmxoNG1zSWN0SkM1Q0ZnQURhWEZ5S1dQX2NPb3dVb0xybTB4VHo4RE13dnlfZl9XeXdleEpiU3FXNTc5ZHotUUNqWDFyblMtdE9qVFJsU3liTVdSdVZZZGMybjFwX0ZKdmk3SUFoekladnZ4MExwZUpJYXBFOWJoQU1venlzUkhtLWlEM1UwVUg3UHhSTGR5ZkZlZi02VjFhTnFxdm1aZGJaalNDUTU2RTBVaw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "周末窗口｜2026-10-04"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Anthropic invests 100 million dollars to train AI engineers - mark",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 Google News Anthropic Funding：Anthropic invests 100 million dollars to train AI engineers - marketscreener.com。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News Anthropic Funding: Anthropic invests 100 million dollars to train AI engineers",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUHdpcnFwbnNRT2RLbW85T25HTHdHenh2RzdXNU1ZalBudlRKRWhxa0dLc09UMTE0YVllZzljM0FqXzBWUmNlQ0YzakE2Q3dDQ2dycHlNdENLaU1mbzVSRktDbmZzZ2xlcFJfUDdkT244Z1MzR1MwcG13RGd2YjF5NkFEa2I4UktJMndIY1B0dWRIUFM2cDlIXzRpZzlsS2pKM3hraVUwY2R2a1JYTkY2dHRn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "周末窗口｜2026-10-04"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Meta's Muse AI Agent Hits Millions of Downloads Amid Privacy Conce",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "这条信号来自 Google News AI Models：Meta's Muse AI Agent Hits Millions of Downloads Amid Privacy Concerns - The Tech Buzz。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Models: Meta's Muse AI Agent Hits Millions of Downloads Amid Privacy Concer",
+            "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcWJ0SXRzdjRuYVZqZzFQWnh0QVFDby1La0FLNUozUDdjcHRjYXhnM1M4cUdpRlBwN3FMZGNqYkFSRE5rN2J0cXVfSzdoZmRFZkZ0Z0U1TEpTUUx1YXU3WVNEVkxpYzN5dDN3bVFkRDVRbzAweXVkckJLNnhmNU5ZNWttMDRUZlNHTDZXWlVQanNMT0VlX2hyaWRnSjMtNzZtTnR2QQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-03",
+        "freshnessLabelEn": "Weekend window | 2026-10-03",
+        "freshnessLabel": "周末窗口｜2026-10-03"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：OpenAI safety employee resigns, claiming the company’s ‘culture is",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "这条信号来自 TechCrunch AI：OpenAI safety employee resigns, claiming the company’s ‘culture is broken’。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "TechCrunch AI: OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
+            "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "周末窗口｜2026-10-04"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：The Agent Said It Was Done. The Database Disagreed.",
+        "dek": "开发者社区信号，适合观察 agent、模型工具链或基础设施的新方向。",
+        "details": [
+          "这条信号来自 Hugging Face Blog：The Agent Said It Was Done. The Database Disagreed.。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Hugging Face Blog: The Agent Said It Was Done. The Database Disagreed.",
+            "https://huggingface.co/blog/microsoft/thinkingbox"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "周末窗口｜2026-10-04"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Fellou：面向研究与网页自动化的 Agent 浏览器",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "这条信号来自 Curated AI Products：Fellou: agentic browser for research and workflow automation。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Curated AI Products: Fellou: agentic browser for research and workflow automation",
+            "https://fellou.ai/"
+          ]
+        ],
+        "sourceDate": "2026-10-02",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "Gamma：AI 原生的演示文稿与文档工作台",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "这条信号来自 Curated AI Products：Gamma: AI-native deck and document creation workspace。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Curated AI Products: Gamma: AI-native deck and document creation workspace",
+            "https://gamma.app/"
+          ]
+        ],
+        "sourceDate": "2026-10-02",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "世界模型",
+        "dek": "让 AI 学会理解和预测物理世界运行方式的一类模型。",
+        "details": [
+          "世界模型可以理解为 AI 在脑中建立的“世界运行模拟器”：它不仅识别图像或文字，还要预测物体会如何移动、碰撞、变化，以及一个动作会带来什么后果。这类能力对机器人、自动驾驶、游戏生成和工业仿真都很关键。",
+          "如果一条新闻讲的是物理 AI、机器人或仿真系统，真正要看的是模型是否能从视频、传感器和交互中学习规律，并把这种理解用于规划动作。它和单纯生成图片不同，重点是预测和控制。"
+        ],
+        "why": "它是 AI 从屏幕走向真实世界的重要桥梁，也是机器人公司和大模型公司都在争夺的方向。",
+        "links": [
+          [
+            "Google News Anthropic Funding: Anthropic’s Daniela Amodei says entrepreneurs should go on ",
+            "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTmQySFJZMlVYdFJoNXhEVHQyZVhtVElZR1doTVF3XzNfSnE3OU45N2RPdlFzVmpNdlZMVFAxQjA5aWM3SGFkWVFKNEh2My1sbUx1dXlvcTM2Y0U5elNGazVkSTAyektVU0d2UndOSk0ydXFobVREQ0dzTkp4UXBJZkVTclFNRXVhVDM2Z0p1NDlqaGU2ZUhWYWdsLTZ5QkNLX3pkSjRiU3R1SmpBcFZBVVFKalZsM0poUGdacg?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-10-02",
     "title": "AI Daily Atlas",
     "meta": "2026年10月2日",
@@ -28059,6 +28385,332 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-10-05",
+    "title": "AI Daily Atlas",
+    "meta": "October 5, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "阿里发布秒悟团队版，打造企业级AI应用创作平台 - content.foshanplus.com",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI Signals：阿里发布秒悟团队版，打造企业级AI应用创作平台 - content.foshanplus.com. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 阿里发布秒悟团队版，打造企业级AI应用创作平台 - content.foshanplus.com",
+            "https://news.google.com/rss/articles/CBMiekFVX3lxTFBYVWJoWUZ4endXam9SRi1jWlJ5VmZlWnhsWmh4aTBFZVFGaEw2YUJWbXNIOFdrMDV1ZGN5OXlUMFpWN3JkU2pPc1ppdWd4S3BINTNObmtneXM2cHRnVWFubHBFUGxIMVkyQUJoUG9mZFBMNXNXdHRkMERR?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "Weekend window | 2026-10-04"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "OpenAI安全团队持续地震！负责人离职，三名员工因泄密被开",
+        "dek": "AI 超级公司或明星创业公司的关键人事/组织新闻，需要补足背景、影响和后续观察点。",
+        "details": [
+          "This signal comes from 量子位：OpenAI安全团队持续地震！负责人离职，三名员工因泄密被开. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "量子位: OpenAI安全团队持续地震！负责人离职，三名员工因泄密被开",
+            "https://www.qbitai.com/2026/10/501368.html"
+          ]
+        ],
+        "sourceDate": "2026-10-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-03",
+        "freshnessLabelEn": "Weekend window | 2026-10-03",
+        "freshnessLabel": "Weekend window | 2026-10-03"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Anthropic’s Daniela Amodei says entrepreneurs should go on vacation to test potential cofounders - Fortune",
+        "dek": "AI 超级公司或明星创业公司的关键人事/组织新闻，需要补足背景、影响和后续观察点。",
+        "details": [
+          "This signal comes from Google News Anthropic Funding：Anthropic’s Daniela Amodei says entrepreneurs should go on vacation to test potential cofounders - Fortune. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News Anthropic Funding: Anthropic’s Daniela Amodei says entrepreneurs should go on ",
+            "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTmQySFJZMlVYdFJoNXhEVHQyZVhtVElZR1doTVF3XzNfSnE3OU45N2RPdlFzVmpNdlZMVFAxQjA5aWM3SGFkWVFKNEh2My1sbUx1dXlvcTM2Y0U5elNGazVkSTAyektVU0d2UndOSk0ydXFobVREQ0dzTkp4UXBJZkVTclFNRXVhVDM2Z0p1NDlqaGU2ZUhWYWdsLTZ5QkNLX3pkSjRiU3R1SmpBcFZBVVFKalZsM0poUGdacg?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "Weekend window | 2026-10-04"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Anthropic’s Steve Corfield On Claude Frontier Academy, Adding 10,000 AI Engineers - crn.com",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News Anthropic Funding：Anthropic’s Steve Corfield On Claude Frontier Academy, Adding 10,000 AI Engineers - crn.com. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News Anthropic Funding: Anthropic’s Steve Corfield On Claude Frontier Academy, Addi",
+            "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOV25WaFN6UWY0RHVyM0I2MElUYTcwQjdtRHB4ZGJLUnFEemp5dmtWNk16Vk1VMmEwSmg1T3Jtc3JrMzJBbXZhV3RZX09aTENSalJiR0pKOVhuSllVcjJaWjVhRUtwZFphdEZOM01kRmdDZ2k2YnJXdVpVWm1NT2JGZmJ1Q0czNkV0Yzd1dU1oaDZrQ0w5ZXZQamgxVHJ1cGRwZHBHaDR1VER5dw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-03",
+        "freshnessLabelEn": "Weekend window | 2026-10-03",
+        "freshnessLabel": "Weekend window | 2026-10-03"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "【早报】事关AI，阿里巴巴、英伟达大动作来了；长存控股IPO获受理 - 财联社",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News China AI：【早报】事关AI，阿里巴巴、英伟达大动作来了；长存控股IPO获受理 - 财联社. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: 【早报】事关AI，阿里巴巴、英伟达大动作来了；长存控股IPO获受理 - 财联社",
+            "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5IV2lUNGJER0RrZDVhX1BaMWJLMlRhMGUyNnJZUmgxcDN0anJHMFY2T29STzlfcWlQWGxST1ktUExZRnlKOFVrSw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "Weekend window | 2026-10-04"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "OpenAI Teases Over 20 Launches At Developer Event As Meta’s Alexandr Wang Fires ‘Star Wars’-Inspired Jab - Stocktwits",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "This signal comes from Google News AI Models：OpenAI Teases Over 20 Launches At Developer Event As Meta’s Alexandr Wang Fires ‘Star Wars’-Inspired Jab - Stocktwits. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Models: OpenAI Teases Over 20 Launches At Developer Event As Meta’s Alexand",
+            "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPREFqZEZiVmJ2Zk1ucHRWNUVNRVpZc0t6VUNKZk5EdWlxcDZQVmFUZ0t1dWV1Zl9fUnhNbmVoOFRadGdFTzROX0JjTVM0TjZBQmxoNG1zSWN0SkM1Q0ZnQURhWEZ5S1dQX2NPb3dVb0xybTB4VHo4RE13dnlfZl9XeXdleEpiU3FXNTc5ZHotUUNqWDFyblMtdE9qVFJsU3liTVdSdVZZZGMybjFwX0ZKdmk3SUFoekladnZ4MExwZUpJYXBFOWJoQU1venlzUkhtLWlEM1UwVUg3UHhSTGR5ZkZlZi02VjFhTnFxdm1aZGJaalNDUTU2RTBVaw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "Weekend window | 2026-10-04"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Anthropic invests 100 million dollars to train AI engineers - marketscreener.com",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News Anthropic Funding：Anthropic invests 100 million dollars to train AI engineers - marketscreener.com. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News Anthropic Funding: Anthropic invests 100 million dollars to train AI engineers",
+            "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUHdpcnFwbnNRT2RLbW85T25HTHdHenh2RzdXNU1ZalBudlRKRWhxa0dLc09UMTE0YVllZzljM0FqXzBWUmNlQ0YzakE2Q3dDQ2dycHlNdENLaU1mbzVSRktDbmZzZ2xlcFJfUDdkT244Z1MzR1MwcG13RGd2YjF5NkFEa2I4UktJMndIY1B0dWRIUFM2cDlIXzRpZzlsS2pKM3hraVUwY2R2a1JYTkY2dHRn?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "Weekend window | 2026-10-04"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Meta's Muse AI Agent Hits Millions of Downloads Amid Privacy Concerns - The Tech Buzz",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from Google News AI Models：Meta's Muse AI Agent Hits Millions of Downloads Amid Privacy Concerns - The Tech Buzz. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Models: Meta's Muse AI Agent Hits Millions of Downloads Amid Privacy Concer",
+            "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcWJ0SXRzdjRuYVZqZzFQWnh0QVFDby1La0FLNUozUDdjcHRjYXhnM1M4cUdpRlBwN3FMZGNqYkFSRE5rN2J0cXVfSzdoZmRFZkZ0Z0U1TEpTUUx1YXU3WVNEVkxpYzN5dDN3bVFkRDVRbzAweXVkckJLNnhmNU5ZNWttMDRUZlNHTDZXWlVQanNMT0VlX2hyaWRnSjMtNzZtTnR2QQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-03",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-03",
+        "freshnessLabelEn": "Weekend window | 2026-10-03",
+        "freshnessLabel": "Weekend window | 2026-10-03"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from TechCrunch AI：OpenAI safety employee resigns, claiming the company’s ‘culture is broken’. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "TechCrunch AI: OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
+            "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "Weekend window | 2026-10-04"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "The Agent Said It Was Done. The Database Disagreed.",
+        "dek": "开发者社区信号，适合观察 agent、模型工具链或基础设施的新方向。",
+        "details": [
+          "This signal comes from Hugging Face Blog：The Agent Said It Was Done. The Database Disagreed.. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Hugging Face Blog: The Agent Said It Was Done. The Database Disagreed.",
+            "https://huggingface.co/blog/microsoft/thinkingbox"
+          ]
+        ],
+        "sourceDate": "2026-10-04",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "周末窗口｜2026-10-04",
+        "freshnessLabelEn": "Weekend window | 2026-10-04",
+        "freshnessLabel": "Weekend window | 2026-10-04"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Fellou: agentic browser for research and workflow automation",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Curated AI Products：Fellou: agentic browser for research and workflow automation. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Curated AI Products: Fellou: agentic browser for research and workflow automation",
+            "https://fellou.ai/"
+          ]
+        ],
+        "sourceDate": "2026-10-02",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Gamma: AI-native deck and document creation workspace",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Curated AI Products：Gamma: AI-native deck and document creation workspace. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Curated AI Products: Gamma: AI-native deck and document creation workspace",
+            "https://gamma.app/"
+          ]
+        ],
+        "sourceDate": "2026-10-02",
+        "freshness": "fallback",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "World Model",
+        "dek": "A model family that helps AI understand and predict how the physical world behaves.",
+        "details": [
+          "A world model is like an internal simulator: it helps AI predict how objects move, collide, change, and respond to actions. That matters for robotics, autonomous driving, game generation, and industrial simulation.",
+          "For physical AI news, the key question is whether the model can learn from video, sensors, and interaction, then use that understanding to plan actions."
+        ],
+        "why": "It is one bridge from screen-based AI to real-world AI, making it a key theme for both model labs and robotics companies.",
+        "links": [
+          [
+            "Google News Anthropic Funding: Anthropic’s Daniela Amodei says entrepreneurs should go on ",
+            "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTmQySFJZMlVYdFJoNXhEVHQyZVhtVElZR1doTVF3XzNfSnE3OU45N2RPdlFzVmpNdlZMVFAxQjA5aWM3SGFkWVFKNEh2My1sbUx1dXlvcTM2Y0U5elNGazVkSTAyektVU0d2UndOSk0ydXFobVREQ0dzTkp4UXBJZkVTclFNRXVhVDM2Z0p1NDlqaGU2ZUhWYWdsLTZ5QkNLX3pkSjRiU3R1SmpBcFZBVVFKalZsM0poUGdacg?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-10-02",
     "title": "AI Daily Atlas",
