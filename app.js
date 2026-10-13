@@ -1,5 +1,307 @@
 const archiveZh = [
   {
+    "date": "2026-10-13",
+    "title": "AI Daily Atlas",
+    "meta": "2026年10月13日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：DeepSeek to lead funding round for robotics AI startup Winverse at",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 Google News AI Funding：DeepSeek to lead funding round for robotics AI startup Winverse at $400 mln - report - Investing.com。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Funding: DeepSeek to lead funding round for robotics AI startup Winverse at",
+            "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNkxZdTNvYVhaOXNPcGl6Wjc5WnhVb3NqX2VYY2JYTW9xcWlGcmRZOVRCc2RBQ2E4ZVdRSFhwSzNacy1tU0pLQlljWVFPUlZTVGt6aGR6VEdtUlNpTzdYeUZzdEp5QkJKaTNHaHZRUnJYRU8xSFotOXZhQktxX280RndpcVhNa3hoRE4yN2Z3N2NzUERETGxkMGVicmJFanpzSmg0enc3R0lSaHUwZlhlUDdPYy0yUWRhcENDWVVJdzA5TWdnRUc2ZjNRS1RXblJUbVhybkhQRHZ6eno1?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "端侧AI的“电商时刻”：AstrynX联合MiniMax发布端云一体智能终端 - 新华网浙江",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI：端侧AI的“电商时刻”：AstrynX联合MiniMax发布端云一体智能终端 - 新华网浙江。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: 端侧AI的“电商时刻”：AstrynX联合MiniMax发布端云一体智能终端 - 新华网浙江",
+            "https://news.google.com/rss/articles/CBMiggFBVV95cUxPMW5ZSk9xZWVob2JFV2lUeEpkbUZxU0NuM3hZQkYwczZzS0ZFRlBDTF9uRUluVVR0bXpGcmc4cHRBOTRFa3JMbVFoMEV0TXlKR3V2Q1hlb0plMldLWEVlR0dsbmwwWXZtbTMxSk9teWVReFM1NDdDMEJ1X3NES2R1MHF3?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "黄仁勋：Kimi等中国AI模型表现足够优秀 看好开源推动AI效率提升 - 新浪网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google News China AI：黄仁勋：Kimi等中国AI模型表现足够优秀 看好开源推动AI效率提升 - 新浪网。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI: 黄仁勋：Kimi等中国AI模型表现足够优秀 看好开源推动AI效率提升 - 新浪网",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0UElfX2I5clZObjc5eHRaOF95Q3hUNzMzTFZxbERxQmtQWFhoWmhJQVFYSFNmS1hrRE4xaWdVbGRsdHpEcXZLakV1VG9PcFUteU82Vk9lcy0yTG1NdldKUGd6QTdFS1FHY2JvRXVxSDRUYmpUZktGLTFhck5iVDQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "智谱新模型，490 tokens/s！",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 量子位：智谱新模型，490 tokens/s！。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "量子位: 智谱新模型，490 tokens/s！",
+            "https://www.qbitai.com/2026/10/502649.html"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Microsoft president says UK is best placed to drive AI regulation",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "这条信号来自 TechCrunch AI：Microsoft president says UK is best placed to drive AI regulation。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "TechCrunch AI: Microsoft president says UK is best placed to drive AI regulation",
+            "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Faithfulness Without Anchors: A Position Paper on the Structural M",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "这条信号来自 arXiv cs.AI：Faithfulness Without Anchors: A Position Paper on the Structural Misalignments of Explainable AI Faithfulness Metrics for Feature Importance。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "arXiv cs.AI: Faithfulness Without Anchors: A Position Paper on the Structural Misalignment",
+            "https://arxiv.org/abs/2610.12493"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Know What You Don't Know: Agentic Data Synthesis by Evolving Gener",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "这条信号来自 arXiv cs.AI：Know What You Don't Know: Agentic Data Synthesis by Evolving Generation Space for Closed-Loop Learning。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "arXiv cs.AI: Know What You Don't Know: Agentic Data Synthesis by Evolving Generation Space",
+            "https://arxiv.org/abs/2610.12593"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：This AI factory builds tiny machines from code",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "这条信号来自 The Rundown AI：This AI factory builds tiny machines from code。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "The Rundown AI: This AI factory builds tiny machines from code",
+            "https://www.therundown.ai/articles/this-ai-factory-builds-tiny-machines-from-code"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "这条信号来自 TechCrunch AI：Microsoft’s Satya Nadella says AI models need an ‘emergency brake’。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "TechCrunch AI: Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+            "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/"
+          ]
+        ],
+        "sourceDate": "2026-10-11",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-10-11",
+        "freshnessLabelEn": "Fallback | published 2026-10-11",
+        "freshnessLabel": "补位｜发布于 2026-10-11"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Former Plaud exec raises $26M for AI app that listens to you in th",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "这条信号来自 TechCrunch AI：Former Plaud exec raises $26M for AI app that listens to you in the background。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "TechCrunch AI: Former Plaud exec raises $26M for AI app that listens to you in the backgro",
+            "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI产品推荐",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Anuma: multi-model AI workspace with private cross-model memory",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "这条信号来自 Curated AI Products：Anuma: multi-model AI workspace with private cross-model memory。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-10-10",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "补位｜编辑推荐"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "世界模型",
+        "dek": "让 AI 学会理解和预测物理世界运行方式的一类模型。",
+        "details": [
+          "世界模型可以理解为 AI 在脑中建立的“世界运行模拟器”：它不仅识别图像或文字，还要预测物体会如何移动、碰撞、变化，以及一个动作会带来什么后果。这类能力对机器人、自动驾驶、游戏生成和工业仿真都很关键。",
+          "如果一条新闻讲的是物理 AI、机器人或仿真系统，真正要看的是模型是否能从视频、传感器和交互中学习规律，并把这种理解用于规划动作。它和单纯生成图片不同，重点是预测和控制。"
+        ],
+        "why": "它是 AI 从屏幕走向真实世界的重要桥梁，也是机器人公司和大模型公司都在争夺的方向。",
+        "links": [
+          [
+            "Google News AI Funding: DeepSeek to lead funding round for robotics AI startup Winverse at",
+            "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNkxZdTNvYVhaOXNPcGl6Wjc5WnhVb3NqX2VYY2JYTW9xcWlGcmRZOVRCc2RBQ2E4ZVdRSFhwSzNacy1tU0pLQlljWVFPUlZTVGt6aGR6VEdtUlNpTzdYeUZzdEp5QkJKaTNHaHZRUnJYRU8xSFotOXZhQktxX280RndpcVhNa3hoRE4yN2Z3N2NzUERETGxkMGVicmJFanpzSmg0enc3R0lSaHUwZlhlUDdPYy0yUWRhcENDWVVJdzA5TWdnRUc2ZjNRS1RXblJUbVhybkhQRHZ6eno1?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-10-12",
     "title": "AI Daily Atlas",
     "meta": "2026年10月12日",
@@ -29346,6 +29648,308 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-10-13",
+    "title": "AI Daily Atlas",
+    "meta": "October 13, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "DeepSeek to lead funding round for robotics AI startup Winverse at $400 mln - report - Investing.com",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News AI Funding：DeepSeek to lead funding round for robotics AI startup Winverse at $400 mln - report - Investing.com. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Funding: DeepSeek to lead funding round for robotics AI startup Winverse at",
+            "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNkxZdTNvYVhaOXNPcGl6Wjc5WnhVb3NqX2VYY2JYTW9xcWlGcmRZOVRCc2RBQ2E4ZVdRSFhwSzNacy1tU0pLQlljWVFPUlZTVGt6aGR6VEdtUlNpTzdYeUZzdEp5QkJKaTNHaHZRUnJYRU8xSFotOXZhQktxX280RndpcVhNa3hoRE4yN2Z3N2NzUERETGxkMGVicmJFanpzSmg0enc3R0lSaHUwZlhlUDdPYy0yUWRhcENDWVVJdzA5TWdnRUc2ZjNRS1RXblJUbVhybkhQRHZ6eno1?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "端侧AI的“电商时刻”：AstrynX联合MiniMax发布端云一体智能终端 - 新华网浙江",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI：端侧AI的“电商时刻”：AstrynX联合MiniMax发布端云一体智能终端 - 新华网浙江. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: 端侧AI的“电商时刻”：AstrynX联合MiniMax发布端云一体智能终端 - 新华网浙江",
+            "https://news.google.com/rss/articles/CBMiggFBVV95cUxPMW5ZSk9xZWVob2JFV2lUeEpkbUZxU0NuM3hZQkYwczZzS0ZFRlBDTF9uRUluVVR0bXpGcmc4cHRBOTRFa3JMbVFoMEV0TXlKR3V2Q1hlb0plMldLWEVlR0dsbmwwWXZtbTMxSk9teWVReFM1NDdDMEJ1X3NES2R1MHF3?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "黄仁勋：Kimi等中国AI模型表现足够优秀 看好开源推动AI效率提升 - 新浪网",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google News China AI：黄仁勋：Kimi等中国AI模型表现足够优秀 看好开源推动AI效率提升 - 新浪网. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI: 黄仁勋：Kimi等中国AI模型表现足够优秀 看好开源推动AI效率提升 - 新浪网",
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFB0UElfX2I5clZObjc5eHRaOF95Q3hUNzMzTFZxbERxQmtQWFhoWmhJQVFYSFNmS1hrRE4xaWdVbGRsdHpEcXZLakV1VG9PcFUteU82Vk9lcy0yTG1NdldKUGd6QTdFS1FHY2JvRXVxSDRUYmpUZktGLTFhck5iVDQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "智谱新模型，490 tokens/s！",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from 量子位：智谱新模型，490 tokens/s！. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "量子位: 智谱新模型，490 tokens/s！",
+            "https://www.qbitai.com/2026/10/502649.html"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Microsoft president says UK is best placed to drive AI regulation",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "This signal comes from TechCrunch AI：Microsoft president says UK is best placed to drive AI regulation. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "TechCrunch AI: Microsoft president says UK is best placed to drive AI regulation",
+            "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Faithfulness Without Anchors: A Position Paper on the Structural Misalignments of Explainable AI Faithfulness Metrics for Feature Importance",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from arXiv cs.AI：Faithfulness Without Anchors: A Position Paper on the Structural Misalignments of Explainable AI Faithfulness Metrics for Feature Importance. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "arXiv cs.AI: Faithfulness Without Anchors: A Position Paper on the Structural Misalignment",
+            "https://arxiv.org/abs/2610.12493"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Know What You Don't Know: Agentic Data Synthesis by Evolving Generation Space for Closed-Loop Learning",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from arXiv cs.AI：Know What You Don't Know: Agentic Data Synthesis by Evolving Generation Space for Closed-Loop Learning. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "arXiv cs.AI: Know What You Don't Know: Agentic Data Synthesis by Evolving Generation Space",
+            "https://arxiv.org/abs/2610.12593"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "This AI factory builds tiny machines from code",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from The Rundown AI：This AI factory builds tiny machines from code. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "The Rundown AI: This AI factory builds tiny machines from code",
+            "https://www.therundown.ai/articles/this-ai-factory-builds-tiny-machines-from-code"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from TechCrunch AI：Microsoft’s Satya Nadella says AI models need an ‘emergency brake’. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "TechCrunch AI: Microsoft’s Satya Nadella says AI models need an ‘emergency brake’",
+            "https://techcrunch.com/2026/10/10/microsofts-satya-nadella-says-ai-models-need-an-emergency-brake/"
+          ]
+        ],
+        "sourceDate": "2026-10-11",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜发布于 2026-10-11",
+        "freshnessLabelEn": "Fallback | published 2026-10-11",
+        "freshnessLabel": "Fallback | published 2026-10-11"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Former Plaud exec raises $26M for AI app that listens to you in the background",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from TechCrunch AI：Former Plaud exec raises $26M for AI app that listens to you in the background. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "TechCrunch AI: Former Plaud exec raises $26M for AI app that listens to you in the backgro",
+            "https://techcrunch.com/2026/10/12/former-plaud-exec-raises-26m-for-ai-app-that-listens-to-you-in-the-background/"
+          ]
+        ],
+        "sourceDate": "2026-10-12",
+        "freshness": "d-1",
+        "regionPriority": "deprioritized_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Product Picks",
+        "priority": "medium",
+        "title": "Anuma: multi-model AI workspace with private cross-model memory",
+        "dek": "偏 productivity 的 AI 应用，适合观察真实工作流里的产品机会。",
+        "details": [
+          "This signal comes from Curated AI Products：Anuma: multi-model AI workspace with private cross-model memory. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Curated AI Products: Anuma: multi-model AI workspace with private cross-model memory",
+            "https://www.anuma.ai/"
+          ]
+        ],
+        "sourceDate": "2026-10-10",
+        "freshness": "fallback",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "补位｜编辑推荐",
+        "freshnessLabelEn": "Fallback | editor pick",
+        "freshnessLabel": "Fallback | editor pick"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "World Model",
+        "dek": "A model family that helps AI understand and predict how the physical world behaves.",
+        "details": [
+          "A world model is like an internal simulator: it helps AI predict how objects move, collide, change, and respond to actions. That matters for robotics, autonomous driving, game generation, and industrial simulation.",
+          "For physical AI news, the key question is whether the model can learn from video, sensors, and interaction, then use that understanding to plan actions."
+        ],
+        "why": "It is one bridge from screen-based AI to real-world AI, making it a key theme for both model labs and robotics companies.",
+        "links": [
+          [
+            "Google News AI Funding: DeepSeek to lead funding round for robotics AI startup Winverse at",
+            "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPNkxZdTNvYVhaOXNPcGl6Wjc5WnhVb3NqX2VYY2JYTW9xcWlGcmRZOVRCc2RBQ2E4ZVdRSFhwSzNacy1tU0pLQlljWVFPUlZTVGt6aGR6VEdtUlNpTzdYeUZzdEp5QkJKaTNHaHZRUnJYRU8xSFotOXZhQktxX280RndpcVhNa3hoRE4yN2Z3N2NzUERETGxkMGVicmJFanpzSmg0enc3R0lSaHUwZlhlUDdPYy0yUWRhcENDWVVJdzA5TWdnRUc2ZjNRS1RXblJUbVhybkhQRHZ6eno1?oc=5"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-10-12",
     "title": "AI Daily Atlas",
