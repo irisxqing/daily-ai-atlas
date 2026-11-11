@@ -1,5 +1,352 @@
 const archiveZh = [
   {
+    "date": "2026-11-11",
+    "title": "AI Daily Atlas",
+    "meta": "2026年11月11日",
+    "headline": "模型与平台、资本与并购 是今天的 AI 主线",
+    "summary": "今天的 AI 信号主要围绕模型与平台和资本与并购展开。模型 API 与平台入口仍在快速迭代，但重点越来越落到可用性，同时融资投资和并购信号继续反映资本对 AI 方向的取舍。头条部分适合先看具体公司动作，深度和观点部分再补充趋势背景与判断框架。",
+    "tags": [
+      "头条",
+      "深度",
+      "观点",
+      "AI产品"
+    ],
+    "items": [
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：We’re bringing Adobe’s creative and productivity tools closer to y",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google AI Blog：We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google AI Blog: We’re bringing Adobe’s creative and productivity tools closer to your ever",
+            "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1",
+        "media": {
+          "type": "image",
+          "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Adobe_snippet_hero.max-600x600.format-webp.webp",
+          "alt": "AI 信号：AI 信号：We’re bringing Adobe’s creative and productivity tools closer to y",
+          "caption": "Google AI Blog",
+          "href": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/"
+        }
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Google Cloud launches Gemini for healthcare.",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 Google AI Blog：Google Cloud launches Gemini for healthcare.。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google AI Blog: Google Cloud launches Gemini for healthcare.",
+            "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1",
+        "media": {
+          "type": "image",
+          "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/social_share_NWQpgus.max-600x600.format-webp.webp",
+          "alt": "AI 信号：AI 信号：Google Cloud launches Gemini for healthcare.",
+          "caption": "Google AI Blog",
+          "href": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/"
+        }
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Google broadens its AI hardware portfolio with two new specialized",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "这条信号来自 TechCrunch AI：Google broadens its AI hardware portfolio with two new specialized chips。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "TechCrunch AI: Google broadens its AI hardware portfolio with two new specialized chips",
+            "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "富德生命人寿与腾讯签署战略合作协议 共建保险AI新生态 - m.zqrb.cn",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：富德生命人寿与腾讯签署战略合作协议 共建保险AI新生态 - m.zqrb.cn。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: 富德生命人寿与腾讯签署战略合作协议 共建保险AI新生态 - m.zqrb.cn",
+            "https://news.google.com/rss/articles/CBMib0FVX3lxTE1lTmJKVEYwUUNQVVJuQUpIZTZlV2dMaHh0NXM1QzlDWjkxbGFvM3Z4UGpCTDJjWWNzb2pFcnI5dEY4SUo5OE5GYlo2d09fRVRDUzFSVEpXTF91M0RwVGgzRjg2RktQanhEOXVBYVJBOA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Closing the AI guidance gap in education",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "这条信号来自 OpenAI News：Closing the AI guidance gap in education。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "OpenAI News: Closing the AI guidance gap in education",
+            "https://openai.com/index/closing-ai-guidance-gap-education"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：Google Robot AI Hits 96% at Mercedes; Jailbreaks Fall 36x - FourWe",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "这条信号来自 Google News AI Infrastructure：Google Robot AI Hits 96% at Mercedes; Jailbreaks Fall 36x - FourWeekMBA。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Infrastructure: Google Robot AI Hits 96% at Mercedes; Jailbreaks Fall 36x -",
+            "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWGNEc1Q0QVRRRTg4MksxUnh6eVNhNTJmSzBZSVItQ2FHc0sxbHVtR1FocEg2MUlJc0lwRlVyZmx2REYtUUZyRk1aZERHamVyYmN2dk5oSVpsdU1McUpTV0U2cFVWYXJGUG8xamxNMzZVbEJLSWo2bjh4UVIzTkcwbXRYQ0swRDMzTHpF?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "头条",
+        "priority": "high",
+        "title": "AI 信号：AI 信号：AGIX, the First ETF to Own Anthropic, Highlights Private Holdings ",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "这条信号来自 Google News Anthropic Funding：AGIX, the First ETF to Own Anthropic, Highlights Private Holdings Performance as Anthropic IPO Nears - KraneShares。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News Anthropic Funding: AGIX, the First ETF to Own Anthropic, Highlights Private Ho",
+            "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUGw5VUh2ZUJ4OVA5VklmNk9TUUxjRkpzSzAyTUdKYmpCTXo2em5HaGY3c2VsUGkwVHk4REowU0tWNmx1bXc0WEtCNXMtRGJWX2ZaSzRDc0dDRWFCd2QtR2dGOExfS2FocDkteDRicHV4b016a1J6TjNrTXhNaWZMZFRDajhQRVlEWmJOZ2p0dm5pSWF1djJHQlQzMS01d1BhRW9Wc1lhT0pFYkZxYUpjZWNYWTBjZU8tLWFQa1RHbC0?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garre",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "这条信号来自 Latent Space：What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Latent Space: What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & ",
+            "https://latent.space/p/handshake/"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1",
+        "media": {
+          "type": "image",
+          "src": "https://i.ytimg.com/vi/v5IJwVnTxzg/maxresdefault.jpg",
+          "alt": "AI 信号：AI 信号：What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garre",
+          "caption": "Latent Space",
+          "href": "https://latent.space/p/handshake/"
+        }
+      },
+      {
+        "section": "深度",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "这条信号来自 TechCrunch AI：Meta’s AI agent Muse lands on Apple Watch and Android Wear OS。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "TechCrunch AI: Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
+            "https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os/"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：After challenging Google's Android with Cyanogen, its co-founder t",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "这条信号来自 Google News AI Models：After challenging Google's Android with Cyanogen, its co-founder takes aim at Windows for AI era - TechCrunch。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Models: After challenging Google's Android with Cyanogen, its co-founder ta",
+            "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMDZLMkZWaU1ZWjVxMFlaNUYyS2dKV0NOR1ozUUxzbF9vWWhncjJ2ckszZTV5N3ZlLTNxTG5OUjZGYWozU1BVbGJ0N2dhNGVvc3owWjRCaWJGSlZzTlNieGdlM1E2MkM0d3pXZnJxbTloc29qSThBTzlwYW40VGl1Nnhycldwb0NkM2xsaWdrcGtsNGx6TzFSYjZJU1BCVDQ5bVl2bmRyT01ZMU9ITnNTR3I3TzBMWU01bWkxQXlGcGpEVUpySXBpYQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "观点",
+        "priority": "medium",
+        "title": "AI 信号：AI 信号：Vishay to Showcase Power and Semiconductor Solutions for AI Data C",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "这条信号来自 Google News AI Infrastructure：Vishay to Showcase Power and Semiconductor Solutions for AI Data Centres, EVs and Robotics at electronica 2026 - ELE Times。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News AI Infrastructure: Vishay to Showcase Power and Semiconductor Solutions for AI",
+            "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRDdGMmhtZm5DdkdZa1czUWY4ZlhNT3VvaTRHTkYyaDA2aGU2bXJZM25hbW1yaWh6d2xRSV9BTFRONkZXbVZKQTMxX0p3eWlwOEtXNFRRM0lIUWNzb0dnaVBfbTRyNm1QRmtFS1JMajJDUVBlaGEtcGFCYU1jZUlWbXJQNl8zSk9QWFZvbUhFSjkydGVpSE4wTVBrTnp4emJMdUpxUTRUdl9JQWZfdnFuWlZnVjhLNHAyVS16SUp6TXNCeWFXUjRjemlIejVwZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "开源项目",
+        "priority": "medium",
+        "title": "MiniMax H3-Image 开源：让 4K 图像生成进入10 秒时代- MiniMax Research - https://www.minimax.cn/",
+        "dek": "开发者社区信号，适合观察 agent、模型工具链或基础设施的新方向。",
+        "details": [
+          "这条信号来自 Google News China AI Signals：MiniMax H3-Image 开源：让 4K 图像生成进入10 秒时代- MiniMax Research - https://www.minimax.cn/。从摘要看，事件本身指向一个更大的趋势：AI 公司正在把竞争重点从“发布一个模型或功能”，推进到用户入口、企业工作流、垂直行业落地和生态合作。",
+          "需要注意的是，公开 RSS 摘要通常不能覆盖全部细节，尤其是金额、客户、技术指标或发布时间。这里把它纳入日报，是因为它与今天其他来源共同指向相似方向，适合作为进一步阅读和判断的入口。",
+          "对产品和战略判断来说，关键问题是它能否改变真实使用频率，而不只是制造短期关注。后续可以继续看是否出现官方案例、开发者采用、客户复购或资本继续跟进。"
+        ],
+        "why": "它值得关注，是因为这类信号能帮助判断 AI 注意力正在流向模型能力、产品入口还是行业落地。",
+        "links": [
+          [
+            "Google News China AI Signals: MiniMax H3-Image 开源：让 4K 图像生成进入10 秒时代- MiniMax Research - ht",
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1ScWZPMVhoa3Z2V0NVSElkcHJaN3VZZnJMWmJheWlncFNIVnU4eEhBZjI1X3pPbjJsWGxvQkllUlJJZnFBcDA2Q3FkeVNLRUpJYWRDWEJqQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "每日词条",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "让模型先检索可信资料，再基于资料回答问题的方法。",
+        "details": [
+          "RAG 是 Retrieval-Augmented Generation 的缩写，中文常叫“检索增强生成”。它的思路是：模型回答前先去指定资料库、文档或网页里找证据，再基于这些材料生成答案。",
+          "它适合企业知识库、研究助手、报告阅读和客服场景，因为用户不仅需要答案，还需要知道答案来自哪里。判断 RAG 产品时，要看检索质量、引用是否可靠、资料更新是否及时。"
+        ],
+        "why": "RAG 是很多企业 AI 项目的起点，因为它把“会聊天的模型”变成“能引用资料的工作工具”。",
+        "links": [
+          [
+            "Google AI Blog: We’re bringing Adobe’s creative and productivity tools closer to your ever",
+            "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
+  {
     "date": "2026-11-10",
     "title": "AI Daily Atlas",
     "meta": "2026年11月10日",
@@ -34381,6 +34728,353 @@ const archiveZh = [
 ];
 
 const archiveEn = [
+  {
+    "date": "2026-11-11",
+    "title": "AI Daily Atlas",
+    "meta": "November 11, 2026",
+    "headline": "models and platforms plus capital and M&A shape today’s AI map",
+    "summary": "The main signal today is models and platforms plus capital and M&A. models, APIs, and platform entry points are still moving quickly, with usability becoming the key test At the same time, funding, investments, and M&A signals continue to show where capital is placing AI bets. The headline section is best read for concrete company moves, while deep dives and perspectives add trend context.",
+    "tags": [
+      "Headlines",
+      "Deep Dive",
+      "Views",
+      "AI Products"
+    ],
+    "items": [
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google AI Blog：We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google AI Blog: We’re bringing Adobe’s creative and productivity tools closer to your ever",
+            "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1",
+        "media": {
+          "type": "image",
+          "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Adobe_snippet_hero.max-600x600.format-webp.webp",
+          "alt": "We’re bringing Adobe’s creative and productivity tools closer to your everyday Google apps.",
+          "caption": "Google AI Blog",
+          "href": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/"
+        }
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google Cloud launches Gemini for healthcare.",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from Google AI Blog：Google Cloud launches Gemini for healthcare.. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google AI Blog: Google Cloud launches Gemini for healthcare.",
+            "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1",
+        "media": {
+          "type": "image",
+          "src": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/social_share_NWQpgus.max-600x600.format-webp.webp",
+          "alt": "Google Cloud launches Gemini for healthcare.",
+          "caption": "Google AI Blog",
+          "href": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-for-healthcare/"
+        }
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google broadens its AI hardware portfolio with two new specialized chips",
+        "dek": "D-1 中美 AI 大公司产品、模型或 API 动作，需要交代主体、动作、背景和影响。",
+        "details": [
+          "This signal comes from TechCrunch AI：Google broadens its AI hardware portfolio with two new specialized chips. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "TechCrunch AI: Google broadens its AI hardware portfolio with two new specialized chips",
+            "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "富德生命人寿与腾讯签署战略合作协议 共建保险AI新生态 - m.zqrb.cn",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "This signal comes from Google News China AI Signals：富德生命人寿与腾讯签署战略合作协议 共建保险AI新生态 - m.zqrb.cn. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: 富德生命人寿与腾讯签署战略合作协议 共建保险AI新生态 - m.zqrb.cn",
+            "https://news.google.com/rss/articles/CBMib0FVX3lxTE1lTmJKVEYwUUNQVVJuQUpIZTZlV2dMaHh0NXM1QzlDWjkxbGFvM3Z4UGpCTDJjWWNzb2pFcnI5dEY4SUo5OE5GYlo2d09fRVRDUzFSVEpXTF91M0RwVGgzRjg2RktQanhEOXVBYVJBOA?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Closing the AI guidance gap in education",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "This signal comes from OpenAI News：Closing the AI guidance gap in education. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "OpenAI News: Closing the AI guidance gap in education",
+            "https://openai.com/index/closing-ai-guidance-gap-education"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "Google Robot AI Hits 96% at Mercedes; Jailbreaks Fall 36x - FourWeekMBA",
+        "dek": "D-1 中美 AI 大公司或产业链重要信号，需要快速说明发生了什么，并补足影响和后续观察点。",
+        "details": [
+          "This signal comes from Google News AI Infrastructure：Google Robot AI Hits 96% at Mercedes; Jailbreaks Fall 36x - FourWeekMBA. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Google Robot AI Hits 96% at Mercedes; Jailbreaks Fall 36x -",
+            "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWGNEc1Q0QVRRRTg4MksxUnh6eVNhNTJmSzBZSVItQ2FHc0sxbHVtR1FocEg2MUlJc0lwRlVyZmx2REYtUUZyRk1aZERHamVyYmN2dk5oSVpsdU1McUpTV0U2cFVWYXJGUG8xamxNMzZVbEJLSWo2bjh4UVIzTkcwbXRYQ0swRDMzTHpF?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Headlines",
+        "priority": "high",
+        "title": "AGIX, the First ETF to Own Anthropic, Highlights Private Holdings Performance as Anthropic IPO Nears - KraneShares",
+        "dek": "D-1 中美 AI 大公司、明星创业公司或关键产业链公司的资本/并购信号，需要解释战略含义和产业影响。",
+        "details": [
+          "This signal comes from Google News Anthropic Funding：AGIX, the First ETF to Own Anthropic, Highlights Private Holdings Performance as Anthropic IPO Nears - KraneShares. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News Anthropic Funding: AGIX, the First ETF to Own Anthropic, Highlights Private Ho",
+            "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUGw5VUh2ZUJ4OVA5VklmNk9TUUxjRkpzSzAyTUdKYmpCTXo2em5HaGY3c2VsUGkwVHk4REowU0tWNmx1bXc0WEtCNXMtRGJWX2ZaSzRDc0dDRWFCd2QtR2dGOExfS2FocDkteDRicHV4b016a1J6TjNrTXhNaWZMZFRDajhQRVlEWmJOZ2p0dm5pSWF1djJHQlQzMS01d1BhRW9Wc1lhT0pFYkZxYUpjZWNYWTBjZU8tLWFQa1RHbC0?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from Latent Space：What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Latent Space: What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & ",
+            "https://latent.space/p/handshake/"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1",
+        "media": {
+          "type": "image",
+          "src": "https://i.ytimg.com/vi/v5IJwVnTxzg/maxresdefault.jpg",
+          "alt": "What Frontier Labs Buy: A Data Deep Dive with Handshake AI — Garrett Lord & Team",
+          "caption": "Latent Space",
+          "href": "https://latent.space/p/handshake/"
+        }
+      },
+      {
+        "section": "Deep Dive",
+        "priority": "medium",
+        "title": "Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
+        "dek": "围绕当下 AI 热门主题做解释性拆解，帮助读者理解技术和产业含义。",
+        "details": [
+          "This signal comes from TechCrunch AI：Meta’s AI agent Muse lands on Apple Watch and Android Wear OS. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "TechCrunch AI: Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
+            "https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os/"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "After challenging Google's Android with Cyanogen, its co-founder takes aim at Windows for AI era - TechCrunch",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Google News AI Models：After challenging Google's Android with Cyanogen, its co-founder takes aim at Windows for AI era - TechCrunch. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Models: After challenging Google's Android with Cyanogen, its co-founder ta",
+            "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPMDZLMkZWaU1ZWjVxMFlaNUYyS2dKV0NOR1ozUUxzbF9vWWhncjJ2ckszZTV5N3ZlLTNxTG5OUjZGYWozU1BVbGJ0N2dhNGVvc3owWjRCaWJGSlZzTlNieGdlM1E2MkM0d3pXZnJxbTloc29qSThBTzlwYW40VGl1Nnhycldwb0NkM2xsaWdrcGtsNGx6TzFSYjZJU1BCVDQ5bVl2bmRyT01ZMU9ITnNTR3I3TzBMWU01bWkxQXlGcGpEVUpySXBpYQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Views",
+        "priority": "medium",
+        "title": "Vishay to Showcase Power and Semiconductor Solutions for AI Data Centres, EVs and Robotics at electronica 2026 - ELE Times",
+        "dek": "AI 领军人物、投资人或深度作者观点，适合帮助读者形成判断框架。",
+        "details": [
+          "This signal comes from Google News AI Infrastructure：Vishay to Showcase Power and Semiconductor Solutions for AI Data Centres, EVs and Robotics at electronica 2026 - ELE Times. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News AI Infrastructure: Vishay to Showcase Power and Semiconductor Solutions for AI",
+            "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRDdGMmhtZm5DdkdZa1czUWY4ZlhNT3VvaTRHTkYyaDA2aGU2bXJZM25hbW1yaWh6d2xRSV9BTFRONkZXbVZKQTMxX0p3eWlwOEtXNFRRM0lIUWNzb0dnaVBfbTRyNm1QRmtFS1JMajJDUVBlaGEtcGFCYU1jZUlWbXJQNl8zSk9QWFZvbUhFSjkydGVpSE4wTVBrTnp4emJMdUpxUTRUdl9JQWZfdnFuWlZnVjhLNHAyVS16SUp6TXNCeWFXUjRjemlIejVwZw?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "global_major",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "Open Source",
+        "priority": "medium",
+        "title": "MiniMax H3-Image 开源：让 4K 图像生成进入10 秒时代- MiniMax Research - https://www.minimax.cn/",
+        "dek": "开发者社区信号，适合观察 agent、模型工具链或基础设施的新方向。",
+        "details": [
+          "This signal comes from Google News China AI Signals：MiniMax H3-Image 开源：让 4K 图像生成进入10 秒时代- MiniMax Research - https://www.minimax.cn/. Based on the public summary, it points to a broader shift: AI companies are moving competition from standalone model or feature launches toward user entry points, enterprise workflows, vertical deployment, and ecosystem partnerships.",
+          "One caveat: public RSS summaries often miss full details such as exact amounts, customers, benchmarks, or launch timing. It is included because it aligns with other signals in today’s source pack and is useful as a starting point for deeper reading.",
+          "For product and strategy judgment, the key question is whether it changes real usage frequency rather than creating short-term attention. Follow-up signals include official case studies, developer adoption, customer repeat usage, or continued capital interest."
+        ],
+        "why": "It matters because signals like this help identify whether AI attention is shifting toward model capability, product distribution, or industry deployment.",
+        "links": [
+          [
+            "Google News China AI Signals: MiniMax H3-Image 开源：让 4K 图像生成进入10 秒时代- MiniMax Research - ht",
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1ScWZPMVhoa3Z2V0NVSElkcHJaN3VZZnJMWmJheWlncFNIVnU4eEhBZjI1X3pPbjJsWGxvQkllUlJJZnFBcDA2Q3FkeVNLRUpJYWRDWEJqQQ?oc=5"
+          ]
+        ],
+        "sourceDate": "2026-11-10",
+        "freshness": "d-1",
+        "regionPriority": "primary_market",
+        "freshnessLabelZh": "D-1",
+        "freshnessLabelEn": "D-1",
+        "freshnessLabel": "D-1"
+      },
+      {
+        "section": "AI Term",
+        "priority": "learning",
+        "title": "RAG",
+        "dek": "A method where the model retrieves trusted sources before answering.",
+        "details": [
+          "RAG means Retrieval-Augmented Generation. Before answering, the model retrieves evidence from a source set such as documents, databases, or web pages.",
+          "It is useful for enterprise knowledge bases, research assistants, report reading, and support workflows because users need both answers and traceable sources."
+        ],
+        "why": "RAG is often the starting point for enterprise AI because it turns chat into source-grounded work.",
+        "links": [
+          [
+            "Google AI Blog: We’re bringing Adobe’s creative and productivity tools closer to your ever",
+            "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/"
+          ]
+        ],
+        "sourceDate": "",
+        "freshness": "",
+        "regionPriority": "",
+        "freshnessLabelZh": "",
+        "freshnessLabelEn": "",
+        "freshnessLabel": ""
+      }
+    ]
+  },
   {
     "date": "2026-11-10",
     "title": "AI Daily Atlas",
